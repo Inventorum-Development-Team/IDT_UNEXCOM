@@ -12,6 +12,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
   - type: STR_TERRORIST_FEMALE_CORPSE
     size: 0.4
@@ -24,6 +26,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
   - type: STR_TERRORIST_GASMASK_CORPSE
     size: 0.4
@@ -36,6 +40,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
   - type: STR_THIN_MAN_CORPSE
     size: 0.4
@@ -48,6 +54,8 @@ items:
     recoveryPoints: 10
     battleType: 11
     armor: 40
+    categories:
+      - STR_CORPSES
 
 
   - type: STR_TERRORIST_SOLDIER
@@ -56,36 +64,42 @@ items:
     liveAlien: false
     costSell: 40000
     listOrder: 14401
+    categories: [STR_PRISONERS]
   - type: STR_TERRORIST_COMMANDER
     size: 0.0
     recover: true
     liveAlien: false
     costSell: 60000
     listOrder: 14402
+    categories: [STR_PRISONERS]
   - type: STR_TERRORIST_MEDIC
     size: 0.0
     recover: true
     liveAlien: false
     costSell: 60000
     listOrder: 14403
+    categories: [STR_PRISONERS]
   - type: STR_TERRORIST_GRENADIER
     size: 0.0
     recover: true
     liveAlien: false
     costSell: 60000
     listOrder: 14404
+    categories: [STR_PRISONERS]
   - type: STR_TERRORIST_LEADER
     size: 0.0
     recover: true
     liveAlien: false
     costSell: 60000
     listOrder: 14405
+    categories: [STR_PRISONERS]
   - type: STR_THIN_MAN_INFILTRATOR
     size: 0.0
     recover: true
     liveAlien: true
     costSell: 70000
     listOrder: 14405
+    categories: [STR_PRISONERS]
 
 armors:
   - type: STR_TERRORIST_MALE_ARMOR
@@ -605,4 +619,5 @@ extraSprites:
     height: 200
     files:
       0: Resources/Thin Man/Ufopaedia/THIN_MAN_AUTOPSY.png
+
 
