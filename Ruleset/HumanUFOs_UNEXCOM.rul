@@ -1,0 +1,601 @@
+ufos:
+#################################
+###### TERRORIST CRAFTS ########
+###############################
+  - type: STR_TEXAN_UFO
+    size: STR_SMALL
+    modSprite: UFO_TEXAN
+    damageMax: 250
+    speedMax: 180
+    accel: 2
+    fireSound: 4
+    power: 10
+    range: 10
+    score: 50
+    reload: 4
+    avoidBonus: 10
+    hunterKillerPercentage: 100
+    huntSpeed: 100
+    radarRange: 100
+    radarChance: 30
+    sightRange: 60
+    huntMode: 1
+    huntBehavior: 1
+    breakOffTime: 200
+    battlescapeTerrainData:
+      name: UFO1A
+      mapDataSets:
+        - BLANKS
+        - UFO1
+      mapBlocks:
+        - name: UFO1A
+          width: 10
+          length: 10
+
+  - type: STR_MAGISTER_UFO
+    size: STR_SMALL
+    modSprite: UFO_MAGISTER
+    damageMax: 250
+    speedMax: 386
+    accel: 4
+    power: 40
+    fireSound: 5
+    range: 30
+    score: 50
+    reload: 48
+    hunterKillerPercentage: 100
+    huntSpeed: 100
+    radarRange: 100
+    radarChance: 40
+    sightRange: 60
+    huntMode: 1
+    huntBehavior: 1
+    breakOffTime: 200
+    battlescapeTerrainData:
+      name: UFO1A
+      mapDataSets:
+        - BLANKS
+        - UFO1
+      mapBlocks:
+        - name: UFO1A
+          width: 10
+          length: 10
+
+  - type: STR_MI8_UFO
+    size: STR_SMALL
+    modSprite: UFO_MI8
+    damageMax: 250
+    speedMax: 140
+    accel: 4
+    power: 15
+    fireSound: 4
+    range: 15
+    score: 50
+    reload: 10
+    radarRange: 100
+    radarChance: 40
+    sightRange: 200
+    breakOffTime: 200
+    raceBonus:
+      STR_TERRORIST:
+        craftCustomDeploy: STR_MI8_TERRORIST_UFO
+    battlescapeTerrainData:
+      name: MI8_UFO
+      mapDataSets:
+      - BLANKS
+      - MI8
+      - OSPREY_CABIN
+      mapBlocks:
+        - name: MI8_UFO
+          width: 10
+          length: 20
+          height: 2
+
+alienDeployments:
+################################
+###### TERRORIST CRAFTS ##########
+###############################
+  - type: STR_TEXAN_UFO
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: 
+          -
+            - STR_AKM
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_MAKAROV
+          -
+            - STR_AKM
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_GRENADE
+    width: 40
+    length: 40
+    height: 10
+    briefing:
+      palette: 4
+
+  - type: STR_MAGISTER_UFO
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: 
+          -
+            - STR_AKM
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_MAKAROV
+          -
+            - STR_AKM
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_GRENADE
+    width: 40
+    length: 40
+    height: 10
+    briefing:
+      palette: 4	  
+
+#Race Rank Reference
+#alienRank: 5 - Soldier
+#alienRank: 4 - Navigator
+#alienRank: 3 - Medic
+#alienRank: 2 - Engineer
+#alienRank: 1 - Leader
+#alienRank: 0 - Commander
+  - type: STR_MI8_TERRORIST_UFO
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 8
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_HUNTING_RIFLE
+            - STR_22_LONG_RIFLE_X14
+            - STR_22_LONG_RIFLE_X14
+            - STR_GRENADE
+          -
+            - STR_HUNTING_RIFLE
+            - STR_22_LONG_RIFLE_X14
+            - STR_22_LONG_RIFLE_X14
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X40
+            - STR_7_62MM_SOVIET_RIFLE_X40
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 4
+        lowQty: 4
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_DOUBLE_BARRELED_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_GRENADE
+          -
+            - STR_DOUBLE_BARRELED_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_GRENADE
+          -
+            - STR_POLICE_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_SLUG_X8
+            - STR_GRENADE
+          -
+            - STR_POLICE_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_SLUG_X8
+            - STR_GRENADE
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET  
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE			
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+    width: 40
+    length: 40
+    height: 10
+    briefing:
+      palette: 4
+
+  - type: STR_MI8_UFO
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 8
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_HUNTING_RIFLE
+            - STR_22_LONG_RIFLE_X14
+            - STR_22_LONG_RIFLE_X14
+            - STR_GRENADE
+          -
+            - STR_HUNTING_RIFLE
+            - STR_22_LONG_RIFLE_X14
+            - STR_22_LONG_RIFLE_X14
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X40
+            - STR_7_62MM_SOVIET_RIFLE_X40
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 4
+        lowQty: 4
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_DOUBLE_BARRELED_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_GRENADE
+          -
+            - STR_DOUBLE_BARRELED_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_GRENADE
+          -
+            - STR_POLICE_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_SLUG_X8
+            - STR_GRENADE
+          -
+            - STR_POLICE_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_SLUG_X8
+            - STR_GRENADE
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET  
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE			
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+    width: 40
+    length: 40
+    height: 10
+    briefing:
+      palette: 4
+
+research:
+  - name: STR_TEXAN_UFO
+    points: 50
+    needItem: true
+  - name: STR_MAGISTER_UFO
+    points: 50
+    needItem: true
+  - name: STR_MI8_UFO
+    points: 50
+    needItem: true
+
+##############################
+ufopaedia:
+###############################
+###### TERRORIST CRAFTS #########
+##############################
+  - id: STR_TEXAN_UFO
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_TEXAN_UFO
+    text: STR_TEXAN_UFO_UFOPEDIA
+  - id: STR_MAGISTER_UFO
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_MAGISTER_UFO
+    text: STR_MAGISTER_UFO_UFOPEDIA
+#  - id: STR_MI8_TERRORIST_UFO
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_MI8_TERRORIST_UFO
+    text: STR_MI8_TERRORIST_UFO_UFOPEDIA
+  - id: STR_MI8_UFO
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_MI8_UFO
+    text: STR_MI8_UFO_UFOPEDIA
+
+extraSprites:
+  - type: UFO_MAGISTER
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/HumanUFOs/UFO_MAGISTER.png
+  - type: UFO_TEXAN
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/HumanUFOs/UFO_TEXAN.png
+  - type: UFO_MI8
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/HumanUFOs/UFO_MI8.png
+
+extraStrings:
+  - type: en-US
+    strings:
+###########################
+      STR_TEXAN_UFO: T-6 Texan
+      STR_TEXAN_UFO_UFOPEDIA: Old turboprop aircraft created in 1935, recognized worldwide as a stable and reliable aircraft. Often used as a training and light attack aircraft, it is incredibly popular. Terrorists often steal them from civilian airfields and equip them with black market weapons for use in their missions.
+      STR_MAGISTER_UFO: Fouga Magister
+      STR_MAGISTER_UFO_UFOPEDIA: Advanced training plane, built in France. It is often used as a ground attack plane and has seen action in various conflicts, both on the government force and on the rebel side. Terrorists have purchased Sidewinder missiles on the black market and are equipping them at Magister on intercept missions.
+      STR_MI8_TERRORIST_UFO: Mi-8 Hip 
+      STR_MI8_TERRORIST_UFO_UFOPEDIA: One of the most widely used helicopters in the world, the Mi-8s we face were supplied to our enemies by Superpowers, secret agencies, rebel countries or simply stolen from government hangars. It has short-range defensive weapons and can transport large numbers of troops.
+      STR_MI8_UFO: Mi-8 Hip 
+      STR_MI8_UFO_UFOPEDIA: One of the most widely used helicopters in the world, the Mi-8s we face were supplied to our enemies by Superpowers, secret agencies, rebel countries or simply stolen from government hangars. It has short-range defensive weapons and can transport large numbers of troops.

@@ -1,0 +1,2348 @@
+﻿items:
+  - type: STR_SALAMANDRON_BITE
+    weight: 3
+    bigSprite: 3010
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    meleeAnimation: 4
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 80
+    tuMelee: 20
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_CEREBREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3008
+    floorSprite: 3008
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 6715
+  - type: STR_CEREBREAL_LARVA_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3009
+    floorSprite: 3009
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 7020
+  - type: CEREBREAL_WEAPON
+    weight: 3
+    bigSprite: 100
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 11
+    fireSound: 55
+    hitSound: 19
+    hitAnimation: 56
+    power: 110
+    damageType: 5
+    accuracySnap: 50
+    accuracyAimed: 90
+    tuSnap: 55
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: CEREBREAL_LARVA_WEAPON
+    weight: 3
+    bigSprite: 100
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    power: 90
+    damageType: 5
+    accuracySnap: 60
+    accuracyAimed: 100
+    accuracyAuto: 40
+    tuSnap: 55
+    tuAimed: 80
+    tuAuto: 65
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_CEREBREAL_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_CEREBREAL_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_CEREBREAL_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_CEREBREAL_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_CEREBREAL_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14405
+  - type: STR_CEREBREAL_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14406
+  - type: STR_CEREBREAL_LARVA_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 14407
+  - type: STR_CHTONITE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3006
+    floorSprite: 3006
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 6715
+  - type: STR_TUNLUN_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3007
+    floorSprite: 3007
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 7020
+  - type: TUNLUN_WEAPON
+    weight: 3
+    bigSprite: 100
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 51
+    hitSound: 19
+    hitAnimation: 46
+    power: 80
+    damageType: 8
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuSnap: 55
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    arcingShot: true
+  - type: STR_CHTONITE_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_CHTONITE_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_CHTONITE_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_CHTONITE_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_CHTONITE_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14405
+  - type: STR_CHTONITE_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14406
+  - type: STR_TUNLUN_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 14407
+  - type: STR_REPTOID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3005
+    floorSprite: 3005
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 6715
+  - type: STR_SALAMANDRON_CORPSE
+    size: 1
+    costSell: 9000
+    battleType: 11
+    listOrder: 7025
+  - type: SALAMANDRON_CORPSE_1
+    name: STR_SALAMANDRON_CORPSE
+    floorSprite: 52
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+    listOrder: 7026
+  - type: SALAMANDRON_CORPSE_2
+    floorSprite: 55
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SALAMANDRON_CORPSE_3
+    floorSprite: 54
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SALAMANDRON_CORPSE_4
+    floorSprite: 53
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SALAMANDRON_WEAPON
+    weight: 3
+    bigSprite: 18
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 52
+    hitSound: 0
+    hitAnimation: 0
+    clipSize: 8
+    power: 90
+    damageType: 2
+    accuracySnap: 55
+    tuSnap: 45
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 1
+    invHeight: 3
+    recover: false
+    listOrder: 11515
+  - type: STR_REPTOID_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_REPTOID_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_REPTOID_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_REPTOID_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_REPTOID_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14405
+  - type: STR_REPTOID_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14406
+  - type: STR_SALAMANDRON_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14407
+armors:
+  - type: CEREBREAL_ARMOR0
+    spriteSheet: CEREBREAL.PCK
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 35
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: CEREBREAL_ARMOR1
+    spriteSheet: CEREBREAL.PCK
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 40
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: CEREBREAL_ARMOR2
+    spriteSheet: CEREBREAL.PCK
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 45
+    sideArmor: 45
+    rearArmor: 45
+    underArmor: 45
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: CEREBREAL_LARVA_ARMOR
+    spriteSheet: CEREBREAL_LARVA.PCK
+    corpseBattle:
+      - STR_CEREBREAL_LARVA_CORPSE
+#    frontArmor: 34
+#    sideArmor: 34
+#    rearArmor: 34
+#    underArmor: 28
+#    drawingRoutine: 15
+#    constantAnimation: true
+#    movementType: 2
+#    damageModifier:
+#      - 1.0
+#      - 0.8
+#      - 1.0
+#      - 1.0
+#      - 0.8
+#      - 1.0
+#      - 1.0
+#      - 1.4
+#      - 1.0
+#      - 0.0
+#    loftempsSet: [ 3 ]
+    frontArmor: 25
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 5
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.6
+      - 0.6
+      - 0.7
+      - 0.9
+      - 0.9
+      - 1.45
+      - 0.0
+      - 0.9
+    loftemps: 2
+    drawingRoutine: 16
+    constantAnimation: true
+  - type: CHTONITE_ARMOR0
+    spriteSheet: CHTONITE.PCK
+    corpseBattle:
+      - STR_CHTONITE_CORPSE
+    frontArmor: 12
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: CHTONITE_ARMOR1
+    spriteSheet: CHTONITE.PCK
+    corpseBattle:
+      - STR_CHTONITE_CORPSE
+    frontArmor: 12
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: CHTONITE_ARMOR2
+    spriteSheet: CHTONITE.PCK
+    corpseBattle:
+      - STR_CHTONITE_CORPSE
+    frontArmor: 12
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: TUNLUN_ARMOR
+    spriteSheet: TUNLUN.PCK
+    corpseBattle:
+      - STR_TUNLUN_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 25
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.0
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: REPTOID_ARMOR0
+    spriteSheet: REPTOID.PCK
+    corpseBattle:
+      - STR_REPTOID_CORPSE
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 12
+    underArmor: 10
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.9
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: REPTOID_ARMOR1
+    spriteSheet: REPTOID.PCK
+    corpseBattle:
+      - STR_REPTOID_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 14
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.9
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: REPTOID_ARMOR2
+    spriteSheet: REPTOID.PCK
+    corpseBattle:
+      - STR_REPTOID_CORPSE
+    frontArmor: 24
+    sideArmor: 24
+    rearArmor: 18
+    underArmor: 16
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.9
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: SALAMANDRON_ARMOR
+    spriteSheet: SALAMANDRON.PCK
+    corpseBattle:
+      - SALAMANDRON_CORPSE_1
+      - SALAMANDRON_CORPSE_2
+      - SALAMANDRON_CORPSE_3
+      - SALAMANDRON_CORPSE_4
+    corpseGeo: STR_SALAMANDRON_CORPSE
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 25
+    drawingRoutine: 5
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
+units:
+  - type: STR_CEREBREAL_SOLDIER
+    race: STR_CEREBREAL
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 100
+      health: 15
+      bravery: 70
+      reactions: 60
+      firing: 65
+      throwing: 0
+      strength: 20
+      psiStrength: 50
+      psiSkill: 40
+      melee: 10
+    armor: CEREBREAL_ARMOR0
+    moveSound: 40
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 12
+    deathSound: 8
+    intelligence: 5
+    aggression: 2
+    livingWeapon: true
+  - type: STR_CEREBREAL_ENGINEER
+    race: STR_CEREBREAL
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 60
+      stamina: 100
+      health: 15
+      bravery: 70
+      reactions: 60
+      firing: 65
+      throwing: 0
+      strength: 20
+      psiStrength: 50
+      psiSkill: 40
+      melee: 10
+    armor: CEREBREAL_ARMOR0
+    moveSound: 40
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: 8
+    intelligence: 8
+    aggression: 2
+    livingWeapon: true
+  - type: STR_CEREBREAL_NAVIGATOR
+    race: STR_CEREBREAL
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 60
+      stamina: 100
+      health: 15
+      bravery: 70
+      reactions: 60
+      firing: 65
+      throwing: 0
+      strength: 20
+      psiStrength: 50
+      psiSkill: 40
+      melee: 10
+    armor: CEREBREAL_ARMOR0
+    moveSound: 40
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: 8
+    intelligence: 6
+    aggression: 2
+    livingWeapon: true
+  - type: STR_CEREBREAL_MEDIC
+    race: STR_CEREBREAL
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 60
+      stamina: 100
+      health: 15
+      bravery: 70
+      reactions: 60
+      firing: 65
+      throwing: 0
+      strength: 20
+      psiStrength: 50
+      psiSkill: 40
+      melee: 10
+    armor: CEREBREAL_ARMOR0
+    moveSound: 40
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 16
+    deathSound: 8
+    intelligence: 7
+    aggression: 1
+    livingWeapon: true
+  - type: STR_CEREBREAL_LEADER
+    race: STR_CEREBREAL
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 60
+      stamina: 100
+      health: 15
+      bravery: 80
+      reactions: 65
+      firing: 70
+      throwing: 0
+      strength: 20
+      psiStrength: 50
+      psiSkill: 45
+      melee: 10
+    armor: CEREBREAL_ARMOR1
+    moveSound: 40
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 25
+    deathSound: 8
+    intelligence: 8
+    aggression: 0
+    livingWeapon: true
+  - type: STR_CEREBREAL_COMMANDER
+    race: STR_CEREBREAL
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 60
+      stamina: 100
+      health: 20
+      bravery: 80
+      reactions: 65
+      firing: 75
+      throwing: 0
+      strength: 20
+      psiStrength: 50
+      psiSkill: 50
+      melee: 10
+    armor: CEREBREAL_ARMOR2
+    moveSound: 40
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 35
+    deathSound: 8
+    intelligence: 8
+    aggression: 0
+    livingWeapon: true
+  - type: STR_CEREBREAL_LARVA_TERRORIST
+    race: STR_CEREBREAL_LARVA
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 45
+      stamina: 120
+      health: 35
+      bravery: 90
+      reactions: 30
+      firing: 40
+      throwing: 0
+      strength: 60
+      psiStrength: 45
+      psiSkill: 0
+      melee: 40
+    armor: CEREBREAL_LARVA_ARMOR
+    moveSound: 40
+    standHeight: 11
+    kneelHeight: 16
+    floatHeight: 12
+    value: 25
+    deathSound: 23
+    intelligence: 6
+    aggression: 2
+    livingWeapon: true
+  - type: STR_CHTONITE_SOLDIER
+    race: STR_CHTONITE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 45
+      psiSkill: 0
+      melee: 25
+    armor: CHTONITE_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 12
+    deathSound: 8
+    intelligence: 5
+    aggression: 2
+  - type: STR_CHTONITE_ENGINEER
+    race: STR_CHTONITE
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 45
+      psiSkill: 0
+      melee: 25
+    armor: CHTONITE_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: 8
+    intelligence: 8
+    aggression: 2
+  - type: STR_CHTONITE_NAVIGATOR
+    race: STR_CHTONITE
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 45
+      psiSkill: 0
+      melee: 25
+    armor: CHTONITE_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: 8
+    intelligence: 6
+    aggression: 2
+  - type: STR_CHTONITE_MEDIC
+    race: STR_CHTONITE
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 45
+      psiSkill: 0
+      melee: 25
+    armor: CHTONITE_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 16
+    deathSound: 8
+    intelligence: 7
+    aggression: 1
+  - type: STR_CHTONITE_LEADER
+    race: STR_CHTONITE
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+    armor: CHTONITE_ARMOR1
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 25
+    deathSound: 8
+    intelligence: 8
+    aggression: 0
+  - type: STR_CHTONITE_COMMANDER
+    race: STR_CHTONITE
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 55
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 50
+      psiSkill: 0
+      melee: 45
+    armor: CHTONITE_ARMOR2
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 35
+    deathSound: 8
+    intelligence: 8
+    aggression: 0
+  - type: STR_TUNLUN_TERRORIST
+    race: STR_TUNLUN
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 45
+      stamina: 120
+      health: 35
+      bravery: 90
+      reactions: 30
+      firing: 40
+      throwing: 0
+      strength: 60
+      psiStrength: 45
+      psiSkill: 0
+      melee: 40
+    armor: TUNLUN_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 25
+    deathSound: 10
+    intelligence: 1
+    aggression: 2
+    livingWeapon: true
+  - type: STR_REPTOID_SOLDIER
+    race: STR_REPTOID
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 94
+      health: 45
+      bravery: 80
+      reactions: 55
+      firing: 55
+      throwing: 65
+      strength: 60
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: REPTOID_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 12
+    deathSound: 8
+    intelligence: 5
+    aggression: 2
+  - type: STR_REPTOID_ENGINEER
+    race: STR_REPTOID
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 65
+      stamina: 94
+      health: 45
+      bravery: 80
+      reactions: 55
+      firing: 55
+      throwing: 65
+      strength: 60
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: REPTOID_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: 8
+    intelligence: 8
+    aggression: 2
+  - type: STR_REPTOID_NAVIGATOR
+    race: STR_REPTOID
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 65
+      stamina: 94
+      health: 45
+      bravery: 80
+      reactions: 55
+      firing: 55
+      throwing: 65
+      strength: 60
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: REPTOID_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: 8
+    intelligence: 6
+    aggression: 2
+  - type: STR_REPTOID_MEDIC
+    race: STR_REPTOID
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 65
+      stamina: 94
+      health: 45
+      bravery: 80
+      reactions: 55
+      firing: 55
+      throwing: 65
+      strength: 60
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: REPTOID_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 16
+    deathSound: 8
+    intelligence: 7
+    aggression: 1
+  - type: STR_REPTOID_LEADER
+    race: STR_REPTOID
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 50
+      bravery: 80
+      reactions: 55
+      firing: 55
+      throwing: 65
+      strength: 60
+      psiStrength: 55
+      psiSkill: 0
+      melee: 60
+    armor: REPTOID_ARMOR1
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 25
+    deathSound: 8
+    intelligence: 8
+    aggression: 0
+  - type: STR_REPTOID_COMMANDER
+    race: STR_REPTOID
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 80
+      firing: 55
+      throwing: 65
+      strength: 60
+      psiStrength: 60
+      psiSkill: 0
+      melee: 82
+    armor: REPTOID_ARMOR2
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 35
+    deathSound: 8
+    intelligence: 8
+    aggression: 0
+  - type: STR_SALAMANDRON_TERRORIST
+    race: STR_SALAMANDRON
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 55
+      stamina: 90
+      health: 80
+      bravery: 90
+      reactions: 14
+      firing: 20
+      throwing: 0
+      strength: 75
+      psiStrength: 20
+      psiSkill: 0
+      melee: 60
+    armor: SALAMANDRON_ARMOR
+    standHeight: 24
+    kneelHeight: 18
+    value: 25
+    deathSound: 101
+    intelligence: 2
+    aggression: 2
+    builtInWeapons:
+      - STR_SALAMANDRON_BITE
+    livingWeapon: true
+alienRaces:
+  - id: STR_CEREBREAL
+    members:
+      - STR_CEREBREAL_COMMANDER
+      - STR_CEREBREAL_LEADER
+      - STR_CEREBREAL_ENGINEER
+      - STR_CEREBREAL_MEDIC
+      - STR_CEREBREAL_NAVIGATOR
+      - STR_CEREBREAL_SOLDIER
+      - STR_CEREBREAL_LARVA_TERRORIST
+      - STR_CEREBREAL_LARVA_TERRORIST
+  - id: STR_CHTONITE
+    members:
+      - STR_CHTONITE_COMMANDER
+      - STR_CHTONITE_LEADER
+      - STR_CHTONITE_ENGINEER
+      - STR_CHTONITE_MEDIC
+      - STR_CHTONITE_NAVIGATOR
+      - STR_CHTONITE_SOLDIER
+      - STR_TUNLUN_TERRORIST
+      - STR_TUNLUN_TERRORIST
+  - id: STR_REPTOID
+    members:
+      - STR_REPTOID_COMMANDER
+      - STR_REPTOID_LEADER
+      - STR_REPTOID_ENGINEER
+      - STR_REPTOID_MEDIC
+      - STR_REPTOID_NAVIGATOR
+      - STR_REPTOID_SOLDIER
+      - STR_SALAMANDRON_TERRORIST
+      - STR_SALAMANDRON_TERRORIST
+research:
+  - name: STR_ALIEN_ORIGINS
+    cost: 300
+    points: 60
+    dependencies:
+      - STR_SECTOID_COMMANDER
+      - STR_SECTOID_LEADER
+      - STR_SECTOID_ENGINEER
+      - STR_SECTOID_MEDIC
+      - STR_SECTOID_NAVIGATOR
+      - STR_SECTOID_SOLDIER
+      - STR_CYBERDISC_TERRORIST
+      - STR_SNAKEMAN_COMMANDER
+      - STR_SNAKEMAN_LEADER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_SNAKEMAN_NAVIGATOR
+      - STR_SNAKEMAN_SOLDIER
+      - STR_CHRYSSALID_TERRORIST
+      - STR_ETHEREAL_COMMANDER
+      - STR_ETHEREAL_LEADER
+      - STR_ETHEREAL_SOLDIER
+      - STR_SECTOPOD_TERRORIST
+      - STR_MUTON_ENGINEER
+      - STR_MUTON_NAVIGATOR
+      - STR_MUTON_SOLDIER
+      - STR_SILACOID_TERRORIST
+      - STR_CELATID_TERRORIST
+      - STR_FLOATER_COMMANDER
+      - STR_FLOATER_LEADER
+      - STR_FLOATER_ENGINEER
+      - STR_FLOATER_MEDIC
+      - STR_FLOATER_NAVIGATOR
+      - STR_FLOATER_SOLDIER
+      - STR_REAPER_TERRORIST
+      - STR_REPTOID_COMMANDER
+      - STR_REPTOID_LEADER
+      - STR_REPTOID_ENGINEER
+      - STR_REPTOID_MEDIC
+      - STR_REPTOID_NAVIGATOR
+      - STR_REPTOID_SOLDIER
+      - STR_SALAMANDRON_TERRORIST
+      - STR_CHTONITE_COMMANDER
+      - STR_CHTONITE_LEADER
+      - STR_CHTONITE_ENGINEER
+      - STR_CHTONITE_MEDIC
+      - STR_CHTONITE_NAVIGATOR
+      - STR_CHTONITE_SOLDIER
+      - STR_TUNLUN_TERRORIST
+      - STR_CEREBREAL_COMMANDER
+      - STR_CEREBREAL_LEADER
+      - STR_CEREBREAL_ENGINEER
+      - STR_CEREBREAL_MEDIC
+      - STR_CEREBREAL_NAVIGATOR
+      - STR_CEREBREAL_SOLDIER
+      - STR_CEREBREAL_LARVA_TERRORIST
+  - name: STR_CYDONIA_DEP
+    cost: 0
+    points: 0
+    unlocks:
+      - STR_CYDONIA_OR_BUST
+    requires:
+      - STR_THE_MARTIAN_SOLUTION
+    dependencies:
+      - STR_SECTOID_COMMANDER
+      - STR_SNAKEMAN_COMMANDER
+      - STR_ETHEREAL_COMMANDER
+      - STR_FLOATER_COMMANDER
+      - STR_REPTOID_COMMANDER
+      - STR_CHTONITE_COMMANDER
+      - STR_CEREBREAL_COMMANDER
+  - name: STR_LEADER_PLUS
+    cost: 0
+    requires:
+      - STR_ALIEN_ORIGINS
+    dependencies:
+      - STR_SECTOID_COMMANDER
+      - STR_SECTOID_LEADER
+      - STR_SNAKEMAN_COMMANDER
+      - STR_SNAKEMAN_LEADER
+      - STR_ETHEREAL_COMMANDER
+      - STR_ETHEREAL_LEADER
+      - STR_FLOATER_COMMANDER
+      - STR_FLOATER_LEADER
+      - STR_REPTOID_COMMANDER
+      - STR_REPTOID_LEADER
+      - STR_CHTONITE_COMMANDER
+      - STR_CHTONITE_LEADER
+      - STR_CEREBREAL_COMMANDER
+      - STR_CEREBREAL_LEADER
+  - name: STR_CEREBREAL_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_CEREBREAL_AUTOPSY
+    needItem: true
+    listOrder: 6030
+  - name: STR_CEREBREAL_LARVA_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_CEREBREAL_LARVA_AUTOPSY
+    needItem: true
+    listOrder: 6060
+  - name: STR_CHTONITE_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_CHTONITE_AUTOPSY
+    needItem: true
+    listOrder: 6020
+  - name: STR_TUNLUN_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_TUNLUN_AUTOPSY
+    needItem: true
+    listOrder: 6050
+  - name: STR_REPTOID_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_REPTOID_AUTOPSY
+    needItem: true
+    listOrder: 6010
+  - name: STR_SALAMANDRON_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SALAMANDRON_AUTOPSY
+    needItem: true
+    listOrder: 6040
+  - name: STR_CEREBREAL_SOLDIER
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    listOrder: 8690
+  - name: STR_CHTONITE_SOLDIER
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    listOrder: 8680
+  - name: STR_REPTOID_SOLDIER
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    listOrder: 8670
+  - name: STR_CEREBREAL_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 8691
+  - name: STR_CHTONITE_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 8681
+  - name: STR_REPTOID_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 8671
+  - name: STR_CEREBREAL_MEDIC
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_CHTONITE
+      - STR_REPTOID
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+    listOrder: 8692
+  - name: STR_CHTONITE_MEDIC
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_REPTOID
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+    listOrder: 8682
+  - name: STR_REPTOID_MEDIC
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_CHTONITE
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_CEREBREAL_LARVA
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
+    listOrder: 8672
+  - name: STR_FLOATER_MEDIC
+    cost: 192
+    points: 50
+    lookup: STR_FLOATER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_CHTONITE
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_CEREBREAL_LARVA
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
+  - name: STR_SECTOID_MEDIC
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    lookup: STR_SECTOID
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_CHTONITE
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_CEREBREAL_LARVA
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
+  - name: STR_SNAKEMAN_MEDIC
+    needItem: true
+    destroyItem: true
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    lookup: STR_SECTOID
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_CHTONITE
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_CEREBREAL_LARVA
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
+  - name: STR_CEREBREAL_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    listOrder: 8693
+  - name: STR_CHTONITE_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    listOrder: 8683
+  - name: STR_REPTOID_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    listOrder: 8673
+  - name: STR_CEREBREAL_ENGINEER
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 8694
+  - name: STR_CHTONITE_ENGINEER
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 8684
+  - name: STR_REPTOID_ENGINEER
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 8674
+  - name: STR_CEREBREAL_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    needItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_CYDONIA_DEP
+      - STR_ALIEN_ORIGINS
+    listOrder: 8695
+  - name: STR_CHTONITE_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_CYDONIA_DEP
+      - STR_ALIEN_ORIGINS
+    listOrder: 8685
+  - name: STR_REPTOID_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_CYDONIA_DEP
+      - STR_ALIEN_ORIGINS
+    listOrder: 8675
+  - name: STR_CEREBREAL
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_CEREBREAL_LARVA_TERRORIST
+    cost: 110
+    points: 50
+    lookup: STR_CEREBREAL_LARVA
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    listOrder: 9916
+  - name: STR_CEREBREAL_LARVA
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 9917
+  - name: STR_CHTONITE
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TUNLUN_TERRORIST
+    cost: 110
+    points: 50
+    lookup: STR_TUNLUN
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    listOrder: 9914
+  - name: STR_TUNLUN
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 9915
+  - name: STR_REPTOID
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_SALAMANDRON_TERRORIST
+    cost: 110
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    listOrder: 9912
+  - name: STR_SALAMANDRON
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 9913
+  - name: STR_CEREBREAL_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 12680
+  - name: STR_CEREBREAL_LARVA_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 13212
+  - name: STR_CHTONITE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 12670
+  - name: STR_TUNLUN_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 13211
+  - name: STR_REPTOID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 12660
+  - name: STR_SALAMANDRON_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 13210
+ufopaedia:
+  - id: STR_CEREBREAL
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CEREBREAL
+    image_id: UFOPAEDIA_IMG_CEREBREAL
+    text: STR_CEREBREAL_UFOPAEDIA
+    text_width: 158
+    listOrder: 8755
+  - id: STR_CEREBREAL_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CEREBREAL_CORPSE
+    image_id: UFOPAEDIA_IMG_CEREBREAL_AUTOPSY
+    text: STR_CEREBREAL_AUTOPSY_UFOPAEDIA
+    text_width: 158
+    listOrder: 8756
+  - id: STR_CEREBREAL_LARVA
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CEREBREAL_LARVA
+    image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA
+    text: STR_CEREBREAL_LARVA_UFOPAEDIA
+    text_width: 158 
+    listOrder: 9351
+  - id: STR_CEREBREAL_LARVA_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CEREBREAL_LARVA_CORPSE
+    image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA_AUTOPSY
+    text: STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA
+    text_width: 158
+    listOrder: 9356
+  - id: STR_CHTONITE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CHTONITE
+    image_id: UFOPAEDIA_IMG_CHTONITE
+    text: STR_CHTONITE_UFOPAEDIA
+    text_width: 158
+    listOrder: 8755
+  - id: STR_CHTONITE_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CHTONITE_CORPSE
+    image_id: UFOPAEDIA_IMG_CHTONITE_AUTOPSY
+    text: STR_CHTONITE_AUTOPSY_UFOPAEDIA
+    text_width: 158
+    listOrder: 8756
+  - id: STR_TUNLUN
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_TUNLUN
+    image_id: UFOPAEDIA_IMG_TUNLUN
+    text: STR_TUNLUN_UFOPAEDIA
+    text_width: 158 
+    listOrder: 9351
+  - id: STR_TUNLUN_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_TUNLUN_CORPSE
+    image_id: UFOPAEDIA_IMG_TUNLUN_AUTOPSY
+    text: STR_TUNLUN_AUTOPSY_UFOPAEDIA
+    text_width: 158
+    listOrder: 9356
+  - id: STR_REPTOID
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_REPTOID
+    image_id: UFOPAEDIA_IMG_REPTOID
+    text: STR_REPTOID_UFOPAEDIA
+    text_width: 158
+    listOrder: 8755
+  - id: STR_REPTOID_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_REPTOID_CORPSE
+    image_id: UFOPAEDIA_IMG_REPTOID_AUTOPSY
+    text: STR_REPTOID_AUTOPSY_UFOPAEDIA
+    text_width: 158
+    listOrder: 8756
+  - id: STR_SALAMANDRON
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SALAMANDRON
+    image_id: UFOPAEDIA_IMG_SALAMANDRON
+    text: STR_SALAMANDRON_UFOPAEDIA
+    text_width: 158 
+    listOrder: 9351
+  - id: STR_SALAMANDRON_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SALAMANDRON_CORPSE
+    image_id: UFOPAEDIA_IMG_SALAMANDRON_AUTOPSY
+    text: STR_SALAMANDRON_AUTOPSY_UFOPAEDIA
+    text_width: 158
+    listOrder: 9356
+extraSprites:
+  - type: Projectiles
+    height: 3
+    width: 65
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/RecycledAlienCollection/CerebrealRace/BulletSprite.gif
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      56: Resources/RecycledAlienCollection/CerebrealRace/HitAnimation.gif
+  - type: HIT.PCK
+    height: 40
+    width: 128
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/RecycledAlienCollection/ReptoidRace/Claws.gif
+  - type: CEREBREAL.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/CEREBREAL.png
+  - type: inventory_CEREBREAL
+    singleImage: true
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/inventory_CEREBREAL.gif
+  - type: CHTONITE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/CHTONITE.png
+  - type: REPTOID.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/REPTOID.png
+  - type: inventory_CHTONITE
+    singleImage: true
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/inventory_CHTONITE.gif
+  - type: inventory_REPTOID
+    singleImage: true
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/inventory_REPTOID.gif
+  - type: CEREBREAL_LARVA.PCK
+    subX: 32
+    subY: 40
+    width: 352
+    height: 40
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/CEREBREAL_LARVA.png
+  - type: TUNLUN.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/TUNLUN.png
+  - type: SALAMANDRON.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 400
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/SALAMANDRON.png
+  - type: BIGOBS.PCK
+    files:
+      3005: Resources/RecycledAlienCollection/ReptoidRace/bigobs_REPTOID_CORPSE.gif
+      3006: Resources/RecycledAlienCollection/ChtoniteRace/bigobs_CHTONITE_CORPSE.gif
+      3007: Resources/RecycledAlienCollection/ChtoniteRace/bigobs_TUNLUN_CORPSE.gif
+      3008: Resources/RecycledAlienCollection/CerebrealRace/bigobs_CEREBREAL_CORPSE.gif
+      3009: Resources/RecycledAlienCollection/CerebrealRace/bigobs_CEREBREAL_LARVA_CORPSE.gif
+      3010: Resources/RecycledAlienCollection/ReptoidRace/Salamandron_Jaws.gif
+  - type: FLOOROB.PCK
+    files:
+      3005: Resources/RecycledAlienCollection/ReptoidRace/floorob_REPTOID_CORPSE.gif
+      3006: Resources/RecycledAlienCollection/ChtoniteRace/floorob_CHTONITE_CORPSE.gif
+      3007: Resources/RecycledAlienCollection/ChtoniteRace/floorob_TUNLUN_CORPSE.gif
+      3008: Resources/RecycledAlienCollection/CerebrealRace/floorob_CEREBREAL_CORPSE.gif
+      3009: Resources/RecycledAlienCollection/CerebrealRace/floorob_CEREBREAL_LARVA_CORPSE.gif
+  - type: UFOPAEDIA_IMG_CEREBREAL_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/RecycledAlienCollection/CerebrealRace/ufopaedia_CEREBREAL_AUTOPSY.gif
+  - type: UFOPAEDIA_IMG_CEREBREAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/ufopaedia_CEREBREAL.gif
+  - type: UFOPAEDIA_IMG_CEREBREAL_LARVA_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/ufopaedia_CEREBREAL_LARVA_AUTOPSY.gif
+  - type: UFOPAEDIA_IMG_CEREBREAL_LARVA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/ufopaedia_CEREBREAL_LARVA.gif
+  - type: UFOPAEDIA_IMG_CHTONITE_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/RecycledAlienCollection/ChtoniteRace/ufopaedia_CHTONITE_AUTOPSY.gif
+  - type: UFOPAEDIA_IMG_REPTOID_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/RecycledAlienCollection/ReptoidRace/ufopaedia_REPTOID_AUTOPSY.gif
+  - type: UFOPAEDIA_IMG_CHTONITE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/ufopaedia_CHTONITE.gif
+  - type: UFOPAEDIA_IMG_REPTOID
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/ufopaedia_REPTOID.gif
+  - type: UFOPAEDIA_IMG_TUNLUN_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/ufopaedia_TUNLUN_AUTOPSY.gif
+  - type: UFOPAEDIA_IMG_SALAMANDRON_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/ufopaedia_SALAMANDRON_AUTOPSY.gif
+  - type: UFOPAEDIA_IMG_TUNLUN
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/ufopaedia_TUNLUN.gif
+  - type: UFOPAEDIA_IMG_SALAMANDRON
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/ufopaedia_SALAMANDRON.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      55: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
+      101: Resources/RecycledAlienCollection/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
+extraStrings:
+  - type: en-GB
+    strings:
+      STR_CEREBREAL: Cerebreal
+      STR_CEREBREAL_LARVA: Cerebreal Larva
+      STR_CEREBREAL_LARVA_TERRORIST: Cerebreal Larva Terrorist
+      STR_CEREBREAL_SOLDIER: Cerebreal Soldier
+      STR_CEREBREAL_MEDIC: Cerebreal Medic
+      STR_CEREBREAL_ENGINEER: Cerebreal Engineer
+      STR_CEREBREAL_NAVIGATOR: Cerebreal Navigator
+      STR_CEREBREAL_LEADER: Cerebreal Leader
+      STR_CEREBREAL_COMMANDER: Cerebreal Commander
+      STR_CEREBREAL_CORPSE: Cerebreal Corpse
+      STR_CEREBREAL_LARVA_CORPSE: Cerebreal Larva Corpse
+      STR_CEREBREAL_AUTOPSY: Cerebreal autopsy
+      STR_CEREBREAL_LARVA_AUTOPSY: Cerebreal Larva autopsy
+      STR_CEREBREAL_UFOPAEDIA: "Cerebreals are a race that is not fully integrated into the alien hive-like society; they are more like allies, who agreed to serve the invaders for some unfathomable reasons.  They bear incredibly strong psionic powers, which can be focused as a weapon:  a violent discharge of plasma, fuelled by will alone.  Their independent and completely alien pattern of thinking make them unpredictable, but also more prone to panic than other alien races."
+      STR_CEREBREAL_AUTOPSY_UFOPAEDIA: "This specimen are not your typical alien race: its genetics are completely different to both Earth and most alien species, and it seems even stranger than most other types of alien life.  Most of its body mass is neural matter, and the rest is almost exclusively advanced cybernetics to keep this enormous 'brain' running.  It seems unable to use hand weapons, and it has no significant natural means of defence.  There is little else we can say about this terrifying creature."
+      STR_CEREBREAL_LARVA_UFOPAEDIA: "This creature is a young form of a Cerebreal, encased in a tiny UFO-like vehicle for protection on the battlefield.  While not as potent as an adult Cerebreal, it's still a formidable monster, with high intelligence and notable psionic resilience.  Its vessel is equipped with a deadly plasma weapon."
+      STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA: "This creature is almost entirely composed of brain tissue, encased in a hovering capsule.  This capsule is quite resilient to damage, especially bullets and laser beams.  It also features a plasma weapon, which is similar in profile to the Plasma Rifle."
+      STR_CHTONITE: Chtonite
+      STR_TUNLUN: Tunlun
+      STR_TUNLUN_TERRORIST: Tunlun Terrorist
+      STR_CHTONITE_SOLDIER: Chtonite Soldier
+      STR_CHTONITE_MEDIC: Chtonite Medic
+      STR_CHTONITE_ENGINEER: Chtonite Engineer
+      STR_CHTONITE_NAVIGATOR: Chtonite Navigator
+      STR_CHTONITE_LEADER: Chtonite Leader
+      STR_CHTONITE_COMMANDER: Chtonite Commander
+      STR_CHTONITE_CORPSE: Chtonite Corpse
+      STR_TUNLUN_CORPSE: Tunlun Corpse
+      STR_CHTONITE_AUTOPSY: Chtonite autopsy
+      STR_TUNLUN_AUTOPSY: Tunlun autopsy
+      STR_CHTONITE_UFOPAEDIA: "Chtonites are a sturdy alien race, very well suited for menial work and harsh environmental conditions.  They prefer to live in underground compounds and would be harmed by sunlight, if not for their ocular implants.  Their intelligence is average, but they are more than capable of waging a war against mankind."
+      STR_CHTONITE_AUTOPSY_UFOPAEDIA: "This alien has a strong and resilient body, but is otherwise quite similar to us.  Its thick skin gives it a good protection against bullets and blades alike.  Its eyes are protected by a pair of cybernetic 'goggles', which seem to enhance its vision as well as protect the eyes."
+      STR_TUNLUN_UFOPAEDIA: "Tunluns burrow through the earth by spitting acid to corrode rocks for digestion, then shovel it aside with their flipper-like limbs. They are used by the Chtonites as living burrowing machines to build outposts and bases on Earth.  However, their acidic spit makes them perfect terror weapons as well.  Luckily, their overall intelligence is well below human."
+      STR_TUNLUN_AUTOPSY_UFOPAEDIA: "This peculiar alien has a very small brain for a sentient creature, which suggests low intelligence.  It is equipped with a large tube for a mouth, which produces large amounts of highly corrosive substance that can be propelled and therefore used as a weapon.  Its skin is very tough and extremely difficult to puncture, as well as virtually immune to the creature's own acid."
+      STR_REPTOID: Reptoid
+      STR_SALAMANDRON: Salamandron
+      STR_SALAMANDRON_TERRORIST: Salamandron Terrorist
+      STR_REPTOID_SOLDIER: Reptoid Soldier
+      STR_REPTOID_MEDIC: Reptoid Medic
+      STR_REPTOID_ENGINEER: Reptoid Engineer
+      STR_REPTOID_NAVIGATOR: Reptoid Navigator
+      STR_REPTOID_LEADER: Reptoid Leader
+      STR_REPTOID_COMMANDER: Reptoid Commander
+      STR_REPTOID_CORPSE: Reptoid Corpse
+      STR_SALAMANDRON_CORPSE: Salamandron Corpse
+      STR_REPTOID_AUTOPSY: Reptoid autopsy
+      STR_SALAMANDRON_AUTOPSY: Salamandron autopsy
+      STR_REPTOID_UFOPAEDIA: Reptoids have been on Earth for quite a while, long before the invasion began.  Despite their bestial appearance, they possess extraordinary intelligence, which makes them excellent spies and field agents.  There is not much we can say about their origins, but their long history on Earth and their genetic closeness to ourselves point to a terrestrial genesis.  Nonetheless, their loyalty to aliens is absolute.
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: This creature is covered with tough scales, able to withstand small caliber bullets with ease.  Curiously, despite its reptillian appearance, it seems to be quite resistant to heat.  Its brain is highly developed, suggesting a possibly superhuman intelligence.  Its most interesting feature however is their DNA, which is either terrestrial in origin or modelled after Earth creatures.
+      STR_SALAMANDRON_UFOPAEDIA: The Salamandron is a frightening beast, vaguely resembling ancient predators but also quite different.  Designed solely for terror, it is equipped with incendiary rockets, able to lay waste to a small town within minutes.  Its behaviour can regulated by a set of small receivers implanted into its brain, but it largely operates on its own, making it difficult to control but also virtually invulnerable to jamming.
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: This creature is very sturdy, covered with thick scales and extremely resistant to heat, but not so much to laser cutters.  Its tiny brain features a number of small implants whose purpose seems to be provoking basic 'fight or flight' reactions within its system.
+  - type: en-US
+    strings:
+      STR_CEREBREAL: Cerebreal
+      STR_CEREBREAL_LARVA: Cerebreal Larva
+      STR_CEREBREAL_LARVA_TERRORIST: Cerebreal Larva Terrorist
+      STR_CEREBREAL_SOLDIER: Cerebreal Soldier
+      STR_CEREBREAL_MEDIC: Cerebreal Medic
+      STR_CEREBREAL_ENGINEER: Cerebreal Engineer
+      STR_CEREBREAL_NAVIGATOR: Cerebreal Navigator
+      STR_CEREBREAL_LEADER: Cerebreal Leader
+      STR_CEREBREAL_COMMANDER: Cerebreal Commander
+      STR_CEREBREAL_CORPSE: Cerebreal Corpse
+      STR_CEREBREAL_LARVA_CORPSE: Cerebreal Larva Corpse
+      STR_CEREBREAL_AUTOPSY: Cerebreal autopsy
+      STR_CEREBREAL_LARVA_AUTOPSY: Cerebreal Larva autopsy
+      STR_CEREBREAL_UFOPAEDIA: "Cerebreals are a race that is not fully integrated into the alien hive-like society; they are more like allies, who agreed to serve the invaders for some unfathomable reasons.  They bear incredibly strong psionic powers, which can be focused as a weapon:  a violent discharge of plasma, fuelled by will alone.  Their independent and completely alien pattern of thinking make them unpredictable, but also more prone to panic than other alien races."
+      STR_CEREBREAL_AUTOPSY_UFOPAEDIA: "This specimen are not your typical alien race: its genetics are completely different to both Earth and most alien species, and it seems even stranger than most other types of alien life.  Most of its body mass is neural matter, and the rest is almost exclusively advanced cybernetics to keep this enormous 'brain' running.  It seems unable to use hand weapons, and it has no significant natural means of defense.  There is little else we can say about this terrifying creature."
+      STR_CEREBREAL_LARVA_UFOPAEDIA: "This creature is a young form of a Cerebreal, encased in a tiny UFO-like vehicle for protection on the battlefield.  While not as potent as an adult Cerebreal, it's still a formidable monster, with high intelligence and notable psionic resilience.  Its vessel is equipped with a deadly plasma weapon."
+      STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA: "This creature is almost entirely composed of brain tissue, encased in a hovering capsule.  This capsule is quite resilient to damage, especially bullets and laser beams.  It also features a plasma weapon, which is similar in profile to the Plasma Rifle."
+      STR_CHTONITE: Chtonite
+      STR_TUNLUN: Tunlun
+      STR_TUNLUN_TERRORIST: Tunlun Terrorist
+      STR_CHTONITE_SOLDIER: Chtonite Soldier
+      STR_CHTONITE_MEDIC: Chtonite Medic
+      STR_CHTONITE_ENGINEER: Chtonite Engineer
+      STR_CHTONITE_NAVIGATOR: Chtonite Navigator
+      STR_CHTONITE_LEADER: Chtonite Leader
+      STR_CHTONITE_COMMANDER: Chtonite Commander
+      STR_CHTONITE_CORPSE: Chtonite Corpse
+      STR_TUNLUN_CORPSE: Tunlun Corpse
+      STR_CHTONITE_AUTOPSY: Chtonite autopsy
+      STR_TUNLUN_AUTOPSY: Tunlun autopsy
+      STR_CHTONITE_UFOPAEDIA: "Chtonites are a sturdy alien race, very well suited for menial work and harsh environmental conditions.  They prefer to live in underground compounds and would be harmed by sunlight, if not for their ocular implants.  Their intelligence is average, but they are more than capable of waging a war against mankind."
+      STR_CHTONITE_AUTOPSY_UFOPAEDIA: "This alien has a strong and resilient body, but is otherwise quite similar to us.  Its thick skin gives it a good protection against bullets and blades alike.  Its eyes are protected by a pair of cybernetic 'goggles', which seem to enhance its vision as well as protect the eyes."
+      STR_TUNLUN_UFOPAEDIA: "Tunluns burrow through the earth by spitting acid to corrode rocks for digestion, then shovel it aside with their flipper-like limbs. They are used by the Chtonites as living burrowing machines to build outposts and bases on Earth.  However, their acidic spit makes them perfect terror weapons as well.  Luckily, their overall intelligence is well below human."
+      STR_TUNLUN_AUTOPSY_UFOPAEDIA: "This peculiar alien has a very small brain for a sentient creature, which suggests low intelligence.  It is equipped with a large tube for a mouth, which produces large amounts of highly corrosive substance that can be propelled and therefore used as a weapon.  Its skin is very tough and extremely difficult to puncture, as well as virtually immune to the creature's own acid."
+      STR_REPTOID: Reptoid
+      STR_SALAMANDRON: Salamandron
+      STR_SALAMANDRON_TERRORIST: Salamandron Terrorist
+      STR_REPTOID_SOLDIER: Reptoid Soldier
+      STR_REPTOID_MEDIC: Reptoid Medic
+      STR_REPTOID_ENGINEER: Reptoid Engineer
+      STR_REPTOID_NAVIGATOR: Reptoid Navigator
+      STR_REPTOID_LEADER: Reptoid Leader
+      STR_REPTOID_COMMANDER: Reptoid Commander
+      STR_REPTOID_CORPSE: Reptoid Corpse
+      STR_SALAMANDRON_CORPSE: SALAMANDRON Corpse
+      STR_REPTOID_AUTOPSY: Reptoid autopsy
+      STR_SALAMANDRON_AUTOPSY: Salamandron autopsy
+      STR_REPTOID_UFOPAEDIA: Reptoids have been on Earth for quite a while, long before the invasion began.  Despite their bestial appearance, they possess extraordinary intelligence, which makes them excellent spies and field agents.  There is not much we can say about their origins, but their long history on Earth and their genetic closeness to ourselves point to a terrestrial genesis.  Nonetheless, their loyalty to aliens is absolute.
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: This creature is covered with tough scales, able to withstand small caliber bullets with ease.  Curiously, despite its reptillian appearance, it seems to be quite resistant to heat.  Its brain is highly developed, suggesting a possibly superhuman intelligence.  Its most interesting feature however is their DNA, which is either terrestrial in origin or modelled after Earth creatures.
+      STR_SALAMANDRON_UFOPAEDIA: The Salamandron is a frightening beast, vaguely resembling ancient predators but also quite different.  Designed solely for terror, it is equipped with incendiary rockets, able to lay waste to a small town within minutes.  Its behavior can regulated by a set of small receivers implanted into its brain, but it largely operates on its own, making it difficult to control but also virtually invulnerable to jamming.
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: This creature is very sturdy, covered with thick scales and extremely resistant to heat, but not so much to laser cutters.  Its tiny brain features a number of small implants whose purpose seems to be provoking basic 'fight or flight' reactions within its system.
+  - type: pl-PL
+    strings:
+      STR_CEREBREAL: Cerebrianin
+      STR_CEREBREAL_LARVA: Larwa cerebriańska
+      STR_CEREBREAL_LARVA_TERRORIST: Larwa cerebriańska Terrorysta
+      STR_CEREBREAL_SOLDIER: Cerebrianin Żołnierz
+      STR_CEREBREAL_MEDIC: Cerebrianin Medyk
+      STR_CEREBREAL_ENGINEER: Cerebrianin Inżynier
+      STR_CEREBREAL_NAVIGATOR: Cerebrianin Nawigator
+      STR_CEREBREAL_LEADER: Cerebrianin Lider
+      STR_CEREBREAL_COMMANDER: Cerebrianin Przywódca
+      STR_CEREBREAL_CORPSE: Zwłoki cerebrianina
+      STR_CEREBREAL_LARVA_CORPSE: Zwłoki larwy cerebriańskiej
+      STR_CEREBREAL_AUTOPSY: Sekcja zwłok cerebrianina
+      STR_CEREBREAL_LARVA_AUTOPSY: Sekcja zwłok larwy cerebriańskiej
+      STR_CEREBREAL_UFOPAEDIA: "Cerebrianie to rasa nie w pełni przynależąca do podobnego do roju społeczeństwa obcych; są to raczej jego sprzymierzeńcy, którzy z niepojętych powodów zgodzili się współpracować z armią najeźdźców. Władają oni niezwykle potężnymi mocami psionicznymi, których mogą użyć też jako broni: skupiając myśli, potrafią wytworzyć wiązkę plazmy, zasilaną wyłącznie ich wolą. Ich niezależność oraz kompletnie obcy sposób myślenia czyni ich nieprzewidywalnymi, ale są też bardziej skłonni do paniki niż inne obce rasy."
+      STR_CEREBREAL_AUTOPSY_UFOPAEDIA: "Ten osobnik nie reprezentuje typowej obcej rasy: jego genom jest zupełnie inny niż u gatunków ziemskich czy większości obcych gatunków, a przy tym wydaje sie jeszcze dziwniejszy niż u innych obcych. Większość masy ciała stanowi tkanka nerwowa, a reszta to niemal wyłącznie zaawansowana cybernetyka, która utrzymuje ten 'mózg' przy życiu. Istota wydaje się niezdolna do posługiwania się bronią ręczną, nie ma też żadnych naturalnych środków obrony. Niewiele więcej możemy powiedzieć o tym przerażającym stworze."
+      STR_CEREBREAL_LARVA_UFOPAEDIA: "To stworzenie to młody cerebrianin, zamknięty w maleńkim, podobnym do UFO pojeździe, który służy mu za ochronę na polu walki.  Choć nie tak potężny jak dorosły cerebrianin, ciągle jest to przerażające monstrum o wysokiej inteligencji i znaczącej odporności psionicznej.  Jego pojazd wyposażony jest w zabójczą broń plazmową."
+      STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA: "Stwór ten składa sie niemal w całości z materii mózgowej, zamkniętej w latającej kapsule.  Kapsuła jest w dużym stopniu odporna na uszkodzenia, a zwłaszcza na pociski i promień lasera.  Wyposażona jest też w broń energetyczną, przypominającą profilem karabin plazmowy."
+      STR_CHTONITE: Chtonita
+      STR_TUNLUN: Tunlun
+      STR_TUNLUN_TERRORIST: Tunlun Terrorysta
+      STR_CHTONITE_SOLDIER: Chtonita Żołnierz
+      STR_CHTONITE_MEDIC: Chtonita Medyk
+      STR_CHTONITE_ENGINEER: Chtonita Inżynier
+      STR_CHTONITE_NAVIGATOR: Chtonita Nawigator
+      STR_CHTONITE_LEADER: Chtonita Lider
+      STR_CHTONITE_COMMANDER: Chtonita Przywódca
+      STR_CHTONITE_CORPSE: Zwłoki chtonity
+      STR_TUNLUN_CORPSE: Zwłoki tunluna
+      STR_CHTONITE_AUTOPSY: Sekcja zwłok chtonity
+      STR_TUNLUN_AUTOPSY: Sekcja zwłok tunluna
+      STR_CHTONITE_UFOPAEDIA: "Chtonici to krzepka rasa obcych, dobrze przystosowana do pracy fizycznej i trudnych warunków środowiskowych.  Najchętniej żyją w podziemnych kompleksach i słabo widzieliby w dzień, gdyby nie ich implanty oczne.  Ich inteligencja jest przeciętna, ale więcej niż wystarcza do prowadzenia wojny przeciw ludzkości."
+      STR_CHTONITE_AUTOPSY_UFOPAEDIA: "Ciało tego obcego jest silne i wytrzymałe, ale poza tym zbliżone do naszego.  Gruba skóra daje mu dobrą ochronę tak przed kulami, jak również ostrzami.  Oczy osłonięte są parą cybernetycznych 'gogli', których funkcją wydaje się być poprawianie widzenia oraz ochrona."
+      STR_TUNLUN_UFOPAEDIA: "Tunluni ryją w ziemi tunele poprzez produkcję i wypluwanie kwasu, który rozpuszcza skały, a następnie ich odsuwanie za pomocą kończyn przypominających płetwy.  Są oni używani przez chtonitów jako żywe maszyny górnicze przy budowie placówek i baz na Ziemi.  Ich zdolność plucia kwasem czyni z nich jednak także świetną broń terrorystyczną.  Na szczęście ich ogólna inteligencja jest znacznie niższa, niż u ludzi."
+      STR_TUNLUN_AUTOPSY_UFOPAEDIA: "Ten dziwaczny obcy ma bardzo mały mózg jak na istotę rozumną, co sugeruje niską inteligencję.  Zaopatrzony jest on w tubę zastępującą mu usta, która produkuje duże ilości żrącej substancji oraz strzyka nią jako bronią.  Skóra tej istoty jest bardzo twarda i skrajnie trudna do przebicia, jak również praktycznie niewrażliwa na kwas produkowany przez tunlunów."
+      STR_REPTOID: Reptoid
+      STR_SALAMANDRON: Salamandron
+      STR_SALAMANDRON_TERRORIST: Salamandron Terrorysta
+      STR_REPTOID_SOLDIER: Reptoid Żołnierz
+      STR_REPTOID_MEDIC: Reptoid Medyk
+      STR_REPTOID_ENGINEER: Reptoid Inżynier
+      STR_REPTOID_NAVIGATOR: Reptoid Nawigator
+      STR_REPTOID_LEADER: Reptoid Lider
+      STR_REPTOID_COMMANDER: Reptoid Przywódca
+      STR_REPTOID_CORPSE: Zwłoki reptoida
+      STR_SALAMANDRON_CORPSE: Zwłoki salamandrona
+      STR_REPTOID_AUTOPSY: Sekcja zwłok reptoida
+      STR_SALAMANDRON_AUTOPSY: Sekcja zwłok salamandrona
+      STR_REPTOID_UFOPAEDIA: Reptoidzi przebywają na Ziemi od dawna, na długo przed pierwszymi znakami inwazji.  Pomimo zwierzęcego wyglądu, posiadają oni znaczną inteligencję, która czyni z nich doskonałych szpiegów i agentów polowych.  Niewiele możemy powiedzieć o ich pochodzeniu, lecz ich długa historia na naszej planecie oraz gentyczne pokrewieństwo z nami wydaje się wskazywać na ziemski rodowód.  Ich lojalność wobec obcych jest jednak absolutna.
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: Ta istota okryta jest twardymi łuskami, które łatwo odbijają pociski małego kalibru.  Co ciekawe, pomimo gadziego wyglądu, wydaje się być bardzo odporna na ciepło.  Mózg jest bardzo rozwinięty, so może wskazywać na nadludzką inteligencję.  Najciekawszy jednak odkryciem jest jej DNA, które wydaje się być pochodzenia ziemskiego lub ściśle wymodelowanym na wzór ziemskich gatunków.
+      STR_SALAMANDRON_UFOPAEDIA: Salamandron to przerażająca bestia, przypominająca nieco dawne ziemskie drapieżniki, ale też bardzo się od nich różniąca.  Zaprojektowana wyłącznie do siania grozy, jest ona wyposażona w pociski zapalające, które potrafią w kilka minut zrównać z ziemią mała miejscowość.  Zachowanie tej istoty może być zdalnie regulowane przez zestaw małych odbiorników psi, zamontowanych w jej mózgu, jednak zazwyczaj działa ona autonomicznie, przez co trudno ją kontrolować, ale dotyczy to obu stron konfliktu.
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: To stworzenie jest bardzo wytrzymałe dzięki twardym łuskom i niezwykłej odporności na ciepło, ale nie na laserowe piły.  Jego niewielki mózg kryje zestaw mikroimplantów, których zadaniem wydaje sie być wzbudzanie podstawowych reakcji walka-ucieczka w układzie nerwowym stwora.
+  - type: fr
+    strings:
+      STR_REPTOID: Reptoid
+      STR_SALAMANDRON: Salamandron
+      STR_SALAMANDRON_TERRORIST: Terroriste Salamandron
+      STR_REPTOID_SOLDIER: Soldat Reptoid
+      STR_REPTOID_MEDIC: Docteur Reptoid
+      STR_REPTOID_ENGINEER: Ingénieur Reptoid
+      STR_REPTOID_NAVIGATOR: Navigateur Reptoid
+      STR_REPTOID_LEADER: Leader Reptoid
+      STR_REPTOID_COMMANDER: Commandant Reptoid
+      STR_REPTOID_CORPSE: Corps Reptoid
+      STR_SALAMANDRON_CORPSE: Corps Salamandron
+      STR_REPTOID_AUTOPSY: Autopsie Reptoid
+      STR_SALAMANDRON_AUTOPSY: Autopsie Salamandron
+      STR_REPTOID_UFOPAEDIA: En réalité, les Reptoids semblent être présents sur terre depuis quelques temps déjà, en tout état de cause bien avant le début de l'invasion.  En dépit de leur apparence bestiale, ils possèdent une intelligence extraordinaire, qui fait d'eux d'excellents espions.  On ne sait que peu de choses sur leur origine, mais leur longue présence sur terre et leur proximité sur le plan génétique indiquent indiscutablement une évolution terrestre.  Toutefois, nous n'avons aucun doute sur leur loyauté aux extraterrestres.
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: Cette créature est recouverte d'écailles, capables de résister aisément aux balles de petit calibre.  Curieusement, en dépit de son apparence reptilienne, elle semble particulièrement résistante à la chaleur.  Son cerveau est très développé, suggérant une intelligence sensiblement supérieure à l'homme.  L'information la plus frappante concerne son ADN, qui semble être d'origine terrestre, à moins qu'il ne provienne d'une reproduction génétique réalisée à partir de créatures terrestres.
+      STR_SALAMANDRON_UFOPAEDIA: Le Salamandron est une bête monstrueuse, rappelant les prédateurs préhistoriques, bien que relativement différent.  Destiné à tuer, il est équipé de roquettes incendiaires, capable de semer la désolation dans une ville en quelques minutes.  De petits implants présents dans son cerveau semblent réguler son comportement, mais il conserve une véritable autonomie qui le rend très difficile à contrôler et virtuellement invulnérable au brouillage.
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: Couverte d'épaisses écailles et extrêmement résistante à la chaleur, cette créature est particulièrement robuste.  Elle semble néanmoins vulnérable aux attaques lasers.  Son comportement binaire - lutter ou fuir - lui serait imposé par de petits implants au niveau du cerveau.
+  - type: cs-CZ
+    strings:
+      STR_REPTOID: Plazoid
+      STR_SALAMANDRON: Salamandron
+      STR_SALAMANDRON_TERRORIST: Salamandron Terorista
+      STR_REPTOID_SOLDIER: Plazoid Voják
+      STR_REPTOID_MEDIC: Plazoid Medik
+      STR_REPTOID_ENGINEER: Plazoid Inženýr
+      STR_REPTOID_NAVIGATOR: Plazoid Navigátor
+      STR_REPTOID_LEADER: Plazoid Velitel
+      STR_REPTOID_COMMANDER: Plazoid Vůdce
+      STR_REPTOID_CORPSE: Mrtvola Plazoida
+      STR_SALAMANDRON_CORPSE: Mrtvola Salamandrona
+      STR_REPTOID_AUTOPSY: Plazoid pitva
+      STR_SALAMANDRON_AUTOPSY: Salamandron pitva
+      STR_REPTOID_UFOPAEDIA: Plazoidé už na Zemi nějakou dobu žili, dlouho před začátkem.  Navzdory zvířecímu vzhledu oplývají vyjímečnou inteligencí, což z nich dělá výtečné špióny a polní agenty. Nedá se toho moc říct o jejich původu, ale jejich dlouhá historie žití na Zemi a genetická podobnost s námi ukazuje na vývoj na naší planetě.  Nicméně, jejich loajalita k Cizákům je neochvějná.
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: Toto stvoření je pokryto tuhými šupinami, schopnými snadno odolat kulkám nízkých ráží.  Překvapivě jsou navzdory svému plazímu vzhledu docela odolní proti vysokým teplotám.  Mozek je velmi vyvinutý, nabízí se možnost nadlidské inteligence.  Jejich nejzajímavější vlastností je však jejich DNA, která je buďto pozemská, nebo upravená podle vzoru pozemských živočichů.
+      STR_SALAMANDRON_UFOPAEDIA: Salamandron je děsivá šelma, vzdáleně připomínající dávné predátory, ale s malými odlišnostmi.  Vyvinut čistě pro teror, je vybaven zápalnými raketami, a schopen zničit menší město během minut.  Jeho chování může být regulováno pomocí soustavy přijímačů implantovaných do jeho mozku, ale z většiny operuje podle svého, což ztěžuje jeho kontrolu, ale zároveň jej dělá prakticky immuním proti jakémukoli rušení.
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: Toto stvoření je velice odolné, pokryté tvrdými šupinami a extrémně odolné proti žáru, ale už ne tolik proti laseru.  Jeho malý mozek obsahuje několik malých implantátů, jejichž smyslem se zdá být provokování základních 'bojuj nebo uteč' reakcí v jeho nervovém systému.
+  - type: ru
+    strings:
+      STR_CEREBREAL: Мозгоид
+      STR_CEREBREAL_LARVA: Личинка мозгоида
+      STR_CEREBREAL_LARVA_TERRORIST: Личинка мозгоида-террорист
+      STR_CEREBREAL_SOLDIER: Мозгоид-солдат
+      STR_CEREBREAL_MEDIC: Мозгоид-медик
+      STR_CEREBREAL_ENGINEER: Мозгоид-инженер
+      STR_CEREBREAL_NAVIGATOR: Мозгоид-навигатор
+      STR_CEREBREAL_LEADER: Мозгоид-лидер
+      STR_CEREBREAL_COMMANDER: Мозгоид-командующий
+      STR_CEREBREAL_CORPSE: Труп мозгоида
+      STR_CEREBREAL_LARVA_CORPSE: Труп личинки мозгоида
+      STR_CEREBREAL_AUTOPSY: Вскрытие мозгоида
+      STR_CEREBREAL_LARVA_AUTOPSY: Вскрытие личинки мозгоида
+      STR_CEREBREAL_UFOPAEDIA: "Раса мозгоидов не полностью интегрирована в подобное улью общество пришельцев; они больше союзники, согласившись служить захватчикам по неким непостижимым причинам. Они обладают невероятно сильными псионическими силами, которые могут быть сфокусированы как оружие: неистовый разряд плазмы, разожженный одной лишь силой воли. Благодаря своему независимому и совершенно чужому мышлению, они непредсказуемы, но также и более подвержены панике, в отличии от прочих рас пришельцев."
+      STR_CEREBREAL_AUTOPSY_UFOPAEDIA: "Этот экземпляр не является типичной расой чужих: их генетический код совершенно отличен как от земных видов так и от большинства рас пришельцев, и он более странный чем другие виды внеземной жизни. Большая часть тела состоит из нервных клеток, а все остальное почти полностью продвинутая кибернетика, поддерживающая этот 'мозг'. Оно, похоже, неспособно использовать ручное оружие и не имеет естественных способов защиты. Мало что еще можно сказать про этих ужасающих существ."
+      STR_CEREBREAL_LARVA_UFOPAEDIA: "Это существо - молодая форма мозгоида, помещенная в крошечное НЛО для защиты на поле боя. Хотя слабее взрослого мозгоида, оно является грозным монстром с высоким интеллектом и заметными пси-способностями. Судно существа оборудовано смертоносной плазменной пушкой."
+      STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA: "Это существо почти полностью состоит из мозговых тканей, заключенных в летающую капсулу. Эта капсула защищена от повреждений, особенно от пуль и лазерных лучей. Она также оснащена плазменной пушкой, схожей по свойствам с пехотной плазменной винтовкой."
+      STR_CHTONITE: Хтонит
+      STR_TUNLUN: Тунлун
+      STR_TUNLUN_TERRORIST: Тунлун-террорист
+      STR_CHTONITE_SOLDIER: Хтонит-солдат
+      STR_CHTONITE_MEDIC: Хтонит-медик
+      STR_CHTONITE_ENGINEER: Хтонит-инженер
+      STR_CHTONITE_NAVIGATOR: Хтонит-навигатор
+      STR_CHTONITE_LEADER: Хтонит-лидер
+      STR_CHTONITE_COMMANDER: Хтонит-командующий
+      STR_CHTONITE_CORPSE: Труп хтонита
+      STR_TUNLUN_CORPSE: Труп тунлуна
+      STR_CHTONITE_AUTOPSY: Вскрытие хтонита
+      STR_TUNLUN_AUTOPSY: Вскрытие тунлуна
+      STR_CHTONITE_UFOPAEDIA: "Хтониты - крепкая раса пришельцев, которая хорошо подходит для тяжелой работы и суровых условий окружающей среды. Они предпочитают жить в подземных сооружениях, а солнечный свет наносил бы им вред, если бы не их глазные имплантанты. У этих существ средний интеллект, но они более чем способны вести войну против человечества."
+      STR_CHTONITE_AUTOPSY_UFOPAEDIA: "Этот пришелец имеет сильное и крепкое тело, но в целом довольно похож на людей. Толстая кожа дает ему хорошую защиту как от пуль так и от лезвий. Глаза защищены парой кибернетических 'очков', которые похоже еще и улучшают зрение."
+      STR_TUNLUN_UFOPAEDIA: "Эти существа роют норы в земле выплевывая кислоту, которая разъедает даже камень, а затем выгребают почву своими ластообразными конечностями. Они используются хтонитами как живые роющие машины для строительства аванпостов и баз на Земле. Однако, кислотный плевок делает их также отличным оружие террора. К счастью, их общий интеллект намного ниже человеческого."
+      STR_TUNLUN_AUTOPSY_UFOPAEDIA: "Этот любопытный пришелец имеет очень маленький мозг для разумного существа, что говорит о низком интеллекте. Он оснащен большой трубкой во рту, которая выделяет достаточное количество очень едкого вещества, которое, в свою очередь, может выплевываться как снаряд. Кожа очень крепкая, а также невосприимчива к собственной кислоте существа."
+      STR_REPTOID: Рептоид
+      STR_SALAMANDRON: Саламандрон
+      STR_SALAMANDRON_TERRORIST: Саламандрон-террорист
+      STR_REPTOID_SOLDIER: Рептоид-солдат
+      STR_REPTOID_MEDIC: Рептоид-медик
+      STR_REPTOID_ENGINEER: Рептоид-инженер
+      STR_REPTOID_NAVIGATOR: Рептоид-навигатор
+      STR_REPTOID_LEADER: Рептоид-лидер
+      STR_REPTOID_COMMANDER: Рептоид-командир
+      STR_REPTOID_CORPSE: Труп рептоида
+      STR_SALAMANDRON_CORPSE: Труп саламандрона
+      STR_REPTOID_AUTOPSY: Вскрытие рептоида
+      STR_SALAMANDRON_AUTOPSY: Вскрытие саламандрона
+      STR_REPTOID_UFOPAEDIA: Рептоиды были на земле довольно давно, задолго до начала вторжения. Несмотря на их животный вид, они обладают невероятным интеллектом, который делает их отличными шпионами и полевыми агентами. Трудно сказать как они появились, но их существование на Земле и генетическая близость к людям указывает на земное происхождение. Тем не менее, они абсолютно преданны пришельцам.
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: Это существо покрыто прочной чешуей, способной с легкостью выдержать пули небольшого калибра. Любопытно, что несмотря на внешнюю схожесть с рептилиями, оно довольно устойчивы к теплу. Мозг сильно развит, что указывает на сверхчеловеческий интеллект. Однако, наиболее интересно ДНК существа, которое либо родом с Земли, либо было синтезировано на основе земных существ.
+      STR_SALAMANDRON_UFOPAEDIA: "Саламандрон - ужасающий зверь, смутно напоминающий древних земных хищников. Созданный исключительно для террора, он оснащен зажигательными ракетами, способными разрушить небольшой город за считанные минуты. Его поведение регулируется набором небольших приемников, имплантированных в мозг. Однако, этот зверь в основном действует самостоятельно, что делает его сложно контролируемым, но также более живучим в бою."
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: "Это очень крепкое существо покрыто толстой чешуей и чрезвычайно устойчиво к теплу (но не к лазерными резакам). Крошечный мозг содержит несколько маленьких имплантантов, которые, по всей видимости, способны провоцировать базовые реакции: 'атакуй' или 'отступай'."

@@ -1,0 +1,234 @@
+# X-COM 1 (UFO: Enemy Unknown) ruleset
+# For documentation on these values, see http://ufopaedia.org/index.php?title=Rulesets_(OpenXcom)
+startingTime:
+  second: 0
+  minute: 0
+  hour: 12
+  weekday: 4
+  day: 19
+  month: 10
+  year: 1972
+costEngineer: 25000
+costScientist: 30000
+timePersonnel: 72
+initialFunding: 9000
+alienFuel: [STR_ELERIUM_115, 50]
+crewEmergencyEvacuationSurvivalChance: 65
+pilotsEmergencyEvacuationSurvivalChance: 75
+statisticalBulletConservation: true
+surrenderMode: 2
+chanceToStopRetaliation: 50
+useCustomCategories: true
+buildInfiltrationBaseCloseToTheCountry: true
+lessAliensDuringBaseDefense: true
+fixedUserOptions:
+  friendlyCraftEscort: true
+allowCountriesToCancelAlienPact: true
+buildInfiltrationBaseCloseToTheCountry: true
+showDogfightDistanceInKm: true
+pediaReplaceCraftFuelWithRangeType: 1
+enableCloseQuartersCombat: 1
+closeQuartersAccuracyGlobal: 100
+closeQuartersTuCostGlobal: 0
+closeQuartersEnergyCostGlobal: 8
+pilotAccuracyZeroPoint: 40
+pilotBraveryThresholds: [90, 80, 40] #Very bold, Bold, Normal
+ufoBeamWidthParameter: 1000
+extraNerdyPediaInfo: true
+hunterKillerFastRetarget: true
+operationNamesFirst:
+  - ""
+  - Allied
+  - Banished
+  - Black
+  - Bleeding
+  - Blind
+  - Blinding
+  - Bloody
+  - Blue
+  - Broken
+  - Bronze
+  - Brutal
+  - Burning
+  - Cold
+  - Cobalt
+  - Crimson
+  - Cryptic
+  - Crystal
+  - Dark
+  - Defiant
+  - Demon
+  - Devil's
+  - Driving
+  - Dying
+  - Empty
+  - Enduring
+  - Fading
+  - Fallen
+  - Final
+  - First
+  - Flying
+  - Forgotten
+  - Frozen
+  - Glass
+  - God's
+  - Golden
+  - Gothic
+  - Glorious
+  - Green
+  - Hidden
+  - Hot
+  - Joint
+  - Lazy
+  - Lone
+  - Lost
+  - Morbid
+  - Orange
+  - Patient
+  - Purple
+  - Red
+  - Rainbow
+  - Rotting
+  - Sacred
+  - Scarlet
+  - Secret
+  - Severed
+  - Shattered
+  - Silent
+  - Silver
+  - Soaring
+  - Spectral
+  - Stone
+  - Swift
+  - Twisted
+  - Unceasing
+  - Unholy
+  - Vengeful
+  - Yellow
+operationNamesLast:
+  - Apollo
+  - Assault
+  - Attack
+  - Bell
+  - Blade
+  - Breath
+  - Calm
+  - Crone
+  - Crown
+  - Cyclone
+  - Daze
+  - Dream
+  - Dust
+  - Devil
+  - Doom
+  - Empire
+  - Engine
+  - Fall
+  - Father
+  - Fear
+  - Fog
+  - Future
+  - Grave
+  - God
+  - Hammer
+  - Hawk
+  - Hail
+  - Hailstorm
+  - Hurricane
+  - Hydra
+  - Hymn
+  - Jester
+  - Justice
+  - King
+  - Line
+  - Lightning
+  - Law
+  - Moon
+  - Mother
+  - Mountain
+  - Night
+  - Napalm
+  - Neptune
+  - Palace
+  - Paramour
+  - Pipe
+  - Priest
+  - Prophet
+  - Plan
+  - Pyre
+  - Rain
+  - Raid
+  - Ring
+  - Saber
+  - Savior
+  - Scepter
+  - Serpent
+  - Shield
+  - Shroud
+  - Skull
+  - Smoke
+  - Stallion
+  - Star
+  - Strike
+  - Stroke
+  - Storm
+  - Snow
+  - Summer
+  - Sword
+  - Tears
+  - Thorn
+  - Throne
+  - Tornado
+  - Typhoon
+  - Thunderbolt
+  - Thunder
+  - Tsunami
+  - Vanguard
+  - Vengeance
+  - Whisper
+  - Wrath
+  - Zeus
+baseNamesFirst:
+  - Alpha
+  - Bravo
+  - Charlie
+  - Delta
+  - Echo
+  - Foxtrot
+  - Golf
+  - Hotel
+  - India
+  - Juliett
+  - Kilo
+  - Lima
+  - Mike
+  - November
+  - Oscar
+  - Papa
+  - Quebec
+  - Romeo
+  - Sierra
+  - Tango
+  - Uniform
+  - Victor
+  - Whiskey
+  - X-ray
+  - Yankee
+  - Zulu
+baseNamesLast:
+  - Stronghold
+  - Camp
+  - Site
+  - Garrison
+  - Station
+  - Keep
+  - Bastion
+  - Citadel
+  - Base
+  - Forward Base
+  - Firebase
+  - Ops Centre
+  - Headquarters
+  - Castle
+  - Outpost
+  - Fortress

@@ -1,0 +1,2332 @@
+alienItemLevels:
+  - [0, 0, 0, 0, 0, 0, 0, 1, 2, 3]
+  - [0, 0, 0, 0, 0, 1, 1, 2, 2, 3]
+  - [0, 0, 0, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 0, 0, 1, 1, 2, 2, 3, 3, 3]
+  - [0, 0, 1, 1, 1, 2, 2, 2, 3, 3]
+  - [0, 0, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 0, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 2, 2, 2, 3, 3, 3, 3]
+  - [0, 1, 1, 2, 2, 2, 2, 3, 3, 3]
+  - [0, 0, 1, 1, 2, 2, 3, 3, 3, 3]
+  - [0, 1, 1, 2, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 3, 3, 3, 3]
+  - [0, 0, 1, 1, 1, 2, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 0, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 0, 1, 1, 2, 2, 3, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 1, 2, 2, 2, 3, 3]
+  - [0, 1, 1, 2, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+alienDeployments:
+  - type: STR_SMALL_SCOUT
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_MIND_PROBE
+  - type: STR_MEDIUM_SCOUT
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+  - type: STR_LARGE_SCOUT
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 3
+        dQty: 5
+        percentageOutsideUfo: 65
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 35
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+  - type: STR_HARVESTER
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 9
+        dQty: 4
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+  - type: STR_ABDUCTOR
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 5
+        dQty: 4
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+  - type: STR_TERROR_SHIP
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_BATTLESHIP
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 1
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 6
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []            
+          -
+            []            
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []            
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_SUPPLY_SHIP
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 7
+        dQty: 6
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+  - type: STR_TERROR_MISSION
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_ALIEN_BASE_ASSAULT
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 5
+        lowQty: 5
+        highQty: 7
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 1
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+  - type: STR_MARS_CYDONIA_LANDING
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 1
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 0
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 6
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+    nextStage: STR_MARS_THE_FINAL_ASSAULT
+  - type: STR_MARS_THE_FINAL_ASSAULT
+    data:
+      - alienRank: 0
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 1
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 2
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 3
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 5
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 6
+        lowQty: 1
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+items:
+  - type: STR_SMALL_LAUNCHER
+    compatibleAmmo:
+      - STR_STUN_BOMB
+      - STR_ELERIUM_BOMB
+    fireSound: 12
+    aimRange: 12
+    snapRange: 8
+  - type: STR_ELERIUM_BOMB
+    requires:
+      - STR_ELERIUM_BOMB
+    size: 0.1
+    costSell: 13000
+    weight: 3
+    bigSprite: 1008
+    floorSprite: 1008
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    blastRadius: 4
+    listOrder: 5901
+  - type: STR_TOXIGUN
+    requires:
+      - STR_TOXIGUN
+    size: 0.2
+    costSell: 91000
+    weight: 3
+    bigSprite: 1006
+    floorSprite: 1006
+    handSprite: 1024
+    bulletSprite: 11
+    fireSound: 55
+    compatibleAmmo:
+      - STR_TOXIGUN_FLASK
+    accuracySnap: 35
+    tuSnap: 40
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 3
+    armor: 20
+    attraction: 1
+    listOrder: 5950
+  - type: STR_TOXIGUN_FLASK
+    requires:
+      - STR_TOXIGUN_FLASK
+    size: 0.1
+    costSell: 9000
+    weight: 2
+    bigSprite: 1007
+    floorSprite: 1007
+    hitSound: 19
+    hitAnimation: 56
+    power: 45
+    damageType: 8
+    clipSize: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    recoveryPoints: 1
+    attraction: 1
+    shotgunPellets: 5
+    listOrder: 5951
+  - type: STR_PLASMA_CASTER
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 115000
+    weight: 6 # 6
+    bigSprite: 1004
+    floorSprite: 1004
+    handSprite: 1016
+    bulletSprite: 8
+    fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_CASTER_CLIP
+    accuracySnap: 45 # 45
+    accuracyAimed: 65 # 0
+    tuSnap: 22 # 35
+    tuAimed: 46 # 0
+    snapRange: 8 # 0
+    aimRange: 18 # 0
+    dropoff: 2 # 2
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 3
+    armor: 70 # 50
+    attraction: 1
+    twoHanded: false
+    listOrder: 5550
+  - type: STR_PLASMA_CASTER_CLIP
+    requires:
+      - STR_PLASMA_CASTER_CLIP
+    size: 0.1
+    costSell: 2400
+    weight: 2 # 3
+    bigSprite: 1005
+    floorSprite: 1005
+    hitSound: 19
+    hitAnimation: 46
+    power: 30 # 35
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    damageType: 5
+    clipSize: 8 # 8
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 1
+    shotgunPellets: 8 # 5
+    listOrder: 5551
+    armor: 30 # 20
+  - type: STR_PLASMA_SNIPER_RIFLE
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 135000
+    weight: 6 # 6
+    bigSprite: 1000
+    floorSprite: 1000
+    handSprite: 1000
+    bulletSprite: 8
+    bulletSpeed: 2
+    fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+    accuracySnap: 83 # 90
+    accuracyAimed: 140 # 150
+    tuSnap: 46 # 50
+    tuAimed: 75 # 70
+    snapRange: 25 # 0
+    aimRange: 50 # 0
+    minRange: 15
+    dropoff: 1 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 75 # 50
+    attraction: 1
+    listOrder: 5148
+  - type: STR_PLASMA_SNIPER_RIFLE_CLIP
+    requires:
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+    size: 0.1
+    costSell: 5400
+    weight: 3 # 3
+    bigSprite: 1001
+    floorSprite: 1001
+    hitSound: 19
+    hitAnimation: 46
+    power: 95 # 95
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    damageType: 5
+    clipSize: 12 # 8
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 1
+    listOrder: 5149
+    armor: 30 # 20
+  - type: STR_PLASMA_BLASTER
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 241600
+    weight: 14 # 12
+    bigSprite: 1002
+    floorSprite: 1002
+    handSprite: 1008
+    bulletSprite: 8
+    bulletSpeed: 2
+    fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_BLASTER_CLIP
+    accuracySnap: 55 # 55
+    accuracyAimed: 90 # 95
+    tuSnap: 45 # 45
+    tuAimed: 75 # 80
+    snapRange: 20 # 0
+    aimRange: 35 # 0
+    minRange: 11 # 0
+    dropoff: 2 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 80 # 50
+    attraction: 1
+    listOrder: 4980
+  - type: STR_PLASMA_BLASTER_CLIP
+    requires:
+      - STR_PLASMA_BLASTER_CLIP
+    size: 0.4
+    costSell: 12520
+    weight: 4 # 4
+    bigSprite: 1003
+    floorSprite: 1003
+    power: 125 # 100
+    damageType: 3
+    damageAlter:
+      ResistType: 5
+      RandomType: 6
+      IgnoreOverKill: false
+    clipSize: 8
+    battleType: 2
+    recoveryPoints: 1
+    blastRadius: 3
+    attraction: 1
+    listOrder: 4981
+    armor: 35 # 20
+  - type: STR_HUMAN_PLASMA_CASTER
+    requires:
+      - STR_PLASMA_CASTER
+      - STR_REMAN_HUMAN_PLASMA_PISTOL
+    size: 0.2
+    costSell: 115000
+    weight: 6
+    bigSprite: 1009
+    floorSprite: 1009
+    handSprite: 1979
+    bulletSprite: 8
+    fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_CASTER_CLIP
+    accuracySnap: 45 # 45
+    accuracyAimed: 65 # 0
+    tuSnap: 22 # 35
+    tuAimed: 46 # 0
+    snapRange: 8 # 0
+    aimRange: 18 # 0
+    dropoff: 2 # 2
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 3
+    armor: 70 # 50
+    attraction: 1
+    twoHanded: false
+    listOrder: 5550
+  - type: STR_HUMAN_PLASMA_SNIPER_RIFLE
+    requires:
+      - STR_PLASMA_SNIPER_RIFLE
+      - STR_REMAN_HUMAN_PLASMA_RIFLE
+    size: 0.2
+    costSell: 135000
+    weight: 6
+    bigSprite: 1010
+    floorSprite: 1010
+    handSprite: 1379
+    bulletSprite: 8
+    bulletSpeed: 2
+    fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+    accuracySnap: 83 # 90
+    accuracyAimed: 140 # 150
+    tuSnap: 46 # 50
+    tuAimed: 75 # 70
+    aimRange: 50 # 0
+    minRange: 15
+    dropoff: 1 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 75 # 50
+    attraction: 1
+    listOrder: 5148
+  - type: STR_HUMAN_PLASMA_BLASTER
+    requires:
+      - STR_PLASMA_BLASTER
+      - STR_REMAN_HUMAN_HEAVY_PLASMA
+    size: 0.2
+    costSell: 241600
+    weight: 14 # 12
+    bigSprite: 1011
+    floorSprite: 1011
+    handSprite: 1879
+    bulletSprite: 8
+    fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_BLASTER_CLIP
+    accuracySnap: 55 # 55
+    accuracyAimed: 90 # 95
+    tuSnap: 45 # 45
+    tuAimed: 75 # 80
+    snapRange: 20 # 0
+    aimRange: 35 # 0
+    minRange: 11 # 0
+    dropoff: 2 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 80 # 50
+    attraction: 1
+    listOrder: 4980
+research:
+  - name: STR_ELERIUM_BOMB
+    cost: 180
+    points: 10
+    needItem: true
+    listOrder: 4401
+  - name: STR_TOXIGUN
+    cost: 200
+    points: 20
+    needItem: true
+    listOrder: 4450
+  - name: STR_TOXIGUN_FLASK
+    cost: 300
+    points: 15
+    needItem: true
+    listOrder: 4451
+  - name: STR_PLASMA_CASTER
+    cost: 400
+    points: 25
+    needItem: true
+    listOrder: 3750
+    unlocks: STR_ALIEN_WEAPONS
+  - name: STR_PLASMA_CASTER_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    listOrder: 3751
+  - name: STR_PLASMA_BLASTER
+    cost: 900
+    points: 25
+    needItem: true
+    listOrder: 2750
+    unlocks: STR_ALIEN_WEAPONS
+  - name: STR_PLASMA_BLASTER_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    listOrder: 2751
+  - name: STR_PLASMA_SNIPER_RIFLE
+    cost: 700
+    points: 25
+    needItem: true
+    listOrder: 3950
+    unlocks: STR_ALIEN_WEAPONS
+  - name: STR_PLASMA_SNIPER_RIFLE_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    listOrder: 3951
+  - name: STR_REMAN_HUMAN_PLASMA_PISTOL_DEP1
+    dependencies:
+      - STR_ALIEN_WEAPONS
+      - STR_PLASMA_CASTER
+      - STR_ALLOY_MANUFACTURING
+    unlocks:
+      - STR_REMAN_HUMAN_PLASMA_PISTOL
+  - name: STR_REMAN_HUMAN_PLASMA_RIFLE_DEP1
+    dependencies:
+      - STR_ALIEN_WEAPONS
+      - STR_PLASMA_SNIPER_RIFLE
+      - STR_ALLOY_MANUFACTURING
+    unlocks:
+      - STR_REMAN_HUMAN_PLASMA_RIFLE
+  - name: STR_REMAN_HUMAN_HEAVY_PLASMA_DEP1
+    dependencies:
+      - STR_ALIEN_WEAPONS
+      - STR_PLASMA_BLASTER
+      - STR_ALLOY_MANUFACTURING
+    unlocks:
+      - STR_REMAN_HUMAN_HEAVY_PLASMA
+  - name: STR_PLASMA_CANNON_DEP2
+    cost: 0
+    dependencies:
+      - STR_PLASMA_BLASTER
+      - STR_PLASMA_BLASTER_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+  - name: STR_PLASMA_CANNON_DEP3
+    dependencies:
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_PLASMA_SNIPER_RIFLE
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+  - name: STR_PLASMA_CANNON_DEP4
+    cost: 0
+    dependencies:
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_CASTER_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+  - name: STR_PLASMA_CANNON_DEP5
+    cost: 0
+    dependencies:
+      - STR_PLASMA_SNIPER_RIFLE
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_CASTER_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+manufacture:
+  - name: STR_ELERIUM_BOMB
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_BOMB
+    space: 2
+    time: 180
+    cost: 6000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    listOrder: 2401
+# alien weapon remanufacture
+  - name: STR_REMAN_HUMAN_PLASMA_CASTER
+    category: STR_WEAPON
+    requires:
+      - STR_REMAN_HUMAN_PLASMA_PISTOL
+      - STR_PLASMA_CASTER
+    space: 5
+    time: 45
+    cost: 4500
+    requiredItems: 
+      STR_PLASMA_CASTER: 1
+    producedItems: 
+      STR_HUMAN_PLASMA_CASTER: 1
+  - name: STR_REMAN_HUMAN_PLASMA_SNIPER_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_REMAN_HUMAN_PLASMA_RIFLE
+      - STR_PLASMA_SNIPER_RIFLE
+    space: 5
+    time: 50
+    cost: 6500
+    requiredItems: 
+      STR_PLASMA_SNIPER_RIFLE: 1
+    producedItems: 
+      STR_HUMAN_PLASMA_SNIPER_RIFLE: 1
+  - name: STR_REMAN_HUMAN_PLASMA_BLASTER
+    category: STR_WEAPON
+    requires:
+      - STR_REMAN_HUMAN_HEAVY_PLASMA
+      - STR_PLASMA_BLASTER
+    space: 5
+    time: 60
+    cost: 7500
+    requiredItems: 
+      STR_PLASMA_BLASTER: 1
+    producedItems: 
+      STR_HUMAN_PLASMA_BLASTER: 1
+# no manufacture of new weapons
+  - name: STR_PLASMA_SNIPER_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_ALIENS_ONLY
+    space: 4
+    time: 890
+    cost: 102000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 1670
+  - name: STR_PLASMA_SNIPER_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 1671
+    requires:
+      - STR_ALIENS_ONLY
+    space: 4
+    time: 70
+    cost: 2600
+    requiredItems:
+      STR_ELERIUM_115: 1
+  - name: STR_PLASMA_BLASTER
+    category: STR_WEAPON
+    listOrder: 1450
+    requires:
+      - STR_ALIENS_ONLY
+    space: 6
+    time: 1180
+    cost: 152000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+  - name: STR_PLASMA_BLASTER_CLIP
+    category: STR_AMMUNITION
+    listOrder: 1451
+    requires:
+      - STR_ALIENS_ONLY
+    space: 4
+    time: 80
+    cost: 6500
+    requiredItems:
+      STR_ELERIUM_115: 2
+  - name: STR_PLASMA_CASTER
+    category: STR_WEAPON
+    listOrder: 1850
+    requires:
+      - STR_ALIENS_ONLY
+    space: 6
+    time: 1180
+    cost: 84000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+  - name: STR_PLASMA_CASTER_CLIP
+    category: STR_AMMUNITION
+    listOrder: 1851
+    requires:
+      - STR_ALIENS_ONLY
+    space: 4
+    time: 80
+    cost: 1500
+    requiredItems:
+      STR_ELERIUM_115: 2
+  - name: STR_TOXIGUN
+    category: STR_WEAPON
+    listOrder: 2450
+    requires:
+      - STR_TOXIGUN
+      - STR_TOXIGUN_FLASK
+    space: 5
+    time: 700
+    cost: 54000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_TOXIGUN_FLASK
+    category: STR_AMMUNITION
+    listOrder: 2351
+    requires:
+      - STR_TOXIGUN_FLASK
+    space: 7
+    time: 120
+    cost: 4500
+ufopaedia:
+  - id: STR_ELERIUM_BOMB
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ELERIUM_BOMB
+    text: STR_ELERIUM_BOMB_UFOPEDIA
+    listOrder: 5701
+  - id: STR_TOXIGUN
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_TOXIGUN
+    text: STR_TOXIGUN_UFOPEDIA
+    listOrder: 5750
+  - id: STR_TOXIGUN_FLASK
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_TOXIGUN_FLASK
+    text: STR_TOXIGUN_FLASK_UFOPEDIA
+    listOrder: 5751
+  - id: STR_PLASMA_CASTER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_PLASMA_CASTER
+    text: STR_PLASMA_CASTER_UFOPEDIA
+    listOrder: 5150
+  - id: STR_PLASMA_CASTER_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_PLASMA_CASTER_CLIP
+    text: STR_PLASMA_CASTER_CLIP_UFOPEDIA
+    listOrder: 5151
+  - id: STR_PLASMA_SNIPER_RIFLE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_PLASMA_SNIPER_RIFLE
+    text: STR_PLASMA_SNIPER_RIFLE_UFOPEDIA
+    listOrder: 4950
+  - id: STR_PLASMA_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+    text: STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA
+    listOrder: 4951
+  - id: STR_PLASMA_BLASTER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_PLASMA_BLASTER
+    text: STR_PLASMA_BLASTER_UFOPEDIA
+    listOrder: 4790
+  - id: STR_PLASMA_BLASTER_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_PLASMA_BLASTER_CLIP
+    text: STR_PLASMA_BLASTER_CLIP_UFOPEDIA
+    listOrder: 4791
+extraSprites:
+  - type: Projectiles
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif
+  - type: BIGOBS.PCK
+    files:
+      1000: Resources/AlienArmouryExpanded/Aliensniperrifle.gif
+      1001: Resources/AlienArmouryExpanded/Aliensniperrifle_Clip.gif
+      1002: Resources/AlienArmouryExpanded/Plasmadestroyer.gif
+      1003: Resources/AlienArmouryExpanded/Plasmadestroyer_Clip.gif
+      1004: Resources/AlienArmouryExpanded/Plasmacaster.gif
+      1005: Resources/AlienArmouryExpanded/Plasmacaster_clip.gif
+      1006: Resources/AlienArmouryExpanded/Toxigun.gif
+      1007: Resources/AlienArmouryExpanded/Toxigun_flask.gif
+      1008: Resources/AlienArmouryExpanded/big_SL_EleriumBomb.gif
+      1009: Resources/AlienArmouryExpanded/Plasmacaster1.gif
+      1010: Resources/AlienArmouryExpanded/Plasmasniperrifle1.gif
+      1011: Resources/AlienArmouryExpanded/Plasmadestroyer1.gif
+  - type: FLOOROB.PCK
+    files:
+      1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
+      1001: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle_Clip.gif
+      1002: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer.gif
+      1003: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer_Clip.gif
+      1004: Resources/AlienArmouryExpanded/floorob_Plasmacaster.gif
+      1005: Resources/AlienArmouryExpanded/floorob_Plasmacaster_Clip.gif
+      1006: Resources/AlienArmouryExpanded/floorob_Toxigun.gif
+      1007: Resources/AlienArmouryExpanded/floorob_Toxigun_flask.gif
+      1008: Resources/AlienArmouryExpanded/floorobj_SL_EleriumBomb.gif
+      1009: Resources/AlienArmouryExpanded/floorob_Plasmacaster1.gif
+      1010: Resources/AlienArmouryExpanded/floorob_Plasmasniperrifle1.gif
+      1011: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer1.gif
+#  - type: HANDOB.PCK
+#    files:
+#      210: Resources/AlienArmouryExpanded/handob_Aliensniperrifle/
+#      218: Resources/AlienArmouryExpanded/handob_Plasmadestroyer/
+#      226: Resources/AlienArmouryExpanded/handob_Plasmacaster/
+#      234: Resources/AlienArmouryExpanded/handob_Toxigun/
+  - type: HANDOB.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 40
+    files:
+      1000: Resources/AlienArmouryExpanded/handob_Aliensniperrifle.gif
+      1008: Resources/AlienArmouryExpanded/handob_Plasmadestroyer.gif
+      1016: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
+      1024: Resources/AlienArmouryExpanded/handob_Toxigun.gif
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      56: Resources/AlienArmouryExpanded/Bullets/toxic_hit.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      55: Resources/AlienArmouryExpanded/Sound/AlienAcid.wav
+extraStrings:
+  - type: en-US
+    strings:
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Compact but powerful alien launcher, useful in a variety of combat scenarios. Versatile and deadly weapon."
+      STR_ELERIUM_BOMB: Elerium Bomb
+      STR_ELERIUM_BOMB_UFOPEDIA: "Elerium Bomb, used mainly by alien terrorists, is a powerful and deadly ammunition for Small Launcher."
+      STR_PLASMA_CASTER: Alien Plasma Caster
+      STR_PLASMA_CASTER_CLIP: Plasma Caster Clip
+      STR_PLASMA_CASTER_UFOPEDIA: "This plasma pistol variant fires its charged particles at a wide spread, making it a devastating weapon."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "This roughly cubic device is used as ammunition for a Plasma Caster.  It contains a small quantity of Elerium."
+      STR_PLASMA_SNIPER_RIFLE: Alien Plasma Sniper Rifle
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Plasma Sniper Rifle Clip
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "This is an extremely precise and powerful weapon based on accelerating particles from within a minute anti-gravity field."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "This small object is used as a power source for a Plasma Sniper Rifle - a precision alien weapon.  Contains a small quantity of Elerium."
+      STR_PLASMA_BLASTER: Alien Plasma Blaster
+      STR_PLASMA_BLASTER_CLIP: Plasma Blaster Clip
+      STR_PLASMA_BLASTER_UFOPEDIA: "This is a devastating anti-armor weapon based on plasma technology, vaporizing everything around the impact point."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "This compact device is used as ammunition for a Plasma Blaster.  It contains a small quantity of Elerium."
+      STR_TOXIGUN: Toxigun
+      STR_TOXIGUN_FLASK: Toxigun Flask
+      STR_TOXIGUN_UFOPEDIA: "This weapon squirts a complex mixture of powerful chemical agents, able to dissolve almost any material known to Earth science within a few seconds.  Naturally, it is deadly to all living beings."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "This small tank filled with potent acid functions as ammunition for the Toxigun."
+      STR_HUMAN_PLASMA_CASTER: Plasma Caster
+      STR_HUMAN_PLASMA_SNIPER_RIFLE: Plasma Sniper Rifle
+      STR_HUMAN_PLASMA_BLASTER: Plasma Blaster
+      STR_REMAN_HUMAN_PLASMA_BLASTER: Convert Alien Plasma Blaster
+      STR_REMAN_HUMAN_PLASMA_SNIPER_RIFLE: Convert Alien Plasma Sniper Rifle
+      STR_REMAN_HUMAN_PLASMA_CASTER: Convert Alien Plasma Caster
+  - type: en-GB
+    strings:
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Compact but powerful alien launcher, useful in a variety of combat scenarios. Versatile and deadly weapon."
+      STR_ELERIUM_BOMB: Elerium Bomb
+      STR_ELERIUM_BOMB_UFOPEDIA: "Elerium Bomb, used mainly by alien terrorists, is a powerful and deadly ammunition for Small Launcher."
+      STR_PLASMA_CASTER: Alien Plasma Caster
+      STR_PLASMA_CASTER_CLIP: Plasma Caster Clip
+      STR_PLASMA_CASTER_UFOPEDIA: "This plasma pistol variant fires its charged particles at a wide spread, making it a devastating weapon."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "This roughly cubic device is used as ammunition for a Plasma Caster.  It contains a small quantity of Elerium."
+      STR_PLASMA_SNIPER_RIFLE: Alien Plasma Sniper Rifle
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Plasma Sniper Rifle Clip
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "This is an extremely precise and powerful weapon based on accelerating particles from within a minute anti-gravity field."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "This small object is used as a power source for a plasma sniper rifle - a precision alien weapon.  Contains a small quantity of Elerium."
+      STR_PLASMA_BLASTER: Alien Plasma Blaster
+      STR_PLASMA_BLASTER_CLIP: Plasma Blaster Clip
+      STR_PLASMA_BLASTER_UFOPEDIA: "This is a devastating anti-armour weapon based on plasma technology, vaporizing everything around the impact point."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "This compact device is used as ammunition for a Plasma Blaster.  It contains a small quantity of Elerium."
+      STR_TOXIGUN: Toxigun
+      STR_TOXIGUN_FLASK: Toxigun Flask
+      STR_TOXIGUN_UFOPEDIA: "This weapon squirts a complex mixture of powerful chemical agents, able to dissolve almost any material known to Earth science within a few seconds.  Naturally, it is deadly to all living beings."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "This small tank filled with potent acid functions as ammunition for the Toxigun."
+      STR_HUMAN_PLASMA_CASTER: Plasma Caster
+      STR_HUMAN_PLASMA_SNIPER_RIFLE: Plasma Sniper Rifle
+      STR_HUMAN_PLASMA_BLASTER: Plasma Blaster
+      STR_REMAN_HUMAN_PLASMA_BLASTER: Convert Alien Plasma Blaster
+      STR_REMAN_HUMAN_PLASMA_SNIPER_RIFLE: Convert Alien Plasma Sniper Rifle
+      STR_REMAN_HUMAN_PLASMA_CASTER: Convert Alien Plasma Caster
+  - type: de
+    strings:
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Eine kompakte aber sehr wirksame außerirdische Abschussrampe, die sich in verschiedenen Kampfszenarien als nützlich erweist. Es ist eine vielseitige und tödliche Waffe."
+      STR_ELERIUM_BOMB: Eleriumbombe
+      STR_ELERIUM_BOMB_UFOPEDIA: "Die Eleriumbombe, die hauptsächlich von den Außerirdischen benutzt wird ist eine mächtige und tödliche Munition für die kleine Abschussrampe."
+      STR_PLASMA_CASTER: Plasma Flinte
+      STR_PLASMA_CASTER_CLIP: Plasma Flintenmunition
+      STR_PLASMA_CASTER_UFOPEDIA: "Diese Flintenvariation der Plasmapistole feuert stark gestreute Plasma-Partikel, was sie zu einer verheerenden Nahkampfwaffe macht."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "Dieses würfelförmige Gerät wird als Minution für die Plasmaflinte verwendet.  Es enthält eine geringe Menge Elerium."
+      STR_PLASMA_SNIPER_RIFLE: Plasmascharfschützengewehr
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Plasmascharfschützengewehrmunition
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Das ist eine extrem  genaue und mächtige Waffe, die auf beschleunigten Teilchen aus einem Antigravitationsfeld beruht."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Dieser kleine Gegenstand wird als Kraftquelle für das Plasmapräzisionsgewehr benutzt.  Es verwendet kleine Mengen an Elerium."
+      STR_PLASMA_BLASTER: Plasma Blaster
+      STR_PLASMA_BLASTER_CLIP: Plasma Blaster Munition
+      STR_PLASMA_BLASTER_UFOPEDIA: "Dies ist eine vernichtende Waffe gegen Panzerungen, welche auf der Plasmatechnologie basiert. Sie verdampft alles an dem Ort des Einschlags."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "Dieser kompakte Gegenstand wird als Munition für den Plasma Blaster verwendet. Es benutzt kleine Mengen an Elerium."
+      STR_TOXIGUN: Giftschleuder
+      STR_TOXIGUN_FLASK: Giftschleuderfläschchen
+      STR_TOXIGUN_UFOPEDIA: "Diese Waffe verspritzt eine komplexe Mischung aggressiver Chemikalien, die nahezu jedes auf der Erde bekannte Material innerhalb weniger Skunden auflöst.  Damit ist sie natürlich für alle Lebewesen tödlich."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "Dieser kleine Behälter ist mit starker Säure gefüllt, die als Munition für die Giftschleuder fungiert."
+  - type: pl-PL
+    strings:
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Mała gabarytowo, lecz potężna wyrzutnia, użyteczna w różnorodnych sytuacjach taktycznych. Wszechstronna i zabójcza broń."
+      STR_ELERIUM_BOMB: Bomba eleryjna
+      STR_ELERIUM_BOMB_UFOPEDIA: "Bomba eleryjna, używana głównie przez obcych terrorystów, to potężna amunicja alternatywna do wyrzutni bomb ogłuszających."
+      STR_PLASMA_CASTER: Miotacz plazmy
+      STR_PLASMA_CASTER_CLIP: Magazynek miotacza plazmy
+      STR_PLASMA_CASTER_UFOPEDIA: "Ta odmiana pistoletu plazmowego wystrzeliwuje naładowane cząstki szerokim wachlarzem, co czyni z niej bardzo groźną broń."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "To z grubsza sześcienne urządzenie to amunicja dla ręcznego miotacza plazmy.  Zawiera ono małą ilość Elerium."
+      STR_PLASMA_SNIPER_RIFLE: Snajperka plazmowa
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Magazynek snajperki plazmowej
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Niezwykle precyzyjna i potężna broń, bazująca na technologii przyspieszania cząstek w słabym polu antygrawitacyjnym."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Ten mały obiekt służy za źródło zasilania plazmowej snajperki - karabinu precyzyjnego obcych.  Zawiera małą ilość Elerium."
+      STR_PLASMA_BLASTER: Działko plazmowe
+      STR_PLASMA_BLASTER_CLIP: Magazynek działka plazmowego
+      STR_PLASMA_BLASTER_UFOPEDIA: "Ręczne działko plazmowe to potężna broń przeciwpancerna piechoty, opierająca się na technologii plazmowej.  Odparowuje ona wszystko, co znajduje się w pobliżu punktu trafienia."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "To kompaktowe urządzenie to amunicja dla ręcznego działka plazmowego.  Zawiera małą ilość Elerium."
+      STR_TOXIGUN: Kwasomiot
+      STR_TOXIGUN_FLASK: Zbiornik z kwasem
+      STR_TOXIGUN_UFOPEDIA: "Ta broń strzyka skomplikowaną mieszaniną silnie aktywnych związków chemicznych, zdolnych w kilka sekund rozpuścić niemal każdy materiał znany ziemskiej nauce.  Jest ona oczywiście śmiertelna dla wszystkich żywych istot."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "Ten mały zbiornik zawiera silnie żrącą substancję, służącą jako amunicja dla kwasomiotu."
+  - type: cs-CZ
+    strings:
+      STR_PLASMA_CASTER: Plazmový rozptylomet
+      STR_PLASMA_CASTER_CLIP: Zásobník plazmového rozptylometu
+      STR_PLASMA_CASTER_UFOPEDIA: "Tato varianta plazmové pistole vystřeluje nabité částice v širokém rozptylu, což z ní dělá ničivou zbraň."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "Toto zhruba krychlovité zařízení je užito jako munice pro Plazmový rozptylomet.  Obsahuje malé množství Eleria."
+      STR_PLASMA_SNIPER_RIFLE: Plazmová odstřelovací puška
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Zásobník plazmové odstřelovací pušky
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Tato velice přesná a účinná zbraň je založena na urychlování částic uvnitř krátkodobého antigravitačního pole."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Tento malý objekt je používán jako munice pro Plazmovou odstřelovačku - přesnou Cizáckou zbraň.  Obsahuje malé množství Eleria."
+      STR_PLASMA_BLASTER: Plazmový kanón
+      STR_PLASMA_BLASTER_CLIP: Zásobník plazmového kanónu
+      STR_PLASMA_BLASTER_UFOPEDIA: "Tato ničivá protipancéřová zbraň založená na plazmové technologii je schopná vypařit cokoliv v okolí dopadu střely."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "Toto kompaktní zařízení je používáno jako munice pro Plazmový kanón.  Obsahuje malé množství Eleria."
+      STR_TOXIGUN: Toxizbraň
+      STR_TOXIGUN_FLASK: Toxiampule
+      STR_TOXIGUN_UFOPEDIA: "Tato zbraň vystřeluje komplexní kombinaci žíravých chemických složek schopných během několika sekund roztavit jakýkoli materiál známý pozemské vědě.  To z ji samozřejmě dělá smrtelnou všem žijícím bytostem."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "Tato malá nádobka je naplněna nebezpečnou kyselinou a funguje jako munice pro Toxizbraň."
+  - type: sk-SK
+    strings:
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Kompaktný, ale pritom účinný mimozemský raketomet vhodný pre nasadenie v rôznorodých bojových situáciách."
+      STR_ELERIUM_BOMB: Elériová bomba
+      STR_ELERIUM_BOMB_UFOPEDIA: "Elériová bomba je využívaná najmä mimozemskými teroristickými jednotkami. Jedná sa o veľmi účinnú a smrtiacu muníciu pre malý odpaľovač."
+      STR_PLASMA_CASTER: Plazmový vrhač
+      STR_PLASMA_CASTER_CLIP: Zásobník plazmového vrhača
+      STR_PLASMA_CASTER_UFOPEDIA: "Tento variant plazmovej pištole vystreľuje nabité častice v širokom rozptyle, čo z neho robí veľmi ničivú zbraň."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "Toto zariadenie v tvare kocky sa používa ako munícia pre plazmový vrhač. Obsahuje malé množstvá eléria."
+      STR_PLASMA_SNIPER_RIFLE: Plazmová ostreľovačská puška
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Zásobník plazmovej ostreľovačky
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Táto extrémne precízna a účinná zbraň je založená na časticiach urýchlených v dočasnom antigravitačnom poli.  "
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Tento malý objekt sa používa ako zdroj energie pre plazmovú ostreľovačskú pušku – veľmi presnú mimozemskú zbraň. Obsahuje malé množstvo eléria."
+      STR_PLASMA_BLASTER: Plazmomet
+      STR_PLASMA_BLASTER_CLIP: Zásobník plazmometu
+      STR_PLASMA_BLASTER_UFOPEDIA: "Toto je extrémne ničivá protipancierová zbraň založená na technológii plazmových zbraní. Dokáže vymazať všetko v mieste dopadu."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "Toto kompaktné zariadenie sa používa ako munícia pre plazmomet. Obsahuje malé množstvo eléria."
+      STR_TOXIGUN: Toxizbraň
+      STR_TOXIGUN_FLASK: Banka pre toxizbraň
+      STR_TOXIGUN_UFOPEDIA: "Táto zbraň vystreľuje komplexnú zmes silných chemických látok, ktoré dokážu za niekoľko sekúnd rozložiť takmer každý známy pozemský materiál. Čo ju robí smrteľnou pre všetky živé bytosti."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "Táto malá nádobka naplnená účinnou kyselinou funguje ako munícia pre toxizbraň."
+  - type: fr
+    strings:
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Un lance-grenade extra-terrestre compact mais puissant, le petit lancer est utile dans une variété de scénarios. C'est une arme versatile et meurtrière."
+      STR_ELERIUM_BOMB: "Bombe à l'Elerium"
+      STR_ELERIUM_BOMB_UFOPEDIA: "La bombe à l'Elerium, utilisée principalement par les terroristes extra-terrestres, est une munition puissante et meurtrière pour le petit lanceur."
+      STR_PLASMA_CASTER: Lanceur Plasma Extraterrestre
+      STR_PLASMA_CASTER_CLIP: Chargeur de Lanceur Plasma
+      STR_PLASMA_CASTER_UFOPEDIA: "Cette version modifiée du Pistolet Plasma projette ses particules à très haute vitesse, ce qui en fait une arme redoutable."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "Ce petit objet cubique n'est autre qu'un chargeur de Lanceur Plasma.  Contient de l'Elerium en petite quantité."
+      STR_PLASMA_SNIPER_RIFLE: Fusil Plasma de Précision Extraterrestre
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Chargeur de Fusil Plasma de Précision
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Ce fusil, d'une précision diabolique, exploite toute la puissance de la technologie Plasma, basée sur l'accélération de particules au sein d'un mini champ gravitationnel."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Munition pour Fusil Plasma de Précision.  Contient une petite quantité d'Elerium."
+      STR_PLASMA_BLASTER: Blaster Plasma Extraterrestre
+      STR_PLASMA_BLASTER_CLIP: Chargeur de Blaster Plasma
+      STR_PLASMA_BLASTER_UFOPEDIA: "C'est assurément l'une des armes les plus puissantes. Basée sur la technologie Plasma, cette arme est particulièrement efficace à l'encontre des blindages. Détruit absolument tout en son point d'impact."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "Munition pour Blaster Plasma.  Contient de l'Elerium."
+      STR_TOXIGUN: Pistolet à Toxine
+      STR_TOXIGUN_FLASK: Fiole pour Pistolet à Toxine
+      STR_TOXIGUN_UFOPEDIA: "Cette arme projette une mixture composée de puissants agents chimiques, capable de dissoudre en à peine quelques secondes toute matière avec laquelle elle entrerait en contact.  Elle s'avère naturellement fatale pour tout être vivant."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "Petite fiole remplie d'acide qui permet d'approvisionner le Pistolet à Toxine."
+      STR_HUMAN_PLASMA_CASTER: Lanceur Plasma
+      STR_HUMAN_PLASMA_SNIPER_RIFLE: Fusil Plasma de Précision
+      STR_HUMAN_PLASMA_BLASTER: Blaster Plasma
+  - type: ru
+    strings:
+      STR_SMALL_LAUNCHER: Компактная установка
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая, но мощная установка пришельцев, стреляющая различными типами снарядов. Гибкое и опасное оружие."
+      STR_STUN_BOMB_UFOPEDIA: "Парализующая бомба применяется пришельцами для захвата живых людей, но эффективна и против большинства видов пришельцев. Используется как боеприпас для компактной установки."
+      STR_ELERIUM_BOMB: Элериумная бомба
+      STR_ELERIUM_BOMB_UFOPEDIA: "Элериумная бомба, применяющаяся пришельцами-террористами, является мощным и смертельным боеприпасом к компактной установке."
+      STR_PLASMA_CASTER: инопланетный Плазменный кастер
+      STR_PLASMA_CASTER_CLIP: Магазин к плазменному кастеру
+      STR_PLASMA_CASTER_UFOPEDIA: "Эта разновидность плазменного пистолета выстреливает заряженные частицы с большим разбросом, что превращает его в разрушительное оружие."
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "Это кубическое устройство используется в качестве боеприпасов для плазменного кастера. Оно содержит небольшое количество элериума, который мы можем извлечь в своих целях."
+      STR_PLASMA_SNIPER_RIFLE: инопланетный Плазменная снайперская винтовка
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Маг. для плазм. снайп. винтовки
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Это сверхвысокоточное и мощное оружие в полной мере использует все преимущества плазменной технологии благодаря создаваемому внутри винтовки антигравитационному полю небольшого объема, значительно разгоняющему частицы перед выстрелом."
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Это небольшой предмет используется в качестве источника питания для плазменной снайперской винтовки - высокоточного инопланетного оружия. Содержит небольшое количество элериума, который мы можем извлечь в своих целях."
+      STR_PLASMA_BLASTER: инопланетный Плазменный бластер
+      STR_PLASMA_BLASTER_CLIP: Магазин для плазменного бластера
+      STR_PLASMA_BLASTER_UFOPEDIA: "Это разрушительное бронебойное оружие, созданное на основе плазменной технологии, которое испаряет все вокруг точки попадания."
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "Это небольшое устройство используется в качестве боеприпасов для плазменного бластера. Оно содержит небольшое количество элериума, который мы можем извлечь в своих целях."
+      STR_TOXIGUN: Токсиган
+      STR_TOXIGUN_FLASK: Колба для токсигана
+      STR_TOXIGUN_UFOPEDIA: "Это оружие разбрызгивает сложную смесь сильнодействующих химических веществ, способных растворить практически любой материал, известный земной науке, за несколько секунд. Естественно, токсин смертельно опасен для всех живых существ."
+      STR_TOXIGUN_FLASK_UFOPEDIA: "Эта небольшая колба, заполненная сильнодействующей кислотой, выполняет роль боеприпасов для токсигана."
+      STR_HUMAN_PLASMA_CASTER: Плазменный кастер
+      STR_HUMAN_PLASMA_SNIPER_RIFLE: Плазменная снайперская винтовка
+      STR_HUMAN_PLASMA_BLASTER: Плазменный бластер
+  - type: uk
+    strings:
+      STR_SMALL_LAUNCHER: Компактна установка
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Невелика, але потужна установка прибульців, що стріляє різними типами снарядів. Гнучка і небезбечна зброя"
+      STR_STUN_BOMB: Парализуюча бомба
+      STR_STUN_BOMB_UFOPEDIA: "Парализуюча бомба використовується прибульцями для захоплення живих людей, але ефективна і проти більшости видів прибульців. Використовюється як боєприпас для компактної установки."
+      STR_ELERIUM_BOMB: Елерiумна бомба
+      STR_ELERIUM_BOMB_UFOPEDIA: "Елерiумна бомба, що застосовується прибульцями-терористами, є потужним та смертельним боєприпасом до компактної установки."
+  - type: it
+    strings:
+      STR_ELERIUM_BOMB: "Bomba all'Elerium"
+      STR_ELERIUM_BOMB_UFOPEDIA: "Bomba ad Elerium, usata maggiormente dai terroristi alieni, è una bomba potente e letale da usare con un lancia bombe."
+      STR_PLASMA_BLASTER: Alien Plasma Blaster
+      STR_PLASMA_BLASTER_CLIP: Caricatore per Plasma Blaster
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "Questo piccolo dispositivo è usato come munizione per il Plasma Blaster. Contiene piccole quantità d'Elerium."
+      STR_PLASMA_BLASTER_UFOPEDIA: "Questa devastante arma anti-corazza basata sulla tecnologia al plasma vaporizza qualsiasi cosa attorno il punto d'impatto."
+      STR_PLASMA_CASTER: Alien Plasma Caster
+      STR_PLASMA_CASTER_CLIP: Caricatore per Plasma Caster
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "Questo dispositivo vagamente cubico è usato come munizione per il Plasma Caster. Contiene piccole quantità d'Elerium."
+      STR_PLASMA_CASTER_UFOPEDIA: "Questa variante della Pistola al Plasma spara un ampio raggio di particelle cariche, rendendola un'arma devastante."
+      STR_PLASMA_SNIPER_RIFLE: Fucile di Precisione al Plasma Alieno
+      STR_PLASMA_SNIPER_RIFLE_CLIP: Caricatore per Fucile di Precisione al Plasma
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "Questo piccolo oggetto è usato come sorgente d'energia per il Fucile di Precisione al Plasma, un'arma di precisione aliena. Contiene una piccola quantità d'Elerium."
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "Questa è un'arma estremamente potente e precisa basata sull'accelerazione di particelle all'interno di un piccolo campo di anti-gravità."
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Lanciagranate alieno compatto ma potente, utile in una gran varietà di combattimenti. Arma versatile e letale."
+      STR_TOXIGUN: Toxigun
+      STR_TOXIGUN_FLASK: Fiasca per Toxigun
+      STR_TOXIGUN_FLASK_UFOPEDIA: Questa piccola fiasca piena di un potente acido funziona come munizione per la Toxigun
+      STR_TOXIGUN_UFOPEDIA: "Quest'arma spruzza una complessa mistura di potenti agenti chimici, capaci di dissolvere praticamente ogni materiale conosciuto dalla scienza Terrestre, fino a qualche secondo fa. Naturalmente, è letale per tutti gli esseri viventi."
+      STR_HUMAN_PLASMA_CASTER: Plasma Caster
+      STR_HUMAN_PLASMA_SNIPER_RIFLE: Fucile di Precisione al Plasma
+      STR_HUMAN_PLASMA_BLASTER: Plasma Blaster

@@ -1,0 +1,377 @@
+X-Mar-2020: v0.7.8 Terrorist Takedown
+Changes made:
+*Refined IDT_AIRPORT terrain, by Luke83
+*Improved rank sprites, by Andr
+*Fixed some wrong palettes on UFOPedia entries
+*Now Tunnans are buyable from the store
+
+07-Mar-2020: v0.7.7 Terrorist Takedown
+Changes made:
+*Fixed issue with Base Defense missions, found by Meridian
+*Improved PORT01_UFO terrain file, by Luke83
+*Fixed bad typos, found by Ikhanad
+*Fixed mixed sprite indexes of tanks and USA Laser Weapons
+*Added new starting game research, pre-main Superpower Request for equipment (free special weapons)
+*Improved Tunnan interception sprite
+*Added 11 new terrains made by bulletdesigner:
+	- High Mountain
+	- Low Mountain
+	- Desert Mountain
+	- Mountain Pass
+	- Tropical Mountain
+	- Mountain Plateau
+	- Snow Plains
+	- Plains
+	- Steppe
+	- Rocky Plains
+	- Tropical Plains
+*New Double Barrel Shotgun sprites
+*Fixed handOb sprite issues related to M16A1 Scoped and Shotgun variants
+*Tweaked starting weapons costs, now they should appear on the Stores
+*Balanced weapon and ammo costs
+*Fixed wrongly defined Terrorist death screaming audios
+
+23-Feb-2020: v0.7.6 Terrorist Takedown
+Changes made:
+*OXCE v6.3.4 is now required to play the mod
+*Added eight new USA Laser weapons plus unique research, drawn by Dauntless1942
+	- M1972 Laser Pistol
+	- .38 Laser Magnum
+	- CALBR Laser Battle Rifle
+	- M20 M203 Laser Carbine
+	- M5 Laser SMG
+	- M4 Laser LMG
+	- Ulysses Laser Rifle
+	- X4 Laser Scattergun
+*Fixed issue related to wrongly defined Rapier and Crusader research
+*Fixed weird sounds on Terrorist units. Now their walking and death sounds are the same of the human civilian.
+*Fixed issues with crashing Human UFOs UFOpedia entries, added descriptions for Texan and Magister 
+*Fixed issue related to wrongly defined entry on Alien Base Assault missions
+*Decreased power for all of the Ballistic Weapons
+*Solved issue with crashing interception using Crusaders (wrongly defined index)
+*Improved UFOpedia craft descriptions (text blocks are in a different position now), by BlackStaff
+*Fixed issue related to crashing missions on Airport terrain, reported by cubick2k
+*Tweaked Tier II craft weapons (increased range, damage and ammo size), suggested by Barabas
+*New Remington Combat Shotgun sprites, drawn by Andr
+*Now some Weapon Customization recipes require ammo used on the weapon, to simulate the adjustment of the sights, suggested by Andr
+*Rifles with M203 now can use Incendiary and Smoke 40mm grenades as well
+*Vanilla crafts now have pilots defined, suggested by Cupon4uk
+
+25-Jan-2020: v0.7.5 Terrorist Takedown
+Changes made:
+* Re-uploaded to fix critical crash
+* Updated to OXCE v.6.3.3
+* Removed Hobbes content
+* New UNEXCOM logo, by Dauntless1942
+* Added new Hybrid Globe v1.2, by Luke83
+* Added new terrain: Airport, by Luke83
+* Added Terrorist faction, by efrenespartano & Tingcat
+* Added new mission: Hostage Crisis
+* Added new mission: Hijacked Plane
+* Added two new Tier III aircrafts:
+	- Crusader Advanced Fighter
+	- Saracen Advanced Bomber
+* Added six new Tier II craft weapons:
+	- Shortsword Alloy Light Missile
+	- Scimitar Alloy Heavy Missile
+	- Athena Alloy Gatling Cannon
+	- Mauser Alloy Revolver Cannon
+	- Phoenix Alloy Super Heavy Missile
+	- Hydra Alloy Rockets
+* Added EXPANDED_TERROR terrain by hellrazor
+* Added Flashbang Grenade, by efrenespartano
+* Added two new custom weapons:
+	- M16A1 Shotgun, by Andr
+	- M16A1 Scoped, by Andr
+* New UFOPedia category: Ammunition, only for ammo items.
+* Fixed issues with ammo handObs & Smoke Grenade floorOb, found by Andr
+* Now USSR/NATO special ammo won't appear on the UFOPedia and Store before unlocking their respective research
+* New Ammunition and Weapon Conversion manufacturing categories, suggested by Tal'Raziid
+* New categories for Alien Tech and Misc items, suggested by Tal'Raziid
+* Updated Medical items to new behaviour
+* New Enemy Human missions will spawn custom UFOs (T-6 Texan, Fouga Magister, Mi-8 Hip)
+* Most Alien missions will start to appear later on the campaign, so the Humans will be the initial enemies.
+* Vanilla advanced crafts now takes longer to research (suggested by Cupon4uk) and are dependant on Advanced Fighter research
+* Re-arranged some UFOPedia entries.
+* Fixed issue with Mi-8 on Geoscape, found by wolwerin & Tal'Raziid
+
+10-October-2019: v0.7.4.1 Vendetta Burns Inside
+Changes made:
+* Fixed Fatal crash related to Female Civilians sprite
+* Fixed Male and Female Civilian drawingRoutine (was 4, now is the correct 0)
+* Fixed issue with Rocket Pods not being equipable on aircrafts
+* Improved new UN fighter Tunnan, NATO Draken, Starfighter fighter and Mirage bomber stats
+* Slightly Improved Pilot strength stats
+* Tweaked Medical items cost
+* Improved stats of new NATO Tank FV601 Saladin (now is a little more faster and has sightly more armor)
+* New inventory organization, with Quick Draw slot and a larger Belt
+* All of the changes of v.0.7.4 remains 
+
+10-October-2019: v0.7.4 Vendetta Burns Inside
+Changes made:
+* Added Saab J29 Tunnan as Starting aircraft, provided by the United Nations (but unavailable for purchase on the Store)
+* Redesigned startingBase to include free J29 Tunnans and their weapons, with enought ammo to withstand until further airplanes could be purchased
+* Added flavour text to some UFOpedia entries, by efrenespartano and Ikhanad.
+* Now you can only choose between asking NATO or USSR for support. Choosing one will disable the other.
+* USSR now offers two options for fighters: expensive, superfast MiG-25 Foxbat or light and very cheap MiG-21 Fishbed (drawn by Andr). Choosing one disables the other permanently.
+* New NATO Tank: FV601 Saladin Armoured Car, equiped with a 76mm Cannon and a secundary MG. 
+* Ferret Armoured Car moved to starting tank provided by the United Nations, improved graphics and updated UFOPedia entry to better match the tank.
+* Changed tech requirements of plasma weapons, by The Reaver of Darkness.
+* Added human versions of AlienArmouryExpanded plasma, by The Reaver of Darkness.
+* Re-balanced plasma weapons, by The Reaver of Darkness.
+* Fixed issues related to Elerium ammo for RPG-7 and Carl Gustaf M2 being available from the start and CG M2 not available on the Store.
+* Balanced armors and weapons of tanks, by efrenespartano and The Reaver of Darknes
+* Added three new Food items: 
+	- Canned Food, to quickly recover stamina and some health. 
+	- Cigarettes, to recover morale (with a penalty to health). Drawn by Andr.
+	- Flask (filled up with bourbon), to quickly recover morale, with some stunning side-effects. Drawn by Andr. 
+* Added three new Medical items: 
+	- Medical Bag, replacing the starting Medikit with a heavier variant. 
+	- Field Dressing, to quickly patch up mortal wounds. 
+	- Medical Pouch, small first-aid kit designed to quickly recover health. Drawn by Andr.
+* New sprites for Smoke Grenade, renamed to M18 Smoke Grenade. Drawn by Andr.
+* Medikit now requires Alloy Manufacturing to research and 4 Alien Alloy units to be build
+* Fixed issue with crashing Alien Base alienDeployments definition (the mapblock has 6 tiles of height, were defined as 2).
+* Fixed issue with Aircraft IDs that made impossible to intercept UFOs on the Geoscape 
+* Added new Custom categories to aircraft weapons and tanks.
+* Fixed UFOPedia entries showing all of the weapons. Now they propper appear after their respective Faction Support research is completed.
+* Improved shieldCapacity of many UFOs. The probability that the UFOs of the Scout class are HKs has been increased.
+* Improved Male and Female Civilian armor (weapons no longer float in the air).
+* Fixed minor issues with some research and Elerium Fusion UFOPedia entry.
+* Now it takes longer to get USA/NATO/USSR Support research (was 200, now 800)
+* Special Forces and Mercenary Support research now are unlocked from Alloy Manufacturing, instead USA/NATO/USSR Support (because now NATO disables USSR and vice versa and made impossible to get SF/Merc Support)
+* Balanced Ballistic Weapons, removed overkill from many ammo types.
+* Tweaked Tank MG round prices. Now are cheaper and all have 50 rounds with a 5 shot autoshot
+
+30-September-2019: v0.7.3 Vendetta Burns Inside
+Changes made:
+* Fixed isued related to wrongly defined startingBase that caused a crash on Base Defense (Special thanks to Meridian, Warboy, SupSuper and Luke83, who had the patience to sit down and take a look)
+* Fixed missing Pilot paperdoll MAN5_F3
+* Fixed issue with FN FAL not appearing on Starting Base
+* Fixed issue with missing USA Support image
+* Fixed issue with F-4 Phantom and F-104 Starfighter
+* Mercenary troopers now have their own uniform designed (was the Special Forces Uniform)
+* Added random Operation names (only on OXCE v5.6.4)
+* Added random Base names (only on OXCE v5.6.4)
+* Tweaked Pilot stats, by The Reaver of Darkness
+* QoL changes: 
+	- Custom categories now used on Store 
+	- Less aliens will appear on Base Defense if alien transport was damaged by Base defenses 
+* Fixed issue with wrong craft weapons list on Starfighter
+* Added new handObs, floorObs and bigObs to FN FSC and variants
+* Fixed issues related to slow firing bullets and ammo without hitSound on many weapons
+* Improved UNEXCOM basic Combat Uniform, women uses now berets and men uses helmets, improved battlescape sprites.
+* New Hercules Paradrop map, now can carry 14 soldiers or 10 soldiers and one tank. Made by efrenespartano with help of The Reaver of Darkness
+* Mew Backgrounds, to set the more more on the Cold War and the late Vietnam War
+* Now Special Forces Support and Mercenary Support disables the other, if you choose one of them. Each research path have their own weapons and on future updates will have their unique missions.
+* Reorganized startingBase to better distribute UN supplied weapons on starting craft
+* New Police inventory paperdolls, made by Solarius Scorch
+* Fixed KS23 Heavy Shotgun fire sound, noted by Meridian
+* Improved bulletSpeed on several weapons
+* Added new itemCategories on crafts
+
+26-September-2019: v0.7.2 Vendetta Burns Inside
+Changes made:
+* Updated to OXCE v.5.6.2, all of the crashing sprite indexes are working now.
+* Added a brand new Ammo system. Now, instead of "Rifle + Rifle clip", weapons share the same ammo magazines. Please, read the weapon's UFOPedia entry to see the ammo used by the gun in question.
+* Added new weapon classes, each with its own playstyle: Pistols, Rifles, Carbines, SMG, Shotguns, Snipers, Artillery, LMG. 
+* Added new itemCategories to quickly find weapons: Ammo, USA, NATO, USSR, UNEXCOM, Civilian, Special Forces and Mercenary.
+* Reworked Tier 1 BallisticWeapons
+* Fixed issues by Andr, Blood Angel Tactical Marine, SG_Barton & DarkDust found on earlier Discord Previews.
+* New soldierTypes: Special Forces Operator and Mercenary, unlockable after researching all of World Powers Support
+* New Special Forces and Mercenary BallisticWeapons: MAT-49, Sawed-off Shotgun (modified from sprite made by Dioxine), Sawed-off M79 Thumper, Combat Knife and craftable variants of XM117 and FN FAL (you can mount a scope or a grenade launcher)
+* Brand new starting game. Now you have some civilian weapons, a Huey and a Hercules, plus a few craft rocket launcher and Vulcan cannon. You should start asking the World Powers (USA, NATO, USSR) for additional support.
+* New NATO Fighter options, you can choose between a fast fighter, a nimble fighter (drawn by Andr) or a heavy fighter. Choosing one disables the other two options.
+* Balanced and fixed Plasma Weapons, by The Reaver of Darkness
+* New Huey map, made by Alex_D
+* New Tier 2 crafts: VTOL Hind (map made by Alex_D) and Recon Satellite Atalaya
+* Added new extraStrings to the aircraft weapon slots, now is easier to know what kind of weapon goes in what plane.
+* Added new ranking system, Soldiers and Pilots have different rank badges and names. Pilots are better paid when they get a promotion.
+* Pilots now have a better armor, more like the flight suit a fighter pilot would wear (stats fixed by The Reaver of Darkness)
+* Now all terrains and alienDeployments have allied NPCs fighting along UNEXCOM. Depending on the size of the UFO, it is the number of allies that will appear. Allies vary from terrain to terrain (Farmers, Soldiers in the Jungle, Forest, etc). Police forces are now fixed to spawn on cities (between 4 and 10)
+* New allied NPCs: Police SWAT (sprite by Hobbes), Female Farmer and Male Farmer (sprites by Solarius Scorch
+* Overall ruleset & resources rework
+
+25-August-2019: v0.7.1 Vendetta Burns Inside -Discord Preview-
+Changes made:
+* Brand new M16/M203, M16A1 and XM117 Carbine made by @Andr  (and because the XM117 has a scope, it's shots are a little more precise now)
+* Fixed issue with XM117 Carbine firing sound.
+* The M16/M203 and the XM117 now can use the 5.56mm NATO x30 round mags. M16A1 still uses 20 round mags only.
+* Fixed issues with handObs of M72 LAW, Carl Gustaf M2 and RPG (there are still a few bits that shouldn't be there, but I'll correct them later)
+* Delta EOD Armor's MG3 machine gun now has a new sprite and hitAnimation.
+* Added SPECIAL_WOUND scripts by Kzer-Za to shotguns, LMGs and melee weapons.
+* The 7.62mm Soviet x10 clip is now only used by the SKS.
+* Starting test with new reworked ammo system and Tier 1 BallisticWeapons
+
+ v0.2e
+15-Oct-18: 06:00 PM # Fixed crash related to broken Alien research. 
+19-Oct-18: 11:37 PM # Fixed fatal crash related to trash code in unavailable research. 
+20-Oct-18: 01:40 AM # Fixed missing NATO/USSR Craftweapons topics. Fixed crash with UN Combat Armor.
+
+ v0.2d
+1.- Improved Nations mod by MKSheppard
+10-Oct-18: 05:25 PM # Reduced shields of Capital class UFOs to half (Battleship now has 50 and Troop Transport now has 30)
+13-Oct-18: 07:48 PM # Fixed bugs found by IgnisAbentorn, renamed AK-47 to AKM, reemplaced Makarov for Stechkin Automatic Pistol, fixed stats. Changed FN FAL & M16 M203 alt fire mode from confSnap to confAimed, to avoid reaction fire with underbarrel addons. 
+13-Oct-18: 08:48 PM # MG3 now has fixed 60 rounds, removed MG3 belt from store. Fixed fatal bug that made unavailable NATO/USSR stuff (Guns, armor, missiles)
+14-Oct-18: 11:35 AM # Allied NPC units now use Human weapons, vanilla weapon no longer used. 11 new countries, original codes by MKSheppard (Norway, Benelux, Denmark, Greece, Argentina, Mexico, Chile, Ukraine, Peru, Colombia, Poland)
+
+ v0.2c
+ 1.- Legionnaire tank sprite by Solarius Scorch
+ 2.- Angry Wife clip from Piratez, by Dioxine
+ 3.- Delta armor modified from Zane's Power Suit
+ 4.- Shield codes from Xeno-Shield from The X-Com Files
+ 03-Ago-18: 07:15 PM # Corrected Legionnaire tank sprite. Falcon now has 500 damage (280 before), fixed craftWeapons available in store before researching NATO/USSR, Improved Craft Armor/Accuracy techs.
+ 04-Ago-18: 08:27 AM # Now allied countries can come back to UNEXCOM after canceling an alien pact, after destroying the alien base inside the traitor country.
+ 04-Ago-18: 05:42 PM # Added all Tier I weapons fire and reload sounds. Added sprayWaypoint behaviour to SMG and LGM. Various weapons/crafts prices fixed by Alnoaht.
+ 07-Ago-18: 07:20 AM # Added Riot Armor w/ Angry Wife, custom sounds and research.
+ 11-Ago-18: 06:18 PM # Added Delta Armor w/ MG3, custom sounds and research.
+ 14-Ago-18: 11:39 PM # Fixed error with Falcon missile, Targeting pod and Alloy Craft Alloy Armor, added missiing extraStrings
+ 15-Ago-18: 03:22 AM # Corrected M551 Sheridan &  BMD-1 tank sprites. Modified tank armor. Modified startingBase to Defensive, added M203 grenades to startingBase.
+
+ v0.2b
+1.- Many weapon sprites from X-Piratez, by Dioxine and The X-Com Files, Solarius Scorch
+2.- JustRussia weapons by ThatDude
+3.- Underbarrel shotgun/grenade launcher codes by Hyper2Snyper
+4.- Weapons codes from The X-Com Files, by Solarius Scorch
+5.- HMG codes by Dioxine, moddified by BlackLibrary
+6.- BMD-1 & Laser Tank sprites by alinare
+7.- SCOUTCAR by Arpia, from The X-Com Files
+ 19-Jul-18: 12:18 PM # Added NATO Tier I weapons: FN FAL, H&K MP5, H&K PSG-1, Bren, 30. Cal MG.
+ 20-Jul-18: 10:26 AM # Added USSR Tier I weapons: AK-47, SKS, Dragunov, Makarov, RPG-7.
+ 20-Jul-18: 12:31 PM # Corrected laser and plasma weapons palette. 
+ 27-Jul-18: 09:03 AM # Corrected Tier I HandObs. Added some made by efrenespartano: Shotgun, XM21, M16. Modified AK47, original by ThatDude
+ 27-Jun-18: 01:32 PM # Corrected weapons damage
+ 30-Jul-18: 07:44 PM # Added Tier I tanks with guns: BMD-1, Ferret Scout Car. Added Tier II Tank: XM22
+ 31-Jul-18: 06:24 PM # Corrected listOrders, added Laser Tank tech tree with topics.
+
+v0.2a
+1.- Flechette Grenade by Ryskeliini
+2.- Grenade Launcher sprite by Dioxine
+10-Jul-18: 09:15 AM # Fixed inventory and UFOPedia glitches, found by Yataka Shimaoka
+13-Jul-18: 11:18 PM # Increased Fuel Tank AUX capacity, now has 150. (Suggestion by Valmont) Decreased Afterburner AUX fuel penalty, now is fuelMax: -25.
+14-Jul-18: 07:40 PM # Fixed bug related to craft weapons, found by Alnoaht
+16-Jul-18: 07:32 PM # Added M16 M203, Remington stun shells and M79 stun grenade
+17-Jul-18: 09:35 AM # Final testing Tier II Crafts 
+
+v0.2b
+1.- Many weapon sprites from X-Piratez, by Dioxine and The X-Com Files, Solarius Scorch
+2.- JustRussia weapons by ThatDude
+3.- Underbarrel shotgun/grenade launcher codes by Hyper2Snyper
+4.- Weapons codes from The X-Com Files, by Solarius Scorch
+5.- HMG codes by Dioxine, moddified by BlackLibrary
+6.- Shotgun firing sound by Warboy1982
+7.- BMD-1 & Laser Tank sprites by alinare
+8.- SCOUTCAR by Arpia, from The X-Com Files
+ 19-Jul-18: 12:18 PM # Added NATO Tier I weapons: FN FAL, H&K MP5, H&K PSG-1, Bren, 30. Cal MG.
+ 20-Jul-18: 10:26 AM # Added USSR Tier I weapons: AK-47, SKS, Dragunov, Makarov, RPG-7.
+ 20-Jul-18: 12:31 PM # Corrected laser and plasma weapons palette. 
+ 27-Jul-18: 09:03 AM # Corrected Tier I HandObs. Added some made by efrenespartano: Shotgun, XM21, M16. Modified AK47, original by ThatDude
+ 27-Jun-18: 01:32 PM # Corrected weapons damage
+ 29-Jul-18: 08:30 AM # Initial Test of Capital Class UFOs, renamed Teror Ship to Troop Transport, has speedMax: 380, armor: 120, power 12, range: 20, reload: 15. Battleship has speedMax: 200, armor: 200, power: 15, range: 20, reload: 20
+ 30-Jul-18: 07:44 PM # Added Tier I tanks with guns: BMD-1, Ferret Scout Car. Added Tier II Tank: XM22
+ 31-Jul-18: 06:24 PM # Corrected listOrders, added Laser Tank tech tree with topics.
+ 1-Ago-18: 07:19 AM  # Fixed yaml-cpp error with extraStrings. Fixed new research topics, now Navigators & Engineers give UFO Classes info. (UFO classes, new UFO Types). Modified Scout class UFOS. 
+
+V0.1f
+1.- RecycledAlienCollection by Solarius Scorch
+2.- Tech-Comm HKs codes by Hobbes
+�30-Jun-18: 11:50 PM # Added first pages of UFOpedia, added most Tier I aircraft sprites
+�01-Jul-18: 10:41 AM # Added strings en-US, starting to add strings es-ES
+�03-Jul-18: 05:30 PM # Corrected flight distances of aircraft. Added double hangar. Fixed bug with M16 Clip.
+�04-Jul-18: 10:08 AM # Added Sentry and Fighter HKs in the campaign. Added RecycledAlienCollection in the campaign. 
+ 05-Jul-18: 05:18 PM # Added Linna Satellite, long range recon satellite.�
+
+V0.1e
+1.- Grenade Launcher by Ryskeliini
+2.- FourthState ruleset form Equal Terms, by KingMob4313
+3.- Alien Plasma Weapons by 
+25-Jun-18: 09:34 PM # Added M551 tank Sheridan with ammunition, added listOrder
+25-Jun-18: 11:21 PM # Fixed fatal bug with pilot armor
+26-Jun-18: 08:37 PM # Recolored armor NONE_UC, now it's blue like in real life
+27-Jun-18: 09:28 PM # Added ruleset plasma weapons to ET mod, alien weapons added.
+29-Jun-18: 08:44 PM # Aircraft sprites corrected
+29-Jun-18: 09:23 PM # MEDIUM SCOUT and LARGE SCOUT now have a 50% chance of being Hunter Killers. Speed of SMALL SCOUT (now 1500), MEDIUM SCOUT (now 2000) and LARGE SCOUT (now 2500) reduced.
+
+
+V0.1d
+1.- Pilots graphics from 40k mod by bulletdesigner
+18-Jun-18: 11:30 PM # Starting to add Tier I american weapons.
+22-Jun-18: 12:27 AM # Finished add Tier I american weapons. Check for errors. HandObs missing.
+22-Jun-18: 11:51 AM # Added pilots, corrected HandOb of M14
+22-Jun-18: 12.39 PM # Added items StartingBase
+
+V0.1c (17-Jun-18)
+Added basic UNEXCOM crafts (Phantom, Thunderchief, Hercules, Huey)
+Added basic craft weapons (Sidewinder, Sparrow, Vulcan)
+Added cool Menu music (very Vietnam war-ish, Fortunate Son by Creedence Clearwater Revival)
+18-Jun-18: 09:47 AM # Added custom Main Menu and Space backgrounds
+18-Jun-18: 08:12 PM # Added field uniforms for UNEXCOM troopers (reemplace NONE_UC)
+
+V0.1b (15-Jun-18)
+1.- Skystriker by hellrazor (C-130 Hercules placeholder)
+2.- HQ Sounds
+3.- COPTER Map from The X-Com Files (UH-1 Huey placeholder)
+Starting to add Tier I crafts, original codes Tech-Comm mod by Hobbes
+15-Jun-18: 10:00 PM # Strings of F-4, F-105, C-130, UH-1, Sparrow, Sidewinder, Vulcan added
+15-Jun-18: 11:25 PM # Corrected in knots the speed of the aircraft
+16-Jun-18: 12:04 AM # Beginning to add extraSprites for airplanes
+
+v0.1 (27-May-18 09:57 AM)
+MODS USED:
+
+1.- Terrain Mod by Hobbes
+2.- CombatUniformArmors by Fox105iwsp
+3.- RecycledAlienCollection by Solarius Scorch
+4.- Alien Armory Expanded by Solarius Scorch
+5.- Equal Terms Mod by KingMob4313 and Ickschuss.
+6.- XCOM 2012 Music by xover88
+7.- Celebrate Diversity by Solarius Scorch
+8.- XCOM 2 Music Pack by boodman123726
+ VARS edited
+
+ 
+
+
+ 
+
+�
+
+�
+�
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+te Diversity by Solarius Scorch
+8.- XCOM 2 Music Pack by boodman123726
+ VARS edited
+
+ 
+
+
+ 
+
+�
+
+�
+�
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+

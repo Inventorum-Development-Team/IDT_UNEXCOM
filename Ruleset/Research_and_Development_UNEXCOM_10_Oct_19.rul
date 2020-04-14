@@ -1,0 +1,1543 @@
+research:
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+#################################
+  - name: STR_MEDI_KIT
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    cost: 210
+    points: 20
+
+  - name: STR_USA_INITIAL_APPROACH_RESEARCH
+    spawnedItem: STR_REMINGTON_COMBAT_SHOTGUN
+    cost: 50
+    points: 50
+
+  - name: STR_NATO_INITIAL_APPROACH_RESEARCH
+    spawnedItem: STR_SG510_CARBINE
+    cost: 50
+    points: 50
+
+  - name: STR_USSR_INITIAL_APPROACH_RESEARCH
+    spawnedItem: STR_AKMSU
+    cost: 50
+    points: 50
+
+  - name: STR_USA_SUPPORT_RESEARCH
+    dependencies:
+      - STR_USA_INITIAL_APPROACH_RESEARCH
+    cost: 500
+    points: 200
+
+  - name: STR_NATO_SUPPORT_RESEARCH
+    dependencies:
+      - STR_NATO_INITIAL_APPROACH_RESEARCH
+    cost: 500
+    points: 200
+    disables:
+      - STR_USSR_SUPPORT_RESEARCH
+
+  - name: STR_USSR_SUPPORT_RESEARCH
+    dependencies:
+      - STR_USSR_INITIAL_APPROACH_RESEARCH
+    cost: 500
+    points: 200
+    disables:
+      - STR_NATO_SUPPORT_RESEARCH
+
+
+  - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_USA_SUPPORT_RESEARCH
+  - name: STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_NATO_SUPPORT_RESEARCH
+  - name: STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_USSR_SUPPORT_RESEARCH
+
+  - name: STR_NATO_AIRCRAFT_OPTION1
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    disables:
+      - STR_NATO_AIRCRAFT_OPTION2
+      - STR_NATO_AIRCRAFT_OPTION3
+  - name: STR_NATO_AIRCRAFT_OPTION2
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    disables:
+      - STR_NATO_AIRCRAFT_OPTION1
+      - STR_NATO_AIRCRAFT_OPTION3
+  - name: STR_NATO_AIRCRAFT_OPTION3
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    disables:
+      - STR_NATO_AIRCRAFT_OPTION1
+      - STR_NATO_AIRCRAFT_OPTION2
+
+  - name: STR_USSR_AIRCRAFT_OPTION1
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    disables:
+      - STR_USSR_AIRCRAFT_OPTION2
+  - name: STR_USSR_AIRCRAFT_OPTION2
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    disables:
+      - STR_USSR_AIRCRAFT_OPTION1
+
+#  - name: STR_UNITED_WE_STAND_RESEARCH
+    cost: 400
+    points: 200
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+
+  - name: STR_SPECIAL_FORCES_RESEARCH
+    cost: 20
+    points: 200
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    disables:
+      - STR_MERCENARY_RESEARCH
+
+  - name: STR_MERCENARY_RESEARCH
+    cost: 20
+    points: 200
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    disables:
+      - STR_SPECIAL_FORCES_RESEARCH
+
+  - name: STR_ALIEN_ALLOYS
+    cost: 400
+    points: 20
+    needItem: true
+  - name: STR_ALLOY_MANUFACTURING
+    cost: 800
+    points: 80
+    dependencies:
+      - STR_ALIEN_ALLOYS
+############################################
+  - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    cost: 600
+    points: 100
+    dependencies:
+     - STR_USA_SUPPORT_RESEARCH
+     - STR_ALLOY_MANUFACTURING
+  - name: STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    cost: 600
+    points: 100
+    dependencies:
+     - STR_NATO_SUPPORT_RESEARCH
+     - STR_ALLOY_MANUFACTURING
+  - name: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    cost: 600
+    points: 100
+    dependencies:
+     - STR_USSR_SUPPORT_RESEARCH
+     - STR_ALLOY_MANUFACTURING
+###############################################
+  - name: STR_ALLOY_AEROSPACE
+    listOrder: 902
+    cost: 400
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_IMPROVED_CRAFT_ACCURACY
+    cost: 350
+    points: 35
+    listOrder: 4650
+    dependencies:
+      - STR_UFO_NAVIGATION
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_CRAFT_ARMOR
+    cost: 200
+    points: 20
+    listOrder: 4651
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+
+
+  - name: STR_IMPROVED_VTOL_TRANSPORT
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_SATELLITE
+    cost: 200
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_BOMBER
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_FIGHTER
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+
+  - name: STR_IMPROVED_LIGHT_MISSILE
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_IMPROVED_FIGHTER
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_HEAVY_MISSILE
+    cost: 200
+    points: 20
+    dependencies:
+      - STR_IMPROVED_BOMBER
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_GATLING_CANNON
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_REVOLVER_CANNON
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_SUPER_HEAVY_MISSILE
+    cost: 800
+    points: 100
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_ROCKET
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_ALLOY_AEROSPACE
+
+  - name: STR_ADVANCED_BOMBER
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+      - STR_IMPROVED_BOMBER
+  - name: STR_ADVANCED_FIGHTER
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+      - STR_IMPROVED_FIGHTER
+ 
+  - name: STR_NEW_FIGHTER_CRAFT
+    cost: 1500
+    points: 30
+    dependencies:
+      - STR_ADVANCED_FIGHTER
+  - name: STR_NEW_FIGHTER_TRANSPORTER
+    cost: 2000
+    points: 30
+    dependencies:
+      - STR_NEW_FIGHTER_CRAFT
+  - name: STR_ULTIMATE_CRAFT
+    cost: 3000
+    points: 30
+    dependencies:
+      - STR_NEW_FIGHTER_TRANSPORTER
+
+########################################
+########## LASER RESEARCH ##############
+########################################
+  - name: STR_PERSONAL_ARMOR
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    unlocks:
+      - STR_HEAVY_PERSONAL_ARMOR
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    cost: 60
+    points: 5
+    dependencies:
+      - STR_PERSONAL_ARMOR
+
+#######################################
+  - name: STR_LASER_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_LASER_CANNON
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_WEAPONS
+  - name: STR_LASER_ARRAY
+    listOrder: 510
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_CANNON
+  - name: STR_LASER_DEFENSE
+    cost: 510
+    points: 15
+    dependencies:
+      - STR_LASER_CANNON
+      - STR_LASER_ARRAY
+#########################################
+####### AMERICAN LASER RESEARCH ########
+#######################################
+  - name: STR_USA_LASER_RESEARCH
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_USA_LASER_HANDGUNS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_USA_LASER_RESEARCH
+  - name: STR_USA_LASER_RIFLES
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_USA_LASER_RESEARCH
+  - name: STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_USA_LASER_RESEARCH
+  - name: STR_USA_LASER_HEAVY_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_USA_LASER_RESEARCH
+#######################################
+  - name: STR_SNIPER_LASER
+    listOrder: 400
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_CANNON
+  - name: STR_LASER_PDW
+    listOrder: 200
+    cost: 150
+    points: 10
+    dependencies:
+      - STR_SNIPER_LASER
+  - name: STR_LASER_ASSAULT_RIFLE
+    listOrder: 300
+    cost: 250
+    points: 10
+    dependencies:
+      - STR_LASER_ARRAY
+      - STR_SNIPER_LASER
+  - name: STR_LASER_MAGNUM
+    listOrder: 233
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_LASER_PDW
+    unlocks:
+      - STR_LASER_ASSAULT_RIFLE
+  - name: STR_LASER_DMR
+    listOrder: 350
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_SNIPER_LASER
+      - STR_LASER_ASSAULT_RIFLE
+  - name: STR_LASER_SMG
+    listOrder: 266
+    cost: 150
+    points: 10
+    dependencies:
+      - STR_LASER_PDW
+      - STR_LASER_ASSAULT_RIFLE
+  - name: STR_LASER_LMG
+    listOrder: 450
+    cost: 250
+    points: 10
+    dependencies:
+      - STR_LASER_DMR
+      - STR_LASER_SMG
+
+#####################################
+######## USA LASER WEAPONS #########
+###################################
+  - name: STR_LASER_LMG
+    listOrder: 450
+    cost: 250
+    points: 10
+    dependencies:
+      - STR_LASER_DMR
+      - STR_LASER_SMG
+
+
+########################################
+######## ALIEN RESEARCH ################
+########################################
+
+########################
+#### PURE RESEARCH ####
+######################
+  - name: STR_UFO_NAVIGATION
+    cost: 250
+  - name: STR_UFO_POWER_SOURCE
+    cost: 650
+  - name: STR_ALIEN_CAPITAL_SHIPS
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_FIGHTER_SHIPS
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_SCOUT_SHIPS
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_SUPPORT_SHIPS
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_SHIELDS
+    points: 50
+    needItem: true
+  - name: STR_ALIENS_ONLY
+    cost: 10000
+    points: 0
+    dependencies:
+      - STR_ALIENS_ONLY
+
+  - name: STR_ELERIUM_FUSION
+    cost: 750
+    points: 400
+    dependencies:
+     - STR_ELERIUM_115
+     - STR_UFO_POWER_SOURCE
+
+########################
+#### RACE RESEARCH ####
+######################
+
+  - name: STR_REPTOID_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_ORIGINS
+  - name: STR_REPTOID_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_CHTONITE_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_ORIGINS
+  - name: STR_CHTONITE_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_SNAKEMAN_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_SNAKEMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_ORIGINS
+  - name: STR_CEREBREAL_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_CEREBREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_SECTOID_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_SECTOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_SNAKEMAN_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_SNAKEMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_MUTON_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_MUTON
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_FLOATER_NAVIGATOR
+    cost: 192
+    points: 50
+    lookup: STR_FLOATER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_MUTON_ENGINEER
+    cost: 192
+    points: 50
+    lookup: STR_MUTON
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_FLOATER_ENGINEER
+    cost: 192
+    points: 50
+    lookup: STR_FLOATER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_SNAKEMAN_ENGINEER
+    cost: 192
+    points: 50
+    lookup: STR_SNAKEMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+  - name: STR_SECTOID_ENGINEER
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    lookup: STR_SECTOID
+    getOneFree:
+      - STR_SMALL_SCOUT
+      - STR_MEDIUM_SCOUT
+      - STR_LARGE_SCOUT
+      - STR_HARVESTER
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_BATTLESHIP
+      - STR_SUPPLY_SHIP
+      - STR_EXCAVATOR
+      - STR_SENTRY_SHIP
+      - STR_FIGHTER_SHIP
+      - STR_LAB_SHIP
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_FIGHTER_SHIPS
+      - STR_ALIEN_SCOUT_SHIPS
+      - STR_ALIEN_SUPPORT_SHIPS
+      - STR_ALIEN_SHIELDS
+
+
+ufopaedia:
+#Delete
+  - delete: STR_SKYRANGER
+  - delete: STR_INTERCEPTOR
+  - delete: STR_STINGRAY
+  - delete: STR_AVALANCHE
+  - delete: STR_CANNON_UC
+  - delete: STR_LARGE_RADAR_SYSTEM
+  - delete: STR_PISTOL
+  - delete: STR_PISTOL_CLIP
+  - delete: STR_RIFLE
+  - delete: STR_RIFLE_CLIP
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_HC_I_AMMO
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_AC_I_AMMO
+
+
+######################################
+######### UFOPEDIA IMAGES ############
+######################################
+# section: STR_HEAVY_WEAPONS_PLATFORMS is now used for UNEXCOM reports
+  - id: STR_UNEXCOM_HISTORY_1
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: UNEXCOM_HISTORY_1_IMAGE
+    text: STR_UNEXCOM_HISTORY_1_UFOPEDIA
+    listOrder: 1101
+    text_width: 316
+  - id: STR_UNEXCOM_HISTORY_2
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: UNEXCOM_HISTORY_2_IMAGE
+    text: STR_UNEXCOM_HISTORY_2_UFOPEDIA
+    listOrder: 1102
+    text_width: 316
+  - id: STR_UNEXCOM_HISTORY_3
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: UNEXCOM_HISTORY_3_IMAGE
+    text: STR_UNEXCOM_HISTORY_3_UFOPEDIA
+    listOrder: 1103
+    text_width: 316
+  - id: STR_UNEXCOM_HISTORY_4
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: SECURITY_COUNCIL_IMAGE
+    text: STR_UNEXCOM_HISTORY_4_UFOPEDIA
+    listOrder: 1104
+    text_width: 316
+  - id: STR_UNEXCOM_HISTORY_5
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: UNEXCOM_IMAGE
+    text: STR_UNEXCOM_HISTORY_5_UFOPEDIA
+    listOrder: 1105
+    text_width: 316
+  - id: STR_UNEXCOM_BLUE_HELMETS
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: BLUE_HELMETS_IMAGE
+    text: STR_UNEXCOM_BLUE_HELMETS_UFOPEDIA
+    listOrder: 1106
+    text_width: 316
+  - id: STR_UNEXCOM_PILOTS
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: PILOTS_IMAGE
+    text: STR_UNEXCOM_PILOTS_UFOPEDIA
+    listOrder: 1107
+    text_width: 316
+  - id: STR_AIR_COMBAT
+    type_id: 7
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: AIR_COMBAT_IMAGE
+    text: STR_AIR_COMBAT_UFOPEDIA
+    listOrder: 1108
+    text_width: 316
+################################################
+
+  - id: STR_USA_INITIAL_APPROACH_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USA_INITIAL_APPROACH_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USA_INITIAL_APPROACH_IMAGE
+    text: STR_USA_INITIAL_APPROACH_RESEARCH_UFOPEDIA
+    listOrder: 1109
+    text_width: 316
+
+  - id: STR_NATO_INITIAL_APPROACH_RESEARCH
+    type_id: 7
+    requires:
+      - STR_NATO_INITIAL_APPROACH_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_INITIAL_APPROACH_IMAGE
+    text: STR_NATO_INITIAL_APPROACH_RESEARCH_UFOPEDIA
+    listOrder: 1109
+    text_width: 316	
+
+  - id: STR_USSR_INITIAL_APPROACH_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USSR_INITIAL_APPROACH_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USSR_INITIAL_APPROACH_IMAGE
+    text: STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA
+    listOrder: 1109
+    text_width: 316	
+################################################	
+  - id: STR_USA_SUPPORT_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USA_SUPPORT_IMAGE
+    text: STR_USA_SUPPORT_UFOPEDIA
+    listOrder: 1109
+    text_width: 316
+
+  - id: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USA_AERONAUTIC_SUPPORT_IMAGE
+    text: STR_USA_AERONAUTIC_SUPPORT_UFOPEDIA
+    listOrder: 1110
+    text_width: 316
+
+  - id: STR_NATO_SUPPORT_RESEARCH
+    type_id: 7
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_SUPPORT_IMAGE
+    text: STR_NATO_SUPPORT_UFOPEDIA
+    listOrder: 1111
+    text_width: 316
+
+  - id: STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    type_id: 7
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_AERONAUTIC_SUPPORT_IMAGE
+    text: STR_NATO_AERONAUTIC_SUPPORT_UFOPEDIA
+    listOrder: 1112
+    text_width: 316
+
+  - id: STR_NATO_AIRCRAFT_OPTION1
+    type_id: 7
+    requires:
+      - STR_NATO_AIRCRAFT_OPTION1
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_AIRCRAFT_OPTION1_IMAGE
+    text: STR_NATO_AIRCRAFT_OPTION1_UFOPEDIA
+    listOrder: 1113
+    text_width: 316
+
+  - id: STR_NATO_AIRCRAFT_OPTION2
+    type_id: 7
+    requires:
+      - STR_NATO_AIRCRAFT_OPTION2
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_AIRCRAFT_OPTION2_IMAGE
+    text: STR_NATO_AIRCRAFT_OPTION2_UFOPEDIA
+    listOrder: 1114
+    text_width: 316
+
+  - id: STR_NATO_AIRCRAFT_OPTION3
+    type_id: 7
+    requires:
+      - STR_NATO_AIRCRAFT_OPTION3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_AIRCRAFT_OPTION3_IMAGE
+    text: STR_NATO_AIRCRAFT_OPTION3_UFOPEDIA
+    listOrder: 1115
+    text_width: 316
+
+  - id: STR_USSR_SUPPORT_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USSR_SUPPORT_IMAGE
+    text: STR_USSR_SUPPORT_UFOPEDIA
+    listOrder: 1116
+    text_width: 316
+
+  - id: STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USSR_AERONAUTIC_SUPPORT_IMAGE
+    text: STR_USSR_AERONAUTIC_SUPPORT_UFOPEDIA
+    listOrder: 1117
+    text_width: 316
+
+  - id: STR_USSR_AIRCRAFT_OPTION1
+    type_id: 7
+    requires:
+      - STR_USSR_AIRCRAFT_OPTION1
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USSR_AIRCRAFT_OPTION1_IMAGE
+    text: STR_USSR_AIRCRAFT_OPTION1_UFOPEDIA
+    listOrder: 1118
+    text_width: 316
+
+  - id: STR_USSR_AIRCRAFT_OPTION2
+    type_id: 7
+    requires:
+      - STR_USSR_AIRCRAFT_OPTION2
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USSR_AIRCRAFT_OPTION2_IMAGE
+    text: STR_USSR_AIRCRAFT_OPTION2_UFOPEDIA
+    listOrder: 1119
+    text_width: 316
+
+#  - id: STR_UNITED_WE_STAND_RESEARCH
+    type_id: 7
+    requires:
+      - STR_UNITED_WE_STAND_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: UNITED_WE_STAND_IMAGE
+    text: STR_STR_UNITED_WE_STAND_RESEARCH_UFOPEDIA
+    listOrder: 1120
+    text_width: 316
+
+  - id: STR_SPECIAL_FORCES_RESEARCH
+    type_id: 7
+    requires:
+      - STR_SPECIAL_FORCES_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: SPECIAL_FORCES_RESEARCH_IMAGE
+    text: STR_SPECIAL_FORCES_RESEARCH_UFOPEDIA
+    listOrder: 1121
+    text_width: 150
+
+  - id: STR_MERCENARY_RESEARCH
+    type_id: 7
+    requires:
+      - STR_MERCENARY_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: MERCENARY_RESEARCH_IMAGE
+    text: STR_MERCENARY_RESEARCH_UFOPEDIA
+    listOrder: 1122
+    text_width: 150
+
+##############################
+####### LASER WEAPONS #######
+############################
+  - id: STR_USA_LASER_RESEARCH
+    type_id: 7
+    requires:
+      - STR_USA_LASER_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USA_LASER_RESEARCH_IMAGE
+    text: STR_USA_LASER_RESEARCH_UFOPEDIA
+    text_width: 150
+
+  - id: STR_USA_LASER_HANDGUNS
+    type_id: 8
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    text: STR_USA_LASER_HANDGUNS_UFOPEDIA
+  - id: STR_USA_LASER_RIFLES
+    type_id: 8
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_USA_LASER_RIFLES
+    text: STR_USA_LASER_RIFLES_UFOPEDIA
+  - id: STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    type_id: 8
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    text: STR_USA_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA
+  - id: STR_USA_LASER_HEAVY_WEAPONS
+    type_id: 8
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    text: STR_USA_LASER_HEAVY_WEAPONS_UFOPEDIA
+
+
+############################################
+  - id: STR_HANGAR
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_HANGAR_UFOPEDIA
+  - id: STR_ALIEN_ORIGINS
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_ORIGINS
+    text: STR_ALIEN_ORIGINS_UFOPEDIA
+  - id: STR_THE_MARTIAN_SOLUTION
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_THE_MARTIAN_SOLUTION
+    text: STR_THE_MARTIAN_SOLUTION_UFOPEDIA
+  - id: STR_CYDONIA_OR_BUST
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_CYDONIA_OR_BUST
+    text: STR_CYDONIA_OR_BUST_UFOPEDIA
+
+########################################
+######## ALIEN RESEARCH ################
+########################################
+  - id: STR_ELERIUM_FUSION
+    type_id: 7
+    requires: 
+      - STR_ELERIUM_FUSION
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ELERIUM_FUSION_IMAGE
+    text: STR_ELERIUM_FUSION_UFOPEDIA
+    listOrder: 10201
+    text_width: 150
+
+  - id: STR_ALIEN_CAPITAL_SHIPS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires: 
+      - STR_ALIEN_CAPITAL_SHIPS
+    text: STR_ALIEN_CAPITAL_SHIPS_UFOPEDIA
+    image_id: ALIEN_CAPITAL_SHIPS_IMAGE
+    listOrder: 10201
+    text_width: 310
+  - id: STR_ALIEN_FIGHTER_SHIPS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires: 
+      - STR_ALIEN_FIGHTER_SHIPS
+    text: STR_ALIEN_FIGHTER_SHIPS_UFOPEDIA
+    image_id: ALIEN_FIGHTER_SHIPS_IMAGE
+    listOrder: 10202
+    text_width: 310
+  - id: STR_ALIEN_SCOUT_SHIPS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires: 
+      - STR_ALIEN_SCOUT_SHIPS
+    text: STR_ALIEN_SCOUT_SHIPS_UFOPEDIA
+    image_id: ALIEN_SCOUT_SHIPS_IMAGE
+    listOrder: 10203
+    text_width: 310
+  - id: STR_ALIEN_SUPPORT_SHIPS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires: 
+      - STR_ALIEN_SUPPORT_SHIPS
+    text: STR_ALIEN_SUPPORT_SHIPS_UFOPEDIA
+    image_id: ALIEN_SUPPORT_SHIPS_IMAGE
+    listOrder: 10204
+    text_width: 310
+  - id: STR_ALIEN_SHIELDS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires: 
+      - STR_ALIEN_SHIELDS
+    text: STR_ALIEN_SHIELDS_UFOPEDIA
+    image_id: ALIEN_SHIELDS_IMAGE
+    listOrder: 10205
+    text_width: 310
+  - id: STR_ALIEN_RESEARCH
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_RESEARCH
+    text: STR_ALIEN_RESEARCH_UFOPEDIA
+  - id: STR_ALIEN_HARVEST
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_HARVEST
+    text: STR_ALIEN_HARVEST_UFOPEDIA
+  - id: STR_ALIEN_ABDUCTION
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_ABDUCTION
+    text: STR_ALIEN_ABDUCTION_UFOPEDIA
+  - id: STR_ALIEN_INFILTRATION
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_INFILTRATION
+    text: STR_ALIEN_INFILTRATION_UFOPEDIA
+  - id: STR_ALIEN_BASE
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_BASE
+    text: STR_ALIEN_BASE_UFOPEDIA
+  - id: STR_ALIEN_TERROR
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_TERROR
+    text: STR_ALIEN_TERROR_UFOPEDIA
+  - id: STR_ALIEN_RETALIATION
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_RETALIATION
+    text: STR_ALIEN_RETALIATION_UFOPEDIA
+  - id: STR_ALIEN_SUPPLY
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_SUPPLY
+    text: STR_ALIEN_SUPPLY_UFOPEDIA
+  - id: STR_UFO_POWER_SOURCE
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_UFO_POWER_SOURCE
+    image_id: UP032.SPK
+    text: STR_UFO_POWER_SOURCE_UFOPEDIA
+    text_width: 163
+  - id: STR_UFO_NAVIGATION
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_UFO_NAVIGATION
+    image_id: UP033.SPK
+    text: STR_UFO_NAVIGATION_UFOPEDIA
+    text_width: 147
+  - id: STR_UFO_CONSTRUCTION
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_UFO_CONSTRUCTION
+    image_id: UP034.SPK
+    text: STR_UFO_CONSTRUCTION_UFOPEDIA
+    text_width: 148
+  - id: STR_ALIEN_FOOD
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_ALIEN_FOOD
+    image_id: UP035.SPK
+    text: STR_ALIEN_FOOD_UFOPEDIA
+    text_width: 173
+  - id: STR_ALIEN_REPRODUCTION
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_ALIEN_REPRODUCTION
+    image_id: UP036.SPK
+    text: STR_ALIEN_REPRODUCTION_UFOPEDIA
+    text_width: 167
+  - id: STR_ALIEN_ENTERTAINMENT
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_ALIEN_ENTERTAINMENT
+    image_id: UP037.SPK
+    text: STR_ALIEN_ENTERTAINMENT_UFOPEDIA
+    text_width: 146
+  - id: STR_ALIEN_SURGERY
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_ALIEN_SURGERY
+    image_id: UP038.SPK
+    text: STR_ALIEN_SURGERY_UFOPEDIA
+    text_width: 108
+  - id: STR_EXAMINATION_ROOM
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_EXAMINATION_ROOM
+    image_id: UP039.SPK
+    text: STR_EXAMINATION_ROOM_UFOPEDIA
+    text_width: 150
+  - id: STR_ALIEN_ALLOYS
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    requires:
+      - STR_ALIEN_ALLOYS
+    image_id: UP040.SPK
+    text: STR_ALIEN_ALLOYS_UFOPEDIA
+    text_width: 145
+  - id: STR_SMALL_SCOUT
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_SMALL_SCOUT
+    text: STR_SMALL_SCOUT_UFOPEDIA
+  - id: STR_MEDIUM_SCOUT
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_MEDIUM_SCOUT
+    text: STR_MEDIUM_SCOUT_UFOPEDIA
+  - id: STR_LARGE_SCOUT
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_LARGE_SCOUT
+    text: STR_LARGE_SCOUT_UFOPEDIA
+  - id: STR_HARVESTER
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_HARVESTER
+    text: STR_HARVESTER_UFOPEDIA
+  - id: STR_ABDUCTOR
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_ABDUCTOR
+    text: STR_ABDUCTOR_UFOPEDIA
+  - id: STR_TERROR_SHIP
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_TERROR_SHIP
+    text: STR_TERROR_SHIP_UFOPEDIA
+  - id: STR_BATTLESHIP
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_BATTLESHIP
+    text: STR_BATTLESHIP_UFOPEDIA
+  - id: STR_SUPPLY_SHIP
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_SUPPLY_SHIP
+    text: STR_SUPPLY_SHIP_UFOPEDIA
+
+extraSprites:
+#########################################
+######### UFOPEDIA IMAGES ###############
+#########################################
+  - type: UNEXCOM_HISTORY_1_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UFO_CRASH_UFOPEDIA.PNG
+  - type: UNEXCOM_HISTORY_2_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UFO_SPOTTED_UFOPEDIA.PNG
+  - type: UNEXCOM_HISTORY_3_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/PLANE_SHOOTDOWN_UFOPEDIA.PNG
+  - type: SECURITY_COUNCIL_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/SECURITY_COUNCIL_UFOPEDIA.PNG
+  - type: UNEXCOM_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UNEXCOM_UFOPEDIA.PNG
+  - type: BLUE_HELMETS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/BLUE_HELMETS_UFOPEDIA.PNG
+  - type: PILOTS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/PILOTS_UFOPEDIA.PNG
+
+  - type: USA_INITIAL_APPROACH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USA_INITIAL_APPROACH_IMAGE.PNG
+  - type: NATO_INITIAL_APPROACH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_INITIAL_APPROACH_IMAGE.PNG
+  - type: USSR_INITIAL_APPROACH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USSR_INITIAL_APPROACH_IMAGE.PNG
+
+  - type: USA_SUPPORT_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USA_SUPPORT_UFOPEDIA.PNG
+  - type: NATO_SUPPORT_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_SUPPORT_UFOPEDIA.PNG
+  - type: USSR_SUPPORT_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USSR_SUPPORT_UFOPEDIA.PNG
+
+  - type: USA_AERONAUTIC_SUPPORT_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USA_AERONAUTIC_SUPPORT_IMAGE.PNG
+  - type: NATO_AERONAUTIC_SUPPORT_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_AERONAUTIC_SUPPORT_IMAGE.PNG
+  - type: USSR_AERONAUTIC_SUPPORT_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USSR_AERONAUTIC_SUPPORT_IMAGE.PNG
+
+  - type: NATO_AIRCRAFT_OPTION1_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_AIRCRAFT_OPTION1_IMAGE.PNG
+  - type: NATO_AIRCRAFT_OPTION2_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_AIRCRAFT_OPTION2_IMAGE.PNG
+  - type: NATO_AIRCRAFT_OPTION3_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_AIRCRAFT_OPTION3_IMAGE.PNG
+
+  - type: USSR_AIRCRAFT_OPTION1_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USSR_AIRCRAFT_OPTION1_IMAGE.PNG
+  - type: USSR_AIRCRAFT_OPTION2_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USSR_AIRCRAFT_OPTION2_IMAGE.PNG
+
+#  - type: UNITED_WE_STAND_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UNITED_WE_STAND_IMAGE.PNG
+
+  - type: SPECIAL_FORCES_RESEARCH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/SPECIAL_FORCES_RESEARCH_IMAGE.PNG
+
+  - type: MERCENARY_RESEARCH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/MERCENARY_RESEARCH_IMAGE.PNG
+
+  - type: USA_LASER_RESEARCH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USA_LASER_RESEARCH_IMAGE.PNG
+
+  - type: ALIEN_CAPITAL_SHIPS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/ALIEN_CAPITAL_SHIPS_UFOPEDIA.PNG
+  - type: ALIEN_FIGHTER_SHIPS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/ALIEN_FIGHTER_SHIPS_UFOPEDIA.PNG
+  - type: ALIEN_SCOUT_SHIPS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/ALIEN_SCOUT_SHIPS_UFOPEDIA.PNG
+  - type: ALIEN_SUPPORT_SHIPS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/ALIEN_SUPPORT_SHIPS_UFOPEDIA.PNG
+  - type: ALIEN_SHIELDS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/ALIEN_SHIELDS_UFOPEDIA.PNG
+
+
+extraStrings:
+  - type: en-US
+    strings:
+###RESEACH ENTRIES
+###UFOPEDIA IMAGES
+      STR_UNEXCOM_HISTORY_1: "UNEXCOM REPORT 1"
+      STR_UNEXCOM_HISTORY_1_UFOPEDIA: "Since July 10, 1947, we know that there is alien life. The famous Roswell case, which was said to be a meteorological balloon, was actually a Small Scout who collided during what we believe was a reconnaissance mission. The United States government quickly secured the remains and began its investigation. These data collected, despite having more than 25 years, are useful in these moments of terror."
+      STR_UNEXCOM_HISTORY_2: "UNEXCOM REPORT 2"
+      STR_UNEXCOM_HISTORY_2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The number of UFO sightings around the world has increased, ranging from strange lights around military and civilian aircraft, strange spots on the radar that appear and disappear, to abductions, livestock theft and unprecedented climate change. It seems that our belligerence attracts them, given that there are military reports of lights in the skies of the battlefield and near military bases."
+      STR_UNEXCOM_HISTORY_3: "UNEXCOM REPORT 3"
+      STR_UNEXCOM_HISTORY_3_UFOPEDIA: "In the last decade, contacts with extraterrestrial entities have begun to be more violent. On April 25, 1968, a Lufthansa commercial aircraft was shot down in mysterious conditions after disappearing from the radar, near the Alps. Authorities attributed it to a fissure in the fuselage, although military observers noticed a strange flash before the accident.{NEWLINE}{NEWLINE} A similar case, but this time on American soil, occurs on October 5, 1971. A commercial TWA flight is intercepted over Massachusetts. Units of the Tactical Air Command are scrambled to engage the hostiles and an air combat takes place between four F-4 Phantom II and the UFO. {NEWLINE}{NEWLINE}The Boeing 747 and three Phantom were shot down. The UFO, despite being severely damaged, was able to escape. However, this aerial battle served to understand better the enemy that awaits us. Our surveillance systems could briefly analyze their characteristics."
+      STR_UNEXCOM_HISTORY_4: "UNEXCOM REPORT 4"
+      STR_UNEXCOM_HISTORY_4_UFOPEDIA: "Motivated by these acts of war, on March 18, 1972 a session of the UN Security Council is called in New York. At this meeting, representatives of the world powers agreed to form a more aggressive initiative to contain the growing unknown threat. The project is called the United Nations Extraterrestrial Combat Command and should take action by autumn of the same year. Enough time to gather all the equipment, planes, weapons and necessary personnel, both civil and military, to be able to face any threat to the Earth."
+      STR_UNEXCOM_HISTORY_5: "UNEXCOM REPORT 5"
+      STR_UNEXCOM_HISTORY_5_UFOPEDIA: "UNEXCOM has in it's charge cientifics, the best engineers, specialists and soldiers from different armed forces from all around the world, including army, navy and air force. Also has the support of various space agencies, such as NASA, the European Space Research Organisation and Soviet space agencies to support UNEXCOM in the astronautics and scientific fields that may be required. Has absolute autorization to overfly any country and to deploy combat missions without any restrictions, sometimes even with local support. It's motto is 'AD HONOREM. AD PERPETUA MEMORIA. DEFENDER TERRA', translated to 'For Honor. For Eternal Memory. Defend Earth'."
+      STR_UNEXCOM_BLUE_HELMETS: "OUR BLUE HELMETS"
+      STR_UNEXCOM_BLUE_HELMETS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}At the time of the foundation of the UNEXCOM project, the armies of the world were asked to collaborate with soldiers, field medics, combat engineers and other military specialists. All these use the distinctive blue color of the United Nations Peacekeeping Forces, but in a darker tone, to symbolize that their mission is not exclusive to maintaining peace, but to defend the planet and humanity."
+      STR_UNEXCOM_PILOTS: "OUR PILOTS"
+      STR_UNEXCOM_PILOTS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Our pilots are the Crème de la crème of the world's air forces. Experienced fighters from all over the world volunteered for the Project. Most have fought in Vietnam, Korea and there are even veterans of World War II. They were selected for the almost suicidal mission to protect the skies of Earth. Maybe we do not have the technology of the alien pilots and crafts, but we compensate with skill, dexterity and bravery. All airplanes need pilots, it is recommended to choose the most aggressive for fighters and bombers."
+      STR_AIR_COMBAT: "AIR COMBAT"
+      STR_AIR_COMBAT_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}One of our most important weapons to defend the planet is military aviation. In 1961, on what is known today as 'Nordisk Kraschar', Nordic Crash, a single unidentified flying object (which we now believe was a Medium Scout) was spotted through out northern Europe, flying at incredible speed. A pair of SAAB J29F Tunnan Were scrambled to engage the object and after a dogfight, was shot down. This, along with the Massachusetts event, showed that UFOs can and should be shoot down. The United Nations has equipped us with a few Tunnan fighters provided by the Swedish Air Force until we can adquire further equipment."
+#########################################
+      STR_USA_INITIAL_APPROACH_RESEARCH: "USA INITIAL APPROACH"
+      STR_USA_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "One of our diplomatic liaisons in the United States has secured a meeting with senior military officials from various branches. This meeting has sought to obtain material support to equip our troops, yet they have refused to do so by unofficial means. But they have assured us of their support if we openly ask for American help. It seems that the Americans doesn't have any problem if we chose to ask NATO or USSR for support too. At the end of the interview, we were gifted with a Remington Combat Shotgun, designed to be equipped in elite troops. "
+      STR_NATO_INITIAL_APPROACH_RESEARCH: "NATO INITIAL APPROACH"
+      STR_NATO_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Secret contacts with top European figures have brought us closer to them to try and get the material support our cause so badly needs. At the end of our meeting, we were given an SG 510-4 Carbine, informing us that this exclusive weapon could be given to our soldiers. We have been warned that European politicians and military do not like cooperation with the Soviets, so it is a fact that they will withdraw their support if we engage in official talks with the USSR."
+      STR_USSR_INITIAL_APPROACH_RESEARCH: "USSR INITIAL APPROACH"
+      STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Our diplomatic contacts have managed to get close to certain important figures in the USSR. We cannot reveal their names, but they have offered to assist us in soliciting support from the Warsaw Pact and the Soviet Union in general, if we so wish.  As a sign of good faith, they have given us an AKMSU carbine, for the exclusive use of the VDV airborne forces, a rare piece to find. However, we have been informed that Soviet politicians will not tolerate a rapprochement with NATO, so perhaps we should be careful not to lose possible open Soviet help."
+
+      STR_USA_SUPPORT_RESEARCH: "USA SUPPORT"
+      STR_USA_SUPPORT_UFOPEDIA: "Members of our diplomatic relations team have approached the U.S. Ambassador to the UN, George H.W. Bush to request American military support and equipment to arm our troops. It has taken some time, but he has agreed to provide us with the most modern equipment in the American arsenal, such as the M1911 Colt 45, M16/M203, XM117 Carbine, Remington Combat Shotgun, XM21, M79 Thumper, M72 LAW and M60. He also offered to equip our interception squadrons with USAF aircraft, but Ambassador Bush had to withdraw before continuing negotiations. We must contact him again if we want his support in the future."
+      STR_USSR_SUPPORT_RESEARCH: "USSR SUPPORT"
+      STR_USSR_SUPPORT_UFOPEDIA: "We have spoken with the Soviet representative on the UN Security Council, Yakov Malik, to ask him for support in obtaining weapons and extra resources for our operation. After several hours of dialogue, he has agreed to provide us with first-class equipment available for the best of the Red Army. The following list of weapons is available at the Shop: Stetchkin APS, AKM with bayonet, AKMSU, Skorpion vz. 68, KS-23 Heavy Shotgun, RPG7 and RPKS. To request air support from the Soviet Air Forces, our diplomatic team must continue to negotiate with Representative Malik."
+      STR_NATO_SUPPORT_RESEARCH: "NATO SUPPORT"
+      STR_NATO_SUPPORT_UFOPEDIA: "Our diplomatic team has begun talks with Joseph Luns, Secretary General of NATO. After several talks over several days, he has agreed to our request to provide us with weapons and equipment from the various nations that make up the North Atlantic Treaty. His only condition was to support the NATO countries in case of any alien aggression. We have at our disposal the most recent models of Beretta 92FS, FN FAL with shotgun, SG 510-4 Carbine, H&K MP5, H&K PSG1, Carl Gustav M2 and FN MAG. However, if we wish to obtain aircraft and weapons, we must return to dialogue with Secretary Luns once again."
+##########################################
+      STR_USA_AERONAUTIC_SUPPORT_RESEARCH: "USA AERONAUTIC SUPPORT"
+      STR_USA_AERONAUTIC_SUPPORT_UFOPEDIA: "We have finally managed to speak again with Ambassador Bush about our request for the use of USAF aircraft and weapons. We have also contacted Air Force Secretary Harold Brown, who has given us his support to equip our combat squadrons with USAF fighters and bombers. As soon as we request them, they will arrive at our bases in the following days, together with technical personnel specialized in the maintenance of the airplanes and their weapons systems. NEW CRAFTS: F-4 Phantom II fighter, F-105 Thunderchief bomber. NEW CRAFT WEAPONS: AIM-9 Sidewinder Light Missile, AIM-7 Sparrow Heavy Missile, GAU-61 Vulcan Gatling Cannon"
+      STR_NATO_AERONAUTIC_SUPPORT_RESEARCH: "NATO AERONAUTIC SUPPORT"
+      STR_NATO_AERONAUTIC_SUPPORT_UFOPEDIA: "Once again we turn to NATO Secretary Luns to formally request his support. Our diplomatic representatives attended an extraordinary session of the North Atlantic Council in which the representatives of the countries that make up the Organization offered their respective aircraft to our operation. Representatives from Great Britain, Italy and even Sweden (even if it does not formally belong to NATO) offer to equip us with their fighters, as well as France will offer us its strategic bombers. However, due to budgetary constraints, we can only choose one type of fighter from the three proposed. The representatives are waiting for our response. NEW CRAFTS: Figher requires further diplomatic talks, Mirage IV bomber. NEW CRAFT WEAPONS: Matra R.530X Heavy Missile, Red Top X Light Missile, ADEN Revolver Cannon."
+      STR_USSR_AERONAUTIC_SUPPORT_RESEARCH: "USSR AERONAUTIC SUPPORT"
+      STR_USSR_AERONAUTIC_SUPPORT_UFOPEDIA: "After a heated afternoon of diplomatic talks, the Soviet representative of the UNSC, Yakov Malik, and the head of the Soviet Air Force have given us their military support, equipping us with the best of the entire Soviet air arsenal. We have two fighter options: a very fast MiG-25 interceptor or a light but cheap MiG-21 fighter. We need to select one option, the other will be per disabled. They have also provided us with some teams of military engineers to maintain the planes and weapons we request. NEW CRAFTS: Needs further research, Tu-22 Backfire M bomber. NEW CRAFT WEAPONS: AA-6 Acrid Heavy Missile, AA-2 Atoll Light Missile, GSh-23 Revolver Cannon"
+      STR_NATO_AIRCRAFT_OPTION1: "NATO Fast Fighter - Great Britain"
+      STR_NATO_AIRCRAFT_OPTION1_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The Royal Air Force offers us the fast F.6 Lightning to equip our interceptor squadrons. It is very fast, has excellent acceleration and above all, its rate of ascent is record, allowing us to catch UFOs at high altitudes. Its armament consists mainly of cannons, which is particularly useful in close encounters. As we chose the British aircraft, both Italy and Sweden withdrew their offer to equip us with their national models."
+      STR_NATO_AIRCRAFT_OPTION2: "NATO Agile Fighter - Italy"
+      STR_NATO_AIRCRAFT_OPTION2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}This Italian model of Lockheed aircraft is produced by Aeritalia and is even better than the original model. It incorporates important avionics improvements, making it a highly maneuverable fighter in interceptions. Its armament is focused on light missiles for mid-range encounters. Since we accepted the Italian aircraft, Sweden and Great Britain withdrew their offers permanently."
+      STR_NATO_AIRCRAFT_OPTION3: "NATO Heavy Fighter - Sweden"
+      STR_NATO_AIRCRAFT_OPTION3_UFOPEDIA: "Sweden invites us to accept their Draken heavy hunting model. Their focus is on durability and has better reach than other fighters. It was reinforced with extra armour plates to resist UFO weapons (Sweden has secretly prepared for other possible air threats since its encounter with a Medium Scout in 1961), although this makes it not very fast or agile. In choosing it, the United Kingdom and Italy withdrew their offers."  
+      STR_USSR_AIRCRAFT_OPTION1: "USSR Heavy Interceptor - Foxbat"
+      STR_USSR_AIRCRAFT_OPTION1_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The USSR makes available to us the powerful MiG-25 interceptor (NATO code name: Foxbat) designed to face enemy bombers at extreme altitude and speed. It is considered by Western and Soviet analysts as the best interceptor of the moment, with a potent radar and a mighty engine. However, it is limited in its armament and is not agile in close combat. As we have chosen it, the Soviet authorities have permanently declined their proposal of their light fighter."
+      STR_USSR_AIRCRAFT_OPTION2: "USSR Lightweight Fighter - Fishbed"
+      STR_USSR_AIRCRAFT_OPTION2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The USSR provides us with the agile MiG-21 fighter (NATO code name: Fishbed). This aircraft combines the characteristics of fighter and light interceptor, has proved its worth on the skies of Vietnam by successfully confronting American aircraft. It is also considerably cheap. Its particular arrow shape guarantees good stability in extreme flight regimes, increasing safety for pilots.  By accepting the suggestion of this light aircraft, the USSR has withdrawn the offer to equip us with heavy interceptors."
+      STR_SPECIAL_FORCES_RESEARCH: Special Forces Support
+      STR_SPECIAL_FORCES_RESEARCH_UFOPEDIA: Requesting the support of the world's best Special Forces operatives (including the American Green Berets or the British SAS) to join our cause, some have volunteered. Their experience and high training make them way superior to the project's average volunteers. Their skills are unparalleled on the battlefield, perfect to fight an unknown enemy. Their recruiting cost is very high, but it's worth it.
+      STR_MERCENARY_RESEARCH: Mercenary Support
+      STR_MERCENARY_RESEARCH_UFOPEDIA: We have requested the support of these private soldiers to increase our combat capabilities. Most are veterans of elite groups from various armies around the world, making them more combat experienced than many of our volunteers. Their skills will be especially useful to our combat operations against the alien invaders. The recruitment cost is not very high, although their salary certainly is.
+##########################################
+      STR_USA_LASER_RESEARCH: USA Laser Research
+      STR_USA_LASER_RESEARCH_UFOPEDIA: American laser weapons are balanced in terms of power and mobility. By employing Helium-Neon power cells, the laser beam released is consistent and powerful. To avoid overheating the weapon, liquid nitrogen is used and the crystals employed are calibrated to release the energy in the form of pulses, allowing for higher rates of fire without compromising the firing system.  The structure of the weapon is solid and does not require much maintenance.
+      STR_USA_LASER_HANDGUNS: USA Laser Handguns
+      STR_USA_LASER_HANDGUNS_UFOPEDIA: The handheld laser weapons created for the U.S. armed forces are characterized by their power and compactness, although a little heavier than their Soviet and European counterparts. Based on the reliability and performance of the legendary M1911 Colt 45, American engineers have managed to reduce the size of the refractor crystals without altering their firepower. 
+      STR_USA_LASER_RIFLES: USA Laser Rifles
+      STR_USA_LASER_RIFLES_UFOPEDIA: The U.S.-designed laser rifles have the iconic silhouette of the M16, in service with U.S. troops. The carrying handle used on the Armalite family of rifles is the same on this new generation of assault weapons. With a focus on fast, accurate fire, the new weapons for the American soldier are designed so that an experienced M16 marksman will have no trouble getting used to the new M20 or CALBR. 
+      STR_USA_LASER_CLOSE_RANGE_WEAPONS: USA Laser Close-Range Weapons
+      STR_USA_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA: The United States has learned its lesson in the Vietnam War. The assault rifles employed by the MACV troops performed less well than expected in close quarters fighting in the jungle. To compensate for this, the new short-range weapons are specially designed to saturate an area with a lot of firepower, denying the enemy the possibility of getting close to the soldier using them. We are confident that these new weapons will be useful to soldiers who assault a UFO or an alien base.
+      STR_USA_LASER_HEAVY_WEAPONS: USA Laser Heavy Weapons
+      STR_USA_LASER_HEAVY_WEAPONS_UFOPEDIA:	American tactical doctrine assigns heavy weapons to infantry platoons to provide cover or long-range fire. These new support weapons are focused on suppressing the enemy's combat capability, although by their nature, they are quite uncomfortable to use and transport. It is recommended that soldiers who use them maintain fixed and stable positions, and that they do not compromise their bodily integrity when using this new laser weaponry. 
+###########################################
+      STR_IMPROVED_BOMBER: "Improved Bomber"
+      STR_IMPROVED_BOMBER_UFOPEDIA: "Returning to the abandoned project of the XB-70 Valkyrie supersonic bomber, in collaboration with North American Aviation, improved avionics, new weapons and navigation systems have been integrated, as well as a new engine and fuselage built in Alien Alloys, which substantially increases the speed and combat range of the bomber. It will be available for its manufacture in the workshop."
+      STR_IMPROVED_FIGHTER: "Improved Fighter"
+      STR_IMPROVED_FIGHTER_UFOPEDIA: "Returning to the abandoned project of the XF-108 Rapier long-range supersonic interceptor, in collaboration with North American Aviation, improved avionics, new weapons and navigation systems have been integrated, as well as a new engine and fuselage built in Alien Alloys, which substantially increases the speed and combat range of the fighter. It will be available for its manufacture in the workshop."
+      STR_IMPROVED_VTOL_TRANSPORT: "Improved VTOL Transport"
+      STR_IMPROVED_VTOL_TRANSPORT_UFOPEDIA:	"Working in close collaboration with Soviet designer Mikhail Mil, this attack and transport helicopter based on the Hind model (which has just entered service with Soviet military forces) includes a fuselage built entirely of Alien Alloys that considerably reduces its weight. In addition, the cockpit has been redesigned to incorporate new avionics systems. It is equipped with a variety of rockets and cannons, turning it into a 'flying tank'." 	  
+      STR_IMPROVED_SATELLITE: "Improved Satellite"
+      STR_IMPROVED_SATELLITE_UFOPEDIA: "New gravitational wave and infrared detection systems, in collaboration with NASA, ESRO and the Soviet Space Program have culminated in a new military reconnaissance satellite model. At the request of Soviet scientists, a slot has been incorporated to mount cannons of various types and calibres, in order to defend the satellite from UFO attacks when flying over Earth's orbit. We hope that this model will help us to improve the surveillance of our planet in the face of the alien threat."	  
+      STR_ALLOY_MANUFACTURING: "Alloy Manufacturing"
+      STR_ALLOY_MANUFACTURING_UFOPEDIA: "Research into the alloys used in alien craft and weaponry opened up new avenues of super-material construction. While this research permits the creation of the precise rare-earth doped alloys used by the alien forces, this construction technology is more effective and efficient at creating 'super alloys' than terrestrial electrical sintering, or chemical vapor deposition. Creating new alloys with this methodology will facilitate the manufacture of new armor, improved small arms and allow for further research into directed-energy weapon technology. Additionally, this technology can be used to synthesize new chemical compounds for a variety of applications from explosives, power cells to medical technology."
+      STR_ALLOY_AEROSPACE: "Alloy Aerospace"
+      STR_ALLOY_AEROSPACE_UFOPEDIA: "With the understanding gleaned from the alien alloy manufacturing process, the techniques for creating super alloys and chemical compounds suited for explosive warheads, penetrators and propellant can be applied to aircraft weaponry.  This should improve our air to air weaponry greatly."
+      STR_IMPROVED_CRAFT_ARMOR: "Improved Craft Armor"
+      STR_IMPROVED_CRAFT_ACCURACY: "Improved Craft Accuracy"
+      STR_IMPROVED_CRAFT_ACCURACY_UFOPEDIA: "Alien saucer craft we have encountered proved to be quite a challenge for the terrestrial air-to-air weaponry. While our means of dealing damage are certainly effective even against alien armor, the weapon targeting and missile guidance systems are found to be severely lacking.\n\nAfter researching the navigation systems installed on alien craft, we believe we can now propose several improvements to the terrestial air-to-air weapory. By tuning key components we could greatly improve their effectiveness against alien evasive maneuvers and allow for better tracking of alien saucers.\n\n NEW AUXILIARY UNIT: TARGETING POD"
+      STR_IMPROVED_CRAFT_ARMOR_UFOPEDIA: "It is clear that the armor plating employed by conventional earth aircraft will provide little protection when engaging all but the smallest UFOs.\n\nWe have experimented with the newly discovered Alien Alloys and we believe we can now propose several ways to upgrade our current terrestrial craft. By employing lighter materials we also expect to achieve improvements other areas, such as avionics and maximum thrust. After some additional experiments and testing we believe this new kind of materials, will be ready for production. Our new aircrafts with be manufactured with this new alloy.\n\nAs we are neither legally allowed nor sufficiently equipped to manufacture a whole craft, we have negotiated a deal with the U.N. Security Council for the purpose of this project. Upon our request they will provide us with the base hull and all relevant parts. NEW AUXILIARY UNIT: ALLOY CRAFT ARMOR"
+      STR_ELERIUM_FUSION: "Elerium Fusion"
+      STR_ELERIUM_FUSION_UFOPEDIA: "We have managed to decipher the secret behind the handling of the mysterious mineral 115, the Elerium. This mineral is similar in use to our radioactive minerals such as uranium or plutonium, but thousands of times more efficient and with less radiation, although it is still dangerous to be near the Elerium without adequate protection. Being isolated with a strong magnetic field it is possible to stabilize it enough to use it safely in weapons, ammunition, armor and vehicles. Its enormous energy is released by being bombarded with highly charged particles. These types of reactors can make nuclear power obsolete in a matter of years. We must do even more research to apply it to various uses, although for the moment we can use Elerium to make ammunition for our existing weapons."
+      STR_ALIEN_CAPITAL_SHIPS: "Alien Capital Ships"
+      STR_ALIEN_CAPITAL_SHIPS_UFOPEDIA: "Huge alien battle ships are the equivalent of our naval warships. They lead the most important missions, such as Infiltrations, Terror Sites and Retaliations. Equipped with powerful shields and a large amount of armor. The gravity and the enormous air drag makes them very slow in our atmosphere. Most take point-defense cannons, very fast but weak and short-range. Our nuclear missiles are made to knock them down."
+      STR_ALIEN_FIGHTER_SHIPS: "Alien Fighter Ships"
+      STR_ALIEN_FIGHTER_SHIPS_UFOPEDIA: "Ships dedicated exclusively to the interception of our aircraft, both civil and military. Fast, agile, with very powerful weapons. They are a more than worthy rival for our fighters and bombers. Our pilots call them 'Hunter Killers' for the enormous efficiency in doing both tasks."
+      STR_ALIEN_SCOUT_SHIPS: "Alien Scout Ships"
+      STR_ALIEN_SCOUT_SHIPS_UFOPEDIA: "Recon, exploration and surveillance ships. They are relatively slow and their weapons are not very powerful, they usually precede the main ships. Some will try to attack our planes, but they are no match for them."
+      STR_ALIEN_SUPPORT_SHIPS: "Alien Support Ships"
+      STR_ALIEN_SUPPORT_SHIPS_UFOPEDIA: "Highly specialized ships with specific tasks of each one. Their weapons are designed for self-defense, although they are dangerous for some types of aircraft. Caution is recommended."
+      STR_ALIEN_SHIELDS: "Alien Shields"
+      STR_ALIEN_SHIELDS_UFOPEDIA: "Some of the alien craft are equipped with force shields that may absorb damage from missiles and bullets. They are not invincible, but they can greatly increase UFO's resistance at unexpected levels. Usually the bigger craft use them, but some small ships equipped them too. Be careful, the UFOs shielding recharges when it doesn't recibe damage."  
+      STR_ALLOY_CRAFT_ARMOR_UC: ALLOY CRAFT ARMOR
+      STR_ALLOY_CRAFT_ARMOR: Alloy Craft Armor
+      STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: Armor plates made of Alien Alloys, designed to be installed in  UNEXCOM aircrafts to increase durability. Damage Max +100
+
+      STR_IMPROVED_LIGHT_MISSILE: "Improved Light Missile"
+      STR_IMPROVED_LIGHT_MISSILE_UFOPEDIA: "Recent advances in materials science have allowed us, in collaboration with the Raytheon company, to create a new model of lightweight missile, equipped with a modern chassis built entirely with Alien Alloys. Because it is lighter, it can carry more of a heavier warhead. In addition, avionics systems designed by our engineers, based on air combat so far, have allowed to improve the built-in heat tracker."
+      STR_IMPROVED_HEAVY_MISSILE: "Improved Heavy Missile"
+      STR_IMPROVED_HEAVY_MISSILE_UFOPEDIA: "Using our knowledge gained from using heavy radar-guided missiles against UFOs, we have been able to isolate the waves they reflect to some extent. This new active radar is considerably larger and more advanced. It is still in prototype stages, but the new R-72 Scimitar missile, built with the help of NPO Vympel, includes the new Alien Alloys frames and all the explosives that could fit inside the missile."  
+      STR_IMPROVED_GATLING_CANNON: "Improved Gatling Cannon"
+      STR_IMPROVED_GATLING_CANNON_UFOPEDIA: "General Electric engineers have been very enthusiastic about improving their famous Gatling M61 Vulcan cannon. They have visited our laboratory and engineering bay to support us in creating a new gun based on the Vulcan. By using the famous Alien Alloys, we have designed a more efficient weapon that resists the intense heat of the weapon much better. We are satisfied with the result. Improved Revolver research is required to produce the ammunition."
+      STR_IMPROVED_REVOLVER_CANNON: Improved Revolver Cannon
+      STR_IMPROVED_REVOLVER_CANNON_UFOPEDIA: "Our gunsmiths had the idea to use the BK-27 gun created by Mauser to improve it with the new Alien Alloys. The result could not have been better, and even the designers in West Germany congratulated our team of engineers. Being lighter, we were able to put in a new firing mechanism and a considerably stronger barrel. After firing 10,000 rounds, the barrel barely warmed up a bit. The extra firepower will benefit our pilots. Improved Gatling research is required to produce the ammunition."
+      STR_IMPROVED_SUPER_HEAVY_MISSILE: "Improved Super Heavy Missile"
+      STR_IMPROVED_SUPER_HEAVY_MISSILE_UFOPEDIA: "Nuclear weapons remain a difficult subject to deal with, even though this war is being waged against non-human enemies. We have obtained authorization from the UNSC to upgrade our Falcon missiles using the new technology being researched. They have allowed us to design a new fuselage and avionics system (which translates into more range and accuracy), but we still have to keep the same W54 warhead, so the damage inflicted will remain the same. To produce it, we must use an existing Falcon and modify it completely."
+      STR_IMPROVED_ROCKET: "Improved Rocket"
+      STR_IMPROVED_ROCKET_UFOPEDIA: "This project is incredibly cheap, since we are using a cost-efficient platform as a base. The unguided Mk 4 Hydra 70 rocket, used by the USAF since the Korean War to provide close support, has been adapted with new Alien Alloy materials and an improved penetration head, made of tungsten. Laboratory tests have proven its reliability. The Soviets are said to be very interested in this weapon to equip the Hind they have provided us with, a further sign that the rivalries between the USA and the USSR are diminishing... at least a little."
+
+      STR_ADVANCED_BOMBER: "Advanced Bomber"
+      STR_ADVANCED_BOMBER_UFOPEDIA: "Tactical bomber project implementing hybrid and stealth technology For this project we have moved away from classic aircraft construction and have taken a more 'organic' design.  In tests it has proven to be considerably invisible to the radar used by our aircraft, and we hope that this same feature will be used in aerial combat against UFOs."
+      STR_ADVANCED_FIGHTER: "Advaced Fighter"
+      STR_ADVANCED_FIGHTER_UFOPEDIA: "This is a novel project. Grumman has created a new heavy naval fighter designed to protect American fleets and our diplomatic liaisons have managed to contact this company to design an aircraft entirely built by UNEXCOM. Using the F-14 Tomcat as a base, we have added for the first time stealth technology based on a modified version of the Alien Alloys, retaining the large weapon carrying capacity and sweep wings. "

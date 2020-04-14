@@ -1,0 +1,434 @@
+﻿#Terrorist Faction by IDT - efrenespartano & Tingcat, for UNEXCOM
+items:
+  - type: STR_TERRORIST_MALE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3050
+    floorSprite: 3050
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 6710
+  - type: STR_TERRORIST_FEMALE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3051
+    floorSprite: 3051
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 6710
+
+  - type: STR_TERRORIST_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_TERRORIST_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_TERRORIST_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_TERRORIST_GRENADIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_TERRORIST_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 14405
+
+armors:
+  - type: STR_TERRORIST_MALE_ARMOR
+    spriteSheet: TERRORIST_MALE_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_TERRORIST_MALE_CORPSE
+    spriteInv: TERRORIST_MALE_INVENTORY
+    frontArmor: 22
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: STR_TERRORIST_FEMALE_ARMOR
+    spriteSheet: TERRORIST_FEMALE_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_TERRORIST_FEMALE_CORPSE
+    spriteInv: TERRORIST_FEMALE_INVENTORY
+    frontArmor: 22
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+
+units:
+  - type: STR_TERRORIST_SOLDIER
+    race: STR_TERRORIST
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 76
+      strength: 50
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_MALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: [41, 42, 43]
+    intelligence: 5
+    aggression: 2
+  - type: STR_TERRORIST_GRENADIER
+    race: STR_TERRORIST
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 76
+      strength: 50
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_MALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: [41, 42, 43]
+    intelligence: 7
+    aggression: 2
+  - type: STR_TERRORIST_MEDIC
+    race: STR_TERRORIST
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 65
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 76
+      strength: 50
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_FEMALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 1
+  - type: STR_TERRORIST_LEADER
+    race: STR_TERRORIST
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 70
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 72
+      firing: 72
+      throwing: 80
+      strength: 50
+      psiStrength: 55
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_FEMALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 0
+  - type: STR_TERRORIST_COMMANDER
+    race: STR_TERRORIST
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 75
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 76
+      firing: 76
+      throwing: 80
+      strength: 50
+      psiStrength: 60
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_MALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: [41, 42, 43]
+    intelligence: 8
+    aggression: 0
+
+
+alienRaces:
+#Race Rank Reference
+#alienRank: 5 - Soldier
+#alienRank: 4 - Navigator
+#alienRank: 3 - Medic
+#alienRank: 2 - Engineer
+#alienRank: 1 - Leader
+#alienRank: 0 - Commander
+  - id: STR_TERRORIST
+    members:
+      - STR_TERRORIST_COMMANDER
+      - STR_TERRORIST_LEADER
+      - STR_TERRORIST_GRENADIER
+      - STR_TERRORIST_MEDIC
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+
+research:
+  - name: STR_TERRORISTS
+    cost: 0
+    points: 50
+    dependencies:
+      - STR_TERRORIST_COMMANDER
+      - STR_TERRORIST_LEADER
+      - STR_TERRORIST_GRENADIER
+      - STR_TERRORIST_MEDIC
+      - STR_TERRORIST_SOLDIER
+    listOrder: 180290
+
+  - name: STR_TERRORISTS_OPERATIONS
+    cost: 0
+    points: 50
+    dependencies:
+      - STR_TERRORIST_LEADER
+      - STR_TERRORIST_COMMANDER
+    listOrder: 180290
+
+  - name: STR_TERRORIST_COMMANDER
+    cost: 50
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TERRORISTS
+
+  - name: STR_TERRORIST_LEADER
+    cost: 40
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TERRORISTS
+    getOneFree:
+      - STR_TEXAN_UFO
+      - STR_MAGISTER_UFO
+      - STR_MI8_UFO
+
+  - name: STR_TERRORIST_GRENADIER
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TERRORISTS
+
+  - name: STR_TERRORIST_MEDIC
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TERRORISTS
+
+  - name: STR_TERRORIST_SOLDIER
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TERRORISTS
+
+  - name: STR_TERRORIST_MALE_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_TERRORIST_AUTOPSY
+    needItem: true
+  - name: STR_TERRORIST_FEMALE_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_TERRORIST_AUTOPSY
+    needItem: true
+  - name: STR_TERRORIST_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 12680
+
+ufopaedia:
+  - id: STR_TERRORISTS
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: TERRORIST_FACTION_IMAGE
+    text: STR_TERRORISTS_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_TERRORISTS
+    listOrder: 150300
+
+  - id: STR_TERRORISTS_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: TERRORIST_OPERATIONS_IMAGE
+    text: STR_TERRORISTS_OPERATIONS_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_TERRORISTS_OPERATIONS
+    listOrder: 150300
+
+  - id: STR_TERRORIST_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: AUTOPSY_IMAGE
+    text: STR_TERRORIST_AUTOPSY_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_TERRORIST_FEMALE_CORPSE
+      - STR_TERRORIST_MALE_CORPSE
+    listOrder: 150310
+
+extraSprites:
+  - type: TERRORIST_MALE_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TerroristFaction/TERRORIST_MALE_SPRITESHEET.png
+
+  - type: TERRORIST_FEMALE_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TerroristFaction/TERRORIST_FEMALE_SPRITESHEET.png
+
+
+  - type: BIGOBS.PCK
+    files:
+      3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_BIGOB.png
+      3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_FLOOROB.png
+      3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_FLOOROB.png
+
+  - type: TERRORIST_MALE_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TerroristFaction/TERRORIST_MALE_INVENTORY.png
+
+  - type: TERRORIST_FEMALE_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TerroristFaction/TERRORIST_FEMALE_INVENTORY.png
+
+  - type: TERRORIST_FACTION_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/TERRORIST_FACTION_IMAGE.png
+  - type: TERRORIST_OPERATIONS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/TERRORIST_OPERATIONS_IMAGE.png
+  - type: AUTOPSY_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/AUTOPSY_IMAGE.png
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_TERRORIST: Terrorists
+      STR_TERRORIST_SOLDIER: Terrorist Warrior
+      STR_TERRORIST_MEDIC: Terrorist Medic
+      STR_TERRORIST_GRENADIER: Terrorist Grenadier
+      STR_TERRORIST_LEADER: Terrorist Leader
+      STR_TERRORIST_COMMANDER: Terrorist Commander
+      STR_TERRORIST_MALE_CORPSE: Male Terrorist Corpse
+      STR_TERRORIST_FEMALE_CORPSE: Female Terrorist Corpse
+
+      STR_TERRORISTS: The Terrorists
+      STR_TERRORISTS_UFOPEDIA: Terrorists are a diverse group of political, religious and ideological radicals who use violence and fear to impose their ideals or make demands on the world's governments. Each cell is independent of the others, but they use similar equipment and weaponry. They are extremely dangerous because they are not afraid to die.
+      STR_TERRORISTS_OPERATIONS: Terrorist Operations
+      STR_TERRORISTS_OPERATIONS_UFOPEDIA: Terrorist operations are often financed by extremist political or religious factions in countries around the world, who use terrorists as the means to achieve their goals without getting their hands dirty. They usually demand a ransom in the form of money or the release of prisoners loyal to their faction. Their activity has been greatly increased by the massive export of weapons from the Superpowers to Third World countries.
+      STR_TERRORIST_AUTOPSY: Terrorist Autopsy
+      STR_TERRORIST_AUTOPSY_UFOPEDIA: This is an ordinary human, with nothing we would not have seen in another member of our species and as easy to kill as an ordinary soldier. Some were equipped with bulletproof vests under their clothes, although in general their attire is that of a civilian, with some tactical elements of military origin, probably obtained illegally on the black market.
+
+      STR_TERRORIST_AUTOPSY_UFOPAEDIA: 
+      STR_CYBERMITE_UFOPAEDIA: 
+      STR_CYBERMITE_UFOPAEDIA: 
+      STR_CYBERMITE_AUTOPSY_UFOPAEDIA: 

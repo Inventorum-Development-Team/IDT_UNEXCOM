@@ -1,0 +1,163 @@
+extended:
+  tags:
+    RuleItem:
+      SPECIAL_WOUND: int
+      WOUND_FACTOR: int
+
+  scripts:
+    damageUnit:
+      - offset: -41
+        code: |
+          var int wounds;
+          var int special;
+          var int woundFactor;
+          var ptr RuleItem itemRuleset;
+          
+          # do nothing if no health lost
+          if eq to_health 0;
+            return;
+          end;
+          
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag special Tag.SPECIAL_WOUND;
+          
+          # ignore special weapon type 1
+          if eq special 1;
+            return;
+          end;
+          
+          # set received wounds to wound factor for special weapon type 2
+          if eq special 2;
+            itemRuleset.getTag woundFactor Tag.WOUND_FACTOR;
+            set wounds to_health;
+            div wounds woundFactor;
+            set to_wound wounds;
+            return;
+          end;
+          
+          # set received wounds to 1/5 of the lost hp for default weapons
+          set wounds to_health;
+          div wounds 5;
+          set to_wound wounds;
+          return;
+
+items:
+  - type: STR_CIVILIAN_UNARMED
+    tags:
+      SPECIAL_WOUND: 1
+
+###################################################
+####### UNEXCOM TIER I BALLISTIC AMMUNITION #######
+###################################################
+# Small ammo guide
+# Pistols & SMGs: 9mm penetrates more armor, .45 ACP does more wounds
+# Rifles, Carbines & LMGs: NATO rounds has better penetration, Soviet does more wounds
+# Shotguns: slugs does some stun and penetrate armor, buckshots does wounds
+###################################################
+#PISTOL AND SMGs AMMO
+  - type: STR_45_PISTOL_X7
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 4
+  - type: STR_45_PISTOL_X30
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 4
+#RIFLE AMMO
+  - type: STR_7_62MM_SOVIET_RIFLE_X10
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 2
+  - type: STR_7_62MM_SOVIET_RIFLE_X30
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 2
+  - type: STR_7_62MM_SOVIET_RIFLE_X40
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 2
+  - type: STR_7_62MM_SOVIET_RIFLE_X75
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 2
+  - type: STR_7_62MM_SOVIET_SNIPER_X10
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 2
+
+#SNIPER AMMO
+#  - &STR_50BMG_RIFLE_AMMO 
+#    type: STR_50BMG_RIFLE_AMMO
+#    power: 70
+#    battleType: 2
+  - type: STR_7_62MM_SOVIET_SNIPER_X10
+    tags:
+      SPECIAL_WOUND: 2
+      WOUND_FACTOR: 2
+
+armors:
+  - &HUMAN_ARMOR
+    type: HUMAN_ARMOR
+    scripts:
+      damageUnit: |
+        var int wounds;
+        unit.getFatalwoundsTotal wounds;
+        add wounds to_wound;
+        if gt wounds 9;
+          unit.setHealth 0;
+        end;
+        return;
+
+# Civilians
+  - type: CIVM_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: CIVF_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: POLICE_MALE_CIVILIAN_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: POLICE_FEMALE_CIVILIAN_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: HUMAN_SOLDIER_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: PARAMEDIC_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: FIREFIGHTER_ARMOR
+    refNode: *HUMAN_ARMOR
+
+# Soldiers
+  - type: STR_NONE_UC
+    refNode: *HUMAN_ARMOR
+  - type: STR_PERSONAL_ARMOR_UC
+    refNode: *HUMAN_ARMOR
+  - type: STR_POWER_SUIT_UC
+    refNode: *HUMAN_ARMOR
+  - type: STR_FLYING_SUIT_UC
+    refNode: *HUMAN_ARMOR
+
+# Pesky woundable aliens 
+  - type: SECTOID_ARMOR0
+    refNode: *HUMAN_ARMOR
+  - type: FLOATER_ARMOR0
+    refNode: *HUMAN_ARMOR
+  - type: FLOATER_ARMOR1
+    refNode: *HUMAN_ARMOR
+  - type: FLOATER_ARMOR2
+    refNode: *HUMAN_ARMOR
+  - type: REAPER_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: CHTONITE_ARMOR0
+    refNode: *HUMAN_ARMOR
+  - type: CHTONITE_ARMOR1
+    refNode: *HUMAN_ARMOR
+  - type: CHTONITE_ARMOR2
+    refNode: *HUMAN_ARMOR
+  - type: TUNLUN_ARMOR
+    refNode: *HUMAN_ARMOR
+  - type: REPTOID_ARMOR0
+    refNode: *HUMAN_ARMOR
+  - type: REPTOID_ARMOR1
+    refNode: *HUMAN_ARMOR
+  - type: REPTOID_ARMOR2
+    refNode: *HUMAN_ARMOR
+  - type: SALAMANDRON_ARMOR
+    refNode: *HUMAN_ARMOR

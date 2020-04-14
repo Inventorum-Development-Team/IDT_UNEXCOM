@@ -1,0 +1,1022 @@
+﻿itemCategories:
+  - type: STR_TANKS
+    listOrder: 1
+  - type: STR_ARMORED_CARS
+    listOrder: 2
+  - type: STR_LIGHT_TANKS
+    listOrder: 3
+  - type: STR_HEAVY_TANKS
+    listOrder: 4
+  - type: STR_TANK_AMMO
+    listOrder: 6
+  - type: STR_AIRCRAFT_WEAPONS
+    listOrder: 7
+  - type: STR_GATLING_CANNONS
+    listOrder: 8
+  - type: STR_REVOLVER_CANNONS
+    listOrder: 9
+  - type: STR_LIGHT_MISSILES
+    listOrder: 10
+  - type: STR_HEAVY_MISSILES
+    listOrder: 11
+  - type: STR_SUPER_HEAVY_MISSILES
+    listOrder: 12
+  - type: STR_AUX
+    listOrder: 13
+  - type: STR_ROCKETS
+    listOrder: 14
+  - type: STR_BALLISTIC
+    listOrder: 15
+  - type: STR_LASER
+    listOrder: 16
+  - type: STR_SMART
+    listOrder: 18
+  - type: STR_PLASMA
+    listOrder: 17
+  - type: STR_TIER_1
+    listOrder: 18
+  - type: STR_TIER_2
+    listOrder: 19
+  - type: STR_TIER_3
+    listOrder: 20
+  - type: STR_TIER_4
+    listOrder: 21
+  - type: STR_FIREARMS
+    listOrder: 25
+  - type: STR_CLIPS
+    listOrder: 30
+  - type: STR_UNEXCOM_TECH
+    listOrder: 39
+  - type: STR_US_TECH
+    listOrder: 40
+  - type: STR_NATO_TECH
+    listOrder: 50
+  - type: STR_SOVIET_TECH
+    listOrder: 60
+  - type: STR_CIVILIAN_TECH
+    listOrder: 70
+  - type: STR_SPECIAL_FORCES_TECH
+    listOrder: 72
+  - type: STR_MERCENARY_TECH
+    listOrder: 73
+  - type: STR_PISTOLS
+    listOrder: 80
+  - type: STR_RIFLES
+    listOrder: 90
+  - type: STR_CARBINES
+    listOrder: 100
+  - type: STR_SMGS
+    listOrder: 110
+  - type: STR_SNIPER_RIFLES
+    listOrder: 120
+  - type: STR_SHOTGUNS
+    listOrder: 130
+  - type: STR_ARTILLERY
+    listOrder: 140
+  - type: STR_LMGS
+    listOrder: 150
+  - type: STR_CUSTOM_WEAPON
+    listOrder: 160
+  - type: STR_MELEE
+    listOrder: 170
+  - type: STR_LIGHT_EQUIPMENT
+    listOrder: 180
+  - type: STR_MEDICAL
+    listOrder: 190
+  - type: STR_EXPLOSIVES
+    listOrder: 200
+  - type: STR_MISC
+    listOrder: 210
+  - type: STR_ALIEN_TECH
+    listOrder: 210
+
+extraStrings:
+  - type: en-US
+    strings:
+###########################################
+############## CATEGORIES ################
+#######################################
+      STR_BALLISTIC: Ballistic Weapons
+      STR_LASER: Laser Weapons
+      STR_PLASMA: Plasma Weapons
+      STR_SMART: Smart Weapons
+      STR_TANKS: Tanks
+      STR_ARMORED_CARS: Armored Cars
+      STR_LIGHT_TANKS: Light Tanks
+      STR_HEAVY_TANKS: Heavy Tanks
+      STR_TANK_AMMO: Tank Ammo
+      STR_AIRCRAFT_WEAPONS: Aircraft Weapons
+      STR_GATLING_CANNONS: Gatling Cannons
+      STR_REVOLVER_CANNONS: Revolver Cannons
+      STR_LIGHT_MISSILES: Light Missiles
+      STR_HEAVY_MISSILES: Heavy Missiles
+      STR_SUPER_HEAVY_MISSILES: Super Heavy Missiles
+      STR_AUX: AUX Units
+      STR_ROCKETS: Rocket Pods
+      STR_TIER_1: Tier 1
+      STR_TIER_2: Tier 2
+      STR_TIER_3: Tier 3
+      STR_TIER_4: Tier 4
+      STR_FIREARMS: Firearms
+      STR_CLIPS: Ammo
+      STR_UNEXCOM_TECH: UNEXCOM Tech
+      STR_US_TECH: US Tech
+      STR_NATO_TECH: NATO Tech
+      STR_SOVIET_TECH: Soviet Tech
+      STR_CIVILIAN_TECH: Civilian Tech
+      STR_SPECIAL_FORCES_TECH: Special Forces Tech
+      STR_MERCENARY_TECH: Mercenary Tech
+      STR_ALIEN_TECH: Alien Tech
+      STR_PISTOLS: Pistols
+      STR_RIFLES: Rifles
+      STR_CARBINES: Carbines
+      STR_SMGS: Submachine Guns
+      STR_LMGS: Light Machine Guns
+      STR_SNIPER_RIFLES: Sniper Rifles
+      STR_SHOTGUNS: Shotguns
+      STR_ARTILLERY: Artillery
+      STR_EXPLOSIVES: Explosives
+      STR_MELEE: Melee
+      STR_MISC: Misc Items
+      STR_LIGHT_EQUIPMENT: Light Equipment
+      STR_MEDICAL: Medical Equipment
+      STR_CUSTOM_WEAPON: Custom Weapons
+      STR_AIRCRAFTS: Aircrafts
+      STR_TRANSPORTS: Transports
+      STR_FIGHTERS: Fighters
+      STR_BOMBERS: Bombers
+      STR_VTOL_TRANSPORTS: VTOL Transports
+      STR_PARATROOPER_TRANSPORTS: Paratrooper Transports
+      STR_RECON_SATELLITES: Recon Satellites
+      STR_CRAFT_WEAPONS: Craft Weapons
+####################################################
+
+      # NEW CIVILIAN UNITS 
+      STR_HUMAN_JUMPSUIT_0_0: Civilian
+      STR_HUMAN_JUMPSUIT_0_1: Civilian
+      STR_HUMAN_JUMPSUIT_0_2: Civilian
+      STR_HUMAN_JUMPSUIT_0_3: Civilian
+      STR_HUMAN_JUMPSUIT_0_4: Civilian
+      STR_HUMAN_JUMPSUIT_1_0: Civilian
+      STR_HUMAN_JUMPSUIT_1_1: Civilian
+      STR_HUMAN_JUMPSUIT_1_2: Civilian
+      STR_HUMAN_JUMPSUIT_1_3: Civilian
+      STR_HUMAN_JUMPSUIT_1_4: Civilian
+      STR_HUMAN_JUMPSUIT_2_0: Civilian
+      STR_HUMAN_JUMPSUIT_2_1: Civilian
+      STR_HUMAN_JUMPSUIT_2_2: Civilian
+      STR_HUMAN_JUMPSUIT_2_3: Civilian
+      STR_HUMAN_JUMPSUIT_2_4: Civilian
+      STR_HUMAN_JUMPSUIT_2_5: Civilian
+      STR_HUMAN_JUMPSUIT_2_6: Civilian
+      STR_HUMAN_JUMPSUIT_2_7: Civilian
+      STR_HUMAN_SOLDIER_0_0: Soldier
+      STR_HUMAN_SOLDIER_0_1: Soldier
+      STR_HUMAN_SOLDIER_0_2: Soldier
+      STR_HUMAN_SOLDIER_0_3: Soldier
+      STR_HUMAN_SOLDIER_0_4: Soldier
+      STR_HUMAN_SOLDIER_1_0: Soldier
+      STR_HUMAN_SOLDIER_1_1: Soldier
+      STR_HUMAN_SOLDIER_1_2: Soldier
+      STR_HUMAN_SOLDIER_1_3: Soldier
+      STR_HUMAN_SOLDIER_1_4: Soldier
+      STR_HUMAN_SOLDIER_1_5: Soldier
+      STR_HUMAN_SOLDIER_2_0: Soldier
+      STR_HUMAN_SOLDIER_2_1: Soldier
+      STR_HUMAN_SOLDIER_2_2: Soldier
+      STR_HUMAN_SOLDIER_2_3: Soldier
+      STR_HUMAN_SOLDIER_2_4: Soldier
+      STR_HUMAN_SOLDIER_2_5: Soldier
+      STR_HUMAN_SOLDIER_2_6: Soldier
+      STR_HUMAN_SOLDIER_2_7: Soldier
+      STR_HUMAN_SOLDIER_2_8: Soldier
+      STR_HUMAN_SOLDIER_2_9: Soldier
+      STR_HUMAN_SOLDIER_2_10: Soldier
+      STR_HUMAN_SOLDIER_2_11: Soldier
+      STR_HUMAN_SOLDIER_3_0: Soldier
+      STR_HUMAN_SOLDIER_3_1: Soldier
+      STR_HUMAN_SOLDIER_3_2: Soldier
+      STR_HUMAN_SOLDIER_3_3: Soldier
+      STR_HUMAN_SOLDIER_3_4: Soldier
+      STR_HUMAN_SOLDIER_3_5: Soldier
+      STR_HUMAN_SOLDIER_4_0: Soldier
+      STR_HUMAN_SOLDIER_4_1: Soldier
+      STR_HUMAN_SOLDIER_4_2: Soldier
+      STR_HUMAN_SOLDIER_4_3: Soldier
+      STR_HUMAN_SOLDIER_4_4: Soldier
+      STR_HUMAN_SUIT_RED_1: Civilian
+      STR_HUMAN_SUIT_RED_2: Civilian
+      STR_HUMAN_SUIT_RED_3: Civilian
+      STR_HUMAN_SUIT_BLUE_1: Civilian
+      STR_HUMAN_SUIT_BLUE_2: Civilian
+      STR_HUMAN_SUIT_BLUE_3: Civilian
+      STR_HUMAN_SUIT_PINK_1: Civilian
+      STR_HUMAN_SUIT_PINK_2: Civilian
+      STR_HUMAN_SUIT_PINK_3: Civilian
+      STR_HUMAN_SUIT_GREY_1: Civilian
+      STR_HUMAN_SUIT_GREY_2: Civilian
+      STR_HUMAN_SUIT_GREY_3: Civilian
+      STR_HUMAN_SUIT_GREEN_1: Civilian
+      STR_HUMAN_SUIT_GREEN_2: Civilian
+      STR_HUMAN_SUIT_GREEN_3: Civilian
+      STR_HUMAN_SUIT_PURPLE_1: Civilian
+      STR_HUMAN_SUIT_PURPLE_2: Civilian
+      STR_HUMAN_SUIT_PURPLE_3: Civilian
+      STR_HUMAN_SUIT_BLACK_1: Civilian
+      STR_HUMAN_SUIT_BLACK_2: Civilian
+      STR_HUMAN_SUIT_BLACK_3: Civilian
+      STR_HUMAN_SUIT_BLACK_4: Civilian
+      STR_HUMAN_SUIT_BLACK_5: Civilian
+      STR_HUMAN_SUIT_BLACK_6: Civilian
+      STR_HUMAN_SUIT_BLACK_7: Civilian
+      STR_HUMAN_SUIT_BLACK_8: Civilian
+      MALE_CIVILIAN2: Civilian
+      MALE_CIVILIAN3: Civilian
+      MALE_CIVILIAN4: Civilian
+      MALE_CIVILIAN5: Civilian
+      MALE_CIVILIAN6: Civilian
+      MALE_CIVILIAN7: Civilian
+      MALE_CIVILIAN8: Civilian
+      MALE_CIVILIAN9: Civilian
+      MALE_CIVILIAN10: Civilian
+      FEMALE_CIVILIAN2: Civilian
+      FEMALE_CIVILIAN3: Civilian
+      FEMALE_CIVILIAN4: Civilian
+      FEMALE_CIVILIAN5: Civilian
+      FEMALE_CIVILIAN6: Civilian
+      FEMALE_CIVILIAN7: Civilian
+      FEMALE_CIVILIAN8: Civilian
+      FEMALE_CIVILIAN9: Civilian
+      FEMALE_CIVILIAN10: Civilian
+      FEMALE_CIVILIAN11: Civilian
+      FEMALE_CIVILIAN12: Civilian
+      FEMALE_CIVILIAN13: Civilian
+      FEMALE_CIVILIAN14: Civilian
+      FEMALE_CIVILIAN15: Civilian
+      STR_MALE_FARMER: Farmer
+      STR_FEMALE_FARMER: Farmer
+      HERO_CIVILIAN0: Batman
+      HERO_CIVILIAN1: Superman
+      HERO_CIVILIAN2: Flash
+      HERO_CIVILIAN3: Green Lantern
+      POLICE_MALE_CIVILIAN: Policeman
+      POLICE_FEMALE_CIVILIAN: Policewoman
+      # NEW REGIONS
+      STR_NORTH_PACIFIC: North Pacific
+      STR_SOUTH_PACIFIC: South Pacific
+      # NORTH AMERICAN CITIES
+      STR_DENVER: Denver
+      STR_MIAMI: Miami
+      STR_TORONTO: Toronto
+      STR_CHIHUAHUA: Chihuahua
+      STR_JAMAICA: Jamaica
+      STR_BOSTON: Boston
+      STR_MANAGUA: Managua
+      STR_SANFRANCISCO: San Francisco
+      STR_SEATTLE: Seattle
+      # ARCTIC CITIES
+      STR_TIKSI: Tiksi
+      STR_KAUJUITOQ: Kaujuitoq
+      STR_SVALBARD: Svalbard
+      STR_BARROW: Barrow
+      # ANTARCTIC CITIES
+      STR_VOSTOK: Vostok
+      STR_AMUNDSEN: Amundsen-Scott
+      STR_MCMURDO: McMurdo
+      STR_BELLINGSHAUSEN: Bellingshausen
+      # SOUTH AMERICAN CITIES
+      STR_CAYENNE: Cayenne
+      STR_MANAUS: Manaus
+      STR_PANAMA: Panama  
+      # EUROPEAN CITIES
+      STR_LISBON: Lisbon
+      STR_ATHENS: Athens
+      STR_WARSAW: Warsaw
+      STR_LENINGRAD: Leningrad
+      STR_ARCHANGEL: Arkhangelsk
+      STR_BAKU: Baku
+      STR_OSLO: Oslo
+      STR_REYKJAVIK: Reykjavik
+      STR_GENEVA: Geneva
+      # SIBERIAN CITIES
+      STR_YEKATERINBURG: Yekaterinburg
+      STR_IRKUTSK: Irkutsk
+      STR_ANADYR: Anadyr
+      STR_YAKUTSK: Yakutsk
+      STR_CHEYLABINSK: Cheylabinsk
+      STR_VORKUTA: Vorkuta
+      STR_MAGADAN: Magadan
+      STR_PETROPAVLOVSK: Petropavlovsk
+      STR_KHABAROVSK: Khabarovsk
+      # NORTH AFRICAN CITIES
+      STR_KHARTOUM: Khartoum
+      STR_ALGIERS: Algiers
+      STR_DAKAR: Dakar
+      STR_ASWAN: Aswan
+      STR_TUNIS: Tunis
+      STR_GAO: Gao
+      STR_TRIPOLI: Tripoli
+      STR_CANARY_ISLANDS: Canary Islands
+      STR_BEIRUT: Beirut
+      # SOUTH AFRICAN CITIES
+      STR_FREETOWN: Freetown
+      STR_ANTANANARIVO: Antananarivo
+      STR_WINDHOEK: Windhoek
+      STR_KIGALI: Kigali
+      # CENTRAL ASIAN CITIES
+      STR_TASHKENT: Tashkent
+      STR_KABUL: Kabul
+      STR_DUBAI: Dubai
+      STR_RIYADH: Riyadh
+      STR_URUMQI: Urumqi
+      STR_SRI_LANKA: Sri Lanka
+      # AUSTRALASIAN CITIES
+      STR_PORTMORESBY: Port Moresby
+      STR_FIJI: Fiji
+      STR_NOUMEA: Noumea
+      STR_TASMANIA: Tasmania
+      STR_SAMARINDA: Samarinda
+      # SOUTH EAST ASIAN CITIES
+      STR_VLADIVOSTOK: Vladivostok
+      STR_ULANBATOR: Ulan Bator
+      STR_HANOI: Hanoi
+      STR_NAGASAKI: Nagasaki
+      STR_CHENGDU: Chengdu
+      # ATLANTIC/PACIFIC/INDIAN CITIES
+      STR_ANCHORAGE: Anchorage
+      STR_GUAM: Guam
+      STR_KURIL_ISLANDS: Kuril Islands
+      STR_STLAWRENCE_ISLAND: St. Lawrence
+      STR_MIDWAY_ISLAND: Midway Island
+      STR_HAWAII: Hawaii
+      STR_BERMUDA: Bermuda
+      STR_KIRIBATI: Kiribati
+      STR_PITCAIRN: Pitcairn
+      STR_REUNION: Reunion
+      STR_NAURU: Nauru
+      STR_EASTER_ISLAND: Easter Island
+      STR_GALAPAGOS_ISLAND: Galapagos Island
+      STR_SAMOA: Samoa
+      STR_NUUK: Nuuk
+      STR_STJOHN: St. John's
+      STR_AZORES: Azores
+      STR_FAROE_ISLAND: Faroe Islands
+      STR_ASCENSION_ISLAND: Ascension Island
+      STR_TRINDADE_ISLAND: Trindade Island
+      STR_SAINT_HELENA: Saint Helena
+      STR_TRISTAN: Tristan
+      STR_SOUTH_GEORGIA: South Georgia
+      STR_FALKLAND_ISLAND: Falkland Island
+      STR_COCOS_ISLANDS: Cocos Islands
+      STR_SEYCHELLES_ISLAND: Seychelles Island
+      STR_MALDIVE_ISLAND: Maldive Island
+      STR_DIEGO_GARCIA: Diego Garcia
+      STR_MAURITIUS: Mauritius
+
+############################
+###### GEOSCAPE ###########
+##########################
+      STR_SANTANDER: Santander
+      STR_BRUSSELS: Brussels
+      STR_COPENHAGEN: Copenhagen
+      STR_NORWAY: NORWAY
+      STR_BENELUX: THE BENELUX
+      STR_DENMARK: DENMARK
+      STR_GREECE: GREECE
+      STR_ARGENTINA: ARGENTINA
+      STR_MEXICO: MEXICO
+      STR_GUADALAJARA: Guadalajara
+      STR_CHILE: CHILE
+      STR_UKRAINE: UKRAINE
+      STR_SEVASTOPOL: Sevastopol
+      STR_KIEV: Kiev
+      STR_PERU: PERU
+      STR_COLOMBIA: COLOMBIA
+      STR_POLAND: POLAND
+      MAP_EXPANDED_TERROR: Extended Terror
+      MAP_VILLAGE: Village
+      MAP_VILLAGE_INFESTED: Infested Village
+      MAP_FARM_INFESTED: Infested Farm
+      MAP_TRENCH_FARM: Frontline Farm
+      MAP_FOREST_TRENCH: Frontline Forest
+      MAP_INFESTED: Infested Land
+      MAP_RUINED_URBAN: Infested Urban
+      MAP_DEEPTRENCH: No Man's Land
+      MAP_FORESTRAIL: Forest Railroad
+      MAP_IDT_VILLAGE: Rural Settlement
+      MAP_IDT_FOREST: Rural Forest
+      MAP_IDT_SNOWVILLAGE:  Snow Rural Settlement
+      MAP_IDT_SNOWFOREST: Snow Rural Forest
+      MAP_MOUNTSNOW: High Mountain
+      MAP_MOUNTGRASS: Low Mountain
+      MAP_MOUNTSAND: Desert Mountain
+      MAP_MOUNTROCK: Mountain Pass
+      MAP_MOUNTTROP: Tropical Mountain
+      MAP_PLAINS: Mountain Plateau
+      MAP_PLAINSSNOW: Snow Plains
+      MAP_PLAINSGRASS: Plains
+      MAP_PLAINSSAND: Steppe
+      MAP_PLAINSROCK: Rocky Plain
+      MAP_PLAINSTROP: Tropical Plain
+      MAP_AIRPORT: Airport
+#####################################################
+########## Underwater Missions below ###############
+###################################################
+      MAP_VOLC: VOLCANIC SEA FLOOR
+      MAP_CORAL: CORAL SEA FLOOR # TFTD
+      MAP_ATLAN: ATLANTIS RUINS # TFTD
+      MAP_PIPES: RESEARCH STATION #TFTD
+      MAP_GAL: WRECKED GALLION #TFTD
+      MAP_SEABED: SEABED
+      MAP_MSUNK: SUNKEN CARGO
+      MAP_MU: MAYAN TEMPLE
+      MAP_U_PLANE: SUNKEN PLANE
+      STR_QD_SLOT: Q-D
+      STR_SMALL_SCOUT_UNDERWATER: Small Scout (Undewater)
+      STR_MEDIUM_SCOUT_UNDERWATER: Medium Scout (Undewater)
+      STR_LARGE_SCOUT_UNDERWATER: Large Scout (Undewater)
+      STR_HARVESTER_UNDERWATER: Harvester (Undewater)
+      STR_ABDUCTOR_UNDERWATER: Abductor (Undewater)
+      STR_TERROR_SHIP_UNDERWATER: Transport Transport (Undewater)
+      STR_BATTLESHIP_UNDERWATER: Battleship (Undewater)
+      STR_SUPPLY_SHIP_UNDERWATER: Supply Ship (Undewater)
+      STR_TERRORIST_UNDEWATER: Terrorist (Undewater)
+####################################################
+
+units:
+  - type: STR_SECTOID_SOLDIER
+    stats:
+      firing: 65
+  - type: STR_SECTOID_ENGINEER
+    stats:
+      firing: 65
+  - type: STR_SECTOID_MEDIC
+    stats:
+      firing: 65
+  - type: STR_SECTOID_NAVIGATOR
+    stats:
+      firing: 65
+  - type: STR_SECTOID_LEADER
+    stats:
+      firing: 65
+  - type: STR_SECTOID_COMMANDER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_SOLDIER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_ENGINEER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_NAVIGATOR
+    stats:
+      firing: 62
+  - type: STR_FLOATER_MEDIC
+    stats:
+      firing: 62
+  - type: STR_FLOATER_LEADER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_COMMANDER
+    stats:
+      firing: 62
+  - type: STR_SNAKEMAN_SOLDIER
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_ENGINEER
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_NAVIGATOR
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_LEADER
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_COMMANDER
+    stats:
+      firing: 71
+  - type: STR_MUTON_NAVIGATOR
+    stats:
+      firing: 66
+  - type: STR_MUTON_ENGINEER
+    stats:
+      firing: 66
+  - type: STR_MUTON_SOLDIER
+    stats:
+      firing: 66
+  - type: STR_ETHEREAL_SOLDIER
+    stats:
+      firing: 86
+  - type: STR_ETHEREAL_LEADER
+    stats:
+      firing: 86
+  - type: STR_ETHEREAL_COMMANDER
+    stats:
+      firing: 86
+# New terrain values for the planted 'Hyper Wave Encoder"
+# This is formatted different for the OXC nightly versions
+terrains:
+  - name: UBASE
+    mapDataSets:
+      - BLANKS
+      - U_BASE
+      - U_WALL02
+      - U_PODS
+      - BRAIN
+    mapBlocks:
+      - name: UBASE_00
+        width: 20
+        length: 20
+        groups: 3
+        items:
+          STR_HYPER_WAVE_ENCODER:
+            - [10, 10, 1]
+      - name: UBASE_01
+        width: 20
+        length: 20
+      - name: UBASE_02
+        width: 20
+        length: 20
+      - name: UBASE_03
+        width: 20
+        length: 20
+        items:
+          STR_ELERIUM_115:
+            - [2, 14, 1]
+      - name: UBASE_04
+        width: 10
+        length: 10
+        groups: 2
+        revealedFloors: 1
+      - name: UBASE_05
+        width: 10
+        length: 10
+      - name: UBASE_06
+        width: 10
+        length: 10
+      - name: UBASE_07
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_08
+        width: 10
+        length: 10
+      - name: UBASE_09
+        width: 10
+        length: 10
+      - name: UBASE_10
+        width: 10
+        length: 10
+      - name: UBASE_11
+        width: 10
+        length: 10
+#       UBASE_12 is impassable, 13 and 14 are apparently unused.
+#       in the interest of preserving an original experience,
+#       they have been disabled by being added to group 5, which is unused in the scripts.
+      - name: UBASE_12
+        width: 10
+        length: 10
+        groups: 5
+      - name: UBASE_13
+        width: 10
+        length: 10
+        groups: 5
+      - name: UBASE_14
+        width: 10
+        length: 10
+        groups: 5
+      - name: UBASE_15
+        width: 20
+        length: 20
+        groups: 4
+
+items:
+#DELETE
+  - delete: STR_STINGRAY_LAUNCHER
+  - delete: STR_STINGRAY_MISSILES
+  - delete: STR_AVALANCHE_LAUNCHER
+  - delete: STR_AVALANCHE_MISSILES
+  - delete: STR_CANNON
+  - delete: STR_CANNON_ROUNDS_X50
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
+  - delete: STR_INTERCEPTOR
+  - delete: STR_SKYRANGER
+  - delete: STR_PISTOL
+  - delete: STR_PISTOL_CLIP
+  - delete: STR_RIFLE
+  - delete: STR_RIFLE_CLIP
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_I_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_I_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_ROCKET_LAUNCHER
+  - delete: STR_SMALL_ROCKET
+  - delete: STR_LARGE_ROCKET
+  - delete: STR_INCENDIARY_ROCKET
+  - delete: STR_HWP_CANNON_SHELLS
+  - delete: STR_HWP_ROCKETS
+ 
+ufopaedia:
+#DELETE
+  - delete: STR_STINGRAY_LAUNCHER
+  - delete: STR_STINGRAY_MISSILES
+  - delete: STR_AVALANCHE_LAUNCHER
+  - delete: STR_AVALANCHE_MISSILES
+  - delete: STR_CANNON
+  - delete: STR_CANNON_ROUNDS_X50
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
+  - delete: STR_INTERCEPTOR
+  - delete: STR_SKYRANGER
+  - delete: STR_PISTOL
+  - delete: STR_PISTOL_CLIP
+  - delete: STR_RIFLE
+  - delete: STR_RIFLE_CLIP
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_I_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_I_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_ROCKET_LAUNCHER
+  - delete: STR_SMALL_ROCKET
+  - delete: STR_LARGE_ROCKET
+  - delete: STR_INCENDIARY_ROCKET
+
+alienDeployments:
+  - type: STR_SMALL_SCOUT
+    civilians: 2
+    height: 10
+  - type: STR_MEDIUM_SCOUT
+    civilians: 3
+    height: 10
+  - type: STR_LARGE_SCOUT
+    civilians: 4
+    height: 10
+  - type: STR_HARVESTER
+    civilians: 10
+    height: 10
+  - type: STR_ABDUCTOR
+    civilians: 6
+    height: 10
+  - type: STR_TERROR_SHIP
+    civilians: 10
+    height: 10
+  - type: STR_BATTLESHIP
+    civilians: 10
+    height: 10
+  - type: STR_SUPPLY_SHIP
+    civilians: 5
+    height: 10
+  - type: STR_FIGHTER_SHIP
+    civilians: 3
+    height: 10
+  - type: STR_EXCAVATOR
+    civilians: 3
+    height: 10
+  - type: STR_SENTRY_SHIP
+    civilians: 5
+    height: 10
+  - type: STR_LAB_SHIP
+    civilians: 6
+    height: 10
+
+extraSprites:
+##########################################
+############ BACKGROUNDS #################
+##########################################
+  - type: GEOBORD.SCR #Space
+    singleImage: true
+    files:
+      0: Resources/Backgrounds/BACK100.png
+  - type: BACK01.SCR #Main
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK01.PNG
+  - type: BACK02.SCR #soldier
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK02.PNG
+  - type: BACK04.SCR #base defense/equipment selection
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK04.PNG
+  - type: BACK05.SCR #research
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK05.PNG
+  - type: BACK12.SCR #launch interceptor
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK12.PNG
+  - type: BACK13.SCR #buy stuff, purschase things
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK13.PNG
+  - type: BACK14.SCR #equip craft
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK14.PNG
+  - type: BACK15.SCR #land at crash/landing site
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK15.PNG
+  - type: BACK16.SCR #mission briefing
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK16.PNG
+  - type: BACK17.SCR #manufacture
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK17.PNG
+
+startingBase:
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 0
+      y: 2
+    - type: STR_HANGAR
+      x: 0
+      y: 0
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_HANGAR
+      x: 4
+      y: 0
+    - type: STR_GENERAL_STORES
+      x: 0
+      y: 3
+    - type: STR_LIVING_QUARTERS
+      x: 0
+      y: 4
+    - type: STR_LABORATORY
+      x: 1
+      y: 4
+    - type: STR_WORKSHOP
+      x: 2
+      y: 4
+    - type: STR_SMALL_RADAR_SYSTEM
+      x: 3
+      y: 4
+  randomSoldiers:
+    STR_SOLDIER: 12
+    STR_PILOT: 6
+  crafts:
+    - type: STR_TUNNAN
+      id: 1
+      fuel: 137
+      damage: 0
+      weapons:
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_MIGHTY_MOUSE
+          ammo: 4
+        - type: STR_SIDEWINDER
+          ammo: 2
+    - type: STR_TUNNAN
+      id: 2
+      fuel: 137
+      damage: 0
+      weapons:
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_MIGHTY_MOUSE
+          ammo: 4
+        - type: STR_SIDEWINDER
+          ammo: 2
+    - type: STR_HUEY
+      id: 1
+      fuel: 560
+      damage: 0
+      weapons:
+        - type: STR_VULCAN
+          ammo: 200
+        - type: STR_MIGHTY_MOUSE
+          ammo: 4
+      items:
+        STR_GRENADE: 8
+        STR_5_56MM_NATO_RIFLE_X20: 10
+        STR_9MM_PISTOL_X20: 9
+        STR_38_REVOLVER_AMMO_X6: 12
+        STR_12GAUGE_BUCKSHOT_X8: 8
+        STR_BERETTA_M12: 3
+        STR_POLICE_SHOTGUN: 2
+        STR_POLICE_REVOLVER: 6
+        STR_M16A1: 4
+      status: STR_READY
+    - type: STR_HERCULES
+      id: 1
+      fuel: 510
+      damage: 0
+      status: STR_READY
+      items:
+        STR_GRENADE: 10
+        STR_7_62MM_NATO_RIFLE_X20: 10
+        STR_9MM_PISTOL_X20: 12
+        STR_38_REVOLVER_AMMO_X6: 10
+        STR_12GAUGE_BUCKSHOT_X8: 10
+        STR_POLICE_SHOTGUN: 2
+        STR_FN_FAL: 5
+        STR_OWEN_SMG: 4
+        STR_POLICE_REVOLVER: 6
+    - type: STR_LINNA
+      id: 1
+      fuel: 1000
+      damage: 0
+  items:
+    STR_FUEL_TANK: 2
+    STR_MIGHTY_MOUSE_LAUNCHER: 2
+    STR_MIGHTY_MOUSE_ROCKETS: 24
+    STR_VULCAN_CANNON: 2
+    STR_VULCAN_CANNON_ROUNDS_X50: 20
+    STR_ADEN_CANNON_ROUNDS_X50: 30
+    STR_SIDEWINDER_MISSILES: 20
+    STR_GRENADE: 5
+    STR_5_56MM_NATO_RIFLE_X20: 20
+    STR_7_62MM_NATO_RIFLE_X20: 20
+    STR_9MM_PISTOL_X20: 20
+    STR_38_REVOLVER_AMMO_X6: 20
+    STR_12GAUGE_BUCKSHOT_X8: 30
+    STR_BERETTA_M12: 4
+    STR_POLICE_SHOTGUN: 4
+    STR_POLICE_REVOLVER: 5
+    STR_M16A1: 3
+    STR_FN_FAL: 6
+    STR_OWEN_SMG: 4
+  scientists: 10
+  engineers: 10
+
+invs:
+  - id: STR_GROUND
+    costs:
+      STR_QD_SLOT: 20
+      STR_BACK_PACK: 20
+      STR_BELT: 18
+      STR_LEFT_HAND: 14
+      STR_LEFT_LEG: 16
+      STR_LEFT_SHOULDER: 22
+      STR_RIGHT_HAND: 14
+      STR_RIGHT_LEG: 16
+      STR_RIGHT_SHOULDER: 22
+  - id: STR_RIGHT_HAND
+    costs:
+      STR_QD_SLOT: 5
+      STR_BACK_PACK: 10
+      STR_BELT: 6
+      STR_GROUND: 2
+      STR_LEFT_HAND: 2
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 8
+      STR_RIGHT_LEG: 8
+      STR_RIGHT_SHOULDER: 10
+  - id: STR_LEFT_HAND
+    costs:
+      STR_QD_SLOT: 5
+      STR_BACK_PACK: 10
+      STR_BELT: 6
+      STR_GROUND: 2
+      STR_LEFT_LEG: 8
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_HAND: 2
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 8
+  - id: STR_BELT
+    x: 200
+    y: 104
+    slots:
+      - [0, 0]
+      - [1, 0]
+      - [2, 0]
+      - [3, 0]
+      - [2, 1]
+      - [3, 1]
+    costs:
+      STR_QD_SLOT: 6
+      STR_BACK_PACK: 14
+      STR_GROUND: 6
+      STR_LEFT_HAND: 4
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 12
+      STR_RIGHT_HAND: 4
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 12
+  - id: STR_RIGHT_LEG
+    costs:
+      STR_QD_SLOT: 10
+      STR_BACK_PACK: 16
+      STR_BELT: 10
+      STR_GROUND: 6
+      STR_LEFT_HAND: 8
+      STR_LEFT_LEG: 12
+      STR_LEFT_SHOULDER: 14
+      STR_RIGHT_HAND: 6
+      STR_RIGHT_SHOULDER: 16
+  - id: STR_LEFT_LEG
+    costs:
+      STR_QD_SLOT: 10
+      STR_BACK_PACK: 16
+      STR_BELT: 10
+      STR_GROUND: 6
+      STR_LEFT_HAND: 6
+      STR_LEFT_SHOULDER: 16
+      STR_RIGHT_HAND: 8
+      STR_RIGHT_LEG: 12
+      STR_RIGHT_SHOULDER: 14
+  - id: STR_RIGHT_SHOULDER
+    costs:
+      STR_QD_SLOT: 10
+      STR_BACK_PACK: 14
+      STR_BELT: 10
+      STR_GROUND: 6
+      STR_LEFT_HAND: 4
+      STR_LEFT_LEG: 14
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_HAND: 6
+      STR_RIGHT_LEG: 12
+  - id: STR_LEFT_SHOULDER
+    costs:
+      STR_QD_SLOT: 10
+      STR_BACK_PACK: 14
+      STR_BELT: 10
+      STR_GROUND: 6
+      STR_LEFT_HAND: 6
+      STR_LEFT_LEG: 12
+      STR_RIGHT_HAND: 4
+      STR_RIGHT_LEG: 14
+      STR_RIGHT_SHOULDER: 10
+  - id: STR_BACK_PACK
+    costs:
+      STR_QD_SLOT: 26
+      STR_BELT: 26
+      STR_GROUND: 24
+      STR_LEFT_HAND: 22
+      STR_LEFT_LEG: 26
+      STR_LEFT_SHOULDER: 26
+      STR_RIGHT_HAND: 22
+      STR_RIGHT_LEG: 26
+      STR_RIGHT_SHOULDER: 26
+  - id: STR_QD_SLOT
+    x: 176
+    y: 104
+    slots:
+      - [0, 0]
+      - [0, 1]
+    costs:
+      STR_BACK_PACK: 14
+      STR_BELT: 8
+      STR_GROUND: 5
+      STR_LEFT_HAND: 3
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_HAND: 3
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 10
+
+#############################
+#### UNDERWATER STUFF ######
+###########################
+transparencyLUTs:
+  - colors:
+      - [  8,  8, 12, 2 ] # "white"
+      - [ 16,  8,  0, 2 ] # orange
+      - [  0, 12, 12, 2 ] # cyan
+      - [  4, 16,  4, 2 ] # green
+enviroEffects:
+  - type: STR_Underwater # battlescape underwater missions transformations
+    mapBackgroundColor: 141
+    paletteTransformations:
+      PAL_BATTLESCAPE: PAL_BATTLESCAPE_1
+    # armorTransformations:
+    #   STR_NONE_UC: STR_NONE_UC_UW

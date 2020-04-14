@@ -1,0 +1,1050 @@
+units:
+#####################################
+####### DAIMLER FERRET SC ###########
+#####################################
+  - type: STR_FERRET_CAR
+    race: STR_FERRET_CAR
+    stats:
+      tu: 150
+      stamina: 100
+      health: 60
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: FERRET_CAR_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+#      - STR_FERRET_CAR - this seems to be linked via unit title now
+#      - STR_DOUBLE_50CAL
+      - STR_DOUBLE_50CAL_BOX
+      - STR_FERRET_SMOKE_LAUNCHER    
+      - STR_FERRET_SMOKE_GRENADE
+#####################################
+####### M551 SHERIDAN ###############
+#####################################
+  - type: STR_SHERIDAN_TANK
+    race: STR_SHERIDAN_TANK
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: SHERIDAN_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+#      - STR_SHERIDAN_TANK - this seems to be linked via unit title now
+#      - STR_M81E1
+      - STR_152MM_CANNON_SHELLS
+      - STR_SHILLELAGH      
+      - STR_MGM51_MISSILE
+#####################################
+####### BMD-1 AIRBORNE IFV ##########
+#####################################
+  - type: STR_BMD1_TANK
+    race: STR_BMD1_TANK
+    stats:
+      tu: 90
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 40
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: BMD1_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+#      - STR_BMD1_TANK - this seems to be linked via unit title now
+#      - STR_2A28_GROM
+      - STR_73MM_CANNON_SHELLS
+      - STR_PKT_MACHINEGUN     
+      - STR_PKT_AMMO_BOX
+#####################################
+######### ALVIS SALADIN AC ##############
+#####################################
+  - type: STR_SALADIN_CAR
+    race: STR_SALADIN_CAR
+    stats:
+      tu: 110
+      stamina: 100
+      health: 70
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: SALADIN_CAR_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+#      - STR_SALADIN_CAR - this seems to be linked via unit title now
+#      - STR_L5A1_GUN
+      - STR_76MM_CANNON_SHELLS
+      - STR_M1919A4_MACHINEGUN     
+      - STR_M1919A4_AMMO_BOX
+#####################################
+##### LEGIONNAIRE LASER TANK ########
+#####################################	  
+  - type: STR_TANK_LASER_CANNON
+    race: STR_TANK_LASER_CANNON
+    stats:
+      tu: 110
+      stamina: 100
+      health: 125
+      bravery: 110
+      reactions: 45
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: LEGIONNAIRE_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_TANK_LASER_MINIGUN
+
+items:
+#####################################
+####### DAIMLER FERRET SC ##############
+#####################################
+  - type: STR_FERRET_CAR
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_ARMORED_CARS]
+    size: 6
+    costBuy: 350000
+    costSell: 240000
+    transferTime: 96
+    weight: 1
+    bigSprite: 2500
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 3
+    fireSound: 4336
+    compatibleAmmo:
+      - STR_DOUBLE_50CAL_BOX
+    accuracyAuto: 80
+    accuracySnap: 95
+    accuracyCloseQuarters: 50
+    tuAuto: 45
+    tuSnap: 30
+    autoShots: 5
+    clipSize: 50
+    autoRange: 200
+    snapRange: 200
+    dropoff: 1
+    bulletSpeed: 16	
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1409
+  - type: STR_FERRET_SMOKE_LAUNCHER
+    weight: 0
+    bigSprite: 2501
+    fireSound: 1007
+    compatibleAmmo:
+      - STR_FERRET_SMOKE_GRENADE
+    accuracyAimed: 100
+    tuAimed: 45
+    confAimed:
+      name: STR_HWP_POP_SMOKE
+    battleType: 1
+    maxRange: 2
+    arcingShot: true
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 1411
+  - type: STR_DOUBLE_50CAL_BOX
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    size: 0.1
+    costBuy: 50
+    costSell: 50
+    transferTime: 48
+    weight: 1
+    bigSprite: 111
+    floorSprite: 12
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    bulletSpeed: 16
+    bulletSprite: 4
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmor: 0.5
+      ToArmorPre: 0.6
+    clipSize: 50
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 1410
+  - type: STR_FERRET_SMOKE_GRENADE
+    weight: 0
+    bigSprite: 125
+    power: 60
+    damageType: 9
+    clipSize: 6
+    battleType: 2
+    ignoreInCraftEquip: true
+    hitSound: 0
+    hitAnimation: 0
+    listOrder: 1412
+#####################################
+####### M551 SHERIDAN #################
+#####################################
+  - type: STR_SHERIDAN_TANK
+    categories: [STR_TANKS, STR_USA_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 6
+    costBuy: 720000
+    costSell: 540000
+    transferTime: 96
+    weight: 1
+    bigSprite: 2502
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 4
+    fireSound: 4330
+    bulletSpeed: 10
+    compatibleAmmo:
+      - STR_152MM_CANNON_SHELLS
+    accuracySnap: 75
+    accuracyAimed: 95
+    clipSize: 20
+    tuSnap: 60
+    tuAimed: 85
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1401
+  - type: STR_SHILLELAGH
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 6
+    transferTime: 96
+    weight: 1
+    bigSprite: 2503
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 4331
+    compatibleAmmo:
+      - STR_MGM51_MISSILE
+    clipSize: 9
+    accuracyAimed: 75
+    tuAimed: 65
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    arcingShot: false
+    recover: false
+    turretType: -1
+    waypoints: 2
+    listOrder: 1403
+  - type: STR_152MM_CANNON_SHELLS
+    categories: [STR_TANKS, STR_USA_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 1600
+    costSell: 800
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 26
+    power: 100
+    damageType: 3
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: -1
+      RadiusReduction: 50
+    clipSize: 20
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 1402
+  - type: STR_MGM51_MISSILE
+    categories: [STR_TANKS, STR_USA_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.6
+    costBuy: 9000
+    costSell: 7250
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 16
+    hitSound: 13
+    hitAnimation: 26
+    power: 90
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: true
+      IgnoreSelfDestruct: true
+      ToArmor: 2.2
+    clipSize: 9
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1404
+#####################################
+########## ALVIS SALADIN AC ############
+#####################################
+  - type: STR_SALADIN_CAR
+    categories: [STR_TANKS, STR_NATO_TECH, STR_ARMORED_CARS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 6
+    costBuy: 350000
+    costSell: 240000
+    transferTime: 96
+    weight: 1
+    bigSprite: 2504
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 3
+    fireSound: 4333
+    compatibleAmmo:
+      - STR_76MM_CANNON_SHELLS
+    accuracySnap: 45
+    accuracyAimed: 80
+    clipSize: 30
+    tuSnap: 33
+    tuAimed: 60
+    bulletSpeed: 15
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1405
+  - type: STR_76MM_CANNON_SHELLS
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 1500
+    costSell: 800
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 80
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 2
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 1406
+  - type: STR_M1919A4_MACHINEGUN
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 6
+    transferTime: 96
+    weight: 1
+    bigSprite: 2505
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 4334
+    compatibleAmmo:
+      - STR_M1919A4_AMMO_BOX
+    accuracySnap: 40
+    accuracyAimed: 75
+    accuracyAuto: 80
+    clipSize: 50
+    tuAuto: 30
+    tuSnap: 35
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    autoShots: 5
+    sprayWaypoints: 2
+    bulletSpeed: 25
+    recover: false
+    turretType: -1
+    listOrder: 1407
+  - type: STR_M1919A4_AMMO_BOX
+    categories: [STR_TANKS, STR_TANK_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.6
+    costBuy: 80
+    costSell: 80
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 16
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmor: 0.5
+      ToArmorPre: 0.5
+      ToHealth: 0.6
+    damageType: 1
+    clipSize: 50
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1408
+#####################################
+####### BMD-1 AIRBORNE IFV ##########
+#####################################
+  - type: STR_BMD1_TANK
+    categories: [STR_TANKS, STR_USSR_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 6
+    costBuy: 520000
+    costSell: 440000
+    transferTime: 96
+    weight: 1
+    bigSprite: 2506
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 4333
+    compatibleAmmo:
+      - STR_73MM_CANNON_SHELLS
+    accuracySnap: 60
+    accuracyAimed: 80
+    clipSize: 40
+    tuSnap: 33
+    tuAimed: 60
+    bulletSpeed: 15
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1409
+  - type: STR_PKT_MACHINEGUN
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 6
+    transferTime: 96
+    weight: 1
+    bigSprite: 2507
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 4334
+    compatibleAmmo:
+      - STR_PKT_AMMO_BOX
+    accuracySnap: 40
+    accuracyAuto: 45
+    tuAuto: 30
+    tuSnap: 35
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    autoShots: 5
+    sprayWaypoints: 2
+    bulletSpeed: 25
+    recover: false
+    turretType: -1
+    listOrder: 1410
+  - type: STR_73MM_CANNON_SHELLS
+    categories: [STR_TANKS, STR_USSR_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 1500
+    costSell: 750
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    power: 63
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 1411
+  - type: STR_PKT_AMMO_BOX
+    categories: [STR_TANKS, STR_USSR_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.6
+    costBuy: 50
+    costSell: 50
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 16
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      ToArmorPre: 0.4
+      IgnoreOverKill: true
+    clipSize: 50
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1412
+#####################################
+##### LEGIONNAIRE LASER TANK ########
+#####################################
+  - type: STR_TANK_LASER_CANNON
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    size: 6
+    transferTime: 96
+    costSell: 575000
+    transferTime: 96
+    weight: 1
+    bigSprite: 2508
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 7
+    fireSound: 4337
+    hitSound: 19
+    hitAnimation: 36
+    power: 150
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.7
+      IgnoreOverKill: false
+    clipSize: 30
+    accuracySnap: 60
+    tuSnap: 40
+    accuracyAimed: 110
+    tuAimed: 60
+    maxRange: 200
+    aimRange: 125
+    snapRange: 25
+    minRange: 10
+    dropoff: 1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    bulletSpeed: 8
+    listOrder: 1414
+  - type: STR_TANK_LASER_MINIGUN
+    weight: 1
+    bigSprite: 2509
+    bulletSprite: 2
+    fireSound: 4338
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    damageAlter:
+        RandomType: 6
+        ToArmor: 0.9
+        ToArmorPre: 0.8
+        IgnoreOverKill: false
+    clipSize: 100
+    accuracyAuto: 48
+    tuAuto: 38
+    accuracySnap: 60
+    tuSnap: 32
+    maxRange: 200
+    snapRange: 20
+    autoRange: 30
+    minRange: 4
+    dropoff: 1
+    battleType: 1
+    autoShots: 10
+    bulletSpeed: 10
+    sprayWaypoints: 2
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 1415
+
+armors:
+#####################################
+# Small explanation about Tank armors:
+# AP damage represents bullets and anti-tank solid shells
+# HE damage represents explosives, mines and RPGs
+# Incendiary damage represents fire damage
+# Types of tanks:
+# Armored Cars: Very fast vehicles, have quite high AP resistance but HE crushes them
+# Light Tanks: Fast vehicles, higher AP and HE resistance than ACs
+# MBT/Heavy Tanks: slow vehicles, have superb AP resistance, HE is mildly effective
+#####################################
+####### DAIMLER FERRET AC ##############
+#####################################
+  - type: FERRET_CAR_ARMOR
+    spriteSheet: FERRET.PCK
+    spriteInv: FERRET
+    allowInv: true
+    customArmorPreviewIndex: 28
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 30
+    sideArmor: 24
+    rearArmor: 24
+    underArmor: 20
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.7 # AP
+     - 0.7 # Incendiary
+     - 1.2 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+#####################################
+####### M551 SHERIDAN ###############
+#####################################
+  - type: SHERIDAN_TANK_ARMOR
+    spriteSheet: SHERIDAN.PCK
+    spriteInv: SHERIDAN
+    allowInv: true
+    customArmorPreviewIndex: 28
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 62
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 16
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+#####################################
+####### BMD-1 AIRBORNE IFV ##########
+#####################################
+  - type: BMD1_TANK_ARMOR
+    spriteSheet: BMD1.PCK
+    spriteInv: BMD1
+    allowInv: true
+    customArmorPreviewIndex: 28
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 65
+    sideArmor: 50
+    rearArmor: 45
+    underArmor: 20
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+#####################################
+########## ALVIS SALADIN AC #############
+#####################################
+  - type: SALADIN_CAR_ARMOR
+    spriteSheet: SALADIN.PCK
+    spriteInv: SALADIN
+    allowInv: true
+    customArmorPreviewIndex: 28
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 68
+    sideArmor: 28
+    rearArmor: 26
+    underArmor: 20
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.5 # AP
+     - 0.7 # Incendiary
+     - 1.0 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+#####################################
+####### LEGIONNAIRE LASER TANK ###########
+#####################################
+  - type: LEGIONNAIRE_TANK_ARMOR
+    spriteSheet: LEGIONNAIRE.PCK
+    spriteInv: LEGIONNAIRE
+    allowInv: true
+    customArmorPreviewIndex: 28
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 100
+    sideArmor: 75
+    rearArmor: 60
+    underArmor: 50
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.3 # AP
+     - 0.6 # Incendiary
+     - 0.5 # HE
+     - 0.7 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]   
+ufopaedia:
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
+#####################################
+  - id: STR_FERRET_CAR
+    type_id: 3
+    image_id: FERRET_BACKGROUND
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_FERRET_CAR_UFOPEDIA
+    weapon: STR_DOUBLE_50CAL
+    listOrder: 1200
+  - id: STR_SHERIDAN_TANK
+    type_id: 3
+    image_id: SHERIDAN_BACKGROUND
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    text: STR_SHERIDAN_UFOPEDIA
+    weapon: STR_M81E1
+#    weapon: STR_SHERIDAN_TANK
+    listOrder: 1201
+  - id: STR_BMD1_TANK
+    type_id: 3
+    image_id: BMD1_BACKGROUND
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    text: STR_BMD1_UFOPEDIA
+    weapon: STR_2A28_GROM
+    listOrder: 1202
+  - id: STR_SALADIN_CAR
+    type_id: 3
+    image_id: SALADIN_BACKGROUND
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    text: STR_SALADIN_CAR_UFOPEDIA
+    weapon: STR_L5A1_GUN
+    listOrder: 1203
+  - id: STR_TANK_LASER_CANNON
+    type_id: 3
+    image_id: LEGIONNAIRE_BACKGROUND
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_TANK_LASER_CANNON
+    text: STR_LEGIONNAIRE_TANK_UFOPEDIA
+    weapon: STR_XM343
+    listOrder: 1205
+  - id: STR_IMP_TANK_CHASSIS
+    type_id: 7
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_IMP_TANK_CHASSIS
+    image_id: IMP_TANK_CHASSIS_IMAGE
+    text: STR_IMP_TANK_CHASSIS_UFOPEDIA
+    listOrder: 1204
+    text_width: 310
+extraSprites:
+  - type: FERRET.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/FERRET.png
+  - type: SHERIDAN.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/SHERIDAN.png
+  - type: BMD1.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/BMD1.png
+  - type: SALADIN.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/SALADIN.png
+  - type: LEGIONNAIRE.PCK
+#    width: 256
+#    height: 160
+    width: 256
+    height: 840
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/LEGIONNAIRE.png
+  - type: FERRET_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Tanks/UFOPedia/FERRET_UFOPEDIA.png
+  - type: SHERIDAN_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Tanks/UFOPedia/SHERIDAN_UFOPEDIA.png
+  - type: BMD1_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Tanks/UFOPedia/BMD1_UFOPEDIA.png
+  - type: SALADIN_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Tanks/UFOPedia/SALADIN_UFOPEDIA.png
+  - type: LEGIONNAIRE_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Tanks/UFOPedia/LEGIONNAIRE_UFOPEDIA.png
+  - type: IMP_TANK_CHASSIS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOPedia/IMP_TANK_CHASSIS_IMAGE.png
+  - type: BIGOBS.PCK
+    files:
+      2500: Resources/Tanks/DUAL50CAL.png
+      2501: Resources/Tanks/SMOKELAUNCHER.png
+
+      2502: Resources/Tanks/152MM.png
+      2503: Resources/Tanks/MGM51.png
+
+      2504: Resources/Tanks/76MM.png
+      2505: Resources/Tanks/M1919A.png
+
+      2506: Resources/Tanks/73MM.png
+      2507: Resources/Tanks/PKT.png
+
+      2508: Resources/Tanks/ENERGYSHELL.png
+      2509: Resources/Tanks/LASERMINIGUN.png
+
+#      2510: Resources/Tanks/ENERGYSHELL.png
+#      2511: Resources/Tanks/LASERMINIGUN.png	  
+  - type: FERRETM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/FERRET_INVENTORY.png	  
+  - type: SHERIDANM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/SHERIDAN_INVENTORY.png
+  - type: BMD1M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/BMD1_INVENTORY.png
+  - type: SALADINM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/SALADIN_INVENTORY.png
+  - type: LEGIONNAIREM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/LEGIONNAIRE_INVENTORY.png
+research:
+  - name: STR_IMP_TANK_CHASSIS
+    cost: 500
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_TANK_LASER_CANNON
+    cost: 500
+    points: 50
+    dependencies:
+      - STR_LASER_CANNON
+      - STR_IMP_TANK_CHASSIS
+manufacture:
+  - name: STR_TANK_LASER_CANNON
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_LASER_CANNON
+    space: 25
+    time: 1200
+    cost: 500000	  
+extraStrings:
+  - type: en-US
+    strings:
+      STR_FERRET_CAR: FV701 Ferret Scout Car
+      FERRET_CAR_ARMOR: Aluminum hull
+      STR_DOUBLE_50CAL: Double M2 50 Cal. MG
+      STR_DOUBLE_50CAL_BOX: x50 .50 BMG Rounds   
+      STR_FERRET_SMOKE_LAUNCHER: Smoke Screen Launcher 
+      STR_FERRET_SMOKE_GRENADE: Smoke Screen Grenade
+      STR_HWP_POP_SMOKE: Smoke Screen!
+      STR_FERRET_CAR_UFOPEDIA:  The Ferret Scout Car is a British armoured fighting vehicle designed and built for reconnaissance purposes. These vehicles are provided by the United Nations, very used by the UN Peacekeeping Forces all around the globe. It has reduced armor, but is equipped with two powerful .50 caliber M2 Machine Guns (50 rds) and a smoke grenade dispenser (6 rds).
+######################################################## 
+      STR_SHERIDAN_TANK: M551 Sheridan
+      SHERIDAN_TANK_ARMOR: Aluminum hull with steel turret
+      STR_M81E1: M81E1 152mm Rifled Gun
+      STR_152MM_CANNON_SHELLS: 152mm AP Rounds	  
+      STR_SHILLELAGH: MGM-51 Shillelagh Guided Missile 
+      STR_MGM51_MISSILE: MGM-51 Shillelagh Guided Missile
+      STR_SHERIDAN_UFOPEDIA: The M551 Sheridan AR/AAV (Armored Reconnaissance/Airborne Assault Vehicle) is a light tank developed by the United States, provided to UNEXCOM for ground combat support. It's designed to be landed by parachute and to swim across rivers. It's armed with the technically advanced M81E1 152mm gun/launcher (20 rds), adapted for the use of the MGM-51 Shillelagh guided anti-tank missile (9 rds).
+######################################################## 
+      STR_BMD1_TANK: BMD-1 Airborne IFV
+      BMD1_TANK_ARMOR: Welded aluminium alloy 
+      STR_2A28_GROM: 2A28 73mm Grom Cannon
+      STR_73MM_CANNON_SHELLS: 73mm HE Rounds	  
+      STR_PKT_MACHINEGUN: 7.62mm PKT Machine Gun
+      STR_PKT_AMMO_BOX: x50 PKT 7.62mm Rounds
+      STR_BMD1_UFOPEDIA: The BMD-1 is a Soviet airborne amphibious tracked infantry fighting vehicle, first introduced in 1969. BMD stands for Boyevaya Mashina Desanta (literally 'Combat Vehicle of the Airborne'). It can be dropped by parachute and can be carried by our C-130 Hercules and although it resembles the BMP-1 it is in fact much smaller. It's main armament is composed of a 2A28 Grom 73mm semi-auto gun (40 rds) and a PKT coaxial MG (50 rds).
+######################################################## 
+      STR_SALADIN_CAR: FV601 Saladin Armored Car
+      SALADIN_CAR_ARMOR: Aluminum hull
+      STR_L5A1_GUN: ROF L5A1 76mm Gun
+      STR_76MM_CANNON_SHELLS: 76mm HESH Rounds
+      STR_M1919A4_MACHINEGUN: 7.62mm M1919A4 Machine Gun
+      STR_M1919A4_AMMO_BOX: x50 M1919A4 7.62mm Rounds
+      STR_SALADIN_CAR_UFOPEDIA:  Excellent 6x6 armored car of British origin, was designed in the 50s and has been exported to numerous nations since then, proving its worth in Middle East countries. It is also used by the United Nations. Its Royal Ordnance Factory L5A1 76mm Gun (30 rds) is not designed to combat tanks, but to destroy fortifications and light vehicles. It has a coaxial M1919A4 machine gun (50 rds) to combat infantry.
+######################################################## 
+      STR_IMP_TANK_CHASSIS: Laser/Alloy Tank Project
+      STR_IMP_TANK_CHASSIS_UFOPEDIA: Our tanks have proven to be highly useful on the battlefield when supporting our troops in their missions. However, the escalation in the conflict and the increase in the losses of the same, have led our engineers and scientists, together with tank developers of the world, to create a new type of tank using our new scientific advances. For this project we are developing a powerful laser cannon similar to the one mounted on airplanes, the 'Laser Gun, Model 34-3 Heavy Anti Tank Laser Cannon', we will use it in the developed tank.
+      STR_TANK_LASER_CANNON: XM22 Legionnaire
+      TANK_LASER_CANNON_ARMOR: Alien Alloys hull
+      STR_XM343: LGM34-3H AT Laser Cannon  
+      STR_TANK_LASER_MINIGUN: XM250 Laser Minigun
+      STR_LEGIONNAIRE_TANK_UFOPEDIA: Result of a joint project of USA, West Germany, UK and UNEXCOM engineers, the Light Assault Tank XM22 Legionnaire is armored with a strong armor based on Alien Alloys. It uses a unique cannon, the LGM34-3H ATLC, which fires high-powered laser munitions. Their 'cartridges' are actually one-use-per-shot batteries, physically similar to 90mm shells but 10 times more powerful (30 rds). It's support weapon is a turret mounted Laser Minigun (100 rds).
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      4330: Resources/Tanks/Sounds/M551Sheridan_fire.wav
+      4331: Resources/Tanks/Sounds/Shillelagh_fire.wav
+      4332: Resources/Tanks/Sounds/M551Sheridan_hit.wav
+      4333: Resources/Tanks/Sounds/BMD1_fire.wav
+      4334: Resources/Tanks/Sounds/PKT_fire.wav
+      4335: Resources/Tanks/Sounds/BMD1_hit.wav
+      4336: Resources/Tanks/Sounds/Ferret_fire.wav
+      4337: Resources/Tanks/Sounds/Legionnaire_fire.wav
+      4338: Resources/Tanks/Sounds/Minigun_fire.wavegionnaire_fire.wav
+      4338: Resources/Tanks/Sounds/Minigun_fire.wav

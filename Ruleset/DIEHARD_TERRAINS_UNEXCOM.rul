@@ -1,0 +1,284 @@
+terrains:
+  - name: DIEHARD_G
+    script: DIEHARD_SCRIPT
+    mapDataSets:
+      - BLANKS
+      - URBITS
+      - DHARD0
+      - DHARD1
+      - DHARD2
+      - DHARD3
+      - ENTRY_POINT
+      - ROPE
+    mapBlocks:
+      - name: DIEHARD_G00
+        width: 30
+        length: 30
+        height: 2
+    civilianTypes: &CIVILIANS_OPERATIONS
+      - MALE_CIVILIAN
+      - MALE_CIVILIAN2
+      - MALE_CIVILIAN3
+      - MALE_CIVILIAN4
+      - MALE_CIVILIAN6
+      - MALE_CIVILIAN9
+      - MALE_CIVILIAN10
+      - FEMALE_CIVILIAN
+      - FEMALE_CIVILIAN2
+      - FEMALE_CIVILIAN3
+      - FEMALE_CIVILIAN4
+      - FEMALE_CIVILIAN7
+      - FEMALE_CIVILIAN8
+      - FEMALE_CIVILIAN9
+      - FEMALE_CIVILIAN10
+      - FEMALE_CIVILIAN13
+      - STR_HUMAN_SUIT_BLACK_1
+      - STR_HUMAN_SUIT_BLACK_2
+      - STR_HUMAN_SUIT_BLACK_3
+      - STR_HUMAN_SUIT_BLACK_4
+      - STR_HUMAN_SUIT_BLACK_5
+      - STR_HUMAN_SUIT_BLACK_6
+      - STR_HUMAN_SUIT_BLACK_7
+      - STR_HUMAN_SUIT_BLACK_8
+  - name: DIEHARD_M
+    script: DIEHARD_SCRIPT
+    mapDataSets:
+      - BLANKS
+      - URBITS
+      - DHARD0
+      - DHARD1
+      - DHARD2
+      - DIEHARD04
+      - URBAN_GOODS
+      - ENTRY_POINT
+      - ROPE
+    mapBlocks:
+      - name: DIEHARD_M00
+        width: 30
+        length: 30
+        height: 2
+  # - name: DIEHARD_T
+  #   script: DIEHARD_SCRIPT
+  #   mapDataSets:
+  #     - BLANKS
+  #     - URBITS
+  #     - DHARD0
+  #     - DHARD1
+  #     - DHARD2
+  #     - DHARD3
+  #     - ENTRY_POINT
+  #     - ROPE
+  #   mapBlocks:
+  #     - name: DIEHARD_M00
+  #       width: 30
+  #       length: 30
+  #       height: 2
+  - name: DIEHARD_T
+    mapDataSets:
+      - BLANKS
+      - MI8
+      - OSPREY_CABIN
+      - ROPE
+    mapBlocks:
+      - name: MI8_FAST_ROPE
+        width: 30
+        length: 30
+        height: 7
+        revealedFloors: [6, 5, 4]
+
+#####################################################
+  - name: AIRPORT_DIEHARD
+    script: AIRPORT_HIJACKED_PLANE_SCRIPT
+    mapDataSets:
+      - BLANKS
+      - IDT_PLANE_2
+      - IDT_PLANE_3
+      - PORT01_UFO
+      - PORT02_UFO
+      - PORT05_UFO
+    civilianTypes: *CIVILIANS_OPERATIONS
+    mapBlocks:
+      - name: AIRBASE00
+        width: 10
+        length: 10
+        groups: 1
+      - name: AIRBASE01
+        width: 10
+        length: 10
+        groups: 1
+      - name: AIRBASE02
+        width: 20
+        length: 20
+      - name: AIRBASE03
+        width: 20
+        length: 20
+      - name: AIRBASE04
+        width: 20
+        length: 20
+      - name: AIRBASE05
+        width: 20
+        length: 10
+      - name: AIRBASE06
+        width: 20
+        length: 10
+      - name: AIRBASE07
+        width: 20
+        length: 10
+        groups: 3
+      - name: AIRBASE08
+        width: 20
+        length: 10
+      - name: AIRBASE09
+        width: 10
+        length: 10
+      - name: AIRBASE10
+        width: 10
+        length: 10
+      - name: AIRBASE11
+        width: 10
+        length: 10
+      - name: AIRBASE12
+        width: 10
+        length: 10
+      - name: AIRBASE13
+        width: 10
+        length: 10
+      - name: AIRBASE14
+        width: 10
+        length: 10
+      - name: AIRBASE15
+        width: 10
+        length: 10
+      - name: AIRBASE16
+        width: 10
+        length: 10
+      - name: AIRBASE17
+        width: 20
+        length: 20
+      - name: AIRBASE18
+        width: 20
+        length: 20
+      - name: AIRBASE19
+        width: 20
+        length: 20
+      - name: AIRBASE20
+        width: 20
+        length: 20
+      - name: AIRBASE21
+        width: 20
+        length: 20
+      - name: AIRPORT_N
+        width: 10
+        length: 10
+        groups: 3
+      - name: AIRPORT_S
+        width: 10
+        length: 10
+        groups: 4
+  - name: IDT_PLANE_HIJACKED
+    # script: AIRPORT_SCRIPT
+    # enviroEffects: STR_LAND
+    mapDataSets:
+      - BLANKS
+      - IDT_PLANE
+      - PORT01_UFO
+    mapBlocks:
+      - name: HIJACKED_PLANE02
+        width: 30
+        length: 20
+  - name: AIRPORT_ROAD
+    mapDataSets:
+      - BLANKS
+      - IDT_PLANE_2
+      - IDT_PLANE_3
+      - PORT01_UFO
+      - PORT02_UFO
+      - PORT05_UFO
+    mapBlocks:
+      - name: AIRPORT_NS_ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: AIRPORT_EW_ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: AIRPORT_X_ROAD
+        width: 10
+        length: 10
+        groups: 4
+
+mapScripts:
+  - type: DIEHARD_SCRIPT
+    commands:
+    - type: addBlock
+      size: [3, 3, 11]
+      verticalLevels:
+        - type: ground
+          # terrain: DIRT
+          # blocks: 1
+          size: [3, 3, 2]
+        - type: middle
+          terrain: DIEHARD_M
+          # blocks: 1
+          size: [3, 3, 2]
+        - type: ceiling
+          terrain: DIEHARD_T
+          # blocks: 1
+          size: [3, 3, 7]
+      executions: 1
+    # - type: addBlock
+    #   executions: 1
+
+  - type: AIRPORT_HIJACKED_PLANE_SCRIPT
+    commands:
+    - type: addCraft
+      executions: 1
+      groups: 1
+    - type: addBlock
+      terrain: IDT_PLANE_HIJACKED
+      size: [3, 2]
+      executions: 1
+      rects:
+        - [1, 1, 3, 2]
+      executionChances: 100
+    - type: addBlock #North runway
+      executions: 1
+      executionChances: 100
+      groups: 3
+      rects:
+        - [0, 1, 1, 1]
+    - type: addBlock #North South
+      executions: 1
+      executionChances: 100
+      groups: 4
+      rects:
+        - [0, 2, 1, 1]
+    - type: addBlock #North runway
+      executions: 1
+      executionChances: 100
+      groups: 3
+      rects:
+        - [4, 1, 1, 1]
+    - type: addBlock #North South
+      executions: 1
+      executionChances: 100
+      groups: 4
+      rects:
+        - [4, 2, 1, 1]
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      executionChances: 100
+      size: [2, 1]
+      executions: 1
+    - type: addBlock
+      executionChances: 50
+      size: [2, 1]
+      executions: 1
+    - type: fillArea
+      # groups: 1

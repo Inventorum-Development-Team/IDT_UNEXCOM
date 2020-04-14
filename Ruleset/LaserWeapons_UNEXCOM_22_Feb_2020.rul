@@ -1,0 +1,1124 @@
+﻿items:
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+################################
+###### UNEXCOM WEAPONS ########
+##############################
+  - type: STR_LASER_PDW
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
+    listOrder: 2900
+    size: 0.1
+    costSell: 20000
+    weight: 3
+    bigSprite: 2933
+    floorSprite: 2934 
+    handSprite: 2935 
+    bulletSprite: 5
+    fireSound: 2960
+    hitSound: 19
+    hitAnimation: 36
+    power: 45
+    damageType: 4
+    accuracySnap: 50
+    accuracyAimed: 70
+    tuSnap: 16
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 100
+    aimRange: 25
+    snapRange: 13
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+  - type: STR_LASER_MAGNUM
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
+    listOrder: 3000
+    size: 0.2
+    costSell: 30000
+    weight: 6
+    bigSprite: 2733
+    floorSprite: 2734
+    handSprite: 2735
+    bulletSprite: 6
+    fireSound: 2961
+    hitSound: 19
+    hitAnimation: 36
+    power: 55
+    damageType: 4
+    accuracySnap: 45
+    accuracyAimed: 80
+    tuSnap: 26
+    tuAimed: 50
+    clipSize: -1
+    battleType: 1
+    maxRange: 100
+    aimRange: 40
+    snapRange: 13
+    minRange: 1
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+  - type: STR_LASER_SMG
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_UNEXCOM_TECH]
+    listOrder: 3100
+    size: 0.2
+    costSell: 32000
+    weight: 4
+    bigSprite: 2533
+    floorSprite: 2534
+    handSprite: 2535
+    bulletSprite: 5
+    fireSound: 2962
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    accuracyAuto: 65 
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuAuto: 25
+    tuSnap: 22
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 125
+    aimRange: 45
+    snapRange: 15
+    autoRange: 20
+    autoShots: 4
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+  - type: STR_LASER_ASSAULT_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    listOrder: 3200
+    size: 0.3
+    costSell: 40000
+    weight: 6
+    bigSprite: 2333
+    floorSprite: 2334
+    handSprite: 2335
+    bulletSprite: 6
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageType: 4
+    accuracyAuto: 55 
+    accuracySnap: 55
+    accuracyAimed: 100
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 200
+    aimRange: 90
+    snapRange: 27
+    autoRange: 18
+    minRange: 3
+    autoShots: 3
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+  - type: STR_LASER_DMR
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
+    listOrder: 3300
+    size: 0.3
+    costSell: 55000
+    weight: 10
+    bigSprite: 2433
+    floorSprite: 2434
+    handSprite: 2435
+    bulletSprite: 7
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    twoHanded: true
+    accuracySnap: 65
+    accuracyAimed: 105
+    tuSnap: 33
+    tuAimed: 62
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 100
+    snapRange: 30
+    minRange: 4
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+  - type: STR_SNIPER_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_ARTILLERY, STR_UNEXCOM_TECH]
+    listOrder: 3400
+    size: 1
+    costSell: 75000
+    weight: 14
+    bigSprite: 2633
+    floorSprite: 2634
+    handSprite: 2635
+    bulletSprite: 7
+    fireSound: 2965
+    hitSound: 19
+    hitAnimation: 36
+    power: 120
+    twoHanded: true
+    damageType: 4
+    accuracySnap: 50
+    accuracyAimed: 120
+    tuSnap: 40
+    tuAimed: 75
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 140
+    snapRange: 13
+    minRange: 8
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+  - type: STR_LASER_LMG
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_UNEXCOM_TECH]
+    listOrder: 3500
+    size: 0.3
+    costSell: 90000
+    weight: 12
+    bigSprite: 2833
+    floorSprite: 2834
+    handSprite: 2835
+    bulletSprite: 6
+    fireSound: 2966
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    accuracyAuto: 45
+    accuracySnap: 45
+    accuracyAimed: 75
+    tuAuto: 38
+    tuSnap: 35
+    tuAimed: 60
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 65
+    snapRange: 20
+    autoRange: 30
+    minRange: 3
+    autoShots: 6
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+###################################
+###### USA LASER WEAPONS #########
+#################################
+
+  - type: STR_M1972_LASER_PISTOL
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    listOrder: 3510
+    size: 0.1
+    costSell: 20000
+    weight: 3
+    bigSprite: 2000
+    floorSprite: 2000
+    handSprite: 2000
+    bulletSprite: 5
+    fireSound: 2960
+    hitSound: 19
+    hitAnimation: 36
+    power: 45
+    damageType: 4
+    accuracySnap: 50
+    accuracyAimed: 70
+    tuSnap: 16
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 100
+    aimRange: 25
+    snapRange: 13
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+
+  - type: STR_38_LASER_MAGNUM
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    listOrder: 3520
+    size: 0.2
+    costSell: 30000
+    weight: 6
+    bigSprite: 2001
+    floorSprite: 2001
+    handSprite: 2008
+    bulletSprite: 6
+    fireSound: 2961
+    hitSound: 19
+    hitAnimation: 36
+    power: 55
+    damageType: 4
+    accuracySnap: 65
+    accuracyAimed: 80
+    accuracyAuto: 40
+    tuSnap: 26
+    tuAimed: 50
+    tuAuto: 32
+    autoShots: 6
+    clipSize: -1
+    battleType: 1
+    maxRange: 100
+    aimRange: 40
+    snapRange: 13
+    minRange: 1
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+
+  - type: STR_CALBR
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_RIFLES
+    listOrder: 3530
+    size: 0.3
+    costSell: 40000
+    weight: 6
+    bigSprite: 2002
+    floorSprite: 2002
+    handSprite: 2016
+    bulletSprite: 6
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageType: 4
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    accuracyAuto: 55 
+    accuracySnap: 55
+    accuracyAimed: 100
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 200
+    aimRange: 90
+    snapRange: 27
+    autoRange: 18
+    minRange: 3
+    autoShots: 3
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+
+  - type: STR_M20_M203_LASER_CARBINE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_RIFLES
+    listOrder: 3540
+    size: 0.3
+    costSell: 40000
+    weight: 6
+    bigSprite: 2003
+    floorSprite: 2003
+    handSprite: 2024
+    bulletSprite: 6
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageType: 4
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAimed:
+      shots: 1
+      name: STR_FIRE_M203
+      ammoSlot: 1
+    ammo:
+      1: 
+        tuLoad: 20
+        tuUnload: 20
+        compatibleAmmo: [ STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_40MM_SMOKE ]
+    accuracyAuto: 55 
+    accuracySnap: 55
+    accuracyAimed: 80
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 200
+    aimRange: 90
+    snapRange: 27
+    autoRange: 18
+    minRange: 3
+    autoShots: 4
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_M5_LASER_SMG
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    listOrder: 3550
+    size: 0.2
+    costSell: 32000
+    weight: 4
+    bigSprite: 2004
+    floorSprite: 2004
+    handSprite: 2032
+    bulletSprite: 5
+    fireSound: 2962
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    accuracyAuto: 65 
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuAuto: 25
+    tuSnap: 22
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 125
+    aimRange: 45
+    snapRange: 15
+    autoRange: 20
+    twoHanded: true
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_ULYSSES_LASER_SNIPER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    listOrder: 3560
+    size: 0.3
+    costSell: 55000
+    weight: 10
+    bigSprite: 2005
+    floorSprite: 2005
+    handSprite: 2040
+    bulletSprite: 7
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+    twoHanded: true
+    accuracySnap: 65
+    accuracyAimed: 105
+    accuracyAuto: 200
+    tuSnap: 33
+    tuAimed: 62
+    tuAuto: 85
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 100
+    snapRange: 30
+    minRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_X4_LASER_SHOTGUN
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.3
+    costBuy: 1700
+    costSell: 520
+    weight: 7
+    bigSprite: 2006
+    floorSprite: 2006
+    handSprite: 2048
+    bulletSprite: 7
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    confAuto:
+      shots: 8
+      name: STR_RAGE_FIRE
+    clipSize: -1
+    accuracySnap: 55
+    accuracyAimed: 65
+    accuracyAuto: 40
+    power: 35
+    damageType: 4
+    tuSnap: 45
+    tuAimed: 60
+    tuAuto: 55
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    listOrder: 3570
+
+  - type: STR_M4_LASER_LMG
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USA_TECH]
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    listOrder: 3580
+    size: 0.3
+    costSell: 90000
+    weight: 12
+    bigSprite: 2007
+    floorSprite: 2007
+    handSprite: 2056
+    bulletSprite: 6
+    fireSound: 2966
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    accuracyAuto: 45
+    accuracySnap: 45
+    accuracyAimed: 75
+    tuAuto: 38
+    tuSnap: 35
+    tuAimed: 60
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 65
+    snapRange: 20
+    autoRange: 30
+    minRange: 3
+    autoShots: 6
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+####################################
+# Craft Weapons
+  - type: STR_LASER_CANNON
+    listOrder: 900
+    size: 2.0
+    costSell: 211000
+    transferTime: 48
+  - type: STR_LASER_ARRAY
+    listOrder: 910
+    size: 2.0
+    costSell: 233500
+    transferTime: 48
+# Armor
+  - type: STR_PERSONAL_ARMOR
+    size: 0.8
+    costSell: 54000
+  - type: STR_HEAVY_PERSONAL_ARMOR
+    size: 1.0
+    costSell: 68000
+  - type: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    name: STR_CORPSE
+    weight: 20
+    bigSprite: 2905
+    floorSprite: 2906
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: false
+
+armors:
+# Standard Armors
+  - type: STR_PERSONAL_ARMOR_UC
+    spriteSheet: XCOM_1.PCK
+    spriteInv: MAN_1
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      firing: -1
+      throwing: -2
+      strength: 0
+      bravery: 5
+    frontArmor: 34
+    sideArmor: 27
+    rearArmor: 28
+    underArmor: 20
+    loftempsSet: [ 3 ]
+    damageModifier:
+      - 0.9
+      - 0.6
+      - 0.5
+      - 0.7
+      - 0.7
+      - 0.8
+      - 0.75
+      - 0.80
+      - 0.95
+      - 1.0
+  - type: STR_HEAVY_PERSONAL_ARMOR_UC
+    spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
+    spriteInv: HEAVY_PERSONAL_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE
+    corpseItem: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    storeItem: STR_HEAVY_PERSONAL_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -5
+      stamina: -6
+      reactions: -5
+      firing: -2
+      throwing: -5
+      strength: 0
+      bravery: 6
+    frontArmor: 46
+    sideArmor: 36
+    rearArmor: 34
+    underArmor: 27
+    movementType: 0
+    damageModifier:
+      - 0.85
+      - 0.5
+      - 0.4
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.7
+      - 0.75
+      - 0.92
+      - 1.0
+craftWeapons:
+  - type: STR_LASER_CANNON_UC
+    sprite: 4
+    sound: 8
+    damage: 70
+    range: 45
+    accuracy: 60
+    reloadCautious: 16
+    reloadStandard: 16
+    reloadAggressive: 16
+    ammoMax: 100
+    rearmRate: 50
+    launcher: STR_LASER_CANNON
+    projectileType: 4
+  - type: STR_LASER_ARRAY_UC
+    sprite: 4
+    sound: 8
+    damage: 30
+    range: 16
+    accuracy: 35
+    reloadCautious: 3
+    reloadStandard: 3
+    reloadAggressive: 3
+    ammoMax: 300
+    rearmRate: 50
+    launcher: STR_LASER_ARRAY
+    projectileType: 4
+
+
+####################################
+manufacture:
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+# Armor
+  - name: STR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 1000
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+    listOrder: 2713
+###################################
+# aircraft weapons
+  - name: STR_LASER_ARRAY
+    category: STR_CRAFT_WEAPON
+    listOrder: 210
+    requires:
+      - STR_LASER_ARRAY
+    space: 6
+    time: 500
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_LASER_CANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_LASER_CANNON
+    space: 6
+    time: 600
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+################################
+# personal weapons
+  - name: STR_SNIPER_LASER
+    category: STR_WEAPON
+    requires:
+      - STR_SNIPER_LASER
+    space: 5
+    time: 400 #600
+    cost: 40000
+    listOrder: 1101
+  - name: STR_LASER_PDW
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_PDW
+    space: 2
+    time: 200 #300
+    cost: 8000
+    listOrder: 1101
+  - name: STR_LASER_ASSAULT_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_ASSAULT_RIFLE
+    space: 4
+    time: 275 #400
+    cost: 20000
+    listOrder: 1101
+  - name: STR_LASER_SMG
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_SMG
+    space: 3
+    time: 250 
+    cost: 17500
+    listOrder: 1101
+  - name: STR_LASER_DMR
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_DMR
+    space: 4
+    time: 400 
+    cost: 25000
+    listOrder: 1101
+  - name: STR_LASER_MAGNUM
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_MAGNUM
+    space: 3
+    time: 300 
+    cost: 12000
+    listOrder: 1101
+  - name: STR_LASER_LMG
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_LMG
+    space: 6
+    time: 900 
+    cost: 35000
+    listOrder: 1101
+##################################
+###### USA LASER WEAPONS ########
+################################
+  - name: STR_M1972_LASER_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    space: 2
+    time: 200 #600
+    cost: 7500
+    listOrder: 1101
+  - name: STR_38_LASER_MAGNUM
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    space: 2
+    time: 200 #300
+    cost: 8000
+    listOrder: 1101
+  - name: STR_CALBR
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_RIFLES
+    space: 4
+    time: 350 #400
+    cost: 20000
+    listOrder: 1101
+  - name: STR_M20_M203_LASER_CARBINE
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_RIFLES
+    space: 3
+    time: 300 
+    cost: 25500
+    listOrder: 1101
+  - name: STR_M5_LASER_SMG
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    space: 4
+    time: 300 
+    cost: 15000
+    listOrder: 1101
+  - name: STR_X4_LASER_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    space: 3
+    time: 300 
+    cost: 18000
+    listOrder: 1101
+  - name: STR_ULYSSES_LASER_SNIPER_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    space: 5
+    time: 900 
+    cost: 4000
+    listOrder: 1101
+  - name: STR_M4_LASER_LMG
+    category: STR_WEAPON
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    space: 6
+    time: 900 
+    cost: 35000
+    listOrder: 1101	
+
+ufopaedia:
+# Armor
+  - id: STR_PERSONAL_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PERSONAL_ARMOR
+    text: STR_PERSONAL_ARMOR_UFOPEDIA
+  - id: STR_HEAVY_PERSONAL_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1853
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    text: STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA
+# Craft Weapon
+  - id: STR_LASER_ARRAY_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_LASER_ARRAY
+    image_id: SPR_LASER_ARRAY
+    text: STR_LASER_ARRAY_UFOPEDIA
+# Pure Research
+  - id: STR_LASER_WEAPONS
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_LASER_WEAPONS
+    text: STR_LASER_WEAPONS_UFOPEDIA
+# Weapons
+  - id: STR_LASER_PDW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_PDW
+    text: STR_LASER_PDW_UFOPEDIA
+  - id: STR_LASER_MAGNUM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_MAGNUM
+    text: STR_LASER_MAGNUM_UFOPEDIA
+  - id: STR_LASER_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_SMG
+    text: STR_LASER_SMG_UFOPEDIA
+  - id: STR_LASER_ASSAULT_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_ASSAULT_RIFLE
+    text: STR_LASER_ASSAULT_RIFLE_UFOPEDIA
+  - id: STR_LASER_DMR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_DMR
+    text: STR_LASER_DMR_UFOPEDIA
+  - id: STR_SNIPER_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SNIPER_LASER
+    text: STR_SNIPER_LASER_UFOPEDIA
+  - id: STR_LASER_LMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_LMG
+    text: STR_LASER_LMG_UFOPEDIA
+##############################
+  - id: STR_M1972_LASER_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    text: STR_M1972_LASER_PISTOL_UFOPEDIA
+  - id: STR_38_LASER_MAGNUM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    text: STR_38_LASER_MAGNUM_UFOPEDIA
+  - id: STR_CALBR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_RIFLES
+    text: STR_CALBR_UFOPEDIA
+  - id: STR_M20_M203_LASER_CARBINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_RIFLES
+    text: STR_M20_M203_LASER_CARBINE_UFOPEDIA
+  - id: STR_M5_LASER_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    text: STR_M5_LASER_SMG_UFOPEDIA
+  - id: STR_ULYSSES_LASER_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
+  - id: STR_X4_LASER_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    text: STR_X4_LASER_SHOTGUN_UFOPEDIA
+  - id: STR_M4_LASER_LMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    text: STR_M4_LASER_LMG_UFOPEDIA
+##############################
+# Disabled Basic Weapons
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_LASER_WEAPONS: Laser Weapons
+      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
+      STR_LASER_ARRAY: Pulse Laser # Renamed!
+      STR_LASER_ARRAY_UC: PULSE LASER # Renamed!
+      STR_LASER_ARRAY_UFOPEDIA: BY REDESIGNING THE EMITTERS ON A STANDARD AIRCRAFT LASER CANNON TO CYCLE QUICKER AT THE EXPENSE OF BEAM POWER, THE PULSE LASER CANNON PROVIDES ATTACK CRAFT WITH A RAPID FIRE WEAPON, WITH DECREASED ACCURACY AND RANGE.
+      STR_LASER_CANNON: Laser Cannon
+      STR_LASER_CANNON_UFOPEDIA: A LONG RANGE APPLICATION OF THE LASER TECHNOLOGY, THIS CHEMICAL LASER DIRECTED ENERGY WEAPON IS POWERFUL, IF SOMEWHAT INACCURATE DUE TO ATMOSPHERIC BLOOMING AND REFRACTION AT THE RANGES IN WHICH IT IS USED
+######################################################################################
+      STR_LASER_PDW: Laser Pistol
+      STR_LASER_PDW_UFOPEDIA: While lacking the auto-fire capabilities of the UNEXCOM standard pistol, this laser pistol carries the wounding potential of a 7.62x51mm battle rifle while weighing less than UNEXCOM's standard machine pistol. It also requires no ammunition with the self-contained power cell.
+      STR_LASER_MAGNUM: Laser Magnum
+      STR_LASER_MAGNUM_UFOPEDIA: Nicknamed 'The Brute', this heavy pistol was a failed prototype of an early laser pistol design. Enthusiasm from the UNEXCOM squad for a magnum type sidearm using the laser technology set the research team back to reexamine and refine earlier failed projects. Compared to the standard laser pistol, the weapon's higher energy output is offset by a slower refresh rate. Like all laser weapons, it does not require reloading.
+      STR_LASER_SMG: Laser SMG
+      STR_LASER_SMG_UFOPEDIA: By scaling down the rapid fire polariton-pumped emitters of the laser assault rifle, the engineers and researchers have designed a laser submachine gun for one handed use.  While rate of fire has been emphasized over power, each laser pulse still is comparable to the energy of the 5.56x45mm fired from the standard UNEXCOM assault rifle. Like all laser weapons, it requires no reloading.
+      STR_LASER_ASSAULT_RIFLE: Laser Assault Rifle
+      STR_LASER_ASSAULT_RIFLE_UFOPEDIA: As the laser technology replacement of the UNEXCOM standard assault rifles, this is the first laser small-arm capable of pulsed auto-fire through using banks of polariton-pumped emitters as medium exciters. This capability should be able to be extended to other weapons platforms as well. Even with this rapid fire technology, the weapon requires no reloads.
+      STR_LASER_DMR: Laser Marksmans Rifle
+      STR_LASER_DMR_UFOPEDIA: Leveraging techniques used in the laser technology assault rifles and sniper rifle, the design team has developed a laser designated marksman's rifle. Trading off the cycling emitter banks for heavier power cells and more powerful lasing medium, each pulse from this weapon contains more destructive power than even the horrifying .50 BMG round used by the UNEXCOM standard anti-materiel rifle. Like all laser weapons, it requires no reloading.
+      STR_SNIPER_LASER: Laser Sniper Rifle
+      STR_SNIPER_LASER_UFOPEDIA: This weapon is first successful personal weapon application of laser weapon technology. With wounding potential comparable to 25x163mm round, this anti-materiel rifle's significant weight, bulk and sluggish refresh rate leave it best suited for a stationary sniper role. Despite the weapon's potency, nano-level constructed power cells preclude the need for reloads in the field.
+      STR_LASER_LMG: Laser LMG
+      STR_LASER_LMG_UFOPEDIA: Expanding on design components used in the laser SMG and designated marksman's rifle, UNEXCOM scientists have designed a laser based support weapon comparable to the existing UNEXCOM Squad Automatic Weapon, with each pulse producing damage equivalent a magnum rifle round.
+      STR_HEAVY_PERSONAL_ARMOR_UC: HEAVY ARMOR
+      STR_HEAVY_PERSONAL_ARMOR: Heavy Armor
+      STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
+######################################################################################
+      STR_M1972_LASER_PISTOL: M1972 Laser Pistol
+      STR_M1972_LASER_PISTOL_UFOPEDIA: A laser powered handgun designed and developed by UNEXCOM and US scientists in 1972. Not only is this the first laser gun put into service, it is one of the best sidearms available to UNEXCOM forces.
+      STR_38_LASER_MAGNUM: .38 Laser Magnum
+      STR_38_LASER_MAGNUM_UFOPEDIA: An American heavy laser sidearm for soldiers who feel the need to compensate for the M1972's lack of firepower. Although Heavier than most laser sidearms, it can be useful when going up against more powerful aliens.
+      STR_CALBR: CALBR
+      STR_CALBR_UFOPEDIA: The Colt Advanced Battle Rifle is a high power laser rifle made by Colt's Manufacturing Company. This semiautomatic weapon fires a powerful laser beam at the pull of a trigger. The CALBR's high accuracy and power makes it a good mid to long range weapon.
+      STR_M20_M203_LASER_CARBINE: M20 M203 Laser Carbine
+      STR_M20_M203_LASER_CARBINE_UFOPEDIA: The M20 is an American laser assault carbine based on the widely used M16. Created as a replacement for the outdated ballistic weapon, this laser share many of the same characteristics. This weapon is very accurate, lightweight, but suffers in Firepower. This variant utilizes an underbarrel grenade launcher.
+      STR_M5_LASER_SMG: M5 Laser SMG 
+      STR_M5_LASER_SMG_UFOPEDIA: The M5 is America's new laser submachine gun, developed after making a breakthrough in laser technology. The M5 has a higher rate of fire than any other laser weapon due to it's advanced cycling emitter banks. Although this weapon excels in close combat, it suffers at range and stray beams can become an issue.
+      STR_ULYSSES_LASER_SNIPER_RIFLE: Ulysses Laser Sniper
+      STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA: The Ulysses is a long range laser available to UNEXCOM marksmen. The advantages of this rifle are it's ease of use and its integrated advanced scope. Although this is the least powerful Sniper available to our forces, the impressive scope has faster target acquisition allowing for more follow up shots. This weapon is useful for picking off weaker targets at long ranges.
+      STR_X4_LASER_SHOTGUN: X4 Scatter Laser
+      STR_X4_LASER_SHOTGUN_UFOPEDIA: A laser 'shotgun' developed when an American researcher accidentally shattered a focusing optic during rifle testing, sending several small laser beams flying across the room. Although this incident at first created panic, the scientists later reasoned they could create a laser shotgun for close combat, something previously not thought possible. This laser uses an array of small mirrors to spread the lasers in several directions. 
+      STR_M4_LASER_LMG: M4 Laser LMG
+      STR_M4_LASER_LMG_UFOPEDIA: The M4 is Squad Automatic Weapon developed by DARPA and UNEXCOM to replace the suddenly outdated M-60. Although it's a bit heavy and unwieldy, the M4 is a reliable machine gun and rather accurate.
+
+extraSprites:
+  - type: SPR_LASER_ARRAY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Coherency/CraftWeapon/LaserArrayUfopedia.gif
+  - type: BIGOBS.PCK
+    files:
+      2000: Resources/LaserWeapons/USA/BigM1972LaserPistol.png
+      2001: Resources/LaserWeapons/USA/Big38LaserMagnum.png
+      2002: Resources/LaserWeapons/USA/BigCALBR.png
+      2003: Resources/LaserWeapons/USA/BigM20M203LaserCarbine.png
+      2004: Resources/LaserWeapons/USA/BigM5LaserSMG.png
+      2005: Resources/LaserWeapons/USA/BigUlyssesLaserSniperRifle.png
+      2006: Resources/LaserWeapons/USA/BigX4LaserShotgun.png
+      2007: Resources/LaserWeapons/USA/BigM4LaserLMG.png
+#      2008: Resources/LaserWeapons/USA/BigX5EleriumFlamethrower.png
+
+      2333: Resources/Coherency/LaserRifle.gif
+      2433: Resources/Coherency/LaserDMR.gif
+      2533: Resources/Coherency/LaserSMG.gif
+      2633: Resources/Coherency/SniperLaser.gif
+      2733: Resources/Coherency/LaserMagnum.gif
+      2833: Resources/Coherency/LaserLMG.gif
+      2933: Resources/Coherency/LaserPistol.gif
+  - type: FLOOROB.PCK
+    files:
+      2000: Resources/LaserWeapons/USA/FloorM1972LaserPistol.png
+      2001: Resources/LaserWeapons/USA/Floor38LaserMagnum.png
+      2002: Resources/LaserWeapons/USA/FloorCALBR.png
+      2003: Resources/LaserWeapons/USA/FloorM20M203LaserCarbine.png
+      2004: Resources/LaserWeapons/USA/FloorM5LaserSMG.png
+      2005: Resources/LaserWeapons/USA/FloorUlyssesLaserSniperRifle.png
+      2006: Resources/LaserWeapons/USA/FloorX4LaserShotgun.png
+      2007: Resources/LaserWeapons/USA/FloorM4LaserLMG.png
+#      2008: Resources/LaserWeapons/USA/FloorX5EleriumFlamethrower.png
+
+      2334: Resources/Coherency/LaserRiflef.gif
+      2434: Resources/Coherency/LaserDMRf.gif
+      2534: Resources/Coherency/LaserSMGf.gif
+      2634: Resources/Coherency/SniperLaserf.gif
+      2734: Resources/Coherency/LaserMagnumf.gif
+      2834: Resources/Coherency/LaserLMGf.gif
+      2934: Resources/Coherency/LaserPistolf.gif
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2000: Resources/LaserWeapons/USA/HandM1972LaserPistol.png
+      2008: Resources/LaserWeapons/USA/Hand38LaserMagnum.png
+      2016: Resources/LaserWeapons/USA/HandCALBR.png
+      2024: Resources/LaserWeapons/USA/HandM20M203LaserCarbine.png
+      2032: Resources/LaserWeapons/USA/HandM5LaserSMG.png
+      2040: Resources/LaserWeapons/USA/HandUlyssesLaserSniperRifle.png
+      2048: Resources/LaserWeapons/USA/HandX4LaserShotgun.png
+      2056: Resources/LaserWeapons/USA/HandM4LaserLMG.png
+#      2064: Resources/LaserWeapons/USA/HandX5EleriumFlamethrower.png
+
+
+      2335: Resources/Coherency/LaserRifleh.gif
+      2435: Resources/Coherency/LaserDMRh.gif
+      2535: Resources/Coherency/LaserSMGh.gif
+      2635: Resources/Coherency/SniperLaserh.gif
+      2735: Resources/Coherency/LaserMagnumh.gif
+      2835: Resources/Coherency/LaserLMGh.gif
+      2935: Resources/Coherency/LaserPistolh.gif
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      2905: Resources/Coherency/PersonalArmorVariants/HPA/HPA_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      2906: Resources/Coherency/PersonalArmorVariants/HPA/Floor_HPA.png
+  - type: HEAVY_PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M0.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M1.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M2.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M3.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F0.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F1.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F2.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F3.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      2960: Resources/Coherency/Sounds/laserpistol_fire.wav
+      2961: Resources/Coherency/Sounds/lasermagnum_fire.wav
+      2962: Resources/Coherency/Sounds/lasersmg_fire.wav
+      2963: Resources/Coherency/Sounds/laserrifle_fire.wav
+      2964: Resources/Coherency/Sounds/laserdmr_fire.wav
+      2965: Resources/Coherency/Sounds/lasersniper_fire.wav
+      2966: Resources/Coherency/Sounds/laserlmg_fire.wav

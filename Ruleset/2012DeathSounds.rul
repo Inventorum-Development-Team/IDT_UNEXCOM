@@ -1,0 +1,70 @@
+﻿units:
+  - type: STR_SECTOID_SOLDIER
+    deathSound: 901
+  - type: STR_SECTOID_ENGINEER
+    deathSound: 901
+  - type: STR_SECTOID_MEDIC
+    deathSound: 901
+  - type: STR_SECTOID_NAVIGATOR
+    deathSound: 901
+  - type: STR_SECTOID_LEADER
+    deathSound: 901
+  - type: STR_SECTOID_COMMANDER
+    deathSound: 901
+  - type: STR_CYBERDISC_TERRORIST
+    deathSound: 902
+  - type: STR_FLOATER_SOLDIER
+    deathSound: 903
+  - type: STR_FLOATER_ENGINEER
+    deathSound: 903
+  - type: STR_FLOATER_NAVIGATOR
+    deathSound: 903
+  - type: STR_FLOATER_MEDIC
+    deathSound: 903
+  - type: STR_FLOATER_LEADER
+    deathSound: 903
+  - type: STR_FLOATER_COMMANDER
+    deathSound: 903
+  - type: STR_SNAKEMAN_SOLDIER
+    deathSound: 904
+  - type: STR_SNAKEMAN_NAVIGATOR 
+    deathSound: 904
+  - type: STR_SNAKEMAN_ENGINEER
+    deathSound: 904
+  - type: STR_SNAKEMAN_LEADER
+    deathSound: 904
+  - type: STR_SNAKEMAN_COMMANDER
+    deathSound: 904
+  - type: STR_CHRYSSALID_TERRORIST
+    deathSound: 905
+  - type: STR_MUTON_SOLDIER
+    deathSound: 906
+  - type: STR_MUTON_NAVIGATOR
+    deathSound: 906
+  - type: STR_MUTON_ENGINEER
+    deathSound: 906
+  - type: STR_SILACOID_TERRORIST
+    deathSound: 907
+  - type: STR_CELATID_TERRORIST
+    deathSound: 908
+  - type: STR_ETHEREAL_SOLDIER
+    deathSound: 909
+  - type: STR_ETHEREAL_LEADER
+    deathSound: 909
+  - type: STR_ETHEREAL_COMMANDER
+    deathSound: 909
+  - type: STR_SECTOPOD_TERRORIST
+    deathSound: 910
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      901: Resources/2012Snds/sectoid_death.wav
+      902: Resources/2012Snds/cyber_death.wav
+      903: Resources/2012Snds/floater_death.wav
+      904: Resources/2012Snds/snake_death.wav
+      905: Resources/2012Snds/chrys_death.wav
+      906: Resources/2012Snds/muton_death.wav
+      907: Resources/2012Snds/sila_death.wav
+      908: Resources/2012Snds/cela_death.wav
+      909: Resources/2012Snds/ether_death.wav
+      910: Resources/2012Snds/secto_death.wav
