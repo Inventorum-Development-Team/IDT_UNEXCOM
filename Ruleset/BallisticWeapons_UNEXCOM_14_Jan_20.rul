@@ -728,7 +728,6 @@ items:
     floorSprite: 123
     hitSound: 0
     hitAnimation: 0
-    bulletSprite: 14
     power: 70
     damageType: 3
     clipSize: 1
@@ -757,7 +756,6 @@ items:
     battleType: 2
     armor: 20
     blastRadius: 7
-    bulletSprite: 13
     listOrder: 2023
   - type: STR_40MM_SMOKE
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_CLIPS]
@@ -768,7 +766,6 @@ items:
     bigSprite: 125
     floorSprite: 125
     hitSound: 0
-    bulletSprite: 14
     hitAnimation: 0
     power: 85
     damageType: 9
@@ -788,7 +785,6 @@ items:
     floorSprite: 126
     handSprite: 308
     hitSound: 0
-    bulletSprite: 14
     hitAnimation: 0
     power: 80
     damageType: 7
@@ -2534,7 +2530,6 @@ items:
     accuracyCloseQuarters: 80
     tuAuto: 38
     tuSnap: 28
-    tuAuto: 40
     bulletSprite: 2
     bulletSpeed: 20
     bigSprite: 171
@@ -2827,8 +2822,6 @@ items:
     damageType: 1
     twoHanded: true
     recover: false
-    invWidth: 1
-    invHeight: 3
     maxRange: 200
     snapRange: 29
     autoRange: 22
@@ -2906,11 +2899,10 @@ items:
 
   - type: STR_RIOT_SHIELD
     requires:
-#     - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+     - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     size: 0
     weight: 9
     costSell: 5000
-    weight: 2
     bigSprite: 179
     handSprite: 732
     meleeHitSound: 177
