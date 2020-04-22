@@ -1,0 +1,499 @@
+items:
+# Starting Underwater
+  - type: STR_MILITARY_HARPOON
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SNIPER_RIFLES] 
+    size: 0.2
+    costBuy: 1600
+    costSell: 1000
+    weight: 11
+    bigSprite: 163
+    floorSprite: 163
+    handSprite: 604
+    bulletSprite: 2
+    fireSound: 163
+    reloadSound: 197
+    bulletSpeed: 20
+    compatibleAmmo:
+      - STR_22_LONG_RIFLE_X14
+    accuracyCloseQuarters: 40
+    accuracySnap: 60
+    accuracyAimed: 85
+    tuSnap: 33
+    tuAimed: 70
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 7
+    vaporColor: 1
+    vaporDensity: 5
+    listOrder: 2102
+
+# USA Underwater
+  - type: STR_MK1_UNDERWATER_DEFENSE_PISTOL
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_PISTOLS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 2500
+    costSell: 900
+    weight: 3
+    bigSprite: 136
+    floorSprite: 136
+    handSprite: 388
+    bulletSprite: 2
+    fireSound: 136
+    reloadSound: [179, 180, 181, 182]
+    compatibleAmmo:
+      - STR_45_PISTOL_X7
+    accuracySnap: 45
+    accuracyAimed: 65
+    accuracyAuto: 55
+    accuracyCloseQuarters: 100
+    kneelBonus: 115
+    tuSnap: 20
+    tuAimed: 35
+    tuAuto: 25
+    maxRange: 12
+    invHeight: 2
+    invWidth: 1
+    battleType: 1
+    damageBonus:
+      firing: 1.0
+      reactions: 1.0
+    armor: 250
+    vaporColor: 1
+    vaporDensity: 1
+    listOrder: 2028
+
+# NATO Underwater
+  - type: STR_HK_P11_UNDERWATER_PISTOL
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_PISTOLS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 700
+    costSell: 580
+    weight: 4
+    bigSprite: 146
+    floorSprite: 146
+    handSprite: 468
+    bulletSprite: 1
+    fireSound: 146
+    reloadSound: [179, 180, 181, 182]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X10, STR_9MM_PISTOL_X20 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 100
+    accuracySnap: 80
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuAuto: 22
+    tuSnap: 16
+    tuAimed: 24
+    tuLoad: 15
+    aimRange: 20
+    kneelBonus: 105
+    costThrow:
+      energy: 8
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 35
+    attraction: 10
+    vaporColor: 1
+    vaporDensity: 1
+    listOrder: 2039
+
+
+# Soviet Underwater
+  - type: STR_SPP1_UNDERWATER_PISTOL
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_PISTOLS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 400
+    costSell: 250
+    weight: 4
+    bigSprite: 153
+    floorSprite: 153
+    handSprite: 524
+    bulletSprite: 1
+    fireSound: 153
+    reloadSound: [179, 180, 181, 182]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20 ]
+    confSnap:
+      shots: 2
+      name: STR_RAPID_FIRE
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_FULL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 100
+    accuracyAuto: 45
+    accuracySnap: 65
+    accuracyAimed: 75
+    tuAuto: 22
+    tuSnap: 16
+    tuAimed: 30
+    tuLoad: 15
+    costThrow:
+      energy: 8
+    battleType: 1
+    aimRange: 20
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 10
+    vaporColor: 1
+    vaporDensity: 1
+    listOrder: 2050
+
+  - type: STR_APS_UNDERWATER_RIFLE
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_CARBINES]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.2
+    costBuy: 3200
+    costSell: 2000
+    weight: 8
+    bigSprite: 155
+    floorSprite: 155
+    handSprite: 540
+    bulletSprite: 2
+    fireSound: 155
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_7_62MM_SOVIET_RIFLE_X30, STR_7_62MM_SOVIET_RIFLE_X40 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      ammoSlot: 0
+      arcing: false 
+    accuracyCloseQuarters: 90
+    accuracyAuto: 40
+    accuracySnap: 62
+    accuracyAimed: 85
+    bulletSpeed: 20
+    tuAuto: 32
+    tuSnap: 24
+    tuAimed: 48
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    aimRange: 25
+    attraction: 8
+    vaporColor: 4
+    vaporDensity: 10
+    listOrder: 2052
+
+  - type: STR_AG026_UNDERWATER_LMG
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.3
+    costBuy: 9000
+    costSell: 8000
+    weight: 15
+    bigSprite: 160
+    floorSprite: 160
+    handSprite: 580
+    bulletSprite: 11
+    bulletSpeed: 20
+    fireSound: 160
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_7_62MM_SOVIET_RIFLE_X30, STR_7_62MM_SOVIET_RIFLE_X40, STR_7_62MM_SOVIET_RIFLE_X75 ]
+    confSnap:
+       shots: 5
+       name: STR_BURST
+       ammoSlot: 0
+       arcing: false
+    confAuto:
+       shots: 15
+       name: STR_SUPPRESSION
+       ammoSlot: 0
+       arcing: false
+    accuracyCloseQuarters: 35
+    accuracySnap: 45
+    accuracyAuto: 32
+    tuSnap: 25
+    tuAuto: 50
+    tuLoad: 25
+    snapRange: 20
+    autoRange: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoShots: 6
+    sprayWaypoints: 2
+    attraction: 9
+    vaporColor: 5
+    vaporDensity: 10
+    listOrder: 2060
+
+  - type: STR_FUSION_HANDGUN
+    listOrder: 100
+    size: 2
+    costBuy: 10
+    costSell: 10
+    categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    weight: 8
+    floorSprite: 3
+    bigSprite: 3
+    handSprite: 96
+    bulletSprite: 9
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_LIGHT
+    accuracyAuto: 0
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuAuto: 0
+    tuSnap: 38
+    tuAimed: 66
+    autoRange: 0
+    snapRange: 14
+    aimRange: 26
+    dropoff: 1
+    bulletSpeed: 12
+    tuLoad: 12
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 2
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_SMG
+    listOrder: 101
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_SMGS, STR_ALIEN_TECH]
+    weight: 14
+    bigSprite: 37
+    floorSprite: 36
+    handSprite: 64
+    bulletSprite: 9
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_LIGHT
+    accuracyAuto: 57
+    accuracySnap: 48
+    accuracyAimed: 0
+    tuAuto: 62
+    tuSnap: 31
+    tuAimed: 0
+    autoRange: 10
+    snapRange: 18
+    aimRange: 0
+    dropoff: 2
+    bulletSpeed: 30
+    autoShots: 3
+    tuLoad: 9
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_POWER_CELL_LIGHT
+    listOrder: 102
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_PISTOLS, STR_SMGS, STR_ALIEN_TECH]
+    weight: 4
+    bigSprite: 38
+    floorSprite: 37
+    explosionSpeed: 4
+    power: 150
+    damageType: 3
+    damageAlter:
+      RadiusReduction: 45
+      IgnoreOverKill: false
+      ToArmor: 0
+      ToArmorPre: 0.05
+      ToTile: 0.69
+    clipSize: 3
+    blastRadius: 2
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 60
+  - type: STR_FUSION_RIFLE
+    listOrder: 103
+    size: 2
+    costBuy: 10
+    costSell: 10
+    categories: [STR_RIFLES, STR_ALIEN_TECH]
+    weight: 16
+    bigSprite: 30
+    floorSprite: 29
+    handSprite: 40
+    bulletSprite: 9
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HEAVY
+    accuracyAuto: 47
+    accuracySnap: 78
+    accuracyAimed: 109
+    tuAuto: 60
+    tuSnap: 45
+    tuAimed: 78
+    autoRange: 8
+    snapRange: 16
+    aimRange: 32
+    dropoff: 1
+    bulletSpeed: 12
+    autoShots: 2
+    tuLoad: 11
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_SNIPER
+    listOrder: 104
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_SNIPER_RIFLES, STR_ALIEN_TECH]
+    weight: 18
+    bigSprite: 35
+    floorSprite: 34
+    handSprite: 56
+    bulletSprite: 9
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HEAVY
+    accuracyAuto: 0
+    accuracySnap: 95
+    accuracyAimed: 145
+    tuAuto: 0
+    tuSnap: 68
+    tuAimed: 84
+    autoRange: 0
+    snapRange: 22
+    aimRange: 40
+    dropoff: 1
+    bulletSpeed: 18
+    tuLoad: 13
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_POWER_CELL_HEAVY
+    listOrder: 105
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
+    weight: 8
+    bigSprite: 36
+    floorSprite: 35
+    explosionSpeed: 4
+    power: 180
+    damageType: 3
+    damageAlter:
+      RadiusReduction: 50
+      IgnoreOverKill: false
+      ToArmor: 0
+      ToArmorPre: 0.05
+      ToTile: 0.73
+    clipSize: 4
+    blastRadius: 3
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+#  - type: STR_FUSION_
+    # listOrder: 0
+    # size: 0
+    # costBuy: 0
+    # costSell: 0
+    # categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    # weight: 8
+    # bigSprite: 1
+    # floorSprite: 1
+    # handSprite: 1
+    # fireSound: 1
+    # compatibleAmmo:
+      # - STR_FUSION_POWER_CELL_LIGHT
+    # accuracyAuto: 0
+    # accuracySnap: 65
+    # accuracyAimed: 90
+    # tuAuto: 0
+    # tuSnap: 38
+    # tuAimed: 66
+    # autoRange: 0
+    # snapRange: 14
+    # aimRange: 26
+    # dropoff: 1
+    # tuLoad: 12
+    # battleType: 1
+    # twoHanded: true
+    # invWidth: 1
+    # invHeight: 2
+    # armor: 135
+    # experienceTrainingMode: 0
+#  - type: STR_FUSION_
+    # listOrder: 0
+    # size: 0
+    # costBuy: 0
+    # costSell: 0
+    # categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    # weight: 0
+    # bigSprite: 1
+    # floorSprite: 1
+    # handSprite: 1
+    # hitSound: 1
+    # hitAnimation: 1
+    # shotgunPellets: 1
+    # shotgunSpread: 20
+    # shotgunBehavior: 1
+    # shotgunChoke: 100
+    # power: 0
+    # damageType: 3
+    # damageAlter:
+      # ArmorEffectiveness: 1
+      # IgnoreOverKill: false
+      # ToArmor: 0
+      # ToArmorPre: 0.05
+      # ToTile: 0.75
+      # TileDamageMethod: 2
+    # clipSize: 1
+    # battleType: 2
+    # armor: 60
