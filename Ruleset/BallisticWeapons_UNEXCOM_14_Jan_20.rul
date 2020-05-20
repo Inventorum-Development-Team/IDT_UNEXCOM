@@ -2450,6 +2450,101 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2108
+  - type: STR_ENFORCER
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_PISTOLS]
+    size: 0.2
+    costBuy: 0
+    costSell: 1100
+    weight: 4
+    bigSprite: 224
+    floorSprite: 224
+    handSprite: 920
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_30_CARBINE_X15 ]
+    confAimed:
+      name: STR_AIMED
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 80
+    accuracyCloseQuarters: 85
+    kneelBonus: 100
+    tuSnap: 15
+    tuAimed: 20
+    invHeight: 2
+    invWidth: 1
+    battleType: 1
+    twoHanded: false
+    armor: 250
+    tuMelee: 0
+    listOrder: 2109
+  - type: STR_M1_CARBINE
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES]
+    size: 0.2
+    costBuy: 900
+    costSell: 400
+    weight: 5
+    bigSprite: 248
+    floorSprite: 248
+    handSprite: 948
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_30_CARBINE_X15 ]
+    confAimed:
+      name: STR_AIMED
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 75
+    accuracyAimed: 85
+    accuracyCloseQuarters: 90
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    tuSnap: 20
+    tuAimed: 25
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+    listOrder: 2110
+  - type: STR_30_CARBINE_X15
+    refNode: *STR_9MM_PISTOL_AMMO 
+    categories: [STR_FIREARMS, STR_PISTOLS, STR_CLIPS]
+    size: 0.05
+    costBuy: 100
+    costSell: 50
+    weight: 3
+    bigSprite: 102
+    floorSprite: 102
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    power: 31
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.7
+      ToArmor: 0.7
+      RandomWound: false
+    clipSize: 15
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 2111
+
 ###############################################
 ########## ALLIED ARMIES WEAPONS #################
 ###############################################
@@ -2499,7 +2594,7 @@ items:
     twoHanded: true
     armor: 250
     tuMelee: 0
-    listOrder: 2109
+    listOrder: 2112
 ##################
 ###### NATO #######
 ##################
@@ -2541,7 +2636,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
-    listOrder: 2110
+    listOrder: 2113
 
 
 
@@ -2589,7 +2684,7 @@ items:
     autoShots: 6
     sprayWaypoints: 3
     attraction: 10
-    listOrder: 2111
+    listOrder: 2114
 
   - type: STR_OWEN_SMG
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS]
@@ -2637,7 +2732,7 @@ items:
     armor: 30
     sprayWaypoints: 2
     attraction: 8
-    listOrder: 2112
+    listOrder: 2115
 
 ##################
 ###### USSR #######
@@ -2684,7 +2779,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
-    listOrder: 2113
+    listOrder: 2116
 
   - type: STR_SKS
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES]
@@ -2734,7 +2829,7 @@ items:
       time: true
 # Bayonet segment end
     attraction: 7
-    listOrder: 2114
+    listOrder: 2117
 
   - type: STR_PPS_43
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SMGS]
@@ -2780,7 +2875,7 @@ items:
     aimRange: 24
     sprayWaypoints: 2
     attraction: 10
-    listOrder: 2115
+    listOrder: 2118
 
 #####################################################
 ######## UNEXCOM AMERICAN PROTOTYPE WEAPONS  ########
@@ -2894,7 +2989,7 @@ items:
     autoRange: 10
     dropoff: 5
     kneelBonus: 110
-    listOrder: 2117
+    listOrder: 2119
 
 
   - type: STR_RIOT_SHIELD
@@ -2931,7 +3026,7 @@ items:
     invWidth: 2
     invHeight: 3
     recover: false
-    listOrder: 2118
+    listOrder: 2120
 
   - type: STR_RIOT_ARMOR_UC
     name: STR_RIOT_ARMOR_UC
@@ -3753,6 +3848,61 @@ items:
     tuMelee: 0
     listOrder: 2127
 
+ - type: STR_50_CAL_MAGNUM
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_PISTOLS]
+    requires:
+      - STR_MERCENARY_RESEARCH
+    size: 0.1
+    costBuy: 10500
+    costSell: 9000
+    weight: 6
+    bigSprite: 213
+    floorSprite: 213
+    handSprite: 928
+    bulletSprite: 1
+    fireSound: 166
+    bulletSpeed: 15
+    reloadSound: [204, 205, 206]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_50_CAL_REVOLVER_AMMO_X6 ]
+    confAimed:
+      shots: 1
+      name: STR_HEADSHOT
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 110
+    accuracySnap: 40
+    accuracyAimed: 150
+    tuSnap: 30
+    tuAimed: 60
+    tuLoad: 15
+    aimRange: 20
+    kneelBonus: 120
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 2105
+  - type: STR_50_CAL_REVOLVER_AMMO_X6
+    categories: [STR_FIREARMS, STR_PISTOLS, STR_MERCENARY_TECH, STR_CLIPS]
+    size: 0.1
+    costBuy: 500
+    costSell: 600
+    weight: 3
+    bigSprite: 214
+    floorSprite: 214
+    hitSound: 22
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    attraction: 8
+    listOrder: 2106
+
 #######################################
 ########## EXPLOSIVES ################
 #####################################
@@ -3859,7 +4009,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_KS23_SHARPNEL-25_X4_UFOPEDIA
-    listOrder: 1997
+    listOrder: 1995
 
   - id: STR_KS23_BARRIKADE_X4
     requires:
@@ -3867,7 +4017,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_KS23_BARRIKADE_X4_UFOPEDIA
-    listOrder: 1998
+    listOrder: 1996
 
   - id: STR_KS23_SATANA_X4
     requires:
@@ -3875,37 +4025,45 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_KS23_SATANA_X4_UFOPEDIA
-    listOrder: 1999
+    listOrder: 1997
 
   - id: STR_9MM_PISTOL_X10
     type_id: 4
     section: STR_AMMUNITION
     text: STR_9MM_PISTOL_X10_UFOPEDIA
-    listOrder: 2000
+    listOrder: 1998
 
   - id: STR_9MM_PISTOL_X20
     type_id: 4
     section: STR_AMMUNITION
     text: STR_9MM_PISTOL_X20_UFOPEDIA
-    listOrder: 2001
+    listOrder: 1999
 
   - id: STR_9MM_PISTOL_X30
     type_id: 4
     section: STR_AMMUNITION
     text: STR_9MM_PISTOL_X30_UFOPEDIA
-    listOrder: 2002
+    listOrder: 2000
 
   - id: STR_45_PISTOL_X7
     type_id: 4
     section: STR_AMMUNITION
     text: STR_45_PISTOL_X7_UFOPEDIA
-    listOrder: 2003
+    listOrder: 2001
 
-  - id: STR_45_PISTOL_X30
+  - id: STR_50_CAL_REVOLVER_AMMO_X6
+    requires:
+      - STR_MERCENARY_RESEARCH
     type_id: 4
     section: STR_AMMUNITION
-    text: STR_45_PISTOL_X30_UFOPEDIA
-    listOrder: 2004
+    text: STR_50_CAL_REVOLVER_AMMO_X6_UFOPEDIA
+    listOrder: 2002
+
+  - id: STR_30_CARBINE_X15
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_30_CARBINE_X15_UFOPEDIA
+    listOrder: 2003
 
   - id: STR_5_56MM_NATO_RIFLE_X20
     type_id: 4
@@ -4403,23 +4561,29 @@ ufopaedia:
     text: STR_OWEN_SMG_UFOPEDIA
     listOrder: 2072
 
+  - id: STR_M1_CARBINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_M1_CARBINE_UFOPEDIA
+    listOrder: 2073
+
   - id: STR_AKM
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_AKM_UFOPEDIA
-    listOrder: 2073
+    listOrder: 2074
 
   - id: STR_SKS
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SKS_UFOPEDIA
-    listOrder: 2074
+    listOrder: 2075
 
   - id: STR_PPS_43
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_PPS_43_UFOPEDIA
-    listOrder: 2075
+    listOrder: 2073
 
 ############################################
 ###### TIER I WEAPONS SPECIAL FORCES #######
@@ -4429,19 +4593,19 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_WEAPON_TOOLKIT_UFOPEDIA
-    listOrder: 2076
+    listOrder: 2077
 
   - id: STR_COLT_SCOPE_ACCESSORY
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_COLT_SCOPE_ACCESSORY_UFOPEDIA
-    listOrder: 2077
+    listOrder: 2078
 
   - id: STR_M203_ACCESSORY
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_M203_ACCESSORY_UFOPEDIA
-    listOrder: 2078
+    listOrder: 2079
 
   - id: STR_SAWEDOFF_M79_THUMPER
     requires:
@@ -4449,13 +4613,13 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
-    listOrder: 2079
+    listOrder: 2080
 
   - id: STR_SAWEDOFF_SHOTGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SAWEDOFF_SHOTGUN_UFOPEDIA
-    listOrder: 2080
+    listOrder: 2081
 
   - id: STR_XM117_SCOPED
     requires:
@@ -4463,7 +4627,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_XM117_SCOPED_UFOPEDIA
-    listOrder: 2081
+    listOrder: 2082
 
   - id: STR_XM117_SHOTGUN
     requires:
@@ -4471,7 +4635,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_XM117_SHOTGUN_UFOPEDIA
-    listOrder: 2082
+    listOrder: 2083
 
   - id: STR_XM117_M203
     requires:
@@ -4479,16 +4643,16 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_XM117_M203_UFOPEDIA
-    listOrder: 2083
+    listOrder: 2084
 
 #  - id: STR_STERLING_MKIV_SMG
-#    listOrder: 2084
-#  - id: STR_STERLING_MKVII_PARAPISTOL
 #    listOrder: 2085
-#  - id: STR_THE_BITCH_SLR
+#  - id: STR_STERLING_MKVII_PARAPISTOL
 #    listOrder: 2086
-#  - id: STR_BREACHING_SHOTGUN
+#  - id: STR_THE_BITCH_SLR
 #    listOrder: 2087
+#  - id: STR_BREACHING_SHOTGUN
+#    listOrder: 2088
 
 ############################################
 ######## TIER I WEAPONS MERCENARIES ########
@@ -4500,7 +4664,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_MAT49_UFOPEDIA
-    listOrder: 2088
+    listOrder: 2089
 
   - id: STR_FN_FSC
     requires:
@@ -4508,7 +4672,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_FN_FSC_UFOPEDIA
-    listOrder: 2089
+    listOrder: 2090
 
   - id: STR_FN_FSC_SCOPED
     requires:
@@ -4516,7 +4680,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_FN_FSC_SCOPED_UFOPEDIA
-    listOrder: 2090
+    listOrder: 2091
 
   - id: STR_FN_FSC_BAYONET
     requires:
@@ -4525,6 +4689,14 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_FN_FSC_BAYONET_UFOPEDIA
     listOrder: 2092
+
+  - id: STR_50_CAL_MAGNUM
+    requires:
+      - STR_MERCENARY_RESEARCH
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_50_CAL_MAGNUM_UFOPEDIA
+    listOrder: 2093
 
 #  - id: STR_STONER_63A_CARBINE
 #    listOrder: 2094
@@ -4549,8 +4721,13 @@ ufopaedia:
     text: STR_M16A1_SHOTGUN_UFOPEDIA
     listOrder: 2098
 
-#  - id: STR_MAC10
-#    listOrder: 2099
+  - id: STR_ENFORCER
+    requires:
+      - STR_MERCENARY_RESEARCH
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ENFORCER_UFOPEDIA
+    listOrder: 2099
 #  - id: STR_SP72_SMG # Based on the PPS-43
 #    listOrder: 2100
 
@@ -4834,7 +5011,10 @@ extraSprites:
       210: Resources/BallisticWeapons/CustomWeapons/BigWeaponToolKit.png
       211: Resources/BallisticWeapons/CustomWeapons/BigM16A1Scoped.png
       212: Resources/BallisticWeapons/CustomWeapons/BigM16A1Shotgun.png
-
+      213: Resources/BallisticWeapons/CustomWeapons/Big50CalMagnum.png
+      214: Resources/BallisticWeapons/CustomWeapons/Big50CalMagnumClip.png
+      224: Resources/BallisticWeapons/CustomWeapons/BigEnforcer.png
+      248: Resources/BallisticWeapons/USA/BigCarbine.png
 
   - type: FLOOROB.PCK
     files:
@@ -4955,6 +5135,11 @@ extraSprites:
       210: Resources/BallisticWeapons/CustomWeapons/FloorWeaponToolKit.png
       211: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Scoped.png
       212: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Shotgun.png
+      213: Resources/BallisticWeapons/CustomWeapons/Floor50CalMagnum.png
+      214: Resources/BallisticWeapons/CustomWeapons/Floor50CalMagnumClip.png
+      224: Resources/BallisticWeapons/CustomWeapons/FloorEnforcer.png
+      248: Resources/BallisticWeapons/USA/FloorCarbine.png
+
 
   - type: HANDOB.PCK
     width: 256
@@ -5070,6 +5255,9 @@ extraSprites:
 
       904: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
       912: Resources/BallisticWeapons/Explosives/HandFlashbangGrenade.png
+      920: Resources/BallisticWeapons/CustomWeapons/HandEnforcer.png
+      928: Resources/BallisticWeapons/CustomWeapons/Hand50CalMagnum.png
+      948: Resources/BallisticWeapons/USA/HandCarbine.png
 
   - type: SMOKE.PCK
     height: 80
@@ -5299,7 +5487,7 @@ manufacture:
       - STR_SPECIAL_FORCES_RESEARCH
     space: 1
     time: 40
-    cost: 4000
+    cost: 400
     refund: true  
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
@@ -5312,13 +5500,26 @@ manufacture:
     category: STR_WEAPON_CONVERSION
     space: 1
     time: 40
-    cost: 4000
+    cost: 400
     refund: true  
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_DOUBLE_BARRELED_SHOTGUN: 1
     producedItems:
       STR_SAWEDOFF_SHOTGUN: 1
+    listOrder: 1101
+
+  - name: STR_ENFORCER_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true    
+    requiredItems:
+        STR_WEAPON_TOOLKIT: 1
+        STR_M1_CARBINE: 1
+    producedItems:
+        STR_ENFORCER: 1
     listOrder: 1101
 
   - name: STR_XM117_SCOPED_CONVERSION
@@ -5383,7 +5584,7 @@ manufacture:
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_FN_FAL: 1
-      STR_7_62MM_NATO_RIFLE_X20: 1 
+      STR_5_56MM_NATO_RIFLE_X20: 1 
     producedItems:
       STR_FN_FSC: 1
     listOrder: 1101
@@ -5416,7 +5617,7 @@ manufacture:
       STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_7_62MM_NATO_RIFLE_X20: 1 
+      STR_5_56MM_NATO_RIFLE_X20: 1 
     producedItems:
       STR_FN_FSC_SCOPED: 1
     listOrder: 1101
@@ -5679,15 +5880,15 @@ extraStrings:
       STR_5_56MM_NATO_RIFLE_X30: "5.56mm NATO Rifle Rounds (x30)"
       STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA: "..."	  
       STR_7_62MM_NATO_RIFLE_X5: "7.62mm NATO Rifle Rounds (x5)"
-      STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA: "Defined by NATO since 1950 as the Organization's standard firearms cartridge, the 7.62x51mm ammunition is a heavy projectile, used in battle rifles, precision and machine guns of all types. It is appreciated for its armor-penetrating power. This magazine holds 5 bullets and is used on the PSG-1 Sniper Rifle."
+      STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA: "Defined by NATO since 1950 as the Organization's standard firearms cartridge, the 7.62x51mm ammunition is a heavy projectile, used in battle rifles, precision and machine guns of all types. It is appreciated for its armor-penetrating power. This magazine holds 5 bullets and is used only the PSG-1 Sniper Rifle."
       STR_7_62MM_NATO_RIFLE_X20: "7.62mm NATO Rifle Rounds (x20)"
       STR_7_62MM_NATO_RIFLE_X20_UFOPEDIA: "Although it has been replaced to some extent by the 5.56x45mm intermediate cartridge developed for the AR-15 rifle, it was decided that it would still be used in various battle rifles, one of the most famous being the Belgian FN FAL rifle. This magazine has a capacity of 20 bullets and is the most commonly used."
       STR_7_62MM_NATO_RIFLE_X30: "7.62mm NATO Rifle Rounds (x30)"
-      STR_7_62MM_NATO_RIFLE_X30_UFOPEDIA: "The firepower provided by this caliber limits its use in weapons with automatic fire, but becomes much more controllable in its use in weapons with long, heavy barrels. This particular magazine is not widely used, because it is heavier than the 20-bullet one, although it can be used without major problems with the same guns calibrated in 7.62x51mm."
+      STR_7_62MM_NATO_RIFLE_X30_UFOPEDIA: "The firepower provided by this caliber limits its use in weapons with automatic fire, but becomes much more controllable in its use in weapons with long, heavy barrels. This particular magazine is not widely used, mostly on LMGs and some modified weapons. This is because it is heavier than the 20-bullet one, although it can be used without major problems with the same guns calibrated in 7.62x51mm."
       STR_7_62MM_NATO_LMG_X50: "7.62mm NATO LMG Rounds (x50)"
       STR_7_62MM_NATO_LMG_X50_UFOPEDIA: "The 7.62mm ammunition used in light machine guns is mounted on the popular M13, a metallic disintegrating link specifically designed for ammunition belt-fed firearms. This configuration allows more ammunition to be transported in a more compact manner."
       STR_7_62MM_NATO_LMG_X100: "7.62mm NATO LMG Rounds (x100)"
-      STR_7_62MM_NATO_LMG_UFOPEDIA: "..."
+      STR_7_62MM_NATO_LMG_UFOPEDIA: "Ammunition drum with 100 rounds 7.62mm NATO, allows to transport a large amount of bullets and is mainly used in automatic squad weapons. However, its weight is considerable and after it runs out the contents of the drum have to be carefully reloaded, making it a nuisance until it is returned to base."
       STR_7_62MM_SOVIET_RIFLE_X10: "7.62mm Soviet Rifle Rounds (x10)"
       STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA: "..."
       STR_7_62MM_SOVIET_RIFLE_X30: "7.62mm Soviet Rifle Rounds (x30)"
@@ -5738,11 +5939,15 @@ extraStrings:
       STR_FAL_SHOTGUN_SHELLS: "12-Gauge FAL Shotgun Shells (x5)"
       STR_FAL_SHOTGUN_SHELLS_UFOPEDIA: "..."
       STR_KS23_SHARPNEL-25_X4: "23mm KS23 Sharpnel-25 Shells (x4)"
-      STR_KS23_SHARPNEL-25_X4_UFOPEDIA: "..."
+      STR_KS23_SHARPNEL-25_X4_UFOPEDIA: "The Sharpnel-25 cartridge is composed of pellets with an effective range of 25 meters, with a wide range of dispersion that allows the annihilation of various targets with a single shot. It is considered a heavy projectile and can only be used by the KS-23 shotgun."
       STR_KS23_BARRIKADE_X4: "23mm KS23 Barrikade Slug (x4)"
-      STR_KS23_BARRIKADE_X4_UFOPEDIA: "..."
+      STR_KS23_BARRIKADE_X4_UFOPEDIA: "The Barrikade pellet is a 23mm solid steel-core projectile capable of destroying the engine block of a car up to 100 meters. It is used primarily to eliminate individual targets with a single, devastating blow."
       STR_KS23_SATANA_X4: "23mm KS23 Satana Shells (x4)"
-      STR_KS23_SATANA_X4_UFOPEDIA: "..."
+      STR_KS23_SATANA_X4_UFOPEDIA: "Satana cartridges are specially designed to create a curtain of fire. They contain a mixture of white phosphorus and other classified material, both highly flammable, which burn off all oxygen present in the environment, even if the target lacks this material. This cartridge is exclusive for use in the KS-23 heavy shotgun."
+      STR_30_CARBINE_X15: ".30 Carbine (x15)"
+      STR_30_CARBINE_X15_UFOPEDIA: "This cartridge was designed specifically for the M1 Carbine, prior to WW2. It is lightweight and similar in appearance to a .45 ACP pistol bullet, renowned for its accuracy, although lacking in penetration power. The .30 Carbine cartridge was developed by Winchester and is basically a rimless .30 caliber (7.62 mm) version of the much older .32 Winchester Self-Loading cartridge of 1906."
+      STR_50_CAL_REVOLVER_AMMO_X6: ".50 Cal Revolver Speedloader (x6)"
+      STR_50_CAL_REVOLVER_AMMO_X6_UFOPEDIA: "Speedloader used to reload quickly six 12.7mm rounds on a revolver specially adapted to use it. It packs a punch. A serious punch. But it's heavy and hard to use."
 ########################
 ###### FIRE MODES ######
 ########################
@@ -5842,6 +6047,8 @@ extraStrings:
       STR_POLICE_SHOTGUN_UFOPEDIA: "Mythical shotgun used in the trenches of the WW1, became an icon of the police forces in the 30s and 40s. Uses {ALT}12 Gauge{ALT} shells. Many law enforcement agencies around the world use them to provide their officers with high firepower on the streets."
       STR_POLICE_TONFA: "Tonfa"
       STR_POLICE_TONFA_UFOPEDIA: "Blunt weapon used by police to control crowds and criminals, is made of black solid plastic. It is very difficult to kill someone with this weapon, although enough damage can be done to {ALT}stun them.{ALT}"
+      STR_M1_CARBINE: "M1 Carbine"
+      STR_M1_CARBINE_UFOPEDIA: "The M1 Carbine is an old design born in the WW2 as a light-weight weapon. Uses the {ALT}.30 Carbine{ALT} rounds, light but with limited stopping power. Still, the weapon is confortable to use and quite popular among many police and military forces."
 ####################################
 ###### ALLIED ARMIES WEAPONS #######
 ####################################
@@ -5879,6 +6086,7 @@ extraStrings:
       STR_FN_FSC_SCOPED_CONVERSION: "FN FSC Scoped Conversion"
       STR_M16A1_SCOPED_CONVERSION: "M16A1 Scoped Conversion"
       STR_M16A1_SHOTGUN_CONVERSION: "M16A1 Shotgun Conversion"
+      STR_ENFORCER_CONVERSION: "Enforcer Pistol Conversion"
 ####################################
 ###### SPECIAL FORCES WEAPONS ######
 ####################################
@@ -5909,6 +6117,10 @@ extraStrings:
       STR_M16A1_SCOPED_UFOPEDIA: "Modified version of the M16A1, a Colt x4 sight has been added and the stock barrel has been replaced with a longer and heavier, giving it extra control for medium and long range shooting. It is used by paramilitary and Special Forces as a designated marksman's rifle. Calibrated in the {ALT}5.56mm NATO ammunition{ALT}"
       STR_M16A1_SHOTGUN: "M16A1 Shotgun"
       STR_M16A1_SHOTGUN_UFOPEDIA: "Customized assault rifle for short-range combat The handguard was changed to a longer version of the one used on the XM117, as well as a cut-down version of the Remington 870 shotgun was added to maximize its firepower in close combat. The rifle uses standard {ALT}5.56x45mm NATO{ALT} ammunition used in the AR-15 family and the added under-barrel shotgun uses {ALT}.12 Gauge{ALT} ammunition in its {ALT}Buckshot, Slug and Non-Lethal{ALT} variants."
+      STR_ENFORCER: "Enforcer Pistol"
+      STR_ENFORCER_UFOPEDIA: "Sawed-off version of the popular M1 Carbine, this is build shortening the lenght of the barrel considerably and removing the buttstock, replacing it with a pistol grip. The {ALT}.30 Carbine{ALT} ammo used on it allows for a steady accuracy, due the small recoil it has."
+      STR_50_CAL_MAGNUM: "50. Cal Magnum"
+      STR_50_CAL_MAGNUM_UFOPEDIA: "This was an old Magnum revolver that someone modified and adapted to use powerful .50 Cal rounds. It is very, very powerful and very very easy to miss a target if you don't aim accurately, due the heavy recoil. This weapon is most suited to close range combat, almost point-blank, where the low accuracy doesn't matters."
 
 ########################################
 ###### USA EXPERIMENTAL WEAPONS ########

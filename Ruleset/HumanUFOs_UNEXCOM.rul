@@ -7,6 +7,9 @@ ufos:
     modSprite: UFO_TEXAN
     damageMax: 250
     speedMax: 180
+    fakeWaterLandingChance: 0
+    splashdownSurvivalChance: 0
+    unmanned: true
     accel: 2
     fireSound: 4
     power: 8
@@ -37,6 +40,9 @@ ufos:
     modSprite: UFO_MAGISTER
     damageMax: 250
     speedMax: 386
+    fakeWaterLandingChance: 0
+    splashdownSurvivalChance: 0
+    unmanned: true
     accel: 4
     power: 40
     fireSound: 5
@@ -66,6 +72,8 @@ ufos:
     modSprite: UFO_MI8
     damageMax: 250
     speedMax: 140
+    fakeWaterLandingChance: 0
+    splashdownSurvivalChance: 0
     accel: 4
     power: 15
     fireSound: 4
@@ -168,9 +176,9 @@ alienDeployments:
             - STR_22_LONG_RIFLE_X14
             - STR_GRENADE
           -
-            - STR_HUNTING_RIFLE
-            - STR_22_LONG_RIFLE_X14
-            - STR_22_LONG_RIFLE_X14
+            - STR_M1_CARBINE
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_AKM
@@ -201,9 +209,9 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_SKORPION
@@ -287,14 +295,14 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets:
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_SKORPION
@@ -314,14 +322,14 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_SKORPION
@@ -354,9 +362,9 @@ alienDeployments:
             - STR_22_LONG_RIFLE_X14
             - STR_GRENADE
           -
-            - STR_HUNTING_RIFLE
-            - STR_22_LONG_RIFLE_X14
-            - STR_22_LONG_RIFLE_X14
+            - STR_M1_CARBINE
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_AKM
@@ -387,9 +395,9 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_SKORPION
@@ -473,14 +481,14 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets:
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_SKORPION
@@ -500,14 +508,14 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
+            - STR_ENFORCER
+            - STR_30_CABINE_X15
+            - STR_30_CABINE_X15
             - STR_GRENADE
           -
             - STR_SKORPION
