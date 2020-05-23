@@ -3885,6 +3885,8 @@ items:
     listOrder: 2105
   - type: STR_50_CAL_REVOLVER_AMMO_X6
     categories: [STR_FIREARMS, STR_PISTOLS, STR_MERCENARY_TECH, STR_CLIPS]
+    requires:
+      - STR_MERCENARY_RESEARCH
     size: 0.1
     costBuy: 500
     costSell: 600

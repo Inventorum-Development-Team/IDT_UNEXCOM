@@ -754,10 +754,6 @@ armors:
       - 0.0
 research:
 # requirements
-  - name: STR_ALIEN_ALLOYS
-    cost: 200
-    points: 20
-    needItem: true
   - name: STR_PERSONAL_ANTIGRAV
     cost: 100
     points: 10
@@ -951,6 +947,9 @@ research:
       - STR_PLASMA_PISTOL
       - STR_HEAVY_PLASMA
       - STR_PLASMA_RIFLE
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_BLASTER
+      - STR_PLASMA_SNIPER_RIFLE
 # Human reworked weapons - all require the base alien weapon, how to defeat the lockout and alien alloys to build the human interfaces
   - name: STR_REMAN_HUMAN_PLASMA_PISTOL
     cost: 400
@@ -1388,7 +1387,7 @@ manufacture:
   - name: STR_HEAVY_PLASMA
     requires:
       - STR_ALIENS_ONLY
-  - type: STR_HEAVY_PLASMA_CLIP
+  - name: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_ALIENS_ONLY
 # Craft Weapons
