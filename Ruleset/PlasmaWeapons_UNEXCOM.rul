@@ -931,17 +931,14 @@ research:
     cost: 300 
     points: 10
     needItem: true
-    unlocks: STR_ALIEN_WEAPONS
   - name: STR_PLASMA_RIFLE
     cost: 350 
     points: 10
     needItem: true
-    unlocks: STR_ALIEN_WEAPONS
   - name: STR_HEAVY_PLASMA
     cost: 400 
     points: 10
     needItem: true
-    unlocks: STR_ALIEN_WEAPONS
 # this is how to defeat the lockout is unlocked by alien weapons but will need a live engineer to allow it to go forward to be researched
   - name: STR_ALIEN_WEAPONS
     cost: 800 
@@ -1379,13 +1376,13 @@ manufacture:
   - name: STR_PLASMA_PISTOL
     requires:
       - STR_ALIENS_ONLY
-  - type: STR_PLASMA_PISTOL_CLIP
+  - name: STR_PLASMA_PISTOL_CLIP
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_RIFLE
     requires:
       - STR_ALIENS_ONLY
-  - type: STR_PLASMA_RIFLE_CLIP
+  - name: STR_PLASMA_RIFLE_CLIP
     requires:
       - STR_ALIENS_ONLY
   - name: STR_HEAVY_PLASMA

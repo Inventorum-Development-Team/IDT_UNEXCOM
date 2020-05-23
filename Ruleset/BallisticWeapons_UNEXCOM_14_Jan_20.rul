@@ -291,8 +291,7 @@ items:
     refNode: *STR_5_56MM_NATO_RIFLE_AMMO
     categories: [STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
     size: 0.1
-    costBuy: 375
-    costSell: 325
+    costSell: 525
     weight: 3
     bigSprite: 106
     floorSprite: 106
@@ -1050,7 +1049,6 @@ items:
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.3
-    costBuy: 9500
     costSell: 5400
     weight: 12
     bigSprite: 137
@@ -3848,7 +3846,7 @@ items:
     tuMelee: 0
     listOrder: 2127
 
- - type: STR_50_CAL_MAGNUM
+  - type: STR_50_CAL_MAGNUM
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_PISTOLS]
     requires:
       - STR_MERCENARY_RESEARCH
@@ -5481,6 +5479,18 @@ manufacture:
 ##### SPECIAL FORCES/MERC WEAPON CONVERSION #######
 ##################################################
 
+  - name: STR_5_56MM_NATO_X30_MAG_CREATION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_RESEARCH
+    space: 1
+    time: 10
+    cost: 300
+    refund: true 
+    producedItems:
+      STR_5_56MM_NATO_RIFLE_X30: 1
+    listOrder: 1101
+
   - name: STR_M79_THUMPER_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5621,9 +5631,29 @@ manufacture:
     producedItems:
       STR_FN_FSC_SCOPED: 1
     listOrder: 1101
+  
+  - name: STR_M16A1_SHOTGUN_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_RESEARCH
+    category: STR_WEAPON_CONVERSION
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true  
+    requiredItems:
+      STR_WEAPON_TOOLKIT: 1
+      STR_M16A1: 1
+      STR_REMINGTON_COMBAT_SHOTGUN: 1
+      STR_5_56MM_NATO_RIFLE_X20: 1 
+      STR_12GAUGE_BUCKSHOT_X8: 1 
+    producedItems:
+      STR_M16A1_SHOTGUN: 1
+    listOrder: 1101
 
   - name: STR_M16A1_SCOPED_CONVERSION
     category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_RESEARCH
     space: 1
     time: 40
     cost: 4000
@@ -5637,8 +5667,10 @@ manufacture:
       STR_M16A1_SCOPED: 1
     listOrder: 1101
 
-  - name: STR_M16A1_SHOTGUN_CONVERSION
+  - name: STR_M16A1_M203_CONVERSION
     category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
     space: 1
     time: 40
     cost: 4000
@@ -5646,10 +5678,10 @@ manufacture:
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
-      STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1 
+      STR_M203_ACCESSORY: 1
+      STR_40MM_FRAG: 1 
     producedItems:
-      STR_M16A1_SHOTGUN: 1
+      STR_M16_M203: 1
     listOrder: 1101
 #################################################
 armors:
@@ -5876,9 +5908,9 @@ extraStrings:
       STR_45_PISTOL_X30: ".45 APC Pistol Rounds (x30)"
       STR_45_PISTOL_X30_UFOPEDIA: "Due of its stopping power, it has been used on numerous firearms, such as pistols and sub-machine guns. However, due to its power and size, bullets of this caliber are more expensive and heavier than other pistol calibers, such as the 9mm Parabellum. This magazine can carry 30 useful rounds and can be used in sub-machine guns."
       STR_5_56MM_NATO_RIFLE_X20: "5.56mm NATO Rifle Rounds (x20)"
-      STR_5_56MM_NATO_RIFLE_X20_UFOPEDIA: "..."
+      STR_5_56MM_NATO_RIFLE_X20_UFOPEDIA: "The intermediate cartridge 5.56x45mm NATO was born as a response to the experiments of ArmaLite (creators of the AR-15/M-16 family) with smaller, faster and lighter projectiles than the 7.62mm NATO. It is derived from the civilian .223 Remington cartridge, being similar in performance. This 20-rds magazine is used in NATO assault weapons. "
       STR_5_56MM_NATO_RIFLE_X30: "5.56mm NATO Rifle Rounds (x30)"
-      STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA: "..."	  
+      STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA: "This 30-rds magazine for the 5.56mm NATO is an experiment. During the Vietnam war some units had them, some units had but didn't use them (because unreliable). For example MAC/SOG purchased them on the civilian market, but the had very few. Usually a SOG member on operations had only one 30 rounds mag (inserted in the weapon) and the rest was composed of the standard 20-rds mags. Our engineers can manufacture them at the workshop (and we can even sell them, are quite profitable)"	  
       STR_7_62MM_NATO_RIFLE_X5: "7.62mm NATO Rifle Rounds (x5)"
       STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA: "Defined by NATO since 1950 as the Organization's standard firearms cartridge, the 7.62x51mm ammunition is a heavy projectile, used in battle rifles, precision and machine guns of all types. It is appreciated for its armor-penetrating power. This magazine holds 5 bullets and is used only the PSG-1 Sniper Rifle."
       STR_7_62MM_NATO_RIFLE_X20: "7.62mm NATO Rifle Rounds (x20)"
@@ -5888,13 +5920,13 @@ extraStrings:
       STR_7_62MM_NATO_LMG_X50: "7.62mm NATO LMG Rounds (x50)"
       STR_7_62MM_NATO_LMG_X50_UFOPEDIA: "The 7.62mm ammunition used in light machine guns is mounted on the popular M13, a metallic disintegrating link specifically designed for ammunition belt-fed firearms. This configuration allows more ammunition to be transported in a more compact manner."
       STR_7_62MM_NATO_LMG_X100: "7.62mm NATO LMG Rounds (x100)"
-      STR_7_62MM_NATO_LMG_UFOPEDIA: "Ammunition drum with 100 rounds 7.62mm NATO, allows to transport a large amount of bullets and is mainly used in automatic squad weapons. However, its weight is considerable and after it runs out the contents of the drum have to be carefully reloaded, making it a nuisance until it is returned to base."
+      STR_7_62MM_NATO_LMG_UFOPEDIA: "Ammunition drum with 100 rounds, 7.62mm NATO caliber, allows to transport a large amount of bullets and is mainly used in automatic squad weapons. However, its weight is considerable and after it runs out the contents of the drum have to be carefully reloaded, making it a nuisance until it is returned to base."
       STR_7_62MM_SOVIET_RIFLE_X10: "7.62mm Soviet Rifle Rounds (x10)"
-      STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA: "..."
+      STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA: "This ammunition was designed almost at the end of WW2 to equip the modern (then) SKS carbine. It is inspired by the 7.92×33mm Kurz cartridge of German origin, used in the first assault rifle in the world, the StG-44. This stripper clip has capacity for 10-rds and is used exclusively in the SKS."
       STR_7_62MM_SOVIET_RIFLE_X30: "7.62mm Soviet Rifle Rounds (x30)"
       STR_7_62MM_SOVIET_RIFLE_X30_UFOPEDIA: "..."
       STR_7_62MM_SOVIET_RIFLE_X40: "7.62mm Soviet Rifle Rounds (x40)"
-      STR_7_62MM_SOVIET_RIFLE_X40_UFOPEDIA: "..."
+      STR_7_62MM_SOVIET_RIFLE_X40_UFOPEDIA: "Despite having the same bullet diameter as the 7.62mm NATO, it is considerably smaller and more manageable. It has less range and less firepower, but its lethality at short and medium range is indisputable. The 40-rds magazine is used by a large majority of countries using the Kalashnikov family weapons."
       STR_7_62MM_SOVIET_RIFLE_X75: "7.62mm Soviet Rifle Rounds (x75)"
       STR_7_62MM_SOVIET_RIFLE_X75_UFOPEDIA: "..."
       STR_7_62MM_SOVIET_SNIPER_X10: "7.62mmR Soviet Sniper Rounds (x10)"
@@ -5966,7 +5998,7 @@ extraStrings:
 ####### US WEAPONS ########
 ###########################
       STR_M1911_COLT45: "M1911 Colt .45"
-      STR_M1911_COLT45_UFOPEDIA: "This great handgun uses {ALT}.45 ACP{ALT} rounds and has been in use since 1911, in all the wars of the 20th Century, including WWI, WWII, Korea War, Vietnam War and now Alien War. Standard side weapon of US personnel."
+      STR_M1911_COLT45_UFOPEDIA: "This great handgun uses {ALT}.45 ACP{ALT} rounds and has been in use since 1911, in all the wars of the 20th Century, including WWI, WWII, Korea War, Vietnam War and now Alien War. Standard side weapon of US personnel. Uses x7 .45 ACP Ammo"
       STR_M16_M203: "M16 M203"
       STR_M16_M203_UFOPEDIA: "Standard assault rifle provided by U.S. Army forces to UNEXCOM. Lightweight, but not very powerful, it's quite accurate and fires {ALT}5.56 mm NATO{ALT} ammunition. Equiped with an underbarrel {ALT}M203 40mm Grenade Launcher{ALT}, uses a the same version of the M79 round."
       STR_XM117: "XM117 Carbine"
@@ -6086,7 +6118,9 @@ extraStrings:
       STR_FN_FSC_SCOPED_CONVERSION: "FN FSC Scoped Conversion"
       STR_M16A1_SCOPED_CONVERSION: "M16A1 Scoped Conversion"
       STR_M16A1_SHOTGUN_CONVERSION: "M16A1 Shotgun Conversion"
+      STR_M16A1_M203_CONVERSION: "M16 M203 Conversion"
       STR_ENFORCER_CONVERSION: "Enforcer Pistol Conversion"
+      STR_5_56MM_NATO_X30_MAG_CREATION: "5.56mm NATO 30-rds mag creation"
 ####################################
 ###### SPECIAL FORCES WEAPONS ######
 ####################################
