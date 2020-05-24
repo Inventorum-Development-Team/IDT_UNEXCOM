@@ -1,0 +1,625 @@
+############################
+## C.M.P - TERRAIN - HYBRID EDITION
+## V0.0.1
+## Lasted Changed by L83
+## Comments: 
+###########################
+terrains:
+######################## TFTD Standard Map based Missions ########################
+  - name: PIPES
+    music:
+      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - PIPES
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO
+    # startingCondition: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    script: THREEBIG
+    mapBlocks:
+      - name: PIPES00
+        width: 10
+        length: 10
+        groups: 1
+      - name: PIPES01
+        width: 10
+        length: 10
+      - name: PIPES02
+        width: 10
+        length: 10
+      - name: PIPES03
+        width: 10
+        length: 10
+      - name: PIPES04
+        width: 10
+        length: 10
+      - name: PIPES05
+        width: 10
+        length: 10
+      - name: PIPES06
+        width: 10
+        length: 10
+      - name: PIPES07
+        width: 10
+        length: 10
+      - name: PIPES08
+        width: 20
+        length: 20
+      - name: PIPES09
+        width: 20
+        length: 20
+      - name: PIPES10
+        width: 20
+        length: 20
+      - name: PIPES11
+        width: 20
+        length: 20
+  - name: GAL
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - ROCKS
+      - ASUNK
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    # startingCondition: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    mapBlocks:
+      - name: GAL01
+        width: 20
+        length: 20
+      - name: GAL02
+        width: 20
+        length: 20
+      - name: GAL03
+        width: 20
+        length: 20
+      - name: GAL04
+        width: 10
+        length: 10
+      - name: GAL05
+        width: 10
+        length: 10
+      - name: GAL06
+        width: 10
+        length: 10
+      - name: GAL07
+        width: 10
+        length: 10
+      - name: GAL08
+        width: 10
+        length: 10
+      - name: GAL09
+        width: 10
+        length: 10
+      - name: GAL10
+        width: 10
+        length: 10
+      - name: GAL11
+        width: 10
+        length: 10
+      - name: GAL12
+        width: 10
+        length: 10
+      - name: GAL13
+        width: 10
+        length: 10
+        groups: 1
+      - name: GAL14
+        width: 10
+        length: 10
+        groups: 1
+      - name: GAL15
+        width: 10
+        length: 10
+        groups: 1
+      - name: GAL16
+        width: 10
+        length: 10
+        groups: 1
+  - name: MSUNK
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - MSUNK1
+      - MSUNK2
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    # startingCondition: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    script: THREEBIG
+    mapBlocks:
+      - name: MSUNK00
+        width: 10
+        length: 10
+        groups: 1
+      - name: MSUNK01
+        width: 10
+        length: 10
+        groups: 1
+      - name: MSUNK02
+        width: 20
+        length: 20
+      - name: MSUNK03
+        width: 20
+        length: 20
+      - name: MSUNK04
+        width: 20
+        length: 20
+      - name: MSUNK05
+        width: 20
+        length: 20
+      - name: MSUNK06
+        width: 20
+        length: 20
+      - name: MSUNK07
+        width: 10
+        length: 10
+      - name: MSUNK08
+        width: 10
+        length: 10
+      - name: MSUNK09
+        width: 10
+        length: 10
+      - name: MSUNK10
+        width: 10
+        length: 10
+      - name: MSUNK11
+        width: 10
+        length: 10
+      - name: MSUNK12
+        width: 10
+        length: 10
+      - name: MSUNK13
+        width: 10
+        length: 10
+  - name: VOLC
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - VOLC
+      - UFOBITS
+    script: UNDERWATER_DEFAULT
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    # startingCondition: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    mapBlocks:
+      - name: VOLC00
+        width: 10
+        length: 10
+        groups: 1
+      - name: VOLC01
+        width: 10
+        length: 10
+      - name: VOLC02
+        width: 10
+        length: 10
+      - name: VOLC03
+        width: 10
+        length: 10
+      - name: VOLC04
+        width: 10
+        length: 10
+      - name: VOLC05
+        width: 10
+        length: 10
+      - name: VOLC06
+        width: 10
+        length: 10
+      - name: VOLC07
+        width: 10
+        length: 10
+      - name: VOLC08
+        width: 10
+        length: 10
+      - name: VOLC09
+        width: 20
+        length: 20
+      - name: VOLC10
+        width: 20
+        length: 20
+      - name: VOLC11
+        width: 20
+        length: 20
+  - name: CORAL
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - WEEDS
+      - CORAL
+      - ROCKS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    # startingCondition: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    script: THREEBIG
+    mapBlocks:
+      - name: CORAL00
+        width: 10
+        length: 10
+        groups: 1
+      - name: CORAL01
+        width: 10
+        length: 10
+      - name: CORAL02
+        width: 10
+        length: 10
+      - name: CORAL03
+        width: 10
+        length: 10
+      - name: CORAL04
+        width: 10
+        length: 10
+      - name: CORAL05
+        width: 10
+        length: 10
+      - name: CORAL06
+        width: 10
+        length: 10
+      - name: CORAL07
+        width: 10
+        length: 10
+      - name: CORAL08
+        width: 10
+        length: 10
+      - name: CORAL09
+        width: 20
+        length: 20
+      - name: CORAL10
+        width: 20
+        length: 20
+      - name: CORAL11
+        width: 20
+        length: 20
+  - name: ALART
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - ROCKS
+      - WEEDS
+      - UW_PYRAMID
+      - UFOBITS
+    depth: [1, 2]
+    enviroEffects: STR_UNDERWATER_ENVIRO
+    # ambience: 67
+    mapBlocks:
+      - name: ALART00
+        width: 10
+        length: 10
+        groups: 1
+      - name: ALART01
+        width: 10
+        length: 10
+      - name: ALART02
+        width: 10
+        length: 10
+      - name: ALART03
+        width: 10
+        length: 10
+      - name: ALART04
+        width: 10
+        length: 10
+      - name: ALART05
+        width: 10
+        length: 10
+      - name: ALART06
+        width: 10
+        length: 10
+      - name: ALART07
+        width: 10
+        length: 10
+      - name: ALART08
+        width: 10
+        length: 10
+      - name: ALART09
+        width: 20
+        length: 20
+        groups: 6
+      - name: ALART10
+        width: 20
+        length: 20
+      - name: ALART11
+        width: 20
+        length: 20
+  - name: SEABED
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - ROCKS
+      - WEEDS
+      - DEBRIS
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    script: THREEBIG
+    mapBlocks:
+      - name: SEABED00
+        width: 10
+        length: 10
+        groups: 1
+      - name: SEABED01
+        width: 10
+        length: 10
+        groups: 1
+      - name: SEABED02
+        width: 10
+        length: 10
+      - name: SEABED03
+        width: 10
+        length: 10
+      - name: SEABED04
+        width: 10
+        length: 10
+      - name: SEABED05
+        width: 10
+        length: 10
+      - name: SEABED06
+        width: 10
+        length: 10
+      - name: SEABED07
+        width: 10
+        length: 10
+      - name: SEABED08
+        width: 10
+        length: 10
+      - name: SEABED09
+        width: 10
+        length: 10
+      - name: SEABED10
+        width: 20
+        length: 20
+      - name: SEABED11
+        width: 20
+        length: 20
+      - name: SEABED12
+        width: 20
+        length: 20
+  - name: ATLAN
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - ATLANTIS
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    mapBlocks:
+      - name: ATLAN00
+        width: 10
+        length: 10
+        groups: 1
+      - name: ATLAN01
+        width: 10
+        length: 10
+      - name: ATLAN02
+        width: 10
+        length: 10
+      - name: ATLAN03
+        width: 10
+        length: 10
+      - name: ATLAN04
+        width: 10
+        length: 10
+      - name: ATLAN05
+        width: 10
+        length: 10
+      - name: ATLAN06
+        width: 10
+        length: 10
+      - name: ATLAN07
+        width: 10
+        length: 10
+      - name: ATLAN08
+        width: 10
+        length: 10
+      - name: ATLAN09
+        width: 10
+        length: 10
+      - name: ATLAN10
+        width: 20
+        length: 20
+      - name: ATLAN11
+        width: 20
+        length: 20
+  - name: MU
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - MU
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    mapBlocks:
+      - name: MU00
+        width: 10
+        length: 10
+        groups: 1
+      - name: MU01
+        width: 10
+        length: 10
+      - name: MU02
+        width: 10
+        length: 10
+      - name: MU03
+        width: 10
+        length: 10
+      - name: MU04
+        width: 10
+        length: 10
+      - name: MU05
+        width: 10
+        length: 10
+      - name: MU06
+        width: 10
+        length: 10
+      - name: MU07
+        width: 10
+        length: 10
+      - name: MU08
+        width: 10
+        length: 10
+      - name: MU09
+        width: 20
+        length: 20
+      - name: MU10
+        width: 20
+        length: 20
+      - name: MU11
+        width: 20
+        length: 20
+  - name: U_PLANE
+#    music:
+#      - GMTACWET
+    mapDataSets:
+      - BLANKS
+      - SAND
+      - U_PLANE
+      - UFOBITS
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    depth: [1, 2]
+    # ambience: 67
+    script: D_PLANE
+    mapBlocks:
+      - name: PLANE00
+        width: 10
+        length: 10
+        groups: 1
+      - name: PLANE01
+        width: 10
+        length: 10
+      - name: PLANE02
+        width: 10
+        length: 10
+      - name: PLANE03
+        width: 10
+        length: 10
+      - name: PLANE04
+        width: 10
+        length: 10
+      - name: PLANE05
+        width: 10
+        length: 10
+      - name: PLANE06
+        width: 10
+        length: 10
+      - name: PLANE07
+        width: 10
+        length: 10
+      - name: PLANE08
+        width: 10
+        length: 10
+      - name: PLANE09
+        width: 10
+        length: 10
+      - name: PLANE10
+        width: 10
+        length: 10
+      - name: PLANE11
+        width: 10
+        length: 10
+      - name: PLANE12
+        width: 10
+        length: 10
+      - name: PLANE13
+        width: 20
+        length: 20
+      - name: PLANE14
+        width: 20
+        length: 20
+      - name: PLANE15
+        width: 20
+        length: 20
+      - name: PLANE16
+        width: 20
+        length: 20
+      - name: PLANE17
+        width: 10
+        length: 10
+      - name: PLANE18
+        width: 10
+        length: 10
+      - name: PLANE19
+        width: 10
+        length: 10
+      - name: PLANE20
+        width: 10
+        length: 10
+  - name: A_BASE #TFTD WATER BASE _UNDERGROUND SECTION
+    script: UW_BASE1
+#    music:
+#      - GMTACWET
+    depth: [1, 1]
+    enviroEffects: STR_UNDERWATER_ENVIRO 
+    # ambience: 67
+    mapDataSets:
+      - BLANKS
+      - ORGANIC1
+      - ORGANIC2
+      - ORGANIC3
+      - PSYNOM
+    mapBlocks:
+      - name: A_BASE00
+        width: 10
+        length: 10
+        groups: 2
+        revealedFloors: 2
+      - name: A_BASE07
+        width: 10
+        length: 10
+        groups: 4
+      - name: A_BASE08
+        width: 10
+        length: 10
+        groups: 3
+      - name: A_BASE09
+        width: 10
+        length: 10
+        groups: 3
+      - name: A_BASE11
+        width: 20
+        length: 20
+        groups: 3
+      - name: A_BASE12
+        width: 20
+        length: 20
+        groups: 3
+      - name: A_BASE13
+        width: 20
+        length: 20
+        groups: 3
+      - name: A_BASE14
+        width: 20
+        length: 20
+        groups: 3
+      - name: A_BASE15
+        width: 20
+        length: 20
+        groups: 1
+        items:
+          STR_ELERIUM_115:
+            - [14, 14, 2]
+            - [4, 10, 2]

@@ -41,6 +41,8 @@ items:
     weight: 1 # 3
     hitSound: 1938
     armor: 30 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
 
   - type: STR_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_FIREARMS]
@@ -88,6 +90,8 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
 
   - type: STR_HEAVY_PLASMA
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
@@ -130,6 +134,9 @@ items:
     handSprite: 120 # ALL GOOD
     weight: 5 # 3
     armor: 35 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+
   - type: STR_SMALL_LAUNCHER
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
     bigSprite: 1320
@@ -173,6 +180,8 @@ items:
     invHeight: 2
     twoHanded: false
     armor: 70 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_MAGNUM
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
     listOrder: 5470 
@@ -219,6 +228,8 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_SMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_UNEXCOM_TECH]
     listOrder: 5480 
@@ -254,6 +265,8 @@ items:
     invHeight: 2
     twoHanded: false
     armor: 70 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_PLASMA_SMG_CLIP
     categories: [STR_PLASMA, STR_CLIPS, STR_SMGS, STR_UNEXCOM_TECH]
     listOrder: 5481
@@ -272,6 +285,8 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
     listOrder: 5250 
@@ -349,6 +364,8 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_HUMAN_SNIPER_PLASMA
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
     listOrder: 5500
@@ -394,6 +411,8 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_LMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_UNEXCOM_TECH]
     listOrder: 5150
@@ -448,6 +467,8 @@ items:
     invWidth: 2
     invHeight: 1
     armor: 35 # 20
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
   - type: STR_HUMAN_HEAVY_PLASMA
     categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
     listOrder: 5176

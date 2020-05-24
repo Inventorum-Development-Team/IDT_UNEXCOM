@@ -1,0 +1,76 @@
+############################
+## C.M.P - MAPSCRIPTS - HYBRID EDITION
+## V0.0.1
+## Lasted Changed by L83
+## Comments: 
+###########################
+mapScripts:
+    ###############TFTD##################
+  - type: DEFAULT #DRY_ATLAN_MU_DRY_GAL_VOLCANO
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+  - type: UNDERWATER_DEFAULT #ATLAN_MU_GAL_VOLCANO
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+  - type: THREEBIG #DRY_SEABED_DRY_PIPES_MSUNK_DRY_CORAL
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+  - type: D_PLANE
+    commands:
+    - type: addUFO
+    - type: resize
+      size: 5
+    - type: addCraft
+    - type: addBlock
+      blocks: [13, 14]
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      blocks: [17, 18]
+      rects:
+        - [3, 0, 1, 1]
+    - type: addBlock
+      blocks: [15, 16]
+      rects:
+        - [2, 3, 2, 2]
+    - type: addBlock
+      blocks: [19, 20]
+      rects:
+        - [3, 3, 1, 1]
+    - type: addBlock
+      blocks: 12
+      rects:
+        - [0, 0, 1, 5]
+    - type: addBlock
+      blocks: [8, 9, 10, 11]
+      rects:
+        - [1, 0, 1, 5]
+    - type: addBlock
+      blocks: [8, 9, 10, 11]
+      rects:
+        - [2, 0, 1, 5]
+    - type: addBlock
+      blocks: [6, 7]
+      rects:
+        - [3, 0, 1, 5]
+    - type: addBlock
+      blocks: [4, 5]
+      rects:
+        - [4, 0, 1, 5]
+    - type: fillArea
+      blocks: [1, 2, 3]

@@ -1,0 +1,25 @@
+#A New Colour Pallet has been created to avoid a issue with the Interceptor screen, i will leave the old version in here just incase a NEW issue appears...Luke83
+
+customPalettes:
+  - type: PAL_GEOSCAPE_NEW
+    target: PAL_GEOSCAPE
+    file: Resources/PALS/LUKESGEOhybrid4.pal  
+  - type: PAL_BATTLESCAPE_1L83
+    target: PAL_BATTLESCAPE_1
+    file: Resources/Pals/FACTIONS_seadepth1.jasc
+  - type: PAL_BATTLESCAPE_2L83
+    target: PAL_BATTLESCAPE_2
+    file: Resources/Pals/FACTIONS_seadepth2.jasc
+  - type: PAL_BATTLESCAPE_3L83
+    target: PAL_BATTLESCAPE_3
+    file: Resources/Pals/FACTIONS_seadepth3.jasc 
+
+extraSprites:
+# V0.3 Pallet and Sprites
+   - type: TEXTURE.DAT
+     width: 896
+     height: 96
+     subX: 32
+     subY: 32
+     files:
+       0: Resources/Globe/CMP_TEXTURES.png
