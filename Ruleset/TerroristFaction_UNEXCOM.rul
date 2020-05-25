@@ -304,12 +304,14 @@ research:
   - name: STR_TERRORIST_MALE_CORPSE
     cost: 180
     points: 50
-    lookup: STR_TERRORIST_AUTOPSY
+    unlocks:
+      - STR_TERRORIST_AUTOPSY
     needItem: true
   - name: STR_TERRORIST_FEMALE_CORPSE
     cost: 180
     points: 50
-    lookup: STR_TERRORIST_AUTOPSY
+    unlocks:
+      - STR_TERRORIST_AUTOPSY
     needItem: true
   - name: STR_TERRORIST_AUTOPSY
     cost: 0

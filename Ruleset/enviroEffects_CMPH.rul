@@ -3,5 +3,15 @@ enviroEffects:
     mapBackgroundColor: 141
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_BATTLESCAPE_1
-    # armorTransformations:
-    #   STR_NONE_UC: STR_NONE_UC_UW
+    armorTransformations: &Underwater
+      STR_NONE_UC: STR_AQUALUNG_UC
+      STR_PILOT_UC: STR_AQUALUNG_UC
+      STR_SPECIAL_FORCES_UNIFORM_UC: STR_AQUALUNG_UC
+      STR_MERCENARY_UNIFORM_UC: STR_AQUALUNG_UC
+
+  - type: STR_UNDERWATER_GEAR
+    mapBackgroundColor: 239
+    paletteTransformations:
+      PAL_BATTLESCAPE: PAL_BATTLESCAPE_1
+    armorTransformations: 
+      STR_NONE_UC: STR_AQUALUNG_UC

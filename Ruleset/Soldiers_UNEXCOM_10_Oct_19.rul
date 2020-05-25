@@ -344,6 +344,16 @@ items:
     invHeight: 3
     armor: 30
     recover: false
+
+  - type: STR_CORPSE_AQUALUNG
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
 armors:
   - type: STR_NONE_UC
     spriteSheet: XCOM_10.PCK
@@ -497,6 +507,39 @@ armors:
     units:
       - STR_MERCENARY
 
+  - type: STR_AQUALUNG_UC
+    spriteSheet: AQUALUNG_SPRITESHEET.PCK
+    spriteInv: MAN_10AL
+    spriteFaceGroup: 6
+    drawBubbles: true
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_AQUALUNG
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    movementType: 1
+    stats:
+       tu: -20
+       stamina: -10
+       throwing: -40
+
 ufopaedia:
   - id: STR_NONE_UC
     type_id: 5
@@ -509,6 +552,12 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 1691
     text: STR_PILOT_UC_UFOPEDIA
+
+  - id: STR_AQUALUNG_UC
+    type_id: 5
+    listOrder: 1692
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_AQUALUNG_UC_UFOPEDIA
 
   - id: STR_SPECIAL_FORCES_UNIFORM_UC
     type_id: 5
@@ -525,6 +574,7 @@ ufopaedia:
     requires:
      - STR_MERCENARY_RESEARCH
     text: STR_MERCENARY_UNIFORM_UFOPEDIA
+
 extraSprites:
   - type: BASEBITS.PCK
     files:
@@ -756,6 +806,59 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       504: Resources/Soldiers/Mercenary/MERCENARY_CORPSE_FLOOROB.png
+########################
+##### AQUALUNG ########
+######################
+  - type: MAN_10ALF0.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungFemale_INV.png
+  - type: MAN_10ALF1.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungFemale_INV.png
+  - type: MAN_10ALF2.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungFemale_INV.png
+  - type: MAN_10ALF3.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungFemale_INV.png
+
+  - type: MAN_10ALM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungMale_INV.png
+  - type: MAN_10ALM1.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungMale_INV.png
+  - type: MAN_10ALM2.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungMale_INV.png
+  - type: MAN_10ALM3.SPK
+    singleImage: true
+    files:
+      0: Resources/Underwater/AqualungMale_INV.png
+
+  - type: AQUALUNG_SPRITESHEET.PCK
+    width: 1024
+    height: 360
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Underwater/AquaLung_Spritesheet.png
+
+  - type: BIGOBS.PCK
+    files:
+      510: Resources/Underwater/AQUALUNG_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      510: Resources/Underwater/AQUALUNG_CORPSE_FLOOROB.png
+
+
 extraStrings:
   - type: en-US
     strings:
@@ -773,6 +876,9 @@ extraStrings:
       STR_MERCENARY: Mercenary
       STR_MERCENARY_UNIFORM_UC: MERCENARY BATTLE DRESS
       STR_MERCENARY_UNIFORM_UFOPEDIA: The mercenary uniform is a light and comfortable military attire, generally similar to that worn by government armed forces. It is practical enough to allow for use in clandestine operations in a variety of environments and climates.
+
+      STR_AQUALUNG_UC: AQUALUNG
+      STR_AQUALUNG_UC_UFOPEDIA: This diving suit (nicknamed 'aqualung') is supplied by our allied nations to enable them to fight below the surface of the sea. It is used by the famous amphibious commandos, the 'frogmen'. It offers no protection and is cumbersome, but at least it allows us to swim with some freedom.
 
       STR_2ND_LIEUTENANT: 2nd Lieutenant
       STR_1ST_LIEUTENANT: 1st Lieutenant
