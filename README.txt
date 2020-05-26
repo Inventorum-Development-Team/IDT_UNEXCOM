@@ -34,6 +34,7 @@ Credits by name:
 *Arpia: SCOUTCAR (Ferret AC) sprites and codes
 *Badfella: Mercenary & Special Forces artwork, plus ideas.
 *Barabas: bug hunter
+*Black Onix: Romania and Bulgaria accurate flags
 *Blood Angel Tactical Marine: bug hunter.
 *boodman123726: XCOM 2 Music Pack
 *bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
@@ -44,7 +45,7 @@ Credits by name:
 *Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo
 *Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper
 *efrenespartano: main ruleset and sprite creation, lead designer
-*Finnik: Astronaut sprites
+*Finnik: Astronaut sprites, original code added to the main OXCE
 *Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 *garretrgang: bug hunter
 *Hans Woofington: bug hunter
@@ -57,12 +58,16 @@ Credits by name:
 *KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
 *Meridian: modding help on the forums, OXCE dev
 *Mitra Lightbringer: bug hunter
+*naenaed1588179853: bug hunter
 *Noah193: bug hunter, plus debugging and ideas
+*Nord: Aqualung sprites, Mi-8 map and sprites
 *Luke83: overall Terrain & Map support
+*Precentor Apollyon: Alien underwater breathing device
 *Pvt.Dropleaf: bug hunter
 *Ryskeliini: Grenade Launcher (now unused)
 *StormRangerX: bug hunter
 *SG_Barton: bug hunter
+*Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
 *Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs sprites
 *Tal'Raziid: bug hunter
 *ThatDude: JustRussia AK original weapons (now adapted)

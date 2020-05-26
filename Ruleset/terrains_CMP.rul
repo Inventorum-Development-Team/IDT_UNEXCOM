@@ -892,7 +892,9 @@ terrains:
       - ACHURCH3
       - AGROUND
       - ACHURCH4
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: AULTA00
         width: 10
@@ -964,7 +966,9 @@ terrains:
       - ACHURCH3
       - AGROUND
       - ACHURCH4
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: AULTA00
         width: 10
@@ -1036,7 +1040,9 @@ terrains:
       - ACHURCH3
       - AGROUND
       - ACHURCH4
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: AULTA00
         width: 10
@@ -1153,7 +1159,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTWASTE
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1201,7 +1209,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTSNOW
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1249,7 +1259,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTMUD
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1297,7 +1309,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1345,7 +1359,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTSAND
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1393,7 +1409,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTROCK
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1443,7 +1461,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTTROP
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: MOUNT00
         width: 10
@@ -1491,7 +1511,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTWASTE
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1539,7 +1561,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTSNOW
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1587,7 +1611,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTMUD
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1635,7 +1661,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1683,7 +1711,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTSAND
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1731,7 +1761,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTROCK
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1779,7 +1811,9 @@ terrains:
     mapDataSets:
       - BLANKS
       - MOUNTTROP
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     mapBlocks:
       - name: PLAINS00
         width: 10
@@ -1829,7 +1863,9 @@ terrains:
       - HANGAR1
       - HANGAR2
       - FUEL
-    civilianTypes: *CIVILIANS_CITY
+    civilianTypes: 
+      - STR_MALE_FARMER
+      - STR_FEMALE_FARMER
     script: REFINERYS
     mapBlocks:
       - name: FUELD00

@@ -1244,7 +1244,7 @@ items:
       0: 
         tuLoad: 10
         tuUnload: 20
-        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_NON_LETHAL_X8, STR_12GAUGE_ELERIUM_SHARDS_X8 ]
+        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_NON_LETHAL_X8, STR_12GAUGE_ELERIUM_SHARDS_X8 ]
     confAuto:
       shots: 8
       name: STR_RAGE_FIRE
@@ -1514,7 +1514,7 @@ items:
     reloadSound: [186, 187, 188, 189]
     ammo:
       0: 
-        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X5, STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -2566,7 +2566,7 @@ items:
       0: 
         tuLoad: 10
         tuUnload: 20
-        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20 ]
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
     confAimed:
       shots: 3
       name: STR_BURST
@@ -5671,8 +5671,6 @@ manufacture:
 
   - name: STR_M16A1_M203_CONVERSION
     category: STR_WEAPON_CONVERSION
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
     space: 1
     time: 40
     cost: 4000
@@ -5926,13 +5924,13 @@ extraStrings:
       STR_7_62MM_SOVIET_RIFLE_X10: "7.62mm Soviet Rifle Rounds (x10)"
       STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA: "This ammunition was designed almost at the end of WW2 to equip the modern (then) SKS carbine. It is inspired by the 7.92×33mm Kurz cartridge of German origin, used in the first assault rifle in the world, the StG-44. This stripper clip has capacity for 10-rds and is used exclusively in the SKS."
       STR_7_62MM_SOVIET_RIFLE_X30: "7.62mm Soviet Rifle Rounds (x30)"
-      STR_7_62MM_SOVIET_RIFLE_X30_UFOPEDIA: "..."
+      STR_7_62MM_SOVIET_RIFLE_X30_UFOPEDIA: "Ammunition created in 1947 by a committee led by NM Elizarov. Its popularity has been increased by its ease of use and power, feeding virtually all the infantry weapons of the Soviet Union and dozens of other countries. This 30-rds mag is the standard on the AK family."
       STR_7_62MM_SOVIET_RIFLE_X40: "7.62mm Soviet Rifle Rounds (x40)"
       STR_7_62MM_SOVIET_RIFLE_X40_UFOPEDIA: "Despite having the same bullet diameter as the 7.62mm NATO, it is considerably smaller and more manageable. It has less range and less firepower, but its lethality at short and medium range is indisputable. The 40-rds magazine is used by a large majority of countries using the Kalashnikov family weapons."
       STR_7_62MM_SOVIET_RIFLE_X75: "7.62mm Soviet Rifle Rounds (x75)"
       STR_7_62MM_SOVIET_RIFLE_X75_UFOPEDIA: "..."
       STR_7_62MM_SOVIET_SNIPER_X10: "7.62mmR Soviet Sniper Rounds (x10)"
-      STR_7_62MM_SOVIET_SNIPER_X10_UFOPEDIA: "..."
+      STR_7_62MM_SOVIET_SNIPER_X10_UFOPEDIA: "This projectile, designed specifically for the first truly sniper rifle in the world, the Dragunov rifle, is derived from the 7.62x39mm used by most Soviet weapons. It is bigger and more powerful, its main function is accurate long distance shooting."
       STR_12GAUGE_BUCKSHOT_X2: "12-Gauge Buckshot Shells (x2)"
       STR_12GAUGE_BUCKSHOT_X2_UFOPEDIA: "..."
       STR_12GAUGE_SLUG_X2: "12-Gauge Slug (x2)"
@@ -6002,13 +6000,13 @@ extraStrings:
       STR_M1911_COLT45: "M1911 Colt .45"
       STR_M1911_COLT45_UFOPEDIA: "This great handgun uses {ALT}.45 ACP{ALT} rounds and has been in use since 1911, in all the wars of the 20th Century, including WWI, WWII, Korea War, Vietnam War and now Alien War. Standard side weapon of US personnel. Uses x7 .45 ACP Ammo"
       STR_M16_M203: "M16 M203"
-      STR_M16_M203_UFOPEDIA: "Standard assault rifle provided by U.S. Army forces to UNEXCOM. Lightweight, but not very powerful, it's quite accurate and fires {ALT}5.56 mm NATO{ALT} ammunition. Equiped with an underbarrel {ALT}M203 40mm Grenade Launcher{ALT}, uses a the same version of the M79 round."
+      STR_M16_M203_UFOPEDIA: "Standard assault rifle provided by U.S. Army forces to UNEXCOM. Lightweight, but not very powerful, it's quite accurate and fires {ALT}5.56 mm NATO{ALT} ammunition, uses x20 and x30 mags. Equiped with an underbarrel {ALT}M203 40mm Grenade Launcher{ALT}, uses a the same version of the M79 round."
       STR_XM117: "XM117 Carbine"
-      STR_XM117_UFOPEDIA: "Also known as CAR-15, this assault carbine is based on the larger M16A1. With a shorter stock and barrel, is perfect for urban and guerrilla operations. However, its use over very long distances is not recommended because it is somewhat imprecise. Chambered in the intermediate {ALT}5.56mm NATO{ALT} round."
+      STR_XM117_UFOPEDIA: "Also known as CAR-15, this assault carbine is based on the larger M16A1. With a shorter stock and barrel, is perfect for urban and guerrilla operations. However, its use over very long distances is not recommended because it is somewhat imprecise. Chambered in the intermediate {ALT}5.56mm NATO{ALT} round, employs x20 and x30 round magazines."
       STR_M3_GREASEGUN: "M3 Greasegun"
-      STR_M3_GREASEGUN_UFOPEDIA: "Very cheap and easy to manufacturate, this SMG is used since WWII. It fires the {ALT}.45 ACP{ALT} round and it's very light to carry. It is nicknamed 'Grease gun' for its appearance and sound characteristic of the mechanical tool."
+      STR_M3_GREASEGUN_UFOPEDIA: "Very cheap and easy to manufacturate, this SMG is used since WWII. It fires the {ALT}.45 ACP{ALT} round and it's very light to carry. It is nicknamed 'Grease gun' for its appearance and sound characteristic of the mechanical tool. Uses x30 and x7 .45 ACP mags"
       STR_XM21: "XM21 SWS"
-      STR_XM21_UFOPEDIA: "The M21 Sniper Weapon System (SWS) is the semi-automatic sniper rifle adaptation of the M14 battle rifle. It's chambered for the powerful {ALT}7.62×51mm NATO{ALT} cartridge and has an 8x magnification scope, combined with its removable magazine and semi-automatic fire make it a formidable weapon."
+      STR_XM21_UFOPEDIA: "The M21 Sniper Weapon System (SWS) is the semi-automatic sniper rifle adaptation of the M14 battle rifle. It's chambered for the powerful {ALT}7.62×51mm NATO{ALT} cartridge and has an 8x magnification scope, combined with its removable magazine and semi-automatic fire make it a formidable weapon. You can employ x20 and x5 magazines on this sniper rifle."
       STR_REMINGTON_COMBAT_SHOTGUN: "Remington Combat Shotgun"
       STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA: "Powerful close range weapon {ALT}12. Gauge shotgun{ALT}, manufactured exclusively for the UNEXCOM project by Remington. Perfect for close quarters encounters inside UFOs and buildings. Can use standard Armor Piercing shells or Rubber Non-Lethal Shells, perfect for stunning and disabling targets without killing them."
       STR_M79_THUMPER_GL: "M79 Grenade Launcher"
@@ -6016,50 +6014,50 @@ extraStrings:
       STR_M72_LAW: "M72 LAW"
       STR_M72_LAW_UFOPEDIA: "LAW stands for Light Anti-tank Weapon, is the reemplacement of the old WWII Bazooka. Made as a disposable one-shot weapons, {ALT}a soldier could carry many of them{ALT}, allowing an infantryman to disable multiple armored threats on the battlefield."
       STR_M60: "M60 LMG"
-      STR_M60_UFOPEDIA: "Powerful Light Machine Gun, an iconic weapon very used in the Vietnam War, fires {ALT}7.62x51mm NATO{ALT} rounds, very accurate at long ranges. Firing this gun in bursts increments it's reliability, because the automatic fire can overheat the barrel and melt it. "
+      STR_M60_UFOPEDIA: "Powerful Light Machine Gun, an iconic weapon very used in the Vietnam War, fires {ALT}7.62x51mm NATO{ALT} rounds, very accurate at long ranges. Firing this gun in bursts increments it's reliability, because the automatic fire can overheat the barrel and melt it. It is fed on x50 and x100 ammo boxes."
       STR_AR5: "AR-5 Survival Rifle"
       STR_AR5_UFOPEDIA: "The ArmaLite AR-5 is a lightweight bolt-action rifle, chambered for the {ALT}.22 Hornet{ALT} cartridge, and adopted as the MA-1 aircrew survival rifle by the United States Air Force. Designed to be stowed in cramped aircraft cockpits, the rifle was made from lightweight plastics and aluminum alloys, can carry all of the firing system inside the stock and and can float in the water."
 #############################
 ####### NATO WEAPONS ########
 #############################
       STR_BERETTA_92FS: "Browning HP"
-      STR_BERETTA_92FS_UFOPEDIA: "The Browning HiPower is a handgun designed by John Browning, legendary weapons creator and manufactured by the Belgian armory FN Herstal. It fires 9mm Parabellum caliber ammunition and has a high capacity magazine. Used by numerous countries around the world (especially special operations units), it is particularly appreciated for its reliability and ease of use."
+      STR_BERETTA_92FS_UFOPEDIA: "The Browning HiPower is a handgun designed by John Browning, legendary weapons creator and manufactured by the Belgian armory FN Herstal. It fires 9mm Parabellum caliber ammunition and has a high capacity magazine. Used by numerous countries around the world (especially special operations units), it is particularly appreciated for its reliability and ease of use. Uses x10 and x20 magazines."
       STR_FN_FAL_SHOTGUN: "FN FAL-UBS"
-      STR_FN_FAL_SHOTGUN_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN Herstal, is called 'the right hand of the free world', for its wide use in armies around the world. This variant for UNEXCOM includes an underbarrel semi automatic 12 gauge shotgun, with a 5 shells detachable magazine. UBS stands for 'Under-Barrel Shotgun'"
+      STR_FN_FAL_SHOTGUN_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN Herstal, is called 'the right hand of the free world', for its wide use in armies around the world. This variant for UNEXCOM includes an underbarrel semi automatic 12 gauge shotgun, with a 5 shells detachable magazine. UBS stands for 'Under-Barrel Shotgun'. Employs x20 ammo mags"
       STR_SG510_CARBINE: "SIG SG510-4 Carbine"
-      STR_SG510_CARBINE_UFOPEDIA: "Version specially designed for UNEXCOM by SIG based on its SG 510-4 battle rifle. It has a cut-off barrel, a retractable paratrooper stock, using the same powerful {ALT}7.62mm NATO{ALT} round of its larger brother. It has been designed to be more compact and maneuverable without losing firepower, but it can be still difficult to control with sustained fire." 
+      STR_SG510_CARBINE_UFOPEDIA: "Version specially designed for UNEXCOM by SIG based on its SG 510-4 battle rifle. It has a cut-off barrel, a retractable paratrooper stock, using the same powerful {ALT}7.62mm NATO{ALT} round of its larger brother. It has been designed to be more compact and maneuverable without losing firepower, but it can be still difficult to control with sustained fire. Can use x20 and x30 rounds mags." 
       STR_MP5: "H&K MP5"
-      STR_MP5_UFOPEDIA: "Automatic sub-machine gun manufactured by Hecker & Koch, adopted by the West Germany armed forces. Lightweight and reliable, uses {ALT}9x19mm Parabellum rounds.{ALT} this modern sub-machine gun is expected to be used en masse by special operations groups and police forces around the world because of its excellent performance. "	  
+      STR_MP5_UFOPEDIA: "Automatic sub-machine gun manufactured by Hecker & Koch, adopted by the West Germany armed forces. Lightweight and reliable, uses {ALT}9x19mm Parabellum rounds.{ALT} this modern sub-machine gun is expected to be used en masse by special operations groups and police forces around the world because of its excellent performance. Uses all of the three 9mm magazines."
       STR_PSG1: "H&K PSG-1"
-      STR_PSG1_UFOPEDIA: "Präzisionsschützengewehr, German for 'precision shooter rifle'. Powerful precision rifle, based on the design of the H&K G3 combat rifle, uses {ALT}7.62x51 NATO{ALT} ammunition. It combines excellent long-range precision, high fire rate and very powerful ammunition, making it a lethal weapon in the right hands. "
+      STR_PSG1_UFOPEDIA: "Präzisionsschützengewehr, German for 'precision shooter rifle'. Powerful precision rifle, based on the design of the H&K G3 combat rifle, uses {ALT}7.62x51 NATO{ALT} ammunition. It combines excellent long-range precision, high fire rate and very powerful ammunition, making it a lethal weapon in the right hands. Uses the x5 and x20 ammo clips."
       STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoiless Rifle"
       STR_CARL_GUSTAF_M2_UFOPEDIA: "The Carl Gustaf M2 is an 84 mm man-portable reusable anti-tank weapon produced in Sweden. Although its design dates back to the years after WW2, the high quality of its construction and its variety of warheads make it an ideal choice when using heavy support on the battlefields of Europe." 
       STR_FN_MAG: "FN MAG LMG"
-      STR_FN_MAG_UFOPEDIA: "Powerful infantry support weapon chambered in {ALT}7.62mm NATO{ALT}, it keeps certain similarities with German machine guns of the WW2. Its design allows for a high continuous fire rate without greatly affecting its accuracy. The MAG is known for its outstanding reliability" 
+      STR_FN_MAG_UFOPEDIA: "Powerful infantry support weapon chambered in {ALT}7.62mm NATO{ALT} and fed on x50 and x100 ammo belts, it keeps certain similarities with German machine guns of the WW2. Its design allows for a high continuous fire rate without greatly affecting its accuracy. The MAG is known for its outstanding reliability" 
 #############################
 ####### USSR WEAPONS ########
 #############################
       STR_STECHKIN_APS: "Stechkin APS"
-      STR_STECHKIN_APS_UFOPEDIA: "Selective fire machine pistol chambered for 9x18 rounds. Designed as a side-weapon for tank crews, it was adopted by Spetsnaz for its for its adaptability and its high rate of fire."
+      STR_STECHKIN_APS_UFOPEDIA: "Selective fire machine pistol chambered for 9x18 rounds. Designed as a side-weapon for tank crews, it was adopted by Spetsnaz for its for its adaptability and its high rate of fire. Employs only 20-rds mags"
       STR_AKM_BAYONETED: "AKM Bayoneted"
-      STR_AKM_BAYONETED_UFOPEDIA: "Modernized version of the iconic weapon of Soviet origin, calibrated to use ammunition {ALT}7.62x39mm Soviet{ALT}. Due to its excellent performance, the AKM became the backbone of the Red Army. Powerful at short range, but imprecise. This particular version, supplied to the troops of UNEXCOM, is a little shortened, without becoming a carbine. This to facilitate its use in the narrow cabin of our transports. It has a bayonet for CQB. Melee power: 45~"
+      STR_AKM_BAYONETED_UFOPEDIA: "Modernized version of the iconic weapon of Soviet origin, calibrated to use ammunition {ALT}7.62x39mm Soviet{ALT} on x30 and x40 magazines. Due to its excellent performance, the AKM became the backbone of the Red Army. Powerful at short range, but imprecise. This particular version, supplied to the troops of UNEXCOM, is a little shortened, without becoming a carbine. This to facilitate its use in the narrow cabin of our transports. It has a bayonet for CQB. Melee power: 45~"
       STR_AKMSU: "AKMSU Carbine"
       STR_AKMSU_UFOPEDIA: "Labeled as 'The Secret Soviet Rifle', this carbine based on the AKM was designed for the VDV Airborne Troops. Is optimized for close combat, Its structure makes it an excellent weapon that hardly breaks or jams, without increasing much its weight. Uses the {ALT}7.62x39mm Soviet{ALT} round, the same of the AK family." 
       STR_SKORPION: "Skorpion vz. 68"
-      STR_SKORPION_UFOPEDIA: "Personal Defense Weapon, made in Czechoslovakia. Our particular version is chambered in {ALT}9mm{ALT} instead the original 7.65mm, to maximize its flexibility and have extra firepower on the battlefield. An hybrid between an SMG and a pistol, it was designed for tank and artillery crew for it's short size and light weight. "  
+      STR_SKORPION_UFOPEDIA: "Personal Defense Weapon, made in Czechoslovakia. Our particular version is chambered in {ALT}9mm{ALT} instead the original 7.65mm, to maximize its flexibility and have extra firepower on the battlefield. An hybrid between an SMG and a pistol, it was designed for tank and artillery crew for it's short size and light weight. Employs x10 and x20 mags."  
       STR_DRAGUNOV: "Dragunov SVD"
       STR_DRAGUNOV_UFOPEDIA: "The SVD is the first semiautomatic rifle in the world designed specifically to be used in military precision shooting. Semi-automatic sniper/designated marksman rifle chambered in extremely powerful {ALT}7.62x54mmR{ALT} and developed in the Soviet Union."
       STR_KS23_SHOTGUN: "KS-23 Heavy Shotgun"
-      STR_KS23_SHOTGUN_UFOPEDIA: "This shotgun is designated as a 'special carbine' by its Soviet manufacturers, due to its barrel with rifled bore. It is an excellent and brutal weapon, effective at short and long distances. Built with 23mm anti-aircraft battery barrels, is the largest shotgun in military service."  	  
+      STR_KS23_SHOTGUN_UFOPEDIA: "This shotgun is designated as a 'special carbine' by its Soviet manufacturers, due to its barrel with rifled bore. It is an excellent and brutal weapon, effective at short and long distances. Built with 23mm anti-aircraft battery barrels, is the largest shotgun in military service. Has many different types of ammo, but are only used on this particular weapon."  	  
       STR_RPG: "RPG-7"
       STR_RPG_UFOPEDIA: "Lethal shoulder-launched, anti-tank rocket-propelled grenade launcher, used in conflicts around the world. Use rockets with {ALT}HE{ALT} warhead effective against most {ALT}vehicles and fortified targets{ALT} and thermobaric {ALT}INC{ALT} warhead for {ALT}anti-personnel{ALT} and urban warfare."
       STR_RPKS: "RPKS LMG"
-      STR_RPKS_UFOPEDIA: "Version of the AKM modified to function as an automatic squad weapon, uses the same firing mechanism and the same ammunition, the possibility of exchanging parts between the RPK and its original weapon is surprising. This paratrooper variant has a heavy barrel for sustained fire and a foldable wooden butt."  
+      STR_RPKS_UFOPEDIA: "Version of the AKM modified to function as an automatic squad weapon, uses the same firing mechanism and the same ammunition, the possibility of exchanging parts between the RPK and its original weapon is surprising. This paratrooper variant has a heavy barrel for sustained fire and a foldable wooden butt and uses the x30, x40 and x75 ammo magazines."  
 ###############################
 ##### CIVILIAN WEAPONS ########
 ###############################
       STR_MAKAROV: "Makarov"
-      STR_MAKAROV_UFOPEDIA: "Semi-automatic pistol from Soviet origin, chambered for {ALT}9x18{ALT} rounds. It is very reliable and light, distributed in numerous armies and police forces."
+      STR_MAKAROV_UFOPEDIA: "Semi-automatic pistol from Soviet origin, chambered for {ALT}9x18{ALT} rounds and x10 magazines. It is very reliable and light, distributed in numerous armies and police forces."
       STR_SNUBNOSE_PISTOL: "Snubnose Revolver"
       STR_SNUBNOSE_PISTOL_UFOPEDIA: "A cut-out version of the classic {ALT}.38 caliber{ALT} revolver, its especially short barrel allows it to be hidden among the clothes and luggage of a civilian, making it a popular self-defense weapon, although its performance is mediocre due to its short range and stopping power."
       STR_HUNTING_RIFLE: "Hunting Rifle"
@@ -6076,7 +6074,7 @@ extraStrings:
       STR_POLICE_SNIPER_RIFLE: "Police Sniper Rifle"
       STR_POLICE_SNIPER_RIFLE_UFOPEDIA: "Bolt action rifle, used by police forces from various countries of the world, assigned to the best shooters of each squadron to provide support to their fellow officers. Calibrated in the {ALT}7.62x51mm NATO{ALT} round"
       STR_BERETTA_M12: "Beretta M12 SMG"
-      STR_BERETTA_M12_UFOPEDIA: "Great submachine gun of Italian design, built by the company Beretta. It equips various armies and security forces in Italy, South America and the Arab countries. It is light, trustworthy and has a good cadence. It uses rounds calibrated in the {ALT}9mm{ALT} ammunition. It had its baptism of fire in the Offensive of the Tet in 1968, demonstrating its reliability."
+      STR_BERETTA_M12_UFOPEDIA: "Great submachine gun of Italian design, built by the company Beretta. It equips various armies and security forces in Italy, South America and the Arab countries. It is light, trustworthy and has a good cadence. It uses rounds calibrated in the {ALT}9mm{ALT} ammunition and is fed on x10 and x20 round magazines. It had its baptism of fire in the Offensive of the Tet in 1968, demonstrating its reliability."
       STR_POLICE_SHOTGUN: "Police Winchester Shotgun"
       STR_POLICE_SHOTGUN_UFOPEDIA: "Mythical shotgun used in the trenches of the WW1, became an icon of the police forces in the 30s and 40s. Uses {ALT}12 Gauge{ALT} shells. Many law enforcement agencies around the world use them to provide their officers with high firepower on the streets."
       STR_POLICE_TONFA: "Tonfa"
@@ -6087,17 +6085,17 @@ extraStrings:
 ###### ALLIED ARMIES WEAPONS #######
 ####################################
       STR_M16A1: "M16A1"
-      STR_M16A1_UFOPEDIA: "Standard US Army rifle, it is very precise and its ammunition is lighter than those of other assault rifles, making the automatic fire more controllable. Its main defect is the tendency to jamming and the fragility of its components, all made of plastic. Fires {ALT}5.56mm NATO rounds.{ALT}"
+      STR_M16A1_UFOPEDIA: "Standard US Army rifle, it is very precise and its ammunition is lighter than those of other assault rifles, making the automatic fire more controllable. Its main defect is the tendency to jamming and the fragility of its components, all made of plastic. Fires {ALT}5.56mm NATO rounds.{ALT} on x20 and x30 magazines, if there are any available"
       STR_FN_FAL: "FN FAL"
-      STR_FN_FAL_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN Herstal, is called 'the right hand of the free world', for its wide use in armies around the world. Uses both 20-round and 30-round magazines, although the latter are often used for light machine gun variants. Calibrated to fire NATO standard ammunition, {ALT}7.62x51mm{ALT}"
+      STR_FN_FAL_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN Herstal, is called 'the right hand of the free world', for its wide use in armies around the world. Uses both 20-round and 30-round magazines, although the latter are often used for light machine gun variants. Calibrated to fire NATO standard ammunition, {ALT}7.62x51mm{ALT}, on x20 rds mags."
       STR_BREN: "Bren LMG"
       STR_BREN_UFOPEDIA: "Old light machine gun from the WWII used by the Commonwealth armies, including British forces. It's lighter than other LMGs and its magazine-fed system prevented the ammunition from getting dirty. Uses the {ALT}7.62x51mm NATO{ALT} cartridge"
       STR_OWEN_SMG: "Owen SMG"
-      STR_OWEN_SMG_UFOPEDIA: Submachine gun of Australian design and construction, calibrated in {ALT}9mm ammunition{ALT}. It is operated by open bolt and is very reliable and resistant, works despite having been submerged in mud or water. Although it has been in service since 1942, it is still used by various military forces, such as the Australian and British armies.
+      STR_OWEN_SMG_UFOPEDIA: Submachine gun of Australian design and construction, calibrated in {ALT}9mm ammunition{ALT}, can employ x20 and x30 magazines. It is operated by open bolt and is very reliable and resistant, works despite having been submerged in mud or water. Although it has been in service since 1942, it is still used by various military forces, such as the Australian and British armies.
       STR_AKM: "AKM"
       STR_AKM_UFOPEDIA: "One of the best rifles in the world, like our bayonet variant, resists dust, corrosion, water, dirt and mud. The standard version of the Red Army and its allies is longer than ours, give it a little more precision. Use {ALT}7.62mm Soviet{ALT} ammunition"
       STR_PPS_43: "PPS-43 SMG"
-      STR_PPS_43_UFOPEDIA: "Cheap submachine gun used by Red Army soldiers on WW2, still used as a reserve weapon in many countries of the Communist bloc, both the Warsaw Pact and its African and Asian allies. It does not have semiautomatic firing, only automatic.  Its stamped steel construction makes it extremely easy to produce. The USSR has modified many PPS-43 to fire {ALT}9mm{ALT} ammunition instead of the 7.62mm Tokarev."
+      STR_PPS_43_UFOPEDIA: "Cheap submachine gun used by Red Army soldiers on WW2, still used as a reserve weapon in many countries of the Communist bloc, both the Warsaw Pact and its African and Asian allies. It does not have semiautomatic firing, only automatic.  Its stamped steel construction makes it extremely easy to produce. The USSR has modified many PPS-43 to fire {ALT}9mm{ALT} ammunition instead of the 7.62mm Tokarev, on x20 and x30 mags."
       STR_SKS: "SKS"
       STR_SKS_UFOPEDIA: "Semi-automatic carbine, similar to the AK-47. Use the same ammunition as the AK family, but it has a little more range due to the longer cannon. Equiped with a medium range scope, to serve as a DMR. Uses a special {ALT}7.62x39 10-round clip.{ALT} Requires almost no maintenance. Melee power: 55~"
 #############################################

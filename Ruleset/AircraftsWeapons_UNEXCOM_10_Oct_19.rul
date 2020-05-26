@@ -373,8 +373,8 @@ crafts:
     requires:
       - STR_ADVANCED_FIGHTER
     sprite: 870
-    fuelMax: 1250
-    damageMax: 400
+    fuelMax: 950
+    damageMax: 380
     speedMax: 3500
     accel: 6
     weapons: 4
@@ -635,9 +635,9 @@ crafts:
     requires:
       - STR_ADVANCED_BOMBER
     sprite: 871
-    fuelMax: 950
-    damageMax: 320
-    speedMax: 350
+    fuelMax: 1150
+    damageMax: 420
+    speedMax: 3050
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -1241,7 +1241,7 @@ craftWeapons:
     sprite: 211
     sound: 5
     damage: 45
-    range: 40
+    range: 48
     accuracy: 50
     reloadCautious: 64
     reloadStandard: 48
@@ -1321,7 +1321,7 @@ craftWeapons:
     sound: 5
     damage: 70
     range: 50
-    accuracy: 39
+    accuracy: 45
     reloadCautious: 96
     reloadStandard: 72
     reloadAggressive: 48
@@ -1336,7 +1336,7 @@ craftWeapons:
     sound: 5
     damage: 54
     range: 47
-    accuracy: 40
+    accuracy: 44
     reloadCautious: 96
     reloadStandard: 72
     reloadAggressive: 48
@@ -1355,7 +1355,7 @@ craftWeapons:
     sound: 5
     damage: 85
     range: 55
-    accuracy: 42
+    accuracy: 48
     reloadCautious: 96
     reloadStandard: 72
     reloadAggressive: 48
@@ -1513,9 +1513,9 @@ craftWeapons:
     weaponType: 0
     sprite: 213
     sound: 4
-    damage: 20
+    damage: 30
     range: 15
-    accuracy: 30
+    accuracy: 40
     reloadCautious: 4
     reloadStandard: 4
     reloadAggressive: 4
@@ -1611,9 +1611,9 @@ craftWeapons:
     weaponType: 1
     sprite: 214
     sound: 4
-    damage: 30
-    range: 10
-    accuracy: 30
+    damage: 45
+    range: 20
+    accuracy: 35
     reloadCautious: 5
     reloadStandard: 5
     reloadAggressive: 5
@@ -1634,7 +1634,7 @@ craftWeapons:
     weaponType: 1
     sprite: 221
     sound: 8
-    damage: 70
+    damage: 60
     range: 45
     accuracy: 60
     reloadCautious: 16
@@ -2408,7 +2408,7 @@ manufacture:
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_ALLOYS: 12
+      STR_ALIEN_ALLOYS: 10
     producedItems:
       STR_ATHENA_CANNON: 1
   - name: STR_MAUSER_ALLOY_CANNON
@@ -2420,23 +2420,35 @@ manufacture:
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_ALLOYS: 15
+      STR_ALIEN_ALLOYS: 12
     producedItems:
       STR_MAUSER_CANNON: 1
-  - name: STR_ALLOY_CRAFT_WEAPONS_AMMO
+  - name: STR_ALLOY_CANNON_CRAFT_WEAPONS_AMMO
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_GATLING_CANNON
       - STR_IMPROVED_REVOLVER_CANNON
     space: 6
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_MAUSER_CANNON_ROUNDS_X50: 4
+
+  - name: STR_ALLOY_GATLING_CRAFT_WEAPONS_AMMO
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_GATLING_CANNON
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
     producedItems:
       STR_ATHENA_CANNON_ROUNDS_X50: 4
-      STR_MAUSER_CANNON_ROUNDS_X50: 4
+
 
   - name: STR_SHORTSWORD_LAUNCHER
     listOrder: 50
@@ -2459,7 +2471,7 @@ manufacture:
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 9
     producedItems:
       STR_SHORTSWORD_MISSILES: 3
 
@@ -2484,7 +2496,7 @@ manufacture:
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_ALIEN_ALLOYS: 12
     producedItems:
       STR_HAMMER_MISSILES: 3
 
@@ -2509,7 +2521,7 @@ manufacture:
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_ALIEN_ALLOYS: 10
     producedItems:
       STR_HYDRA_ROCKETS: 2
 
@@ -2522,7 +2534,7 @@ manufacture:
     time: 100
     cost: 30000
     requiredItems:
-      STR_ALIEN_ALLOYS: 45
+      STR_ALIEN_ALLOYS: 30
       STR_FALCON_LAUNCHER: 1
     producedItems:
       STR_PHOENIX_LAUNCHER: 1
@@ -2535,7 +2547,7 @@ manufacture:
     time: 100
     cost: 30000
     requiredItems:
-      STR_ALIEN_ALLOYS: 30
+      STR_ALIEN_ALLOYS: 15
       STR_FALCON_MISSILES: 1
     producedItems:
       STR_PHOENIX_MISSILES: 1
@@ -4124,4 +4136,5 @@ extraStrings:
 #      STR_VALKYRIE_UFOPEDIA:  "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA: "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA: ""
-      STR_ALLOY_CRAFT_WEAPONS_AMMO: ALLOY CRAFT WEAPONS AMMO
+      STR_ALLOY_CANNON_CRAFT_WEAPONS_AMMO: ALLOY CANNON CRAFT AMMO
+      STR_ALLOY_GATLING_CRAFT_WEAPONS_AMMO: ALLOY GATLING CRAFT AMMO

@@ -427,6 +427,14 @@ research:
      - STR_ELERIUM_115
      - STR_UFO_POWER_SOURCE
 
+  - name: STR_FUSION_MISSILE
+    cost: 880
+    points: 25
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+
 ########################
 #### RACE RESEARCH ####
 ######################
@@ -1012,7 +1020,7 @@ ufopaedia:
     image_id: ELERIUM_FUSION_IMAGE
     text: STR_ELERIUM_FUSION_UFOPEDIA
     listOrder: 10201
-    text_width: 150
+    text_width: 180
 
   - id: STR_ALIEN_CAPITAL_SHIPS
     type_id: 7
