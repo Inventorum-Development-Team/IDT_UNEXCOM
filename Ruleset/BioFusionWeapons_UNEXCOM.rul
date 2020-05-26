@@ -1,0 +1,440 @@
+items:
+  - type: STR_FUSION_HANDGUN
+    listOrder: 100
+    size: 2
+    costBuy: 10
+    costSell: 10
+    categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    weight: 8
+    floorSprite: 1100
+    bigSprite: 1100
+    handSprite: 2500
+    fireSound: 53
+    bulletSprite: 19
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_LIGHT
+    accuracyAuto: 0
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuAuto: 0
+    tuSnap: 38
+    tuAimed: 66
+    autoRange: 0
+    snapRange: 14
+    aimRange: 26
+    dropoff: 1
+    bulletSpeed: 5
+    tuLoad: 12
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_SMG
+    listOrder: 101
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_SMGS, STR_ALIEN_TECH]
+    weight: 14
+    floorSprite: 1101
+    bigSprite: 1101
+    handSprite: 2508
+    bulletSprite: 19
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_LIGHT
+    accuracyAuto: 57
+    accuracySnap: 48
+    accuracyAimed: 0
+    tuAuto: 62
+    tuSnap: 31
+    tuAimed: 0
+    autoRange: 10
+    snapRange: 18
+    aimRange: 0
+    dropoff: 2
+    bulletSpeed: 5
+    autoShots: 3
+    tuLoad: 9
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_POWER_CELL_LIGHT
+    listOrder: 102
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_PISTOLS, STR_SMGS, STR_ALIEN_TECH]
+    weight: 4
+    floorSprite: 1102
+    bigSprite: 1102
+    explosionSpeed: 4
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    power: 150
+    damageType: 3
+    damageAlter:
+      RadiusReduction: 45
+      IgnoreOverKill: false
+      ToArmor: 0
+      ToArmorPre: 0.05
+      ToTile: 0.69
+    clipSize: 3
+    blastRadius: 2
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 60
+  - type: STR_FUSION_RIFLE
+    listOrder: 103
+    size: 2
+    costBuy: 10
+    costSell: 10
+    categories: [STR_RIFLES, STR_ALIEN_TECH]
+    weight: 16
+    bigSprite: 1103
+    floorSprite: 1103
+    handSprite: 2516
+    bulletSprite: 19
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HEAVY
+    accuracyAuto: 47
+    accuracySnap: 78
+    accuracyAimed: 109
+    tuAuto: 60
+    tuSnap: 45
+    tuAimed: 78
+    autoRange: 8
+    snapRange: 16
+    aimRange: 32
+    dropoff: 1
+    bulletSpeed: 5
+    autoShots: 2
+    tuLoad: 11
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_SNIPER
+    listOrder: 104
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_SNIPER_RIFLES, STR_ALIEN_TECH]
+    weight: 18
+    bigSprite: 1104
+    floorSprite: 1104
+    handSprite: 2524
+    bulletSprite: 19
+    fireSound: 53
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HEAVY
+    accuracyAuto: 0
+    accuracySnap: 95
+    accuracyAimed: 145
+    tuAuto: 0
+    tuSnap: 68
+    tuAimed: 84
+    autoRange: 0
+    snapRange: 22
+    aimRange: 40
+    dropoff: 1
+    bulletSpeed: 5
+    tuLoad: 13
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_POWER_CELL_HEAVY
+    listOrder: 105
+    size: 1
+    costBuy: 10
+    costSell: 10
+    categories: [STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
+    weight: 8
+    bigSprite: 1105
+    floorSprite: 1105
+    explosionSpeed: 4
+    power: 180
+    damageType: 3
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    damageAlter:
+      RadiusReduction: 50
+      IgnoreOverKill: false
+      ToArmor: 0
+      ToArmorPre: 0.05
+      ToTile: 0.73
+    clipSize: 4
+    blastRadius: 3
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 60
+#  - type: STR_FUSION_
+    # listOrder: 0
+    # size: 0
+    # costBuy: 0
+    # costSell: 0
+    # categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    # weight: 8
+    # bigSprite: 1
+    # floorSprite: 1
+    # handSprite: 1
+    # fireSound: 1
+    # compatibleAmmo:
+      # - STR_FUSION_POWER_CELL_LIGHT
+    # accuracyAuto: 0
+    # accuracySnap: 65
+    # accuracyAimed: 90
+    # tuAuto: 0
+    # tuSnap: 38
+    # tuAimed: 66
+    # autoRange: 0
+    # snapRange: 14
+    # aimRange: 26
+    # dropoff: 1
+    # tuLoad: 12
+    # battleType: 1
+    # twoHanded: true
+    # invWidth: 1
+    # invHeight: 2
+    # armor: 135
+    # experienceTrainingMode: 0
+#  - type: STR_FUSION_
+    # listOrder: 0
+    # size: 0
+    # costBuy: 0
+    # costSell: 0
+    # categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    # weight: 0
+    # bigSprite: 1
+    # floorSprite: 1
+    # handSprite: 1
+    # hitSound: 1
+    # hitAnimation: 1
+    # shotgunPellets: 1
+    # shotgunSpread: 20
+    # shotgunBehavior: 1
+    # shotgunChoke: 100
+    # power: 0
+    # damageType: 3
+    # damageAlter:
+      # ArmorEffectiveness: 1
+      # IgnoreOverKill: false
+      # ToArmor: 0
+      # ToArmorPre: 0.05
+      # ToTile: 0.75
+      # TileDamageMethod: 2
+    # clipSize: 1
+    # battleType: 2
+    # armor: 60
+
+research: 
+  - name: STR_FUSION_HANDGUN
+    cost: 300 
+    points: 10
+    needItem: true
+  - name: STR_FUSION_SMG
+    cost: 300 
+    points: 10
+    needItem: true
+  - name: STR_FUSION_RIFLE
+    cost: 300 
+    points: 10
+    needItem: true
+  - name: STR_FUSION_SNIPER
+    cost: 300 
+    points: 10
+    needItem: true
+
+  - name: STR_INITIAL_FUSION_CELLS_RESEARCH
+    cost: 300 
+    points: 10
+    needItem: true
+    dependencies: 
+      - STR_FUSION_POWER_CELL_LIGHT
+      - STR_FUSION_POWER_CELL_HEAVY
+
+  - name: STR_FUSION_POWER_CELL_LIGHT
+    cost: 300 
+    points: 10
+    needItem: true
+    unlocks: 
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
+  - name: STR_FUSION_POWER_CELL_HEAVY
+    cost: 300 
+    points: 10
+    needItem: true
+    unlocks: 
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
+
+  - name: STR_FUSION_WEAPONS_RESEARCH
+    cost: 800 
+    points: 20
+    dependencies: 
+      - STR_SECTOID_ENGINEER
+      - STR_FLOATER_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
+      - STR_FUSION_HANDGUN
+      - STR_FUSION_RIFLE
+      - STR_FUSION_SMG
+      - STR_FUSION_SNIPER
+
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      1100: Resources/FusionWeapons/BigFusionHandgun.png
+      1101: Resources/FusionWeapons/BigFusionSMG.png
+      1102: Resources/FusionWeapons/BigLightFusionCell.png
+      1103: Resources/FusionWeapons/BigFusionRifle.png
+      1104: Resources/FusionWeapons/BigFusionSniper.png
+      1105: Resources/FusionWeapons/BigHeavyFusionCell.png
+#      1106: Resources/FusionWeapons/BigFusionSplitter.png
+#      1107: Resources/FusionWeapons/BigHugeFusionCell.png
+#      1108: Resources/FusionWeapons/BigFusionLance.png
+#      1109: Resources/FusionWeapons/BigEtherealNobleSword.png
+#      1110: Resources/FusionWeapons/BigThermonuclearProjectileLauncher.png
+#      1111: Resources/FusionWeapons/BigThermonuclearProjectileLauncherMagazine.png
+
+  - type: FLOOROB.PCK
+    files:
+      1100: Resources/FusionWeapons/FloorFusionHandgun.png
+      1101: Resources/FusionWeapons/FloorFusionSMG.png
+      1102: Resources/FusionWeapons/FloorLightFusionCell.png
+      1103: Resources/FusionWeapons/FloorFusionRifle.png
+      1104: Resources/FusionWeapons/FloorFusionSniper.png
+      1105: Resources/FusionWeapons/FloorHeavyFusionCell.png
+#      1106: Resources/FusionWeapons/FloorFusionSplitter.png
+#      1107: Resources/FusionWeapons/FloorHugeFusionCell.png
+#      1108: Resources/FusionWeapons/FloorFusionLance.png
+#      1108: Resources/FusionWeapons/FloorEtherealNobleSword.png
+#      1108: Resources/FusionWeapons/FloorThermonuclearProjectileLauncher.png
+#      1108: Resources/FusionWeapons/FloorThermonuclearProjectileLauncherMagazine.png
+
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2500: Resources/FusionWeapons/HandFusionHandgun.png
+      2508: Resources/FusionWeapons/HandFusionSMG.png
+      2516: Resources/FusionWeapons/HandFusionRifle.png
+      2524: Resources/FusionWeapons/HandFusionSniper.png
+#      2532: Resources/FusionWeapons/HandFusionSplitter.png
+#      2564: Resources/FusionWeapons/HandFusionLance.png
+#      2564: Resources/FusionWeapons/HandEtherealNobleSword.png
+#      2564: Resources/FusionWeapons/HandThermonuclearProjectileLauncher.png
+
+  - type: Projectiles
+    width: 105
+    height: 9
+    subX: 3
+    subY: 3
+    files:
+      665: Resources/BulletSprites/Fusion_Bullet.png
+
+ufopaedia:	  
+  - id: STR_FUSION_HANDGUN
+    requires:
+      - STR_FUSION_HANDGUN
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_HANDGUN_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_SMG
+    requires:
+      - STR_FUSION_SMG
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_SMG_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_RIFLE
+    requires:
+      - STR_FUSION_RIFLE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_RIFLE_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_SNIPER
+    requires:
+      - STR_FUSION_SNIPER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_SNIPER_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_POWER_CELL_LIGHT
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_FUSION_POWER_CELL_HEAVY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+  - id: STR_FUSION_WEAPONS_RESEARCH
+#    type_id: 7
+    type_id: 8
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
+    section: STR_ALIEN_ARTIFACTS
+#    image_id: FUSION_WEAPONS_RESEARCH_IMAGE
+    text: STR_FUSION_WEAPONS_RESEARCH_UFOPEDIA
+#    text_width: 150
+
+  - id: STR_INITIAL_FUSION_CELLS_RESEARCH
+#    type_id: 7
+    type_id: 8
+    requires:
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
+    section: STR_ALIEN_ARTIFACTS
+#    image_id: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
+    text: STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA
+#    text_width: 150
+
+extraSprites:
+#########################################
+######### UFOPEDIA IMAGES ###############
+#########################################
+#  - type: FUSION_WEAPONS_RESEARCH_IMAGE
+#    singleImage: true
+#    width: 320
+#    height: 200
+#    files:
+#      0: Resources/UFOpedia/FUSION_WEAPONS_RESEARCH_IMAGE.PNG
+
+#  - type: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
+#    singleImage: true
+#    width: 320
+#    height: 200
+#    files:
+#      0: Resources/UFOpedia/INITIAL_FUSION_CELLS_RESEARCH_IMAGE.PNG
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_FUSION_WEAPONS_RESEARCH: Fusion Weapons Research
+      STR_FUSION_WEAPONS_RESEARCH_UFOPEDIA: These weapons are clearly of animal origin, of an aquatic species. Some of these are living beings, but the vast majority are shells and claws of what appear to be crustaceans. They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher.
+      STR_INITIAL_FUSION_CELLS_RESEARCH: Fusion Cells Research
+      STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency. A real mystery.
+############################################
+      STR_FUSION_HANDGUN: Fusion Handgun
+      STR_FUSION_HANDGUN_UFOPEDIA: The Fusion Handgun is a lightweight, compact weapon made of a material equally resistant to Alien Alloys, but of unknown origin. It can fire energy projectiles at high speed and appears to be our enemy's new secondary weapon. Its devastating effect is surprising for its size.
+      STR_FUSION_SMG: Fusion SMG
+      STR_FUSION_SMG_UFOPEDIA: Powerful assault weapon, in concept it is similar to our sub-machine guns. It's quite bulky, but surprisingly light when carried, suggesting that it's used for quick and sneak attacks. Its lethality lies in its ability to saturate an area with small fusion explosions, obliterating any unprotected living creature in its range.
+      STR_FUSION_POWER_CELL_LIGHT: Light Fusion Cell
+      STR_FUSION_RIFLE: Fusion Rifle
+      STR_FUSION_RIFLE_UFOPEDIA: This is a new, robust and powerful battle rifle. For some strange reason, its firing mechanism limits it to semi-automatic fire, which is a relief for our troops. It's not very accurate, perhaps because of the material it's made of. But it is precisely this material that allows it to be used in close combat, like a mallet or a club. 
+      STR_FUSION_SNIPER: Fusion Sniper
+      STR_FUSION_SNIPER_UFOPEDIA: Fearsome long-range weapon. Judging by our analysis in combat, it is difficult to use (it is rarely fired in the course of battle) because of its considerable weight, but it is compensated for by its terrifying accuracy. The design and functionality is very reminiscent of an anti-tank rifle, similar to those used in WW2. Perhaps the designers' intention was to use it to disable our vehicles.
+      STR_FUSION_POWER_CELL_HEAVY: Heavy Fusion Cell

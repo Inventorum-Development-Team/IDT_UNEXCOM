@@ -1488,19 +1488,19 @@ ufopaedia:
 # Alien Weapons
   - id: STR_PLASMA_PISTOL
     type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
+    section: STR_ALIEN_ARTIFACTS
     requires:
       - STR_PLASMA_PISTOL
     text: STR_PLASMA_PISTOL_UFOPEDIA
   - id: STR_PLASMA_RIFLE
     type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
+    section: STR_ALIEN_ARTIFACTS
     requires:
       - STR_PLASMA_RIFLE
     text: STR_PLASMA_RIFLE_UFOPEDIA
   - id: STR_HEAVY_PLASMA
     type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
+    section: STR_ALIEN_ARTIFACTS
     requires:
       - STR_HEAVY_PLASMA
     text: STR_HEAVY_PLASMA_UFOPEDIA
@@ -1652,6 +1652,8 @@ extraStrings:
       STR_HUMAN_SNIPER_PLASMA_UFOPEDIA: Combining knowledge gained through the failed replication of the alien heavy plasma weapon and the successful duplication of the alien plasma rifle, scientists and engineers scaled up the plasma generator and concentrated on providing a more powerful linear accelerator, providing the weapon with high accuracy and massive damage potential.
       STR_HUMAN_PLASMA_LMG: Plasma LMG
       STR_HUMAN_PLASMA_LMG_UFOPEDIA: Expanding techniques learned with the plasma submachine gun, the research team devised squad support weapon using the plasma weapon technology by scaling up the design.  Compromising on the plasma generator, it instead boasts a staggering rate of fire while mitigating flash and recoil.
+      STR_HUMAN_SMALL_LAUNCHER: Human Small Launcher
+      STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA: This adapted launcher features the same superb handling of the alien Small Launcher and the ability to use the same ammo. We can use it againts its masters to stun, capture and if needed, kill any enemy on the sight of this weapon.
       # Ammo
       STR_PLASMA_MAGNUM_CLIP: Plasma Magnum Clip
       STR_PLASMA_SMG_CLIP: Plasma SMG Mag
@@ -1668,6 +1670,7 @@ extraStrings:
       STR_REMAN_HUMAN_HEAVY_PLASMA: Convert Alien Heavy Plasma
       STR_REMAN_HUMAN_PLASMA_RIFLE: Convert Alien Plasma Rifle
       STR_REMAN_HUMAN_PLASMA_PISTOL: Convert Alien Plasma Pistol
+      STR_REMAN_SMALL_LAUNCHER: Convert Alien Small Launcher
       # Armor
       STR_POWER_SUIT_UC: POWER ARMOR
       STR_POWER_SUIT: Power Armor

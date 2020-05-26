@@ -86,7 +86,7 @@ crafts:
       - STR_CRAFT_ALL_CANNONS_ONE
       - STR_CRAFT_LIGHT_MISSILE_TWO
       - STR_CRAFT_LIGHT_MISSILE_THREE
-      - STR_CRAFT_AUX_FOUR
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
     soldiers: 2
     vehicles: 0
     pilots: 2
@@ -375,7 +375,7 @@ crafts:
     sprite: 870
     fuelMax: 1250
     damageMax: 400
-    speedMax: 1474
+    speedMax: 3500
     accel: 6
     weapons: 4
     weaponTypes: 
@@ -637,7 +637,7 @@ crafts:
     sprite: 871
     fuelMax: 950
     damageMax: 320
-    speedMax: 3750
+    speedMax: 350
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -711,6 +711,7 @@ crafts:
         - BLANKS
         - LIGHTNIA
         - URBAN
+        - CULTIVAT
       mapBlocks:
         - name: HERCULES_PARADROP
           width: 10
