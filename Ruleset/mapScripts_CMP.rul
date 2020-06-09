@@ -328,9 +328,8 @@ mapScripts:
       freqs: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
       maxUses: [2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3]
 
-
-
-  - type: ALIENBASE  # Thanks to HellRazor 
+#BEGIN ALIEN BASE
+  - type: EXPANDED_ALIEN_BASE
     commands:
     - type: addBlock #Add Entrances
       groups: 2
@@ -346,8 +345,8 @@ mapScripts:
     - type: addBlock #Add Impassable Power Source Block
       groups: 9
     - type: fillArea
-      groups: [0, 1, 8]
-      freqs: [3, 1, 1]
+      groups: [0, 1]
+      freqs: [3, 2]
     - type: digTunnel
       direction: both
       tunnelData:
@@ -365,105 +364,6 @@ mapScripts:
           - type: floor
             set: 1
             entry: 63
-#END ALIEN UBASE
-
-#BEGIN BOSSBATTLE
-  - type: BOSSBATTLE  # Thanks to HellRazor 
-    commands:
-    - type: addBlock #Add Alien Brain West
-      label: 1
-      size: 2
-      groups: 4
-      executionChances: 20
-      rects:
-        - [0, 0, 3, 8]
-    - type: addBlock #Add Alien Brain North
-      label: 2
-      conditionals: -1
-      size: 2
-      groups: 4
-      executionChances: 25
-      rects:
-        - [0, 0, 8, 3]
-    - type: addBlock #Add Alien Brain East
-      label: 3
-      conditionals: [-1, -2]
-      size: 2
-      groups: 4
-      executionChances: 33
-      rects:
-        - [5, 0, 3, 8]
-    - type: addBlock #Add Alien Brain South
-      label: 4
-      conditionals: [-1, -2, -3]
-      size: 2
-      groups: 4
-      executionChances: 50
-      rects:
-        - [0, 5, 8, 3]
-    - type: addBlock #Add Brain Vanilla Spawn
-      conditionals: [-1, -2, -3, -4]
-      size: 2
-      groups: 4
-    - type: addBlock #Add Entrances East
-      conditionals: [1, -2, -3, -4]
-      groups: 2
-      executions: 2
-      rects:
-        - [5, 0, 3, 8]
-    - type: addBlock #Add Entrances South
-      conditionals: [-1, 2, -3, -4]
-      groups: 2
-      executions: 2
-      rects:
-        - [0, 5, 8, 3]
-    - type: addBlock #Add Entrances West
-      conditionals: [-1, -2, 3, -4]
-      groups: 2
-      executions: 2
-      rects:
-        - [0, 0, 3, 8]
-    - type: addBlock #Add Entrances North
-      conditionals: [4]
-      groups: 2
-      executions: 2
-      rects:
-        - [0, 0, 8, 3]
-    - type: addBlock #Add Entrances Vanilla Spawn
-      conditionals: [-1, -2, -3, -4]
-      groups: 2
-      executions: 2
-    - type: addBlock #Add Fake Brains
-      size: 2
-      groups: 5
-      executions: 2
-    - type: addBlock #Add 20x20 Blocks
-      size: 2
-      executions: 7
-    - type: addBlock #Add Impassable Power Source Block
-      groups: 9
-      executions: 3
-    - type: fillArea
-      groups: [0, 1, 7, 8]
-      freqs: [4, 2, 1, 2]
-    - type: digTunnel
-      direction: both
-      tunnelData:
-        level: 0
-        MCDReplacements:
-          - type: westWall
-            set: 2
-            entry: 18
-          - type: northWall
-            set: 2
-            entry: 17
-          - type: corner
-            set: 2
-            entry: 19
-          - type: floor
-            set: 1
-            entry: 63
-#END BOSSBATTLE
 
   - type: REFINERYS  # Thanks to BulletDesigner
     commands:

@@ -512,14 +512,8 @@ alienDeployments:
     length: 60
     height: 2
     shade: 10
-    script: ALIENBASE
+    terrains:
+      - UBASE
+    script: EXPANDED_ALIEN_BASE
 #END ALIEN BASE
 
-#BEGIN MARS THE FINAL ASSAULT
-  - type: STR_MARS_THE_FINAL_ASSAULT
-    width: 80
-    length: 80
-    height: 2
-    shade: 10
-    script: BOSSBATTLE
-#END MARS THE FINAL ASSAULT
