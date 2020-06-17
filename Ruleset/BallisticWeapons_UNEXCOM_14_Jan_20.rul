@@ -55,7 +55,7 @@ items:
 ###################################################
   - type: STR_KS23_SHARPNEL-25_X4
     categories: [STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 900
@@ -87,7 +87,7 @@ items:
     listOrder: 1997
   - type: STR_KS23_BARRIKADE_X4
     categories: [STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 900
@@ -114,7 +114,7 @@ items:
     listOrder: 1998
   - type: STR_KS23_SATANA_X4
     categories: [STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 900
@@ -313,7 +313,7 @@ items:
   - type: STR_7_62MM_NATO_RIFLE_X5
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
     categories: [STR_FIREARMS, STR_RIFLES, STR_SNIPER_RIFLES, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 100
@@ -502,7 +502,7 @@ items:
   - type: STR_7_62MM_SOVIET_RIFLE_X75
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [STR_FIREARMS, STR_RIFLES, STR_LMGS, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 675
@@ -528,7 +528,7 @@ items:
   - type: STR_7_62MM_SOVIET_SNIPER_X10
     refNode: *STR_7_62MM_SOVIET_SNIPER_AMMO
     categories: [STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 675
@@ -932,7 +932,7 @@ items:
     
   - type: STR_RPG_HE_ROCKET
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 1600
@@ -1015,7 +1015,7 @@ items:
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.1
-    costBuy: 2500
+    costBuy: 1200
     costSell: 900
     weight: 3
     bigSprite: 136
@@ -1097,8 +1097,8 @@ items:
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.2
-    costBuy: 2000
-    costSell: 1750
+    costBuy: 3000
+    costSell: 2750
     weight: 8
     bigSprite: 138
     floorSprite: 138
@@ -1141,8 +1141,8 @@ items:
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.2
-    costBuy: 1000
-    costSell: 800
+    costBuy: 2000
+    costSell: 1800
     weight: 9
     bigSprite: 139
     floorSprite: 139
@@ -1192,8 +1192,8 @@ items:
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.2
-    costBuy: 2000
-    costSell: 1750
+    costBuy: 5000
+    costSell: 4750
     weight: 12
     bigSprite: 140
     floorSprite: 140
@@ -1297,7 +1297,7 @@ items:
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.4
-    costBuy: 1750
+    costBuy: 950
     costSell: 850
     weight: 7
     bigSprite: 143
@@ -1415,7 +1415,7 @@ items:
 #################################################
   - type: STR_BERETTA_92FS
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_PISTOLS]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 700
@@ -1459,8 +1459,8 @@ items:
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.2
-    costBuy: 2000
-    costSell: 1750
+    costBuy: 6500
+    costSell: 5750
     weight: 12
     bigSprite: 147
     floorSprite: 147
@@ -1500,7 +1500,7 @@ items:
 
   - type: STR_SG510_CARBINE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_CARBINES]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 3000
@@ -1547,7 +1547,7 @@ items:
     
   - type: STR_MP5
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LIGHT_WEAPONS, STR_SMGS]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 3000
@@ -1598,7 +1598,7 @@ items:
     
   - type: STR_PSG1
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SNIPER_RIFLES]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.3
     costBuy: 15000
@@ -1647,7 +1647,7 @@ items:
     
   - type: STR_FN_MAG
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.3
     costBuy: 11000
@@ -1693,7 +1693,7 @@ items:
 
   - type: STR_CARL_GUSTAF_M2
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
-    requires:
+    requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.4
     costBuy: 16000
@@ -1727,7 +1727,7 @@ items:
 ###############################################
   - type: STR_STECHKIN_APS
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_PISTOLS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 400
@@ -1773,7 +1773,7 @@ items:
 
   - type: STR_AKM_BAYONETED
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 2700
@@ -1835,7 +1835,7 @@ items:
     
   - type: STR_AKMSU
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_CARBINES]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 3200
@@ -1882,7 +1882,7 @@ items:
 
   - type: STR_SKORPION
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SMGS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.3
     costBuy: 350
@@ -1932,7 +1932,7 @@ items:
 #	
   - type: STR_DRAGUNOV
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 7000
@@ -1973,7 +1973,7 @@ items:
     listOrder: 2054	
   - type: STR_KS23_SHOTGUN
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SHOTGUNS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 2200
@@ -2018,7 +2018,7 @@ items:
 #
   - type: STR_RPG
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
     costBuy: 7600
@@ -2051,7 +2051,7 @@ items:
 #
   - type: STR_RPKS
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
-    requires:
+    requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.3
     costBuy: 9000
@@ -4051,6 +4051,12 @@ ufopaedia:
     text: STR_45_PISTOL_X7_UFOPEDIA
     listOrder: 2001
 
+  - id: STR_45_PISTOL_X30
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_45_PISTOL_X30_UFOPEDIA
+    listOrder: 2001
+
   - id: STR_50_CAL_REVOLVER_AMMO_X6
     requires:
       - STR_MERCENARY_RESEARCH
@@ -4280,8 +4286,8 @@ ufopaedia:
     listOrder: 2035
 
   - id: STR_M16_M203
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
+#    requires:
+#      - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_M16_M203_UFOPEDIA
@@ -6006,7 +6012,7 @@ extraStrings:
       STR_M3_GREASEGUN: "M3 Greasegun"
       STR_M3_GREASEGUN_UFOPEDIA: "Very cheap and easy to manufacturate, this SMG is used since WWII. It fires the {ALT}.45 ACP{ALT} round and it's very light to carry. It is nicknamed 'Grease gun' for its appearance and sound characteristic of the mechanical tool. Uses x30 and x7 .45 ACP mags"
       STR_XM21: "XM21 SWS"
-      STR_XM21_UFOPEDIA: "The M21 Sniper Weapon System (SWS) is the semi-automatic sniper rifle adaptation of the M14 battle rifle. It's chambered for the powerful {ALT}7.62×51mm NATO{ALT} cartridge and has an 8x magnification scope, combined with its removable magazine and semi-automatic fire make it a formidable weapon. You can employ x20 and x5 magazines on this sniper rifle."
+      STR_XM21_UFOPEDIA: "The M21 Sniper Weapon System (SWS) is the semi-automatic sniper rifle adaptation of the M14 battle rifle. It's chambered for the powerful {ALT}7.62x51mm NATO{ALT} cartridge and has an 8x magnification scope, combined with its removable magazine and semi-automatic fire make it a formidable weapon. You can employ x20 and x5 magazines on this sniper rifle."
       STR_REMINGTON_COMBAT_SHOTGUN: "Remington Combat Shotgun"
       STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA: "Powerful close range weapon {ALT}12. Gauge shotgun{ALT}, manufactured exclusively for the UNEXCOM project by Remington. Perfect for close quarters encounters inside UFOs and buildings. Can use standard Armor Piercing shells or Rubber Non-Lethal Shells, perfect for stunning and disabling targets without killing them."
       STR_M79_THUMPER_GL: "M79 Grenade Launcher"
@@ -6183,7 +6189,7 @@ extraStrings:
       STR_RIOT_ARMOR_UFOPEDIA: "Advanced soviet prototype armor, derived from a project for a new riot armor for Spetsnaz special forces, is entirely built in Alien Alloy, includes a visor to protect the user's face from impacts and bullets, although this limits their visibility and mobility a bit. Includes a riot shield 'IM-21 Krepost', to deflect frontal damage."
       STR_ANGRY_WIFE: The Angry Wife
       STR_ANGRY_WIFE_CLIP: The Angry Wife Clip
-      STR_ANGRY_WIFE_UFOPEDIA: Sawed-off double barrel shotgun, very powerful at short range. Classified as 'Tactical Light Weapon' can be loaded diferent {ALT}12-Gauge{ALT} shells very quickly. Its official name is 'TLO-72', but it is sarcastically nicknamed 'The Angry Wife' by its users, for its firepower.
+      STR_ANGRY_WIFE_UFOPEDIA: Classified as 'Tactical Light Weapon' can be loaded diferent {ALT}12-Gauge{ALT} shells very quickly. Its official name is 'TLO-72', but it is sarcastically nicknamed 'The Angry Wife' by its users.
       STR_RIOT_SHIELD: IM-21 Krepost Shield
       STR_RIOT_SHIELD_UFOPEDIA: Prototype shield built entirely with Alien Alloys. Its name in Russian means 'Fortress'. It is surprisingly light and resistant, allows {ALT}frontal assaults{ALT} without fear of being damaged. Its size is something cumbersome for the user, which {ALT}limits its agility{ALT} a bit. If used with sufficient force, it can blind the opponent with the shield's strobe lights.
       STR_USSR_PROTOTYPE_ARMOR_SYSTEMS: USSR Prototype Armor System
