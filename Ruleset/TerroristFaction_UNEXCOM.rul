@@ -62,7 +62,7 @@ armors:
     corpseBattle:
       - STR_TERRORIST_MALE_CORPSE
     spriteInv: TERRORIST_MALE_INVENTORY
-    frontArmor: 22
+    frontArmor: 12
     sideArmor: 10
     rearArmor: 10
     underArmor: 5
@@ -76,14 +76,14 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: STR_TERRORIST_FEMALE_ARMOR
     spriteSheet: TERRORIST_FEMALE_SPRITESHEET.PCK
     corpseBattle:
       - STR_TERRORIST_FEMALE_CORPSE
     spriteInv: TERRORIST_FEMALE_INVENTORY
-    frontArmor: 22
+    frontArmor: 12
     sideArmor: 10
     rearArmor: 10
     underArmor: 5
@@ -97,7 +97,28 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 1.0
+    loftempsSet: [ 3 ]
+  - type: STR_TERRORIST_GASMASK_ARMOR
+    spriteSheet: TERRORIST_GASMASK_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_TERRORIST_GASMASK_CORPSE
+    spriteInv: TERRORIST_GASMASK_INVENTORY
+    frontArmor: 12
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 1.0
+      - 0.1
     loftempsSet: [ 3 ]
 
 units:
@@ -109,10 +130,10 @@ units:
       stamina: 100
       health: 40
       bravery: 80
-      reactions: 64
-      firing: 64
-      throwing: 76
-      strength: 50
+      reactions: 60
+      firing: 50
+      throwing: 70
+      strength: 40
       psiStrength: 50
       psiSkill: 0
       melee: 70
@@ -128,18 +149,18 @@ units:
     race: STR_TERRORIST
     rank: STR_LIVE_ENGINEER
     stats:
-      tu: 65
+      tu: 60
       stamina: 100
       health: 40
       bravery: 80
-      reactions: 64
-      firing: 64
-      throwing: 76
-      strength: 50
+      reactions: 50
+      firing: 50
+      throwing: 70
+      strength: 70
       psiStrength: 50
       psiSkill: 0
       melee: 70
-    armor: STR_TERRORIST_MALE_ARMOR
+    armor: STR_TERRORIST_GASMASK_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -151,13 +172,13 @@ units:
     race: STR_TERRORIST
     rank: STR_LIVE_MEDIC
     stats:
-      tu: 65
+      tu: 70
       stamina: 100
       health: 40
       bravery: 80
       reactions: 64
-      firing: 64
-      throwing: 76
+      firing: 30
+      throwing: 40
       strength: 50
       psiStrength: 50
       psiSkill: 0
@@ -179,7 +200,7 @@ units:
       health: 40
       bravery: 80
       reactions: 72
-      firing: 72
+      firing: 60
       throwing: 80
       strength: 50
       psiStrength: 55
@@ -201,8 +222,8 @@ units:
       stamina: 100
       health: 40
       bravery: 80
-      reactions: 76
-      firing: 76
+      reactions: 70
+      firing: 70
       throwing: 80
       strength: 50
       psiStrength: 60
@@ -361,22 +382,32 @@ extraSprites:
       0: Resources/TerroristFaction/TERRORIST_MALE_SPRITESHEET.png
 
   - type: TERRORIST_FEMALE_SPRITESHEET.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TerroristFaction/TERRORIST_FEMALE_SPRITESHEET.png
+
+  - type: TERRORIST_GASMASK_SPRITESHEET.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/TerroristFaction/TERRORIST_FEMALE_SPRITESHEET.png
+      0: Resources/TerroristFaction/TERRORIST_GASMASK_SPRITESHEET.png
 
 
   - type: BIGOBS.PCK
     files:
       3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_BIGOB.png
       3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_BIGOB.png
+      3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_BIGOB.png
   - type: FLOOROB.PCK
     files:
       3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_FLOOROB.png
       3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_FLOOROB.png
+      3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_FLOOROB.png	  
 
   - type: TERRORIST_MALE_INVENTORY.SPK
     singleImage: true
@@ -391,6 +422,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/TerroristFaction/TERRORIST_FEMALE_INVENTORY.png
+
+  - type: TERRORIST_GASMASK_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TerroristFaction/TERRORIST_GASMASK_INVENTORY.png
 
   - type: TERRORIST_FACTION_IMAGE
     singleImage: true

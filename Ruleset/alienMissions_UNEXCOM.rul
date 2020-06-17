@@ -71,6 +71,7 @@ alienMissions:
 ###### HUMAN ENEMY MISSIONS #######
 ##################################
   - type: STR_HUMAN_RECON
+    points: 0
     raceWeights:
       0:
           STR_TERRORIST: 100
@@ -99,7 +100,7 @@ alienMissions:
         timer: 1000
 
   - type: STR_HUMAN_TERROR_ATTACK
-    points: 10
+    points: 0
     objective: 0  
 #    spawnZone: 3 #Mission zone for terror missions
     raceWeights:
