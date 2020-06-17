@@ -37,6 +37,7 @@ Credits by name:
 *Black Onix: Romania and Bulgaria accurate flags
 *Blood Angel Tactical Marine: bug hunter.
 *boodman123726: XCOM 2 Music Pack
+*Brother^2: IDT bug hunter
 *bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
 *cubick2k: bug hunter
 *Cupon4uk: bug hunter
@@ -45,12 +46,13 @@ Credits by name:
 *Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo
 *Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper
 *efrenespartano: main ruleset and sprite creation, lead designer
-*Finnik: Astronaut sprites, original code added to the main OXCE
+*Finnik: Astronaut sprites, original code added to the main OXCE, bug hunter
 *Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 *garretrgang: bug hunter
 *Hans Woofington: bug hunter
 *hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused)
 *Hobbes: Terrain Mod (now unused), Tech-Comm HKs, ruleset reference.
+*JustTheDude: Terrorist Grenadier sprites
 *IgnisAbentorn: bug hunter
 *Ikhanad: FN FSC sprites, plus ideas.
 *Internet: UFOPedia images, further artwork reference
@@ -58,10 +60,10 @@ Credits by name:
 *KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
 *Meridian: modding help on the forums, OXCE dev
 *Mitra Lightbringer: bug hunter
-*naenaed1588179853: bug hunter
-*Noah193: bug hunter, plus debugging and ideas
+*Noah193: bug hunter and ideas
 *Nord: Aqualung sprites, Mi-8 map and sprites
 *Luke83: overall Terrain & Map support
+*PERLHA: bug hunter
 *Precentor Apollyon: Alien underwater breathing device
 *Pvt.Dropleaf: bug hunter
 *Ryskeliini: Grenade Launcher (now unused)
@@ -69,7 +71,7 @@ Credits by name:
 *SG_Barton: bug hunter
 *Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
 *Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs sprites
-*Tal'Raziid: bug hunter
+*Tal'Raziid: IDT bug hunter
 *ThatDude: JustRussia AK original weapons (now adapted)
 *The Reaver of Darkness: overall balance support, LIGHTNIA mapset, plus ideas
 *theemperorofmankind: bug hunter
@@ -79,6 +81,6 @@ Credits by name:
 *XOps: Alien Plasma Weapons
 *xover88: XCOM 2012 Music
 *Yataka Shimaoka: bug hunter
-*wolwerin: Needle Weapons, Tesla Weapons, sprites and sounds, plus debugging support 
+*wolwerin: Flechette Weapons, Tesla Weapons, sprites and sounds, plus debugging support 
 *Zane: original Delta sprites
 *zaphnath: bug hunter
