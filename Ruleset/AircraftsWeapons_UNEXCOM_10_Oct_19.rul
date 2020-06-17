@@ -1530,8 +1530,9 @@ craftWeapons:
 #### TIER III #####
 ##################
 #  - type: STR_APOLLO_LASER_GATLING
+  - type: STR_LASER_ARRAY_UC
     weaponType: 0
-    sprite: 220
+    sprite: 219
     sound: 8
     damage: 30
     range: 16
@@ -1631,15 +1632,16 @@ craftWeapons:
 #### TIER III #####
 ##################
 #  - type: STR_KODIAK_LASER_CANNON
+  - type: STR_LASER_CANNON_UC
     weaponType: 1
-    sprite: 221
+    sprite: 220
     sound: 8
     damage: 60
     range: 45
-    accuracy: 60
-    reloadCautious: 16
-    reloadStandard: 16
-    reloadAggressive: 16
+    accuracy: 50
+    reloadCautious: 30
+    reloadStandard: 30
+    reloadAggressive: 30
     ammoMax: 100
     rearmRate: 50
     launcher: STR_LASER_CANNON
@@ -2233,14 +2235,14 @@ items:
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
-    costSell: 18000
+    costSell: 35000
     transferTime: 48
   - type: STR_SHORTSWORD_MISSILES
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 10000
+    costSell: 15000
     transferTime: 48
     clipSize: 1
 
@@ -2249,14 +2251,14 @@ items:
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.8
-    costSell: 18000
+    costSell: 38000
     transferTime: 48
   - type: STR_HAMMER_MISSILES
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 10000
+    costSell: 19000
     transferTime: 48
     clipSize: 1
 
@@ -2265,14 +2267,14 @@ items:
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.8
-    costSell: 27000
+    costSell: 127000
     transferTime: 48
   - type: STR_PHOENIX_MISSILES
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 30000
+    costSell: 50000
     transferTime: 48
     clipSize: 1
 
@@ -2281,14 +2283,14 @@ items:
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.8
-    costSell: 18000
+    costSell: 38000
     transferTime: 48
   - type: STR_HYDRA_ROCKETS
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
-    costSell: 10000
+    costSell: 28000
     transferTime: 48
     clipSize: 8
 
@@ -2297,14 +2299,14 @@ items:
     requires:
       - STR_IMPROVED_GATLING_CANNON
     size: 1.5
-    costSell: 37500
+    costSell: 38500
     transferTime: 48
   - type: STR_ATHENA_CANNON_ROUNDS_X50
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
     requires:
       - STR_IMPROVED_GATLING_CANNON
     size: 0.1
-    costSell: 1600
+    costSell: 8900
     transferTime: 96
     clipSize: 50
 
@@ -2320,9 +2322,24 @@ items:
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
-    costSell: 1600
+    costSell: 8600
     transferTime: 96
     clipSize: 50
+
+#############################################
+###### TIER III LASER CRAFT WEAPONS #########
+############################################
+
+  - type: STR_LASER_CANNON
+    listOrder: 900
+    size: 2.0
+    costSell: 211000
+    transferTime: 48
+  - type: STR_LASER_ARRAY
+    listOrder: 910
+    size: 2.0
+    costSell: 233500
+    transferTime: 48
 
 manufacture:
 ####################################
@@ -2578,6 +2595,30 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 90
       STR_UFO_NAVIGATION: 1
+####################################
+######## CRAFT WEAPONS #############
+########## TIER II #################
+####################################
+
+  - name: STR_LASER_ARRAY
+    category: STR_CRAFT_WEAPON
+    listOrder: 210
+    requires:
+      - STR_LASER_ARRAY
+    space: 6
+    time: 500
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+  - name: STR_LASER_CANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_LASER_CANNON
+    space: 6
+    time: 600
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
 
 ufopaedia:
 #####################################
@@ -3344,6 +3385,23 @@ ufopaedia:
     text: STR_HYDRA_ALLOY_ROCKETS_UFOPEDIA
     listOrder: 447
 
+###################################
+##### TIER III CRAFT WEAPONS #####
+#################################
+  - id: STR_LASER_ARRAY_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_LASER_ARRAY
+    image_id: APOLLO
+    text: STR_APOLLO_LASER_GATLING_UFOPEDIA
+  - id: STR_LASER_CANNON_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_LASER_CANNON
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
 
 ################################
 ###### AUXILIARY SYSTEMS ######
@@ -3445,6 +3503,13 @@ extraSprites:
       263: Resources/AircraftWeapons/Hydra_basebits.png
       264: Resources/AircraftWeapons/Phoenix_basebits.png
 
+#      265: Resources/AircraftWeapons/Shortsword_basebits.png # Sprite 217
+#      266: Resources/AircraftWeapons/Hammer_basebits.png # 218
+      267: Resources/AircraftWeapons/Apollo_basebits.png # 219
+      268: Resources/AircraftWeapons/Kodiak_basebits.png # 220
+#      269: Resources/AircraftWeapons/Hydra_basebits.png # 221
+#      270: Resources/AircraftWeapons/Phoenix_basebits.png # 222
+
       279: Resources/AircraftWeapons/Fuel_Tank_basebits.png
       280: Resources/AircraftWeapons/Afterburner_basebits.png
       281: Resources/AircraftWeapons/Targeting_Pod_basebits.png
@@ -3520,6 +3585,13 @@ extraSprites:
       219: Resources/AircraftWeapons/Mauser_dogfight.png # 214
       220: Resources/AircraftWeapons/Hydra_dogfight.png # 215
       221: Resources/AircraftWeapons/Phoenix_dogfight.png # 216
+
+#      222: Resources/AircraftWeapons/Shortsword_dogfight.png # Sprite 217
+#      223: Resources/AircraftWeapons/Hammer_dogfight.png # 218
+      224: Resources/AircraftWeapons/Apollo_dogfight.png # 219
+      225: Resources/AircraftWeapons/Kodiak_dogfight.png # 220
+#      226: Resources/AircraftWeapons/Hydra_dogfight.png # 221
+#      227: Resources/AircraftWeapons/Phoenix_dogfight.png # 222
 
       236: Resources/AircraftWeapons/Fuel_Tank_dogfight.png
       237: Resources/AircraftWeapons/Afterburner_dogfight.png
@@ -3826,6 +3898,21 @@ extraSprites:
     height: 200
     files:
       0: Resources/AircraftWeapons/PHOENIX.png
+####################################
+###### TIER III LASER WEAPONS #####
+##################################
+  - type: APOLLO
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/APOLLO.png
+  - type: KODIAK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/KODIAK.png
 ################################
 ####### CRAFT RESEARCH ########
 ##############################
@@ -4091,6 +4178,13 @@ extraStrings:
       STR_HYDRA_ALLOY_ROCKETS_UFOPEDIA: "MK 9 HYDRA 72 ROCKET - PROTOTYPE VARIANT INSPIRED BY THE CLASSIC MK 4 UNGUIDED ROCKET, THEY HAVE A TUNGSTEN PENETRATOR THAT AT THE MOMENT OF IMPACT PERFORATES THE OUTER SURFACE BEFORE DETONATING THE EXPLOSIVE CHARGE INSIDE. ROCKET"
       STR_HYDRA_LAUNCHER: "Hydra Launcher"
       STR_HYDRA_ROCKETS: "Hydra Rockets (x8)"
+
+      STR_LASER_ARRAY: APOLLO LASER GATLING
+      STR_LASER_ARRAY_UC: Apollo Laser Gatling # Renamed!
+      STR_APOLLO_LASER_GATLING_UFOPEDIA: GAU-50 APOLLO - THE MOST RECENT ADVANCES IN LASER WEAPONRY HAVE ALLOWED US TO DEVELOP A MECHANISM TO ALLOW A FAST AND INTERMITTENT LIGHT PULSE, BUT SIGNIFICANTLY REDUCING ITS POWER. THIS GENERAL ELECTRIC DESIGNED CANNON IS FOCUSED ON SHORT RANGE.
+      STR_LASER_CANNON_UC: KODIAK LASER CANNON
+      STR_LASER_CANNON: Kodiak Laser Cannon
+      STR_KODIAK_LASER_CANNON_UFOPEDIA: YLC-10 KODIAK LASER CANNON - PROTOTYPE OF EXPERIMENTAL LASER CANNON DESIGNED EXCLUSIVELY BY UNEXCOM ENGINEERS. ITS REFRACTING LENSES AND MODERN SELF-RECHARGING POWER CELL ALLOW IT TO HAVE AN UNDISPUTED POWER AND ACCEPTABLE RANGE. NAMED AFTER THE CHIEF DESIGNER'S HOMETOWN, KODIAK, ALASKA.
 
       STR_FUEL_TANK_UC: "FUEL TANK"
       STR_FUEL_TANK: "FUEL TANK"

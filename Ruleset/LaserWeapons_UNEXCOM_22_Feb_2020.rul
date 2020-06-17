@@ -526,18 +526,7 @@
     dropoff: 1
     invWidth: 2
     invHeight: 3
-####################################
-# Craft Weapons
-  - type: STR_LASER_CANNON
-    listOrder: 900
-    size: 2.0
-    costSell: 211000
-    transferTime: 48
-  - type: STR_LASER_ARRAY
-    listOrder: 910
-    size: 2.0
-    costSell: 233500
-    transferTime: 48
+
 # Armor
   - type: STR_PERSONAL_ARMOR
     size: 0.8
@@ -621,33 +610,7 @@ armors:
       - 0.75
       - 0.92
       - 1.0
-craftWeapons:
-  - type: STR_LASER_CANNON_UC
-    sprite: 4
-    sound: 8
-    damage: 60
-    range: 45
-    accuracy: 50
-    reloadCautious: 30
-    reloadStandard: 30
-    reloadAggressive: 30
-    ammoMax: 100
-    rearmRate: 50
-    launcher: STR_LASER_CANNON
-    projectileType: 4
-  - type: STR_LASER_ARRAY_UC
-    sprite: 4
-    sound: 8
-    damage: 30
-    range: 16
-    accuracy: 35
-    reloadCautious: 3
-    reloadStandard: 3
-    reloadAggressive: 3
-    ammoMax: 300
-    rearmRate: 50
-    launcher: STR_LASER_ARRAY
-    projectileType: 4
+
 
 
 ####################################
@@ -675,27 +638,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 6
     listOrder: 2713
-###################################
-# aircraft weapons
-  - name: STR_LASER_ARRAY
-    category: STR_CRAFT_WEAPON
-    listOrder: 210
-    requires:
-      - STR_LASER_ARRAY
-    space: 6
-    time: 500
-    cost: 182000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-  - name: STR_LASER_CANNON
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_LASER_CANNON
-    space: 6
-    time: 600
-    cost: 182000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+
 ################################
 # personal weapons
   - name: STR_SNIPER_LASER
@@ -838,13 +781,7 @@ ufopaedia:
       - STR_HEAVY_PERSONAL_ARMOR
     text: STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA
 # Craft Weapon
-  - id: STR_LASER_ARRAY_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_LASER_ARRAY
-    image_id: SPR_LASER_ARRAY
-    text: STR_LASER_ARRAY_UFOPEDIA
+
 # Pure Research
   - id: STR_LASER_WEAPONS
     type_id: 8
@@ -955,11 +892,6 @@ extraStrings:
     strings:
       STR_LASER_WEAPONS: Laser Weapons
       STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
-      STR_LASER_ARRAY: Pulse Laser # Renamed!
-      STR_LASER_ARRAY_UC: PULSE LASER # Renamed!
-      STR_LASER_ARRAY_UFOPEDIA: BY REDESIGNING THE EMITTERS ON A STANDARD AIRCRAFT LASER CANNON TO CYCLE QUICKER AT THE EXPENSE OF BEAM POWER, THE PULSE LASER CANNON PROVIDES ATTACK CRAFT WITH A RAPID FIRE WEAPON, WITH DECREASED ACCURACY AND RANGE.
-      STR_LASER_CANNON: Laser Cannon
-      STR_LASER_CANNON_UFOPEDIA: A LONG RANGE APPLICATION OF THE LASER TECHNOLOGY, THIS CHEMICAL LASER DIRECTED ENERGY WEAPON IS POWERFUL, IF SOMEWHAT INACCURATE DUE TO ATMOSPHERIC BLOOMING AND REFRACTION AT THE RANGES IN WHICH IT IS USED
 ######################################################################################
       STR_LASER_PDW: Laser Pistol
       STR_LASER_PDW_UFOPEDIA: While lacking the auto-fire capabilities of the UNEXCOM standard pistol, this laser pistol carries the wounding potential of a 7.62x51mm battle rifle while weighing less than UNEXCOM's standard machine pistol. It also requires no ammunition with the self-contained power cell.
