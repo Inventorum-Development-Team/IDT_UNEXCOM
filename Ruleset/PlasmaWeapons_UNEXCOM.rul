@@ -146,7 +146,7 @@ items:
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
       - STR_SMALL_LAUNCHER
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
 # New Human Weapons
   - type: STR_HUMAN_PLASMA_PISTOL
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
@@ -774,38 +774,6 @@ armors:
       - 0.90
       - 0.0
 research:
-# requirements
-  - name: STR_PERSONAL_ANTIGRAV
-    cost: 100
-    points: 10
-    dependencies:
-      - STR_CYBERDISC_AUTOPSY
-      - STR_ALIEN_ALLOYS
-      - STR_UFO_POWER_SOURCE
-# New Armor
-  - name: STR_POWER_SUIT
-    cost: 205
-    points: 20
-    dependencies:
-      - STR_ELERIUM_115
-      - STR_UFO_POWER_SOURCE
-      - STR_PERSONAL_ARMOR
-  - name: STR_SCOUT_POWER_ARMOR
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_POWER_SUIT
-  - name: STR_FLYING_SUIT
-    dependencies:
-      - STR_POWER_SUIT
-      - STR_PERSONAL_ANTIGRAV
-    unlocks:
-      - STR_SCOUT_FLYING_ARMOR
-  - name: STR_SCOUT_FLYING_ARMOR
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_FLYING_SUIT
 # Linked Alien Research
   - name: STR_SECTOID_ENGINEER
     cost: 256
@@ -813,7 +781,7 @@ research:
     lookup: STR_SECTOID
     needItem: true
     unlocks:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -830,7 +798,7 @@ research:
     lookup: STR_FLOATER
     needItem: true
     unlocks:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -847,7 +815,7 @@ research:
     lookup: STR_SNAKEMAN
     needItem: true
     unlocks:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -864,7 +832,7 @@ research:
     lookup: STR_MUTON
     needItem: true
     unlocks:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -957,7 +925,7 @@ research:
     points: 10
     needItem: true
 # this is how to defeat the lockout is unlocked by alien weapons but will need a live engineer to allow it to go forward to be researched
-  - name: STR_ALIEN_WEAPONS
+  - name: STR_ALIEN_PLASMA_WEAPONS
     cost: 800 
     points: 20
     dependencies: 
@@ -976,21 +944,21 @@ research:
     cost: 400
     points: 10
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_PLASMA_PISTOL
       - STR_ALLOY_MANUFACTURING
   - name: STR_REMAN_HUMAN_PLASMA_RIFLE
     cost: 500
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_PLASMA_RIFLE
       - STR_ALLOY_MANUFACTURING
   - name: STR_REMAN_HUMAN_HEAVY_PLASMA
     cost: 600
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HEAVY_PLASMA
       - STR_ALLOY_MANUFACTURING
 # New Human Manufactured weapons
@@ -998,7 +966,7 @@ research:
     cost: 400
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_REMAN_HUMAN_PLASMA_PISTOL
       - STR_NEW_HUMAN_PLASMA_RIFLE
       - STR_ALLOY_MANUFACTURING
@@ -1007,21 +975,21 @@ research:
     cost: 500 
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_REMAN_HUMAN_PLASMA_RIFLE
       - STR_ALLOY_MANUFACTURING
   - name: STR_HUMAN_PLASMA_MAGNUM
     cost: 400
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_REMAN_HUMAN_PLASMA_PISTOL
       - STR_ALLOY_MANUFACTURING
   - name: STR_HUMAN_SNIPER_PLASMA
     cost: 800
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_NEW_HUMAN_PLASMA_RIFLE
       - STR_REMAN_HUMAN_HEAVY_PLASMA
       - STR_ALLOY_MANUFACTURING
@@ -1029,7 +997,7 @@ research:
     cost: 700 # FIX THIS
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_SNIPER_PLASMA
       - STR_NEW_HUMAN_PLASMA_RIFLE
       - STR_ALLOY_MANUFACTURING
@@ -1037,7 +1005,7 @@ research:
     cost: 900
     points: 20
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_SMG
       - STR_NEW_HUMAN_PLASMA_RIFLE
       - STR_ALLOY_MANUFACTURING
@@ -1045,7 +1013,7 @@ research:
     cost: 400
     points: 10
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_SMALL_LAUNCHER
       - STR_ALLOY_MANUFACTURING
 # New Ammo
@@ -1053,35 +1021,35 @@ research:
     cost: 300 # FIX THIS
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_MAGNUM
       - STR_ALLOY_MANUFACTURING
   - name: STR_PLASMA_DMR_CLIP
     cost: 500 # FIX THIS
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_DMR
       - STR_ALLOY_MANUFACTURING  
   - name: STR_PLASMA_SMG_CLIP
     cost: 300 # FIX THIS
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_SMG
       - STR_ALLOY_MANUFACTURING 
   - name: STR_PLASMA_LMG_PACK
     cost: 600 # FIX THIS
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_LMG
       - STR_ALLOY_MANUFACTURING 
   - name: STR_SNIPER_PLASMA_CLIP
     cost: 600 # FIX THIS
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_SNIPER_PLASMA
       - STR_ALLOY_MANUFACTURING 
 # Cheap ammo conversion
@@ -1089,35 +1057,35 @@ research:
     cost: 20
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_PLASMA_DMR_CLIP
       - STR_PLASMA_RIFLE_CLIP
   - name: STR_PR_TO_PSMG
     cost: 20
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_PLASMA_SMG_CLIP
       - STR_PLASMA_RIFLE_CLIP
   - name: STR_PP_TO_PM
     cost: 20
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_PLASMA_MAGNUM_CLIP
       - STR_PLASMA_PISTOL_CLIP
   - name: STR_HPC_TO_PLMG_PACK
     cost: 20
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HEAVY_PLASMA_CLIP
       - STR_PLASMA_LMG_PACK
   - name: STR_HPC_TO_SP_CLIP
     cost: 20
     points: 2
     dependencies:
-      - STR_ALIEN_WEAPONS
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_HEAVY_PLASMA_CLIP
       - STR_SNIPER_PLASMA_CLIP
 # Hyperwave Encoder
@@ -1450,12 +1418,12 @@ manufacture:
       STR_ELERIUM_115: 4
 ufopaedia:
 # Pure Research
-  - id: STR_ALIEN_WEAPONS
+  - id: STR_ALIEN_PLASMA_WEAPONS
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
     requires:
-      - STR_ALIEN_WEAPONS
-    text: STR_ALIEN_WEAPONS_UFOPEDIA
+      - STR_ALIEN_PLASMA_WEAPONS
+    text: STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA
 # HW Encoder
   - id: STR_ALIEN_COMMUNICATION
     type_id: 8
@@ -1617,8 +1585,8 @@ extraStrings:
   - type: en-US
     strings:
     # Alien Weapons
-      STR_ALIEN_WEAPONS: Alien Weapons
-      STR_ALIEN_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of alien alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
+      STR_ALIEN_PLASMA_WEAPONS: Alien Plasma Weapons
+      STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of alien alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
       STR_ALIEN_COMMUNICATION: Alien Communication
       STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communcating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communcation schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the X-com team with the knowledge needed to fully decrypt this communications.
       STR_HYPER_WAVE_ENCODER: Hyper Wave Encoder
@@ -1690,8 +1658,8 @@ extraStrings:
   - type: fr
     strings:
     # Alien Weapons
-      STR_ALIEN_WEAPONS: Armes Extraterrestres
-      STR_ALIEN_WEAPONS_UFOPEDIA: L'interrogatoire d'un ingénieur alien nous a permis de briser le mécanisme de verrouillage de leurs armes, permettant finalement à nos chercheurs d'explorer en profondeur l'arsenal plasma. Nos visiteurs utilisent une pastille d'alliage et un accélérateur linéaire pour tirer le métal surchauffé sur une cible. Des cellules vivantes E.T. cultivées en labo doivent être incluses dans l'armement saisi lors de combats pour pouvoir s'en servir, astuce qui sera superflue pour ce que nous concevrons nous-mêmes.
+      STR_ALIEN_PLASMA_WEAPONS: Armes Extraterrestres
+      STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: L'interrogatoire d'un ingénieur alien nous a permis de briser le mécanisme de verrouillage de leurs armes, permettant finalement à nos chercheurs d'explorer en profondeur l'arsenal plasma. Nos visiteurs utilisent une pastille d'alliage et un accélérateur linéaire pour tirer le métal surchauffé sur une cible. Des cellules vivantes E.T. cultivées en labo doivent être incluses dans l'armement saisi lors de combats pour pouvoir s'en servir, astuce qui sera superflue pour ce que nous concevrons nous-mêmes.
       STR_PLASMA_PISTOL: Pistolet Plasma Alien
       STR_PLASMA_PISTOL_UFOPEDIA: Ce pistolet plasma léger est l'arme de poing utilisée par nos visiteurs. Une sorte de "serrure" inviolable que nous ne pouvons décoder nous empêche de le démonter afin de l'étudier, le tout se désintégrant automatiquement sous nos yeux. La capture d'un ingénieur alien pourrait nous éclairer.
       STR_PLASMA_RIFLE: Fusil Plasma Alien

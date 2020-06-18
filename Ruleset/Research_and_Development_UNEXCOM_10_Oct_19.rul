@@ -427,6 +427,14 @@ research:
      - STR_ELERIUM_115
      - STR_UFO_POWER_SOURCE
 
+  - name: STR_UFO_CONSTRUCTION
+    cost: 450
+    points: 30
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_ELERIUM_FUSION
+      - STR_UFO_NAVIGATION
+
   - name: STR_FUSION_MISSILE
     cost: 880
     points: 25
@@ -434,6 +442,40 @@ research:
       - STR_ELERIUM_FUSION
       - STR_BLASTER_LAUNCHER
       - STR_BLASTER_BOMB
+
+  - name: STR_POWER_SUIT
+    cost: 205
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PERSONAL_ARMOR
+
+  - name: STR_PERSONAL_ANTIGRAV
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_CYBERDISC_AUTOPSY
+      - STR_ALIEN_ALLOYS
+      - STR_UFO_POWER_SOURCE
+
+  - name: STR_SCOUT_POWER_ARMOR
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_POWER_SUIT
+
+  - name: STR_FLYING_SUIT
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_PERSONAL_ANTIGRAV
+      - STR_UFO_NAVIGATION
+    unlocks:
+      - STR_SCOUT_FLYING_ARMOR
+  - name: STR_SCOUT_FLYING_ARMOR
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_FLYING_SUIT
 
 ########################
 #### RACE RESEARCH ####
@@ -1020,7 +1062,7 @@ ufopaedia:
     image_id: ELERIUM_FUSION_IMAGE
     text: STR_ELERIUM_FUSION_UFOPEDIA
     listOrder: 10201
-    text_width: 180
+    text_width: 200
 
   - id: STR_ALIEN_CAPITAL_SHIPS
     type_id: 7
