@@ -1,5 +1,7 @@
 items:
   - type: STR_FUSION_HANDGUN
+    requires:
+      - STR_ALIENS_ONLY
     listOrder: 100
     size: 2
     costSell: 65000
@@ -30,6 +32,8 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_SMG
+    requires:
+      - STR_ALIENS_ONLY
     listOrder: 101
     size: 1
     costSell: 70000
@@ -62,6 +66,8 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_POWER_CELL_LIGHT
+    requires:
+      - STR_ALIENS_ONLY
     listOrder: 102
     size: 1
     costSell: 75000
@@ -87,6 +93,8 @@ items:
     invHeight: 1
     armor: 60
   - type: STR_FUSION_RIFLE
+    requires:
+      - STR_ALIENS_ONLY
     listOrder: 103
     size: 2
     costSell: 78000
@@ -99,10 +107,8 @@ items:
     fireSound: 53
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
-    accuracyAuto: 47
     accuracySnap: 78
     accuracyAimed: 109
-    tuAuto: 60
     tuSnap: 45
     tuAimed: 78
     autoRange: 8
@@ -119,6 +125,8 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_SNIPER
+    requires:
+      - STR_ALIENS_ONLY
     listOrder: 104
     size: 1
     costSell: 8000
@@ -150,6 +158,8 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_POWER_CELL_HEAVY
+    requires:
+      - STR_ALIENS_ONLY
     listOrder: 105
     size: 1
     costSell: 10000
@@ -340,6 +350,30 @@ extraSprites:
     files:
       665: Resources/BulletSprites/Fusion_Bullet.png
 
+#########################################
+######### UFOPEDIA IMAGES ###############
+#########################################
+  - type: FUSION_WEAPONS_RESEARCH_IMAGE_1
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/FUSION_WEAPONS_RESEARCH_IMAGE_1.PNG
+
+  - type: FUSION_WEAPONS_RESEARCH_IMAGE_2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/FUSION_WEAPONS_RESEARCH_IMAGE_2.PNG
+
+  - type: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/INITIAL_FUSION_CELLS_RESEARCH_IMAGE.PNG
+
 ufopaedia:	  
   - id: STR_FUSION_HANDGUN
     requires:
@@ -376,49 +410,44 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
 
-  - id: STR_FUSION_WEAPONS_RESEARCH
-#    type_id: 7
-    type_id: 8
+  - id: STR_FUSION_WEAPONS_RESEARCH_1
+    type_id: 7
+#    type_id: 8
     requires:
       - STR_FUSION_WEAPONS_RESEARCH
-    section: STR_ALIEN_ARTIFACTS
-#    image_id: FUSION_WEAPONS_RESEARCH_IMAGE
-    text: STR_FUSION_WEAPONS_RESEARCH_UFOPEDIA
-#    text_width: 150
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: FUSION_WEAPONS_RESEARCH_IMAGE_1
+    text: STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA
+    text_width: 150
+
+  - id: STR_FUSION_WEAPONS_RESEARCH_2
+    type_id: 7
+#    type_id: 8
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: FUSION_WEAPONS_RESEARCH_IMAGE_2
+    text: STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA
+    text_width: 130
 
   - id: STR_INITIAL_FUSION_CELLS_RESEARCH
-#    type_id: 7
-    type_id: 8
+    type_id: 7
+#    type_id: 8
     requires:
       - STR_INITIAL_FUSION_CELLS_RESEARCH
-    section: STR_ALIEN_ARTIFACTS
-#    image_id: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
     text: STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA
-#    text_width: 150
-
-extraSprites:
-#########################################
-######### UFOPEDIA IMAGES ###############
-#########################################
-#  - type: FUSION_WEAPONS_RESEARCH_IMAGE
-#    singleImage: true
-#    width: 320
-#    height: 200
-#    files:
-#      0: Resources/UFOpedia/FUSION_WEAPONS_RESEARCH_IMAGE.PNG
-
-#  - type: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
-#    singleImage: true
-#    width: 320
-#    height: 200
-#    files:
-#      0: Resources/UFOpedia/INITIAL_FUSION_CELLS_RESEARCH_IMAGE.PNG
+    text_width: 150
 
 extraStrings:
   - type: en-US
     strings:
-      STR_FUSION_WEAPONS_RESEARCH: Fusion Weapons Research
-      STR_FUSION_WEAPONS_RESEARCH_UFOPEDIA: These weapons are clearly of animal origin, of an aquatic species. Some of these are living beings, but the vast majority are shells and claws of what appear to be crustaceans. They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher.
+      STR_FUSION_WEAPONS_RESEARCH_1: Fusion Weapons Research I
+      STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA: The complete analysis on this new type of alien weapons has been finished. With this data and the interrogations made to enemy engineers, we have discovered that these weapons are clearly of animal origin, of an aquatic species. Some of these are living beings, but the vast majority are shells and claws of what appear to be crustaceans. 
+      STR_FUSION_WEAPONS_RESEARCH_2: Fusion Weapons Research II
+      STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA: They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher. The energy released seems to be controlled and focused on a certain area.
+
       STR_INITIAL_FUSION_CELLS_RESEARCH: Fusion Cells Research
       STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency. A real mystery.
 ############################################
