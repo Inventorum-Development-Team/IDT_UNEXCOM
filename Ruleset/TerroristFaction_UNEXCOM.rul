@@ -140,7 +140,6 @@ units:
     armor: STR_TERRORIST_MALE_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 14
     deathSound: [41, 42, 43]
     intelligence: 5
@@ -186,7 +185,6 @@ units:
     armor: STR_TERRORIST_FEMALE_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 14
     deathSound: [44, 45, 46]
     intelligence: 6
@@ -232,7 +230,6 @@ units:
     armor: STR_TERRORIST_MALE_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 18
     deathSound: [41, 42, 43]
     intelligence: 8
@@ -382,16 +379,16 @@ extraSprites:
       0: Resources/TerroristFaction/TERRORIST_MALE_SPRITESHEET.png
 
   - type: TERRORIST_FEMALE_SPRITESHEET.PCK
-    width: 256
-    height: 1400
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/TerroristFaction/TERRORIST_FEMALE_SPRITESHEET.png
 
   - type: TERRORIST_GASMASK_SPRITESHEET.PCK
-    width: 512
-    height: 720
+    width: 256
+    height: 1400
     subX: 32
     subY: 40
     files:
