@@ -2,7 +2,7 @@
 items:
   - type: STR_TERRORIST_MALE_CORPSE
     size: 0.4
-    costSell: 20000
+    costSell: 2000
     weight: 20
     bigSprite: 3050
     floorSprite: 3050
@@ -11,10 +11,10 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
-    listOrder: 6710
+
   - type: STR_TERRORIST_FEMALE_CORPSE
     size: 0.4
-    costSell: 20000
+    costSell: 2000
     weight: 20
     bigSprite: 3051
     floorSprite: 3051
@@ -23,7 +23,19 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
-    listOrder: 6710
+
+  - type: STR_TERRORIST_FEMALE_CORPSE
+    size: 0.4
+    costSell: 2000
+    weight: 20
+    bigSprite: 3052
+    floorSprite: 3052
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+
 
   - type: STR_TERRORIST_SOLDIER
     size: 0.0
