@@ -36,6 +36,7 @@ Credits by name:
 *Barabas: bug hunter
 *Black Onix: Romania and Bulgaria accurate flags
 *Blood Angel Tactical Marine: bug hunter.
+*Bobit: bug hunter
 *boodman123726: XCOM 2 Music Pack
 *Brother^2: IDT bug hunter
 *bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
@@ -84,3 +85,4 @@ Credits by name:
 *wolwerin: Flechette Weapons, Tesla Weapons, sprites and sounds, plus debugging support 
 *Zane: original Delta sprites
 *zaphnath: bug hunter
+*zombieclone111: bug hunter
