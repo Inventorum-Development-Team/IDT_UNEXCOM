@@ -24,7 +24,7 @@ items:
     battleType: 11
     armor: 26
 
-  - type: STR_TERRORIST_FEMALE_CORPSE
+  - type: STR_TERRORIST_GASMASK_CORPSE
     size: 0.4
     costSell: 2000
     weight: 20
@@ -343,6 +343,12 @@ research:
     unlocks:
       - STR_TERRORIST_AUTOPSY
     needItem: true
+  - name: STR_TERRORIST_GASMASK_CORPSE
+    cost: 180
+    points: 50
+    unlocks:
+      - STR_TERRORIST_AUTOPSY
+    needItem: true
   - name: STR_TERRORIST_AUTOPSY
     cost: 0
     points: 50
@@ -379,6 +385,7 @@ ufopaedia:
     requires:
       - STR_TERRORIST_FEMALE_CORPSE
       - STR_TERRORIST_MALE_CORPSE
+      - STR_TERRORIST_GASMASK_CORPSE
     listOrder: 150310
 
 extraSprites:
@@ -462,13 +469,14 @@ extraStrings:
   - type: en-US
     strings:
       STR_TERRORIST: Terrorists
-      STR_TERRORIST_SOLDIER: Terrorist Warrior
+      STR_TERRORIST_SOLDIER: Terrorist Soldier
       STR_TERRORIST_MEDIC: Terrorist Medic
       STR_TERRORIST_GRENADIER: Terrorist Grenadier
       STR_TERRORIST_LEADER: Terrorist Leader
       STR_TERRORIST_COMMANDER: Terrorist Commander
       STR_TERRORIST_MALE_CORPSE: Male Terrorist Corpse
       STR_TERRORIST_FEMALE_CORPSE: Female Terrorist Corpse
+      STR_TERRORIST_GASMASK_CORPSE: Gasmask Terrorist Corpse
 
       STR_TERRORISTS: The Terrorists
       STR_TERRORISTS_UFOPEDIA: Terrorists are a diverse group of political, religious and ideological radicals who use violence and fear to impose their ideals or make demands on the world's governments. Each cell is independent of the others, but they use similar equipment and weaponry. They are extremely dangerous because they are not afraid to die.
