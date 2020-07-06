@@ -17,15 +17,19 @@ globe:
         # - name: JUNGLE
         #   area: [0, 360, 0, 90]
           - name: FOREST
-            weight: 70
-          - name: ACULTASNOW
+            weight: 15
+          - name: FOREST_SNOW
             weight: 20
+          - name: ACULTASNOW
+            weight: 10
           - name: ACULTA
-            weight: 15			
+            weight: 10	
           - name: IDT_FOREST
-            weight: 30
+            weight: 15
           - name: IDT_SNOWFOREST
-            weight: 50
+            weight: 15
+          - name: FOREST_SNOW
+            weight: 15
     - id: 1 #Flat farmland, medium habitation
       terrain:
           - name: CULTA
@@ -107,15 +111,15 @@ globe:
           - name: FOREST
             area: [0, 360, -90, 0]
             weight: 30
-          - name: IDT_FOREST
+          - name: FORESTSWAMP
             area: [0, 360, -90, 0]
             weight: 20
           - name: JUNGLE
             area: [0, 360, 0, 90]
           - name: PLAINSMUDD
-            weight: 40
-          - name: MOUNTMUDD
-            weight: 10
+            weight: 25
+          - name: FORESTSWAMP
+            weight: 25
     - id: 7 # Sand desert
       terrain:
           - name: PLAINSMUDD
@@ -169,13 +173,15 @@ globe:
     - id: 11 # Swampland/mud
       terrain:
           - name: FOREST
-            weight: 15
+            weight: 20
           - name: JUNGLE
-            weight: 40
+            weight: 15
           - name: ACULTA
             weight: 15	
           - name: IDT_FOREST
-            weight: 15
+            weight: 10
+          - name: FORESTSWAMP
+            weight: 40
     - id: 12 # Broken ice
       terrain:
           - name: ACULTASNOW
@@ -189,27 +195,21 @@ globe:
     - id: 13 # Swallow water
       fakeUnderwater: true
       terrain:
-          - name: VOLC # Water Test
-            weight: 10
-          - name: ATLAN # TFTD Maps
-            weight: 10
           - name: GAL # TFTD Maps
-            weight: 10
+            weight: 20
           - name: CORAL # TFTD Maps
             weight: 10
           - name: SEABED # TFTD Maps
-            weight: 10
+            weight: 20
           - name: MSUNK # TFTD Maps
-            weight: 10
+            weight: 20
           - name: MU # Maya TFTD Maps
             weight: 10
           - name: U_PLANE # Maya TFTD Maps ALART
-            weight: 10
+            weight: 20
     - id: 14 # Mid-deep water
       fakeUnderwater: true
       terrain:
-          - name: VOLC # Water Test
-            weight: 10
           - name: ATLAN # TFTD Maps
             weight: 10
           - name: GAL # TFTD Maps
@@ -217,7 +217,7 @@ globe:
           - name: CORAL # TFTD Maps
             weight: 10
           - name: SEABED # TFTD Maps
-            weight: 10
+            weight: 30
           - name: MSUNK # TFTD Maps
             weight: 10
           - name: MU # Maya TFTD Maps
@@ -228,9 +228,7 @@ globe:
       fakeUnderwater: true
       terrain:
           - name: VOLC # Water Test
-            weight: 10
-          - name: ATLAN # TFTD Maps
-            weight: 10
+            weight: 30
           - name: GAL # TFTD Maps
             weight: 10
           - name: CORAL # TFTD Maps
@@ -238,43 +236,33 @@ globe:
           - name: SEABED # TFTD Maps
             weight: 10
           - name: MSUNK # TFTD Maps
-            weight: 10
-          - name: MU # Maya TFTD Maps
-            weight: 10
+            weight: 20
           - name: U_PLANE # Maya TFTD Maps ALART
-            weight: 10
+            weight: 20
     - id: 16 # Coral reef 1/abyss
       fakeUnderwater: true
       terrain:
           - name: VOLC # Water Test
-            weight: 10
+            weight: 30
           - name: ATLAN # TFTD Maps
             weight: 10
           - name: GAL # TFTD Maps
             weight: 10
           - name: CORAL # TFTD Maps
-            weight: 10
+            weight: 30
           - name: SEABED # TFTD Maps
             weight: 10
           - name: MSUNK # TFTD Maps
             weight: 10
-          - name: MU # Maya TFTD Maps
-            weight: 10
-          - name: U_PLANE # Maya TFTD Maps ALART
-            weight: 10
     - id: 17 # Coral reef 2
       fakeUnderwater: true
       terrain:
-          - name: VOLC # Water Test
-            weight: 10
           - name: ATLAN # TFTD Maps
             weight: 10
           - name: GAL # TFTD Maps
             weight: 10
           - name: CORAL # TFTD Maps
-            weight: 10
-          - name: SEABED # TFTD Maps
-            weight: 10
+            weight: 50
           - name: MSUNK # TFTD Maps
             weight: 10
           - name: MU # Maya TFTD Maps
@@ -286,21 +274,27 @@ globe:
           - name: PLAINSSNOW
             weight: 30
           - name: ACULTASNOW
-            weight: 20		
-          - name: IDT_FOREST
-            weight: 30
+            weight: 10
           - name: IDT_SNOWFOREST
-            weight: 50
+            weight: 10
+          - name: FOREST_SNOW
+            weight: 30
+          - name: FORESTSWAMP_SNOW
+            weight: 20
     - id: 19 # Tundra 2
       terrain:
           - name: FOREST
-            weight: 30
+            weight: 10
           - name: ACULTASNOW
-            weight: 20		
+            weight: 10	
           - name: IDT_FOREST
             weight: 30
           - name: IDT_SNOWFOREST
-            weight: 50
+            weight: 10
+          - name: FOREST_SNOW
+            weight: 30
+          - name: FORESTSWAMP_SNOW
+            weight: 10
     - id: 20 # Temperate desert mountains, sparse habitation
       terrain:
           - name: PLAINSMUDD
@@ -391,9 +385,9 @@ globe:
             weight: 20
     - id: 27 # Tundra/Taiga, sparse habitation
       terrain:
-          - name: IDT_FOREST
+          - name: FORESTSWAMP_SNOW
             weight: 10
-          - name: ACULTASNOW
+          - name: FOREST_SNOW
             weight: 20		
           - name: PLAINSSNOW
             weight: 20
@@ -403,34 +397,31 @@ globe:
             weight: 20
     - id: -1
       deployments: 
-        - STR_TERROR_MISSION: 100
+        - STR_TERROR_MISSION: 90
         - STR_TERROR_MISSION_AIRPORT: 10
     - id: -2
       deployments: 
-        - STR_TERROR_MISSION: 100
+        - STR_TERROR_MISSION: 90
         - STR_TERROR_MISSION_AIRPORT: 10
     - id: -3
       deployments: 
-        - STR_TERROR_MISSION_INDUSTRIAL: 100
+        - STR_TERROR_MISSION_INDUSTRIAL: 90
         - STR_TERROR_MISSION_AIRPORT: 10
     - id: -4
       deployments: 
-        - STR_TERROR_MISSION_SNOW: 100
+        - STR_TERROR_MISSION_SNOW: 90
         - STR_TERROR_MISSION_AIRPORT: 10
     - id: -5
       deployments: 
-        - STR_TERROR_MISSION_RURAL: 100
+        - STR_TERROR_MISSION_RURAL: 90
         - STR_TERROR_MISSION_AIRPORT: 10
     - id: -6
       deployments: 
-        - STR_TERROR_MISSION_ISLAND: 100
+        - STR_TERROR_MISSION_ISLAND: 90
+        - STR_TERROR_MISSION_AIRPORT: 10
     - id: -7
       deployments: 
         - STR_TERROR_MISSION_PORT: 100
     - id: -8
       deployments:
         STR_TERROR_MISSION_SHIPPING_LINES: 100
-
-
-
-      
