@@ -135,6 +135,49 @@ research:
     dependencies:
       - STR_ALIEN_ALLOYS
 ############################################
+######### UNDERWATER RESEARCH #############
+##########################################
+  - name: STR_SUBMARINE_WARFARE_RESEARCH
+    spawnedItem: STR_MILITARY_HARPOON
+    cost: 50
+    points: 50
+
+# Human
+  - name: STR_IMPROVED_AQUATIC_WEAPONS
+    cost: 500
+    points: 100
+    dependencies:
+     - STR_ALLOY_MANUFACTURING
+     - STR_SUBMARINE_WARFARE_RESEARCH
+
+  - name: STR_USA_IMPROVED_AQUATIC_WEAPONS
+    dependencies:
+      - STR_IMPROVED_AQUATIC_WEAPONS
+    cost: 500
+    points: 200
+    disables:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+
+  - name: STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    dependencies:
+      - STR_IMPROVED_AQUATIC_WEAPONS
+    cost: 500
+    points: 200
+    disables:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+
+  - name: STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    dependencies:
+      - STR_IMPROVED_AQUATIC_WEAPONS
+    cost: 500
+    points: 200
+    disables:
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+
+############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
     points: 100
@@ -988,6 +1031,56 @@ ufopaedia:
     text: STR_MERCENARY_RESEARCH_UFOPEDIA
     listOrder: 1122
     text_width: 150
+########################################
+######## UNDERWATER RESEARCH ##########
+######################################
+
+#Basic
+  - id: STR_SUBMARINE_WARFARE_RESEARCH
+    type_id: 7
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: SUBMARINE_WARFARE_IMAGE
+    text: STR_SUBMARINE_WARFARE_RESEARCH_UFOPEDIA
+    text_width: 150
+
+# Alloy Underwater
+  - id: STR_IMPROVED_AQUATIC_WEAPONS
+    type_id: 7
+    requires:
+      - STR_IMPROVED_AQUATIC_WEAPONS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: UNDERWATER_BULLETS_IMAGE
+    text: STR_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA
+    text_width: 150
+
+  - id: STR_USA_IMPROVED_AQUATIC_WEAPONS
+    type_id: 7
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USA_IMPROVED_AQUATIC_WEAPONS_IMAGE
+    text: STR_USA_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA
+    text_width: 150
+
+  - id: STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    type_id: 7
+    requires:
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: NATO_IMPROVED_AQUATIC_WEAPONS_IMAGE
+    text: STR_NATO_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA
+    text_width: 150
+
+  - id: STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    type_id: 7
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: USSR_IMPROVED_AQUATIC_WEAPONS_IMAGE
+    text: STR_USSR_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA
+    text_width: 150
 
 ##############################
 ####### LASER WEAPONS #######
@@ -1420,7 +1513,49 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/UNITED_WE_STAND_IMAGE.PNG
+##########################################
+########## UNDERWATER RESEARCH ##########
+########################################
+  - type: SUBMARINE_WARFARE_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/SUBMARINE_WARFARE_IMAGE.PNG
 
+  - type: IMPROVED_AQUATIC_WEAPONS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/IMPROVED_AQUATIC_WEAPONS_IMAGE.PNG
+
+  - type: UNDERWATER_BULLETS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UNDERWATER_BULLETS_IMAGE.PNG
+
+  - type: USA_IMPROVED_AQUATIC_WEAPONS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USA_IMPROVED_AQUATIC_WEAPONS_IMAGE.PNG
+  - type: NATO_IMPROVED_AQUATIC_WEAPONS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/NATO_IMPROVED_AQUATIC_WEAPONS_IMAGE.PNG
+  - type: USSR_IMPROVED_AQUATIC_WEAPONS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/USSR_IMPROVED_AQUATIC_WEAPONS_IMAGE.PNG
+################################################
   - type: SPECIAL_FORCES_RESEARCH_IMAGE
     singleImage: true
     width: 320
@@ -1530,6 +1665,8 @@ extraStrings:
       STR_SPECIAL_FORCES_RESEARCH_UFOPEDIA: Requesting the support of the world's best Special Forces operatives (including the American Green Berets or the British SAS) to join our cause, some have volunteered. Their experience and high training make them way superior to the project's average volunteers. Their skills are unparalleled on the battlefield, perfect to fight an unknown enemy. Their recruiting cost is very high, but it's worth it.
       STR_MERCENARY_RESEARCH: Mercenary Support
       STR_MERCENARY_RESEARCH_UFOPEDIA: We have requested the support of these private soldiers to increase our combat capabilities. Most are veterans of elite groups from various armies around the world, making them more combat experienced than many of our volunteers. Their skills will be especially useful to our combat operations against the alien invaders. The recruitment cost is not very high, although their salary certainly is.
+##########################################
+      STR_SUBMARINE_WARFARE_RESEARCH
 ##########################################
       STR_USA_LASER_RESEARCH: USA Laser Research
       STR_USA_LASER_RESEARCH_UFOPEDIA: American laser weapons are balanced in terms of power and mobility. By employing Helium-Neon power cells, the laser beam released is consistent and powerful. To avoid overheating the weapon, liquid nitrogen is used and the crystals employed are calibrated to release the energy in the form of pulses, allowing for higher rates of fire without compromising the firing system.  The structure of the weapon is solid and does not require much maintenance.
