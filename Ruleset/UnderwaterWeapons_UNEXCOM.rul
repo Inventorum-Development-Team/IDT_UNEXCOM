@@ -194,7 +194,7 @@ items:
     damageType: 1
     invHeight: 1
     invWidth: 1
-    clipSize: 1
+    clipSize: 5
     battleType: 2
     vaporColor: 0
     vaporDensity: 2
@@ -248,7 +248,7 @@ items:
     bigSprite: 1158
     floorSprite: 1158
     handSprite: 2724
-    bulletSprite: 0
+    bulletSprite: 1
     fireSound: 152
     compatibleAmmo:
       - STR_MATADOR_ARMOR_PIERCING_TORPEDO
@@ -267,6 +267,7 @@ items:
     invHeight: 3
     attraction: 8
     maxRange: 25
+    waypoints: 3
     dropoff: 3
 
   - type: STR_MATADOR_ARMOR_PIERCING_TORPEDO
@@ -432,7 +433,7 @@ items:
     bigSprite: 1164
     floorSprite: 1164
     handSprite: 2740
-    bulletSprite: 17
+    bulletSprite: 4
     fireSound: 143
     power: 100
     accuracySnap: 55
@@ -454,7 +455,7 @@ items:
     invHeight: 3
     armor: 20
     damageType: 3
-    waypoints: 2
+    waypoints: 4
     blastRadius: 2
     hitSound: 64
 
@@ -610,7 +611,7 @@ items:
     bigSprite: 1170
     floorSprite: 1170
     handSprite: 2772
-    bulletSprite: 11
+    bulletSprite: 4
     bulletSpeed: 20
     fireSound: 160
     compatibleAmmo:
@@ -856,43 +857,43 @@ extraStrings:
       STR_HARPOON_HE: "Harpoon HE" 
       STR_HARPOON_HE_UFOPEDIA: "This harpoon bolt has a small explosive charge that explodes once the steel tip" 
       STR_HARPOON_ACID: "Harpoon Acid"
-      STR_HARPOON_ACID_UFOPEDIA:
+      STR_HARPOON_ACID_UFOPEDIA: "..."
       STR_HARPOON_ELERIUM: "Harpoon Elerium"
-      STR_HARPOON_ELERIUM_UFOPEDIA:
+      STR_HARPOON_ELERIUM_UFOPEDIA: "..."
 
       STR_MK1_UNDERWATER_DEFENSE_PISTOL: "Mk1 Underwater Defense Gun"
-      STR_MK1_UNDERWATER_DEFENSE_PISTOL_UFOPEDIA: 
+      STR_MK1_UNDERWATER_DEFENSE_PISTOL_UFOPEDIA: "..."
       STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP: "Mk1 Underwater Defense Gun Mag"
-      STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP_UFOPEDIA:
+      STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP_UFOPEDIA: "..."
       STR_HEAVY_HARPOON: "M11 Combat Speargun"
-      STR_HEAVY_HARPOON_UFOPEDIA: 
+      STR_HEAVY_HARPOON_UFOPEDIA: "..."
       STR_MATADOR_TORPEDO_LAUNCHER: "MATADOR Torpedo Launcher"
-      STR_MATADOR_TORPEDO_LAUNCHER_UFOPEDIA:
+      STR_MATADOR_TORPEDO_LAUNCHER_UFOPEDIA: "..."
       STR_MATADOR_ARMOR_PIERCING_TORPEDO: "MATADOR AP Torpedo"
-      STR_MATADOR_ARMOR_PIERCING_TORPEDO_UFOPEDIA:
+      STR_MATADOR_ARMOR_PIERCING_TORPEDO_UFOPEDIA: "..."
       STR_MATADOR_HIGH_EXPLOSIVE_TORPEDO: "MATADOR HE Torpedo"
-      STR_MATADOR_HIGH_EXPLOSIVE_TORPEDO_UFOPEDIA:
+      STR_MATADOR_HIGH_EXPLOSIVE_TORPEDO_UFOPEDIA: "..."
       STR_MATADOR_SWARM_TORPEDO: "MATADOR SWARM Torpedo"
-      STR_MATADOR_SWARM_TORPEDO_UFOPEDIA:
+      STR_MATADOR_SWARM_TORPEDO_UFOPEDIA: "..."
 
       STR_HK_P11_UNDERWATER_PISTOL: "H&K P11 Underwater Pistol"
-      STR_HK_P11_UNDERWATER_PISTOL_UFOPEDIA:
+      STR_HK_P11_UNDERWATER_PISTOL_UFOPEDIA: "..."
       STR_HK_P11_UNDERWATER_PISTOL_CLIP: "H&K P11 Underwater Pistol Mag"
-      STR_HK_P11_UNDERWATER_PISTOL_CLIP_UFOPEDIA:
+      STR_HK_P11_UNDERWATER_PISTOL_CLIP_UFOPEDIA: "..."
       STR_NEPTUNE_TORPEDO: "Neptune Torpedo"
-      STR_NEPTUNE_TORPEDO_UFOPEDIA:
+      STR_NEPTUNE_TORPEDO_UFOPEDIA: "A very stealth, guided, explosive torpedo. Meant to be used in special operations to disable and destroy objetives underwater without compromising the location of the frogmen using it. It is controlled by a small waterproof screen and explodes con contact."
       STR_LIMPET_CHARGE: "Limpet Charge"
-      STR_LIMPET_CHARGE_UFOPEDIA:
+      STR_LIMPET_CHARGE_UFOPEDIA: "Classic magnetic mine, used since the times of the WW2. It contains a large explosive charge and is better used near hard targets, like ships or coastal structures. Includes a timer, to allow the frogmen to evacuate the area unnoticed."
 
       STR_SPP1_UNDERWATER_PISTOL: "SPP-1 Underwater Pistol"
       STR_SPP1_UNDERWATER_PISTOL_UFOPEDIA: "This handheld weapon was designed in the late 1960s for use by Soviet submariners. It has a capacity of four darts. Its dual-action firing mechanism fires one cartridge sequentially for each pull of the trigger. When all four cartridges are spent, the gun can be reloaded above or below water."
       STR_SPP1_UNDERWATER_PISTOL_CLIP: "SPP-1 Underwater Pistol Cli´p"
       STR_SPP1_UNDERWATER_PISTOL_CLIP_UFOPEDIA: "Magazine with capacity for 4 darts. These 4.5x115 mm caliber steel dart are used by the SPP-1 gun, which uses supercavitation to be propelled. They can penetrate much better and cause more damage than many conventional Speargun."
       STR_APS_UNDERWATER_RIFLE: "APS Underwater Rifle"
-      STR_APS_UNDERWATER_RIFLE_UFOPEDIA:
+      STR_APS_UNDERWATER_RIFLE_UFOPEDIA: "Special rifle designed by Vladimir Simonov and made the Tula Arms Plant to equip the Soviet frogmen commandos. Uses a novel gas system to allow the fuction of the rifle underwater, but its use is limited on surface. Fires "
       STR_APS_UNDERWATER_RIFLE_CLIP: "APS Underwater Rifle Mag"
-      STR_APS_UNDERWATER_RIFLE_CLIP_UFOPEDIA:
+      STR_APS_UNDERWATER_RIFLE_CLIP_UFOPEDIA: "..."
       STR_AG026_UNDERWATER_LMG: "AG-026 Underwater LMG"
-      STR_AG026_UNDERWATER_LMG_UFOPEDIA:
+      STR_AG026_UNDERWATER_LMG_UFOPEDIA: "..."
       STR_AG026_UNDERWATER_LMG_CLIP: "AG-026 Underwater LMG Mag"
-      STR_AG026_UNDERWATER_LMG_CLIP_UFOPEDIA:
+      STR_AG026_UNDERWATER_LMG_CLIP_UFOPEDIA: "..."
