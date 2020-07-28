@@ -6,8 +6,8 @@ items:
 # Starting Underwater, Tier 1
   - type: STR_MILITARY_HARPOON
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES] 
-#    requires:
-#      - STR_SUBMARINE_WARFARE_RESEARCH
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
     size: 0.2
     costBuy: 1600
     costSell: 1000
@@ -45,8 +45,8 @@ items:
 
   - type: STR_HARPOON_AP
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES]
-#    requires:
-#      - STR_SUBMARINE_WARFARE_RESEARCH 
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH 
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -72,8 +72,8 @@ items:
 
   - type: STR_HARPOON_HE
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES] 
-#    requires:
-#      - STR_SUBMARINE_WARFARE_RESEARCH
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -99,9 +99,9 @@ items:
 
   - type: STR_HARPOON_ELERIUM
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES] 
-#    requires:
-#      - STR_SUBMARINE_WARFARE_RESEARCH
-#      - STR_ELERIUM_FUSION
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
+      - STR_ELERIUM_FUSION
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -122,8 +122,8 @@ items:
 
   - type: STR_HARPOON_ACID
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES] 
-#    requires:
-#      - STR_SUBMARINE_WARFARE_RESEARCH
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -147,8 +147,8 @@ items:
 ##############################
   - type: STR_MK1_UNDERWATER_DEFENSE_PISTOL
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_US_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
     costBuy: 2500
     costSell: 900
@@ -180,8 +180,8 @@ items:
 
   - type: STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_US_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
     costBuy: 300
     costSell: 250
@@ -201,8 +201,8 @@ items:
 
   - type: STR_HEAVY_HARPOON
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_US_TECH, STR_SNIPER_RIFLES] 
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
     costBuy: 1600
     costSell: 1000
@@ -239,8 +239,8 @@ items:
 
   - type: STR_MATADOR_TORPEDO_LAUNCHER
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_US_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.4
     costBuy: 16000
     costSell: 10000
@@ -272,8 +272,8 @@ items:
 
   - type: STR_MATADOR_ARMOR_PIERCING_TORPEDO
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
     costBuy: 1600
     costSell: 1200
@@ -301,8 +301,8 @@ items:
 
   - type: STR_MATADOR_HIGH_EXPLOSIVE_TORPEDO
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
     costBuy: 6200
     costSell: 5000
@@ -330,8 +330,8 @@ items:
 
   - type: STR_MATADOR_SWARM_TORPEDO
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_UNDERWATER, STR_US_TECH, STR_CLIPS]
-#    requires:
-#      - STR_USA_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
     costBuy: 900
     costSell: 250
@@ -365,8 +365,8 @@ items:
 ##############################
   - type: STR_HK_P11_UNDERWATER_PISTOL
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_NATO_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
     costBuy: 700
     costSell: 580
@@ -400,8 +400,8 @@ items:
 
   - type: STR_HK_P11_UNDERWATER_PISTOL_CLIP
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_NATO_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -424,13 +424,13 @@ items:
 
   - type: STR_NEPTUNE_TORPEDO
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
-#    requires:
-#      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
     size: 0.4
     costBuy: 1750
     costSell: 850
     weight: 7
-    bigSprite: 1164
+    bigSpritbbbbe: 1164
     floorSprite: 1164
     handSprite: 2740
     bulletSprite: 4
@@ -439,8 +439,8 @@ items:
     accuracySnap: 55
     accuracyAimed: 100
     accuracyCloseQuarters: 65
-#    oneHandedPenalty: 80
-    tuSnap: 40
+    oneHandedPenalty: 80
+    tuSnap: 40hh
     tuAimed: 66
     maxRange: 200 # 0
     aimRange: 80 # 0
@@ -461,8 +461,8 @@ items:
 
   - type: STR_LIMPET_CHARGE
     categories: [STR_EXPLOSIVES, STR_NATO_TECH, STR_LIGHT_EQUIPMENT]
-#    requires:
-#      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_NATO_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
     costBuy: 1500
     costSell: 1200
@@ -482,11 +482,11 @@ items:
 ###############################
   - type: STR_SPP1_UNDERWATER_PISTOL
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_SOVIET_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
-    costBuy: 400
-    costSell: 250
+    costBuy: 500
+    costSell: 450
     weight: 3
     bigSprite: 1166
     floorSprite: 1166
@@ -520,10 +520,10 @@ items:
 
   - type: STR_SPP1_UNDERWATER_PISTOL_CLIP
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_US_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
-    costBuy: 450
+    costBuy: 350
     costSell: 250
     weight: 2
     bigSprite: 1167
@@ -540,9 +540,9 @@ items:
     vaporDensity: 10
 
   - type: STR_APS_UNDERWATER_RIFLE
-    categories: [STR_UNDERWATER, STR_FIREARMS, STR_SOVIET_TECH, STR_CARBINES]
-#    requires:
-#      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    categories: [STR_UNDERWATER, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES]
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
     costBuy: 3200
     costSell: 2000
@@ -555,11 +555,11 @@ items:
     reloadSound: [186, 187, 188, 189]
     compatibleAmmo:
       - STR_APS_UNDERWATER_RIFLE_CLIP
-    accuracyCloseQuarters: 90
+    accuracyCloseQuarters: 120
     accuracyAuto: 40
     accuracySnap: 62
     accuracyAimed: 85
-    bulletSpeed: 20
+    bulletSpeed: 10
     tuAuto: 32
     tuSnap: 24
     tuAimed: 48
@@ -580,18 +580,18 @@ items:
 
 
   - type: STR_APS_UNDERWATER_RIFLE_CLIP
-    categories: [STR_UNDERWATER, STR_FIREARMS, STR_USSR_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    categories: [STR_UNDERWATER, STR_FIREARMS, STR_USSR_TECH, STR_RIFLES]
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
-    costBuy: 450
-    costSell: 250
+    costBuy: 550
+    costSell: 450
     weight: 2
     bigSprite: 1169
     floorSprite: 1169
     hitSound: 16
     hitAnimation: 26
-    power: 32
+    power: 40
     damageType: 1
     clipSize: 26
     invWidth: 1
@@ -602,8 +602,8 @@ items:
 
   - type: STR_AG026_UNDERWATER_LMG
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
-#    requires:
-#      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.3
     costBuy: 9000
     costSell: 8000
@@ -642,8 +642,8 @@ items:
 
   - type: STR_AG026_UNDERWATER_LMG_CLIP
     categories: [STR_UNDERWATER, STR_FIREARMS, STR_USSR_TECH, STR_PISTOLS]
-#    requires:
-#      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
+    requires:
+      - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -652,7 +652,7 @@ items:
     floorSprite: 1171
     hitSound: 16
     hitAnimation: 26
-    power: 32
+    power: 42
     damageType: 1
     clipSize: 40
     invWidth: 2
