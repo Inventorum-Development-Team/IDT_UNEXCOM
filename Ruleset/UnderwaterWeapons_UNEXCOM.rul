@@ -9,7 +9,7 @@ items:
     requires:
       - STR_SUBMARINE_WARFARE_RESEARCH
     size: 0.2
-    costBuy: 1600
+    costBuy: 2600
     costSell: 1000
     weight: 11
     bigSprite: 1150
@@ -18,17 +18,22 @@ items:
     bulletSprite: 2
     fireSound: 163
     reloadSound: 197
-    bulletSpeed: 20
-    compatibleAmmo:
-      - STR_HARPOON_AP
-      - STR_HARPOON_HE
-      - STR_HARPOON_ELERIUM
-      - STR_HARPOON_ACID
+    bulletSpeed: 10
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_HARPOON_AP, STR_HARPOON_HE, STR_HARPOON_ELERIUM, STR_HARPOON_ACID ]
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      ammoSlot: 0
+      arcing: false
     accuracyCloseQuarters: 40
-    accuracySnap: 60
-    accuracyAimed: 85
+    accuracySnap: 50
+    accuracyAimed: 75
+    accuracyAuto: 110
     tuSnap: 33
     tuAimed: 70
+    tuAuto: 75
     costThrow:
       energy: 16
     battleType: 1
@@ -103,16 +108,15 @@ items:
       - STR_SUBMARINE_WARFARE_RESEARCH
       - STR_ELERIUM_FUSION
     size: 0.1
-    costBuy: 450
-    costSell: 250
+    costSell: 35000
     weight: 2
     bigSprite: 1153
     floorSprite: 1153
     handSprite: 248
     hitSound: 16
     hitAnimation: 26
-    power: 50
-    damageType: 1
+    power: 60
+    damageType: 2
     clipSize: 1
     invHeight: 3
     invWidth: 1
@@ -159,8 +163,14 @@ items:
     bulletSprite: 2
     fireSound: 136
     reloadSound: [179, 180, 181, 182]
-    compatibleAmmo:
-      - STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP
+    ammo:
+      0:
+        compatibleAmmo: [ STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP ]
+    confAuto:
+      shots: 4
+      name: STR_RAPID_FIRE
+      ammoSlot: 0
+      arcing: false
     accuracySnap: 45
     accuracyAimed: 65
     accuracyAuto: 55
@@ -183,8 +193,8 @@ items:
     requires:
       - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
-    costBuy: 300
-    costSell: 250
+    costBuy: 600
+    costSell: 750
     weight: 2
     bigSprite: 1156
     floorSprite: 1156
@@ -204,9 +214,9 @@ items:
     requires:
       - STR_USA_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
-    costBuy: 1600
-    costSell: 1000
-    weight: 11
+    costBuy: 3200
+    costSell: 3000
+    weight: 15
     bigSprite: 1157
     floorSprite: 1157
     handSprite: 2716
@@ -214,16 +224,21 @@ items:
     fireSound: 163
     reloadSound: 197
     bulletSpeed: 20
-    compatibleAmmo:
-      - STR_HARPOON_AP
-      - STR_HARPOON_HE
-      - STR_HARPOON_ELERIUM
-      - STR_HARPOON_ACID
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_HARPOON_AP, STR_HARPOON_HE, STR_HARPOON_ELERIUM, STR_HARPOON_ACID ]
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      ammoSlot: 0
+      arcing: false
     accuracyCloseQuarters: 40
     accuracySnap: 60
     accuracyAimed: 85
-    tuSnap: 33
-    tuAimed: 70
+    accuracyAuto: 130
+    tuSnap: 40
+    tuAimed: 60
+    tuAuto: 65
     costThrow:
       energy: 16
     battleType: 1
@@ -233,7 +248,7 @@ items:
     invHeight: 3
     armor: 30
     attraction: 7
-    maxRange: 22
+    maxRange: 30
     dropoff: 3
     powerRangeReduction: 3
 
@@ -255,7 +270,7 @@ items:
       - STR_MATADOR_HIGH_EXPLOSIVE_TORPEDO
       - STR_MATADOR_SWARM_TORPEDO
     accuracyCloseQuarters: 25
-    accuracySnap: 55
+    accuracySnap: 80
     accuracyAimed: 125
     tuSnap: 45
     tuAimed: 70
@@ -333,9 +348,9 @@ items:
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_UNDERWATER, STR_US_TECH, STR_CLIPS]
     requires:
       - STR_USA_IMPROVED_AQUATIC_WEAPONS
+      - STR_ELERIUM_FUSION
     size: 0.1
-    costBuy: 900
-    costSell: 250
+    costSell: 22500
     weight: 3
     bigSprite: 1161
     floorSprite: 1161
@@ -378,9 +393,15 @@ items:
     bulletSprite: 1
     fireSound: 146
     reloadSound: [179, 180, 181, 182]
-    compatibleAmmo:
-      - STR_HK_P11_UNDERWATER_PISTOL_CLIP
     accuracyCloseQuarters: 100
+    ammo:
+      0:
+        compatibleAmmo: [ STR_HK_P11_UNDERWATER_PISTOL_CLIP ]
+    confAuto:
+      shots: 5
+      name: STR_RAPID_FIRE
+      ammoSlot: 0
+      arcing: false
     accuracySnap: 80
     accuracyAimed: 80
     accuracyAuto: 60
@@ -388,7 +409,6 @@ items:
     tuSnap: 16
     tuAimed: 24
     tuLoad: 15
-    aimRange: 20
     kneelBonus: 105
     costThrow:
       energy: 8
@@ -428,9 +448,9 @@ items:
     requires:
       - STR_NATO_IMPROVED_AQUATIC_WEAPONS
     size: 0.4
-    costBuy: 1750
-    costSell: 850
-    weight: 7
+    costBuy: 850
+    costSell: 950
+    weight: 6
     bigSprite: 1164
     floorSprite: 1164
     handSprite: 2740
@@ -465,8 +485,8 @@ items:
     requires:
       - STR_NATO_IMPROVED_AQUATIC_WEAPONS
     size: 0.2
-    costBuy: 1500
-    costSell: 1200
+    costBuy: 500
+    costSell: 200
     weight: 4
     bigSprite: 1165
     floorSprite: 1165
@@ -486,8 +506,8 @@ items:
     requires:
       - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
-    costBuy: 500
-    costSell: 450
+    costBuy: 2200
+    costSell: 1250
     weight: 3
     bigSprite: 1166
     floorSprite: 1166
@@ -495,8 +515,14 @@ items:
     bulletSprite: 1
     fireSound: 153
     reloadSound: [179, 180, 181, 182]
-    compatibleAmmo:
-      - STR_SPP1_UNDERWATER_PISTOL_CLIP
+    ammo:
+      0:
+        compatibleAmmo: [ STR_SPP1_UNDERWATER_PISTOL_CLIP ]
+    confAuto:
+      shots: 4
+      name: STR_RAPID_FIRE
+      ammoSlot: 0
+      arcing: false
     accuracyCloseQuarters: 100
     accuracyAuto: 45
     accuracySnap: 65
@@ -531,7 +557,7 @@ items:
     floorSprite: 1167
     hitSound: 16
     hitAnimation: 26
-    power: 32
+    power: 45
     damageType: 1
     clipSize: 4
     invWidth: 1
@@ -554,12 +580,25 @@ items:
     bulletSprite: 2
     fireSound: 155
     reloadSound: [186, 187, 188, 189]
-    compatibleAmmo:
-      - STR_APS_UNDERWATER_RIFLE_CLIP
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_APS_UNDERWATER_RIFLE_CLIP ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
     accuracyCloseQuarters: 120
-    accuracyAuto: 40
-    accuracySnap: 62
-    accuracyAimed: 85
+    accuracyAuto: 50
+    accuracySnap: 72
+    accuracyAimed: 65
     bulletSpeed: 10
     tuAuto: 32
     tuSnap: 24
@@ -592,7 +631,7 @@ items:
     floorSprite: 1169
     hitSound: 16
     hitAnimation: 26
-    power: 40
+    power: 44
     damageType: 1
     clipSize: 26
     invWidth: 1
@@ -615,11 +654,22 @@ items:
     bulletSprite: 4
     bulletSpeed: 20
     fireSound: 160
-    compatibleAmmo:
-      - STR_AG026_UNDERWATER_LMG_CLIP
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_AG026_UNDERWATER_LMG_CLIP ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      ammoSlot: 0
+      arcing: false
     accuracyCloseQuarters: 35
-    accuracySnap: 45
-    accuracyAuto: 32
+    accuracySnap: 70
+    accuracyAuto: 50
     tuSnap: 25
     tuAuto: 50
     tuLoad: 25
@@ -646,14 +696,14 @@ items:
     requires:
       - STR_USSR_IMPROVED_AQUATIC_WEAPONS
     size: 0.1
-    costBuy: 450
-    costSell: 250
+    costBuy: 1450
+    costSell: 1250
     weight: 5
     bigSprite: 1171
     floorSprite: 1171
     hitSound: 16
     hitAnimation: 26
-    power: 42
+    power: 48
     damageType: 1
     clipSize: 40
     invWidth: 2
