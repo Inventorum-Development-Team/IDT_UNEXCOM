@@ -9,6 +9,8 @@ crafts:
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
 # weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc) 
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
+
+
 ######################
 ###### FIGHTERS ######
 ######################
@@ -734,6 +736,37 @@ crafts:
       - [8, 7, 0, 2]
       - [0, 0, 0, 7]
       - [8, 0, 0, 1]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+
+  - type: MINISUB
+    battlescapeTerrainData:
+      name: MINISUB
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_BLACK
+        - C_EXT_ROOF_BLACKMOD   
+        - C_EXT_NOSE_SIDE_BLACK
+        - C_EXT_NOSE_BUMPLESS_BLACK
+        - NKF_APC 
+      mapBlocks: 
+        - name: MINISUB
+          width: 10
+          length: 10
+    craftInventoryTile: [1, 4, 0]
+    deployment:
+#SDV Minisub 1
+      - [1, 5, 0, 4]
+      - [1, 4, 0, 2]
+      - [1, 3, 0, 4]
+      - [1, 2, 0, 4]
+#SDV Minisub 2
+      - [7, 8, 0, 4]
+      - [7, 7, 0, 2]
+      - [7, 6, 0, 4]
+      - [7, 5, 0, 4]
 # unit facing
 # 6 7 0
 # 5   1

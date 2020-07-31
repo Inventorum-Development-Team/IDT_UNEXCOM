@@ -67,6 +67,7 @@ terrains:
       - ASUNK
       - UFOBITS
     enviroEffects: STR_UNDERWATER_ENVIRO 
+    script: UNDERWATER_DEFAULT
     # startingCondition: STR_UNDERWATER_ENVIRO 
     depth: [1, 2]
     # ambience: 67
@@ -297,6 +298,7 @@ terrains:
       - UFOBITS
     depth: [1, 2]
     enviroEffects: STR_UNDERWATER_ENVIRO
+    script: UNDERWATER_DEFAULT
     # ambience: 67
     mapBlocks:
       - name: ALART00
@@ -402,6 +404,7 @@ terrains:
       - ATLANTIS
       - UFOBITS
     enviroEffects: STR_UNDERWATER_ENVIRO 
+    script: UNDERWATER_DEFAULT
     depth: [1, 2]
     # ambience: 67
     mapBlocks:
@@ -451,6 +454,7 @@ terrains:
       - MU
       - UFOBITS
     enviroEffects: STR_UNDERWATER_ENVIRO 
+    script: UNDERWATER_DEFAULT
     depth: [1, 2]
     # ambience: 67
     mapBlocks:

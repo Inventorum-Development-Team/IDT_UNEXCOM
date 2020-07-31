@@ -3135,7 +3135,7 @@ items:
     listOrder: 2130
 ########################################
   - type: STR_MEDI_KIT
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER]
     requires:
       - STR_MEDI_KIT
     size: 0.1
@@ -3160,7 +3160,7 @@ items:
 
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER]
     size: 0.5
     costBuy: 2000
     costSell: 4500
@@ -3188,7 +3188,7 @@ items:
     listOrder: 2132
 
   - type: STR_FIELD_DRESSING
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER]
     size: 0.1
     costBuy: 100
     costSell: 50
@@ -3214,7 +3214,7 @@ items:
     listOrder: 2133
 
   - type: STR_MEDICAL_POUCH
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER ]
     size: 0.1
     costBuy: 200
     costSell: 250
