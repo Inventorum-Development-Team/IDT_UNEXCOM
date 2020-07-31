@@ -116,7 +116,7 @@ items:
     hitSound: 16
     hitAnimation: 26
     power: 60
-    damageType: 2
+    damageType: 3
     clipSize: 1
     invHeight: 3
     invWidth: 1
@@ -167,7 +167,7 @@ items:
       0:
         compatibleAmmo: [ STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP ]
     confAuto:
-      shots: 4
+      shots: 3
       name: STR_RAPID_FIRE
       ammoSlot: 0
       arcing: false
@@ -200,11 +200,11 @@ items:
     floorSprite: 1156
     hitSound: 16
     hitAnimation: 26
-    power: 32
+    power: 40
     damageType: 1
     invHeight: 1
     invWidth: 1
-    clipSize: 5
+    clipSize: 6
     battleType: 2
     vaporColor: 0
     vaporDensity: 2
@@ -431,7 +431,7 @@ items:
     floorSprite: 1163
     hitSound: 16
     hitAnimation: 26
-    power: 35
+    power: 42
     damageType: 1
     clipSize: 5
     battleType: 2
@@ -456,7 +456,7 @@ items:
     handSprite: 2740
     bulletSprite: 4
     fireSound: 143
-    power: 100
+    power: 140
     accuracySnap: 55
     accuracyAimed: 100
     accuracyCloseQuarters: 65
@@ -491,7 +491,7 @@ items:
     bigSprite: 1165
     floorSprite: 1165
     handSprite: 2748
-    power: 110
+    power: 160
     damageType: 3
     battleType: 4
     invWidth: 2
@@ -631,7 +631,7 @@ items:
     floorSprite: 1169
     hitSound: 16
     hitAnimation: 26
-    power: 44
+    power: 46
     damageType: 1
     clipSize: 26
     invWidth: 1
@@ -703,7 +703,7 @@ items:
     floorSprite: 1171
     hitSound: 16
     hitAnimation: 26
-    power: 48
+    power: 50
     damageType: 1
     clipSize: 40
     invWidth: 2
@@ -827,7 +827,7 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_APS_UNDERWATER_RIFLE_UFOPEDIA
 #    listOrder: 2092
-  - id: STR_APS_UNDERWATER_RIFLE
+  - id: STR_APS_UNDERWATER_RIFLE_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: STR_APS_UNDERWATER_RIFLE_CLIP_UFOPEDIA
@@ -939,7 +939,7 @@ extraStrings:
       STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP: "Mk1 Underwater Defense Gun Mag"
       STR_MK1_UNDERWATER_DEFENSE_PISTOL_CLIP_UFOPEDIA: "The ammo used by the Mk 1 is a stainless steel cylinder containing a single 4.25 inch long heavy tungsten darts, long and thin, and it has four fins machined into its rear section, with each fin having a small angle cut into it that causes water to flow over it and give the projectile a stabilizing spin. The shape of the dart helps it to penetrate the water while retaining a high velocity."
       STR_HEAVY_HARPOON: "M11 Combat Speargun"
-      STR_HEAVY_HARPOON_UFOPEDIA: "This harpoon gun was designed entirely by USN military engineers to equip their divers. It incorporates an improved ejection system that drives the same harpoons as the basic gun used by the UNEXCOM frogmen, allowing them to be propelled at greater speed and distance, with considerably improved accuracy. The disadvantage is the additional weight."
+      STR_HEAVY_HARPOON_UFOPEDIA: "This harpoon gun was designed entirely by USN engineers. Incorporates an improved ejection system that drives the same harpoons as the basic speargun, allowing them to be propelled at greater speed and distance, with considerably improved accuracy."
       STR_MATADOR_TORPEDO_LAUNCHER: "MATADOR Torpedo Launcher"
       STR_MATADOR_TORPEDO_LAUNCHER_UFOPEDIA: "This is a special prototype, created by the USN and the USMC. Adapting a conventional anti-tank rocket launcher to use 'torpedoes' (small missiles, similar to the torpedoes used in submarines), it has a cable guidance system, which allows to transmit course information to the projectile directly from the launcher."
       STR_MATADOR_ARMOR_PIERCING_TORPEDO: "MATADOR AP Torpedo"
@@ -960,7 +960,7 @@ extraStrings:
 
       STR_SPP1_UNDERWATER_PISTOL: "SPP-1 Underwater Pistol"
       STR_SPP1_UNDERWATER_PISTOL_UFOPEDIA: "This handheld weapon was designed in the late 1960s for use by Soviet submariners. It has a capacity of four darts. Its dual-action firing mechanism fires one cartridge sequentially for each pull of the trigger. When all four cartridges are spent, the gun can be reloaded above or below water."
-      STR_SPP1_UNDERWATER_PISTOL_CLIP: "SPP-1 Underwater Pistol Cli´p"
+      STR_SPP1_UNDERWATER_PISTOL_CLIP: "SPP-1 Underwater Pistol Clip"
       STR_SPP1_UNDERWATER_PISTOL_CLIP_UFOPEDIA: "Magazine with capacity for 4 darts. These 4.5x115 mm caliber Alien Alloys dart are used by the SPP-1 gun, which uses supercavitation to be propelled. They can penetrate much better and cause more damage than many conventional Speargun."
       STR_APS_UNDERWATER_RIFLE: "APS Underwater Rifle"
       STR_APS_UNDERWATER_RIFLE_UFOPEDIA: "Special rifle designed by Vladimir Simonov and made the Tula Arms Plant to equip the Soviet frogmen commandos. Uses a novel gas system to allow the fuction of the rifle underwater, but its use is limited on surface. It's handling is similar of the AK-rifles, to be easy to train a soldier used to the Kalashnikov with this gun. "
