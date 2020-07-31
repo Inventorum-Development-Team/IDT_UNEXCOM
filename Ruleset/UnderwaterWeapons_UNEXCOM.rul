@@ -712,6 +712,28 @@ items:
     vaporColor: 0
     vaporDensity: 10
 
+manufacture:
+  - name: STR_HARPOON_ELERIUM
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 1
+    time: 40 
+    cost: 3000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    listOrder: 1101
+  - name: STR_MATADOR_SWARM_TORPEDO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 1
+    time: 50 
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    listOrder: 1101
+
 ufopaedia:
 ########################################
 ######## AMMO CLIPS & MAGAZINES ########
