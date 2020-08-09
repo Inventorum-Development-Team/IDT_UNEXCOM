@@ -1045,6 +1045,24 @@ ufopaedia:
     text: STR_SUBMARINE_WARFARE_RESEARCH_UFOPEDIA
     text_width: 150
 
+  - id: STR_SDV_MINISUB
+    type_id: 7
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: SDV_MINISUB_IMAGE
+    text: STR_SDV_MINISUB_UFOPEDIA
+    text_width: 150
+
+  - id: STR_AIRDROP_SDV
+    type_id: 7
+    requires:
+      - STR_SUBMARINE_WARFARE_RESEARCH
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: AIRDROP_SDV_IMAGE
+    text: STR_AIRDROP_SDV_UFOPEDIA
+    text_width: 150
+
 # Alloy Underwater
   - id: STR_IMPROVED_AQUATIC_WEAPONS
     type_id: 7
@@ -1523,6 +1541,20 @@ extraSprites:
     files:
       0: Resources/UFOpedia/SUBMARINE_WARFARE_IMAGE.PNG
 
+  - type: SDV_MINISUB_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/SDV_MINISUB_IMAGE.PNG
+
+  - type: AIRDROP_SDV_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/AIRDROP_SDV_IMAGE.PNG
+
   - type: IMPROVED_AQUATIC_WEAPONS_IMAGE
     singleImage: true
     width: 320
@@ -1668,6 +1700,10 @@ extraStrings:
 ##########################################
       STR_SUBMARINE_WARFARE_RESEARCH: Submarine Warfare
       STR_SUBMARINE_WARFARE_RESEARCH_UFOPEDIA: Our enemy seems to come from above the skies and below the seas. The ocean has been a place of mystery and unknown since centuries ago. To prepare ourselves to fight in this environment so strange to us, we have requested modified Spearguns and frogmen swimsuits. Underwater combat is tough, our weapons will inflict less damage with the distance.
+      STR_SDV_MINISUB: SDV Minisub
+      STR_SDV_MINISUB_UFOPEDIA: SEAL Delivery Vehicle. Small sized submarine meant to be used in special operations by the US Navy SEALs. It is small enough to fit inside a cargo plane or a mothership nuclear submarine. Our troops will deploy to underwater combat zones using it, but only 8 soldiers can be deployed, 4 per SDV.
+      STR_AIRDROP_SDV: SDV Airdrop
+      STR_AIRDROP_SDV_UFOPEDIA: Our troopers must be ferried in Paratrooper planes only. Another allied cargo plane, sometimes even a nuclear sub, will carry our SDVs into a designed LZ, were our soldiers will paradrop and aboard the subs, navigating to the combat zone. Recovery of artifacts and our forces will be done by allied naval ships.
       STR_IMPROVED_AQUATIC_WEAPONS: Improved Aquatic Weapons
       STR_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA: Recent research made by our engineers working along allied armories have come with a solution to increase underwater firepower, by using allien alloy darts to increase the lethality of our weapons. We can select a weapon set from our allies. The USA offer us heavy equipment. The NATO will give us cheaper weapons and the USSR offer us a wide variety of weapons.
       STR_USA_IMPROVED_AQUATIC_WEAPONS: USA Heavy UW Weapons

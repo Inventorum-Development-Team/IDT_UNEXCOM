@@ -685,3 +685,25 @@ mapScripts:
       rects:
         - [0,0,3,5]
 #END LINERSHIP
+
+  - type: FOREST
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 12
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 10
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 15
+      direction: both
+    - type: addBlock
+      size: 2
+      executions: 4
+    - type: fillArea
