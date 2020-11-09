@@ -7,7 +7,7 @@ crafts:
 # weaponType 2 = Light Missile (IR Guidance, short range)
 # weaponType 3 = Heavy Missile (Radar Guidance, long range)
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
-# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc) 
+# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc)
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
 
 
@@ -33,7 +33,7 @@ crafts:
     speedMax: 570
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - 1
       - 6
@@ -75,9 +75,9 @@ crafts:
     speedMax: 1474
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - [0, 1] 
-      - 2 
+    weaponTypes:
+      - [0, 1]
+      - 2
       - 2
       - [2, 3, 6, 5]
 #Gatling/Revolver Cannon
@@ -121,7 +121,7 @@ crafts:
     speedMax: 1303
     accel: 8
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - 1
       - 2
@@ -163,7 +163,7 @@ crafts:
     speedMax: 1258
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 0
       - 2
       - [2, 5]
@@ -206,7 +206,7 @@ crafts:
     speedMax: 1148
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - 6
       - 2
@@ -252,8 +252,8 @@ crafts:
     speedMax: 1944
     accel: 6
     weapons: 3
-    weaponTypes: 
-      - 3 
+    weaponTypes:
+      - 3
       - 3
       - [3, 5]
       - 1
@@ -293,9 +293,9 @@ crafts:
     speedMax: 1269
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
-      - 2 
+      - 2
       - 2
       - [5, 6]
 #Light Missile
@@ -338,8 +338,8 @@ crafts:
     speedMax: 2720
     accel: 6
     weapons: 4
-    weaponTypes: 
-      - [0, 1] 
+    weaponTypes:
+      - [0, 1]
       - 2
       - 5
       - [5, 6]
@@ -382,9 +382,9 @@ crafts:
     speedMax: 3500
     accel: 6
     weapons: 4
-    weaponTypes: 
-      - [0, 1] 
-      - [0, 1]  
+    weaponTypes:
+      - [0, 1]
+      - [0, 1]
       - 2
       - [2, 6, 5]
 #Gatling/Revolver Cannon
@@ -424,7 +424,7 @@ crafts:
 #    speedMax: 1474
 #    accel: 4
 #    weapons: 4
-#    weaponTypes: 
+#    weaponTypes:
 #      - 0
 #      - 1
 #      - [2, 3]
@@ -465,8 +465,8 @@ crafts:
     speedMax: 1192
     accel: 4
     weapons: 3
-    weaponTypes: 
-      - 0 
+    weaponTypes:
+      - 0
       - [2, 3]
       - [2, 3]
 #Gatling Cannon
@@ -507,8 +507,8 @@ crafts:
     speedMax: 1192
     accel: 5
     weapons: 4
-    weaponTypes: 
-      - [4, 3] 
+    weaponTypes:
+      - [4, 3]
       - 3
       - 3
       - 5
@@ -553,8 +553,8 @@ crafts:
     speedMax: 1080
     accel: 3
     weapons: 4
-    weaponTypes: 
-      - 5 
+    weaponTypes:
+      - 5
       - [4, 3]
       - [4, 3]
       - 3
@@ -583,7 +583,7 @@ crafts:
     radarChance: 10
     avoidBonus: -5
     score: 400
-    listOrder: 120	
+    listOrder: 120
 
 ####################
 #### TIER II ######
@@ -599,8 +599,8 @@ crafts:
     speedMax: 2640
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - 4 
+    weaponTypes:
+      - 4
       - 3
       - 3
       - [5, 2]
@@ -644,8 +644,8 @@ crafts:
     speedMax: 3050
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - 4 
+    weaponTypes:
+      - 4
       - 3
       - [3, 4]
       - [5, 2]
@@ -870,105 +870,105 @@ crafts:
 #### TIER III #####
 ##################
 
-#  - type: STR_ORION
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
-    sprite: 119
-    fuelMax: 510
-    damageMax: 320
-    speedMax: 270
-    accel: 4
-    weapons: 1
-    weaponTypes:
-      - 5
-#AUX Systems
-    weaponStrings:
-      - STR_CRAFT_AUX_ONE
-    soldiers: 16
-    vehicles: 3
-    pilots: 2
-    costBuy: 600000
-    costSell: 550000
-    refuelRate: 20
-    sightRange: 0
-    radarRange: 0
-    transferTime: 72
-    score: 400
-    listOrder: 113
-    keepCraftAfterFailedMission: true
-    battlescapeTerrainData:
-      name: ORION_DROPPODS
-      mapDataSets:
-        - BLANKS
-        - LIGHTNIA
-        - CULTIVAT
-      mapBlocks:
-        - name: ORION_DROPPODS
-          width: 10
-          length: 20
-    craftInventoryTile: [4, 5, 0]
-    deployment:
-      - [2, 18, 0, 4]
-      - [8, 18, 0, 4]
-      - [2, 13, 0, 4]
-      - [7, 14, 0, 4]
-      - [1, 8, 0, 4]
-      - [8, 8, 0, 4]
-      - [1, 2, 0, 4]
-      - [8, 2, 0, 4]
+# #  - type: STR_ORION
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
+#     sprite: 119
+#     fuelMax: 510
+#     damageMax: 320
+#     speedMax: 270
+#     accel: 4
+#     weapons: 1
+#     weaponTypes:
+#       - 5
+# #AUX Systems
+#     weaponStrings:
+#       - STR_CRAFT_AUX_ONE
+#     soldiers: 16
+#     vehicles: 3
+#     pilots: 2
+#     costBuy: 600000
+#     costSell: 550000
+#     refuelRate: 20
+#     sightRange: 0
+#     radarRange: 0
+#     transferTime: 72
+#     score: 400
+#     listOrder: 113
+#     keepCraftAfterFailedMission: true
+#     battlescapeTerrainData:
+#       name: ORION_DROPPODS
+#       mapDataSets:
+#         - BLANKS
+#         - LIGHTNIA
+#         - CULTIVAT
+#       mapBlocks:
+#         - name: ORION_DROPPODS
+#           width: 10
+#           length: 20
+#     craftInventoryTile: [4, 5, 0]
+#     deployment:
+#       - [2, 18, 0, 4]
+#       - [8, 18, 0, 4]
+#       - [2, 13, 0, 4]
+#       - [7, 14, 0, 4]
+#       - [1, 8, 0, 4]
+#       - [8, 8, 0, 4]
+#       - [1, 2, 0, 4]
+#       - [8, 2, 0, 4]
 
 # unit facing
 # 6 7 0
 # 5   1
 # 4 3 2
 
-#  - type: STR_ACHILLES
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_VTOL_TRANSPORT]
-    sprite: 124
-    fuelMax: 560
-    damageMax: 20
-    speedMax: 230
-    accel: 3
-    weapons: 2
-    weaponTypes:
-      - [5, 0, 1]
-      - [5, 6]
-#AUX Systems/Gatling/Revolver Cannon
-#AUX Systems/Rocket
-    weaponStrings:
-      - STR_CRAFT_ALL_CANNONS_ONE
-      - STR_CRAFT_ROCKET_AUX_TWO
-    soldiers: 12
-    vehicles: 4
-    pilots: 2
-    costBuy: 100000
-    costRent: 6000
-    refuelRate: 50
-    repairRate: 4
-    transferTime: 48
-    score: 40
-    battlescapeTerrainData:
-      name: DRAGONFLY
-      mapDataSets:
-        - BLANKS
-        - DRAGONFLY
-      mapBlocks:
-        - name: DRAGONFLY
-          width: 10
-          length: 20
-    craftInventoryTile: [3, 11, 1]
-    deployment:
-      - [3, 11, 1, 0]
-      - [4, 11, 1, 0]
-      - [3, 12, 1, 0]
-      - [4, 12, 1, 0]
-      - [3, 13, 1, 0]
-      - [4, 13, 1, 0]
-      - [3, 14, 1, 0]
-      - [4, 14, 1, 0]
-      - [3, 15, 1, 0]
-      - [4, 15, 1, 0]
-      - [3, 16, 1, 4]
-      - [4, 16, 1, 4]
+# #  - type: STR_ACHILLES
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_VTOL_TRANSPORT]
+#     sprite: 124
+#     fuelMax: 560
+#     damageMax: 20
+#     speedMax: 230
+#     accel: 3
+#     weapons: 2
+#     weaponTypes:
+#       - [5, 0, 1]
+#       - [5, 6]
+# #AUX Systems/Gatling/Revolver Cannon
+# #AUX Systems/Rocket
+#     weaponStrings:
+#       - STR_CRAFT_ALL_CANNONS_ONE
+#       - STR_CRAFT_ROCKET_AUX_TWO
+#     soldiers: 12
+#     vehicles: 4
+#     pilots: 2
+#     costBuy: 100000
+#     costRent: 6000
+#     refuelRate: 50
+#     repairRate: 4
+#     transferTime: 48
+#     score: 40
+#     battlescapeTerrainData:
+#       name: DRAGONFLY
+#       mapDataSets:
+#         - BLANKS
+#         - DRAGONFLY
+#       mapBlocks:
+#         - name: DRAGONFLY
+#           width: 10
+#           length: 20
+#     craftInventoryTile: [3, 11, 1]
+#     deployment:
+#       - [3, 11, 1, 0]
+#       - [4, 11, 1, 0]
+#       - [3, 12, 1, 0]
+#       - [4, 12, 1, 0]
+#       - [3, 13, 1, 0]
+#       - [4, 13, 1, 0]
+#       - [3, 14, 1, 0]
+#       - [4, 14, 1, 0]
+#       - [3, 15, 1, 0]
+#       - [4, 15, 1, 0]
+#       - [3, 16, 1, 4]
+#       - [4, 16, 1, 4]
 
 # unit facing
 # 6 7 0
@@ -979,82 +979,82 @@ crafts:
 #### TIER IV ######
 ##################
 
-#  - type: STR_HYPERION
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
-    sprite: 125
-    fuelMax: 510
-    damageMax: 320
-    speedMax: 270
-    accel: 4
-    weapons: 1
-    weaponTypes:
-      - 5
-#AUX Systems
-    weaponStrings:
-      - STR_CRAFT_AUX_ONE
-    soldiers: 16
-    vehicles: 3
-    pilots: 2
-    costBuy: 600000
-    costSell: 550000
-    refuelRate: 20
-    sightRange: 0
-    radarRange: 0
-    transferTime: 72
-    score: 400
-    listOrder: 113
-    keepCraftAfterFailedMission: true
-    battlescapeTerrainData:
-      name: HYPERION_DROPPODS
-      mapDataSets:
-        - BLANKS
-        - LIGHTNIA
-        - CULTIVAT
-      mapBlocks:
-        - name: HYPERION_DROPPODS
-          width: 10
-          length: 20
-    craftInventoryTile: [3, 10, 0]
-    deployment:
-      - [3, 10, 0, 4]
-      - [3, 8, 0, 4]
-      - [2, 9, 0, 2]
-      - [4, 9, 0, 6]
+# #  - type: STR_HYPERION
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
+#     sprite: 125
+#     fuelMax: 510
+#     damageMax: 320
+#     speedMax: 270
+#     accel: 4
+#     weapons: 1
+#     weaponTypes:
+#       - 5
+# #AUX Systems
+#     weaponStrings:
+#       - STR_CRAFT_AUX_ONE
+#     soldiers: 16
+#     vehicles: 3
+#     pilots: 2
+#     costBuy: 600000
+#     costSell: 550000
+#     refuelRate: 20
+#     sightRange: 0
+#     radarRange: 0
+#     transferTime: 72
+#     score: 400
+#     listOrder: 113
+#     keepCraftAfterFailedMission: true
+#     battlescapeTerrainData:
+#       name: HYPERION_DROPPODS
+#       mapDataSets:
+#         - BLANKS
+#         - LIGHTNIA
+#         - CULTIVAT
+#       mapBlocks:
+#         - name: HYPERION_DROPPODS
+#           width: 10
+#           length: 20
+#     craftInventoryTile: [3, 10, 0]
+#     deployment:
+#       - [3, 10, 0, 4]
+#       - [3, 8, 0, 4]
+#       - [2, 9, 0, 2]
+#       - [4, 9, 0, 6]
 
-      - [3, 18, 0, 4]
-      - [3, 16, 0, 4]
-      - [2, 17, 0, 2]
-      - [4, 17, 0, 6]
+#       - [3, 18, 0, 4]
+#       - [3, 16, 0, 4]
+#       - [2, 17, 0, 2]
+#       - [4, 17, 0, 6]
 
-      - [7, 15, 0, 4]
-      - [7, 13, 0, 4]
-      - [8, 14, 0, 2]
-      - [6, 14, 0, 6]
+#       - [7, 15, 0, 4]
+#       - [7, 13, 0, 4]
+#       - [8, 14, 0, 2]
+#       - [6, 14, 0, 6]
 
-      - [3, 10, 0, 4]
-      - [3, 8, 0, 4]
-      - [2, 9, 0, 2]
-      - [4, 9, 0, 6]
+#       - [3, 10, 0, 4]
+#       - [3, 8, 0, 4]
+#       - [2, 9, 0, 2]
+#       - [4, 9, 0, 6]
 
-      - [7, 7, 0, 4]
-      - [7, 5, 0, 4]
-      - [6, 6, 0, 2]
-      - [8, 6, 0, 6]
-	  
-      - [2, 3, 0, 4]
-      - [2, 1, 0, 4]
-      - [1, 2, 0, 2]
-      - [3, 2, 0, 6]
+#       - [7, 7, 0, 4]
+#       - [7, 5, 0, 4]
+#       - [6, 6, 0, 2]
+#       - [8, 6, 0, 6]
 
-# unit facing
-# 6 7 0
-# 5   1
-# 4 3 2	  
+#       - [2, 3, 0, 4]
+#       - [2, 1, 0, 4]
+#       - [1, 2, 0, 2]
+#       - [3, 2, 0, 6]
 
 # unit facing
 # 6 7 0
 # 5   1
-# 4 3 2	 
+# 4 3 2
+
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
 
 ############################
 ##### RECON SATELLITES #####
@@ -1116,31 +1116,31 @@ crafts:
 #### TIER III #####
 ##################
 
-#  - type: STR_BASTION
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_RECON_SATELLITE, STR_TIER_3]
-    sprite: 120
-    fuelMax: 1500
-    damageMax: 20
-    speedMax: 20
-    accel: 1
-    weaponTypes:
-      - [0, 1]
-      - [0, 1]
-      - 5
-#Gatling/Revolver Cannon
-#AUX Systems
-    weaponStrings:
-      - STR_CRAFT_ALL_CANNONS_ONE
-      - STR_CRAFT_ALL_CANNONS_TWO
-      - STR_CRAFT_AUX_THREE
-    costBuy: 555000
-    costRent: 450000
-    refuelRate: 75
-    radarRange: 1550
-    radarChance: 30
-    transferTime: 96
-    score: 250
-    listOrder: 150
+# #  - type: STR_BASTION
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_RECON_SATELLITE, STR_TIER_3]
+#     sprite: 120
+#     fuelMax: 1500
+#     damageMax: 20
+#     speedMax: 20
+#     accel: 1
+#     weaponTypes:
+#       - [0, 1]
+#       - [0, 1]
+#       - 5
+# #Gatling/Revolver Cannon
+# #AUX Systems
+#     weaponStrings:
+#       - STR_CRAFT_ALL_CANNONS_ONE
+#       - STR_CRAFT_ALL_CANNONS_TWO
+#       - STR_CRAFT_AUX_THREE
+#     costBuy: 555000
+#     costRent: 450000
+#     refuelRate: 75
+#     radarRange: 1550
+#     radarChance: 30
+#     transferTime: 96
+#     score: 250
+#     listOrder: 150
 
 ################################
 ####### VANILLA CRAFTS ########
@@ -1194,7 +1194,7 @@ craftWeapons:
 # weaponType 2 = Light Missile (IR Guidance, short range)
 # weaponType 3 = Heavy Missile (Radar Guidance, long range)
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
-# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc) 
+# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc)
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
 
 ##################################
@@ -1220,6 +1220,7 @@ craftWeapons:
     clip: STR_SIDEWINDER_MISSILES
     projectileType: 0
     projectileSpeed: 8
+
   - type: STR_ATOLL
     categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_LIGHT_MISSILE, STR_TIER_1]
     weaponType: 2
@@ -1236,6 +1237,7 @@ craftWeapons:
     clip: STR_ATOLL_MISSILES
     projectileType: 0
     projectileSpeed: 8
+
   - type: STR_RED_TOP
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_LIGHT_MISSILE, STR_TIER_1]
     weaponType: 2
@@ -1275,40 +1277,40 @@ craftWeapons:
 ####################
 #### TIER III #####
 ##################
-#  - type: STR_LONGSWORD_FUSION_MISSILE
-    weaponType: 2
-    sprite: 217
-    sound: 5
-    damage: 40
-    range: 30
-    accuracy: 50
-    reloadCautious: 64
-    reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 2
-    launcher: STR_SIDEWINDER_LAUNCHER
-    clip: STR_SIDEWINDER_MISSILES
-    projectileType: 0
-    projectileSpeed: 8
+# #  - type: STR_LONGSWORD_FUSION_MISSILE
+#     weaponType: 2
+#     sprite: 217
+#     sound: 5
+#     damage: 40
+#     range: 30
+#     accuracy: 50
+#     reloadCautious: 64
+#     reloadStandard: 48
+#     reloadAggressive: 32
+#     ammoMax: 2
+#     launcher: STR_SIDEWINDER_LAUNCHER
+#     clip: STR_SIDEWINDER_MISSILES
+#     projectileType: 0
+#     projectileSpeed: 8
 
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_EXCALIBUR_LIGHT_MISSILE
-    weaponType: 2
-    sprite: 224
-    sound: 5
-    damage: 40
-    range: 30
-    accuracy: 50
-    reloadCautious: 64
-    reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 2
-    launcher: STR_SIDEWINDER_LAUNCHER
-    clip: STR_SIDEWINDER_MISSILES
-    projectileType: 0
-    projectileSpeed: 8
+# #  - type: STR_EXCALIBUR_LIGHT_MISSILE
+#     weaponType: 2
+#     sprite: 224
+#     sound: 5
+#     damage: 40
+#     range: 30
+#     accuracy: 50
+#     reloadCautious: 64
+#     reloadStandard: 48
+#     reloadAggressive: 32
+#     ammoMax: 2
+#     launcher: STR_SIDEWINDER_LAUNCHER
+#     clip: STR_SIDEWINDER_MISSILES
+#     projectileType: 0
+#     projectileSpeed: 8
 
 
 ##################################
@@ -1334,6 +1336,7 @@ craftWeapons:
     clip: STR_SPARROW_MISSILES
     projectileType: 1
     projectileSpeed: 8
+
   - type: STR_ACRID
     categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_HEAVY_MISSILE, STR_TIER_1]
     weaponType: 3
@@ -1350,6 +1353,7 @@ craftWeapons:
     clip: STR_ACRID_MISSILES
     projectileType: 1
     projectileSpeed: 8
+
   - type: STR_MATRA
     weaponType: 3
     sprite: 204
@@ -1388,40 +1392,40 @@ craftWeapons:
 ####################
 #### TIER III #####
 ##################
-#  - type: STR_KATANA
-    weaponType: 3
-    sprite: 218
-    sound: 5
-    damage: 70
-    range: 50
-    accuracy: 39
-    reloadCautious: 96
-    reloadStandard: 72
-    reloadAggressive: 48
-    ammoMax: 2
-    launcher: STR_ACRID_LAUNCHER
-    clip: STR_ACRID_MISSILES
-    projectileType: 1
-    projectileSpeed: 8
+# #  - type: STR_KATANA
+#     weaponType: 3
+#     sprite: 218
+#     sound: 5
+#     damage: 70
+#     range: 50
+#     accuracy: 39
+#     reloadCautious: 96
+#     reloadStandard: 72
+#     reloadAggressive: 48
+#     ammoMax: 2
+#     launcher: STR_ACRID_LAUNCHER
+#     clip: STR_ACRID_MISSILES
+#     projectileType: 1
+#     projectileSpeed: 8
 
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_MJOLNIR
-    weaponType: 3
-    sprite: 225
-    sound: 5
-    damage: 70
-    range: 50
-    accuracy: 39
-    reloadCautious: 96
-    reloadStandard: 72
-    reloadAggressive: 48
-    ammoMax: 2
-    launcher: STR_ACRID_LAUNCHER
-    clip: STR_ACRID_MISSILES
-    projectileType: 1
-    projectileSpeed: 8
+# #  - type: STR_MJOLNIR
+#     weaponType: 3
+#     sprite: 225
+#     sound: 5
+#     damage: 70
+#     range: 50
+#     accuracy: 39
+#     reloadCautious: 96
+#     reloadStandard: 72
+#     reloadAggressive: 48
+#     ammoMax: 2
+#     launcher: STR_ACRID_LAUNCHER
+#     clip: STR_ACRID_MISSILES
+#     projectileType: 1
+#     projectileSpeed: 8
 
 ########################################
 #### AIRCRAFT SUPER HEAVY MISSILES #####
@@ -1469,40 +1473,40 @@ craftWeapons:
 ####################
 #### TIER III #####
 ##################
-#  - type: STR_KONDO
-    weaponType: 4
-    sprite: 219
-    sound: 5
-    damage: 500
-    range: 20
-    accuracy: 60
-    reloadCautious: 64
-    reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 1
-    launcher: STR_FALCON_LAUNCHER
-    clip: STR_FALCON_MISSILES
-    projectileType: 3
-    projectileSpeed: 5
+# #  - type: STR_KONDO
+#     weaponType: 4
+#     sprite: 219
+#     sound: 5
+#     damage: 500
+#     range: 20
+#     accuracy: 60
+#     reloadCautious: 64
+#     reloadStandard: 48
+#     reloadAggressive: 32
+#     ammoMax: 1
+#     launcher: STR_FALCON_LAUNCHER
+#     clip: STR_FALCON_MISSILES
+#     projectileType: 3
+#     projectileSpeed: 5
 
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_KONDOR
-    weaponType: 4
-    sprite: 226
-    sound: 5
-    damage: 500
-    range: 20
-    accuracy: 60
-    reloadCautious: 64
-    reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 1
-    launcher: STR_FALCON_LAUNCHER
-    clip: STR_FALCON_MISSILES
-    projectileType: 3
-    projectileSpeed: 5
+# #  - type: STR_KONDOR
+#     weaponType: 4
+#     sprite: 226
+#     sound: 5
+#     damage: 500
+#     range: 20
+#     accuracy: 60
+#     reloadCautious: 64
+#     reloadStandard: 48
+#     reloadAggressive: 32
+#     ammoMax: 1
+#     launcher: STR_FALCON_LAUNCHER
+#     clip: STR_FALCON_MISSILES
+#     projectileType: 3
+#     projectileSpeed: 5
 
 ##################################
 #### AIRCRAFT GATLING CANNONS ####
@@ -1570,22 +1574,22 @@ craftWeapons:
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_ZEUS
-    weaponType: 0
-    sprite: 227
-    sound: 4
-    damage: 20
-    range: 10
-    accuracy: 15
-    reloadCautious: 4
-    reloadStandard: 4
-    reloadAggressive: 3
-    ammoMax: 200
-    rearmRate: 200
-    launcher: STR_VULCAN_CANNON
-    clip: STR_VULCAN_CANNON_ROUNDS_X50
-    projectileType: 2
-    projectileSpeed: 8
+# #  - type: STR_ZEUS
+#     weaponType: 0
+#     sprite: 227
+#     sound: 4
+#     damage: 20
+#     range: 10
+#     accuracy: 15
+#     reloadCautious: 4
+#     reloadStandard: 4
+#     reloadAggressive: 3
+#     ammoMax: 200
+#     rearmRate: 200
+#     launcher: STR_VULCAN_CANNON
+#     clip: STR_VULCAN_CANNON_ROUNDS_X50
+#     projectileType: 2
+#     projectileSpeed: 8
 
 ##################################
 ### AIRCRAFT REVOLVER CANNONS ####
@@ -1690,21 +1694,21 @@ craftWeapons:
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_VOSTOK_PLASMA_CANNON
-    sprite: 228
-    sound: 9
-    damage: 140
-    range: 52
-    accuracy: 50
-    reloadCautious: 24
-    reloadStandard: 24
-    reloadAggressive: 24
-    launcher: STR_PLASMA_BEAM
-    projectileType: 5
-    weaponType: 1
-    ammoMax: 50
-    rearmRate: 10
-    clip: STR_ELERIUM_115
+# #  - type: STR_VOSTOK_PLASMA_CANNON
+#     sprite: 228
+#     sound: 9
+#     damage: 140
+#     range: 52
+#     accuracy: 50
+#     reloadCautious: 24
+#     reloadStandard: 24
+#     reloadAggressive: 24
+#     launcher: STR_PLASMA_BEAM
+#     projectileType: 5
+#     weaponType: 1
+#     ammoMax: 50
+#     rearmRate: 10
+#     clip: STR_ELERIUM_115
 
 #  - type: STR_TLALOC_GAUSS_CANNON_UC
 #    weaponType: 1
@@ -1821,23 +1825,23 @@ craftWeapons:
 #    projectileSpeed: 0
 #    stats:
 #      avoidBonus: 20
-#  - type: STR_ALLOY_CRAFT_AIRFRAME_UC
-    weaponType: 5
-    sprite: 236
-    sound: 0
-    damage: 0
-    range: 0
-    accuracy: 0
-    reloadCautious: 0
-    reloadStandard: 0
-    reloadAggressive: 0
-    ammoMax: 0
-    rearmRate: 0
-    launcher: STR_ALLOY_CRAFT_ARMOR
-    projectileType: 0
-    projectileSpeed: 0
-    stats:
-      damageMax: 150
+# #  - type: STR_ALLOY_CRAFT_AIRFRAME_UC
+#     weaponType: 5
+#     sprite: 236
+#     sound: 0
+#     damage: 0
+#     range: 0
+#     accuracy: 0
+#     reloadCautious: 0
+#     reloadStandard: 0
+#     reloadAggressive: 0
+#     ammoMax: 0
+#     rearmRate: 0
+#     launcher: STR_ALLOY_CRAFT_ARMOR
+#     projectileType: 0
+#     projectileSpeed: 0
+#     stats:
+#       damageMax: 150
 #  - type: STR_SHIELD_GENERATOR_UC
 #    weaponType: 5
 #    sprite: 237
@@ -1892,94 +1896,94 @@ craftWeapons:
 #    stats:
 #      damage: 100
 #      speedMax: 250
-#  - type: STR_ENHANCED_FUEL_TANK_UC
-    weaponType: 5
-    sprite: 231
-    sound: 0
-    damage: 0
-    range: 0
-    accuracy: 0
-    reloadCautious: 0
-    reloadStandard: 0
-    reloadAggressive: 0
-    ammoMax: 0
-    rearmRate: 0
-    launcher: STR_FUEL_TANK
-    projectileType: 0
-    projectileSpeed: 0
-    stats:
-      fuelMax: 150
-      accel: -1
-      avoidBonus: -5
-#  - type: STR_TARGETER_UC
-#    weaponType: 5
-#    sprite: 56
-    sound: 0
-    damage: 0
-    range: 0
-    accuracy: 0
-    reloadCautious: 0
-    reloadStandard: 0
-    reloadAggressive: 0
-    ammoMax: 0
-    rearmRate: 0
-    launcher: STR_TARGETER
-    projectileType: 0
-    projectileSpeed: 0
-    stats:
-      hitBonus: 10
-      powerBonus: 10
-#  - type: STR_RADAR_EXTENSION_UC
-    weaponType: 5
-    sprite: 57
-    sound: 0
-    damage: 0
-    range: 0
-    accuracy: 0
-    reloadCautious: 0
-    reloadStandard: 0
-    reloadAggressive: 0
-    ammoMax: 0
-    rearmRate: 0
-    launcher: STR_RADAR_EXTENSION
-    projectileType: 0
-    projectileSpeed: 0
-    stats:
-      radarRange: 300
-#  - type: STR_RADAR_RES_PROCESSOR_UC
-    weaponType: 6
-    sprite: 58
-    sound: 0
-    damage: 0
-    range: 0
-    accuracy: 0
-    reloadCautious: 0
-    reloadStandard: 0
-    reloadAggressive: 0
-    ammoMax: 0
-    rearmRate: 0
-    launcher: STR_RADAR_RES_PROCESSOR
-    projectileType: 0
-    projectileSpeed: 0
-    stats:
-      radarChance: 20
-#  - type: STR_FUEL_TANK_UC
-    weaponType: 5
-    sprite: 59
-    sound: 0
-    damage: 0
-    range: 0
-    accuracy: 0
-    reloadCautious: 0
-    reloadStandard: 0
-    reloadAggressive: 0
-    ammoMax: 0
-    rearmRate: 0
-    launcher: STR_FUEL_TANK
-    projectileType: 0
-    projectileSpeed: 0
-    stats:
-      fuelMax: 50
+# #  - type: STR_ENHANCED_FUEL_TANK_UC
+#     weaponType: 5
+#     sprite: 231
+#     sound: 0
+#     damage: 0
+#     range: 0
+#     accuracy: 0
+#     reloadCautious: 0
+#     reloadStandard: 0
+#     reloadAggressive: 0
+#     ammoMax: 0
+#     rearmRate: 0
+#     launcher: STR_FUEL_TANK
+#     projectileType: 0
+#     projectileSpeed: 0
+#     stats:
+#       fuelMax: 150
+#       accel: -1
+#       avoidBonus: -5
+# #  - type: STR_TARGETER_UC
+# #    weaponType: 5
+# #    sprite: 56
+#     sound: 0
+#     damage: 0
+#     range: 0
+#     accuracy: 0
+#     reloadCautious: 0
+#     reloadStandard: 0
+#     reloadAggressive: 0
+#     ammoMax: 0
+#     rearmRate: 0
+#     launcher: STR_TARGETER
+#     projectileType: 0
+#     projectileSpeed: 0
+#     stats:
+#       hitBonus: 10
+#       powerBonus: 10
+# #  - type: STR_RADAR_EXTENSION_UC
+#     weaponType: 5
+#     sprite: 57
+#     sound: 0
+#     damage: 0
+#     range: 0
+#     accuracy: 0
+#     reloadCautious: 0
+#     reloadStandard: 0
+#     reloadAggressive: 0
+#     ammoMax: 0
+#     rearmRate: 0
+#     launcher: STR_RADAR_EXTENSION
+#     projectileType: 0
+#     projectileSpeed: 0
+#     stats:
+#       radarRange: 300
+# #  - type: STR_RADAR_RES_PROCESSOR_UC
+#     weaponType: 6
+#     sprite: 58
+#     sound: 0
+#     damage: 0
+#     range: 0
+#     accuracy: 0
+#     reloadCautious: 0
+#     reloadStandard: 0
+#     reloadAggressive: 0
+#     ammoMax: 0
+#     rearmRate: 0
+#     launcher: STR_RADAR_RES_PROCESSOR
+#     projectileType: 0
+#     projectileSpeed: 0
+#     stats:
+#       radarChance: 20
+# #  - type: STR_FUEL_TANK_UC
+#     weaponType: 5
+#     sprite: 59
+#     sound: 0
+#     damage: 0
+#     range: 0
+#     accuracy: 0
+#     reloadCautious: 0
+#     reloadStandard: 0
+#     reloadAggressive: 0
+#     ammoMax: 0
+#     rearmRate: 0
+#     launcher: STR_FUEL_TANK
+#     projectileType: 0
+#     projectileSpeed: 0
+#     stats:
+#       fuelMax: 50
 
 ######################################
 #### AIRCRAFT AIR TO AIR ROCKETS #####
@@ -2188,7 +2192,7 @@ items:
     size: 0.1
     costBuy: 2080
     costSell: 1600
-    transferTime: 48 
+    transferTime: 48
     clipSize: 50
   - type: STR_FALCON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
@@ -3050,7 +3054,7 @@ ufopaedia:
   - id: STR_ALLOY_MANUFACTURING
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALLOY_MANUFACTURING
     listOrder: 152
     text: STR_ALLOY_MANUFACTURING_UFOPEDIA
@@ -3058,7 +3062,7 @@ ufopaedia:
   - id: STR_ALLOY_AEROSPACE
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALLOY_AEROSPACE
     text: STR_ALLOY_AEROSPACE_UFOPEDIA
     listOrder: 153
@@ -3450,8 +3454,6 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: TARGETING_POD
     text: STR_TARGETING_POD_UFOPEDIA
-    requires:
-      - STR_IMPROVED_CRAFT_ACCURACY
     listOrder: 545
   - id: STR_ALLOY_CRAFT_ARMOR_UC
     type_id: 2
@@ -3466,13 +3468,13 @@ ufopaedia:
 
 extraSprites:
 # "Crafts : The corresponding extrasprite file id for BASEBITS.PCK is sprite+33 INTICON.PCK contains a minimized icon id=sprite the file id for the dogfight image is sprite+11"
-# INTICON Minimized Id = Sprite ; 
-# INTICON DogFight Id = Sprite+11 ; 
+# INTICON Minimized Id = Sprite ;
+# INTICON DogFight Id = Sprite+11 ;
 # BASEBITS Id = Sprite+33
-#########################################  
-# Craft Weapons: file id for 
+#########################################
+# Craft Weapons: file id for
 # INTICON.PCK is sprite+5
-# BASEBITS.PCK is sprite+48 
+# BASEBITS.PCK is sprite+48
 # Aircrafts
   - type: BASEBITS.PCK
     files:
@@ -3558,7 +3560,7 @@ extraSprites:
       878: Resources/Aircraft/Hind_dogfight.png
       879: Resources/Aircraft/Atalaya_dogfight.png
 #      880: Resources/Aircraft/Galaxy_dogfight.png
- 
+
       881: Resources/Aircraft/Crusader_dogfight.png
       882: Resources/Aircraft/Saracen_dogfight.png
 #      203: Resources/Aircraft/Sabre_dogfight.png
@@ -4105,11 +4107,11 @@ extraStrings:
       STR_TUNNAN_UFOPEDIA: "J29 TUNNAN - OLD-FASHIONED MODEL OF AIRPLANE OF SWEDISH ORIGIN, DESPITE ITS AGE IS VERY MANEUVERABLE, TOUGH AND VERY APPRECIATED BY ITS PILOTS. FAMOUS FOR HIS ACTIONS IN THE CONGO AND THE SWEDISH UFO INICIDENT. TUNNAN MEANS 'BARREL'."
 
       STR_HERCULES: "HERCULES"
-      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS.TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION." 
+      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS.TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION."
       STR_HUEY: "HUEY"
       STR_HUEY_UFOPEDIA: "UH-1 HUEY - LIGHT TRANSPORT HELICOPTER, EMPLOYED TO INSERT AND EVACUATE TROOPS QUICKLY IN THE BATTLEFIELD. IT HAS A SHORT RANGE, OUR TROOPS MUST ARE TAKEN ON C-130s TO MISSION SITES BEFORE THE DEPLOYMENT. ARMED WITH WEAPON HARDPOINTS TO PROVIDE CLOSE SUPPORT AND ENGAGE TARGETS"
       STR_PHANTOM: "PHANTOM"
-      STR_PHANTOM_UFOPEDIA: "F-4 PHANTOM II - STANDARD AIR SUPERIORITY FIGHTER PLANE OF UNEXCOM, IT'S A WIDELY SPREAD AIRCRAFT IN THE NATO AIR FORCES. MODIFIED TO INCORPORATE LARGE INTERNAL FUEL TANKS TO INCREASE COMBAT RANGE." 
+      STR_PHANTOM_UFOPEDIA: "F-4 PHANTOM II - STANDARD AIR SUPERIORITY FIGHTER PLANE OF UNEXCOM, IT'S A WIDELY SPREAD AIRCRAFT IN THE NATO AIR FORCES. MODIFIED TO INCORPORATE LARGE INTERNAL FUEL TANKS TO INCREASE COMBAT RANGE."
       STR_THUNDERCHIEF: "THUNDERCHIEF"
       STR_THUNDERCHIEF_UFOPEDIA: "F-105 THUNDERCHIEF - SUPERSONIC STRIKE BOMBER, HAS MORE BOMB LOAD THAN SOME BOMBERS OF WWII. IT'S EMPLOYED BY UNEXCOM TO PROVIDE HEAVY AERIAL SUPPORT WHEN ENGAGING UFOs."
 
@@ -4127,7 +4129,7 @@ extraStrings:
       STR_VULCAN_CANNON_ROUNDS_X50: "M61 Vulcan Cannon Rounds(x50)"
 
       STR_FOXBAT: "MiG-25"
-      STR_FOXBAT_UFOPEDIA: "MiG-25 FOXBAT - SUPERSONIC TWIN-MOTOR INTERCEPTOR AND RECON CRAFT, IT'S AMONGST THE FASTEST MILITARY AIRCRAFTS IN THE WORLD. FEATURES A VERY POWERFUL RADAR, IMPOSSIBLE TO BE INTERFERED WITH ANY TYPE OF COUNTERMEASURES." 
+      STR_FOXBAT_UFOPEDIA: "MiG-25 FOXBAT - SUPERSONIC TWIN-MOTOR INTERCEPTOR AND RECON CRAFT, IT'S AMONGST THE FASTEST MILITARY AIRCRAFTS IN THE WORLD. FEATURES A VERY POWERFUL RADAR, IMPOSSIBLE TO BE INTERFERED WITH ANY TYPE OF COUNTERMEASURES."
       STR_FISHBED: "MiG-21"
       STR_FISHBED_UFOPEDIA: "MiG-21BIS FISHBED - SUPERSONIC LIGHTWEIGHT MULTIROLE FIGHTER, FAMOUS FOR BEING CHEAP AND EASY TO HANDLE, AS WELL AS THE MOST PRODUCED SUPERSONIC AIRCRAFT IN HISTORY. IT IS NOT PARTICULARLY FAST OR POWERFUL, BUT IT IS VERY MANEUVERABLE. OUR VERSION INCLUDES IMPROVED FUEL TANKS TO INCREASE COMBAT RADIUS."
       STR_BACKFIRE: "Tu-25M"
@@ -4234,16 +4236,6 @@ extraStrings:
 #      STR_VALKYRIE_UFOPEDIA:  "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA: "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA: ""X BY 100"
-      STR_LINNA: "LINNA"
-      STR_LINNA_UFOPEDIA: "BUILT IN COLLABORATION WITH OUR SCIENTISTS WITH NASA, ESRO AND THE SOVIET SPACE PROGRAM, IT USES EXPERIMENTAL OPTICAL AND SENSORS TO DETECT UFO's CHARACTERISTIC INFRARED SIGNATURES AND GRAVITY WAVES. 'LINNA' MEANS 'CASTLE' IN FINNISH."
-      STR_RAPIER: "RAPIER"
-      STR_RAPIER_UFOPEDIA: "XF-108 RAPIER - LONG-RANGE, HIGH-SPEED INTERCEPTOR AIRCRAFT DESIGNED BY NORTH AMERICAN AVIATION INTENDED TO DEFEND THE UNITED STATES FROM SUPERSONIC SOVIET STRATEGIC BOMBERS. MODIFIED WITH AN ALIEN ALLOY FRAME FOR BETTER PROTECTION AND ENHANCED INTERNAL FUEL TANK TO INCREASE COMBAT RANGE"
-      STR_VALKYRIE: "VALKYRIE"
-      STR_VALKYRIE_UFOPEDIA: "XB-70 VALKYRIE - VERY LONG RANGE, DEEP-PENETRATION STRATEGIC NUCLEAR BOMBER. MODIFIED TO INCORPORATE NEW ALIEN ALLOY AIRFRAME AND MODIFIED RADAR. IT'S NEW ENGINES ALLOWS TO INCREASE IT'S COMBAT PERFORMANCE AND REACH HIGHER SPEEDS. CAPABLE OF CARRY NUCLEAR WEAPONS."
-      STR_ATALAYA: "ATALAYA"
-      STR_ATALAYA_UFOPEDIA: "NEWEST IMPLEMENTATION OF ALIEN TECH ON HUMAN DESIGNS. HAS BETTER FUEL CELLS FOR MORE FLIGHT TIME, AS WELL AS IMPROVED RADARS AND SCANNERS FOR LONGER-RANGE DETECTION. INCORPORATES THE NEWEST AMERICAN AND SOVIET AEROSPACE TECH WITH THE LIGHT AND STRONG ALIEN ALLOYS. INCLUDES A SLOT FOR CANNONS, USED AS SELF-DEFENSE."
-      STR_HIND: "HIND"
-      STR_HIND_UFOPEDIA: "MI-24X HIND - ADVANCED SOVIET GUNSHIP MODEL, BUILT IN COLLABORATION WITH MIKHAIL MIL AND UNEXCOM. NICKNAMED 'FLYING TANK' FOR ITS FIRE POWER AND HARDNESS, SACRIFICES A LITTLE THE ABILITY TO TRANSPORT TROOPS FOR INCREASED ARMOR AND SPACE FOR FUEL."
       STR_CRUSADER: "CRUSADER"
       STR_CRUSADER_UFOPEDIA: "XF-38 CRUSADER - HYBRID INTERCEPTOR CREATED WITH STEALTH TECHNOLOGY, SPECIALLY DESIGNED FOR UFO COMBAT. ITS STEALTH TECHNOLOGY ALLOWS IT TO HAVE SOME ROOM TO MANOEUVRE WITHOUT BEING DETECTED, WHILE MAINTAINING ITS COMBAT CAPABILITY."
       STR_SARACEN: "SARACEN"

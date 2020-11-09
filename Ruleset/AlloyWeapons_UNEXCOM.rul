@@ -1,4 +1,4 @@
-#Close quarters: defined by default on 1 tile 
+#Close quarters: defined by default on 1 tile
 #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
@@ -21,11 +21,11 @@ items:
     bulletSpeed: 50
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_RIFLE_FL]
-      1: 
+      1:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_RIFLE_AP]
@@ -79,11 +79,11 @@ items:
     bulletSpeed: 50
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_RIFLE_FL]
-      1: 
+      1:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_RIFLE_AP]
@@ -186,11 +186,11 @@ items:
     fireSound: 153
     reloadSound: [179, 180, 181, 182]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_PISTOL_FL]
-      1: 
+      1:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_PISTOL_AP]
@@ -286,7 +286,7 @@ items:
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_AUTO_SHOTGUN_FL]
@@ -346,7 +346,7 @@ items:
     shotgunSpread: 60
     battleType: 2
     armor: 250
-  
+
   - type: STR_FLECHETTE_SHOTGUN
     requires:
       - STR_ALLOY_CLOSE
@@ -361,7 +361,7 @@ items:
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_SHOTGUN_FL]
@@ -418,7 +418,7 @@ items:
     shotgunSpread: 30
     battleType: 2
     armor: 250
-  
+
 
   - type: STR_FLECHETTE_GL
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY]
@@ -467,21 +467,21 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
-      toTile: 0.8
+      ToTile: 0.8
       ArmorEffectiveness: 1.5
-      toWound: 2.0
+      ToWound: 2.0
       RandomWound: true
       FixRadius: 3
     damageType: 3
     battleType: 2
     invWidth: 2
-    invHeight: 1    
+    invHeight: 1
     armor: 20
     clipSize: 9
     blastRadius: 3
     bulletSprite: 14
 
-    
+
   - type: STR_FLECHETTE_GRENADE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_LIGHT_EQUIPMENT, STR_EXPLOSIVES]
     requires:
@@ -495,16 +495,16 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
-      toTile: 0.8
+      ToTile: 0.8
       ArmorEffectiveness: 1.5
-      toWound: 2.0
+      ToWound: 2.0
       RandomWound: true
       FixRadius: 4
     power: 75
     damageType: 3
     battleType: 4
     blastRadius: 4
-    
+
   - type: STR_FLECHETTE_CANNON
     requires:
       - STR_ALLOY_HEAVY
@@ -520,9 +520,9 @@ items:
     bulletSpeed: 100
     reloadSound: [194, 195, 196]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_ALLOY_HEAVY_AP]
-      1: 
+      1:
         compatibleAmmo: [ STR_ALLOY_HEAVY_FL]
     confSnap:
       shots: 5
@@ -603,7 +603,6 @@ items:
       ToWound: 2.0
       RandomWound: false
     clipSize: 160
-    battleType: 2
     attraction: 8
 
   - type: STR_FLECHETTE_SNIPER
@@ -621,9 +620,9 @@ items:
     fireSound: 150
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_ALLOY_SNIPER_AP]
-      1: 
+      1:
         compatibleAmmo: [ STR_ALLOY_SNIPER_FL]
     confSnap:
       shots: 1
@@ -676,8 +675,8 @@ items:
     power: 75
     hitSound: 22
     damageType: 1
-    width: 2
-    height: 3
+    invWidth: 2
+    invHeight: 3
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
@@ -712,7 +711,6 @@ items:
       ToWound: 2.0
       RandomWound: false
     clipSize: 5
-    battleType: 2
     attraction: 8
 
 
@@ -744,7 +742,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 4
     space: 3
-    time: 300 
+    time: 300
     cost: 25500
     listOrder: 1101
   - name: STR_FLECHETTE_SHOTGUN
@@ -754,7 +752,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 3
     space: 4
-    time: 300 
+    time: 300
     cost: 25000
     listOrder: 1101
   - name: STR_FLECHETTE_AUTO_SHOTGUN
@@ -764,7 +762,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 4
     space: 3
-    time: 300 
+    time: 300
     cost: 25000
     listOrder: 1101
   - name: STR_FLECHETTE_SNIPER
@@ -774,7 +772,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 5
     space: 5
-    time: 900 
+    time: 900
     cost: 35000
     listOrder: 1101
   - name: STR_FLECHETTE_CANNON
@@ -784,7 +782,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 6
     space: 6
-    time: 900 
+    time: 900
     cost: 40000
     listOrder: 1101
   - name: STR_FLECHETTE_GL
@@ -794,18 +792,18 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 4
     space: 4
-    time: 400 
+    time: 400
     cost: 30000
-    listOrder: 1101	
+    listOrder: 1101
   - name: STR_FLECHETTE_GRENADE
     category: STR_WEAPON
     requires:
       - STR_ALLOY_EXPLOSIVE
     space: 2
-    time: 40 
+    time: 40
     cost: 5000
-    listOrder: 1103	
-    
+    listOrder: 1103
+
   - name: STR_ALLOY_PISTOL_AP
     category: STR_AMMUNITION
     requires:
@@ -885,7 +883,7 @@ manufacture:
     space: 1
     time: 10 #600
     cost: 2500
-    listOrder: 
+    listOrder: 1102
   - name: STR_ALLOY_SNIPER_FL
     category: STR_AMMUNITION
     requires:
@@ -1054,21 +1052,21 @@ extraSprites:
 
   - type: FLOOROB.PCK
     files:
-      1202: Resources/AlloyWeapons/Floorob_G_Auto_Shotgun.png 
-      1203: Resources/AlloyWeapons/Floorob_G_Carbine.png 
-      1204: Resources/AlloyWeapons/Floorob_G_Grenade.png 
-      1205: Resources/AlloyWeapons/Floorob_G_Grenade_launcher.png 
-      1206: Resources/AlloyWeapons/Floorob_G_Heavy.png 
-      1207: Resources/AlloyWeapons/Floorob_G_Heavy_Clip.png 
-      1208: Resources/AlloyWeapons/Floorob_G_Pistol.png 
-      1209: Resources/AlloyWeapons/Floorob_G_Pistol_Clip.png 
-      1210: Resources/AlloyWeapons/Floorob_G_Rifle.png 
-      1211: Resources/AlloyWeapons/Floorob_G_Rifle_Clip.png 
-      1212: Resources/AlloyWeapons/Floorob_G_Shotgun.png 
-      1213: Resources/AlloyWeapons/Floorob_G_Shotgun_Clip.png 
-      1214: Resources/AlloyWeapons/Floorob_G_Sniper.png 
+      1202: Resources/AlloyWeapons/Floorob_G_Auto_Shotgun.png
+      1203: Resources/AlloyWeapons/Floorob_G_Carbine.png
+      1204: Resources/AlloyWeapons/Floorob_G_Grenade.png
+      1205: Resources/AlloyWeapons/Floorob_G_Grenade_launcher.png
+      1206: Resources/AlloyWeapons/Floorob_G_Heavy.png
+      1207: Resources/AlloyWeapons/Floorob_G_Heavy_Clip.png
+      1208: Resources/AlloyWeapons/Floorob_G_Pistol.png
+      1209: Resources/AlloyWeapons/Floorob_G_Pistol_Clip.png
+      1210: Resources/AlloyWeapons/Floorob_G_Rifle.png
+      1211: Resources/AlloyWeapons/Floorob_G_Rifle_Clip.png
+      1212: Resources/AlloyWeapons/Floorob_G_Shotgun.png
+      1213: Resources/AlloyWeapons/Floorob_G_Shotgun_Clip.png
+      1214: Resources/AlloyWeapons/Floorob_G_Sniper.png
 
-      
+
 
   - type: HANDOB.PCK
     width: 256
@@ -1086,7 +1084,7 @@ extraSprites:
       2956: Resources/AlloyWeapons/Handob_G_Shotgun.png
       2964: Resources/AlloyWeapons/Handob_G_Sniper.png
 
-  
+
 extraStrings:
   - type: en-US
     strings:
@@ -1121,7 +1119,6 @@ extraStrings:
       STR_AP_SHOT: "Aimed Shot, TC"
       STR_FL_SHOT: "Aimed Shot, Flechette"
       STR_AP_SNAP: "Snap Shot, TC"
-      STR_FLECHETTE_RIFLE_UFOPEDIA: "Our new rifle uses a modern handle to provide extra stability to the shooter. Its construction in Alien Alloys makes it very lightweight, It is a stable weapon that will allow any infantryman who uses it to feel confortable and confident in battle. This weapon will never let you down."
       STR_FLECHETTE_CARBINE_UFOPEDIA: "This new carbine design bears many similarities to our alloy rifle design. The design exchanges accuracy with rate of fire and weight, making the carbine suited for closer ranged engagements than the rifle."
       STR_FLECHETTE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored car crews and artillery. It is extremely lightweight and versatile, being able to fire either bursts of flechette rounds or armor-penetrating TC rounds."
       STR_FLECHETTE_SHOTGUN_UFOPEDIA: "Our team of gunsmiths created this interestin design. Initially, it gives the impression of being some kind of semi-automatic rifle, but in reality it is a shotgun with an exceptionally long barrel. It fires flechette ammunition stored in a cylindrical magazine. Its greatest advantage is its long range."
@@ -1133,11 +1130,11 @@ extraStrings:
 #############################
       STR_ALLOY_RIFLE_AP_UFOPEDIA: "Based on the .280 British (also known as 7mm NATO) experimental cartridge, it has proven to be reliable and can be adapted to our requirements with relative ease. This cartridge contains depleted uranium core and Alien Alloys coating, facilitating target penetration."
       STR_ALLOY_RIFLE_FL_UFOPEDIA: "This intermediate cartridge has the right size to be adapted to shoot Flechette bullets. Compared to the original .280 British cartridge (recognized for its ease of use), our 7mm FL bullets are light enough to be transported in large quantities. It is recommended to avoid their use against armored enemies, TCe to the poor penetration of AA Flechettes."
-      STR_ALLOY_PISTOL_AP_UFOPEDIA: "Using a modified version of the .45 ACP bullets we have been able to obtain satisfactory results in the armor penetration tests. Having the size of a .45 ACP bullet, but with a depleted uranium core, this cartridge has the stopping power of a conventional battle rifle, but with the size of a pistol bullet. " 
+      STR_ALLOY_PISTOL_AP_UFOPEDIA: "Using a modified version of the .45 ACP bullets we have been able to obtain satisfactory results in the armor penetration tests. Having the size of a .45 ACP bullet, but with a depleted uranium core, this cartridge has the stopping power of a conventional battle rifle, but with the size of a pistol bullet. "
       STR_ALLOY_PISTOL_FL_UFOPEDIA: "Using .45 ACP bullets as a base, our gunsmith engineers have created a hollow cartridge containing Flechettes made with AA. In addition to the bullet's own stopping power, the interior of the bullet contains an unspecified amount of Alien Alloys that fragment upon impact with a soft object... this is in addition to its very light weight."
       STR_ALLOY_SHOTGUN_FL_UFOPEDIA: "Designed to provide containment fire at greater distances than those offered by other shotguns, they are the perfect complement to the XM12 shotgun. Their range is quite limited, but this (far from being a problem) is quite useful to create a very concentrated cloud of fire over medium distances. "
       STR_ALLOY_AUTO_SHOTGUN_FL_UFOPEDIA: "The pellets of this shotgun were specially optimized to cover a wide surface, saturating the area with Flechettes. Its power at short distance is unrivaled, but it is completely useless at longer distances. Each .12 gauge cartridge used by the XM120 shotgun contains 10 Alien Alloy Flechettes"
-      STR_ALLOY_HEAVY_AP_UFOPEDIA: "Powerful 20mm caliber ammunition, contains a core of depleted uranium and tungsten It is optimized for tearing down heavy armor, the high firepower greatly boosts in this function. Many soldiers are surprised to see such a large yet lightweight projectile." 
+      STR_ALLOY_HEAVY_AP_UFOPEDIA: "Powerful 20mm caliber ammunition, contains a core of depleted uranium and tungsten It is optimized for tearing down heavy armor, the high firepower greatly boosts in this function. Many soldiers are surprised to see such a large yet lightweight projectile."
       STR_ALLOY_HEAVY_FL_UFOPEDIA: "A special high-capacity magazine, the Flechettes use a 20mm caliber cap just like the AP depleted uranium bullets, except that they are considerably lighter. Their ability to cause injury is important and the enormous capacity of the magazine allows for long suppression fire on the enemy."
       STR_ALLOY_SNIPER_AP_UFOPEDIA: "A highly specialized projectile is basically a javelin of depleted uranium, placed inside a bullet made of AA. Upon penetrating a target, the TC javelin is propelled by the kinetic energy of the projectile, making a clean hole in various types of armor. Designed to wreak hard targets from far away."
       STR_ALLOY_SNIPER_FL_UFOPEDIA: "This experimental projectile contains an oversized Alien Alloys Flechette, which upon impact with the skin of a soft target, breaks instantly and can cause critical injuries that are very difficult to patch up. However, it will collapse without much damage if it hits a hard enemy. It is specially modified for long distance shooting."

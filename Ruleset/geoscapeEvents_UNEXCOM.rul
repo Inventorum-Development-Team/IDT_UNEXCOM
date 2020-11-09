@@ -5,7 +5,7 @@ eventScripts:
       - STR_VIETNAM_WAR_ENDS_EVENT
       - STR_FALL_OF_SAIGON_EVENT
       - STR_RED_MOON_EVENT
-      - STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT      
+      - STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT
     firstMonth: 0
     lastMonth: 20
     executionOdds: 100
@@ -148,7 +148,7 @@ events:
     points: 1000
     timer: 600
     timerRandom: 43500
-   
+
   - name: STR_WORLD_AT_WAR_EVENT
     description: STR_WORLD_AT_WAR_EVENT_DESCRIPTION
     background: WORLD_AT_WAR_EVENT_BACKGROUND
@@ -262,7 +262,7 @@ events:
     description: STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION
     background: REINFORCEMENTS_EVENT_BACKGROUND
     points: 100
-    spawnedPersons: 3                    
+    spawnedPersons: 3
     spawnedPersonType: STR_SPECIAL_FORCES_SOLDIER
     everyItemList: [STR_SAWEDOFF_M79_THUMPER, STR_40MM_FRAG, STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_XM117_SHOTGUN, STR_5_56MM_NATO_RIFLE_X20, STR_12GAUGE_BUCKSHOT_X8, STR_XM117_M203, STR_5_56MM_NATO_RIFLE_X20, STR_40MM_FRAG, STR_COMBAT_KNIFE]
     timer: 600
@@ -272,7 +272,7 @@ events:
     description: STR_MERCENARY_EVENT_DESCRIPTION
     background: REINFORCEMENTS_EVENT_BACKGROUND
     points: 100
-    spawnedPersons: 4                    
+    spawnedPersons: 4
     spawnedPersonType: STR_MERCENARY
     everyItemList: [STR_MAT49, STR_9MM_PISTOL_X20, STR_M16A1_SCOPED, STR_5_56MM_NATO_RIFLE_X20, STR_FN_FSC_BAYONET, STR_5_56MM_NATO_RIFLE_X20, STR_COMBAT_KNIFE, STR_50_CAL_MAGNUM, STR_50_CAL_REVOLVER_AMMO_X6, STR_50_CAL_REVOLVER_AMMO_X6]
     timer: 600
@@ -420,7 +420,6 @@ extraStrings:
        STR_LEAKED_SECRET_FILES_EVENT: "Leaked Secret Files"
        STR_LEAKED_SECRET_FILES_EVENT_DESCRIPTION: "The intelligence services of the Council countries have indicated that one of their field agents managed to find the whereabouts of an important secret document that indicated possible connections of a government official in {0} a dissident terrorist cell, responsible for a recent attack. This government official is on the run and is being hunted by allied agents, to be placed under arrest on charges of treason. "
        STR_SPECIAL_FORCES_ARRIVAL_EVENT: "Special Forces volunteers arrived"
-       STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION: "A squad of Special Forces volunteers has just arrived at our main base. They have asked to bring their weapons with them, which we have allowed. Our troops are excited to have such highly trained soldiers to support our missions; we are confident they will be a key part of our war effort."    
+       STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION: "A squad of Special Forces volunteers has just arrived at our main base. They have asked to bring their weapons with them, which we have allowed. Our troops are excited to have such highly trained soldiers to support our missions; we are confident they will be a key part of our war effort."
        STR_MERCENARY_ARRIVAL_EVENT: "PMC volunteers arrived"
-       STR_MERCENARY_ARRIVAL_EVENT_DESCRIPTION: "A group of volunteers belonging to a PMC has just arrived at our HQ to support our troops. Although it was not necessary, they have brought their personal weapons with them. With the support of these experienced mercenaries, we can improve our combat capabilities considerably."      
-       
+       STR_MERCENARY_ARRIVAL_EVENT_DESCRIPTION: "A group of volunteers belonging to a PMC has just arrived at our HQ to support our troops. Although it was not necessary, they have brought their personal weapons with them. With the support of these experienced mercenaries, we can improve our combat capabilities considerably."

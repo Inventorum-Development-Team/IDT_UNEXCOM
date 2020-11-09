@@ -4,7 +4,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
-    terrains: &AlliedOperationTerrains 
+    terrains: &AlliedOperationTerrains
       - MOUNTGRASS
       - PLAINSGRASS
       - FOREST
@@ -98,7 +98,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
-    terrains: *AlliedOperationTerrains 
+    terrains: *AlliedOperationTerrains
     civiliansByType: &EuropeanTroopers
       STR_EUROPEAN_RIFLEMAN: 5
       STR_EUROPEAN_ASSAULT: 5
@@ -118,7 +118,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
-    terrains: *AlliedOperationTerrains 
+    terrains: *AlliedOperationTerrains
     civiliansByType: &SovietTroopers
       STR_SOVIET_RIFLEMAN: 5
       STR_SOVIET_ASSAULT: 5
@@ -139,7 +139,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
-    terrains: &AlliedCityDefenseTerrains 
+    terrains: &AlliedCityDefenseTerrains
       - CULTA
       - RURAL
       - URBAN
@@ -211,78 +211,77 @@ extraStrings:
       STR_SOVIET_OPERATIONS_MISSION: Warsaw Pact Combat Operation
       STR_SOVIET_OPERATIONS_ALERT: Warsaw Pact Operation Ongoing
       STR_SOVIET_OPERATIONS_MISSION_DESCRIPTION: The Kremlin has ordered an attack on alien enemies on the ground. The Security Council requests our support to reinforce Soviet positions in the area.
-      STR_SOVIET_OPERATIONS_MISSION_BRIEFING: The Warsaw Pact soldiers are facing a larger enemy than they expected. Casualties are high, but their morale is still high. Our arrival will be decisive in changing the course of the battle, your orders are to wiping out every invader in front of them. 
+      STR_SOVIET_OPERATIONS_MISSION_BRIEFING: The Warsaw Pact soldiers are facing a larger enemy than they expected. Casualties are high, but their morale is still high. Our arrival will be decisive in changing the course of the battle, your orders are to wiping out every invader in front of them.
 
       STR_AMERICAN_CITY_DEFENSE: American City Defense
       STR_AMERICAN_CITY_DEFENSE_DESCRIPTION: National Guard units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
       STR_AMERICAN_CITY_DEFENSE_BRIEFING: Aliens have attacked an American city. National Guard units have mobilized to confront the enemy, but are in danger of being overrun. It is our job to help the US armed forces to protect the civilians in the area.
-      STR_ALLIED_OPERATION: Allied Operations
       STR_EUROPEAN_CITY_DEFENSE: NATO City Defense
       STR_EUROPEAN_CITY_DEFENSE_DESCRIPTION: National military units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
       STR_EUROPEAN_CITY_DEFENSE_BRIEFING: A city in a NATO country has been attacked by hostile forces. The Security Council has authorized the deployment of our forces to help contain the threat. Strong resistance is expected, try to help the European allies to protect as many civilians as possible.
       STR_SOVIET_CITY_DEFENSE: Warsaw Pact City Defense
       STR_SOVIET_CITY_DEFENSE_DESCRIPTION: National army units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
-      STR_SOVIET_CITY_DEFENSE_BRIEFING: A core population of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to liaise with Covenant troops in the area, to help contain the threat and evacuate the civilians. 
+      STR_SOVIET_CITY_DEFENSE_BRIEFING: A core population of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to liaise with Covenant troops in the area, to help contain the threat and evacuate the civilians.
 
 
 
 
 extraSprites:
-  - type: TERROR_SITE_ALERT_BACKGROUND 
+  - type: TERROR_SITE_ALERT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/TERROR_SITE_ALERT_BACKGROUND.png
-  - type: AMERICAN_OPERATIONS_MISSION_ALERT_BACKGROUND 
+  - type: AMERICAN_OPERATIONS_MISSION_ALERT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/AMERICAN_OPERATIONS_MISSION_ALERT_BACKGROUND.png
-  - type: AMERICAN_OPERATIONS_MISSION_BACKGROUND 
+  - type: AMERICAN_OPERATIONS_MISSION_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/AMERICAN_OPERATIONS_MISSION_BACKGROUND.png
-  - type: EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND 
+  - type: EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND.png
-  - type: EUROPEAN_OPERATIONS_MISSION_BACKGROUND 
+  - type: EUROPEAN_OPERATIONS_MISSION_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/EUROPEAN_OPERATIONS_MISSION_BACKGROUND.png
-  - type: SOVIET_OPERATIONS_MISSION_ALERT_BACKGROUND 
+  - type: SOVIET_OPERATIONS_MISSION_ALERT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/SOVIET_OPERATIONS_MISSION_ALERT_BACKGROUND.png
-  - type: SOVIET_OPERATIONS_MISSION_BACKGROUND 
+  - type: SOVIET_OPERATIONS_MISSION_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/SOVIET_OPERATIONS_MISSION_BACKGROUND.png
-  - type: AMERICAN_CITY_DEFENSE_BACKGROUND 
+  - type: AMERICAN_CITY_DEFENSE_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/AMERICAN_CITY_DEFENSE_BACKGROUND.png
-  - type: EUROPEAN_CITY_DEFENSE_BACKGROUND 
+  - type: EUROPEAN_CITY_DEFENSE_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/EUROPEAN_CITY_DEFENSE_BACKGROUND.png
-  - type: SOVIET_CITY_DEFENSE_BACKGROUND 
+  - type: SOVIET_CITY_DEFENSE_BACKGROUND
     singleImage: true
     width: 320
     height: 200
