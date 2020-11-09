@@ -1,0 +1,254 @@
+ufos:
+#scouts
+  - type: STR_SMALL_SCOUT
+    size: STR_VERY_SMALL
+    sprite: 0
+    damageMax: 50
+    speedMax: 2200
+    accel: 12
+    avoidBonus: 10
+    power: 15
+    range: 20
+    score: 50
+    reload: 10
+    breakOffTime: 200
+  - type: STR_MEDIUM_SCOUT
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 1600
+    accel: 9
+    power: 40
+    range: 30
+    score: 75
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 50
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    breakOffTime: 250
+    hunterKillerPercentage: 40
+  - type: STR_LARGE_SCOUT
+    size: STR_SMALL
+    sprite: 2
+    damageMax: 250
+    speedMax: 1400
+    accel: 9
+    power: 50
+    hitBonus: 10
+    range: 30
+    score: 125
+    reload: 15
+    shieldCapacity: 100
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    breakOffTime: 300
+    hunterKillerPercentage: 80
+    radarRange: 300
+    radarChance: 45
+    sightRange: 300
+#Fighters
+  - type: STR_SMALL_FIGHTER
+    size: STR_VERY_SMALL
+    damageMax: 150
+    speedMax: 200
+    accel: 6
+    power: 25
+    range: 30
+    score: 100
+    reload: 10
+    avoidBonus: 10
+    hunterKillerPercentage: 100
+    breakOffTime: 220
+    battlescapeTerrainData:
+      name: SMALL_FIGHTER
+      mapDataSets:
+        - BLANKS
+        - AVENGER
+        - LIGHTNIN
+        - U_WALL02
+        - UFO1
+        - UFOL83
+        - U_EXT02
+      mapBlocks:
+        - name: SMALL_FIGHTER
+          width: 10
+          length: 10
+  - type: STR_FIGHTER_SHIP
+    size: STR_SMALL
+    damageMax: 300
+    speedMax: 3000
+    accel: 9
+    power: 55
+    hitBonus: 20
+    range: 40
+    score: 175
+    reload: 10
+    avoidBonus: 15
+    shieldCapacity: 250
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    breakOffTime: 110
+    hunterKillerPercentage: 100
+    radarRange: 600
+    radarChance: 100
+    sightRange: 0
+    huntMode: 0
+  - type: STR_SENTRY_SHIP
+    modSprite: InterceptionSentry
+    size: STR_SMALL
+    damageMax: 200
+    speedMax: 1800
+    accel: 8
+    power: 35
+    hitBonus: 10
+    range: 35
+    score: 125
+    reload: 15
+    breakOffTime: 170
+    avoidBonus: 10
+    shieldCapacity: 100
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    hunterKillerPercentage: 100
+    huntMode: 0
+
+#Research ships
+
+  - type: STR_EXCAVATOR
+    modSprite: InterceptionExcavator
+    size: STR_SMALL
+    damageMax: 270
+    speedMax: 1000
+    accel: 6
+    power: 25
+    range: 30
+    score: 100
+    reload: 30
+    breakOffTime: 220
+  - type: STR_ABDUCTOR
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 1000
+    power: 120
+    hitBonus: 10
+    range: 50
+    score: 250
+    reload: 20
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    breakOffTime: 500
+  - type: STR_HARVESTER
+    size: STR_MEDIUM_UC
+    sprite: 3
+    damageMax: 500
+    speedMax: 800
+    power: 100
+    range: 45
+    score: 250
+    reload: 25
+    shieldCapacity: 150
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    breakOffTime: 500
+
+  - type: STR_LAB_SHIP
+    modSprite: InterceptionLabShip
+    size: STR_VERY_LARGE
+    damageMax: 2200
+    speedMax: 800
+    accel: 5
+    power: 70
+    range: 50
+    score: 500
+    reload: 30
+    shieldCapacity: 150
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    breakOffTime: 500
+#Warships
+  - type: STR_TERROR_SHIP
+    size: STR_LARGE
+    sprite: 5
+    damageMax: 1200
+    speedMax: 500
+    shieldCapacity: 300
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    accel: 3
+    power: 120
+    range: 45
+    score: 500
+    reload: 20
+    breakOffTime: 2000
+  - type: STR_TROOP_LANDER
+    size: STR_LARGE
+    damageMax: 1750
+    speedMax: 400
+    accel: 3
+    power: 150
+    range: 55
+    shieldBleedThrough: 100
+    shieldCapacity: 400
+    shieldRechargeInGeoscape: 5
+    score: 600
+    reload: 20
+    breakOffTime: 3000
+  - type: STR_BATTLESHIP
+    size: STR_VERY_LARGE
+    sprite: 6
+    damageMax: 3000
+    speedMax: 400
+    shieldCapacity: 500
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    accel: 2
+    power: 250
+    hitBonus: 40
+    range: 60
+    score: 700
+    reload: 30
+    breakOffTime: 4000
+  - type: STR_CARRIER
+    size: STR_VERY_LARGE
+    sprite: 6
+    damageMax: 3000
+    speedMax: 400
+    shieldCapacity: 500
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
+    accel: 2
+    power: 250
+    hitBonus: 40
+    range: 60
+    score: 700
+    reload: 30
+    breakOffTime: 4000
+    battlescapeTerrainData:
+      name: CARRIER
+      mapDataSets:
+        - BLANKS
+        - AVENGER
+        - U_PODS
+        - U_BASE
+        - U_WALL02
+        - UFO1
+        - U_EXT02
+      mapBlocks:
+        - name: CARRIER
+          width: 50
+          length: 30
+#Logistical
+
+  - type: STR_SUPPLY_SHIP
+    size: STR_LARGE
+    sprite: 7
+    damageMax: 2200
+    speedMax: 600
+    power: 60
+    range: 40
+    score: 400
+    reload: 50
+    breakOffTime: 3000

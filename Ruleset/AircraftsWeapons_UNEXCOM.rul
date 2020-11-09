@@ -14,7 +14,7 @@ crafts:
 ######################
 ###### FIGHTERS ######
 ######################
-
+#{
 ####################
 #### TIER I ##########
 ##################
@@ -31,6 +31,7 @@ crafts:
     costSell: 100000
     damageMax: 160
     speedMax: 570
+    avoidBonus: 15
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -73,6 +74,7 @@ crafts:
     fuelMax: 131
     damageMax: 160
     speedMax: 1474
+    avoidBonus: 15
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -119,6 +121,7 @@ crafts:
     fuelMax: 192
     damageMax: 145
     speedMax: 1303
+    avoidBonus: 15
     accel: 8
     weapons: 4
     weaponTypes: 
@@ -161,6 +164,7 @@ crafts:
     fuelMax: 192
     damageMax: 130
     speedMax: 1258
+    avoidBonus: 25
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -204,6 +208,7 @@ crafts:
     fuelMax: 218
     damageMax: 200
     speedMax: 1148
+    avoidBonus: 15
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -251,7 +256,7 @@ crafts:
     damageMax: 180
     speedMax: 1944
     accel: 6
-    weapons: 3
+    weapons: 4
     weaponTypes: 
       - 3 
       - 3
@@ -291,6 +296,7 @@ crafts:
     fuelMax: 105
     damageMax: 130
     speedMax: 1269
+    avoidBonus: 25
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -329,13 +335,15 @@ crafts:
 ##################
 
   - type: STR_RAPIER
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_FIGHTERS]
+    categories: [STR_AIRCRAFTS, STR_USA_TECH, STR_FIGHTERS]
     requires:
       - STR_IMPROVED_FIGHTER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 832
-    fuelMax: 550
+    fuelMax: 216
     damageMax: 250
     speedMax: 2720
+    avoidBonus: 25
     accel: 6
     weapons: 4
     weaponTypes: 
@@ -356,8 +364,8 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
+    costBuy: 800000
     costSell: 450000
-    costRent: 600000
     refuelRate: 60
     transferTime: 72
     autoPatrol: true
@@ -369,6 +377,83 @@ crafts:
     score: 400
     listOrder: 118
 
+  - type: STR_VIGGEN
+    categories: [STR_AIRCRAFTS, STR_NATO_TECH, STR_FIGHTERS]
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 832
+    fuelMax: 213
+    damageMax: 280
+    speedMax: 1205
+    avoidBonus: 20
+    accel: 6
+    weapons: 4
+    weaponTypes: 
+      - 1
+      - [2, 6]
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_ROCKET_LIGHT_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 550000
+    costSell: 450000
+    refuelRate: 60
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 60
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 20
+    score: 400
+    listOrder: 118
+    
+  - type: STR_FLANKER
+    categories: [STR_AIRCRAFTS, STR_USSR_TECH, STR_FIGHTERS]
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 832
+    fuelMax: 263
+    damageMax: 210
+    speedMax: 1300
+    avoidBonus: 25
+    accel: 6
+    weapons: 4
+    weaponTypes: 
+      - 1
+      - [2, 3]
+      - 2
+      - [5, 6]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_ROCKET_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 450000
+    costSell: 350000
+    refuelRate: 60
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 60
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 20
+    score: 400
+    listOrder: 118
 ####################
 #### TIER III #####
 ##################
@@ -377,9 +462,10 @@ crafts:
     requires:
       - STR_ADVANCED_FIGHTER
     sprite: 870
-    fuelMax: 950
+    fuelMax: 300
     damageMax: 410
     speedMax: 3500
+    avoidBonus: 30
     accel: 6
     weapons: 4
     weaponTypes: 
@@ -400,8 +486,120 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
-    costRent: 400000
     costSell: 650000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+
+  - type: STR_PANAVIA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 870
+    fuelMax: 252
+    damageMax: 420
+    speedMax: 2300
+    avoidBonus: 35
+    accel: 6
+    weapons: 4
+    weaponTypes: 
+      - 1
+      - 1 
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 800000
+    costSell: 500000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+    
+  - type: STR_FIREFOX
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 870
+    fuelMax: 312
+    damageMax: 430
+    speedMax: 3200
+    avoidBonus: 30
+    hitBonus: 5
+    accel: 6
+    weapons: 4
+    weaponTypes: 
+      - 1 
+      - 2  
+      - [2, 3]
+      - 5
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 900000
+    costSell: 750000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+    
+  - type: STR_COBRA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 870
+    fuelMax: 288
+    damageMax: 415
+    speedMax: 2150
+    avoidBonus: 35
+    accel: 6
+    weapons: 3
+    weaponTypes: 
+      - 0 
+      - 2  
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_GATLING_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_AUX_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 760000
+    costSell: 600000
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -417,36 +615,119 @@ crafts:
 #### TIER IV ######
 ##################
 
-#  - type: STR_SABRE
-#    sprite: 121
-#    fuelMax: 131
-#    damageMax: 130
-#    speedMax: 1474
-#    accel: 4
-#    weapons: 4
-#    weaponTypes: 
-#      - 0
-#      - 1
-#      - [2, 3]
-#      - [2, 3, 4, 5]
-#Gatling Cannon
-#Revolver Cannon
-#Light/Heavy Missile
-#Light/Heavy/S.Heavy Missile, AUX Systems
-#    weaponStrings:
-#      - STR_CRAFT_GATLING_ONE
-#      - STR_CRAFT_CANNON_TWO
-#      - STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE
-#      - STR_CRAFT_SUPER_HEAVY_MISSILE_FOUR
-#    listOrder: 117
+  - type: STR_SABRE
+    requires:
+      - STR_ULTIMATE_CRAFT
+    sprite: 870
+    fuelMax: 950
+    damageMax: 550
+    speedMax: 5500
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes: 
+      - [3, 4]
+      - [2, 3]
+      - [0, 1]
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_ALL_CANNONS_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costSell: 650000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
 
-#  - type: STR_DYNASOAR # X-21 DynaMOWS
-#    sprite: 122
-#    listOrder: 117
-################################
+  - type: STR_DYNASOAR # X-21 DynaMOWS
+    requires:
+      - STR_ULTIMATE_CRAFT
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 870
+    fuelMax: 2732
+    damageMax: 440
+    speedMax: 15200
+    avoidBonus: 25
+    accel: 4
+    weapons: 3
+    weaponTypes: 
+      - [0, 1]
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_AUX_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 1100000
+    costSell: 1000000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+    
+  - type: STR_MIG_105
+    requires:
+      - STR_ULTIMATE_CRAFT
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 870
+    fuelMax: 2732
+    damageMax: 550
+    speedMax: 15200
+    avoidBonus: 25
+    accel: 4
+    weapons: 3
+    weaponTypes: 
+      - [0, 1]
+      - 2
+      - 2
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 1210000
+    costSell: 1000000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+
+#}
+          ############
 ########### BOMBERS ############
 ################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -535,7 +816,7 @@ crafts:
     sightRange: 0
     radarRange: 134
     radarChance: 10
-    avoidBonus: 15
+    avoidBonus: 10
     score: 400
     listOrder: 121
 
@@ -590,13 +871,15 @@ crafts:
 ##################
 
   - type: STR_VALKYRIE
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_BOMBERSS]
+    categories: [STR_AIRCRAFTS, STR_USA_TECH, STR_BOMBERSS]
     requires:
       - STR_IMPROVED_BOMBER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 866
-    fuelMax: 600
+    fuelMax: 447
     damageMax: 315
     speedMax: 2640
+    avoidBonus: 10
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -617,8 +900,8 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
-    costRent: 690000
-    costSell: 500000
+    costBuy: 900000
+    costSell: 750000
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -630,6 +913,81 @@ crafts:
     score: 400
     listOrder: 118
 
+  - type: STR_JAGUAR
+    categories: [STR_AIRCRAFTS, STR_NATO_TECH, STR_BOMBERSS]
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 866
+    fuelMax: 174
+    damageMax: 300
+    speedMax: 917
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes: 
+      - 1 
+      - 1
+      - [3, 4]
+      - [2, 3]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_THREE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 720000
+    costSell: 600000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 10
+    score: 400
+    listOrder: 118
+    
+  - type: STR_M50
+    categories: [STR_AIRCRAFTS, STR_USSR_TECH, STR_BOMBERSS]
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 866
+    fuelMax: 480
+    damageMax: 360
+    speedMax: 1050
+    avoidBonus: -10
+    accel: 4
+    weapons: 3
+    weaponTypes: 
+      - 4
+      - [3, 4]
+      - [3, 5]
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_AUX_THREE
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    costBuy: 980000
+    costSell: 800000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 10
+    score: 400
+    listOrder: 118
 
 ####################
 #### TIER III #####
@@ -639,9 +997,10 @@ crafts:
     requires:
       - STR_ADVANCED_BOMBER
     sprite: 871
-    fuelMax: 1150
+    fuelMax: 350
     damageMax: 470
     speedMax: 3050
+    avoidBonus: 15
     accel: 4
     weapons: 4
     weaponTypes: 
@@ -662,7 +1021,6 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
-    costRent: 20000
     costSell: 700000
     refuelRate: 20
     transferTime: 72
@@ -675,11 +1033,163 @@ crafts:
     score: 400
     listOrder: 118
 
+  - type: STR_TU45M
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 871
+    fuelMax: 192
+    damageMax: 520
+    speedMax: 2600
+    avoidBonus: 5
+    accel: 4
+    weapons: 4
+    weaponTypes: 
+      - 4
+      - [3, 4]
+      - 3
+      - [3, 5]
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    costBuy: 800000
+    costSell: 650000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
+    
+  - type: STR_LAMPYRIDAE
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 871
+    fuelMax: 384
+    damageMax: 480
+    speedMax: 3300
+    avoidBonus: 10
+    accel: 4
+    weapons: 4
+    weaponTypes: 
+      - 4
+      - [2, 3]
+      - [2, 3]
+      - [3, 5]
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 830000
+    costSell: 700000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
+    
+  - type: STR_A12
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 871
+    fuelMax: 612
+    damageMax: 500
+    speedMax: 2500
+    avoidBonus: 5
+    accel: 4
+    weapons: 3
+    weaponTypes: 
+      - 4
+      - [2, 3]
+      - 5
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_AUX_THREE
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    costBuy: 920000
+    costSell: 800000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
 
+####################
+#### TIER IV ######
+##################
+
+  - type: STR_HERMES
+    requires:
+      - STR_ULTIMATE_CRAFT
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 870
+    fuelMax: 2732
+    damageMax: 420
+    speedMax: 15200
+    avoidBonus: -15
+    accel: 4
+    weapons: 3
+    weaponTypes: 
+      - [3, 4]
+      - [3, 4]
+      - [0, 1]
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_ALL_CANNONS_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 1250000
+    costSell: 1100000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    escortRange: 40
+    escortsJoinFightAgainstHK: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+
+#}
 ######################
 ##### TRANSPORTS #####
 ######################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -750,8 +1260,10 @@ crafts:
     damageMax: 150
     speedMax: 230
     accel: 3
-    weapons: 2
+    weapons: 4
     weaponTypes:
+      - [5, 0, 1]
+      - [5, 6]
       - [5, 0, 1]
       - [5, 6]
 #AUX Systems/Gatling/Revolver Cannon
@@ -759,9 +1271,11 @@ crafts:
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
       - STR_CRAFT_ROCKET_AUX_TWO
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ROCKET_AUX_TWO
     soldiers: 16
     vehicles: 0
-    pilots: 2
+    pilots: 4
     costBuy: 100000
     costRent: 6000
     refuelRate: 50
@@ -1056,10 +1570,11 @@ crafts:
 # 5   1
 # 4 3 2	 
 
+#}
 ############################
 ##### RECON SATELLITES #####
 ############################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1076,7 +1591,7 @@ crafts:
     refuelRate: 75
     radarRange: 1550
     sightRange: 750
-    radarChance: 30
+    radarChance: 40
     transferTime: 96
     score: 250
     listOrder: 150
@@ -1092,7 +1607,7 @@ crafts:
     sprite: 868
     fuelMax: 1500
     damageMax: 20
-    speedMax: 20
+    speedMax: 40
     accel: 1
     weapons: 2
     weaponTypes:
@@ -1106,8 +1621,8 @@ crafts:
     costBuy: 155000
     costRent: 150000
     refuelRate: 75
-    radarRange: 1550
-    radarChance: 30
+    radarRange: 2000
+    radarChance: 50
     transferTime: 96
     score: 250
     listOrder: 150
@@ -1116,12 +1631,15 @@ crafts:
 #### TIER III #####
 ##################
 
-#  - type: STR_BASTION
+  - type: STR_BASTION
     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_RECON_SATELLITE, STR_TIER_3]
-    sprite: 120
+    requires:
+      - STR_IMPROVED_SATELLITE
+      - STR_ADVANCED_BOMBER
+    sprite: 868
     fuelMax: 1500
     damageMax: 20
-    speedMax: 20
+    speedMax: 90
     accel: 1
     weaponTypes:
       - [0, 1]
@@ -1136,15 +1654,17 @@ crafts:
     costBuy: 555000
     costRent: 450000
     refuelRate: 75
-    radarRange: 1550
-    radarChance: 30
+    radarRange: 2300
+    radarChance: 60
     transferTime: 96
     score: 250
     listOrder: 150
-
+#}
 ################################
 ####### VANILLA CRAFTS ########
 ##############################
+
+
   - type: STR_LIGHTNING
     pilots: 2
     weapons: 2
@@ -1200,7 +1720,7 @@ craftWeapons:
 ##################################
 #### AIRCRAFT LIGHT MISSILES #####
 ##################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1210,11 +1730,12 @@ craftWeapons:
     sprite: 200
     sound: 5
     damage: 60
+    shieldDamageModifier: 50
     range: 30
-    accuracy: 65
-    reloadCautious: 64
+    accuracy: 60
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 2
     launcher: STR_SIDEWINDER_LAUNCHER
     clip: STR_SIDEWINDER_MISSILES
@@ -1225,12 +1746,13 @@ craftWeapons:
     weaponType: 2
     sprite: 206
     sound: 5
-    damage: 55
+    damage: 40
+    shieldDamageModifier: 50
     range: 35
-    accuracy: 60
-    reloadCautious: 64
+    accuracy: 55
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 2
     launcher: STR_ATOLL_LAUNCHER
     clip: STR_ATOLL_MISSILES
@@ -1242,11 +1764,12 @@ craftWeapons:
     sprite: 203
     sound: 5
     damage: 65
-    range: 22
-    accuracy: 67
-    reloadCautious: 50
+    shieldDamageModifier: 50
+    range: 20
+    accuracy: 55
+    reloadCautious: 40
     reloadStandard: 40
-    reloadAggressive: 37
+    reloadAggressive: 40
     ammoMax: 2
     launcher: STR_RED_TOP_LAUNCHER
     clip: STR_RED_TOP_MISSILES
@@ -1261,12 +1784,13 @@ craftWeapons:
     sprite: 211
     sound: 5
     damage: 65
-    range: 48
-    accuracy: 65
-    reloadCautious: 64
+    shieldDamageModifier: 50
+    range: 35
+    accuracy: 60
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 3
+    reloadAggressive: 48
+    ammoMax: 2
     launcher: STR_SHORTSWORD_LAUNCHER
     clip: STR_SHORTSWORD_MISSILES
     projectileType: 0
@@ -1275,46 +1799,47 @@ craftWeapons:
 ####################
 #### TIER III #####
 ##################
-#  - type: STR_LONGSWORD_FUSION_MISSILE
+  - type: STR_LONGSWORD_FUSION_MISSILE
     weaponType: 2
-    sprite: 217
+    sprite: 200
     sound: 5
-    damage: 40
-    range: 30
-    accuracy: 50
-    reloadCautious: 64
+    damage: 80
+    shieldDamageModifier: 75
+    range: 40
+    accuracy: 65
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 2
-    launcher: STR_SIDEWINDER_LAUNCHER
-    clip: STR_SIDEWINDER_MISSILES
+    launcher: STR_LONGSWORD_LAUNCHER
+    clip: STR_LONGSWORD_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_EXCALIBUR_LIGHT_MISSILE
+  - type: STR_EXCALIBUR_LIGHT_MISSILE
     weaponType: 2
-    sprite: 224
+    sprite: 200
     sound: 5
-    damage: 40
-    range: 30
-    accuracy: 50
-    reloadCautious: 64
+    damage: 100
+    range: 45
+    accuracy: 90
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 2
-    launcher: STR_SIDEWINDER_LAUNCHER
-    clip: STR_SIDEWINDER_MISSILES
+    launcher: STR_EXCALIBUR_LAUNCHER
+    clip: STR_EXCALIBUR_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
-
+#}
 ##################################
 #### AIRCRAFT HEAVY MISSILES #####
 ##################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1324,11 +1849,12 @@ craftWeapons:
     sprite: 201
     sound: 5
     damage: 75
-    range: 45
-    accuracy: 57
-    reloadCautious: 96
+    shieldDamageModifier: 50
+    range: 50
+    accuracy: 60
+    reloadCautious: 72
     reloadStandard: 72
-    reloadAggressive: 48
+    reloadAggressive: 72
     ammoMax: 2
     launcher: STR_SPARROW_LAUNCHER
     clip: STR_SPARROW_MISSILES
@@ -1340,11 +1866,12 @@ craftWeapons:
     sprite: 207
     sound: 5
     damage: 85
-    range: 50
-    accuracy: 60
-    reloadCautious: 96
+    shieldDamageModifier: 50
+    range: 55
+    accuracy: 65
+    reloadCautious: 72
     reloadStandard: 72
-    reloadAggressive: 48
+    reloadAggressive: 72
     ammoMax: 2
     launcher: STR_ACRID_LAUNCHER
     clip: STR_ACRID_MISSILES
@@ -1354,12 +1881,13 @@ craftWeapons:
     weaponType: 3
     sprite: 204
     sound: 5
-    damage: 69
-    range: 47
-    accuracy: 65
-    reloadCautious: 96
+    damage: 70
+    shieldDamageModifier: 50
+    range: 50
+    accuracy: 70
+    reloadCautious: 72
     reloadStandard: 72
-    reloadAggressive: 48
+    reloadAggressive: 72
     ammoMax: 2
     launcher: STR_MATRA_LAUNCHER
     clip: STR_MATRA_MISSILES
@@ -1374,12 +1902,13 @@ craftWeapons:
     sprite: 212
     sound: 5
     damage: 100
-    range: 55
-    accuracy: 68
-    reloadCautious: 96
+    shieldDamageModifier: 50
+    range: 60
+    accuracy: 75
+    reloadCautious: 72
     reloadStandard: 72
-    reloadAggressive: 48
-    ammoMax: 3
+    reloadAggressive: 72
+    ammoMax: 2
     launcher: STR_HAMMER_LAUNCHER
     clip: STR_HAMMER_MISSILES
     projectileType: 1
@@ -1388,45 +1917,46 @@ craftWeapons:
 ####################
 #### TIER III #####
 ##################
-#  - type: STR_KATANA
+  - type: STR_KATANA
     weaponType: 3
-    sprite: 218
+    sprite: 201
     sound: 5
-    damage: 70
-    range: 50
-    accuracy: 39
-    reloadCautious: 96
+    damage: 120
+    shieldDamageModifier: 75
+    range: 65
+    accuracy: 75
+    reloadCautious: 72
     reloadStandard: 72
-    reloadAggressive: 48
+    reloadAggressive: 72
     ammoMax: 2
-    launcher: STR_ACRID_LAUNCHER
-    clip: STR_ACRID_MISSILES
+    launcher: STR_KATANA_LAUNCHER
+    clip: STR_KATANA_MISSILES
     projectileType: 1
     projectileSpeed: 8
 
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_MJOLNIR
+  - type: STR_MJOLNIR
     weaponType: 3
-    sprite: 225
+    sprite: 201
     sound: 5
-    damage: 70
-    range: 50
-    accuracy: 39
-    reloadCautious: 96
+    damage: 150
+    range: 65
+    accuracy: 90
+    reloadCautious: 72
     reloadStandard: 72
-    reloadAggressive: 48
+    reloadAggressive: 72
     ammoMax: 2
-    launcher: STR_ACRID_LAUNCHER
-    clip: STR_ACRID_MISSILES
+    launcher: STR_MJOLNIR_LAUNCHER
+    clip: STR_MJOLNIR_MISSILES
     projectileType: 1
     projectileSpeed: 8
-
+#}
 ########################################
 #### AIRCRAFT SUPER HEAVY MISSILES #####
 ########################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1437,11 +1967,12 @@ craftWeapons:
     sprite: 209
     sound: 5
     damage: 500
+    shieldDamageModifier: 0
     range: 20
     accuracy: 80
-    reloadCautious: 64
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 1
     launcher: STR_FALCON_LAUNCHER
     clip: STR_FALCON_MISSILES
@@ -1456,12 +1987,13 @@ craftWeapons:
     sprite: 216
     sound: 5
     damage: 600
+    shieldDamageModifier: 0
     range: 25
-    accuracy: 102
-    reloadCautious: 60
-    reloadStandard: 40
-    reloadAggressive: 30
-    ammoMax: 2
+    accuracy: 90
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 1
     launcher: STR_PHOENIX_LAUNCHER
     clip: STR_PHOENIX_MISSILES
     projectileType: 3
@@ -1469,45 +2001,78 @@ craftWeapons:
 ####################
 #### TIER III #####
 ##################
-#  - type: STR_KONDO
+  - type: STR_ADLER
     weaponType: 4
-    sprite: 219
+    sprite: 216
     sound: 5
-    damage: 500
-    range: 20
-    accuracy: 60
-    reloadCautious: 64
+    damage: 800
+    shieldDamageModifier: 0
+    range: 30
+    accuracy: 95
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 1
-    launcher: STR_FALCON_LAUNCHER
-    clip: STR_FALCON_MISSILES
+    launcher: STR_ADLER_LAUNCHER
+    clip: STR_ADLER_MISSILES
     projectileType: 3
     projectileSpeed: 5
 
+  - type: STR_CASABA_SPIKE
+    weaponType: 4
+    sprite: 216
+    sound: 5
+    damage: 700
+    shieldDamageModifier: 100
+    range: 40
+    accuracy: 95
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 1
+    launcher: STR_LASER_SPIKE
+    projectileType: 4
+    projectileSpeed: 5
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_KONDOR
+  - type: STR_KONDOR
     weaponType: 4
-    sprite: 226
+    sprite: 216
     sound: 5
-    damage: 500
-    range: 20
-    accuracy: 60
-    reloadCautious: 64
+    damage: 1000
+    shieldDamageModifier: 0
+    range: 35
+    accuracy: 100
+    reloadCautious: 48
     reloadStandard: 48
-    reloadAggressive: 32
+    reloadAggressive: 48
     ammoMax: 1
-    launcher: STR_FALCON_LAUNCHER
-    clip: STR_FALCON_MISSILES
+    launcher: STR_KONDOR_LAUNCHER
+    clip: STR_KONDOR_MISSILES
     projectileType: 3
     projectileSpeed: 5
-
+    
+  - type: STR_CASABA_LANCE
+    weaponType: 4
+    sprite: 216
+    sound: 5
+    damage: 800
+    shieldDamageModifier: 100
+    range: 45
+    accuracy: 95
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 1
+    launcher: STR_LASER_LANCE
+    projectileType: 4
+    projectileSpeed: 5
+#}
 ##################################
 #### AIRCRAFT GATLING CANNONS ####
 ##################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1516,11 +2081,12 @@ craftWeapons:
     sprite: 202
     sound: 4
     damage: 20
-    range: 10
+    shieldDamageModifier: 50
+    range: 5
     accuracy: 15
     reloadCautious: 4
     reloadStandard: 4
-    reloadAggressive: 3
+    reloadAggressive: 4
     ammoMax: 200
     rearmRate: 50
     launcher: STR_VULCAN_CANNON
@@ -1533,11 +2099,12 @@ craftWeapons:
 ##################
   - type: STR_ATHENA_ALLOY_GATLING
     weaponType: 0
-    sprite: 213
+    sprite: 202
     sound: 4
-    damage: 30
-    range: 15
-    accuracy: 40
+    damage: 25
+    shieldDamageModifier: 50
+    range: 10
+    accuracy: 20
     reloadCautious: 4
     reloadStandard: 4
     reloadAggressive: 4
@@ -1554,11 +2121,12 @@ craftWeapons:
 #  - type: STR_APOLLO_LASER_GATLING
   - type: STR_LASER_ARRAY_UC
     weaponType: 0
-    sprite: 219
-    sound: 8
+    sprite: 202
+    sound: 4
     damage: 30
-    range: 16
-    accuracy: 35
+    shieldDamageModifier: 75
+    range: 15
+    accuracy: 25
     reloadCautious: 3
     reloadStandard: 3
     reloadAggressive: 3
@@ -1570,27 +2138,28 @@ craftWeapons:
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_ZEUS
+  - type: STR_ZEUS
     weaponType: 0
-    sprite: 227
+    sprite: 202
     sound: 4
-    damage: 20
+    damage: 35
     range: 10
-    accuracy: 15
+    accuracy: 30
     reloadCautious: 4
     reloadStandard: 4
-    reloadAggressive: 3
+    reloadAggressive: 4
     ammoMax: 200
     rearmRate: 200
-    launcher: STR_VULCAN_CANNON
-    clip: STR_VULCAN_CANNON_ROUNDS_X50
+    launcher: STR_ZEUS_CANNON
+    clip: STR_ZEUS_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
 
+#}
 ##################################
 ### AIRCRAFT REVOLVER CANNONS ####
 ##################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1598,7 +2167,8 @@ craftWeapons:
     weaponType: 1
     sprite: 208
     sound: 4
-    damage: 23
+    damage: 20
+    shieldDamageModifier: 50
     range: 10
     accuracy: 23
     reloadCautious: 5
@@ -1616,11 +2186,12 @@ craftWeapons:
     sprite: 205
     sound: 4
     damage: 30
+    shieldDamageModifier: 50
     range: 15
     accuracy: 25
     reloadCautious: 8
     reloadStandard: 8
-    reloadAggressive: 7
+    reloadAggressive: 8
     ammoMax: 100
     rearmRate: 50
     launcher: STR_ADEN_CANNON
@@ -1635,12 +2206,13 @@ craftWeapons:
     weaponType: 1
     sprite: 214
     sound: 4
-    damage: 45
+    damage: 35
+    shieldDamageModifier: 50
     range: 20
-    accuracy: 35
-    reloadCautious: 5
-    reloadStandard: 5
-    reloadAggressive: 5
+    accuracy: 30
+    reloadCautious: 8
+    reloadStandard: 8
+    reloadAggressive: 8
     ammoMax: 150
     rearmRate: 150
     launcher: STR_MAUSER_CANNON
@@ -1659,12 +2231,13 @@ craftWeapons:
     weaponType: 1
     sprite: 220
     sound: 8
-    damage: 60
-    range: 45
+    damage: 40
+    shieldDamageModifier: 75
+    range: 20
     accuracy: 50
-    reloadCautious: 30
-    reloadStandard: 30
-    reloadAggressive: 30
+    reloadCautious: 10
+    reloadStandard: 10
+    reloadAggressive: 10
     ammoMax: 100
     rearmRate: 50
     launcher: STR_LASER_CANNON
@@ -1690,21 +2263,21 @@ craftWeapons:
 ####################
 #### TIER IV ######
 ##################
-#  - type: STR_VOSTOK_PLASMA_CANNON
-    sprite: 228
-    sound: 9
-    damage: 140
-    range: 52
-    accuracy: 50
-    reloadCautious: 24
-    reloadStandard: 24
-    reloadAggressive: 24
-    launcher: STR_PLASMA_BEAM
+  - type: STR_VOSTOK_PLASMA_CANNON
+    sprite: 208
+    sound: 4
+    damage: 45
+    range: 15
+    accuracy: 40
+    reloadCautious: 8
+    reloadStandard: 8
+    reloadAggressive: 8
+    launcher: STR_VOSTOK_CANNON
+    clip: STR_VOSTOK_CANNON_ROUNDS_X50
     projectileType: 5
     weaponType: 1
     ammoMax: 50
-    rearmRate: 10
-    clip: STR_ELERIUM_115
+    rearmRate: 100
 
 #  - type: STR_TLALOC_GAUSS_CANNON_UC
 #    weaponType: 1
@@ -1723,9 +2296,11 @@ craftWeapons:
 #    projectileType: 4
 #    projectileSpeed: 8
 
+#}
 ##################################
 ###### AIRCRAFT AUX SYSTEMS ######
 ##################################
+#{
   - type: STR_FUEL_TANK_UC
     weaponType: 5
     hidePediaInfo: true
@@ -1783,9 +2358,7 @@ craftWeapons:
     projectileType: 0
     projectileSpeed: 0
     stats:
-      accuracy: 20
-      hitBonus: 35
-      range: 15
+      hitBonus: 25
   - type: STR_ALLOY_CRAFT_ARMOR_UC
     weaponType: 5
     sprite: 234
@@ -1803,7 +2376,8 @@ craftWeapons:
     projectileType: 0
     projectileSpeed: 0
     stats:
-      armor: 25
+      damageMax: 100
+      avoidBonus: -10
 #  - type: STR_VECTORIAL_THRUSTERS_UC
 #    weaponType: 5
 #    sprite: 235
@@ -1981,10 +2555,11 @@ craftWeapons:
     stats:
       fuelMax: 50
 
+#}
 ######################################
 #### AIRCRAFT AIR TO AIR ROCKETS #####
 ######################################
-
+#{
 ####################
 #### TIER I #######
 ##################
@@ -1993,11 +2568,12 @@ craftWeapons:
     sprite: 210
     sound: 5
     damage: 85
+    shieldDamageModifier: 50
     range: 10
     accuracy: 45
-    reloadCautious: 30
+    reloadCautious: 35
     reloadStandard: 35
-    reloadAggressive: 20
+    reloadAggressive: 35
     ammoMax: 4
     rearmRate: 4
     launcher: STR_MIGHTY_MOUSE_LAUNCHER
@@ -2013,18 +2589,54 @@ craftWeapons:
     sprite: 210
     sound: 5
     damage: 95
+    shieldDamageModifier: 50
     range: 15
     accuracy: 55
     reloadCautious: 30
     reloadStandard: 35
     reloadAggressive: 20
-    ammoMax: 8
+    ammoMax: 4
     rearmRate: 16
     launcher: STR_HYDRA_LAUNCHER
     clip: STR_HYDRA_ROCKETS
     projectileType: 0
     projectileSpeed: 8
 
+  - type: STR_GORGON_ROCKETS
+    weaponType: 6
+    sprite: 210
+    sound: 5
+    damage: 105
+    shieldDamageModifier: 75
+    range: 15
+    accuracy: 65
+    reloadCautious: 35
+    reloadStandard: 35
+    reloadAggressive: 35
+    ammoMax: 4
+    rearmRate: 16
+    launcher: STR_GORGON_LAUNCHER
+    clip: STR_GORGON_ROCKETS
+    projectileType: 0
+    projectileSpeed: 8
+
+  - type: STR_KRAKEN_ROCKETS
+    weaponType: 6
+    sprite: 210
+    sound: 5
+    damage: 115
+    range: 20
+    accuracy: 80
+    reloadCautious: 35
+    reloadStandard: 35
+    reloadAggressive: 35
+    ammoMax: 4
+    rearmRate: 16
+    launcher: STR_KRAKEN_LAUNCHER
+    clip: STR_KRAKEN_ROCKETS
+    projectileType: 0
+    projectileSpeed: 8
+#}
 items:
 #DELETE
   - delete: STR_STINGRAY_LAUNCHER
@@ -2041,6 +2653,7 @@ items:
 ##################################
 ####### AIRCRAFT WEAPONS #########
 ##################################
+#{
   - type: STR_SIDEWINDER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
     requires:
@@ -2141,7 +2754,7 @@ items:
     size: 0.1
     costBuy: 2080
     costSell: 1600
-    transferTime: 96
+    transferTime: 48
     clipSize: 50
   - type: STR_RED_TOP_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
@@ -2363,12 +2976,183 @@ items:
     size: 2.0
     costSell: 233500
     transferTime: 48
+    
+  - type: STR_LASER_SPIKE
+    listOrder: 910
+    size: 2.0
+    costSell: 233500
+    transferTime: 48
 
+  - type: STR_LONGSWORD_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    size: 0.8
+    costSell: 35000
+    transferTime: 48
+  - type: STR_LONGSWORD_MISSILES
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    size: 0.4
+    costSell: 15000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_KATANA_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    size: 0.8
+    costSell: 38000
+    transferTime: 48
+  - type: STR_KATANA_MISSILES
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    size: 0.4
+    costSell: 19000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_ADLER_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    size: 0.8
+    costSell: 127000
+    transferTime: 48
+  - type: STR_ADLER_MISSILES
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    size: 0.4
+    costSell: 50000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_GORGON_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_ROCKET
+    size: 0.8
+    costSell: 38000
+    transferTime: 48
+  - type: STR_GORGON_ROCKETS
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_ROCKET
+    size: 0.4
+    costSell: 28000
+    transferTime: 48
+    clipSize: 4
+
+#TIER 4
+
+  - type: STR_VOSTOK_CANNON
+    listOrder: 900
+    size: 2.0
+    costSell: 211000
+    transferTime: 48
+  - type: STR_VOSTOK_CANNON_ROUNDS_X50
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_REVOLVER_CANNON
+    size: 0.1
+    costSell: 8600
+    transferTime: 96
+    clipSize: 50
+  - type: STR_ZEUS_CANNON
+    listOrder: 910
+    size: 2.0
+    costSell: 233500
+    transferTime: 48
+  - type: STR_ZEUS_CANNON_ROUNDS_X50
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_REVOLVER_CANNON
+    size: 0.1
+    costSell: 8600
+    transferTime: 96
+    clipSize: 50
+    
+  - type: STR_LASER_LANCE
+    listOrder: 910
+    size: 2.0
+    costSell: 233500
+    transferTime: 48
+
+  - type: STR_EXCALIBUR_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    size: 0.8
+    costSell: 35000
+    transferTime: 48
+  - type: STR_EXCALIBUR_MISSILES
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    size: 0.4
+    costSell: 15000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_MJOLNIR_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    size: 0.8
+    costSell: 38000
+    transferTime: 48
+  - type: STR_MJOLNIR_MISSILES
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    size: 0.4
+    costSell: 19000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_KONDOR_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    size: 0.8
+    costSell: 127000
+    transferTime: 48
+  - type: STR_KONDOR_MISSILES
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    size: 0.4
+    costSell: 50000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_KRAKEN_LAUNCHER
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_ROCKET
+    size: 0.8
+    costSell: 38000
+    transferTime: 48
+  - type: STR_KRAKEN_ROCKETS
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    requires:
+      - STR_IMPROVED_ROCKET
+    size: 0.4
+    costSell: 28000
+    transferTime: 48
+    clipSize: 4
+
+#}
 manufacture:
 ####################################
 ######### AIRCRAFT #################
 ########## TIER II #################
 ####################################
+#{
   - name: STR_RAPIER
     category: STR_CRAFT
     requires:
@@ -2470,9 +3254,7 @@ manufacture:
       - STR_IMPROVED_REVOLVER_CANNON
     space: 6
     time: 100
-    cost: 10000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 5
+    cost: 20000
     producedItems:
       STR_MAUSER_CANNON_ROUNDS_X50: 4
 
@@ -2483,9 +3265,7 @@ manufacture:
       - STR_IMPROVED_GATLING_CANNON
     space: 6
     time: 100
-    cost: 10000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 5
+    cost: 20000
     producedItems:
       STR_ATHENA_CANNON_ROUNDS_X50: 4
 
@@ -2509,9 +3289,7 @@ manufacture:
       - STR_IMPROVED_LIGHT_MISSILE
     space: 6
     time: 100
-    cost: 10000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 9
+    cost: 20000
     producedItems:
       STR_SHORTSWORD_MISSILES: 3
 
@@ -2534,9 +3312,7 @@ manufacture:
       - STR_IMPROVED_HEAVY_MISSILE
     space: 6
     time: 100
-    cost: 10000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 12
+    cost: 20000
     producedItems:
       STR_HAMMER_MISSILES: 3
 
@@ -2559,9 +3335,7 @@ manufacture:
       - STR_IMPROVED_ROCKET
     space: 6
     time: 100
-    cost: 10000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 10
+    cost: 20000
     producedItems:
       STR_HYDRA_ROCKETS: 2
 
@@ -2575,7 +3349,6 @@ manufacture:
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 30
-      STR_FALCON_LAUNCHER: 1
     producedItems:
       STR_PHOENIX_LAUNCHER: 1
   - name: STR_PHOENIX_MISSILES
@@ -2585,10 +3358,7 @@ manufacture:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     space: 6
     time: 100
-    cost: 30000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 15
-      STR_FALCON_MISSILES: 1
+    cost: 40000
     producedItems:
       STR_PHOENIX_MISSILES: 1
 
@@ -2618,9 +3388,22 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 90
       STR_UFO_NAVIGATION: 1
+      
+      
+  - name: STR_SABRE
+    category: STR_CRAFT
+    requires:
+      - STR_ULTIMATE_CRAFT
+    listOrder: 3250
+    space: 30
+    time: 1200
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+      STR_UFO_NAVIGATION: 2
 ####################################
 ######## CRAFT WEAPONS #############
-########## TIER II #################
+########## TIER III #################
 ####################################
 
   - name: STR_LASER_ARRAY
@@ -2643,7 +3426,263 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 15
 
+  - name: STR_LONGSWORD_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 25
+    producedItems:
+      STR_LONGSWORD_LAUNCHER: 1
+  - name: STR_LONGSWORD_MISSILES
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    space: 6
+    time: 100
+    cost: 30000
+    producedItems:
+      STR_SHORTSWORD_MISSILES: 3
+
+  - name: STR_KATANA_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 35
+    producedItems:
+      STR_KATANA_LAUNCHER: 1
+  - name: STR_KATANA_MISSILES
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 30000
+    producedItems:
+      STR_KATANA_MISSILES: 3
+
+  - name: STR_GORGON_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_ROCKET
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 35
+    producedItems:
+      STR_GORGON_LAUNCHER: 1
+  - name: STR_GORGON_ROCKETS
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_ROCKET
+    space: 6
+    time: 100
+    cost: 30000
+    producedItems:
+      STR_GORGON_ROCKETS: 2
+
+  - name: STR_ADLER_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+    producedItems:
+      STR_ADLER_LAUNCHER: 1
+  - name: STR_ADLER_MISSILES
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 50000
+    producedItems:
+      STR_ADLER_MISSILES: 1
+
+  - name: STR_LASER_SPIKE
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_UFO_POWER_SOURCE: 1
+    producedItems:
+      STR_LASER_SPIKE: 1
+      
+#TIER 4
+
+  - name: STR_ZEUS_CANNON
+    category: STR_CRAFT_WEAPON
+    listOrder: 210
+    requires:
+      - STR_LASER_ARRAY
+    space: 6
+    time: 500
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+  - name: STR_ZEUS_CANNON_ROUNDS_X50
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_GATLING_CANNON
+    space: 6
+    time: 100
+    cost: 50000
+    producedItems:
+      STR_ZEUS_CANNON_ROUNDS_X50: 4
+
+  - name: STR_VOSTOK_CANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_LASER_CANNON
+    space: 6
+    time: 600
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 25
+  - name: STR_VOSTOK_CANNON_ROUNDS_X50
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_GATLING_CANNON
+    space: 6
+    time: 100
+    cost: 50000
+    producedItems:
+      STR_VOSTOK_CANNON_ROUNDS_X50: 4
+
+  - name: STR_EXCALIBUR_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 35
+    producedItems:
+      STR_EXCALIBUR_LAUNCHER: 1
+  - name: STR_EXCALIBUR_MISSILES
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_LIGHT_MISSILE
+    space: 6
+    time: 100
+    cost: 40000
+    producedItems:
+      STR_EXCALIBUR_MISSILES: 3
+
+  - name: STR_MJOLNIR_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 45
+    producedItems:
+      STR_MJOLNIR_LAUNCHER: 1
+  - name: STR_MJOLNIR_MISSILES
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 40000
+    producedItems:
+      STR_MJOLNIR_MISSILES: 3
+
+  - name: STR_KRAKEN_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_ROCKET
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 45
+    producedItems:
+      STR_KRAKEN_LAUNCHER: 1
+  - name: STR_KRAKEN_ROCKETS
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_ROCKET
+    space: 6
+    time: 100
+    cost: 40000
+    producedItems:
+      STR_KRAKEN_ROCKETS: 2
+
+  - name: STR_KONDOR_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+    producedItems:
+      STR_KONDOR_LAUNCHER: 1
+  - name: STR_KONDOR_MISSILES
+    listOrder: 50
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 60000
+    producedItems:
+      STR_KONDOR_MISSILES: 1
+
+  - name: STR_LASER_LANCE
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    space: 6
+    time: 100
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_UFO_POWER_SOURCE: 2
+    producedItems:
+      STR_LASER_LANCE: 1
+#}
 ufopaedia:
+#{
 #####################################
 ########## AIRCRAFTS ################
 #####################################
@@ -2979,6 +4018,17 @@ ufopaedia:
       height: 80
     image_id: ATALAYA_UFOPEDIA
 
+  - id: STR_VIGGEN
+    type_id: 1
+    
+  - id: STR_JAGUAR
+    type_id: 1
+    
+  - id: STR_FLANKER
+    type_id: 1
+    
+  - id: STR_M50
+    type_id: 1
 ####################
 #### TIER III #####
 ##################
@@ -3019,10 +4069,43 @@ ufopaedia:
       width: 205
       height: 80
     image_id: SARACEN_UFOPEDIA
+    
+  - id: STR_TU45M
+    type_id: 1
+    
+  - id: STR_PANAVIA
+    type_id: 1
+    
+  - id: STR_LAMPYRIDAE
+    type_id: 1
+    
+  - id: STR_FIREFOX
+    type_id: 1
+    
+  - id: STR_COBRA
+    type_id: 1
+    
+  - id: STR_A12
+    type_id: 1
+    
+  - id: STR_BASTION
+    type_id: 1
 
 ####################
 #### TIER IV ######
 ##################
+
+  - id: STR_SABRE
+    type_id: 1
+    
+  - id: STR_DYNASOAR
+    type_id: 1
+    
+  - id: STR_HERMES
+    type_id: 1
+    
+  - id: STR_MIG_105
+    type_id: 1
 
 ########################################
 ######## CRAFT RESEARCH ################
@@ -3425,7 +4508,44 @@ ufopaedia:
       - STR_LASER_CANNON
     image_id: KODIAK
     text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    
+  - id: STR_LONGSWORD_FUSION_MISSILE
+    type_id: 2
+    
+  - id: STR_KATANA
+    type_id: 2
+    
+  - id: STR_GORGON_ROCKETS
+    type_id: 2
+    
+  - id: STR_ADLER
+    type_id: 2
 
+  - id: STR_LASER_SPIKE
+    type_id: 2
+
+#TIER 4
+
+  - id: STR_ZEUS_CANNON
+    type_id: 2
+    
+  - id: STR_VOSTOK_PLASMA_CANNON
+    type_id: 2
+    
+  - id: STR_EXCALIBUR_LIGHT_MISSILE
+    type_id: 2
+    
+  - id: STR_MJOLNIR
+    type_id: 2
+    
+  - id: STR_KRAKEN_ROCKETS
+    type_id: 2
+    
+  - id: STR_KONDOR
+    type_id: 2
+
+  - id: STR_LASER_LANCE
+    type_id: 2
 ################################
 ###### AUXILIARY SYSTEMS ######
 ##############################
@@ -3462,9 +4582,10 @@ ufopaedia:
     text: STR_ALLOY_CRAFT_ARMOR_UFOPEDIA
     listOrder: 546
 
-
+#}
 
 extraSprites:
+#{
 # "Crafts : The corresponding extrasprite file id for BASEBITS.PCK is sprite+33 INTICON.PCK contains a minimized icon id=sprite the file id for the dogfight image is sprite+11"
 # INTICON Minimized Id = Sprite ; 
 # INTICON DogFight Id = Sprite+11 ; 
@@ -4254,3 +5375,4 @@ extraStrings:
 #      STR_VALKYRIE_UFOPEDIA: ""
       STR_ALLOY_CANNON_CRAFT_WEAPONS_AMMO: ALLOY CANNON CRAFT AMMO
       STR_ALLOY_GATLING_CRAFT_WEAPONS_AMMO: ALLOY GATLING CRAFT AMMO
+#}
