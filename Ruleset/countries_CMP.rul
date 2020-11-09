@@ -80,15 +80,35 @@ countries:
       - [304, 308, -6.8, -2.6] #French Guiana - N of Brazil
 #END FRANCE
 
-#BEGIN GERMANY
-  - type: STR_GERMANY
+#BEGIN WEST GERMANY
+  - type: STR_WEST_GERMANY
     fundingBase: 250
     fundingCap: 9000
     labelLon: 8.64
     labelLat: -50.31
     areas:
-      - [6, 15, -55, -47.5]
-#END GERMANY
+      - [6, 11, -55, -47.5]
+#END WEST GERMANY
+
+#BEGIN EAST GERMANY
+  - type: STR_EAST_GERMANY
+    fundingBase: 250
+    fundingCap: 6500
+    labelLon: 12.7773
+    labelLat: -51.4612
+    areas:
+      - [11, 15, -55, -50.3]
+#END EAST GERMANY
+
+#BEGIN POLAND
+  - type: STR_POLAND
+    fundingBase: 270
+    fundingCap: 7000
+    labelLon: 19.28
+    labelLat: -52.35
+    areas:
+      - [15, 23, -54.5, -51]
+#END POLAND
 
 #BEGIN ITALY
   - type: STR_ITALY

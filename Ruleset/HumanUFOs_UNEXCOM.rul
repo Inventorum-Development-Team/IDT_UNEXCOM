@@ -5,7 +5,7 @@ ufos:
   - type: STR_TEXAN_UFO
     size: STR_SMALL
     modSprite: UFO_TEXAN
-    damageMax: 250
+    damageMax: 30
     speedMax: 180
     fakeWaterLandingChance: 0
     splashdownSurvivalChance: 0
@@ -17,13 +17,6 @@ ufos:
     score: 50
     reload: 12
     avoidBonus: 10
-    hunterKillerPercentage: 100
-    huntSpeed: 100
-    radarRange: 100
-    radarChance: 30
-    sightRange: 60
-    huntMode: 1
-    huntBehavior: 1
     breakOffTime: 200
     battlescapeTerrainData:
       name: UFO1A
@@ -38,7 +31,7 @@ ufos:
   - type: STR_MAGISTER_UFO
     size: STR_SMALL
     modSprite: UFO_MAGISTER
-    damageMax: 250
+    damageMax: 50
     speedMax: 386
     fakeWaterLandingChance: 0
     splashdownSurvivalChance: 0
@@ -49,13 +42,6 @@ ufos:
     range: 30
     score: 50
     reload: 48
-    hunterKillerPercentage: 100
-    huntSpeed: 100
-    radarRange: 100
-    radarChance: 40
-    sightRange: 60
-    huntMode: 1
-    huntBehavior: 1
     breakOffTime: 200
     battlescapeTerrainData:
       name: UFO1A
@@ -179,9 +165,9 @@ alienDeployments:
   - type: STR_MI8_TERRORIST_UFO
     data:
       - alienRank: 5
-        lowQty: 5
-        highQty: 8
-        dQty: 0
+        lowQty: 3
+        highQty: 5
+        dQty: 2
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -207,9 +193,9 @@ alienDeployments:
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 4
-        lowQty: 4
-        highQty: 6
-        dQty: 0
+        lowQty: 2
+        highQty: 4
+        dQty: 2
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -270,7 +256,7 @@ alienDeployments:
             - STR_12GAUGE_SLUG_X8
             - STR_GRENADE
       - alienRank: 2
-        lowQty: 2
+        lowQty: 1
         highQty: 2
         dQty: 0
         percentageOutsideUfo: 50

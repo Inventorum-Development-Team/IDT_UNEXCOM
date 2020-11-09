@@ -1,0 +1,1272 @@
+
+soldiers:
+  - delete: STR_SOLDIER
+  - type: STR_SOLDIER
+    costBuy: 40000
+    costSalary: 20000
+    minStats:
+      tu: 50
+      stamina: 50
+      health: 30
+      bravery: 20
+      reactions: 30
+      firing: 50
+      throwing: 40
+      strength: 19
+      psiStrength: 0
+      psiSkill: 0
+      melee: 45
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 60
+      reactions: 60
+      firing: 60
+      throwing: 50
+      strength: 32
+      psiStrength: 100
+      psiSkill: 16
+      melee: 55
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 60
+      bravery: 80
+      reactions: 90
+      firing: 100
+      throwing: 70
+      strength: 70
+      psiStrength: 100
+      psiSkill: 100
+      melee: 90
+    armor: STR_NONE_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    soldierNames:
+      - delete
+      - SoldierNames/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    allowPiloting: false
+
+  - type: STR_SPECIAL_FORCES_SOLDIER
+    requires:
+     - STR_SPECIAL_FORCES_RESEARCH
+    costBuy: 200000
+    costSalary: 30000
+    transferTime: 24
+    minStats:
+      tu: 70
+      stamina: 80
+      health: 50
+      bravery: 60
+      reactions: 70
+      firing: 80
+      throwing: 60
+      strength: 50
+      psiStrength: 0
+      psiSkill: 0
+      melee: 80
+    maxStats:
+      tu: 80
+      stamina: 100
+      health: 60
+      bravery: 70
+      reactions: 80
+      firing: 90
+      throwing: 70
+      strength: 60
+      psiStrength: 75
+      psiSkill: 16
+      melee: 90
+    statCaps:
+      tu: 100
+      stamina: 110
+      health: 70
+      bravery: 90
+      reactions: 100
+      firing: 110
+      throwing: 80
+      strength: 80
+      psiStrength: 75
+      psiSkill: 100
+      melee: 100
+    armor: STR_SPECIAL_FORCES_UNIFORM_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 25
+    soldierNames:
+      - delete
+      - SpecialForcesNames/
+
+  - type: STR_MERCENARY
+    requires:
+     - STR_MERCENARY_RESEARCH
+    costBuy: 50000
+    costSalary: 90000
+    transferTime: 24
+    minStats:
+      tu: 80
+      stamina: 90
+      health: 50
+      bravery: 80
+      reactions: 80
+      firing: 90
+      throwing: 60
+      strength: 60
+      psiStrength: 0
+      psiSkill: 0
+      melee: 90
+    maxStats:
+      tu: 90
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 90
+      firing: 100
+      throwing: 70
+      strength: 70
+      psiStrength: 100
+      psiSkill: 24
+      melee: 90
+    statCaps:
+      tu: 90
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 90
+      firing: 100
+      throwing: 70
+      strength: 70
+      psiStrength: 100
+      psiSkill: 100
+      melee: 90
+    armor: STR_MERCENARY_UNIFORM_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 25
+    soldierNames:
+      - delete
+      - MercenaryNames/
+
+  - type: STR_PILOT
+    costBuy: 50000
+    costSalary: 30000
+    costSalarySquaddie: 5000
+    costSalarySergeant: 5000
+    costSalaryCaptain: 10000
+    costSalaryColonel: 15000
+    costSalaryCommander: 20000
+    minStats:
+      tu: 40
+      stamina: 40
+      health: 25
+      bravery: 50
+      reactions: 60
+      firing: 55
+      throwing: 30
+      strength: 19
+      psiStrength: 0
+      psiSkill: 0
+      melee: 40
+    maxStats:
+      tu: 50
+      stamina: 50
+      health: 35
+      bravery: 60
+      reactions: 70
+      firing: 65
+      throwing: 40
+      strength: 26
+      psiStrength: 100
+      psiSkill: 16
+      melee: 50
+    statCaps:
+      tu: 60
+      stamina: 60
+      health: 45
+      bravery: 80
+      reactions: 110
+      firing: 100
+      throwing: 55
+      strength: 50
+      psiStrength: 100
+      psiSkill: 100
+      melee: 60
+    armor: STR_PILOT_UC
+    rankSprite: 800         # default 42 # basebits.pck
+    rankBattleSprite: 800   # default 20 # smoke.pck
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 45
+    soldierNames:
+      - delete
+      - PilotNames/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    allowPiloting: true
+    dogfightExperience:
+      bravery: 50
+      reactions: 75
+      firing: 100
+    rankStrings:
+    - STR_2ND_LIEUTENANT
+    - STR_1ST_LIEUTENANT
+    - STR_CAPTAIN
+    - STR_MAJOR
+    - STR_COLONEL
+    - STR_BRIGADIER
+
+###############
+# SIDE NOTE: The Astronaut Soldier-class uniform/armor  
+# is found on "ArmorAstronauts" ruleset. Separated there
+# because it was a mess to put them here.
+###############
+#  - type: STR_ASTRONAUT
+#    requires:
+#     - STR_SPACE_OPERATIONS_RESEARCH
+
+items:
+  - type: STR_CORPSE_UNIFORM
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 500
+    floorSprite: 500
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_CORPSE_SPECIAL_FORCES_UNIFORM
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 503
+    floorSprite: 503
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_CORPSE_PILOT_SUIT
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 501
+    floorSprite: 501
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_CORPSE_MERCENARY_UNIFORM
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 504
+    floorSprite: 504
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_COMBAT_ARMOR_UC
+    name: STR_COMBAT_ARMOR_UC
+    size: 0.8
+    costSell: 60000
+  - type: STR_CORPSE_COMBAT_ARMOR
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 502
+    floorSprite: 502
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_DELTA_ARMOR_UC
+    name: STR_DELTA_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_DELTA_ARMOR
+    name: STR_CORPSE
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: false
+
+  - type: STR_RIOT_ARMOR_UC
+    name: STR_RIOT_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_RIOT_ARMOR
+    name: STR_CORPSE
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: false
+
+# Armor
+  - type: STR_PERSONAL_ARMOR
+    size: 0.8
+    costSell: 54000
+  - type: STR_HEAVY_PERSONAL_ARMOR
+    size: 1.0
+    costSell: 68000
+  - type: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    name: STR_CORPSE
+    weight: 20
+    bigSprite: 2905
+    floorSprite: 2906
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: false
+
+armors:
+  - type: STR_NONE_UC
+    spriteSheet: XCOM_10.PCK
+    spriteInv: MAN_0wd
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: 15
+      stamina: 15
+      health: 0
+      bravery: 3
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+    units:
+      - STR_SOLDIER
+
+  - type: STR_PILOT_UC
+    spriteSheet: PILOT.PCK 
+    spriteInv:  MAN_5
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_PILOT_SUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    stats:
+      tu: 5
+      stamina: 10
+      health: 0
+      bravery: 3
+      reactions: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+    units:
+      - STR_PILOT
+
+  - type: STR_SPECIAL_FORCES_UNIFORM_UC
+    spriteSheet: XCOM_4SF.PCK
+    spriteInv: MAN_4SF
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_SPECIAL_FORCES_UNIFORM
+    loftempsSet: [ 3 ]
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: 10
+      stamina: 15
+      health: 0
+      bravery: 15
+      reactions: 10
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+    units:
+      - STR_SPECIAL_FORCES_SOLDIER
+
+  - type: STR_MERCENARY_UNIFORM_UC
+    spriteSheet: XCOM_4MERC.PCK
+    spriteInv: MAN_4MERC
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_MERCENARY_UNIFORM
+    loftempsSet: [ 3 ]
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: 10
+      stamina: 15
+      health: 0
+      bravery: 15
+      reactions: 10
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+    units:
+      - STR_MERCENARY
+
+
+  - type: STR_COMBAT_ARMOR_UC
+    spriteSheet: XCOM_4UN.PCK
+    spriteInv: MAN_4UN
+    corpseBattle:
+      - STR_CORPSE_COMBAT_ARMOR
+    storeItem: STR_COMBAT_ARMOR_UC
+    loftempsSet: [ 3 ]
+    weight: 10
+    frontArmor: 28
+    sideArmor: 20
+    rearArmor: 18
+    underArmor: 15
+    stats:
+      tu: -10
+      stamina: -15
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 10
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.6
+      - 0.8
+      - 0.85
+      - 0.9
+      - 1.0
+      - 0.8
+      - 0.7
+      - 1.0
+    units:
+      - STR_SOLDIER
+      - STR_SPECIAL_FORCES_SOLDIER
+
+  - type: STR_DELTA_ARMOR_UC
+    spriteSheet: ARMOR_DELTA.PCK
+    spriteInv: ARMOR_DELTA_INVENTORY
+    corpseBattle:
+      - STR_CORPSE_DELTA_ARMOR
+    storeItem: STR_DELTA_ARMOR_UC
+    personalLight: 7
+    weight: 15
+    stats:
+       stamina: -10
+       reactions: -5
+       firing: -5
+    frontArmor: 40
+    sideArmor: 32
+    rearArmor: 15
+    underArmor: 12
+    recovery:
+      energy:
+        flatHundred: 0.10 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 0.5
+      - 0.3
+      - 0.85
+      - 0.9
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.0
+    loftempsSet: [ 3 ]
+    forcedTorso: 1  
+    builtInWeapons:
+      - STR_MG3
+
+  - type: STR_RIOT_ARMOR_UC
+    spriteSheet: ARMOR_RIOT.PCK
+    spriteInv: ARMOR_RIOT_INVENTORY
+    corpseBattle:
+      - STR_CORPSE_RIOT_ARMOR
+    storeItem: STR_RIOT_ARMOR_UC
+    personalLight: 5
+    weight: 12
+    stats:
+       stamina: -5
+       reactions: -3
+       bravery: 10
+    frontArmor: 50
+    sideArmor: 28
+    rearArmor: 16
+    underArmor: 12
+    meleeDodge:
+      reactions: 0.25 # a small bonus
+    meleeDodgeBackPenalty: 1.0
+    recovery:
+      energy:
+        flatHundred: 0.05 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.8
+      - 0.7
+      - 0.9
+      - 0.8
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    forcedTorso: 1  
+    builtInWeapons:
+      - STR_RIOT_SHIELD
+
+# Standard Armors
+  - type: STR_PERSONAL_ARMOR_UC
+    spriteSheet: XCOM_1.PCK
+    spriteInv: MAN_1
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      firing: -1
+      throwing: -2
+      strength: 0
+      bravery: 5
+    frontArmor: 34
+    sideArmor: 27
+    rearArmor: 28
+    underArmor: 20
+    loftempsSet: [ 3 ]
+    damageModifier:
+      - 0.9
+      - 0.6
+      - 0.5
+      - 0.7
+      - 0.7
+      - 0.8
+      - 0.75
+      - 0.80
+      - 0.95
+      - 1.0
+  - type: STR_HEAVY_PERSONAL_ARMOR_UC
+    spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
+    spriteInv: HEAVY_PERSONAL_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE
+    corpseItem: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    storeItem: STR_HEAVY_PERSONAL_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -5
+      stamina: -6
+      reactions: -5
+      firing: -2
+      throwing: -5
+      strength: 0
+      bravery: 6
+    frontArmor: 46
+    sideArmor: 36
+    rearArmor: 34
+    underArmor: 27
+    movementType: 0
+    damageModifier:
+      - 0.85
+      - 0.5
+      - 0.4
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.7
+      - 0.75
+      - 0.92
+      - 1.0
+
+ufopaedia:
+  - id: STR_NONE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1690
+    text: STR_NONE_UC_UFOPEDIA
+
+  - id: STR_PILOT_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1691
+    text: STR_PILOT_UC_UFOPEDIA
+
+  - id: STR_SPECIAL_FORCES_UNIFORM_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1693
+    requires:
+     - STR_SPECIAL_FORCES_RESEARCH
+    text: STR_SPECIAL_FORCES_UNIFORM_UFOPEDIA
+
+  - id: STR_MERCENARY_UNIFORM_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1693
+    requires:
+     - STR_MERCENARY_RESEARCH
+    text: STR_MERCENARY_UNIFORM_UFOPEDIA
+
+################################################
+###### TIER I EXPERIMENTAL ARMOR SYSTEM  #######
+################################################
+  - id: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    type_id: 7
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: COMBAT_ARMOR_IMAGE
+    text: STR_USA_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
+    text_width: 200
+
+  - id: STR_COMBAT_ARMOR_UC
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_COMBAT_ARMOR_UFOPEDIA
+
+  - id: STR_DELTA_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    text: STR_DELTA_ARMOR_UFOPEDIA
+
+  - id: STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    type_id: 7
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: DELTA_ARMOR_IMAGE
+    text: STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
+    text_width: 150
+
+  - id: STR_RIOT_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    text: STR_RIOT_ARMOR_UFOPEDIA
+
+  - id: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    type_id: 7
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: RIOT_ARMOR_IMAGE
+    text: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
+    text_width: 170
+################################################
+###### TIER I EXPERIMENTAL ARMOR SYSTEM  #######
+################################################
+
+  - id: STR_PERSONAL_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PERSONAL_ARMOR
+    text: STR_PERSONAL_ARMOR_UFOPEDIA
+  - id: STR_HEAVY_PERSONAL_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1853
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    text: STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA
+
+manufacture:
+  - name: STR_COMBAT_ARMOR_UC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+
+  - name: STR_DELTA_ARMOR_UC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 9
+
+  - name: STR_RIOT_ARMOR_UC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+  - name: STR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 1000
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+
+extraSprites:
+  - type: BASEBITS.PCK
+    files:
+      42: Resources/SoldiersAndArmors/RankSprites/Rank_0_B.png
+      43: Resources/SoldiersAndArmors/RankSprites/Rank_1_B.png
+      44: Resources/SoldiersAndArmors/RankSprites/Rank_2_B.png
+      45: Resources/SoldiersAndArmors/RankSprites/Rank_3_B.png
+      46: Resources/SoldiersAndArmors/RankSprites/Rank_4_B.png
+      47: Resources/SoldiersAndArmors/RankSprites/Rank_5_B.png
+      800: Resources/SoldiersAndArmors/RankSprites/Rank_0_C.png
+      801: Resources/SoldiersAndArmors/RankSprites/Rank_1_C.png
+      802: Resources/SoldiersAndArmors/RankSprites/Rank_2_C.png
+      803: Resources/SoldiersAndArmors/RankSprites/Rank_3_C.png
+      804: Resources/SoldiersAndArmors/RankSprites/Rank_4_C.png
+      805: Resources/SoldiersAndArmors/RankSprites/Rank_5_C.png
+  - type: SMOKE.PCK
+    files:
+      20: Resources/SoldiersAndArmors/RankSprites/Rank_0_B.png
+      21: Resources/SoldiersAndArmors/RankSprites/Rank_1_B.png
+      22: Resources/SoldiersAndArmors/RankSprites/Rank_2_B.png
+      23: Resources/SoldiersAndArmors/RankSprites/Rank_3_B.png
+      24: Resources/SoldiersAndArmors/RankSprites/Rank_4_B.png
+      25: Resources/SoldiersAndArmors/RankSprites/Rank_5_B.png
+      800: Resources/SoldiersAndArmors/RankSprites/Rank_0_C.png
+      801: Resources/SoldiersAndArmors/RankSprites/Rank_1_C.png
+      802: Resources/SoldiersAndArmors/RankSprites/Rank_2_C.png
+      803: Resources/SoldiersAndArmors/RankSprites/Rank_3_C.png
+      804: Resources/SoldiersAndArmors/RankSprites/Rank_4_C.png
+      805: Resources/SoldiersAndArmors/RankSprites/Rank_5_C.png
+
+########################################
+########## COMBAT UNIFORM #############
+######################################
+  - type: MAN_0wdF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F0.png
+  - type: MAN_0wdF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F1.png
+  - type: MAN_0wdF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F2.png
+  - type: MAN_0wdF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F3.png
+  - type: MAN_0wdM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M0.png
+  - type: MAN_0wdM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M1.png
+  - type: MAN_0wdM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M2.png
+  - type: MAN_0wdM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M3.png
+
+  - type: XCOM_10.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/BlueCombatUniform.png
+  - type: BIGOBS.PCK
+    files:
+      500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_FLOOROB.png	  
+
+########################################
+########## PILOT JUMPSUIT #############
+######################################
+  - type: MAN_5F0.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F0.png
+  - type: MAN_5F1.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F1.png
+  - type: MAN_5F2.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F2.png
+  - type: MAN_5F3.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F3.png 
+  - type: MAN_5M0.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M0.png
+  - type: MAN_5M1.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M1.png
+  - type: MAN_5M2.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M2.png
+  - type: MAN_5M3.SPK 
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M3.png
+
+  - type: PILOT.PCK 
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/PilotSpritesheet.png
+
+  - type: BIGOBS.PCK
+    files:
+      501: Resources/SoldiersAndArmors/PilotArmor/PILOT_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      501: Resources/SoldiersAndArmors/PilotArmor/PILOT_CORPSE_FLOOROB.png
+
+########################################
+######### SPECIAL FORCES ##############
+######################################
+  - type: MAN_4SFF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF0.png
+  - type: MAN_4SFF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF1.png
+  - type: MAN_4SFF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF2.png
+  - type: MAN_4SFF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF3.png
+  - type: MAN_4SFM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM0.png
+  - type: MAN_4SFM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM1.png
+  - type: MAN_4SFM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM2.png
+  - type: MAN_4SFM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM3.png
+
+  - type: XCOM_4SF.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/SpecialForcesSpritesheet.png
+
+  - type: BIGOBS.PCK
+    files:
+      503: Resources/SoldiersAndArmors/SpecialForces/SPECIAL_FORCES_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      503: Resources/SoldiersAndArmors/SpecialForces/SPECIAL_FORCES_CORPSE_FLOOROB.png
+########################################
+############ MERCENARY ################
+######################################
+  - type: MAN_4MERCF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF0.png
+  - type: MAN_4MERCF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF1.png
+  - type: MAN_4MERCF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF2.png
+  - type: MAN_4MERCF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF3.png
+  - type: MAN_4MERCM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCM0.png
+  - type: MAN_4MERCM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF1.png
+  - type: MAN_4MERCM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF2.png
+  - type: MAN_4MERCM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF3.png
+
+  - type: XCOM_4MERC.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/MercenarySpritesheet.png
+
+  - type: BIGOBS.PCK
+    files:
+      504: Resources/SoldiersAndArmors/Mercenary/MERCENARY_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      504: Resources/SoldiersAndArmors/Mercenary/MERCENARY_CORPSE_FLOOROB.png
+
+########################################
+######### NATO DELTA ARMOR #############
+######################################
+  - type: ARMOR_DELTA.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/DeltaArmor/ARMOR_DELTA.PNG
+  - type: ARMOR_DELTA_INVENTORY.SPK
+    height: 200
+    width: 320
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/DeltaArmor/man_7m0.gif
+  - type: DELTA_ARMOR_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_IMAGE.PNG
+  - type: BIGOBS.PCK
+    files:
+      510: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      510: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_CORPSE_FLOOROB.png
+
+########################################
+######### USSR RIOT ARMOR #############
+######################################
+  - type: ARMOR_RIOT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/RiotArmor/ARMOR_RIOT.PNG
+  - type: ARMOR_RIOT_INVENTORY.SPK
+    height: 200
+    width: 320
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/RiotArmor/man_6m0.gif
+  - type: RIOT_ARMOR_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_IMAGE.PNG
+  - type: BIGOBS.PCK
+    files:
+      511: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      511: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_CORPSE_FLOOROB.png
+
+########################################
+######### USA COMBAT ARMOR ############
+######################################
+  - type: MAN_4UNF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f0.gif
+  - type: MAN_4UNF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f1.gif
+  - type: MAN_4UNF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f2.gif
+  - type: MAN_4UNF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f3.gif
+  - type: MAN_4UNM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m0.gif
+  - type: MAN_4UNM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m1.gif
+  - type: MAN_4UNM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m2.gif
+  - type: MAN_4UNM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m3.gif
+
+  - type: XCOM_4UN.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/XCOM_4/
+
+  - type: BIGOBS.PCK
+    files:
+      502: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      502: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_CORPSE_FLOOROB.png
+
+  - type: COMBAT_ARMOR_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_IMAGE.PNG
+
+########################################
+######### UN HEAVY PERSONAL ARMOR ############
+######################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      2905: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      2906: Resources/SoldiersAndArmors/HeavyPersonalArmor/Floor_HPA.png
+  - type: HEAVY_PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M0.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M1.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M2.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M3.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F0.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F1.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F2.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.gif
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_NONE_UC: NONE
+      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and confortable, it wasn't meant to stop plasma bolts, but can be enought to stop light bullets.
+
+      STR_PILOT: Pilot
+      STR_PILOT_UC: PILOT FLIGHT SUIT
+      STR_PILOT_UC_UFOPEDIA: Standard G-suit used by UNEXCOM combat pilots. Made to resist high levels of acceleration forces, it's very practical (has plenty of pockets), and durable (includes fire retardant clothing). Its appearance is usually similar to a jumpsuit.  
+
+      STR_SPECIAL_FORCES_SOLDIER: Special Forces Operator
+      STR_SPECIAL_FORCES_UNIFORM_UC: SPECIAL FORCES UNIFORM
+      STR_SPECIAL_FORCES_UNIFORM_UFOPEDIA: A lighter version of the military uniform worn by regular SoldiersAndArmors allows the Special Forces Operator to move freely on the battlefield. It has no protection against ballistic weapons, but that does not prevent it from being used by the world's elite military. Has a boost to bravery and morale.
+
+      STR_MERCENARY: Mercenary
+      STR_MERCENARY_UNIFORM_UC: MERCENARY BATTLE DRESS
+      STR_MERCENARY_UNIFORM_UFOPEDIA: The mercenary uniform is a light and comfortable military attire, generally similar to that worn by government armed forces. It is practical enough to allow for use in clandestine operations in a variety of environments and climates.
+
+########################################
+###### USA EXPERIMENTAL WEAPONS ########
+########################################
+      STR_COMBAT_ARMOR: XM-72 Combat Armor
+      STR_COMBAT_ARMOR_UC: XM-72 COMBAT ARMOR
+      STR_COMBAT_ARMOR_UFOPEDIA: Composite armor system, combining Alien Alloy and prototype Kevlar ballistic plates in a bulletproof vest and helmet made of the same material. Given the current limitations of armor manufacturing, it is still a bit heavy and uncomfortable to wear, but it certainly protects the user from light ballistic fire and some indirect plasma fire. Painted blue at our request.
+      STR_USA_PROTOTYPE_ARMOR_SYSTEMS: US ARMY PROTOTYPE ARMOR SYSTEM
+      STR_USA_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research into the development of flak jackets used by American troops in Vietnam has resulted in this prototype of individual armor. It uses a prototype Kevlar vest (materiel yet unused on large scale) with Alien Alloys plates to prevent damage to the wearer. It is considerably lighter than other metal-based armor and could be the future of infantry armor. We sent the blueprints to the R+D team immediately.
+########################################
+###### NATO EXPERIMENTAL WEAPONS #######
+########################################
+      STR_DELTA_ARMOR_UC: DELTA EOD ARMOR
+      STR_DELTA_ARMOR: Delta EOD Armor
+      STR_DELTA_ARMOR_UFOPEDIA: "German prototype armor for bomb disposal teams. It offers an incredible resistance to explosive and armor piercing damage, although it is heavy and causes fatigue to the user. The front part is more resistant than the back. It includes a MG3 general machine gun, with integrated brackets on the soldier's right arm to improve grip and precision, as well as to reduce its weight."
+      STR_NATO_PROTOTYPE_ARMOR_SYSTEMS: NATO Prototype Armor System
+      STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research on personal armor built with Alien Alloys has supported the research of European scientists and engineers. A prototype of armor to defuse explosives has been redesigned to use the new alien material. The plans have been sent to our R&D team for immediate construction.
+########################################
+###### USSR EXPERIMENTAL WEAPONS #######
+########################################   
+      STR_RIOT_ARMOR_UC: BEAR RIOT ARMOR
+      STR_RIOT_ARMOR: Bear Riot Armor
+      STR_RIOT_ARMOR_UFOPEDIA: "Advanced soviet prototype armor, derived from a project for a new riot armor for Spetsnaz special forces, is entirely built in Alien Alloy, includes a visor to protect the user's face from impacts and bullets, although this limits their visibility and mobility a bit. Includes a riot shield 'IM-21 Krepost', to deflect frontal damage."
+      STR_USSR_PROTOTYPE_ARMOR_SYSTEMS: USSR Prototype Armor System
+      STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: The prototype riot armor designed for the Spetsnaz forces has been improved using the new Alien Alloys. Field tests were used on Soviet volunteers and is able to withstand the direct impact of light weapons. The shield that it has integrated increases even more its resistance, almost at the same of armored vehicles. The schematics have been sent to our R&D team for its construction.
+########################################
+###### UN PERSONAL ARMORS ##############
+########################################
+      STR_HEAVY_PERSONAL_ARMOR_UC: HEAVY ARMOR
+      STR_HEAVY_PERSONAL_ARMOR: Heavy Armor
+      STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
+
+########################################
+      STR_2ND_LIEUTENANT: 2nd Lieutenant
+      STR_1ST_LIEUTENANT: 1st Lieutenant
+      STR_CAPTAIN: Captain
+      STR_MAJOR: Major
+      STR_COLONEL: Colonel
+      STR_BRIGADIER: Brigadier

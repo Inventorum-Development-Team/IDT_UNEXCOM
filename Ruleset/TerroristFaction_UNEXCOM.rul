@@ -78,6 +78,7 @@ armors:
     sideArmor: 10
     rearArmor: 10
     underArmor: 5
+    visibilityAtDark: 9
     damageModifier:
       - 1.0
       - 1.0
@@ -99,6 +100,7 @@ armors:
     sideArmor: 10
     rearArmor: 10
     underArmor: 5
+    visibilityAtDark: 9
     damageModifier:
       - 1.0
       - 1.0
@@ -120,6 +122,7 @@ armors:
     sideArmor: 10
     rearArmor: 10
     underArmor: 5
+    visibilityAtDark: 9
     damageModifier:
       - 1.0
       - 1.0
@@ -138,13 +141,13 @@ units:
     race: STR_TERRORIST
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 65
+      tu: 45
       stamina: 100
       health: 40
-      bravery: 80
-      reactions: 60
-      firing: 50
-      throwing: 70
+      bravery: 60
+      reactions: 50
+      firing: 20
+      throwing: 40
       strength: 40
       psiStrength: 50
       psiSkill: 0
@@ -156,17 +159,18 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 5
     aggression: 2
+    canSurrender: true
   - type: STR_TERRORIST_GRENADIER
     race: STR_TERRORIST
     rank: STR_LIVE_ENGINEER
     stats:
       tu: 60
       stamina: 100
-      health: 40
-      bravery: 80
+      health: 35
+      bravery: 60
       reactions: 50
-      firing: 50
-      throwing: 70
+      firing: 40
+      throwing: 40
       strength: 70
       psiStrength: 50
       psiSkill: 0
@@ -179,17 +183,18 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 7
     aggression: 2
+    canSurrender: true
   - type: STR_TERRORIST_MEDIC
     race: STR_TERRORIST
     rank: STR_LIVE_MEDIC
     stats:
       tu: 70
       stamina: 100
-      health: 40
+      health: 35
       bravery: 80
       reactions: 64
       firing: 30
-      throwing: 40
+      throwing: 30
       strength: 50
       psiStrength: 50
       psiSkill: 0
@@ -201,6 +206,7 @@ units:
     deathSound: [44, 45, 46]
     intelligence: 6
     aggression: 1
+    canSurrender: true
   - type: STR_TERRORIST_LEADER
     race: STR_TERRORIST
     rank: STR_LIVE_LEADER
@@ -211,7 +217,7 @@ units:
       bravery: 80
       reactions: 72
       firing: 60
-      throwing: 80
+      throwing: 50
       strength: 50
       psiStrength: 55
       psiSkill: 0
@@ -224,6 +230,7 @@ units:
     deathSound: [44, 45, 46]
     intelligence: 6
     aggression: 0
+    canSurrender: true
   - type: STR_TERRORIST_COMMANDER
     race: STR_TERRORIST
     rank: STR_LIVE_COMMANDER
@@ -234,7 +241,7 @@ units:
       bravery: 80
       reactions: 70
       firing: 70
-      throwing: 80
+      throwing: 50
       strength: 50
       psiStrength: 60
       psiSkill: 0
@@ -246,6 +253,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 8
     aggression: 0
+    canSurrender: true
 
 
 alienRaces:

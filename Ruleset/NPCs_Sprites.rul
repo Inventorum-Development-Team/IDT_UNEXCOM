@@ -329,6 +329,26 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Units/Inventory/INV_POLICE_MALE_CIVILIAN.PNG
+
+  - type: INV_AMERICAN_SOLDIER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Units/Inventory/INV_AMERICAN_SOLDIER.PNG
+  - type: INV_EUROPEAN_SOLDIER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Units/Inventory/INV_EUROPEAN_SOLDIER.PNG
+  - type: INV_SOVIET_SOLDIER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Units/Inventory/INV_SOVIET_SOLDIER.PNG
+######################################
   - type: HUMAN_JUMPSUIT_0_0.PCK
     width: 256
     height: 1400
@@ -1107,8 +1127,33 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Units/FEMALE_FARMER.PNG
+
+  - type: AMERICAN_SOLDIER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Units/AmericanSoldierSpritesheet.PNG
+  - type: EUROPEAN_SOLDIER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Units/EuropeanSoldierSpritesheet.PNG
+  - type: SOVIET_SOLDIER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Units/SovietSoldierSpritesheet.PNG
   - type: BIGOBS.PCK
     files:
+      400: Resources/Units/BIGOBS/BigAmericanSoldierCorpse.PNG
+      401: Resources/Units/BIGOBS/BigEuropeanSoldierCorpse.PNG
+      402: Resources/Units/BIGOBS/BigSovietSoldierCorpse.PNG
       414: Resources/Units/BIGOBS/BIGOB_HUMAN_JUMPSUIT_CORPSE.PNG
       423: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_0_0_CORPSE.PNG
       424: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_0_1_CORPSE.PNG
@@ -1164,6 +1209,9 @@ extraSprites:
       479: Resources/Units/BIGOBS/BIGOB_FEMALE_FARMER_CORPSE.PNG
   - type: FLOOROB.PCK
     files:
+      400: Resources/Units/FLOOROBS/FloorAmericanSoldierCorpse.PNG
+      401: Resources/Units/FLOOROBS/FloorEuropeanSoldierCorpse.PNG
+      402: Resources/Units/FLOOROBS/FloorSovietSoldierCorpse.PNG
       414: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_0_CORPSE.PNG
       415: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_1_CORPSE.PNG
       416: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_2_CORPSE.PNG

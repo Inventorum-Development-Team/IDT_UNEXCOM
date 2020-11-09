@@ -44,9 +44,11 @@ Credits by name:
 *Cupon4uk: bug hunter
 *danielpembrink: bug hunter
 *DarkDust: bug hunter
-*Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo
+*Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo, alien Fusion weapons
+*Duke_Falcon: Alien Turret sprites
 *Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper
 *efrenespartano: main ruleset and sprite creation, lead designer
+*Filip H: Huey, alien Turrets, bug hunter
 *Finnik: Astronaut sprites, original code added to the main OXCE, bug hunter
 *Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 *garretrgang: bug hunter
@@ -56,6 +58,7 @@ Credits by name:
 *JustTheDude: Terrorist Grenadier sprites
 *IgnisAbentorn: bug hunter
 *Ikhanad: FN FSC sprites, plus ideas.
+*im bored: bug hunter
 *Internet: UFOPedia images, further artwork reference
 *Istrebitel: craft weapon reference codes
 *KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
@@ -64,8 +67,7 @@ Credits by name:
 *Noah193: bug hunter and ideas
 *Nord: Aqualung sprites, Mi-8 map and sprites
 *Luke83: overall Terrain & Map support
-*PERLHA: bug hunter
-*Precentor Apollyon: Alien underwater breathing device
+*PERLHA: IDT bug hunter
 *Pvt.Dropleaf: bug hunter
 *Ryskeliini: Grenade Launcher (now unused)
 *StormRangerX: bug hunter

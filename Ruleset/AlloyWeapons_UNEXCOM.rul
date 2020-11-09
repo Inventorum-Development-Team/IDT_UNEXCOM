@@ -1,0 +1,1144 @@
+#Close quarters: defined by default on 1 tile 
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+items:
+################################
+##### FLECHETTE WEAPONS #######
+##############################
+  - type: STR_FLECHETTE_RIFLE
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
+    size: 0.2
+    costSell: 37500
+    weight: 6
+    bigSprite: 1211
+    floorSprite: 1211
+    handSprite: 2948
+    fireSound: 169
+    bulletSpeed: 50
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_FL]
+      1: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_AP]
+    confAimed:
+      shots: 1
+      name: STR_AP_AIMED
+      ammoSlot: 1
+      arcing: false
+    confSnap:
+      shots: 3
+      name: STR_AP_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      followProjectiles: false
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 50
+    accuracyAimed: 50
+    accuracyAuto: 75
+    maxRange: 60
+    aimRange: 35
+    snapRange: 32
+    autoRange: 28
+    dropoff: 1
+    tuAuto: 60
+    tuSnap: 40
+    tuAimed: 40
+    accuracyCloseQuarters: 50
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+  - type: STR_FLECHETTE_CARBINE
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
+    size: 0.2
+    costSell: 37500
+    weight: 5
+    bigSprite: 1204
+    floorSprite: 1203
+    handSprite: 2908
+    fireSound: 169
+    bulletSpeed: 50
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_FL]
+      1: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_AP]
+    confAimed:
+      shots: 2
+      name: STR_AP_DOUBLETAP
+      ammoSlot: 1
+      arcing: false
+    confSnap:
+      shots: 1
+      name: STR_AP_SNAP
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      followProjectiles: false
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 45
+    accuracyAimed: 45
+    accuracyAuto: 65
+    tuAuto: 55
+    tuSnap: 30
+    tuAimed: 30
+    accuracyCloseQuarters: 50
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    maxRange: 60
+    aimRange: 22
+    snapRange: 22
+    autoRange: 20
+    dropoff: 1
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+  - type: STR_ALLOY_RIFLE_AP
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.1
+    costSell: 2250
+    weight: 4
+    bigSprite: 1212
+    floorSprite: 1211
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 60
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 0.7
+      RandomWound: false
+    clipSize: 20
+    battleType: 2
+    attraction: 8
+  - type: STR_ALLOY_RIFLE_FL
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.1
+    costSell: 2250
+    weight: 2
+    bigSprite: 1220
+    floorSprite: 1211
+    handSprite: 0
+    damageType: 1
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 20
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.5
+      ToArmor: 0.1
+      ToWound: 2.0
+      RandomWound: false
+    clipSize: 60
+    battleType: 2
+    attraction: 8
+
+  - type: STR_FLECHETTE_PISTOL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_PISTOLS]
+    size: 0.1
+    costSell: 25000
+    weight: 3
+    bigSprite: 1209
+    floorSprite: 1210
+    handSprite: 2940
+    bulletSprite: 1
+    fireSound: 153
+    reloadSound: [179, 180, 181, 182]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_PISTOL_FL]
+      1: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_PISTOL_AP]
+    confSnap:
+      shots: 5
+      name: STR_AP_AUTO
+      ammoSlot: 1
+      arcing: false
+    confAuto:
+      shots: 5
+      followProjectiles: false
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 55
+    accuracyAuto: 65
+    accuracyCloseQuarters: 100
+    tuAuto: 20
+    tuSnap: 30
+    costThrow:
+      energy: 8
+    battleType: 1
+    maxRange: 60
+    snapRange: 10
+    autoRange: 10
+    dropoff: 1
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 10
+  - type: STR_ALLOY_PISTOL_AP
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.1
+    costSell: 2250
+    weight: 2
+    bigSprite: 1210
+    floorSprite: 1209
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 45
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 0.7
+      RandomWound: false
+    clipSize: 10
+    battleType: 2
+    attraction: 8
+
+  - type: STR_ALLOY_PISTOL_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.1
+    costSell: 2250
+    weight: 1
+    bigSprite: 1219
+    floorSprite: 1209
+    handSprite: 0
+    damageType: 1
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 20
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.5
+      ToArmor: 0.1
+      ToWound: 2.0
+      RandomWound: false
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+
+  - type: STR_FLECHETTE_AUTO_SHOTGUN
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    size: 0.3
+    costSell: 52000
+    weight: 6
+    bigSprite: 1202
+    floorSprite: 1202
+    handSprite: 2900
+    bulletSprite: 2
+    fireSound: 141
+    reloadSound: [183, 184, 185]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_AUTO_SHOTGUN_FL]
+    confSnap:
+      shots: 5
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_RAGE_FIRE
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 60
+    accuracyAuto: 50
+    tuSnap: 30
+    tuAuto: 45
+    maxRange: 60
+    snapRange: 8
+    autoRange: 6
+    dropoff: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 65
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+
+  - type: STR_ALLOY_AUTO_SHOTGUN_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
+    size: 0.1
+    costSell: 2500
+    weight: 2
+    bigSprite: 1203
+    floorSprite: 1213
+    handSprite: 0
+    power: 20
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.2
+      RandomType: 7
+      ToArmor: 0.1
+      IgnoreOverKill: true
+      ToWound: 2.5
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 30
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 60
+    battleType: 2
+    armor: 250
+  
+  - type: STR_FLECHETTE_SHOTGUN
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    size: 0.3
+    costSell: 5200
+    weight: 6
+    bigSprite: 1213
+    floorSprite: 1212
+    handSprite: 2956
+    bulletSprite: 2
+    fireSound: 141
+    reloadSound: [183, 184, 185]
+    ammo:
+      0: 
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_SHOTGUN_FL]
+    confAuto:
+      shots: 12
+      name: STR_RAGE_FIRE
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 60
+    accuracyAimed: 75
+    accuracyAuto: 45
+    tuSnap: 45
+    tuAimed: 50
+    tuAuto: 60
+    maxRange: 60
+    snapRange: 16
+    autoRange: 12
+    dropoff: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 30
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+
+  - type: STR_ALLOY_SHOTGUN_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
+    size: 0.1
+    costSell: 35000
+    weight: 2
+    bigSprite: 1214
+    floorSprite: 1213
+    handSprite: 0
+    power: 20
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.2
+      RandomType: 7
+      ToArmor: 0.1
+      IgnoreOverKill: true
+      ToWound: 2.5
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 12
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 12
+    shotgunSpread: 30
+    battleType: 2
+    armor: 250
+  
+
+  - type: STR_FLECHETTE_GL
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY]
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    size: 0.2
+    costSell: 42500
+    weight: 10
+    bigSprite: 1206
+    floorSprite: 1205
+    handSprite: 2924
+    fireSound: 142
+    compatibleAmmo:
+      - STR_30MM_AAG
+    accuracySnap: 70
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuSnap: 40
+    tuAimed: 50
+    tuAuto: 60
+    maxRange: 60
+    aimRange: 45
+    snapRange: 35
+    autoRange: 30
+    dropoff: 1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+
+  - type: STR_30MM_AAG
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_CLIPS, STR_ARTILLERY]
+    size: 0.1
+    costSell: 4700
+    weight: 3
+    bigSprite: 1217
+    floorSprite: 1208
+    handSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 75
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      toTile: 0.8
+      ArmorEffectiveness: 1.5
+      toWound: 2.0
+      RandomWound: true
+      FixRadius: 3
+    damageType: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1    
+    armor: 20
+    clipSize: 9
+    blastRadius: 3
+    bulletSprite: 14
+
+    
+  - type: STR_FLECHETTE_GRENADE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_LIGHT_EQUIPMENT, STR_EXPLOSIVES]
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    size: 0.1
+    costSell: 2400
+    weight: 2
+    bigSprite: 1205
+    floorSprite: 1204
+    handSprite: 2916
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      toTile: 0.8
+      ArmorEffectiveness: 1.5
+      toWound: 2.0
+      RandomWound: true
+      FixRadius: 4
+    power: 75
+    damageType: 3
+    battleType: 4
+    blastRadius: 4
+    
+  - type: STR_FLECHETTE_CANNON
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY, STR_LMGS]
+    size: 0.4
+    costSell: 54000
+    weight: 14
+    bigSprite: 1207
+    floorSprite: 1206
+    handSprite: 2932
+    bulletSprite: 2
+    fireSound: 144
+    bulletSpeed: 100
+    reloadSound: [194, 195, 196]
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_ALLOY_HEAVY_AP]
+      1: 
+        compatibleAmmo: [ STR_ALLOY_HEAVY_FL]
+    confSnap:
+      shots: 5
+      name: STR_AP_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 20
+      name: STR_FL_BURST
+      ammoSlot: 1
+      arcing: false
+    accuracyCloseQuarters: 35
+    accuracySnap: 40
+    accuracyAuto: 50
+    tuSnap: 20
+    tuAuto: 50
+    tuLoad: 30
+    maxRange: 60
+    snapRange: 42
+    autoRange: 38
+    dropoff: 1
+    minRange: 3
+    invHeight: 3
+    invWidth: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 10
+
+  - type: STR_ALLOY_HEAVY_AP
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
+    size: 0.1
+    costSell: 2250
+    weight: 6
+    bigSprite: 1208
+    floorSprite: 1207
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 75
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 0.6
+      RandomWound: false
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+
+  - type: STR_ALLOY_HEAVY_FL
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
+    size: 0.1
+    costSell: 2250
+    weight: 4
+    bigSprite: 1218
+    floorSprite: 1207
+    handSprite: 0
+    damageType: 1
+    hitAnimation: 26
+    bulletSprite: 2
+    battleType: 2
+    power: 20
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.5
+      ToArmor: 0.1
+      ToWound: 2.0
+      RandomWound: false
+    clipSize: 160
+    battleType: 2
+    attraction: 8
+
+  - type: STR_FLECHETTE_SNIPER
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    requires:
+      - STR_ALLOY_HEAVY
+    size: 0.3
+    costSell: 62600
+    weight: 10
+    bigSprite: 1215
+    floorSprite: 1214
+    handSprite: 2964
+    bulletSprite: 4
+    bulletSpeed: 20
+    fireSound: 150
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0: 
+        compatibleAmmo: [ STR_ALLOY_SNIPER_AP]
+      1: 
+        compatibleAmmo: [ STR_ALLOY_SNIPER_FL]
+    confSnap:
+      shots: 1
+      name: STR_AP_SHOT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 1
+      name: STR_FL_SHOT
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 50
+    accuracySnap: 120
+    accuracyAimed: 120
+    snapRange: 200
+    tuSnap: 75
+    tuAimed: 75
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    battleType: 1
+    damageBonus:
+      firing: 0.9
+    twoHanded: true
+    oneHandedPenalty: 25
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    minRange: 10
+    maxRange: 60
+    aimRange: 50
+    snapRange: 45
+    autoRange: 50
+    minRange: 5
+    dropoff: 2
+    attraction: 10
+
+  - type: STR_ALLOY_SNIPER_AP
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    size: 0.1
+    costSell: 2250
+    weight: 2
+    bigSprite: 1216
+    floorSprite: 1207
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 75
+    hitSound: 22
+    damageType: 1
+    width: 2
+    height: 3
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 0.6
+      ToArmor: 1.2
+      RandomWound: false
+    clipSize: 5
+    battleType: 2
+    attraction: 8
+
+  - type: STR_ALLOY_SNIPER_FL
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    requires:
+      - STR_ALLOY_HEAVY
+    size: 0.1
+    costSell: 2250
+    weight: 2
+    bigSprite: 1221
+    floorSprite: 1207
+    handSprite: 0
+    damageType: 1
+    hitAnimation: 26
+    bulletSprite: 2
+    battleType: 2
+    power: 75
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.5
+      ToArmor: 0.1
+      ToWound: 2.0
+      RandomWound: false
+    clipSize: 5
+    battleType: 2
+    attraction: 8
+
+
+manufacture:
+  - name: STR_FLECHETTE_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_CLOSE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    space: 2
+    time: 200 #600
+    cost: 10000
+    listOrder: 1101
+  - name: STR_FLECHETTE_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_RIFLES
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 4
+    time: 350 #400
+    cost: 30000
+    listOrder: 1101
+  - name: STR_FLECHETTE_CARBINE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_RIFLES
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 3
+    time: 300 
+    cost: 25500
+    listOrder: 1101
+  - name: STR_FLECHETTE_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_CLOSE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+    space: 4
+    time: 300 
+    cost: 25000
+    listOrder: 1101
+  - name: STR_FLECHETTE_AUTO_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_CLOSE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 3
+    time: 300 
+    cost: 25000
+    listOrder: 1101
+  - name: STR_FLECHETTE_SNIPER
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_HEAVY
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+    space: 5
+    time: 900 
+    cost: 35000
+    listOrder: 1101
+  - name: STR_FLECHETTE_CANNON
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_HEAVY
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+    space: 6
+    time: 900 
+    cost: 40000
+    listOrder: 1101
+  - name: STR_FLECHETTE_GL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 4
+    time: 400 
+    cost: 30000
+    listOrder: 1101	
+  - name: STR_FLECHETTE_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    space: 2
+    time: 40 
+    cost: 5000
+    listOrder: 1103	
+    
+  - name: STR_ALLOY_PISTOL_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 1000
+    listOrder: 1102
+  - name: STR_ALLOY_PISTOL_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 1500
+    listOrder: 1102
+  - name: STR_ALLOY_RIFLE_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_RIFLES
+    space: 1
+    time: 10 #600
+    cost: 1500
+    listOrder: 1102
+  - name: STR_ALLOY_RIFLE_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_RIFLES
+    space: 1
+    time: 10 #600
+    cost: 2000
+    listOrder: 1102
+  - name: STR_ALLOY_SHOTGUN_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 2000
+    listOrder: 1102
+  - name: STR_ALLOY_AUTO_SHOTGUN_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 2000
+    listOrder: 1102
+  - name: STR_30MM_AAG
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    space: 1
+    time: 10 #600
+    cost: 4000
+    listOrder: 1102
+  - name: STR_ALLOY_HEAVY_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 3000
+    listOrder: 1102
+  - name: STR_ALLOY_HEAVY_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 3500
+    listOrder: 1102
+  - name: STR_ALLOY_SNIPER_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 2500
+    listOrder: 
+  - name: STR_ALLOY_SNIPER_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 3000
+    listOrder: 1102
+
+ufopaedia:
+########################################
+############## WEAPONS #################
+########################################
+
+  - id: STR_FLECHETTE_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_CLOSE
+    text: STR_FLECHETTE_PISTOL_UFOPEDIA
+  - id: STR_FLECHETTE_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_CLOSE
+    text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
+  - id: STR_FLECHETTE_AUTO_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_CLOSE
+    text: STR_FLECHETTE_AUTOMATIC_SHOTGUN_UFOPEDIA
+  - id: STR_FLECHETTE_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_RIFLES
+    text: STR_FLECHETTE_RIFLE_UFOPEDIA
+  - id: STR_FLECHETTE_CARBINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_RIFLES
+    text: STR_FLECHETTE_CARBINE_UFOPEDIA
+  - id: STR_FLECHETTE_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_HEAVY
+    text: STR_FLECHETE_CANNON_UFOPEDIA
+  - id: STR_FLECHETTE_SNIPER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_HEAVY
+    text: STR_FLECHETTE_SNIPER_UFOPEDIA
+  - id: STR_FLECHETTE_GL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    text: STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA
+  - id: STR_FLECHETTE_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    text: STR_FLECHETTE_GRENADE_UFOPEDIA
+########################################
+######## AMMO CLIPS & MAGAZINES ########
+########################################
+  - id: STR_ALLOY_RIFLE_AP
+    requires:
+      - STR_ALLOY_RIFLES
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_RIFLE_AP_UFOPEDIA
+  - id: STR_ALLOY_RIFLE_FL
+    requires:
+      - STR_ALLOY_RIFLES
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_RIFLE_FL_UFOPEDIA
+  - id: STR_ALLOY_PISTOL_AP
+    requires:
+      - STR_ALLOY_CLOSE
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_PISTOL_AP_UFOPEDIA
+  - id: STR_ALLOY_PISTOL_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_PISTOL_FL_UFOPEDIA
+  - id: STR_ALLOY_SHOTGUN_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_SHOTGUN_FL_UFOPEDIA
+  - id: STR_ALLOY_AUTO_SHOTGUN_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_AUTO_SHOTGUN_FL_UFOPEDIA
+  - id: STR_ALLOY_HEAVY_AP
+    requires:
+      - STR_ALLOY_HEAVY
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_HEAVY_AP_UFOPEDIA
+  - id: STR_ALLOY_HEAVY_FL
+    requires:
+      - STR_ALLOY_HEAVY
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_HEAVY_FL_UFOPEDIA
+  - id: STR_ALLOY_SNIPER_AP
+    requires:
+      - STR_ALLOY_HEAVY
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_SNIPER_AP_UFOPEDIA
+  - id: STR_ALLOY_SNIPER_FL
+    requires:
+      - STR_ALLOY_HEAVY
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_ALLOY_SNIPER_FL_UFOPEDIA
+  - id: STR_30MM_AAG
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_30MM_AAG_UFOPEDIA
+
+extraSprites:
+#########################################
+######### PHLOGISTON WEAPONS ############
+#########################################
+  - type: BIGOBS.PCK
+    files:
+      1202: Resources/AlloyWeapons/Bigob_G_Auto_Shotgun.png
+      1203: Resources/AlloyWeapons/Bigob_G_Auto_Shotgun_Clip.png
+      1204: Resources/AlloyWeapons/Bigob_G_Carbine.png
+      1205: Resources/AlloyWeapons/Bigob_G_Grenade.png
+      1206: Resources/AlloyWeapons/Bigob_G_Grenade_launcher.png
+      1207: Resources/AlloyWeapons/Bigob_G_Heavy.png
+      1208: Resources/AlloyWeapons/Bigob_G_Heavy_Clip.png
+      1209: Resources/AlloyWeapons/Bigob_G_Pistol.png
+      1210: Resources/AlloyWeapons/Bigob_G_Pistol_Clip.png
+      1211: Resources/AlloyWeapons/Bigob_G_Rifle.png
+      1212: Resources/AlloyWeapons/Bigob_G_Rifle_Clip.png
+      1213: Resources/AlloyWeapons/Bigob_G_Shotgun.png
+      1214: Resources/AlloyWeapons/Bigob_G_Shotgun_Clip.png
+      1215: Resources/AlloyWeapons/Bigob_G_Sniper.png
+      1216: Resources/AlloyWeapons/Bigob_G_Sniper_Clip.png
+      1217: Resources/AlloyWeapons/Bigob_G_Grenade_launcher_clip.png
+      1218: Resources/AlloyWeapons/Bigob_G_Heavy_Clip_AA.png
+      1219: Resources/AlloyWeapons/Bigob_G_Pistol_Clip_AA.png
+      1220: Resources/AlloyWeapons/Bigob_G_Rifle_Clip_AA.png
+      1221: Resources/AlloyWeapons/Bigob_G_Sniper_Clip_AA.png
+
+
+  - type: FLOOROB.PCK
+    files:
+      1202: Resources/AlloyWeapons/Floorob_G_Auto_Shotgun.png 
+      1203: Resources/AlloyWeapons/Floorob_G_Carbine.png 
+      1204: Resources/AlloyWeapons/Floorob_G_Grenade.png 
+      1205: Resources/AlloyWeapons/Floorob_G_Grenade_launcher.png 
+      1206: Resources/AlloyWeapons/Floorob_G_Heavy.png 
+      1207: Resources/AlloyWeapons/Floorob_G_Heavy_Clip.png 
+      1208: Resources/AlloyWeapons/Floorob_G_Pistol.png 
+      1209: Resources/AlloyWeapons/Floorob_G_Pistol_Clip.png 
+      1210: Resources/AlloyWeapons/Floorob_G_Rifle.png 
+      1211: Resources/AlloyWeapons/Floorob_G_Rifle_Clip.png 
+      1212: Resources/AlloyWeapons/Floorob_G_Shotgun.png 
+      1213: Resources/AlloyWeapons/Floorob_G_Shotgun_Clip.png 
+      1214: Resources/AlloyWeapons/Floorob_G_Sniper.png 
+
+      
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2900: Resources/AlloyWeapons/Handob_G_Auto_Shotgun.png
+      2908: Resources/AlloyWeapons/Handob_G_Carbine.png
+      2916: Resources/AlloyWeapons/Handob_G_Grenade.png
+      2924: Resources/AlloyWeapons/Handob_G_Grenade_launcher.png
+      2932: Resources/AlloyWeapons/Handob_G_Heavy.png
+      2940: Resources/AlloyWeapons/Handob_G_Pistol.png
+      2948: Resources/AlloyWeapons/Handob_G_Rifle.png
+      2956: Resources/AlloyWeapons/Handob_G_Shotgun.png
+      2964: Resources/AlloyWeapons/Handob_G_Sniper.png
+
+  
+extraStrings:
+  - type: en-US
+    strings:
+      STR_FLECHETTE_RIFLE: "XM45 Flechette/TC Rifle"
+      STR_ALLOY_RIFLE_AP: "TC Rifle Rounds (x20)"
+      STR_ALLOY_RIFLE_FL: "Flechette Rifle Rounds (x60)"
+      STR_FLECHETTE_CARBINE: "XM42 Flechette/TC Carbine"
+      STR_FLECHETTE_PISTOL: "XM35 Flechette/TC Pistol"
+      STR_ALLOY_PISTOL_AP: "TC Pistol Rounds (x10)"
+      STR_ALLOY_PISTOL_FL: "Flechette Pistol Rounds (x30)"
+      STR_FLECHETTE_SHOTGUN: "XM12 Flechette/TC Shotgun"
+      STR_ALLOY_SHOTGUN_FL: "Flechette Shells (x12)"
+      STR_FLECHETTE_AUTO_SHOTGUN: "XM120 Automatic Shotgun"
+      STR_ALLOY_AUTO_SHOTGUN_FL: "Flechette Drum (x30)"
+      STR_FLECHETTE_GL: "XM62 Alloy Grenade Launcher"
+      STR_30MM_AAG: "30mm Alloy Grenades (x9)"
+      STR_FLECHETTE_GRENADE: "Flechette Grenade"
+      STR_FLECHETTE_CANNON: "XM65 Flechette Autocannon"
+      STR_ALLOY_HEAVY_AP: "TC Autocannon Clip (x30)"
+      STR_ALLOY_HEAVY_FL: "Flechette Autocannon Clip (x160)"
+      STR_FLECHETTE_SNIPER: "XM55 Dual Purpose Sniper Rifle"
+      STR_ALLOY_SNIPER_AP: "TC Anti-Materiel Rounds (x5)"
+      STR_ALLOY_SNIPER_FL: "Flechette Anti-Personnel Rounds  (x5)"
+      STR_FLECHETTE_RIFLE_UFOPEDIA: "Our new rifle uses a modern handle to provide extra stability to the shooter. Its construction in plastic polymers makes it very lightweight, although there are some concerns regarding its TCrability. Others would have preferred to build them entirely from AA. Either way, it is a stable weapon that will allow any infant who uses it to cause considerable damage to their target."
+      STR_FLECHETTE_MACHINE_PISTOL: "XM35 Flechette Pistol"
+      STR_FLECHETTE_MACHINE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored vehicle and artillery crews. It is slightly heavier than our standard M1911 Colt, but its ammunition is considerably lighter. The recoil is very manageable and has a fire selector for bursts and automatic mode. It cannot fire in semi-automatic mode."
+      STR_AP_BURST: "Burst Fire, TC"
+      STR_FL_BURST: "Burst Fire, Flechette"
+      STR_AP_AIMED: "Aimed Shot, TC"
+      STR_FL_AUTO: "Auto Shot, Flechette"
+      STR_AP_DOUBLETAP: "Double Tap, TC"
+      STR_AP_SHOT: "Aimed Shot, TC"
+      STR_FL_SHOT: "Aimed Shot, Flechette"
+      STR_AP_SNAP: "Snap Shot, TC"
+      STR_FLECHETTE_RIFLE_UFOPEDIA: "Our new rifle uses a modern handle to provide extra stability to the shooter. Its construction in Alien Alloys makes it very lightweight, It is a stable weapon that will allow any infantryman who uses it to feel confortable and confident in battle. This weapon will never let you down."
+      STR_FLECHETTE_CARBINE_UFOPEDIA: "This new carbine design bears many similarities to our alloy rifle design. The design exchanges accuracy with rate of fire and weight, making the carbine suited for closer ranged engagements than the rifle."
+      STR_FLECHETTE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored car crews and artillery. It is extremely lightweight and versatile, being able to fire either bursts of flechette rounds or armor-penetrating TC rounds."
+      STR_FLECHETTE_SHOTGUN_UFOPEDIA: "Our team of gunsmiths created this interestin design. Initially, it gives the impression of being some kind of semi-automatic rifle, but in reality it is a shotgun with an exceptionally long barrel. It fires flechette ammunition stored in a cylindrical magazine. Its greatest advantage is its long range."
+      STR_FLECHETTE_SNIPER_UFOPEDIA: "Powerful anti-material rifle, designed to destroylight vehicles and heavy armored soldiers. Our team of engineers created a robust, shockand impact resistant rifle that you can have, without compromising its structural integrity. This allows the shooter to fire without much alteration in the position of the variable telescopicsight from x8 to x16 magnification. Its huge muzzle brake is necessary to give the gun stability."
+      STR_FLECHETTE_GRENADE_UFOPEDIA: "This fragmentation grenade is designed to inflict the maximum amount of damage possible. Upon detonation, it ejects hundreds of Alien Alloys flechettes which can destroy an organic target within three meters. Its ability to penetrate armor is extremely limited, but its lethal potential is just as incredible."
+      STR_FLECHETE_CANNON_UFOPEDIA: "The need to develop a heavy automatic weapon to support our squadron led to this automatic gun. By mounting two cannons on it, the ROF is doubled without affecting the physical integrity of the weapon. Its entire Alien Alloys construction makes it surprisingly light (approximately the weight of a conventional lightmachine gun), for its size."
+      STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA: "An interesting proposal for arelatively simple design. This grenade launcher uses drum loaders to store the projectilesand fire them fully automatically."
+      STR_FLECHETTE_AUTOMATIC_SHOTGUN_UFOPEDIA: "One of our engineers worked closely on the development of an automatic shotgun similar to an AR15 rifle called the AA-12, which he decided to implement a weapon based on it to equip our troops. The results an impressive weapon: a mixture of the ROF of an assault rifle with the stopping power of shotguns. It only fires in automatic mode, so it is recommended to use it at short range."
+#############################
+      STR_ALLOY_RIFLE_AP_UFOPEDIA: "Based on the .280 British (also known as 7mm NATO) experimental cartridge, it has proven to be reliable and can be adapted to our requirements with relative ease. This cartridge contains depleted uranium core and Alien Alloys coating, facilitating target penetration."
+      STR_ALLOY_RIFLE_FL_UFOPEDIA: "This intermediate cartridge has the right size to be adapted to shoot Flechette bullets. Compared to the original .280 British cartridge (recognized for its ease of use), our 7mm FL bullets are light enough to be transported in large quantities. It is recommended to avoid their use against armored enemies, TCe to the poor penetration of AA Flechettes."
+      STR_ALLOY_PISTOL_AP_UFOPEDIA: "Using a modified version of the .45 ACP bullets we have been able to obtain satisfactory results in the armor penetration tests. Having the size of a .45 ACP bullet, but with a depleted uranium core, this cartridge has the stopping power of a conventional battle rifle, but with the size of a pistol bullet. " 
+      STR_ALLOY_PISTOL_FL_UFOPEDIA: "Using .45 ACP bullets as a base, our gunsmith engineers have created a hollow cartridge containing Flechettes made with AA. In addition to the bullet's own stopping power, the interior of the bullet contains an unspecified amount of Alien Alloys that fragment upon impact with a soft object... this is in addition to its very light weight."
+      STR_ALLOY_SHOTGUN_FL_UFOPEDIA: "Designed to provide containment fire at greater distances than those offered by other shotguns, they are the perfect complement to the XM12 shotgun. Their range is quite limited, but this (far from being a problem) is quite useful to create a very concentrated cloud of fire over medium distances. "
+      STR_ALLOY_AUTO_SHOTGUN_FL_UFOPEDIA: "The pellets of this shotgun were specially optimized to cover a wide surface, saturating the area with Flechettes. Its power at short distance is unrivaled, but it is completely useless at longer distances. Each .12 gauge cartridge used by the XM120 shotgun contains 10 Alien Alloy Flechettes"
+      STR_ALLOY_HEAVY_AP_UFOPEDIA: "Powerful 20mm caliber ammunition, contains a core of depleted uranium and tungsten It is optimized for tearing down heavy armor, the high firepower greatly boosts in this function. Many soldiers are surprised to see such a large yet lightweight projectile." 
+      STR_ALLOY_HEAVY_FL_UFOPEDIA: "A special high-capacity magazine, the Flechettes use a 20mm caliber cap just like the AP depleted uranium bullets, except that they are considerably lighter. Their ability to cause injury is important and the enormous capacity of the magazine allows for long suppression fire on the enemy."
+      STR_ALLOY_SNIPER_AP_UFOPEDIA: "A highly specialized projectile is basically a javelin of depleted uranium, placed inside a bullet made of AA. Upon penetrating a target, the TC javelin is propelled by the kinetic energy of the projectile, making a clean hole in various types of armor. Designed to wreak hard targets from far away."
+      STR_ALLOY_SNIPER_FL_UFOPEDIA: "This experimental projectile contains an oversized Alien Alloys Flechette, which upon impact with the skin of a soft target, breaks instantly and can cause critical injuries that are very difficult to patch up. However, it will collapse without much damage if it hits a hard enemy. It is specially modified for long distance shooting."
+      STR_30MM_AAG_UFOPEDIA: "Small yet powerful 30mm explosive grenades. Originally designed for a Soviet grenade launcher, we have adopted it.  It's very versatile and light enought to carry it on large quantities."

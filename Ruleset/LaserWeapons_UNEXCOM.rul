@@ -1,0 +1,1441 @@
+﻿#Close quarters: defined by default on 1 tile 
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+
+
+items:
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+###################################
+###### USA LASER WEAPONS #########
+#################################
+
+  - type: STR_M1972_LASER_PISTOL
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HANDGUNS
+    size: 0.1
+    costBuy: 30000
+    costSell: 20000
+    weight: 4
+    bigSprite: 2000
+    floorSprite: 2000
+    handSprite: 2000
+    bulletSprite: 27
+    fireSound: 2960
+    hitSound: 19
+    hitAnimation: 36
+    power: 45
+    damageType: 4
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 70
+    accuracyAuto: 60
+    tuSnap: 16
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 13
+    snapRange: 10
+    autoRange: 10
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+
+  - type: STR_38_LASER_MAGNUM
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HANDGUNS
+    size: 0.2
+    costBuy: 40000
+    costSell: 30000
+    weight: 6
+    bigSprite: 2001
+    floorSprite: 2001
+    handSprite: 2008
+    bulletSprite: 27
+    fireSound: 2961
+    hitSound: 19
+    hitAnimation: 36
+    power: 55
+    damageType: 4
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuSnap: 26
+    tuAimed: 50
+    tuAuto: 32
+    autoShots: 6
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 13
+    snapRange: 10
+    autoRange: 8
+    minRange: 1
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+
+  - type: STR_CALBR
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_RIFLES
+    size: 0.3
+    costBuy: 50000
+    costSell: 40000
+    weight: 6
+    bigSprite: 2002
+    floorSprite: 2002
+    handSprite: 2016
+    bulletSprite: 27
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageType: 4
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 65 
+    accuracySnap: 65
+    accuracyAimed: 60
+    tuAuto: 45
+    tuSnap: 35
+    tuAimed: 40
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 36
+    autoRange: 25
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+
+  - type: STR_M20_M203_LASER_CARBINE
+    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_RIFLES
+    size: 0.3
+    costBuy: 45000
+    costSell: 40000
+    weight: 6
+    bigSprite: 2003
+    floorSprite: 2003
+    handSprite: 2024
+    bulletSprite: 27
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 50
+    damageType: 4
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAimed:
+      shots: 1
+      name: STR_FIRE_M203
+      ammoSlot: 1
+    ammo:
+      1: 
+        tuLoad: 20
+        tuUnload: 20
+        compatibleAmmo: [ STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_40MM_SMOKE, STR_40MM_NON_LETHAL ]
+    accuracyAuto: 60
+    accuracySnap: 65
+    accuracyAimed: 75
+    tuAuto: 28
+    tuSnap: 25
+    tuAimed: 50
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 24
+    autoRange: 18
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_M5_LASER_SMG
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.2
+    costBuy: 40000
+    costSell: 32000
+    weight: 4
+    bigSprite: 2004
+    floorSprite: 2004
+    handSprite: 2032
+    bulletSprite: 27
+    fireSound: 2962
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    accuracyAuto: 65 
+    accuracySnap: 60
+    accuracyAimed: 50
+    tuAuto: 14
+    tuSnap: 10
+    tuAimed: 15
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 9
+    snapRange: 13
+    autoRange: 11
+    twoHanded: true
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_ULYSSES_LASER_SNIPER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 65000
+    costSell: 55000
+    weight: 10
+    bigSprite: 2005
+    floorSprite: 2005
+    handSprite: 2040
+    bulletSprite: 27
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+    twoHanded: true
+    accuracySnap: 65
+    accuracyAimed: 105
+    accuracyAuto: 200
+    tuSnap: 33
+    tuAimed: 62
+    tuAuto: 85
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 50
+    snapRange: 45
+    autoRange: 50
+    minRange: 5
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_X4_LASER_SHOTGUN
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.3
+    costBuy: 38000
+    costSell: 32000
+    weight: 7
+    bigSprite: 2006
+    floorSprite: 2006
+    handSprite: 2048
+    bulletSprite: 27
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    confAuto:
+      shots: 8
+      name: STR_RAGE_FIRE
+    clipSize: -1
+    accuracySnap: 60
+    accuracyAuto: 65
+    power: 55
+    damageType: 4
+    tuSnap: 40
+    tuAimed: 60
+    tuAuto: 55
+    maxRange: 60
+    snapRange: 12
+    autoRange: 8
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+
+  - type: STR_M4_LASER_LMG
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USA_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 50000
+    costSell: 40000
+    weight: 12
+    bigSprite: 2007
+    floorSprite: 2007
+    handSprite: 2056
+    bulletSprite: 27
+    fireSound: 2966
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    accuracyAuto: 65
+    accuracySnap: 65
+    confSnap:
+      shots: 5
+      name: STR_BURST
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+    tuAuto: 28
+    tuSnap: 34
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    snapRange: 35
+    autoRange: 30
+    minRange: 3
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+
+  - type: STR_ELERIUM_FLAMETHROWER
+    categories: [STR_ARTILLERY, STR_USA_TECH, STR_LASER]
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    size: 0.2
+    costBuy: 42000
+    costSell: 36500
+    weight: 10
+    bigSprite: 2008
+    floorSprite: 2008
+    handSprite: 2064
+    bulletSprite: 23
+    fireSound: 2967
+#    compatibleAmmo:
+#      - STR_FLAMETHROWER_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 75
+    tuAuto: 35
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    autoRange: 15
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+#    explosionHitSound: 113
+    hitAnimation: 8
+    power: 120
+    damageType: 4
+    damageAlter:
+      ToMorale: 30.0
+      FireThreshold: 1
+      SmokeThreshold: 1000
+    clipSize: -1
+    autoShots: 5
+    sprayWaypoints: 2     
+#    bulletSpeed: 8
+    experienceTrainingMode: 7
+    attraction: 7
+
+###################################
+###### NATO LASER WEAPONS #########
+#################################
+
+  - type: STR_P71_LASER_PISTOL
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_HANDGUNS
+    size: 0.1
+    costBuy: 30000
+    costSell: 20000
+    weight: 3
+    bigSprite: 2009
+    floorSprite: 2009
+    handSprite: 2072
+    fireSound: 2960
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 45
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    damageType: 4
+    accuracySnap: 80
+    accuracyAimed: 90
+    accuracyAuto: 75
+    tuSnap: 16
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 15
+    snapRange: 15
+    autoRange: 13
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+
+  - type: STR_FN_FLA_LASER_BATTLE_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    size: 0.3
+    costBuy: 52000
+    costSell: 44000
+    weight: 5
+    bigSprite: 2010
+    floorSprite: 2010
+    handSprite: 2080
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 55
+    damageType: 4
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75 
+    accuracySnap: 85
+    accuracyAimed: 110
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 40
+    snapRange: 45
+    autoRange: 35
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+
+  - type: STR_FN_FLA_LASER_CARBINE
+    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    size: 0.3
+    costBuy: 50000
+    costSell: 44000
+    weight: 4
+    bigSprite: 2011
+    floorSprite: 2011
+    handSprite: 2088
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 55
+    damageType: 4
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+    accuracyAuto: 70 
+    accuracySnap: 80
+    accuracyAimed: 105
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 23
+    snapRange: 25
+    autoRange: 22
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_L4_ASSAULT_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    size: 0.3
+    costBuy: 50000
+    costSell: 40000
+    weight: 4
+    bigSprite: 2012
+    floorSprite: 2012
+    handSprite: 2096
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 52
+    damageType: 4
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75 
+    accuracySnap: 85
+    accuracyAimed: 80
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 22
+    snapRange: 25
+    autoRange: 18
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_MAT72_SUBMACHINE_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.2
+    costBuy: 30000
+    costSell: 22000
+    weight: 3
+    bigSprite: 2013
+    floorSprite: 2013
+    handSprite: 2104
+    fireSound: 2962
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 45
+    damageType: 4
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    accuracyAuto: 75 
+    accuracySnap: 85
+    accuracyAimed: 85
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 40
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 12
+    snapRange: 15
+    autoRange: 14
+    twoHanded: true
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 66000
+    costSell: 55000
+    weight: 7
+    bigSprite: 2014
+    floorSprite: 2014
+    handSprite: 2112
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 80
+    damageType: 4
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+    twoHanded: true
+    accuracySnap: 95
+    accuracyAimed: 155
+    accuracyAuto: 250
+    tuSnap: 33
+    tuAimed: 62
+    tuAuto: 85
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 55
+    snapRange: 50
+    autoRange: 60
+    minRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_ML73_LASER_MACHINE_GUN
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 65000
+    costSell: 54000
+    weight: 8
+    bigSprite: 2015
+    floorSprite: 2015
+    handSprite: 2120
+    fireSound: 2966
+    hitSound: 19
+    hitAnimation: 90
+    bulletSprite: 28
+    power: 55
+    damageType: 4
+    confSnap:
+      shots: 5
+      name: STR_BURST
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+    accuracyAuto: 70
+    accuracySnap: 80
+    tuAuto: 38
+    tuSnap: 35
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    snapRange: 45
+    autoRange: 40
+    minRange: 3
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3	
+
+  - type: STR_M72_AUTOMATIC_RECOILESS_RIFLE
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.4
+    costBuy: 36000
+    costSell: 30000
+    weight: 9
+    bigSprite: 2016
+    floorSprite: 2016
+    handSprite: 2184
+    bulletSprite: 0
+    fireSound: 152
+    confSnap:
+      shots: 1
+      name: STR_AIMED_SHOT
+    confAuto:
+      shots: 3
+      name: STR_X3_SHOT
+    confAimed:
+      shots: 6
+      name: STR_X6_SHOT
+    compatibleAmmo:
+      - STR_M72_ARR_HEAT_MAG
+      - STR_M72_ARR_HE_MAG
+      - STR_M72_ARR_SMOKE_MAG
+      - STR_M72_ARR_ELERIUM_MAG
+    accuracyCloseQuarters: 25
+    accuracySnap: 125
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuSnap: 40
+    tuAimed: 60
+    tuAuto: 80
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+
+  - type: STR_M72_ARR_HEAT_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.2
+    costBuy: 2600
+    costSell: 1200
+    weight: 6
+    bigSprite: 2017
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      toArmor: 1.5
+    damageType: 3
+    clipSize: 3
+    blastRadius: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+  - type: STR_M72_ARR_HE_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.2
+    costBuy: 2600
+    costSell: 1200
+    weight: 6
+    bigSprite: 2018
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToWound: 1.3
+      RandomWound: true
+      ToTile: 1.8
+    damageType: 3
+    clipSize: 3
+    blastRadius: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+  - type: STR_M72_ARR_SMOKE_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.2
+    costBuy: 2200
+    costSell: 1000
+    weight: 6
+    bigSprite: 2019
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.3
+      RadiusReduction: 40
+      IgnoreSelfDestruct: true
+      ToWound: 1.3
+      RandomWound: true
+      ToTile: 0.66
+    damageType: 9
+    clipSize: 3
+    blastRadius: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+  - type: STR_M72_ARR_ELERIUM_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+      - STR_ELERIUM_FUSION
+    size: 0.2
+    costBuy: 10000
+    costSell: 8000
+    weight: 6
+    bigSprite: 2020
+    hitSound: 0
+    hitAnimation: 0
+    power: 130
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.3
+      RadiusReduction: 40
+      IgnoreSelfDestruct: true
+      ToWound: 1.3
+      RandomWound: true
+      ToTile: 0.90
+    damageType: 2
+    clipSize: 3
+    blastRadius: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+###################################
+###### USSR LASER WEAPONS ########
+#################################
+  - type: STR_P72_COMPACT_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HANDGUNS
+    size: 0.1
+    costBuy: 25000
+    costSell: 20000
+    weight: 6
+    bigSprite: 2021
+    floorSprite: 2021
+    handSprite: 2128
+    fireSound: 2960
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 60
+    damageType: 4
+    confAuto:
+      shots: 3
+      arcing: false
+    accuracySnap: 55
+    accuracyAimed: 60
+    accuracyAuto: 50
+    tuSnap: 16
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 12
+    snapRange: 10
+    autoRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+
+  - type: STR_ALK72_LASER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    size: 0.3
+    costBuy: 48000
+    costSell: 42000
+    weight: 9
+    bigSprite: 2022
+    floorSprite: 2022
+    handSprite: 2136
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 70
+    damageType: 4
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 55 
+    accuracySnap: 55
+    accuracyAimed: 100
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 20
+    snapRange: 22
+    autoRange: 18
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    size: 0.3
+    costBuy: 38000
+    costSell: 32000
+    weight: 12
+    bigSprite: 2023
+    floorSprite: 2023
+    handSprite: 2144
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 75
+    damageType: 4
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 55 
+    accuracySnap: 55
+    accuracyAimed: 100
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 28
+    snapRange: 34
+    autoRange: 25
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_ALP_SUBMACHINE_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.2
+    costBuy: 27000
+    costSell: 22000
+    weight: 6
+    bigSprite: 2024
+    floorSprite: 2024
+    handSprite: 2152
+    fireSound: 2962
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 60
+    damageType: 4
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    accuracyAuto: 45
+    accuracySnap: 40
+    accuracyAimed: 40
+    tuAuto: 22
+    tuSnap: 18
+    tuAimed: 25
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 6
+    snapRange: 10
+    autoRange: 9
+    twoHanded: false
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_MIRINOV_LASER_SNIPER
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 68000
+    costSell: 59000
+    weight: 15
+    bigSprite: 2025
+    floorSprite: 2025
+    handSprite: 2160
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 80
+    damageType: 4
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+    twoHanded: true
+    accuracySnap: 65
+    accuracyAimed: 105
+    accuracyAuto: 200
+    tuSnap: 33
+    tuAimed: 62
+    tuAuto: 85
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 100
+    snapRange: 30
+    minRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_AN_MACHINE_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 75000
+    costSell: 69000
+    weight: 15
+    bigSprite: 2026
+    floorSprite: 2026
+    handSprite: 2168
+    fireSound: 2966
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 65
+    damageType: 4
+    accuracyAuto: 45
+    accuracySnap: 45
+    accuracyAimed: 75
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      ammoSlot: 0
+      arcing: false
+    tuAuto: 38
+    tuSnap: 35
+    tuAimed: 60
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    snapRange: 30
+    autoRange: 25
+    minRange: 3
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_AFINA_ANTITANK_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_USSR_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    size: 0.3
+    costBuy: 100000
+    costSell: 89000
+    weight: 20
+    bigSprite: 2027
+    floorSprite: 2027
+    handSprite: 2176
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    power: 85
+    damageType: 4
+    twoHanded: true
+    accuracySnap: 105
+    accuracyAimed: 125
+    tuSnap: 33
+    tuAimed: 62
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 100
+    snapRange: 30
+    minRange: 8
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+
+####################################
+manufacture:
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+
+
+ufopaedia:
+
+##############################
+  - id: STR_M1972_LASER_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    text: STR_M1972_LASER_PISTOL_UFOPEDIA
+  - id: STR_38_LASER_MAGNUM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HANDGUNS
+    text: STR_38_LASER_MAGNUM_UFOPEDIA
+  - id: STR_CALBR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_RIFLES
+    text: STR_CALBR_UFOPEDIA
+  - id: STR_M20_M203_LASER_CARBINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_RIFLES
+    text: STR_M20_M203_LASER_CARBINE_UFOPEDIA
+  - id: STR_M5_LASER_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    text: STR_M5_LASER_SMG_UFOPEDIA
+  - id: STR_ULYSSES_LASER_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
+  - id: STR_X4_LASER_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    text: STR_X4_LASER_SHOTGUN_UFOPEDIA
+  - id: STR_M4_LASER_LMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    text: STR_M4_LASER_LMG_UFOPEDIA
+##############################
+##############################
+  - id: STR_P71_LASER_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_HANDGUNS
+    text: STR_P71_LASER_PISTOL_UFOPEDIA
+  - id: STR_FN_FLA_LASER_BATTLE_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_RIFLES
+    text: STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA
+  - id: STR_FN_FLA_LASER_CARBINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_RIFLES
+    text: STR_FN_FLA_LASER_CARBINE_UFOPEDIA
+  - id: STR_L4_ASSAULT_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_RIFLES
+    text: STR_L4_ASSAULT_LASER_UFOPEDIA
+  - id: STR_MAT72_SUBMACHINE_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
+    text: STR_MAT72_SUBMACHINE_LASER_UFOPEDIA
+  - id: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    text: STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA
+  - id: STR_ML73_LASER_MACHINE_GUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    text: STR_ML73_LASER_MACHINE_GUN_UFOPEDIA
+  - id: STR_M72_AUTOMATIC_RECOILESS_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    text: STR_M72_AUTOMATIC_RECOILESS_RIFLE_UFOPEDIA
+  - id: STR_M72_ARR_HEAT_MAG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_M72_ARR_HE_MAG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_M72_ARR_SMOKE_MAG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_M72_ARR_ELERIUM_MAG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+##################################
+##############################
+  - id: STR_P72_COMPACT_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_HANDGUNS
+    text: STR_P72_COMPACT_LASER_UFOPEDIA
+  - id: STR_ALK72_LASER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_RIFLES
+    text: STR_ALK72_LASER_RIFLE_UFOPEDIA
+  - id: STR_KHARITONOV_LASER_BATTLE_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_RIFLES
+    text: STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA
+  - id: STR_ALP_SUBMACHINE_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_HANDGUNS
+    text: STR_ALP_SUBMACHINE_LASER_UFOPEDIA
+  - id: STR_MIRINOV_LASER_SNIPER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
+  - id: STR_AN_MACHINE_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    text: STR_AN_MACHINE_LASER_UFOPEDIA
+  - id: STR_AFINA_ANTITANK_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
+###############################
+# Disabled Basic Weapons
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_LASER_WEAPONS: Laser Weapons
+      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
+######################################################################################
+######################################################################################
+      STR_M1972_LASER_PISTOL: M1972 Laser Pistol
+      STR_M1972_LASER_PISTOL_UFOPEDIA: A laser powered handgun designed and developed by UNEXCOM and US scientists in 1972. Not only is this the first laser gun put into service, it is one of the best sidearms available to UNEXCOM forces.
+      STR_38_LASER_MAGNUM: Laser Magnum
+      STR_38_LASER_MAGNUM_UFOPEDIA: An American heavy laser sidearm for soldiers who feel the need to compensate for the M1972's lack of firepower. Although Heavier than most laser sidearms, it can be useful when going up against more powerful aliens.
+      STR_CALBR: CALBR
+      STR_CALBR_UFOPEDIA: The Colt Advanced Laser Battle Rifle is a high power laser rifle made by Colt's Manufacturing Company. This semiautomatic weapon fires a powerful laser beam at the pull of a trigger. The CALBR's high accuracy and power makes it a good mid to long range weapon.
+      STR_M20_M203_LASER_CARBINE: M20 M203 Laser Carbine
+      STR_M20_M203_LASER_CARBINE_UFOPEDIA: The M20 is an American laser assault carbine based on the widely used M16. Created as a replacement for the outdated ballistic weapon, this laser share many of the same characteristics. This weapon is very accurate, lightweight, but suffers in Firepower. This variant utilizes an underbarrel grenade launcher.
+      STR_M5_LASER_SMG: M5 Laser SMG 
+      STR_M5_LASER_SMG_UFOPEDIA: The M5 is America's new laser submachine gun, developed after making a breakthrough in laser technology. The M5 has a higher rate of fire than any other laser weapon due to it's advanced cycling emitter banks. Although this weapon excels in close combat, it suffers at range and stray beams can become an issue.
+      STR_ULYSSES_LASER_SNIPER_RIFLE: Ulysses Laser Sniper
+      STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA: The Ulysses is a long range laser available to UNEXCOM marksmen. The advantages of this rifle are it's ease of use and its integrated advanced scope. Although this is the least powerful Sniper available to our forces, the impressive scope has faster target acquisition allowing for more follow up shots. This weapon is useful for picking off weaker targets at long ranges.
+      STR_X4_LASER_SHOTGUN: X44 Scatter Laser
+      STR_X4_LASER_SHOTGUN_UFOPEDIA: A laser 'shotgun' developed when an American researcher accidentally shattered a focusing optic during rifle testing, sending several small laser beams flying across the room. Although this incident at first created panic, the scientists later reasoned they could create a laser shotgun for close combat, something previously not thought possible. This laser uses an array of small mirrors to spread the lasers in several directions. 
+      STR_M4_LASER_LMG: M4 Laser LMG
+      STR_M4_LASER_LMG_UFOPEDIA: The M4 is Squad Automatic Weapon developed by DARPA and UNEXCOM to replace the suddenly outdated M-60. Although it's a bit heavy and unwieldy, the M4 is a reliable machine gun and rather accurate.
+      STR_ELERIUM_FLAMETHROWER: X55 Elerium Flamethrower
+      STR_ELERIUM_FLAMETHROWER_UFOPEDIA: After the discovery of Element 115 was made available to the American government, Pentagon officials asked if the element could be used to create a powerful incendiary weapon. By fusing Elerium with Napalm, they were able to create the fuel mixture used by the X55. They discovered that the powerful incendiary mixture could burn even the toughest aliens as well as force them out of hiding spots, but that it could also pose a threat to our own, as well as civilians, if we're not careful. They reluctantly put the weapon into service, with a warning to the soldiers using them.
+######################
+      STR_P71_LASER_PISTOL: "P-71 'Garibaldi' Laser Handgun"
+      STR_P71_LASER_PISTOL_UFOPEDIA: Although several different nations suggested designs for a new standard NATO sidearm, Beretta's P-71 would be the only one adopted. With no need for an external power source or reloading and fine tuned for accuracy, the P-71 represents the next stage in human technology.
+      STR_FN_FLA_LASER_BATTLE_RIFLE: "FN FLA 'Leopold' Battle Rifle"
+      STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA: The FN FLA is the laser derivative of the famous FN FAL. Although the design and size are similar, the FLA is much more powerful and does not require reloading. This laser was made to provide a weapon for soldiers who desired higher accuracy and power at the cost of rate of fire.
+      STR_FN_FLA_LASER_CARBINE: "FN FLA 'Leopold' Carbine"
+      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a colapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle. 
+      STR_L4_ASSAULT_LASER: "L-44 'Angevin' Assault Laser"
+      STR_L4_ASSAULT_LASER_UFOPEDIA: The L-44 Assault Rifle is an experimental West German Assault Laser submitted to the NATO Advanced Laser Weapon Project by Heckler and Koch. At first mocked for its strange design and uncomfortable grip, the L-4 would eventually impress even the greatest skeptics with its high accuracy and light weight. Eventually UNEXCOM officials approved the design for combat.
+      STR_MAT72_SUBMACHINE_LASER: "MAT-72 'Charlemagne' Submachine Laser"
+      STR_MAT72_SUBMACHINE_LASER_UFOPEDIA: French laser submachine gun developed and supplied by the French weapons manufacturer, Nexter Systems, uses smaller heat sinks than a typical laser rifle, so power input is reduced to avoid overheating. Still, this submachine gun is great for counter terror operations and close combat.
+      STR_CHURCHILL_MARSKMAN_LASER_RIFLE: "'Churchill' Marksman Laser Rifle"
+      STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
+      STR_ML73_LASER_MACHINE_GUN: "ML-73 'Bassenheim' Laser MG"
+      STR_ML73_LASER_MACHINE_GUN_UFOPEDIA: A West German Laser Machine Gun designed by Heckler & Koch. By late 1972 new techniques and technology allowed for larger and more efficient weapons. By converting some of the thermal energy made by firing the gun back into electrical energy, the ML-73 is able to fire large laser beams at a steady rate.
+      STR_M72_AUTOMATIC_RECOILESS_RIFLE: "M72 'Teddy' Auto Recoiless Rifle"
+      STR_M72_AUTOMATIC_RECOILESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
+      STR_M72_ARR_HEAT_MAG: M72 ARR HEAT Rack (x6)
+      STR_M72_ARR_HE_MAG: M72 ARR HE Rack (x6)
+      STR_M72_ARR_SMOKE_MAG: M72 ARR Smoke Rack (x6)
+      STR_M72_ARR_ELERIUM_MAG: M72 ARR Elerium Rack (x6)
+      STR_AIMED_SHOT: Aimed Shot
+      STR_X3_SHOT: x3 Auto Shot
+      STR_X6_SHOT: x6 Auto Shot
+########################
+      STR_P72_COMPACT_LASER: P-72 Compact Laser 
+      STR_P72_COMPACT_LASER_UFOPEDIA: The P-72, was the first successful Soviet application of laser weapon technology. Small and powerful, the P-72 makes for a good sidearm, but lags behind in accuracy.The iconic white and silver color scheme, which began with this gun, would become the standard for the new generation of Soviet Weaponry.
+      STR_ALK72_LASER_RIFLE: ALK-72 Laser Rifle
+      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The weapon was able to quickly prove it's worth being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
+      STR_KHARITONOV_LASER_BATTLE_RIFLE: Kharitonov Laser Battle Rifle
+      STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA: UNEXCOM officers expressed the need for a weapon that bridges the gap between the ALK-72 and the Mironov Sniper Rifle, and the Kharitonov is what the engineers came up with. Capable of delivering a powerful beam over medium to long distances without sacrificing power or closer combat abilities. Named after the lead designer, Markov Kharitonov.
+      STR_ALP_SUBMACHINE_LASER: ALP Submachine Laser
+      STR_ALP_SUBMACHINE_LASER_UFOPEDIA: This iconic Laser submachine gun was designed by famed Russian laser scientist, Michael Artemiy, and was personally approved by Soviet Minister of Defense, Andrei Grechko. Its balance in design, favoring no aspect over another, makes it one of the most popular weapons among UNEXCOM soldiers.
+      STR_MIRINOV_LASER_SNIPER: Mirinov Laser Sniper
+      STR_MIRINOV_LASER_SNIPER_UFOPEDIA: Laser Sniper weapon from the minds of the Soviet Red Army. Early laser technology suffered in accuracy, due to weaker optics and high power output. After advancements in focusing optics and toning down the power output, Ukrainian General Peter Mironov was able to design an accurate long range rifle, although it suffers somewhat in damage output
+      STR_AN_MACHINE_LASER: AN Machine Laser
+      STR_AN_MACHINE_LASER_UFOPEDIA: A Heavy Soviet machine gun developed in cooperation with the Red Army in 1972. It can reliably deliver a lot of damage in a short amount of time, but is heavier than most machine guns.
+      STR_AFINA_ANTITANK_LASER: AFINA Anti-Tank Laser
+      STR_AFINA_ANTITANK_LASER_UFOPEDIA: A anti tank laser put into service late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can destroy heavy armor with 2 direct hits and penetrate almost anything except UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
+
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+####################
+      2000: Resources/LaserWeapons/USA/BigM1972LaserPistol.png
+      2001: Resources/LaserWeapons/USA/BigLaserMagnum.png
+      2002: Resources/LaserWeapons/USA/BigCALBR.png
+      2003: Resources/LaserWeapons/USA/BigM20M203LaserCarbine.png
+      2004: Resources/LaserWeapons/USA/BigM5SubmachineLaser.png
+      2005: Resources/LaserWeapons/USA/BigUlyssesSniperRifle.png
+      2006: Resources/LaserWeapons/USA/BigX44LaserShotgun.png
+      2007: Resources/LaserWeapons/USA/BigM4LaserLMG.png
+      2008: Resources/LaserWeapons/USA/BigEleriumFlamethrower.png
+#####################
+      2009: Resources/LaserWeapons/NATO/BigP71Handgun.png
+      2010: Resources/LaserWeapons/NATO/BigFNFLABattleRifle.png
+      2011: Resources/LaserWeapons/NATO/BigFNFLACarbine.png
+      2012: Resources/LaserWeapons/NATO/BigL4AssaultLaser.png
+      2013: Resources/LaserWeapons/NATO/BigMAT72SubmachineLaser.png
+      2014: Resources/LaserWeapons/NATO/BigChurchillMarksmanLaserRifle.png
+      2015: Resources/LaserWeapons/NATO/BigML73LaserMachineGun.png
+      2016: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifle.png
+      2017: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleHEATMag.png
+      2018: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleHEMag.png
+      2019: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleSmokeMag.png
+      2020: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleEleriumMag.png
+#####################
+      2021: Resources/LaserWeapons/USSR/BigP72CompactLaser.png
+      2022: Resources/LaserWeapons/USSR/BigALK72LaserRifle.png
+      2023: Resources/LaserWeapons/USSR/BigKharitonovBattleRifle.png
+      2024: Resources/LaserWeapons/USSR/BigALPSubmachineLaser.png
+      2025: Resources/LaserWeapons/USSR/BigMirinovLaserSniper.png
+      2026: Resources/LaserWeapons/USSR/BigANMachineLaser.png
+      2027: Resources/LaserWeapons/USSR/BigAfinaAntiTankLaser.png
+#####################
+  - type: FLOOROB.PCK
+    files:
+      2000: Resources/LaserWeapons/USA/FloorM1972LaserPistol.png
+      2001: Resources/LaserWeapons/USA/FloorLaserMagnum.png
+      2002: Resources/LaserWeapons/USA/FloorCALBR.png
+      2003: Resources/LaserWeapons/USA/FloorM20M203LaserCarbine.png
+      2004: Resources/LaserWeapons/USA/FloorM5SubmachineLaser.png
+      2005: Resources/LaserWeapons/USA/FloorUlyssesSniperRifle.png
+      2006: Resources/LaserWeapons/USA/FloorX44LaserShotgun.png
+      2007: Resources/LaserWeapons/USA/FloorM4LaserLMG.png
+      2008: Resources/LaserWeapons/USA/FloorEleriumFlamethrower.png
+######################
+      2009: Resources/LaserWeapons/NATO/FloorP71Handgun.png
+      2010: Resources/LaserWeapons/NATO/FloorFNFLABattleRifle.png
+      2011: Resources/LaserWeapons/NATO/FloorFNFLACarbine.png
+      2012: Resources/LaserWeapons/NATO/FloorL4AssaultLaser.png
+      2013: Resources/LaserWeapons/NATO/FloorMAT72SubmachineLaser.png
+      2014: Resources/LaserWeapons/NATO/FloorChurchillMarksmanLaserRifle.png
+      2015: Resources/LaserWeapons/NATO/FloorML73LaserMachineGun.png
+      2016: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifle.png
+#      2017: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleHEATMag.png
+#      2018: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleHEMag.png
+#      2019: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleSmokeMag.png
+#      2020: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleEleriumMag.png
+#####################
+      2021: Resources/LaserWeapons/USSR/FloorP72CompactLaser.png
+      2022: Resources/LaserWeapons/USSR/FloorALK72LaserRifle.png
+      2023: Resources/LaserWeapons/USSR/FloorKharitonovBattleRifle.png
+      2024: Resources/LaserWeapons/USSR/FloorALPSubmachineLaser.png
+      2025: Resources/LaserWeapons/USSR/FloorMirinovLaserSniper.png
+      2026: Resources/LaserWeapons/USSR/FloorANMachineLaser.png
+      2027: Resources/LaserWeapons/USSR/FloorAfinaAntiTankLaser.png
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2000: Resources/LaserWeapons/USA/HandM1972LaserPistol.png
+      2008: Resources/LaserWeapons/USA/HandLaserMagnum.png
+      2016: Resources/LaserWeapons/USA/HandCALBR.png
+      2024: Resources/LaserWeapons/USA/HandM20M203LaserCarbine.png
+      2032: Resources/LaserWeapons/USA/HandM5SubmachineLaser.png
+      2040: Resources/LaserWeapons/USA/HandUlyssesSniperRifle.png
+      2048: Resources/LaserWeapons/USA/HandX44LaserShotgun.png
+      2056: Resources/LaserWeapons/USA/HandM4LaserLMG.png
+      2064: Resources/LaserWeapons/USA/HandEleriumFlamethrower.png
+######################
+      2072: Resources/LaserWeapons/NATO/HandP71Handgun.png
+      2080: Resources/LaserWeapons/NATO/HandFNFLABattleRifle.png
+      2088: Resources/LaserWeapons/NATO/HandFNFLACarbine.png
+      2096: Resources/LaserWeapons/NATO/HandL4AssaultLaser.png
+      2104: Resources/LaserWeapons/NATO/HandMAT72SubmachineLaser.png
+      2112: Resources/LaserWeapons/NATO/HandChurchillMarksmanLaserRifle.png
+      2120: Resources/LaserWeapons/NATO/HandML73LaserMachineGun.png
+      2184: Resources/LaserWeapons/NATO/HandAutomaticRecoilessRifle.png
+#####################
+      2128: Resources/LaserWeapons/USSR/HandP72CompactLaser.png
+      2136: Resources/LaserWeapons/USSR/HandALK72LaserRifle.png
+      2144: Resources/LaserWeapons/USSR/HandKharitonovBattleRifle.png
+      2152: Resources/LaserWeapons/USSR/HandALPSubmachineLaser.png
+      2160: Resources/LaserWeapons/USSR/HandMirinovLaserSniper.png
+      2168: Resources/LaserWeapons/USSR/HandANMachineLaser.png
+      2176: Resources/LaserWeapons/USSR/HandAfinaAntiTankLaser.png
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      90: Resources/HitAnimations/BlueLaser_Hit.png
+      100: Resources/HitAnimations/RedLaser_Hit.png
+  - type: Projectiles
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      945: Resources/BulletSprites/WideYellowLaser_Bullet.png # 27
+      980: Resources/BulletSprites/WideBlueLaser_Bullet.png # 28
+      1015: Resources/BulletSprites/WideRedLaser_Bullet.png # 29
+      805: Resources/BulletSprites/FlameProjectile.png # 23
+
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      2960: Resources/LaserWeapons/Sounds/laserpistol_fire.wav
+      2961: Resources/LaserWeapons/Sounds/lasermagnum_fire.wav
+      2962: Resources/LaserWeapons/Sounds/lasersmg_fire.wav
+      2963: Resources/LaserWeapons/Sounds/laserrifle_fire.wav
+      2964: Resources/LaserWeapons/Sounds/laserdmr_fire.wav
+      2965: Resources/LaserWeapons/Sounds/lasersniper_fire.wav
+      2966: Resources/LaserWeapons/Sounds/laserlmg_fire.wav
+      2967: Resources/LaserWeapons/Sounds/flamethrower_fire.wav

@@ -23,6 +23,14 @@ alienDeployments:
     height: 9
   - type: STR_SUPPLY_SHIP
     height: 9
+  - type: STR_EXCAVATOR
+    height: 9
+  - type: STR_FIGHTER_SHIP
+    height: 9
+  - type: STR_SENTRY_SHIP
+    height: 9
+  - type: STR_LAB_SHIP
+    height: 9
 
   - type: STR_TERROR_MISSION
     data: &TERROR_MISSION_ALIEN_RANKS
@@ -39,16 +47,13 @@ alienDeployments:
           -
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
             - STR_PLASMA_RIFLE_CLIP
           -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
+            - STR_HEAVY_PLASMA_CLIP
       - alienRank: 4
         lowQty: 1
         highQty: 2
@@ -152,19 +157,18 @@ alienDeployments:
             []
     width: 50
     length: 50
-    height: 9
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
       - URBAN
       - EXPANDED_TERROR
       - COMRCURBAN
+      - REFINERY
+      - CHEMTOWN_ROADS
+      - RURAL
       - INDUSTRIALSLUM
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -176,19 +180,15 @@ alienDeployments:
     data: *TERROR_MISSION_ALIEN_RANKS 
     width: 50
     length: 50
-    height: 9
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
       - REFINERY
       - CHEMTOWN_ROADS
       - CHEMTOWN
       - INDUSTRIALSLUM
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -200,16 +200,12 @@ alienDeployments:
     data: *TERROR_MISSION_ALIEN_RANKS 
     width: 50
     length: 50
-    height: 9
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
       - IDT_SNOWVILLAGE
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -221,17 +217,13 @@ alienDeployments:
     data: *TERROR_MISSION_ALIEN_RANKS 
     width: 50
     length: 50
-    height: 9
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
       - IDT_VILLAGE
       - RURAL
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -243,17 +235,14 @@ alienDeployments:
     data: *TERROR_MISSION_ALIEN_RANKS 
     width: 50
     length: 50
-    height: 9
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
       - ISLANDURBAN
+      - EXPANDED_TERROR
       - IDT_AIRPORT
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -265,19 +254,14 @@ alienDeployments:
     data: *TERROR_MISSION_ALIEN_RANKS 
     width: 50
     length: 50
-    height: 9
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
-      - URBAN
       - PORTTFTD6
       - PORTTFTD5  
       - PORTUFO
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -287,41 +271,14 @@ alienDeployments:
 
   - type: STR_TERROR_MISSION_AIRPORT
     data: *TERROR_MISSION_ALIEN_RANKS 
-    width: 60
-    length: 60
-    height: 9
+    width: 50
+    length: 50
+    height: 7
     civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
     terrains:
       - IDT_AIRPORT
-      - IDT_HIJACKED_AIRPORT
     alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
-    briefing:
-      palette: 2
-      music: GMENBASE
-    markerName: STR_TERROR_SITE
-    duration: [4, 10]
-    despawnPenalty: 1000
-
-  - type: STR_TERROR_MISSION_SHIPPING_LINES
-    data: *TERROR_MISSION_ALIEN_RANKS 
-    width: 30
-    length: 70
-    height: 15
-    civilians: 16
-    civiliansByType:	  
-      POLICE_MALE_CIVILIAN: 4 
-      POLICE_FEMALE_CIVILIAN: 4
-      POLICE_SWAT: 2
-    terrains:
-      - LINERSHIP
-      - CARGOSHIP
-    alert: STR_ALIENS_TERRORISE
-    alertBackground: BACK03.SCR
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
     briefing:
       palette: 2
       music: GMENBASE
@@ -332,188 +289,20 @@ alienDeployments:
 ### ALIEN BASE MISSIONS ###
 #BEGIN ALIEN BASE
   - type: STR_ALIEN_BASE_ASSAULT
-    data: &ALIEN_BASE_ASSAULT_RANKS
-      - alienRank: 6
-        lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 5
-        lowQty: 5
-        highQty: 7
-        dQty: 4
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-      - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 3
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_TOXIGUN
-            - STR_TOXIGUN_FLASK
-            - STR_TOXIGUN_FLASK
-          -
-            - STR_TOXIGUN
-            - STR_TOXIGUN_FLASK
-            - STR_TOXIGUN_FLASK
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-      - alienRank: 2
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 1
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 0
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_ALIEN_GRENADE
     width: 60
     length: 60
     height: 2
     shade: 10
-    terrains:
-      - UBASE
-    script: EXPANDED_ALIEN_BASE
+    script: ALIENBASE
+    baseDetectionRange: 500            # base radar range, in nautical miles
+    baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
+    huntMissionMaxFrequency: 720       # generate hunt mission max every 720 minutes (= 12 hours)
+    huntMissionWeights: &INTERCEPTION_MISSIONS
+      3:
+        STR_ALIEN_INTERCEPTION_1: 100
+      6:
+        STR_ALIEN_INTERCEPTION_2: 100
+      9:
+        STR_ALIEN_INTERCEPTION_3: 100
 #END ALIEN BASE
 

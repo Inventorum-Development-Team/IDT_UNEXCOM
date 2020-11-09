@@ -1,0 +1,293 @@
+#The human enemies will attack first. At the third month, the aliens will show up
+missionScripts: 
+  - delete: gameStart
+  - delete: recon
+  - delete: invasion
+  - delete: researchRetaliation
+  - delete: beginnerRetaliation
+  - delete: experiencedRetaliation
+  - delete: veteranRetaliation
+  - delete: geniusRetaliation
+  - delete: superhumanRetaliation
+  - delete: recurringTerror
+
+  - type: gameStart
+    missionWeights:
+      0:
+        STR_HUMAN_TERROR_ATTACK: 100
+    lastMonth: 0
+    targetBaseOdds: 100
+    raceWeights:
+      0:
+        STR_TERRORIST: 100
+    startDelay: 120
+
+  - type: invasionStart
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 100
+    firstMonth: 2
+    executionOdds: 100
+    raceWeights:
+      0:
+        STR_SECTOID: 100
+    startDelay: 20
+    randomDelay: 43500
+#################################
+####### TERROR MISSIONS ########
+###############################
+  - type: recurringTerrorNormal
+#    label: 1
+    varName: recurringTerrorNormal
+    firstMonth: 3
+    executionOdds: 100
+    missionWeights:
+      0:
+        STR_ALIEN_TERROR: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 15
+        STR_SOUTH_AMERICA: 10
+        STR_EUROPE: 15
+        STR_NORTH_AFRICA: 10
+        STR_SOUTHERN_AFRICA: 10
+        STR_CENTRAL_ASIA: 10
+        STR_SOUTH_EAST_ASIA: 10
+        STR_SIBERIA: 10
+        STR_AUSTRALASIA: 10
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+
+#  - type: recurringTerror
+#    firstMonth: 2
+#    missionWeights:
+#      0:
+#        STR_ALIEN_TERROR: 100
+#    regionWeights:
+#      0:  
+#        REGION_TERRORIST_HOSTAGE_CRISIS: 100
+#        STR_NORTH_AMERICA: 100
+#        STR_SOUTH_AMERICA: 10
+#        STR_SIBERIA: 10
+#        STR_NORTH_AFRICA: 10
+#        STR_SOUTHERN_AFRICA: 10
+#        STR_EUROPE: 20
+#        STR_SIBERIA: 10
+#        STR_CENTRAL_ASIA: 10
+#        STR_SOUTH_EAST_ASIA: 10
+#   useTable: false
+#    startDelay: 150
+#    randomDelay: 25000
+#################################
+####### ALIEN ACTIVITY #########
+###############################
+  - type: alienHarvest
+    missionWeights:
+      0:
+        STR_ALIEN_HARVEST: 100
+    firstMonth: 3
+    startDelay: 150
+
+  - type: alienAbduction
+    missionWeights:
+      0:
+        STR_ALIEN_ABDUCTION: 100
+    firstMonth: 3
+    startDelay: 750
+
+  - type: researchRetaliation
+    executionOdds: 100
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    researchTriggers:
+      STR_COMMANDER_PLUS: true
+    startDelay: 20
+    randomDelay: 43500
+    targetBaseOdds: 100
+    useTable: false
+
+  - type: alienInfiltration
+    missionWeights:
+      0:
+        STR_ALIEN_INFILTRATION: 100
+    firstMonth: 6
+    startDelay: 150
+    randomDelay: 43500
+
+  - type: alienBase
+    missionWeights:
+      0:
+        STR_ALIEN_BASE: 100
+    firstMonth: 6
+    executionOdds: 8
+    startDelay: 6
+    randomDelay: 43500
+#################################
+####### HUMAN MISSIONS #########
+###############################
+  - type: startingEnemyHumanMissions
+    missionWeights:
+      0:
+        STR_HUMAN_RECON: 100
+    regionWeights:
+      0:  
+        STR_NORTH_AMERICA: 20
+        STR_EUROPE: 35
+        STR_CENTRAL_ASIA: 25
+        STR_SOUTH_EAST_ASIA: 20
+    useTable: false
+    startDelay: 15
+    randomDelay: 25000
+    executionOdds: 100
+
+  - type: terroristAttacks
+    missionWeights:
+      0:
+        STR_HUMAN_TERROR_ATTACK: 100
+    regionWeights:
+      0:  
+        STR_NORTH_AMERICA: 30
+        STR_EUROPE: 35
+        STR_CENTRAL_ASIA: 25
+        STR_SOUTH_EAST_ASIA: 10
+    useTable: false
+    startDelay: 43500
+    randomDelay: 25000
+    executionOdds: 100
+
+  - type: terroristHostageCrisis
+    label: 20
+    varName: terroristHostageCrisis
+    missionWeights:
+      0:
+        STR_HOSTAGE_CRISIS: 100
+    regionWeights:
+      0:  
+        REGION_TERRORIST_HOSTAGE_CRISIS: 100
+    researchTriggers:
+      STR_SPECIAL_FORCES_RESEARCH: true
+    useTable: false
+    startDelay: 43500
+    randomDelay: 25000
+    executionOdds: 30
+
+  - type: terroristHijackedPlane
+    label: 21
+    varName: terroristHijackedPlane
+    conditionals: [-20]
+    missionWeights:
+      0:
+        STR_HIJACKED_PLANE: 100
+    regionWeights:
+      0:  
+        REGION_TERRORIST_HIJACKED_PLANE: 100
+    researchTriggers:
+      STR_SPECIAL_FORCES_RESEARCH: true
+    useTable: false
+    startDelay: 43500
+    randomDelay: 25000
+    executionOdds: 30
+##############################
+  - type: AmericanCombatOperations
+    label: 30
+    varName: AmericanCombatOperations
+    missionWeights:
+      0:
+        STR_AMERICAN_OPERATIONS_MISSION: 100
+    regionWeights:
+      0:  
+        REGION_USA_COMBAT_OPERATIONS: 100
+    useTable: false
+    researchTriggers:
+      STR_UNITED_WE_STAND: true
+    startDelay: 43500
+    randomDelay: 43500
+    executionOdds: 20
+
+  - type: EuropeanCombatOperations
+    label: 31
+    varName: EuropeanCombatOperations
+    conditionals: [-30]
+    missionWeights:
+      0:
+        STR_EUROPEAN_OPERATIONS_MISSION: 100
+    regionWeights:
+      0:  
+        REGION_NATO_COMBAT_OPERATIONS: 100
+    useTable: false
+    researchTriggers:
+      STR_UNITED_WE_STAND: true
+    startDelay: 43500
+    randomDelay: 43500
+    executionOdds: 20
+
+  - type: SovietCombatOperations
+    label: 32
+    varName: EuropeanCombatOperations
+    conditionals: [-30, -31]
+    missionWeights:
+      0:
+        STR_SOVIET_OPERATIONS_MISSION: 100
+    regionWeights:
+      0:  
+        REGION_USSR_COMBAT_OPERATIONS: 100
+    useTable: false
+    researchTriggers:
+      STR_UNITED_WE_STAND: true
+    startDelay: 43500
+    randomDelay: 43500
+    executionOdds: 20
+#######################################
+  - type: AmericanCityDefense
+    label: 33
+    varName: AmericanCityDefense
+    conditionals: [-30, -31, -32]
+    missionWeights:
+      0:
+        STR_AMERICAN_CITY_DEFENSE: 100
+    regionWeights:
+      0:  
+        REGION_AMERICAN_CITIES: 100
+    useTable: false
+    researchTriggers:
+      STR_UNITED_WE_STAND: true
+    startDelay: 43500
+    randomDelay: 43500
+    executionOdds: 20
+
+  - type: EuropeanCityDefense
+    label: 34
+    varName: EuropeanCombatOperations
+    conditionals: [-30, -31, -32, -33]
+    missionWeights:
+      0:
+        STR_EUROPEAN_CITY_DEFENSE: 100
+    regionWeights:
+      0:  
+        REGION_EUROPEAN_CITIES: 100
+    useTable: false
+    researchTriggers:
+      STR_UNITED_WE_STAND: true
+    startDelay: 43500
+    randomDelay: 43500
+    executionOdds: 20
+
+  - type: SovietCityDefense
+    label: 35
+    varName: EuropeanCombatOperations
+    conditionals: [-30, -31, -32, -33, -34]
+    missionWeights:
+      0:
+        STR_SOVIET_CITY_DEFENSE: 100
+    regionWeights:
+      0:  
+        REGION_SOVIET_CITIES: 100
+    useTable: false
+    researchTriggers:
+      STR_UNITED_WE_STAND: true
+    startDelay: 43500
+    randomDelay: 43500
+    executionOdds: 20

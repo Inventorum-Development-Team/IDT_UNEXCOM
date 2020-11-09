@@ -4,7 +4,7 @@ facilities:
   - delete: STR_LARGE_RADAR_SYSTEM
 
   - type: STR_HYPER_WAVE_DECODER
-    radarChance: 0
+    radarChance: 100
     requires:
       - STR_HYPER_WAVE_DECODER
     hyper: true
@@ -32,7 +32,7 @@ facilities:
     buildCost: 500000
     buildTime: 12
     monthlyCost: 10000
-    radarRange: 1695
-    radarChance: 5
+    radarRange: 9000
+    radarChance: 10
     mapName: XBASE_04
  

@@ -1,0 +1,290 @@
+
+alienDeployments:
+  - type: STR_AMERICAN_OPERATIONS_MISSION
+    width: 60
+    length: 60
+    height: 10
+    terrains: &AlliedOperationTerrains 
+      - MOUNTGRASS
+      - PLAINSGRASS
+      - FOREST
+      - RICE_FARM
+      - IDT_VILLAGE
+      - FORESTSWAMP
+      - CULTA
+      - RURAL
+    civiliansByType: &AmericanTroopers
+      STR_AMERICAN_RIFLEMAN: 5
+      STR_AMERICAN_ASSAULT: 5
+      STR_AMERICAN_SUPPORT: 5
+    alert: STR_AMERICAN_OPERATIONS_ALERT
+    alertBackground: AMERICAN_OPERATIONS_MISSION_ALERT_BACKGROUND
+    alertDescription: STR_AMERICAN_OPERATIONS_MISSION_DESCRIPTION
+    briefing:
+      desc: STR_AMERICAN_OPERATIONS_MISSION_BRIEFING
+      background: AMERICAN_OPERATIONS_MISSION_BACKGROUND
+      palette: 2
+    markerName: STR_ALLIED_OPERATION
+    duration: [18, 50]
+    despawnPenalty: 400
+    data: &AlliedOperationData
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 5
+        lowQty: 10
+        highQty: 20
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 1
+        lowQty: 1
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+  - type: STR_EUROPEAN_OPERATIONS_MISSION
+    width: 60
+    length: 60
+    height: 10
+    terrains: *AlliedOperationTerrains 
+    civiliansByType: &EuropeanTroopers
+      STR_EUROPEAN_RIFLEMAN: 5
+      STR_EUROPEAN_ASSAULT: 5
+      STR_EUROPEAN_SUPPORT: 5
+    alert: STR_EUROPEAN_OPERATIONS_ALERT
+    alertBackground: EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND
+    alertDescription: STR_EUROPEAN_OPERATIONS_MISSION_DESCRIPTION
+    briefing:
+      desc: STR_EUROPEAN_OPERATIONS_MISSION_BRIEFING
+      background: EUROPEAN_OPERATIONS_MISSION_BACKGROUND
+      palette: 2
+    markerName: STR_ALLIED_OPERATION
+    duration: [18, 50]
+    despawnPenalty: 400
+    data: *AlliedOperationData
+  - type: STR_SOVIET_OPERATIONS_MISSION
+    width: 60
+    length: 60
+    height: 10
+    terrains: *AlliedOperationTerrains 
+    civiliansByType: &SovietTroopers
+      STR_SOVIET_RIFLEMAN: 5
+      STR_SOVIET_ASSAULT: 5
+      STR_SOVIET_SUPPORT: 5
+    alert: STR_SOVIET_OPERATIONS_ALERT
+    alertBackground: SOVIET_OPERATIONS_MISSION_ALERT_BACKGROUND
+    alertDescription: STR_SOVIET_OPERATIONS_MISSION_DESCRIPTION
+    briefing:
+      desc: STR_SOVIET_OPERATIONS_MISSION_BRIEFING
+      background: SOVIET_OPERATIONS_MISSION_BACKGROUND
+      palette: 2
+    markerName: STR_ALLIED_OPERATION
+    duration: [18, 50]
+    despawnPenalty: 400
+    data: *AlliedOperationData
+############################################
+  - type: STR_AMERICAN_CITY_DEFENSE
+    width: 60
+    length: 60
+    height: 10
+    terrains: &AlliedCityDefenseTerrains 
+      - CULTA
+      - RURAL
+      - URBAN
+      - IDT_AIRPORT
+      - INDUSTRIALSLUM
+      - COMRCURBAN
+    civiliansByType: *AmericanTroopers
+    civilians: 8
+    alert: STR_AMERICAN_OPERATIONS_ALERT
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
+    alertDescription: STR_AMERICAN_CITY_DEFENSE_DESCRIPTION
+    briefing:
+      desc: STR_AMERICAN_CITY_DEFENSE_BRIEFING
+      background: AMERICAN_CITY_DEFENSE_BACKGROUND
+      palette: 2
+    markerName: STR_ALLIED_OPERATION
+    duration: [18, 50]
+    despawnPenalty: 600
+    data: *AlliedOperationData
+  - type: STR_EUROPEAN_CITY_DEFENSE
+    width: 60
+    length: 60
+    height: 10
+    terrains: *AlliedCityDefenseTerrains
+    civilians: 8
+    civiliansByType: *EuropeanTroopers
+    alert: STR_EUROPEAN_OPERATIONS_ALERT
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
+    alertDescription: STR_EUROPEAN_CITY_DEFENSE_DESCRIPTION
+    briefing:
+      desc: STR_EUROPEAN_CITY_DEFENSE_BRIEFING
+      background: EUROPEAN_CITY_DEFENSE_BACKGROUND
+      palette: 2
+    markerName: STR_ALLIED_OPERATION
+    duration: [18, 50]
+    despawnPenalty: 600
+    data: *AlliedOperationData
+  - type: STR_SOVIET_CITY_DEFENSE
+    width: 60
+    length: 60
+    height: 10
+    terrains: *AlliedCityDefenseTerrains
+    civilians: 8
+    civiliansByType: *SovietTroopers
+    alert: STR_SOVIET_OPERATIONS_ALERT
+    alertBackground: TERROR_SITE_ALERT_BACKGROUND
+    alertDescription: STR_SOVIET_CITY_DEFENSE_DESCRIPTION
+    briefing:
+      desc: STR_SOVIET_CITY_DEFENSE_BRIEFING
+      background: SOVIET_CITY_DEFENSE_BACKGROUND
+      palette: 2
+    markerName: STR_ALLIED_OPERATION
+    duration: [18, 50]
+    despawnPenalty: 600
+    data: *AlliedOperationData
+#
+extraStrings:
+  - type: en-US
+    strings:
+      STR_AMERICAN_OPERATIONS_MISSION: American Combat Operation
+      STR_AMERICAN_OPERATIONS_ALERT:  US Army Operation Ongoing
+      STR_AMERICAN_OPERATIONS_MISSION_DESCRIPTION: The US Army's central command is preparing for a full-scale operation against the enemy. We have been asked to assist. Strong enemy resistance is expected.
+      STR_AMERICAN_OPERATIONS_MISSION_BRIEFING: We have arrived in the middle of a pitched battle. US Army units are facing a higher number of enemies and are at risk of being routed. Assist the allied troops on the ground to prevent their destruction and counterattack the enemy. We are counting on you.
+      STR_ALLIED_OPERATION: Allied Operations
+      STR_EUROPEAN_OPERATIONS_MISSION: NATO Combat Operation
+      STR_EUROPEAN_OPERATIONS_ALERT: NATO Operation Ongoing
+      STR_EUROPEAN_OPERATIONS_MISSION_DESCRIPTION: NATO member countries have prepared a full-scale offensive against enemies detected on the ground. The Security Council has requested our tactical support. Enemy resistance is expected, take precautions.
+      STR_EUROPEAN_OPERATIONS_MISSION_BRIEFING: NATO allied units are facing a numerically superior enemy and are requesting assistance ASAP. Reports indicate alien reinforcements, so be sure to support as many NATO soldiers as possible. Search and destroy.
+      STR_SOVIET_OPERATIONS_MISSION: Warsaw Pact Combat Operation
+      STR_SOVIET_OPERATIONS_ALERT: Warsaw Pact Operation Ongoing
+      STR_SOVIET_OPERATIONS_MISSION_DESCRIPTION: The Kremlin has ordered an attack on alien enemies on the ground. The Security Council requests our support to reinforce Soviet positions in the area.
+      STR_SOVIET_OPERATIONS_MISSION_BRIEFING: The Warsaw Pact soldiers are facing a larger enemy than they expected. Casualties are high, but their morale is still high. Our arrival will be decisive in changing the course of the battle, your orders are to wiping out every invader in front of them. 
+
+      STR_AMERICAN_CITY_DEFENSE: American City Defense
+      STR_AMERICAN_CITY_DEFENSE_DESCRIPTION: National Guard units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
+      STR_AMERICAN_CITY_DEFENSE_BRIEFING: Aliens have attacked an American city. National Guard units have mobilized to confront the enemy, but are in danger of being overrun. It is our job to help the US armed forces to protect the civilians in the area.
+      STR_ALLIED_OPERATION: Allied Operations
+      STR_EUROPEAN_CITY_DEFENSE: NATO City Defense
+      STR_EUROPEAN_CITY_DEFENSE_DESCRIPTION: National military units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
+      STR_EUROPEAN_CITY_DEFENSE_BRIEFING: A city in a NATO country has been attacked by hostile forces. The Security Council has authorized the deployment of our forces to help contain the threat. Strong resistance is expected, try to help the European allies to protect as many civilians as possible.
+      STR_SOVIET_CITY_DEFENSE: Warsaw Pact City Defense
+      STR_SOVIET_CITY_DEFENSE_DESCRIPTION: National army units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
+      STR_SOVIET_CITY_DEFENSE_BRIEFING: A core population of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to liaise with Covenant troops in the area, to help contain the threat and evacuate the civilians. 
+
+
+
+
+extraSprites:
+  - type: TERROR_SITE_ALERT_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/TERROR_SITE_ALERT_BACKGROUND.png
+  - type: AMERICAN_OPERATIONS_MISSION_ALERT_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/AMERICAN_OPERATIONS_MISSION_ALERT_BACKGROUND.png
+  - type: AMERICAN_OPERATIONS_MISSION_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/AMERICAN_OPERATIONS_MISSION_BACKGROUND.png
+  - type: EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND.png
+  - type: EUROPEAN_OPERATIONS_MISSION_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/EUROPEAN_OPERATIONS_MISSION_BACKGROUND.png
+  - type: SOVIET_OPERATIONS_MISSION_ALERT_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SOVIET_OPERATIONS_MISSION_ALERT_BACKGROUND.png
+  - type: SOVIET_OPERATIONS_MISSION_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SOVIET_OPERATIONS_MISSION_BACKGROUND.png
+  - type: AMERICAN_CITY_DEFENSE_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/AMERICAN_CITY_DEFENSE_BACKGROUND.png
+  - type: EUROPEAN_CITY_DEFENSE_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/EUROPEAN_CITY_DEFENSE_BACKGROUND.png
+  - type: SOVIET_CITY_DEFENSE_BACKGROUND 
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SOVIET_CITY_DEFENSE_BACKGROUND.png

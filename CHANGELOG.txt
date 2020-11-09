@@ -1,3 +1,127 @@
+08-Nov-2020: v0.8.4 World at War
+Changes made:
+*Fixed issue with doubled defined mapScript on Cydonia, by Brother^2
+*Fixed issue with crashing region on Alien Terror missions, reported by AKnightsEntertainment, Brother^2, Rclipse, tywami, thefreak & Ace009
+*Fixed issue with alien turrets trying to move, now they don't have stamina, by Filip H
+*Fixed issues with alien lasers unavailable for purchase
+*Fixed issue with missing Elerium on UFOs, by Filip H
+*Improved MAT49 sprite, by wolwerin
+*Fixed bad typos on several UFOPedia weapon entries, reported by Rclipse
+*Added costBuy to all Laser Weapons, issue reported by garretrgang
+*Re-added hyperwave behaviour to Hyperwave Decoder 
+*Modified Special Forces/Mercenary tech tree, they are available earlier and a special event will appear, , by Filip H & efrenespartano..
+*Increased ammo of MG3 build-in weapon on Delta EOD armor, suggested by Tal'raziid
+*Tweaked and delayed appereance of alien missions, suggested by Brother^2
+*New Hunting Rifle sprite, by Brain_322
+
+27-Oct-2020: v0.8.3 World at War
+Changes made:
+*Improved sprites of weapons XM21, Colt 45, M3 Greasegun, Police Shotgun and KS23 (this one made by wolwerin)
+*Fixed Carl Gustaf M2 ammo sprites, suggested by PERLHA
+*Internal changes on rulesets
+*Improved USA Laser Weapon sprites, by Dauntless1942
+*Added new USA Tier 2 weapon: Elerium Flamethrower
+*Added new NATO and USSR Laser Weapons, sprites by Dauntless1942, ruleset by efrenespartano
+    # NATO
+    - P-71 'Garibaldi' Laser Handgun
+    - FN FLA 'Leopold' Battle Rifle
+    - FN FLA 'Leopold' Carbine
+    - L-44 'Angevin' Assault Laser
+    - MAT-72 'Charlemagne' Submachine Laser
+    - 'Churchill' Marksman Laser Rifle
+    - ML-73 'Bassenheim' Laser MG
+    - M72 'Teddy' Auto Recoiless Rifle
+    # USSR
+    - P-72 Compact Laser
+    - ALK-72 Laser Rifle
+    - Kharitonov Laser Battle Rifle
+    - ALP Submachine Laser
+    - Mirinov Laser Sniper
+    - AN Machine Laser
+    - AFINA Anti-Tank Laser
+*Added new UNEXCOM Alloy Weapons, sprites by wolwerin, ruleset by Filip H & efrenespartano
+    - XM45 Flechette/TC Rifle
+    - XM42 Flechette/TC Carbine
+    - XM35 Flechette/TC Pistol
+    - XM12 Flechette/TC Shotgun
+    - XM120 Automatic Shotgun
+    - XM62 Alloy Grenade Launcher
+    - XM65 Flechette Autocannon
+    - XM55 Dual Purpose Sniper Rifle
+*Tweaked and improved Soldier, Special Forces Operator, Mercenary and Pilot stats, by RamoZ
+*Fixed issue with crashing Gothic maps (were too tall), reported by Brother^2
+*Added M60 turrets on Huey, by Filip H
+*Changed Aden/Vulcan Cannon Rounds[x50] to 48 hour transfer to match the cannon itself, by Zycrom
+*Changed STR_AKM costBuy to 2500 and costSell to 1500 to bring in line with bayonetted version, by Zycrom
+*Added new missions: Allied Combat Operations (spawned after a special event)
+*Added new missions: Allied City Defense (special terror site the faction-specific cities)
+*Added new Allied NPCs:
+    - US Army Soldier, sprites by Hans Woofington
+    - NATO Infantry
+    - Soviet Army Soldier, sprites by The Martian
+*Alien Interception missions are spawned by Alien Bases
+*Buffed Medical items (increased amount of heal/wound points), suggested by Tal'Raziid
+*Added alien Turrets, rulesets by Filip H, sprites by The Martian and Duke_Falcon
+*Fixed issues with UFO variants not appearing, by Filip H
+*Improved Geoscape mission generation
+*Added East Germany, West Germany and Poland, by Ace009
+*Added custom Special Forces, Mercenary and new Pilot names, by Filip H
+*Added Troop Lander ship, map by wolwerin, ruleset by Filip H
+*Nerfed 40mm Non-Lethal grenade, reported by Brother^2 & Tal'Raziid
+*Human Terrorist now have a nightvision of 9 and made them able to surrender, by Filip H
+*Buffed Remington Combat Shotgun, suggested by Brother^2 & Tal'Raziid
+*Fixed bad typos, reported by Rclipse
+
+15-Sep-2020: v0.8.2 World at War
+Changes made:
+*Updated to OXCE v6.6.1
+*Removed UNEXCOM Lasers
+*Removed Hyperwave Small Radar cheat
+*Nerfed damageMax of Terrorist crafts, most Tier 1 weapons are a one-shot-kill vs them
+*Nerfed throwing skill of the Terrorist units, now they aren't a major leagues baseball player
+*Changed HE resistance of Delta EOD armor from 150% to 30% (now it actually protects against explosives)
+*Modified Terrorist missions, reduced amount of their crafts at the same time on the Geoscape, by The Reaver of Darkness
+*Modified scores for both monthly and mission reports to avoid losing the game too early, by The Reaver of Darkness
+*Overall improvement to aircrafts:
+    - J29 Tunnan got a buff of +20 fuelMax
+    - All fighters got a buff of +30 damageMax
+    - All bombers got a buff of +40
+    - Transports now has +100 fuelMax units
+    - MiG-25 Foxbat now has a revolver cannon slot
+    - Linna recon sat now costs 75k (was 100k)
+    - Atalaya recon sat now cost 155k (was 555k):
+*Overall improvement to aircraft weapons
+    - All light missiles got a buff of +20 damage and +15 accuracy
+    - All heavy missiles got a buff of +15 damage and +20 accuracy
+    - All super heavy missiles got a buff of +20 accuracy
+    - All rockets got a buff of +10 accuracy
+*Falcon Super Heavy Missile is now locked behind USA Aeronautic Support, reported by 
+*Alien Fusion Weapons will have a chance to appear after 4 months now (they are way too powerful to be added on early game)
+*Alien missions will start to appear after the third month
+*Reduced weight of medical equipment
+*Overall improvement of Ballistic weapons:
+    - Improved accuracy of FN FAL and FN FAL-UBS
+    - Improved accuracy of M16 and variants
+    - Improved accuracy of AKM and variants
+    - Tweaked TU cost of priming, unpriming and throwing of all the grenades
+    - Reduced damage of Flasbang Grenade to 30 (to avoid killing), damaging x2.5 TUs and x2.0 Stamina
+    - Explosives (Throwing grenades, High Explosive, ammo for launchers) now disable self destruction and does a random amount of wounds
+*Added missing extraStrings, reported by PERLHA, Brother^2
+*ADEN revolver cannon is now the standard cannon (it doesn't needs NATO Aeronautic Support)
+
+3-Sep-2020: v0.8.1 World at War
+Changes made:
+*Updated to OXCE v6.6
+*Replaced CMP Hybrid with CMP Extended v0.5f
+*Changed date of starting game to fix issue with bad rating month
+*New UFOPedia entries explaining how does the weapons work
+*Disabled Underwater content, removed to create a DLC
+*Allied and Civilian weapons could be research to unlock them (to avoid overcrowding the stores with too many weapons)
+*Added new Geoscape pop-up events (both random and story wise)
+*Nerfed firing accuracy of Terrorists
+*Increased fuel units of Fuel Tank
+*Decreased cost of Tunnans, as well deployment time.
+
 1-Aug-2020: v0.8 Storming the Abyss
 Changes made:
 *Updated to OXCE v6.5.3

@@ -1003,6 +1003,37 @@ items:
     recover: false
     armor: 35
 
+  - type: STR_AMERICAN_SOLDIER_CORPSE
+    name: STR_CORPSE
+    weight: 25
+    bigSprite: 400
+    floorSprite: 400
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 35
+  - type: STR_EUROPEAN_SOLDIER_CORPSE
+    name: STR_CORPSE
+    weight: 25
+    bigSprite: 401
+    floorSprite: 401
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 35
+  - type: STR_SOVIET_SOLDIER_CORPSE
+    name: STR_CORPSE
+    weight: 25
+    bigSprite: 402
+    floorSprite: 402
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 35
+
 armors:
   - type: CIVM_ARMOR
     spriteInv: INV_MALE_CIVILIAN
@@ -3468,6 +3499,70 @@ armors:
       - 1.0
     loftempsSet: [ 3 ]
 
+  - type: AMERICAN_SOLDIER_ARMOR
+    spriteInv: INV_AMERICAN_SOLDIER
+    spriteSheet: AMERICAN_SOLDIER.PCK
+    corpseBattle:
+      - STR_AMERICAN_SOLDIER_CORPSE
+    frontArmor: 10
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+  - type: EUROPEAN_SOLDIER_ARMOR
+    spriteInv: INV_EUROPEAN_SOLDIER
+    spriteSheet: EUROPEAN_SOLDIER.PCK
+    corpseBattle:
+      - STR_EUROPEAN_SOLDIER_CORPSE
+    frontArmor: 10
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+  - type: SOVIET_SOLDIER_ARMOR
+    spriteInv: INV_SOVIET_SOLDIER
+    spriteSheet: SOVIET_SOLDIER.PCK
+    corpseBattle:
+      - STR_SOVIET_SOLDIER_CORPSE
+    frontArmor: 10
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+
 units:
   - type: MALE_CIVILIAN
     race: STR_CIVILIAN
@@ -4421,7 +4516,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_POLICE_TONFA
   - type: POLICE_SWAT
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4681,7 +4776,7 @@ units:
 ########### ARMED MILITARY #############
 #######################################
   - type: STR_HUMAN_SOLDIER_0_0
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats: &SOLDIER_STATS
       tu: 60
@@ -4722,7 +4817,7 @@ units:
         - STR_GRENADE
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_0_1
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4763,7 +4858,7 @@ units:
         - STR_GRENADE
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_0_2
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4786,7 +4881,7 @@ units:
     aggression: 1
     builtInWeaponSets:
       - 
-        - STR_M16A1A1
+        - STR_M16A1
         - STR_5_56MM_NATO_RIFLE_X20
         - STR_5_56MM_NATO_RIFLE_X20
         - STR_GRENADE
@@ -4801,7 +4896,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_0_3
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4839,7 +4934,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X75
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_0_4
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4877,7 +4972,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_1_0
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4915,7 +5010,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_1_1
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4952,7 +5047,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_1_2
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -4981,8 +5076,8 @@ units:
         - STR_GRENADE
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_BREN
@@ -4990,7 +5085,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_1_3
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -5027,7 +5122,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_1_4
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -5065,7 +5160,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_1_5
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -5102,7 +5197,7 @@ units:
         - STR_9MM_PISTOL_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_0
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5140,7 +5235,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_1
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5177,7 +5272,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_2
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5214,7 +5309,7 @@ units:
         - STR_9MM_PISTOL_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_3
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5251,7 +5346,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_4
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5280,8 +5375,8 @@ units:
         - STR_GRENADE
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_XM21
@@ -5289,7 +5384,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_5
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5313,8 +5408,8 @@ units:
     builtInWeaponSets:
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_M16A1
@@ -5326,7 +5421,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
   - type: STR_HUMAN_SOLDIER_2_6
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5350,8 +5445,8 @@ units:
     builtInWeaponSets:
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_M16A1
@@ -5363,7 +5458,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
   - type: STR_HUMAN_SOLDIER_2_7
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5386,7 +5481,7 @@ units:
     aggression: 0
     builtInWeaponSets:
       - 
-        - STR_COLT_45
+        - STR_M1911_COLT45
         - STR_45_PISTOL_X7
         - STR_45_PISTOL_X7
       - 
@@ -5398,7 +5493,7 @@ units:
         - STR_45_PISTOL_X30
         - STR_45_PISTOL_X30
   - type: STR_HUMAN_SOLDIER_2_8
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5436,7 +5531,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_9
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5473,7 +5568,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_10
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 64
@@ -5502,8 +5597,8 @@ units:
         - STR_GRENADE
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_BREN
@@ -5511,7 +5606,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_2_11
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5548,7 +5643,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_3_0
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5586,7 +5681,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_3_1
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5624,7 +5719,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_3_2
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5653,8 +5748,8 @@ units:
         - STR_GRENADE
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_BREN
@@ -5662,7 +5757,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_3_3
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5699,7 +5794,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_3_4
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5737,7 +5832,7 @@ units:
         - STR_40MM_FRAG
         - STR_40MM_SMOKE
   - type: STR_HUMAN_SOLDIER_3_5
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5774,7 +5869,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_4_0
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5812,7 +5907,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_4_1
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5835,7 +5930,7 @@ units:
     aggression: 0
     builtInWeaponSets:
       - 
-        - STR_COLT_45
+        - STR_M1911_COLT45
         - STR_45_PISTOL_X7
         - STR_45_PISTOL_X7
       - 
@@ -5847,7 +5942,7 @@ units:
         - STR_45_PISTOL_X30
         - STR_45_PISTOL_X30
   - type: STR_HUMAN_SOLDIER_4_2
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5876,8 +5971,8 @@ units:
         - STR_GRENADE
       - 
         - STR_OWEN_SMG
-        - STR_9MM_PISTOL_X30_UFOPEDIA
-        - STR_9MM_PISTOL_X30_UFOPEDIA
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
         - STR_MACHETE
       - 
         - STR_BREN
@@ -5885,7 +5980,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_4_3
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5922,7 +6017,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
   - type: STR_HUMAN_SOLDIER_4_4
-    race: STR_COLLABORATORS
+    race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56
@@ -5958,4 +6053,370 @@ units:
         - STR_XM21
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+###################################
+######## AMERICAN ALLIES ##########
+#################################
+  - type: STR_AMERICAN_RIFLEMAN
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 40
+      bravery: 100
+      reactions: 40
+      firing: 65
+      throwing: 50
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      - 
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_GRENADE
+      - 
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+  - type: STR_AMERICAN_ASSAULT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 45
+      throwing: 80
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+        - STR_GRENADE
+      - 
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_GRENADE
+      - 
+        - STR_REMINGTON_COMBAT_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+  - type: STR_AMERICAN_SUPPORT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 70
+      health: 55
+      bravery: 100
+      reactions: 50
+      firing: 65
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_GRENADE
+      - 
+        - STR_M79_THUMPER_GL
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_SMOKE
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_SMOKE
+      - 
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_GRENADE
+###################################
+######## EUROPEAN ALLIES #########
+#################################
+  - type: STR_EUROPEAN_RIFLEMAN
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 40
+      bravery: 100
+      reactions: 40
+      firing: 70
+      throwing: 50
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      - 
+        - STR_PSG1
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_SMOKE_GRENADE
+      - 
+        - STR_SG510_CARBINE
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+  - type: STR_EUROPEAN_ASSAULT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 45
+      throwing: 80
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+      - 
+        - STR_MP5
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      - 
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+  - type: STR_EUROPEAN_SUPPORT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 70
+      health: 55
+      bravery: 100
+      reactions: 50
+      firing: 65
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+      - 
+        - STR_FN_MAG
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_MACHETE
+      - 
+        - STR_CARL_GUSTAF_M2
+        - STR_CARL_GUSTAF_M2_HE_ROUND
+        - STR_CARL_GUSTAF_M2_HE_ROUND
+        - STR_CARL_GUSTAF_M2_HEAT_ROUND
+        - STR_CARL_GUSTAF_M2_HEAT_ROUND
+###################################
+######## SOVIET ALLIES  ##########
+#################################
+  - type: STR_SOVIET_RIFLEMAN
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 40
+      bravery: 100
+      reactions: 40
+      firing: 70
+      throwing: 50
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+      - 
+        - STR_DRAGUNOV
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+      - 
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+  - type: STR_SOVIET_ASSAULT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 45
+      throwing: 80
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_STECHKIN_APS
+        - STR_9MM_PISTOL_X20
+        - STR_9MM_PISTOL_X20
+        - STR_GRENADE
+      - 
+        - STR_PPS_43
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X20
+        - STR_GRENADE
+      - 
+        - STR_KS23_SHOTGUN
+        - STR_KS23_SHARPNEL-25_X4
+        - STR_KS23_SHARPNEL-25_X4
+        - STR_KS23_BARRIKADE_X4
+        - STR_KS23_BARRIKADE_X4
+        - STR_GRENADE
+  - type: STR_SOVIET_SUPPORT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 70
+      health: 55
+      bravery: 100
+      reactions: 50
+      firing: 65
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      - 
+        - STR_RPG
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_INC_ROCKET
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+      - 
+        - STR_RPKS
+        - STR_7_62MM_SOVIET_RIFLE_X40
+        - STR_7_62MM_SOVIET_RIFLE_X40
+        - STR_GRENADE
+      - 
+        - STR_RPKS
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_7_62MM_SOVIET_RIFLE_X75
         - STR_GRENADE
