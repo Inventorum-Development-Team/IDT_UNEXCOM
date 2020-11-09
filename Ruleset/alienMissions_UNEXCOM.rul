@@ -38,7 +38,7 @@ alienMissions:
 
   - type: STR_HUMAN_TERROR_ATTACK
     points: -50
-    objective: 0  
+    objective: 0
     spawnZone: 0 #Mission zone for terror missions
     raceWeights:
       0:
@@ -60,7 +60,7 @@ alienMissions:
 
   - type: STR_HOSTAGE_CRISIS
     points: 10
-    objective: 3  
+    objective: 3
     spawnZone: 0 #Mission zone for terror missions
     raceWeights:
       0:
@@ -82,7 +82,7 @@ alienMissions:
 
   - type: STR_HIJACKED_PLANE
     points: 10
-    objective: 3  
+    objective: 3
     spawnZone: 0 #Mission zone for terror missions
     raceWeights:
       0:
@@ -156,7 +156,7 @@ alienMissions:
         timer: 10000
         trajectory: P0
         objective: true
-        escort: true 
+        escort: true
       - ufo: STR_TERROR_SHIP
         count: 1
         trajectory: P7
@@ -230,7 +230,6 @@ alienMissions:
         STR_SECTOID: 30
         STR_CHTONITE: 30
         STR_FLOATER: 40
-        STR_CHTONITE: 20
       7:
         STR_SECTOID: 30
         STR_MUTON: 30
@@ -306,7 +305,6 @@ alienMissions:
         STR_CHTONITE: 20
         STR_CEREBREAL: 20
         STR_REPTOID: 10
-        STR_CHTONITE: 10
       7:
         STR_SECTOID: 30
         STR_FLOATER: 20
@@ -338,7 +336,7 @@ alienMissions:
         trajectory: P5
         timer: 60
         hunterKillerPercentage: 50
-        huntMode: 0 
+        huntMode: 0
         huntBehavior: 0
       - ufo: STR_ABDUCTOR
         count: 1
@@ -350,7 +348,7 @@ alienMissions:
         timer: 60
   - type: STR_ALIEN_INFILTRATION
     points: 150 #Pact score only awarded on month end
-    objective: 1    
+    objective: 1
     siteType: STR_ALIEN_BASE_ASSAULT
     spawnZone: 4 #Mission zone for alien bases
     endlessInfiltration: false
@@ -415,7 +413,7 @@ alienMissions:
         trajectory: P7
         timer: 60
         hunterKillerPercentage: 100
-        huntMode: 0 
+        huntMode: 0
       - ufo: STR_SUPPLY_SHIP
         count: 1
         trajectory: P7
@@ -499,7 +497,7 @@ alienMissions:
       - ufo: STR_BATTLESHIP
         count: 1
         trajectory: P6
-        timer: 60 
+        timer: 60
       - ufo: STR_FIGHTER_SHIP
         count: 1
         trajectory: P5
@@ -532,7 +530,7 @@ alienMissions:
         trajectory: P8
         timer: 10
         hunterKillerPercentage: 100
-        huntMode: 0  
+        huntMode: 0
       - ufo: STR_BATTLESHIP
         count: 2
         trajectory: P8
@@ -542,7 +540,7 @@ alienMissions:
         trajectory: P8
         timer: 10
         hunterKillerPercentage: 100
-        huntMode: 1  
+        huntMode: 1
   - type: STR_ALIEN_SUPPLY
     points: 0
     objective: 5
@@ -585,14 +583,12 @@ alienMissions:
         timer: 8500
         huntMode: 1 #transports first
         huntBehavior: 0
-        huntSpeed: 100
       - ufo: STR_LARGE_SCOUT
         count: 1
         trajectory: P3
         timer: 9500
         huntMode: 0 #interceptors first
         huntBehavior: 0
-        huntSpeed: 90
   - type: STR_ALIEN_INTERCEPTION_2 # Medium interception
     operationType: 6
     points: 0
@@ -618,14 +614,12 @@ alienMissions:
         timer: 8000
         huntMode: 0
         huntBehavior: 0
-        huntSpeed: 100
       - ufo: STR_FIGHTER_SHIP
         count: 1
         trajectory: P3
         timer: 9000
         huntMode: 1
         huntBehavior: 0
-        huntSpeed: 90
   - type: STR_ALIEN_INTERCEPTION_3 # Heavy interception
     operationType: 6
     points: 0
@@ -651,21 +645,18 @@ alienMissions:
         timer: 9500
         huntMode: 0
         huntBehavior: 1
-        huntSpeed: 100
       - ufo: STR_FIGHTER_SHIP
         count: 1
         trajectory: P5
         timer: 9500
         huntMode: 1
         huntBehavior: 1
-        huntSpeed: 95
       - ufo: STR_FIGHTER_SHIP
         count: 10000
         trajectory: P5
         timer: 0
         huntMode: 0
         huntBehavior: 1
-        huntSpeed: 80
 
 ###############################
 ##### FACTION MISSIONS #######

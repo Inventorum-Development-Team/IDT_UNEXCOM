@@ -706,7 +706,7 @@ armors:
     spriteInv: SCOUT_POWER_ARMOR_INV
     corpseBattle:
       - STR_CORPSE
-    corpseItem: STR_CORPSE_SCOUT_POWER_ARMOR # should be corpseBattle?
+    corpseGeo: STR_CORPSE_SCOUT_POWER_ARMOR # should be corpseBattle?
     storeItem: STR_SCOUT_POWER_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
@@ -739,7 +739,7 @@ armors:
     spriteInv: SCOUT_FLYING_ARMOR_INV
     corpseBattle:
       - STR_CORPSE
-    corpseItem: STR_CORPSE_SCOUT_FLYING_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
     storeItem: STR_SCOUT_FLYING_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
