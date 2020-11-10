@@ -48,7 +48,7 @@ items:
     tuAuto: 60
     autoRange: 15
     snapRange: 20 #
-    aimRange: 35 
+    aimRange: 35
     minRange: 5
     dropoff: 2 # 2
     battleType: 1
@@ -56,11 +56,11 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    armor: 80 
+    armor: 80
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    
+
   - type: STR_ARTILLERY_TURRET
     requires:
       - STR_ALIENS_ONLY
@@ -84,7 +84,7 @@ items:
     tuSnap: 40 # 45
     tuAimed: 75 # 80
     snapRange: 20 #
-    aimRange: 35 
+    aimRange: 35
     minRange: 5
     dropoff: 2 # 2
     battleType: 1
@@ -92,7 +92,7 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    armor: 80 
+    armor: 80
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
@@ -123,18 +123,18 @@ items:
     autoShots: 4
     autoRange: 15
     snapRange: 20 #
-    aimRange: 35 
+    aimRange: 35
     dropoff: 2 # 2
     battleType: 1
     twoHanded: true
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    armor: 80 
+    armor: 80
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    
+
   - type: STR_M60_TURRET
     size: 0.4
     weight: 20
@@ -145,7 +145,7 @@ items:
     bulletSpeed: 35
     reloadSound: [194, 195, 196]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100 ]
     confSnap:
       shots: 5

@@ -29,7 +29,7 @@ items:
     armor: 70 # 20
   - type: STR_PLASMA_PISTOL_CLIP
     categories: [STR_PLASMA, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5451 
+    listOrder: 5451
     power: 55 # 52
     clipSize: 22 # 26
     bigSprite: 1964
@@ -72,7 +72,7 @@ items:
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
     listOrder: 5251
     size: 0.2
-    costSell: 3000 
+    costSell: 3000
     bigSprite: 1364
     floorSprite: 1367
     handSprite: 120 # ALL GOOD
@@ -125,7 +125,7 @@ items:
     power: 150 # 115
     clipSize: 14 # 35
     bigSprite: 1862
-    floorSprite: 1867 
+    floorSprite: 1867
     hitSound: 1938
     damageAlter:
       RandomType: 6
@@ -149,11 +149,11 @@ items:
 # New Human Weapons
   - type: STR_HUMAN_PLASMA_PISTOL
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
-    listOrder: 5450 
+    listOrder: 5450
     size: 0.1
     costSell: 56000
     battleType: 1
-    bigSprite: 1963 # 
+    bigSprite: 1963 #
     floorSprite: 1966
     handSprite: 1979 # ALL GOOD
     bulletSprite: 8
@@ -183,7 +183,7 @@ items:
     vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_MAGNUM
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
-    listOrder: 5470 
+    listOrder: 5470
     size: 0.2
     costSell: 80000 #
     weight: 5
@@ -232,9 +232,9 @@ items:
     vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_SMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_UNEXCOM_TECH]
-    listOrder: 5480 
+    listOrder: 5480
     size: 0.2
-    costSell: 90000 
+    costSell: 90000
     weight: 3
     battleType: 1
     compatibleAmmo:
@@ -249,8 +249,8 @@ items:
     accuracySnap: 54
     accuracyAimed: 68
     tuAuto: 24
-    tuSnap: 21 
-    tuAimed: 38 
+    tuSnap: 21
+    tuAimed: 38
     maxRange: 60
     aimRange: 9
     snapRange: 15
@@ -271,7 +271,7 @@ items:
     categories: [STR_PLASMA, STR_CLIPS, STR_SMGS, STR_UNEXCOM_TECH]
     listOrder: 5481
     size: 0.1
-    costSell: 2750 
+    costSell: 2750
     weight: 2
     hitSound: 1938
     bigSprite: 1564
@@ -289,9 +289,9 @@ items:
     vaporDensitySurface: 20
   - type: STR_HUMAN_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    listOrder: 5250 
+    listOrder: 5250
     size: 0.2
-    costSell: 120000 
+    costSell: 120000
     weight: 11
     battleType: 1
     compatibleAmmo:
@@ -381,12 +381,12 @@ items:
     accuracySnap: 50
     accuracyAimed: 112
     tuSnap: 42
-    tuAimed: 73 
+    tuAimed: 73
     maxRange: 60
     aimRange: 55
     snapRange: 45
     minRange: 5
-    dropoff: 3 
+    dropoff: 3
     invWidth: 2
     invHeight: 3
     twoHanded: true
@@ -505,8 +505,8 @@ items:
     costSell: 120000
     weight: 10
     bigSprite: 1330
-    floorSprite: 36 
-    handSprite: 64 # 
+    floorSprite: 36
+    handSprite: 64 #
     bulletSprite: 9
     fireSound: 53
     compatibleAmmo:
@@ -566,9 +566,9 @@ items:
     battleType: 10
     costSell: 150000
     weight: 5
-    bigSprite: 1111 
-    floorSprite: 1112 
-    handSprite: 120 
+    bigSprite: 1111
+    floorSprite: 1112
+    handSprite: 120
     invWidth: 2
     invHeight: 1
     recover: true
@@ -849,22 +849,22 @@ research:
       - STR_ALIEN_SUPPLY
 # Alien Weapon Research Step - allows understanding
   - name: STR_PLASMA_PISTOL
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
   - name: STR_PLASMA_RIFLE
-    cost: 350 
+    cost: 350
     points: 10
     needItem: true
   - name: STR_HEAVY_PLASMA
-    cost: 400 
+    cost: 400
     points: 10
     needItem: true
 # this is how to defeat the lockout is unlocked by alien weapons but will need a live engineer to allow it to go forward to be researched
   - name: STR_ALIEN_PLASMA_WEAPONS
-    cost: 800 
+    cost: 800
     points: 20
-    dependencies: 
+    dependencies:
       - STR_SECTOID_ENGINEER
       - STR_FLOATER_ENGINEER
       - STR_SNAKEMAN_ENGINEER
@@ -908,7 +908,7 @@ research:
       - STR_ALLOY_MANUFACTURING
 # (Plasma Rifle is the only weapon that be manu-ed and remanu-ed)
   - name: STR_NEW_HUMAN_PLASMA_RIFLE
-    cost: 500 
+    cost: 500
     points: 20
     dependencies:
       - STR_ALIEN_PLASMA_WEAPONS
@@ -966,28 +966,28 @@ research:
     dependencies:
       - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_DMR
-      - STR_ALLOY_MANUFACTURING  
+      - STR_ALLOY_MANUFACTURING
   - name: STR_PLASMA_SMG_CLIP
     cost: 300 # FIX THIS
     points: 2
     dependencies:
       - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_SMG
-      - STR_ALLOY_MANUFACTURING 
+      - STR_ALLOY_MANUFACTURING
   - name: STR_PLASMA_LMG_PACK
     cost: 600 # FIX THIS
     points: 2
     dependencies:
       - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_PLASMA_LMG
-      - STR_ALLOY_MANUFACTURING 
+      - STR_ALLOY_MANUFACTURING
   - name: STR_SNIPER_PLASMA_CLIP
     cost: 600 # FIX THIS
     points: 2
     dependencies:
       - STR_ALIEN_PLASMA_WEAPONS
       - STR_HUMAN_SNIPER_PLASMA
-      - STR_ALLOY_MANUFACTURING 
+      - STR_ALLOY_MANUFACTURING
 # Cheap ammo conversion
   - name: STR_PR_TO_PDMR
     cost: 20
@@ -1060,9 +1060,9 @@ manufacture:
     space: 5
     time: 40
     cost: 4000
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_PISTOL: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_PLASMA_PISTOL: 1
   - name: STR_REMAN_HUMAN_PLASMA_RIFLE
     category: STR_WEAPON
@@ -1071,9 +1071,9 @@ manufacture:
     space: 5
     time: 40
     cost: 6000
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_RIFLE: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_PLASMA_RIFLE: 1
   - name: STR_REMAN_HUMAN_HEAVY_PLASMA
     category: STR_WEAPON
@@ -1082,9 +1082,9 @@ manufacture:
     space: 5
     time: 55
     cost: 6000
-    requiredItems: 
+    requiredItems:
       STR_HEAVY_PLASMA: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_HEAVY_PLASMA: 1
   - name: STR_REMAN_SMALL_LAUNCHER
     category: STR_WEAPON
@@ -1093,14 +1093,14 @@ manufacture:
     space: 5
     time: 40
     cost: 4000
-    requiredItems: 
+    requiredItems:
       STR_SMALL_LAUNCHER: 1
-    producedItems: 
-      STR_HUMAN_SMALL_LAUNCHER: 1      
+    producedItems:
+      STR_HUMAN_SMALL_LAUNCHER: 1
 # human personal weapons
   - name: STR_HUMAN_PLASMA_MAGNUM
     category: STR_WEAPON
-    requiredItems: 
+    requiredItems:
       STR_ALIEN_ALLOYS: 1
     requires:
       - STR_HUMAN_PLASMA_MAGNUM
@@ -1109,7 +1109,7 @@ manufacture:
     cost: 60000 # 56000 pistol
   - name: STR_HUMAN_PLASMA_SMG
     category: STR_WEAPON
-    requiredItems: 
+    requiredItems:
       STR_ALIEN_ALLOYS: 1
     requires:
       - STR_HUMAN_PLASMA_SMG
@@ -1124,13 +1124,13 @@ manufacture:
     space: 5
     time: 820
     cost: 88000
-    requiredItems: 
+    requiredItems:
       STR_ALIEN_ALLOYS: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_PLASMA_RIFLE: 1
   - name: STR_HUMAN_PLASMA_DMR
     category: STR_WEAPON
-    requiredItems: 
+    requiredItems:
       STR_ALIEN_ALLOYS: 1
     requires:
       - STR_HUMAN_PLASMA_DMR
@@ -1139,21 +1139,21 @@ manufacture:
     cost: 110000
   - name: STR_HUMAN_SNIPER_PLASMA
     category: STR_WEAPON
-    requiredItems: 
+    requiredItems:
       STR_ALIEN_ALLOYS: 2
     requires:
       - STR_HUMAN_SNIPER_PLASMA
     space: 5
-    time: 900 
+    time: 900
     cost: 120000
   - name: STR_HUMAN_PLASMA_LMG
     category: STR_WEAPON
-    requiredItems: 
+    requiredItems:
       STR_ALIEN_ALLOYS: 2
     requires:
       - STR_HUMAN_PLASMA_LMG
     space: 5
-    time: 950 
+    time: 950
     cost: 120000
  # New Ammo
   - name: STR_PLASMA_MAGNUM_CLIP
@@ -1209,9 +1209,9 @@ manufacture:
     space: 2
     time: 10
     cost: 1500
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_RIFLE_CLIP: 1
-    producedItems: 
+    producedItems:
       STR_PLASMA_DMR_CLIP: 1
   - name: STR_PR_TO_PSMG
     category: STR_AMMUNITION
@@ -1220,9 +1220,9 @@ manufacture:
     space: 2
     time: 10
     cost: 1500
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_RIFLE_CLIP: 1
-    producedItems: 
+    producedItems:
       STR_PLASMA_SMG_CLIP: 1
   - name: STR_PP_TO_PM
     category: STR_AMMUNITION
@@ -1231,9 +1231,9 @@ manufacture:
     space: 2
     time: 10
     cost: 1250
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_PISTOL_CLIP: 1
-    producedItems: 
+    producedItems:
       STR_PLASMA_MAGNUM_CLIP: 1
   - name: STR_HPC_TO_PLMG_PACK
     category: STR_AMMUNITION
@@ -1242,9 +1242,9 @@ manufacture:
     space: 2
     time: 10
     cost: 2000
-    requiredItems: 
+    requiredItems:
       STR_HEAVY_PLASMA_CLIP: 1
-    producedItems: 
+    producedItems:
       STR_PLASMA_LMG_PACK: 1
   - name: STR_HPC_TO_SP_CLIP
     category: STR_AMMUNITION
@@ -1253,9 +1253,9 @@ manufacture:
     space: 2
     time: 10
     cost: 2000
-    requiredItems: 
+    requiredItems:
       STR_HEAVY_PLASMA_CLIP: 1
-    producedItems: 
+    producedItems:
       STR_SNIPER_PLASMA_CLIP: 1
 # New Armor
   - name: STR_SCOUT_POWER_ARMOR
@@ -1452,7 +1452,7 @@ extraStrings:
       STR_HYPER_WAVE_ENCODER: Hyper Wave Encoder
       STR_HYPER_WAVE_ENCODER_UFOPEDIA: With the encryption device captured from the alien base, researchers have broken the encryption used by enemy forces.  With additional research, a new facility for intercepting alien transmissions can be constructed.
       STR_HYPER_WAVE_DECODER: Hyper Wave Decoder
-      STR_HYPER_WAVE_DECODER_UFOPEDIA: With all the details now known of the alien microwave communication protocol, researchers have produced plans for a facility that can intercept all alien communications from alien crafts within nearly a 2500 mile radius. Translators should be able to provide information on the type of UFO, the alien race and specific activity. 
+      STR_HYPER_WAVE_DECODER_UFOPEDIA: With all the details now known of the alien microwave communication protocol, researchers have produced plans for a facility that can intercept all alien communications from alien crafts within nearly a 2500 mile radius. Translators should be able to provide information on the type of UFO, the alien race and specific activity.
       STR_PLASMA_PISTOL: Alien Plasma Pistol
       STR_PLASMA_PISTOL_UFOPEDIA: This lightweight plasma PDW is the sidearm fielded by the alien forces. The weapons retrieved from the battlefield have a tamper-proof friend-or-foe lock on it that we cannot seem to circumvent, and disassembly activates a process that renders the internals of the weapon to slag. Capture of an alien engineer may allow the research team to discover methods to bypass this lock.
       STR_PLASMA_RIFLE: Alien Plasma Rifle
@@ -1465,7 +1465,7 @@ extraStrings:
       STR_HUMAN_PLASMA_RIFLE: Plasma Assault Rifle
       STR_HUMAN_PLASMA_RIFLE_UFOPEDIA: Using the information and cells gleaned from the captured engineer, researchers provided the manufacturing teams plans on how to modify captured plasma rifles to work for X-com forces, with a configuration familiar to the soldiers.  Additionally, not bound by the size constraints of the plasma pistol, research can be expanded cover how to manufacture new plasma rifles.
       STR_HUMAN_HEAVY_PLASMA: Heavy Plasma
-      STR_HUMAN_HEAVY_PLASMA_UFOPEDIA: As the heaviest of the alien plasma weapons, this weapon proved to have it's own difficulties for the design and research team.  Despite a number of promising prototypes, producing a human-built heavy plasma weapon with the same capabilities as the alien version is impossible. Despite this, conversion of captured weapons for use by the X-com team is now possible. 
+      STR_HUMAN_HEAVY_PLASMA_UFOPEDIA: As the heaviest of the alien plasma weapons, this weapon proved to have it's own difficulties for the design and research team.  Despite a number of promising prototypes, producing a human-built heavy plasma weapon with the same capabilities as the alien version is impossible. Despite this, conversion of captured weapons for use by the X-com team is now possible.
       # Human Plasma Weapons
       STR_HUMAN_PLASMA_MAGNUM: Plasma Magnum
       STR_HUMAN_PLASMA_MAGNUM_UFOPEDIA: Re-examining abandoned prototypes used in the failed attempts at creating new plasma pistols, the research team abandoned attempts at including auto-fire for pistol and instead concentrated on power output.  The new pistol design is analogous to the gunpowder magnum, providing more wounding energy than the .50 BMG in a one-handed weapon.

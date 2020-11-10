@@ -7,7 +7,7 @@ crafts:
 # weaponType 2 = Light Missile (IR Guidance, short range)
 # weaponType 3 = Heavy Missile (Radar Guidance, long range)
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
-# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc) 
+# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc)
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
 
 
@@ -33,7 +33,7 @@ crafts:
     avoidBonus: 15
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - 1
       - 6
@@ -73,9 +73,9 @@ crafts:
     avoidBonus: 15
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - [0, 1] 
-      - 2 
+    weaponTypes:
+      - [0, 1]
+      - 2
       - 2
       - [2, 3, 6, 5]
 #Gatling/Revolver Cannon
@@ -117,7 +117,7 @@ crafts:
     avoidBonus: 15
     accel: 8
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - 1
       - 2
@@ -157,7 +157,7 @@ crafts:
     avoidBonus: 25
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 0
       - 2
       - [2, 5]
@@ -198,7 +198,7 @@ crafts:
     avoidBonus: 15
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - 6
       - 2
@@ -241,8 +241,8 @@ crafts:
     speedMax: 1944
     accel: 6
     weapons: 4
-    weaponTypes: 
-      - 3 
+    weaponTypes:
+      - 3
       - 3
       - [3, 5]
       - 1
@@ -280,9 +280,9 @@ crafts:
     avoidBonus: 25
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
-      - 2 
+      - 2
       - 2
       - [5, 6]
 #Light Missile
@@ -324,8 +324,8 @@ crafts:
     avoidBonus: 25
     accel: 6
     weapons: 4
-    weaponTypes: 
-      - [0, 1] 
+    weaponTypes:
+      - [0, 1]
       - 2
       - 5
       - [5, 6]
@@ -354,7 +354,6 @@ crafts:
     listOrder: 118
 
   - type: STR_VIGGEN
-    categories: [STR_AIRCRAFTS, STR_NATO_TECH, STR_FIGHTERS]
     requires:
       - STR_IMPROVED_FIGHTER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -365,7 +364,7 @@ crafts:
     avoidBonus: 20
     accel: 6
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - [2, 6]
       - 2
@@ -384,16 +383,13 @@ crafts:
     refuelRate: 60
     transferTime: 72
     autoPatrol: true
-    escortRange: 60
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 200
     radarChance: 20
     score: 400
     listOrder: 118
-    
+
   - type: STR_FLANKER
-    categories: [STR_AIRCRAFTS, STR_USSR_TECH, STR_FIGHTERS]
     requires:
       - STR_IMPROVED_FIGHTER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -404,7 +400,7 @@ crafts:
     avoidBonus: 25
     accel: 6
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
       - [2, 3]
       - 2
@@ -423,8 +419,6 @@ crafts:
     refuelRate: 60
     transferTime: 72
     autoPatrol: true
-    escortRange: 60
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 200
     radarChance: 20
@@ -444,9 +438,9 @@ crafts:
     avoidBonus: 30
     accel: 6
     weapons: 4
-    weaponTypes: 
-      - [0, 1] 
-      - [0, 1]  
+    weaponTypes:
+      - [0, 1]
+      - [0, 1]
       - 2
       - [2, 6, 5]
 #Gatling/Revolver Cannon
@@ -483,9 +477,9 @@ crafts:
     avoidBonus: 35
     accel: 6
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 1
-      - 1 
+      - 1
       - 2
       - [2, 5]
     weaponStrings:
@@ -502,14 +496,12 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
     score: 400
     listOrder: 117
-    
+
   - type: STR_FIREFOX
     requires:
       - STR_ADVANCED_FIGHTER
@@ -522,9 +514,9 @@ crafts:
     hitBonus: 5
     accel: 6
     weapons: 4
-    weaponTypes: 
-      - 1 
-      - 2  
+    weaponTypes:
+      - 1
+      - 2
       - [2, 3]
       - 5
     weaponStrings:
@@ -541,14 +533,12 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
     score: 400
     listOrder: 117
-    
+
   - type: STR_COBRA
     requires:
       - STR_ADVANCED_FIGHTER
@@ -560,9 +550,9 @@ crafts:
     avoidBonus: 35
     accel: 6
     weapons: 3
-    weaponTypes: 
-      - 0 
-      - 2  
+    weaponTypes:
+      - 0
+      - 2
       - [2, 5]
     weaponStrings:
       - STR_CRAFT_GATLING_ONE
@@ -577,8 +567,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
@@ -599,7 +587,7 @@ crafts:
     avoidBonus: 15
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - [3, 4]
       - [2, 3]
       - [0, 1]
@@ -617,8 +605,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
@@ -636,7 +622,7 @@ crafts:
     avoidBonus: 25
     accel: 4
     weapons: 3
-    weaponTypes: 
+    weaponTypes:
       - [0, 1]
       - 2
       - [2, 5]
@@ -653,14 +639,12 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
     score: 400
     listOrder: 117
-    
+
   - type: STR_MIG_105
     requires:
       - STR_ULTIMATE_CRAFT
@@ -672,7 +656,7 @@ crafts:
     avoidBonus: 25
     accel: 4
     weapons: 3
-    weaponTypes: 
+    weaponTypes:
       - [0, 1]
       - 2
       - 2
@@ -689,8 +673,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
@@ -719,8 +701,8 @@ crafts:
     speedMax: 1192
     accel: 4
     weapons: 3
-    weaponTypes: 
-      - 0 
+    weaponTypes:
+      - 0
       - [2, 3]
       - [2, 3]
 #Gatling Cannon
@@ -758,8 +740,8 @@ crafts:
     speedMax: 1192
     accel: 5
     weapons: 4
-    weaponTypes: 
-      - [4, 3] 
+    weaponTypes:
+      - [4, 3]
       - 3
       - 3
       - 5
@@ -801,8 +783,8 @@ crafts:
     speedMax: 1080
     accel: 3
     weapons: 4
-    weaponTypes: 
-      - 5 
+    weaponTypes:
+      - 5
       - [4, 3]
       - [4, 3]
       - 3
@@ -829,7 +811,7 @@ crafts:
     radarChance: 10
     avoidBonus: -5
     score: 400
-    listOrder: 120	
+    listOrder: 120
 
 ####################
 #### TIER II ######
@@ -846,8 +828,8 @@ crafts:
     avoidBonus: 10
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - 4 
+    weaponTypes:
+      - 4
       - 3
       - 3
       - [5, 2]
@@ -876,7 +858,6 @@ crafts:
     listOrder: 118
 
   - type: STR_JAGUAR
-    categories: [STR_AIRCRAFTS, STR_NATO_TECH, STR_BOMBERSS]
     requires:
       - STR_IMPROVED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -887,8 +868,8 @@ crafts:
     avoidBonus: 15
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - 1 
+    weaponTypes:
+      - 1
       - 1
       - [3, 4]
       - [2, 3]
@@ -906,16 +887,13 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 150
     radarChance: 10
     score: 400
     listOrder: 118
-    
+
   - type: STR_M50
-    categories: [STR_AIRCRAFTS, STR_USSR_TECH, STR_BOMBERSS]
     requires:
       - STR_IMPROVED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -926,7 +904,7 @@ crafts:
     avoidBonus: -10
     accel: 4
     weapons: 3
-    weaponTypes: 
+    weaponTypes:
       - 4
       - [3, 4]
       - [3, 5]
@@ -943,8 +921,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 150
     radarChance: 10
@@ -965,8 +941,8 @@ crafts:
     avoidBonus: 15
     accel: 4
     weapons: 4
-    weaponTypes: 
-      - 4 
+    weaponTypes:
+      - 4
       - 3
       - [3, 4]
       - [5, 2]
@@ -1004,7 +980,7 @@ crafts:
     avoidBonus: 5
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 4
       - [3, 4]
       - 3
@@ -1023,8 +999,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 200
     radarChance: 25
@@ -1042,7 +1016,7 @@ crafts:
     avoidBonus: 10
     accel: 4
     weapons: 4
-    weaponTypes: 
+    weaponTypes:
       - 4
       - [2, 3]
       - [2, 3]
@@ -1061,14 +1035,12 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 200
     radarChance: 25
     score: 400
     listOrder: 118
-    
+
   - type: STR_A12
     requires:
       - STR_ADVANCED_BOMBER
@@ -1080,7 +1052,7 @@ crafts:
     avoidBonus: 5
     accel: 4
     weapons: 3
-    weaponTypes: 
+    weaponTypes:
       - 4
       - [2, 3]
       - 5
@@ -1097,8 +1069,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 200
     radarChance: 25
@@ -1120,7 +1090,7 @@ crafts:
     avoidBonus: -15
     accel: 4
     weapons: 3
-    weaponTypes: 
+    weaponTypes:
       - [3, 4]
       - [3, 4]
       - [0, 1]
@@ -1137,8 +1107,6 @@ crafts:
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
-    escortRange: 40
-    escortsJoinFightAgainstHK: true
     sightRange: 0
     radarRange: 100
     radarChance: 25
@@ -1511,7 +1479,7 @@ crafts:
 #       - [7, 5, 0, 4]
 #       - [6, 6, 0, 2]
 #       - [8, 6, 0, 6]
-	  
+
 #       - [2, 3, 0, 4]
 #       - [2, 1, 0, 4]
 #       - [1, 2, 0, 2]
@@ -1520,12 +1488,12 @@ crafts:
 # unit facing
 # 6 7 0
 # 5   1
-# 4 3 2	  
+# 4 3 2
 
 # unit facing
 # 6 7 0
 # 5   1
-# 4 3 2	 
+# 4 3 2
 
 #}
 ############################
@@ -1587,7 +1555,6 @@ crafts:
 ##################
 
   - type: STR_BASTION
-    categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_RECON_SATELLITE, STR_TIER_3]
     requires:
       - STR_IMPROVED_SATELLITE
       - STR_ADVANCED_BOMBER
@@ -1671,7 +1638,7 @@ craftWeapons:
 # weaponType 2 = Light Missile (IR Guidance, short range)
 # weaponType 3 = Heavy Missile (Radar Guidance, long range)
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
-# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc) 
+# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc)
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
 
 ##################################
@@ -1917,8 +1884,6 @@ craftWeapons:
 #### TIER I #######
 ##################
   - type: STR_FALCON
-    requires:
-      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     weaponType: 4
     sprite: 209
     sound: 5
@@ -2775,7 +2740,7 @@ items:
     size: 0.1
     costBuy: 2080
     costSell: 1600
-    transferTime: 48 
+    transferTime: 48
     clipSize: 50
   - type: STR_FALCON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
@@ -3049,7 +3014,7 @@ items:
     costSell: 8600
     transferTime: 96
     clipSize: 50
-    
+
   - type: STR_LASER_LANCE
     listOrder: 910
     size: 2.0
@@ -3368,8 +3333,8 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 90
       STR_UFO_NAVIGATION: 1
-      
-      
+
+
   - name: STR_SABRE
     category: STR_CRAFT
     requires:
@@ -3511,7 +3476,7 @@ manufacture:
       STR_UFO_POWER_SOURCE: 1
     producedItems:
       STR_LASER_SPIKE: 1
-      
+
 #TIER 4
 
   - name: STR_ZEUS_CANNON
@@ -4005,13 +3970,13 @@ ufopaedia:
 
   - id: STR_VIGGEN
     type_id: 1
-    
+
   - id: STR_JAGUAR
     type_id: 1
-    
+
   - id: STR_FLANKER
     type_id: 1
-    
+
   - id: STR_M50
     type_id: 1
 ####################
@@ -4057,22 +4022,22 @@ ufopaedia:
 
   - id: STR_TU45M
     type_id: 1
-    
+
   - id: STR_PANAVIA
     type_id: 1
-    
+
   - id: STR_LAMPYRIDAE
     type_id: 1
-    
+
   - id: STR_FIREFOX
     type_id: 1
-    
+
   - id: STR_COBRA
     type_id: 1
-    
+
   - id: STR_A12
     type_id: 1
-    
+
   - id: STR_BASTION
     type_id: 1
 
@@ -4082,13 +4047,13 @@ ufopaedia:
 
   - id: STR_SABRE
     type_id: 1
-    
+
   - id: STR_DYNASOAR
     type_id: 1
-    
+
   - id: STR_HERMES
     type_id: 1
-    
+
   - id: STR_MIG_105
     type_id: 1
 
@@ -4118,7 +4083,7 @@ ufopaedia:
   - id: STR_ALLOY_MANUFACTURING
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALLOY_MANUFACTURING
     listOrder: 152
     text: STR_ALLOY_MANUFACTURING_UFOPEDIA
@@ -4126,7 +4091,7 @@ ufopaedia:
   - id: STR_ALLOY_AEROSPACE
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALLOY_AEROSPACE
     text: STR_ALLOY_AEROSPACE_UFOPEDIA
     listOrder: 153
@@ -4496,13 +4461,13 @@ ufopaedia:
 
   - id: STR_LONGSWORD_FUSION_MISSILE
     type_id: 2
-    
+
   - id: STR_KATANA
     type_id: 2
-    
+
   - id: STR_GORGON_ROCKETS
     type_id: 2
-    
+
   - id: STR_ADLER
     type_id: 2
 
@@ -4513,19 +4478,19 @@ ufopaedia:
 
   - id: STR_ZEUS_CANNON
     type_id: 2
-    
+
   - id: STR_VOSTOK_PLASMA_CANNON
     type_id: 2
-    
+
   - id: STR_EXCALIBUR_LIGHT_MISSILE
     type_id: 2
-    
+
   - id: STR_MJOLNIR
     type_id: 2
-    
+
   - id: STR_KRAKEN_ROCKETS
     type_id: 2
-    
+
   - id: STR_KONDOR
     type_id: 2
 
@@ -4570,13 +4535,13 @@ ufopaedia:
 extraSprites:
 #{
 # "Crafts : The corresponding extrasprite file id for BASEBITS.PCK is sprite+33 INTICON.PCK contains a minimized icon id=sprite the file id for the dogfight image is sprite+11"
-# INTICON Minimized Id = Sprite ; 
-# INTICON DogFight Id = Sprite+11 ; 
+# INTICON Minimized Id = Sprite ;
+# INTICON DogFight Id = Sprite+11 ;
 # BASEBITS Id = Sprite+33
-#########################################  
-# Craft Weapons: file id for 
+#########################################
+# Craft Weapons: file id for
 # INTICON.PCK is sprite+5
-# BASEBITS.PCK is sprite+48 
+# BASEBITS.PCK is sprite+48
 # Aircrafts
   - type: BASEBITS.PCK
     files:
@@ -4662,7 +4627,7 @@ extraSprites:
       878: Resources/Aircraft/Hind_dogfight.png
       879: Resources/Aircraft/Atalaya_dogfight.png
 #      880: Resources/Aircraft/Galaxy_dogfight.png
- 
+
       881: Resources/Aircraft/Crusader_dogfight.png
       882: Resources/Aircraft/Saracen_dogfight.png
 #      203: Resources/Aircraft/Sabre_dogfight.png
@@ -5209,11 +5174,11 @@ extraStrings:
       STR_TUNNAN_UFOPEDIA: "J29 TUNNAN - OLD-FASHIONED MODEL OF AIRPLANE OF SWEDISH ORIGIN, DESPITE ITS AGE IS VERY MANEUVERABLE, TOUGH AND VERY APPRECIATED BY ITS PILOTS. FAMOUS FOR HIS ACTIONS IN THE CONGO AND THE SWEDISH UFO INICIDENT. TUNNAN MEANS 'BARREL'."
 
       STR_HERCULES: "HERCULES"
-      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS.TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION." 
+      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS.TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION."
       STR_HUEY: "HUEY"
       STR_HUEY_UFOPEDIA: "UH-1 HUEY - LIGHT TRANSPORT HELICOPTER, EMPLOYED TO INSERT AND EVACUATE TROOPS QUICKLY IN THE BATTLEFIELD. IT HAS A SHORT RANGE, OUR TROOPS MUST ARE TAKEN ON C-130s TO MISSION SITES BEFORE THE DEPLOYMENT. ARMED WITH WEAPON HARDPOINTS TO PROVIDE CLOSE SUPPORT AND ENGAGE TARGETS"
       STR_PHANTOM: "PHANTOM"
-      STR_PHANTOM_UFOPEDIA: "F-4 PHANTOM II - STANDARD AIR SUPERIORITY FIGHTER PLANE OF UNEXCOM, IT'S A WIDELY SPREAD AIRCRAFT IN THE NATO AIR FORCES. MODIFIED TO INCORPORATE LARGE INTERNAL FUEL TANKS TO INCREASE COMBAT RANGE." 
+      STR_PHANTOM_UFOPEDIA: "F-4 PHANTOM II - STANDARD AIR SUPERIORITY FIGHTER PLANE OF UNEXCOM, IT'S A WIDELY SPREAD AIRCRAFT IN THE NATO AIR FORCES. MODIFIED TO INCORPORATE LARGE INTERNAL FUEL TANKS TO INCREASE COMBAT RANGE."
       STR_THUNDERCHIEF: "THUNDERCHIEF"
       STR_THUNDERCHIEF_UFOPEDIA: "F-105 THUNDERCHIEF - SUPERSONIC STRIKE BOMBER, HAS MORE BOMB LOAD THAN SOME BOMBERS OF WWII. IT'S EMPLOYED BY UNEXCOM TO PROVIDE HEAVY AERIAL SUPPORT WHEN ENGAGING UFOs."
 
@@ -5231,7 +5196,7 @@ extraStrings:
       STR_VULCAN_CANNON_ROUNDS_X50: "M61 Vulcan Cannon Rounds(x50)"
 
       STR_FOXBAT: "MiG-25"
-      STR_FOXBAT_UFOPEDIA: "MiG-25 FOXBAT - SUPERSONIC TWIN-MOTOR INTERCEPTOR AND RECON CRAFT, IT'S AMONGST THE FASTEST MILITARY AIRCRAFTS IN THE WORLD. FEATURES A VERY POWERFUL RADAR, IMPOSSIBLE TO BE INTERFERED WITH ANY TYPE OF COUNTERMEASURES." 
+      STR_FOXBAT_UFOPEDIA: "MiG-25 FOXBAT - SUPERSONIC TWIN-MOTOR INTERCEPTOR AND RECON CRAFT, IT'S AMONGST THE FASTEST MILITARY AIRCRAFTS IN THE WORLD. FEATURES A VERY POWERFUL RADAR, IMPOSSIBLE TO BE INTERFERED WITH ANY TYPE OF COUNTERMEASURES."
       STR_FISHBED: "MiG-21"
       STR_FISHBED_UFOPEDIA: "MiG-21BIS FISHBED - SUPERSONIC LIGHTWEIGHT MULTIROLE FIGHTER, FAMOUS FOR BEING CHEAP AND EASY TO HANDLE, AS WELL AS THE MOST PRODUCED SUPERSONIC AIRCRAFT IN HISTORY. IT IS NOT PARTICULARLY FAST OR POWERFUL, BUT IT IS VERY MANEUVERABLE. OUR VERSION INCLUDES IMPROVED FUEL TANKS TO INCREASE COMBAT RADIUS."
       STR_BACKFIRE: "Tu-25M"
