@@ -269,7 +269,7 @@ research:
     dependencies:
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_FIGHTER
- 
+
   - name: STR_NEW_FIGHTER_CRAFT
     cost: 1500
     points: 30
@@ -329,7 +329,7 @@ research:
     cost: 70
     points: 10
     dependencies:
-      - STR_ALLOY_BALLISTIC_WEAPONS 
+      - STR_ALLOY_BALLISTIC_WEAPONS
 #######################################
   - name: STR_LASER_WEAPONS
     cost: 50
@@ -1052,7 +1052,7 @@ ufopaedia:
     image_id: USSR_INITIAL_APPROACH_IMAGE
     text: STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA
     text_width: 316
-################################################	
+################################################
   - id: STR_USA_SUPPORT_RESEARCH
     type_id: 7
     requires:
@@ -1347,7 +1347,7 @@ ufopaedia:
 ########################################
   - id: STR_ELERIUM_FUSION
     type_id: 7
-    requires: 
+    requires:
       - STR_ELERIUM_FUSION
     section: STR_ALIEN_RESEARCH_UC
     image_id: ELERIUM_FUSION_IMAGE
@@ -1358,7 +1358,7 @@ ufopaedia:
   - id: STR_ALIEN_CAPITAL_SHIPS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALIEN_CAPITAL_SHIPS
     text: STR_ALIEN_CAPITAL_SHIPS_UFOPEDIA
     image_id: ALIEN_CAPITAL_SHIPS_IMAGE
@@ -1367,7 +1367,7 @@ ufopaedia:
   - id: STR_ALIEN_FIGHTER_SHIPS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALIEN_FIGHTER_SHIPS
     text: STR_ALIEN_FIGHTER_SHIPS_UFOPEDIA
     image_id: ALIEN_FIGHTER_SHIPS_IMAGE
@@ -1376,7 +1376,7 @@ ufopaedia:
   - id: STR_ALIEN_SCOUT_SHIPS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALIEN_SCOUT_SHIPS
     text: STR_ALIEN_SCOUT_SHIPS_UFOPEDIA
     image_id: ALIEN_SCOUT_SHIPS_IMAGE
@@ -1385,7 +1385,7 @@ ufopaedia:
   - id: STR_ALIEN_SUPPORT_SHIPS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALIEN_SUPPORT_SHIPS
     text: STR_ALIEN_SUPPORT_SHIPS_UFOPEDIA
     image_id: ALIEN_SUPPORT_SHIPS_IMAGE
@@ -1394,7 +1394,7 @@ ufopaedia:
   - id: STR_ALIEN_SHIELDS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    requires: 
+    requires:
       - STR_ALIEN_SHIELDS
     text: STR_ALIEN_SHIELDS_UFOPEDIA
     image_id: ALIEN_SHIELDS_IMAGE
@@ -1944,7 +1944,7 @@ extraStrings:
       STR_NATO_AIRCRAFT_OPTION2: "NATO Agile Fighter - Italy"
       STR_NATO_AIRCRAFT_OPTION2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}This Italian model of Lockheed aircraft is produced by Aeritalia and is even better than the original model. It incorporates important avionics improvements, making it a highly maneuverable fighter in interceptions. Its armament is focused on light missiles for mid-range encounters. Since we accepted the Italian aircraft, Sweden and Great Britain withdrew their offers permanently."
       STR_NATO_AIRCRAFT_OPTION3: "NATO Heavy Fighter - Sweden"
-      STR_NATO_AIRCRAFT_OPTION3_UFOPEDIA: "Sweden invites us to accept their Draken heavy hunting model. Their focus is on durability and has better reach than other fighters. It was reinforced with extra armour plates to resist UFO weapons (Sweden has secretly prepared for other possible air threats since its encounter with a Medium Scout in 1961), although this makes it not very fast or agile. In choosing it, the United Kingdom and Italy withdrew their offers."  
+      STR_NATO_AIRCRAFT_OPTION3_UFOPEDIA: "Sweden invites us to accept their Draken heavy hunting model. Their focus is on durability and has better reach than other fighters. It was reinforced with extra armour plates to resist UFO weapons (Sweden has secretly prepared for other possible air threats since its encounter with a Medium Scout in 1961), although this makes it not very fast or agile. In choosing it, the United Kingdom and Italy withdrew their offers."
       STR_USSR_AIRCRAFT_OPTION1: "USSR Heavy Interceptor - Foxbat"
       STR_USSR_AIRCRAFT_OPTION1_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The USSR makes available to us the powerful MiG-25 interceptor (NATO code name: Foxbat) designed to face enemy bombers at extreme altitude and speed. It is considered by Western and Soviet analysts as the best interceptor of the moment, with a potent radar and a mighty engine. However, it is limited in its armament and is not agile in close combat. As we have chosen it, the Soviet authorities have permanently declined their proposal of their light fighter."
       STR_USSR_AIRCRAFT_OPTION2: "USSR Lightweight Fighter - Fishbed"
@@ -1990,9 +1990,9 @@ extraStrings:
       STR_USA_LASER_RESEARCH: USA Laser Research
       STR_USA_LASER_RESEARCH_UFOPEDIA: American laser weapons are balanced in terms of power and mobility. By employing Helium-Neon power cells, the laser beam released is consistent and powerful. To avoid overheating the weapon, liquid nitrogen is used and the crystals employed are calibrated to release the energy in the form of pulses, allowing for higher rates of fire without compromising the firing system.  The structure of the weapon is solid and does not require much maintenance.
       STR_USA_LASER_HANDGUNS: USA Laser Handguns
-      STR_USA_LASER_HANDGUNS_UFOPEDIA: The handheld laser weapons created for the U.S. armed forces are characterized by their power and compactness, although a little heavier than their Soviet and European counterparts. Based on the reliability and performance of the legendary M1911 Colt 45, American engineers have managed to reduce the size of the refractor crystals without altering their firepower. 
+      STR_USA_LASER_HANDGUNS_UFOPEDIA: The handheld laser weapons created for the U.S. armed forces are characterized by their power and compactness, although a little heavier than their Soviet and European counterparts. Based on the reliability and performance of the legendary M1911 Colt 45, American engineers have managed to reduce the size of the refractor crystals without altering their firepower.
       STR_USA_LASER_RIFLES: USA Laser Rifles
-      STR_USA_LASER_RIFLES_UFOPEDIA: The U.S.-designed laser rifles have the iconic silhouette of the M16, in service with U.S. troops. The carrying handle used on the Armalite family of rifles is the same on this new generation of assault weapons. With a focus on fast, accurate fire, the new weapons for the American soldier are designed so that an experienced M16 marksman will have no trouble getting used to the new M20 or CALBR. 
+      STR_USA_LASER_RIFLES_UFOPEDIA: The U.S.-designed laser rifles have the iconic silhouette of the M16, in service with U.S. troops. The carrying handle used on the Armalite family of rifles is the same on this new generation of assault weapons. With a focus on fast, accurate fire, the new weapons for the American soldier are designed so that an experienced M16 marksman will have no trouble getting used to the new M20 or CALBR.
       STR_USA_LASER_CLOSE_RANGE_WEAPONS: USA Laser Close-Range Weapons
       STR_USA_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA: The United States has learned its lesson in the Vietnam War. The assault rifles employed by the MACV troops performed less well than expected in close quarters fighting in the jungle. To compensate for this, the new short-range weapons are specially designed to saturate an area with a lot of firepower, denying the enemy the possibility of getting close to the soldier using them. We are confident that these new weapons will be useful to soldiers who assault a UFO or an alien base.
       STR_USA_LASER_HEAVY_WEAPONS: USA Laser Heavy Weapons
@@ -2014,9 +2014,9 @@ extraStrings:
       STR_USSR_LASER_HANDGUNS: USSR Laser Handguns
       STR_USSR_LASER_HANDGUNS_UFOPEDIA: Small arms developed since the late 1960s have seen their flourishing in more recent years due to increased funding for the Development Committee. Based on designs created by General Mirinov, with improvements by Dr. Artemiy, Soviet short-range weapons are noted for their reliability.
       STR_USSR_LASER_RIFLES: USSR Laser Rifles
-      STR_USSR_LASER_RIFLES_UFOPEDIA: The crown jewel of Soviet laser technology, the rifles are considered the most important application of laser technology created by the Soviet Union. Due to the problems caused by the alien invasion, they have been put into mass production to equip the millions of soldiers of the Warsaw Pact and defend the Motherland and planet Earth. 
+      STR_USSR_LASER_RIFLES_UFOPEDIA: The crown jewel of Soviet laser technology, the rifles are considered the most important application of laser technology created by the Soviet Union. Due to the problems caused by the alien invasion, they have been put into mass production to equip the millions of soldiers of the Warsaw Pact and defend the Motherland and planet Earth.
       STR_USSR_LASER_CLOSE_RANGE_WEAPONS: USSR Laser Close-Range Weapons
-      STR_USSR_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA: 
+      STR_USSR_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA:
       STR_USSR_LASER_HEAVY_WEAPONS: USSR Laser Heavy Weapons
       STR_USSR_LASER_HEAVY_WEAPONS_UFOPEDIA: The new military strategy of the countries aligned with the Soviet Union prioritizes the use of heavy weapons from fortified positions to defeat a considerably superior enemy. To this end, the Committee has ordered the creation of powerful weapons for a war of attrition. They are not very comfortable to use, but their firepower is unmatched.
 
@@ -2028,7 +2028,7 @@ extraStrings:
       STR_IMPROVED_FIGHTER: "Improved Fighter"
       STR_IMPROVED_FIGHTER_UFOPEDIA: "Returning to the abandoned project of the XF-108 Rapier long-range supersonic interceptor, in collaboration with North American Aviation, improved avionics, new weapons and navigation systems have been integrated, as well as a new engine and fuselage built in Alien Alloys, which substantially increases the speed and combat range of the fighter. It will be available for its manufacture in the workshop."
       STR_IMPROVED_VTOL_TRANSPORT: "Improved VTOL Transport"
-      STR_IMPROVED_VTOL_TRANSPORT_UFOPEDIA: "Working in close collaboration with Soviet designer Mikhail Mil, this attack and transport helicopter based on the Hind model (which has just entered service with Soviet military forces) includes a fuselage built entirely of Alien Alloys that considerably reduces its weight. In addition, the cockpit has been redesigned to incorporate new avionics systems. It is equipped with a variety of rockets and cannons, turning it into a 'flying tank'." 
+      STR_IMPROVED_VTOL_TRANSPORT_UFOPEDIA: "Working in close collaboration with Soviet designer Mikhail Mil, this attack and transport helicopter based on the Hind model (which has just entered service with Soviet military forces) includes a fuselage built entirely of Alien Alloys that considerably reduces its weight. In addition, the cockpit has been redesigned to incorporate new avionics systems. It is equipped with a variety of rockets and cannons, turning it into a 'flying tank'."
       STR_IMPROVED_SATELLITE: "Improved Satellite"
       STR_IMPROVED_SATELLITE_UFOPEDIA: "New gravitational wave and infrared detection systems, in collaboration with NASA, ESRO and the Soviet Space Program have culminated in a new military reconnaissance satellite model. At the request of Soviet scientists, a slot has been incorporated to mount cannons of various types and calibres, in order to defend the satellite from UFO attacks when flying over Earth's orbit. We hope that this model will help us to improve the surveillance of our planet in the face of the alien threat."
       STR_ALLOY_MANUFACTURING: "Alloy Manufacturing"
@@ -2050,7 +2050,7 @@ extraStrings:
       STR_ALIEN_SUPPORT_SHIPS: "Alien Support Ships"
       STR_ALIEN_SUPPORT_SHIPS_UFOPEDIA: "Highly specialized ships with specific tasks of each one. Their weapons are designed for self-defense, although they are dangerous for some types of aircraft. Caution is recommended."
       STR_ALIEN_SHIELDS: "Alien Shields"
-      STR_ALIEN_SHIELDS_UFOPEDIA: "Some of the alien craft are equipped with force shields that may absorb damage from missiles and bullets. They are not invincible, but they can greatly increase UFO's resistance at unexpected levels. Usually the bigger craft use them, but some small ships equipped them too. Be careful, the UFOs shielding recharges when it doesn't recibe damage."  
+      STR_ALIEN_SHIELDS_UFOPEDIA: "Some of the alien craft are equipped with force shields that may absorb damage from missiles and bullets. They are not invincible, but they can greatly increase UFO's resistance at unexpected levels. Usually the bigger craft use them, but some small ships equipped them too. Be careful, the UFOs shielding recharges when it doesn't recibe damage."
       STR_ALLOY_CRAFT_ARMOR_UC: ALLOY CRAFT ARMOR
       STR_ALLOY_CRAFT_ARMOR: Alloy Craft Armor
       STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: Armor plates made of Alien Alloys, designed to be installed in  UNEXCOM aircrafts to increase durability. Damage Max +100
@@ -2058,7 +2058,7 @@ extraStrings:
       STR_IMPROVED_LIGHT_MISSILE: "Improved Light Missile"
       STR_IMPROVED_LIGHT_MISSILE_UFOPEDIA: "Recent advances in materials science have allowed us, in collaboration with the Raytheon company, to create a new model of lightweight missile, equipped with a modern chassis built entirely with Alien Alloys. Because it is lighter, it can carry more of a heavier warhead. In addition, avionics systems designed by our engineers, based on air combat so far, have allowed to improve the built-in heat tracker."
       STR_IMPROVED_HEAVY_MISSILE: "Improved Heavy Missile"
-      STR_IMPROVED_HEAVY_MISSILE_UFOPEDIA: "Using our knowledge gained from using heavy radar-guided missiles against UFOs, we have been able to isolate the waves they reflect to some extent. This new active radar is considerably larger and more advanced. It is still in prototype stages, but the new R-72 Scimitar missile, built with the help of NPO Vympel, includes the new Alien Alloys frames and all the explosives that could fit inside the missile."  
+      STR_IMPROVED_HEAVY_MISSILE_UFOPEDIA: "Using our knowledge gained from using heavy radar-guided missiles against UFOs, we have been able to isolate the waves they reflect to some extent. This new active radar is considerably larger and more advanced. It is still in prototype stages, but the new R-72 Scimitar missile, built with the help of NPO Vympel, includes the new Alien Alloys frames and all the explosives that could fit inside the missile."
       STR_IMPROVED_GATLING_CANNON: "Improved Gatling Cannon"
       STR_IMPROVED_GATLING_CANNON_UFOPEDIA: "General Electric engineers have been very enthusiastic about improving their famous Gatling M61 Vulcan cannon. They have visited our laboratory and engineering bay to support us in creating a new gun based on the Vulcan. By using the famous Alien Alloys, we have designed a more efficient weapon that resists the intense heat of the weapon much better. We are satisfied with the result. Improved Revolver research is required to produce the ammunition."
       STR_IMPROVED_REVOLVER_CANNON: Improved Revolver Cannon

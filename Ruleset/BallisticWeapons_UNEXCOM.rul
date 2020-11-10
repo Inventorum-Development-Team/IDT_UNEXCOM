@@ -7,45 +7,45 @@ items:
 # Rifles, Carbines & LMGs: NATO rounds has better penetration, Soviet does more wounds
 # Shotguns: slugs does some stun and penetrate armor, buckshots does wounds
 ###################################################
-#Close quarters: defined by default on 1 tile 
+#Close quarters: defined by default on 1 tile
 #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
 #Extra long range combat: 46-60 # Snipers
 ####################################################
 #PISTOL AND SMGs AMMO
-  - &STR_9MM_PISTOL_AMMO 
+  - &STR_9MM_PISTOL_AMMO
     type: STR_9MM_PISTOL_AMMO
     power: 28
     battleType: 2
-  - &STR_45_PISTOL_AMMO 
+  - &STR_45_PISTOL_AMMO
     type: STR_45_PISTOL_AMMO
     power: 30
     battleType: 2
 #RIFLE AMMO
-  - &STR_5_56MM_NATO_RIFLE_AMMO 
+  - &STR_5_56MM_NATO_RIFLE_AMMO
     type: STR_5_56MM_NATO_RIFLE_AMMO
     power: 32
     battleType: 2
-  - &STR_7_62MM_NATO_RIFLE_AMMO 
+  - &STR_7_62MM_NATO_RIFLE_AMMO
     type: STR_7_62MM_NATO_RIFLE_AMMO
     power: 40
     battleType: 2
-  - &STR_7_62MM_SOVIET_RIFLE_AMMO 
+  - &STR_7_62MM_SOVIET_RIFLE_AMMO
     type: STR_7_62MM_SOVIET_RIFLE_AMMO
     power: 38
     battleType: 2
 #LMG AMMO
-  - &STR_7_62MM_NATO_LMG_AMMO 
+  - &STR_7_62MM_NATO_LMG_AMMO
     type: STR_7_62MM_NATO_LMG_AMMO
     power: 40
     battleType: 2
 #SNIPER AMMO
-#  - &STR_50BMG_RIFLE_AMMO 
+#  - &STR_50BMG_RIFLE_AMMO
 #    type: STR_50BMG_RIFLE_AMMO
 #    power: 70
 #    battleType: 2
-  - &STR_7_62MM_SOVIET_SNIPER_AMMO 
+  - &STR_7_62MM_SOVIET_SNIPER_AMMO
     type: 7_62MM_SOVIET_SNIPER_AMMO
     power: 56
     battleType: 2
@@ -141,7 +141,7 @@ items:
     listOrder: 1999
 
   - type: STR_9MM_PISTOL_X10
-    refNode: *STR_9MM_PISTOL_AMMO 
+    refNode: *STR_9MM_PISTOL_AMMO
     categories: [STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS]
     size: 0.05
     costBuy: 100
@@ -646,7 +646,7 @@ items:
       RandomStun: true
     hitSound: 22
     hitAnimation: 80
-    blastRadius: 0 
+    blastRadius: 0
     clipSize: 8
     invHeight: 1
     invWidth: 1
@@ -725,8 +725,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
-      toTile: 0.8
-      toWound: 1.0
+      ToTile: 0.8
+      ToWound: 1.0
       RandomWound: true
     damageType: 3
     clipSize: 1
@@ -785,8 +785,8 @@ items:
     power: 50
     damageAlter:
       RandomType: 6
-      toStun: 1.2
-      toEnergy: 1.1
+      ToStun: 1.2
+      ToEnergy: 1.1
     damageType: 6
     clipSize: 1
     battleType: 2
@@ -812,7 +812,7 @@ items:
     armor: 30
     attraction: 8
     listOrder: 2026
-    
+
   - type: STR_22_LONG_RIFLE_X14
     categories: [STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
     size: 0.05
@@ -832,7 +832,7 @@ items:
     armor: 30
     attraction: 10
     listOrder: 2027
-    
+
   - type: STR_FAL_SHOTGUN_SHELLS
     categories: [STR_FIREARMS, STR_SHOTGUNS, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
@@ -853,7 +853,7 @@ items:
     shotgunPellets: 5
     shotgunSpread: 25
     listOrder: 2041
-    
+
   - type: STR_CARL_GUSTAF_M2_HE_ROUND
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
@@ -871,7 +871,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      toWound: 1.3
+      ToWound: 1.3
       RandomWound: true
       ToTile: 0.66
     damageType: 3
@@ -901,7 +901,7 @@ items:
       ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
-      toWound: 1.3
+      ToWound: 1.3
       RandomWound: true
       ToTile: 0.66
     damageType: 1
@@ -931,7 +931,7 @@ items:
       ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
-      toWound: 1.3
+      ToWound: 1.3
       RandomWound: true
       ToTile: 0.66
     damageType: 2
@@ -942,7 +942,7 @@ items:
     invHeight: 2
     attraction: 9
     listOrder: 2049
-    
+
   - type: STR_RPG_HE_ROCKET
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS]
     requiresBuy:
@@ -960,7 +960,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      toWound: 1.5
+      ToWound: 1.5
       RandomWound: true
       ToTile: 0.66
     damageType: 3
@@ -1014,7 +1014,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      toWound: 1.3
+      ToWound: 1.3
       RandomWound: true
       ToTile: 0.66
       ArmorEffectiveness: 0.9
@@ -1091,11 +1091,11 @@ items:
     fireSound: 137
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
-      1: 
+      1:
         tuLoad: 20
         tuUnload: 20
         compatibleAmmo: [ STR_40MM_FRAG, STR_40MM_SMOKE, STR_40MM_INCENDIARY, STR_40MM_NON_LETHAL ]
@@ -1146,7 +1146,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
     confSnap:
       shots: 2
@@ -1157,7 +1157,7 @@ items:
       shots: 10
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     accuracyCloseQuarters: 120
     accuracySnap: 70
     accuracyAimed: 110
@@ -1184,13 +1184,13 @@ items:
     weight: 9
     bigSprite: 139
     floorSprite: 139
-    handSprite: 412 
+    handSprite: 412
     bulletSprite: 1
     fireSound: 139
     bulletSpeed: 35
     reloadSound: [190, 191, 192, 194]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_45_PISTOL_X30, STR_45_PISTOL_X7 ]
@@ -1198,7 +1198,7 @@ items:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAimed:
       shots: 10
       name: STR_PRAY_N_SPRAY
@@ -1211,7 +1211,7 @@ items:
     tuAuto: 40
     tuSnap: 23
     tuAimed: 35
-    sprayWaypoints: 3 
+    sprayWaypoints: 3
     costThrow:
       energy: 20
     battleType: 1
@@ -1224,7 +1224,7 @@ items:
     aimRange: 20
     attraction: 11
     listOrder: 2031
-    
+
   - type: STR_XM21
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -1241,7 +1241,7 @@ items:
     bulletSpeed: 20
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
     confAuto:
       shots: 1
@@ -1279,7 +1279,7 @@ items:
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_NON_LETHAL_X8, STR_12GAUGE_ELERIUM_SHARDS_X8 ]
@@ -1348,7 +1348,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      toWound: 0.8
+      ToWound: 0.8
       RandomWound: true
       ToTile: 0.5
     accuracySnap: 55
@@ -1390,7 +1390,7 @@ items:
     bulletSpeed: 35
     reloadSound: [194, 195, 196]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100 ]
     confSnap:
       shots: 5
@@ -1437,7 +1437,7 @@ items:
     damageBonus:
       bravery: 3.0
       firing: 0.4
-      reactions: 0.7 
+      reactions: 0.7
     compatibleAmmo:
       - STR_22_LONG_RIFLE_X14
     accuracyCloseQuarters: 70
@@ -1454,7 +1454,7 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 2037
-    
+
 #################################################
 ####### UNEXCOM NATO SUPPLIED WEAPONS ###########
 #################################################
@@ -1522,17 +1522,17 @@ items:
       shots: 3
       name: STR_BURST
       ammoSlot: 0
-      arcing: false    
+      arcing: false
     confAuto:
       shots: 1
       name: STR_FIRE_SHOTGUN
       ammoSlot: 1
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 15
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
-      1: 
+      1:
         tuLoad: 20
         tuUnload: 15
         compatibleAmmo: [ STR_FAL_SHOTGUN_SHELLS ]
@@ -1569,7 +1569,7 @@ items:
     fireSound: 148
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
     confAimed:
       shots: 2
@@ -1580,7 +1580,7 @@ items:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     accuracyCloseQuarters: 80
     accuracyAuto: 50
     accuracySnap: 70
@@ -1600,7 +1600,7 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 2042
-    
+
   - type: STR_MP5
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LIGHT_WEAPONS, STR_SMGS]
     requiresBuy:
@@ -1617,13 +1617,13 @@ items:
     fireSound: 149
     reloadSound: [190, 191, 192, 194]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_9MM_PISTOL_X10, STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAimed:
       shots: 10
       name: STR_PRAY_N_SPRAY
@@ -1635,7 +1635,7 @@ items:
     accuracyAimed: 55
     tuAuto: 32
     tuSnap: 24
-    tuAimed: 45 
+    tuAimed: 45
     autoShots: 4
     sprayWaypoints: 2
     costThrow:
@@ -1651,7 +1651,7 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 2043
-    
+
   - type: STR_PSG1
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -1668,7 +1668,7 @@ items:
     fireSound: 150
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
     confAuto:
       shots: 1
@@ -1700,7 +1700,7 @@ items:
     dropoff: 3
     attraction: 10
     listOrder: 2044
-    
+
   - type: STR_FN_MAG
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
     requiresBuy:
@@ -1717,7 +1717,7 @@ items:
     fireSound: 151
     reloadSound: [194, 195, 196]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100  ]
     confSnap:
       shots: 5
@@ -1846,13 +1846,13 @@ items:
     fireSound: 154
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_SOVIET_RIFLE_X30, STR_7_62MM_SOVIET_RIFLE_X40 ]
     confAimed:
       shots: 3
       name: STR_BURST
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
@@ -1891,7 +1891,7 @@ items:
 # Bayonet segment end
     attraction: 8
     listOrder: 2051
-    
+
   - type: STR_AKMSU
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_CARBINES]
     requiresBuy:
@@ -1907,7 +1907,7 @@ items:
     fireSound: 155
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_SOVIET_RIFLE_X30, STR_7_62MM_SOVIET_RIFLE_X40 ]
     confAimed:
       shots: 2
@@ -1918,7 +1918,7 @@ items:
       shots: 10
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     accuracyCloseQuarters: 90
     accuracyAuto: 40
     accuracySnap: 62
@@ -1955,13 +1955,13 @@ items:
     fireSound: 156
     reloadSound: [190, 191, 192, 194]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_9MM_PISTOL_X10, STR_9MM_PISTOL_X20 ]
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAimed:
       shots: 10
       name: STR_PRAY_N_SPRAY
@@ -1988,7 +1988,7 @@ items:
     sprayWaypoints: 2
     attraction: 7
     listOrder: 2053
-#	
+#
   - type: STR_DRAGUNOV
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -2005,7 +2005,7 @@ items:
     bulletSpeed: 20
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_SOVIET_SNIPER_X10 ]
     confAuto:
       shots: 1
@@ -2045,7 +2045,7 @@ items:
     fireSound: 158
     reloadSound: [183, 184, 185]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_KS23_SHARPNEL-25_X4, STR_KS23_BARRIKADE_X4, STR_KS23_SATANA_X4 ]
@@ -2106,7 +2106,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 9
-    listOrder: 2056 
+    listOrder: 2056
 #
   - type: STR_RPKS
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
@@ -2123,7 +2123,7 @@ items:
     bulletSpeed: 20
     fireSound: 160
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_SOVIET_RIFLE_X30, STR_7_62MM_SOVIET_RIFLE_X40, STR_7_62MM_SOVIET_RIFLE_X75 ]
     confSnap:
        shots: 5
@@ -2246,7 +2246,7 @@ items:
   - type: STR_HUNTING_RIFLE
     requiresBuy:
       - STR_HUNTING_RIFLE
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SNIPER_RIFLES] 
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SNIPER_RIFLES]
     size: 0.2
     costBuy: 1600
     costSell: 1000
@@ -2279,7 +2279,7 @@ items:
   - type: STR_DOUBLE_BARRELED_SHOTGUN
     requiresBuy:
       - STR_DOUBLE_BARRELED_SHOTGUN
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS] 
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS]
     size: 0.2
     costBuy: 1500
     costSell: 2000
@@ -2290,7 +2290,7 @@ items:
     bulletSprite: 1
     fireSound: 164
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X2, STR_12GAUGE_SLUG_X2 ]
     confAuto:
       shots: 2
@@ -2322,7 +2322,7 @@ items:
   - type: STR_MACHETE
     requiresBuy:
       - STR_MACHETE
-    categories: [STR_MELEE, STR_CIVILIAN_TECH] 
+    categories: [STR_MELEE, STR_CIVILIAN_TECH]
     size: 0.2
     costBuy: 800
     costSell: 500
@@ -2416,13 +2416,13 @@ items:
     fireSound: 167
     reloadSound: [190, 191, 192, 194]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
     confAuto:
       shots: 6
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAimed:
       shots: 10
       name: STR_PRAY_N_SPRAY
@@ -2452,7 +2452,7 @@ items:
     listOrder: 2106
 
   - type: STR_POLICE_SHOTGUN
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS] 
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS]
     size: 0.2
     costBuy: 1500
     costSell: 1100
@@ -2464,7 +2464,7 @@ items:
     fireSound: 168
     reloadSound: [183, 184, 185]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_ELERIUM_SHARDS_X8, STR_12GAUGE_NON_LETHAL_X8 ]
     confAuto:
       shots: 4
@@ -2495,7 +2495,7 @@ items:
   - type: STR_POLICE_TONFA
     requiresBuy:
       - STR_POLICE_TONFA
-    categories: [STR_MELEE, STR_CIVILIAN_TECH] 
+    categories: [STR_MELEE, STR_CIVILIAN_TECH]
     size: 0.2
     costBuy: 600
     costSell: 500
@@ -2545,7 +2545,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_30_CARBINE_X15 ]
@@ -2586,7 +2586,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_30_CARBINE_X15 ]
@@ -2611,7 +2611,7 @@ items:
   - type: STR_30_CARBINE_X15
     requiresBuy:
       - STR_M1_CARBINE
-    refNode: *STR_9MM_PISTOL_AMMO 
+    refNode: *STR_9MM_PISTOL_AMMO
     categories: [STR_FIREARMS, STR_PISTOLS, STR_CLIPS]
     size: 0.05
     costBuy: 100
@@ -2658,7 +2658,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
@@ -2705,7 +2705,7 @@ items:
     fireSound: 170
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
     confAimed:
       shots: 3
@@ -2755,7 +2755,7 @@ items:
     fireSound: 171
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
     confSnap:
        shots: 5
@@ -2803,13 +2803,13 @@ items:
     fireSound: 149
     reloadSound: [190, 191, 192, 194]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
     confAuto:
       shots: 5
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAimed:
       shots: 10
       name: STR_PRAY_N_SPRAY
@@ -2856,7 +2856,7 @@ items:
     fireSound: 172
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_7_62MM_SOVIET_RIFLE_X30, STR_7_62MM_SOVIET_RIFLE_X40 ]
@@ -2954,13 +2954,13 @@ items:
     fireSound: 174
     reloadSound: [190, 191, 192, 194]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
     confAimed:
       shots: 5
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAuto:
       shots: 15
       name: STR_PRAY_N_SPRAY
@@ -3399,7 +3399,7 @@ items:
     requires:
       - STR_WEAPON_MODIFICATION
       - STR_DOUBLE_BARRELED_SHOTGUN
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH, STR_CIVILIAN_TECH, STR_SHOTGUNS, STR_CUSTOM_WEAPON] 
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH, STR_CIVILIAN_TECH, STR_SHOTGUNS, STR_CUSTOM_WEAPON]
     size: 0.2
     costSell: 3000
     weight: 8
@@ -3409,7 +3409,7 @@ items:
     bulletSprite: 1
     fireSound: 164
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X2, STR_12GAUGE_SLUG_X2 ]
     confAuto:
       shots: 2
@@ -3439,7 +3439,7 @@ items:
     listOrder: 2117
 
   - type: STR_COMBAT_KNIFE
-    categories: [STR_MELEE, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH] 
+    categories: [STR_MELEE, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH]
     size: 0.2
     costBuy: 300
     costSell: 200
@@ -3490,7 +3490,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
     confSnap:
       shots: 2
@@ -3501,7 +3501,7 @@ items:
       shots: 10
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     accuracyCloseQuarters: 120
     accuracySnap: 85
     accuracyAimed: 110
@@ -3533,9 +3533,9 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
-      1: 
+      1:
         tuLoad: 25
         tuUnload: 15
         compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8 ]
@@ -3584,9 +3584,9 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
-      1: 
+      1:
         tuLoad: 20
         tuUnload: 20
         compatibleAmmo: [ STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_40MM_SMOKE, STR_40MM_NON_LETHAL ]
@@ -3637,13 +3637,13 @@ items:
     fireSound: 149
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     confAimed:
       shots: 10
       name: STR_PRAY_N_SPRAY
@@ -3690,7 +3690,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
     confAimed:
       shots: 2
@@ -3701,7 +3701,7 @@ items:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     accuracyCloseQuarters: 80
     accuracyAuto: 50
     accuracySnap: 70
@@ -3737,7 +3737,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
     confAimed:
       shots: 2
@@ -3748,7 +3748,7 @@ items:
       shots: 7
       name: STR_FULL_AUTO
       ammoSlot: 0
-      arcing: false 
+      arcing: false
     accuracyCloseQuarters: 80
     accuracyAuto: 65
     accuracySnap: 85
@@ -3784,7 +3784,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
     confAimed:
       shots: 2
@@ -3846,7 +3846,7 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
@@ -3894,11 +3894,11 @@ items:
     bulletSpeed: 25
     reloadSound: [186, 187, 188, 189]
     ammo:
-      0: 
+      0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
-      1: 
+      1:
         tuLoad: 25
         tuUnload: 15
         compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_NON_LETHAL_X8 ]
@@ -4015,8 +4015,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
-      toTile: 0.6
-      toWound: 1.2
+      ToTile: 0.6
+      ToWound: 1.2
       RandomWound: true
     tuUnprime: 50
     costThrow:
@@ -4042,8 +4042,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
-      toTile: 0.5
-      toWound: 0.8
+      ToTile: 0.5
+      ToWound: 0.8
       RandomWound: true
     damageType: 3
     battleType: 5
@@ -4061,8 +4061,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
-      toTile: 1.2
-      toWound: 1.8
+      ToTile: 1.2
+      ToWound: 1.8
       RandomWound: true
     damageType: 3
     battleType: 4
@@ -4111,8 +4111,8 @@ items:
       IgnoreSelfDestruct: true
       ToTime: 2.5
       ToStun: 0.5
-      ToEnergy:	2.0
-      costThrow:
+      ToEnergy: 2.0
+    costThrow:
       energy: 8
     costPrime:
       time: 25
@@ -5000,7 +5000,7 @@ ufopaedia:
 
 
 
-#################################################################  
+#################################################################
 extraSprites:
 #########################################
 ######### TIER I WEAPONS USA ############
@@ -5074,7 +5074,7 @@ extraSprites:
       158: Resources/BallisticWeapons/USSR/BigKS23Shotgun.png
       159: Resources/BallisticWeapons/USSR/BigRPG.png
       160: Resources/BallisticWeapons/USSR/BigRPKS.png
- 
+
       161: Resources/BallisticWeapons/Civilian/BigMakarov.png
       162: Resources/BallisticWeapons/Civilian/BigSnubnosePistol.png
       163: Resources/BallisticWeapons/Civilian/BigHuntingRifle.png
@@ -5198,7 +5198,7 @@ extraSprites:
       158: Resources/BallisticWeapons/USSR/FloorKS23Shotgun.png
       159: Resources/BallisticWeapons/USSR/FloorRPG.png
       160: Resources/BallisticWeapons/USSR/FloorRPKS.png
- 
+
       161: Resources/BallisticWeapons/Civilian/FloorMakarov.png
       162: Resources/BallisticWeapons/Civilian/FloorSnubnosePistol.png
       163: Resources/BallisticWeapons/Civilian/FloorHuntingRifle.png
@@ -5324,7 +5324,7 @@ extraSprites:
       564: Resources/BallisticWeapons/USSR/HandKS23Shotgun.png
       572: Resources/BallisticWeapons/USSR/HandRPG.png
       580: Resources/BallisticWeapons/USSR/HandRPKS.png
- 
+
       588: Resources/BallisticWeapons/Civilian/HandMakarov.png
       596: Resources/BallisticWeapons/Civilian/HandSnubnosePistol.png
       604: Resources/BallisticWeapons/Civilian/HandHuntingRifle.png
@@ -5420,7 +5420,7 @@ manufacture:
     requires:
       - STR_ELERIUM_FUSION
     space: 1
-    time: 40 
+    time: 40
     cost: 4000
     requiredItems:
       STR_ELERIUM_115: 1
@@ -5431,7 +5431,7 @@ manufacture:
     requires:
       - STR_ELERIUM_FUSION
     space: 2
-    time: 60 
+    time: 60
     cost: 4000
     requiredItems:
       STR_ELERIUM_115: 3
@@ -5442,7 +5442,7 @@ manufacture:
     requires:
       - STR_ELERIUM_FUSION
     space: 1
-    time: 400 
+    time: 400
     cost: 4000
     requiredItems:
       STR_ELERIUM_115: 2
@@ -5459,7 +5459,7 @@ manufacture:
     space: 1
     time: 5
     cost: 300
-    refund: true 
+    refund: true
     producedItems:
       STR_5_56MM_NATO_RIFLE_X30: 1
     listOrder: 1101
@@ -5471,7 +5471,7 @@ manufacture:
     space: 1
     time: 40
     cost: 400
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_M79_THUMPER_GL: 1
@@ -5486,7 +5486,7 @@ manufacture:
     space: 1
     time: 40
     cost: 400
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_DOUBLE_BARRELED_SHOTGUN: 1
@@ -5501,7 +5501,7 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true    
+    refund: true
     requiredItems:
         STR_WEAPON_TOOLKIT: 1
         STR_M1_CARBINE: 1
@@ -5516,12 +5516,12 @@ manufacture:
     space: 1
     time: 40
     cost: 5000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1      
+      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_XM117_SCOPED: 1
     listOrder: 1101
@@ -5533,12 +5533,12 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1  
+      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_XM117_SHOTGUN: 1
     listOrder: 1101
@@ -5550,12 +5550,12 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_M203_ACCESSORY: 1
-      STR_40MM_FRAG: 1  
+      STR_40MM_FRAG: 1
     producedItems:
       STR_XM117_M203: 1
     listOrder: 1101
@@ -5567,11 +5567,11 @@ manufacture:
     space: 1
     time: 40
     cost: 5000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_FN_FAL: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1 
+      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_FN_FSC: 1
     listOrder: 1101
@@ -5583,7 +5583,7 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
@@ -5599,16 +5599,16 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1 
+      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_FN_FSC_SCOPED: 1
     listOrder: 1101
-  
+
   - name: STR_M16A1_SHOTGUN_CONVERSION
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -5616,13 +5616,13 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1 
-      STR_12GAUGE_BUCKSHOT_X8: 1 
+      STR_5_56MM_NATO_RIFLE_X20: 1
+      STR_12GAUGE_BUCKSHOT_X8: 1
     producedItems:
       STR_M16A1_SHOTGUN: 1
     listOrder: 1101
@@ -5634,12 +5634,12 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1 
+      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_M16A1_SCOPED: 1
     listOrder: 1101
@@ -5651,12 +5651,12 @@ manufacture:
     space: 1
     time: 40
     cost: 4000
-    refund: true  
+    refund: true
     requiredItems:
       STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_M203_ACCESSORY: 1
-      STR_40MM_FRAG: 1 
+      STR_40MM_FRAG: 1
     producedItems:
       STR_M16_M203: 1
     listOrder: 1101
@@ -5670,7 +5670,7 @@ extraSounds:
     files:
       136: Resources/BallisticWeapons/Sounds/M1911Colt45_fire.wav
       137: Resources/BallisticWeapons/Sounds/M16M203_fire.wav
-      138: Resources/BallisticWeapons/Sounds/XM117_fire.wav       
+      138: Resources/BallisticWeapons/Sounds/XM117_fire.wav
       139: Resources/BallisticWeapons/Sounds/M3Greasegun_fire.wav
       140: Resources/BallisticWeapons/Sounds/XM21_fire.wav
       141: Resources/BallisticWeapons/Sounds/RemingtonCombatShotgun_fire.wav
@@ -5765,7 +5765,7 @@ extraStrings:
       STR_5_56MM_NATO_RIFLE_X20: "5.56mm NATO Rifle Rounds (x20)"
       STR_5_56MM_NATO_RIFLE_X20_UFOPEDIA: "The intermediate cartridge 5.56x45mm NATO was born as a response to the experiments of ArmaLite (creators of the AR-15/M-16 family) with smaller, faster and lighter projectiles than the 7.62mm NATO. It is derived from the civilian .223 Remington cartridge, being similar in performance. This 20-rds magazine is used in NATO assault weapons. "
       STR_5_56MM_NATO_RIFLE_X30: "5.56mm NATO Rifle Rounds (x30)"
-      STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA: "This 30-rds magazine for the 5.56mm NATO is an experiment. During the Vietnam war some units had them, some units had but didn't use them (because unreliable). For example MAC/SOG purchased them on the civilian market, but the had very few. Usually a SOG member on operations had only one 30 rounds mag (inserted in the weapon) and the rest was composed of the standard 20-rds mags. Our engineers can manufacture them at the workshop (and we can even sell them, are quite profitable)"	  
+      STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA: "This 30-rds magazine for the 5.56mm NATO is an experiment. During the Vietnam war some units had them, some units had but didn't use them (because unreliable). For example MAC/SOG purchased them on the civilian market, but the had very few. Usually a SOG member on operations had only one 30 rounds mag (inserted in the weapon) and the rest was composed of the standard 20-rds mags. Our engineers can manufacture them at the workshop (and we can even sell them, are quite profitable)"
       STR_7_62MM_NATO_RIFLE_X5: "7.62mm NATO Rifle Rounds (x5)"
       STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA: "Defined by NATO since 1950 as the Organization's standard firearms cartridge, the 7.62x51mm ammunition is a heavy projectile, used in battle rifles, precision and machine guns of all types. It is appreciated for its armor-penetrating power. This magazine holds 5 bullets and its used only on the PSG-1 Sniper Rifle."
       STR_7_62MM_NATO_RIFLE_X20: "7.62mm NATO Rifle Rounds (x20)"
@@ -5880,15 +5880,15 @@ extraStrings:
       STR_FN_FAL_SHOTGUN: "FN FAL-UBS"
       STR_FN_FAL_SHOTGUN_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN Herstal, is called 'the right hand of the free world', for its wide use in armies around the world. This variant for UNEXCOM includes an underbarrel semi automatic 12 gauge shotgun, with a 5 shells detachable magazine. UBS stands for 'Under-Barrel Shotgun'. Employs x20 ammo mags"
       STR_SG510_CARBINE: "SIG SG510-4 Carbine"
-      STR_SG510_CARBINE_UFOPEDIA: "Version specially designed for UNEXCOM by SIG based on its SG 510-4 battle rifle. It has a cut-off barrel, a retractable paratrooper stock, using the same powerful {ALT}7.62mm NATO{ALT} round of its larger brother. It has been designed to be more compact and maneuverable without losing firepower, but it can be still difficult to control with sustained fire. Can use x20 and x30 rounds mags." 
+      STR_SG510_CARBINE_UFOPEDIA: "Version specially designed for UNEXCOM by SIG based on its SG 510-4 battle rifle. It has a cut-off barrel, a retractable paratrooper stock, using the same powerful {ALT}7.62mm NATO{ALT} round of its larger brother. It has been designed to be more compact and maneuverable without losing firepower, but it can be still difficult to control with sustained fire. Can use x20 and x30 rounds mags."
       STR_MP5: "H&K MP5"
       STR_MP5_UFOPEDIA: "Automatic sub-machine gun manufactured by Hecker & Koch, adopted by the West Germany armed forces. Lightweight and reliable, uses {ALT}9x19mm Parabellum rounds.{ALT} this modern sub-machine gun is expected to be used en masse by special operations groups and police forces around the world because of its excellent performance. Uses all of the three 9mm magazines."
       STR_PSG1: "H&K PSG-1"
       STR_PSG1_UFOPEDIA: "Präzisionsschützengewehr, German for 'precision shooter rifle'. Powerful precision rifle, based on the design of the H&K G3 combat rifle, uses {ALT}7.62x51 NATO{ALT} ammunition. It combines excellent long-range precision, high fire rate and very powerful ammunition, making it a lethal weapon in the right hands. Uses the x5 and x20 ammo clips."
       STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoiless Rifle"
-      STR_CARL_GUSTAF_M2_UFOPEDIA: "The Carl Gustaf M2 is an 84 mm man-portable reusable anti-tank weapon produced in Sweden. Although its design dates back to the years after WW2, the high quality of its construction and its variety of warheads make it an ideal choice when using heavy support on the battlefields of Europe." 
+      STR_CARL_GUSTAF_M2_UFOPEDIA: "The Carl Gustaf M2 is an 84 mm man-portable reusable anti-tank weapon produced in Sweden. Although its design dates back to the years after WW2, the high quality of its construction and its variety of warheads make it an ideal choice when using heavy support on the battlefields of Europe."
       STR_FN_MAG: "FN MAG LMG"
-      STR_FN_MAG_UFOPEDIA: "Powerful infantry support weapon chambered in {ALT}7.62mm NATO{ALT} and fed on x50 and x100 ammo belts, it keeps certain similarities with German machine guns of the WW2. Its design allows for a high continuous fire rate without greatly affecting its accuracy. The MAG is known for its outstanding reliability" 
+      STR_FN_MAG_UFOPEDIA: "Powerful infantry support weapon chambered in {ALT}7.62mm NATO{ALT} and fed on x50 and x100 ammo belts, it keeps certain similarities with German machine guns of the WW2. Its design allows for a high continuous fire rate without greatly affecting its accuracy. The MAG is known for its outstanding reliability"
 #############################
 ####### USSR WEAPONS ########
 #############################
@@ -5897,17 +5897,17 @@ extraStrings:
       STR_AKM_BAYONETED: "AKM Bayoneted"
       STR_AKM_BAYONETED_UFOPEDIA: "Modernized version of the iconic weapon of Soviet origin, calibrated to use ammunition {ALT}7.62x39mm Soviet{ALT} on x30 and x40 magazines. Due to its excellent performance, the AKM became the backbone of the Red Army. Powerful at short range, but imprecise. This particular version, supplied to the troops of UNEXCOM, is a little shortened to facilitate its use in the narrow cabin of our transports. It has a bayonet. Melee power: 45~"
       STR_AKMSU: "AKMSU Carbine"
-      STR_AKMSU_UFOPEDIA: "Labeled as 'The Secret Soviet Rifle', this carbine based on the AKM was designed for the VDV Airborne Troops. Is optimized for close combat, Its structure makes it an excellent weapon that hardly breaks or jams, without increasing much its weight. Uses the {ALT}7.62x39mm Soviet{ALT} round, the same of the AK family." 
+      STR_AKMSU_UFOPEDIA: "Labeled as 'The Secret Soviet Rifle', this carbine based on the AKM was designed for the VDV Airborne Troops. Is optimized for close combat, Its structure makes it an excellent weapon that hardly breaks or jams, without increasing much its weight. Uses the {ALT}7.62x39mm Soviet{ALT} round, the same of the AK family."
       STR_SKORPION: "Skorpion vz. 68"
-      STR_SKORPION_UFOPEDIA: "Personal Defense Weapon, made in Czechoslovakia. Our particular version is chambered in {ALT}9mm{ALT} instead the original 7.65mm, to maximize its flexibility and have extra firepower on the battlefield. An hybrid between an SMG and a pistol, it was designed for tank and artillery crew for it's short size and light weight. Employs x10 and x20 mags."  
+      STR_SKORPION_UFOPEDIA: "Personal Defense Weapon, made in Czechoslovakia. Our particular version is chambered in {ALT}9mm{ALT} instead the original 7.65mm, to maximize its flexibility and have extra firepower on the battlefield. An hybrid between an SMG and a pistol, it was designed for tank and artillery crew for it's short size and light weight. Employs x10 and x20 mags."
       STR_DRAGUNOV: "Dragunov SVD"
       STR_DRAGUNOV_UFOPEDIA: "The SVD is the first semiautomatic rifle in the world designed specifically to be used in military precision shooting. Semi-automatic sniper/designated marksman rifle chambered in extremely powerful {ALT}7.62x54mmR{ALT} and developed in the Soviet Union."
       STR_KS23_SHOTGUN: "KS-23 Heavy Shotgun"
-      STR_KS23_SHOTGUN_UFOPEDIA: "This shotgun is designated as a 'special carbine' by its Soviet manufacturers, due to its barrel with rifled bore. It is an excellent and brutal weapon, effective at short and long distances. Built with 23mm AA battery barrels, is the largest shotgun in military service."  	  
+      STR_KS23_SHOTGUN_UFOPEDIA: "This shotgun is designated as a 'special carbine' by its Soviet manufacturers, due to its barrel with rifled bore. It is an excellent and brutal weapon, effective at short and long distances. Built with 23mm AA battery barrels, is the largest shotgun in military service."
       STR_RPG: "RPG-7"
       STR_RPG_UFOPEDIA: "Lethal shoulder-launched, anti-tank rocket-propelled grenade launcher, used in conflicts around the world. Use rockets with {ALT}HE{ALT} warhead effective against most {ALT}vehicles and fortified targets{ALT} and thermobaric {ALT}INC{ALT} warhead for {ALT}anti-personnel{ALT} and urban warfare."
       STR_RPKS: "RPKS LMG"
-      STR_RPKS_UFOPEDIA: "Version of the AKM modified to function as an LMG, uses the same firing mechanism and ammunition. The possibility of exchanging parts between the RPK and its original weapon is surprising. This paratrooper variant has a heavy barrel for sustained fire and a foldable wooden butt and uses the x30, x40 and x75 ammo magazines."  
+      STR_RPKS_UFOPEDIA: "Version of the AKM modified to function as an LMG, uses the same firing mechanism and ammunition. The possibility of exchanging parts between the RPK and its original weapon is surprising. This paratrooper variant has a heavy barrel for sustained fire and a foldable wooden butt and uses the x30, x40 and x75 ammo magazines."
 ###############################
 ##### CIVILIAN WEAPONS ########
 ###############################
@@ -6023,7 +6023,7 @@ extraStrings:
       STR_RIOT_SHIELD_UFOPEDIA: Prototype shield built entirely with Alien Alloys. Its name in Russian means 'Fortress'. It is surprisingly light and resistant, allows {ALT}frontal assaults{ALT} without fear of being damaged. Its size is something cumbersome for the user, which {ALT}limits its agility{ALT} a bit. If used with sufficient force, it can blind the opponent with the shield's strobe lights.
 ########################################
 ####### FOOD AND MEDICAL ITEMS #########
-######################################## 
+########################################
       STR_CANNED_FOOD: "Canned Food"
       STR_CANNED_FOOD_UFOPEDIA: "Nicknamed by some as 'dog food', this small can can can contain a wide variety of processed foods, from canned ham, vegetable soup, stew, beef or pork. It takes a little time to open the can and its contents can help the consumer to calm their nerves and regain some energy and health. ENERGY +20, MORALE +25, HEALTH +5 "
       STR_CIGARETTES: "Cigarettes"
@@ -6037,15 +6037,15 @@ extraStrings:
       STR_FIELD_DRESSING: "Field Dressing"
       STR_FIELD_DRESSING_UFOPEDIA: "Pack of sterile gauze and bandages, very useful for stopping bleeding from a serious injury or wound. The bandage can be applied by the same user to avoid losing too much blood while waiting for specialized medical attention. "
       STR_MEDICAL_POUCH: "Medical Pouch"
-      STR_MEDICAL_POUCH_UFOPEDIA: "Small medical case packed in a plastic bag, it is similar to those found in civilian life, such as in offices and schools. This small first aid kit is used to quickly apply medication to a serious, life-threatening injury, allowing the user to arrive at appropriate medical facilities. It can be used by the user himself, although it does not contain a large amount of medication and when consumed the pouch is discarded." 
+      STR_MEDICAL_POUCH_UFOPEDIA: "Small medical case packed in a plastic bag, it is similar to those found in civilian life, such as in offices and schools. This small first aid kit is used to quickly apply medication to a serious, life-threatening injury, allowing the user to arrive at appropriate medical facilities. It can be used by the user himself, although it does not contain a large amount of medication and when consumed the pouch is discarded."
       STR_ACTIVATE_MEDIKIT: "Activate Medikit"
       STR_DEPLOY_MEDICAL_BAG: "Deploy Medical Bag"
       STR_USE_FIELD_DRESSING: "Use Field Dressing"
       STR_USE_MEDICAL_POUCH: "Use Medical Pouch"
 ########################################
 ############ EXPLOSIVES ################
-######################################## 
+########################################
       STR_SMOKE_GRENADE: "M18 Smoke Grenade"
-      STR_SMOKE_GRENADE_UFOPEDIA: "This American manufactured grenade dates from the end of the WW2, is used as a signaling device, a target or landing zone marking device. This particular model deploys a white smoke curtain and can be used to cover the movement of allied units, disperse civilians or block the enemy's line of fire. " 
+      STR_SMOKE_GRENADE_UFOPEDIA: "This American manufactured grenade dates from the end of the WW2, is used as a signaling device, a target or landing zone marking device. This particular model deploys a white smoke curtain and can be used to cover the movement of allied units, disperse civilians or block the enemy's line of fire. "
       STR_FLASHBANG_GRENADE: "G60 Flashbang Grenade"
       STR_FLASHBANG_GRENADE_UFOPEDIA: "Non-lethal grenade of British origin, it is produced almost exclusively for the Special Air Service.  It is used to confuse, disorient, or distract a potential threat. The mixture of substances created when activated causes a chemical reaction that manifests itself in a very intense light and a very loud sound that can even stun the enemy. It explodes as soon as it comes into contact with the ground. It reduces TUs and Stamina, as well as stuns the affected target."

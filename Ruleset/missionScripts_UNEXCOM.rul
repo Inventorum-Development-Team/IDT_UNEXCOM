@@ -1,5 +1,5 @@
 #The human enemies will attack first. At the third month, the aliens will show up
-missionScripts: 
+missionScripts:
   - delete: gameStart
   - delete: recon
   - delete: invasion
@@ -66,7 +66,7 @@ missionScripts:
 #      0:
 #        STR_ALIEN_TERROR: 100
 #    regionWeights:
-#      0:  
+#      0:
 #        REGION_TERRORIST_HOSTAGE_CRISIS: 100
 #        STR_NORTH_AMERICA: 100
 #        STR_SOUTH_AMERICA: 10
@@ -133,7 +133,7 @@ missionScripts:
       0:
         STR_HUMAN_RECON: 100
     regionWeights:
-      0:  
+      0:
         STR_NORTH_AMERICA: 20
         STR_EUROPE: 35
         STR_CENTRAL_ASIA: 25
@@ -148,7 +148,7 @@ missionScripts:
       0:
         STR_HUMAN_TERROR_ATTACK: 100
     regionWeights:
-      0:  
+      0:
         STR_NORTH_AMERICA: 30
         STR_EUROPE: 35
         STR_CENTRAL_ASIA: 25
@@ -165,7 +165,7 @@ missionScripts:
       0:
         STR_HOSTAGE_CRISIS: 100
     regionWeights:
-      0:  
+      0:
         REGION_TERRORIST_HOSTAGE_CRISIS: 100
     researchTriggers:
       STR_SPECIAL_FORCES_RESEARCH: true
@@ -182,7 +182,7 @@ missionScripts:
       0:
         STR_HIJACKED_PLANE: 100
     regionWeights:
-      0:  
+      0:
         REGION_TERRORIST_HIJACKED_PLANE: 100
     researchTriggers:
       STR_SPECIAL_FORCES_RESEARCH: true
@@ -198,7 +198,7 @@ missionScripts:
       0:
         STR_AMERICAN_OPERATIONS_MISSION: 100
     regionWeights:
-      0:  
+      0:
         REGION_USA_COMBAT_OPERATIONS: 100
     useTable: false
     researchTriggers:
@@ -215,7 +215,7 @@ missionScripts:
       0:
         STR_EUROPEAN_OPERATIONS_MISSION: 100
     regionWeights:
-      0:  
+      0:
         REGION_NATO_COMBAT_OPERATIONS: 100
     useTable: false
     researchTriggers:
@@ -232,7 +232,7 @@ missionScripts:
       0:
         STR_SOVIET_OPERATIONS_MISSION: 100
     regionWeights:
-      0:  
+      0:
         REGION_USSR_COMBAT_OPERATIONS: 100
     useTable: false
     researchTriggers:
@@ -249,7 +249,7 @@ missionScripts:
       0:
         STR_AMERICAN_CITY_DEFENSE: 100
     regionWeights:
-      0:  
+      0:
         REGION_AMERICAN_CITIES: 100
     useTable: false
     researchTriggers:
@@ -266,7 +266,7 @@ missionScripts:
       0:
         STR_EUROPEAN_CITY_DEFENSE: 100
     regionWeights:
-      0:  
+      0:
         REGION_EUROPEAN_CITIES: 100
     useTable: false
     researchTriggers:
@@ -283,7 +283,7 @@ missionScripts:
       0:
         STR_SOVIET_CITY_DEFENSE: 100
     regionWeights:
-      0:  
+      0:
         REGION_SOVIET_CITIES: 100
     useTable: false
     researchTriggers:

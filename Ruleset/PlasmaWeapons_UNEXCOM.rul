@@ -648,7 +648,7 @@ armors:
     spriteInv: SCOUT_POWER_ARMOR_INV
     corpseBattle:
       - STR_CORPSE
-    corpseItem: STR_CORPSE_SCOUT_POWER_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_POWER_ARMOR # should be corpseBattle?
     storeItem: STR_SCOUT_POWER_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
@@ -681,7 +681,7 @@ armors:
     spriteInv: SCOUT_FLYING_ARMOR_INV
     corpseBattle:
       - STR_CORPSE
-    corpseItem: STR_CORPSE_SCOUT_FLYING_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
     storeItem: STR_SCOUT_FLYING_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
@@ -1466,7 +1466,6 @@ extraStrings:
       STR_HUMAN_PLASMA_RIFLE_UFOPEDIA: Using the information and cells gleaned from the captured engineer, researchers provided the manufacturing teams plans on how to modify captured plasma rifles to work for X-com forces, with a configuration familiar to the soldiers.  Additionally, not bound by the size constraints of the plasma pistol, research can be expanded cover how to manufacture new plasma rifles.
       STR_HUMAN_HEAVY_PLASMA: Heavy Plasma
       STR_HUMAN_HEAVY_PLASMA_UFOPEDIA: As the heaviest of the alien plasma weapons, this weapon proved to have it's own difficulties for the design and research team.  Despite a number of promising prototypes, producing a human-built heavy plasma weapon with the same capabilities as the alien version is impossible. Despite this, conversion of captured weapons for use by the X-com team is now possible. 
-      STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA: PLACEHOLDER PLACEHOLDER PLACEHOLDER
       # Human Plasma Weapons
       STR_HUMAN_PLASMA_MAGNUM: Plasma Magnum
       STR_HUMAN_PLASMA_MAGNUM_UFOPEDIA: Re-examining abandoned prototypes used in the failed attempts at creating new plasma pistols, the research team abandoned attempts at including auto-fire for pistol and instead concentrated on power output.  The new pistol design is analogous to the gunpowder magnum, providing more wounding energy than the .50 BMG in a one-handed weapon.

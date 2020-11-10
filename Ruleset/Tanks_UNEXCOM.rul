@@ -23,12 +23,13 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
-    builtInWeapons:
+    builtInWeaponSets:
+      -
 #      - STR_FERRET_CAR - this seems to be linked via unit title now
 #      - STR_DOUBLE_50CAL
-      - STR_DOUBLE_50CAL_BOX
-      - STR_FERRET_SMOKE_LAUNCHER    
-      - STR_FERRET_SMOKE_GRENADE
+        - STR_DOUBLE_50CAL_BOX
+        - STR_FERRET_SMOKE_LAUNCHER
+        - STR_FERRET_SMOKE_GRENADE
 #####################################
 ####### M551 SHERIDAN ###############
 #####################################
@@ -53,12 +54,13 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
-    builtInWeapons:
+    builtInWeaponSets:
+      -
 #      - STR_SHERIDAN_TANK - this seems to be linked via unit title now
 #      - STR_M81E1
-      - STR_152MM_CANNON_SHELLS
-      - STR_SHILLELAGH      
-      - STR_MGM51_MISSILE
+        - STR_152MM_CANNON_SHELLS
+        - STR_SHILLELAGH
+        - STR_MGM51_MISSILE
 #####################################
 ####### BMD-1 AIRBORNE IFV ##########
 #####################################
@@ -83,12 +85,13 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
-    builtInWeapons:
+    builtInWeaponSets:
+      -
 #      - STR_BMD1_TANK - this seems to be linked via unit title now
 #      - STR_2A28_GROM
-      - STR_73MM_CANNON_SHELLS
-      - STR_PKT_MACHINEGUN     
-      - STR_PKT_AMMO_BOX
+        - STR_73MM_CANNON_SHELLS
+        - STR_PKT_MACHINEGUN
+        - STR_PKT_AMMO_BOX
 #####################################
 ######### ALVIS SALADIN AC ##############
 #####################################
@@ -113,15 +116,16 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
-    builtInWeapons:
+    builtInWeaponSets:
+      -
 #      - STR_SALADIN_CAR - this seems to be linked via unit title now
 #      - STR_L5A1_GUN
-      - STR_76MM_CANNON_SHELLS
-      - STR_M1919A4_MACHINEGUN     
-      - STR_M1919A4_AMMO_BOX
+        - STR_76MM_CANNON_SHELLS
+        - STR_M1919A4_MACHINEGUN
+        - STR_M1919A4_AMMO_BOX
 #####################################
 ##### LEGIONNAIRE LASER TANK ########
-#####################################	  
+#####################################
   - type: STR_TANK_LASER_CANNON
     race: STR_TANK_LASER_CANNON
     stats:
@@ -143,8 +147,9 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
-    builtInWeapons:
-      - STR_TANK_LASER_MINIGUN
+    builtInWeaponSets:
+      -
+        - STR_TANK_LASER_MINIGUN
 
 items:
 #####################################
@@ -174,7 +179,7 @@ items:
     autoRange: 200
     snapRange: 200
     dropoff: 1
-    bulletSpeed: 16	
+    bulletSpeed: 16
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -569,7 +574,6 @@ items:
   - type: STR_TANK_LASER_CANNON
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
     size: 6
-    transferTime: 96
     costSell: 575000
     transferTime: 96
     weight: 1
@@ -801,7 +805,7 @@ armors:
      - 0.0 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
-    loftempsSet: [ 92, 89, 90, 91 ]   
+    loftempsSet: [ 92, 89, 90, 91 ]
 ufopaedia:
   - delete: STR_TANK_CANNON
   - delete: STR_TANK_ROCKET_LAUNCHER
@@ -951,11 +955,11 @@ extraSprites:
       2509: Resources/Tanks/LASERMINIGUN.png
 
 #      2510: Resources/Tanks/ENERGYSHELL.png
-#      2511: Resources/Tanks/LASERMINIGUN.png	  
+#      2511: Resources/Tanks/LASERMINIGUN.png
   - type: FERRETM0.SPK
     singleImage: true
     files:
-      0: Resources/Tanks/Inventory/FERRET_INVENTORY.png	  
+      0: Resources/Tanks/Inventory/FERRET_INVENTORY.png
   - type: SHERIDANM0.SPK
     singleImage: true
     files:
@@ -991,35 +995,35 @@ manufacture:
       - STR_TANK_LASER_CANNON
     space: 25
     time: 1200
-    cost: 500000	  
+    cost: 500000
 extraStrings:
   - type: en-US
     strings:
       STR_FERRET_CAR: FV701 Ferret Scout Car
       FERRET_CAR_ARMOR: Aluminum hull
       STR_DOUBLE_50CAL: Double M2 50 Cal. MG
-      STR_DOUBLE_50CAL_BOX: x50 .50 BMG Rounds   
-      STR_FERRET_SMOKE_LAUNCHER: Smoke Screen Launcher 
+      STR_DOUBLE_50CAL_BOX: x50 .50 BMG Rounds
+      STR_FERRET_SMOKE_LAUNCHER: Smoke Screen Launcher
       STR_FERRET_SMOKE_GRENADE: Smoke Screen Grenade
       STR_HWP_POP_SMOKE: Smoke Screen!
       STR_FERRET_CAR_UFOPEDIA:  The Ferret Scout Car is a British armoured fighting vehicle designed and built for reconnaissance purposes. These vehicles are provided by the United Nations, very used by the UN Peacekeeping Forces all around the globe. It has reduced armor, but is equipped with two powerful .50 caliber M2 Machine Guns (50 rds) and a smoke grenade dispenser (6 rds).
-######################################################## 
+########################################################
       STR_SHERIDAN_TANK: M551 Sheridan
       SHERIDAN_TANK_ARMOR: Aluminum hull with steel turret
       STR_M81E1: M81E1 152mm Rifled Gun
-      STR_152MM_CANNON_SHELLS: 152mm AP Rounds	  
-      STR_SHILLELAGH: MGM-51 Shillelagh Guided Missile 
+      STR_152MM_CANNON_SHELLS: 152mm AP Rounds
+      STR_SHILLELAGH: MGM-51 Shillelagh Guided Missile
       STR_MGM51_MISSILE: MGM-51 Shillelagh Guided Missile
       STR_SHERIDAN_UFOPEDIA: The M551 Sheridan AR/AAV (Armored Reconnaissance/Airborne Assault Vehicle) is a light tank developed by the United States, provided to UNEXCOM for ground combat support. It's designed to be landed by parachute and to swim across rivers. It's armed with the technically advanced M81E1 152mm gun/launcher (20 rds), adapted for the use of the MGM-51 Shillelagh guided anti-tank missile (9 rds).
-######################################################## 
+########################################################
       STR_BMD1_TANK: BMD-1 Airborne IFV
-      BMD1_TANK_ARMOR: Welded aluminium alloy 
+      BMD1_TANK_ARMOR: Welded aluminium alloy
       STR_2A28_GROM: 2A28 73mm Grom Cannon
-      STR_73MM_CANNON_SHELLS: 73mm HE Rounds	  
+      STR_73MM_CANNON_SHELLS: 73mm HE Rounds
       STR_PKT_MACHINEGUN: 7.62mm PKT Machine Gun
       STR_PKT_AMMO_BOX: x50 PKT 7.62mm Rounds
       STR_BMD1_UFOPEDIA: The BMD-1 is a Soviet airborne amphibious tracked infantry fighting vehicle, first introduced in 1969. BMD stands for Boyevaya Mashina Desanta (literally 'Combat Vehicle of the Airborne'). It can be dropped by parachute and can be carried by our C-130 Hercules and although it resembles the BMP-1 it is in fact much smaller. It's main armament is composed of a 2A28 Grom 73mm semi-auto gun (40 rds) and a PKT coaxial MG (50 rds).
-######################################################## 
+########################################################
       STR_SALADIN_CAR: FV601 Saladin Armored Car
       SALADIN_CAR_ARMOR: Aluminum hull
       STR_L5A1_GUN: ROF L5A1 76mm Gun
@@ -1027,12 +1031,12 @@ extraStrings:
       STR_M1919A4_MACHINEGUN: 7.62mm M1919A4 Machine Gun
       STR_M1919A4_AMMO_BOX: x50 M1919A4 7.62mm Rounds
       STR_SALADIN_CAR_UFOPEDIA:  Excellent 6x6 armored car of British origin, was designed in the 50s and has been exported to numerous nations since then, proving its worth in Middle East countries. It is also used by the United Nations. Its Royal Ordnance Factory L5A1 76mm Gun (30 rds) is not designed to combat tanks, but to destroy fortifications and light vehicles. It has a coaxial M1919A4 machine gun (50 rds) to combat infantry.
-######################################################## 
+########################################################
       STR_IMP_TANK_CHASSIS: Laser/Alloy Tank Project
       STR_IMP_TANK_CHASSIS_UFOPEDIA: Our tanks have proven to be highly useful on the battlefield when supporting our troops in their missions. However, the escalation in the conflict and the increase in the losses of the same, have led our engineers and scientists, together with tank developers of the world, to create a new type of tank using our new scientific advances. For this project we are developing a powerful laser cannon similar to the one mounted on airplanes, the 'Laser Gun, Model 34-3 Heavy Anti Tank Laser Cannon', we will use it in the developed tank.
       STR_TANK_LASER_CANNON: XM22 Legionnaire
       TANK_LASER_CANNON_ARMOR: Alien Alloys hull
-      STR_XM343: LGM34-3H AT Laser Cannon  
+      STR_XM343: LGM34-3H AT Laser Cannon
       STR_TANK_LASER_MINIGUN: XM250 Laser Minigun
       STR_LEGIONNAIRE_TANK_UFOPEDIA: Result of a joint project of USA, West Germany, UK and UNEXCOM engineers, the Light Assault Tank XM22 Legionnaire is armored with a strong armor based on Alien Alloys. It uses a unique cannon, the LGM34-3H ATLC, which fires high-powered laser munitions. Their 'cartridges' are actually one-use-per-shot batteries, physically similar to 90mm shells but 10 times more powerful (30 rds). It's support weapon is a turret mounted Laser Minigun (100 rds).
 extraSounds:
@@ -1046,5 +1050,4 @@ extraSounds:
       4335: Resources/Tanks/Sounds/BMD1_hit.wav
       4336: Resources/Tanks/Sounds/Ferret_fire.wav
       4337: Resources/Tanks/Sounds/Legionnaire_fire.wav
-      4338: Resources/Tanks/Sounds/Minigun_fire.wavegionnaire_fire.wav
       4338: Resources/Tanks/Sounds/Minigun_fire.wav

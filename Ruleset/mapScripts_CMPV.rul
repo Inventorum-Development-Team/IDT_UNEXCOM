@@ -2,7 +2,7 @@
 ## C.M.P - MAPSCRIPTS
 ## V0.3
 ## Lasted Changed by efrenespartano - IDT 6-April-2020
-## Comments: 
+## Comments:
 #Updated Dioxine's Industrial Slum and added Commercial mapScripts
 ###########################
 mapScripts:
@@ -208,7 +208,7 @@ mapScripts:
       executions: 2
     - type: fillArea
 
-  - type: EXPANDED_TERROR  # Thanks to HellRazor 
+  - type: EXPANDED_TERROR  # Thanks to HellRazor
     commands:
     - type: addLine
       label: 1
@@ -245,7 +245,7 @@ mapScripts:
 
 
 
-  - type: ALIENBASE  # Thanks to HellRazor 
+  - type: ALIENBASE  # Thanks to HellRazor
     commands:
     - type: addBlock #Add Entrances
       groups: 2
@@ -409,7 +409,7 @@ mapScripts:
       size: 2
       executions: 3
     - type: fillArea
-  
+
   - type: INDUSTRIALSLUM # Thanks to Dioxine
     commands:
     - type: addCraft

@@ -220,7 +220,7 @@ soldiers:
     - STR_BRIGADIER
 
 ###############
-# SIDE NOTE: The Astronaut Soldier-class uniform/armor  
+# SIDE NOTE: The Astronaut Soldier-class uniform/armor
 # is found on "ArmorAstronauts" ruleset. Separated there
 # because it was a mess to put them here.
 ###############
@@ -369,7 +369,7 @@ armors:
       - STR_SOLDIER
 
   - type: STR_PILOT_UC
-    spriteSheet: PILOT.PCK 
+    spriteSheet: PILOT.PCK
     spriteInv:  MAN_5
     storeItem: STR_NONE
     loftempsSet: [ 3 ]
@@ -557,7 +557,7 @@ armors:
       - 0.7
       - 0.0
     loftempsSet: [ 3 ]
-    forcedTorso: 1  
+    forcedTorso: 1
     builtInWeapons:
       - STR_MG3
 
@@ -600,7 +600,7 @@ armors:
       - 1.0
       - 0.0
     loftempsSet: [ 3 ]
-    forcedTorso: 1  
+    forcedTorso: 1
     builtInWeapons:
       - STR_RIOT_SHIELD
 
@@ -641,7 +641,7 @@ armors:
     spriteInv: HEAVY_PERSONAL_ARMOR_INV
     corpseBattle:
       - STR_CORPSE
-    corpseItem: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    corpseGeo: STR_CORPSE_HEAVY_PERSONAL_ARMOR
     storeItem: STR_HEAVY_PERSONAL_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
@@ -895,45 +895,45 @@ extraSprites:
       500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_BIGOB.png
   - type: FLOOROB.PCK
     files:
-      500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_FLOOROB.png	  
+      500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_FLOOROB.png
 
 ########################################
 ########## PILOT JUMPSUIT #############
 ######################################
-  - type: MAN_5F0.SPK 
+  - type: MAN_5F0.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F0.png
-  - type: MAN_5F1.SPK 
+  - type: MAN_5F1.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F1.png
-  - type: MAN_5F2.SPK 
+  - type: MAN_5F2.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F2.png
-  - type: MAN_5F3.SPK 
+  - type: MAN_5F3.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F3.png 
-  - type: MAN_5M0.SPK 
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F3.png
+  - type: MAN_5M0.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M0.png
-  - type: MAN_5M1.SPK 
+  - type: MAN_5M1.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M1.png
-  - type: MAN_5M2.SPK 
+  - type: MAN_5M2.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M2.png
-  - type: MAN_5M3.SPK 
+  - type: MAN_5M3.SPK
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M3.png
 
-  - type: PILOT.PCK 
+  - type: PILOT.PCK
     width: 256
     height: 1400
     subX: 32
@@ -1222,7 +1222,7 @@ extraStrings:
 
       STR_PILOT: Pilot
       STR_PILOT_UC: PILOT FLIGHT SUIT
-      STR_PILOT_UC_UFOPEDIA: Standard G-suit used by UNEXCOM combat pilots. Made to resist high levels of acceleration forces, it's very practical (has plenty of pockets), and durable (includes fire retardant clothing). Its appearance is usually similar to a jumpsuit.  
+      STR_PILOT_UC_UFOPEDIA: Standard G-suit used by UNEXCOM combat pilots. Made to resist high levels of acceleration forces, it's very practical (has plenty of pockets), and durable (includes fire retardant clothing). Its appearance is usually similar to a jumpsuit.
 
       STR_SPECIAL_FORCES_SOLDIER: Special Forces Operator
       STR_SPECIAL_FORCES_UNIFORM_UC: SPECIAL FORCES UNIFORM
@@ -1250,7 +1250,7 @@ extraStrings:
       STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research on personal armor built with Alien Alloys has supported the research of European scientists and engineers. A prototype of armor to defuse explosives has been redesigned to use the new alien material. The plans have been sent to our R&D team for immediate construction.
 ########################################
 ###### USSR EXPERIMENTAL WEAPONS #######
-########################################   
+########################################
       STR_RIOT_ARMOR_UC: BEAR RIOT ARMOR
       STR_RIOT_ARMOR: Bear Riot Armor
       STR_RIOT_ARMOR_UFOPEDIA: "Advanced soviet prototype armor, derived from a project for a new riot armor for Spetsnaz special forces, is entirely built in Alien Alloy, includes a visor to protect the user's face from impacts and bullets, although this limits their visibility and mobility a bit. Includes a riot shield 'IM-21 Krepost', to deflect frontal damage."
