@@ -2,7 +2,7 @@
 ## C.M.P - GLOBE - VANILLA EDITION
 ## V0.4
 ## Lasted Changed by efrenespartano
-## Comments: 
+## Comments:
 ###########################
 globe:
   data: Resources/Globe/NEWWORLD.DAT
@@ -40,8 +40,8 @@ globe:
     - [88.25, -28, 80.875, -30.375]
     - [77.875, -35.375, 73.375, -39.375, 80.5, -42.25, 80, -45, 82.5, -45.125, 82.875, -47.25, 85.75, -47.125, 86.375, -49.125, 88, -49.125, 90.625, -45.25, 96.25, -42.75, 105, -41.5, 112, -43.625, 112.125, -45, 119.875, -46.75, 115.75, -47.75, 116.75, -49.875]
   textures:
-    - id: 0 # Cold forest/Taiga/Tundra 
-      terrain: 
+    - id: 0 # Cold forest/Taiga/Tundra
+      terrain:
         # - name: FOREST
         #   area: [0, 360, -90, 0]
         # - name: JUNGLE
@@ -53,7 +53,7 @@ globe:
           - name: ACULTASNOW
             weight: 10
           - name: ACULTA
-            weight: 10	
+            weight: 10
           - name: IDT_FOREST
             weight: 15
           - name: IDT_SNOWFOREST
@@ -70,7 +70,7 @@ globe:
           - name: PLAINSTROP
             weight: 40
           - name: ACULTA
-            weight: 20	
+            weight: 20
           - name: IDT_VILLAGE
             weight: 30
           - name: RURAL
@@ -164,7 +164,7 @@ globe:
           - name: PLAINSSAND
             weight: 15
           - name: ACULTASAND
-            weight: 10		
+            weight: 10
     - id: 8 # Badlands/Rocky desert/Dry mountains
       terrain:
           - name: PLAINSMUDD
@@ -178,7 +178,7 @@ globe:
           - name: PLAINSSAND
             weight: 15
           - name: ACULTASAND
-            weight: 10		
+            weight: 10
     - id: 9 # Solid Ice
       terrain:
           - name: ACULTASNOW
@@ -200,7 +200,7 @@ globe:
           - name: PLAINSGRASS
             weight: 25
           - name: PLAINSROCK
-            weight: 25		
+            weight: 25
     - id: 11 # Swampland/mud
       terrain:
           - name: FOREST
@@ -208,7 +208,7 @@ globe:
           - name: JUNGLE
             weight: 15
           - name: ACULTA
-            weight: 15	
+            weight: 15
           - name: IDT_FOREST
             weight: 10
           - name: FORESTSWAMP
@@ -255,7 +255,7 @@ globe:
           - name: FOREST
             weight: 10
           - name: ACULTASNOW
-            weight: 10	
+            weight: 10
           - name: IDT_FOREST
             weight: 30
           - name: IDT_SNOWFOREST
@@ -277,7 +277,7 @@ globe:
           - name: PLAINSSAND
             weight: 15
           - name: ACULTASAND
-            weight: 10	
+            weight: 10
     - id: 21 # Temperate desert plains, medium habitation
       terrain:
           - name: PLAINSMUDD
@@ -291,7 +291,7 @@ globe:
           - name: PLAINSSAND
             weight: 15
           - name: ACULTASAND
-            weight: 10	
+            weight: 10
     - id: 22 # Rain Forest
       terrain:
           - name: MOUNTGRASS
@@ -315,7 +315,7 @@ globe:
           - name: URBAN
             weight: 20
           - name: INDUSTRIALSLUM
-            weight: 20			
+            weight: 20
     - id: 24 # Subtropical desert
       terrain:
           - name: MOUNTSAND
@@ -357,7 +357,7 @@ globe:
           - name: FORESTSWAMP_SNOW
             weight: 10
           - name: FOREST_SNOW
-            weight: 20		
+            weight: 20
           - name: PLAINSSNOW
             weight: 20
           - name: IDT_SNOWFOREST
@@ -365,59 +365,59 @@ globe:
           - name: IDT_SNOWVILLAGE
             weight: 20
     - id: -1 # Classic city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION: 100
     - id: -2 # North American city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION: 100
     - id: -3 # Latin American city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_INDUSTRIAL: 100
     - id: -4 # European city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_SNOW: 100
     - id: -5 # South Asian city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_RURAL: 100
     - id: -6 # East Asian city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_ISLAND: 100
     - id: -7 # Middle East city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_PORT: 100
     - id: -8 # African city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_RURAL: 100
     - id: -9 # Snow city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION_ISLAND: 100
     - id: -10
-      deployments: 
+      deployments:
          STR_AMERICAN_OPERATIONS_MISSION: 100
     - id: -11
-      deployments: 
+      deployments:
          STR_EUROPEAN_OPERATIONS_MISSION: 100
     - id: -12
-      deployments: 
+      deployments:
          STR_SOVIET_OPERATIONS_MISSION: 100
     - id: -13
-      deployments: 
+      deployments:
          STR_AMERICAN_CITY_DEFENSE: 100
     - id: -14
-      deployments: 
+      deployments:
          STR_EUROPEAN_CITY_DEFENSE: 100
     - id: -15
-      deployments: 
+      deployments:
          STR_SOVIET_CITY_DEFENSE: 100
     - id: -16
-      deployments: 
+      deployments:
          STR_HOSTAGE_CRISIS: 100
     - id: -17
-      deployments: 
+      deployments:
          STR_HIJACKED_PLANE: 100
     - id: -20 # Island city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION: 100
     - id: -21 # Oceania city
-      deployments: 
+      deployments:
          STR_TERROR_MISSION: 100

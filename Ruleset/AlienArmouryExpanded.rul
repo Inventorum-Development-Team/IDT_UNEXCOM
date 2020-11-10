@@ -765,9 +765,9 @@ alienDeployments:
           -
             []
           -
-            []            
+            []
           -
-            []            
+            []
       - alienRank: 7
         lowQty: 0
         highQty: 2
@@ -775,7 +775,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets:
           -
-            []            
+            []
           -
             []
           -
@@ -1959,9 +1959,9 @@ manufacture:
     space: 5
     time: 45
     cost: 4500
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_CASTER: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_PLASMA_CASTER: 1
   - name: STR_REMAN_HUMAN_PLASMA_SNIPER_RIFLE
     category: STR_WEAPON
@@ -1971,9 +1971,9 @@ manufacture:
     space: 5
     time: 50
     cost: 6500
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_SNIPER_RIFLE: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_PLASMA_SNIPER_RIFLE: 1
   - name: STR_REMAN_HUMAN_PLASMA_BLASTER
     category: STR_WEAPON
@@ -1983,9 +1983,9 @@ manufacture:
     space: 5
     time: 60
     cost: 7500
-    requiredItems: 
+    requiredItems:
       STR_PLASMA_BLASTER: 1
-    producedItems: 
+    producedItems:
       STR_HUMAN_PLASMA_BLASTER: 1
 # no manufacture of new weapons
   - name: STR_PLASMA_SNIPER_RIFLE

@@ -243,49 +243,49 @@ items:
     # battleType: 2
     # armor: 60
 
-research: 
+research:
   - name: STR_FUSION_HANDGUN
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
   - name: STR_FUSION_SMG
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
   - name: STR_FUSION_RIFLE
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
   - name: STR_FUSION_SNIPER
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
 
   - name: STR_INITIAL_FUSION_CELLS_RESEARCH
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
-    dependencies: 
+    dependencies:
       - STR_FUSION_POWER_CELL_LIGHT
       - STR_FUSION_POWER_CELL_HEAVY
 
   - name: STR_FUSION_POWER_CELL_LIGHT
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
-    unlocks: 
+    unlocks:
       - STR_INITIAL_FUSION_CELLS_RESEARCH
   - name: STR_FUSION_POWER_CELL_HEAVY
-    cost: 300 
+    cost: 300
     points: 10
     needItem: true
-    unlocks: 
+    unlocks:
       - STR_INITIAL_FUSION_CELLS_RESEARCH
 
   - name: STR_FUSION_WEAPONS_RESEARCH
-    cost: 800 
+    cost: 800
     points: 20
-    dependencies: 
+    dependencies:
       - STR_SECTOID_ENGINEER
       - STR_FLOATER_ENGINEER
       - STR_SNAKEMAN_ENGINEER
@@ -374,7 +374,7 @@ extraSprites:
     files:
       0: Resources/UFOpedia/INITIAL_FUSION_CELLS_RESEARCH_IMAGE.PNG
 
-ufopaedia:	  
+ufopaedia:
   - id: STR_FUSION_HANDGUN
     requires:
       - STR_FUSION_HANDGUN
@@ -444,7 +444,7 @@ extraStrings:
   - type: en-US
     strings:
       STR_FUSION_WEAPONS_RESEARCH_1: Fusion Weapons Research I
-      STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA: The complete analysis on this new type of alien weapons has been finished. With this data and the interrogations made to enemy engineers, we have discovered that these weapons are clearly of animal origin, of an aquatic species. Some of these are living beings, but the vast majority are shells and claws of what appear to be crustaceans. 
+      STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA: The complete analysis on this new type of alien weapons has been finished. With this data and the interrogations made to enemy engineers, we have discovered that these weapons are clearly of animal origin, of an aquatic species. Some of these are living beings, but the vast majority are shells and claws of what appear to be crustaceans.
       STR_FUSION_WEAPONS_RESEARCH_2: Fusion Weapons Research II
       STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA: They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher. The energy released seems to be controlled and focused on a certain area.
 
@@ -457,7 +457,7 @@ extraStrings:
       STR_FUSION_SMG_UFOPEDIA: Powerful assault weapon, in concept it is similar to our sub-machine guns. It's quite bulky, but surprisingly light when carried, suggesting that it's used for quick and sneak attacks. Its lethality lies in its ability to saturate an area with small fusion explosions, obliterating any unprotected living creature in its range.
       STR_FUSION_POWER_CELL_LIGHT: Light Fusion Cell
       STR_FUSION_RIFLE: Fusion Rifle
-      STR_FUSION_RIFLE_UFOPEDIA: This is a new, robust and powerful battle rifle. For some strange reason, its firing mechanism limits it to semi-automatic fire, which is a relief for our troops. It's not very accurate, perhaps because of the material it's made of. But it is precisely this material that allows it to be used in close combat, like a mallet or a club. 
+      STR_FUSION_RIFLE_UFOPEDIA: This is a new, robust and powerful battle rifle. For some strange reason, its firing mechanism limits it to semi-automatic fire, which is a relief for our troops. It's not very accurate, perhaps because of the material it's made of. But it is precisely this material that allows it to be used in close combat, like a mallet or a club.
       STR_FUSION_SNIPER: Fusion Sniper
       STR_FUSION_SNIPER_UFOPEDIA: Fearsome long-range weapon. Judging by our analysis in combat, it is difficult to use (it is rarely fired in the course of battle) because of its considerable weight, but it is compensated for by its terrifying accuracy. The design and functionality is very reminiscent of an anti-tank rifle, similar to those used in WW2. Perhaps the designers' intention was to use it to disable our vehicles.
       STR_FUSION_POWER_CELL_HEAVY: Heavy Fusion Cell

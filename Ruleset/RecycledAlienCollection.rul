@@ -426,7 +426,7 @@ armors:
       - 1.45
       - 0.0
       - 0.9
-    loftemps: 2
+    loftempsSet: [ 2 ]
     drawingRoutine: 16
     constantAnimation: true
   - type: CHTONITE_ARMOR0
@@ -1106,8 +1106,9 @@ units:
     deathSound: 101
     intelligence: 2
     aggression: 2
-    builtInWeapons:
-      - STR_SALAMANDRON_BITE
+    builtInWeaponSets:
+      -
+        - STR_SALAMANDRON_BITE
     livingWeapon: true
 alienRaces:
   - id: STR_CEREBREAL
@@ -1564,8 +1565,6 @@ research:
     destroyItem: true
     cost: 192
     points: 50
-    needItem: true
-    destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
     lookup: STR_SECTOID
@@ -1844,7 +1843,7 @@ ufopaedia:
       - STR_CEREBREAL_LARVA
     image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA
     text: STR_CEREBREAL_LARVA_UFOPAEDIA
-    text_width: 158 
+    text_width: 158
     listOrder: 9351
   - id: STR_CEREBREAL_LARVA_AUTOPSY
     type_id: 7
@@ -1880,7 +1879,7 @@ ufopaedia:
       - STR_TUNLUN
     image_id: UFOPAEDIA_IMG_TUNLUN
     text: STR_TUNLUN_UFOPAEDIA
-    text_width: 158 
+    text_width: 158
     listOrder: 9351
   - id: STR_TUNLUN_AUTOPSY
     type_id: 7
@@ -1916,7 +1915,7 @@ ufopaedia:
       - STR_SALAMANDRON
     image_id: UFOPAEDIA_IMG_SALAMANDRON
     text: STR_SALAMANDRON_UFOPAEDIA
-    text_width: 158 
+    text_width: 158
     listOrder: 9351
   - id: STR_SALAMANDRON_AUTOPSY
     type_id: 7
@@ -2022,7 +2021,7 @@ extraSprites:
     singleImage: true
     width: 320
     height: 200
-    files: 
+    files:
       0: Resources/RecycledAlienCollection/CerebrealRace/ufopaedia_CEREBREAL_AUTOPSY.gif
   - type: UFOPAEDIA_IMG_CEREBREAL
     singleImage: true
@@ -2046,13 +2045,13 @@ extraSprites:
     singleImage: true
     width: 320
     height: 200
-    files: 
+    files:
       0: Resources/RecycledAlienCollection/ChtoniteRace/ufopaedia_CHTONITE_AUTOPSY.gif
   - type: UFOPAEDIA_IMG_REPTOID_AUTOPSY
     singleImage: true
     width: 320
     height: 200
-    files: 
+    files:
       0: Resources/RecycledAlienCollection/ReptoidRace/ufopaedia_REPTOID_AUTOPSY.gif
   - type: UFOPAEDIA_IMG_CHTONITE
     singleImage: true
