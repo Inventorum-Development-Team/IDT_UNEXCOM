@@ -1708,6 +1708,8 @@ craftWeapons:
   - delete: STR_STINGRAY
   - delete: STR_AVALANCHE
   - delete: STR_CANNON_UC
+  - delete: STR_PLASMA_BEAM_UC
+  - delete: STR_FUSION_BALL_UC
 #modders: the corresponding extrasprites file id for INTICON.PCK is sprite+5 and sprite+48 for BASEBITS.PCK
 # weaponType 0 = Gatling Cannon (Fast but weak)
 # weaponType 1 = Revolver Cannon (Slow but powerful)
@@ -2649,6 +2651,9 @@ items:
   - delete: STR_TANK_ROCKET_LAUNCHER
   - delete: STR_INTERCEPTOR
   - delete: STR_SKYRANGER
+  - delete: STR_FUSION_BALL_LAUNCHER
+  - delete: STR_FUSION_BALL
+  - delete: STR_PLASMA_BEAM
 
 ##################################
 ####### AIRCRAFT WEAPONS #########
@@ -3153,6 +3158,12 @@ manufacture:
 ########## TIER II #################
 ####################################
 #{
+
+
+  - delete: STR_FUSION_BALL_LAUNCHER
+  - delete: STR_FUSION_BALL
+  - delete: STR_PLASMA_BEAM
+
   - name: STR_RAPIER
     category: STR_CRAFT
     requires:
@@ -3683,6 +3694,11 @@ manufacture:
 #}
 ufopaedia:
 #{
+
+  - delete: STR_FUSION_BALL_UC
+  - delete: STR_FUSION_BALL_LAUNCHER
+  - delete: STR_PLASMA_BEAM_UC
+
 #####################################
 ########## AIRCRAFTS ################
 #####################################

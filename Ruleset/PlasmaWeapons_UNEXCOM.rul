@@ -575,64 +575,6 @@ items:
     recoveryPoints: 50
     armor: 10
 # Craft Weapons
-  - type: STR_PLASMA_BEAM
-    size: 1.2
-    costSell: 267300
-    transferTime: 48
-  - type: STR_PLASMA_ARRAY
-    size: 1.2
-    costSell: 275000
-    transferTime: 48
-  - type: STR_FUSION_BALL_LAUNCHER
-    size: 2.0
-    costSell: 281000
-    transferTime: 48
-  - type: STR_FUSION_BALL
-    size: 0.6
-    costSell: 53300
-    transferTime: 48
-    clipSize: 1
-craftWeapons:
-  - type: STR_PLASMA_BEAM_UC
-    sprite: 5
-    sound: 9
-    damage: 110
-    range: 50
-    accuracy: 50
-    reloadCautious: 12
-    reloadStandard: 12
-    reloadAggressive: 12
-    ammoMax: 50
-    rearmRate: 10
-    launcher: STR_PLASMA_BEAM
-    projectileType: 5
-  - type: STR_PLASMA_ARRAY_UC
-    sprite: 5
-    sound: 9
-    damage: 140
-    range: 20
-    accuracy: 30
-    reloadCautious: 4
-    reloadStandard: 4
-    reloadAggressive: 4
-    ammoMax: 100
-    rearmRate: 50
-    launcher: STR_PLASMA_ARRAY
-    projectileType: 5
-  - type: STR_FUSION_BALL_UC
-    sprite: 3
-    sound: 7
-    damage: 150
-    range: 40
-    accuracy: 100
-    reloadCautious: 32
-    reloadStandard: 24
-    reloadAggressive: 16
-    ammoMax: 4
-    launcher: STR_FUSION_BALL_LAUNCHER
-    clip: STR_FUSION_BALL
-    projectileType: 3
-    projectileSpeed: 8
 crafts:
 # allow more HWPs for mod players
   - type: STR_AVENGER
@@ -1105,23 +1047,6 @@ research:
       - STR_HYPER_WAVE_ENCODER
       - STR_ALIEN_COMMUNICATION
 # Craft Weapons
-  - name: STR_PLASMA_CANNON
-    cost: 660
-    points: 25
-    dependencies:
-      - STR_PLASMA_CANNON_DEP1
-      - STR_PLASMA_CANNON_DEP2
-  - name: STR_PLASMA_ARRAY
-    cost: 260
-    points: 25
-    dependencies:
-      - STR_PLASMA_CANNON
-  - name: STR_FUSION_MISSILE
-    cost: 500 #880
-    points: 25
-    dependencies:
-      - STR_BLASTER_LAUNCHER
-      - STR_BLASTER_BOMB
   - name: STR_ALIEN_GRENADE
     cost: 250
     points: 20
@@ -1373,43 +1298,6 @@ manufacture:
   - name: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_ALIENS_ONLY
-# Craft Weapons
-  - name: STR_PLASMA_BEAM
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_PLASMA_CANNON
-    space: 8
-    time: 500
-    cost: 226000
-    requiredItems:
-      STR_ELERIUM_115: 15
-  - name: STR_PLASMA_ARRAY
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_PLASMA_ARRAY
-    space: 8
-    time: 500
-    cost: 235000
-    requiredItems:
-      STR_ELERIUM_115: 15
-  - name: STR_FUSION_BALL_LAUNCHER
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_FUSION_MISSILE
-    space: 6
-    time: 400
-    cost: 242000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-  - name: STR_FUSION_BALL
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_FUSION_MISSILE
-    space: 6
-    time: 600
-    cost: 28000
-    requiredItems:
-      STR_ELERIUM_115: 4
 ufopaedia:
 # Pure Research
   - id: STR_ALIEN_PLASMA_WEAPONS
@@ -1553,28 +1441,6 @@ ufopaedia:
   - id: STR_PLASMA_LMG_PACK
     type_id: 4
     section: STR_NOT_AVAILABLE
-# Craft Weapons
-  - id: STR_PLASMA_BEAM_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_PLASMA_CANNON
-    image_id: UP011.SPK
-    text: STR_PLASMA_BEAM_UFOPEDIA
-  - id: STR_PLASMA_ARRAY_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_PLASMA_ARRAY
-    image_id: PLASMAARRAY
-    text: STR_PLASMA_ARRAY_UFOPEDIA
-  - id: STR_FUSION_BALL_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_FUSION_MISSILE
-    image_id: UP009.SPK
-    text: STR_FUSION_BALL_UFOPEDIA
 extraStrings:
   - type: en-US
     strings:
@@ -1646,9 +1512,6 @@ extraStrings:
       STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
       # Hyperwave
       # Craft Weapons
-      STR_PLASMA_ARRAY: Pulse Plasma Beam
-      STR_PLASMA_ARRAY_UC: PULSE PLASMA BEAM
-      STR_PLASMA_ARRAY_UFOPEDIA: AS WITH PREVIOUS TECHNOLOGIES, THE PLASMA BEAM AIR-TO-AIR WEAPON HAS BEEN CHANGED TO WORK AS A SHORTER RANGE WEAPON BUT WITH A FASTER RATE OF FIRE.
   - type: fr
     strings:
     # Alien Weapons
@@ -1858,18 +1721,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/FourthState/ScoutArmor/man_7f3.png
-  - type: PLASMAARRAY
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/FourthState/CraftWeapon/PlasmaArrayUfopedia.gif
-  - type: BASEBITS.PCK
-    files:
-      86: Resources/FourthState/CraftWeapon/PlasmaArrayBB.png
-  - type: INTICON.PCK
-    files:
-      43: Resources/FourthState/CraftWeapon/PlasmaArrayII.png
 extraSounds:
   - type: BATTLE.CAT
     files:
