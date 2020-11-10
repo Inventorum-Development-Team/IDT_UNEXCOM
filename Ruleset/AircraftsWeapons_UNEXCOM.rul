@@ -1556,8 +1556,7 @@ crafts:
 
   - type: STR_BASTION
     requires:
-      - STR_IMPROVED_SATELLITE
-      - STR_ADVANCED_BOMBER
+      - STR_IMPROVED_IMPROVED_SATELLITE
     sprite: 868
     fuelMax: 1500
     damageMax: 20
@@ -1573,8 +1572,8 @@ crafts:
       - STR_CRAFT_ALL_CANNONS_ONE
       - STR_CRAFT_ALL_CANNONS_TWO
       - STR_CRAFT_AUX_THREE
-    costBuy: 555000
-    costRent: 450000
+    costBuy: 230000
+    costRent: 200000
     refuelRate: 75
     radarRange: 2300
     radarChance: 60
@@ -3128,16 +3127,7 @@ manufacture:
     cost: 690000
     requiredItems:
       STR_ALIEN_ALLOYS: 55
-  - name: STR_ATALAYA
-    category: STR_CRAFT
-    requires:
-      - STR_IMPROVED_SATELLITE
-    listOrder: 3250
-    space: 30
-    time: 1200
-    cost: 690000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 45
+
 ####################################
 ######### AIRCRAFT #################
 ########## EQUIPMENT ###############
@@ -3375,42 +3365,44 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_LIGHT_MISSILE
+      - STR_LONGSWORD_FUSION_MISSILE
     space: 6
     time: 100
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 25
+      STR_ELERIUM_115: 5
     producedItems:
       STR_LONGSWORD_LAUNCHER: 1
   - name: STR_LONGSWORD_MISSILES
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_LIGHT_MISSILE
+      - STR_LONGSWORD_FUSION_MISSILE
     space: 6
     time: 100
     cost: 30000
     producedItems:
-      STR_SHORTSWORD_MISSILES: 3
+      STR_LONGSWORD_MISSILES: 3
 
   - name: STR_KATANA_LAUNCHER
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_HEAVY_MISSILE
+      - STR_KATANA
     space: 6
     time: 100
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 35
+      STR_ELERIUM_115: 5
     producedItems:
       STR_KATANA_LAUNCHER: 1
   - name: STR_KATANA_MISSILES
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_HEAVY_MISSILE
+      - STR_KATANA
     space: 6
     time: 100
     cost: 30000
@@ -3421,19 +3413,20 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_ROCKET
+      - STR_GORGON_ROCKETS
     space: 6
     time: 100
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 35
+      STR_ELERIUM_115: 5
     producedItems:
       STR_GORGON_LAUNCHER: 1
   - name: STR_GORGON_ROCKETS
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_ROCKET
+      - STR_GORGON_ROCKETS
     space: 6
     time: 100
     cost: 30000
@@ -3444,19 +3437,20 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_ADLER
     space: 6
     time: 100
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
+      STR_ELERIUM_115: 10
     producedItems:
       STR_ADLER_LAUNCHER: 1
   - name: STR_ADLER_MISSILES
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_ADLER
     space: 6
     time: 100
     cost: 50000
@@ -3467,13 +3461,14 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_CASABA_SPIKE
     space: 6
     time: 100
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
       STR_UFO_POWER_SOURCE: 1
+      STR_ELERIUM_115: 10
     producedItems:
       STR_LASER_SPIKE: 1
 
@@ -3483,17 +3478,18 @@ manufacture:
     category: STR_CRAFT_WEAPON
     listOrder: 210
     requires:
-      - STR_LASER_ARRAY
+      - STR_ZEUS
     space: 6
     time: 500
     cost: 182000
     requiredItems:
       STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 5
   - name: STR_ZEUS_CANNON_ROUNDS_X50
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_GATLING_CANNON
+      - STR_ZEUS
     space: 6
     time: 100
     cost: 50000
@@ -3503,17 +3499,18 @@ manufacture:
   - name: STR_VOSTOK_CANNON
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_LASER_CANNON
+      - STR_VOSTOK_PLASMA_CANNON
     space: 6
     time: 600
     cost: 182000
     requiredItems:
       STR_ALIEN_ALLOYS: 25
+      STR_ELERIUM_115: 5
   - name: STR_VOSTOK_CANNON_ROUNDS_X50
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_GATLING_CANNON
+      - STR_VOSTOK_PLASMA_CANNON
     space: 6
     time: 100
     cost: 50000
@@ -3524,19 +3521,21 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_LIGHT_MISSILE
+      - STR_EXCALIBUR_LIGHT_MISSILE
     space: 6
     time: 100
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 35
+      STR_ELERIUM_115: 5
+      STR_UFO_NAVIGATION: 1
     producedItems:
       STR_EXCALIBUR_LAUNCHER: 1
   - name: STR_EXCALIBUR_MISSILES
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_LIGHT_MISSILE
+      - STR_EXCALIBUR_LIGHT_MISSILE
     space: 6
     time: 100
     cost: 40000
@@ -3547,19 +3546,21 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_HEAVY_MISSILE
+      - STR_MJOLNIR
     space: 6
     time: 100
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 45
+      STR_ELERIUM_115: 5
+      STR_UFO_NAVIGATION: 1
     producedItems:
       STR_MJOLNIR_LAUNCHER: 1
   - name: STR_MJOLNIR_MISSILES
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_HEAVY_MISSILE
+      - STR_MJOLNIR
     space: 6
     time: 100
     cost: 40000
@@ -3570,19 +3571,21 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_ROCKET
+      - STR_KRAKEN_ROCKETS
     space: 6
     time: 100
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 45
+      STR_ELERIUM_115: 5
+      STR_UFO_NAVIGATION: 1
     producedItems:
       STR_KRAKEN_LAUNCHER: 1
   - name: STR_KRAKEN_ROCKETS
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_ROCKET
+      - STR_KRAKEN_ROCKETS
     space: 6
     time: 100
     cost: 40000
@@ -3593,19 +3596,21 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_KONDOR
     space: 6
     time: 100
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 10
+      STR_UFO_NAVIGATION: 1
     producedItems:
       STR_KONDOR_LAUNCHER: 1
   - name: STR_KONDOR_MISSILES
     listOrder: 50
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_KONDOR
     space: 6
     time: 100
     cost: 60000
@@ -3616,13 +3621,14 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_CASABA_LANCE
     space: 6
     time: 100
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
       STR_UFO_POWER_SOURCE: 2
+      STR_ELERIUM_115: 20
     producedItems:
       STR_LASER_LANCE: 1
 #}
@@ -3900,6 +3906,7 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
       - STR_IMPROVED_FIGHTER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     text: STR_RAPIER_UFOPEDIA
     listOrder: 119
     rect_stats:
@@ -3918,6 +3925,7 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
       - STR_IMPROVED_BOMBER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     text: STR_VALKYRIE_UFOPEDIA
     listOrder: 119
     rect_stats:
@@ -3969,15 +3977,39 @@ ufopaedia:
     image_id: ATALAYA_UFOPEDIA
 
   - id: STR_VIGGEN
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_JAGUAR
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_FLANKER
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_M50
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 ####################
 #### TIER III #####
@@ -4021,24 +4053,65 @@ ufopaedia:
     image_id: SARACEN_UFOPEDIA
 
   - id: STR_TU45M
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_PANAVIA
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_LAMPYRIDAE
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_FIREFOX
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_COBRA
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_A12
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_BASTION
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_IMPROVED_IMPROVED_SATELLITE
     type_id: 1
 
 ####################
@@ -4046,15 +4119,38 @@ ufopaedia:
 ##################
 
   - id: STR_SABRE
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ULTIMATE_CRAFT
     type_id: 1
 
   - id: STR_DYNASOAR
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ULTIMATE_CRAFT
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_HERMES
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ULTIMATE_CRAFT
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
   - id: STR_MIG_105
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_RAPIER_UFOPEDIA
+    image_id: RAPIER_UFOPEDIA
+    requires:
+      - STR_ULTIMATE_CRAFT
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
 
 ########################################
@@ -4460,41 +4556,101 @@ ufopaedia:
     text: STR_KODIAK_LASER_CANNON_UFOPEDIA
 
   - id: STR_LONGSWORD_FUSION_MISSILE
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_LONGSWORD_FUSION_MISSILE
     type_id: 2
 
   - id: STR_KATANA
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_KATANA
     type_id: 2
 
   - id: STR_GORGON_ROCKETS
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_GORGON_ROCKETS
     type_id: 2
 
   - id: STR_ADLER
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_ADLER
     type_id: 2
 
-  - id: STR_LASER_SPIKE
+  - id: STR_CASABA_SPIKE
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_CASABA_SPIKE
     type_id: 2
 
 #TIER 4
 
-  - id: STR_ZEUS_CANNON
+  - id: STR_ZEUS
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_ZEUS
     type_id: 2
 
   - id: STR_VOSTOK_PLASMA_CANNON
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_VOSTOK_PLASMA_CANNON
     type_id: 2
 
   - id: STR_EXCALIBUR_LIGHT_MISSILE
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_EXCALIBUR_LIGHT_MISSILE
     type_id: 2
 
   - id: STR_MJOLNIR
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_MJOLNIR
     type_id: 2
 
   - id: STR_KRAKEN_ROCKETS
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_KRAKEN_ROCKETS
     type_id: 2
 
   - id: STR_KONDOR
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_KONDOR
     type_id: 2
 
-  - id: STR_LASER_LANCE
+  - id: STR_CASABA_LANCE
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: KODIAK
+    text: STR_KODIAK_LASER_CANNON_UFOPEDIA
+    requires:
+      - STR_CASABA_LANCE
     type_id: 2
 ################################
 ###### AUXILIARY SYSTEMS ######

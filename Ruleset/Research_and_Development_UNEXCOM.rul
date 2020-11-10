@@ -212,6 +212,13 @@ research:
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_IMPROVED_SATELLITE
+    cost: 200
+    points: 20
+    dependencies:
+      - STR_IMPROVED_SATELLITE
+      - STR_UFO_CONSTRUCTION
+      - STR_UFO_NAVIGATION
   - name: STR_IMPROVED_BOMBER
     cost: 400
     points: 20
@@ -287,6 +294,78 @@ research:
       - STR_NEW_FIGHTER_TRANSPORTER
 
 ########################################
+####### CRAFT WEAPONS TIER 3-4 #########
+########################################
+
+  - name: STR_LONGSWORD_FUSION_MISSILE
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_KATANA
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_ADLER
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_GORGON_ROCKETS
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_CASABA_LANCE
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_CASABA_SPIKE
+
+  - name: STR_ZEUS
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+  - name: STR_VOSTOK_PLASMA_CANNON
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+
+  - name: STR_EXCALIBUR_LIGHT_MISSILE
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+  - name: STR_MJOLNIR
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+  - name: STR_KONDOR
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+  - name: STR_KRAKEN_ROCKETS
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+########################################
 ########## LASER RESEARCH ##############
 ########################################
   - name: STR_PERSONAL_ARMOR
@@ -348,6 +427,13 @@ research:
     points: 10
     dependencies:
       - STR_LASER_CANNON
+
+  - name: STR_CASABA_SPIKE
+    cost: 400
+    points: 10
+    dependencies:
+      - STR_LASER_WEAPONS
+
   - name: STR_LASER_DEFENSE
     cost: 510
     points: 15
