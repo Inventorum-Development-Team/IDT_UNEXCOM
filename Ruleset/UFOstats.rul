@@ -51,7 +51,7 @@ ufos:
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
     damageMax: 150
-    speedMax: 200
+    speedMax: 2000
     accel: 6
     power: 25
     range: 30
@@ -252,3 +252,44 @@ ufos:
     score: 400
     reload: 50
     breakOffTime: 3000
+    
+alienDeployments:
+  - type: STR_SMALL_FIGHTER
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+    width: 40
+    length: 40
+    height: 4
+ufopaedia:
+  - id: STR_SMALL_FIGHTER
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_SMALL_FIGHTER
+    text: STR_SMALL_FIGHTER_UFOPEDIA
+research:
+  - name: STR_SMALL_FIGHTER
+    cost: 0
+    points: 50
+    needItem: true
+extraStrings:
+  - type: en-US
+    strings:
+       STR_SMALL_FIGHTER: "Small Fighter"
+       STR_SMALL_FIGHTER_UFOPEDIA: "Though this UFO may not look like much, it is a fearsome combatant. Despite its lack of an aerodynamic design, it is faster than any aircraft found on Earth."
