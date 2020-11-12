@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# ignore stuff
+TERRAIN/* linguist-vendored=true
+.vscode/* linguist-vendored=true
+# correct language types
+MercenaryNames/*.nam linguist-language=YAML
+PilotNames/*.nam linguist-language=YAML
+Ruleset/*.rul linguist-language=YAML
+SpecialForcesNames/*.nam linguist-language=YAML
