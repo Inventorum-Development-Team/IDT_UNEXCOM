@@ -276,6 +276,33 @@ alienDeployments:
     width: 40
     length: 40
     height: 4
+    missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS
+  - type: STR_SMALL_SCOUT
+    missionBountyItem: STR_SMALL_SCOUT_ANALYSIS
+  - type: STR_MEDIUM_SCOUT
+    missionBountyItem: STR_MEDIUM_SCOUT_ANALYSIS
+  - type: STR_LARGE_SCOUT
+    missionBountyItem: STR_LARGE_SCOUT_ANALYSIS
+  - type: STR_FIGHTER_SHIP
+    missionBountyItem: STR_FIGHTER_SHIP_ANALYSIS
+  - type: STR_SENTRY_SHIP
+    missionBountyItem: STR_SENTRY_SHIP_ANALYSIS
+  - type: STR_EXCAVATOR
+    missionBountyItem: STR_EXCAVATOR_ANALYSIS
+  - type: STR_ABDUCTOR
+    missionBountyItem: STR_ABDUCTOR_ANALYSIS
+  - type: STR_HARVESTER
+    missionBountyItem: STR_HARVESTER_ANALYSIS
+  - type: STR_LAB_SHIP
+    missionBountyItem: STR_LAB_SHIP_ANALYSIS
+  - type: STR_TERROR_SHIP
+    missionBountyItem: STR_TERROR_SHIP_ANALYSIS
+  - type: STR_TROOP_LANDER
+    missionBountyItem: STR_TROOP_LANDER_ANALYSIS
+  - type: STR_BATTLESHIP
+    missionBountyItem: STR_BATTLESHIP_ANALYSIS
+  - type: STR_SUPPLY_SHIP
+    missionBountyItem: STR_SUPPLY_SHIP_ANALYSIS
 ufopaedia:
   - id: STR_SMALL_FIGHTER
     type_id: 9
@@ -283,13 +310,183 @@ ufopaedia:
     requires:
       - STR_SMALL_FIGHTER
     text: STR_SMALL_FIGHTER_UFOPEDIA
+  - id: STR_TROOP_LANDER
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_TROOP_LANDER
+    text: STR_TROOP_LANDER_UFOPEDIA
+items:
+  - type: STR_SMALL_FIGHTER_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_FIGHTER_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_SENTRY_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_SMALL_SCOUT_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_MEDIUM_SCOUT_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_LARGE_SCOUT_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_EXCAVATOR_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_ABDUCTOR_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_HARVESTER_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_LAB_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_TERROR_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_TROOP_LANDER_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_BATTLESHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_SUPPLY_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+    
 research:
   - name: STR_SMALL_FIGHTER
     cost: 0
     points: 50
     needItem: true
+  - name: STR_TROOP_LANDER
+    cost: 0
+    points: 50
+    needItem: true
+    
+  - name: STR_SMALL_SCOUT_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_SMALL_SCOUT
+    needItem: true
+  - name: STR_MEDIUM_SCOUT_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_MEDIUM_SCOUT
+    needItem: true
+  - name: STR_LARGE_SCOUT_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_LARGE_SCOUT
+    needItem: true
+  - name: STR_FIGHTER_SHIP_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_FIGHTER_SHIP
+    needItem: true
+  - name: STR_SMALL_FIGHTER_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_SMALL_FIGHTER
+    needItem: true
+  - name: STR_SENTRY_SHIP_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_SENTRY_SHIP
+    needItem: true
+  - name: STR_EXCAVATOR_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_EXCAVATOR
+    needItem: true
+  - name: STR_ABDUCTOR_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_ABDUCTOR
+    needItem: true
+  - name: STR_HARVESTER_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_HARVESTER
+    needItem: true
+  - name: STR_LAB_SHIP_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_LAB_SHIP
+    needItem: true
+  - name: STR_BATTLESHIP_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_BATTLESHIP
+    needItem: true
+  - name: STR_TERROR_SHIP_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_TERROR_SHIP
+    needItem: true
+  - name: STR_TROOP_LANDER_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_TROOP_LANDER
+    needItem: true
+  - name: STR_SUPPLY_SHIP_ANALYSIS
+    cost: 50
+    points: 0
+    getOneFree:
+      - STR_SUPPLY_SHIP
+    needItem: true
+
+
 extraStrings:
   - type: en-US
     strings:
        STR_SMALL_FIGHTER: "Small Fighter"
        STR_SMALL_FIGHTER_UFOPEDIA: "Though this UFO may not look like much, it is a fearsome combatant. Despite its lack of an aerodynamic design, it is faster than any aircraft found on Earth."
+       STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant." 
+       STR_SMALL_SCOUT_ANALYSIS: "Small Scout Analysis"
+       STR_MEDIUM_SCOUT_ANALYSIS: "Medium Scout Analysis"
+       STR_LARGE_SCOUT_ANALYSIS: "Large Scout Analysis"
+       STR_SMALL_FIGHTER_ANALYSIS: "Small Fighter Analysis"
+       STR_FIGHTER_SHIP_ANALYSIS: "Fighter Analysis"
+       STR_SENTRY_SHIP_ANALYSIS: "Sentry Ship Analysis"
+       STR_EXCAVATOR_ANALYSIS: "Excavator Analysis"
+       STR_ABDUCTOR_ANALYSIS: "Abductor Analysis"
+       STR_HARVESTER_ANALYSIS: "Harvester Analysis"
+       STR_LAB_SHIP_ANALYSIS: "Lab Ship Analysis"
+       STR_TERROR_SHIP_ANALYSIS: "Troop Transport Analysis"
+       STR_TROOP_LANDER_ANALYSIS: "Troop Lander Analysis"
+       STR_BATTLESHIP_ANALYSIS: "Battleship Analysis"
+       STR_SUPPLY_SHIP_ANALYSIS: "Supply Ship Analysis"
