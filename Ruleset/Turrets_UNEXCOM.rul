@@ -181,6 +181,10 @@ armors:
     allowsMoving: false
     spriteSheet: HTURRET.PCK
     allowInv: false
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
     corpseBattle:
      - STR_M60
     loftempsSet: [ 3 ]
@@ -209,10 +213,10 @@ armors:
       - 1.0
       - 1.0
       - 1.0
+      - 0.0
       - 1.0
       - 1.0
-      - 1.0
-      - 1.0
+      - 0.0
   - type: STR_SMALL_PLASMA_TURRET_UC
     allowsKneeling: false
     allowsRunning: false
@@ -264,6 +268,8 @@ armors:
     allowInv: false
     fearImmune: true
     bleedImmune: true
+    painImmune: true
+    zombiImmune: true
     corpseBattle:
      - SECTOPOD_CORPSE_4
      - SECTOPOD_CORPSE_4
@@ -305,6 +311,8 @@ armors:
     allowInv: false
     fearImmune: true
     bleedImmune: true
+    painImmune: true
+    zombiImmune: true
     corpseBattle:
      - SECTOPOD_CORPSE_4
      - SECTOPOD_CORPSE_4

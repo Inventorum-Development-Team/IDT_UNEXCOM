@@ -1,4 +1,4 @@
-﻿#Close quarters: defined by default on 1 tile
+﻿#Close quarters: defined by default on 1 tile 
 #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
@@ -109,7 +109,7 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 65
+    accuracyAuto: 65 
     accuracySnap: 65
     accuracyAimed: 60
     tuAuto: 45
@@ -152,7 +152,7 @@ items:
       name: STR_FIRE_M203
       ammoSlot: 1
     ammo:
-      1:
+      1: 
         tuLoad: 20
         tuUnload: 20
         compatibleAmmo: [ STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_40MM_SMOKE, STR_40MM_NON_LETHAL ]
@@ -199,7 +199,7 @@ items:
     confSnap:
       shots: 3
       name: STR_BURST
-    accuracyAuto: 65
+    accuracyAuto: 65 
     accuracySnap: 60
     accuracyAimed: 50
     tuAuto: 14
@@ -275,6 +275,7 @@ items:
     clipSize: -1
     accuracySnap: 60
     accuracyAuto: 65
+    accuracyAimed: 75
     power: 55
     damageType: 4
     tuSnap: 40
@@ -367,7 +368,7 @@ items:
       SmokeThreshold: 1000
     clipSize: -1
     autoShots: 5
-    sprayWaypoints: 2
+    sprayWaypoints: 2     
 #    bulletSpeed: 8
     experienceTrainingMode: 7
     attraction: 7
@@ -434,7 +435,7 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 75
+    accuracyAuto: 75 
     accuracySnap: 85
     accuracyAimed: 110
     tuAuto: 30
@@ -475,7 +476,7 @@ items:
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
-    accuracyAuto: 70
+    accuracyAuto: 70 
     accuracySnap: 80
     accuracyAimed: 105
     tuAuto: 30
@@ -515,7 +516,7 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 75
+    accuracyAuto: 75 
     accuracySnap: 85
     accuracyAimed: 80
     tuAuto: 30
@@ -558,7 +559,7 @@ items:
     confSnap:
       shots: 3
       name: STR_BURST
-    accuracyAuto: 75
+    accuracyAuto: 75 
     accuracySnap: 85
     accuracyAimed: 85
     tuAuto: 35
@@ -649,7 +650,7 @@ items:
     minRange: 3
     dropoff: 1
     invWidth: 1
-    invHeight: 3
+    invHeight: 3	
 
   - type: STR_M72_AUTOMATIC_RECOILESS_RIFLE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
@@ -709,9 +710,9 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      ToArmor: 1.5
+      toArmor: 1.5
     damageType: 3
-    clipSize: 3
+    clipSize: 6
     blastRadius: 4
     battleType: 2
     invWidth: 2
@@ -737,7 +738,7 @@ items:
       RandomWound: true
       ToTile: 1.8
     damageType: 3
-    clipSize: 3
+    clipSize: 6
     blastRadius: 4
     battleType: 2
     invWidth: 2
@@ -765,7 +766,7 @@ items:
       RandomWound: true
       ToTile: 0.66
     damageType: 9
-    clipSize: 3
+    clipSize: 6
     blastRadius: 1
     battleType: 2
     invWidth: 2
@@ -794,7 +795,7 @@ items:
       RandomWound: true
       ToTile: 0.90
     damageType: 2
-    clipSize: 3
+    clipSize: 6
     blastRadius: 1
     battleType: 2
     invWidth: 2
@@ -861,7 +862,7 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 55
+    accuracyAuto: 55 
     accuracySnap: 55
     accuracyAimed: 100
     tuAuto: 30
@@ -901,7 +902,7 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 55
+    accuracyAuto: 55 
     accuracySnap: 55
     accuracyAimed: 100
     tuAuto: 30
@@ -1132,6 +1133,12 @@ ufopaedia:
     requires:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_M4_LASER_LMG_UFOPEDIA
+  - id: STR_ELERIUM_FLAMETHROWER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    text: STR_ELERIUM_FLAMETHROWER_UFOPEDIA
 ##############################
 ##############################
   - id: STR_P71_LASER_PISTOL
@@ -1259,12 +1266,12 @@ extraStrings:
       STR_CALBR_UFOPEDIA: The Colt Advanced Laser Battle Rifle is a high power laser rifle made by Colt's Manufacturing Company. This semiautomatic weapon fires a powerful laser beam at the pull of a trigger. The CALBR's high accuracy and power makes it a good mid to long range weapon.
       STR_M20_M203_LASER_CARBINE: M20 M203 Laser Carbine
       STR_M20_M203_LASER_CARBINE_UFOPEDIA: The M20 is an American laser assault carbine based on the widely used M16. Created as a replacement for the outdated ballistic weapon, this laser share many of the same characteristics. This weapon is very accurate, lightweight, but suffers in Firepower. This variant utilizes an underbarrel grenade launcher.
-      STR_M5_LASER_SMG: M5 Laser SMG
+      STR_M5_LASER_SMG: M5 Laser SMG 
       STR_M5_LASER_SMG_UFOPEDIA: The M5 is America's new laser submachine gun, developed after making a breakthrough in laser technology. The M5 has a higher rate of fire than any other laser weapon due to it's advanced cycling emitter banks. Although this weapon excels in close combat, it suffers at range and stray beams can become an issue.
       STR_ULYSSES_LASER_SNIPER_RIFLE: Ulysses Laser Sniper
       STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA: The Ulysses is a long range laser available to UNEXCOM marksmen. The advantages of this rifle are it's ease of use and its integrated advanced scope. Although this is the least powerful Sniper available to our forces, the impressive scope has faster target acquisition allowing for more follow up shots. This weapon is useful for picking off weaker targets at long ranges.
       STR_X4_LASER_SHOTGUN: X44 Scatter Laser
-      STR_X4_LASER_SHOTGUN_UFOPEDIA: A laser 'shotgun' developed when an American researcher accidentally shattered a focusing optic during rifle testing, sending several small laser beams flying across the room. Although this incident at first created panic, the scientists later reasoned they could create a laser shotgun for close combat, something previously not thought possible. This laser uses an array of small mirrors to spread the lasers in several directions.
+      STR_X4_LASER_SHOTGUN_UFOPEDIA: A laser 'shotgun' developed when an American researcher accidentally shattered a focusing optic during rifle testing, sending several small laser beams flying across the room. Although this incident at first created panic, the scientists later reasoned they could create a laser shotgun for close combat, something previously not thought possible. This laser uses an array of small mirrors to spread the lasers in several directions. 
       STR_M4_LASER_LMG: M4 Laser LMG
       STR_M4_LASER_LMG_UFOPEDIA: The M4 is Squad Automatic Weapon developed by DARPA and UNEXCOM to replace the suddenly outdated M-60. Although it's a bit heavy and unwieldy, the M4 is a reliable machine gun and rather accurate.
       STR_ELERIUM_FLAMETHROWER: X55 Elerium Flamethrower
@@ -1275,7 +1282,7 @@ extraStrings:
       STR_FN_FLA_LASER_BATTLE_RIFLE: "FN FLA 'Leopold' Battle Rifle"
       STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA: The FN FLA is the laser derivative of the famous FN FAL. Although the design and size are similar, the FLA is much more powerful and does not require reloading. This laser was made to provide a weapon for soldiers who desired higher accuracy and power at the cost of rate of fire.
       STR_FN_FLA_LASER_CARBINE: "FN FLA 'Leopold' Carbine"
-      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a colapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
+      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a colapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle. 
       STR_L4_ASSAULT_LASER: "L-44 'Angevin' Assault Laser"
       STR_L4_ASSAULT_LASER_UFOPEDIA: The L-44 Assault Rifle is an experimental West German Assault Laser submitted to the NATO Advanced Laser Weapon Project by Heckler and Koch. At first mocked for its strange design and uncomfortable grip, the L-4 would eventually impress even the greatest skeptics with its high accuracy and light weight. Eventually UNEXCOM officials approved the design for combat.
       STR_MAT72_SUBMACHINE_LASER: "MAT-72 'Charlemagne' Submachine Laser"
@@ -1294,10 +1301,10 @@ extraStrings:
       STR_X3_SHOT: x3 Auto Shot
       STR_X6_SHOT: x6 Auto Shot
 ########################
-      STR_P72_COMPACT_LASER: P-72 Compact Laser
+      STR_P72_COMPACT_LASER: P-72 Compact Laser 
       STR_P72_COMPACT_LASER_UFOPEDIA: The P-72, was the first successful Soviet application of laser weapon technology. Small and powerful, the P-72 makes for a good sidearm, but lags behind in accuracy.The iconic white and silver color scheme, which began with this gun, would become the standard for the new generation of Soviet Weaponry.
       STR_ALK72_LASER_RIFLE: ALK-72 Laser Rifle
-      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The weapon was able to quickly prove it's worth being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
+      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The heavy assault weapon was able to quickly prove it's worth in the battle against the aliens, being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
       STR_KHARITONOV_LASER_BATTLE_RIFLE: Kharitonov Laser Battle Rifle
       STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA: UNEXCOM officers expressed the need for a weapon that bridges the gap between the ALK-72 and the Mironov Sniper Rifle, and the Kharitonov is what the engineers came up with. Capable of delivering a powerful beam over medium to long distances without sacrificing power or closer combat abilities. Named after the lead designer, Markov Kharitonov.
       STR_ALP_SUBMACHINE_LASER: ALP Submachine Laser
