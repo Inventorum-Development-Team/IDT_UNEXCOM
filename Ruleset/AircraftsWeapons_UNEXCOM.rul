@@ -469,7 +469,7 @@ crafts:
     requires:
       - STR_ADVANCED_FIGHTER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 870
+    sprite: 910
     fuelMax: 252
     damageMax: 420
     speedMax: 2300
@@ -505,7 +505,7 @@ crafts:
     requires:
       - STR_ADVANCED_FIGHTER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 870
+    sprite: 908
     fuelMax: 312
     damageMax: 430
     speedMax: 3200
@@ -542,7 +542,7 @@ crafts:
     requires:
       - STR_ADVANCED_FIGHTER
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 870
+    sprite: 906
     fuelMax: 288
     damageMax: 415
     speedMax: 2150
@@ -579,7 +579,7 @@ crafts:
   - type: STR_SABRE
     requires:
       - STR_ULTIMATE_CRAFT
-    sprite: 870
+    sprite: 912
     fuelMax: 950
     damageMax: 550
     speedMax: 5500
@@ -614,7 +614,7 @@ crafts:
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 870
+    sprite: 913
     fuelMax: 2732
     damageMax: 440
     speedMax: 15200
@@ -648,7 +648,7 @@ crafts:
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 870
+    sprite: 915
     fuelMax: 2732
     damageMax: 550
     speedMax: 15200
@@ -972,7 +972,7 @@ crafts:
     requires:
       - STR_ADVANCED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 871
+    sprite: 907
     fuelMax: 192
     damageMax: 520
     speedMax: 2600
@@ -1008,7 +1008,7 @@ crafts:
     requires:
       - STR_ADVANCED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 871
+    sprite: 909
     fuelMax: 384
     damageMax: 480
     speedMax: 3300
@@ -1044,7 +1044,7 @@ crafts:
     requires:
       - STR_ADVANCED_BOMBER
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 871
+    sprite: 905
     fuelMax: 612
     damageMax: 500
     speedMax: 2500
@@ -1082,7 +1082,7 @@ crafts:
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 870
+    sprite: 914
     fuelMax: 2732
     damageMax: 420
     speedMax: 15200
@@ -1556,7 +1556,7 @@ crafts:
   - type: STR_BASTION
     requires:
       - STR_IMPROVED_IMPROVED_SATELLITE
-    sprite: 868
+    sprite: 911
     fuelMax: 1500
     damageMax: 20
     speedMax: 90
@@ -3096,26 +3096,7 @@ manufacture:
   - delete: STR_FUSION_BALL
   - delete: STR_PLASMA_BEAM
 
-  - name: STR_RAPIER
-    category: STR_CRAFT
-    requires:
-      - STR_IMPROVED_FIGHTER
-    listOrder: 3250
-    space: 30
-    time: 1200
-    cost: 650000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 50
-  - name: STR_VALKYRIE
-    category: STR_CRAFT
-    requires:
-      - STR_IMPROVED_BOMBER
-    listOrder: 3250
-    space: 30
-    time: 1200
-    cost: 690000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 70
+
   - name: STR_HIND
     category: STR_CRAFT
     requires:
@@ -4054,7 +4035,7 @@ ufopaedia:
   - id: STR_TU45M
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: TUPOLEV_TU45_UFOPEDIA
     requires:
       - STR_ADVANCED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -4063,7 +4044,7 @@ ufopaedia:
   - id: STR_PANAVIA
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: SHARKNADO_UFOPEDIA
     requires:
       - STR_ADVANCED_FIGHTER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -4072,7 +4053,7 @@ ufopaedia:
   - id: STR_LAMPYRIDAE
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: LAMPYRIDAE_UFOPEDIA
     requires:
       - STR_ADVANCED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -4081,7 +4062,7 @@ ufopaedia:
   - id: STR_FIREFOX
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: FIREFOX_UFOPEDIA
     requires:
       - STR_ADVANCED_FIGHTER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -4090,7 +4071,7 @@ ufopaedia:
   - id: STR_COBRA
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: COBRA_UFOPEDIA
     requires:
       - STR_ADVANCED_FIGHTER
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -4099,7 +4080,7 @@ ufopaedia:
   - id: STR_A12
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: AVENGER_UFOPEDIA
     requires:
       - STR_ADVANCED_BOMBER
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -4108,7 +4089,7 @@ ufopaedia:
   - id: STR_BASTION
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: BASTION_UFOPEDIA
     requires:
       - STR_IMPROVED_IMPROVED_SATELLITE
     type_id: 1
@@ -4120,7 +4101,7 @@ ufopaedia:
   - id: STR_SABRE
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: SABRE_UFOPEDIA
     requires:
       - STR_ULTIMATE_CRAFT
     type_id: 1
@@ -4128,7 +4109,7 @@ ufopaedia:
   - id: STR_DYNASOAR
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: DYNASOAR_UFOPEDIA
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -4137,7 +4118,7 @@ ufopaedia:
   - id: STR_HERMES
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: SHUTTLE_UFOPEDIA
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -4146,7 +4127,7 @@ ufopaedia:
   - id: STR_MIG_105
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_RAPIER_UFOPEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: SPIRAL_UFOPEDIA
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -4722,6 +4703,19 @@ extraSprites:
 
       903: Resources/Aircraft/Crusader_base.png
       904: Resources/Aircraft/Saracen_base.png
+      938: Resources/Aircraft/Avenger_base.png
+      939: Resources/Aircraft/Cobra_base.png
+      940: Resources/Aircraft/TupolevTu45M_base.png
+      941: Resources/Aircraft/Firefox_base.png
+      942: Resources/Aircraft/Lampyridae_base.png
+      943: Resources/Aircraft/Sharknado_base.png
+      944: Resources/Aircraft/Bastion_base.png
+      
+      945: Resources/Aircraft/Sabre_base.png
+      946: Resources/Aircraft/DynaSoar_base.png
+      947: Resources/Aircraft/Shuttle_base.png
+      948: Resources/Aircraft/Spiral_base.png
+      
 #      152: Resources/Aircraft/Odysseus_base.png
 #      153: Resources/Aircraft/Orion_base.png
 #      154: Resources/Aircraft/Bastion_base.png
@@ -4785,7 +4779,36 @@ extraSprites:
 
       881: Resources/Aircraft/Crusader_dogfight.png
       882: Resources/Aircraft/Saracen_dogfight.png
-#      203: Resources/Aircraft/Sabre_dogfight.png
+
+
+      905: Resources/Aircraft/Avenger_minimised.png
+      906: Resources/Aircraft/Cobra_minimised.png
+      907: Resources/Aircraft/TupolevTu45M_minimised.png
+      908: Resources/Aircraft/Firefox_minimised.png
+      909: Resources/Aircraft/Lampyridae_minimised.png
+      910: Resources/Aircraft/Sharknado_minimised.png
+      911: Resources/Aircraft/Bastion_minimised.png
+      
+      912: Resources/Aircraft/Sabre_minimised.png
+      913: Resources/Aircraft/DynaSoar_minimised.png
+      914: Resources/Aircraft/Shuttle_minimised.png
+      915: Resources/Aircraft/Spiral_minimised.png
+      
+      916: Resources/Aircraft/Avenger_dogfight.png
+      917: Resources/Aircraft/Cobra_dogfight.png
+      918: Resources/Aircraft/TupolevTu45M_dogfight.png
+      919: Resources/Aircraft/Firefox_dogfight.png
+      920: Resources/Aircraft/Lampyridae_dogfight.png
+      921: Resources/Aircraft/Sharknado_dogfight.png
+      922: Resources/Aircraft/Bastion_dogfight.png
+      
+      923: Resources/Aircraft/Sabre_dogfight.png
+      924: Resources/Aircraft/DynaSoar_dogfight.png
+      925: Resources/Aircraft/Shuttle_dogfight.png
+      926: Resources/Aircraft/Spiral_dogfight.png
+      
+
+#      203: Resources/Aircraft/Sabre_minimised.png
 
 #      206: Resources/Aircraft/Bastion_dogfight.png
 #      207: Resources/Aircraft/Avenger_dogfight.png
@@ -5015,6 +5038,72 @@ extraSprites:
     height: 200
     files:
       0: Resources/Aircraft/SARACEN_UFOPEDIA.PNG
+  - type: AVENGER_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/AVENGER_UFOPEDIA.PNG
+  - type: COBRA_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/COBRA_UFOPEDIA.PNG
+  - type: TUPOLEV_TU45_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/TUPOLEV_TU45M_UFOPEDIA.PNG
+  - type: FIREFOX_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/FIREFOX_UFOPEDIA.PNG
+  - type: LAMPYRIDAE_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/LAMPYRIDAE_UFOPEDIA.PNG
+  - type: SHARKNADO_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/SHARKNADO_UFOPEDIA.PNG
+  - type: SABRE_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/SABRE_UFOPEDIA.PNG
+  - type: DYNASOAR_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/DYNASOAR_UFOPEDIA.PNG
+  - type: SHUTTLE_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/SHUTTLE_UFOPEDIA.PNG
+  - type: SPIRAL_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/SPIRAL_UFOPEDIA.PNG
+  - type: BASTION_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/BASTION_UFOPEDIA.PNG
 ############################################
   - type: SIDEWINDER
     singleImage: true
@@ -5265,12 +5354,12 @@ extraStrings:
 
       STR_CRAFT_HEAVY_MISSILE_ONE: "HEAVY MISSILE-1>{ALT}{0}"
       STR_CRAFT_HEAVY_MISSILE_TWO: "HEAVY MISSILE-2>{ALT}{0}"
-      STR_CRAFT_HEAVY_MISSILE_THREE: "HEAVY MISSILE-3>{{ALT}{0}"
+      STR_CRAFT_HEAVY_MISSILE_THREE: "HEAVY MISSILE-3>{ALT}{0}"
       STR_CRAFT_HEAVY_MISSILE_FOUR: "HEAVY MISSILE-4>{ALT}{0}"
 
       STR_CRAFT_LIGHT_HEAVY_MISSILE_ONE: "LIGHT/HEAVY MISSILE-1>{ALT}{0}"
       STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO: "LIGHT/HEAVY MISSILE-2>{ALT}{0}"
-      STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE: "LIGHT/HEAVY MISSILE-3>{{ALT}{0}"
+      STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE: "LIGHT/HEAVY MISSILE-3>{ALT}{0}"
       STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR: "LIGHT/HEAVY MISSILE-4>{ALT}{0}"
 
       STR_CRAFT_SUPER_HEAVY_MISSILE_ONE: "S-HEAVY MISSILE-1>{ALT}{0}"
@@ -5319,7 +5408,7 @@ extraStrings:
       STR_GATLING_CANNON: "GATLING CANNONS"
       STR_GATLING_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Gatling-type cannon is a rapid-firing weapon that utilizes multiple barrels in a rotating cluster to provide a sustained rate of fire greater than single-barreled machine guns or automatic cannon of equivalent caliber. The loading, firing, and unloading functions are performed simultaneously in different barrels as they rotate, and the rotation also permits the barrels some time to cool. However, they tend to be somewhat inaccurate because of the enormous power generated by the weapon's mechanism."
       STR_REVOLVER_CANNON: "REVOLVER CANNONS"
-      STR_REVOLVER_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}}This type of autocannon uses the revolver principle to accelerate the cycle of loading, firing and ejecting multiple rounds of ammunition, achieving a very high rate of fire compared to conventional cannon of the same calibre. Revolver cannon are generally able to be made much lighter than gatling guns, requiring less support and mounting hardware. The power and reliability of this type of guns allow to use heavier ammunition calibres without compromising the stability or accuracy of the weapon."
+      STR_REVOLVER_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}This type of autocannon uses the revolver principle to accelerate the cycle of loading, firing and ejecting multiple rounds of ammunition, achieving a very high rate of fire compared to conventional cannon of the same calibre. Revolver cannon are generally able to be made much lighter than gatling guns, requiring less support and mounting hardware. The power and reliability of this type of guns allow to use heavier ammunition calibres without compromising the stability or accuracy of the weapon."
       STR_AUXILIARY_POD: "AUXILIARY PODS"
       STR_AUXILIARY_POD_UFOPEDIA: "{NEWLINE}{NEWLINE}These auxiliary systems are mounted in hardpoints in the wings and under the fuselage, are used to increase the performance in some aspects of the aircraft that carries them, such as combat range or performance in battle. It is recommended to choose carefully, most include some drawbacks."
       STR_ROCKET_POD: "ROCKET PODS"
@@ -5434,16 +5523,16 @@ extraStrings:
       STR_KODIAK_LASER_CANNON_UFOPEDIA: YLC-10 KODIAK LASER CANNON - PROTOTYPE OF EXPERIMENTAL LASER CANNON DESIGNED EXCLUSIVELY BY UNEXCOM ENGINEERS. ITS REFRACTING LENSES AND MODERN SELF-RECHARGING POWER CELL ALLOW IT TO HAVE AN UNDISPUTED POWER, EFFECTIVENESS AND ACCEPTABLE RANGE.
       STR_FUEL_TANK_UC: "FUEL TANK"
       STR_FUEL_TANK: "FUEL TANK"
-      STR_FUEL_TANK_UFOPEDIA: "EXTRA FUEL TANK, CARRIED UNDER WING. ADD 50 EXTRA FUEL UNITS, WHICH MEANS ADDITIONAL 400 NAUTICAL MILES OR 740 KM , WITH THE DISADVANTAGE THAT MAKES SLOW (ACCEL -1) AND LESS AGILE (AVOID BONUS -5) TO THE AIRCRAFT THAT USES IT."
+      STR_FUEL_TANK_UFOPEDIA: "EXTRA FUEL TANK, CARRIED UNDER WING. ADD 150 EXTRA FUEL UNITS, WHICH MEANS ADDITIONAL 400 NAUTICAL MILES OR 740 KM , WITH THE DISADVANTAGE THAT MAKES SLOW (ACCEL -1) AND LESS AGILE (AVOID BONUS -5) TO THE AIRCRAFT THAT USES IT."
       STR_AFTERBURNER_UC: "AFTERBURNER"
       STR_AFTERBURNER: "AFTERBURNER"
-      STR_AFTERBURNER_UFOPEDIA: "AUXILIARY UNIT THAT IS INSTALLED DIRECTLY IN THE MOTOR OF THE PLANE THAT USES IT, INCREASES ITS SPEED IN 250 KNOTS, ALMOST 400 KM/H. AS WELL INCREMENTS THE AGILITY IN COMBAT IN 10 UNITS. LIMITS THE FUEL IN -30"
+      STR_AFTERBURNER_UFOPEDIA: "AUXILIARY UNIT THAT IS INSTALLED DIRECTLY IN THE MOTOR OF THE PLANE THAT USES IT, INCREASES ITS SPEED IN 250 KNOTS, ALMOST 400 KM/H. AS WELL INCREMENTS THE ACCELERATION BY 10 UNITS. LIMITS THE FUEL IN -25"
       STR_TARGETING_POD_UC: "TARGETING POD"
       STR_TARGETING_POD: "TARGETING POD"
-      STR_TARGETING_POD_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOYS AND ALIEN NAVIGATION, USING OUR NEWEST RESEACH IN UFOS. INCREASE ACCURACY CAPACITIES BY 20, RANGE BY 15 AND THE PROBABILITY OF A CRITICAL IMPACT IN 35."
+      STR_TARGETING_POD_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOYS AND ALIEN NAVIGATION, USING OUR NEWEST RESEACH IN UFOS. INCREASE ACCURACY CAPACITIES BY 25."
       STR_STR_ALLOY_CRAFT_ARMOR_UC: "ALLOY CRAFT ARMOR"
       STR_ALLOY_CRAFT_ARMOR_POD: "ALLOY CRAFT ARMOR"
-      STR_STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOY, DESIGNED TO INCREASE THE DURABILITY OF OUR CRAFTS. INCREASE DAMAGE MAX BY 100"
+      STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOY, DESIGNED TO INCREASE THE DURABILITY OF OUR CRAFTS. INCREASES DAMAGE MAX BY 100, BUT REDUCES DODGE BY 10"
       STR_LINNA: "LINNA"
       STR_LINNA_UFOPEDIA: "BUILT IN COLLABORATION WITH OUR SCIENTISTS WITH NASA, ESRO AND THE SOVIET SPACE PROGRAM, IT USES EXPERIMENTAL OPTICAL AND SENSORS TO DETECT UFO's CHARACTERISTIC INFRARED SIGNATURES AND GRAVITY WAVES. 'LINNA' MEANS 'CASTLE' IN FINNISH."
       STR_RAPIER: "RAPIER"
