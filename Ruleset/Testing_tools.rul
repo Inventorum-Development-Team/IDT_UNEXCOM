@@ -1,0 +1,18 @@
+research:
+  - name: STR_TESTING_TOOLS
+    cost: 50
+    points: 10
+    needItem: true
+facilities:
+  - type: STR_SUPER_RADAR
+    spriteShape: 1
+    spriteFacility: 22
+    buildCost: 1
+    buildTime: 1
+    monthlyCost: 1
+    radarRange: 15000
+    radarChance: 100
+    hyper: true
+    mapName: XBASE_05
+    requires:
+      - STR_TESTING_TOOLS
