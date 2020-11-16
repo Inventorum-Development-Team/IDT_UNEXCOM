@@ -4,7 +4,7 @@ research:
     points: 10
     needItem: true
 facilities:
-  - type: STR_SUPER_RADAR
+  - type: STR_SUPER_FACILITY
     spriteShape: 1
     spriteFacility: 22
     buildCost: 1
@@ -13,6 +13,13 @@ facilities:
     radarRange: 15000
     radarChance: 100
     hyper: true
+    workshops: 999
+    labs: 999
+    personnel: 999
+    aliens: 999
+    crafts: 999
+    psiLabs: 999
+    storage: 999
     mapName: XBASE_05
     requires:
       - STR_TESTING_TOOLS
