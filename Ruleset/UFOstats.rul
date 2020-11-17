@@ -28,6 +28,8 @@ ufos:
     shieldBleedThrough: 100
     breakOffTime: 250
     hunterKillerPercentage: 40
+    radarRange: 20
+    radarChance: 30
   - type: STR_LARGE_SCOUT
     size: STR_SMALL
     sprite: 2
@@ -46,7 +48,6 @@ ufos:
     hunterKillerPercentage: 80
     radarRange: 300
     radarChance: 45
-    sightRange: 300
 #Fighters
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
@@ -60,6 +61,10 @@ ufos:
     avoidBonus: 10
     hunterKillerPercentage: 100
     breakOffTime: 220
+    radarRange: 600
+    radarChance: 100
+    sightRange: 0
+    huntMode: 0
     battlescapeTerrainData:
       name: SMALL_FIGHTER
       mapDataSets:
@@ -112,7 +117,8 @@ ufos:
     shieldBleedThrough: 100
     hunterKillerPercentage: 100
     huntMode: 0
-
+    radarRange: 30
+    sightRange: 30
 #Research ships
 
   - type: STR_EXCAVATOR
