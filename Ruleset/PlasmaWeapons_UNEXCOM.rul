@@ -135,12 +135,6 @@ items:
     armor: 35 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
-
-  - type: STR_SMALL_LAUNCHER
-    categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
-    bigSprite: 1320
-    requires:
-      - STR_ALIENS_ONLY
   - type: STR_STUN_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -574,11 +568,6 @@ items:
     recover: true
     recoveryPoints: 50
     armor: 10
-# Craft Weapons
-crafts:
-# allow more HWPs for mod players
-  - type: STR_AVENGER
-    vehicles: 8 # 6
 armors:
 # Standard Armors
   - type: STR_POWER_SUIT_UC

@@ -258,7 +258,7 @@ ufos:
     score: 400
     reload: 50
     breakOffTime: 3000
-    
+
 alienDeployments:
   - type: STR_SMALL_FIGHTER
     data:
@@ -272,43 +272,26 @@ alienDeployments:
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
           -
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
     width: 40
     length: 40
-    height: 4
+    height: 10
     missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS
-  - type: STR_SMALL_SCOUT
-    missionBountyItem: STR_SMALL_SCOUT_ANALYSIS
-  - type: STR_MEDIUM_SCOUT
-    missionBountyItem: STR_MEDIUM_SCOUT_ANALYSIS
-  - type: STR_LARGE_SCOUT
-    missionBountyItem: STR_LARGE_SCOUT_ANALYSIS
-  - type: STR_FIGHTER_SHIP
-    missionBountyItem: STR_FIGHTER_SHIP_ANALYSIS
-  - type: STR_SENTRY_SHIP
-    missionBountyItem: STR_SENTRY_SHIP_ANALYSIS
-  - type: STR_EXCAVATOR
-    missionBountyItem: STR_EXCAVATOR_ANALYSIS
-  - type: STR_ABDUCTOR
-    missionBountyItem: STR_ABDUCTOR_ANALYSIS
-  - type: STR_HARVESTER
-    missionBountyItem: STR_HARVESTER_ANALYSIS
-  - type: STR_LAB_SHIP
-    missionBountyItem: STR_LAB_SHIP_ANALYSIS
-  - type: STR_TERROR_SHIP
-    missionBountyItem: STR_TERROR_SHIP_ANALYSIS
-  - type: STR_TROOP_LANDER
-    missionBountyItem: STR_TROOP_LANDER_ANALYSIS
-  - type: STR_BATTLESHIP
-    missionBountyItem: STR_BATTLESHIP_ANALYSIS
-  - type: STR_SUPPLY_SHIP
-    missionBountyItem: STR_SUPPLY_SHIP_ANALYSIS
 ufopaedia:
   - id: STR_SMALL_FIGHTER
     type_id: 9
@@ -379,7 +362,7 @@ items:
     size: 0.1
     listOrder: 9000
     battleType: 0
-    
+
 research:
   - name: STR_SMALL_FIGHTER
     cost: 0
@@ -389,7 +372,7 @@ research:
     cost: 0
     points: 50
     needItem: true
-    
+
   - name: STR_SMALL_SCOUT_ANALYSIS
     cost: 50
     points: 0
@@ -481,7 +464,7 @@ extraStrings:
     strings:
        STR_SMALL_FIGHTER: "Small Fighter"
        STR_SMALL_FIGHTER_UFOPEDIA: "Though this UFO may not look like much, it is a fearsome combatant. Despite its lack of an aerodynamic design, it is faster than any aircraft found on Earth."
-       STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant." 
+       STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant."
        STR_SMALL_SCOUT_ANALYSIS: "Small Scout Analysis"
        STR_MEDIUM_SCOUT_ANALYSIS: "Medium Scout Analysis"
        STR_LARGE_SCOUT_ANALYSIS: "Large Scout Analysis"

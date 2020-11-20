@@ -4,7 +4,7 @@ extraStrings:
       STR_TROOP_LANDER: "Troop Lander"
 
 ufos:
-  - type: STR_TROOP_LANDER
+  - type: STR_TROOP_LANDER #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_G0014
       mapDataSets:
@@ -196,4 +196,5 @@ alienDeployments:
     width: 50
     length: 50
     height: 10
+    missionBountyItem: STR_TROOP_LANDER_ANALYSIS
 

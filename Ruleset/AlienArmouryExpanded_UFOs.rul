@@ -4,7 +4,7 @@
 # 2. Make sure that there are only vanilla items in the loadouts (i.e., no items from mods you don't have, like Alien Armoury Expanded).
 
 ufos:
-  - type: STR_EXCAVATOR
+  - type: STR_EXCAVATOR #ignoreDuplicate
     modSprite: InterceptionExcavator
     battlescapeTerrainData:
       name: EXCAVTR
@@ -84,7 +84,7 @@ ufos:
 #################################
 ###### FIGHTER CLASS ###########
 ################################
-  - type: STR_SENTRY_SHIP
+  - type: STR_SENTRY_SHIP #ignoreDuplicate
     modSprite: InterceptionSentry
     battlescapeTerrainData:
       name: SENTRY
@@ -179,7 +179,7 @@ ufos:
           items:
             STR_ELERIUM_115:
               - [ 4, 9, 0]
-  - type: STR_FIGHTER_SHIP
+  - type: STR_FIGHTER_SHIP #ignoreDuplicate
     modSprite: InterceptionFighter
     battlescapeTerrainData:
       name: FIGHTER
@@ -292,7 +292,7 @@ ufos:
 ##############################
 ######## SCOUT CLASS #########
 ##############################
-  - type: STR_SMALL_SCOUT
+  - type: STR_SMALL_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO1A
       mapDataSets:
@@ -307,7 +307,7 @@ ufos:
 ###############################
 ####### SUPPORT CLASS #########
 ###############################
-  - type: STR_LAB_SHIP
+  - type: STR_LAB_SHIP #ignoreDuplicate
     modSprite: InterceptionLabShip
     battlescapeTerrainData:
       name: LABSHIP
@@ -490,7 +490,7 @@ extraStrings:
       STR_TERROR_SHIP_UFOPEDIA: "The troop transport has a containment facility for large alien terror weapons or creatures. It is used to transport these alien terrorists into populated areas. It uses two short-range cannon point-defense and what appear to be artillery cannons for ground attack, used only for static targets."
       STR_BATTLESHIP_UFOPEDIA: "The battleship is the largest and most powerful alien craft. It is normally the primary alien mission craft, equipped numerous crew members and communication systems. Equiped with various AA point-defense batteries, they are a slow but dangerous prey."
       STR_SUPPLY_SHIP_UFOPEDIA: "The supply vessel is used during the construction of alien bases or for supplying existing bases. It carries alien food containers and reproduction chambers."
- 
+
   - type: en-GB
     strings:
       STR_EXCAVATOR: "Excavator"
