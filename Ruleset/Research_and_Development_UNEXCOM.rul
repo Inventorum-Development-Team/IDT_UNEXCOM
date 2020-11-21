@@ -78,16 +78,22 @@ research:
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
+    unlocks:
+      - STR_AIR_STRIKES
     dependencies:
       - STR_USA_SUPPORT_RESEARCH
   - name: STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
+    unlocks:
+      - STR_AIR_STRIKES
     dependencies:
       - STR_NATO_SUPPORT_RESEARCH
   - name: STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
+    unlocks:
+      - STR_AIR_STRIKES
     dependencies:
       - STR_USSR_SUPPORT_RESEARCH
 
@@ -130,6 +136,10 @@ research:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     disables:
       - STR_USSR_AIRCRAFT_OPTION1
+
+  - name: STR_AIR_STRIKES
+    cost: 200
+    points: 20
 
   - name: STR_UNITED_WE_STAND_RESEARCH
     cost: 400
@@ -1423,6 +1433,15 @@ ufopaedia:
     text: STR_USSR_LASER_HEAVY_WEAPONS_UFOPEDIA
 
 ############################################
+  - id: STR_AIR_STRIKES
+    type_id: 8
+    requires:
+      - STR_AIR_STRIKES
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_AIR_STRIKES_UFOPEDIA
+
+
+
   - id: STR_HANGAR
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -2177,3 +2196,5 @@ extraStrings:
       STR_ADVANCED_FIGHTER: "Advaced Fighter"
       STR_ADVANCED_FIGHTER_UFOPEDIA: "This is a novel project. Grumman has created a new heavy naval fighter designed to protect American fleets and our diplomatic liaisons have managed to contact this company to design an aircraft entirely built by UNEXCOM. Using the F-14 Tomcat as a base, we have added for the first time stealth technology based on a modified version of the Alien Alloys, retaining the large weapon carrying capacity and sweep wings. "
       STR_IMPROVED_IMPROVED_SATELLITE: "Advanced Satellite"
+      STR_AIR_STRIKES: "Close Air Support"
+      STR_AIR_STRIKES_UFOPEDIA: "The Council has provided us access to close air support from airbases located in council nations near the area of operations. Though expensive, they can grant a tactical advantage if used correctly. UNEXCOM operatives can call in close air support by priming and throwing a signal smoke grenade. The air support will take a few turns to arrive, it is adviced this time is used to make sure no friendly combatants are in the blast zone. Signal smoke grenades should not be used indoors, as this prevents the close air support from finding the target, meaning the attack run will not be completed"
