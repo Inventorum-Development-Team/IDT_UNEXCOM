@@ -159,13 +159,14 @@ items:
     damageType: 1
     hitAnimation: 26
     bulletSprite: 2
-    power: 20
+    power: 35
     hitSound: 22
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
       ArmorEffectiveness: 1.5
       ToArmor: 0.1
+      ToHealth: 1.3
       ToWound: 2.0
       RandomWound: false
     clipSize: 60
@@ -259,7 +260,7 @@ items:
     damageType: 1
     hitAnimation: 26
     bulletSprite: 2
-    power: 20
+    power: 35
     hitSound: 22
     damageAlter:
       RandomType: 6
@@ -267,6 +268,7 @@ items:
       ArmorEffectiveness: 1.5
       ToArmor: 0.1
       ToWound: 2.0
+      ToHealth: 1.3
       RandomWound: false
     clipSize: 30
     battleType: 2
@@ -327,12 +329,13 @@ items:
     bigSprite: 1203
     floorSprite: 1213
     handSprite: 0
-    power: 20
+    power: 35
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.2
+      ArmorEffectiveness: 1.5
       RandomType: 7
       ToArmor: 0.1
+      ToHealth: 1.3
       IgnoreOverKill: true
       ToWound: 2.5
       RandomWound: true
@@ -399,12 +402,13 @@ items:
     bigSprite: 1214
     floorSprite: 1213
     handSprite: 0
-    power: 20
+    power: 35
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.2
+      ArmorEffectiveness: 1.5
       RandomType: 7
       ToArmor: 0.1
+      ToHealth: 1.3
       IgnoreOverKill: true
       ToWound: 2.5
       RandomWound: true
@@ -469,6 +473,7 @@ items:
       IgnoreSelfDestruct: true
       ToTile: 0.8
       ArmorEffectiveness: 1.5
+      ToHealth: 1.3
       ToWound: 2.0
       RandomWound: true
       FixRadius: 3
@@ -498,6 +503,7 @@ items:
       ToTile: 0.8
       ArmorEffectiveness: 1.5
       ToWound: 2.0
+      ToHealth: 1.3
       RandomWound: true
       FixRadius: 4
     power: 75
@@ -593,12 +599,13 @@ items:
     hitAnimation: 26
     bulletSprite: 2
     battleType: 2
-    power: 20
+    power: 35
     hitSound: 22
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
       ArmorEffectiveness: 1.5
+      ToHealth: 1.3
       ToArmor: 0.1
       ToWound: 2.0
       RandomWound: false
@@ -706,6 +713,7 @@ items:
       IgnoreOverKill: true
       ArmorEffectiveness: 1.5
       ToArmor: 0.1
+      ToHealth: 1.3
       ToWound: 2.0
       RandomWound: false
     clipSize: 5
