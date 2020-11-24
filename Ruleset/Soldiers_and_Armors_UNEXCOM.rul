@@ -354,6 +354,7 @@ armors:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+      mana: 40
     damageModifier:
       - 1.0
       - 1.0
@@ -385,6 +386,7 @@ armors:
       health: 0
       bravery: 3
       reactions: 15
+      mana: 30
     damageModifier:
       - 1.0
       - 1.0
@@ -426,6 +428,7 @@ armors:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+      mana: 40
     damageModifier:
       - 1.0
       - 1.0
@@ -467,6 +470,7 @@ armors:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+      mana: 40
     damageModifier:
       - 1.0
       - 1.0
@@ -506,6 +510,7 @@ armors:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+      mana: 40
     damageModifier:
       - 1.0
       - 0.7
@@ -517,9 +522,6 @@ armors:
       - 0.8
       - 0.7
       - 1.0
-    units:
-      - STR_SOLDIER
-      - STR_SPECIAL_FORCES_SOLDIER
 
   - type: STR_DELTA_ARMOR_UC
     spriteSheet: ARMOR_DELTA.PCK
@@ -533,6 +535,7 @@ armors:
        stamina: -10
        reactions: -5
        firing: -5
+       mana: 40
     frontArmor: 40
     sideArmor: 32
     rearArmor: 15
@@ -573,6 +576,7 @@ armors:
        stamina: -5
        reactions: -3
        bravery: 10
+       mana: 40
     frontArmor: 50
     sideArmor: 28
     rearArmor: 16
@@ -620,6 +624,7 @@ armors:
       throwing: -2
       strength: 0
       bravery: 5
+      mana: 60
     frontArmor: 34
     sideArmor: 27
     rearArmor: 28
@@ -653,6 +658,7 @@ armors:
       throwing: -5
       strength: 0
       bravery: 6
+      mana: 60
     frontArmor: 46
     sideArmor: 36
     rearArmor: 34
@@ -736,6 +742,7 @@ ufopaedia:
 
   - id: STR_RIOT_ARMOR_UC
     type_id: 5
+    listOrder: 1672
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS

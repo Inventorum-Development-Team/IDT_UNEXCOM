@@ -36,8 +36,15 @@ items:
     accuracySnap: 65
     accuracyAimed: 70
     accuracyAuto: 60
-    tuSnap: 16
-    tuAimed: 45
+    costSnap:
+      time: 16
+      mana: 1
+    costAimed:
+      time: 45
+      mana: 1
+    costAuto:
+      time: 25
+      mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -71,10 +78,15 @@ items:
     accuracySnap: 65
     accuracyAimed: 80
     accuracyAuto: 60
-    tuSnap: 26
-    tuAimed: 50
-    tuAuto: 32
-    autoShots: 6
+    costSnap:
+      time: 26
+      mana: 1
+    costAimed:
+      time: 50
+      mana: 1
+    costAuto:
+      time: 32
+      mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -112,9 +124,15 @@ items:
     accuracyAuto: 65
     accuracySnap: 65
     accuracyAimed: 60
-    tuAuto: 45
-    tuSnap: 35
-    tuAimed: 40
+    costSnap:
+      time: 35
+      mana: 1
+    costAimed:
+      time: 40
+      mana: 3
+    costAuto:
+      time: 45
+      mana: 5
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -159,8 +177,12 @@ items:
     accuracyAuto: 60
     accuracySnap: 65
     accuracyAimed: 75
-    tuAuto: 28
-    tuSnap: 25
+    costSnap:
+      time: 25
+      mana: 2
+    costAuto:
+      time: 28
+      mana: 3
     tuAimed: 50
     clipSize: -1
     battleType: 1
@@ -202,9 +224,15 @@ items:
     accuracyAuto: 65
     accuracySnap: 60
     accuracyAimed: 50
-    tuAuto: 14
-    tuSnap: 10
-    tuAimed: 15
+    costSnap:
+      time: 14
+      mana: 3
+    costAimed:
+      time: 15
+      mana: 10
+    costAuto:
+      time: 14
+      mana: 7
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -243,6 +271,15 @@ items:
     tuSnap: 33
     tuAimed: 62
     tuAuto: 85
+    costSnap:
+      time: 33
+      mana: 1
+    costAimed:
+      time: 62
+      mana: 1
+    costAuto:
+      time: 85
+      mana: 1
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -278,9 +315,15 @@ items:
     accuracyAimed: 75
     power: 55
     damageType: 4
-    tuSnap: 40
-    tuAimed: 60
-    tuAuto: 55
+    costSnap:
+      time: 40
+      mana: 3
+    costAimed:
+      time: 60
+      mana: 3
+    costAuto:
+      time: 55
+      mana: 24
     maxRange: 60
     snapRange: 12
     autoRange: 8
@@ -320,6 +363,12 @@ items:
       name: STR_SUPPRESSION
     tuAuto: 28
     tuSnap: 34
+    costSnap:
+      time: 34
+      mana: 5
+    costAuto:
+      time: 28
+      mana: 15
     twoHanded: true
     clipSize: -1
     battleType: 1
@@ -348,7 +397,6 @@ items:
 #      - STR_FLAMETHROWER_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 75
-    tuAuto: 35
     costThrow:
       energy: 20
     battleType: 1
@@ -361,6 +409,9 @@ items:
 #    explosionHitSound: 113
     hitAnimation: 8
     power: 80
+    costAuto:
+      time: 35
+      mana: 10
     damageType: 2
     damageAlter:
       ToMorale: 1.5
@@ -401,8 +452,15 @@ items:
     accuracySnap: 80
     accuracyAimed: 90
     accuracyAuto: 75
-    tuSnap: 16
-    tuAimed: 45
+    costSnap:
+      time: 16
+      mana: 1
+    costAimed:
+      time: 45
+      mana: 1
+    costAuto:
+      time: 30
+      mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -439,9 +497,15 @@ items:
     accuracyAuto: 75
     accuracySnap: 85
     accuracyAimed: 110
-    tuAuto: 30
-    tuSnap: 25
-    tuAimed: 55
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 3
+    costAuto:
+      time: 30
+      mana: 5
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -480,9 +544,15 @@ items:
     accuracyAuto: 70
     accuracySnap: 80
     accuracyAimed: 105
-    tuAuto: 30
-    tuSnap: 25
-    tuAimed: 55
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 2
+    costAuto:
+      time: 30
+      mana: 10
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -520,9 +590,15 @@ items:
     accuracyAuto: 75
     accuracySnap: 85
     accuracyAimed: 80
-    tuAuto: 30
-    tuSnap: 25
-    tuAimed: 55
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 3
+    costAuto:
+      time: 30
+      mana: 5
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -563,9 +639,15 @@ items:
     accuracyAuto: 75
     accuracySnap: 85
     accuracyAimed: 85
-    tuAuto: 35
-    tuSnap: 30
-    tuAimed: 40
+    costSnap:
+      time: 30
+      mana: 3
+    costAimed:
+      time: 40
+      mana: 10
+    costAuto:
+      time: 35
+      mana: 7
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -601,9 +683,15 @@ items:
     accuracySnap: 95
     accuracyAimed: 155
     accuracyAuto: 250
-    tuSnap: 33
-    tuAimed: 62
-    tuAuto: 85
+    costSnap:
+      time: 33
+      mana: 1
+    costAimed:
+      time: 62
+      mana: 1
+    costAuto:
+      time: 85
+      mana: 1
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -642,6 +730,12 @@ items:
     accuracySnap: 80
     tuAuto: 38
     tuSnap: 35
+    costSnap:
+      time: 35
+      mana: 5
+    costAuto:
+      time: 38
+      mana: 15
     twoHanded: true
     clipSize: -1
     battleType: 1
@@ -828,8 +922,15 @@ items:
     accuracySnap: 55
     accuracyAimed: 60
     accuracyAuto: 50
-    tuSnap: 16
-    tuAimed: 45
+    costSnap:
+      time: 16
+      mana: 1
+    costAimed:
+      time: 45
+      mana: 1
+    costAuto:
+      time: 30
+      mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -866,9 +967,15 @@ items:
     accuracyAuto: 55
     accuracySnap: 55
     accuracyAimed: 100
-    tuAuto: 30
-    tuSnap: 25
-    tuAimed: 55
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 3
+    costAuto:
+      time: 30
+      mana: 5
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -906,9 +1013,15 @@ items:
     accuracyAuto: 55
     accuracySnap: 55
     accuracyAimed: 100
-    tuAuto: 30
-    tuSnap: 25
-    tuAimed: 55
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 3
+    costAuto:
+      time: 30
+      mana: 5
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -949,9 +1062,15 @@ items:
     accuracyAuto: 45
     accuracySnap: 40
     accuracyAimed: 40
-    tuAuto: 22
-    tuSnap: 18
-    tuAimed: 25
+    costSnap:
+      time: 18
+      mana: 3
+    costAimed:
+      time: 25
+      mana: 10
+    costAuto:
+      time: 22
+      mana: 7
     clipSize: -1
     battleType: 1
     maxRange: 60
@@ -987,9 +1106,15 @@ items:
     accuracySnap: 65
     accuracyAimed: 105
     accuracyAuto: 200
-    tuSnap: 33
-    tuAimed: 62
-    tuAuto: 85
+    costSnap:
+      time: 33
+      mana: 1
+    costAimed:
+      time: 62
+      mana: 1
+    costAuto:
+      time: 85
+      mana: 1
     clipSize: -1
     battleType: 1
     maxRange: 200
@@ -1030,9 +1155,15 @@ items:
       name: STR_SUPPRESSION
       ammoSlot: 0
       arcing: false
-    tuAuto: 38
-    tuSnap: 35
-    tuAimed: 60
+    costSnap:
+      time: 35
+      mana: 5
+    costAimed:
+      time: 60
+      mana: 1
+    costAuto:
+      time: 38
+      mana: 15
     twoHanded: true
     clipSize: -1
     battleType: 1
@@ -1064,8 +1195,12 @@ items:
     twoHanded: true
     accuracySnap: 105
     accuracyAimed: 125
-    tuSnap: 33
-    tuAimed: 62
+    costSnap:
+      time: 33
+      mana: 5
+    costAimed:
+      time: 62
+      mana: 5
     clipSize: -1
     battleType: 1
     maxRange: 200
@@ -1076,12 +1211,63 @@ items:
     invWidth: 2
     invHeight: 3
 
+  - type: STR_BATTERY
+    categories: [STR_LIGHT_EQUIPMENT]
+    size: 0.1
+    costBuy: 1000
+    weight: 10
+    bigSprite: 2028
+    floorSprite: 124
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    stimulant: 1
+    manaRecovery: 40
+    isConsumable: false
+    medikitTargetSelf: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 32
+    medikitActionName: STR_USE_BATTERY
+
+  - type: STR_ELERIUM_BATTERY
+    categories: [ STR_LIGHT_EQUIPMENT]
+    size: 0.1
+    weight: 10
+    bigSprite: 1105
+    floorSprite: 1105
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    stimulant: 1
+    manaRecovery: 80
+    isConsumable: false
+    medikitTargetSelf: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 32
+    medikitActionName: STR_USE_BATTERY
+
 ####################################
 manufacture:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
 
+  - name: STR_ELERIUM_BATTERY
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 1
+    time: 50
+    cost: 10000
+    requiredItems:
+      STR_ELERIUM_115: 5
 
 ufopaedia:
 
@@ -1246,6 +1432,20 @@ ufopaedia:
     requires:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
+  - id: STR_BATTERY
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_BATTERY_UFOPAEDIA
+  - id: STR_ELERIUM_BATTERY
+    type_id: 4
+    requires:
+      - STR_ELERIUM_FUSION
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ELERIUM_BATTERY_UFOPAEDIA
+  - id: STR_POWER_RESERVES
+    type_id: 8
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_POWER_RESERVES_UFOPEDIA
 ###############################
 # Disabled Basic Weapons
   - delete: STR_LASER_PISTOL
@@ -1316,6 +1516,20 @@ extraStrings:
       STR_AN_MACHINE_LASER_UFOPEDIA: A Heavy Soviet machine gun developed in cooperation with the Red Army in 1972. It can reliably deliver a lot of damage in a short amount of time, but is heavier than most machine guns.
       STR_AFINA_ANTITANK_LASER: AFINA Anti-Tank Laser
       STR_AFINA_ANTITANK_LASER_UFOPEDIA: A anti tank laser put into service late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can destroy heavy armor with 2 direct hits and penetrate almost anything except UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
+      STR_MANA: "POWER RESERVE"
+      STR_NOT_ENOUGH_MANA: "Not Enough Power"
+      STR_MANA_POOL: "POWER RESERVE"
+      STR_MANA_ABBREVIATION: "PWR"
+      STR_MANA_CURRENT: "CURRENT POWER"
+      STR_MANA_NORMALIZED: "NORMALIZED POWER"
+      STR_COST_MANA: "power"
+      STR_BATTERY: "Battery"
+      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove neccessary on longer missions. The battery is automatically recharged when returned to the base"
+      STR_ELERIUM_BATTERY: "Elerium Battery"
+      STR_ELERIUM_BATTERY_UFOPAEDIA: "This battery is extremely similar to the power cells of alien fusion weaponry, granting it twice the capacity of our regular batteries while being the same weight"
+      STR_POWER_RESERVES: "Power Reserves"
+      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves neccessary."
+      STR_USE_BATTERY: "Use Battery"
 
 extraSprites:
   - type: BIGOBS.PCK
@@ -1351,6 +1565,7 @@ extraSprites:
       2025: Resources/LaserWeapons/USSR/BigMirinovLaserSniper.png
       2026: Resources/LaserWeapons/USSR/BigANMachineLaser.png
       2027: Resources/LaserWeapons/USSR/BigAfinaAntiTankLaser.png
+      2028: RESOURCES/Battery/battery.png
 #####################
   - type: FLOOROB.PCK
     files:
