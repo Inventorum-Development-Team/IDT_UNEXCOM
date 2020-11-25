@@ -4253,7 +4253,7 @@ ufopaedia:
   - id: STR_HERMES
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_HERMES_UFOPAEDIA
-    image_id: SHUTTLE_UFOPEDIA
+    image_id: HERMES_UFOPEDIA
     requires:
       - STR_ULTIMATE_CRAFT
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -4873,7 +4873,7 @@ extraSprites:
 
       945: Resources/Aircraft/Sabre_base.png
       946: Resources/Aircraft/DynaSoar_base.png
-      947: Resources/Aircraft/Shuttle_base.png
+      947: Resources/Aircraft/Hermes_base.png
       948: Resources/Aircraft/Spiral_base.png
 
       963: Resources/Aircraft/Flanker_base.png
@@ -4956,7 +4956,7 @@ extraSprites:
 
       912: Resources/Aircraft/Sabre_minimised.png
       913: Resources/Aircraft/DynaSoar_minimised.png
-      914: Resources/Aircraft/Shuttle_minimised.png
+      914: Resources/Aircraft/Hermes_minimised.png
       915: Resources/Aircraft/Spiral_minimised.png
 
       916: Resources/Aircraft/Avenger_dogfight.png
@@ -4969,7 +4969,7 @@ extraSprites:
 
       923: Resources/Aircraft/Sabre_dogfight.png
       924: Resources/Aircraft/DynaSoar_dogfight.png
-      925: Resources/Aircraft/Shuttle_dogfight.png
+      925: Resources/Aircraft/Hermes_dogfight.png
       926: Resources/Aircraft/Spiral_dogfight.png
 
       930: Resources/Aircraft/Flanker_minimised.png
@@ -5261,12 +5261,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Aircraft/DYNASOAR_UFOPEDIA.PNG
-  - type: SHUTTLE_UFOPEDIA
+  - type: HERMES_UFOPEDIA
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Aircraft/SHUTTLE_UFOPEDIA.PNG
+      0: Resources/Aircraft/HERMES_UFOPEDIA.PNG
   - type: SPIRAL_UFOPEDIA
     singleImage: true
     width: 320
