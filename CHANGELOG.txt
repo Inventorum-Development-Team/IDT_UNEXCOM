@@ -1,3 +1,44 @@
+25-Nov-2020: v0.8.5 Burning Skies
+Changes made:
+*Rebalanced all UFO stats
+*Rebalanced all craft weapons, added 12 new craft weapons(using placeholder sprites)
+*Rebalanced all craft, added 15 new craft, Rulesets by Filip H, Sprites by Efrenespartano (MiG-31 Firefox by Andr)
+*Added power reserves, laser weaponry now consume power to use
+*Added small fighter UFO
+*Added Napalm and HE air strikes
+*USA, NATO and USSR support techs are now all mutually exclusive
+
+*Hyperwave decoder range reduced
+*Hyperwave decoder now requires hyperwave encoder to build
+*Changed clipsize of Teddy Recoilless rifle ammo to 6
+*Fixed bug where allied combat operations were appearing before the required research had been
+*Laser pistols now have an autoshot
+*Laser Magnum autoshot amount reduced to 3 from 6
+*Matched flying power armor armor values to those of normal power armor
+*Increased flechette damage to 35 from 20 and flechettes now deal 1.3 times the damage to health
+*Limited alien psionics, they will now only be used after turn 3
+*Reduced the damage and morale damage of Elerium Flamethrowers
+*Turrets are now immune to stun damage, bleeding and morale reduction
+*Removed Small scout placeholders for terrorist planes, they now spawn without a UFO on missions
+*Removed fusion ball launcher and current plasma craft weapons
+*Increased viewdistance to 30 from 20
+
+*Fixed bug with certain UFOs missing stats, reported by Ultrakiroxei, Nadir
+*Fixed bug with the small radar having 9000 range, reported by Brother^2, Rclipse, Aslip96
+*Fixed bug where the mercenary advisors event text was missing, by Efrenespartano
+*Fixed Elerium Flamethrower not having a Ufopedia article, reported by Brother^2
+*Fixed Enforcer lacking a aimed shot accuracy, Reported by Rclipse
+*Fixed possible bug concerning conflicting sounds
+*Fixed bug where alien base maps from CMP were not apearing
+*Fixed unpriming a smoke grenade lacking a string
+*Fixed spelling mistake in air combat ufopaedia article*Possibly fixed possible bug with elerium not appearing on certain UFO types, reported by Brother^2
+*Possibly fixed bug causing a crash when a UFO crash/landing mission starts on certain globe textures, reported by Brother^2
+*Fixed laser shotgun lacking a aimed shot accuracy
+*Possibly fixed bug where UFO would not appear on UFO crash/landing missions, reported by AKnightsEntertainment, Brother^2
+*Fixed bug where certain incendiary weapons ignored armor
+
+*Cleaned up rulesets, by Filip H and Pedroterzero
+
 08-Nov-2020: v0.8.4 World at War
 Changes made:
 *Fixed issue with doubled defined mapScript on Cydonia, by Brother^2
