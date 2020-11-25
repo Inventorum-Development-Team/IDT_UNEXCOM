@@ -356,7 +356,7 @@ crafts:
     requires:
       - STR_IMPROVED_FIGHTER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 832
+    sprite: 932
     fuelMax: 213
     damageMax: 280
     speedMax: 1205
@@ -392,7 +392,7 @@ crafts:
     requires:
       - STR_IMPROVED_FIGHTER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 832
+    sprite: 930
     fuelMax: 263
     damageMax: 210
     speedMax: 1300
@@ -862,7 +862,7 @@ crafts:
     requires:
       - STR_IMPROVED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 866
+    sprite: 933
     fuelMax: 174
     damageMax: 300
     speedMax: 917
@@ -898,7 +898,7 @@ crafts:
     requires:
       - STR_IMPROVED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    sprite: 866
+    sprite: 931
     fuelMax: 480
     damageMax: 360
     speedMax: 1050
@@ -3964,7 +3964,7 @@ ufopaedia:
   - id: STR_VIGGEN
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_VIGGEN_UFOPAEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: VIGGEN_UFOPEDIA
     requires:
       - STR_IMPROVED_FIGHTER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -3983,7 +3983,7 @@ ufopaedia:
   - id: STR_JAGUAR
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_JAGUAR_UFOPAEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: JAGUAR_UFOPEDIA
     requires:
       - STR_IMPROVED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -4002,7 +4002,7 @@ ufopaedia:
   - id: STR_FLANKER
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_FLANKER_UFOPAEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: FLANKER_UFOPEDIA
     requires:
       - STR_IMPROVED_FIGHTER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -4021,7 +4021,7 @@ ufopaedia:
   - id: STR_M50
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_M50_UFOPAEDIA
-    image_id: RAPIER_UFOPEDIA
+    image_id: M50_UFOPEDIA
     requires:
       - STR_IMPROVED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -4288,6 +4288,11 @@ ufopaedia:
       width: 205
       height: 80
 
+  - id: STR_FIRESTORM
+    image_id: NEWFIRESTORM_UFOPEDIA
+
+  - id: STR_LIGHTNING
+    image_id: NEWLIGHTNING_UFOPEDIA
 ########################################
 ######## CRAFT RESEARCH ################
 ########################################
@@ -4871,6 +4876,11 @@ extraSprites:
       947: Resources/Aircraft/Shuttle_base.png
       948: Resources/Aircraft/Spiral_base.png
 
+      963: Resources/Aircraft/Flanker_base.png
+      964: Resources/Aircraft/M50NuclearBomber_base.png
+      965: Resources/Aircraft/Viggen_base.png
+      966: Resources/Aircraft/Jaguar_base.png
+
 #      152: Resources/Aircraft/Odysseus_base.png
 #      153: Resources/Aircraft/Orion_base.png
 #      154: Resources/Aircraft/Bastion_base.png
@@ -4961,6 +4971,16 @@ extraSprites:
       924: Resources/Aircraft/DynaSoar_dogfight.png
       925: Resources/Aircraft/Shuttle_dogfight.png
       926: Resources/Aircraft/Spiral_dogfight.png
+
+      930: Resources/Aircraft/Flanker_minimised.png
+      931: Resources/Aircraft/M50NuclearBomber_minimised.png
+      932: Resources/Aircraft/Viggen_minimised.png
+      933: Resources/Aircraft/Jaguar_minimised.png
+
+      941: Resources/Aircraft/Flanker_dogfight.png
+      942: Resources/Aircraft/M50NuclearBomber_dogfight.png
+      943: Resources/Aircraft/Viggen_dogfight.png
+      944: Resources/Aircraft/Jaguar_dogfight.png
 
 
 #      203: Resources/Aircraft/Sabre_minimised.png
@@ -5259,6 +5279,42 @@ extraSprites:
     height: 200
     files:
       0: Resources/Aircraft/BASTION_UFOPEDIA.PNG
+  - type: FLANKER_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/FLANKER_UFOPEDIA.PNG
+  - type: VIGGEN_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/VIGGEN_UFOPEDIA.PNG
+  - type: JAGUAR_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/JAGUAR_UFOPEDIA.PNG
+  - type: M50_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/M50_NUCLEAR_BOMBER_UFOPEDIA.PNG
+  - type: NEWFIRESTORM_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/FIRESTORM_UFOPEDIA.PNG
+  - type: NEWLIGHTNING_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/LIGHTNING_UFOPEDIA.PNG
 ############################################
   - type: SIDEWINDER
     singleImage: true
