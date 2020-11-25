@@ -135,12 +135,6 @@ items:
     armor: 35 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
-
-  - type: STR_SMALL_LAUNCHER
-    categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
-    bigSprite: 1320
-    requires:
-      - STR_ALIENS_ONLY
   - type: STR_STUN_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -167,6 +161,9 @@ items:
     accuracyAuto: 38 # 50
     accuracySnap: 55 # 65
     accuracyAimed: 75 # 85
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
     tuAuto: 27 # 30
     tuSnap: 14 # 30
     tuAimed: 31 # 60
@@ -248,6 +245,15 @@ items:
     accuracyAuto: 36
     accuracySnap: 54
     accuracyAimed: 68
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
     tuAuto: 24
     tuSnap: 21
     tuAimed: 38
@@ -256,11 +262,6 @@ items:
     snapRange: 15
     autoRange: 10
     dropoff: 3
-    autoShots: 4
-    confSnap:
-      shots: 2
-    confAimed:
-      shots: 2
     invWidth: 1
     invHeight: 2
     twoHanded: false
@@ -305,9 +306,15 @@ items:
     accuracyAuto: 40
     accuracySnap: 55
     accuracyAimed: 105
-    tuAuto: 35
+    tuAuto: 40
     tuSnap: 25
-    tuAimed: 55
+    tuAimed: 45
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
     maxRange: 60
     aimRange: 35
     snapRange: 33
@@ -380,11 +387,17 @@ items:
     fireSound: 1935 # FIX THIS
     accuracySnap: 50
     accuracyAimed: 112
+    accuracyAuto: 145
     tuSnap: 42
     tuAimed: 73
+    tuAuto: 85
     maxRange: 60
     aimRange: 55
+    autoRange: 60
     snapRange: 45
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
     minRange: 5
     dropoff: 3
     invWidth: 2
@@ -428,18 +441,19 @@ items:
     fireSound: 1936 # FIX THIS
     accuracyAuto: 38
     accuracySnap: 45
-    tuAuto: 38
+    tuAuto: 23
     tuSnap: 38
+    confSnap:
+      shots: 5
+      name: STR_BURST
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
     maxRange: 60
     snapRange: 35
     autoRange: 30
     minRange: 3
     dropoff: 3
-    autoShots: 6
-    confSnap:
-      shots: 3
-    confAimed:
-      shots: 4
     invWidth: 2
     invHeight: 3
     twoHanded: true
@@ -574,69 +588,6 @@ items:
     recover: true
     recoveryPoints: 50
     armor: 10
-# Craft Weapons
-  - type: STR_PLASMA_BEAM
-    size: 1.2
-    costSell: 267300
-    transferTime: 48
-  - type: STR_PLASMA_ARRAY
-    size: 1.2
-    costSell: 275000
-    transferTime: 48
-  - type: STR_FUSION_BALL_LAUNCHER
-    size: 2.0
-    costSell: 281000
-    transferTime: 48
-  - type: STR_FUSION_BALL
-    size: 0.6
-    costSell: 53300
-    transferTime: 48
-    clipSize: 1
-craftWeapons:
-  - type: STR_PLASMA_BEAM_UC
-    sprite: 5
-    sound: 9
-    damage: 110
-    range: 50
-    accuracy: 50
-    reloadCautious: 12
-    reloadStandard: 12
-    reloadAggressive: 12
-    ammoMax: 50
-    rearmRate: 10
-    launcher: STR_PLASMA_BEAM
-    projectileType: 5
-  - type: STR_PLASMA_ARRAY_UC
-    sprite: 5
-    sound: 9
-    damage: 140
-    range: 20
-    accuracy: 30
-    reloadCautious: 4
-    reloadStandard: 4
-    reloadAggressive: 4
-    ammoMax: 100
-    rearmRate: 50
-    launcher: STR_PLASMA_ARRAY
-    projectileType: 5
-  - type: STR_FUSION_BALL_UC
-    sprite: 3
-    sound: 7
-    damage: 150
-    range: 40
-    accuracy: 100
-    reloadCautious: 32
-    reloadStandard: 24
-    reloadAggressive: 16
-    ammoMax: 4
-    launcher: STR_FUSION_BALL_LAUNCHER
-    clip: STR_FUSION_BALL
-    projectileType: 3
-    projectileSpeed: 8
-crafts:
-# allow more HWPs for mod players
-  - type: STR_AVENGER
-    vehicles: 8 # 6
 armors:
 # Standard Armors
   - type: STR_POWER_SUIT_UC
@@ -658,6 +609,7 @@ armors:
       throwing: -7
       strength: 15
       bravery: 7
+      mana: 80
     damageModifier:
       - 0.7
       - 0.45
@@ -684,10 +636,11 @@ armors:
       throwing: -7
       strength: 15
       bravery: 8
-    frontArmor: 110
-    sideArmor: 90
-    rearArmor: 80
-    underArmor: 70
+      mana: 80
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
     movementType: 1
     damageModifier:
       - 0.75
@@ -718,6 +671,7 @@ armors:
       throwing: -5
       strength: 9
       bravery: 7
+      mana: 80
     frontArmor: 55
     sideArmor: 44
     rearArmor: 36
@@ -751,6 +705,7 @@ armors:
       throwing: -5
       strength: 9
       bravery: 6
+      mana: 80
     frontArmor: 50
     sideArmor: 40
     rearArmor: 32
@@ -769,142 +724,6 @@ armors:
       - 0.0
 research:
 # Linked Alien Research
-  - name: STR_SECTOID_ENGINEER
-    cost: 256
-    points: 50
-    lookup: STR_SECTOID
-    needItem: true
-    unlocks:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-  - name: STR_FLOATER_ENGINEER
-    cost: 256
-    points: 50
-    lookup: STR_FLOATER
-    needItem: true
-    unlocks:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-  - name: STR_SNAKEMAN_ENGINEER
-    cost: 256
-    points: 50
-    lookup: STR_SNAKEMAN
-    needItem: true
-    unlocks:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-  - name: STR_MUTON_ENGINEER
-    cost: 256
-    points: 50
-    lookup: STR_MUTON
-    needItem: true
-    unlocks:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-  - name: STR_FLOATER_NAVIGATOR
-    cost: 192
-    points: 50
-    lookup: STR_FLOATER
-    needItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-      - STR_ALIEN_COMMUNICATION
-    getOneFree:
-      - STR_ALIEN_RESEARCH
-      - STR_ALIEN_HARVEST
-      - STR_ALIEN_ABDUCTION
-      - STR_ALIEN_INFILTRATION
-      - STR_ALIEN_BASE
-      - STR_ALIEN_TERROR
-      - STR_ALIEN_RETALIATION
-      - STR_ALIEN_SUPPLY
-  - name: STR_SNAKEMAN_NAVIGATOR
-    cost: 192
-    points: 50
-    lookup: STR_SNAKEMAN
-    needItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-      - STR_ALIEN_COMMUNICATION
-    getOneFree:
-      - STR_ALIEN_RESEARCH
-      - STR_ALIEN_HARVEST
-      - STR_ALIEN_ABDUCTION
-      - STR_ALIEN_INFILTRATION
-      - STR_ALIEN_BASE
-      - STR_ALIEN_TERROR
-      - STR_ALIEN_RETALIATION
-      - STR_ALIEN_SUPPLY
-  - name: STR_MUTON_NAVIGATOR
-    cost: 192
-    points: 50
-    lookup: STR_MUTON
-    needItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-      - STR_ALIEN_COMMUNICATION
-    getOneFree:
-      - STR_ALIEN_RESEARCH
-      - STR_ALIEN_HARVEST
-      - STR_ALIEN_ABDUCTION
-      - STR_ALIEN_INFILTRATION
-      - STR_ALIEN_BASE
-      - STR_ALIEN_TERROR
-      - STR_ALIEN_RETALIATION
-      - STR_ALIEN_SUPPLY
-  - name: STR_SECTOID_NAVIGATOR
-    cost: 192
-    points: 50
-    lookup: STR_SECTOID
-    needItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-      - STR_ALIEN_COMMUNICATION
-    getOneFree:
-      - STR_ALIEN_RESEARCH
-      - STR_ALIEN_HARVEST
-      - STR_ALIEN_ABDUCTION
-      - STR_ALIEN_INFILTRATION
-      - STR_ALIEN_BASE
-      - STR_ALIEN_TERROR
-      - STR_ALIEN_RETALIATION
-      - STR_ALIEN_SUPPLY
 # Alien Weapon Research Step - allows understanding
   - name: STR_PLASMA_PISTOL
     cost: 300
@@ -1105,23 +924,6 @@ research:
       - STR_HYPER_WAVE_ENCODER
       - STR_ALIEN_COMMUNICATION
 # Craft Weapons
-  - name: STR_PLASMA_CANNON
-    cost: 660
-    points: 25
-    dependencies:
-      - STR_PLASMA_CANNON_DEP1
-      - STR_PLASMA_CANNON_DEP2
-  - name: STR_PLASMA_ARRAY
-    cost: 260
-    points: 25
-    dependencies:
-      - STR_PLASMA_CANNON
-  - name: STR_FUSION_MISSILE
-    cost: 500 #880
-    points: 25
-    dependencies:
-      - STR_BLASTER_LAUNCHER
-      - STR_BLASTER_BOMB
   - name: STR_ALIEN_GRENADE
     cost: 250
     points: 20
@@ -1373,43 +1175,6 @@ manufacture:
   - name: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_ALIENS_ONLY
-# Craft Weapons
-  - name: STR_PLASMA_BEAM
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_PLASMA_CANNON
-    space: 8
-    time: 500
-    cost: 226000
-    requiredItems:
-      STR_ELERIUM_115: 15
-  - name: STR_PLASMA_ARRAY
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_PLASMA_ARRAY
-    space: 8
-    time: 500
-    cost: 235000
-    requiredItems:
-      STR_ELERIUM_115: 15
-  - name: STR_FUSION_BALL_LAUNCHER
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_FUSION_MISSILE
-    space: 6
-    time: 400
-    cost: 242000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-  - name: STR_FUSION_BALL
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_FUSION_MISSILE
-    space: 6
-    time: 600
-    cost: 28000
-    requiredItems:
-      STR_ELERIUM_115: 4
 ufopaedia:
 # Pure Research
   - id: STR_ALIEN_PLASMA_WEAPONS
@@ -1553,28 +1318,6 @@ ufopaedia:
   - id: STR_PLASMA_LMG_PACK
     type_id: 4
     section: STR_NOT_AVAILABLE
-# Craft Weapons
-  - id: STR_PLASMA_BEAM_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_PLASMA_CANNON
-    image_id: UP011.SPK
-    text: STR_PLASMA_BEAM_UFOPEDIA
-  - id: STR_PLASMA_ARRAY_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_PLASMA_ARRAY
-    image_id: PLASMAARRAY
-    text: STR_PLASMA_ARRAY_UFOPEDIA
-  - id: STR_FUSION_BALL_UC
-    type_id: 2
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_FUSION_MISSILE
-    image_id: UP009.SPK
-    text: STR_FUSION_BALL_UFOPEDIA
 extraStrings:
   - type: en-US
     strings:
@@ -1645,9 +1388,6 @@ extraStrings:
       STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
       # Hyperwave
       # Craft Weapons
-      STR_PLASMA_ARRAY: Pulse Plasma Beam
-      STR_PLASMA_ARRAY_UC: PULSE PLASMA BEAM
-      STR_PLASMA_ARRAY_UFOPEDIA: AS WITH PREVIOUS TECHNOLOGIES, THE PLASMA BEAM AIR-TO-AIR WEAPON HAS BEEN CHANGED TO WORK AS A SHORTER RANGE WEAPON BUT WITH A FASTER RATE OF FIRE.
   - type: fr
     strings:
     # Alien Weapons
@@ -1857,18 +1597,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/FourthState/ScoutArmor/man_7f3.png
-  - type: PLASMAARRAY
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/FourthState/CraftWeapon/PlasmaArrayUfopedia.gif
-  - type: BASEBITS.PCK
-    files:
-      86: Resources/FourthState/CraftWeapon/PlasmaArrayBB.png
-  - type: INTICON.PCK
-    files:
-      43: Resources/FourthState/CraftWeapon/PlasmaArrayII.png
 extraSounds:
   - type: BATTLE.CAT
     files:

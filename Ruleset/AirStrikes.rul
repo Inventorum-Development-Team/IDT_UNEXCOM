@@ -1,0 +1,76 @@
+items:
+  - type: STR_HE_STRIKE
+    size: 0.1
+    requires:
+      - STR_AIR_STRIKES
+    costBuy: 100000
+    costSell: 50000
+    weight: 1
+    bigSprite: 200
+    floorSprite: 200
+    handSprite: 904
+    power: 200
+    damageType: 3
+    battleType: 4
+    blastRadius: 12
+    fuseType: 5
+    fuseTriggerEvents:
+      throwTrigger: true
+    tags:
+      STRIKE: 1
+
+  - type: STR_INC_STRIKE
+    size: 0.1
+    requires:
+      - STR_AIR_STRIKES
+    costBuy: 100000
+    costSell: 50000
+    weight: 1
+    bigSprite: 200
+    floorSprite: 200
+    handSprite: 904
+    power: 100
+    damageType: 2
+    battleType: 4
+    blastRadius: 12
+    fuseType: 5
+    fuseTriggerEvents:
+      throwTrigger: true
+    damageAlter:
+      FixRadius: 12
+      ToMorale: 0.5
+      FireThreshold: 0
+      RadiusReduction: 0.0
+    tags:
+      STRIKE: 1
+
+extraSprites:
+    - type: FLOOROB.PCK
+      files:
+        249: Resources/BallisticWeapons/Explosives/FloorSignalGrenade.png
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_HE_STRIKE: "HE Air Strike"
+      STR_INC_STRIKE: "Napalm Air Strike"
+
+extended:
+  tags:
+    RuleItem:
+      STRIKE: int
+  scripts:
+    selectItemSprite:
+      - offset: 2
+        code: |
+          var int x;
+          var int y;
+          BattleItem.getTag item x Tag.STRIKE;
+          BattleItem.isFuseEnabled item y;
+          if and eq x 1 eq y 1;
+            set sprite_index 1249;
+          end;
+          return sprite_index;
+
+
+

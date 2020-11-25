@@ -18,15 +18,6 @@ ufos:
     reload: 12
     avoidBonus: 10
     breakOffTime: 200
-    battlescapeTerrainData:
-      name: UFO1A
-      mapDataSets:
-        - BLANKS
-        - UFO1
-      mapBlocks:
-        - name: UFO1A
-          width: 10
-          length: 10
 
   - type: STR_MAGISTER_UFO
     size: STR_SMALL
@@ -43,15 +34,7 @@ ufos:
     score: 50
     reload: 48
     breakOffTime: 200
-    battlescapeTerrainData:
-      name: UFO1A
-      mapDataSets:
-        - BLANKS
-        - UFO1
-      mapBlocks:
-        - name: UFO1A
-          width: 10
-          length: 10
+
 
   - type: STR_MI8_UFO
     size: STR_SMALL

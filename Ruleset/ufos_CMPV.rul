@@ -8,7 +8,7 @@
 #BEGIN MEDIUM SCOUT
 ufos:
 
-  - type: STR_MEDIUM_SCOUT
+  - type: STR_MEDIUM_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_110
       mapDataSets:
@@ -21,31 +21,55 @@ ufos:
         - name: UFO_110
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 5, 5, 0]
         - name: UFO_110a
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 4, 0]
         - name: UFO_110b
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 5, 0]
         - name: UFO_110c
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 5, 4, 0]
         - name: UFO_110d
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 2, 0]
         - name: UFO_110e
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 2, 4, 0]
         - name: UFO_110f
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 3, 0]
         - name: UFO_110g
           width: 10
           length: 10
+          items:
+            STR_ELERIUM_115:
+              - [ 3, 4, 0]
 #END MEDIUM SCOUT
 
 #BEGIN LARGE SCOUT
-  - type: STR_LARGE_SCOUT
+  - type: STR_LARGE_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_120
       mapDataSets:
@@ -255,7 +279,7 @@ ufos:
 #END LARGE SCOUT
 
 #BEGIN HARVESTER
-  - type: STR_HARVESTER
+  - type: STR_HARVESTER #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_130
       mapDataSets:
@@ -607,7 +631,7 @@ ufos:
 #END HARVESTER
 
 #BEGIN ABDUCTOR
-  - type: STR_ABDUCTOR
+  - type: STR_ABDUCTOR #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_140
       mapDataSets:
@@ -757,7 +781,7 @@ ufos:
 #END ABDUCTOR
 
 #BEGIN TERROR SHIP
-  - type: STR_TERROR_SHIP
+  - type: STR_TERROR_SHIP #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_150
       mapDataSets:
@@ -959,7 +983,7 @@ ufos:
 #END TERROR SHIP
 
 #BEGIN BATTLESHIP
-  - type: STR_BATTLESHIP
+  - type: STR_BATTLESHIP #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_160
       mapDataSets:
@@ -1145,7 +1169,7 @@ ufos:
 #END BATTLESHIP
 
 #BEGIN SUPPLY SHIP
-  - type: STR_SUPPLY_SHIP
+  - type: STR_SUPPLY_SHIP #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_170
       mapDataSets:

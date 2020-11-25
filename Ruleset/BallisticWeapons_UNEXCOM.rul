@@ -751,6 +751,9 @@ items:
     clipSize: 1
     battleType: 2
     armor: 20
+    damageAlter:
+      FixRadius: 7
+      ArmorEffectiveness: 0.75
     blastRadius: 7
     listOrder: 2023
   - type: STR_40MM_SMOKE
@@ -1371,7 +1374,7 @@ items:
     armor: 20
     damageType: 3
     blastRadius: 2
-    hitSound: 64
+    hitSound: 143
     listOrder: 2035
 
   - type: STR_M60
@@ -2088,7 +2091,7 @@ items:
     handSprite: 572
     bulletSprite: 0
     bulletSpeed: 4
-    fireSound: 1013
+    fireSound: 159
     compatibleAmmo:
       - STR_RPG_HE_ROCKET
       - STR_RPG_INC_ROCKET
@@ -2555,6 +2558,7 @@ items:
       shots: 3
       arcing: false
     accuracySnap: 70
+    accuracyAimed: 85
     accuracyCloseQuarters: 85
     kneelBonus: 100
     maxRange: 60
@@ -4972,14 +4976,6 @@ ufopaedia:
       - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
     listOrder: 2150
 
-  - id: STR_RIOT_ARMOR_UC
-    type_id: 5
-    listOrder: 1672
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-    text: STR_RIOT_ARMOR_UFOPEDIA
-
   - id: STR_ANGRY_WIFE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -5386,7 +5382,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
+      386: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
 
   - type: MEDIKIT_BACKGROUND
     singleImage: true
@@ -5849,6 +5845,7 @@ extraStrings:
       STR_FIRE_M203: "Fire M203"
       STR_FIRE_SHOTGUN: "Fire Shotgun"
       STR_PRAY_N_SPRAY: "Pray n' Spray"
+      STR_UNPRIME_GRENADE: "Unprime Grenade"
 ###########################
 ####### US WEAPONS ########
 ###########################

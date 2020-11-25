@@ -52,6 +52,9 @@ research:
       - STR_USA_INITIAL_APPROACH_RESEARCH
     cost: 500
     points: 200
+    disables:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_USSR_SUPPORT_RESEARCH
 
   - name: STR_NATO_SUPPORT_RESEARCH
     dependencies:
@@ -60,6 +63,7 @@ research:
     points: 200
     disables:
       - STR_USSR_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
 
   - name: STR_USSR_SUPPORT_RESEARCH
     dependencies:
@@ -68,21 +72,28 @@ research:
     points: 200
     disables:
       - STR_NATO_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
 
 
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
+    unlocks:
+      - STR_AIR_STRIKES
     dependencies:
       - STR_USA_SUPPORT_RESEARCH
   - name: STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
+    unlocks:
+      - STR_AIR_STRIKES
     dependencies:
       - STR_NATO_SUPPORT_RESEARCH
   - name: STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
+    unlocks:
+      - STR_AIR_STRIKES
     dependencies:
       - STR_USSR_SUPPORT_RESEARCH
 
@@ -125,6 +136,10 @@ research:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     disables:
       - STR_USSR_AIRCRAFT_OPTION1
+
+  - name: STR_AIR_STRIKES
+    cost: 200
+    points: 20
 
   - name: STR_UNITED_WE_STAND_RESEARCH
     cost: 400
@@ -212,6 +227,13 @@ research:
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
+  - name: STR_IMPROVED_IMPROVED_SATELLITE
+    cost: 200
+    points: 20
+    dependencies:
+      - STR_IMPROVED_SATELLITE
+      - STR_UFO_CONSTRUCTION
+      - STR_UFO_NAVIGATION
   - name: STR_IMPROVED_BOMBER
     cost: 400
     points: 20
@@ -287,6 +309,78 @@ research:
       - STR_NEW_FIGHTER_TRANSPORTER
 
 ########################################
+####### CRAFT WEAPONS TIER 3-4 #########
+########################################
+
+  - name: STR_LONGSWORD_FUSION_MISSILE
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_KATANA
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_ADLER
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_GORGON_ROCKETS
+    cost: 1100
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+  - name: STR_CASABA_LANCE
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_CASABA_SPIKE
+
+  - name: STR_ZEUS
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+  - name: STR_VOSTOK_PLASMA_CANNON
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+
+  - name: STR_EXCALIBUR_LIGHT_MISSILE
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+  - name: STR_MJOLNIR
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+  - name: STR_KONDOR
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+  - name: STR_KRAKEN_ROCKETS
+    cost: 1500
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+########################################
 ########## LASER RESEARCH ##############
 ########################################
   - name: STR_PERSONAL_ARMOR
@@ -348,6 +442,13 @@ research:
     points: 10
     dependencies:
       - STR_LASER_CANNON
+
+  - name: STR_CASABA_SPIKE
+    cost: 400
+    points: 10
+    dependencies:
+      - STR_LASER_WEAPONS
+
   - name: STR_LASER_DEFENSE
     cost: 510
     points: 15
@@ -596,6 +697,7 @@ research:
 ######################
 
   - name: STR_REPTOID_COMMANDER
+    listOrder: 8675
     cost: 192
     points: 50
     lookup: STR_REPTOID
@@ -606,6 +708,7 @@ research:
       - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
   - name: STR_REPTOID_LEADER
+    listOrder: 8673
     cost: 192
     points: 50
     lookup: STR_REPTOID
@@ -616,6 +719,7 @@ research:
       - STR_ALIEN_ORIGINS
 
   - name: STR_CHTONITE_COMMANDER
+    listOrder: 8685
     cost: 192
     points: 50
     lookup: STR_CHTONITE
@@ -626,6 +730,7 @@ research:
       - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
   - name: STR_CHTONITE_LEADER
+    listOrder: 8683
     cost: 192
     points: 50
     lookup: STR_CHTONITE
@@ -646,6 +751,7 @@ research:
       - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
   - name: STR_CEREBREAL_LEADER
+    listOrder: 8693
     cost: 192
     points: 50
     lookup: STR_CEREBREAL
@@ -663,6 +769,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
+      - STR_ALIEN_COMMUNICATION
     getOneFree:
       - STR_ALIEN_RESEARCH
       - STR_ALIEN_HARVEST
@@ -685,6 +792,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
+      - STR_ALIEN_COMMUNICATION
     getOneFree:
       - STR_ALIEN_RESEARCH
       - STR_ALIEN_HARVEST
@@ -707,6 +815,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
+      - STR_ALIEN_COMMUNICATION
     getOneFree:
       - STR_ALIEN_RESEARCH
       - STR_ALIEN_HARVEST
@@ -729,6 +838,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
+      - STR_ALIEN_COMMUNICATION
     getOneFree:
       - STR_ALIEN_RESEARCH
       - STR_ALIEN_HARVEST
@@ -750,6 +860,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -763,7 +874,9 @@ research:
       - STR_EXCAVATOR
       - STR_SENTRY_SHIP
       - STR_FIGHTER_SHIP
+      - STR_SMALL_FIGHTER
       - STR_LAB_SHIP
+      - STR_TROOP_LANDER
       - STR_ALIEN_CAPITAL_SHIPS
       - STR_ALIEN_FIGHTER_SHIPS
       - STR_ALIEN_SCOUT_SHIPS
@@ -776,6 +889,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -789,7 +903,9 @@ research:
       - STR_EXCAVATOR
       - STR_SENTRY_SHIP
       - STR_FIGHTER_SHIP
+      - STR_SMALL_FIGHTER
       - STR_LAB_SHIP
+      - STR_TROOP_LANDER
       - STR_ALIEN_CAPITAL_SHIPS
       - STR_ALIEN_FIGHTER_SHIPS
       - STR_ALIEN_SCOUT_SHIPS
@@ -802,6 +918,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_SMALL_SCOUT
@@ -815,6 +932,8 @@ research:
       - STR_EXCAVATOR
       - STR_SENTRY_SHIP
       - STR_FIGHTER_SHIP
+      - STR_TROOP_LANDER
+      - STR_SMALL_FIGHTER
       - STR_LAB_SHIP
       - STR_ALIEN_CAPITAL_SHIPS
       - STR_ALIEN_FIGHTER_SHIPS
@@ -827,6 +946,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
     lookup: STR_SECTOID
     getOneFree:
@@ -841,6 +961,8 @@ research:
       - STR_EXCAVATOR
       - STR_SENTRY_SHIP
       - STR_FIGHTER_SHIP
+      - STR_SMALL_FIGHTER
+      - STR_TROOP_LANDER
       - STR_LAB_SHIP
       - STR_ALIEN_CAPITAL_SHIPS
       - STR_ALIEN_FIGHTER_SHIPS
@@ -1319,6 +1441,15 @@ ufopaedia:
     text: STR_USSR_LASER_HEAVY_WEAPONS_UFOPEDIA
 
 ############################################
+  - id: STR_AIR_STRIKES
+    type_id: 8
+    requires:
+      - STR_AIR_STRIKES
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_AIR_STRIKES_UFOPEDIA
+
+
+
   - id: STR_HANGAR
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -1880,7 +2011,7 @@ extraStrings:
       STR_UNEXCOM_PILOTS: "Our Pilots"
       STR_UNEXCOM_PILOTS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Our pilots are the Crème de la crème of the world's air forces. Experienced fighters from all over the world volunteered for the Project. Most have fought in Vietnam, Korea and there are even veterans of World War II. They were selected for the almost suicidal mission to protect the skies of Earth. Maybe we do not have the technology of the alien pilots and crafts, but we compensate with skill, dexterity and bravery. All airplanes need pilots, it is recommended to choose the most aggressive for fighters and bombers."
       STR_AIR_COMBAT: "Air Combat"
-      STR_AIR_COMBAT_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}One of our most important weapons to defend the planet is military aviation. In 1961, on what is known today as 'Nordisk Kraschar', Nordic Crash, a single unidentified flying object (which we now believe was a Medium Scout) was spotted throughout northern Europe, flying at incredible speed. A pair of SAAB J29F Tunnan were scrambled to engage the object and after a dogfight, was shot down. This, along with the Massachusetts event, showed that UFOs aren't invincible. The United Nations equipped us with surplus Tunnan fighters provided by the Swedish Air Force. Old, but reliable."
+      STR_AIR_COMBAT_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}One of our most important weapons to defend the planet is military aviation. In 1961, on what is known today as 'Nordiska Kraschen',The Nordic Crash, a single unidentified flying object (which we now believe was a Medium Scout) was spotted throughout northern Europe, flying at incredible speed. A pair of SAAB J29F Tunnan were scrambled to engage the object and after a dogfight, was shot down. This, along with the Massachusetts event, showed that UFOs aren't invincible. The United Nations equipped us with surplus Tunnan fighters provided by the Swedish Air Force. Old, but reliable."
 #########################################
       STR_UNEXCOM_WEAPONS: "UNEXCOM Weaponry"
       STR_UNEXCOM_WEAPONS_UFOPEDIA: "The weaponry used in UNEXCOM is varied and for all tastes. Many guns overlap each other and you will find many weapons of the same type. Feel free to pick your favorite and ignore the others, most are meant to be sell if unused. You may notice that each weapon class has a different set of fire modes. Each class is meant for a purpose, some are best used up close and personal, some others are best for ranged combat. You can find a explanation of the different Special attacks on the reports below."
@@ -1920,11 +2051,11 @@ extraStrings:
 
 #########################################
       STR_USA_INITIAL_APPROACH_RESEARCH: "USA Initial Diplomacy"
-      STR_USA_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "One of our diplomatic liaisons in the United States has secured a meeting with senior military officials from various branches. This meeting has sought to obtain material support to equip our troops, yet they have refused to do so by unofficial means. But they have assured us of their support if we openly ask for American help. It seems that the Americans doesn't have any problem if we chose to ask NATO or USSR for support too. At the end of the interview, we were gifted with a Remington Combat Shotgun, designed to be equipped in elite troops. "
+      STR_USA_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "One of our diplomatic liaisons in the United States has secured a meeting with senior military officials from various branches. This meeting has sought to obtain material support to equip our troops, yet they have refused to do so by unofficial means. But they have assured us of their support if we openly ask for American help, but only if we seek it exclusively from them. At the end of the interview, we were gifted with a Remington Combat Shotgun, designed to be equipped in elite troops. "
       STR_NATO_INITIAL_APPROACH_RESEARCH: "NATO Initial Diplomacy"
       STR_NATO_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Secret contacts with top European figures have brought us closer to them to try and get the material support our cause so badly needs. At the end of our meeting, we were given an SG 510-4 Carbine, informing us that this exclusive weapon could be given to our soldiers. We have been warned that European politicians and military do not like cooperation with the Soviets, so it is a fact that they will withdraw their support if we engage in official talks with the USSR."
       STR_USSR_INITIAL_APPROACH_RESEARCH: "USSR Initial Diplomacy"
-      STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Our diplomatic contacts have managed to get close to certain important figures in the USSR. We cannot reveal their names, but they have offered to assist us in soliciting support from the Warsaw Pact and the Soviet Union in general, if we so wish.  As a sign of good faith, they have given us an AKMSU carbine, for the exclusive use of the VDV airborne forces, a rare piece to find. However, we have been informed that Soviet politicians will not tolerate a rapprochement with NATO, so perhaps we should be careful not to lose possible open Soviet help."
+      STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Our diplomatic contacts have managed to get close to certain important figures in the USSR. We cannot reveal their names, but they have offered to assist us in soliciting support from the Warsaw Pact and the Soviet Union in general, if we so wish.  As a sign of good faith, they have given us an AKMSU carbine, for the exclusive use of the VDV airborne forces, a rare piece to find. However, we have been informed that Soviet politicians will not tolerate a rapprochement with NATO or the United States, so perhaps we should be careful not to lose possible open Soviet help."
 
       STR_USA_SUPPORT_RESEARCH: "USA Support"
       STR_USA_SUPPORT_UFOPEDIA: "Members of our diplomatic relations team have approached the U.S. Ambassador to the UN, George H.W. Bush to request American military support and equipment to arm our troops. It has taken some time, but he has agreed to provide us with the most modern equipment in the American arsenal, such as the M1911 Colt 45, M16/M203, XM117 Carbine, Remington Combat Shotgun, XM21, M79 Thumper, M72 LAW and M60. He also offered to equip our interception squadrons with USAF aircraft, but Ambassador Bush had to withdraw before continuing negotiations. We must contact him again if we want his support in the future."
@@ -2072,3 +2203,6 @@ extraStrings:
       STR_ADVANCED_BOMBER_UFOPEDIA: "Tactical bomber project implementing hybrid and stealth technology For this project we have moved away from classic aircraft construction and have taken a more 'organic' design.  In tests it has proven to be considerably invisible to the radar used by our aircraft, and we hope that this same feature will be used in aerial combat against UFOs."
       STR_ADVANCED_FIGHTER: "Advaced Fighter"
       STR_ADVANCED_FIGHTER_UFOPEDIA: "This is a novel project. Grumman has created a new heavy naval fighter designed to protect American fleets and our diplomatic liaisons have managed to contact this company to design an aircraft entirely built by UNEXCOM. Using the F-14 Tomcat as a base, we have added for the first time stealth technology based on a modified version of the Alien Alloys, retaining the large weapon carrying capacity and sweep wings. "
+      STR_IMPROVED_IMPROVED_SATELLITE: "Advanced Satellite"
+      STR_AIR_STRIKES: "Close Air Support"
+      STR_AIR_STRIKES_UFOPEDIA: "The Council has provided us access to close air support from airbases located in council nations near the area of operations. Though expensive, they can grant a tactical advantage if used correctly. UNEXCOM operatives can call in close air support by priming and throwing a signal smoke grenade. The air support will take a few turns to arrive, it is adviced this time is used to make sure no friendly combatants are in the blast zone. Signal smoke grenades should not be used indoors, as this prevents the close air support from finding the target, meaning the attack run will not be completed"

@@ -1,0 +1,25 @@
+research:
+  - name: STR_TESTING_TOOLS
+    cost: 50
+    points: 10
+    needItem: true
+facilities:
+  - type: STR_SUPER_FACILITY
+    spriteShape: 1
+    spriteFacility: 22
+    buildCost: 1
+    buildTime: 1
+    monthlyCost: 1
+    radarRange: 15000
+    radarChance: 100
+    hyper: true
+    workshops: 999
+    labs: 999
+    personnel: 999
+    aliens: 999
+    crafts: 999
+    psiLabs: 999
+    storage: 999
+    mapName: XBASE_05
+    requires:
+      - STR_TESTING_TOOLS

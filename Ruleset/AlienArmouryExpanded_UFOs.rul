@@ -4,17 +4,8 @@
 # 2. Make sure that there are only vanilla items in the loadouts (i.e., no items from mods you don't have, like Alien Armoury Expanded).
 
 ufos:
-  - type: STR_EXCAVATOR
+  - type: STR_EXCAVATOR #ignoreDuplicate
     modSprite: InterceptionExcavator
-    size: STR_SMALL
-    damageMax: 270
-    speedMax: 1700
-    accel: 6
-    power: 25
-    range: 30
-    score: 100
-    reload: 24
-    breakOffTime: 220
     battlescapeTerrainData:
       name: EXCAVTR
       mapDataSets:
@@ -27,58 +18,74 @@ ufos:
         - name: EXCAVTR1
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 1]
         - name: EXCAVTR2
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 1]
         - name: EXCAVTR3
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 1]
         - name: EXCAVTR4
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 1]
         - name: EXCAVTR5
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 1]
         - name: EXCAVTR6
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 1]
         - name: EXCAVTR7
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 1]
         - name: EXCAVTR8
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 1]
         - name: EXCAVTR9
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 1]
         - name: EXCAVTR10
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 1]
         - name: EXCAVTR11
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 1]
 #################################
 ###### FIGHTER CLASS ###########
 ################################
-  - type: STR_SENTRY_SHIP
+  - type: STR_SENTRY_SHIP #ignoreDuplicate
     modSprite: InterceptionSentry
-    size: STR_SMALL
-    damageMax: 200
-    speedMax: 2300
-    accel: 8
-    power: 35
-    range: 42
-    score: 125
-    reload: 24
-    breakOffTime: 170
-    shieldCapacity: 100
-    shieldRecharge: 250
-    shieldBleedThrough: 100
-    hunterKillerPercentage: 100
-    huntMode: 0
-    huntSpeed: 50
-    radarRange: 30
-    sightRange: 30
     battlescapeTerrainData:
       name: SENTRY
       mapDataSets:
@@ -91,66 +98,89 @@ ufos:
         - name: SENTRY1
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 15, 0]
         - name: SENTRY2
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 15, 9, 0]
         - name: SENTRY3
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 0]
         - name: SENTRY4
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 0]
         - name: SENTRY5
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 0]
         - name: SENTRY6
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 9, 0]
         - name: SENTRY7
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 0]
         - name: SENTRY8
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 0]
         - name: SENTRY9
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 0]
         - name: SENTRY10
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 14, 9, 0]
         - name: SENTRY11
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 0]
         - name: SENTRY12
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 9, 0]
         - name: SENTRY13
           width: 20
           length: 20
+          items:
+            STR_ELERIUM_115:
+              - [ 9, 14, 0]
         - name: SENTRY14
           width: 20
           length: 20
-  - type: STR_FIGHTER_SHIP
+          items:
+            STR_ELERIUM_115:
+              - [ 4, 9, 0]
+  - type: STR_FIGHTER_SHIP #ignoreDuplicate
     modSprite: InterceptionFighter
-    size: STR_SMALL
-    damageMax: 300
-    speedMax: 3200
-    accel: 9
-    power: 55
-    range: 42
-    score: 175
-    reload: 10
-    shieldCapacity: 250
-    shieldRecharge: 200
-    shieldRechargeInGeoscape: 250
-    shieldBleedThrough: 100
-    breakOffTime: 110
-    hunterKillerPercentage: 100
-    huntSpeed: 70
-    radarRange: 600
-    radarChance: 100
-    sightRange: 0
-    huntMode: 0
     battlescapeTerrainData:
       name: FIGHTER
       mapDataSets:
@@ -262,17 +292,7 @@ ufos:
 ##############################
 ######## SCOUT CLASS #########
 ##############################
-  - type: STR_SMALL_SCOUT
-    size: STR_VERY_SMALL
-    sprite: 0
-    damageMax: 50
-    speedMax: 1400
-    accel: 12
-    power: 15
-    range: 15
-    score: 50
-    reload: 10
-    breakOffTime: 200
+  - type: STR_SMALL_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO1A
       mapDataSets:
@@ -282,56 +302,13 @@ ufos:
         - name: UFO1A
           width: 10
           length: 10
-  - type: STR_MEDIUM_SCOUT
-    size: STR_SMALL
-    sprite: 1
-    damageMax: 200
-    speedMax: 1600
-    accel: 9
-    power: 20
-    range: 15
-    score: 75
-    reload: 56
-    breakOffTime: 250
-    hunterKillerPercentage: 40
-    radarRange: 20
-    radarChance: 30
-    sightRange: 20
 
-  - type: STR_LARGE_SCOUT
-    size: STR_SMALL
-    sprite: 2
-    damageMax: 250
-    speedMax: 1800
-    armor: 10
-    accel: 9
-    power: 20
-    range: 34
-    score: 125
-    reload: 48
-    breakOffTime: 300
-    hunterKillerPercentage: 80
-    radarRange: 300
-    radarChance: 45
-    sightRange: 300
 
 ###############################
 ####### SUPPORT CLASS #########
 ###############################
-  - type: STR_LAB_SHIP
+  - type: STR_LAB_SHIP #ignoreDuplicate
     modSprite: InterceptionLabShip
-    size: STR_VERY_LARGE
-    damageMax: 2200
-    speedMax: 500
-    accel: 5
-    power: 50
-    range: 30
-    score: 500
-    reload: 35
-    shieldCapacity: 150
-    shieldRecharge: 0
-    shieldBleedThrough: 100
-    breakOffTime: 500
     battlescapeTerrainData:
       name: LABSHIP
       mapDataSets:
@@ -413,503 +390,13 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-  - type: STR_HARVESTER
-    size: STR_MEDIUM_UC
-    sprite: 3
-    damageMax: 500
-    speedMax: 4000
-    power: 40
-    range: 22
-    score: 250
-    reload: 48
-    shieldCapacity: 100
-    shieldRecharge: 250
-    shieldBleedThrough: 100
-    breakOffTime: 500
 
 ##############################
 ####### CAPITAL CLASS ########
 ##############################
-  - type: STR_TERROR_SHIP
-    size: STR_LARGE
-    sprite: 5
-    damageMax: 1200
-    speedMax: 380
-    shieldCapacity: 300
-    shieldRecharge: 250
-    shieldBleedThrough: 100
-    accel: 3
-    power: 12
-    range: 20
-    score: 500
-    reload: 15
-    breakOffTime: 2000
 
-  - type: STR_BATTLESHIP
-    size: STR_VERY_LARGE
-    sprite: 6
-    damageMax: 3000
-    speedMax: 200
-    shieldCapacity: 500
-    shieldRecharge: 350
-    shieldBleedThrough: 5
-    accel: 2
-    power: 15
-    range: 15
-    score: 700
-    reload: 20
-    breakOffTime: 4000
 
-alienDeployments:
-  - type: STR_EXCAVATOR
-    data:
-      - alienRank: 5
-        lowQty: 1
-        highQty: 3
-        dQty: 2
-        percentageOutsideUfo: 80
-        itemSets:
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 10
-        itemSets:
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-      - alienRank: 2
-        lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-    width: 50
-    length: 50
-    height: 4
-  - type: STR_FIGHTER_SHIP
-    data:
-      - alienRank: 4
-        lowQty: 2
-        highQty: 3
-        dQty: 0
-        percentageOutsideUfo: 10
-        itemSets:
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-    width: 40
-    length: 40
-    height: 4
-  - type: STR_SENTRY_SHIP
-    data:
-      - alienRank: 5
-        lowQty: 1
-        highQty: 3
-        dQty: 5
-        percentageOutsideUfo: 65
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_SNIPER_RIFLE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 4
-        lowQty: 1
-        highQty: 1
-        dQty: 1
-        percentageOutsideUfo: 25
-        itemSets:
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-      - alienRank: 2
-        lowQty: 1
-        highQty: 1
-        dQty: 1
-        percentageOutsideUfo: 35
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-    width: 40
-    length: 40
-    height: 4
-  - type: STR_LAB_SHIP
-    data:
-      - alienRank: 5
-        lowQty: 2
-        highQty: 6
-        dQty: 3
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_SNIPER_RIFLE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 3
-        lowQty: 1
-        highQty: 2
-        dQty: 2
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_TOXIGUN
-            - STR_TOXIGUN_FLASK
-            - STR_TOXIGUN_FLASK
-            - STR_ALIEN_GRENADE
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-      - alienRank: 2
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-      - alienRank: 1
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_TOXIGUN
-            - STR_TOXIGUN_FLASK
-            - STR_TOXIGUN_FLASK
-            - STR_ALIEN_GRENADE
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_SNIPER_RIFLE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-      - alienRank: 0
-        lowQty: 0
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-    width: 50
-    length: 50
-    height: 4
-alienMissions:
-  - type: STR_ALIEN_RESEARCH
-    waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 9000
-      - ufo: STR_MEDIUM_SCOUT
-        count: 1
-        trajectory: P2
-        timer: 7800
-      - ufo: STR_EXCAVATOR
-        count: 1
-        trajectory: P2
-        timer: 1000
-      - ufo: STR_LARGE_SCOUT
-        count: 2
-        trajectory: P4
-        timer: 9000
-      - ufo: STR_LAB_SHIP
-        count: 1
-        trajectory: P4
-        timer: 9000
-  - type: STR_ALIEN_HARVEST
-    waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 7800
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P2
-        timer: 7800
-      - ufo: STR_MEDIUM_SCOUT
-        count: 1
-        trajectory: P2
-        timer: 6000
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 7800
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P3
-        timer: 9000
-      - ufo: STR_HARVESTER
-        count: 1
-        trajectory: P4
-        timer: 3000
-      - ufo: STR_HARVESTER
-        count: 1
-        trajectory: P4
-        timer: 750
-      - ufo: STR_LAB_SHIP
-        count: 1
-        trajectory: P2
-        timer: 1500
-  - type: STR_ALIEN_BASE
-    objective: 2
-    spawnZone: 4 #Mission zone for alien bases
-    waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P1
-        timer: 13500
-      - ufo: STR_MEDIUM_SCOUT
-        count: 1
-        trajectory: P5
-        timer: 15000
-      - ufo: STR_SENTRY_SHIP
-        count: 1
-        trajectory: P5
-        timer: 60
-      - ufo: STR_EXCAVATOR
-        count: 1
-        trajectory: P5
-        timer: 60
-      - ufo: STR_EXCAVATOR
-        count: 1
-        trajectory: P5
-        timer: 60
-      - ufo: STR_SUPPLY_SHIP
-        count: 2
-        trajectory: P5
-        timer: 60
-      - ufo: STR_BATTLESHIP
-        count: 1
-        trajectory: P6
-        timer: 60
-  - type: STR_ALIEN_TERROR
-    objective: 3
-    spawnZone: 3 #Mission zone for terror missions
-    waves:
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P1
-        timer: 9600
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P1
-        timer: 15000
-      - ufo: STR_TERROR_SHIP
-        count: 1
-        trajectory: P0
-        timer: 12000
-      - ufo: STR_TERROR_SHIP
-        count: 1
-        trajectory: P7
-        timer: 9000
-        objective: true
-  - type: STR_ALIEN_RETALIATION
-    objective: 4
-    spawnUfo: STR_BATTLESHIP #Spawned for the final retaliation run
-    waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P8
-        timer: 3000
-      - ufo: STR_FIGHTER_SHIP
-        count: 2
-        trajectory: P8
-        timer: 3000
-      - ufo: STR_SENTRY_SHIP
-        count: 3
-        trajectory: P8
-        timer: 3000
-      - ufo: STR_BATTLESHIP
-        count: 2
-        trajectory: P8
-        timer: 3000
+
 research:
   - name: STR_EXCAVATOR
     cost: 0
@@ -927,81 +414,8 @@ research:
     cost: 0
     points: 50
     needItem: true
-  - name: STR_FLOATER_ENGINEER
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-      - STR_FIGHTER_SHIP
-      - STR_SENTRY_SHIP
-      - STR_LAB_SHIP
-      - STR_EXCAVATOR
-      - STR_ALIEN_CAPITAL_SHIPS
-      - STR_ALIEN_FIGHTER_SHIPS
-      - STR_ALIEN_SCOUT_SHIPS
-      - STR_ALIEN_SUPPORT_SHIPS
-      - STR_ALIEN_SHIELDS
-  - name: STR_SECTOID_ENGINEER
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-      - STR_FIGHTER_SHIP
-      - STR_SENTRY_SHIP
-      - STR_EXCAVATOR
-      - STR_ALIEN_CAPITAL_SHIPS
-      - STR_ALIEN_FIGHTER_SHIPS
-      - STR_ALIEN_SCOUT_SHIPS
-      - STR_ALIEN_SUPPORT_SHIPS
-      - STR_ALIEN_SHIELDS
-  - name: STR_SNAKEMAN_ENGINEER
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-      - STR_FIGHTER_SHIP
-      - STR_SENTRY_SHIP
-      - STR_LAB_SHIP
-      - STR_EXCAVATOR
-      - STR_ALIEN_CAPITAL_SHIPS
-      - STR_ALIEN_FIGHTER_SHIPS
-      - STR_ALIEN_SCOUT_SHIPS
-      - STR_ALIEN_SUPPORT_SHIPS
-      - STR_ALIEN_SHIELDS
-  - name: STR_MUTON_ENGINEER
-    getOneFree:
-      - STR_SMALL_SCOUT
-      - STR_MEDIUM_SCOUT
-      - STR_LARGE_SCOUT
-      - STR_HARVESTER
-      - STR_ABDUCTOR
-      - STR_TERROR_SHIP
-      - STR_BATTLESHIP
-      - STR_SUPPLY_SHIP
-      - STR_FIGHTER_SHIP
-      - STR_SENTRY_SHIP
-      - STR_LAB_SHIP
-      - STR_EXCAVATOR
-      - STR_ALIEN_CAPITAL_SHIPS
-      - STR_ALIEN_FIGHTER_SHIPS
-      - STR_ALIEN_SCOUT_SHIPS
-      - STR_ALIEN_SUPPORT_SHIPS
-      - STR_ALIEN_SHIELDS
+
+
 ufopaedia:
   - id: STR_EXCAVATOR
     type_id: 9
@@ -1064,18 +478,18 @@ extraStrings:
       STR_SENTRY_SHIP: "Sentry Ship"
       STR_LAB_SHIP: "Lab Ship"
       STR_TERROR_SHIP: "Troop Transport"
-      STR_EXCAVATOR_UFOPEDIA: "Excavators are small ships that are mainly used for digging and construction work.  They represent little threat to our ships. -SUPPORT SHIP-"
-      STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small. -FIGHTER SHIP-"
-      STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors. -FIGHTER SHIP-"
-      STR_LAB_SHIP_UFOPEDIA: "Lab Ships are large vessels, tasked with major research and harvest operations.  Much bigger than Harvesters, they are equipped for conducting complex experiments on board.  Their crew is numerous and rather well equipped. -SUPPORT/CAPITAL SHIP-"
-      STR_SMALL_SCOUT_UFOPEDIA: "This tiny craft is primarily used for reconnaissance or research. It normally precedes larger vessels at the start of an alien mission. Uses some sort of small plasma minigun for self-defense. -SCOUT SHIP-"
-      STR_MEDIUM_SCOUT_UFOPEDIA: "A medium sized scout vessel that poses little threat to earth forces. Normally appears before larger vessels during missions. -SCOUT SHIP-"
-      STR_LARGE_SCOUT_UFOPEDIA: "The largest alien scout craft is a general purpose vessel that is used in all types of alien mission, including Alien Interception. Shield: 10 -SCOUT SHIP-"
-      STR_HARVESTER_UFOPEDIA: "The harvester has a trap door in its base and is equipped with lifting gear to haul up cattle or other beasts. Laser cutters are used to extract the desired material and the carcass is dumped on the ground. There are also storage containers for body parts. -SUPPORT SHIP-"
-      STR_ABDUCTOR_UFOPEDIA: "This vessel is equipped with an examination room for performing horrific experiments on human subjects. The victim is normally paralyzed by telepathic powers, but remains conscious while on the operating table. -SUPPORT SHIP-"
-      STR_TERROR_SHIP_UFOPEDIA: "The troop transport has a containment facility for large alien terror weapons or creatures. It is used to transport these alien terrorists into populated areas. It uses two short-range cannon point-defense and what appear to be artillery cannons for ground attack, used only for static targets. Shield: 60 -CAPITAL SHIP-"
-      STR_BATTLESHIP_UFOPEDIA: "The battleship is the largest and most powerful alien craft. It is normally the primary alien mission craft, equipped numerous crew members and communication systems. Equiped with various AA point-defense batteries, they are a slow but dangerous prey. Shield: 100 -CAPITAL SHIP-"
-      STR_SUPPLY_SHIP_UFOPEDIA: "The supply vessel is used during the construction of alien bases or for supplying existing bases. It carries alien food containers and reproduction chambers. -SUPPORT SHIP-"
+      STR_EXCAVATOR_UFOPEDIA: "Excavators are small ships that are mainly used for digging and construction work.  They represent little threat to our ships."
+      STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small."
+      STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors."
+      STR_LAB_SHIP_UFOPEDIA: "Lab Ships are large vessels, tasked with major research and harvest operations.  Much bigger than Harvesters, they are equipped for conducting complex experiments on board.  Their crew is numerous and rather well equipped."
+      STR_SMALL_SCOUT_UFOPEDIA: "This tiny craft is primarily used for reconnaissance or research. It normally precedes larger vessels at the start of an alien mission. Uses some sort of small plasma minigun for self-defense."
+      STR_MEDIUM_SCOUT_UFOPEDIA: "A medium sized scout vessel that poses little threat to earth forces. Normally appears before larger vessels during missions."
+      STR_LARGE_SCOUT_UFOPEDIA: "The largest alien scout craft is a general purpose vessel that is used in all types of alien mission, including Alien Interception."
+      STR_HARVESTER_UFOPEDIA: "The harvester has a trap door in its base and is equipped with lifting gear to haul up cattle or other beasts. Laser cutters are used to extract the desired material and the carcass is dumped on the ground. There are also storage containers for body parts."
+      STR_ABDUCTOR_UFOPEDIA: "This vessel is equipped with an examination room for performing horrific experiments on human subjects. The victim is normally paralyzed by telepathic powers, but remains conscious while on the operating table."
+      STR_TERROR_SHIP_UFOPEDIA: "The troop transport has a containment facility for large alien terror weapons or creatures. It is used to transport these alien terrorists into populated areas. It uses two short-range cannon point-defense and what appear to be artillery cannons for ground attack, used only for static targets."
+      STR_BATTLESHIP_UFOPEDIA: "The battleship is the largest and most powerful alien craft. It is normally the primary alien mission craft, equipped numerous crew members and communication systems. Equiped with various AA point-defense batteries, they are a slow but dangerous prey."
+      STR_SUPPLY_SHIP_UFOPEDIA: "The supply vessel is used during the construction of alien bases or for supplying existing bases. It carries alien food containers and reproduction chambers."
 
   - type: en-GB
     strings:

@@ -46,9 +46,9 @@
     floorSprite: 31
     handSprite: 104
     bulletSprite: 11
-    fireSound: 55
+    fireSound: 102
     hitSound: 19
-    hitAnimation: 56
+    hitAnimation: 57
     power: 110
     damageType: 5
     accuracySnap: 50
@@ -1602,33 +1602,6 @@ research:
       - STR_REAPER_CORPSE
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
-  - name: STR_CEREBREAL_LEADER
-    cost: 192
-    points: 50
-    lookup: STR_CEREBREAL
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_ALIEN_ORIGINS
-    needItem: true
-    listOrder: 8693
-  - name: STR_CHTONITE_LEADER
-    cost: 192
-    points: 50
-    lookup: STR_CHTONITE
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_ALIEN_ORIGINS
-    needItem: true
-    listOrder: 8683
-  - name: STR_REPTOID_LEADER
-    cost: 192
-    points: 50
-    lookup: STR_REPTOID
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_ALIEN_ORIGINS
-    needItem: true
-    listOrder: 8673
   - name: STR_CEREBREAL_ENGINEER
     cost: 192
     points: 50
@@ -1717,26 +1690,6 @@ research:
       - STR_CYDONIA_DEP
       - STR_ALIEN_ORIGINS
     listOrder: 8695
-  - name: STR_CHTONITE_COMMANDER
-    cost: 192
-    points: 50
-    lookup: STR_CHTONITE
-    needItem: true
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_CYDONIA_DEP
-      - STR_ALIEN_ORIGINS
-    listOrder: 8685
-  - name: STR_REPTOID_COMMANDER
-    cost: 192
-    points: 50
-    lookup: STR_REPTOID
-    needItem: true
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_CYDONIA_DEP
-      - STR_ALIEN_ORIGINS
-    listOrder: 8675
   - name: STR_CEREBREAL
     cost: 0
     points: 50
@@ -1933,14 +1886,14 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/RecycledAlienCollection/CerebrealRace/BulletSprite.gif
+      387: Resources/RecycledAlienCollection/CerebrealRace/BulletSprite.gif
   - type: SMOKE.PCK
     height: 80
     width: 160
     subX: 32
     subY: 40
     files:
-      56: Resources/RecycledAlienCollection/CerebrealRace/HitAnimation.gif
+      57: Resources/RecycledAlienCollection/CerebrealRace/HitAnimation.gif
   - type: HIT.PCK
     height: 40
     width: 128
@@ -2092,7 +2045,7 @@ extraSprites:
 extraSounds:
   - type: BATTLE.CAT
     files:
-      55: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
+      102: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
       101: Resources/RecycledAlienCollection/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
 extraStrings:
   - type: en-GB
