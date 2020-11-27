@@ -140,6 +140,10 @@ research:
   - name: STR_AIR_STRIKES
     cost: 200
     points: 20
+    dependencies:
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
 
   - name: STR_UNITED_WE_STAND_RESEARCH
     cost: 400
