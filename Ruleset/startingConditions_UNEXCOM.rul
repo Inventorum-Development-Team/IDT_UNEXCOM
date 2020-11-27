@@ -1,23 +1,23 @@
 startingConditions:
-  - type: STR_UNDERWATER_CONDITION
-    defaultArmor:
-      STR_SOLDIER:
-        STR_AQUALUNG_UC: 100
-      STR_PILOT:
-        STR_AQUALUNG_UC: 100
-      STR_SPECIAL_FORCES_SOLDIER:
-        STR_AQUALUNG_UC: 100
-      STR_MERCENARY:
-        STR_AQUALUNG_UC: 100
-    allowedArmors:
-      - STR_AQUALUNG_UC
-      - STR_POWER_SUIT_UC
-      - STR_FLYING_SUIT_UC
-    allowedItemCategories:
-      - STR_UNDERWATER
-    allowedCraft:
-      - STR_HERCULES
+#  - type: STR_UNDERWATER_CONDITION
+#    defaultArmor:
+#      STR_SOLDIER:
+#        STR_AQUALUNG_UC: 100
+#      STR_PILOT:
+#        STR_AQUALUNG_UC: 100
+#      STR_SPECIAL_FORCES_SOLDIER:
+#        STR_AQUALUNG_UC: 100
+#      STR_MERCENARY:
+#        STR_AQUALUNG_UC: 100
+#    allowedArmors:
+#      - STR_AQUALUNG_UC
+#      - STR_POWER_SUIT_UC
+#      - STR_FLYING_SUIT_UC
+#    allowedItemCategories:
+#      - STR_UNDERWATER
+#    allowedCraft:
+#      - STR_HERCULES
   - type: STR_INDOORS
-    forbiddenItems: 
+    forbiddenItems:
       - STR_HE_STRIKE
       - STR_INC_STRIKE

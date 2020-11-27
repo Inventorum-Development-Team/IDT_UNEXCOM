@@ -14,7 +14,7 @@ items:
 #################################
 
   - type: STR_M1972_LASER_PISTOL
-    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
     size: 0.1
@@ -56,7 +56,7 @@ items:
     invHeight: 2
 
   - type: STR_38_LASER_MAGNUM
-    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
     size: 0.2
@@ -99,7 +99,7 @@ items:
     invHeight: 2
 
   - type: STR_CALBR
-    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
     size: 0.3
@@ -146,7 +146,7 @@ items:
 
 
   - type: STR_M20_M203_LASER_CARBINE
-    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
     size: 0.3
@@ -196,7 +196,7 @@ items:
     invHeight: 3
 
   - type: STR_M5_LASER_SMG
-    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
     size: 0.2
@@ -245,7 +245,7 @@ items:
     invHeight: 3
 
   - type: STR_ULYSSES_LASER_SNIPER_RIFLE
-    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -337,7 +337,7 @@ items:
     armor: 250
 
   - type: STR_M4_LASER_LMG
-    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -381,7 +381,7 @@ items:
     invHeight: 3
 
   - type: STR_ELERIUM_FLAMETHROWER
-    categories: [STR_ARTILLERY, STR_USA_TECH, STR_LASER]
+    categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     size: 0.2
@@ -748,7 +748,7 @@ items:
     invHeight: 3
 
   - type: STR_M72_AUTOMATIC_RECOILESS_RIFLE
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
     size: 0.4
@@ -900,7 +900,7 @@ items:
 ###### USSR LASER WEAPONS ########
 #################################
   - type: STR_P72_COMPACT_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HANDGUNS
     size: 0.1
@@ -942,7 +942,7 @@ items:
     invHeight: 2
 
   - type: STR_ALK72_LASER_RIFLE
-    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
     size: 0.3
@@ -988,7 +988,7 @@ items:
     invHeight: 3
 
   - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
-    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
     size: 0.3
@@ -1034,7 +1034,7 @@ items:
     invHeight: 3
 
   - type: STR_ALP_SUBMACHINE_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
     size: 0.2
@@ -1083,7 +1083,7 @@ items:
     invHeight: 3
 
   - type: STR_MIRINOV_LASER_SNIPER
-    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -1126,7 +1126,7 @@ items:
     invHeight: 3
 
   - type: STR_AN_MACHINE_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -1176,7 +1176,7 @@ items:
     invHeight: 3
 
   - type: STR_AFINA_ANTITANK_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
     size: 0.3

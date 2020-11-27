@@ -243,7 +243,7 @@ items:
 ####### M551 SHERIDAN #################
 #####################################
   - type: STR_SHERIDAN_TANK
-    categories: [STR_TANKS, STR_USA_TECH, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 6
@@ -296,7 +296,7 @@ items:
     waypoints: 2
     listOrder: 1403
   - type: STR_152MM_CANNON_SHELLS
-    categories: [STR_TANKS, STR_USA_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.1
@@ -322,7 +322,7 @@ items:
     invHeight: 1
     listOrder: 1402
   - type: STR_MGM51_MISSILE
-    categories: [STR_TANKS, STR_USA_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.6
@@ -463,7 +463,7 @@ items:
 ####### BMD-1 AIRBORNE IFV ##########
 #####################################
   - type: STR_BMD1_TANK
-    categories: [STR_TANKS, STR_USSR_TECH, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     size: 6
@@ -518,7 +518,7 @@ items:
     turretType: -1
     listOrder: 1410
   - type: STR_73MM_CANNON_SHELLS
-    categories: [STR_TANKS, STR_USSR_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
@@ -544,7 +544,7 @@ items:
     invHeight: 1
     listOrder: 1411
   - type: STR_PKT_AMMO_BOX
-    categories: [STR_TANKS, STR_USSR_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.6
@@ -990,7 +990,6 @@ research:
       - STR_IMP_TANK_CHASSIS
 manufacture:
   - name: STR_TANK_LASER_CANNON
-    category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
       - STR_TANK_LASER_CANNON
     space: 25

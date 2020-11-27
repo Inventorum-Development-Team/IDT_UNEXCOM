@@ -2597,7 +2597,7 @@ items:
 ##################################
 #{
   - type: STR_SIDEWINDER_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
@@ -2605,7 +2605,7 @@ items:
     costSell: 18000
     transferTime: 48
   - type: STR_SIDEWINDER_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.4
@@ -2614,7 +2614,7 @@ items:
     transferTime: 48
     clipSize: 1
   - type: STR_SPARROW_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
@@ -2622,7 +2622,7 @@ items:
     costSell: 27000
     transferTime: 48
   - type: STR_SPARROW_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
@@ -2631,7 +2631,7 @@ items:
     transferTime: 48
     clipSize: 1
   - type: STR_VULCAN_CANNON
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_GATLING_CANNONS, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_GATLING_CANNONS, STR_TIER_1]
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
@@ -2639,7 +2639,7 @@ items:
     costSell: 37500
     transferTime: 48
   - type: STR_VULCAN_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_GATLING_CANNONS, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_GATLING_CANNONS, STR_TIER_1]
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.1
@@ -2648,7 +2648,7 @@ items:
     transferTime: 96
     clipSize: 50
   - type: STR_ATOLL_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
@@ -2656,7 +2656,7 @@ items:
     costSell: 18000
     transferTime: 48
   - type: STR_ATOLL_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.4
@@ -2665,7 +2665,7 @@ items:
     transferTime: 48
     clipSize: 1
   - type: STR_ACRID_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
@@ -2673,7 +2673,7 @@ items:
     costSell: 27000
     transferTime: 48
   - type: STR_ACRID_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
@@ -2682,7 +2682,7 @@ items:
     transferTime: 48
     clipSize: 1
   - type: STR_GSH_23_CANNON
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
@@ -2690,7 +2690,7 @@ items:
     costSell: 37500
     transferTime: 48
   - type: STR_GSH_23_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USSR_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.1
@@ -2746,13 +2746,13 @@ items:
     transferTime: 48
     clipSize: 50
   - type: STR_FALCON_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
   - type: STR_FALCON_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_USA_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
     size: 1.5
     costBuy: 17500
     costSell: 15000
