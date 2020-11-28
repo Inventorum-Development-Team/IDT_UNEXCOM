@@ -292,19 +292,6 @@ alienDeployments:
     length: 40
     height: 10
     missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS
-ufopaedia:
-  - id: STR_SMALL_FIGHTER
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_SMALL_FIGHTER
-    text: STR_SMALL_FIGHTER_UFOPEDIA
-  - id: STR_TROOP_LANDER
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_TROOP_LANDER
-    text: STR_TROOP_LANDER_UFOPEDIA
 items:
   - type: STR_SMALL_FIGHTER_ANALYSIS
     size: 0.1
