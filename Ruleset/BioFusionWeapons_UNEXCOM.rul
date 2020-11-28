@@ -78,7 +78,7 @@ items:
     explosionSpeed: 4
     vaporColorSurface: 1
     vaporDensitySurface: 10
-    power: 150
+    power: 75
     damageType: 3
     damageAlter:
       RadiusReduction: 45
@@ -168,7 +168,7 @@ items:
     bigSprite: 1105
     floorSprite: 1105
     explosionSpeed: 4
-    power: 180
+    power: 80
     damageType: 3
     vaporColorSurface: 1
     vaporDensitySurface: 10
@@ -374,7 +374,71 @@ extraSprites:
     files:
       0: Resources/UFOpedia/INITIAL_FUSION_CELLS_RESEARCH_IMAGE.PNG
 
+ufopaedia:
+  - id: STR_FUSION_HANDGUN
+    requires:
+      - STR_FUSION_HANDGUN
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_HANDGUN_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_SMG
+    requires:
+      - STR_FUSION_SMG
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_SMG_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_RIFLE
+    requires:
+      - STR_FUSION_RIFLE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_RIFLE_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_SNIPER
+    requires:
+      - STR_FUSION_SNIPER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FUSION_SNIPER_UFOPEDIA
+#    listOrder: 2092
+  - id: STR_FUSION_POWER_CELL_LIGHT
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_FUSION_POWER_CELL_HEAVY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
 
+  - id: STR_FUSION_WEAPONS_RESEARCH_1
+    type_id: 7
+#    type_id: 8
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: FUSION_WEAPONS_RESEARCH_IMAGE_1
+    text: STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA
+    text_width: 150
+
+  - id: STR_FUSION_WEAPONS_RESEARCH_2
+    type_id: 7
+#    type_id: 8
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: FUSION_WEAPONS_RESEARCH_IMAGE_2
+    text: STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA
+    text_width: 130
+
+  - id: STR_INITIAL_FUSION_CELLS_RESEARCH
+    type_id: 7
+#    type_id: 8
+    requires:
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: INITIAL_FUSION_CELLS_RESEARCH_IMAGE
+    text: STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA
+    text_width: 150
 
 extraStrings:
   - type: en-US
