@@ -157,7 +157,7 @@ items:
     floorSprite: 1211
     handSprite: 0
     damageType: 1
-    hitAnimation: 26
+    hitAnimation: -1
     bulletSprite: 2
     power: 35
     hitSound: 22
@@ -585,6 +585,7 @@ items:
     battleType: 2
     attraction: 8
 
+
   - type: STR_ALLOY_HEAVY_FL
     requires:
       - STR_ALLOY_HEAVY
@@ -596,7 +597,7 @@ items:
     floorSprite: 1207
     handSprite: 0
     damageType: 1
-    hitAnimation: 26
+    hitAnimation: -1
     bulletSprite: 2
     battleType: 2
     power: 35

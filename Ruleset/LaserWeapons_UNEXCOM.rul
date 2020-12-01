@@ -209,7 +209,7 @@ items:
     bulletSprite: 27
     fireSound: 2962
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     power: 35
     damageType: 4
     confAuto:
@@ -350,7 +350,7 @@ items:
     bulletSprite: 27
     fireSound: 2966
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     power: 52
     damageType: 4
     accuracyAuto: 65
@@ -361,13 +361,11 @@ items:
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
-    tuAuto: 28
-    tuSnap: 34
     costSnap:
-      time: 34
+      time: 28
       mana: 5
     costAuto:
-      time: 28
+      time: 34
       mana: 15
     twoHanded: true
     clipSize: -1
@@ -531,7 +529,7 @@ items:
     handSprite: 2088
     fireSound: 2963
     hitSound: 19
-    hitAnimation: 90
+    hitAnimation: -1
     bulletSprite: 28
     power: 55
     damageType: 4
@@ -623,7 +621,7 @@ items:
     handSprite: 2104
     fireSound: 2962
     hitSound: 19
-    hitAnimation: 90
+    hitAnimation: -1
     bulletSprite: 28
     power: 45
     damageType: 4
@@ -716,7 +714,7 @@ items:
     handSprite: 2120
     fireSound: 2966
     hitSound: 19
-    hitAnimation: 90
+    hitAnimation: -1
     bulletSprite: 28
     power: 55
     damageType: 4
@@ -1046,7 +1044,7 @@ items:
     handSprite: 2152
     fireSound: 2962
     hitSound: 19
-    hitAnimation: 100
+    hitAnimation: -1
     bulletSprite: 29
     power: 60
     damageType: 4
@@ -1138,7 +1136,7 @@ items:
     handSprite: 2168
     fireSound: 2966
     hitSound: 19
-    hitAnimation: 100
+    hitAnimation: -1
     bulletSprite: 29
     power: 65
     damageType: 4
