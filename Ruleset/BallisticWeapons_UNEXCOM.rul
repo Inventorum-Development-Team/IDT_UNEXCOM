@@ -846,7 +846,7 @@ items:
     weight: 2
     bigSprite: 129
     floorSprite: 129
-    fireSound: 1016
+    fireSound: 147
     hitAnimation: 26
     power: 35
     damageType: 1
@@ -1873,7 +1873,7 @@ items:
     invWidth: 1
     invHeight: 3
 # Bayonet segment
-    meleeHitSound: 1011
+    meleeHitSound: 178
     meleeAnimation: 0
     meleeType: 7
     meleePower: 45
@@ -1951,7 +1951,7 @@ items:
     bigSprite: 156
     floorSprite: 156
     handSprite: 548
-    bulletSprite: 17
+    bulletSprite: 1
     bulletSpeed: 20
     fireSound: 156
     reloadSound: [190, 191, 192, 194]
@@ -2328,7 +2328,7 @@ items:
     bigSprite: 165
     floorSprite: 165
     handSprite: 620
-    meleeHitSound: 107
+    meleeHitSound: 165
     meleeAnimation: 8
     power: 35
     damageType: 7
@@ -2409,7 +2409,7 @@ items:
     bigSprite: 167
     floorSprite: 167
     handSprite: 636
-    bulletSprite: 17
+    bulletSprite: 1
     bulletSpeed: 20
     fireSound: 167
     reloadSound: [190, 191, 192, 194]
@@ -2500,7 +2500,7 @@ items:
     bigSprite: 169
     floorSprite: 169
     handSprite: 652
-    meleeHitSound: 107
+    meleeHitSound: 198
     meleeAnimation: 8
     power: 20
     damageType: 7
@@ -2795,7 +2795,7 @@ items:
     bigSprite: 173
     floorSprite: 173
     handSprite: 684
-    bulletSprite: 17
+    bulletSprite: 1
     bulletSpeed: 25
     fireSound: 149
     reloadSound: [190, 191, 192, 194]
@@ -2915,7 +2915,7 @@ items:
     invHeight: 3
     armor: 30
 # Bayonet segment
-    meleeHitSound: 1011
+    meleeHitSound: 178
     meleeAnimation: 0
     meleeType: 7
     meleePower: 70
@@ -3806,7 +3806,7 @@ items:
     invWidth: 1
     invHeight: 3
 # Bayonet segment
-    meleeHitSound: 1011
+    meleeHitSound: 178
     meleeAnimation: 0
     meleeType: 7
     meleePower: 45
@@ -4502,7 +4502,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      386: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
+      4000: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
 
   - type: MEDIKIT_BACKGROUND
     singleImage: true
