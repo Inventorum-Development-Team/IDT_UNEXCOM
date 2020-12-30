@@ -62,7 +62,6 @@ ufopaedia:
     text_width: 316
 
   - id: STR_TUNNAN
-    type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_TUNNAN_UFOPEDIA
     listOrder: 100
@@ -2374,13 +2373,21 @@ ufopaedia:
     text: STR_AR5_UFOPEDIA
     listOrder: 4602
 
+  - id: STR_SKS
+    requires:
+      - STR_SKS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SKS_UFOPEDIA
+    listOrder: 4603
+
   - id: STR_XM21
     requires:
       - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_XM21_UFOPEDIA
-    listOrder: 4603
+    listOrder: 4604
 
   - id: STR_PSG1
     requires:
@@ -2388,7 +2395,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_PSG1_UFOPEDIA
-    listOrder: 4604
+    listOrder: 4605
 
   - id: STR_DRAGUNOV
     requires:
@@ -2396,7 +2403,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_DRAGUNOV_UFOPEDIA
-    listOrder: 4605
+    listOrder: 4606
 
   - id: STR_ULYSSES_LASER_SNIPER_RIFLE
     type_id: 4
@@ -2404,7 +2411,7 @@ ufopaedia:
     requires:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
-    listOrder: 4606
+    listOrder: 4607
 
   - id: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
     type_id: 4
@@ -2412,7 +2419,7 @@ ufopaedia:
     requires:
       - STR_NATO_LASER_HEAVY_WEAPONS
     text: STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA
-    listOrder: 4607
+    listOrder: 4608
 
   - id: STR_MIRINOV_LASER_SNIPER
     type_id: 4
@@ -2420,7 +2427,7 @@ ufopaedia:
     requires:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
-    listOrder: 4608
+    listOrder: 4609
 
   - id: STR_FLECHETTE_SNIPER
     type_id: 4
@@ -2428,7 +2435,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_HEAVY
     text: STR_FLECHETTE_SNIPER_UFOPEDIA
-    listOrder: 4609
+    listOrder: 46010
 
   - id: STR_HUMAN_PLASMA_DMR
     type_id: 4
@@ -2436,14 +2443,14 @@ ufopaedia:
     requires:
       - STR_HUMAN_PLASMA_DMR
     text: STR_HUMAN_PLASMA_DMR_UFOPEDIA
-    listOrder: 4610
+    listOrder: 4611
   - id: STR_HUMAN_SNIPER_PLASMA
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_HUMAN_SNIPER_PLASMA
     text: STR_HUMAN_SNIPER_PLASMA_UFOPEDIA
-    listOrder: 4611
+    listOrder: 4612
 
   - id: STR_ARTILLERY_REPORT
     type_id: 7
