@@ -243,7 +243,7 @@ items:
 ####### M551 SHERIDAN #################
 #####################################
   - type: STR_SHERIDAN_TANK
-    categories: [STR_TANKS, STR_USA_TECH, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 6
@@ -296,7 +296,7 @@ items:
     waypoints: 2
     listOrder: 1403
   - type: STR_152MM_CANNON_SHELLS
-    categories: [STR_TANKS, STR_USA_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.1
@@ -322,7 +322,7 @@ items:
     invHeight: 1
     listOrder: 1402
   - type: STR_MGM51_MISSILE
-    categories: [STR_TANKS, STR_USA_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.6
@@ -463,7 +463,7 @@ items:
 ####### BMD-1 AIRBORNE IFV ##########
 #####################################
   - type: STR_BMD1_TANK
-    categories: [STR_TANKS, STR_USSR_TECH, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     size: 6
@@ -518,7 +518,7 @@ items:
     turretType: -1
     listOrder: 1410
   - type: STR_73MM_CANNON_SHELLS
-    categories: [STR_TANKS, STR_USSR_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
@@ -544,7 +544,7 @@ items:
     invHeight: 1
     listOrder: 1411
   - type: STR_PKT_AMMO_BOX
-    categories: [STR_TANKS, STR_USSR_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.6
@@ -806,63 +806,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
-ufopaedia:
-  - delete: STR_TANK_CANNON
-  - delete: STR_TANK_ROCKET_LAUNCHER
-#####################################
-  - id: STR_FERRET_CAR
-    type_id: 3
-    image_id: FERRET_BACKGROUND
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FERRET_CAR_UFOPEDIA
-    weapon: STR_DOUBLE_50CAL
-    listOrder: 1200
-  - id: STR_SHERIDAN_TANK
-    type_id: 3
-    image_id: SHERIDAN_BACKGROUND
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    text: STR_SHERIDAN_UFOPEDIA
-    weapon: STR_M81E1
-#    weapon: STR_SHERIDAN_TANK
-    listOrder: 1201
-  - id: STR_BMD1_TANK
-    type_id: 3
-    image_id: BMD1_BACKGROUND
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    text: STR_BMD1_UFOPEDIA
-    weapon: STR_2A28_GROM
-    listOrder: 1202
-  - id: STR_SALADIN_CAR
-    type_id: 3
-    image_id: SALADIN_BACKGROUND
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    text: STR_SALADIN_CAR_UFOPEDIA
-    weapon: STR_L5A1_GUN
-    listOrder: 1203
-  - id: STR_TANK_LASER_CANNON
-    type_id: 3
-    image_id: LEGIONNAIRE_BACKGROUND
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_TANK_LASER_CANNON
-    text: STR_LEGIONNAIRE_TANK_UFOPEDIA
-    weapon: STR_XM343
-    listOrder: 1205
-  - id: STR_IMP_TANK_CHASSIS
-    type_id: 7
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_IMP_TANK_CHASSIS
-    image_id: IMP_TANK_CHASSIS_IMAGE
-    text: STR_IMP_TANK_CHASSIS_UFOPEDIA
-    listOrder: 1204
-    text_width: 310
+
 extraSprites:
   - type: FERRET.PCK
     width: 256
@@ -990,7 +934,6 @@ research:
       - STR_IMP_TANK_CHASSIS
 manufacture:
   - name: STR_TANK_LASER_CANNON
-    category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
       - STR_TANK_LASER_CANNON
     space: 25

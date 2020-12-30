@@ -29,6 +29,8 @@
     listOrder: 15
   - type: STR_LASER
     listOrder: 16
+  - type: STR_ALLOY
+    listOrder: 16
   - type: STR_SMART
     listOrder: 18
   - type: STR_PLASMA
@@ -59,6 +61,8 @@
     listOrder: 72
   - type: STR_MERCENARY_TECH
     listOrder: 73
+  - type: STR_WEAPON_CONVERSION
+    listOrder: 74
   - type: STR_PISTOLS
     listOrder: 80
   - type: STR_RIFLES
@@ -99,6 +103,7 @@ extraStrings:
       STR_BALLISTIC: Ballistic Weapons
       STR_LASER: Laser Weapons
       STR_PLASMA: Plasma Weapons
+      STR_ALLOY: "Alloy Weapons"
       STR_SMART: Smart Weapons
       STR_TANKS: Tanks
       STR_ARMORED_CARS: Armored Cars
@@ -126,6 +131,7 @@ extraStrings:
       STR_CIVILIAN_TECH: Civilian Tech
       STR_SPECIAL_FORCES_TECH: Special Forces Tech
       STR_MERCENARY_TECH: Mercenary Tech
+      STR_WEAPON_CONVERSION: "Weapon Conversion"
       STR_ALIEN_TECH: Alien Tech
       STR_PISTOLS: Pistols
       STR_RIFLES: Rifles
@@ -613,34 +619,8 @@ items:
   - delete: STR_HWP_CANNON_SHELLS
   - delete: STR_HWP_ROCKETS
 
-ufopaedia:
 #DELETE
-  - delete: STR_STINGRAY_LAUNCHER
-  - delete: STR_STINGRAY_MISSILES
-  - delete: STR_AVALANCHE_LAUNCHER
-  - delete: STR_AVALANCHE_MISSILES
-  - delete: STR_CANNON
-  - delete: STR_CANNON_ROUNDS_X50
-  - delete: STR_TANK_CANNON
-  - delete: STR_TANK_ROCKET_LAUNCHER
-  - delete: STR_INTERCEPTOR
-  - delete: STR_SKYRANGER
-  - delete: STR_PISTOL
-  - delete: STR_PISTOL_CLIP
-  - delete: STR_RIFLE
-  - delete: STR_RIFLE_CLIP
-  - delete: STR_HEAVY_CANNON
-  - delete: STR_HC_AP_AMMO
-  - delete: STR_HC_I_AMMO
-  - delete: STR_HC_HE_AMMO
-  - delete: STR_AUTO_CANNON
-  - delete: STR_AC_AP_AMMO
-  - delete: STR_AC_I_AMMO
-  - delete: STR_AC_HE_AMMO
-  - delete: STR_ROCKET_LAUNCHER
-  - delete: STR_SMALL_ROCKET
-  - delete: STR_LARGE_ROCKET
-  - delete: STR_INCENDIARY_ROCKET
+
 
 
 

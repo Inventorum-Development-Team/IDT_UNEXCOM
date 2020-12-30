@@ -14,7 +14,7 @@ items:
 #################################
 
   - type: STR_M1972_LASER_PISTOL
-    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
     size: 0.1
@@ -56,7 +56,7 @@ items:
     invHeight: 2
 
   - type: STR_38_LASER_MAGNUM
-    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
     size: 0.2
@@ -99,7 +99,7 @@ items:
     invHeight: 2
 
   - type: STR_CALBR
-    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
     size: 0.3
@@ -146,7 +146,7 @@ items:
 
 
   - type: STR_M20_M203_LASER_CARBINE
-    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
     size: 0.3
@@ -196,7 +196,7 @@ items:
     invHeight: 3
 
   - type: STR_M5_LASER_SMG
-    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
     size: 0.2
@@ -209,7 +209,7 @@ items:
     bulletSprite: 27
     fireSound: 2962
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     power: 35
     damageType: 4
     confAuto:
@@ -245,7 +245,7 @@ items:
     invHeight: 3
 
   - type: STR_ULYSSES_LASER_SNIPER_RIFLE
-    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -337,7 +337,7 @@ items:
     armor: 250
 
   - type: STR_M4_LASER_LMG
-    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USA_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -350,7 +350,7 @@ items:
     bulletSprite: 27
     fireSound: 2966
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     power: 52
     damageType: 4
     accuracyAuto: 65
@@ -361,13 +361,11 @@ items:
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
-    tuAuto: 28
-    tuSnap: 34
     costSnap:
-      time: 34
+      time: 28
       mana: 5
     costAuto:
-      time: 28
+      time: 34
       mana: 15
     twoHanded: true
     clipSize: -1
@@ -381,7 +379,7 @@ items:
     invHeight: 3
 
   - type: STR_ELERIUM_FLAMETHROWER
-    categories: [STR_ARTILLERY, STR_USA_TECH, STR_LASER]
+    categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     size: 0.2
@@ -417,7 +415,6 @@ items:
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
-      ArmorEffectiveness: 0.75
     clipSize: -1
     autoShots: 5
     sprayWaypoints: 2
@@ -531,7 +528,7 @@ items:
     handSprite: 2088
     fireSound: 2963
     hitSound: 19
-    hitAnimation: 90
+    hitAnimation: -1
     bulletSprite: 28
     power: 55
     damageType: 4
@@ -623,7 +620,7 @@ items:
     handSprite: 2104
     fireSound: 2962
     hitSound: 19
-    hitAnimation: 90
+    hitAnimation: -1
     bulletSprite: 28
     power: 45
     damageType: 4
@@ -716,7 +713,7 @@ items:
     handSprite: 2120
     fireSound: 2966
     hitSound: 19
-    hitAnimation: 90
+    hitAnimation: -1
     bulletSprite: 28
     power: 55
     damageType: 4
@@ -748,7 +745,7 @@ items:
     invHeight: 3
 
   - type: STR_M72_AUTOMATIC_RECOILESS_RIFLE
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
     size: 0.4
@@ -882,8 +879,6 @@ items:
     power: 130
     damageAlter:
       IgnoreOverKill: false
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
       ToWound: 1.3
@@ -900,7 +895,7 @@ items:
 ###### USSR LASER WEAPONS ########
 #################################
   - type: STR_P72_COMPACT_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HANDGUNS
     size: 0.1
@@ -942,7 +937,7 @@ items:
     invHeight: 2
 
   - type: STR_ALK72_LASER_RIFLE
-    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
     size: 0.3
@@ -988,7 +983,7 @@ items:
     invHeight: 3
 
   - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
-    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
     size: 0.3
@@ -1034,7 +1029,7 @@ items:
     invHeight: 3
 
   - type: STR_ALP_SUBMACHINE_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
     size: 0.2
@@ -1046,7 +1041,7 @@ items:
     handSprite: 2152
     fireSound: 2962
     hitSound: 19
-    hitAnimation: 100
+    hitAnimation: -1
     bulletSprite: 29
     power: 60
     damageType: 4
@@ -1083,7 +1078,7 @@ items:
     invHeight: 3
 
   - type: STR_MIRINOV_LASER_SNIPER
-    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -1126,7 +1121,7 @@ items:
     invHeight: 3
 
   - type: STR_AN_MACHINE_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -1138,7 +1133,7 @@ items:
     handSprite: 2168
     fireSound: 2966
     hitSound: 19
-    hitAnimation: 100
+    hitAnimation: -1
     bulletSprite: 29
     power: 65
     damageType: 4
@@ -1176,7 +1171,7 @@ items:
     invHeight: 3
 
   - type: STR_AFINA_ANTITANK_LASER
-    categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_USSR_TECH]
+    categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
     size: 0.3
@@ -1269,188 +1264,6 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 5
 
-ufopaedia:
-
-##############################
-  - id: STR_M1972_LASER_PISTOL
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_HANDGUNS
-    text: STR_M1972_LASER_PISTOL_UFOPEDIA
-  - id: STR_38_LASER_MAGNUM
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_HANDGUNS
-    text: STR_38_LASER_MAGNUM_UFOPEDIA
-  - id: STR_CALBR
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_RIFLES
-    text: STR_CALBR_UFOPEDIA
-  - id: STR_M20_M203_LASER_CARBINE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_RIFLES
-    text: STR_M20_M203_LASER_CARBINE_UFOPEDIA
-  - id: STR_M5_LASER_SMG
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    text: STR_M5_LASER_SMG_UFOPEDIA
-  - id: STR_ULYSSES_LASER_SNIPER_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_HEAVY_WEAPONS
-    text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
-  - id: STR_X4_LASER_SHOTGUN
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    text: STR_X4_LASER_SHOTGUN_UFOPEDIA
-  - id: STR_M4_LASER_LMG
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_HEAVY_WEAPONS
-    text: STR_M4_LASER_LMG_UFOPEDIA
-  - id: STR_ELERIUM_FLAMETHROWER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USA_LASER_HEAVY_WEAPONS
-    text: STR_ELERIUM_FLAMETHROWER_UFOPEDIA
-##############################
-##############################
-  - id: STR_P71_LASER_PISTOL
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_HANDGUNS
-    text: STR_P71_LASER_PISTOL_UFOPEDIA
-  - id: STR_FN_FLA_LASER_BATTLE_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_RIFLES
-    text: STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA
-  - id: STR_FN_FLA_LASER_CARBINE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_RIFLES
-    text: STR_FN_FLA_LASER_CARBINE_UFOPEDIA
-  - id: STR_L4_ASSAULT_LASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_RIFLES
-    text: STR_L4_ASSAULT_LASER_UFOPEDIA
-  - id: STR_MAT72_SUBMACHINE_LASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
-    text: STR_MAT72_SUBMACHINE_LASER_UFOPEDIA
-  - id: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    text: STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA
-  - id: STR_ML73_LASER_MACHINE_GUN
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    text: STR_ML73_LASER_MACHINE_GUN_UFOPEDIA
-  - id: STR_M72_AUTOMATIC_RECOILESS_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    text: STR_M72_AUTOMATIC_RECOILESS_RIFLE_UFOPEDIA
-  - id: STR_M72_ARR_HEAT_MAG
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-  - id: STR_M72_ARR_HE_MAG
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-  - id: STR_M72_ARR_SMOKE_MAG
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-  - id: STR_M72_ARR_ELERIUM_MAG
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-##################################
-##############################
-  - id: STR_P72_COMPACT_LASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_HANDGUNS
-    text: STR_P72_COMPACT_LASER_UFOPEDIA
-  - id: STR_ALK72_LASER_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_RIFLES
-    text: STR_ALK72_LASER_RIFLE_UFOPEDIA
-  - id: STR_KHARITONOV_LASER_BATTLE_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_RIFLES
-    text: STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA
-  - id: STR_ALP_SUBMACHINE_LASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_HANDGUNS
-    text: STR_ALP_SUBMACHINE_LASER_UFOPEDIA
-  - id: STR_MIRINOV_LASER_SNIPER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_HEAVY_WEAPONS
-    text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
-  - id: STR_AN_MACHINE_LASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_HEAVY_WEAPONS
-    text: STR_AN_MACHINE_LASER_UFOPEDIA
-  - id: STR_AFINA_ANTITANK_LASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_USSR_LASER_HEAVY_WEAPONS
-    text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
-  - id: STR_BATTERY
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_BATTERY_UFOPAEDIA
-  - id: STR_ELERIUM_BATTERY
-    type_id: 4
-    requires:
-      - STR_ELERIUM_FUSION
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_ELERIUM_BATTERY_UFOPAEDIA
-  - id: STR_POWER_RESERVES
-    type_id: 8
-    section: STR_HEAVY_WEAPONS_PLATFORMS
-    text: STR_POWER_RESERVES_UFOPEDIA
-###############################
-# Disabled Basic Weapons
-  - delete: STR_LASER_PISTOL
-  - delete: STR_LASER_RIFLE
-  - delete: STR_HEAVY_LASER
 
 extraStrings:
   - type: en-US

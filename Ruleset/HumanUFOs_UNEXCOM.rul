@@ -529,34 +529,7 @@ research:
     needItem: true
 
 ##############################
-ufopaedia:
-###############################
-###### TERRORIST CRAFTS #########
-##############################
-  - id: STR_TEXAN_UFO
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_TEXAN_UFO
-    text: STR_TEXAN_UFO_UFOPEDIA
-  - id: STR_MAGISTER_UFO
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_MAGISTER_UFO
-    text: STR_MAGISTER_UFO_UFOPEDIA
-#  - id: STR_MI8_TERRORIST_UFO
-#    type_id: 9
-#    section: STR_UFOS
-#    requires:
-#      - STR_MI8_TERRORIST_UFO
-#    text: STR_MI8_TERRORIST_UFO_UFOPEDIA
-  - id: STR_MI8_UFO
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_MI8_UFO
-    text: STR_MI8_UFO_UFOPEDIA
+
 
 extraSprites:
   - type: UFO_MAGISTER

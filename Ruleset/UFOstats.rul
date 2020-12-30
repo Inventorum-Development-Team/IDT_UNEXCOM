@@ -4,7 +4,7 @@ ufos:
     size: STR_VERY_SMALL
     sprite: 0
     damageMax: 50
-    speedMax: 2200
+    speedMax: 1800
     accel: 12
     avoidBonus: 10
     power: 15
@@ -16,7 +16,7 @@ ufos:
     size: STR_SMALL
     sprite: 1
     damageMax: 200
-    speedMax: 1600
+    speedMax: 1200
     accel: 9
     power: 40
     range: 30
@@ -34,7 +34,7 @@ ufos:
     size: STR_SMALL
     sprite: 2
     damageMax: 250
-    speedMax: 1400
+    speedMax: 1000
     accel: 9
     power: 50
     hitBonus: 10
@@ -103,7 +103,7 @@ ufos:
     modSprite: InterceptionSentry
     size: STR_SMALL
     damageMax: 200
-    speedMax: 1800
+    speedMax: 1400
     accel: 8
     power: 35
     hitBonus: 10
@@ -125,7 +125,7 @@ ufos:
     modSprite: InterceptionExcavator
     size: STR_SMALL
     damageMax: 270
-    speedMax: 1000
+    speedMax: 600
     accel: 6
     power: 25
     range: 30
@@ -136,7 +136,7 @@ ufos:
     size: STR_MEDIUM_UC
     sprite: 4
     damageMax: 500
-    speedMax: 1000
+    speedMax: 800
     power: 120
     hitBonus: 10
     range: 50
@@ -150,7 +150,7 @@ ufos:
     size: STR_MEDIUM_UC
     sprite: 3
     damageMax: 500
-    speedMax: 800
+    speedMax: 600
     power: 100
     range: 45
     score: 250
@@ -292,19 +292,6 @@ alienDeployments:
     length: 40
     height: 10
     missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS
-ufopaedia:
-  - id: STR_SMALL_FIGHTER
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_SMALL_FIGHTER
-    text: STR_SMALL_FIGHTER_UFOPEDIA
-  - id: STR_TROOP_LANDER
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_TROOP_LANDER
-    text: STR_TROOP_LANDER_UFOPEDIA
 items:
   - type: STR_SMALL_FIGHTER_ANALYSIS
     size: 0.1

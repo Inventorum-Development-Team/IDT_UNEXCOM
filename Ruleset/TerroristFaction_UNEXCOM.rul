@@ -363,38 +363,7 @@ research:
     needItem: true
     listOrder: 12680
 
-ufopaedia:
-  - id: STR_TERRORISTS
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    image_id: TERRORIST_FACTION_IMAGE
-    text: STR_TERRORISTS_UFOPEDIA
-    text_width: 158
-    requires:
-      - STR_TERRORISTS
-    listOrder: 150300
 
-  - id: STR_TERRORISTS_OPERATIONS
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    image_id: TERRORIST_OPERATIONS_IMAGE
-    text: STR_TERRORISTS_OPERATIONS_UFOPEDIA
-    text_width: 158
-    requires:
-      - STR_TERRORISTS_OPERATIONS
-    listOrder: 150300
-
-  - id: STR_TERRORIST_AUTOPSY
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    image_id: AUTOPSY_IMAGE
-    text: STR_TERRORIST_AUTOPSY_UFOPEDIA
-    text_width: 158
-    requires:
-      - STR_TERRORIST_FEMALE_CORPSE
-      - STR_TERRORIST_MALE_CORPSE
-      - STR_TERRORIST_GASMASK_CORPSE
-    listOrder: 150310
 
 extraSprites:
   - type: TERRORIST_MALE_SPRITESHEET.PCK

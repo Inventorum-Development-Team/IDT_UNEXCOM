@@ -416,35 +416,6 @@ research:
     needItem: true
 
 
-ufopaedia:
-  - id: STR_EXCAVATOR
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_EXCAVATOR
-    text: STR_EXCAVATOR_UFOPEDIA
-    listOrder: 12800
-  - id: STR_FIGHTER_SHIP
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_FIGHTER_SHIP
-    text: STR_FIGHTER_SHIP_UFOPEDIA
-    listOrder: 12900
-  - id: STR_SENTRY_SHIP
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_SENTRY_SHIP
-    text: STR_SENTRY_SHIP_UFOPEDIA
-    listOrder: 13000
-  - id: STR_LAB_SHIP
-    type_id: 9
-    section: STR_UFOS
-    requires:
-      - STR_LAB_SHIP
-    text: STR_LAB_SHIP_UFOPEDIA
-    listOrder: 13100
 extraSprites:
   - type: InterceptionExcavator
     singleImage: true

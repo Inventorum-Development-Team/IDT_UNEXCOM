@@ -394,7 +394,7 @@ items:
     weight: 3
     bigSprite: 110
     floorSprite: 110
-    hitAnimation: 26
+    hitAnimation: -1
     hitSound: 22
     damageType: 1
     damageAlter:
@@ -418,7 +418,7 @@ items:
     weight: 3
     bigSprite: 111
     floorSprite: 111
-    hitAnimation: 26
+    hitAnimation: -1
     hitSound: 22
     damageType: 1
     damageAlter:
@@ -513,7 +513,7 @@ items:
     weight: 5
     bigSprite: 115
     floorSprite: 115
-    hitAnimation: 26
+    hitAnimation: -1
     hitSound: 22
     damageType: 1
     damageAlter:
@@ -753,7 +753,6 @@ items:
     armor: 20
     damageAlter:
       FixRadius: 7
-      ArmorEffectiveness: 0.75
     blastRadius: 7
     listOrder: 2023
   - type: STR_40MM_SMOKE
@@ -846,7 +845,7 @@ items:
     weight: 2
     bigSprite: 129
     floorSprite: 129
-    fireSound: 1016
+    fireSound: 147
     hitAnimation: 26
     power: 35
     damageType: 1
@@ -930,8 +929,6 @@ items:
     power: 95
     damageAlter:
       IgnoreOverKill: false
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
       ToWound: 1.3
@@ -989,8 +986,6 @@ items:
     power: 95
     damageAlter:
       IgnoreOverKill: false
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.3
       RadiusReduction: 40
     damageType: 2
     clipSize: 1
@@ -1073,9 +1068,6 @@ items:
     invHeight: 2
     invWidth: 1
     battleType: 1
-    damageBonus:
-      firing: 1.0
-      reactions: 1.0
     armor: 250
     listOrder: 2028
 
@@ -1437,10 +1429,6 @@ items:
     fireSound: 145
     bulletSpeed: 20
     reloadSound: 197
-    damageBonus:
-      bravery: 3.0
-      firing: 0.4
-      reactions: 0.7
     compatibleAmmo:
       - STR_22_LONG_RIFLE_X14
     accuracyCloseQuarters: 70
@@ -1605,7 +1593,7 @@ items:
     listOrder: 2042
 
   - type: STR_MP5
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LIGHT_WEAPONS, STR_SMGS]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.2
@@ -1639,7 +1627,6 @@ items:
     tuAuto: 32
     tuSnap: 24
     tuAimed: 45
-    autoShots: 4
     sprayWaypoints: 2
     costThrow:
       energy: 12
@@ -1689,8 +1676,6 @@ items:
     costThrow:
       energy: 20
     battleType: 1
-    damageBonus:
-      firing: 0.9
     damageAlter:
       ArmorEffectiveness: 1.2
     twoHanded: true
@@ -1705,7 +1690,7 @@ items:
     listOrder: 2044
 
   - type: STR_FN_MAG
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LMGS]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.3
@@ -1745,13 +1730,12 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    autoShots: 6
     sprayWaypoints: 2
     attraction: 10
     listOrder: 2045
 
   - type: STR_CARL_GUSTAF_M2
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.4
@@ -1875,7 +1859,7 @@ items:
     invWidth: 1
     invHeight: 3
 # Bayonet segment
-    meleeHitSound: 1011
+    meleeHitSound: 178
     meleeAnimation: 0
     meleeType: 7
     meleePower: 45
@@ -1953,7 +1937,7 @@ items:
     bigSprite: 156
     floorSprite: 156
     handSprite: 548
-    bulletSprite: 17
+    bulletSprite: 1
     bulletSpeed: 20
     fireSound: 156
     reloadSound: [190, 191, 192, 194]
@@ -1987,7 +1971,6 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 30
-    autoShots: 4
     sprayWaypoints: 2
     attraction: 7
     listOrder: 2053
@@ -2079,7 +2062,7 @@ items:
     listOrder: 2055
 #
   - type: STR_RPG
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_ARTILLERY]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_ARTILLERY]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.2
@@ -2112,7 +2095,7 @@ items:
     listOrder: 2056
 #
   - type: STR_RPKS
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_HEAVY_WEAPONS, STR_LMGS]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_LMGS]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.3
@@ -2152,7 +2135,6 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    autoShots: 6
     sprayWaypoints: 2
     attraction: 9
     listOrder: 2060
@@ -2311,7 +2293,6 @@ items:
     aimRange: 10
     autoRange: 10
     dropoff: 3
-    autoShots: 2
     tuLoad: 10
     battleType: 1
     twoHanded: true
@@ -2333,7 +2314,7 @@ items:
     bigSprite: 165
     floorSprite: 165
     handSprite: 620
-    meleeHitSound: 107
+    meleeHitSound: 165
     meleeAnimation: 8
     power: 35
     damageType: 7
@@ -2414,7 +2395,7 @@ items:
     bigSprite: 167
     floorSprite: 167
     handSprite: 636
-    bulletSprite: 17
+    bulletSprite: 1
     bulletSpeed: 20
     fireSound: 167
     reloadSound: [190, 191, 192, 194]
@@ -2449,7 +2430,6 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 30
-    autoShots: 6
     sprayWaypoints: 2
     attraction: 8
     listOrder: 2106
@@ -2506,7 +2486,7 @@ items:
     bigSprite: 169
     floorSprite: 169
     handSprite: 652
-    meleeHitSound: 107
+    meleeHitSound: 198
     meleeAnimation: 8
     power: 20
     damageType: 7
@@ -2786,7 +2766,6 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 40
-    autoShots: 6
     sprayWaypoints: 3
     attraction: 10
     listOrder: 2114
@@ -2802,7 +2781,7 @@ items:
     bigSprite: 173
     floorSprite: 173
     handSprite: 684
-    bulletSprite: 17
+    bulletSprite: 1
     bulletSpeed: 25
     fireSound: 149
     reloadSound: [190, 191, 192, 194]
@@ -2847,7 +2826,7 @@ items:
   - type: STR_AKM
     requiresBuy:
       - STR_AKM
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_ASSAULT_RIFLES]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES]
     size: 0.2
     costBuy: 2500
     costSell: 1500
@@ -2922,7 +2901,7 @@ items:
     invHeight: 3
     armor: 30
 # Bayonet segment
-    meleeHitSound: 1011
+    meleeHitSound: 178
     meleeAnimation: 0
     meleeType: 7
     meleePower: 70
@@ -3122,7 +3101,7 @@ items:
 ###############################
 
   - type: STR_CANNED_FOOD
-    categories: [STR_FOOD, STR_LIGHT_EQUIPMENT]
+    categories: [ STR_LIGHT_EQUIPMENT]
     size: 0.1
     costBuy: 500
     costSell: 1200
@@ -3153,7 +3132,7 @@ items:
     listOrder: 2128
 
   - type: STR_CIGARETTES
-    categories: [STR_FOOD, STR_LIGHT_EQUIPMENT]
+    categories: [ STR_LIGHT_EQUIPMENT]
     size: 0.1
     costSell: 2000
     weight: 4
@@ -3183,7 +3162,7 @@ items:
     listOrder: 2129
 
   - type: STR_FLASK
-    categories: [STR_FOOD, STR_LIGHT_EQUIPMENT]
+    categories: [ STR_LIGHT_EQUIPMENT]
     size: 0.1
     costSell: 2000
     weight: 4
@@ -3212,7 +3191,7 @@ items:
     listOrder: 2130
 ########################################
   - type: STR_MEDI_KIT
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     requires:
       - STR_MEDI_KIT
     size: 0.1
@@ -3237,10 +3216,10 @@ items:
 
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT]
     size: 0.5
     costBuy: 2000
-    costSell: 4500
+    costSell: 1000
     weight: 10
     bigSprite: 195
     floorSprite: 195
@@ -3265,7 +3244,7 @@ items:
     listOrder: 2132
 
   - type: STR_FIELD_DRESSING
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT]
     size: 0.1
     costBuy: 100
     costSell: 50
@@ -3291,7 +3270,7 @@ items:
     listOrder: 2133
 
   - type: STR_MEDICAL_POUCH
-    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_UNDERWATER ]
+    categories: [STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     costBuy: 200
     costSell: 250
@@ -3431,7 +3410,6 @@ items:
     aimRange: 4
     autoRange: 4
     dropoff: 3
-    autoShots: 2
     tuLoad: 10
     battleType: 1
     twoHanded: false
@@ -3669,7 +3647,6 @@ items:
     invHeight: 3
     armor: 30
     autoRange: 11
-    autoShots: 4
     sprayWaypoints: 2
     aimRange: 25
     attraction: 12
@@ -3815,7 +3792,7 @@ items:
     invWidth: 1
     invHeight: 3
 # Bayonet segment
-    meleeHitSound: 1011
+    meleeHitSound: 178
     meleeAnimation: 0
     meleeType: 7
     meleePower: 45
@@ -4125,878 +4102,7 @@ items:
     armor: 20
     attraction: 6
 
-ufopaedia:
-########################################
-######## AMMO CLIPS & MAGAZINES ########
-########################################
-  - id: STR_KS23_SHARPNEL-25_X4
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_KS23_SHARPNEL-25_X4_UFOPEDIA
-    listOrder: 1995
 
-  - id: STR_KS23_BARRIKADE_X4
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_KS23_BARRIKADE_X4_UFOPEDIA
-    listOrder: 1996
-
-  - id: STR_KS23_SATANA_X4
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_KS23_SATANA_X4_UFOPEDIA
-    listOrder: 1997
-
-  - id: STR_9MM_PISTOL_X10
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_9MM_PISTOL_X10_UFOPEDIA
-    listOrder: 1998
-
-  - id: STR_9MM_PISTOL_X20
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_9MM_PISTOL_X20_UFOPEDIA
-    listOrder: 1999
-
-  - id: STR_9MM_PISTOL_X30
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_9MM_PISTOL_X30_UFOPEDIA
-    listOrder: 2000
-
-  - id: STR_45_PISTOL_X7
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_45_PISTOL_X7_UFOPEDIA
-    listOrder: 2001
-
-  - id: STR_45_PISTOL_X30
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_45_PISTOL_X30_UFOPEDIA
-    listOrder: 2001
-
-  - id: STR_50_CAL_REVOLVER_AMMO_X6
-    requires:
-      - STR_MERCENARY_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_50_CAL_REVOLVER_AMMO_X6_UFOPEDIA
-    listOrder: 2002
-
-  - id: STR_30_CARBINE_X15
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_30_CARBINE_X15_UFOPEDIA
-    listOrder: 2003
-
-  - id: STR_5_56MM_NATO_RIFLE_X20
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_5_56MM_NATO_RIFLE_X20_UFOPEDIA
-    listOrder: 2005
-
-  - id: STR_5_56MM_NATO_RIFLE_X30
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA
-    listOrder: 2006
-
-  - id: STR_7_62MM_NATO_RIFLE_X5
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA
-    listOrder: 2007
-
-  - id: STR_7_62MM_NATO_RIFLE_X20
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_NATO_RIFLE_X20_UFOPEDIA
-    listOrder: 2008
-
-  - id: STR_7_62MM_NATO_RIFLE_X30
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_NATO_RIFLE_X30_UFOPEDIA
-    listOrder: 2009
-
-  - id: STR_7_62MM_NATO_LMG_X50
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_NATO_LMG_X50_UFOPEDIA
-    listOrder: 2010
-
-  - id: STR_7_62MM_NATO_LMG_X100
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_NATO_LMG_X100_UFOPEDIA
-    listOrder: 2011
-
-  - id: STR_7_62MM_SOVIET_RIFLE_X10
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA
-    listOrder: 2012
-
-  - id: STR_7_62MM_SOVIET_RIFLE_X30
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_SOVIET_RIFLE_X30_UFOPEDIA
-    listOrder: 2013
-
-  - id: STR_7_62MM_SOVIET_RIFLE_X40
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_SOVIET_RIFLE_X40_UFOPEDIA
-    listOrder: 2014
-
-  - id: STR_7_62MM_SOVIET_RIFLE_X75
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_SOVIET_RIFLE_X75_UFOPEDIA
-    listOrder: 2015
-
-  - id: STR_7_62MM_SOVIET_SNIPER_X10
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_7_62MM_SOVIET_SNIPER_X10_UFOPEDIA
-    listOrder: 2016
-
-  - id: STR_12GAUGE_BUCKSHOT_X2
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_12GAUGE_BUCKSHOT_X2_UFOPEDIA
-    listOrder: 2017
-
-  - id: STR_12GAUGE_SLUG_X2
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_12GAUGE_SLUG_X2_UFOPEDIA
-    listOrder: 2018
-
-  - id: STR_12GAUGE_BUCKSHOT_X8
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_12GAUGE_BUCKSHOT_X8_UFOPEDIA
-    listOrder: 2019
-
-  - id: STR_12GAUGE_NON_LETHAL_X8
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_12GAUGE_NON_LETHAL_X8_UFOPEDIA
-    listOrder: 2020
-
-  - id: STR_12GAUGE_SLUG_X8
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_12GAUGE_SLUG_X8_UFOPEDIA
-    listOrder: 2021
-
-  - id: STR_12GAUGE_ELERIUM_SHARDS_X8
-    requires:
-      - STR_ELERIUM_FUSION
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_12GAUGE_ELERIUM_SHARDS_X8_UFOPEDIA
-    listOrder: 2021
-
-  - id: STR_40MM_FRAG
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_40MM_FRAG_UFOPEDIA
-    listOrder: 2022
-
-  - id: STR_40MM_INCENDIARY
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_40MM_INCENDIARY_UFOPEDIA
-    listOrder: 2023
-
-  - id: STR_40MM_SMOKE
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_40MM_SMOKE_UFOPEDIA
-    listOrder: 2024
-
-  - id: STR_40MM_NON_LETHAL
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_40MM_NON_LETHAL_UFOPEDIA
-    listOrder: 2025
-
-  - id: STR_38_REVOLVER_AMMO_X6
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_38_REVOLVER_AMMO_X6_UFOPEDIA
-    listOrder: 2026
-
-  - id: STR_22_LONG_RIFLE_X14
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_22_LONG_RIFLE_X14_UFOPEDIA
-    listOrder: 2027
-
-  - id: STR_FAL_SHOTGUN_SHELLS
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_FAL_SHOTGUN_SHELLS_UFOPEDIA
-    listOrder: 2028
-
-  - id: STR_CARL_GUSTAF_M2_HE_ROUND
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_CARL_GUSTAF_M2_HE_ROUND_UFOPEDIA
-    listOrder: 2029
-
-  - id: STR_CARL_GUSTAF_M2_HEAT_ROUND
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_CARL_GUSTAF_M2_HEAT_ROUND_UFOPEDIA
-    listOrder: 2030
-
-  - id: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
-    requires:
-      - STR_ELERIUM_FUSION
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_CARL_GUSTAF_M2_ELERIUM_ROUND_UFOPEDIA
-    listOrder: 2031
-
-  - id: STR_RPG_HE_ROCKET
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_RPG_HE_ROCKET_UFOPEDIA
-    listOrder: 2032
-
-  - id: STR_RPG_INC_ROCKET
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_RPG_INC_ROCKET_UFOPEDIA
-    listOrder: 2033
-
-  - id: STR_RPG_EWH_ROCKET
-    requires:
-      - STR_ELERIUM_FUSION
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_AMMUNITION
-    text: STR_RPG_EWH_ROCKET_UFOPEDIA
-    listOrder: 2034
-########################################
-###### TIER I WEAPONS (US SUPPLIED) ####
-########################################
-  - id: STR_M1911_COLT45
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M1911_COLT45_UFOPEDIA
-    listOrder: 2035
-
-  - id: STR_M16_M203
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M16_M203_UFOPEDIA
-    listOrder: 2036
-
-  - id: STR_XM117
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_XM117_UFOPEDIA
-    listOrder: 2037
-
-  - id: STR_M3_GREASEGUN
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M3_GREASEGUN_UFOPEDIA
-    listOrder: 2038
-
-  - id: STR_XM21
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_XM21_UFOPEDIA
-    listOrder: 2039
-
-  - id: STR_REMINGTON_COMBAT_SHOTGUN
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA
-    listOrder: 2040
-
-  - id: STR_M79_THUMPER_GL
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M79_THUMPER_GL_UFOPEDIA
-    listOrder: 2041
-
-  - id: STR_M72_LAW
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M72_LAW_UFOPEDIA
-    listOrder: 2042
-
-  - id: STR_M60
-    requires:
-      - STR_USA_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M60_UFOPEDIA
-    listOrder: 2043
-
-  - id: STR_AR5
-    requires:
-      - STR_IMPROVED_BOMBER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_AR5_UFOPEDIA
-    listOrder: 2044
-
-##########################################
-###### TIER I WEAPONS (NATO SUPPLIED) ####
-##########################################
-  - id: STR_BERETTA_92FS
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_BERETTA_92FS_UFOPEDIA
-    listOrder: 2045
-
-  - id: STR_FN_FAL_SHOTGUN
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FN_FAL_SHOTGUN_UFOPEDIA
-    listOrder: 2046
-
-  - id: STR_SG510_CARBINE
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SG510_CARBINE_UFOPEDIA
-    listOrder: 2047
-
-  - id: STR_MP5
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MP5_UFOPEDIA
-    listOrder: 2048
-
-  - id: STR_PSG1
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_PSG1_UFOPEDIA
-    listOrder: 2049
-
-  - id: STR_FN_MAG
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FN_MAG_UFOPEDIA
-    listOrder: 2050
-
-  - id: STR_CARL_GUSTAF_M2
-    requires:
-      - STR_NATO_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_CARL_GUSTAF_M2_UFOPEDIA
-    listOrder: 2051
-
-############################################
-###### TIER I WEAPONS (SOVIET SUPPLIED) ####
-############################################
-  - id: STR_STECHKIN_APS
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_STECHKIN_APS_UFOPEDIA
-    listOrder: 2052
-
-  - id: STR_AKM_BAYONETED
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_AKM_BAYONETED_UFOPEDIA
-    listOrder: 2053
-
-  - id: STR_AKMSU
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_AKMSU_UFOPEDIA
-    listOrder: 2054
-
-  - id: STR_SKORPION
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SKORPION_UFOPEDIA
-    listOrder: 2055
-
-  - id: STR_DRAGUNOV
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_DRAGUNOV_UFOPEDIA
-    listOrder: 2056
-
-  - id: STR_KS23_SHOTGUN
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_KS23_SHOTGUN_UFOPEDIA
-    listOrder: 2057
-
-  - id: STR_RPG
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_RPG_UFOPEDIA
-    listOrder: 2058
-
-  - id: STR_RPKS
-    requires:
-      - STR_USSR_SUPPORT_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_RPKS_UFOPEDIA
-    listOrder: 2059
-
-##############################################
-##### TIER I WEAPONS (CIVILIAN & POLICE) #####
-##############################################
-  - id: STR_MAKAROV
-    requires:
-      - STR_MAKAROV
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MAKAROV_UFOPEDIA
-    listOrder: 2060
-
-  - id: STR_SNUBNOSE_PISTOL
-    requires:
-      - STR_SNUBNOSE_PISTOL
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SNUBNOSE_PISTOL_UFOPEDIA
-    listOrder: 2061
-
-  - id: STR_HUNTING_RIFLE
-    requires:
-      - STR_HUNTING_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_HUNTING_RIFLE_UFOPEDIA
-    listOrder: 2062
-
-  - id: STR_DOUBLE_BARRELED_SHOTGUN
-    requires:
-      - STR_DOUBLE_BARRELED_SHOTGUN
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_DOUBLE_BARRELED_SHOTGUN_UFOPEDIA
-    listOrder: 2063
-
-  - id: STR_MACHETE
-    requires:
-      - STR_MACHETE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MACHETE_UFOPEDIA
-    listOrder: 2064
-
-  - id: STR_POLICE_REVOLVER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_POLICE_REVOLVER_UFOPEDIA
-    listOrder: 2065
-
-  - id: STR_BERETTA_M12
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_BERETTA_M12_UFOPEDIA
-    listOrder: 2066
-
-  - id: STR_POLICE_SHOTGUN
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_POLICE_SHOTGUN_UFOPEDIA
-    listOrder: 2067
-
-  - id: STR_POLICE_TONFA
-    requires:
-      - STR_POLICE_TONFA
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_POLICE_TONFA_UFOPEDIA
-    listOrder: 2068
-
-############################################
-###### TIER I WEAPONS (ALLIED ARMIES) ######
-############################################
-  - id: STR_M16A1
-    requires:
-      - STR_M16A1
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M16A1_UFOPEDIA
-    listOrder: 2069
-
-  - id: STR_FN_FAL
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FN_FAL_UFOPEDIA
-    listOrder: 2070
-
-  - id: STR_BREN
-    requires:
-      - STR_BREN
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_BREN_UFOPEDIA
-    listOrder: 2071
-
-  - id: STR_OWEN_SMG
-    requires:
-      - STR_OWEN_SMG
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_OWEN_SMG_UFOPEDIA
-    listOrder: 2072
-
-  - id: STR_M1_CARBINE
-    requires:
-      - STR_M1_CARBINE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M1_CARBINE_UFOPEDIA
-    listOrder: 2073
-
-  - id: STR_AKM
-    requires:
-      - STR_AKM
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_AKM_UFOPEDIA
-    listOrder: 2074
-
-  - id: STR_SKS
-    requires:
-      - STR_SKS
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SKS_UFOPEDIA
-    listOrder: 2075
-
-  - id: STR_PPS_43
-    requires:
-      - STR_PPS_43
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_PPS_43_UFOPEDIA
-    listOrder: 2073
-
-############################################
-###### TIER I WEAPONS SPECIAL FORCES #######
-############################################
-
-  - id: STR_WEAPON_TOOLKIT
-    requires:
-      - STR_WEAPON_MODIFICATION
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_WEAPON_TOOLKIT_UFOPEDIA
-    listOrder: 2077
-
-  - id: STR_COLT_SCOPE_ACCESSORY
-    requires:
-      - STR_WEAPON_MODIFICATION
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_COLT_SCOPE_ACCESSORY_UFOPEDIA
-    listOrder: 2078
-
-  - id: STR_M203_ACCESSORY
-    requires:
-      - STR_WEAPON_MODIFICATION
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M203_ACCESSORY_UFOPEDIA
-    listOrder: 2079
-
-  - id: STR_SAWEDOFF_M79_THUMPER
-    requires:
-      - STR_SPECIAL_FORCES_RESEARCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
-    listOrder: 2080
-
-  - id: STR_SAWEDOFF_SHOTGUN
-    requires:
-      - STR_WEAPON_MODIFICATION
-      - STR_DOUBLE_BARRELED_SHOTGUN
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SAWEDOFF_SHOTGUN_UFOPEDIA
-    listOrder: 2081
-
-  - id: STR_XM117_SCOPED
-    requires:
-      - STR_SPECIAL_FORCES_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_XM117_SCOPED_UFOPEDIA
-    listOrder: 2082
-
-  - id: STR_XM117_SHOTGUN
-    requires:
-      - STR_SPECIAL_FORCES_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_XM117_SHOTGUN_UFOPEDIA
-    listOrder: 2083
-
-  - id: STR_XM117_M203
-    requires:
-      - STR_SPECIAL_FORCES_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_XM117_M203_UFOPEDIA
-    listOrder: 2084
-
-#  - id: STR_STERLING_MKIV_SMG
-#    listOrder: 2085
-#  - id: STR_STERLING_MKVII_PARAPISTOL
-#    listOrder: 2086
-#  - id: STR_THE_BITCH_SLR
-#    listOrder: 2087
-#  - id: STR_BREACHING_SHOTGUN
-#    listOrder: 2088
-
-############################################
-######## TIER I WEAPONS MERCENARIES ########
-############################################
-
-  - id: STR_MAT49
-    requires:
-      - STR_MERCENARY_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MAT49_UFOPEDIA
-    listOrder: 2089
-
-  - id: STR_FN_FSC
-    requires:
-      - STR_MERCENARY_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FN_FSC_UFOPEDIA
-    listOrder: 2090
-
-  - id: STR_FN_FSC_SCOPED
-    requires:
-      - STR_MERCENARY_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FN_FSC_SCOPED_UFOPEDIA
-    listOrder: 2091
-
-  - id: STR_FN_FSC_BAYONET
-    requires:
-      - STR_MERCENARY_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FN_FSC_BAYONET_UFOPEDIA
-    listOrder: 2092
-
-  - id: STR_50_CAL_MAGNUM
-    requires:
-      - STR_MERCENARY_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_50_CAL_MAGNUM_UFOPEDIA
-    listOrder: 2093
-
-#  - id: STR_STONER_63A_CARBINE
-#    listOrder: 2094
-#  - id: STR_STONER_63A_AUTOMATIC_RIFLE
-#    listOrder: 2095
-#  - id: STR_STONER_63A_COMMANDO
-#    listOrder: 2096
-
-  - id: STR_M16A1_SCOPED
-    requires:
-      - STR_SPECIAL_FORCES_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M16A1_SCOPED_UFOPEDIA
-    listOrder: 2097
-
-  - id: STR_M16A1_SHOTGUN
-    requires:
-      - STR_SPECIAL_FORCES_SUPPORT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_M16A1_SHOTGUN_UFOPEDIA
-    listOrder: 2098
-
-  - id: STR_ENFORCER
-    requires:
-      - STR_ENFORCER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_ENFORCER_UFOPEDIA
-    listOrder: 2099
-#  - id: STR_SP72_SMG # Based on the PPS-43
-#    listOrder: 2100
-
-  - id: STR_COMBAT_KNIFE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_COMBAT_KNIFE_UFOPEDIA
-    listOrder: 2101
-
-
-############################################
-######### MEDICAL AND FOOD ITEMS ###########
-############################################
-
-  - id: STR_CANNED_FOOD
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_CANNED_FOOD_UFOPEDIA
-    listOrder: 2102
-
-  - id: STR_CIGARETTES
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_CIGARETTES_UFOPEDIA
-    listOrder: 2103
-
-  - id: STR_FLASK
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FLASK_UFOPEDIA
-    listOrder: 2104
-
-  - id: STR_MEDI_KIT
-    requires:
-      - STR_MEDI_KIT
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MEDI_KIT_UFOPEDIA
-    listOrder: 2105
-
-  - id: STR_MEDICAL_BAG
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MEDICAL_BAG_UFOPEDIA
-    listOrder: 2106
-
-  - id: STR_FIELD_DRESSING
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FIELD_DRESSING_UFOPEDIA
-    listOrder: 2107
-
-  - id: STR_MEDICAL_POUCH
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MEDICAL_POUCH_UFOPEDIA
-    listOrder: 2108
-
-############################################
-########### EXPLOSIVE STUFF ################
-############################################
-
-  - id: STR_SMOKE_GRENADE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SMOKE_GRENADE_UFOPEDIA
-    listOrder: 2120
-  - id: STR_FLASHBANG_GRENADE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_FLASHBANG_GRENADE_UFOPEDIA
-    listOrder: 2121
-
-  - id: STR_MG3
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MG3_UFOPEDIA
-    requires:
-      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
-    listOrder: 2150
-
-  - id: STR_ANGRY_WIFE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_ANGRY_WIFE_UFOPEDIA
-    requires:
-      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-    listOrder: 2151
-
-  - id: STR_RIOT_SHIELD
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_RIOT_SHIELD_UFOPEDIA
-    requires:
-      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-    listOrder: 2152
-
-################################################
-
-
-
-#################################################################
 extraSprites:
 #########################################
 ######### TIER I WEAPONS USA ############
@@ -5382,7 +4488,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      386: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
+      385: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
 
   - type: MEDIKIT_BACKGROUND
     singleImage: true
