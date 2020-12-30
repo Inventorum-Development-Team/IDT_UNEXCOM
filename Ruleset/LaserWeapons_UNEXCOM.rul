@@ -415,7 +415,6 @@ items:
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
-      ArmorEffectiveness: 0.75
     clipSize: -1
     autoShots: 5
     sprayWaypoints: 2
@@ -880,8 +879,6 @@ items:
     power: 130
     damageAlter:
       IgnoreOverKill: false
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
       ToWound: 1.3
