@@ -2946,21 +2946,29 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5111
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_M72_ARR_HE_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5112
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_M72_ARR_SMOKE_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5113
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_M72_ARR_ELERIUM_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5114
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_PLASMA_PISTOL_CLIP
     type_id: 4
     section: STR_AMMUNITION
@@ -2971,11 +2979,15 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5201
+    requires:
+      - STR_HUMAN_PLASMA_MAGNUM
   - id: STR_PLASMA_SMG_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5202
+    requires:
+      - STR_HUMAN_PLASMA_SMG
   - id: STR_PLASMA_RIFLE_CLIP
     type_id: 4
     section: STR_AMMUNITION
@@ -2986,11 +2998,15 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5204
+    requires:
+      - STR_HUMAN_PLASMA_DMR
   - id: STR_SNIPER_PLASMA_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5205
+    requires:
+      - STR_HUMAN_SNIPER_PLASMA
   - id: STR_HEAVY_PLASMA_CLIP
     type_id: 4
     section: STR_AMMUNITION
@@ -3001,6 +3017,8 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5207
+    requires:
+      - STR_HUMAN_PLASMA_LMG
 
   - id: STR_STUN_BOMB
     section: STR_AMMUNITION
@@ -3770,6 +3788,8 @@ ufopaedia:
     section: STR_ALIEN_EQUIPMENT
     text: ...
     listOrder: 12102
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
   - id: STR_FUSION_RIFLE
     requires:
       - STR_FUSION_RIFLE
@@ -3789,6 +3809,8 @@ ufopaedia:
     section: STR_ALIEN_EQUIPMENT
     text: ...
     listOrder: 12105
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
   - id: STR_MIND_PROBE
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12200

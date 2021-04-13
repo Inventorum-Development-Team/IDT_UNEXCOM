@@ -693,6 +693,21 @@ extraSprites:
     files:
       0: Resources/Backgrounds/BACK17.PNG
 
+### Interception images
+
+  - type: InterceptionTroopLander
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+     0: Resources/UFOinterception/trooplander.png
+
+  - type: InterceptionNoFeed
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+     0: Resources/UFOinterception/nofeed.png
 startingBase:
   facilities:
     - type: STR_ACCESS_LIFT
