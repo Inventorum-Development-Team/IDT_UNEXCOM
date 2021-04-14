@@ -1278,7 +1278,7 @@ crafts:
     requires:
       - STR_IMPROVED_VTOL_TRANSPORT
     sprite: 867
-    fuelMax: 150
+    fuelMax: 660
     damageMax: 400
     speedMax: 300
     accel: 3
@@ -1303,6 +1303,7 @@ crafts:
     repairRate: 4
     transferTime: 48
     score: 40
+    mapVisible: false
     battlescapeTerrainData:
       name: MI_24_HIND
       mapDataSets:
@@ -1312,6 +1313,16 @@ crafts:
         - name: MI_24_HIND
           width: 10
           length: 20
+          items:
+            HIND_TURRET_SPAWNER:
+              - [4, 10, 2]
+            STR_HIND_DOOR_BOMB:
+              - [4, 12, 0]
+              - [6, 12, 0]
+          fuseTimers:
+            HIND_TURRET_SPAWNER: [0, 0]
+            STR_HIND_DOOR_BOMB: [1, 1]
+
     craftInventoryTile: [4, 10, 0]
     deployment:
       - [4, 10, 0, 4]

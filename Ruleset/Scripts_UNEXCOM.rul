@@ -1,0 +1,47 @@
+items:
+  - type: STR_HE_STRIKE #ignoreDuplicate
+    tags:
+      STRIKE: 1
+  - type: STR_INC_STRIKE #ignoreDuplicate
+    tags:
+      STRIKE: 1
+armors:
+  - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
+    tags:
+     Hind_Turret: 1
+
+
+
+extended:
+  tags:
+    RuleItem:
+      STRIKE: int
+    RuleArmor:
+      Hind_Turret: int
+  scripts:
+
+    selectItemSprite: # Air Strike Smoke sprite Script
+      - offset: 1
+        code: |
+          var int x;
+          var int y;
+          BattleItem.getTag item x Tag.STRIKE;
+          BattleItem.isFuseEnabled item y;
+          if and eq x 1 eq y 1;
+            add sprite_index 8;
+          end;
+          return sprite_index;
+
+    createUnit: #Hind door and turret script
+      - offset: 1
+        code: |
+         var int x;
+         var ptr RuleArmor armor;
+         debug_log "test 2";
+         BattleUnit.getRuleArmor unit armor;
+         RuleArmor.getTag armor x Tag.Hind_Turret;
+         if eq x 1;
+          debug_log "test";
+          BattleUnit.setFatalwounds unit 1 1;
+          end;
+         return;
