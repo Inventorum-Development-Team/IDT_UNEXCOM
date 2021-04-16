@@ -404,7 +404,7 @@ research:
 ####### ALIEN ALLOYS WEAPONS RESEARCH #########
 ##############################################
   - name: STR_ALLOY_BALLISTIC_WEAPONS
-    cost: 50
+    cost: 100
     points: 10
     dependencies:
       - STR_ALLOY_MANUFACTURING
@@ -434,6 +434,7 @@ research:
     points: 10
     dependencies:
       - STR_ALLOY_MANUFACTURING
+      - STR_ALIEN_LASERS
 
   - name: STR_LASER_CANNON
     cost: 300
@@ -459,14 +460,43 @@ research:
     dependencies:
       - STR_LASER_CANNON
       - STR_LASER_ARRAY
+
+
+### ALIEN LASERS
+
+  - name: STR_ALIEN_LASER_PISTOL
+    cost: 50
+    points: 50
+    needItem: true
+    getOneFree:
+      - STR_ALIEN_LASERS
+
+  - name: STR_ALIEN_LASER_RIFLE
+    cost: 50
+    points: 50
+    needItem: true
+    getOneFree:
+      - STR_ALIEN_LASERS
+
+  - name: STR_ALIEN_HEAVY_LASER
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_ALIEN_LASERS
+    needItem: true
+
+  - name: STR_ALIEN_LASERS
+    needItem: true
+    getOneFree:
+      - STR_ALIEN_LASERS
 #########################################
 ####### AMERICAN LASER RESEARCH ########
 #######################################
   - name: STR_USA_LASER_RESEARCH
-    cost: 50
+    cost: 30
     points: 10
     dependencies:
-      - STR_ALLOY_MANUFACTURING
+      - STR_LASER_WEAPONS
       - STR_USA_SUPPORT_RESEARCH
   - name: STR_USA_LASER_HANDGUNS
     cost: 50
@@ -488,14 +518,16 @@ research:
     points: 10
     dependencies:
       - STR_USA_LASER_RIFLES
+
+
 #########################################
 ####### EUROPEAN LASER RESEARCH ########
 #######################################
   - name: STR_NATO_LASER_RESEARCH
-    cost: 50
+    cost: 30
     points: 10
     dependencies:
-      - STR_ALLOY_MANUFACTURING
+      - STR_LASER_WEAPONS
       - STR_NATO_SUPPORT_RESEARCH
   - name: STR_NATO_LASER_HANDGUNS
     cost: 50
@@ -521,10 +553,10 @@ research:
 ######## SOVIET LASER RESEARCH #########
 #######################################
   - name: STR_USSR_LASER_RESEARCH
-    cost: 50
+    cost: 30
     points: 10
     dependencies:
-      - STR_ALLOY_MANUFACTURING
+      - STR_LASER_WEAPONS
       - STR_USSR_SUPPORT_RESEARCH
   - name: STR_USSR_LASER_HANDGUNS
     cost: 50

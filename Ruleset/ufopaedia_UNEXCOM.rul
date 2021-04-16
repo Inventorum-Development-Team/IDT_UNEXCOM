@@ -3663,6 +3663,48 @@ ufopaedia:
 
 #Alien Equipment
 
+
+  - id: STR_ALIEN_LASERS
+    type_id: 8
+    section: STR_ALIEN_EQUIPMENT
+    requires:
+      - STR_ALIEN_LASERS
+    text: STR_ALIEN_LASERS_UFOPEDIA
+    listOrder: 11990
+  - id: STR_ALIEN_LASER_PISTOL
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    requires:
+      - STR_PLASMA_PISTOL
+    text: STR_ALIEN_LASER_PISTOL_UFOPEDIA
+    listOrder: 11991
+  - id: STR_ALIEN_LASER_RIFLE
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_LASER_RIFLE_UFOPEDIA
+    requires:
+      - STR_ALIEN_LASER_RIFLE
+    listOrder: 11992
+  - id: STR_ALIEN_HEAVY_LASER
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_HEAVY_LASER_UFOPEDIA
+    requires:
+      - STR_ALIEN_HEAVY_LASER
+    listOrder: 11993
+
+
+  - id: STR_ALIEN_LASER_PISTOL_BATTERY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ALIEN_LASER_RIFLE_BATTERY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ALIEN_HEAVY_LASER_BATTERY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+
   - id: STR_ALIEN_PLASMA_WEAPONS
     type_id: 8
     section: STR_ALIEN_EQUIPMENT

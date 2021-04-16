@@ -1,0 +1,174 @@
+
+items:
+# Alien Lasers
+  - type: STR_ALIEN_LASER_PISTOL
+    requires:
+     - STR_ALIEN_LASER_PISTOL
+    categories: [STR_LASER, STR_ALIEN_TECH, STR_FIREARMS]
+    size: 0.1
+    costSell: 84000
+    weight: 3
+    bigSprite: 3400
+    floorSprite: 3400
+    handSprite: 3400
+    bulletSprite: 29
+    bulletSpeed: 10
+    fireSound: 11
+    compatibleAmmo:
+      - STR_ALIEN_LASER_PISTOL_BATTERY
+    accuracyAuto: 50
+    accuracySnap: 65
+    accuracyAimed: 85
+    tuAuto: 30
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 3
+    armor: 45
+  - type: STR_ALIEN_LASER_PISTOL_BATTERY
+    categories: [STR_LASER, STR_ALIEN_TECH, STR_FIREARMS]
+    size: 0.1
+    costSell: 4440
+    weight: 3
+    bigSprite: 3401
+    floorSprite: 3401
+    hitSound: 19
+    hitAnimation: 100
+    power: 65
+    dropoff: 3
+    damageType: 4
+    damageAlter:
+      ArmorEffectiveness: 0.75
+      ToArmor: 1.2
+    clipSize: 26
+    battleType: 2
+    recoveryPoints: 1
+  - type: STR_ALIEN_LASER_RIFLE
+    categories: [STR_LASER, STR_ALIEN_TECH, STR_FIREARMS]
+    requires:
+     - STR_ALIEN_LASER_RIFLE
+    size: 0.2
+    costSell: 126500
+    weight: 5
+    bigSprite: 3402
+    floorSprite: 3402
+    handSprite: 3408
+    bulletSprite: 29
+    bulletSpeed: 10
+    fireSound: 11
+    compatibleAmmo:
+      - STR_ALIEN_LASER_RIFLE_BATTERY
+    accuracyAimed: 90
+    tuAimed: 50
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 50
+  - type: STR_ALIEN_LASER_RIFLE_BATTERY
+    categories: [STR_LASER, STR_ALIEN_TECH, STR_FIREARMS]
+    size: 0.1
+    costSell: 6290
+    weight: 3
+    bigSprite: 3403
+    floorSprite: 3403
+    hitSound: 19
+    hitAnimation: 100
+    power: 90
+    dropoff: 3
+    damageType: 4
+    damageAlter:
+      ArmorEffectiveness: 0.65
+      ToArmor: 1.2
+    clipSize: 28
+    battleType: 2
+    recoveryPoints: 1
+  - type: STR_ALIEN_HEAVY_LASER
+    categories: [STR_LASER, STR_ALIEN_TECH, STR_FIREARMS]
+    requires:
+     - STR_ALIEN_HEAVY_LASER
+    size: 0.2
+    costSell: 171600
+    weight: 8
+    bigSprite: 3404
+    floorSprite: 3404
+    handSprite: 3416
+    bulletSprite: 29
+    bulletSpeed: 10
+    fireSound: 11
+    compatibleAmmo:
+      - STR_ALIEN_HEAVY_LASER_BATTERY
+    accuracyAimed: 110
+    tuAimed: 30
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 50
+  - type: STR_ALIEN_HEAVY_LASER_BATTERY
+    categories: [STR_LASER, STR_ALIEN_TECH, STR_FIREARMS, STR_LMGS]
+    size: 0.3
+    costSell: 9590
+    weight: 3
+    bigSprite: 3405
+    floorSprite: 3405
+    hitSound: 19
+    hitAnimation: 100
+    power: 115
+    dropoff: 3
+    damageType: 4
+    damageAlter:
+      ArmorEffectiveness: 0.50
+      ToArmor: 1.2
+    clipSize: 35
+    battleType: 2
+    recoveryPoints: 1
+
+
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Big.png
+      3401: Resources/AlienLasers/Alien Laser Pistol/Mag_Big.png
+      3402: Resources/AlienLasers/Alien Laser Rifle/Gun_Big.png
+      3403: Resources/AlienLasers/Alien Laser Rifle/Mag_Big.png
+      3404: Resources/AlienLasers/Alien Heavy Laser/Gun_Big.png
+      3405: Resources/AlienLasers/Alien Heavy Laser/Mag_Big.png
+  - type: FLOOROB.PCK
+    files:
+      3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Floor.png
+      3401: Resources/AlienLasers/Alien Laser Pistol/Mag_Floor.png
+      3402: Resources/AlienLasers/Alien Laser Rifle/Gun_Floor.png
+      3403: Resources/AlienLasers/Alien Laser Rifle/Mag_Floor.png
+      3404: Resources/AlienLasers/Alien Heavy Laser/Gun_Floor.png
+      3405: Resources/AlienLasers/Alien Heavy Laser/Mag_Floor.png
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Hand.png
+      3408: Resources/AlienLasers/Alien Laser Rifle/Gun_Hand.png
+      3416: Resources/AlienLasers/Alien Heavy Laser/Gun_Hand.png
+
+
+extraStrings:
+  - type: en-US
+    strings:
+
+      STR_ALIEN_LASERS: "Alien Laser Weaponry"
+      STR_ALIEN_LASERS_UFOPEDIA: "These weapons emit a powerful beam seemingly powered by a peculiar crystal found inside of the devices. The internals are housed inside a durable casing, made out of an unknown metal alloy. The alien laser weaponry we've recovered isn't a total mystery to us, multiple similar weapons have been found at the few previous sites where humanity has encountered hostile alien life. Attempts to reverse engineer and replicate the laser weaponry has been made by multiple governments in secret during the past decade. While the origins and manufacture of some parts of the alien weaponry still remains a mystery, almost all of the components have been managed to be substituted with materials available on earth, leading to the development of functional prototypes."
+      STR_ALIEN_LASER_PISTOL: "Alien Laser Pistol"
+      STR_ALIEN_LASER_PISTOL_BATTERY: "Alien Light Battery"
+      STR_ALIEN_LASER_PISTOL_UFOPEDIA: "This 'hand weapon' (named by our technicians, judging by the size and use of this weapon by the enemy) uses novel technology to emit a powerful beam of light. When passing a Geiger counter, we can see that it emits a small amount of radiation, so it is not recommended for analysis without adequate protection."
+      STR_ALIEN_LASER_RIFLE: "Alien Laser Rifle"
+      STR_ALIEN_LASER_RIFLE_BATTERY: "Alien Medium Battery"
+      STR_ALIEN_LASER_RIFLE_UFOPEDIA: "Our studies and field reports point to this weapon as the standard weaponry of the enemy infantry (similar to our doctrines). This 'rifle', if you can call it that, has a compact power generator, which emits a light beam powered by a crystal of unknown origin. The beam is capable of penetrating armor without problems."
+      STR_ALIEN_HEAVY_LASER: "Alien Heavy Laser"
+      STR_ALIEN_HEAVY_LASER_BATTERY: "Alien Heavy Battery"
+      STR_ALIEN_HEAVY_LASER_UFOPEDIA: "A really heavy weapon, but extremely powerful. This cannon uses the same concept of an energy source that emits a laser, amplified by an alien crystal. This crystal is quite large, more than in other enemy devices, which we believe contributes to give it a greater range. We have noticed that it has a tendency to overheat."

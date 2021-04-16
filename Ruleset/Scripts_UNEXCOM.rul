@@ -37,11 +37,9 @@ extended:
         code: |
          var int x;
          var ptr RuleArmor armor;
-         debug_log "test 2";
          BattleUnit.getRuleArmor unit armor;
          RuleArmor.getTag armor x Tag.Hind_Turret;
          if eq x 1;
-          debug_log "test";
           BattleUnit.setFatalwounds unit 1 1;
           end;
          return;
