@@ -36,6 +36,18 @@ items:
     battleType: 11
     armor: 26
 
+  - type: STR_THIN_MAN_CORPSE
+    size: 0.4
+    costSell: 30000
+    weight: 25
+    bigSprite: 3053
+    floorSprite: 3053
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 10
+    battleType: 11
+    armor: 40
+
 
   - type: STR_TERRORIST_SOLDIER
     size: 0.0
@@ -66,6 +78,12 @@ items:
     recover: true
     liveAlien: true
     costSell: 60000
+    listOrder: 14405
+  - type: STR_THIN_MAN_INFILTRATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 70000
     listOrder: 14405
 
 armors:
@@ -135,6 +153,30 @@ armors:
       - 1.0
       - 0.1
     loftempsSet: [ 3 ]
+  - type: THIN_MAN_ARMOR
+    spriteSheet: THIN_MAN.PCK
+    corpseBattle:
+      - STR_THIN_MAN_CORPSE
+    frontArmor: 8
+    sideArmor: 4
+    rearArmor: 6
+    underArmor: 2
+    visibilityAtDark: 24
+    psiVision: 8
+    drawingRoutine: 4
+    specialWeapon: ALIEN_PSI_WEAPON
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 2 ]
 
 units:
   - type: STR_TERRORIST_SOLDIER
@@ -255,6 +297,29 @@ units:
     aggression: 0
     canSurrender: true
 
+  - type: STR_THIN_MAN_INFILTRATOR
+    race: STR_HYBRID
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 70
+      health: 60
+      bravery: 100
+      reactions: 70
+      firing: 60
+      throwing: 60
+      strength: 30
+      psiStrength: 80
+      psiSkill: 45
+      melee: 60
+    armor: THIN_MAN_ARMOR
+    standHeight: 24
+    kneelHeight: 16
+    value: 10
+    deathSound: 10
+    spotter: 2
+    intelligence: 8
+    aggression: 2
 
 alienRaces:
 #Race Rank Reference
@@ -267,6 +332,16 @@ alienRaces:
   - id: STR_TERRORIST
     members:
       - STR_TERRORIST_COMMANDER
+      - STR_TERRORIST_LEADER
+      - STR_TERRORIST_GRENADIER
+      - STR_TERRORIST_MEDIC
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+  - id: STR_TERRORIST_THIN_MAN
+    members:
+      - STR_THIN_MAN_INFILTRATOR
       - STR_TERRORIST_LEADER
       - STR_TERRORIST_GRENADIER
       - STR_TERRORIST_MEDIC
@@ -287,12 +362,44 @@ research:
       - STR_TERRORIST_SOLDIER
     listOrder: 180290
 
+  - name: STR_THIN_MAN_INFILTRATOR
+    cost: 50
+    points: 50
+    needItem: true
+    listOrder: 180290
+    unlocks:
+      - STR_PSI_LAB
+    getOneFree:
+      - STR_END_OF_TERRORISTS
+  - name: STR_THIN_MAN_CORPSE
+    cost: 50
+    points: 50
+    needItem: true
+    listOrder: 180290
+    getOneFree:
+      - STR_END_OF_TERRORISTS
+
   - name: STR_TERRORISTS_OPERATIONS
     cost: 0
     points: 50
     dependencies:
       - STR_TERRORIST_LEADER
+    listOrder: 180290
+
+  - name: STR_ALIEN_ASSOCIATIONS
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TERRORIST_LEADER
+      - STR_ALIEN_LASERS
+    listOrder: 180290
+
+  - name: STR_TERRORIST_HQ
+    cost: 70
+    points: 30
+    dependencies:
       - STR_TERRORIST_COMMANDER
+      - STR_ALIEN_ASSOCIATIONS
     listOrder: 180290
 
   - name: STR_TERRORIST_COMMANDER
@@ -302,6 +409,8 @@ research:
     destroyItem: true
     unlocks:
       - STR_TERRORISTS
+    getOneFree:
+      - STR_ALIEN_ASSOCIATIONS
 
   - name: STR_TERRORIST_LEADER
     cost: 40
@@ -322,6 +431,10 @@ research:
     destroyItem: true
     unlocks:
       - STR_TERRORISTS
+    getOneFree:
+      - STR_TEXAN_UFO
+      - STR_MAGISTER_UFO
+      - STR_MI8_UFO
 
   - name: STR_TERRORIST_MEDIC
     cost: 10
@@ -330,6 +443,10 @@ research:
     destroyItem: true
     unlocks:
       - STR_TERRORISTS
+    getOneFree:
+      - STR_TEXAN_UFO
+      - STR_MAGISTER_UFO
+      - STR_MI8_UFO
 
   - name: STR_TERRORIST_SOLDIER
     cost: 10
@@ -338,21 +455,25 @@ research:
     destroyItem: true
     unlocks:
       - STR_TERRORISTS
+    getOneFree:
+      - STR_TEXAN_UFO
+      - STR_MAGISTER_UFO
+      - STR_MI8_UFO
 
   - name: STR_TERRORIST_MALE_CORPSE
-    cost: 180
+    cost: 100
     points: 50
     unlocks:
       - STR_TERRORIST_AUTOPSY
     needItem: true
   - name: STR_TERRORIST_FEMALE_CORPSE
-    cost: 180
+    cost: 100
     points: 50
     unlocks:
       - STR_TERRORIST_AUTOPSY
     needItem: true
   - name: STR_TERRORIST_GASMASK_CORPSE
-    cost: 180
+    cost: 100
     points: 50
     unlocks:
       - STR_TERRORIST_AUTOPSY
@@ -363,6 +484,14 @@ research:
     needItem: true
     listOrder: 12680
 
+  - name: STR_END_OF_TERRORISTS
+    cost: 0
+    points: 50
+    needItem: true
+    listOrder: 12680
+    dependencies:
+     - STR_THIN_MAN_CORPSE
+     - STR_THIN_MAN_INFILTRATOR
 
 
 extraSprites:
@@ -389,6 +518,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/TerroristFaction/TERRORIST_GASMASK_SPRITESHEET.png
+  - type: THIN_MAN.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Thin Man/ThinManSpritesheet.png
 
 
   - type: BIGOBS.PCK
@@ -396,11 +532,13 @@ extraSprites:
       3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_BIGOB.png
       3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_BIGOB.png
       3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_BIGOB.png
+      3053: Resources/Thin Man/BIGOBS/bigOb_ThinMan_corpse.png
   - type: FLOOROB.PCK
     files:
       3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_FLOOROB.png
       3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_FLOOROB.png
       3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_FLOOROB.png
+      3053: Resources/Thin Man/FLOOROBS/floorOb_ThinMan_corpse.png
 
   - type: TERRORIST_MALE_INVENTORY.SPK
     singleImage: true
@@ -422,6 +560,10 @@ extraSprites:
     height: 200
     files:
       0: Resources/TerroristFaction/TERRORIST_GASMASK_INVENTORY.png
+  - type: inventory_THIN_MAN
+    singleImage: true
+    files:
+      0: Resources/Enemies/Thin Man/Inventory/THIN_MAN_INV.png
 
   - type: TERRORIST_FACTION_IMAGE
     singleImage: true
@@ -441,6 +583,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/AUTOPSY_IMAGE.png
+  - type: UFOPAEDIA_IMG_THIN_MAN
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Thin Man/Ufopaedia/THIN_MAN_UFOPEDIA.png
+  - type: UFOPAEDIA_IMG_THIN_MAN_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Thin Man/Ufopaedia/THIN_MAN_AUTOPSY.png
 
 extraStrings:
   - type: en-US
@@ -454,6 +608,16 @@ extraStrings:
       STR_TERRORIST_MALE_CORPSE: Male Terrorist Corpse
       STR_TERRORIST_FEMALE_CORPSE: Female Terrorist Corpse
       STR_TERRORIST_GASMASK_CORPSE: Gasmask Terrorist Corpse
+      STR_THIN_MAN: "Thin Man"
+      STR_THIN_MAN_CORPSE: "Thin Man Carcass"
+      STR_THIN_MAN_UFOPEDIA: "The Thin Man is an alien creature fused with human DNA to create what seems to be an infiltration agent. It has been shown to showcase some kind of psionic abilities, something that no doubt assists it when establishing networks of operatives."
+      STR_THIN_MAN_AUTOPSY_UFOPEDIA: "While on the surface the subject, which we've christened as 'Thin Man', seems human, its internal organs show significant deviation. The Thin Mans DNA is similar to a regular humans, but it contains portions unlike anything found on earth. The subject is most likely a result of genetic manipulation."
+      STR_THIN_MAN_AUTOPSY: "Thin Man Autopsy"
+      STR_ALIEN_ASSOCIATIONS: "Alien Associations"
+      STR_ALIEN_ASSOCIATIONS_UFOPEDIA: "The capture of a high ranking terrorist has lead to an alarming development, the terrorist organisations we've been facing seem to have links to extraterestials. Multiple terrorist leaders have been seen armed with weaponry only seen before during highly classified encounters with alien life. The origins of these weapons must be tracked before knowledge of them spreads too far to contain, and before the terrorist can get their hands on anything with which they could cause significant damage."
+      STR_TERRORIST_HQ: "Tracing the Weapons"
+      STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop into their operation."
+
 
       STR_TERRORISTS: The Terrorists
       STR_TERRORISTS_UFOPEDIA: Terrorists are a diverse group of political, religious and ideological radicals who use violence and fear to impose their ideals or make demands on the world's governments. Each cell is independent of the others, but they use similar equipment and weaponry. They are extremely dangerous because they are not afraid to die.
@@ -462,6 +626,5 @@ extraStrings:
       STR_TERRORIST_AUTOPSY: Terrorist Autopsy
       STR_TERRORIST_AUTOPSY_UFOPEDIA: This is an ordinary human, with nothing we would not have seen in another member of our species and as easy to kill as an ordinary soldier. Some were equipped with bulletproof vests under their clothes, although in general their attire is that of a civilian, with some tactical elements of military origin, probably obtained illegally on the black market.
 
-      STR_TERRORIST_AUTOPSY_UFOPAEDIA:
       STR_CYBERMITE_UFOPAEDIA:
       STR_CYBERMITE_AUTOPSY_UFOPAEDIA:

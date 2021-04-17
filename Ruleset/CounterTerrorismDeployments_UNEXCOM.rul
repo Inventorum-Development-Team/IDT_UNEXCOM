@@ -2,8 +2,8 @@ alienDeployments:
   - type: STR_HOSTAGE_CRISIS
     data:
       - alienRank: 5
-        lowQty: 3
-        highQty: 6
+        lowQty: 4
+        highQty: 8
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -29,8 +29,8 @@ alienDeployments:
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 4
-        lowQty: 2
-        highQty: 4
+        lowQty: 3
+        highQty: 6
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -56,8 +56,8 @@ alienDeployments:
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 3
-        lowQty: 2
-        highQty: 4
+        lowQty: 3
+        highQty: 6
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -141,14 +141,14 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 0
@@ -168,14 +168,14 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_GRENADE
             - STR_GRENADE
     width: 30
@@ -197,6 +197,7 @@ alienDeployments:
       showTarget: false
       showCraft: false
     objectiveType: 3
+    duration: [72,72]
     markerName: STR_COUNTER_TERRORISM_MARKER
     markerIcon: 7
     points: 20
@@ -204,8 +205,8 @@ alienDeployments:
   - type: STR_HIJACKED_PLANE
     data:
       - alienRank: 5
-        lowQty: 3
-        highQty: 6
+        lowQty: 4
+        highQty: 8
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -337,14 +338,14 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 0
@@ -364,14 +365,14 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_GRENADE
             - STR_GRENADE
     width: 80
@@ -392,6 +393,7 @@ alienDeployments:
       showTarget: false
       showCraft: false
     objectiveType: 3
+    duration: [72,72]
     markerName: STR_COUNTER_TERRORISM_MARKER
     markerIcon: 7
     points: 5
@@ -399,8 +401,8 @@ alienDeployments:
   - type: STR_HUMAN_TERROR_ATTACK
     data:
       - alienRank: 5
-        lowQty: 3
-        highQty: 6
+        lowQty: 4
+        highQty: 8
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -426,8 +428,8 @@ alienDeployments:
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 4
-        lowQty: 2
-        highQty: 4
+        lowQty: 3
+        highQty: 6
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -453,8 +455,8 @@ alienDeployments:
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 3
-        lowQty: 2
-        highQty: 4
+        lowQty: 4
+        highQty: 6
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -490,7 +492,7 @@ alienDeployments:
             - STR_GRENADE
       - alienRank: 2
         lowQty: 1
-        highQty: 2
+        highQty: 3
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -538,14 +540,14 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 0
@@ -565,14 +567,14 @@ alienDeployments:
             - STR_9MM_PISTOL_X10
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_GRENADE
           -
-            - STR_SKORPION
-            - STR_9MM_PISTOL_X20
-            - STR_9MM_PISTOL_X20
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_GRENADE
             - STR_GRENADE
     width: 60
@@ -598,9 +600,196 @@ alienDeployments:
       showTarget: false
       showCraft: false
     objectiveType: 3
+    duration: [72,72]
     markerName: STR_COUNTER_TERRORISM_MARKER
     markerIcon: 7
     points: 20
+
+
+  - type: STR_TERRORIST_HQ_RAID
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_HUNTING_RIFLE
+            - STR_22_LONG_RIFLE_X14
+            - STR_22_LONG_RIFLE_X14
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_7_62MM_SOVIET_RIFLE_X30
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_7_62MM_SOVIET_RIFLE_X40
+            - STR_7_62MM_SOVIET_RIFLE_X40
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 4
+        lowQty: 3
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+          -
+            - STR_SKORPION
+            - STR_9MM_PISTOL_X20
+            - STR_9MM_PISTOL_X20
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 3
+        lowQty: 4
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_DOUBLE_BARRELED_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_GRENADE
+          -
+            - STR_DOUBLE_BARRELED_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_BUCKSHOT_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_12GAUGE_SLUG_X2
+            - STR_GRENADE
+          -
+            - STR_POLICE_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_SLUG_X8
+            - STR_GRENADE
+          -
+            - STR_POLICE_SHOTGUN
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_BUCKSHOT_X8
+            - STR_12GAUGE_SLUG_X8
+            - STR_GRENADE
+      - alienRank: 2
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+          -
+            - STR_RPG
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_HE_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_RPG_INC_ROCKET
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_GRENADE
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_GRENADE
+            - STR_GRENADE
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_MAKAROV
+            - STR_9MM_PISTOL_X10
+            - STR_9MM_PISTOL_X10
+            - STR_GRENADE
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_GRENADE
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_GRENADE
+            - STR_GRENADE
+    width: 50
+    length: 20
+    height: 10
+    terrains:
+     - TERRORIST_HQ
 
 extraSprites:
   - type: COUNTER_TERRORISM_ALERT_BACKGROUND

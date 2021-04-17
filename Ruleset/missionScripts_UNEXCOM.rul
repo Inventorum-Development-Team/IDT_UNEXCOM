@@ -11,17 +11,6 @@ missionScripts:
   - delete: superhumanRetaliation
   - delete: recurringTerror
 
-  - type: gameStart
-    missionWeights:
-      0:
-        STR_HUMAN_TERROR_ATTACK: 100
-    lastMonth: 0
-    targetBaseOdds: 100
-    raceWeights:
-      0:
-        STR_TERRORIST: 100
-    startDelay: 120
-
   - type: invasionStart
     missionWeights:
       0:
@@ -139,6 +128,8 @@ missionScripts:
         STR_CENTRAL_ASIA: 25
         STR_SOUTH_EAST_ASIA: 20
     useTable: false
+    researchTriggers:
+      STR_END_OF_TERRORISTS: false
     startDelay: 15
     randomDelay: 25000
     executionOdds: 100
@@ -154,8 +145,10 @@ missionScripts:
         STR_CENTRAL_ASIA: 25
         STR_SOUTH_EAST_ASIA: 10
     useTable: false
-    startDelay: 43500
-    randomDelay: 25000
+    researchTriggers:
+      STR_END_OF_TERRORISTS: false
+    startDelay: 100
+    randomDelay: 43200
     executionOdds: 100
 
   - type: terroristHostageCrisis
@@ -168,10 +161,11 @@ missionScripts:
       0:
         REGION_TERRORIST_HOSTAGE_CRISIS: 100
     researchTriggers:
-      STR_SPECIAL_FORCES_RESEARCH: true
+      STR_TERRORISTS_OPERATIONS: true
+      STR_END_OF_TERRORISTS: false
     useTable: false
-    startDelay: 43500
-    randomDelay: 25000
+    startDelay: 100
+    randomDelay: 43200
     executionOdds: 30
 
   - type: terroristHijackedPlane
@@ -185,10 +179,11 @@ missionScripts:
       0:
         REGION_TERRORIST_HIJACKED_PLANE: 100
     researchTriggers:
-      STR_SPECIAL_FORCES_RESEARCH: true
+      STR_TERRORISTS_OPERATIONS: true
+      STR_END_OF_TERRORISTS: false
     useTable: false
-    startDelay: 43500
-    randomDelay: 25000
+    startDelay: 100
+    randomDelay: 43200
     executionOdds: 30
 ##############################
   - type: AmericanCombatOperations

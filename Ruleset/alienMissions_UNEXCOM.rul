@@ -18,14 +18,6 @@ alienMissions:
     raceWeights:
       0:
           STR_TERRORIST: 100
-      1:
-          STR_TERRORIST: 100
-      3:
-          STR_TERRORIST: 60
-      5:
-          STR_TERRORIST: 20
-      7:
-          STR_TERRORIST: 20
     waves:
       - ufo: STR_TEXAN_UFO
         count: 1
@@ -38,24 +30,16 @@ alienMissions:
 
   - type: STR_HUMAN_TERROR_ATTACK
     points: -50
-    objective: 0
+    objective: 3
     spawnZone: 0 #Mission zone for terror missions
     raceWeights:
       0:
           STR_TERRORIST: 100
-      1:
-          STR_TERRORIST: 100
-      3:
-          STR_TERRORIST: 80
-      5:
-          STR_TERRORIST: 40
-      7:
-          STR_TERRORIST: 30
     waves:
       - ufo: dummy
         count: 1
         trajectory: STATIC_TRAJECTORY
-        timer: 0
+        timer: 100
         objective: true
 
   - type: STR_HOSTAGE_CRISIS
@@ -65,19 +49,11 @@ alienMissions:
     raceWeights:
       0:
           STR_TERRORIST: 100
-      1:
-          STR_TERRORIST: 100
-      3:
-          STR_TERRORIST: 80
-      5:
-          STR_TERRORIST: 40
-      7:
-          STR_TERRORIST: 30
     waves:
       - ufo: dummy
         count: 1
         trajectory: STATIC_TRAJECTORY
-        timer: 0
+        timer: 100
         objective: true
 
   - type: STR_HIJACKED_PLANE
@@ -87,19 +63,11 @@ alienMissions:
     raceWeights:
       0:
           STR_TERRORIST: 100
-      1:
-          STR_TERRORIST: 100
-      3:
-          STR_TERRORIST: 80
-      5:
-          STR_TERRORIST: 40
-      7:
-          STR_TERRORIST: 30
     waves:
       - ufo: dummy
         count: 1
         trajectory: STATIC_TRAJECTORY
-        timer: 0
+        timer: 100
         objective: true
 
 ######################################

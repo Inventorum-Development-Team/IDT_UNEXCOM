@@ -4188,27 +4188,67 @@ ufopaedia:
       - STR_TERRORIST_GASMASK_CORPSE
     listOrder: 16002
 
+  - id: STR_ALIEN_ASSOCIATIONS
+    type_id: 8
+    section: STR_TERRORIST_RESEARCH
+    text: STR_ALIEN_ASSOCIATIONS_UFOPEDIA
+    requires:
+     - STR_ALIEN_ASSOCIATIONS
+    listOrder: 16003
+
+  - id: STR_TERRORIST_HQ
+    type_id: 8
+    section: STR_TERRORIST_RESEARCH
+    text: STR_TERRORIST_HQ_UFOPEDIA
+    requires:
+     - STR_TERRORIST_HQ
+    listOrder: 16004
+
+  - id: STR_THIN_MAN_AUTOPSY
+    type_id: 7
+    section: STR_TERRORIST_RESEARCH
+    image_id: UFOPAEDIA_IMG_THIN_MAN_AUTOPSY
+    text: STR_THIN_MAN_AUTOPSY_UFOPEDIA
+    text_width: 158
+    requires:
+     - STR_THIN_MAN_CORPSE
+    listOrder: 16004
+
+  - id: STR_THIN_MAN
+    type_id: 7
+    section: STR_TERRORIST_RESEARCH
+    image_id: UFOPAEDIA_IMG_THIN_MAN
+    text: STR_THIN_MAN_UFOPEDIA
+    text_width: 158
+    requires:
+     - STR_THIN_MAN_INFILTRATOR
+    listOrder: 16005
+
+
+
   - id: STR_TEXAN_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH
     requires:
       - STR_TEXAN_UFO
     text: STR_TEXAN_UFO_UFOPEDIA
-    listOrder: 16003
+    listOrder: 16006
   - id: STR_MAGISTER_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH
     requires:
       - STR_MAGISTER_UFO
     text: STR_MAGISTER_UFO_UFOPEDIA
-    listOrder: 16004
+    listOrder: 16007
   - id: STR_MI8_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH
     requires:
       - STR_MI8_UFO
     text: STR_MI8_UFO_UFOPEDIA
-    listOrder: 16005
+    listOrder: 16008
+
+
 extraStrings:
   - type: en-US
     strings:
