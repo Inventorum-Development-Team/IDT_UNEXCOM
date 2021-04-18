@@ -1,0 +1,208 @@
+ufos:
+  - type: STR_OVERSEER
+    size: STR_SMALL
+    damageMax: 500
+    speedMax: 9000
+    power: 10
+    range: 30
+    score: 10
+    reload: 50
+    breakOffTime: 10
+    battlescapeTerrainData:
+      name: OVERSEER
+      mapDataSets:
+        - OBJECTIVEPS
+        - U_PODS
+        - U_BITS
+        - U_BASE
+        - U_WALL02
+        - UFO1
+        - U_EXT02
+      mapBlocks:
+        - name: OVERSEER
+          width: 20
+          length: 20
+alienDeployments:
+  - type: STR_OVERSEER
+    height: 10
+    width: 60
+    length: 60
+    alert: STR_OVERSEER_LANDING
+    markerIcon: 7
+    markerName: STR_OVERSEER_LANDING
+    duration: [ 72, 72]
+    objectivePopup: STR_POWER_DESTROYED
+    startingCondition: STR_OPERATION_FALSE_FLAG_CONDITION
+    briefing:
+     desc: STR_OVERSEER_BRIEFING
+    allowObjectiveRecovery: false
+    objectiveType: 14
+    turnLimit: 10
+    chronoTrigger: 1
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 5
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_MIND_PROBE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 1
+        lowQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 40
+        itemSets:
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+extraStrings:
+  - type: en-US
+    strings:
+       STR_OVERSEER: "Overseer"
+       STR_OVERSEER_LANDING: "Landed Overseer"
+       STR_POWER_DESTROYED: "POWER SOURCES DESTROYED"
+       STR_OVERSEER_BRIEFING: "CODENAME: Operation False Flag - Using a captured Hyper Wave Encoder we were able to get the Overseer UFO to land, faking a base location. Our mission: we have to either kill all aliens or destroy the power source before the timer runs out and the aliens realize what is happening and lift off. They'll never know - we give no warning. We set a trap, they took the bait."
