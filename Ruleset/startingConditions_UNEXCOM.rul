@@ -21,3 +21,60 @@ startingConditions:
     forbiddenItems:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
+
+  - type: STR_OPERATION_FALSE_FLAG_CONDITION
+    requiredItems:
+          STR_HYPER_WAVE_ENCODER: 1
+
+
+  - type: STR_MARS_CONDITION
+    defaultArmor:
+      STR_SOLDIER:
+        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
+      STR_PILOT:
+        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
+      STR_SPECIAL_FORCES_SOLDIER:
+        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
+      STR_MERCENARY_UNIFORM_UC:
+        STR_ASTRONAUT_KRECHET94_SPACESUIT_UC: 100
+    allowedArmors:
+      - STR_ASTRONAUT_A7L_SPACESUIT_UC
+      - STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+      - STR_POWER_SUIT_UC
+      - STR_FLYING_SUIT_UC
+#    forbiddenSoldierTypes:
+#      - STR_MERCENARY
+    allowedItemCategories:
+      - STR_SPACE
+      - STR_LASER
+      - STR_PLASMA
+      - STR_ALLOY
+    allowedCraft:
+      - STR_SPACE_SHUTTLE
+
+  - type: STR_MOON_CONDITION
+    defaultArmor:
+      STR_SOLDIER:
+        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
+      STR_PILOT:
+        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
+      STR_SPECIAL_FORCES_SOLDIER:
+        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
+      STR_MERCENARY_UNIFORM_UC:
+        STR_ASTRONAUT_KRECHET94_SPACESUIT_UC: 100
+    allowedArmors:
+      - STR_ASTRONAUT_A7L_SPACESUIT_UC
+      - STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+      - STR_POWER_SUIT_UC
+      - STR_FLYING_SUIT_UC
+#    forbiddenSoldierTypes:
+#      - STR_MERCENARY
+    allowedItemCategories:
+      - STR_SPACE
+      - STR_LASER
+      - STR_PLASMA
+      - STR_ALLOY
+    allowedCraft:
+      - STR_SPACE_SHUTTLE
+
+
