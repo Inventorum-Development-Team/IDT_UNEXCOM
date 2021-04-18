@@ -609,8 +609,8 @@ alienDeployments:
   - type: STR_TERRORIST_HQ_RAID
     data:
       - alienRank: 5
-        lowQty: 4
-        highQty: 8
+        lowQty: 5
+        highQty: 10
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -636,8 +636,8 @@ alienDeployments:
             - STR_GRENADE
             - STR_GRENADE
       - alienRank: 4
-        lowQty: 3
-        highQty: 6
+        lowQty: 5
+        highQty: 10
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -664,7 +664,7 @@ alienDeployments:
             - STR_GRENADE
       - alienRank: 3
         lowQty: 4
-        highQty: 6
+        highQty: 8
         dQty: 0
         percentageOutsideUfo: 50
         itemSets:
@@ -765,31 +765,25 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
-            - STR_GRENADE
-          -
-            - STR_MAKAROV
-            - STR_9MM_PISTOL_X10
-            - STR_9MM_PISTOL_X10
-            - STR_GRENADE
-          -
-            - STR_ALIEN_LASER_PISTOL
-            - STR_ALIEN_LASER_PISTOL_BATTERY
-            - STR_ALIEN_LASER_PISTOL_BATTERY
-            - STR_GRENADE
-          -
-            - STR_ALIEN_LASER_RIFLE
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-            - STR_GRENADE
-            - STR_GRENADE
+            []
     width: 50
     length: 20
     height: 10
     terrains:
      - TERRORIST_HQ
+    alert: STR_TERRORIST_HQ_FOUND
+    alertBackground: COUNTER_TERRORISM_ALERT_BACKGROUND
+    briefing:
+      background: TERRORIST_HQ_BACKGROUND
+      desc: STR_TERRORIST_HQ_BRIEFING
+      palette: 3
+      textOffset: -16
+      showTarget: false
+      showCraft: false
+    duration: [288,312]
+    markerName: STR_TERRORIST_HQ_MARKER
+    markerIcon: 7
+    civilians: 3
 
 extraSprites:
   - type: COUNTER_TERRORISM_ALERT_BACKGROUND
@@ -816,6 +810,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/URBAN_TERROR_BACKGROUND.png
+  - type: TERRORIST_HQ_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/TERRORIST_HQ_BACKGROUND.png
 
 extraStrings:
   - type: en-US
@@ -829,3 +829,7 @@ extraStrings:
       STR_HIJACKED_PLANE_BRIEFING: A civilian plane has been hijacked by a group of terrorists. The extremists are demanding the release of their comrades held in prisons in the country where we will be deployed, as well as safe passage to escape. We cannot allow that. The aircraft is parked on a runway at the local airport. Our mission will be to storm the plane, neutralize the hostiles and avoid civilian casualties at all costs. Extreme caution, it's a closed environment and a stray bullet could injure someone.
       STR_HUMAN_TERROR_ATTACK: Terrorist Attack
       STR_URBAN_TERROR_BRIEFING: A squad of terrorists has started an attack on a city and we have been called upon to support the local authorities. The reason for the assault is not known, but there is speculation that the enemy is trying to make a show of force, perhaps directed at members of other anarchist groups. There are no hostages, but chaos reigns in the streets. It is our mission to support the local forces in restoring order, neutralizing the hostiles and ensuring the safety of civilians, before the attack escalates and gets out of control.
+      STR_TERRORIST_HQ_MARKER: "Terrorist Hideout"
+      STR_TERRORIST_HQ_FOUND: "Terrorist Hideout Found"
+      STR_TERRORIST_HQ_BRIEFING: "Intelligence has confirmed that this building is the source of the alien weaponry. The number of individuals inside is unknown, but is estimated at between 20 and 30. Your objective is to clear out the building and either capture or neutralize whoever is in charge of the cell. Speed and discretion is essential, as we do not want to draw unwanted attention from the public to the operation"
+      STR_TERRORIST_HQ_RAID: "Terrorist Hideout Raid"
