@@ -1,7 +1,7 @@
 United Nations Extraterrestrial Combat Command mod by efrenespartano
 
 
-Inspiration: 
+Inspiration:
 
 This compilation was inspired by several sources. One of the main ones, as well as my reference source is the work of Hobbes
 in Area 51 and even more in Tech-Com, where I copied several codes. It's my favorite mod of one of my favorite movies. Back in 2015, I played a modified version by myself
@@ -12,7 +12,7 @@ of this compilation, for some concepts and part of its graphics, although it is 
 
 SPECIAL THANKS
 To Marina, the woman who is always by my side supporting me.
-To the Inventorum Development Team, the modding team made by Luke83, b__0, Andr, The Reaver of Darkness, Badfella, Ikhanad, DarkDust, Noah193, Warboy and me, where I find support and ideas to keep working on. 
+To the Inventorum Development Team, the modding team made by Luke83, b__0, Andr, The Reaver of Darkness, Badfella, Ikhanad, DarkDust, Noah193, Warboy and me, where I find support and ideas to keep working on.
 To Hobbes, practically thanks to him is that I ventured into the world of modding when he allowed me to collaborate with his great mod Tech-Com, as well as Terrain Mod.
 To KingMob4313 and Ickschuss, for their mod Equal Terms, one of my favorite mods of all times, of all games.
 To the OpenXcom developers! They gave new life to a fantastic game.
@@ -84,7 +84,7 @@ Credits by name:
 *XOps: Alien Plasma Weapons
 *xover88: XCOM 2012 Music
 *Yataka Shimaoka: bug hunter
-*wolwerin: Flechette Weapons, Tesla Weapons, sprites and sounds, plus debugging support 
+*wolwerin: Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, sprites and sounds, plus debugging support
 *Zane: original Delta sprites
 *zaphnath: bug hunter
 *zombieclone111: bug hunter

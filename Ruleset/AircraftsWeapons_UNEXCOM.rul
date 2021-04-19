@@ -1278,7 +1278,7 @@ crafts:
     requires:
       - STR_IMPROVED_VTOL_TRANSPORT
     sprite: 867
-    fuelMax: 150
+    fuelMax: 660
     damageMax: 400
     speedMax: 300
     accel: 3
@@ -1303,6 +1303,7 @@ crafts:
     repairRate: 4
     transferTime: 48
     score: 40
+    mapVisible: false
     battlescapeTerrainData:
       name: MI_24_HIND
       mapDataSets:
@@ -1312,6 +1313,16 @@ crafts:
         - name: MI_24_HIND
           width: 10
           length: 20
+          items:
+            HIND_TURRET_SPAWNER:
+              - [4, 10, 2]
+            STR_HIND_DOOR_BOMB:
+              - [4, 12, 0]
+              - [6, 12, 0]
+          fuseTimers:
+            HIND_TURRET_SPAWNER: [0, 0]
+            STR_HIND_DOOR_BOMB: [1, 1]
+
     craftInventoryTile: [4, 10, 0]
     deployment:
       - [4, 10, 0, 4]
@@ -1911,7 +1922,7 @@ craftWeapons:
     sprite: 209
     sound: 5
     damage: 500
-    shieldDamageModifier: 0
+    shieldDamageModifier: 25
     range: 20
     accuracy: 80
     reloadCautious: 48
@@ -1931,7 +1942,7 @@ craftWeapons:
     sprite: 216
     sound: 5
     damage: 600
-    shieldDamageModifier: 0
+    shieldDamageModifier: 25
     range: 25
     accuracy: 90
     reloadCautious: 48
@@ -1950,7 +1961,7 @@ craftWeapons:
     sprite: 216
     sound: 5
     damage: 800
-    shieldDamageModifier: 0
+    shieldDamageModifier: 50
     range: 30
     accuracy: 95
     reloadCautious: 48
@@ -1999,7 +2010,7 @@ craftWeapons:
     sprite: 216
     sound: 5
     damage: 1000
-    shieldDamageModifier: 0
+    shieldDamageModifier: 75
     range: 35
     accuracy: 100
     reloadCautious: 48
@@ -2753,12 +2764,16 @@ items:
     clipSize: 1
   - type: STR_ADEN_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
   - type: STR_ADEN_CANNON_ROUNDS_X50
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 2080
     costSell: 1600
@@ -4558,7 +4573,7 @@ extraStrings:
       STR_ATALAYA: "ATALAYA"
       STR_ATALAYA_UFOPEDIA: "NEWEST IMPLEMENTATION OF ALIEN TECH ON HUMAN DESIGNS. HAS BETTER FUEL CELLS FOR MORE FLIGHT TIME, AS WELL AS IMPROVED RADARS AND SCANNERS FOR LONGER-RANGE DETECTION. INCORPORATES THE NEWEST AMERICAN AND SOVIET AEROSPACE TECH WITH THE LIGHT AND STRONG ALIEN ALLOYS. INCLUDES A SLOT FOR CANNONS, USED AS SELF-DEFENSE."
       STR_HIND: "HIND"
-      STR_HIND_UFOPEDIA: "MI-24X HIND - ADVANCED SOVIET GUNSHIP MODEL, BUILT IN COLLABORATION WITH MIKHAIL MIL AND UNEXCOM. NICKNAMED 'FLYING TANK' FOR ITS FIRE POWER AND HARDNESS, SACRIFICES A LITTLE THE ABILITY TO TRANSPORT TROOPS FOR INCREASED ARMOR AND SPACE FOR FUEL."
+      STR_HIND_UFOPEDIA: "MI-24X HIND - ADVANCED SOVIET GUNSHIP MODEL, BUILT IN COLLABORATION WITH MIKHAIL MIL AND UNEXCOM. NICKNAMED 'FLYING TANK' FOR ITS FIRE POWER AND HARDNESS, SACRIFICES A LITTLE THE ABILITY TO TRANSPORT TROOPS FOR INCREASED ARMOR AND SPACE FOR FUEL. PERFORMS A MISSILE STRIKE DURING THE FIRST TURN OF COMBAT"
 #      STR_VALKYRIE: "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA:  "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA: "VALKYRIE"

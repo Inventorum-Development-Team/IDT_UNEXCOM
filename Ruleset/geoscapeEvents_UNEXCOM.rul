@@ -278,6 +278,13 @@ events:
     timer: 600
     timerRandom: 600
 
+  - name: STR_TERRORISTS_DEFEATED_EVENT
+    description: STR_TERRORISTS_DEFEATED_EVENT_DESCRITPTION
+    background: REINFORCEMENTS_EVENT_BACKGROUND
+    points: 1000
+    timer: 600
+    timerRandom: 300
+
 extraSprites:
 ##########################################
 ############ BACKGROUNDS #################
@@ -423,3 +430,5 @@ extraStrings:
        STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION: "A squad of Special Forces volunteers has just arrived at our main base. They have asked to bring their weapons with them, which we have allowed. Our troops are excited to have such highly trained soldiers to support our missions; we are confident they will be a key part of our war effort."
        STR_MERCENARY_ARRIVAL_EVENT: "PMC volunteers arrived"
        STR_MERCENARY_ARRIVAL_EVENT_DESCRIPTION: "A group of volunteers belonging to a PMC has just arrived at our HQ to support our troops. Although it was not necessary, they have brought their personal weapons with them. With the support of these experienced mercenaries, we can improve our combat capabilities considerably."
+       STR_TERRORISTS_DEFEATED_EVENT: "Terrorist activity declines"
+       STR_TERRORISTS_DEFEATED_EVENT_DESCRITPTION: "Since eliminating the Alien Infiltrator and shutting down its terrorist cell, reports of major terrorist attacks have been going down. According to intelligence reports, many terrorist organisations have gone dormant, ceasing most of their operations. The Council has therefore decided to allocate counterterrorism operations to local forces, letting us focus on the alien threat."

@@ -693,6 +693,21 @@ extraSprites:
     files:
       0: Resources/Backgrounds/BACK17.PNG
 
+### Interception images
+
+  - type: InterceptionTroopLander
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+     0: Resources/UFOinterception/trooplander.png
+
+  - type: InterceptionNoFeed
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+     0: Resources/UFOinterception/nofeed.png
 startingBase:
   facilities:
     - type: STR_ACCESS_LIFT
@@ -959,7 +974,30 @@ missionRatings:
   -99999: STR_MT_RATING_ABOMINABLE
 defeatScore: -1600
 defeatFunds: -10000000
-
+alienItemLevels:
+  - [0, 0, 0, 0, 0, 0, 0, 1, 1, 2]
+  - [0, 0, 0, 0, 0, 1, 1, 1, 2, 2]
+  - [0, 0, 0, 0, 0, 1, 1, 1, 2, 2]
+  - [0, 0, 0, 1, 1, 1, 1, 2, 2, 3]
+  - [0, 0, 0, 1, 1, 1, 1, 2, 2, 3]
+  - [0, 0, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [1, 1, 1, 2, 2, 2, 3, 3, 3, 3]
+  - [1, 1, 1, 2, 2, 2, 3, 3, 3, 3]
+  - [1, 1, 1, 2, 2, 2, 3, 3, 3, 4]
+  - [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
+  - [1, 1, 2, 2, 2, 3, 3, 3, 4, 4]
+  - [1, 1, 2, 2, 2, 3, 3, 3, 4, 4]
+  - [1, 2, 2, 2, 3, 3, 3, 3, 4, 4]
+  - [1, 2, 2, 2, 3, 3, 3, 3, 4, 4]
+  - [1, 2, 2, 2, 3, 3, 3, 3, 4, 4]
+  - [2, 2, 2, 3, 3, 3, 3, 4, 4, 4]
+  - [2, 2, 3, 3, 3, 3, 3, 4, 4, 4]
+  - [2, 2, 3, 3, 3, 3, 3, 4, 4, 4]
+  - [2, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+  - [3, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+  - [3, 3, 3, 3, 3, 3, 4, 4, 4, 4]
 #############################
 #### UNDERWATER STUFF ######
 ###########################

@@ -6,9 +6,9 @@ items:
     costBuy: 100000
     costSell: 50000
     weight: 1
-    bigSprite: 200
-    floorSprite: 200
-    handSprite: 904
+    bigSprite: 956
+    floorSprite: 956
+    handSprite: 956
     power: 200
     damageType: 3
     battleType: 4
@@ -16,8 +16,6 @@ items:
     fuseType: 5
     fuseTriggerEvents:
       throwTrigger: true
-    tags:
-      STRIKE: 1
 
   - type: STR_INC_STRIKE
     size: 0.1
@@ -26,9 +24,9 @@ items:
     costBuy: 100000
     costSell: 50000
     weight: 1
-    bigSprite: 200
-    floorSprite: 200
-    handSprite: 904
+    bigSprite: 972
+    floorSprite: 972
+    handSprite: 972
     power: 100
     damageType: 2
     battleType: 4
@@ -41,13 +39,30 @@ items:
       ToMorale: 0.5
       FireThreshold: 0
       RadiusReduction: 0.0
-    tags:
-      STRIKE: 1
 
 extraSprites:
+    - type: BIGOBS.PCK
+      files:
+        956: Resources/BallisticWeapons/Explosives/BigHEAirStrike.png
+        964: Resources/BallisticWeapons/Explosives/BigHEAirStrike.png
+        972: Resources/BallisticWeapons/Explosives/BigNapalmAirStrike.png
+        980: Resources/BallisticWeapons/Explosives/BigNapalmAirStrike.png
     - type: FLOOROB.PCK
       files:
-        249: Resources/BallisticWeapons/Explosives/FloorSignalGrenade.png
+        956: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+        964: Resources/BallisticWeapons/Explosives/FloorSignalGrenade.png
+        972: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+        980: Resources/BallisticWeapons/Explosives/FloorSignalGrenadeYellow.png
+    - type: HANDOB.PCK
+      width: 256
+      height: 40
+      subX: 32
+      subY: 40
+      files:
+        956: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+        964: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+        972: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+        980: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
 
 extraStrings:
   - type: en-US
@@ -55,22 +70,6 @@ extraStrings:
       STR_HE_STRIKE: "HE Air Strike"
       STR_INC_STRIKE: "Napalm Air Strike"
 
-extended:
-  tags:
-    RuleItem:
-      STRIKE: int
-  scripts:
-    selectItemSprite:
-      - offset: 2
-        code: |
-          var int x;
-          var int y;
-          BattleItem.getTag item x Tag.STRIKE;
-          BattleItem.isFuseEnabled item y;
-          if and eq x 1 eq y 1;
-            set sprite_index 1249;
-          end;
-          return sprite_index;
 
 
 

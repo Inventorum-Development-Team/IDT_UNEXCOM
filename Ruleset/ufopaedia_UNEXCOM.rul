@@ -64,6 +64,7 @@ ufopaedia:
   - id: STR_TUNNAN
     section: STR_XCOM_CRAFTS
     text: STR_TUNNAN_UFOPEDIA
+    type_id: 1
     listOrder: 100
     rect_stats:
       x: 5
@@ -1007,8 +1008,6 @@ ufopaedia:
     text_width: 316
 
   - id: STR_FALCON
-    requires:
-      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 2
     section: STR_CRAFT_ARMAMENT
     image_id: FALCON
@@ -2145,7 +2144,7 @@ ufopaedia:
 
   - id: STR_M16A1
     requires:
-      - STR_M16A1
+      - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_M16A1_UFOPEDIA
@@ -2169,7 +2168,7 @@ ufopaedia:
 
   - id: STR_M16_M203
     requires:
-      - STR_USA_SUPPORT_RESEARCH
+      - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_M16_M203_UFOPEDIA
@@ -2377,7 +2376,7 @@ ufopaedia:
     requires:
       - STR_SKS
     type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
+    section: STR_WEAPONS
     text: STR_SKS_UFOPEDIA
     listOrder: 4603
 
@@ -2435,7 +2434,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_HEAVY
     text: STR_FLECHETTE_SNIPER_UFOPEDIA
-    listOrder: 46010
+    listOrder: 4610
 
   - id: STR_HUMAN_PLASMA_DMR
     type_id: 4
@@ -2947,21 +2946,29 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5111
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_M72_ARR_HE_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5112
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_M72_ARR_SMOKE_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5113
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_M72_ARR_ELERIUM_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5114
+    requires:
+      - STR_NATO_LASER_HEAVY_WEAPONS
   - id: STR_PLASMA_PISTOL_CLIP
     type_id: 4
     section: STR_AMMUNITION
@@ -2972,11 +2979,15 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5201
+    requires:
+      - STR_HUMAN_PLASMA_MAGNUM
   - id: STR_PLASMA_SMG_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5202
+    requires:
+      - STR_HUMAN_PLASMA_SMG
   - id: STR_PLASMA_RIFLE_CLIP
     type_id: 4
     section: STR_AMMUNITION
@@ -2987,11 +2998,15 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5204
+    requires:
+      - STR_HUMAN_PLASMA_DMR
   - id: STR_SNIPER_PLASMA_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5205
+    requires:
+      - STR_HUMAN_SNIPER_PLASMA
   - id: STR_HEAVY_PLASMA_CLIP
     type_id: 4
     section: STR_AMMUNITION
@@ -3002,6 +3017,8 @@ ufopaedia:
     section: STR_AMMUNITION
     text: ...
     listOrder: 5207
+    requires:
+      - STR_HUMAN_PLASMA_LMG
 
   - id: STR_STUN_BOMB
     section: STR_AMMUNITION
@@ -3646,6 +3663,48 @@ ufopaedia:
 
 #Alien Equipment
 
+
+  - id: STR_ALIEN_LASERS
+    type_id: 8
+    section: STR_ALIEN_EQUIPMENT
+    requires:
+      - STR_ALIEN_LASERS
+    text: STR_ALIEN_LASERS_UFOPEDIA
+    listOrder: 11990
+  - id: STR_ALIEN_LASER_PISTOL
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    requires:
+      - STR_PLASMA_PISTOL
+    text: STR_ALIEN_LASER_PISTOL_UFOPEDIA
+    listOrder: 11991
+  - id: STR_ALIEN_LASER_RIFLE
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_LASER_RIFLE_UFOPEDIA
+    requires:
+      - STR_ALIEN_LASER_RIFLE
+    listOrder: 11992
+  - id: STR_ALIEN_HEAVY_LASER
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_HEAVY_LASER_UFOPEDIA
+    requires:
+      - STR_ALIEN_HEAVY_LASER
+    listOrder: 11993
+
+
+  - id: STR_ALIEN_LASER_PISTOL_BATTERY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ALIEN_LASER_RIFLE_BATTERY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ALIEN_HEAVY_LASER_BATTERY
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+
   - id: STR_ALIEN_PLASMA_WEAPONS
     type_id: 8
     section: STR_ALIEN_EQUIPMENT
@@ -3771,6 +3830,8 @@ ufopaedia:
     section: STR_ALIEN_EQUIPMENT
     text: ...
     listOrder: 12102
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
   - id: STR_FUSION_RIFLE
     requires:
       - STR_FUSION_RIFLE
@@ -3790,6 +3851,8 @@ ufopaedia:
     section: STR_ALIEN_EQUIPMENT
     text: ...
     listOrder: 12105
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
   - id: STR_MIND_PROBE
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12200
@@ -4125,27 +4188,67 @@ ufopaedia:
       - STR_TERRORIST_GASMASK_CORPSE
     listOrder: 16002
 
+  - id: STR_ALIEN_ASSOCIATIONS
+    type_id: 8
+    section: STR_TERRORIST_RESEARCH
+    text: STR_ALIEN_ASSOCIATIONS_UFOPEDIA
+    requires:
+     - STR_ALIEN_ASSOCIATIONS
+    listOrder: 16003
+
+  - id: STR_TERRORIST_HQ
+    type_id: 8
+    section: STR_TERRORIST_RESEARCH
+    text: STR_TERRORIST_HQ_UFOPEDIA
+    requires:
+     - STR_TERRORIST_HQ
+    listOrder: 16004
+
+  - id: STR_THIN_MAN_AUTOPSY
+    type_id: 7
+    section: STR_TERRORIST_RESEARCH
+    image_id: UFOPAEDIA_IMG_THIN_MAN_AUTOPSY
+    text: STR_THIN_MAN_AUTOPSY_UFOPEDIA
+    text_width: 158
+    requires:
+     - STR_THIN_MAN_CORPSE
+    listOrder: 16004
+
+  - id: STR_THIN_MAN
+    type_id: 7
+    section: STR_TERRORIST_RESEARCH
+    image_id: UFOPAEDIA_IMG_THIN_MAN
+    text: STR_THIN_MAN_UFOPEDIA
+    text_width: 158
+    requires:
+     - STR_THIN_MAN_INFILTRATOR
+    listOrder: 16005
+
+
+
   - id: STR_TEXAN_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH
     requires:
       - STR_TEXAN_UFO
     text: STR_TEXAN_UFO_UFOPEDIA
-    listOrder: 16003
+    listOrder: 16006
   - id: STR_MAGISTER_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH
     requires:
       - STR_MAGISTER_UFO
     text: STR_MAGISTER_UFO_UFOPEDIA
-    listOrder: 16004
+    listOrder: 16007
   - id: STR_MI8_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH
     requires:
       - STR_MI8_UFO
     text: STR_MI8_UFO_UFOPEDIA
-    listOrder: 16005
+    listOrder: 16008
+
+
 extraStrings:
   - type: en-US
     strings:

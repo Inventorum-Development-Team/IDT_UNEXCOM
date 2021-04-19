@@ -51,6 +51,7 @@ ufos:
 #Fighters
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
+    modSprite: InterceptionNoFeed
     damageMax: 150
     speedMax: 2000
     accel: 6
@@ -192,6 +193,7 @@ ufos:
   - type: STR_TROOP_LANDER
     size: STR_LARGE
     damageMax: 1750
+    modSprite: InterceptionTroopLander
     speedMax: 400
     accel: 3
     power: 150
