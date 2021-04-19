@@ -372,6 +372,7 @@ research:
       - STR_PSI_LAB
     getOneFree:
       - STR_END_OF_TERRORISTS
+    spawnedEvent: STR_TERRORISTS_DEFEATED_EVENT
   - name: STR_THIN_MAN_CORPSE
     cost: 50
     points: 50
@@ -379,6 +380,7 @@ research:
     listOrder: 180290
     getOneFree:
       - STR_END_OF_TERRORISTS
+    spawnedEvent: STR_TERRORISTS_DEFEATED_EVENT
 
   - name: STR_TERRORISTS_OPERATIONS
     cost: 0
@@ -620,6 +622,7 @@ extraStrings:
       STR_TERRORIST_HQ: "Tracing the Weapons"
       STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop into their operation."
       STR_TERRORIST_THIN_MAN: "Terrorists + Thinman"
+      STR_THIN_MAN_INFILTRATOR: "Thin Man"
 
       STR_TERRORISTS: The Terrorists
       STR_TERRORISTS_UFOPEDIA: Terrorists are a diverse group of political, religious and ideological radicals who use violence and fear to impose their ideals or make demands on the world's governments. Each cell is independent of the others, but they use similar equipment and weaponry. They are extremely dangerous because they are not afraid to die.

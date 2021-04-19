@@ -29,12 +29,28 @@ alienMissions:
         timer: 15000
 
   - type: STR_HUMAN_TERROR_ATTACK
-    points: -50
+    points: 10
     objective: 3
     spawnZone: 0 #Mission zone for terror missions
+    siteType: STR_HUMAN_TERROR_ATTACK
     raceWeights:
       0:
           STR_TERRORIST: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 100
+        objective: true
+
+  - type: STR_TERRORIST_HQ
+    points: 10
+    objective: 3
+    spawnZone: 0 #Mission zone for terror missions
+    siteType: STR_TERRORIST_HQ_RAID
+    raceWeights:
+      0:
+          STR_TERRORIST_THIN_MAN: 100
     waves:
       - ufo: dummy
         count: 1
