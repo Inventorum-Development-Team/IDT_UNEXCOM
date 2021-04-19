@@ -2764,12 +2764,16 @@ items:
     clipSize: 1
   - type: STR_ADEN_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
   - type: STR_ADEN_CANNON_ROUNDS_X50
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.1
     costBuy: 2080
     costSell: 1600
