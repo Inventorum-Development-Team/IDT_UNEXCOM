@@ -1073,10 +1073,7 @@ items:
 
   - type: STR_M16_M203
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES]
-    requiresBuy:
-      - STR_USA_SUPPORT_RESEARCH
     size: 0.3
-    costBuy: 5000
     costSell: 5400
     weight: 12
     bigSprite: 137
@@ -2629,7 +2626,7 @@ items:
 ##################
   - type: STR_M16A1
     requiresBuy:
-      - STR_M16A1
+      - STR_USA_SUPPORT_RESEARCH
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES]
     size: 0.2
     costBuy: 4500
@@ -4748,7 +4745,7 @@ manufacture:
   - name: STR_M16A1_M203_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
-      - STR_M16A1
+      - STR_SPECIAL_FORCES_SUPPORT
     space: 1
     time: 40
     cost: 4000
