@@ -785,6 +785,15 @@ alienDeployments:
     markerIcon: 7
     civilians: 3
 
+
+items:
+  - type: STR_ELERIUM_115
+    recoveryDividers:
+      STR_HOSTAGE_CRISIS: 300
+  - type: STR_UFO_POWER_SOURCE
+    recoveryDividers:
+      STR_HOSTAGE_CRISIS: 300
+
 extraSprites:
   - type: COUNTER_TERRORISM_ALERT_BACKGROUND
     singleImage: true
