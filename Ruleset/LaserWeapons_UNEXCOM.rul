@@ -653,7 +653,7 @@ items:
     invWidth: 1
     invHeight: 3
 
-  - type: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
+  - type: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
@@ -739,7 +739,7 @@ items:
     invWidth: 1
     invHeight: 3
 
-  - type: STR_M72_AUTOMATIC_RECOILESS_RIFLE
+  - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
@@ -1291,17 +1291,17 @@ extraStrings:
       STR_FN_FLA_LASER_BATTLE_RIFLE: "FN FLA 'Leopold' Battle Rifle"
       STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA: The FN FLA is the laser derivative of the famous FN FAL. Although the design and size are similar, the FLA is much more powerful and does not require reloading. This laser was made to provide a weapon for soldiers who desired higher accuracy and power at the cost of rate of fire.
       STR_FN_FLA_LASER_CARBINE: "FN FLA 'Leopold' Carbine"
-      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a colapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
+      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a collapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
       STR_L4_ASSAULT_LASER: "L-44 'Angevin' Assault Laser"
       STR_L4_ASSAULT_LASER_UFOPEDIA: The L-44 Assault Rifle is an experimental West German Assault Laser submitted to the NATO Advanced Laser Weapon Project by Heckler and Koch. At first mocked for its strange design and uncomfortable grip, the L-4 would eventually impress even the greatest skeptics with its high accuracy and light weight. Eventually UNEXCOM officials approved the design for combat.
       STR_MAT72_SUBMACHINE_LASER: "MAT-72 'Charlemagne' Submachine Laser"
       STR_MAT72_SUBMACHINE_LASER_UFOPEDIA: French laser submachine gun developed and supplied by the French weapons manufacturer, Nexter Systems, uses smaller heat sinks than a typical laser rifle, so power input is reduced to avoid overheating. Still, this submachine gun is great for counter terror operations and close combat.
-      STR_CHURCHILL_MARSKMAN_LASER_RIFLE: "'Churchill' Marksman Laser Rifle"
-      STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
+      STR_CHURCHILL_MARKSMAN_LASER_RIFLE: "'Churchill' Marksman Laser Rifle"
+      STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
       STR_ML73_LASER_MACHINE_GUN: "ML-73 'Bassenheim' Laser MG"
       STR_ML73_LASER_MACHINE_GUN_UFOPEDIA: A West German Laser Machine Gun designed by Heckler & Koch. By late 1972 new techniques and technology allowed for larger and more efficient weapons. By converting some of the thermal energy made by firing the gun back into electrical energy, the ML-73 is able to fire large laser beams at a steady rate.
-      STR_M72_AUTOMATIC_RECOILESS_RIFLE: "M72 'Teddy' Auto Recoiless Rifle"
-      STR_M72_AUTOMATIC_RECOILESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
+      STR_M72_AUTOMATIC_RECOILLESS_RIFLE: "M72 'Teddy' Auto Recoilless Rifle"
+      STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
       STR_M72_ARR_HEAT_MAG: M72 ARR HEAT Rack (x6)
       STR_M72_ARR_HE_MAG: M72 ARR HE Rack (x6)
       STR_M72_ARR_SMOKE_MAG: M72 ARR Smoke Rack (x6)
@@ -1332,11 +1332,11 @@ extraStrings:
       STR_MANA_NORMALIZED: "NORMALIZED POWER"
       STR_COST_MANA: "power"
       STR_BATTERY: "Battery"
-      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove neccessary on longer missions. The battery is automatically recharged when returned to the base"
+      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove necessary on longer missions. The battery is automatically recharged when returned to the base"
       STR_ELERIUM_BATTERY: "Elerium Battery"
       STR_ELERIUM_BATTERY_UFOPAEDIA: "This battery is extremely similar to the power cells of alien fusion weaponry, granting it twice the capacity of our regular batteries while being the same weight"
       STR_POWER_RESERVES: "Power Reserves"
-      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves neccessary."
+      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves necessary."
       STR_USE_BATTERY: "Use Battery"
 
 extraSprites:
