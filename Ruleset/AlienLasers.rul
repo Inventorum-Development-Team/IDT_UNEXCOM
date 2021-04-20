@@ -127,6 +127,46 @@ items:
     battleType: 2
     recoveryPoints: 1
 
+
+  - type: STR_ALIEN_CRYSTAL
+    size: 0.3
+    costSell: 12000
+    bigSprite: 3406
+
+manufacture:
+
+  - name: STR_DISASSEMBLE_LASER_PISTOL
+    requires:
+     - STR_ALIEN_LASER_PISTOL
+    time: 20
+    space: 1
+    cost: 5000
+    requiredItems:
+      STR_ALIEN_LASER_PISTOL: 1
+    producedItems:
+      STR_ALIEN_CRYSTAL: 1
+
+  - name: STR_DISASSEMBLE_LASER_RIFLE
+    requires:
+     - STR_ALIEN_LASER_RIFLE
+    time: 25
+    space: 1
+    cost: 8000
+    requiredItems:
+      STR_ALIEN_LASER_RIFLE: 1
+    producedItems:
+      STR_ALIEN_CRYSTAL: 2
+
+  - name: STR_DISASSEMBLE_HEAVY_LASER
+    requires:
+     - STR_ALIEN_HEAVY_LASER
+    time: 30
+    space: 1
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_HEAVY_LASER: 1
+    producedItems:
+      STR_ALIEN_CRYSTAL: 3
 extraSprites:
   - type: BIGOBS.PCK
     files:
@@ -136,6 +176,7 @@ extraSprites:
       3403: Resources/AlienLasers/Alien Laser Rifle/Mag_Big.png
       3404: Resources/AlienLasers/Alien Heavy Laser/Gun_Big.png
       3405: Resources/AlienLasers/Alien Heavy Laser/Mag_Big.png
+      3406: Resources/AlienLasers/alienCrystal.png
   - type: FLOOROB.PCK
     files:
       3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Floor.png
@@ -192,3 +233,8 @@ extraStrings:
         laser, amplified by an alien crystal. This crystal is quite large, more
         than in other enemy devices, which we believe contributes to give it a
         greater range. We have noticed that it has a tendency to overheat."
+      STR_ALIEN_CRYSTAL: "Alien Crystal"
+      STR_ALIEN_CRYSTAL_UFOPEDIA: "This crystal is found in every alien laser weapon. While early research concluded that the crystal is the power source of the laser weaponry, this is only partially true. Funneling a weak laser trough the crystal seems to cause a nuclear reaction within it, amplifying the power of the laser. If we extract these crystals from the alien weaponry we could use them to construct powerful laser weapons of our own"
+      STR_DISASSEMBLE_LASER_PISTOL: "Disassemble laser pistol"
+      STR_DISASSEMBLE_LASER_RIFLE: "Disassemble laser rifle"
+      STR_DISASSEMBLE_HEAVY_LASER: "Disassemble heavy laser"

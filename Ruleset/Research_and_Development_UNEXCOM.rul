@@ -250,38 +250,49 @@ research:
       - STR_ALLOY_AEROSPACE
 
   - name: STR_IMPROVED_LIGHT_MISSILE
-    cost: 300
+    cost: 150
     points: 20
     dependencies:
       - STR_IMPROVED_FIGHTER
       - STR_ALLOY_AEROSPACE
   - name: STR_IMPROVED_HEAVY_MISSILE
-    cost: 200
+    cost: 100
     points: 20
     dependencies:
       - STR_IMPROVED_BOMBER
       - STR_ALLOY_AEROSPACE
   - name: STR_IMPROVED_GATLING_CANNON
-    cost: 400
+    cost: 200
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
   - name: STR_IMPROVED_REVOLVER_CANNON
-    cost: 300
+    cost: 150
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
   - name: STR_IMPROVED_SUPER_HEAVY_MISSILE
-    cost: 800
+    cost: 400
     points: 100
     dependencies:
       - STR_ALLOY_AEROSPACE
   - name: STR_IMPROVED_ROCKET
-    cost: 300
+    cost: 150
     points: 20
     dependencies:
       - STR_IMPROVED_VTOL_TRANSPORT
       - STR_ALLOY_AEROSPACE
+
+  - name: STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
+    cost: 600
+    dependencies:
+     - STR_IMPROVED_LIGHT_MISSILE
+     - STR_IMPROVED_HEAVY_MISSILE
+     - STR_IMPROVED_GATLING_CANNON
+     - STR_IMPROVED_REVOLVER_CANNON
+     - STR_IMPROVED_SUPER_HEAVY_MISSILE
+     - STR_IMPROVED_ROCKET
+     - STR_FUSION_CRAFT_WEAPONS
 
   - name: STR_ADVANCED_BOMBER
     cost: 400
@@ -316,74 +327,90 @@ research:
 ####### CRAFT WEAPONS TIER 3-4 #########
 ########################################
 
+  - name: STR_FUSION_CRAFT_WEAPONS
+    cost: 1000
+    points: 20
+    dependencies:
+      - STR_ELERIUM_FUSION
+
   - name: STR_LONGSWORD_FUSION_MISSILE
-    cost: 1100
+    cost: 550
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
   - name: STR_KATANA
-    cost: 1100
+    cost: 550
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
   - name: STR_ADLER
-    cost: 1100
+    cost: 550
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
   - name: STR_GORGON_ROCKETS
-    cost: 1100
+    cost: 550
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
   - name: STR_CASABA_LANCE
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
       - STR_CASABA_SPIKE
 
+  - name: STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
+    cost: 800
+    dependencies:
+     - STR_LONGSWORD_FUSION_MISSILE
+     - STR_KATANA
+     - STR_ADLER
+     - STR_GORGON_ROCKETS
+     - STR_SMART_CRAFT_WEAPONS
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
+
   - name: STR_ZEUS
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
       - STR_PLASMA_CANNON
   - name: STR_VOSTOK_PLASMA_CANNON
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
       - STR_PLASMA_CANNON
 
+  - name: STR_SMART_CRAFT_WEAPONS
+    cost: 1200
+    points: 20
+    dependencies:
+      - STR_FUSION_CRAFT_WEAPONS
+      - STR_PLASMA_CANNON
+      - STR_UFO_NAVIGATION
+
   - name: STR_EXCALIBUR_LIGHT_MISSILE
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
-      - STR_PLASMA_CANNON
-      - STR_UFO_NAVIGATION
+      - STR_SMART_CRAFT_WEAPONS
   - name: STR_MJOLNIR
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
-      - STR_PLASMA_CANNON
-      - STR_UFO_NAVIGATION
+      - STR_SMART_CRAFT_WEAPONS
   - name: STR_KONDOR
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
-      - STR_PLASMA_CANNON
-      - STR_UFO_NAVIGATION
+      - STR_SMART_CRAFT_WEAPONS
   - name: STR_KRAKEN_ROCKETS
-    cost: 1500
+    cost: 750
     points: 20
     dependencies:
-      - STR_ELERIUM_FUSION
-      - STR_PLASMA_CANNON
-      - STR_UFO_NAVIGATION
+      - STR_SMART_CRAFT_WEAPONS
 ########################################
 ########## LASER RESEARCH ##############
 ########################################
@@ -1510,3 +1537,9 @@ extraStrings:
       STR_IMPROVED_IMPROVED_SATELLITE: "Advanced Satellite"
       STR_AIR_STRIKES: "Close Air Support"
       STR_AIR_STRIKES_UFOPEDIA: "The Council has provided us access to close air support from airbases located in council nations near the area of operations. Though expensive, they can grant a tactical advantage if used correctly. UNEXCOM operatives can call in close air support by priming and throwing a signal smoke grenade. The air support will take a few turns to arrive, it is advised this time is used to make sure no friendly combatants are in the blast zone. Signal smoke grenades should not be used indoors, as this prevents the close air support from finding the target, meaning the attack run will not be completed"
+      STR_FUSION_CRAFT_WEAPONS: "Fusion Craft Weaponry"
+      STR_SMART_CRAFT_WEAPONS: "Smart Craft Weaponry"
+      STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS: "Outsource Alloy Ammunition Production"
+      STR_OUTSOURCE_FUSION_CRAFT_WEAPONS: "Outsource Fusion Missile Production"
+      STR_OUTSOURCE_UFOPEDIA: "Due to the growing size of our airwing, our engineering department cannot keep up with the demand of manufacturing ammunition for the advanced weapons systems developed by our research department. Therefore the council has approved our request to move production of certain weapon system munitions into factories maintained by council members. While this arrangement will free up our resources to focus on other things, giving individual council nations access to powerful new weapons might have repercussions once this conflict is over"
+      STR_OUTSOURCING_PRODUCTION: "Outsourcing Production"

@@ -2850,8 +2850,11 @@ items:
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 15000
+    costBuy: 8000
+    costSell: 4000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_HAMMER_LAUNCHER
@@ -2866,8 +2869,11 @@ items:
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 19000
+    costBuy: 20000
+    costSell: 10000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_PHOENIX_LAUNCHER
@@ -2882,8 +2888,11 @@ items:
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 50000
+    costBuy: 50000
+    costSell: 25000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_HYDRA_LAUNCHER
@@ -2898,8 +2907,11 @@ items:
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
-    costSell: 28000
+    costBuy: 12000
+    costSell: 6000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 8
 
   - type: STR_ATHENA_CANNON
@@ -2914,8 +2926,11 @@ items:
     requires:
       - STR_IMPROVED_GATLING_CANNON
     size: 0.1
-    costSell: 8900
+    costBuy: 7000
+    costSell: 3500
     transferTime: 96
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 50
 
   - type: STR_MAUSER_CANNON
@@ -2930,8 +2945,11 @@ items:
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
-    costSell: 8600
+    costBuy: 7000
+    costSell: 3500
     transferTime: 96
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 50
 
 #############################################
@@ -2956,67 +2974,79 @@ items:
     transferTime: 48
 
   - type: STR_LONGSWORD_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
     costSell: 35000
     transferTime: 48
   - type: STR_LONGSWORD_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 15000
+    costBuy: 12000
+    costSell: 6000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_KATANA_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_KATANA_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 19000
+    costBuy: 24000
+    costSell: 12000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_ADLER_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.8
     costSell: 127000
     transferTime: 48
   - type: STR_ADLER_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 50000
+    costBuy: 70000
+    costSell: 35000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_GORGON_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_GORGON_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
-    costSell: 28000
+    costBuy: 17000
+    costSell: 8500
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 4
 
 #TIER 4
@@ -3027,7 +3057,7 @@ items:
     costSell: 211000
     transferTime: 48
   - type: STR_VOSTOK_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_4]
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
@@ -3040,7 +3070,7 @@ items:
     costSell: 233500
     transferTime: 48
   - type: STR_ZEUS_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_4]
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
@@ -3055,62 +3085,62 @@ items:
     transferTime: 48
 
   - type: STR_EXCALIBUR_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
     costSell: 35000
     transferTime: 48
   - type: STR_EXCALIBUR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 15000
+    costSell: 14000
     transferTime: 48
     clipSize: 1
 
   - type: STR_MJOLNIR_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_MJOLNIR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 19000
+    costSell: 15000
     transferTime: 48
     clipSize: 1
 
   - type: STR_KONDOR_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.8
     costSell: 127000
     transferTime: 48
   - type: STR_KONDOR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 50000
+    costSell: 2500
     transferTime: 48
     clipSize: 1
 
   - type: STR_KRAKEN_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_KRAKEN_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
@@ -3262,7 +3292,7 @@ manufacture:
       - STR_IMPROVED_HEAVY_MISSILE
     space: 6
     time: 100
-    cost: 20000
+    cost: 40000
     producedItems:
       STR_HAMMER_MISSILES: 3
 
@@ -3365,7 +3395,8 @@ manufacture:
     time: 500
     cost: 182000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_CRYSTAL: 5
   - name: STR_LASER_CANNON
     category: STR_CRAFT_WEAPON
     requires:
@@ -3374,7 +3405,8 @@ manufacture:
     time: 600
     cost: 182000
     requiredItems:
-      STR_ALIEN_ALLOYS: 15
+      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_CRYSTAL: 5
 
   - name: STR_LONGSWORD_LAUNCHER
     listOrder: 50
@@ -3420,7 +3452,7 @@ manufacture:
       - STR_KATANA
     space: 6
     time: 100
-    cost: 30000
+    cost: 50000
     producedItems:
       STR_KATANA_MISSILES: 3
 
@@ -3468,7 +3500,7 @@ manufacture:
       - STR_ADLER
     space: 6
     time: 100
-    cost: 50000
+    cost: 60000
     producedItems:
       STR_ADLER_MISSILES: 1
 
@@ -3578,7 +3610,7 @@ manufacture:
       - STR_MJOLNIR
     space: 6
     time: 100
-    cost: 40000
+    cost: 55000
     producedItems:
       STR_MJOLNIR_MISSILES: 3
 
@@ -3628,7 +3660,7 @@ manufacture:
       - STR_KONDOR
     space: 6
     time: 100
-    cost: 60000
+    cost: 70000
     producedItems:
       STR_KONDOR_MISSILES: 1
 
@@ -4605,7 +4637,7 @@ extraStrings:
       STR_GORGON_ROCKETS_UFOPAEDIA: "THE GORGON ROCKET SYSTEM IS A LIGHT UNGUIDED FUSION MISSILE THAT EXCHANGES RANGE AND ACCURACY FOR DESTRUCTIVE POWER AND CARRYING CAPACITY."
       STR_CASABA_SPIKE: "CASABA HOWITZER NUCLEAR SPIKE"
       STR_LASER_SPIKE: "CASABA NUCLEAR SPIKE"
-      STR_CASABA_SPIKE_UFOPAEDIA: "THE CASABA NUCLEAR SPIKE IS A HIGHLY EXPERIMENTAL WEAPON. USING A NUCLEAR REACTION CONTAINED WITHIN A HEAVILY MODIFIED UFO POWER SOURCE TO POWER ITSELF, THE WEAPON SYSTEM CONCENTRATES ALL THE POWER GENERATED INTO A SINGLE DESTRUCTIVE LASER BEAM."
+      STR_CASABA_SPIKE_UFOPAEDIA: "THE CASABA NUCLEAR SPIKE IS A HIGHLY EXPERIMENTAL WEAPON. USING A NUCLEAR REACTION CONTAINED WITHIN A HEAVILY MODIFIED UFO POWER SOURCE TO POWER ITSELF, THE WEAPON SYSTEM CONCENTRATES ALL THE POWER GENERATED INTO A SINGLE DESTRUCTIVE BEAM."
       STR_EXCALIBUR_LIGHT_MISSILE: "EXCALIBUR SMART LIGHT MISSILE"
       STR_EXCALIBUR_LAUNCHER: "EXCALIBUR LAUNCHER"
       STR_EXCALIBUR_MISSILES: "EXCALIBUR MISSILE"
