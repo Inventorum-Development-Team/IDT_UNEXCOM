@@ -1528,6 +1528,55 @@ crafts:
 # 5   1
 # 4 3 2
 
+  - type: STR_SPACE_SHUTTLE
+    sprite: 945
+    fuelMax: 2732 # Combat range of 22,000 nmi
+    damageMax: 450
+    speedMax: 14092 # Orbital speed of 27,600 Km/h
+    accel: 3
+    weapons: 0
+    soldiers: 14
+    vehicles: 0
+    pilots: 2
+    allowLanding: true
+    costBuy: 100000
+    costRent: 6000
+    refuelRate: 50
+    repairRate: 4
+    transferTime: 48
+    score: 40
+    battlescapeTerrainData:
+      name: SHUTTLE_GROUND
+      mapDataSets:
+        - BLANKS
+        - SHUTTLE
+      mapBlocks:
+        - name: SHUTTLE_GROUND
+          width: 10
+          length: 20
+    craftInventoryTile: [5, 11, 1]
+    deployment:
+#Pilots Cabin
+      - [5, 13, 1, 4]
+      - [4, 13, 1, 4]
+#Payload Bay
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 1, 4]
+      - [5, 5, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+
 #}
 ############################
 ##### RECON SATELLITES #####
@@ -3697,6 +3746,8 @@ extraSprites:
       965: Resources/Aircraft/Viggen_base.png
       966: Resources/Aircraft/Jaguar_base.png
 
+      978: Resources/Aircraft/Space_Shuttle_base.png
+
 #      152: Resources/Aircraft/Odysseus_base.png
 #      153: Resources/Aircraft/Orion_base.png
 #      154: Resources/Aircraft/Bastion_base.png
@@ -3798,6 +3849,8 @@ extraSprites:
       943: Resources/Aircraft/Viggen_dogfight.png
       944: Resources/Aircraft/Jaguar_dogfight.png
 
+      945: Resources/Aircraft/Space_Shuttle_minimised.png
+      956: Resources/Aircraft/Space_Shuttle_dogfight.png
 
 #      203: Resources/Aircraft/Sabre_minimised.png
 
@@ -4131,6 +4184,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/Aircraft/LIGHTNING_UFOPEDIA.PNG
+  - type: SPACE_SHUTTLE_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/SPACE_SHUTTLE_UFOPEDIA.png
+
 ############################################
   - type: SIDEWINDER
     singleImage: true
@@ -4658,5 +4718,7 @@ extraStrings:
       STR_MIG_105_UFOPAEDIA: "The MiG-105 entered development shortly after the alien invasion began. Benefitting from innovations discovered by UNEXCOM, the MiG-105 surpassed early expectations despite being the first spaceplane designed for exclusively for military use. However, the MiG-105 still lags behind conventional aircraft designs in some aspects, The size of its payload is limited due to the requirement of having a low weight."
       STR_BASTION: "BASTION"
       STR_BASTION_UFOPAEDIA: "The bastion was designed with the sole purpose of spotting UFOs in mind, Capable of spotting and tracking UFOs in an unprecedented 2300-mile radius. Due to improvements in efficiency, the Bastion is capable of relocating with twice the speed of its predecessor, while still retaining the capability to mount defensive guns."
+      STR_SPACE_SHUTTLE: "RAIDER SHUTTLE"
+      STR_SPACE_SHUTTLE_UFOPEDIA: "X-73 RAIDER SPACE SHUTTLE - X-73 Raider Shuttle. Prototype space plane with a large cargo bay, planned to replace the Apollo program and intended to start on the 80s, the new technologies allowed us to improve and implement the model. Has VTOL capabalities"
 
 #}
