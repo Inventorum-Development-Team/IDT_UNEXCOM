@@ -455,15 +455,15 @@ extraStrings:
 ########## Underwater Missions below ###############
 ###################################################
       STR_QD_SLOT: Q-D
-      STR_SMALL_SCOUT_UNDERWATER: Small Scout (Undewater)
-      STR_MEDIUM_SCOUT_UNDERWATER: Medium Scout (Undewater)
-      STR_LARGE_SCOUT_UNDERWATER: Large Scout (Undewater)
-      STR_HARVESTER_UNDERWATER: Harvester (Undewater)
-      STR_ABDUCTOR_UNDERWATER: Abductor (Undewater)
-      STR_TERROR_SHIP_UNDERWATER: Transport Transport (Undewater)
-      STR_BATTLESHIP_UNDERWATER: Battleship (Undewater)
-      STR_SUPPLY_SHIP_UNDERWATER: Supply Ship (Undewater)
-      STR_TERRORIST_UNDEWATER: Terrorist (Undewater)
+      STR_SMALL_SCOUT_UNDERWATER: Small Scout (Underwater)
+      STR_MEDIUM_SCOUT_UNDERWATER: Medium Scout (Underwater)
+      STR_LARGE_SCOUT_UNDERWATER: Large Scout (Underwater)
+      STR_HARVESTER_UNDERWATER: Harvester (Underwater)
+      STR_ABDUCTOR_UNDERWATER: Abductor (Underwater)
+      STR_TERROR_SHIP_UNDERWATER: Transport Transport (Underwater)
+      STR_BATTLESHIP_UNDERWATER: Battleship (Underwater)
+      STR_SUPPLY_SHIP_UNDERWATER: Supply Ship (Underwater)
+      STR_TERRORIST_UNDERWATER: Terrorist (Underwater)
 ####################################################
 
 units:
@@ -662,7 +662,7 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/BACK12.PNG
-  - type: BACK13.SCR #buy stuff, purschase things
+  - type: BACK13.SCR #buy stuff, purchase things
     singleImage: true
     width: 320
     height: 200
