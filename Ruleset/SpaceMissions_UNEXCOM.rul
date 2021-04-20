@@ -1,0 +1,885 @@
+
+
+alienMissions:
+  - type: STR_OPERATION_DEVASTATION
+    objective: 2
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_SECTOID: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 100
+        objective: true
+
+alienDeployments:
+  - type: STR_MOON_ASSAULT
+    startingCondition: STR_MOON_CONDITION
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 1
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 0
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 6
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 10
+    civiliansByType:
+      STR_ALLIED_AMERICAN_ASTRONAUT: 3
+      STR_ALLIED_SOVIET_COSMONAUT: 3
+    terrains:
+      - IDT_MOON
+    alert: STR_OPERATION_DEVASTATION_ALERT
+    alertBackground: OPERATION_DEVASTATION_ALERT.SCR
+    briefing:
+      desc: STR_OPERATION_DEVASTATION_BRIEFING
+      palette: 1
+      textOffset: -16
+      background: OPERATION_DEVASTATION_ALERT
+      showTarget: false
+      showCraft: false
+    music:
+      - GMDEFEND
+    markerName: STR_MOON_ASSAULT_MARKER
+    duration: [4, 10]
+    despawnPenalty: 500
+    points: 200
+#    nextStage: STR_MARS_THE_FINAL_ASSAULT
+
+  - type: STR_MARS_OPERATION_DOWNFALL
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 1
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 0
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 6
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 4
+    terrains:
+      - IDT_MARS
+    shade: 15
+    race: STR_SECTOID
+    nextStage: STR_MARS_CYDONIA_LANDING
+    finalDestination: true
+    loseCutscene: loseGame
+    abortCutscene: loseGame
+    briefing:
+      textOffset: -16
+      palette: 6
+      music: GMNEWMAR
+      showTarget: false
+  - type: STR_MARS_CYDONIA_LANDING
+    height: 10
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_MIND_PROBE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 1
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 6
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    terrains:
+      - MARS
+    shade: 15
+    race: STR_SECTOID
+    nextStage: STR_MARS_THE_FINAL_ASSAULT
+    finalDestination: true
+    loseCutscene: loseGame
+    abortCutscene: loseGame
+    briefing:
+      textOffset: -16
+      palette: 6
+      music: GMNEWMAR
+      showTarget: false
+      background: CYDONIA_CITY_BACKGROUND.SCR
+  - type: STR_MARS_THE_FINAL_ASSAULT
+    height: 10
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_MIND_PROBE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 1
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 6
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    terrains:
+      - UBASE
+    shade: 5
+    race: STR_MIXED
+    winCutscene: winGame
+    loseCutscene: loseGame
+    abortCutscene: loseGame
+    briefing:
+      textOffset: -16
+      palette: 6
+      music: GMNEWMAR
+      showTarget: false
+      showCraft: false
+      background: BACK01.SCR
+    script: BOSSBATTLE
+    objectiveType: 14
+    objectivesRequired: 1
+
+mapScripts:
+  - type: MOON
+    commands:
+    - type: addBlock
+      size: 2
+      executionChances: 100
+      executions: 3
+      groups: 6
+    - type: addUFO
+      UFOName: STR_MOON_AA
+      executions: 2
+    - type: addUFO
+      UFOName: STR_MOON_STATION
+    - type: addCraft
+#    - type: addBlock
+#      size: 2
+#      executions: 3
+    - type: fillArea
+terrains:
+  - name: IDT_MOON
+    enviroEffects: STR_MOON_ENVIRO
+    mapDataSets:
+      - BLANKS
+      - IDT_MOON
+      - GREENHOUSE
+      - MOONMOUNT
+      - LIFTERL83
+      - U_BASE3A
+      - POLAR_DOORS
+      - POLAR_WALL
+    script: MOON
+    civilianTypes:
+      - STR_ALLIED_AMERICAN_ASTRONAUT
+      - STR_ALLIED_SOVIET_COSMONAUT
+    mapBlocks:
+      - name: IDT_MOON00
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MOON01
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MOON02
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MOON03
+        width: 10
+        length: 10
+      - name: IDT_MOON04
+        width: 10
+        length: 10
+      - name: IDT_MOON05
+        width: 10
+        length: 10
+      - name: IDT_MOON06
+        width: 10
+        length: 10
+      - name: IDT_MOON07
+        width: 10
+        length: 10
+        groups: 3
+      - name: IDT_MOON08
+        width: 10
+        length: 10
+      - name: IDT_MOON09
+        width: 10
+        length: 10
+      - name: IDT_MOON10
+        width: 10
+        length: 10
+      - name: IDT_MOON11
+        width: 20
+        length: 20
+        groups: 6
+      - name: IDT_MOON12
+        width: 20
+        length: 20
+        groups: 6
+      - name: IDT_MOON13
+        width: 20
+        length: 20
+        groups: 6
+      - name: IDT_MOON14
+        width: 10
+        length: 10
+      - name: IDT_MOON15
+        width: 10
+        length: 10
+
+ufos:
+  - type: STR_MOON_STATION
+    size: STR_SMALL
+    sprite: 2
+    damageMax: 250
+    speedMax: 2700
+#    accel: 9
+#    power: 20
+#    range: 34
+#    score: 125
+#    reload: 48
+#    breakOffTime: 300
+    battlescapeTerrainData:
+      name: UFO_120
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: P4_A
+          width: 20
+          length: 20
+#
+#          randomizedItems:
+#          - position: [12, 5, 0]
+#            amount: 1
+#            itemList:
+  - type: STR_MOON_AA
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 2400
+    accel: 9
+    power: 20
+    range: 15
+    score: 75
+    reload: 56
+    breakOffTime: 250
+    battlescapeTerrainData:
+      name: PABDUCT
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: PABDUCT
+          width: 20
+          length: 10
+
+extraStrings:
+  - type: en-US
+    strings:
+      IDT_MOON: Moon
+      STR_MOON_ASSAULT: Operation Devastation
+      STR_OPERATION_DEVASTATION_BRIEFING: Hostile alien base has been detected on Tycho Crater, on the Moon's surface. Our mission is deploy our spacecraft and engage any hostile found on the enemy base. Then, secure the area and retrive any useful information. Beware, we have info about AA guns operating in the area.
+      STR_OPERATION_DEVASTATION: Assault on Alien Lunar Base
+      STR_MOON_ASSAULT_MARKER: Enemy base detected on the Moon
+      STR_MOON_ALERT: Enemy base detected on the Moon
+      STR_ALLIED_AMERICAN_ASTRONAUT: Allied American Astronaut
+      STR_UN_ASTRONAUT: Allied American Astronaut
+      STR_ALLIED_AMERICAN_ASTRONAUT_CORPSE: Astronaut Corpse
+
+extraSprites:
+  - type: MOON_MISSION_ALERT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/MOON_MISSION_BACKGROUND.png
+
+
+units:
+  - type: STR_ALLIED_AMERICAN_ASTRONAUT
+    race: STR_ALLIED
+    rank: STR_AMERICAN_ASTRONAUT
+    stats:
+      tu: 70
+      stamina: 70
+      health: 50
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 52
+      strength: 70
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: STR_ASTRONAUT_A7L_SPACESUIT_UC
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 2
+    builtInWeaponSets:
+      -
+        - STR_CALBR
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_M5_LASER_SMG
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_X4_LASER_SHOTGUN_UFOPEDIA
+        - STR_GRENADE
+        - STR_GRENADE
+
+  - type: STR_ALLIED_SOVIET_COSMONAUT
+    race: STR_ALLIED
+    rank: STR_SOVIET_COSMONAUT
+    stats:
+      tu: 70
+      stamina: 70
+      health: 50
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 52
+      strength: 70
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 2
+    builtInWeaponSets:
+      -
+        - STR_ALK72_LASER_RIFLE
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_KHARITONOV_LASER_BATTLE_RIFLE
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_ALP_SUBMACHINE_LASER
+        - STR_GRENADE
+        - STR_GRENADE
