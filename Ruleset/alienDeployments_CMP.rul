@@ -189,7 +189,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 2
-    civilians: 16
+    civilians: 10
     terrains:
       - XBASE
     shade: 5
@@ -2424,3 +2424,7 @@ alienDeployments:
             []
           -
             []
+extraStrings:
+  - type: en-US
+    strings:
+        STR_BASE_DEFENSE_BRIEFING: "An Alien vessel has landed nearby. Our base is in severe danger. As per standard procedure non-combat personnel and X-Com craft have tried ot evacuate, but some non-combatants still remain inside the base. Alien units will enter the base via hangar doors or the access lift. Defend the base and its vital installations at all costs - this is a fight to the death. If you click on the 'abort mission' icon you will concede defeat and lose the base."

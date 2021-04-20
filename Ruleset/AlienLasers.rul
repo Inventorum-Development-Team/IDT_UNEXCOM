@@ -2,7 +2,7 @@ items:
   # Alien Lasers
   - type: STR_ALIEN_LASER_PISTOL
     requires:
-      - STR_ALIEN_LASER_PISTOL
+      - STR_ALIENS_ONLY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
     size: 0.1
     costSell: 64000
@@ -47,7 +47,7 @@ items:
   - type: STR_ALIEN_LASER_RIFLE
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
     requires:
-      - STR_ALIEN_LASER_RIFLE
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 86500
     weight: 5
@@ -88,7 +88,7 @@ items:
   - type: STR_ALIEN_HEAVY_LASER
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
     requires:
-      - STR_ALIEN_HEAVY_LASER
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 101600
     weight: 8
