@@ -3294,21 +3294,6 @@ items:
 ###### WEAPON CUSTOMIZATION #######
 ##################################
 
-  - type: STR_WEAPON_TOOLKIT
-    requires:
-      - STR_WEAPON_MODIFICATION
-    categories: [STR_MISC, STR_CUSTOM_WEAPON]
-    weight: 2
-    size: 0.1
-    costBuy: 3000
-    costSell: 2700
-    bigSprite: 210
-    floorSprite: 210
-    invWidth: 2
-    invHeight: 2
-    armor: 30
-    recover: true
-    listOrder: 2127
 
   - type: STR_COLT_SCOPE_ACCESSORY
     requires:
@@ -4571,7 +4556,6 @@ manufacture:
     cost: 400
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M79_THUMPER_GL: 1
     producedItems:
       STR_SAWEDOFF_M79_THUMPER: 1
@@ -4586,7 +4570,6 @@ manufacture:
     cost: 400
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_DOUBLE_BARRELED_SHOTGUN: 1
     producedItems:
       STR_SAWEDOFF_SHOTGUN: 1
@@ -4601,7 +4584,6 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-        STR_WEAPON_TOOLKIT: 1
         STR_M1_CARBINE: 1
     producedItems:
         STR_ENFORCER: 1
@@ -4616,10 +4598,8 @@ manufacture:
     cost: 5000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_XM117_SCOPED: 1
     listOrder: 1101
@@ -4633,10 +4613,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_XM117_SHOTGUN: 1
     listOrder: 1101
@@ -4650,10 +4628,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_M203_ACCESSORY: 1
-      STR_40MM_FRAG: 1
     producedItems:
       STR_XM117_M203: 1
     listOrder: 1101
@@ -4667,9 +4643,7 @@ manufacture:
     cost: 5000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_FN_FAL: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_FN_FSC: 1
     listOrder: 1101
@@ -4683,7 +4657,6 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
       STR_COMBAT_KNIFE: 1
     producedItems:
@@ -4699,10 +4672,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_FN_FSC_SCOPED: 1
     listOrder: 1101
@@ -4716,11 +4687,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
-      STR_12GAUGE_BUCKSHOT_X8: 1
     producedItems:
       STR_M16A1_SHOTGUN: 1
     listOrder: 1101
@@ -4734,10 +4702,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_M16A1_SCOPED: 1
     listOrder: 1101
@@ -4751,10 +4717,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_M203_ACCESSORY: 1
-      STR_40MM_FRAG: 1
     producedItems:
       STR_M16_M203: 1
     listOrder: 1101
@@ -5061,7 +5025,7 @@ extraStrings:
       STR_COLT_SCOPE_ACCESSORY: Colt Scope Accessory
       STR_COLT_SCOPE_ACCESSORY_UFOPEDIA: This small accessory is a four magnification rifle scope manufactured by Colt (creator of the AR-15 family of rifles and their derivatives, such as the M16). It is designed to be mounted on service rifles, to provide the shooter with more precise support with a clear sight. This does not replace the iron sight, so the gun can still be used in short range. It can be used in Manufacturing to attach it to a rifle with the correct blueprints.
       STR_M203_ACCESSORY: M203 Accessory
-      STR_M203_ACCESSORY_UFOPEDIA: Single shot grenade launcher, uses the same 40mm rounds as the largest and heaviest M79 Thumper. Manufactured by several companies, including Colt, it is quite versatile and can be mounted on various models of assault rifles, battle rifles and carbines. It is not designed to be an anti-tank weapon, rather an anti-personnel weapon, due to the limited power of the 40mm grenades, however it facilitates the cleaning of enemy zones without having to deploy heavier weapons. It can be mounted on a rifle or carbine via Manufacture, using a Weapon Toolkit and the required parts.
+      STR_M203_ACCESSORY_UFOPEDIA: Single shot grenade launcher, uses the same 40mm rounds as the largest and heaviest M79 Thumper. Manufactured by several companies, including Colt, it is quite versatile and can be mounted on various models of assault rifles, battle rifles and carbines. It is not designed to be an anti-tank weapon, rather an anti-personnel weapon, due to the limited power of the 40mm grenades, however it facilitates the cleaning of enemy zones without having to deploy heavier weapons. It can be mounted on a rifle or carbine via Manufacture.
       STR_M79_THUMPER_CONVERSION: "Sawed-off M79 Conversion"
       STR_DOUBLE_BARRELED_SHOTGUN_CONVERSION: "Sawed-off DB Shotgun Conversion"
       STR_XM117_SCOPED_CONVERSION: "XM117 Scoped Conversion"
