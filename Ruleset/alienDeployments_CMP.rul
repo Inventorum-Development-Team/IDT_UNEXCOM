@@ -2106,13 +2106,13 @@ alienDeployments:
     script: ALIENBASE
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
-    huntMissionMaxFrequency: 720       # generate hunt mission max every 720 minutes (= 12 hours)
+    huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
     huntMissionWeights: &INTERCEPTION_MISSIONS
-      3:
-        STR_ALIEN_INTERCEPTION_1: 100
       6:
+        STR_ALIEN_INTERCEPTION_1: 100
+      8:
         STR_ALIEN_INTERCEPTION_2: 100
-      9:
+      10:
         STR_ALIEN_INTERCEPTION_3: 100
 #END ALIEN BASE
 

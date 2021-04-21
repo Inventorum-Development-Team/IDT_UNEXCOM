@@ -135,7 +135,7 @@ alienMissions:
         count: 1
         trajectory: P1
         timer: 9600
-      - ufo: STR_FIGHTER_SHIP
+      - ufo: STR_SMALL_FIGHTER
         count: 1
         timer: 10000
         trajectory: P0
@@ -242,10 +242,6 @@ alienMissions:
         count: 1
         trajectory: P0
         timer: 7800
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P3
-        timer: 9000
       - ufo: STR_SENTRY_SHIP
         count: 1
         trajectory: P3
@@ -257,11 +253,7 @@ alienMissions:
         count: 1
         trajectory: P4
         timer: 3000
-      - ufo: STR_HARVESTER
-        count: 1
-        trajectory: P4
-        timer: 750
-      - ufo: STR_FIGHTER_SHIP
+      - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P3
         timer: 9000
@@ -315,13 +307,6 @@ alienMissions:
         hunterKillerPercentage: 100
         huntMode: 0
         huntBehavior: 1
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P5
-        timer: 60
-        hunterKillerPercentage: 50
-        huntMode: 0
-        huntBehavior: 0
       - ufo: STR_ABDUCTOR
         count: 1
         trajectory: P3
@@ -370,10 +355,6 @@ alienMissions:
         count: 1
         trajectory: P1
         timer: 15000
-      - ufo: STR_MEDIUM_SCOUT
-        count: 1
-        trajectory: P6
-        timer: 13800
       - ufo: STR_LARGE_SCOUT
         count: 1
         trajectory: P7
@@ -398,10 +379,6 @@ alienMissions:
         timer: 60
         hunterKillerPercentage: 100
         huntMode: 0
-      - ufo: STR_SUPPLY_SHIP
-        count: 1
-        trajectory: P7
-        timer: 60
       - ufo: STR_TROOP_LANDER
         count: 2
         trajectory: P7
@@ -471,12 +448,6 @@ alienMissions:
         trajectory: P5
         timer: 60
         hunterKillerPercentage: 80
-        huntMode: 1 #prefer attacking transports
-      - ufo: STR_SENTRY_SHIP
-        count: 1
-        trajectory: P5
-        timer: 60
-        hunterKillerPercentage: 80
         huntMode: 0 #prefer attacking interceptors
       - ufo: STR_BATTLESHIP
         count: 1
@@ -505,6 +476,10 @@ alienMissions:
         count: 1
         trajectory: P8
         timer: 3000
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 500
       - ufo: STR_MEDIUM_SCOUT
         count: 2
         trajectory: P8
@@ -561,17 +536,10 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
     waves:
-      - ufo: STR_SENTRY_SHIP
+      - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P2
-        timer: 8500
         huntMode: 1 #transports first
-        huntBehavior: 0
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P3
-        timer: 9500
-        huntMode: 0 #interceptors first
         huntBehavior: 0
   - type: STR_ALIEN_INTERCEPTION_2 # Medium interception
     operationType: 6
@@ -592,16 +560,15 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
     waves:
-      - ufo: STR_SENTRY_SHIP
+      - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P2
-        timer: 8000
         huntMode: 0
         huntBehavior: 0
       - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P3
-        timer: 9000
+        timer: 100
         huntMode: 1
         huntBehavior: 0
   - type: STR_ALIEN_INTERCEPTION_3 # Heavy interception
@@ -623,22 +590,9 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
     waves:
-      - ufo: STR_SENTRY_SHIP
-        count: 1
-        trajectory: P3
-        timer: 9500
-        huntMode: 0
-        huntBehavior: 1
-      - ufo: STR_SMALL_FIGHTER
-        count: 1
-        trajectory: P5
-        timer: 9500
-        huntMode: 1
-        huntBehavior: 1
       - ufo: STR_FIGHTER_SHIP
         count: 1
         trajectory: P5
-        timer: 10000
         huntMode: 0
         huntBehavior: 1
 

@@ -16,6 +16,7 @@ missionScripts:
       0:
         STR_ALIEN_RESEARCH: 100
     firstMonth: 2
+    lastMonth: 6
     executionOdds: 100
     raceWeights:
       0:
@@ -58,6 +59,7 @@ missionScripts:
         STR_ALIEN_HARVEST: 100
     firstMonth: 3
     startDelay: 150
+    executionOdds: 70
 
   - type: alienAbduction
     missionWeights:
@@ -65,9 +67,10 @@ missionScripts:
         STR_ALIEN_ABDUCTION: 100
     firstMonth: 3
     startDelay: 750
+    executionOdds: 70
 
   - type: researchRetaliation
-    executionOdds: 100
+    executionOdds: 90
     missionWeights:
       0:
         STR_ALIEN_RETALIATION: 100
@@ -85,13 +88,14 @@ missionScripts:
     firstMonth: 6
     startDelay: 150
     randomDelay: 43500
+    executionOdds: 80
 
   - type: alienBase
     missionWeights:
       0:
         STR_ALIEN_BASE: 100
     firstMonth: 6
-    executionOdds: 8
+    executionOdds: 80
     startDelay: 6
     randomDelay: 43500
 #################################
