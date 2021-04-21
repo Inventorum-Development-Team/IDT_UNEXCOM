@@ -308,13 +308,9 @@ alienMissions:
         huntMode: 0
         huntBehavior: 1
       - ufo: STR_ABDUCTOR
-        count: 1
-        trajectory: P3
-        timer: 9000
-      - ufo: STR_ABDUCTOR
         count: 2
         trajectory: P4
-        timer: 60
+        timer: 9000
   - type: STR_ALIEN_INFILTRATION
     points: 150 #Pact score only awarded on month end
     objective: 1
@@ -539,6 +535,7 @@ alienMissions:
       - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P2
+        timer: 90
         huntMode: 1 #transports first
         huntBehavior: 0
   - type: STR_ALIEN_INTERCEPTION_2 # Medium interception
@@ -564,11 +561,12 @@ alienMissions:
         count: 1
         trajectory: P2
         huntMode: 0
+        timer: 90
         huntBehavior: 0
       - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P3
-        timer: 100
+        timer: 90
         huntMode: 1
         huntBehavior: 0
   - type: STR_ALIEN_INTERCEPTION_3 # Heavy interception
@@ -594,6 +592,7 @@ alienMissions:
         count: 1
         trajectory: P5
         huntMode: 0
+        timer: 90
         huntBehavior: 1
 
 ###############################
