@@ -5,6 +5,9 @@ items:
   - type: STR_INC_STRIKE #ignoreDuplicate
     tags:
       STRIKE: 1
+  - type: STR_FLASHBANG_GRENADE #ignoreDuplicate
+    tags:
+     FlashBang: 1
 armors:
   - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
     tags:
@@ -16,9 +19,23 @@ extended:
   tags:
     RuleItem:
       STRIKE: int
+      FlashBang: int
     RuleArmor:
       Hind_Turret: int
+    BattleUnit:
+      FlashBanged: int
+      OGfiring: int
+      OGreactions: int
+    BattleGame:
+      Turn: int
   scripts:
+
+    newTurnItem: #Maintains a tag with turn number
+        - offset: 1
+          code: |
+           BattleGame.setTag battle_game Tag.Turn turn;
+           return;
+
 
     selectItemSprite: # Air Strike Smoke sprite Script
       - offset: 1
@@ -43,3 +60,54 @@ extended:
           BattleUnit.setFatalwounds unit 1 1;
           end;
          return;
+      - offset: 2 #Makes Flashbang work early
+        code: |
+           BattleUnit.setTag unit Tag.FlashBanged -5;
+           return;
+
+    newTurnUnit:
+        - offset: 3
+          code: | #flashbang effect removal
+           var int flashbanged;
+           var int accuracy;
+           var int reactions;
+           var int OGaccuracy;
+           var int OGreactions;
+           BattleUnit.getTag unit flashbanged Tag.FlashBanged;
+           BattleUnit.getTag unit OGaccuracy Tag.OGfiring;
+           BattleUnit.getTag unit OGreactions Tag.OGreactions;
+           add flashbanged 4;
+           if and gt turn flashbanged gt OGaccuracy 0;
+            BattleUnit.Stats.setFiring unit OGaccuracy;
+            BattleUnit.Stats.setReactions unit OGreactions;
+            end;
+           return;
+
+    hitUnit:
+         - offset: 4 #FlashBang Script
+           code: |
+             var int flashbang;
+             var int flashbanged;
+             var int turn;
+             var int accuracy;
+             var int reactions;
+             damaging_item.getTag flashbang Tag.FlashBang;
+               debug_log "test2";
+             if eq flashbang 1;
+              battle_game.getTurn turn;
+              unit.getTag flashbanged Tag.FlashBanged;
+               debug_log "test4";
+              add flashbanged 4;
+              if gt turn flashbanged;
+               BattleUnit.Stats.getFiring unit accuracy;
+               BattleUnit.Stats.getReactions unit reactions;
+               BattleUnit.setTag unit Tag.OGfiring accuracy;
+               BattleUnit.setTag unit Tag.OGreactions reactions;
+               sub reactions 50;
+               sub accuracy 50;
+               debug_log "test";
+               BattleUnit.Stats.setFiring unit accuracy;
+               BattleUnit.Stats.setReactions unit reactions;
+              end;
+             end;
+             return power part side;
