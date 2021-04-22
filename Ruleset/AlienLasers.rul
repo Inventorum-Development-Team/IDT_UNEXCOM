@@ -28,6 +28,8 @@ items:
     armor: 45
   - type: STR_ALIEN_LASER_PISTOL_BATTERY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
+    requires:
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 4440
     weight: 3
@@ -69,6 +71,8 @@ items:
     armor: 50
   - type: STR_ALIEN_LASER_RIFLE_BATTERY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
+    requires:
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 6290
     weight: 3
@@ -110,6 +114,8 @@ items:
     armor: 50
   - type: STR_ALIEN_HEAVY_LASER_BATTERY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS, STR_LMGS ]
+    requires:
+      - STR_ALIENS_ONLY
     size: 0.3
     costSell: 9590
     weight: 3
