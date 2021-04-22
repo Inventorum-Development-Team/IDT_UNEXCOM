@@ -736,7 +736,28 @@ ufopaedia:
     listOrder: 502
     section: STR_XCOM_CRAFTS
 
-#CRAFT ARMAMENT
+
+  - id: STR_SPACE_SHUTTLE
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_SPACE_SHUTTLE_UFOPEDIA
+    requires:
+      - STR_ULTIMATE_CRAFT
+    listOrder: 503
+    rect_stats:
+      x: 5
+      y: 130
+      width: 130
+      height: 65
+    rect_text:
+      x: 110
+      y: 5
+      width: 205
+      height: 80
+    image_id: SPACE_SHUTTLE_UFOPEDIA
+
+#CRAFT ARMANENT
+
 
 
 

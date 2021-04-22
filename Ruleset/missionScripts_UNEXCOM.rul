@@ -272,3 +272,30 @@ missionScripts:
     startDelay: 43500
     randomDelay: 43500
     executionOdds: 20
+######################################
+  - type: OperationFalseFlagOverseerTrap
+    missionWeights:
+      0:
+        STR_OVERSEER: 100
+    regionWeights:
+      0:
+        REGION_NATO_COMBAT_OPERATIONS: 100
+    useTable: false
+    researchTriggers:
+      STR_HYPER_WAVE_ENCODER: true
+    startDelay: 17500
+    randomDelay: 80000
+    executionOdds: 100
+  - type: OperationDevastation
+    missionWeights:
+      0:
+        STR_OPERATION_DEVASTATION: 100
+    regionWeights:
+      0:
+        REGION_SPACEPORTS: 100
+    useTable: false
+    researchTriggers:
+      STR_ALIEN_ORIGINS: true
+    startDelay: 17500
+    randomDelay: 80000
+    executionOdds: 100
