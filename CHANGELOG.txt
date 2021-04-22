@@ -1,3 +1,25 @@
+20-Apr-2021 v0.8.7 Above and Beyond
+Changes made:
+*Fixed Tunnan article not appearing
+*Fixed some alien races not having sectoid and ethereal officers, reported by Cupon4uk
+*Increased SH-missile effectiveness against UFO shields
+*Fixed some live aliens not disapearing after being researched
+*Adjusted Long Rifle Ammo capacity to 14
+*Fixed alloy sniper ammo being the wrong size, reported by Cupon4uk
+*Fixed SKS ufopaedia category
+*Fixed some ammunition types being visible in ufopaedia before appopriate research, reported by Rclipse
+*Pilot armor now improves pilot interception stats
+*Added images for small fighter and troop Lander
+*Improved range of Hind, Hind now performs missile strike on the first turn
+*Improved air strike item sprites
+*Added alien lasers, rulesets by Brother^2, sprites by wolwerin
+*Added Thin Man, rulesets by Brother^2, sprites by wolwerin
+*Fixed counterterrorist missions not appearing
+*Added terrorist HQ raid mission, map by wolwerin
+*Rebalanced mercenaries and special forces, moved their research behind terrorist arc progression
+*M16 is now default rifle of USA path, M16 M203 now behind special forces research
+*ADEN cannon now only available after NATO air support research
+
 30-Dec-2020: v0.8.6 Burning Skies
 Changes made:
 *Falcon missile now available from the start, no longer restricted to USA path
@@ -75,7 +97,7 @@ Changes made:
 *Improved MAT49 sprite, by wolwerin
 *Fixed bad typos on several UFOPedia weapon entries, reported by Rclipse
 *Added costBuy to all Laser Weapons, issue reported by garretrgang
-*Re-added hyperwave behaviour to Hyperwave Decoder 
+*Re-added hyperwave behaviour to Hyperwave Decoder
 *Modified Special Forces/Mercenary tech tree, they are available earlier and a special event will appear, , by Filip H & efrenespartano..
 *Increased ammo of MG3 build-in weapon on Delta EOD armor, suggested by Tal'raziid
 *Tweaked and delayed appereance of alien missions, suggested by Brother^2
@@ -162,7 +184,7 @@ Changes made:
     - All heavy missiles got a buff of +15 damage and +20 accuracy
     - All super heavy missiles got a buff of +20 accuracy
     - All rockets got a buff of +10 accuracy
-*Falcon Super Heavy Missile is now locked behind USA Aeronautic Support, reported by 
+*Falcon Super Heavy Missile is now locked behind USA Aeronautic Support, reported by
 *Alien Fusion Weapons will have a chance to appear after 4 months now (they are way too powerful to be added on early game)
 *Alien missions will start to appear after the third month
 *Reduced weight of medical equipment
@@ -223,7 +245,7 @@ Changes made:
 *All special faction weapons are now usable if you obtain them from the battlefield, reported by Andr
 *New Angry Wife special USSR weapon sprite
 *Fixed broken UFOPedia weapon entries, reported by Finnik and PERLHA
-*New Terrorist Grenadier with gasmask sprites, made by JustTheDude. Cheeki breeki power. 
+*New Terrorist Grenadier with gasmask sprites, made by JustTheDude. Cheeki breeki power.
 *Balanced Terrorist stats, now they have bad aim (are a bunch of untrained punks, after all)
 *Terrorist flyby missions don't have score anymore, you can ignore them freely (testing purposes)
 *Laser Array and Laser Cannon now have new sprites and new names, Apollo Gatling and Kodiak Cannon.
@@ -302,7 +324,7 @@ Changes made:
 	- X4 Laser Scattergun
 *Fixed issue related to wrongly defined Rapier and Crusader research
 *Fixed weird sounds on Terrorist units. Now their walking and death sounds are the same of the human civilian.
-*Fixed issues with crashing Human UFOs UFOpedia entries, added descriptions for Texan and Magister 
+*Fixed issues with crashing Human UFOs UFOpedia entries, added descriptions for Texan and Magister
 *Fixed issue related to wrongly defined entry on Alien Base Assault missions
 *Decreased power for all of the Ballistic Weapons
 *Solved issue with crashing interception using Crusaders (wrongly defined index)
@@ -362,7 +384,7 @@ Changes made:
 * Tweaked Medical items cost
 * Improved stats of new NATO Tank FV601 Saladin (now is a little more faster and has sightly more armor)
 * New inventory organization, with Quick Draw slot and a larger Belt
-* All of the changes of v.0.7.4 remains 
+* All of the changes of v.0.7.4 remains
 
 10-October-2019: v0.7.4 Vendetta Burns Inside
 Changes made:
@@ -371,25 +393,25 @@ Changes made:
 * Added flavour text to some UFOpedia entries, by efrenespartano and Ikhanad.
 * Now you can only choose between asking NATO or USSR for support. Choosing one will disable the other.
 * USSR now offers two options for fighters: expensive, superfast MiG-25 Foxbat or light and very cheap MiG-21 Fishbed (drawn by Andr). Choosing one disables the other permanently.
-* New NATO Tank: FV601 Saladin Armoured Car, equiped with a 76mm Cannon and a secundary MG. 
+* New NATO Tank: FV601 Saladin Armoured Car, equiped with a 76mm Cannon and a secundary MG.
 * Ferret Armoured Car moved to starting tank provided by the United Nations, improved graphics and updated UFOPedia entry to better match the tank.
 * Changed tech requirements of plasma weapons, by The Reaver of Darkness.
 * Added human versions of AlienArmouryExpanded plasma, by The Reaver of Darkness.
 * Re-balanced plasma weapons, by The Reaver of Darkness.
 * Fixed issues related to Elerium ammo for RPG-7 and Carl Gustaf M2 being available from the start and CG M2 not available on the Store.
 * Balanced armors and weapons of tanks, by efrenespartano and The Reaver of Darknes
-* Added three new Food items: 
-	- Canned Food, to quickly recover stamina and some health. 
+* Added three new Food items:
+	- Canned Food, to quickly recover stamina and some health.
 	- Cigarettes, to recover morale (with a penalty to health). Drawn by Andr.
-	- Flask (filled up with bourbon), to quickly recover morale, with some stunning side-effects. Drawn by Andr. 
-* Added three new Medical items: 
-	- Medical Bag, replacing the starting Medikit with a heavier variant. 
-	- Field Dressing, to quickly patch up mortal wounds. 
+	- Flask (filled up with bourbon), to quickly recover morale, with some stunning side-effects. Drawn by Andr.
+* Added three new Medical items:
+	- Medical Bag, replacing the starting Medikit with a heavier variant.
+	- Field Dressing, to quickly patch up mortal wounds.
 	- Medical Pouch, small first-aid kit designed to quickly recover health. Drawn by Andr.
 * New sprites for Smoke Grenade, renamed to M18 Smoke Grenade. Drawn by Andr.
 * Medikit now requires Alloy Manufacturing to research and 4 Alien Alloy units to be build
 * Fixed issue with crashing Alien Base alienDeployments definition (the mapblock has 6 tiles of height, were defined as 2).
-* Fixed issue with Aircraft IDs that made impossible to intercept UFOs on the Geoscape 
+* Fixed issue with Aircraft IDs that made impossible to intercept UFOs on the Geoscape
 * Added new Custom categories to aircraft weapons and tanks.
 * Fixed UFOPedia entries showing all of the weapons. Now they propper appear after their respective Faction Support research is completed.
 * Improved shieldCapacity of many UFOs. The probability that the UFOs of the Scout class are HKs has been increased.
@@ -411,9 +433,9 @@ Changes made:
 * Added random Operation names (only on OXCE v5.6.4)
 * Added random Base names (only on OXCE v5.6.4)
 * Tweaked Pilot stats, by The Reaver of Darkness
-* QoL changes: 
-	- Custom categories now used on Store 
-	- Less aliens will appear on Base Defense if alien transport was damaged by Base defenses 
+* QoL changes:
+	- Custom categories now used on Store
+	- Less aliens will appear on Base Defense if alien transport was damaged by Base defenses
 * Fixed issue with wrong craft weapons list on Starfighter
 * Added new handObs, floorObs and bigObs to FN FSC and variants
 * Fixed issues related to slow firing bullets and ammo without hitSound on many weapons
@@ -431,7 +453,7 @@ Changes made:
 Changes made:
 * Updated to OXCE v.5.6.2, all of the crashing sprite indexes are working now.
 * Added a brand new Ammo system. Now, instead of "Rifle + Rifle clip", weapons share the same ammo magazines. Please, read the weapon's UFOPedia entry to see the ammo used by the gun in question.
-* Added new weapon classes, each with its own playstyle: Pistols, Rifles, Carbines, SMG, Shotguns, Snipers, Artillery, LMG. 
+* Added new weapon classes, each with its own playstyle: Pistols, Rifles, Carbines, SMG, Shotguns, Snipers, Artillery, LMG.
 * Added new itemCategories to quickly find weapons: Ammo, USA, NATO, USSR, UNEXCOM, Civilian, Special Forces and Mercenary.
 * Reworked Tier 1 BallisticWeapons
 * Fixed issues by Andr, Blood Angel Tactical Marine, SG_Barton & DarkDust found on earlier Discord Previews.
@@ -461,14 +483,14 @@ Changes made:
 * Starting test with new reworked ammo system and Tier 1 BallisticWeapons
 
  v0.2e
-15-Oct-18: 06:00 PM # Fixed crash related to broken Alien research. 
-19-Oct-18: 11:37 PM # Fixed fatal crash related to trash code in unavailable research. 
+15-Oct-18: 06:00 PM # Fixed crash related to broken Alien research.
+19-Oct-18: 11:37 PM # Fixed fatal crash related to trash code in unavailable research.
 20-Oct-18: 01:40 AM # Fixed missing NATO/USSR Craftweapons topics. Fixed crash with UN Combat Armor.
 
  v0.2d
 1.- Improved Nations mod by MKSheppard
 10-Oct-18: 05:25 PM # Reduced shields of Capital class UFOs to half (Battleship now has 50 and Troop Transport now has 30)
-13-Oct-18: 07:48 PM # Fixed bugs found by IgnisAbentorn, renamed AK-47 to AKM, reemplaced Makarov for Stechkin Automatic Pistol, fixed stats. Changed FN FAL & M16 M203 alt fire mode from confSnap to confAimed, to avoid reaction fire with underbarrel addons. 
+13-Oct-18: 07:48 PM # Fixed bugs found by IgnisAbentorn, renamed AK-47 to AKM, reemplaced Makarov for Stechkin Automatic Pistol, fixed stats. Changed FN FAL & M16 M203 alt fire mode from confSnap to confAimed, to avoid reaction fire with underbarrel addons.
 13-Oct-18: 08:48 PM # MG3 now has fixed 60 rounds, removed MG3 belt from store. Fixed fatal bug that made unavailable NATO/USSR stuff (Guns, armor, missiles)
 14-Oct-18: 11:35 AM # Allied NPC units now use Human weapons, vanilla weapon no longer used. 11 new countries, original codes by MKSheppard (Norway, Benelux, Denmark, Greece, Argentina, Mexico, Chile, Ukraine, Peru, Colombia, Poland)
 
@@ -495,7 +517,7 @@ Changes made:
 7.- SCOUTCAR by Arpia, from The X-Com Files
  19-Jul-18: 12:18 PM # Added NATO Tier I weapons: FN FAL, H&K MP5, H&K PSG-1, Bren, 30. Cal MG.
  20-Jul-18: 10:26 AM # Added USSR Tier I weapons: AK-47, SKS, Dragunov, Makarov, RPG-7.
- 20-Jul-18: 12:31 PM # Corrected laser and plasma weapons palette. 
+ 20-Jul-18: 12:31 PM # Corrected laser and plasma weapons palette.
  27-Jul-18: 09:03 AM # Corrected Tier I HandObs. Added some made by efrenespartano: Shotgun, XM21, M16. Modified AK47, original by ThatDude
  27-Jun-18: 01:32 PM # Corrected weapons damage
  30-Jul-18: 07:44 PM # Added Tier I tanks with guns: BMD-1, Ferret Scout Car. Added Tier II Tank: XM22
@@ -508,7 +530,7 @@ v0.2a
 13-Jul-18: 11:18 PM # Increased Fuel Tank AUX capacity, now has 150. (Suggestion by Valmont) Decreased Afterburner AUX fuel penalty, now is fuelMax: -25.
 14-Jul-18: 07:40 PM # Fixed bug related to craft weapons, found by Alnoaht
 16-Jul-18: 07:32 PM # Added M16 M203, Remington stun shells and M79 stun grenade
-17-Jul-18: 09:35 AM # Final testing Tier II Crafts 
+17-Jul-18: 09:35 AM # Final testing Tier II Crafts
 
 v0.2b
 1.- Many weapon sprites from X-Piratez, by Dioxine and The X-Com Files, Solarius Scorch
@@ -521,13 +543,13 @@ v0.2b
 8.- SCOUTCAR by Arpia, from The X-Com Files
  19-Jul-18: 12:18 PM # Added NATO Tier I weapons: FN FAL, H&K MP5, H&K PSG-1, Bren, 30. Cal MG.
  20-Jul-18: 10:26 AM # Added USSR Tier I weapons: AK-47, SKS, Dragunov, Makarov, RPG-7.
- 20-Jul-18: 12:31 PM # Corrected laser and plasma weapons palette. 
+ 20-Jul-18: 12:31 PM # Corrected laser and plasma weapons palette.
  27-Jul-18: 09:03 AM # Corrected Tier I HandObs. Added some made by efrenespartano: Shotgun, XM21, M16. Modified AK47, original by ThatDude
  27-Jun-18: 01:32 PM # Corrected weapons damage
  29-Jul-18: 08:30 AM # Initial Test of Capital Class UFOs, renamed Teror Ship to Troop Transport, has speedMax: 380, armor: 120, power 12, range: 20, reload: 15. Battleship has speedMax: 200, armor: 200, power: 15, range: 20, reload: 20
  30-Jul-18: 07:44 PM # Added Tier I tanks with guns: BMD-1, Ferret Scout Car. Added Tier II Tank: XM22
  31-Jul-18: 06:24 PM # Corrected listOrders, added Laser Tank tech tree with topics.
- 1-Ago-18: 07:19 AM  # Fixed yaml-cpp error with extraStrings. Fixed new research topics, now Navigators & Engineers give UFO Classes info. (UFO classes, new UFO Types). Modified Scout class UFOS. 
+ 1-Ago-18: 07:19 AM  # Fixed yaml-cpp error with extraStrings. Fixed new research topics, now Navigators & Engineers give UFO Classes info. (UFO classes, new UFO Types). Modified Scout class UFOS.
 
 V0.1f
 1.- RecycledAlienCollection by Solarius Scorch
@@ -535,13 +557,13 @@ V0.1f
 �30-Jun-18: 11:50 PM # Added first pages of UFOpedia, added most Tier I aircraft sprites
 �01-Jul-18: 10:41 AM # Added strings en-US, starting to add strings es-ES
 �03-Jul-18: 05:30 PM # Corrected flight distances of aircraft. Added double hangar. Fixed bug with M16 Clip.
-�04-Jul-18: 10:08 AM # Added Sentry and Fighter HKs in the campaign. Added RecycledAlienCollection in the campaign. 
+�04-Jul-18: 10:08 AM # Added Sentry and Fighter HKs in the campaign. Added RecycledAlienCollection in the campaign.
  05-Jul-18: 05:18 PM # Added Linna Satellite, long range recon satellite.�
 
 V0.1e
 1.- Grenade Launcher by Ryskeliini
 2.- FourthState ruleset form Equal Terms, by KingMob4313
-3.- Alien Plasma Weapons by 
+3.- Alien Plasma Weapons by
 25-Jun-18: 09:34 PM # Added M551 tank Sheridan with ammunition, added listOrder
 25-Jun-18: 11:21 PM # Fixed fatal bug with pilot armor
 26-Jun-18: 08:37 PM # Recolored armor NONE_UC, now it's blue like in real life
@@ -586,23 +608,23 @@ MODS USED:
 8.- XCOM 2 Music Pack by boodman123726
  VARS edited
 
- 
 
 
- 
 
-�
+
 
 �
+
 �
- 
+�
 
- 
- 
 
- 
 
- 
+
+
+
+
+
 
 
 
@@ -611,23 +633,23 @@ te Diversity by Solarius Scorch
 8.- XCOM 2 Music Pack by boodman123726
  VARS edited
 
- 
 
 
- 
 
-�
+
 
 �
+
 �
- 
+�
 
- 
- 
 
- 
 
- 
+
+
+
+
+
 
 
 

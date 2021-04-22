@@ -16,6 +16,7 @@ missionScripts:
       0:
         STR_ALIEN_RESEARCH: 100
     firstMonth: 2
+    lastMonth: 6
     executionOdds: 100
     raceWeights:
       0:
@@ -49,26 +50,6 @@ missionScripts:
     randomDelay: 43500
 
 
-#  - type: recurringTerror
-#    firstMonth: 2
-#    missionWeights:
-#      0:
-#        STR_ALIEN_TERROR: 100
-#    regionWeights:
-#      0:
-#        REGION_TERRORIST_HOSTAGE_CRISIS: 100
-#        STR_NORTH_AMERICA: 100
-#        STR_SOUTH_AMERICA: 10
-#        STR_SIBERIA: 10
-#        STR_NORTH_AFRICA: 10
-#        STR_SOUTHERN_AFRICA: 10
-#        STR_EUROPE: 20
-#        STR_SIBERIA: 10
-#        STR_CENTRAL_ASIA: 10
-#        STR_SOUTH_EAST_ASIA: 10
-#   useTable: false
-#    startDelay: 150
-#    randomDelay: 25000
 #################################
 ####### ALIEN ACTIVITY #########
 ###############################
@@ -78,6 +59,7 @@ missionScripts:
         STR_ALIEN_HARVEST: 100
     firstMonth: 3
     startDelay: 150
+    executionOdds: 70
 
   - type: alienAbduction
     missionWeights:
@@ -85,9 +67,10 @@ missionScripts:
         STR_ALIEN_ABDUCTION: 100
     firstMonth: 3
     startDelay: 750
+    executionOdds: 70
 
   - type: researchRetaliation
-    executionOdds: 100
+    executionOdds: 90
     missionWeights:
       0:
         STR_ALIEN_RETALIATION: 100
@@ -105,13 +88,14 @@ missionScripts:
     firstMonth: 6
     startDelay: 150
     randomDelay: 43500
+    executionOdds: 80
 
   - type: alienBase
     missionWeights:
       0:
         STR_ALIEN_BASE: 100
     firstMonth: 6
-    executionOdds: 8
+    executionOdds: 80
     startDelay: 6
     randomDelay: 43500
 #################################
@@ -138,12 +122,6 @@ missionScripts:
     missionWeights:
       0:
         STR_HUMAN_TERROR_ATTACK: 100
-    regionWeights:
-      0:
-        STR_NORTH_AMERICA: 30
-        STR_EUROPE: 35
-        STR_CENTRAL_ASIA: 25
-        STR_SOUTH_EAST_ASIA: 10
     useTable: false
     researchTriggers:
       STR_END_OF_TERRORISTS: false
@@ -151,9 +129,19 @@ missionScripts:
     randomDelay: 43200
     executionOdds: 100
 
+  - type: terroristHQ
+    missionWeights:
+      0:
+        STR_TERRORIST_HQ: 100
+    useTable: false
+    researchTriggers:
+      STR_TERRORIST_HQ: true
+      STR_END_OF_TERRORISTS: false
+    startDelay: 100
+    randomDelay: 43200
+    executionOdds: 100
+
   - type: terroristHostageCrisis
-    label: 20
-    varName: terroristHostageCrisis
     missionWeights:
       0:
         STR_HOSTAGE_CRISIS: 100
@@ -166,12 +154,10 @@ missionScripts:
     useTable: false
     startDelay: 100
     randomDelay: 43200
-    executionOdds: 30
+    executionOdds: 50
 
   - type: terroristHijackedPlane
-    label: 21
     varName: terroristHijackedPlane
-    conditionals: [-20]
     missionWeights:
       0:
         STR_HIJACKED_PLANE: 100
@@ -184,7 +170,7 @@ missionScripts:
     useTable: false
     startDelay: 100
     randomDelay: 43200
-    executionOdds: 30
+    executionOdds: 50
 ##############################
   - type: AmericanCombatOperations
     label: 30

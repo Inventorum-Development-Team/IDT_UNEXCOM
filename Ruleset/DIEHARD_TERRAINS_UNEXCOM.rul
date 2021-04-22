@@ -216,9 +216,7 @@ terrains:
       - CRIBDECOR
       - MANSIONBITS
       - CITYFRNITURE
-    civilianTypes:
-      - MALE_CIVILIAN
-      - FEMALE_CIVILIAN
+    civilianTypes: *CIVILIANS_OPERATIONS
     script: TERRORIST_HQ_SCRIPT
     mapBlocks:
       - name: LT_HOUSE_02G
@@ -308,6 +306,7 @@ mapScripts:
         executions: 1
         rects:
         - [0,0,2,2]
+        size: [2,2,6]
         groups: 4
       - type: addLine
         direction: vertical

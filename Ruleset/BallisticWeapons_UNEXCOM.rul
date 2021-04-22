@@ -59,7 +59,7 @@ items:
 ###################################################
 ######## UNEXCOM TIER I BALLISTIC WEAPONS #########
 ###################################################
-  - type: STR_KS23_SHARPNEL-25_X4
+  - type: STR_KS23_SHRAPNEL-25_X4
     categories: [STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
@@ -1073,10 +1073,7 @@ items:
 
   - type: STR_M16_M203
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES]
-    requiresBuy:
-      - STR_USA_SUPPORT_RESEARCH
     size: 0.3
-    costBuy: 5000
     costSell: 5400
     weight: 12
     bigSprite: 137
@@ -2034,7 +2031,7 @@ items:
       0:
         tuLoad: 10
         tuUnload: 20
-        compatibleAmmo: [ STR_KS23_SHARPNEL-25_X4, STR_KS23_BARRIKADE_X4, STR_KS23_SATANA_X4 ]
+        compatibleAmmo: [ STR_KS23_SHRAPNEL-25_X4, STR_KS23_BARRIKADE_X4, STR_KS23_SATANA_X4 ]
     confAuto:
       shots: 4
       name: STR_RAGE_FIRE
@@ -2629,7 +2626,7 @@ items:
 ##################
   - type: STR_M16A1
     requiresBuy:
-      - STR_M16A1
+      - STR_USA_SUPPORT_RESEARCH
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES]
     size: 0.2
     costBuy: 4500
@@ -3259,7 +3256,7 @@ items:
     healthRecovery: 1
     isConsumable: true
     medikitTargetSelf: true
-    medikitType: 1  #change how medikit wroks, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    medikitType: 1  #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
     costUse:
       time: 7
     flatRate: true
@@ -3284,7 +3281,7 @@ items:
     healthRecovery: 3
     isConsumable: true
     medikitTargetSelf: true
-    medikitType: 1  #change how medikit wroks, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    medikitType: 1  #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
     costUse:
       time: 10
     flatRate: true
@@ -3297,21 +3294,6 @@ items:
 ###### WEAPON CUSTOMIZATION #######
 ##################################
 
-  - type: STR_WEAPON_TOOLKIT
-    requires:
-      - STR_WEAPON_MODIFICATION
-    categories: [STR_MISC, STR_CUSTOM_WEAPON]
-    weight: 2
-    size: 0.1
-    costBuy: 3000
-    costSell: 2700
-    bigSprite: 210
-    floorSprite: 210
-    invWidth: 2
-    invHeight: 2
-    armor: 30
-    recover: true
-    listOrder: 2127
 
   - type: STR_COLT_SCOPE_ACCESSORY
     requires:
@@ -4574,7 +4556,6 @@ manufacture:
     cost: 400
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M79_THUMPER_GL: 1
     producedItems:
       STR_SAWEDOFF_M79_THUMPER: 1
@@ -4589,7 +4570,6 @@ manufacture:
     cost: 400
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_DOUBLE_BARRELED_SHOTGUN: 1
     producedItems:
       STR_SAWEDOFF_SHOTGUN: 1
@@ -4604,7 +4584,6 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-        STR_WEAPON_TOOLKIT: 1
         STR_M1_CARBINE: 1
     producedItems:
         STR_ENFORCER: 1
@@ -4619,10 +4598,8 @@ manufacture:
     cost: 5000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_XM117_SCOPED: 1
     listOrder: 1101
@@ -4636,10 +4613,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_XM117_SHOTGUN: 1
     listOrder: 1101
@@ -4653,10 +4628,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_XM117: 1
       STR_M203_ACCESSORY: 1
-      STR_40MM_FRAG: 1
     producedItems:
       STR_XM117_M203: 1
     listOrder: 1101
@@ -4670,9 +4643,7 @@ manufacture:
     cost: 5000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_FN_FAL: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_FN_FSC: 1
     listOrder: 1101
@@ -4686,7 +4657,6 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
       STR_COMBAT_KNIFE: 1
     producedItems:
@@ -4702,10 +4672,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_FN_FSC: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_FN_FSC_SCOPED: 1
     listOrder: 1101
@@ -4719,11 +4687,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_REMINGTON_COMBAT_SHOTGUN: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
-      STR_12GAUGE_BUCKSHOT_X8: 1
     producedItems:
       STR_M16A1_SHOTGUN: 1
     listOrder: 1101
@@ -4737,10 +4702,8 @@ manufacture:
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_COLT_SCOPE_ACCESSORY: 1
-      STR_5_56MM_NATO_RIFLE_X20: 1
     producedItems:
       STR_M16A1_SCOPED: 1
     listOrder: 1101
@@ -4748,16 +4711,14 @@ manufacture:
   - name: STR_M16A1_M203_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
-      - STR_M16A1
+      - STR_SPECIAL_FORCES_SUPPORT
     space: 1
     time: 40
     cost: 4000
     refund: true
     requiredItems:
-      STR_WEAPON_TOOLKIT: 1
       STR_M16A1: 1
       STR_M203_ACCESSORY: 1
-      STR_40MM_FRAG: 1
     producedItems:
       STR_M16_M203: 1
     listOrder: 1101
@@ -4926,8 +4887,8 @@ extraStrings:
       STR_AR5_CLIP: ".22 Hornet AR5 Clip (x10)"
       STR_FAL_SHOTGUN_SHELLS: "12-Gauge FAL Shotgun Shells (x5)"
       STR_FAL_SHOTGUN_SHELLS_UFOPEDIA: "..."
-      STR_KS23_SHARPNEL-25_X4: "23mm KS23 Shrapnel-25 Shells (x4)"
-      STR_KS23_SHARPNEL-25_X4_UFOPEDIA: "The Shrapnel-25 cartridge is composed of pellets with an effective range of 25 meters, with a wide range of dispersion that allows the annihilation of various targets with a single shot. It is considered a heavy projectile and can only be used by the KS-23 shotgun."
+      STR_KS23_SHRAPNEL-25_X4: "23mm KS23 Shrapnel-25 Shells (x4)"
+      STR_KS23_SHRAPNEL-25_X4_UFOPEDIA: "The Shrapnel-25 cartridge is composed of pellets with an effective range of 25 meters, with a wide range of dispersion that allows the annihilation of various targets with a single shot. It is considered a heavy projectile and can only be used by the KS-23 shotgun."
       STR_KS23_BARRIKADE_X4: "23mm KS23 Barrikade Slug (x4)"
       STR_KS23_BARRIKADE_X4_UFOPEDIA: "The Barrikade pellet is a 23mm solid steel-core projectile capable of destroying the engine block of a car up to 100 meters. It is used primarily to eliminate individual targets with a single, devastating blow."
       STR_KS23_SATANA_X4: "23mm KS23 Satana Shells (x4)"
@@ -4957,11 +4918,11 @@ extraStrings:
       STR_M1911_COLT45: "M1911 Colt .45"
       STR_M1911_COLT45_UFOPEDIA: "This great handgun uses {ALT}.45 ACP{ALT} rounds and has been in use since 1911, in all the wars of the 20th Century, including WWI, WWII, Korea War, Vietnam War and now Alien War. Standard side weapon of US personnel. Uses x7 .45 ACP Ammo"
       STR_M16_M203: "M16 M203"
-      STR_M16_M203_UFOPEDIA: "Modified version of the standard assault rifle used by U.S. Army forces. Lightweight, but not very powerful, it's quite accurate and fires {ALT}5.56 mm NATO{ALT} ammunition, uses x20 and x30 mags. Equiped with an underbarrel {ALT}M203 40mm Grenade Launcher{ALT}, uses a the same version of the M79 round."
+      STR_M16_M203_UFOPEDIA: "Modified version of the standard assault rifle used by U.S. Army forces. Lightweight, but not very powerful, it's quite accurate and fires {ALT}5.56 mm NATO{ALT} ammunition, uses x20 and x30 mags. Equipped with an underbarrel {ALT}M203 40mm Grenade Launcher{ALT}, uses a the same version of the M79 round."
       STR_XM117: "XM117 Carbine"
       STR_XM117_UFOPEDIA: "Also known as CAR-15, this assault carbine is based on the larger M16A1. With a shorter stock and barrel, is perfect for urban and guerrilla operations. However, its use over very long distances is not recommended because it is somewhat imprecise. Chambered in the intermediate {ALT}5.56mm NATO{ALT} round, employs x20 and x30 round magazines."
       STR_M3_GREASEGUN: "M3 Greasegun"
-      STR_M3_GREASEGUN_UFOPEDIA: "Very cheap and easy to manufacturate, this SMG is used since WWII. It fires the {ALT}.45 ACP{ALT} round and it's very light to carry. It is nicknamed 'Grease gun' for its appearance and sound characteristic of the mechanical tool. Uses x30 and x7 .45 ACP mags"
+      STR_M3_GREASEGUN_UFOPEDIA: "Very cheap and easy to manufacture, this SMG is used since WWII. It fires the {ALT}.45 ACP{ALT} round and it's very light to carry. It is nicknamed 'Grease gun' for its appearance and sound characteristic of the mechanical tool. Uses x30 and x7 .45 ACP mags"
       STR_XM21: "XM21 SWS"
       STR_XM21_UFOPEDIA: "The M21 Sniper Weapon System (SWS) is the semi-automatic sniper rifle adaptation of the M14 battle rifle. It's chambered for the powerful {ALT}7.62x51mm NATO{ALT} cartridge and has an 8x magnification scope, combined with its removable magazine and semi-automatic fire make it a formidable weapon. You can employ x20 and x5 magazines on this sniper rifle."
       STR_REMINGTON_COMBAT_SHOTGUN: "Remington Combat Shotgun"
@@ -4969,7 +4930,7 @@ extraStrings:
       STR_M79_THUMPER_GL: "M79 Grenade Launcher"
       STR_M79_THUMPER_GL_UFOPEDIA: "The M-79 'Thumper' Grenade launcher resembles a large bore, break-action, sawed-off shotgun. Has a variety of different {ALT}40mm{ALT} munition types at its disposal, contributing to its effectiveness in a wide range of situations."
       STR_M72_LAW: "M72 LAW"
-      STR_M72_LAW_UFOPEDIA: "LAW stands for Light Anti-tank Weapon, is the reemplacement of the old WWII Bazooka. Made as a disposable one-shot weapons, {ALT}a soldier could carry many of them{ALT}, allowing an infantryman to disable multiple armored threats on the battlefield."
+      STR_M72_LAW_UFOPEDIA: "LAW stands for Light Anti-tank Weapon, is the replacement of the old WWII Bazooka. Made as a disposable one-shot weapons, {ALT}a soldier could carry many of them{ALT}, allowing an infantryman to disable multiple armored threats on the battlefield."
       STR_M60: "M60 LMG"
       STR_M60_UFOPEDIA: "Powerful Light Machine Gun, an iconic weapon very used in the Vietnam War, fires {ALT}7.62x51mm NATO{ALT} rounds, very accurate at long ranges. Firing this gun in bursts increments it's reliability, because the automatic fire can overheat the barrel and melt it. It is fed on x50 and x100 ammo boxes."
       STR_AR5: "AR-5 Survival Rifle"
@@ -4984,10 +4945,10 @@ extraStrings:
       STR_SG510_CARBINE: "SIG SG510-4 Carbine"
       STR_SG510_CARBINE_UFOPEDIA: "Version specially designed for UNEXCOM by SIG based on its SG 510-4 battle rifle. It has a cut-off barrel, a retractable paratrooper stock, using the same powerful {ALT}7.62mm NATO{ALT} round of its larger brother. It has been designed to be more compact and maneuverable without losing firepower, but it can be still difficult to control with sustained fire. Can use x20 and x30 rounds mags."
       STR_MP5: "H&K MP5"
-      STR_MP5_UFOPEDIA: "Automatic sub-machine gun manufactured by Hecker & Koch, adopted by the West Germany armed forces. Lightweight and reliable, uses {ALT}9x19mm Parabellum rounds.{ALT} this modern sub-machine gun is expected to be used en masse by special operations groups and police forces around the world because of its excellent performance. Uses all of the three 9mm magazines."
+      STR_MP5_UFOPEDIA: "Automatic sub-machine gun manufactured by Heckler & Koch, adopted by the West Germany armed forces. Lightweight and reliable, uses {ALT}9x19mm Parabellum rounds.{ALT} this modern sub-machine gun is expected to be used en masse by special operations groups and police forces around the world because of its excellent performance. Uses all of the three 9mm magazines."
       STR_PSG1: "H&K PSG-1"
       STR_PSG1_UFOPEDIA: "Präzisionsschützengewehr, German for 'precision shooter rifle'. Powerful precision rifle, based on the design of the H&K G3 combat rifle, uses {ALT}7.62x51 NATO{ALT} ammunition. It combines excellent long-range precision, high fire rate and very powerful ammunition, making it a lethal weapon in the right hands. Uses the x5 and x20 ammo clips."
-      STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoiless Rifle"
+      STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoilless Rifle"
       STR_CARL_GUSTAF_M2_UFOPEDIA: "The Carl Gustaf M2 is an 84 mm man-portable reusable anti-tank weapon produced in Sweden. Although its design dates back to the years after WW2, the high quality of its construction and its variety of warheads make it an ideal choice when using heavy support on the battlefields of Europe."
       STR_FN_MAG: "FN MAG LMG"
       STR_FN_MAG_UFOPEDIA: "Powerful infantry support weapon chambered in {ALT}7.62mm NATO{ALT} and fed on x50 and x100 ammo belts, it keeps certain similarities with German machine guns of the WW2. Its design allows for a high continuous fire rate without greatly affecting its accuracy. The MAG is known for its outstanding reliability"
@@ -5037,7 +4998,7 @@ extraStrings:
       STR_POLICE_TONFA: "Tonfa"
       STR_POLICE_TONFA_UFOPEDIA: "Blunt weapon used by police to control crowds and criminals, is made of black solid plastic. It is very difficult to kill someone with this weapon, although enough damage can be done to {ALT}stun them.{ALT}"
       STR_M1_CARBINE: "M1 Carbine"
-      STR_M1_CARBINE_UFOPEDIA: "The M1 Carbine is an old design born in the WW2 as a light-weight weapon. Uses the {ALT}.30 Carbine{ALT} rounds, light but with limited stopping power. Still, the weapon is confortable to use and quite popular among many police and military forces."
+      STR_M1_CARBINE_UFOPEDIA: "The M1 Carbine is an old design born in the WW2 as a light-weight weapon. Uses the {ALT}.30 Carbine{ALT} rounds, light but with limited stopping power. Still, the weapon is comfortable to use and quite popular among many police and military forces."
 ####################################
 ###### ALLIED ARMIES WEAPONS #######
 ####################################
@@ -5054,7 +5015,7 @@ extraStrings:
       STR_PPS_43: "PPS-43 SMG"
       STR_PPS_43_UFOPEDIA: "Cheap submachine gun used by Red Army soldiers on WW2, still used as a reserve weapon in many countries of the Communist bloc, both the Warsaw Pact and its African and Asian allies. It does not have semiautomatic firing, only automatic.  Its stamped steel construction makes it extremely easy to produce. The USSR has modified many PPS-43 to fire {ALT}9mm{ALT} ammunition instead of the 7.62mm Tokarev, on x20 and x30 mags."
       STR_SKS: "SKS"
-      STR_SKS_UFOPEDIA: "Semi-automatic carbine, similar to the AK-47. Use the same ammunition as the AK family, but it has a little more range due to the longer cannon. Equiped with a medium range scope, to serve as a DMR. Uses a special {ALT}7.62x39 10-round clip.{ALT} Requires almost no maintenance. Melee power: 55~"
+      STR_SKS_UFOPEDIA: "Semi-automatic carbine, similar to the AK-47. Use the same ammunition as the AK family, but it has a little more range due to the longer cannon. Equipped with a medium range scope, to serve as a DMR. Uses a special {ALT}7.62x39 10-round clip.{ALT} Requires almost no maintenance. Melee power: 55~"
 #############################################
 ####### SPECIAL FORCES & MERC WEAPONS #######
 #############################################
@@ -5064,7 +5025,7 @@ extraStrings:
       STR_COLT_SCOPE_ACCESSORY: Colt Scope Accessory
       STR_COLT_SCOPE_ACCESSORY_UFOPEDIA: This small accessory is a four magnification rifle scope manufactured by Colt (creator of the AR-15 family of rifles and their derivatives, such as the M16). It is designed to be mounted on service rifles, to provide the shooter with more precise support with a clear sight. This does not replace the iron sight, so the gun can still be used in short range. It can be used in Manufacturing to attach it to a rifle with the correct blueprints.
       STR_M203_ACCESSORY: M203 Accessory
-      STR_M203_ACCESSORY_UFOPEDIA: Single shot grenade launcher, uses the same 40mm rounds as the largest and heaviest M79 Thumper. Manufactured by several companies, including Colt, it is quite versatile and can be mounted on various models of assault rifles, battle rifles and carbines. It is not designed to be an anti-tank weapon, rather an anti-personnel weapon, due to the limited power of the 40mm grenades, however it facilitates the cleaning of enemy zones without having to deploy heavier weapons. It can be mounted on a rifle or carbine via Manufacture, using a Weapon Toolkit and the required parts.
+      STR_M203_ACCESSORY_UFOPEDIA: Single shot grenade launcher, uses the same 40mm rounds as the largest and heaviest M79 Thumper. Manufactured by several companies, including Colt, it is quite versatile and can be mounted on various models of assault rifles, battle rifles and carbines. It is not designed to be an anti-tank weapon, rather an anti-personnel weapon, due to the limited power of the 40mm grenades, however it facilitates the cleaning of enemy zones without having to deploy heavier weapons. It can be mounted on a rifle or carbine via Manufacture.
       STR_M79_THUMPER_CONVERSION: "Sawed-off M79 Conversion"
       STR_DOUBLE_BARRELED_SHOTGUN_CONVERSION: "Sawed-off DB Shotgun Conversion"
       STR_XM117_SCOPED_CONVERSION: "XM117 Scoped Conversion"
@@ -5109,7 +5070,7 @@ extraStrings:
       STR_M16A1_SHOTGUN: "M16A1 Shotgun"
       STR_M16A1_SHOTGUN_UFOPEDIA: "Customized assault rifle for short-range combat The handguard was changed to a longer version of the one used on the XM117, as well as a cut-down version of the Remington 870 shotgun was added to maximize its firepower in close combat. The rifle uses standard {ALT}5.56x45mm NATO{ALT} ammunition used in the AR-15 family and the added under-barrel shotgun uses {ALT}.12 Gauge{ALT} ammunition in its {ALT}Buckshot, Slug and Non-Lethal{ALT} variants."
       STR_ENFORCER: "Enforcer Pistol"
-      STR_ENFORCER_UFOPEDIA: "Sawed-off version of the popular M1 Carbine, this is build shortening the lenght of the barrel considerably and removing the buttstock, replacing it with a pistol grip. The {ALT}.30 Carbine{ALT} ammo used on it allows for a steady accuracy, due the small recoil it has."
+      STR_ENFORCER_UFOPEDIA: "Sawed-off version of the popular M1 Carbine, this is build shortening the length of the barrel considerably and removing the buttstock, replacing it with a pistol grip. The {ALT}.30 Carbine{ALT} ammo used on it allows for a steady accuracy, due the small recoil it has."
       STR_50_CAL_MAGNUM: "50. Cal Magnum"
       STR_50_CAL_MAGNUM_UFOPEDIA: "This was an old Magnum revolver that someone modified and adapted to use powerful .50 Cal rounds. It is very, very powerful and very very easy to miss a target if you don't aim accurately, due the heavy recoil. This weapon is most suited to close range combat, almost point-blank, where the low accuracy doesn't matters."
 ########################################
@@ -5120,14 +5081,14 @@ extraStrings:
       STR_MG3_UFOPEDIA: All-purpose German-made machine gun, based on the MG42 model used in WWII. This was modified to fit in a support installed on the right arm of the Delta EOD Armor, to distribute all the recoil of the weapon uniformly, which makes it very accurate. The operator has an integrated feed system into the Armor.
       STR_ANGRY_WIFE: The Angry Wife
       STR_ANGRY_WIFE_CLIP: The Angry Wife Clip
-      STR_ANGRY_WIFE_UFOPEDIA: Classified as 'Tactical Light Weapon' can be loaded diferent {ALT}12-Gauge{ALT} shells very quickly. Its official name is 'TLO-72', but it is sarcastically nicknamed 'The Angry Wife' by its users.
+      STR_ANGRY_WIFE_UFOPEDIA: Classified as 'Tactical Light Weapon' can be loaded different {ALT}12-Gauge{ALT} shells very quickly. Its official name is 'TLO-72', but it is sarcastically nicknamed 'The Angry Wife' by its users.
       STR_RIOT_SHIELD: IM-21 Krepost Shield
       STR_RIOT_SHIELD_UFOPEDIA: Prototype shield built entirely with Alien Alloys. Its name in Russian means 'Fortress'. It is surprisingly light and resistant, allows {ALT}frontal assaults{ALT} without fear of being damaged. Its size is something cumbersome for the user, which {ALT}limits its agility{ALT} a bit. If used with sufficient force, it can blind the opponent with the shield's strobe lights.
 ########################################
 ####### FOOD AND MEDICAL ITEMS #########
 ########################################
       STR_CANNED_FOOD: "Canned Food"
-      STR_CANNED_FOOD_UFOPEDIA: "Nicknamed by some as 'dog food', this small can can can contain a wide variety of processed foods, from canned ham, vegetable soup, stew, beef or pork. It takes a little time to open the can and its contents can help the consumer to calm their nerves and regain some energy and health. ENERGY +20, MORALE +25, HEALTH +5 "
+      STR_CANNED_FOOD_UFOPEDIA: "Nicknamed by some as 'dog food', this small can can contain a wide variety of processed foods, from canned ham, vegetable soup, stew, beef or pork. It takes a little time to open the can and its contents can help the consumer to calm their nerves and regain some energy and health. ENERGY +20, MORALE +25, HEALTH +5 "
       STR_CIGARETTES: "Cigarettes"
       STR_CIGARETTES_UFOPEDIA: "Popular 'Unlucky Stripes' brand cigarettes, quite common among civilians and military personnel around the world. Smoking a cigarette helps relieve the pressure and stress of everyday (or battlefield) life. You recover considerably morale, at the cost of stamina and health, due to the toxic components with which they are made. ENERGY -5, MORALE +50, HEALTH -15"
       STR_FLASK: "Flask"
@@ -5135,7 +5096,7 @@ extraStrings:
       STR_MEDI_KIT: "Medikit"
       STR_MEDI_KIT_UFOPEDIA: "Very advanced medical device, designed to be used by both civilian and military paramedics to immediately treat trauma and wounds of various types in the patient. It has a modern scanner that makes it easier for medical personnel to analyze the area where an injury has occurred that can put the patient's life in danger. It also contains various types of syringes with various doses of analgesics, painkillers, stimulants and antibiotics. Its construction with Alien Alloys makes this equipment very light, which would otherwise require an ambulance to transport it."
       STR_MEDICAL_BAG: "Medical Bag"
-      STR_MEDICAL_BAG_UFOPEDIA: "First aid bag with various medical and healing items inside. It is used by paramedics on the battlefield to stabilize seriously injured patients. The bag contains various medicines such as antibiotics, anti-inflammatories, morphine and stimulants. One of the most appreciated tools by the users of this kit is a practical field surgery kit with which bullets or splinters can be removed from patients' wounds. It is somewhat heavy and slow to use, but can save a patient's life."
+      STR_MEDICAL_BAG_UFOPEDIA: "First aid bag with various medical and healing items inside. It is used by paramedics on the battlefield to stabilize seriously injured patients. The bag contains various medicines such as antibiotics, anti-inflammatory drugs, morphine and stimulants. One of the most appreciated tools by the users of this kit is a practical field surgery kit with which bullets or splinters can be removed from patients' wounds. It is somewhat heavy and slow to use, but can save a patient's life."
       STR_FIELD_DRESSING: "Field Dressing"
       STR_FIELD_DRESSING_UFOPEDIA: "Pack of sterile gauze and bandages, very useful for stopping bleeding from a serious injury or wound. The bandage can be applied by the same user to avoid losing too much blood while waiting for specialized medical attention. "
       STR_MEDICAL_POUCH: "Medical Pouch"
@@ -5150,4 +5111,4 @@ extraStrings:
       STR_SMOKE_GRENADE: "M18 Smoke Grenade"
       STR_SMOKE_GRENADE_UFOPEDIA: "This American manufactured grenade dates from the end of the WW2, is used as a signaling device, a target or landing zone marking device. This particular model deploys a white smoke curtain and can be used to cover the movement of allied units, disperse civilians or block the enemy's line of fire. "
       STR_FLASHBANG_GRENADE: "G60 Flashbang Grenade"
-      STR_FLASHBANG_GRENADE_UFOPEDIA: "Non-lethal grenade of British origin, it is produced almost exclusively for the Special Air Service.  It is used to confuse, disorient, or distract a potential threat. The mixture of substances created when activated causes a chemical reaction that manifests itself in a very intense light and a very loud sound that can even stun the enemy. It explodes as soon as it comes into contact with the ground. It reduces TUs and Stamina, as well as stuns the affected target."
+      STR_FLASHBANG_GRENADE_UFOPEDIA: "Non-lethal grenade of British origin, it is produced almost exclusively for the Special Air Service.  It is used to confuse, disorient, or distract a potential threat. The mixture of substances created when activated causes a chemical reaction that manifests itself in a very intense light and a very loud sound that can even stun the enemy. It explodes as soon as it comes into contact with the ground. It reduces TUs, Accuracy, Reactions and Stamina, as well as stuns the affected target."

@@ -155,6 +155,7 @@ armors:
     loftempsSet: [ 3 ]
   - type: THIN_MAN_ARMOR
     spriteSheet: THIN_MAN.PCK
+    spriteInv: inventory_THIN_MAN
     corpseBattle:
       - STR_THIN_MAN_CORPSE
     frontArmor: 8
@@ -371,6 +372,7 @@ research:
       - STR_PSI_LAB
     getOneFree:
       - STR_END_OF_TERRORISTS
+    spawnedEvent: STR_TERRORISTS_DEFEATED_EVENT
   - name: STR_THIN_MAN_CORPSE
     cost: 50
     points: 50
@@ -378,6 +380,7 @@ research:
     listOrder: 180290
     getOneFree:
       - STR_END_OF_TERRORISTS
+    spawnedEvent: STR_TERRORISTS_DEFEATED_EVENT
 
   - name: STR_TERRORISTS_OPERATIONS
     cost: 0
@@ -563,7 +566,7 @@ extraSprites:
   - type: inventory_THIN_MAN
     singleImage: true
     files:
-      0: Resources/Enemies/Thin Man/Inventory/THIN_MAN_INV.png
+      0: Resources/Thin Man/Inventory/THIN_MAN_INV.png
 
   - type: TERRORIST_FACTION_IMAGE
     singleImage: true
@@ -614,10 +617,12 @@ extraStrings:
       STR_THIN_MAN_AUTOPSY_UFOPEDIA: "While on the surface the subject, which we've christened as 'Thin Man', seems human, its internal organs show significant deviation. The Thin Mans DNA is similar to a regular humans, but it contains portions unlike anything found on earth. The subject is most likely a result of genetic manipulation."
       STR_THIN_MAN_AUTOPSY: "Thin Man Autopsy"
       STR_ALIEN_ASSOCIATIONS: "Alien Associations"
-      STR_ALIEN_ASSOCIATIONS_UFOPEDIA: "The capture of a high ranking terrorist has lead to an alarming development, the terrorist organisations we've been facing seem to have links to extraterestials. Multiple terrorist leaders have been seen armed with weaponry only seen before during highly classified encounters with alien life. The origins of these weapons must be tracked before knowledge of them spreads too far to contain, and before the terrorist can get their hands on anything with which they could cause significant damage."
+      STR_HYBRID: "Hybrid"
+      STR_ALIEN_ASSOCIATIONS_UFOPEDIA: "The capture of a high ranking terrorist has lead to an alarming development, the terrorist organisations we've been facing seem to have links to extraterrestrials. Multiple terrorist leaders have been seen armed with weaponry only seen before during highly classified encounters with alien life. The origins of these weapons must be tracked before knowledge of them spreads too far to contain, and before the terrorist can get their hands on anything with which they could cause significant damage."
       STR_TERRORIST_HQ: "Tracing the Weapons"
-      STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop into their operation."
-
+      STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop to their operation."
+      STR_TERRORIST_THIN_MAN: "Terrorists + Thinman"
+      STR_THIN_MAN_INFILTRATOR: "Thin Man"
 
       STR_TERRORISTS: The Terrorists
       STR_TERRORISTS_UFOPEDIA: Terrorists are a diverse group of political, religious and ideological radicals who use violence and fear to impose their ideals or make demands on the world's governments. Each cell is independent of the others, but they use similar equipment and weaponry. They are extremely dangerous because they are not afraid to die.

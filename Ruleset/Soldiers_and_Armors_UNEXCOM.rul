@@ -54,30 +54,30 @@ soldiers:
   - type: STR_SPECIAL_FORCES_SOLDIER
     requires:
      - STR_SPECIAL_FORCES_RESEARCH
-    costBuy: 200000
-    costSalary: 30000
+    costBuy: 180000
+    costSalary: 50000
     transferTime: 24
     minStats:
-      tu: 70
-      stamina: 80
-      health: 50
+      tu: 60
+      stamina: 65
+      health: 40
       bravery: 60
-      reactions: 70
-      firing: 80
+      reactions: 50
+      firing: 70
       throwing: 60
-      strength: 50
+      strength: 35
       psiStrength: 0
       psiSkill: 0
       melee: 80
     maxStats:
-      tu: 80
-      stamina: 100
-      health: 60
-      bravery: 70
-      reactions: 80
-      firing: 90
+      tu: 70
+      stamina: 80
+      health: 50
+      bravery: 100
+      reactions: 60
+      firing: 80
       throwing: 70
-      strength: 60
+      strength: 50
       psiStrength: 75
       psiSkill: 16
       melee: 90
@@ -86,7 +86,7 @@ soldiers:
       stamina: 110
       health: 70
       bravery: 90
-      reactions: 100
+      reactions: 70
       firing: 110
       throwing: 80
       strength: 80
@@ -104,30 +104,30 @@ soldiers:
   - type: STR_MERCENARY
     requires:
      - STR_MERCENARY_RESEARCH
-    costBuy: 50000
+    costBuy: 90000
     costSalary: 90000
     transferTime: 24
     minStats:
-      tu: 80
-      stamina: 90
-      health: 50
+      tu: 65
+      stamina: 75
+      health: 40
       bravery: 80
-      reactions: 80
-      firing: 90
+      reactions: 40
+      firing: 65
       throwing: 60
-      strength: 60
+      strength: 35
       psiStrength: 0
       psiSkill: 0
       melee: 90
     maxStats:
-      tu: 90
-      stamina: 100
-      health: 60
+      tu: 75
+      stamina: 80
+      health: 50
       bravery: 100
-      reactions: 90
-      firing: 100
+      reactions: 65
+      firing: 75
       throwing: 70
-      strength: 70
+      strength: 50
       psiStrength: 100
       psiSkill: 24
       melee: 90
@@ -1375,7 +1375,7 @@ extraStrings:
   - type: en-US
     strings:
       STR_NONE_UC: NONE
-      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and confortable, it wasn't meant to stop plasma bolts, but can be enought to stop light bullets.
+      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and comfortable, it wasn't meant to stop plasma bolts, but can be enough to stop light bullets.
 
       STR_PILOT: Pilot
       STR_PILOT_UC: PILOT FLIGHT SUIT

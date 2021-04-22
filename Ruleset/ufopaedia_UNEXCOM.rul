@@ -736,6 +736,7 @@ ufopaedia:
     listOrder: 502
     section: STR_XCOM_CRAFTS
 
+
   - id: STR_SPACE_SHUTTLE
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -756,6 +757,7 @@ ufopaedia:
     image_id: SPACE_SHUTTLE_UFOPEDIA
 
 #CRAFT ARMANENT
+
 
 
 
@@ -1706,6 +1708,15 @@ ufopaedia:
     text_width: 316
     listOrder: 3213
 
+  - id: STR_OUTSOURCING_PRODUCTION
+    type_id: 8
+    requires:
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
+    section: STR_UNEXCOM_REPORTS
+    text: STR_OUTSOURCE_UFOPEDIA
+    text_width: 316
+    listOrder: 3214
+
   - id: STR_SPECIAL_FORCES_SUPPORT
     type_id: 8
     section: STR_UNEXCOM_REPORTS
@@ -2163,7 +2174,7 @@ ufopaedia:
 
   - id: STR_M16A1
     requires:
-      - STR_M16A1
+      - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_M16A1_UFOPEDIA
@@ -2187,7 +2198,7 @@ ufopaedia:
 
   - id: STR_M16_M203
     requires:
-      - STR_USA_SUPPORT_RESEARCH
+      - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_M16_M203_UFOPEDIA
@@ -2356,7 +2367,7 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_HEAVY
-    text: STR_FLECHETE_CANNON_UFOPEDIA
+    text: STR_FLECHETTE_CANNON_UFOPEDIA
     listOrder: 4508
 
   - id: STR_HUMAN_PLASMA_LMG
@@ -2431,12 +2442,12 @@ ufopaedia:
     text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
     listOrder: 4607
 
-  - id: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
+  - id: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    text: STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA
+    text: STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA
     listOrder: 4608
 
   - id: STR_MIRINOV_LASER_SNIPER
@@ -2502,12 +2513,12 @@ ufopaedia:
     text: STR_RPG_UFOPEDIA
     listOrder: 4703
 
-  - id: STR_M72_AUTOMATIC_RECOILESS_RIFLE
+  - id: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    text: STR_M72_AUTOMATIC_RECOILESS_RIFLE_UFOPEDIA
+    text: STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA
     listOrder: 4704
 
   - id: STR_AFINA_ANTITANK_LASER
@@ -2609,12 +2620,12 @@ ufopaedia:
     listOrder: 4805
 
 #Ammunition
-  - id: STR_KS23_SHARPNEL-25_X4
+  - id: STR_KS23_SHRAPNEL-25_X4
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     type_id: 4
     section: STR_AMMUNITION
-    text: STR_KS23_SHARPNEL-25_X4_UFOPEDIA
+    text: STR_KS23_SHRAPNEL-25_X4_UFOPEDIA
     listOrder: 5000
 
   - id: STR_KS23_BARRIKADE_X4
@@ -3157,15 +3168,6 @@ ufopaedia:
     text: STR_WEAPON_MODIFICATION_UFOPEDIA
     listOrder: 6400
 
-
-  - id: STR_WEAPON_TOOLKIT
-    requires:
-      - STR_WEAPON_MODIFICATION
-    type_id: 4
-    section: STR_EQUIPMENT
-    text: STR_WEAPON_TOOLKIT_UFOPEDIA
-    listOrder: 6401
-
   - id: STR_COLT_SCOPE_ACCESSORY
     requires:
       - STR_WEAPON_MODIFICATION
@@ -3351,7 +3353,7 @@ ufopaedia:
     section: STR_VEHICLES
     listOrder: 8201
 
-#Facilites
+#Facilities
 
   - id: STR_ACCESS_LIFT
     type_id: 6
@@ -3710,6 +3712,13 @@ ufopaedia:
     text: STR_ALIEN_HEAVY_LASER_UFOPEDIA
     requires:
       - STR_ALIEN_HEAVY_LASER
+    listOrder: 11993
+  - id: STR_ALIEN_CRYSTAL
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_CRYSTAL_UFOPEDIA
+    requires:
+      - STR_ALIEN_LASERS
     listOrder: 11993
 
 

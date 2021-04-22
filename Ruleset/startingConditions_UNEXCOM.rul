@@ -22,6 +22,7 @@ startingConditions:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
 
+
   - type: STR_OPERATION_FALSE_FLAG_CONDITION
     requiredItems:
           STR_HYPER_WAVE_ENCODER: 1
@@ -77,4 +78,10 @@ startingConditions:
     allowedCraft:
       - STR_SPACE_SHUTTLE
 
+
+  - type: STR_TERRORIST_MISSION
+    forbiddenItems:
+      - STR_HE_STRIKE
+      - STR_INC_STRIKE
+      - STR_HIGH_EXPLOSIVE
 

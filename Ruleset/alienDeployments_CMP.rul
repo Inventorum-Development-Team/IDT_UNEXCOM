@@ -189,7 +189,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 2
-    civilians: 16
+    civilians: 10
     terrains:
       - XBASE
     shade: 5
@@ -2106,13 +2106,13 @@ alienDeployments:
     script: ALIENBASE
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
-    huntMissionMaxFrequency: 720       # generate hunt mission max every 720 minutes (= 12 hours)
+    huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
     huntMissionWeights: &INTERCEPTION_MISSIONS
-      3:
-        STR_ALIEN_INTERCEPTION_1: 100
       6:
+        STR_ALIEN_INTERCEPTION_1: 100
+      8:
         STR_ALIEN_INTERCEPTION_2: 100
-      9:
+      10:
         STR_ALIEN_INTERCEPTION_3: 100
 #END ALIEN BASE
 
@@ -2424,3 +2424,7 @@ alienDeployments:
             []
           -
             []
+extraStrings:
+  - type: en-US
+    strings:
+        STR_BASE_DEFENSE_BRIEFING: "An Alien vessel has landed nearby. Our base is in severe danger. As per standard procedure non-combat personnel and X-Com craft have tried ot evacuate, but some non-combatants still remain inside the base. Alien units will enter the base via hangar doors or the access lift. Defend the base and its vital installations at all costs - this is a fight to the death. If you click on the 'abort mission' icon you will concede defeat and lose the base."
