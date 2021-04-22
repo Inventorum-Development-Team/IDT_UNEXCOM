@@ -60,9 +60,26 @@ extended:
           BattleUnit.setFatalwounds unit 1 1;
           end;
          return;
+
       - offset: 2 #Makes Flashbang work early
         code: |
            BattleUnit.setTag unit Tag.FlashBanged -5;
+           return;
+
+      - offset: 1 #Halves enemies Tu:s on the first turn
+        code: |
+           var int tu;
+           var int remainder;
+           var int faction;
+           BattleUnit.getFaction unit faction;
+           if eq faction 1;
+            unit.getTimeUnits tu;
+            set remainder tu;
+            mod remainder 2;
+            sub tu remainder;
+            div tu 20;
+            BattleUnit.setTimeUnits unit tu;
+            end;
            return;
 
     newTurnUnit:
