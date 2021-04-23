@@ -158,7 +158,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: -1
-    bulletSprite: 2
+    bulletSprite: 31
     power: 35
     hitSound: 22
     damageAlter:
@@ -259,7 +259,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: 26
-    bulletSprite: 2
+    bulletSprite: 31
     power: 35
     hitSound: 22
     damageAlter:
@@ -284,7 +284,7 @@ items:
     bigSprite: 1202
     floorSprite: 1202
     handSprite: 2900
-    bulletSprite: 2
+    bulletSprite: 31
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
@@ -360,7 +360,7 @@ items:
     bigSprite: 1213
     floorSprite: 1212
     handSprite: 2956
-    bulletSprite: 2
+    bulletSprite: 31
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
@@ -521,7 +521,6 @@ items:
     bigSprite: 1207
     floorSprite: 1206
     handSprite: 2932
-    bulletSprite: 2
     fireSound: 144
     bulletSpeed: 100
     reloadSound: [194, 195, 196]
@@ -598,7 +597,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: -1
-    bulletSprite: 2
+    bulletSprite: 31
     battleType: 2
     power: 35
     hitSound: 22
@@ -623,7 +622,6 @@ items:
     bigSprite: 1215
     floorSprite: 1214
     handSprite: 2964
-    bulletSprite: 4
     bulletSpeed: 20
     fireSound: 150
     reloadSound: [186, 187, 188, 189]
@@ -675,7 +673,7 @@ items:
     floorSprite: 1207
     handSprite: 0
     hitAnimation: 26
-    bulletSprite: 2
+    bulletSprite: 4
     power: 75
     hitSound: 22
     damageType: 1
@@ -703,7 +701,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: 26
-    bulletSprite: 2
+    bulletSprite: 31
     battleType: 2
     power: 75
     hitSound: 22
@@ -963,6 +961,15 @@ extraSprites:
       2956: Resources/AlloyWeapons/Handob_G_Shotgun.png
       2964: Resources/AlloyWeapons/Handob_G_Sniper.png
 
+
+
+  - type: Projectiles
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+     1085: Resources/BulletSprites/Flechette_bullet.png #31
 
 extraStrings:
   - type: en-US
