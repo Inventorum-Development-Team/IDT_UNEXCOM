@@ -612,6 +612,23 @@ ufopaedia:
       height: 80
 
 #satellites
+  - id: STR_BLACKBIRD
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_BLACKBIRD_UFOPEDIA
+    listOrder: 299
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: BLACKBIRD_UFOPEDIA
+
   - id: STR_LINNA
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -739,7 +756,7 @@ ufopaedia:
 
   - id: STR_SPACE_SHUTTLE
     type_id: 1
-    section: STR_XCOM_CRAFT_ARMAMENT
+    section: STR_XCOM_CRAFTS
     text: STR_SPACE_SHUTTLE_UFOPEDIA
     requires:
       - STR_ULTIMATE_CRAFT
