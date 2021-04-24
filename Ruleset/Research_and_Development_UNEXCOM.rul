@@ -1,3 +1,9 @@
+items:
+
+   - type: STR_ALIEN_ID_CODES
+     size: 0.1
+
+
 research:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
@@ -715,18 +721,51 @@ research:
       - STR_CEREBREAL_NAVIGATOR
       - STR_CEREBREAL_SOLDIER
       - STR_CEREBREAL_LARVA_TERRORIST
-  - name: STR_THE_MARTIAN_SOLUTION
+
+
+  - name: STR_OVERSEER_PREREQ
+    cost: 0 # 670
+    points: 0
+    dependencies:
+      - STR_HYPER_WAVE_ENCODER
+      - STR_ALIEN_COMMUNICATION
+
+  - name: STR_ALIEN_ID_CODES
+    needItem: true
+    cost: 150
+    points: 10
+
+  - name: STR_OLYMPUS
+    cost: 500
+    points: 50
+    dependencies:
+     - STR_ALIEN_ID_CODES
+
+  - name: STR_THE_MARTIAN_SOLUTION # Operation Devastation
     cost: 500
     points: 60
     dependencies:
       - STR_ALIEN_ORIGINS
       - STR_LEADER_PLUS
+      - STR_UNITED_WE_STAND_RESEARCH
+      - STR_OLYMPUS
+
+  - name: STR_DEVASTATION_COMPLETED
+    cost: 10
+    needItem: true
+
+  - name: STR_DESTINATION_MARS
+    cost: 200
+    dependencies:
+     - STR_DEVASTATION_COMPLETED
+
   - name: STR_CYDONIA_OR_BUST
     cost: 600
     points: 60
     unlockFinalMission: true
     dependencies:
       - STR_COMMANDER_PLUS
+      - STR_DESTINATION_MARS
   - name: STR_UNITED_WE_STAND_RESEARCH
     cost: 400
     points: 200
@@ -1611,3 +1650,8 @@ extraStrings:
       STR_OUTSOURCE_FUSION_CRAFT_WEAPONS: "Outsource Fusion Missile Production"
       STR_OUTSOURCE_UFOPEDIA: "Due to the growing size of our airwing, our engineering department cannot keep up with the demand of manufacturing ammunition for the advanced weapons systems developed by our research department. Therefore the council has approved our request to move production of certain weapon system munitions into factories maintained by council members. While this arrangement will free up our resources to focus on other things, giving individual council nations access to powerful new weapons might have repercussions once this conflict is over"
       STR_OUTSOURCING_PRODUCTION: "Outsourcing Production"
+      STR_ALIEN_ID_CODES: "Alien IFF"
+      STR_OLYMPUS: "Project Olympus"
+      STR_THE_MARTIAN_SOLUTION: "Operation Devastation"
+      STR_DESTINATION_MARS: "Destination Mars"
+      STR_CYDONIA_OR_BUST: "Operation Downfall"
