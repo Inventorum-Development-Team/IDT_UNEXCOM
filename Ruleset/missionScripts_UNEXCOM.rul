@@ -282,7 +282,8 @@ missionScripts:
         REGION_NATO_COMBAT_OPERATIONS: 100
     useTable: false
     researchTriggers:
-      STR_HYPER_WAVE_ENCODER: true
+      STR_OVERSEER_PREREQ: true
+      STR_ALIEN_ID_CODES: false
     startDelay: 17500
     randomDelay: 80000
     executionOdds: 100
