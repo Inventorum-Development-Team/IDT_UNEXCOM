@@ -1276,6 +1276,14 @@ ufopaedia:
     text: STR_IMPROVED_SATELLITE_UFOPEDIA
     listOrder: 2015
     text_width: 316
+  - id: STR_EXOATMOSPHERIC_FIGHTERS
+    type_id: 8
+    requires:
+      - STR_EXOATMOSPHERIC_FIGHTERS
+    section: STR_UNEXCOM_RESEARCH
+    text: STR_EXOATMOSPHERIC_FIGHTERS_UFOPEDIA
+    listOrder: 2016
+    text_width: 316
 
   - id: STR_IMP_TANK_CHASSIS
     type_id: 7
@@ -3320,6 +3328,38 @@ ufopaedia:
   - id: STR_FLYING_SUIT_UC
     section: STR_ARMOR
     listOrder: 7303
+
+  - id: STR_ASTRONAUT_A7L_SPACESUIT_UC
+    type_id: 5
+    section: STR_ARMOR
+    listOrder: 7400
+    requires:
+      - STR_OLYMPUS
+    text: STR_ASTRONAUT_A7L_SPACESUIT_UC_UFOPEDIA
+
+  - id: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
+    type_id: 5
+    section: STR_ARMOR
+    listOrder: 7402
+    requires:
+      - STR_OLYMPUS
+    text: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC_UFOPEDIA
+
+  - id: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+    type_id: 5
+    section: STR_ARMOR
+    listOrder: 7403
+    requires:
+      - STR_OLYMPUS
+    text: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC_UFOPEDIA
+
+  - id: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
+    type_id: 5
+    section: STR_ARMOR
+    listOrder: 7405
+    requires:
+      - STR_OLYMPUS
+    text: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC_UFOPEDIA
 
 #Armored Vehicles
   - id: STR_FERRET_CAR

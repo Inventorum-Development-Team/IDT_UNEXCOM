@@ -730,7 +730,7 @@ armors:
     underArmor: 2
     movementType: 0
     visibilityAtDark: 7
-    visibilityAtDay: 20
+    visibilityAtDay: 26
     personalLight: 10
     stats: &EarthStats
       stamina: -15
@@ -763,9 +763,9 @@ armors:
     sideArmor: 8
     rearArmor: 5
     underArmor: 2
-    movementType: 2
+    movementType: 1
     visibilityAtDark: 7
-    visibilityAtDay: 20
+    visibilityAtDay: 26
     personalLight: 10
     stats: &OrbitalStats
       stamina: 30
@@ -800,7 +800,7 @@ armors:
     underArmor: 2
     movementType: 0
     visibilityAtDark: 7
-    visibilityAtDay: 20
+    visibilityAtDay: 26
     personalLight: 10
     stats: *EarthStats
     damageModifier:
@@ -829,7 +829,7 @@ armors:
     underArmor: 8
     movementType: 1
     visibilityAtDark: 7
-    visibilityAtDay: 20
+    visibilityAtDay: 26
     personalLight: 10
     stats: *OrbitalStats
     damageModifier:
@@ -1322,7 +1322,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_SPRITESHEET.png
+      0: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7LMMU_SPACESUIT_SPRITESHEET.png
   - type: BIGOBS.PCK
     files:
       515: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_CORPSE_BIGOB.png
@@ -1354,7 +1354,7 @@ extraSprites:
   - type: MAN_5KRECHETMMU.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/INVENTORY/MAN_5KRECHET94B.png
+      0: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/INVENTORY/MAN_5KRECHETMMU.png
   - type: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
     width: 512
     height: 720
@@ -1424,8 +1424,8 @@ extraStrings:
       STR_ASTRONAUT_A7LB_SPACESUIT_UC: A7-D Military Spacesuit
       STR_ASTRONAUT_A7LB_SPACESUIT_UC_UFOPEDIA: Combat variant of the A7 spacesuit, integrates Alien Alloy plates on the shoulders and legs to provide extra protection to limbs. Its main feature its a ballistic helmet inspired in LEVA (Lunar Extravehicular Visor Assembly) to provide increased resistance to damage that may break the helmet and compromise the survivability of the operator. Includes magnetic boots.
       STR_CORPSE_ASTRONAUT_A7LB_SPACESUIT: Fallen Astronaut
-      STR_ASTRONAUT_A7MMU_SPACESUIT_UC: A7 MMU Spacesuit
-      STR_ASTRONAUT_A7MMU_SPACESUIT_UC_UFOPEDIA: Special A7 spacesuit equipped with a prototype Manned Maneuvering Unit designed by NASA. This 'jetpack' enables untethered EVA operations without restrictions. The propellant used is gaseous nitrogen, stored on armored tanks on the back of the MMU. It contains enough propellant to have 6 hours of EVA. It is smaller than the Soviet counterpart, the SPK.
+      STR_ASTRONAUT_A7_MMU_SPACESUIT_UC: A7 MMU Spacesuit
+      STR_ASTRONAUT_A7_MMU_SPACESUIT_UC_UFOPEDIA: Special A7 spacesuit equipped with a prototype Manned Maneuvering Unit designed by NASA. This 'jetpack' enables untethered EVA operations without restrictions. The propellant used is gaseous nitrogen, stored on armored tanks on the back of the MMU. It contains enough propellant to have 6 hours of EVA. It is smaller than the Soviet counterpart, the SPK.
       STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT: Fallen Astronaut
 
 

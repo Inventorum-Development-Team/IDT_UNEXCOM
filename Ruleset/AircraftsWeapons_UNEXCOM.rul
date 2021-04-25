@@ -2,6 +2,7 @@ crafts:
 #Delete
   - delete: STR_SKYRANGER
   - delete: STR_INTERCEPTOR
+  - delete: STR_AVENGER
 # weaponType 0 = Gatling Cannon (Fast but weak)
 # weaponType 1 = Revolver Cannon (Slow but powerful)
 # weaponType 2 = Light Missile (IR Guidance, short range)
@@ -1541,6 +1542,7 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: true
+    spacecraft: true
     costBuy: 1000000
     costRent: 6000
     refuelRate: 50
@@ -1675,7 +1677,7 @@ crafts:
     damageMax: 20
     speedMax: 90
     accel: 1
-    stealth: true
+    undetectable: true
     costBuy: 230000
     costRent: 200000
     refuelRate: 75

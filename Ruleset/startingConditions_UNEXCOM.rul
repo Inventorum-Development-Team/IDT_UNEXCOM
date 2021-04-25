@@ -79,6 +79,31 @@ startingConditions:
       - STR_SPACE_SHUTTLE
 
 
+  - type: STR_SPACE_CONDITION
+    defaultArmor:
+      STR_SOLDIER:
+        STR_ASTRONAUT_A7_MMU_SPACESUIT_UC: 100
+      STR_PILOT:
+        STR_ASTRONAUT_A7_MMU_SPACESUIT_UC: 100
+      STR_SPECIAL_FORCES_SOLDIER:
+        STR_ASTRONAUT_A7_MMU_SPACESUIT_UC: 100
+      STR_MERCENARY:
+        STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC: 100
+    allowedArmors:
+      - STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
+      - STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
+      - STR_FLYING_SUIT_UC
+#    forbiddenSoldierTypes:
+#      - STR_MERCENARY
+    allowedItemCategories:
+      - STR_SPACE
+      - STR_LASER
+      - STR_PLASMA
+      - STR_ALLOY
+    allowedCraft:
+      - STR_SPACE_SHUTTLE
+
+
   - type: STR_TERRORIST_MISSION
     forbiddenItems:
       - STR_HE_STRIKE
