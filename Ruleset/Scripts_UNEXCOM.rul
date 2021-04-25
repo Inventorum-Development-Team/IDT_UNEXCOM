@@ -109,11 +109,9 @@ extended:
              var int accuracy;
              var int reactions;
              damaging_item.getTag flashbang Tag.FlashBang;
-               debug_log "test2";
              if eq flashbang 1;
               battle_game.getTurn turn;
               unit.getTag flashbanged Tag.FlashBanged;
-               debug_log "test4";
               add flashbanged 4;
               if gt turn flashbanged;
                BattleUnit.Stats.getFiring unit accuracy;
@@ -122,7 +120,6 @@ extended:
                BattleUnit.setTag unit Tag.OGreactions reactions;
                sub reactions 50;
                sub accuracy 50;
-               debug_log "test";
                BattleUnit.Stats.setFiring unit accuracy;
                BattleUnit.Stats.setReactions unit reactions;
               end;

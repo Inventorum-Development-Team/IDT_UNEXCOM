@@ -75,18 +75,18 @@ alienDeployments:
     terrains:
       - IDT_MOON
     alert: STR_OPERATION_DEVASTATION_ALERT
-    alertBackground: OPERATION_DEVASTATION_ALERT.SCR
+#    alertBackground: OPERATION_DEVASTATION_ALERT.SCR
     briefing:
       desc: STR_OPERATION_DEVASTATION_BRIEFING
       palette: 1
       textOffset: -16
-      background: OPERATION_DEVASTATION_ALERT
+     # background: OPERATION_DEVASTATION_ALERT
       showTarget: false
       showCraft: false
     music:
       - GMDEFEND
     markerName: STR_MOON_ASSAULT_MARKER
-    duration: [4, 10]
+    duration: [999999999, 999999999]
     despawnPenalty: 500
     points: 200
     unlockedResearch: STR_DEVASTATION_COMPLETED
