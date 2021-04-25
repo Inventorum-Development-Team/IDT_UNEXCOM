@@ -52,6 +52,7 @@ ufopaedia:
   - delete: STR_MIND_SHIELD
   - delete: STR_PSI_LAB
   - delete: STR_HYPER_WAVE_DECODER
+  - delete: STR_AVENGER
 #Fighters
   - id: STR_UNEXCOM_FIGHTERS
     type_id: 7
@@ -341,7 +342,7 @@ ufopaedia:
     listOrder: 114
     image_id: SABRE_UFOPEDIA
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
     type_id: 1
     rect_stats:
       x: 5
@@ -360,7 +361,7 @@ ufopaedia:
     listOrder: 115
     image_id: DYNASOAR_UFOPEDIA
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
     rect_stats:
@@ -380,7 +381,7 @@ ufopaedia:
     listOrder: 116
     image_id: SPIRAL_UFOPEDIA
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
     rect_stats:
@@ -597,7 +598,7 @@ ufopaedia:
     text: STR_HERMES_UFOPAEDIA
     image_id: HERMES_UFOPEDIA
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 1
     rect_stats:
@@ -749,17 +750,13 @@ ufopaedia:
     image_id: NEWLIGHTNING_UFOPEDIA
     section: STR_XCOM_CRAFTS
 
-  - id: STR_AVENGER
-    listOrder: 502
-    section: STR_XCOM_CRAFTS
-
 
   - id: STR_SPACE_SHUTTLE
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_SPACE_SHUTTLE_UFOPEDIA
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_OLYMPUS
     listOrder: 503
     rect_stats:
       x: 5

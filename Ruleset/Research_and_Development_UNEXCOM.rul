@@ -8,6 +8,7 @@ research:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
+  - delete: STR_ULTIMATE_CRAFT
 #################################
   - name: STR_MEDI_KIT
     dependencies:
@@ -85,6 +86,7 @@ research:
     points: 200
     unlocks:
       - STR_AIR_STRIKES
+      - STR_SATELLITES
     dependencies:
       - STR_USA_SUPPORT_RESEARCH
   - name: STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -92,6 +94,7 @@ research:
     points: 200
     unlocks:
       - STR_AIR_STRIKES
+      - STR_SATELLITES
     dependencies:
       - STR_NATO_SUPPORT_RESEARCH
   - name: STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -99,6 +102,7 @@ research:
     points: 200
     unlocks:
       - STR_AIR_STRIKES
+      - STR_SATELLITES
     dependencies:
       - STR_USSR_SUPPORT_RESEARCH
 
@@ -178,6 +182,14 @@ research:
     dependencies:
       - STR_ALIEN_ALLOYS
 
+  - name: STR_SATELLITES
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+
 ############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
@@ -229,13 +241,14 @@ research:
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
+      - STR_SATELLITES
+
   - name: STR_IMPROVED_IMPROVED_SATELLITE
     cost: 200
     points: 20
     dependencies:
       - STR_IMPROVED_SATELLITE
-      - STR_UFO_CONSTRUCTION
-      - STR_UFO_NAVIGATION
+      - STR_ALIEN_ID_CODES
   - name: STR_IMPROVED_BOMBER
     cost: 400
     points: 20
@@ -305,21 +318,30 @@ research:
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_FIGHTER
 
+  - name: STR_EXOATMOSPHERIC_FIGHTERS
+    cost: 1200
+    points: 30
+    dependencies:
+     - STR_ADVANCED_BOMBER
+     - STR_ADVANCED_FIGHTER
+     - STR_OLYMPUS
+
+  - name: STR_MIMIC_UFOS
+    cost: 600
+    points: 20
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+
   - name: STR_NEW_FIGHTER_CRAFT
-    cost: 1500
+    cost: 100
     points: 30
     dependencies:
-      - STR_ADVANCED_FIGHTER
+      - STR_MIMIC_UFOS
   - name: STR_NEW_FIGHTER_TRANSPORTER
-    cost: 2000
+    cost: 1200
     points: 30
     dependencies:
-      - STR_NEW_FIGHTER_CRAFT
-  - name: STR_ULTIMATE_CRAFT
-    cost: 3000
-    points: 30
-    dependencies:
-      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_MIMIC_UFOS
 
 ########################################
 ####### CRAFT WEAPONS TIER 3-4 #########
@@ -1641,7 +1663,7 @@ extraStrings:
       STR_ADVANCED_BOMBER_UFOPEDIA: "Tactical bomber project implementing hybrid and stealth technology For this project we have moved away from classic aircraft construction and have taken a more 'organic' design.  In tests it has proven to be considerably invisible to the radar used by our aircraft, and we hope that this same feature will be used in aerial combat against UFOs."
       STR_ADVANCED_FIGHTER: "Advanced Fighter"
       STR_ADVANCED_FIGHTER_UFOPEDIA: "This is a novel project. Grumman has created a new heavy naval fighter designed to protect American fleets and our diplomatic liaisons have managed to contact this company to design an aircraft entirely built by UNEXCOM. Using the F-14 Tomcat as a base, we have added for the first time stealth technology based on a modified version of the Alien Alloys, retaining the large weapon carrying capacity and sweep wings. "
-      STR_IMPROVED_IMPROVED_SATELLITE: "Advanced Satellite"
+      STR_IMPROVED_IMPROVED_SATELLITE: "Stealth Satellite"
       STR_AIR_STRIKES: "Close Air Support"
       STR_AIR_STRIKES_UFOPEDIA: "The Council has provided us access to close air support from airbases located in council nations near the area of operations. Though expensive, they can grant a tactical advantage if used correctly. UNEXCOM operatives can call in close air support by priming and throwing a signal smoke grenade. The air support will take a few turns to arrive, it is advised this time is used to make sure no friendly combatants are in the blast zone. Signal smoke grenades should not be used indoors, as this prevents the close air support from finding the target, meaning the attack run will not be completed"
       STR_FUSION_CRAFT_WEAPONS: "Fusion Craft Weaponry"
@@ -1655,3 +1677,6 @@ extraStrings:
       STR_THE_MARTIAN_SOLUTION: "Operation Devastation"
       STR_DESTINATION_MARS: "Destination Mars"
       STR_CYDONIA_OR_BUST: "Operation Downfall"
+      STR_SATELLITES: "Satellites"
+      STR_EXOATMOSPHERIC_FIGHTERS: "Exo-Atmospheric Fighters"
+      STR_MIMIC_UFOS: "Replicate Alien Crafts"
