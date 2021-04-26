@@ -1581,6 +1581,43 @@ crafts:
 # 5   1
 # 4 3 2
 
+  - type: STR_SPACE_SHUTTLE_ORBITAL #For the Orbital missions, payload bay open
+    weapons: 0
+    soldiers: 14
+    vehicles: 0
+#    pilots: 2
+    battlescapeTerrainData:
+      name: SHUTTLE_ORBITAL
+      mapDataSets:
+        - BLANKS
+        - SHUTTLE
+      mapBlocks:
+        - name: SHUTTLE_ORBITAL
+          width: 10
+          length: 20
+    craftInventoryTile: [5, 11, 1]
+    deployment:
+#Pilots Cabin
+      - [5, 13, 1, 4]
+      - [4, 13, 1, 4]
+#Payload Bay
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 1, 4]
+      - [5, 5, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+
 #}
 ############################
 ##### RECON SATELLITES #####
