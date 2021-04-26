@@ -155,6 +155,14 @@ events:
     points: 1000
     timer: 600
     timerRandom: 600
+
+  - name: STR_OVERSEER_TRACKED_EVENT
+    description: STR_OVERSEER_TRACKED_EVENT_DESCRIPTION
+    background: OVERSEER_TRACKED_EVENT_BACKGROUND
+    points: 1000
+    timer: 600
+    timerRandom: 600
+
 #################################
 #### ALIEN ACTIVITY EVENTS #####
 ###############################
@@ -325,6 +333,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/WORLD_AT_WAR_EVENT_BACKGROUND.PNG
+  - type: OVERSEER_TRACKED_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/OVERSEER_TRACKED_EVENT_BACKGROUND.PNG
+
 
   - type: CATTLE_ABDUCTION_EVENT_BACKGROUND
     singleImage: true
@@ -432,3 +447,5 @@ extraStrings:
        STR_MERCENARY_ARRIVAL_EVENT_DESCRIPTION: "A group of volunteers belonging to a PMC has just arrived at our HQ to support our troops. Although it was not necessary, they have brought their personal weapons with them. With the support of these experienced mercenaries, we can improve our combat capabilities considerably."
        STR_TERRORISTS_DEFEATED_EVENT: "Terrorist activity declines"
        STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION: "Since eliminating the Alien Infiltrator and shutting down its terrorist cell, reports of major terrorist attacks have been going down. According to intelligence reports, many terrorist organisations have gone dormant, ceasing most of their operations. The Council has therefore decided to allocate counterterrorism operations to local forces, letting us focus on the alien threat."
+       STR_OVERSEER_TRACKED_EVENT: "Unknown Transmissions on Stratosphere"
+       STR_OVERSEER_TRACKED_EVENT_DESCRIPTION: "Our ground radars, recon satellites and even a couple of SETI installations have detected unusual multiple alien transmissions sent to moving points high in the atmosphere. Our science staff has managed to find the origin, it's related to the 'Overseer' alien craft mentioned by alien navigators earlier. We need to prepare our forces to engage this UFO, vital for the enemy war efforts. "

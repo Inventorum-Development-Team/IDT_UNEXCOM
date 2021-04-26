@@ -751,6 +751,7 @@ research:
     dependencies:
       - STR_HYPER_WAVE_ENCODER
       - STR_ALIEN_COMMUNICATION
+    spawnedEvent: STR_OVERSEER_TRACKED_EVENT
 
   - name: STR_ALIEN_ID_CODES
     needItem: true
@@ -762,6 +763,13 @@ research:
     points: 50
     dependencies:
      - STR_ALIEN_ID_CODES
+
+  - name: STR_UNITED_WE_STAND_RESEARCH
+    cost: 400
+    points: 200
+    dependencies:
+      - STR_ALIEN_ORIGINS
+    spawnedEvent: STR_WORLD_AT_WAR_EVENT
 
   - name: STR_THE_MARTIAN_SOLUTION # Operation Devastation
     cost: 500
@@ -788,12 +796,7 @@ research:
     dependencies:
       - STR_COMMANDER_PLUS
       - STR_DESTINATION_MARS
-  - name: STR_UNITED_WE_STAND_RESEARCH
-    cost: 400
-    points: 200
-    dependencies:
-      - STR_ALIEN_ORIGINS
-    spawnedEvent: STR_WORLD_AT_WAR_EVENT
+
 
 ########################
 #### PURE RESEARCH ####
