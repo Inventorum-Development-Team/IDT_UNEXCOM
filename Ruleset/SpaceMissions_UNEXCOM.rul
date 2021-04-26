@@ -1,62 +1,205 @@
-
-
 alienDeployments:
-  - type: STR_MOON_ASSAULT
+  - type: STR_OPERATION_DEVASTATION
     startingCondition: STR_MOON_CONDITION
-    data:
+    data: &AlienSpaceBaseDefenders
       - alienRank: 5
         lowQty: 4
-        highQty: 6
-        dQty: 0
-        percentageOutsideUfo: 60
+        highQty: 8
+        dQty: 4
+        percentageOutsideUfo: 50
         itemSets:
           -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
             - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_MIND_PROBE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
           -
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
           -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
       - alienRank: 1
-        lowQty: 3
-        highQty: 5
+        lowQty: 1
+        highQty: 3
         dQty: 0
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
           -
             - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
           -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
       - alienRank: 0
-        lowQty: 3
-        highQty: 5
+        lowQty: 1
+        highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
           -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
       - alienRank: 6
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 100
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
         itemSets:
           -
             []
@@ -90,70 +233,9 @@ alienDeployments:
     despawnPenalty: 500
     points: 200
     unlockedResearch: STR_DEVASTATION_COMPLETED
-#    nextStage: STR_MARS_THE_FINAL_ASSAULT
 
   - type: STR_MARS_OPERATION_DOWNFALL
-    data:
-      - alienRank: 5
-        lowQty: 4
-        highQty: 6
-        dQty: 0
-        percentageOutsideUfo: 60
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 1
-        lowQty: 3
-        highQty: 5
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 0
-        lowQty: 3
-        highQty: 5
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 6
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
+    data: *AlienSpaceBaseDefenders
     width: 50
     length: 50
     height: 4
@@ -774,6 +856,7 @@ mapScripts:
      - type: addUFO
      - type: addCraft
      - type: fillArea
+
 terrains:
   - name: IDT_MOON
     enviroEffects: STR_MOON_ENVIRO
@@ -866,6 +949,111 @@ terrains:
         length: 10
         groups: [0, 1]
       - name: SPACE03
+        width: 10
+        length: 10
+
+#IDT - efrenespartano
+  - name: MARS
+    enviroEffects: STR_MARS_ENVIRO
+    mapDataSets:
+      - BLANKS
+      - MARS_NEW
+      - U_WALL02
+    script: MARS
+    civilianTypes:
+      - STR_ALLIED_AMERICAN_ASTRONAUT
+      - STR_ALLIED_SOVIET_COSMONAUT
+    mapBlocks:
+      - name: MARS00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MARS01
+        width: 10
+        length: 10
+      - name: MARS02
+        width: 10
+        length: 10
+      - name: MARS03
+        width: 10
+        length: 10
+      - name: MARS04
+        width: 10
+        length: 10
+      - name: MARS05
+        width: 10
+        length: 10
+      - name: MARS06
+        width: 10
+        length: 10
+      - name: MARS07
+        width: 10
+        length: 10
+      - name: MARS08
+        width: 10
+        length: 10
+      - name: MARS09
+        width: 10
+        length: 10
+      - name: MARS10
+        width: 10
+        length: 10
+        groups: 2
+  - name: IDT_MARS
+    enviroEffects: STR_MARS_ENVIRO
+    mapDataSets:
+      - BLANKS
+      - IDT_MARS
+    mapBlocks:
+      - name: IDT_MARS00
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MARS01
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MARS02
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MARS03
+        width: 10
+        length: 10
+      - name: IDT_MARS04
+        width: 10
+        length: 10
+      - name: IDT_MARS05
+        width: 10
+        length: 10
+      - name: IDT_MARS06
+        width: 10
+        length: 10
+      - name: IDT_MARS07
+        width: 10
+        length: 10
+      - name: IDT_MARS08
+        width: 10
+        length: 10
+      - name: IDT_MARS09
+        width: 10
+        length: 10
+      - name: IDT_MARS10
+        width: 10
+        length: 10
+      - name: IDT_MARS11
+        width: 20
+        length: 20
+      - name: IDT_MARS12
+        width: 20
+        length: 20
+      - name: IDT_MARS13
+        width: 10
+        length: 10
+      - name: IDT_MARS14
+        width: 10
+        length: 10
+      - name: IDT_MARS15
         width: 10
         length: 10
 
