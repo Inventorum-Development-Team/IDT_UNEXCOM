@@ -711,9 +711,13 @@ alienDeployments:
   - type: STR_SPACE_STATION
     width: 40
     length: 40
+    briefing:
+      desc: STR_SPACE_STATION_BRIEFING
+      title: STR_SPACE_STATION_TITLE
     terrains:
      - SPACE
     height: 12
+    duration: [72,72]
     startingCondition: STR_SPACE_CONDITION
     alert: STR_ALIEN_SPACE_STATION_SPOTTED
     data:
@@ -1158,6 +1162,10 @@ extraStrings:
       STR_ALLIED_AMERICAN_ASTRONAUT: Allied American Astronaut
       STR_UN_ASTRONAUT: Allied American Astronaut
       STR_ALLIED_AMERICAN_ASTRONAUT_CORPSE: Astronaut Corpse
+      STR_SPACE_STATION: "Alien Space Station"
+      STR_SPACE_STATION_BRIEFING: "We've located an alien satellite that has drifted away from supporting forces, making it isolated and vulnerable to a strike against it. Our shuttle will move into close proximity to the station allowing our soldiers to approach the station using their manouvering units. Be warned, altough the station is too far away to recieve support, the occupants of the station will detect our arrival and will oppose our assault"
+      STR_SPACE_STATION_TITLE: "Alien Space Station Assault"
+      STR_ALIEN_SPACE_STATION_SPOTTED: "Alien Space Station Spotted"
 
 extraSprites:
   - type: MOON_MISSION_ALERT

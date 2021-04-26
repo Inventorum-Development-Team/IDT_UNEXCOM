@@ -12,6 +12,12 @@ eventScripts:
     minDifficulty: 0
     maxDifficulty: 4
 
+
+  - type: STR_ANTARCTIC_ACTIVITY_EVENT_SCRIPT
+    oneTimeSequentialEvents:
+     - STR_ANTARCTIC_ACTIVITY_EVENT
+    firstMonth: 6
+
   - type: STR_ALIEN_ACTIVITY_SCRIPT
     eventWeights:
       0:
@@ -170,6 +176,12 @@ events:
     timer: 36000
     timerRandom: 600
 
+  - name: STR_ANTARCTIC_ACTIVITY_EVENT
+    description: STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION
+    background: ANTARCTIC_ACTIVITY_BACKGROUND
+    points: 0
+    timer: 100
+    timerRandom: 600
 #################################
 #### ALIEN ACTIVITY EVENTS #####
 ###############################
@@ -419,6 +431,12 @@ extraSprites:
     files:
       0: Resources/Backgrounds/Events/REINFORCEMENTS_EVENT_BACKGROUND.PNG
 
+  - type: ANTARCTIC_ACTIVITY_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/ANTARTIC_ACTIVITY_EVENT_BACKGROUND.PNG
 
 extraStrings:
    - type: en-US
@@ -465,3 +483,5 @@ extraStrings:
        STR_OVERSEER_TRACKED_EVENT_DESCRIPTION: "Our ground radars, recon satellites and even a couple of SETI installations have detected unusual multiple alien transmissions sent to moving points high in the atmosphere. Our science staff has managed to find the origin, it's related to the 'Overseer' alien craft mentioned by alien navigators earlier. We need to prepare our forces to engage this UFO, vital for the enemy war efforts. "
        STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT: "Sucessful Shuttle Launch"
        STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION: "Earlier today, we have confirmation from NASA Command that one of the first X-73 Raider Shuttle was sucessfully launched from Cape Canaveral. This new spacecraft will be our spear on the war against the invaders and more Raider Shuttles are being build to bolster Earth's space defenses. This Shuttle will remain in Low Earth Orbit, ready to deploy its detachment of Marines anywhere on the globe."
+       STR_ANTARCTIC_ACTIVITY_EVENT: "Antarctic Activity"
+       STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION: "Argentinian and NATO warships operating in the Antartctic ocean have reported a significant increase of UFO sightings heading towards the Antarctican interior. Among them have been reported to be massive ships, rarely seen before. The aliens seem to have taken interest in something in Antartica, we should send a satellite or spyplane to investigate."

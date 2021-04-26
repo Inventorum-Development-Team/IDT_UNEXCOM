@@ -287,6 +287,7 @@ missionScripts:
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 100
+
   - type: OperationDevastation
     missionWeights:
       0:
@@ -302,3 +303,30 @@ missionScripts:
     executionOdds: 100
     maxRuns: 1
     varName: OperationDevastation
+
+  - type: AlienSpaceStation
+    missionWeights:
+      0:
+        STR_ALIEN_SPACE_STATION: 100
+    regionWeights:
+      0:
+        REGION_SPACEPORTS_DEVASTATION: 100
+    useTable: false
+    researchTriggers:
+      STR_ALIEN_ORIGINS: true
+    startDelay: 17500
+    randomDelay: 40000
+    executionOdds: 100
+
+  - type: GuranteedBase
+    missionWeights:
+      0:
+        STR_GURANTEED_BASE: 100
+    regionWeights:
+      0:
+        STR_ANTARCTICA: 100
+    startDelay: 100
+    useTable: false
+    maxRuns: 1
+    varName: GuranteedBase
+    firstMonth: 6

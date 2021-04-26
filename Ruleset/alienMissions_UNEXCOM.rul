@@ -736,7 +736,7 @@ alienMissions:
 
   - type: STR_OPERATION_DEVASTATION
     objective: 3
-    siteType: STR_MOON_ASSAULT
+    siteType: STR_OPERATION_DEVASTATION
     spawnZone: 0
     raceWeights:
       0:
@@ -755,6 +755,43 @@ alienMissions:
     raceWeights:
       0:
           STR_SECTOID: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 100
+        objective: true
+
+
+  - type: STR_ALIEN_SPACE_STATION
+    objective: 3
+    siteType: STR_SPACE_STATION
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_SECTOID: 33
+          STR_CHTONITE: 33
+          STR_FLOATER: 33
+          STR_REPTOID: 33
+          STR_SNAKEMAN: 33
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 100
+        objective: true
+
+
+
+  - type: STR_GURANTEED_BASE
+    objective: 2
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_SECTOID: 33
+          STR_CHTONITE: 33
+          STR_FLOATER: 33
+          STR_SNAKEMAN: 33
     waves:
       - ufo: dummy
         count: 1
