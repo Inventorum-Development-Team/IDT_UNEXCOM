@@ -160,7 +160,14 @@ events:
     description: STR_OVERSEER_TRACKED_EVENT_DESCRIPTION
     background: OVERSEER_TRACKED_EVENT_BACKGROUND
     points: 1000
-    timer: 600
+    timer: 12000
+    timerRandom: 600
+
+  - name: STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT
+    description: STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION
+    background: SUCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
+    points: 1000
+    timer: 36000
     timerRandom: 600
 
 #################################
@@ -340,6 +347,13 @@ extraSprites:
     files:
       0: Resources/Backgrounds/Events/OVERSEER_TRACKED_EVENT_BACKGROUND.PNG
 
+  - type: SUCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/SUCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND.PNG
+
 
   - type: CATTLE_ABDUCTION_EVENT_BACKGROUND
     singleImage: true
@@ -449,3 +463,5 @@ extraStrings:
        STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION: "Since eliminating the Alien Infiltrator and shutting down its terrorist cell, reports of major terrorist attacks have been going down. According to intelligence reports, many terrorist organisations have gone dormant, ceasing most of their operations. The Council has therefore decided to allocate counterterrorism operations to local forces, letting us focus on the alien threat."
        STR_OVERSEER_TRACKED_EVENT: "Unknown Transmissions on Stratosphere"
        STR_OVERSEER_TRACKED_EVENT_DESCRIPTION: "Our ground radars, recon satellites and even a couple of SETI installations have detected unusual multiple alien transmissions sent to moving points high in the atmosphere. Our science staff has managed to find the origin, it's related to the 'Overseer' alien craft mentioned by alien navigators earlier. We need to prepare our forces to engage this UFO, vital for the enemy war efforts. "
+       STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT: "Sucessful Shuttle Launch"
+       STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION: "Earlier today, we have confirmation from NASA Command that one of the first X-73 Raider Shuttle was sucessfully launched from Cape Canaveral. This new spacecraft will be our spear on the war against the invaders and more Raider Shuttles are being build to bolster Earth's space defenses. This Shuttle will remain in Low Earth Orbit, ready to deploy its detachment of Marines anywhere on the globe."
