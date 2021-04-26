@@ -3288,6 +3288,17 @@ items:
     medikitActionName: STR_USE_MEDICAL_POUCH
     listOrder: 2134
 
+
+  - type: STR_ELECTRO_FLARE
+    bigSprite: 888
+    handSprite: 888
+    floorSprite: 888
+    tuPrime: 15
+    battleType: 10
+    primeActionName: STR_PRIME_FLARE
+    fuseType: -2
+
+
 ####################################
 ###### WEAPON CUSTOMIZATION #######
 ##################################
@@ -4208,6 +4219,8 @@ extraSprites:
       214: Resources/BallisticWeapons/CustomWeapons/Big50CalMagnumClip.png
       224: Resources/BallisticWeapons/CustomWeapons/BigEnforcer.png
       248: Resources/BallisticWeapons/USA/BigCarbine.png
+      888: Resources/BallisticWeapons/Explosives/BigFlare.png
+      896: Resources/BallisticWeapons/Explosives/BigFlarelit.png
 
   - type: FLOOROB.PCK
     files:
@@ -4332,6 +4345,8 @@ extraSprites:
       214: Resources/BallisticWeapons/CustomWeapons/Floor50CalMagnumClip.png
       224: Resources/BallisticWeapons/CustomWeapons/FloorEnforcer.png
       248: Resources/BallisticWeapons/USA/FloorCarbine.png
+      888: Resources/BallisticWeapons/Explosives/FloorFlare.png
+      896: Resources/BallisticWeapons/Explosives/FloorFlarelit.png
 
 
   - type: HANDOB.PCK
@@ -4445,6 +4460,8 @@ extraSprites:
       844: Resources/BallisticWeapons/Medical&Food/HandMedicalBag.png
       852: Resources/BallisticWeapons/Medical&Food/HandFieldDressing.png
       880: Resources/BallisticWeapons/Medical&Food/HandMedicalPouch.png
+      888: Resources/BallisticWeapons/Explosives/HandFlare.png
+      896: Resources/BallisticWeapons/Explosives/HandFlare.png
 
       904: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
       912: Resources/BallisticWeapons/Explosives/HandFlashbangGrenade.png
@@ -5109,3 +5126,6 @@ extraStrings:
       STR_SMOKE_GRENADE_UFOPEDIA: "This American manufactured grenade dates from the end of the WW2, is used as a signaling device, a target or landing zone marking device. This particular model deploys a white smoke curtain and can be used to cover the movement of allied units, disperse civilians or block the enemy's line of fire. "
       STR_FLASHBANG_GRENADE: "G60 Flashbang Grenade"
       STR_FLASHBANG_GRENADE_UFOPEDIA: "Non-lethal grenade of British origin, it is produced almost exclusively for the Special Air Service.  It is used to confuse, disorient, or distract a potential threat. The mixture of substances created when activated causes a chemical reaction that manifests itself in a very intense light and a very loud sound that can even stun the enemy. It explodes as soon as it comes into contact with the ground. It reduces TUs, Accuracy, Reactions and Stamina, as well as stuns the affected target."
+      STR_ELECTRO_FLARE: "Flare"
+      STR_PRIME_FLARE: "Light Flare"
+      STR_ELECTRO_FLARE_UFOPEDIA: "This compact device produces a bright flare light when it is lit. This will highlight enemy units in the vicinity of the flare during night time missions."
