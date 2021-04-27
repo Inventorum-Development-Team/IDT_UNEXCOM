@@ -632,6 +632,8 @@ ufopaedia:
 
   - id: STR_LINNA
     type_id: 1
+    requires:
+     - STR_SATELLITES
     section: STR_XCOM_CRAFTS
     text: STR_LINNA_UFOPEDIA
     listOrder: 300
