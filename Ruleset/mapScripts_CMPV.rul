@@ -72,12 +72,6 @@ mapScripts:
       # because these are references to the block numbers within the sets, not the file names.
       blocks: [3, 4, 10, 11, 12, 13, 14]
       freqs: [3, 3, 2, 2, 2, 2, 2]
-  - type: MARS
-    commands:
-    - type: addCraft
-    - type: addBlock
-      groups: 2
-    - type: fillArea
 
   - type: XBASE
     commands:
