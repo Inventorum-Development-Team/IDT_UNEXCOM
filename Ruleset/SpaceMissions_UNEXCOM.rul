@@ -474,10 +474,11 @@ mapScripts:
 
   - type: MARS_OPERATION_DOWNFALL
     commands:
-    - type: addCraft
-    - type: addBlock
-      groups: 2
-    - type: fillArea
+     - type: addCraft
+       craftName: MARS_ENTRY_GROUND
+     - type: addBlock
+       groups: 2
+     - type: fillArea
 
   - type: MARS
     commands:
@@ -605,7 +606,7 @@ terrains:
       - BLANKS
       - MARS_NEW
       - U_WALL02
-    script: MARS
+    script: MARS_OPERATION_DOWNFALL
     civilianTypes:
       - STR_ALLIED_AMERICAN_ASTRONAUT
       - STR_ALLIED_SOVIET_COSMONAUT
