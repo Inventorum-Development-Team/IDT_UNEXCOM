@@ -631,7 +631,7 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
     briefing:
-      desc: STR_ALIEN_SPACE_STATION_BRIEFING
+      desc: STR_SPACE_STATION_BRIEFING
       background: SPACE_OPERATIONS_ORBITAL_BACKGROUND
       textOffset: -16
       palette: 6
@@ -1001,15 +1001,21 @@ ufos:
 extraStrings:
   - type: en-US
     strings:
-      IDT_MOON: Moon
-      STR_OPERATION_DEVASTATION: Operation Devastation
+      MAP_MOON: "Moon"
+      MAP_IDT_MOON_OPERATION_DEVASTATION: "Moon"
+      STR_OPERATION_DEVASTATION: "Operation Devastation"
       STR_OPERATION_DEVASTATION_ALERT: "Operation Devastation Scheduled"
-      STR_OPERATION_DEVASTATION_BRIEFING: Hostile alien base has been detected on Tycho Crater, on the Moon's surface. Our mission is deploy our spacecraft and engage any hostile found on the enemy base. Then, secure the area and retrive any useful information. Beware, we have info about AA guns operating in the area.
-      STR_MOON_ASSAULT_MARKER: Enemy base detected on the Moon
-      STR_ALLIED_AMERICAN_ASTRONAUT: Allied American Astronaut
-      STR_ALLIED_SOVIET_COSMONAUT: Allied Soviet Cosmonaut
-      STR_UN_ASTRONAUT: Allied American Astronaut
-      STR_ALLIED_AMERICAN_ASTRONAUT_CORPSE: Astronaut Corpse
+      STR_OPERATION_DEVASTATION_BRIEFING: "Our Raider shuttle have landed inside Tycho Crater. The Soviet cosmonauts have landed first and have established a landing zone, codename LZ Sevastopol. Command recommends eliminating the hostiles and disable the AA Battery, so we can secure the base and use it ourselves. Be careful, heavy resistance is expected."
+      STR_MOON_ASSAULT_MARKER: "Enemy base detected on the Moon"
+      STR_ALLIED_AMERICAN_ASTRONAUT: "Allied American Astronaut"
+      STR_ALLIED_SOVIET_COSMONAUT: "Allied Soviet Cosmonaut"
+      STR_UN_ASTRONAUT: "Allied American Astronaut"
+      STR_ALLIED_AMERICAN_ASTRONAUT_CORPSE: "Astronaut Corpse"
+      STR_SPACE_STATION: "Alien Space Station"
+      STR_SPACE_STATION_BRIEFING: "We've located an alien satellite that has drifted away from supporting forces, making it isolated and vulnerable to a strike against it. Our shuttle will move into close proximity to the station allowing our soldiers to approach the station using their manouvering units. Be warned, altough the station is too far away to recieve support, the occupants of the station will detect our arrival and will oppose our assault"
+      STR_SPACE_STATION_TITLE: "Alien Space Station Assault"
+      STR_ALIEN_SPACE_STATION_SPOTTED: "Alien Space Station Spotted"
+
 
 extraSprites:
   - type: SPACE_OPERATIONS_LAUNCH_ALERT

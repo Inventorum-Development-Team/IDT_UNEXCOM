@@ -297,7 +297,9 @@ missionScripts:
         REGION_SPACEPORTS_DEVASTATION: 100
     useTable: false
     researchTriggers:
-      STR_ALIEN_ORIGINS: true
+      STR_OLYMPUS: true
+      STR_UNITED_WE_STAND_RESEARCH: true
+      STR_DEVASTATION_COMPLETED: false
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 100
@@ -310,10 +312,10 @@ missionScripts:
         STR_ALIEN_SPACE_STATION: 100
     regionWeights:
       0:
-        REGION_SPACEPORTS_DEVASTATION: 100
+        REGION_SPACEPORTS_ALIEN_SPACE_STATION: 100
     useTable: false
     researchTriggers:
-      STR_ALIEN_ORIGINS: true
+      STR_OLYMPUS: true
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 100
