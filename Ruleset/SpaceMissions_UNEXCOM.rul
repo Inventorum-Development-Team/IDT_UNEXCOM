@@ -213,17 +213,16 @@ alienDeployments:
     length: 60
     height: 10
     civiliansByType:
-      STR_ALLIED_AMERICAN_ASTRONAUT: 3
-      STR_ALLIED_SOVIET_COSMONAUT: 3
+      STR_ALLIED_SOVIET_COSMONAUT: 6
     terrains:
-      - IDT_MOON
+      - IDT_MOON_OPERATION_DEVASTATION
     alert: STR_OPERATION_DEVASTATION_ALERT
-    alertBackground: OPERATION_DEVASTATION_ALERT.SCR
+    alertBackground: SPACE_OPERATIONS_LAUNCH_ALERT
     briefing:
       desc: STR_OPERATION_DEVASTATION_BRIEFING
+      background: MOON_SHUTTLE_LANDING_BACKGROUND
       palette: 1
       textOffset: -16
-      background: OPERATION_DEVASTATION_ALERT
       showTarget: false
       showCraft: false
     music:
@@ -234,234 +233,30 @@ alienDeployments:
     points: 200
     unlockedResearch: STR_DEVASTATION_COMPLETED
 
-  - type: STR_MARS_OPERATION_DOWNFALL
+  - type: STR_MARS_CYDONIA_LANDING
     data: *AlienSpaceBaseDefenders
     width: 50
     length: 50
-    height: 4
+    height: 10
     terrains:
       - IDT_MARS
     shade: 15
     race: STR_SECTOID
-    nextStage: STR_MARS_CYDONIA_LANDING
+    nextStage: STR_MARS_CYDONIA_CITY
     finalDestination: true
     loseCutscene: loseGame
     abortCutscene: loseGame
     briefing:
+      desc: STR_OPERATION_DOWNFALL_LANDING_BRIEFING
+      background: OPERATION_DOWNFALL_LANDING_BACKGROUND
       textOffset: -16
       palette: 6
       music: GMNEWMAR
       showTarget: false
-  - type: STR_MARS_CYDONIA_LANDING
+
+  - type: STR_MARS_CYDONIA_CITY
     height: 10
-    data:
-      - alienRank: 5
-        lowQty: 4
-        highQty: 8
-        dQty: 4
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            - STR_ALIEN_LASER_PISTOL
-            - STR_ALIEN_LASER_PISTOL_BATTERY
-            - STR_ALIEN_LASER_PISTOL_BATTERY
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_SNIPER_RIFLE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_FUSION_RIFLE
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_MIND_PROBE
-      - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_ALIEN_LASER_PISTOL
-            - STR_ALIEN_LASER_PISTOL_BATTERY
-            - STR_ALIEN_LASER_PISTOL_BATTERY
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_FUSION_HANDGUN
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-      - alienRank: 3
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_TOXIGUN
-            - STR_TOXIGUN_FLASK
-            - STR_TOXIGUN_FLASK
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_TOXIGUN
-            - STR_TOXIGUN_FLASK
-            - STR_TOXIGUN_FLASK
-            - STR_ALIEN_GRENADE
-          -
-            - STR_FUSION_SMG
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-      - alienRank: 2
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_ALIEN_LASER_RIFLE
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-          -
-            - STR_ALIEN_HEAVY_LASER
-            - STR_ALIEN_HEAVY_LASER_BATTERY
-            - STR_ALIEN_HEAVY_LASER_BATTERY
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-          -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-      - alienRank: 1
-        lowQty: 1
-        highQty: 3
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_ALIEN_HEAVY_LASER
-            - STR_ALIEN_HEAVY_LASER_BATTERY
-            - STR_ALIEN_HEAVY_LASER_BATTERY
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-          -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-      - alienRank: 0
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_ALIEN_HEAVY_LASER
-            - STR_ALIEN_HEAVY_LASER_BATTERY
-            - STR_ALIEN_HEAVY_LASER_BATTERY
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-          -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-      - alienRank: 6
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+    data: *AlienSpaceBaseDefenders
     width: 50
     length: 50
     terrains:
@@ -473,11 +268,13 @@ alienDeployments:
     loseCutscene: loseGame
     abortCutscene: loseGame
     briefing:
+      desc: STR_OPERATION_DOWNFALL_CYDONIA_CITY_BRIEFING
+      background: OPERATION_DOWNFALL_CYDONIA_CITY_BACKGROUND
       textOffset: -16
       palette: 6
       music: GMNEWMAR
       showTarget: false
-      background: CYDONIA_CITY_BACKGROUND.SCR
+
   - type: STR_MARS_THE_FINAL_ASSAULT
     height: 10
     data:
@@ -698,12 +495,13 @@ alienDeployments:
     loseCutscene: loseGame
     abortCutscene: loseGame
     briefing:
+      desc: STR_OPERATION_DOWNFALL_CYDONIA_BASE_BRIEFING
+      background: OPERATION_DOWNFALL_CYDONIA_BASE_ENTRANCE_BACKGROUND
       textOffset: -16
       palette: 6
       music: GMNEWMAR
       showTarget: false
       showCraft: false
-      background: BACK01.SCR
     script: BOSSBATTLE
     objectiveType: 14
     objectivesRequired: 1
@@ -711,15 +509,12 @@ alienDeployments:
   - type: STR_SPACE_STATION
     width: 40
     length: 40
-    briefing:
-      desc: STR_SPACE_STATION_BRIEFING
-      title: STR_SPACE_STATION_TITLE
     terrains:
      - SPACE
     height: 12
-    duration: [72,72]
     startingCondition: STR_SPACE_CONDITION
     alert: STR_ALIEN_SPACE_STATION_SPOTTED
+    alertBackground: SPACE_OPERATIONS_LAUNCH_ALERT
     data:
       - alienRank: 5
         lowQty: 3
@@ -835,9 +630,17 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+    briefing:
+      desc: STR_ALIEN_SPACE_STATION_BRIEFING
+      background: SPACE_OPERATIONS_ORBITAL_BACKGROUND
+      textOffset: -16
+      palette: 6
+      music: GMNEWMAR
+      showTarget: false
+      showCraft: false
 
 mapScripts:
-  - type: MOON
+  - type: MOON_OPERATION_DEVASTATION
     commands:
     - type: addBlock
       size: 2
@@ -855,12 +658,40 @@ mapScripts:
 #      executions: 3
     - type: fillArea
 
+  - type: MOON
+    commands:
+    - type: addCraft
+    - type: addUFO
+    - type: addBlock
+      size: 2
+      executionChances: 100
+      executions: 3
+      groups: 6
+#    - type: addBlock
+#      size: 2
+#      executions: 3
+    - type: fillArea
+
   - type: SPACE
     commands:
      - type: addUFO
      - type: addCraft
        craftName: STR_SPACE_SHUTTLE_ORBITAL
      - type: fillArea
+
+  - type: MARS_OPERATION_DOWNFALL
+    commands:
+    - type: addCraft
+    - type: addBlock
+      groups: 2
+    - type: fillArea
+
+  - type: MARS
+    commands:
+    - type: addCraft
+    - type: addBlock
+      groups: 2
+    - type: fillArea
 
 terrains:
   - name: IDT_MOON
@@ -878,7 +709,7 @@ terrains:
     civilianTypes:
       - STR_ALLIED_AMERICAN_ASTRONAUT
       - STR_ALLIED_SOVIET_COSMONAUT
-    mapBlocks:
+    mapBlocks: &MoonMapblocks
       - name: IDT_MOON00
         width: 10
         length: 10
@@ -934,6 +765,23 @@ terrains:
       - name: IDT_MOON15
         width: 10
         length: 10
+
+  - name: IDT_MOON_OPERATION_DEVASTATION
+    enviroEffects: STR_MOON_ENVIRO
+    mapDataSets:
+      - BLANKS
+      - IDT_MOON
+      - GREENHOUSE
+      - MOONMOUNT
+      - LIFTERL83
+      - U_BASE3A
+      - POLAR_DOORS
+      - POLAR_WALL
+    script: MOON_OPERATION_DEVASTATION
+    civilianTypes:
+      - STR_ALLIED_AMERICAN_ASTRONAUT
+      - STR_ALLIED_SOVIET_COSMONAUT
+    mapBlocks: *MoonMapblocks
 
   - name: SPACE
     mapDataSets:
@@ -1154,26 +1002,64 @@ extraStrings:
   - type: en-US
     strings:
       IDT_MOON: Moon
-      STR_MOON_ASSAULT: Operation Devastation
+      STR_OPERATION_DEVASTATION: Operation Devastation
+      STR_OPERATION_DEVASTATION_ALERT: "Operation Devastation Scheduled"
       STR_OPERATION_DEVASTATION_BRIEFING: Hostile alien base has been detected on Tycho Crater, on the Moon's surface. Our mission is deploy our spacecraft and engage any hostile found on the enemy base. Then, secure the area and retrive any useful information. Beware, we have info about AA guns operating in the area.
-      STR_OPERATION_DEVASTATION: Assault on Alien Lunar Base
       STR_MOON_ASSAULT_MARKER: Enemy base detected on the Moon
-      STR_MOON_ALERT: Enemy base detected on the Moon
       STR_ALLIED_AMERICAN_ASTRONAUT: Allied American Astronaut
+      STR_ALLIED_SOVIET_COSMONAUT: Allied Soviet Cosmonaut
       STR_UN_ASTRONAUT: Allied American Astronaut
       STR_ALLIED_AMERICAN_ASTRONAUT_CORPSE: Astronaut Corpse
-      STR_SPACE_STATION: "Alien Space Station"
-      STR_SPACE_STATION_BRIEFING: "We've located an alien satellite that has drifted away from supporting forces, making it isolated and vulnerable to a strike against it. Our shuttle will move into close proximity to the station allowing our soldiers to approach the station using their manouvering units. Be warned, altough the station is too far away to recieve support, the occupants of the station will detect our arrival and will oppose our assault"
-      STR_SPACE_STATION_TITLE: "Alien Space Station Assault"
-      STR_ALIEN_SPACE_STATION_SPOTTED: "Alien Space Station Spotted"
 
 extraSprites:
-  - type: MOON_MISSION_ALERT
+  - type: SPACE_OPERATIONS_LAUNCH_ALERT
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/MOON_MISSION_BACKGROUND.png
+      0: Resources/Backgrounds/SPACE_OPERATIONS_LAUNCH_ALERT.png
+
+  - type: SPACE_OPERATIONS_IMPORTANT_LAUNCH_ALERT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SPACE_OPERATIONS_IMPORTANT_LAUNCH_ALERT.png
+
+  - type: SPACE_OPERATIONS_ORBITAL_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SPACE_OPERATIONS_ORBITAL_BACKGROUND.png
+
+  - type: MOON_SHUTTLE_LANDING_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/MOON_SHUTTLE_LANDING_BACKGROUND.png
+
+  - type: OPERATION_DOWNFALL_LANDING_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/OPERATION_DOWNFALL_LANDING_BACKGROUND.png
+
+  - type: OPERATION_DOWNFALL_CYDONIA_CITY_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/OPERATION_DOWNFALL_CYDONIA_CITY_BACKGROUND.png
+
+  - type: OPERATION_DOWNFALL_CYDONIA_BASE_ENTRANCE_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/OPERATION_DOWNFALL_CYDONIA_BASE_ENTRANCE_BACKGROUND.png
 
 
 units:
