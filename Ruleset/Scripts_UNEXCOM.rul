@@ -80,7 +80,7 @@ extended:
             set remainder tu;
             mod remainder 2;
             sub tu remainder;
-            div tu 20;
+            div tu 2;
             BattleUnit.setTimeUnits unit tu;
             end;
            return;
