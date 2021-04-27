@@ -2114,6 +2114,233 @@ alienDeployments:
         STR_ALIEN_INTERCEPTION_2: 100
       10:
         STR_ALIEN_INTERCEPTION_3: 100
+  - type: STR_ALIEN_BASE_ASSAULT_NO_INTERCEPT
+    missionBountyItem: STR_HYPER_WAVE_ENCODER
+    startingCondition: STR_INDOORS
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 5
+        lowQty: 5
+        highQty: 7
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_MIND_PROBE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_ALIEN_GRENADE
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 1
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_HEAVY_LASER
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+            - STR_ALIEN_HEAVY_LASER_BATTERY
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_BLASTER
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_PLASMA_BLASTER_CLIP
+            - STR_ALIEN_GRENADE
+    width: 60
+    length: 60
+    height: 2
+    shade: 10
+    script: ALIENBASE
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+    objectiveType: 3
+    markerName: STR_ALIEN_BASE
+    markerIcon: 7
+    genMission:
+      STR_ALIEN_SUPPLY: 100
+    genMissionFreq: 6
+    alienBase: true    # this is only to tell new battle mode what to do with this deployment
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED
+    isHidden: true
 #END ALIEN BASE
 
 
