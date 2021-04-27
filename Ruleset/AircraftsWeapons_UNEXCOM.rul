@@ -1697,6 +1697,12 @@ crafts:
     damageMax: 20
     speedMax: 20
     accel: 1
+    weapons: 1
+    weaponTypes:
+      - [0, 1]
+#Gatling/Revolver Cannon
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
     costBuy: 75000
     costRent: 50000
     refuelRate: 75
