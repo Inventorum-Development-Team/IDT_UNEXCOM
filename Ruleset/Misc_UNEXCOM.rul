@@ -102,11 +102,12 @@ extraStrings:
 ###########################################
 ############## CATEGORIES ################
 #######################################
-      STR_BALLISTIC: Ballistic Weapons
-      STR_LASER: Laser Weapons
-      STR_PLASMA: Plasma Weapons
+      STR_BALLISTIC: "Ballistic Weapons"
+      STR_LASER: "Laser Weapons"
+      STR_PLASMA: "Plasma Weapons"
       STR_ALLOY: "Alloy Weapons"
-      STR_SMART: Smart Weapons
+      STR_SMART: "Smart Weapons"
+      STR_SPACE: "Space Weapons"
       STR_TANKS: Tanks
       STR_ARMORED_CARS: Armored Cars
       STR_LIGHT_TANKS: Light Tanks
@@ -1071,7 +1072,7 @@ missionRatings:
   -1199: STR_MT_RATING_BAD
   -2799: STR_MT_RATING_TERRIBLE
   -99999: STR_MT_RATING_ABOMINABLE
-defeatScore: -1600
+defeatScore: -6400
 defeatFunds: -10000000
 alienItemLevels:
   - [0, 0, 0, 0, 0, 0, 0, 1, 1, 2]
@@ -1106,10 +1107,3 @@ transparencyLUTs:
       - [ 16,  8,  0, 2 ] # orange
       - [  0, 12, 12, 2 ] # cyan
       - [  4, 16,  4, 2 ] # green
-enviroEffects:
-  - type: STR_Underwater # battlescape underwater missions transformations
-    mapBackgroundColor: 141
-    paletteTransformations:
-      PAL_BATTLESCAPE: PAL_BATTLESCAPE_1
-    # armorTransformations:
-    #   STR_NONE_UC: STR_NONE_UC_UW
