@@ -14,7 +14,6 @@ alienMissions:
 ###### HUMAN ENEMY MISSIONS #######
 ##################################
   - type: STR_HUMAN_RECON
-    points: -50
     raceWeights:
       0:
           STR_TERRORIST: 100
@@ -26,7 +25,21 @@ alienMissions:
       - ufo: STR_MI8_UFO
         count: 1
         trajectory: P911
-        timer: 15000
+        timer: 9000
+
+  - type: STR_HUMAN_RECON2
+    raceWeights:
+      0:
+          STR_TERRORIST: 100
+    waves:
+      - ufo: STR_MAGISTER_UFO
+        count: 1
+        trajectory: P911
+        timer: 9000
+      - ufo: STR_MI8_UFO
+        count: 1
+        trajectory: P911
+        timer: 9000
 
   - type: STR_HUMAN_TERROR_ATTACK
     points: 10
@@ -127,27 +140,23 @@ alienMissions:
         STR_CHTONITE: 5
         STR_CEREBREAL: 10
     waves: &TerrorSiteUFOs
-      - ufo: STR_MEDIUM_SCOUT
-        count: 1
-        trajectory: P1
-        timer: 15000
       - ufo: STR_LARGE_SCOUT
         count: 1
         trajectory: P1
-        timer: 9600
-      - ufo: STR_SMALL_FIGHTER
+        timer: 9000
+      - ufo: STR_SENTRY_SHIP
         count: 1
-        timer: 10000
+        timer: 9000
         trajectory: P0
         objective: true
         escort: true
       - ufo: STR_TERROR_SHIP
         count: 1
         trajectory: P7
-        timer: 12000
+        timer: 9000
         objective: true
 
-  - type: STR_ALIEN_RESEARCH
+  - type: STR_INVASION_START
     points: 0
     raceWeights:
       2:
@@ -175,32 +184,25 @@ alienMissions:
       - ufo: STR_SMALL_SCOUT
         count: 1
         trajectory: P0
-        timer: 9000
+        timer: 5000
       - ufo: STR_MEDIUM_SCOUT
         count: 1
         trajectory: P2
-        timer: 7800
-      - ufo: STR_EXCAVATOR
-        count: 1
-        trajectory: P2
-        timer: 1000
+        timer: 5000
       - ufo: STR_LARGE_SCOUT
         count: 2
         trajectory: P4
-        timer: 9000
-      - ufo: STR_LARGE_SCOUT
+        timer: 5000
+      - ufo: STR_EXCAVATOR
         count: 1
-        trajectory: P4
-        timer: 9000
-        hunterKillerPercentage: 90
-        huntMode: 0
-        huntBehavior: 0
+        trajectory: P2
+        timer: 5000
       - ufo: STR_LAB_SHIP
         count: 1
         trajectory: P4
-        timer: 9000
+        timer: 5000
   - type: STR_ALIEN_HARVEST
-    points: 30
+    points: 100
     raceWeights:
       2:
         STR_SECTOID: 10
@@ -226,35 +228,24 @@ alienMissions:
       10:
         STR_CEREBREAL: 50
     waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 7800
       - ufo: STR_MEDIUM_SCOUT
         count: 1
         trajectory: P2
-        timer: 6000
+        timer: 5000
       - ufo: STR_LARGE_SCOUT
         count: 1
         trajectory: P0
-        timer: 7800
+        timer: 5000
       - ufo: STR_HARVESTER
         count: 1
         trajectory: P4
-        timer: 3000
-      - ufo: STR_SMALL_FIGHTER
-        count: 1
-        trajectory: P3
-        timer: 9000
-        hunterKillerPercentage: 50
-        huntMode: 0
-        huntBehavior: 0
+        timer: 5000
       - ufo: STR_LAB_SHIP
         count: 1
         trajectory: P2
-        timer: 1500
+        timer: 5000
   - type: STR_ALIEN_ABDUCTION
-    points: 50
+    points: 100
     raceWeights:
       2:
         STR_SECTOID: 5
@@ -277,31 +268,24 @@ alienMissions:
         STR_REPTOID: 10
         STR_CHTONITE: 10
     waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 15000
       - ufo: STR_MEDIUM_SCOUT
         count: 1
         trajectory: P1
-        timer: 18000
+        timer: 5000
       - ufo: STR_LARGE_SCOUT
         count: 1
         trajectory: P3
-        timer: 9000
-      - ufo: STR_SENTRY_SHIP
-        count: 1
-        trajectory: P3
-        timer: 9000
-        hunterKillerPercentage: 100
-        huntMode: 0
-        huntBehavior: 1
+        timer: 5000
       - ufo: STR_ABDUCTOR
-        count: 2
+        count: 1
         trajectory: P4
-        timer: 9000
+        timer: 5000
+      - ufo: STR_ABDUCTOR
+        count: 1
+        trajectory: P4
+        timer: 5000
   - type: STR_ALIEN_INFILTRATION
-    points: 150 #Pact score only awarded on month end
+    points: 100 #Pact score only awarded on month end
     objective: 1
     siteType: STR_ALIEN_BASE_ASSAULT
     spawnZone: 4 #Mission zone for alien bases
@@ -335,33 +319,25 @@ alienMissions:
       - ufo: STR_SMALL_SCOUT
         count: 1
         trajectory: P0
-        timer: 16500
+        timer: 5000
       - ufo: STR_MEDIUM_SCOUT
         count: 1
         trajectory: P1
-        timer: 15000
+        timer: 5000
+      - ufo: STR_EXCAVATOR
+        count: 1
+        trajectory: P2
+        timer: 5000
       - ufo: STR_SENTRY_SHIP
         count: 1
         trajectory: P5
-        timer: 60
-        hunterKillerPercentage: 80
-        huntMode: 0
-      - ufo: STR_TERROR_SHIP
-        count: 1
-        trajectory: P7
-        timer: 60
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P7
-        timer: 60
-        hunterKillerPercentage: 100
-        huntMode: 0
+        timer: 5000
       - ufo: STR_TROOP_LANDER
-        count: 2
+        count: 1
         trajectory: P7
-        timer: 60
+        timer: 5000
   - type: STR_ALIEN_BASE
-    points: 50
+    points: 100
     objective: 2
     siteType: STR_ALIEN_BASE_ASSAULT
     spawnZone: 4 #Mission zone for alien bases
@@ -398,40 +374,24 @@ alienMissions:
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
+        trajectory: P0
+        timer: 5000
+      - ufo: STR_MEDIUM_SCOUT
+        count: 1
         trajectory: P1
-        timer: 13500
-      - ufo: STR_LARGE_SCOUT
-        count: 1
-        trajectory: P5
-        timer: 60
-      - ufo: STR_SUPPLY_SHIP
-        count: 2
-        trajectory: P5
-        timer: 60
+        timer: 5000
       - ufo: STR_EXCAVATOR
         count: 1
-        trajectory: P5
-        timer: 60
-      - ufo: STR_EXCAVATOR
-        count: 1
-        trajectory: P5
-        timer: 60
+        trajectory: P2
+        timer: 5000
       - ufo: STR_SENTRY_SHIP
         count: 1
         trajectory: P5
-        timer: 60
-        hunterKillerPercentage: 80
-        huntMode: 0 #prefer attacking interceptors
+        timer: 5000
       - ufo: STR_BATTLESHIP
         count: 1
-        trajectory: P6
-        timer: 60
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P5
-        timer: 60
-        hunterKillerPercentage: 50
-        huntMode: 0 #Prefer attacking interceptors
+        trajectory: P7
+        timer: 5000
 
   - type: STR_ALIEN_RETALIATION
     points: 0
@@ -448,27 +408,48 @@ alienMissions:
       - ufo: STR_SMALL_SCOUT
         count: 1
         trajectory: P8
-        timer: 3000
-      - ufo: STR_MEDIUM_SCOUT
-        count: 2
+        timer: 5000
+      - ufo: STR_SMALL_SCOUT
+        count: 1
         trajectory: P8
-        timer: 3000
+        timer: 5000
       - ufo: STR_SENTRY_SHIP
         count: 1
         trajectory: P8
-        timer: 10
-        hunterKillerPercentage: 100
-        huntMode: 0
-      - ufo: STR_BATTLESHIP
-        count: 2
+        timer: 5000
+
+  - type: STR_COUNTER_ATTACK
+    points: 0
+    objective: 4
+    spawnUfo: STR_TROOP_LANDER # Spawned for the final retaliation run
+    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+      0:
+        STR_SECTOID: 20
+        STR_SNAKEMAN: 20
+        STR_ETHEREAL: 20
+        STR_MUTON: 20
+        STR_FLOATER: 20
+    waves:
+      - ufo: STR_SMALL_SCOUT
+        count: 1
         trajectory: P8
-        timer: 3000
+        timer: 5000
+      - ufo: STR_MEDIUM_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 5000
       - ufo: STR_FIGHTER_SHIP
         count: 1
         trajectory: P8
-        timer: 10
-        hunterKillerPercentage: 100
-        huntMode: 1
+        timer: 5000
+      - ufo: STR_SENTRY_SHIP
+        count: 1
+        trajectory: P8
+        timer: 5000
+      - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P8
+        timer: 5000
   - type: STR_ALIEN_SUPPLY
     points: 0
     objective: 5
@@ -479,13 +460,79 @@ alienMissions:
         trajectory: P9
         timer: 6000
         objective: true
-      - ufo: STR_SENTRY_SHIP
+
+  - type: STR_AIR_SUPERIORITY_1
+    raceWeights:
+      5:
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 10
+        STR_MUTON: 30
+        STR_REPTOID: 30
+      7:
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 10
+        STR_MUTON: 30
+        STR_REPTOID: 30
+    waves:
+      - ufo: STR_SMALL_FIGHTER
         count: 1
-        trajectory: P5
-        timer: 60
-        hunterKillerPercentage: 80
-        objective: true
-        huntMode: 0 #prefer attacking interceptors
+        trajectory: P2
+        timer: 5000
+      - ufo: STR_SMALL_FIGHTER
+        count: 1
+        trajectory: P2
+        timer: 5000
+  - type: STR_AIR_SUPERIORITY_2
+    raceWeights:
+      5:
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 10
+        STR_MUTON: 30
+        STR_REPTOID: 30
+      7:
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 10
+        STR_MUTON: 30
+        STR_REPTOID: 30
+    waves:
+      - ufo: STR_SMALL_FIGHTER
+        count: 1
+        trajectory: P2
+        timer: 5000
+      - ufo: STR_SMALL_FIGHTER
+        count: 1
+        trajectory: P2
+        timer: 5000
+      - ufo: STR_SMALL_FIGHTER
+        count: 1
+        trajectory: P2
+        timer: 5000
+      - ufo: STR_SMALL_FIGHTER
+        count: 1
+        trajectory: P2
+        timer: 5000
+  - type: STR_AIR_SUPERIORITY_3
+    raceWeights:
+      5:
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 10
+        STR_MUTON: 30
+        STR_REPTOID: 30
+      7:
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 10
+        STR_MUTON: 30
+        STR_REPTOID: 30
+    waves:
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: P2
+        timer: 5000
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: P2
+        timer: 5000
+
   - type: STR_ALIEN_INTERCEPTION_1 # Light interception
     operationType: 6
     points: 0
@@ -510,7 +557,6 @@ alienMissions:
         trajectory: P2
         timer: 90
         huntMode: 1 #transports first
-        huntBehavior: 0
   - type: STR_ALIEN_INTERCEPTION_2 # Medium interception
     operationType: 6
     points: 0
@@ -535,38 +581,11 @@ alienMissions:
         trajectory: P2
         huntMode: 0
         timer: 90
-        huntBehavior: 0
       - ufo: STR_SMALL_FIGHTER
         count: 1
         trajectory: P3
         timer: 90
         huntMode: 1
-        huntBehavior: 0
-  - type: STR_ALIEN_INTERCEPTION_3 # Heavy interception
-    operationType: 6
-    points: 0
-    raceWeights:
-      1:
-        STR_SECTOID: 0
-        STR_SNAKEMAN: 0
-        STR_REPTOID: 0
-      5:
-        STR_SECTOID: 30
-        STR_SNAKEMAN: 10
-        STR_MUTON: 30
-        STR_REPTOID: 30
-      7:
-        STR_SECTOID: 30
-        STR_SNAKEMAN: 10
-        STR_MUTON: 30
-        STR_REPTOID: 30
-    waves:
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P5
-        huntMode: 0
-        timer: 90
-        huntBehavior: 1
 
 ###############################
 ##### FACTION MISSIONS #######
@@ -785,6 +804,7 @@ alienMissions:
 
   - type: STR_GURANTEED_BASE
     objective: 2
+    siteType: STR_ALIEN_BASE_ASSAULT_NO_INTERCEPT
     spawnZone: 0
     raceWeights:
       0:

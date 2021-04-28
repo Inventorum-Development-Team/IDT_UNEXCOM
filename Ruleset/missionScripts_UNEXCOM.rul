@@ -14,13 +14,15 @@ missionScripts:
   - type: invasionStart
     missionWeights:
       0:
-        STR_ALIEN_RESEARCH: 100
+        STR_INVASION_START: 100
     firstMonth: 2
-    lastMonth: 6
+    lastMonth: 4
     executionOdds: 100
     raceWeights:
       0:
         STR_SECTOID: 100
+    maxRuns: 2
+    varName: InvasionStart
     startDelay: 20
     randomDelay: 43500
 #################################
@@ -29,7 +31,7 @@ missionScripts:
   - type: recurringTerrorNormal
 #    label: 1
     varName: recurringTerrorNormal
-    firstMonth: 3
+    firstMonth: 4
     executionOdds: 100
     missionWeights:
       0:
@@ -46,6 +48,8 @@ missionScripts:
         STR_SIBERIA: 10
         STR_AUSTRALASIA: 10
     useTable: false
+    researchTriggers:
+     STR_UNITED_WE_STAND_RESEARCH: false
     startDelay: 20
     randomDelay: 43500
 
@@ -53,51 +57,81 @@ missionScripts:
 #################################
 ####### ALIEN ACTIVITY #########
 ###############################
-  - type: alienHarvest
+  - type: alienResearch
     missionWeights:
       0:
-        STR_ALIEN_HARVEST: 100
+        STR_ALIEN_HARVEST: 50
+        STR_ALIEN_ABDUCTION: 50
     firstMonth: 3
     startDelay: 150
-    executionOdds: 70
+    researchTriggers:
+      STR_DEVASTATION_COMPLETED: false
 
-  - type: alienAbduction
-    missionWeights:
-      0:
-        STR_ALIEN_ABDUCTION: 100
-    firstMonth: 3
-    startDelay: 750
-    executionOdds: 70
 
-  - type: researchRetaliation
-    executionOdds: 90
+  - type: Retaliation
     missionWeights:
       0:
         STR_ALIEN_RETALIATION: 100
-    researchTriggers:
-      STR_COMMANDER_PLUS: true
     startDelay: 20
     randomDelay: 43500
     targetBaseOdds: 100
+    minScore: 1000
+    firstMonth: 5
     useTable: false
 
-  - type: alienInfiltration
+  - type: CounterAttack
     missionWeights:
       0:
-        STR_ALIEN_INFILTRATION: 100
-    firstMonth: 6
-    startDelay: 43500
+        STR_COUNTER_ATTACK: 100
+    startDelay: 20
     randomDelay: 43500
+    targetBaseOdds: 100
+    researchTriggers:
+       STR_DEVASTATION_COMPLETED: true
+    firstMonth: 5
+    useTable: false
+
+  - type: alienConstruction
+    missionWeights:
+      0:
+        STR_ALIEN_INFILTRATION: 50
+        STR_ALIEN_BASE: 50
+    firstMonth: 6
+    startDelay: 1000
+    randomDelay: 43500
+    maxRuns: 6
+    varName: alienConstruction
     executionOdds: 80
 
-  - type: alienBase
+  - type: AirSuperiorty1
     missionWeights:
       0:
-        STR_ALIEN_BASE: 100
-    firstMonth: 6
-    executionOdds: 80
-    startDelay: 43500
-    randomDelay: 43500
+        STR_AIR_SUPERIORITY_1: 100
+    firstMonth: 3
+    startDelay: 1000
+    minScore: 800
+    maxScore: 1299
+    randomDelay: 20000
+
+  - type: AirSuperiorty2
+    missionWeights:
+      0:
+        STR_AIR_SUPERIORITY_2: 100
+    firstMonth: 4
+    startDelay: 1000
+    minScore: 1300
+    maxScore: 1799
+    randomDelay: 20000
+
+  - type: AirSuperiorty3
+    missionWeights:
+      0:
+        STR_AIR_SUPERIORITY_3: 100
+    firstMonth: 5
+    startDelay: 1000
+    minScore: 1800
+    randomDelay: 20000
+
 #################################
 ####### HUMAN MISSIONS #########
 ###############################
@@ -105,6 +139,25 @@ missionScripts:
     missionWeights:
       0:
         STR_HUMAN_RECON: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 20
+        STR_EUROPE: 35
+        STR_CENTRAL_ASIA: 25
+        STR_SOUTH_EAST_ASIA: 20
+    useTable: false
+    researchTriggers:
+      STR_END_OF_TERRORISTS: false
+    startDelay: 15
+    maxRuns: 2
+    varName: HumanRecon
+    randomDelay: 25000
+    executionOdds: 100
+
+  - type: startingEnemyHumanMissions2
+    missionWeights:
+      0:
+        STR_HUMAN_RECON2: 100
     regionWeights:
       0:
         STR_NORTH_AMERICA: 20
@@ -186,7 +239,7 @@ missionScripts:
       STR_UNITED_WE_STAND_RESEARCH: true
     startDelay: 43500
     randomDelay: 43500
-    executionOdds: 20
+    executionOdds: 30
 
   - type: EuropeanCombatOperations
     label: 31
@@ -203,7 +256,7 @@ missionScripts:
       STR_UNITED_WE_STAND_RESEARCH: true
     startDelay: 43500
     randomDelay: 43500
-    executionOdds: 20
+    executionOdds: 30
 
   - type: SovietCombatOperations
     label: 32
@@ -220,7 +273,7 @@ missionScripts:
       STR_UNITED_WE_STAND_RESEARCH: true
     startDelay: 43500
     randomDelay: 43500
-    executionOdds: 20
+    executionOdds: 30
 #######################################
   - type: AmericanCityDefense
     label: 33
@@ -237,7 +290,7 @@ missionScripts:
       STR_UNITED_WE_STAND_RESEARCH: true
     startDelay: 43500
     randomDelay: 43500
-    executionOdds: 20
+    executionOdds: 30
 
   - type: EuropeanCityDefense
     label: 34
@@ -254,7 +307,7 @@ missionScripts:
       STR_UNITED_WE_STAND_RESEARCH: true
     startDelay: 43500
     randomDelay: 43500
-    executionOdds: 20
+    executionOdds: 30
 
   - type: SovietCityDefense
     label: 35
@@ -271,7 +324,7 @@ missionScripts:
       STR_UNITED_WE_STAND_RESEARCH: true
     startDelay: 43500
     randomDelay: 43500
-    executionOdds: 20
+    executionOdds: 30
 ######################################
   - type: OperationFalseFlagOverseerTrap
     missionWeights:
