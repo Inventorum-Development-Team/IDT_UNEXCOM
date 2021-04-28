@@ -311,6 +311,16 @@ items:
     armor: 50
     recover: false
 
+  - type: STR_CORPSE_ARMOR
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 28
+    floorSprite: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
   - type: STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
     name: STR_CORPSE
     weight: 24
@@ -650,8 +660,8 @@ armors:
 
 # Standard Armors
   - type: STR_PERSONAL_ARMOR_UC
-    spriteSheet: XCOM_1.PCK
-    spriteInv: MAN_1
+    spriteSheet: PERSONAL_ARMOR.PCK
+    spriteInv: PERSONAL_ARMOR_INV
     weight: 3
     corpseBattle:
       - STR_CORPSE_ARMOR
@@ -1241,6 +1251,60 @@ extraSprites:
       0: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_IMAGE.PNG
 
 ########################################
+######### UN PERSONAL ARMOR ############
+######################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      28: Resources/SoldiersAndArmors/PersonalArmor/PA_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      40: Resources/SoldiersAndArmors/PersonalArmor/Floor_PA.png
+  - type: PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+  #  width: 512
+  #  height: 720
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/PA.gif
+  - type: PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M0.png
+  - type: PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M1.png
+  - type: PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M2.png
+  - type: PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M3.png
+  - type: PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F0.png
+  - type: PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F1.png
+  - type: PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F2.png
+  - type: PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F3.png
+
+
+########################################
 ######### UN HEAVY PERSONAL ARMOR ############
 ######################################
 
@@ -1256,40 +1320,42 @@ extraSprites:
     subY: 40
     width: 1024
     height: 360
+  #  width: 512
+  #  height: 720
     files:
       0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA.gif
   - type: HEAVY_PERSONAL_ARMOR_INVM0.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M0.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M0.png
   - type: HEAVY_PERSONAL_ARMOR_INVM1.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M1.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M1.png
   - type: HEAVY_PERSONAL_ARMOR_INVM2.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M2.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M2.png
   - type: HEAVY_PERSONAL_ARMOR_INVM3.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M3.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M3.png
   - type: HEAVY_PERSONAL_ARMOR_INVF0.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F0.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F0.png
   - type: HEAVY_PERSONAL_ARMOR_INVF1.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F1.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F1.png
   - type: HEAVY_PERSONAL_ARMOR_INVF2.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F2.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F2.png
   - type: HEAVY_PERSONAL_ARMOR_INVF3.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.png
 
 ####################################
 ####### USA/NATO SPACESUITS #######
