@@ -742,6 +742,8 @@ armors:
     visibilityAtDark: 7
     visibilityAtDay: 26
     personalLight: 10
+    requires:
+      STR_OLYMPUS
     stats: &EarthStats
       stamina: -15
       health: 0
@@ -777,6 +779,8 @@ armors:
     visibilityAtDark: 7
     visibilityAtDay: 26
     personalLight: 10
+    requires:
+      STR_ALIENS_ONLY
     stats: &OrbitalStats
       stamina: 30
       health: 0
@@ -812,6 +816,8 @@ armors:
     visibilityAtDark: 7
     visibilityAtDay: 26
     personalLight: 10
+    requires:
+      STR_OLYMPUS
     stats: *EarthStats
     damageModifier:
       - 1.0
@@ -841,6 +847,8 @@ armors:
     visibilityAtDark: 7
     visibilityAtDay: 26
     personalLight: 10
+    requires:
+      STR_ALIENS_ONLY
     stats: *OrbitalStats
     damageModifier:
       - 1.0
