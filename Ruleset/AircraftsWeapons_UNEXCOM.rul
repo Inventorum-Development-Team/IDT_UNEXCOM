@@ -1664,7 +1664,7 @@ crafts:
 
   - type: STR_BLACKBIRD
     sprite: 935
-    fuelMax: 1000
+    fuelMax: 1500
     damageMax: 80
     speedMax: 2540
     accel: 7
@@ -1675,7 +1675,7 @@ crafts:
     weaponStrings:
       - STR_CRAFT_AUX_ONE
     costBuy: 500000
-    refuelRate: 75
+    refuelRate: 1000
     repairRate: 5
     radarRange: 500
     sightRange: 500
@@ -1697,12 +1697,6 @@ crafts:
     damageMax: 20
     speedMax: 20
     accel: 1
-    weapons: 1
-    weaponTypes:
-      - [0, 1]
-#Gatling/Revolver Cannon
-    weaponStrings:
-      - STR_CRAFT_ALL_CANNONS_ONE
     costBuy: 75000
     costRent: 50000
     refuelRate: 75
@@ -1722,17 +1716,19 @@ crafts:
       - STR_IMPROVED_SATELLITE
     sprite: 868
     fuelMax: 1500
-    damageMax: 20
+    damageMax: 200
     speedMax: 40
     accel: 1
-    weapons: 2
+    weapons: 3
     weaponTypes:
+      - [0, 1]
       - [0, 1]
       - 5
 #Gatling/Revolver Cannon
 #AUX Systems
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ALL_CANNONS_TWO
       - STR_CRAFT_AUX_TWO
     costBuy: 155000
     costRent: 150000
