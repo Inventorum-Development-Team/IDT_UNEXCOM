@@ -37,6 +37,8 @@ research:
     disables:
       - STR_SPECIAL_FORCES_SUPPORT
     spawnedEvent: STR_MERCENARY_ARRIVAL_EVENT
+    unlocks:
+      - STR_556_X20_UNLOCK
 
   - name: STR_USA_INITIAL_APPROACH_RESEARCH
     spawnedItem: STR_REMINGTON_COMBAT_SHOTGUN
@@ -61,6 +63,9 @@ research:
     disables:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_USSR_SUPPORT_RESEARCH
+    unlocks:
+      - STR_556_X20_UNLOCK
+      - STR_NATO_LMG_UNLOCK
 
   - name: STR_NATO_SUPPORT_RESEARCH
     dependencies:
@@ -70,6 +75,10 @@ research:
     disables:
       - STR_USSR_SUPPORT_RESEARCH
       - STR_USA_SUPPORT_RESEARCH
+    unlocks:
+      - STR_762_X30_UNLOCK
+      - STR_9MM_10X_UNLOCK
+      - STR_NATO_LMG_UNLOCK
 
   - name: STR_USSR_SUPPORT_RESEARCH
     dependencies:
@@ -79,6 +88,9 @@ research:
     disables:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_USA_SUPPORT_RESEARCH
+    unlocks:
+      - STR_SOVIET_762_UNLOCK
+      - STR_9MM_10X_UNLOCK
 
 
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -190,6 +202,38 @@ research:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
 
+#################################
+####### AMMO UNLOCKING ##########
+#################################
+
+  - name: STR_762_X30_UNLOCK
+    cost: 0
+    needItem: true
+
+  - name: STR_556_X20_UNLOCK
+    cost: 0
+    needItem: true
+
+  - name: STR_LR_UNLOCK
+    cost: 0
+    needItem: true
+
+  - name: STR_12G_X2_UNLOCK
+    cost: 0
+    needItem: true
+
+  - name: STR_SOVIET_762_UNLOCK
+    cost: 0
+    needItem: true
+
+  - name: STR_9MM_10X_UNLOCK
+    cost: 0
+    needItem: true
+
+  - name: STR_NATO_LMG_UNLOCK
+    cost: 0
+    needItem: true
+
 ############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
@@ -209,6 +253,8 @@ research:
     dependencies:
      - STR_USSR_SUPPORT_RESEARCH
      - STR_ALLOY_MANUFACTURING
+    unlocks:
+     - STR_12G_X2_UNLOCK
 ###############################################
   - name: STR_ALLOY_AEROSPACE
     listOrder: 902
@@ -254,6 +300,8 @@ research:
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
+    unlocks:
+     - STR_LR_UNLOCK
   - name: STR_IMPROVED_FIGHTER
     cost: 300
     points: 20
@@ -633,6 +681,8 @@ research:
     cost: 5
     points: 5
     needItem: true
+    unlocks:
+     - STR_9MM_10X_UNLOCK
   - name: STR_SNUBNOSE_PISTOL
     cost: 5
     points: 5
@@ -641,10 +691,14 @@ research:
     cost: 5
     points: 5
     needItem: true
+    unlocks:
+     - STR_LR_UNLOCK
   - name: STR_DOUBLE_BARRELED_SHOTGUN
     cost: 5
     points: 5
     needItem: true
+    unlocks:
+     - STR_12G_X2_UNLOCK
   - name: STR_MACHETE
     cost: 5
     points: 5
@@ -661,6 +715,8 @@ research:
     cost: 10
     points: 5
     needItem: true
+    unlocks:
+      - STR_762_X30_UNLOCK
   - name: STR_OWEN_SMG
     cost: 10
     points: 5
@@ -669,6 +725,8 @@ research:
     cost: 10
     points: 5
     needItem: true
+    unlocks:
+      - STR_SOVIET_762_UNLOCK
   - name: STR_PPS_43
     cost: 5
     points: 5

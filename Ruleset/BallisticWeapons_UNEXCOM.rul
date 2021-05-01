@@ -142,6 +142,8 @@ items:
 
   - type: STR_9MM_PISTOL_X10
     refNode: *STR_9MM_PISTOL_AMMO
+    requiresBuy:
+     - STR_9MM_10X_UNLOCK
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
     size: 0.05
     costBuy: 100
@@ -215,6 +217,8 @@ items:
     listOrder: 201620
 
   - type: STR_45_PISTOL_X7
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
     refNode: *STR_45_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
     size: 0.05
@@ -242,6 +246,8 @@ items:
     armor: 30
     listOrder: 200730
   - type: STR_45_PISTOL_X30
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
     refNode: *STR_45_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
     size: 0.05
@@ -268,6 +274,8 @@ items:
     listOrder: 200700
 
   - type: STR_5_56MM_NATO_RIFLE_X20
+    requiresBuy:
+     - STR_556_X20_UNLOCK
     refNode: *STR_5_56MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -368,6 +376,8 @@ items:
     attraction: 8
     listOrder: 201180
   - type: STR_7_62MM_NATO_RIFLE_X30
+    requiresBuy:
+     - STR_762_X30_UNLOCK
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -392,6 +402,8 @@ items:
     listOrder: 201190
 
   - type: STR_7_62MM_NATO_LMG_X50
+    requiresBuy:
+     - STR_NATO_LMG_UNLOCK
     refNode: *STR_7_62MM_NATO_LMG_AMMO
     categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
     size: 0.1
@@ -416,6 +428,8 @@ items:
     attraction: 8
     listOrder: 201020
   - type: STR_7_62MM_NATO_LMG_X100
+    requiresBuy:
+     - STR_NATO_LMG_UNLOCK
     refNode: *STR_7_62MM_NATO_LMG_AMMO
     categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
     size: 0.1
@@ -442,6 +456,8 @@ items:
 
   - type: STR_7_62MM_SOVIET_RIFLE_X10
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
+    requiresBuy:
+     - STR_SKS
     categories:
       [
         STR_FIREARMS,
@@ -470,6 +486,8 @@ items:
     attraction: 8
     listOrder: 201210
   - type: STR_7_62MM_SOVIET_RIFLE_X30
+    requiresBuy:
+     - STR_SOVIET_762_UNLOCK
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -493,6 +511,8 @@ items:
     attraction: 8
     listOrder: 201330
   - type: STR_7_62MM_SOVIET_RIFLE_X40
+    requiresBuy:
+     - STR_SOVIET_762_UNLOCK
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -566,6 +586,8 @@ items:
     listOrder: 201360
 
   - type: STR_12GAUGE_BUCKSHOT_X2
+    requiresBuy:
+     - STR_12G_X2_UNLOCK
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
     size: 0.1
     costBuy: 100
@@ -592,6 +614,8 @@ items:
     armor: 250
     listOrder: 200110
   - type: STR_12GAUGE_SLUG_X2
+    requiresBuy:
+     - STR_12G_X2_UNLOCK
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
     size: 0.1
     costBuy: 100
@@ -724,6 +748,8 @@ items:
     listOrder: 200200
 
   - type: STR_40MM_FRAG
+    requiresBuy:
+     - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 500
@@ -748,6 +774,8 @@ items:
     bulletSprite: 14
     listOrder: 200630
   - type: STR_40MM_INCENDIARY
+    requiresBuy:
+     - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 600
@@ -768,6 +796,8 @@ items:
     blastRadius: 7
     listOrder: 200640
   - type: STR_40MM_SMOKE
+    requiresBuy:
+     - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 300
@@ -786,6 +816,8 @@ items:
     bulletSprite: 15
     listOrder: 200660
   - type: STR_40MM_NON_LETHAL
+    requiresBuy:
+     - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 1500
@@ -828,6 +860,8 @@ items:
     listOrder: 200440
 
   - type: STR_22_LONG_RIFLE_X14
+    requiresBuy:
+     - STR_LR_UNLOCK
     categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
     size: 0.05
     costBuy: 600
