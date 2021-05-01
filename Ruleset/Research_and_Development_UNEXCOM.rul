@@ -333,7 +333,7 @@ research:
       - STR_UFO_CONSTRUCTION
 
   - name: STR_NEW_FIGHTER_CRAFT
-    cost: 100
+    cost: 1000
     points: 30
     dependencies:
       - STR_MIMIC_UFOS
@@ -751,7 +751,6 @@ research:
     dependencies:
       - STR_HYPER_WAVE_ENCODER
       - STR_ALIEN_COMMUNICATION
-    spawnedEvent: STR_OVERSEER_TRACKED_EVENT
 
   - name: STR_ALIEN_ID_CODES
     needItem: true
@@ -1676,7 +1675,7 @@ extraStrings:
       STR_OUTSOURCE_FUSION_CRAFT_WEAPONS: "Outsource Fusion Missile Production"
       STR_OUTSOURCE_UFOPEDIA: "Due to the growing size of our airwing, our engineering department cannot keep up with the demand of manufacturing ammunition for the advanced weapons systems developed by our research department. Therefore the council has approved our request to move production of certain weapon system munitions into factories maintained by council members. While this arrangement will free up our resources to focus on other things, giving individual council nations access to powerful new weapons might have repercussions once this conflict is over"
       STR_OUTSOURCING_PRODUCTION: "Outsourcing Production"
-      STR_ALIEN_ID_CODES: "Alien IFF"
+      STR_ALIEN_ID_CODES: "Alien ID Codes"
       STR_OLYMPUS: "Project Olympus"
       STR_THE_MARTIAN_SOLUTION: "Operation Devastation"
       STR_DESTINATION_MARS: "Destination Mars"
