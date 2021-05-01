@@ -302,12 +302,14 @@ alienDeployments:
   - type: STR_SPACE_STATION
     width: 40
     length: 40
+    height: 12
     terrains:
      - SPACE
-    height: 12
     startingCondition: STR_SPACE_CONDITION
     alert: STR_ALIEN_SPACE_STATION_SPOTTED
     alertBackground: SPACE_OPERATIONS_LAUNCH_ALERT
+    despawnPenalty: 100
+    duration: [72, 72]
     data:
       - alienRank: 5
         lowQty: 3
