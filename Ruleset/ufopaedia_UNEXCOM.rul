@@ -62,6 +62,12 @@ ufopaedia:
     listOrder: 1
     text_width: 316
 
+  - id: STR_FIGHTERS
+    type_id: 8
+    listOrder: 50
+    text: STR_FIGHTERS_UFOPEDIA
+    section: STR_XCOM_CRAFTS
+
   - id: STR_TUNNAN
     section: STR_XCOM_CRAFTS
     text: STR_TUNNAN_UFOPEDIA
@@ -97,6 +103,7 @@ ufopaedia:
       width: 205
       height: 80
     image_id: PHANTOM_UFOPEDIA
+
 
   - id: STR_LIGHTNING_F6
     requires:
@@ -396,6 +403,13 @@ ufopaedia:
       height: 80
 
 #Bombers
+
+  - id: STR_BOMBERS
+    type_id: 8
+    listOrder: 150
+    text: STR_BOMBERS_UFOPEDIA
+    section: STR_XCOM_CRAFTS
+
   - id: STR_THUNDERCHIEF
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -613,6 +627,14 @@ ufopaedia:
       height: 80
 
 #satellites
+
+
+  - id: STR_RECONS
+    type_id: 8
+    listOrder: 250
+    text: STR_RECONS_UFOPEDIA
+    section: STR_XCOM_CRAFTS
+
   - id: STR_BLACKBIRD
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -4348,3 +4370,9 @@ extraStrings:
       STR_ALIEN_MISSIONS: "ALIEN MISSIONS"
       STR_ALIEN_EQUIPMENT: "ALIEN EQUIPMENT"
       STR_TERRORIST_RESEARCH: "COUNTERTERRORIST RESEARCH"
+      STR_FIGHTERS: "Fighters"
+      STR_FIGHTERS_UFOPEDIA: "Fighter craft are both fast and agile, suitable for hunting smaller UFOs. Usually only equipped with short-range weaponry, they rely on agility to dodge enemy attacks to survive. Fighters are most effective when used in groups, since it is integral to shoot down the target UFO as quickly as possible to minimize the amount of fire the fighter takes."
+      STR_BOMBERS: "Bombers"
+      STR_BOMBERS_UFOPEDIA: "Bomber craft are capable of carrying large amounts of heavy munitions. Equipped with long-range weaponry, they are usually capable to engage UFOs without entering their weapon-range. This makes bombers suitable to engage larger UFOs equipped with lethal weaponry without risk. However bombers struggle to catch smaller UFOs and can easily get caught by hunter-killer UFOs."
+      STR_RECONS: "Reconnaissance Craft"
+      STR_RECONS_UFOPEDIA: "Reconnaissance craft have the sole purpose of spotting UFOs, they are also the only type of craft capable of finding alien bases. {NEWLINE} {NEWLINE}Spyplanes are fast moving craft undetectable by hunter-killers, suitable for chasing and identifying UFOs. They are also exeptional at finding bases, since they do not get targeted by the base's interceptors. {NEWLINE} {NEWLINE}Satellites are slow-moving, however they excel at detecting UFOs compared to ground based installations. Early satellites are vulnerable to hunter-killer UFOs, while upgraded designs get access to ways in whihc to defend themselves."
