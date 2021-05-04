@@ -46,7 +46,7 @@
     floorSprite: 31
     handSprite: 104
     bulletSprite: 11
-    fireSound: 102
+    fireSound: 112
     hitSound: 19
     hitAnimation: 57
     power: 110
@@ -1103,7 +1103,7 @@ units:
     standHeight: 24
     kneelHeight: 18
     value: 25
-    deathSound: 101
+    deathSound: 111
     intelligence: 2
     aggression: 2
     builtInWeaponSets:
@@ -1915,8 +1915,8 @@ extraSprites:
 extraSounds:
   - type: BATTLE.CAT
     files:
-      102: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
-      101: Resources/RecycledAlienCollection/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
+      112: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
+      111: Resources/RecycledAlienCollection/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
 extraStrings:
   - type: en-GB
     strings:
