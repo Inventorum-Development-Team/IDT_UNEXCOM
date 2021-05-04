@@ -913,25 +913,25 @@ items:
     confAuto:
       shots: 3
       arcing: false
+    accuracyAimed: 70
     accuracySnap: 55
-    accuracyAimed: 60
-    accuracyAuto: 50
-    costSnap:
-      time: 16
-      mana: 1
+    accuracyAuto: 40
     costAimed:
-      time: 45
+      time: 14
+      mana: 1
+    costSnap:
+      time: 9
       mana: 1
     costAuto:
-      time: 30
+      time: 18
       mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 60
-    aimRange: 12
-    snapRange: 10
-    autoRange: 8
-    dropoff: 1
+    aimRange: 18
+    snapRange: 11
+    autoRange: 5
+    dropoff: 2
     invWidth: 1
     invHeight: 2
 
@@ -950,34 +950,37 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
-    power: 70
+    power: 60
     damageType: 4
     confAimed:
       shots: 3
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 4
       name: STR_BURST
     confAuto:
       shots: 5
-      name: STR_CONTROL_AUTO
-    accuracyAuto: 55
-    accuracySnap: 55
-    accuracyAimed: 100
-    costSnap:
-      time: 25
-      mana: 1
+      name: STR_FULL_AUTO
+    accuracyAimed: 75
+    accuracySnap: 60
+    accuracyAuto: 45
     costAimed:
-      time: 55
+      time: 35
       mana: 3
+    costSnap:
+      time: 33
+      mana: 4
     costAuto:
-      time: 30
+      time: 31
       mana: 5
     clipSize: -1
     battleType: 1
     twoHanded: true
-    maxRange: 60
-    aimRange: 20
-    snapRange: 22
-    autoRange: 18
-    dropoff: 1
+    maxRange: 80
+    aimRange: 24
+    snapRange: 17
+    autoRange: 10
+    dropoff: 2
     invWidth: 1
     invHeight: 3
 
@@ -998,31 +1001,30 @@ items:
     bulletSprite: 29
     power: 75
     damageType: 4
-    confAimed:
-      shots: 3
-      name: STR_BURST
+    damageAlter:
+      ArmorEffectiveness: 0.8
     confAuto:
-      shots: 5
-      name: STR_CONTROL_AUTO
-    accuracyAuto: 55
-    accuracySnap: 55
-    accuracyAimed: 100
-    costSnap:
-      time: 25
-      mana: 1
+      shots: 2
+      name: STR_DOUBLE_TAP
+    accuracyAimed: 90
+    accuracySnap: 70
+    accuracyAuto: 50
     costAimed:
-      time: 55
-      mana: 3
-    costAuto:
+      time: 40
+      mana: 2
+    costSnap:
       time: 30
-      mana: 5
+      mana: 2
+    costAuto:
+      time: 45
+      mana: 3
     clipSize: -1
     battleType: 1
     twoHanded: true
     maxRange: 60
-    aimRange: 28
-    snapRange: 34
-    autoRange: 25
+    aimRange: 22
+    snapRange: 15
+    autoRange: 8
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1042,38 +1044,37 @@ items:
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 29
-    power: 60
+    power: 40
     damageType: 4
-    confAuto:
-      shots: 7
-      name: STR_FULL_AUTO
     confAimed:
-      shots: 10
+      shots: 4
       name: STR_PRAY_N_SPRAY
     confSnap:
-      shots: 3
-      name: STR_BURST
-    accuracyAuto: 45
-    accuracySnap: 40
-    accuracyAimed: 40
-    costSnap:
-      time: 18
-      mana: 3
+      shots: 7
+      name: STR_FULL_AUTO
+    confAuto:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    accuracyAimed: 54
+    accuracySnap: 45
+    accuracyAuto: 36
     costAimed:
-      time: 25
-      mana: 10
+      time: 31
+      mana: 3
+    costSnap:
+      time: 34
+      mana: 5
     costAuto:
-      time: 22
+      time: 33
       mana: 7
     clipSize: -1
     battleType: 1
-    maxRange: 60
-    aimRange: 6
-    snapRange: 10
-    autoRange: 9
+    maxRange: 50
+    aimRange: 12
+    snapRange: 8
+    autoRange: 4
     twoHanded: false
-    dropoff: 1
-    sprayWaypoints: 2
+    dropoff: 3
     invWidth: 1
     invHeight: 3
 
@@ -1092,30 +1093,33 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
-    power: 80
+    power: 90
     damageType: 4
+    damageAlter:
+      ArmorEffectiveness: 0.6
     confAuto:
       shots: 1
-      name: STR_HEADSHOT
+      name: STR_RAPID_FIRE
     twoHanded: true
-    accuracySnap: 65
-    accuracyAimed: 105
-    accuracyAuto: 200
-    costSnap:
-      time: 33
-      mana: 1
+    accuracyAimed: 130
+    accuracySnap: 95
+    accuracyAuto: 60
     costAimed:
       time: 62
-      mana: 1
+      mana: 3
+    costSnap:
+      time: 46
+      mana: 3
     costAuto:
-      time: 85
-      mana: 1
+      time: 31
+      mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 200
-    aimRange: 100
-    snapRange: 30
-    minRange: 8
+    aimRange: 40
+    snapRange: 25
+    autoRange: 18
+    minRange: 18
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1127,7 +1131,7 @@ items:
     size: 0.3
     costBuy: 75000
     costSell: 69000
-    weight: 15
+    weight: 18
     bigSprite: 2026
     floorSprite: 2026
     handSprite: 2168
@@ -1137,12 +1141,17 @@ items:
     bulletSprite: 29
     power: 65
     damageType: 4
-    accuracyAuto: 45
+    accuracyAimed: 70
     accuracySnap: 45
-    accuracyAimed: 75
+    accuracyAuto: 40
+    confAimed:
+      shots: 4
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
     confSnap:
-      shots: 5
-      name: STR_BURST
+      shots: 9
+      name: STR_FULL_AUTO
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -1150,24 +1159,24 @@ items:
       name: STR_SUPPRESSION
       ammoSlot: 0
       arcing: false
-    costSnap:
-      time: 35
-      mana: 5
     costAimed:
-      time: 60
-      mana: 1
+      time: 37
+      mana: 3
+    costSnap:
+      time: 45
+      mana: 6
     costAuto:
-      time: 38
-      mana: 15
+      time: 75
+      mana: 10
     twoHanded: true
     clipSize: -1
     battleType: 1
     maxRange: 60
-    snapRange: 30
-    autoRange: 25
-    minRange: 3
-    sprayWaypoints: 2
-    dropoff: 1
+    aimRange: 17
+    snapRange: 11
+    autoRange: 9
+    minRange: 5
+    dropoff: 2
     invWidth: 1
     invHeight: 3
 
@@ -1186,26 +1195,25 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
-    power: 85
+    power: 110
     damageType: 4
-    twoHanded: true
-    accuracySnap: 105
-    accuracyAimed: 125
     damageAlter:
-      ToArmor: 2.0
-      IgnoreOverKill: true
-    costSnap:
-      time: 33
-      mana: 5
+      ArmorEffectiveness: 0.3
+    twoHanded: true
+    accuracyAimed: 110
+    accuracySnap: 70
     costAimed:
-      time: 62
+      time: 78
+      mana: 5
+    costSnap:
+      time: 42
       mana: 5
     clipSize: -1
     battleType: 1
-    maxRange: 200
-    aimRange: 100
-    snapRange: 30
-    minRange: 8
+    maxRange: 120
+    aimRange: 32
+    snapRange: 20
+    minRange: 14
     dropoff: 1
     invWidth: 2
     invHeight: 3
