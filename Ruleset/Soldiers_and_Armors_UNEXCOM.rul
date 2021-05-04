@@ -281,7 +281,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    recover: false
+    recover: true
 
   - type: STR_DELTA_ARMOR_UC
     name: STR_DELTA_ARMOR_UC
@@ -295,7 +295,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 50
-    recover: false
+    recover: true
 
   - type: STR_RIOT_ARMOR_UC
     name: STR_RIOT_ARMOR_UC
@@ -309,7 +309,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 50
-    recover: false
+    recover: true
 
   - type: STR_CORPSE_ARMOR
     name: STR_CORPSE
@@ -319,7 +319,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    recover: false
+    recover: true
 
   - type: STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
     name: STR_CORPSE
@@ -360,6 +360,28 @@ items:
     armor: 30
     recover: false
 
+# Power Armor
+
+  - type: STR_CORPSE_MARAUDER
+    name: STR_CORPSE
+    weight: 26
+    bigSprite: 517
+    floorSprite: 517
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
+
+  - type: STR_CORPSE_PATHFINDER
+    name: STR_CORPSE
+    weight: 26
+    bigSprite: 518
+    floorSprite: 518
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
+
 # Armor
   - type: STR_PERSONAL_ARMOR
     size: 0.8
@@ -375,7 +397,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 40
-    recover: false
+    recover: true
 
 armors:
   - type: STR_NONE_UC
@@ -542,6 +564,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_COMBAT_ARMOR
     storeItem: STR_COMBAT_ARMOR_UC
+    corpseGeo: STR_CORPSE_COMBAT_ARMOR
     loftempsSet: [ 3 ]
     weight: 10
     frontArmor: 28
@@ -579,6 +602,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_DELTA_ARMOR
     storeItem: STR_DELTA_ARMOR_UC
+    corpseGeo: STR_CORPSE_DELTA_ARMOR
     personalLight: 7
     weight: 15
     stats:
@@ -619,6 +643,7 @@ armors:
     spriteInv: ARMOR_RIOT_INVENTORY
     corpseBattle:
       - STR_CORPSE_RIOT_ARMOR
+    corpseGeo: STR_CORPSE_RIOT_ARMOR
     storeItem: STR_RIOT_ARMOR_UC
     personalLight: 5
     weight: 12
@@ -666,6 +691,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_ARMOR
     storeItem: STR_PERSONAL_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR
     stats:
       tu: -2
       stamina: -3
@@ -695,7 +721,7 @@ armors:
     spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
     spriteInv: HEAVY_PERSONAL_ARMOR_INV
     corpseBattle:
-      - STR_CORPSE
+      - STR_CORPSE_HEAVY_PERSONAL_ARMOR
     corpseGeo: STR_CORPSE_HEAVY_PERSONAL_ARMOR
     storeItem: STR_HEAVY_PERSONAL_ARMOR
     weight: 6
@@ -725,6 +751,145 @@ armors:
       - 0.75
       - 0.92
       - 1.0
+#Power Armors
+
+# Standard Armors
+  - type: STR_POWER_SUIT_UC
+    spriteSheet: MARAUDER_SPRITESHEET.PCK
+    spriteInv: MAN_MARAUDER
+    corpseBattle:
+      - STR_CORPSE_MARAUDER
+    storeItem: STR_POWER_SUIT
+    corpseGeo: STR_CORPSE_MARAUDER
+    loftempsSet: [ 3 ]
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
+    stats:
+      tu: -9
+      stamina: 10
+      reactions: -8
+      firing: -3
+      throwing: -7
+      strength: 15
+      bravery: 7
+      mana: 80
+    damageModifier:
+      - 0.7
+      - 0.45
+      - 0.2
+      - 0.5
+      - 0.6
+      - 0.65
+      - 0.6
+      - 0.70
+      - 0.85
+      - 0.0
+  - type: STR_FLYING_SUIT_UC
+    spriteSheet: PATHFINDER_SPRITESHEET.PCK
+    spriteInv: MAN_PATHFINDER
+    corpseBattle:
+      - STR_CORPSE_PATHFINDER
+    storeItem: STR_FLYING_SUIT
+    corpseGeo: STR_CORPSE_PATHFINDER
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -9
+      stamina: 10
+      reactions: -8
+      firing: -3
+      throwing: -7
+      strength: 15
+      bravery: 8
+      mana: 80
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
+    movementType: 1
+    damageModifier:
+      - 0.75
+      - 0.50
+      - 0.30
+      - 0.6
+      - 0.65
+      - 0.70
+      - 0.65
+      - 0.73
+      - 0.88
+      - 0.0
+# New Armors
+  - type: STR_SCOUT_POWER_ARMOR_UC
+    spriteSheet: SCOUT_POWER_ARMOR.PCK
+    spriteInv: SCOUT_POWER_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE_SCOUT_POWER_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_POWER_ARMOR # should be corpseBattle?
+    storeItem: STR_SCOUT_POWER_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -4
+      stamina: 15
+      reactions: -6
+      firing: -2
+      throwing: -5
+      strength: 9
+      bravery: 7
+      mana: 80
+    frontArmor: 55
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
+    movementType: 0
+    damageModifier:
+      - 0.8
+      - 0.5
+      - 0.3
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.65
+      - 0.73
+      - 0.88
+      - 0.0
+  - type: STR_SCOUT_FLYING_ARMOR_UC
+    spriteSheet: SCOUT_FLYING_ARMOR.PCK
+    spriteInv: SCOUT_FLYING_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE_SCOUT_FLYING_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
+    storeItem: STR_SCOUT_FLYING_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -4
+      stamina: 15
+      reactions: -6
+      firing: -2
+      throwing: -5
+      strength: 9
+      bravery: 6
+      mana: 80
+    frontArmor: 50
+    sideArmor: 40
+    rearArmor: 32
+    underArmor: 30
+    movementType: 1
+    damageModifier:
+      - 0.8
+      - 0.55
+      - 0.35
+      - 0.65
+      - 0.65
+      - 0.75
+      - 0.70
+      - 0.77
+      - 0.90
+      - 0.0
+
+#Astronaut Armors
 
   - &A7LSpacesuitAnchor
     type: STR_ASTRONAUT_A7L_SPACESUIT_UC
@@ -911,6 +1076,92 @@ manufacture:
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 6
+
+  - name: STR_REPAIR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_ARMOR: 1
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_PERSONAL_ARMOR: 1
+  - name: STR_REPAIR_COMBAT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_COMBAT_ARMOR_UC: 1
+  - name: STR_REPAIR_DELTA_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_DELTA_ARMOR_UC: 1
+  - name: STR_REPAIR_RIOT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_RIOT_ARMOR_UC: 1
+  - name: STR_REPAIR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_HEAVY_PERSONAL_ARMOR: 1
+  - name: STR_REPAIR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 16
+    time: 500
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_MARAUDER: 1
+      STR_ALIEN_ALLOYS: 10
+    producedItems:
+      STR_POWER_SUIT: 1
+  - name: STR_REPAIR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 16
+    time: 700
+    cost: 12000
+    requiredItems:
+      STR_CORPSE_PATHFINDER: 1
+      STR_ALIEN_ALLOYS: 12
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_FLYING_SUIT: 1
 
 extraSprites:
   - type: BASEBITS.PCK
@@ -1360,6 +1611,53 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.png
+
+##################################################
+######### UN MARAUDER POWER ARMOR ###############
+################################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      517: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      517: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_CORPSE_FLOOROB.png
+  - type: MARAUDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_SPRITESHEET.png
+  - type: MAN_MARAUDERM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/MarauderArmor/MAN_MARAUDER.png
+
+##################################################
+######### UN PATHFINDER FLYING ARMOR ###############
+################################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      518: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      518: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_CORPSE_FLOOROB.png
+  - type: PATHFINDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_SPRITESHEET.png
+  - type: MAN_PATHFINDERM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PathfinderArmor/MAN_PATHFINDER.png
+
 
 ####################################
 ####### USA/NATO SPACESUITS #######
