@@ -476,8 +476,9 @@ mapScripts:
 
   - type: MARS_OPERATION_DOWNFALL
     commands:
-     - type: addCraft
-       craftName: MARS_ENTRY_GROUND
+     - type: addBlock
+       terrain: MARS_ENTRY
+       size: [1,2,0]
      - type: addBlock
        groups: 2
      - type: fillArea
@@ -648,6 +649,17 @@ terrains:
         width: 10
         length: 10
         groups: 2
+
+  - name: MARS_ENTRY
+    enviroEffects: STR_MARS_ENVIRO
+    mapDataSets:
+        - BLANKS
+        - MARS_NEW_ENTRY_FLOOR
+    mapBlocks:
+        - name: MARS_ENTRY_GROUND
+          width: 10
+          length: 20
+
   - name: IDT_MARS
     enviroEffects: STR_MARS_ENVIRO
     mapDataSets:

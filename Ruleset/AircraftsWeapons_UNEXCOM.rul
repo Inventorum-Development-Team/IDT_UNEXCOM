@@ -1618,40 +1618,6 @@ crafts:
 # 5   1
 # 4 3 2
 
-  - type: MARS_ENTRY_GROUND #For the Cydonia mission, ground to spawn XCOM
-    weapons: 0
-    soldiers: 14
-    vehicles: 0
-#    pilots: 2
-    battlescapeTerrainData:
-      name: MARS_ENTRY_GROUND
-      mapDataSets:
-        - BLANKS
-        - MARS_NEW_ENTRY_FLOOR
-      mapBlocks:
-        - name: MARS_ENTRY_GROUND
-          width: 10
-          length: 20
-    craftInventoryTile: [4, 11, 0]
-    deployment:
-      - [2, 4, 0, 0]
-      - [1, 1, 0, 0]
-      - [1, 7, 0, 6]
-      - [2, 10, 0, 54]
-      - [1, 13, 0, 6]
-      - [6, 2, 0, 0]
-      - [5, 5, 0, 1]
-      - [9, 6, 0, 2]
-      - [5, 11, 0, 2]
-      - [9, 12, 0, 3]
-      - [6, 8, 0, 3]
-      - [7, 14, 0, 3]
-      - [6, 17, 0, 4]
-      - [4, 18, 0, 4]
-# unit facing
-# 6 7 0
-# 5   1
-# 4 3 2
 
 #}
 ############################
