@@ -399,6 +399,35 @@ items:
     armor: 40
     recover: true
 
+
+  - type: STR_SCOUT_POWER_ARMOR
+    name: STR_SCOUT_POWER_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_SCOUT_POWER_ARMOR
+    name: STR_CORPSE
+    weight: 22
+    bigSprite: 903
+    floorSprite: 904
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+
+  - type: STR_SCOUT_FLYING_ARMOR
+    name: STR_SCOUT_FLYING_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_SCOUT_FLYING_ARMOR
+    name: STR_CORPSE
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+
 armors:
   - type: STR_NONE_UC
     spriteSheet: XCOM_10.PCK
@@ -766,6 +795,7 @@ armors:
     sideArmor: 51
     rearArmor: 45
     underArmor: 38
+    forcedTorso: 1
     stats:
       tu: -9
       stamina: 10
@@ -794,6 +824,7 @@ armors:
     storeItem: STR_FLYING_SUIT
     corpseGeo: STR_CORPSE_PATHFINDER
     loftempsSet: [ 3 ]
+    forcedTorso: 1
     stats:
       tu: -9
       stamina: 10
@@ -824,9 +855,9 @@ armors:
     spriteSheet: SCOUT_POWER_ARMOR.PCK
     spriteInv: SCOUT_POWER_ARMOR_INV
     corpseBattle:
-      - STR_CORPSE_SCOUT_POWER_ARMOR
-    corpseGeo: STR_CORPSE_SCOUT_POWER_ARMOR # should be corpseBattle?
-    storeItem: STR_SCOUT_POWER_ARMOR
+      - STR_CORPSE_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR # should be corpseBattle?
+    storeItem: STR_CORPSE_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
     stats:
@@ -858,9 +889,9 @@ armors:
     spriteSheet: SCOUT_FLYING_ARMOR.PCK
     spriteInv: SCOUT_FLYING_ARMOR_INV
     corpseBattle:
-      - STR_CORPSE_SCOUT_FLYING_ARMOR
-    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
-    storeItem: STR_SCOUT_FLYING_ARMOR
+      - STR_CORPSE_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR
+    storeItem: STR_CORPSE_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
     stats:
@@ -1076,6 +1107,29 @@ manufacture:
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 6
+
+  - name: STR_SCOUT_POWER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_POWER_ARMOR
+    space: 12
+    time: 1000
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 5
+    listOrder: 2711
+  - name: STR_SCOUT_FLYING_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_FLYING_ARMOR
+    space: 15
+    time: 1000
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+      STR_ELERIUM_115: 12
+    listOrder: 2712
 
   - name: STR_REPAIR_PERSONAL_ARMOR
     category: STR_PERSONAL_ARMOR
@@ -1630,10 +1684,10 @@ extraSprites:
     height: 720
     files:
       0: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_SPRITESHEET.png
-  - type: MAN_MARAUDERM0.SPK
+  - type: MAN_MARAUDER
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/MarauderArmor/MAN_MARAUDER.png
+      0: Resources/SoldiersAndArmors/MarauderArmor/Inventory/MAN_MARAUDER.png
 
 ##################################################
 ######### UN PATHFINDER FLYING ARMOR ###############
@@ -1653,10 +1707,10 @@ extraSprites:
     height: 720
     files:
       0: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_SPRITESHEET.png
-  - type: MAN_PATHFINDERM0.SPK
+  - type: MAN_PATHFINDER
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/PathfinderArmor/MAN_PATHFINDER.png
+      0: Resources/SoldiersAndArmors/PathfinderArmor/Inventory/MAN_PATHFINDER.png
 
 
 ####################################
@@ -1737,6 +1791,95 @@ extraSprites:
     files:
       516: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_CORPSE_FLOOROB.png
 
+####################################
+
+  - type: SCOUT_POWER_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/FourthState/ScoutArmor/ScoutPowerArmor.gif
+  - type: SCOUT_POWER_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m0.gif
+  - type: SCOUT_POWER_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m1.gif
+  - type: SCOUT_POWER_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m2.gif
+  - type: SCOUT_POWER_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m3.gif
+  - type: SCOUT_POWER_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f0.png
+  - type: SCOUT_POWER_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f1.png
+  - type: SCOUT_POWER_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f2.png
+  - type: SCOUT_POWER_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f3.png
+  - type: BIGOBS.PCK
+    files:
+      903: Resources/FourthState/ScoutArmor/BigCorpse2.png
+  - type: FLOOROB.PCK
+    files:
+      904: Resources/FourthState/ScoutArmor/FloorCorpse2.png
+  - type: SCOUT_FLYING_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/FourthState/ScoutArmor/ScoutFlyingArmor.gif
+  - type: SCOUT_FLYING_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m0.gif
+  - type: SCOUT_FLYING_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m1.gif
+  - type: SCOUT_FLYING_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m2.gif
+  - type: SCOUT_FLYING_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m3.gif
+  - type: SCOUT_FLYING_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f0.png
+  - type: SCOUT_FLYING_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f1.png
+  - type: SCOUT_FLYING_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f2.png
+  - type: SCOUT_FLYING_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f3.png
+
+######################################
+
 extraStrings:
   - type: en-US
     strings:
@@ -1785,6 +1928,21 @@ extraStrings:
       STR_HEAVY_PERSONAL_ARMOR_UC: HEAVY ARMOR
       STR_HEAVY_PERSONAL_ARMOR: Heavy Armor
       STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
+
+     # Armor
+      STR_POWER_SUIT_UC: MARAUDER POWER ARMOR
+      STR_POWER_SUIT: Marauder Power Armor
+      STR_FLYING_SUIT_UC: PATHFINDER FLYING ARMOR
+      STR_FLYING_SUIT: Pathfinder Flying Armor
+      STR_SCOUT_POWER_ARMOR_UC: SCOUT POWER ARMOR
+      STR_SCOUT_POWER_ARMOR: Scout Power Armor
+      STR_SCOUT_POWER_ARMOR_UFOPEDIA: This item combines Power Suit technology and Personal Armor frame to create armor focusing on increasing a soldier's mobility. However, this focus on speed and a need to maximize wearer's field of vision limits the suit's protective capabilities.
+      STR_SCOUT_FLYING_ARMOR_UC: SCOUT FLYING ARMOR
+      STR_SCOUT_FLYING_ARMOR: Scout Flying Armor
+      STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
+
+
+########################################
 
       STR_ASTRONAUT_A7L_SPACESUIT_UC: A7-M Spacesuit
       STR_ASTRONAUT_A7L_SPACESUIT_UC_UFOPEDIA: Fully pressurized suit, perfect for extra vehicular activities in difficult terrain. Improved model of the A7L suit used by the American astronauts of the Apollo missions.  Includes sections of Alien Alloys to lessen the discomfort of the suit, but still limits the movements and reactions of the user. Includes magnetic boots.

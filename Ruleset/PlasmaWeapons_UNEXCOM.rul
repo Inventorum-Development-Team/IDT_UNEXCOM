@@ -972,28 +972,7 @@ manufacture:
     producedItems:
       STR_SNIPER_PLASMA_CLIP: 1
 # New Armor
-  - name: STR_SCOUT_POWER_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SCOUT_POWER_ARMOR
-    space: 12
-    time: 1000
-    cost: 30000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 5
-      STR_ELERIUM_115: 5
-    listOrder: 2711
-  - name: STR_SCOUT_FLYING_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SCOUT_FLYING_ARMOR
-    space: 15
-    time: 1000
-    cost: 50000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 8
-      STR_ELERIUM_115: 12
-    listOrder: 2712
+
   - name: STR_PLASMA_PISTOL
     requires:
       - STR_ALIENS_ONLY
@@ -1208,90 +1187,7 @@ extraSprites:
       1887: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGh.gif
       1970: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolh.gif
       1979: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolh.gif
-  - type: SCOUT_POWER_ARMOR.PCK
-    subX: 32
-    subY: 40
-    width: 1024
-    height: 360
-    files:
-      0: Resources/FourthState/ScoutArmor/ScoutPowerArmor.gif
-  - type: SCOUT_POWER_ARMOR_INVM0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m0.gif
-  - type: SCOUT_POWER_ARMOR_INVM1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m1.gif
-  - type: SCOUT_POWER_ARMOR_INVM2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m2.gif
-  - type: SCOUT_POWER_ARMOR_INVM3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m3.gif
-  - type: SCOUT_POWER_ARMOR_INVF0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f0.png
-  - type: SCOUT_POWER_ARMOR_INVF1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f1.png
-  - type: SCOUT_POWER_ARMOR_INVF2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f2.png
-  - type: SCOUT_POWER_ARMOR_INVF3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f3.png
-  - type: BIGOBS.PCK
-    files:
-      903: Resources/FourthState/ScoutArmor/BigCorpse2.png
-  - type: FLOOROB.PCK
-    files:
-      904: Resources/FourthState/ScoutArmor/FloorCorpse2.png
-  - type: SCOUT_FLYING_ARMOR.PCK
-    subX: 32
-    subY: 40
-    width: 1024
-    height: 360
-    files:
-      0: Resources/FourthState/ScoutArmor/ScoutFlyingArmor.gif
-  - type: SCOUT_FLYING_ARMOR_INVM0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m0.gif
-  - type: SCOUT_FLYING_ARMOR_INVM1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m1.gif
-  - type: SCOUT_FLYING_ARMOR_INVM2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m2.gif
-  - type: SCOUT_FLYING_ARMOR_INVM3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m3.gif
-  - type: SCOUT_FLYING_ARMOR_INVF0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f0.png
-  - type: SCOUT_FLYING_ARMOR_INVF1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f1.png
-  - type: SCOUT_FLYING_ARMOR_INVF2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f2.png
-  - type: SCOUT_FLYING_ARMOR_INVF3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f3.png
+
 extraSounds:
   - type: BATTLE.CAT
     files:
