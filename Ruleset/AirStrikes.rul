@@ -9,6 +9,7 @@ items:
     bigSprite: 956
     floorSprite: 956
     handSprite: 956
+    explosionHitSound: [100, 101, 102]
     power: 200
     damageType: 3
     battleType: 4
@@ -27,6 +28,7 @@ items:
     bigSprite: 972
     floorSprite: 972
     handSprite: 972
+    explosionHitSound: [103, 104, 105]
     power: 100
     damageType: 2
     battleType: 4
@@ -63,6 +65,20 @@ extraSprites:
         964: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
         972: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
         980: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      100: Resources/BallisticWeapons/Sounds/airstrike_he1.wav
+      101: Resources/BallisticWeapons/Sounds/airstrike_he2.wav
+      102: Resources/BallisticWeapons/Sounds/airstrike_he3.wav
+      103: Resources/BallisticWeapons/Sounds/airstrike_inc1.wav
+      104: Resources/BallisticWeapons/Sounds/airstrike_inc2.wav
+      105: Resources/BallisticWeapons/Sounds/airstrike_inc3.wav
+      106: Resources/BallisticWeapons/Sounds/airstrike_cannons1.wav
+      107: Resources/BallisticWeapons/Sounds/airstrike_cannons2.wav
+      108: Resources/BallisticWeapons/Sounds/airstrike_cannons3.wav
+      109: Resources/BallisticWeapons/Sounds/airstrike_a10a.wav
 
 extraStrings:
   - type: en-US
