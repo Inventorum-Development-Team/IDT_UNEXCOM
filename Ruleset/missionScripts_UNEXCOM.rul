@@ -1,3 +1,4 @@
+# spellchecker:words PREREQ
 #The human enemies will attack first. At the third month, the aliens will show up
 missionScripts:
   - delete: gameStart
@@ -103,7 +104,7 @@ missionScripts:
     varName: alienConstruction
     executionOdds: 80
 
-  - type: AirSuperiorty1
+  - type: AirSuperiority1
     missionWeights:
       0:
         STR_AIR_SUPERIORITY_1: 100
@@ -113,7 +114,7 @@ missionScripts:
     maxScore: 1299
     randomDelay: 20000
 
-  - type: AirSuperiorty2
+  - type: AirSuperiority2
     missionWeights:
       0:
         STR_AIR_SUPERIORITY_2: 100
@@ -123,7 +124,7 @@ missionScripts:
     maxScore: 1799
     randomDelay: 20000
 
-  - type: AirSuperiorty3
+  - type: AirSuperiority3
     missionWeights:
       0:
         STR_AIR_SUPERIORITY_3: 100
@@ -373,15 +374,15 @@ missionScripts:
     randomDelay: 40000
     executionOdds: 100
 
-  - type: GuranteedBase
+  - type: GuaranteedBase
     missionWeights:
       0:
-        STR_GURANTEED_BASE: 100
+        STR_GUARANTEED_BASE: 100
     regionWeights:
       0:
         STR_ANTARCTICA: 100
     startDelay: 100
     useTable: false
     maxRuns: 1
-    varName: GuranteedBase
+    varName: GuaranteedBase
     firstMonth: 6

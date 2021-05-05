@@ -17,7 +17,7 @@ armors:
      Hind_Turret: 1
 
 
-
+# spellchecker:disable
 extended:
   tags:
     RuleItem:
@@ -31,6 +31,8 @@ extended:
       OGreactions: int
     BattleGame:
       Turn: int
+  # spellchecker:enable
+  # spellchecker:words flashbanged Gaccuracy Greactions Gfiring setFatalwounds
   scripts:
 
     newTurnItem: #Maintains a tag with turn number

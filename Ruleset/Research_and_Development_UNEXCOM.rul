@@ -1,3 +1,9 @@
+# spellchecker:words PREREQ ANTIGRAV SHOOTDOWN HONOREM PERPETUA MEMORIA UNSC SDVS MACV ESRO CWIS
+# spellchecker:words Nordiska Kraschen Yakov Malik Luns Aeritalia Spearguns Minisub mothership Armalite Artemiy Vympel
+# spellchecker:words Kruschev
+# spellchecker:words airwing
+
+
 items:
 
    - type: STR_ALIEN_ID_CODES
@@ -820,7 +826,7 @@ research:
     points: 50
     dependencies:
      - STR_ALIEN_ID_CODES
-    spawnedEvent: STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT
+    spawnedEvent: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT
 
   - name: STR_UNITED_WE_STAND_RESEARCH
     cost: 400
@@ -1430,13 +1436,50 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/USSR_AIRCRAFT_OPTION2_IMAGE.PNG
-
+################################################
   - type: UNITED_WE_STAND_IMAGE
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UFOpedia/UNITED_WE_STAND_IMAGE.PNG
+
+  - type: OLYMPUS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/OLYMPUS_IMAGE.PNG
+  - type: OLYMPUS_ORION_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/OLYMPUS_ORION_IMAGE.PNG
+  - type: OLYMPUS_SHUTTLE_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/OLYMPUS_SHUTTLE_IMAGE.PNG
+  - type: DEVASTATION_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/DEVASTATION_IMAGE.PNG
+  - type: DESTINATION_MARS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/DESTINATION_MARS_IMAGE.PNG
+  - type: CYDONIA_OR_BUST_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/CYDONIA_OR_BUST_IMAGE.PNG
 
 ################################################
   - type: SPECIAL_FORCES_RESEARCH_IMAGE
@@ -1581,7 +1624,7 @@ extraStrings:
       STR_USA_SUPPORT_RESEARCH: "USA Support"
       STR_USA_SUPPORT_UFOPEDIA: "Members of our diplomatic relations team have approached the U.S. Ambassador to the UN, George H.W. Bush to request American military support and equipment to arm our troops. It has taken some time, but he has agreed to provide us with the most modern equipment in the American arsenal, such as the M1911 Colt 45, M16/M203, XM117 Carbine, Remington Combat Shotgun, XM21, M79 Thumper, M72 LAW and M60. He also offered to equip our interception squadrons with USAF aircraft, but Ambassador Bush had to withdraw before continuing negotiations. We must contact him again if we want his support in the future."
       STR_USSR_SUPPORT_RESEARCH: "USSR Support"
-      STR_USSR_SUPPORT_UFOPEDIA: "We have spoken with the Soviet representative on the UN Security Council, Yakov Malik, to ask him for support in obtaining weapons and extra resources for our operation. After several hours of dialogue, he has agreed to provide us with first-class equipment available for the best of the Red Army. The following list of weapons is available at the Shop: Stetchkin APS, AKM with bayonet, AKMSU, Skorpion vz. 68, KS-23 Heavy Shotgun, RPG7 and RPKS. To request air support from the Soviet Air Forces, our diplomatic team must continue to negotiate with Representative Malik."
+      STR_USSR_SUPPORT_UFOPEDIA: "We have spoken with the Soviet representative on the UN Security Council, Yakov Malik, to ask him for support in obtaining weapons and extra resources for our operation. After several hours of dialogue, he has agreed to provide us with first-class equipment available for the best of the Red Army. The following list of weapons is available at the Shop: Stechkin APS, AKM with bayonet, AKMSU, Skorpion vz. 68, KS-23 Heavy Shotgun, RPG7 and RPKS. To request air support from the Soviet Air Forces, our diplomatic team must continue to negotiate with Representative Malik."
       STR_NATO_SUPPORT_RESEARCH: "NATO Support"
       STR_NATO_SUPPORT_UFOPEDIA: "Our diplomatic team has begun talks with Joseph Luns, Secretary General of NATO. After several talks over several days, he has agreed to our request to provide us with weapons and equipment from the various nations that make up the North Atlantic Treaty. His only condition was to support the NATO countries in case of any alien aggression. We have at our disposal the most recent models of Beretta 92FS, FN FAL with shotgun, SG 510-4 Carbine, H&K MP5, H&K PSG1, Carl Gustav M2 and FN MAG. However, if we wish to obtain aircraft and weapons, we must return to dialogue with Secretary Luns once again."
 ##########################################
@@ -1735,10 +1778,18 @@ extraStrings:
       STR_OUTSOURCING_PRODUCTION: "Outsourcing Production"
       STR_ALIEN_ID_CODES: "Alien ID Codes"
       STR_OLYMPUS: "Project Olympus"
+      STR_OLYMPUS_UFOPEDIA: "Our enemy, as we suspected, does not belong here. That is why we have reached out to American and Soviet Military Intelligence with a proposal to counter alien advances on our planet. Project Orion was dusted off and the Space Shuttles are no longer a prototype, they've left on a drawing board.  The Orion Battleships will take us to Mars and the Shuttles will land our troops where they need to be, from our home to Mars. "
+      STR_OLYMPUS_ORION: "Project Olympus - Orion"
+      STR_OLYMPUS_ORION_UFOPEDIA: "The design was created in the early 60s by NASA as an effective mean to get to Mars and beyond using the existing technology. But the fears of an alien invasion motivated president Kennedy and Premier Kruschev to propose an armed version. Our most reliable and effective way to use nuclear weapons is to adapt them into shaped charges (similar of those used by Casaba Howitzers) to propel the pusher plate behind the ship. Their armament is composed of naval batteries, ballistic missile racks and 20mm CWIS cannons plus Hangar storage for 6 smaller vehicles. The blueprints and partially build ships were stored in a secure vault for 10 years until the worst event happened and our planet became besieged by alien forces."
+      STR_OLYMPUS_SHUTTLE: "Project Olympus - Shuttle"
+      STR_OLYMPUS_SHUTTLE_UFOPEDIA: "In the late 1960s and early 1970s a replacement was proposed that could take off as a rocket and land as an airplane. The solution was a long way off due to budget cuts and was not expected to go into action for another 10 years. But the invasion has moved on and the Raider can begin to be considered as a fully-fledged efficient transport. It's the only craft to be used on Space and Air."
       STR_THE_MARTIAN_SOLUTION: "Operation Devastation"
+      STR_THE_MARTIAN_SOLUTION_UFOPEDIA: "Our Recon probes found the characteristic gravitational signals emitted by UFOs in the surface of the Moon. More specifically, Tycho Crater. Pyramid-like structures with what seems AA batteries and turrets has been spotted. Our task force is getting ready for deployment using the new space shuttles. NASA Command will help with us recon and logistics support and the Soviet forces will land alongside us. "
       STR_DESTINATION_MARS: "Destination Mars"
+      STR_DESTINATION_MARS_UFOPEDIA: "The Viking probes sent to Mars have found the location of the suspected alien base on a region identified as Cydonia. The most shocking news are the clear evidence of a city-like complex and what appears to be a humanoid face. The information has been shared to the UN General Assembly and the Security Council has approved the creation of the United Nations Space Command to coordinate the joint efforts of the American, Soviet and European aerospace forces. The Orion Nuclear Battleships are almost ready to go. We need to hold the invaders on the ground as much as we can to gain more time for the invasion fleet."
       STR_CYDONIA_OR_BUST: "Operation Downfall"
+      STR_CYDONIA_OR_BUST_UFOPEDIA: "We have completed the construction of the three Orion Nuclear Battleships. Each World Power has christened each one and provided crew and landing troops, with vehicle complement of Sabre Exoatmospheric Fighters and Raider Shuttles. The Ares Expeditionary Force will be composed of UNS Enterprise, UNS Marathon and UNS Stalingrad and will be take us three weeks to get to Mars orbit. The time has come. Operation Downfall will begin as soon as we are ready to take off."
       STR_SATELLITES: "Satellites"
       STR_EXOATMOSPHERIC_FIGHTERS: "Exo-Atmospheric Fighters"
-      STR_EXOATMOSPHERIC_FIGHTERS_UFOPEDIA: "To take the fight back to the aliens, we need to be able to fight them outside of our atmosphere. To do this a new generation of fighter craft has been created. Capable of fighting with equal ability both outside and inside our atmosphere, these craft can also reach immense speeds by exiting the atmosphere and therefore avoiding air resistance altogehter."
+      STR_EXOATMOSPHERIC_FIGHTERS_UFOPEDIA: "To take the fight back to the aliens, we need to be able to fight them outside of our atmosphere. To do this a new generation of fighter craft has been created. Capable of fighting with equal ability both outside and inside our atmosphere, these craft can also reach immense speeds by exiting the atmosphere and therefore avoiding air resistance altogether."
       STR_MIMIC_UFOS: "Replicate Alien Crafts"

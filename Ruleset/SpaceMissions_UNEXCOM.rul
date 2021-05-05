@@ -1,3 +1,4 @@
+# spellchecker:words GMDEFEND GMNEWMAR UBASE BOSSBATTLE MOONMOUNT LIFTERL DISEC OPER PUFOL PABDUCT UFOL
 alienDeployments:
   - type: STR_OPERATION_DEVASTATION
     startingCondition: STR_MOON_CONDITION
@@ -310,6 +311,7 @@ alienDeployments:
     alertBackground: SPACE_OPERATIONS_LAUNCH_ALERT
     despawnPenalty: 100
     duration: [72, 72]
+    customUfo: STR_SPACE_STATION
     data:
       - alienRank: 5
         lowQty: 3
@@ -820,7 +822,7 @@ extraStrings:
       STR_UN_ASTRONAUT: "Allied American Astronaut"
       STR_ALLIED_AMERICAN_ASTRONAUT_CORPSE: "Astronaut Corpse"
       STR_SPACE_STATION: "Alien Space Station"
-      STR_SPACE_STATION_BRIEFING: "We've located an alien satellite that has drifted away from supporting forces, making it isolated and vulnerable to a strike against it. Our shuttle will move into close proximity to the station allowing our soldiers to approach the station using their manouvering units. Be warned, altough the station is too far away to recieve support, the occupants of the station will detect our arrival and will oppose our assault"
+      STR_SPACE_STATION_BRIEFING: "We've located an alien satellite that has drifted away from supporting forces, making it isolated and vulnerable to a strike against it. Our shuttle will move into close proximity to the station allowing our soldiers to approach the station using their manoeuvering units. Be warned, although the station is too far away to receive support, the occupants of the station will detect our arrival and will oppose our assault"
       STR_SPACE_STATION_TITLE: "Alien Space Station Assault"
       STR_ALIEN_SPACE_STATION_SPOTTED: "Alien Space Station Spotted"
       STR_MARS_CYDONIA_LANDING: "Operation Downfall: Landing at LZ Red Bravo"

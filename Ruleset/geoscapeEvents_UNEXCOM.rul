@@ -1,3 +1,4 @@
+# spellchecker:words Stratofortress Skyhawks Thunderchiefs Leonov
 eventScripts:
   - type: STR_STORY_EVENTS_SCRIPT
     oneTimeSequentialEvents:      # sequentially generated one-time events (cannot repeat)
@@ -169,9 +170,9 @@ events:
     timer: 4000
     timerRandom: 600
 
-  - name: STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT
-    description: STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION
-    background: SUCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
+  - name: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT
+    description: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION
+    background: SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
     points: 1000
     timer: 36000
     timerRandom: 600
@@ -359,12 +360,12 @@ extraSprites:
     files:
       0: Resources/Backgrounds/Events/OVERSEER_TRACKED_EVENT_BACKGROUND.PNG
 
-  - type: SUCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
+  - type: SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/Events/SUCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND.PNG
+      0: Resources/Backgrounds/Events/SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND.PNG
 
 
   - type: CATTLE_ABDUCTION_EVENT_BACKGROUND
@@ -436,7 +437,7 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/Events/ANTARTIC_ACTIVITY_EVENT_BACKGROUND.PNG
+      0: Resources/Backgrounds/Events/ANTARCTIC_ACTIVITY_EVENT_BACKGROUND.PNG
 
 extraStrings:
    - type: en-US
@@ -481,7 +482,7 @@ extraStrings:
        STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION: "Since eliminating the Alien Infiltrator and shutting down its terrorist cell, reports of major terrorist attacks have been going down. According to intelligence reports, many terrorist organisations have gone dormant, ceasing most of their operations. The Council has therefore decided to allocate counterterrorism operations to local forces, letting us focus on the alien threat."
        STR_OVERSEER_TRACKED_EVENT: "Unknown Transmissions on Stratosphere"
        STR_OVERSEER_TRACKED_EVENT_DESCRIPTION: "Our recon satellites have detected multiple unusual alien transmissions sent to moving points high in the atmosphere. Our science staff has managed to find the origin, it's related to the 'Overseer' alien craft mentioned by alien navigators, that is used as a command vessel. We need to engage this UFO, as it is vital for the enemy war efforts. As the UFO is moving too fast to get caught by our interceptors, we need to construct a trap. If we can get our hands onto an alien encryption device, we could use it to lure the Overseer in"
-       STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT: "Sucessful Shuttle Launch"
-       STR_SUCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION: "Earlier today, we have confirmation from NASA Command that one of the first X-73 Raider Shuttle was sucessfully launched from Cape Canaveral. This new spacecraft will be our spear on the war against the invaders and more Raider Shuttles are being build to bolster Earth's space defenses. This Shuttle will remain in Low Earth Orbit, ready to deploy its detachment of Marines anywhere on the globe."
+       STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT: "Successful Shuttle Launch"
+       STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION: "Earlier today, we received confirmation from NASA Command that one of the first X-73 Raider Shuttle was successfully launched from Cape Canaveral. This new spacecraft will be our spearhead in the war against the invaders and more Raider Shuttles are being built to bolster Earth's space defenses. This Shuttle will remain in Low Earth Orbit, ready to deploy its detachment of Marines anywhere on the globe."
        STR_ANTARCTIC_ACTIVITY_EVENT: "Antarctic Activity"
-       STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION: "Argentinian and NATO warships operating in the Antartctic ocean have reported a significant increase of UFO sightings heading towards the Antarctican interior. Among them have been reported to be massive ships, rarely seen before. The aliens seem to have taken interest in something in Antartica, we should send a satellite or spyplane to investigate."
+       STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION: "Argentinian and NATO warships operating in the Antarctic ocean have reported a significant increase of UFO sightings heading towards the Antarctican interior. Among them have been reported to be massive ships, rarely seen before. The aliens seem to have taken interest in something in Antarctica, we should send a satellite or spy plane to investigate."
