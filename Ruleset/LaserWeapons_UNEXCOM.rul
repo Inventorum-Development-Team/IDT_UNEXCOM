@@ -962,8 +962,8 @@ items:
     confAuto:
       shots: 5
       name: STR_FULL_AUTO
-    accuracyAimed: 75
-    accuracySnap: 60
+    accuracyAimed: 65
+    accuracySnap: 55
     accuracyAuto: 45
     costAimed:
       time: 35
@@ -978,10 +978,10 @@ items:
     battleType: 1
     twoHanded: true
     maxRange: 80
-    aimRange: 24
-    snapRange: 17
-    autoRange: 10
-    dropoff: 2
+    aimRange: 14
+    snapRange: 10
+    autoRange: 7
+    dropoff: 3
     invWidth: 1
     invHeight: 3
 
@@ -1049,16 +1049,16 @@ items:
     damageType: 4
     confAimed:
       shots: 4
-      name: STR_PRAY_N_SPRAY
+      name: STR_CONTROL_AUTO
     confSnap:
       shots: 7
       name: STR_FULL_AUTO
     confAuto:
       shots: 10
       name: STR_PRAY_N_SPRAY
-    accuracyAimed: 54
-    accuracySnap: 45
-    accuracyAuto: 36
+    accuracyAimed: 75
+    accuracySnap: 55
+    accuracyAuto: 35
     costAimed:
       time: 31
       mana: 3
@@ -1071,11 +1071,11 @@ items:
     clipSize: -1
     battleType: 1
     maxRange: 50
-    aimRange: 12
-    snapRange: 8
+    aimRange: 22
+    snapRange: 13
     autoRange: 4
     twoHanded: false
-    dropoff: 3
+    dropoff: 2
     invWidth: 1
     invHeight: 3
 
@@ -1173,9 +1173,9 @@ items:
     clipSize: -1
     battleType: 1
     maxRange: 60
-    aimRange: 17
-    snapRange: 11
-    autoRange: 9
+    aimRange: 11
+    snapRange: 8
+    autoRange: 6
     minRange: 5
     dropoff: 2
     invWidth: 1
