@@ -397,7 +397,7 @@ alienMissions:
     points: 0
     objective: 4
     spawnUfo: STR_TROOP_LANDER # Spawned for the final retaliation run
-    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+    raceWeights: # In the case of a shoot-down, race comes from the UFO that triggered the mission.
       0:
         STR_SECTOID: 20
         STR_SNAKEMAN: 20
@@ -422,7 +422,7 @@ alienMissions:
     points: 0
     objective: 4
     spawnUfo: STR_TROOP_LANDER # Spawned for the final retaliation run
-    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+    raceWeights: # In the case of a shoot-down, race comes from the UFO that triggered the mission.
       0:
         STR_SECTOID: 20
         STR_SNAKEMAN: 20
@@ -802,7 +802,7 @@ alienMissions:
 
 
 
-  - type: STR_GURANTEED_BASE
+  - type: STR_GUARANTEED_BASE
     objective: 2
     siteType: STR_ALIEN_BASE_ASSAULT_NO_INTERCEPT
     spawnZone: 0

@@ -3,6 +3,8 @@
 # 1. Delete one loadout from each alien rank (so that there are 3, not 4 loadouts)
 # 2. Make sure that there are only vanilla items in the loadouts (i.e., no items from mods you don't have, like Alien Armoury Expanded).
 
+# spellchecker:words EXCAVTR UFOL PTURRET LABSHIP DISEC OPER SPTURRET minigun
+
 ufos:
   - type: STR_EXCAVATOR #ignoreDuplicate
     modSprite: InterceptionExcavator
@@ -472,6 +474,7 @@ extraStrings:
       STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small."
       STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors."
       STR_LAB_SHIP_UFOPEDIA: "Lab Ships are large vessels, tasked with major research and harvest operations.  Much bigger than Harvesters, they are equipped for conducting complex experiments on board.  Their crew is numerous and rather well equipped."
+  # spellchecker:disable
   - type: pl-PL
     strings:
       STR_EXCAVATOR: "Statek wydobywczy"
