@@ -53,6 +53,8 @@ ufopaedia:
   - delete: STR_PSI_LAB
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_AVENGER
+  - delete: STR_THE_MARTIAN_SOLUTION
+  - delete: STR_CYDONIA_OR_BUST
 #Fighters
   - id: STR_UNEXCOM_FIGHTERS
     type_id: 7
@@ -1598,6 +1600,71 @@ ufopaedia:
     text: STR_UNITED_WE_STAND_RESEARCH_UFOPEDIA
     listOrder: 3005
     text_width: 316
+
+  - id: STR_ALIEN_ORIGINS
+    type_id: 8
+    section: STR_UNEXCOM_REPORTS
+    requires:
+      - STR_ALIEN_ORIGINS
+    text: STR_ALIEN_ORIGINS_UFOPEDIA
+    listOrder: 3006
+  - id: STR_OLYMPUS
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: OLYMPUS_IMAGE
+    text_width: 150
+    requires:
+      - STR_OLYMPUS
+    text: STR_OLYMPUS_UFOPEDIA
+    listOrder: 3007
+  - id: STR_OLYMPUS_ORION
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: OLYMPUS_ORION_IMAGE
+    text_width: 200
+    requires:
+      - STR_OLYMPUS
+    text: STR_OLYMPUS_ORION_UFOPEDIA
+    listOrder: 3008
+  - id: STR_OLYMPUS_SHUTTLE
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: OLYMPUS_SHUTTLE_IMAGE
+    text_width: 135
+    requires:
+      - STR_OLYMPUS
+    text: STR_OLYMPUS_SHUTTLE_UFOPEDIA
+    listOrder: 3009
+
+
+  - id: STR_THE_MARTIAN_SOLUTION
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: DEVASTATION_IMAGE
+    text_width: 150
+    requires:
+      - STR_THE_MARTIAN_SOLUTION
+    text: STR_THE_MARTIAN_SOLUTION_UFOPEDIA
+    listOrder: 3010
+  - id: STR_DESTINATION_MARS
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: DESTINATION_MARS_IMAGE
+    text_width: 165
+    requires:
+      - STR_DESTINATION_MARS
+    text: STR_DESTINATION_MARS_UFOPEDIA
+    listOrder: 3011
+  - id: STR_CYDONIA_OR_BUST
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: CYDONIA_OR_BUST_IMAGE
+    text_width: 150
+    requires:
+      - STR_CYDONIA_OR_BUST
+    text: STR_CYDONIA_OR_BUST_UFOPEDIA
+    listOrder: 3012
+
   - id: STR_UNEXCOM_BLUE_HELMETS
     type_id: 7
     section: STR_UNEXCOM_REPORTS
