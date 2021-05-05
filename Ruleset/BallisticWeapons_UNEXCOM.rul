@@ -3353,7 +3353,7 @@ items:
   ###### MEDICAL AND FOOD #######
   ###############################
   - type: STR_CANNED_FOOD
-    categories: [ STR_LIGHT_EQUIPMENT ]
+    categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 500
     costSell: 1200
@@ -3414,7 +3414,7 @@ items:
     listOrder: 2129
 
   - type: STR_FLASK
-    categories: [ STR_LIGHT_EQUIPMENT ]
+    categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costSell: 2000
     weight: 4
@@ -3443,7 +3443,7 @@ items:
     listOrder: 2130
   ########################################
   - type: STR_MEDI_KIT
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     requires:
       - STR_MEDI_KIT
     size: 0.1
@@ -3468,7 +3468,7 @@ items:
 
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.5
     costBuy: 2000
     costSell: 1000
@@ -3496,7 +3496,7 @@ items:
     listOrder: 2132
 
   - type: STR_FIELD_DRESSING
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 100
     costSell: 50
@@ -3522,7 +3522,7 @@ items:
     listOrder: 2133
 
   - type: STR_MEDICAL_POUCH
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 200
     costSell: 250
