@@ -1,4 +1,7 @@
-﻿itemCategories:
+﻿# spellchecker:words DEEPTRENCH FORESTRAIL SNOWVILLAGE SNOWFOREST MOUNTSNOW MOUNTGRASS MOUNTSAND MOUNTROCK MOUNTTROP
+# spellchecker:words PLAINSSNOW PLAINSGRASS PLAINSSAND PLAINSROCK PLAINSTROP HIJACKET CHRYS GEOBORD Ointerception
+# spellchecker:words trooplander nofeed TACTICBACK LUTs
+itemCategories:
   - type: STR_TANKS
     listOrder: 1
   - type: STR_ARMORED_CARS
@@ -304,6 +307,7 @@ extraStrings:
       STR_SOVIET_SUPPORT: Warsaw Gunner
       SOVIET_SOLDIER_ARMOR: M69 Uniform
 ##########################################
+# spellchecker:disable
       STR_NORTH_PACIFIC: North Pacific
       STR_SOUTH_PACIFIC: South Pacific
       # NORTH AMERICAN CITIES
@@ -436,6 +440,7 @@ extraStrings:
       STR_COLOMBIA: COLOMBIA
       STR_POLAND: POLAND
 ###########################
+# spellchecker:enable
       MAP_VILLAGE: Village
       MAP_VILLAGE_INFESTED: Infested Village
       MAP_FARM_INFESTED: Infested Farm
