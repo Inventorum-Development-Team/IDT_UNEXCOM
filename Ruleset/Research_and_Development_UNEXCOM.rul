@@ -214,31 +214,47 @@ research:
 
   - name: STR_762_X30_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_NATO_SUPPORT_RESEARCH
+     - STR_BREN
 
   - name: STR_556_X20_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_MERCENARY_SUPPORT
+     - STR_USA_SUPPORT_RESEARCH
 
   - name: STR_LR_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_HUNTING_RIFLE
+     - STR_IMPROVED_BOMBER
 
   - name: STR_12G_X2_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+     - STR_DOUBLE_BARRELED_SHOTGUN
 
   - name: STR_SOVIET_762_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_AKM
+     - STR_USSR_SUPPORT_RESEARCH
 
   - name: STR_9MM_10X_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_MAKAROV
+     - STR_USSR_SUPPORT_RESEARCH
+     - STR_NATO_SUPPORT_RESEARCH
+
 
   - name: STR_NATO_LMG_UNLOCK
     cost: 0
-    needItem: true
+    dependencies:
+     - STR_USA_SUPPORT_RESEARCH
+     - STR_NATO_SUPPORT_RESEARCH
 
 ############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
