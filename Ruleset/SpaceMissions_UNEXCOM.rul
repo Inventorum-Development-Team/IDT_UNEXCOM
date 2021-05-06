@@ -236,8 +236,8 @@ alienDeployments:
 
   - type: STR_MARS_CYDONIA_LANDING
     data: *AlienSpaceBaseDefenders
-    width: 100
-    length: 100
+    width: 80
+    length: 80
     height: 10
     terrains:
       - IDT_MARS
@@ -489,18 +489,19 @@ mapScripts:
      - type: addBlock
        terrain: MARS_ENTRY
        size: [1,2,0]
+     - type: addUFO
+       UFOName: STR_SPACE_SHUTTLE_NPC
+       executions: 1
      - type: addBlock
        groups: 2
      - type: fillArea
 
-  - type: MARS
+  - type: MARS_CYDONIA_LANDING
     commands:
     - type: addCraft
     - type: addUFO
-      UFOName: STR_SPACE_SHUTTLE_NPC
+      UFOName: STR_MOON_STATION
       executions: 1
-    - type: addBlock
-      groups: 2
     - type: fillArea
 
 terrains:
@@ -615,6 +616,68 @@ terrains:
         width: 10
         length: 10
 
+  - name: IDT_MARS
+    enviroEffects: STR_MARS_ENVIRO
+    mapDataSets:
+      - BLANKS
+      - IDT_MARS
+    civilianTypes:
+      - STR_ALLIED_AMERICAN_ASTRONAUT
+      - STR_ALLIED_SOVIET_COSMONAUT
+    script: MARS_CYDONIA_LANDING
+    mapBlocks:
+      - name: IDT_MARS00
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MARS01
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MARS02
+        width: 10
+        length: 10
+        groups: 1
+      - name: IDT_MARS03
+        width: 10
+        length: 10
+      - name: IDT_MARS04
+        width: 10
+        length: 10
+      - name: IDT_MARS05
+        width: 10
+        length: 10
+      - name: IDT_MARS06
+        width: 10
+        length: 10
+      - name: IDT_MARS07
+        width: 10
+        length: 10
+      - name: IDT_MARS08
+        width: 10
+        length: 10
+      - name: IDT_MARS09
+        width: 10
+        length: 10
+      - name: IDT_MARS10
+        width: 10
+        length: 10
+      - name: IDT_MARS11
+        width: 20
+        length: 20
+      - name: IDT_MARS12
+        width: 20
+        length: 20
+      - name: IDT_MARS13
+        width: 10
+        length: 10
+      - name: IDT_MARS14
+        width: 10
+        length: 10
+      - name: IDT_MARS15
+        width: 10
+        length: 10
+
 #IDT - efrenespartano
   - name: MARS
     enviroEffects: STR_MARS_ENVIRO
@@ -672,67 +735,6 @@ terrains:
         - name: MARS_ENTRY_GROUND
           width: 10
           length: 20
-
-  - name: IDT_MARS
-    enviroEffects: STR_MARS_ENVIRO
-    mapDataSets:
-      - BLANKS
-      - IDT_MARS
-    civilianTypes:
-      - STR_ALLIED_AMERICAN_ASTRONAUT
-      - STR_ALLIED_SOVIET_COSMONAUT
-    mapBlocks:
-      - name: IDT_MARS00
-        width: 10
-        length: 10
-        groups: 1
-      - name: IDT_MARS01
-        width: 10
-        length: 10
-        groups: 1
-      - name: IDT_MARS02
-        width: 10
-        length: 10
-        groups: 1
-      - name: IDT_MARS03
-        width: 10
-        length: 10
-      - name: IDT_MARS04
-        width: 10
-        length: 10
-      - name: IDT_MARS05
-        width: 10
-        length: 10
-      - name: IDT_MARS06
-        width: 10
-        length: 10
-      - name: IDT_MARS07
-        width: 10
-        length: 10
-      - name: IDT_MARS08
-        width: 10
-        length: 10
-      - name: IDT_MARS09
-        width: 10
-        length: 10
-      - name: IDT_MARS10
-        width: 10
-        length: 10
-      - name: IDT_MARS11
-        width: 20
-        length: 20
-      - name: IDT_MARS12
-        width: 20
-        length: 20
-      - name: IDT_MARS13
-        width: 10
-        length: 10
-      - name: IDT_MARS14
-        width: 10
-        length: 10
-      - name: IDT_MARS15
-        width: 10
-        length: 10
 
 ufos:
   - type: STR_SPACE_SHUTTLE_NPC
