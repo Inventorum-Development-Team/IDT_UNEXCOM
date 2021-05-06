@@ -31,6 +31,8 @@ items:
     hitAnimation: 36
     power: 45
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -73,6 +75,8 @@ items:
     hitAnimation: 36
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -116,6 +120,8 @@ items:
     hitAnimation: 36
     power: 60
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_BURST
@@ -163,6 +169,8 @@ items:
     hitAnimation: 36
     power: 50
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -213,6 +221,8 @@ items:
     hitAnimation: -1
     power: 35
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -263,6 +273,8 @@ items:
     hitAnimation: 36
     power: 75
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -314,6 +326,8 @@ items:
     accuracyAimed: 75
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     costSnap:
       time: 40
       mana: 3
@@ -352,6 +366,8 @@ items:
     hitAnimation: -1
     power: 52
     damageType: 4
+    damageAlter:
+      RandomType: 6
     accuracyAuto: 65
     accuracySnap: 65
     confSnap:
@@ -412,6 +428,7 @@ items:
       mana: 10
     damageType: 2
     damageAlter:
+      RandomType: 6
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
@@ -442,10 +459,12 @@ items:
     hitAnimation: 90
     bulletSprite: 28
     power: 45
+    damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
-    damageType: 4
     accuracySnap: 80
     accuracyAimed: 90
     accuracyAuto: 75
@@ -485,6 +504,8 @@ items:
     bulletSprite: 28
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_BURST
@@ -532,6 +553,8 @@ items:
     bulletSprite: 28
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -578,6 +601,8 @@ items:
     bulletSprite: 28
     power: 52
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_BURST
@@ -624,6 +649,8 @@ items:
     bulletSprite: 28
     power: 45
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -674,6 +701,8 @@ items:
     bulletSprite: 28
     power: 80
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -718,6 +747,8 @@ items:
     bulletSprite: 28
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confSnap:
       shots: 5
       name: STR_BURST
@@ -799,8 +830,8 @@ items:
     hitAnimation: 0
     power: 80
     damageAlter:
-      IgnoreOverKill: false
       RandomType: 6
+      IgnoreOverKill: false
       IgnoreSelfDestruct: true
       ToArmor: 1.5
     damageType: 3
@@ -823,8 +854,8 @@ items:
     hitAnimation: 0
     power: 80
     damageAlter:
-      IgnoreOverKill: false
       RandomType: 6
+      IgnoreOverKill: false
       IgnoreSelfDestruct: true
       ToWound: 1.3
       RandomWound: true
@@ -849,6 +880,7 @@ items:
     hitAnimation: 0
     power: 95
     damageAlter:
+      RandomType: 6
       IgnoreOverKill: false
       ArmorEffectiveness: 0.75
       ToArmorPre: 0.3
@@ -878,6 +910,7 @@ items:
     hitAnimation: 0
     power: 130
     damageAlter:
+      RandomType: 6
       IgnoreOverKill: false
       RadiusReduction: 40
       IgnoreSelfDestruct: true
@@ -911,6 +944,8 @@ items:
     bulletSprite: 29
     power: 60
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       arcing: false
@@ -953,6 +988,8 @@ items:
     bulletSprite: 29
     power: 60
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_CONTROL_AUTO
@@ -1003,6 +1040,7 @@ items:
     power: 75
     damageType: 4
     damageAlter:
+      RandomType: 6
       ArmorEffectiveness: 0.8
     confAuto:
       shots: 2
@@ -1047,6 +1085,8 @@ items:
     bulletSprite: 29
     power: 40
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 4
       name: STR_CONTROL_AUTO
@@ -1097,6 +1137,7 @@ items:
     power: 90
     damageType: 4
     damageAlter:
+      RandomType: 6
       ArmorEffectiveness: 0.6
     confAuto:
       shots: 1
@@ -1142,6 +1183,8 @@ items:
     bulletSprite: 29
     power: 65
     damageType: 4
+    damageAlter:
+      RandomType: 6
     accuracyAimed: 70
     accuracySnap: 45
     accuracyAuto: 40
@@ -1199,6 +1242,7 @@ items:
     power: 110
     damageType: 4
     damageAlter:
+      RandomType: 6
       ArmorEffectiveness: 0.3
     twoHanded: true
     accuracyAimed: 110
