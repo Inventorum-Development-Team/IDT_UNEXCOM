@@ -32,7 +32,7 @@ crafts:
     costBuy: 80000
     costSell: 60000
     damageMax: 160
-    speedMax: 770
+    speedMax: 1070
     avoidBonus: 15
     accel: 4
     weapons: 4
@@ -315,6 +315,41 @@ crafts:
 #### TIER II ######
 ##################
 
+  - type: STR_TUNNAN_MK2
+    sprite: 947
+    fuelMax: 220
+    costSell: 160000
+    damageMax: 300
+    speedMax: 1300
+    avoidBonus: 20
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - 6
+      - [2, 5]
+#Revolver Cannon
+#Revolver Cannon
+#Rockets
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_ROCKET_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    refuelRate: 25
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 10
+    score: 400
+    listOrder: 111
   - type: STR_RAPIER
     requires:
       - STR_IMPROVED_FIGHTER
@@ -3276,6 +3311,20 @@ manufacture:
   - delete: STR_PLASMA_BEAM
 
 
+  - name: STR_TUNNAN_MK2
+    category: STR_CRAFT
+    requires:
+     - STR_IMPROVED_FIGHTER
+     - STR_ON_OUR_OWN
+    listOrder: 3300
+    space: 10
+    time: 400
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_TUNNAN: 1
+
+
   - name: STR_HIND
     category: STR_CRAFT
     requires:
@@ -3851,6 +3900,7 @@ extraSprites:
       968: Resources/Aircraft/Blackbird_base.png
 
       978: Resources/Aircraft/Space_Shuttle_base.png
+      980: Resources/Aircraft/TunnanMK2_base.png
 
 #      152: Resources/Aircraft/Odysseus_base.png
 #      153: Resources/Aircraft/Orion_base.png
@@ -3958,6 +4008,8 @@ extraSprites:
       945: Resources/Aircraft/Space_Shuttle_minimised.png
       956: Resources/Aircraft/Space_Shuttle_dogfight.png
 
+      947: Resources/Aircraft/Tunnan_minimised.png
+      958: Resources/Aircraft/Tunnan_dogfight.png
 #      203: Resources/Aircraft/Sabre_minimised.png
 
 #      206: Resources/Aircraft/Bastion_dogfight.png
@@ -4303,6 +4355,12 @@ extraSprites:
     files:
       0: Resources/Aircraft/BLACKBIRD_UFOPEDIA.png
 
+  - type: TUNNAN_MK2_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/TORNSVALA_UFOPEDIA.PNG
 ############################################
   - type: SIDEWINDER
     singleImage: true
@@ -4836,4 +4894,5 @@ extraStrings:
       STR_BLACKBIRD: "BLACKBIRD"
       STR_BLACKBIRD_UFOPEDIA: "The SR-71 Blackbird is an american high altitude stealth spy plane. Notorious for its speed, it is currently the fastest aircraft ever built. The plane was painted black so that it would be harder to spot against the night sky, which led to it gaining its nickname."
 
-#}
+      STR_TUNNAN_MK2: "TORNSVALAN"
+      STR_TUNNAN_MK2_UFOPEDIA: "The Saab J29 MK 2 is a retrofitted version of the Saab J29. Designed with the assistance of Saab engineers, The MK 2 incorporates a new engine and an alien alloy fuselage to make it more competitive against the UFOs we are facing. Swedish test-pilots nicknamed the craft 'Tornsvalan', comparing the plane to a Swift in the air."

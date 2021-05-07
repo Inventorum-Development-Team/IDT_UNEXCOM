@@ -75,7 +75,7 @@ ufopaedia:
     section: STR_XCOM_CRAFTS
     text: STR_TUNNAN_UFOPEDIA
     type_id: 1
-    listOrder: 100
+    listOrder: 99
     rect_stats:
       x: 5
       y: 125
@@ -94,7 +94,7 @@ ufopaedia:
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_PHANTOM_UFOPEDIA
-    listOrder: 101
+    listOrder: 100
     rect_stats:
       x: 5
       y: 125
@@ -115,7 +115,7 @@ ufopaedia:
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_LIGHTNING_F6_UFOPEDIA
-    listOrder: 102
+    listOrder: 101
     rect_stats:
       x: 5
       y: 125
@@ -134,7 +134,7 @@ ufopaedia:
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_STARFIGHTER_UFOPEDIA
-    listOrder: 103
+    listOrder: 102
     rect_stats:
       x: 5
       y: 125
@@ -153,7 +153,7 @@ ufopaedia:
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_DRAKEN_UFOPEDIA
-    listOrder: 104
+    listOrder: 103
     rect_stats:
       x: 5
       y: 125
@@ -174,7 +174,7 @@ ufopaedia:
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_FISHBED_UFOPEDIA
-    listOrder: 105
+    listOrder: 104
     rect_stats:
       x: 5
       y: 125
@@ -194,7 +194,7 @@ ufopaedia:
     type_id: 1
     section: STR_XCOM_CRAFTS
     text: STR_FOXBAT_UFOPEDIA
-    listOrder: 106
+    listOrder: 105
     rect_stats:
       x: 5
       y: 125
@@ -206,6 +206,26 @@ ufopaedia:
       width: 205
       height: 80
     image_id: FOXBAT_UFOPEDIA
+
+  - id: STR_TUNNAN_MK2
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_ON_OUR_OWN
+    text: STR_TUNNAN_MK2_UFOPEDIA
+    listOrder: 106
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: TUNNAN_MK2_IMAGE
 
   - id: STR_RAPIER
     type_id: 1

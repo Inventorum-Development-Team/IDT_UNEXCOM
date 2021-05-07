@@ -99,6 +99,15 @@ research:
       - STR_9MM_10X_UNLOCK
 
 
+  - name: STR_ON_OUR_OWN
+    cost: 500
+    points: 200
+    disables:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_USSR_SUPPORT_RESEARCH
+
+
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
