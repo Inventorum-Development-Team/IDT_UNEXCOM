@@ -463,7 +463,7 @@ alienMissions:
 
   - type: STR_AIR_SUPERIORITY_1
     raceWeights:
-      5:
+      0:
         STR_SECTOID: 30
         STR_SNAKEMAN: 10
         STR_MUTON: 30
@@ -484,7 +484,7 @@ alienMissions:
         timer: 5000
   - type: STR_AIR_SUPERIORITY_2
     raceWeights:
-      5:
+      0:
         STR_SECTOID: 30
         STR_SNAKEMAN: 10
         STR_MUTON: 30
@@ -513,7 +513,7 @@ alienMissions:
         timer: 5000
   - type: STR_AIR_SUPERIORITY_3
     raceWeights:
-      5:
+      0:
         STR_SECTOID: 30
         STR_SNAKEMAN: 10
         STR_MUTON: 30
@@ -538,9 +538,9 @@ alienMissions:
     points: 0
     raceWeights:
       1:
-        STR_SECTOID: 0
-        STR_SNAKEMAN: 0
-        STR_REPTOID: 0
+        STR_SECTOID: 10
+        STR_SNAKEMAN: 10
+        STR_REPTOID: 10
       5:
         STR_SECTOID: 30
         STR_SNAKEMAN: 10
@@ -562,9 +562,9 @@ alienMissions:
     points: 0
     raceWeights:
       1:
-        STR_SECTOID: 0
-        STR_SNAKEMAN: 0
-        STR_REPTOID: 0
+        STR_SECTOID: 10
+        STR_SNAKEMAN: 10
+        STR_REPTOID: 10
       5:
         STR_SECTOID: 30
         STR_SNAKEMAN: 10
