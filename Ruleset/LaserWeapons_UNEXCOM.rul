@@ -11,9 +11,55 @@ items:
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
 ###################################
+####### UN LASER WEAPONS #########
+#################################
+  - type: STR_PEACEMAKER
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    size: 0.3
+    costSell: 60000
+    weight: 6
+    bigSprite: 1999
+    floorSprite: 1999
+    handSprite: 1992
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    fireSound: 2963
+    power: 95
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75
+    accuracySnap: 95
+    accuracyAimed: 85
+    costSnap:
+      time: 35
+      mana: 3
+    costAimed:
+      time: 40
+      mana: 6
+    costAuto:
+      time: 45
+      mana: 8
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 36
+    autoRange: 25
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+###################################
 ###### USA LASER WEAPONS #########
 #################################
-
   - type: STR_M1972_LASER_PISTOL
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
@@ -1264,7 +1310,7 @@ items:
     invHeight: 3
 
   - type: STR_BATTERY
-    categories: [STR_LIGHT_EQUIPMENT]
+    categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
     size: 0.1
     costBuy: 1000
     weight: 10
@@ -1321,6 +1367,17 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 5
 
+  - name: STR_PEACEMAKER
+    requires:
+      - STR_HYBRID_LASER_PROJECT
+    space: 1
+    time: 50
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_LASER_RIFLE: 1
+      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_CRYSTAL: 10
+
 
 extraStrings:
   - type: en-US
@@ -1328,6 +1385,8 @@ extraStrings:
       STR_LASER_WEAPONS: Laser Weapons
       STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
 ######################################################################################
+      STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser Rifle"
+      STR_PEACEMAKER_UFOPEDIA: "A feat of ingenuity in desperate situations. Our eXperimental Laser-1 (XL-1) rifle is a special adaptation of alien technology. It has a damage output similar to the Alien Laser Rifle we used as the basis for building ours, although it draws more energy from our Energy Reserve than weapons built by the World Powers. Dubbed the 'Peacemaker' by our engineers, we think the name is very appropriate."
 ######################################################################################
       STR_M1972_LASER_PISTOL: M1972 Laser Pistol
       STR_M1972_LASER_PISTOL_UFOPEDIA: A laser powered handgun designed and developed by UNEXCOM and US scientists in 1972. Not only is this the first laser gun put into service, it is one of the best sidearms available to UNEXCOM forces.
@@ -1405,6 +1464,8 @@ extraSprites:
   - type: BIGOBS.PCK
     files:
 ####################
+      1999: Resources/LaserWeapons/UN/BigPeacemaker.png
+####################
       2000: Resources/LaserWeapons/USA/BigM1972LaserPistol.png
       2001: Resources/LaserWeapons/USA/BigLaserMagnum.png
       2002: Resources/LaserWeapons/USA/BigCALBR.png
@@ -1439,6 +1500,9 @@ extraSprites:
 #####################
   - type: FLOOROB.PCK
     files:
+#####################
+      1999: Resources/LaserWeapons/UN/FloorPeacemaker.png
+###################
       2000: Resources/LaserWeapons/USA/FloorM1972LaserPistol.png
       2001: Resources/LaserWeapons/USA/FloorLaserMagnum.png
       2002: Resources/LaserWeapons/USA/FloorCALBR.png
@@ -1476,6 +1540,8 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+####################
+      1992: Resources/LaserWeapons/UN/HandPeacemaker.png
       2000: Resources/LaserWeapons/USA/HandM1972LaserPistol.png
       2008: Resources/LaserWeapons/USA/HandLaserMagnum.png
       2016: Resources/LaserWeapons/USA/HandCALBR.png

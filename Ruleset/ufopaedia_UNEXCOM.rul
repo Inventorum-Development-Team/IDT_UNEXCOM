@@ -1351,6 +1351,13 @@ ufopaedia:
     requires:
       - STR_LASER_WEAPONS
     text: STR_LASER_WEAPONS_UFOPEDIA
+    listOrder: 2099
+  - id: STR_HYBRID_LASER_PROJECT
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HYBRID_LASER_PROJECT
+    text: STR_HYBRID_LASER_PROJECT_UFOPEDIA
     listOrder: 2100
 ####################################
   - id: STR_USA_LASER_RESEARCH
@@ -2402,13 +2409,21 @@ ufopaedia:
     text: STR_AKM_BAYONETED_UFOPEDIA
     listOrder: 4409
 
+  - id: STR_PEACEMAKER
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HYBRID_LASER_PROJECT
+    text: STR_PEACEMAKER_UFOPEDIA
+    listOrder: 4410
+
   - id: STR_CALBR
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USA_LASER_RIFLES
     text: STR_CALBR_UFOPEDIA
-    listOrder: 4410
+    listOrder: 4411
 
   - id: STR_L4_ASSAULT_LASER
     type_id: 4
@@ -2416,7 +2431,7 @@ ufopaedia:
     requires:
       - STR_NATO_LASER_RIFLES
     text: STR_L4_ASSAULT_LASER_UFOPEDIA
-    listOrder: 4411
+    listOrder: 4412
 
   - id: STR_FN_FLA_LASER_BATTLE_RIFLE
     type_id: 4
@@ -2424,7 +2439,7 @@ ufopaedia:
     requires:
       - STR_NATO_LASER_RIFLES
     text: STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA
-    listOrder: 4412
+    listOrder: 4413
 
   - id: STR_ALK72_LASER_RIFLE
     type_id: 4
@@ -2432,14 +2447,14 @@ ufopaedia:
     requires:
       - STR_USSR_LASER_RIFLES
     text: STR_ALK72_LASER_RIFLE_UFOPEDIA
-    listOrder: 4413
+    listOrder: 4414
   - id: STR_KHARITONOV_LASER_BATTLE_RIFLE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USSR_LASER_RIFLES
     text: STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA
-    listOrder: 4414
+    listOrder: 4415
 
   - id: STR_FLECHETTE_RIFLE
     type_id: 4
@@ -2447,7 +2462,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_RIFLES
     text: STR_FLECHETTE_RIFLE_UFOPEDIA
-    listOrder: 4415
+    listOrder: 4416
 
   - id: STR_HUMAN_PLASMA_RIFLE
     type_id: 4
@@ -2455,7 +2470,7 @@ ufopaedia:
     requires:
       - STR_REMAN_HUMAN_PLASMA_RIFLE
     text: STR_HUMAN_PLASMA_RIFLE_UFOPEDIA
-    listOrder: 4416
+    listOrder: 4417
 
   - id: STR_LMG_REPORT
     type_id: 7

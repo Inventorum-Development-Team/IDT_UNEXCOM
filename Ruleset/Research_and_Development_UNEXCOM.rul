@@ -608,12 +608,15 @@ research:
     dependencies:
       - STR_ALLOY_MANUFACTURING
       - STR_ALIEN_LASERS
+    disables:
+      - STR_HYBRID_LASER_PROJECT
 
   - name: STR_LASER_CANNON
     cost: 300
     points: 10
     dependencies:
       - STR_LASER_WEAPONS
+      - STR_HYBRID_LASER_PROJECT
   - name: STR_LASER_ARRAY
     listOrder: 510
     cost: 300
@@ -626,6 +629,7 @@ research:
     points: 10
     dependencies:
       - STR_LASER_WEAPONS
+      - STR_HYBRID_LASER_PROJECT
 
   - name: STR_LASER_DEFENSE
     cost: 510
@@ -662,6 +666,23 @@ research:
     needItem: true
     getOneFree:
       - STR_ALIEN_LASERS
+##################################
+  - name: STR_HYBRID_LASER_PROJECT
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+      - STR_ALIEN_LASERS
+      - STR_ON_OUR_OWN
+    disables:
+      - STR_LASER_WEAPONS
+      - STR_USA_LASER_RESEARCH
+      - STR_NATO_LASER_RESEARCH
+      - STR_USSR_LASER_RESEARCH
+    unlocks:
+      - STR_LASER_CANNON
+      - STR_CASABA_SPIKE
+
 #########################################
 ####### AMERICAN LASER RESEARCH ########
 #######################################
@@ -1777,6 +1798,8 @@ extraStrings:
 ##########################################
       STR_LASER_WEAPONS: "Directed Energy Weapons Theory"
       STR_LASER_WEAPONS_UFOPEDIA: "For more than 10 years, American and Soviet technicians have worked on creating an efficient system to shoot down intercontinental ballistic missiles (ICBMs) without using interceptor missiles and also secretly combat a potential extraterrestrial threat.  The first examples were tested in 1962, in the form of the heavy, US-made China Lake Laser Gun. Each faction has focused on a particular type of laser. USA uses Helium-Neon lasers. NATO uses Alexandrite lasers and Soviet lasers use Garnet/Nd-YAG lasers. Our research notes can help world powers improve their designs, which will be provided to us upon request."
+      STR_HYBRID_LASER_PROJECT: "Hybrid Laser Weapon Project"
+      STR_HYBRID_LASER_PROJECT_UFOPEDIA: "During the 1960s, a joint US and USSR secret project developed laser weaponry based on samples of unknown technology collected between 1961 and 1963. This is not publicly available information, but our contacts in the governments of both powers have made this known to us. It is not possible for us to acquire laser weapons - due to our neutrality policies - but using the notes of our R&D staff, as well as American and Soviet researchers, we have designed an adaptation of the laser rifle employed by the aliens. It requires a lot of energy, but it is also more powerful than the equivalent of the other nations."
       STR_USA_LASER_RESEARCH: USA Laser Research
       STR_USA_LASER_RESEARCH_UFOPEDIA: American laser weapons are balanced in terms of power and mobility. By employing Helium-Neon power cells, the laser beam released is consistent and powerful. To avoid overheating the weapon, liquid nitrogen is used and the crystals employed are calibrated to release the energy in the form of pulses, allowing for higher rates of fire without compromising the firing system.  The structure of the weapon is solid and does not require much maintenance.
       STR_USA_LASER_HANDGUNS: USA Laser Handguns
