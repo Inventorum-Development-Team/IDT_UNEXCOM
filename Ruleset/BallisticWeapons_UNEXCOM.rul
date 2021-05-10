@@ -145,7 +145,7 @@ items:
   - type: STR_9MM_PISTOL_X10
     refNode: *STR_9MM_PISTOL_AMMO
     requiresBuy:
-     - STR_9MM_10X_UNLOCK
+      - STR_9MM_10X_UNLOCK
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
     size: 0.05
     costBuy: 100
@@ -277,7 +277,7 @@ items:
 
   - type: STR_5_56MM_NATO_RIFLE_X20
     requiresBuy:
-     - STR_556_X20_UNLOCK
+      - STR_556_X20_UNLOCK
     refNode: *STR_5_56MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -379,7 +379,7 @@ items:
     listOrder: 201180
   - type: STR_7_62MM_NATO_RIFLE_X30
     requiresBuy:
-     - STR_762_X30_UNLOCK
+      - STR_762_X30_UNLOCK
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -405,7 +405,7 @@ items:
 
   - type: STR_7_62MM_NATO_LMG_X50
     requiresBuy:
-     - STR_NATO_LMG_UNLOCK
+      - STR_NATO_LMG_UNLOCK
     refNode: *STR_7_62MM_NATO_LMG_AMMO
     categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
     size: 0.1
@@ -431,7 +431,7 @@ items:
     listOrder: 201020
   - type: STR_7_62MM_NATO_LMG_X100
     requiresBuy:
-     - STR_NATO_LMG_UNLOCK
+      - STR_NATO_LMG_UNLOCK
     refNode: *STR_7_62MM_NATO_LMG_AMMO
     categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
     size: 0.1
@@ -459,7 +459,7 @@ items:
   - type: STR_7_62MM_SOVIET_RIFLE_X10
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     requiresBuy:
-     - STR_SKS
+      - STR_SKS
     categories:
       [
         STR_FIREARMS,
@@ -489,7 +489,7 @@ items:
     listOrder: 201210
   - type: STR_7_62MM_SOVIET_RIFLE_X30
     requiresBuy:
-     - STR_SOVIET_762_UNLOCK
+      - STR_SOVIET_762_UNLOCK
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -514,7 +514,7 @@ items:
     listOrder: 201330
   - type: STR_7_62MM_SOVIET_RIFLE_X40
     requiresBuy:
-     - STR_SOVIET_762_UNLOCK
+      - STR_SOVIET_762_UNLOCK
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
     size: 0.1
@@ -589,7 +589,7 @@ items:
 
   - type: STR_12GAUGE_BUCKSHOT_X2
     requiresBuy:
-     - STR_12G_X2_UNLOCK
+      - STR_12G_X2_UNLOCK
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
     size: 0.1
     costBuy: 100
@@ -617,7 +617,7 @@ items:
     listOrder: 200110
   - type: STR_12GAUGE_SLUG_X2
     requiresBuy:
-     - STR_12G_X2_UNLOCK
+      - STR_12G_X2_UNLOCK
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
     size: 0.1
     costBuy: 100
@@ -751,7 +751,7 @@ items:
 
   - type: STR_40MM_FRAG
     requiresBuy:
-     - STR_USA_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 500
@@ -777,7 +777,7 @@ items:
     listOrder: 200630
   - type: STR_40MM_INCENDIARY
     requiresBuy:
-     - STR_USA_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 600
@@ -799,7 +799,7 @@ items:
     listOrder: 200640
   - type: STR_40MM_SMOKE
     requiresBuy:
-     - STR_USA_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 300
@@ -819,7 +819,7 @@ items:
     listOrder: 200660
   - type: STR_40MM_NON_LETHAL
     requiresBuy:
-     - STR_USA_SUPPORT_RESEARCH
+      - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
     size: 0.1
     costBuy: 1500
@@ -863,7 +863,7 @@ items:
 
   - type: STR_22_LONG_RIFLE_X14
     requiresBuy:
-     - STR_LR_UNLOCK
+      - STR_LR_UNLOCK
     categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
     size: 0.05
     costBuy: 600
@@ -4313,6 +4313,244 @@ items:
     attraction: 8
     listOrder: 200750
 
+  ####################################
+  ######## CUSTOM UN WEAPONS ########
+  ##################################
+  - type: STR_STONER_RIFLE
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_UNEXCOM_TECH,
+        STR_RIFLES
+      ]
+    size: 0.2
+    requiresBuy:
+      - STR_ON_OUR_OWN
+    costBuy: 4500
+    costSell: 3750
+    weight: 8
+    fireSound: 170
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 65
+    accuracySnap: 70
+    tuAuto: 38
+    tuSnap: 28
+    snapRange: 32
+    aimRange: 45
+    autoRange: 25
+    bulletSprite: 2
+    bulletSpeed: 20
+    bigSprite: 1032
+    floorSprite: 1032
+    handSprite: 1032
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 201151
+
+  - type: STR_STONER_CARBINE
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_UNEXCOM_TECH,
+        STR_CARBINES
+      ]
+    size: 0.2
+    costSell: 2000
+    weight: 6
+    bigSprite: 1040
+    floorSprite: 1040
+    handSprite: 1040
+    bulletSprite: 2
+    fireSound: 155
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 50
+    accuracySnap: 80
+    accuracyAimed: 85
+    bulletSpeed: 20
+    tuAuto: 32
+    tuSnap: 24
+    tuAimed: 48
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    aimRange: 25
+    attraction: 8
+    listOrder: 201252
+
+  - type: STR_STONER_AUTOMATIC_RIFLE
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_UNEXCOM_TECH,
+        STR_LMGS
+      ]
+    size: 0.4
+    costSell: 5000
+    weight: 13
+    bigSprite: 1048
+    floorSprite: 1048
+    handSprite: 1048
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 171
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_SUPPRESSION
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 95
+    accuracyAuto: 80
+    tuSnap: 20
+    tuAuto: 45
+    tuLoad: 30
+    snapRange: 32
+    autoRange: 32
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201171
+
+  - type: STR_STONER_COMMANDO
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_UNEXCOM_TECH,
+        STR_LMGS
+      ]
+    size: 0.3
+    costSell: 9000
+    weight: 10
+    bigSprite: 1056
+    floorSprite: 1056
+    handSprite: 1056
+    bulletSprite: 2
+    bulletSpeed: 18
+    fireSound: 151
+    reloadSound: [ 194, 195, 196 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 85
+    accuracyAuto: 60
+    tuSnap: 25
+    tuAuto: 40
+    tuLoad: 20
+    snapRange: 18
+    autoRange: 18
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201001
+
+  - type: STR_STONER_SNIPER
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_UNEXCOM_TECH,
+        STR_SNIPER_RIFLES
+      ]
+    size: 0.2
+    costSell: 4750
+    weight: 9
+    bigSprite: 1064
+    floorSprite: 1064
+    handSprite: 1064
+    bulletSprite: 2
+    fireSound: 140
+    bulletSpeed: 20
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 85
+    accuracyAuto: 150
+    tuSnap: 29
+    tuAimed: 45
+    tuAuto: 70
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    attraction: 8
+    listOrder: 201121
+
   #######################################
   ########## EXPLOSIVES ################
   #####################################
@@ -4565,6 +4803,12 @@ extraSprites:
       888: Resources/BallisticWeapons/Explosives/BigFlare.png
       896: Resources/BallisticWeapons/Explosives/BigFlarelit.png
 
+      1032: Resources/BallisticWeapons/UN/BigStoner63Rifle.png
+      1040: Resources/BallisticWeapons/UN/BigStoner63Carbine.png
+      1048: Resources/BallisticWeapons/UN/BigStoner63AutomaticRifle.png
+      1056: Resources/BallisticWeapons/UN/BigStoner63Commando.png
+      1064: Resources/BallisticWeapons/UN/BigStoner63Sniper.png
+
   - type: FLOOROB.PCK
     files:
       97: Resources/BallisticWeapons/Ammo/FloorKS23Sharpnel25Ammo_x4.png
@@ -4690,6 +4934,12 @@ extraSprites:
       888: Resources/BallisticWeapons/Explosives/FloorFlare.png
       896: Resources/BallisticWeapons/Explosives/FloorFlarelit.png
 
+      1032: Resources/BallisticWeapons/UN/FloorStoner63Rifle.png
+      1040: Resources/BallisticWeapons/UN/FloorStoner63Carbine.png
+      1048: Resources/BallisticWeapons/UN/FloorStoner63AutomaticRifle.png
+      1056: Resources/BallisticWeapons/UN/FloorStoner63Commando.png
+      1064: Resources/BallisticWeapons/UN/FloorStoner63Sniper.png
+
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -4809,6 +5059,12 @@ extraSprites:
       920: Resources/BallisticWeapons/CustomWeapons/HandEnforcer.png
       928: Resources/BallisticWeapons/CustomWeapons/Hand50CalMagnum.png
       948: Resources/BallisticWeapons/USA/HandCarbine.png
+
+      1032: Resources/BallisticWeapons/UN/HandStoner63Rifle.png
+      1040: Resources/BallisticWeapons/UN/HandStoner63Carbine.png
+      1048: Resources/BallisticWeapons/UN/HandStoner63AutomaticRifle.png
+      1056: Resources/BallisticWeapons/UN/HandStoner63Commando.png
+      1064: Resources/BallisticWeapons/UN/HandStoner63Sniper.png
 
   - type: SMOKE.PCK
     height: 80
@@ -5878,3 +6134,35 @@ extraStrings:
       STR_ELECTRO_FLARE_UFOPEDIA: "This compact device produces a bright flare light
         when it is lit. This will highlight enemy units in the vicinity of the
         flare during night time missions."
+      #############################
+      ####### UN WEAPONS ##########
+      #############################
+      STR_STONER_RIFLE: "Stoner Rifle"
+      STR_STONER_RIFLE_UFOPEDIA: "Modified version of the modular rifle created by
+        Eugene Stoner, it fires {ALT}7.62x51mm NATO{ALT} caliber ammunition as
+        it is the most accessible to our arsenal. A bit heavy for an assault
+        rifle, but undoubtedly effective. All the versions of this weapon system
+        employed by us {ALT}fire the same cartridge.{ALT}"
+      STR_STONER_CARBINE: "Stoner Carbine"
+      STR_STONER_CARBINE_UFOPEDIA: "Variant focused on the mobility of the soldier who
+        carries it, this carbine has a reduced barrel size and the stock
+        removed. The disadvantage is a {ALT}reduction in accuracy and effective
+        range{ALT}, but it is compensated by the {ALT}weight decrease.{ALT}"
+      STR_STONER_AUTOMATIC_RIFLE: "Stoner Automatic Rifle"
+      STR_STONER_AUTOMATIC_RIFLE_UFOPEDIA: "Variant of the Stoner rifle focused on
+        automatic and accurate fire. The heavy barrel and bipod provide
+        {ALT}unprecedented accuracy{ALT}, as well as an accuracy bonus when
+        firing from a {ALT}kneeling position{ALT}. Its major disadvantage is its
+        limited ammunition capacity, which is quickly depleted by sustained
+        fire."
+      STR_STONER_COMMANDO: "Stoner Commando LMG"
+      STR_STONER_COMMANDO_UFOPEDIA: "This variant is similar to the one used by the US
+        Navy SEALs, designed to be used as a squad automatic weapon and provide
+        cover fire. It is quite {ALT}accurate{ALT} for an LMG and the
+        {ALT}belt-fed capability{ALT} is a great advantage."
+      STR_STONER_SNIPER: "Stoner DMR"
+      STR_STONER_SNIPER_UFOPEDIA: "Variant designed for {ALT}long range combat{ALT},
+        with a long barrel and a precision sight with x6 magnification. As an
+        additional feature, a modified stock was added (to facilitate
+        ergonomics) and it was configured to fire in {ALT}semi-automatic mode
+        only.{ALT}"
