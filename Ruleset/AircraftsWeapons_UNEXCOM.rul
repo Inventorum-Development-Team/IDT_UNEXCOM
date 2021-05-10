@@ -955,15 +955,17 @@ crafts:
     speedMax: 1050
     avoidBonus: -10
     accel: 4
-    weapons: 3
+    weapons: 4
     weaponTypes:
       - 4
       - [3, 4]
+      - [3, 5]
       - [3, 5]
     weaponStrings:
       - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
       - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
       - STR_CRAFT_HEAVY_AUX_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
     soldiers: 2
     vehicles: 0
     pilots: 2
@@ -1029,7 +1031,7 @@ crafts:
       - STR_ADVANCED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 907
-    fuelMax: 192
+    fuelMax: 500
     damageMax: 520
     speedMax: 2600
     avoidBonus: 5
