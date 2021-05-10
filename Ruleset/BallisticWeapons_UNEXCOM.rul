@@ -3468,7 +3468,7 @@ items:
 
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.5
     costBuy: 2000
     costSell: 1000
@@ -3496,7 +3496,7 @@ items:
     listOrder: 2132
 
   - type: STR_FIELD_DRESSING
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     costBuy: 100
     costSell: 50
@@ -3522,7 +3522,7 @@ items:
     listOrder: 2133
 
   - type: STR_MEDICAL_POUCH
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     costBuy: 200
     costSell: 250
@@ -3545,6 +3545,84 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_USE_MEDICAL_POUCH
     listOrder: 2134
+
+  - type: STR_DUCT_TAPE
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.1
+    costBuy: 100
+    costSell: 50
+    weight: 1
+    bigSprite: 202
+    floorSprite: 202
+    handSprite: 956
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    heal: 3
+    woundRecovery: 4
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 7
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_TAPE_IT
+    listOrder: 2135
+
+  - type: STR_DUCT_GUN
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.1
+    costBuy: 100
+    costSell: 50
+    weight: 3
+    bigSprite: 203
+    floorSprite: 203
+    handSprite: 964
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    heal: 5
+    woundRecovery: 8
+    healthRecovery: 1
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 7
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_TAPE_IT
+    listOrder: 2135
+
+  - type: STR_BIO_FOAM
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.1
+    weight: 5
+    costSell: 35000
+    bigSprite: 204
+    floorSprite: 204
+    handSprite: 972
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    painKiller: 7
+    heal: 8
+    woundRecovery: 10
+    healthRecovery: 2
+    stunRecovery: 5
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 7
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_APPLY_FOAM
+    listOrder: 2135
 
   - type: STR_ELECTRO_FLARE
     bigSprite: 888
@@ -4792,6 +4870,9 @@ extraSprites:
 
       200: Resources/BallisticWeapons/Explosives/BigSmokeGrenade.png
       201: Resources/BallisticWeapons/Explosives/BigFlashbangGrenade.png
+      202: Resources/BallisticWeapons/Medical&Food/BigDuctTape.png
+      203: Resources/BallisticWeapons/Medical&Food/BigDuctGun.png
+      204: Resources/BallisticWeapons/Medical&Food/BigBioFoam.png
 
       210: Resources/BallisticWeapons/CustomWeapons/BigWeaponToolKit.png
       211: Resources/BallisticWeapons/CustomWeapons/BigM16A1Scoped.png
@@ -4923,6 +5004,9 @@ extraSprites:
 
       200: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
       201: Resources/BallisticWeapons/Explosives/FloorFlashbangGrenade.png
+      202: Resources/BallisticWeapons/Medical&Food/FloorDuctTape.png
+      203: Resources/BallisticWeapons/Medical&Food/FloorDuctGun.png
+      204: Resources/BallisticWeapons/Medical&Food/FloorBioFoam.png
 
       210: Resources/BallisticWeapons/CustomWeapons/FloorWeaponToolKit.png
       211: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Scoped.png
@@ -5059,6 +5143,9 @@ extraSprites:
       920: Resources/BallisticWeapons/CustomWeapons/HandEnforcer.png
       928: Resources/BallisticWeapons/CustomWeapons/Hand50CalMagnum.png
       948: Resources/BallisticWeapons/USA/HandCarbine.png
+      956: Resources/BallisticWeapons/Medical&Food/BigDuctTape.png
+      964: Resources/BallisticWeapons/Medical&Food/BigDuctGun.png
+      972: Resources/BallisticWeapons/Medical&Food/BigBioFoam.png
 
       1032: Resources/BallisticWeapons/UN/HandStoner63Rifle.png
       1040: Resources/BallisticWeapons/UN/HandStoner63Carbine.png
@@ -5107,6 +5194,16 @@ manufacture:
     cost: 28000
     requiredItems:
       STR_ALIEN_ALLOYS: 4
+
+  - name: STR_BIO_FOAM
+    category: STR_EQUIPMENT
+    requires:
+      - STR_BIO_FOAM
+    space: 4
+    time: 420
+    cost: 18000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
 
   - name: STR_12GAUGE_ELERIUM_SHARDS_X8
     category: STR_AMMUNITION
@@ -6163,10 +6260,18 @@ extraStrings:
         appropriate medical facilities. It can be used by the user himself,
         although it does not contain a large amount of medication and when
         consumed the pouch is discarded."
+      STR_DUCT_TAPE: "Duct Tape"
+      STR_DUCT_TAPE_UFOPEDIA: "There is nothing on earth that cannot be repaired with duct tape. This tape can be used as an improvised bandage to plug an artery or a ruptured spacesuit. It can be used on the most extreme conditions."
+      STR_DUCT_GUN: "Tape Gun Dispenser"
+      STR_DUCT_GUN_UFOPEDIA: "By employing a reinforced tape and a special automatic dispenser, the already-not-so-improvised ability to plug ruptured arteries and space suits of basic duct tape can be improved. The ergonomic handle allows it to be used with heavy gloves without major problems."
+      STR_BIO_FOAM: "Bio-Foam"
+      STR_BIO_FOAM_UFOPEDIA: "Alien-alloyed based nano-foam, better known as 'Bio-Foam' is a chemical compound using alien materials as a base. Its main function is to quickly pack wounds, which contains as a side effect the mitigation of pain (although at the moment of applying the foam it is extremely painful), as well as a slight increase of the patient's health. One of the few medical instruments that can be used in outer space. "
       STR_ACTIVATE_MEDIKIT: "Activate Medikit"
       STR_DEPLOY_MEDICAL_BAG: "Deploy Medical Bag"
       STR_USE_FIELD_DRESSING: "Use Field Dressing"
       STR_USE_MEDICAL_POUCH: "Use Medical Pouch"
+      STR_TAPE_IT: "Tape it up!"
+      STR_APPLY_FOAM: "Fill it with Foam!"
       ########################################
       ############ EXPLOSIVES ################
       ########################################

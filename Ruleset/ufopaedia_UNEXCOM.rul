@@ -3331,6 +3331,28 @@ ufopaedia:
     text: STR_MEDI_KIT_UFOPEDIA
     listOrder: 6204
 
+  - id: STR_DUCT_TAPE
+    type_id: 4
+    section: STR_EQUIPMENT
+    text: STR_DUCT_TAPE_UFOPEDIA
+    listOrder: 6205
+
+  - id: STR_DUCT_GUN
+    requires:
+      - STR_DUCT_GUN
+    type_id: 4
+    section: STR_EQUIPMENT
+    text: STR_DUCT_GUN_UFOPEDIA
+    listOrder: 6206
+
+  - id: STR_BIO_FOAM
+    requires:
+      - STR_BIO_FOAM
+    type_id: 4
+    section: STR_EQUIPMENT
+    text: STR_BIO_FOAM_UFOPEDIA
+    listOrder: 6207
+
 
   - id: STR_FOOD_REPORT
     type_id: 7

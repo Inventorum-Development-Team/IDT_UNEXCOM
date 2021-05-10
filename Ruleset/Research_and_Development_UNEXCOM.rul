@@ -22,6 +22,19 @@ research:
     cost: 210
     points: 20
 
+  - name: STR_DUCT_GUN
+    dependencies:
+      - STR_OLYMPUS
+    cost: 210
+    points: 20
+
+  - name: STR_BIO_FOAM
+    dependencies:
+      - STR_MEDI_KIT
+      - STR_OLYMPUS
+    cost: 250
+    points: 20
+
   - name: STR_WEAPON_MODIFICATION
     cost: 50
     points: 50
