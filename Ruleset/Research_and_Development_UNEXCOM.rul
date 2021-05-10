@@ -106,7 +106,54 @@ research:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_USA_SUPPORT_RESEARCH
       - STR_USSR_SUPPORT_RESEARCH
+    unlocks:
+      - STR_UN_CUSTOM_WEAPONS
 
+  - name: STR_UN_CUSTOM_WEAPONS
+    cost: 500
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+
+  - name: STR_UN_WEAPON_SUPPLY_1
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+    spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_1
+  - name: STR_UN_WEAPON_SUPPLY_2
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+      - STR_UN_WEAPON_SUPPLY_2
+    spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_2
+  - name: STR_UN_WEAPON_SUPPLY_3
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+      - STR_UN_WEAPON_SUPPLY_3
+    spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_3
+
+  - name: STR_USA_WEAPON_SUPPLY
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+    spawnedEvent: STR_US_SUPPLY_EVENT
+  - name: STR_NATO_WEAPON_SUPPLY
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+    spawnedEvent: STR_NATO_SUPPLY_EVENT
+  - name: STR_USSR_WEAPON_SUPPLY
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_ON_OUR_OWN
+    spawnedEvent: STR_USSR_SUPPLY_EVENT
 
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
@@ -1521,6 +1568,19 @@ extraSprites:
     files:
       0: Resources/UFOpedia/MERCENARY_RESEARCH_IMAGE.PNG
 
+  - type: UN_CUSTOM_WEAPONS_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UN_CUSTOM_WEAPONS_IMAGE.PNG
+  - type: UN_FLAG_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/UN_FLAG_IMAGE.PNG
+
   - type: ALLOY_BALLISTIC_WEAPONS_IMAGE
     singleImage: true
     width: 320
@@ -1637,7 +1697,14 @@ extraStrings:
       STR_SPECIAL_FORCES_SUPPORT_UFOPEDIA: "Members of selected units from Security Council countries have volunteered to train our soldiers and support them in combat, if necessary. We are still negotiating the recruitment of these elite soldiers, but for now the support provided by volunteers will be more than sufficient. They have shared their modifications to their personal weapons with the R&D team in the Workshop, we can customize our weapons based on their blueprints."
       STR_MERCENARY_SUPPORT: "Mercenary Support"
       STR_MERCENARY_SUPPORT_UFOPEDIA: "Through non-official means, we have managed to contact soldiers who are members of a private military company, who have agreed to provide us with their services as military advisors, even participating in combat, if necessary. At the moment, we cannot hire them, although some volunteers will arrive at our base in a couple of days. They have provided us with several blueprints to modify weapons, which we can start producing on right now."
-
+#########################################
+      STR_ON_OUR_OWN: "On Our Own"
+      STR_ON_OUR_OWN_UFOPEDIA: "We have declined the offer of entirely siding along the World Powers, in favor of neutrality. While this may pose an initial difficulty, we feel it is the option that would least affect the delicate geopolitical balance by not favoring any one faction. Instead, we have the support of the rest of the UN to equip our troops. This does not mean that we are antagonizing anyone, as we will still work side by side with all UN member countries. We can ask up to three times for a supply airdrop from the UN and one from each World Power."
+      STR_UN_CUSTOM_WEAPONS: "UN Modular Weapons"
+      STR_UN_CUSTOM_WEAPONS_UFOPEDIA: "Our Diplomatic Liaison has secured a contact with a private defense company, which has offered to supply us with the novel (but sadly ignored) modular weapons system created by Eugene Stoner. We will be able to purchase the basic rifle pattern, as well as blueprints to adapt the weapon to our needs. It will undoubtedly enhance our flexibility in combat."
+      STR_UN_WEAPON_SUPPLY_1: "UN Supply Airdrop I"
+      STR_UN_WEAPON_SUPPLY_2: "UN Supply Airdrop II"
+      STR_UN_WEAPON_SUPPLY_3: "UN Supply Airdrop III"
 #########################################
       STR_USA_INITIAL_APPROACH_RESEARCH: "USA Initial Diplomacy"
       STR_USA_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "One of our diplomatic liaisons in the United States has secured a meeting with senior military officials from various branches. This meeting has sought to obtain material support to equip our troops, yet they have refused to do so by unofficial means. But they have assured us of their support if we openly ask for American help, but only if we seek it exclusively from them. At the end of the interview, we were gifted with a Remington Combat Shotgun, designed to be equipped in elite troops. "
@@ -1647,10 +1714,13 @@ extraStrings:
       STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Our diplomatic contacts have managed to get close to certain important figures in the USSR. We cannot reveal their names, but they have offered to assist us in soliciting support from the Warsaw Pact and the Soviet Union in general, if we so wish.  As a sign of good faith, they have given us an AKMSU carbine, for the exclusive use of the VDV airborne forces, a rare piece to find. However, we have been informed that Soviet politicians will not tolerate a rapprochement with NATO or the United States, so perhaps we should be careful not to lose possible open Soviet help."
 
       STR_USA_SUPPORT_RESEARCH: "USA Support"
+      STR_USA_WEAPON_SUPPLY: "US Supply Airdrop"
       STR_USA_SUPPORT_UFOPEDIA: "Members of our diplomatic relations team have approached the U.S. Ambassador to the UN, George H.W. Bush to request American military support and equipment to arm our troops. It has taken some time, but he has agreed to provide us with the most modern equipment in the American arsenal, such as the M1911 Colt 45, M16/M203, XM117 Carbine, Remington Combat Shotgun, XM21, M79 Thumper, M72 LAW and M60. He also offered to equip our interception squadrons with USAF aircraft, but Ambassador Bush had to withdraw before continuing negotiations. We must contact him again if we want his support in the future."
       STR_USSR_SUPPORT_RESEARCH: "USSR Support"
+      STR_NATO_WEAPON_SUPPLY: "NATO Supply Airdrop"
       STR_USSR_SUPPORT_UFOPEDIA: "We have spoken with the Soviet representative on the UN Security Council, Yakov Malik, to ask him for support in obtaining weapons and extra resources for our operation. After several hours of dialogue, he has agreed to provide us with first-class equipment available for the best of the Red Army. The following list of weapons is available at the Shop: Stechkin APS, AKM with bayonet, AKMSU, Skorpion vz. 68, KS-23 Heavy Shotgun, RPG7 and RPKS. To request air support from the Soviet Air Forces, our diplomatic team must continue to negotiate with Representative Malik."
       STR_NATO_SUPPORT_RESEARCH: "NATO Support"
+      STR_USSR_WEAPON_SUPPLY: "USSR Supply Airdrop"
       STR_NATO_SUPPORT_UFOPEDIA: "Our diplomatic team has begun talks with Joseph Luns, Secretary General of NATO. After several talks over several days, he has agreed to our request to provide us with weapons and equipment from the various nations that make up the North Atlantic Treaty. His only condition was to support the NATO countries in case of any alien aggression. We have at our disposal the most recent models of Beretta 92FS, FN FAL with shotgun, SG 510-4 Carbine, H&K MP5, H&K PSG1, Carl Gustav M2 and FN MAG. However, if we wish to obtain aircraft and weapons, we must return to dialogue with Secretary Luns once again."
 ##########################################
       STR_USA_AERONAUTIC_SUPPORT_RESEARCH: "USA Aeronautic Support"

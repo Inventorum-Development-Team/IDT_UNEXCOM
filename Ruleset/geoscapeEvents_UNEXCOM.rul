@@ -285,6 +285,288 @@ events:
 ###########################
 ###### MISC EVENTS #######
 #########################
+  - name: STR_UN_WEAPON_SUPPLY_EVENT_1
+    description: STR_UN_SUPPLY_EVENT_DESCRIPTION
+    background: UN_SUPPLY_EVENT_BACKGROUND
+    points: 100
+    everyItemList:
+      - STR_M60
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_FN_FAL
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_BERETTA_M12
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_RPG
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    randomItemList:
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+      - STR_M60
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_FN_FAL
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_BERETTA_M12
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_RPG
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_AKM
+      - STR_GRENADE
+      - STR_M72_LAW
+      - STR_M72_LAW
+      - STR_M72_LAW
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_UN_WEAPON_SUPPLY_EVENT_2
+    description: STR_UN_SUPPLY_EVENT_DESCRIPTION
+    background: UN_SUPPLY_EVENT_BACKGROUND
+    points: 100
+    everyItemList:
+      - STR_BREN
+      - STR_7_62MM_NATO_RIFLE_X30
+      - STR_7_62MM_NATO_RIFLE_X30
+      - STR_XM21
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_POLICE_SHOTGUN
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_OWEN_SMG
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_GRENADE
+      - STR_GRENADE
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    randomItemList:
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+      - STR_M60
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_FN_FAL
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_BERETTA_M12
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_RPG
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_SMOKE_GRENADE
+      - STR_SMOKE_GRENADE
+      - STR_M72_LAW
+      - STR_M72_LAW
+      - STR_M72_LAW
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_UN_WEAPON_SUPPLY_EVENT_3
+    description: STR_UN_SUPPLY_EVENT_DESCRIPTION
+    background: UN_SUPPLY_EVENT_BACKGROUND
+    points: 100
+    everyItemList:
+      - STR_M3_GREASEGUN
+      - STR_45_PISTOL_X30
+      - STR_45_PISTOL_X30
+      - STR_SKORPION
+      - STR_9MM_PISTOL_X20
+      - STR_9MM_PISTOL_X20
+      - STR_POLICE_SHOTGUN
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_AKM
+      - STR_7_62MM_SOVIET_RIFLE_X30
+      - STR_7_62MM_SOVIET_RIFLE_X30
+      - STR_M16A1
+      - STR_5_56MM_NATO_RIFLE_X20
+      - STR_5_56MM_NATO_RIFLE_X20
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    randomItemList:
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+      - STR_M60
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_FN_FAL
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_BERETTA_M12
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_RPG
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_SMOKE_GRENADE
+      - STR_SMOKE_GRENADE
+      - STR_M72_LAW
+      - STR_M72_LAW
+      - STR_M72_LAW
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_US_SUPPLY_EVENT
+    description: STR_US_SUPPLY_EVENT_DESCRIPTION
+    background: US_SUPPLY_EVENT_BACKGROUND
+    points: 100
+    everyItemList:
+      - STR_M60
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_XM21
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_M16A1
+      - STR_5_56MM_NATO_RIFLE_X20
+      - STR_5_56MM_NATO_RIFLE_X20
+      - STR_5_56MM_NATO_RIFLE_X20
+      - STR_5_56MM_NATO_RIFLE_X20
+      - STR_M3_GREASEGUN
+      - STR_45_PISTOL_X30
+      - STR_45_PISTOL_X30
+      - STR_M1911_COLT45
+      - STR_45_PISTOL_X7
+      - STR_45_PISTOL_X7
+      - STR_M72_LAW
+      - STR_M72_LAW
+      - STR_M72_LAW
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    randomItemList:
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_NATO_SUPPLY_EVENT
+    description: STR_NATO_SUPPLY_EVENT_DESCRIPTION
+    background: NATO_SUPPLY_EVENT_BACKGROUND
+    points: 100
+    everyItemList:
+      - STR_FN_MAG
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_7_62MM_NATO_LMG_X100
+      - STR_FN_FAL
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_7_62MM_NATO_RIFLE_X20
+      - STR_PSG1
+      - STR_7_62MM_NATO_RIFLE_X5
+      - STR_7_62MM_NATO_RIFLE_X5
+      - STR_7_62MM_NATO_RIFLE_X5
+      - STR_7_62MM_NATO_RIFLE_X5
+      - STR_BERETTA_92FS
+      - STR_9MM_PISTOL_X10
+      - STR_9MM_PISTOL_X10
+      - STR_MP5
+      - STR_9MM_PISTOL_X30
+      - STR_9MM_PISTOL_X30
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    randomItemList:
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_USSR_SUPPLY_EVENT
+    description: STR_USSR_SUPPLY_EVENT_DESCRIPTION
+    background: USSR_SUPPLY_EVENT_BACKGROUND
+    points: 100
+    everyItemList:
+      - STR_AKM
+      - STR_7_62MM_SOVIET_RIFLE_X30
+      - STR_7_62MM_SOVIET_RIFLE_X30
+      - STR_7_62MM_SOVIET_RIFLE_X30
+      - STR_MAKAROV
+      - STR_9MM_PISTOL_X10
+      - STR_9MM_PISTOL_X10
+      - STR_SKORPION
+      - STR_9MM_PISTOL_X20
+      - STR_9MM_PISTOL_X20
+      - STR_KS23_SHOTGUN
+      - STR_KS23_BARRIKADE_X4
+      - STR_KS23_SHRAPNEL-25_X4
+      - STR_KS23_BARRIKADE_X4
+      - STR_KS23_SHRAPNEL-25_X4
+      - STR_9MM_PISTOL_X10
+      - STR_RPKS
+      - STR_7_62MM_SOVIET_RIFLE_X75
+      - STR_7_62MM_SOVIET_RIFLE_X75
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    randomItemList:
+      - STR_MEDICAL_POUCH
+      - STR_MEDICAL_BAG
+      - STR_CANNED_FOOD
+      - STR_CANNED_FOOD
+      - STR_MEDICAL_BAG
+    timer: 600
+    timerRandom: 600
+
 
   - name: STR_SPECIAL_FORCES_ARRIVAL_EVENT
     description: STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION
@@ -367,6 +649,30 @@ extraSprites:
     files:
       0: Resources/Backgrounds/Events/SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND.PNG
 
+  - type: UN_SUPPLY_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/UN_SUPPLY_EVENT_BACKGROUND.PNG
+  - type: US_SUPPLY_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/US_SUPPLY_EVENT_BACKGROUND.PNG
+  - type: NATO_SUPPLY_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/NATO_SUPPLY_EVENT_BACKGROUND.PNG
+  - type: USSR_SUPPLY_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/USSR_SUPPLY_EVENT_BACKGROUND.PNG
 
   - type: CATTLE_ABDUCTION_EVENT_BACKGROUND
     singleImage: true
@@ -486,3 +792,13 @@ extraStrings:
        STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION: "Earlier today, we received confirmation from NASA Command that one of the first X-73 Raider Shuttle was successfully launched from Cape Canaveral. This new spacecraft will be our spearhead in the war against the invaders and more Raider Shuttles are being built to bolster Earth's space defenses. This Shuttle will remain in Low Earth Orbit, ready to deploy its detachment of Marines anywhere on the globe."
        STR_ANTARCTIC_ACTIVITY_EVENT: "Antarctic Activity"
        STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION: "Argentinian and NATO warships operating in the Antarctic ocean have reported a significant increase of UFO sightings heading towards the Antarctican interior. Among them have been reported to be massive ships, rarely seen before. The aliens seem to have taken interest in something in Antarctica, we should send a satellite or spy plane to investigate."
+       STR_UN_WEAPON_SUPPLY_EVENT_1: "UN Supply Airdrop I"
+       STR_UN_WEAPON_SUPPLY_EVENT_2: "UN Supply Airdrop II"
+       STR_UN_WEAPON_SUPPLY_EVENT_3: "UN Supply Airdrop III"
+       STR_UN_SUPPLY_EVENT_DESCRIPTION: "An allied aircraft has approached our base and dropped weapons, ammunition and supplies. Our equipment has been contributed by the national forces of UN countries and will enable us to continue the fight against the invader."
+       STR_US_SUPPLY_EVENT: "US Supply Airdrop"
+       STR_US_SUPPLY_EVENT_DESCRIPTION: "Coordinating with the USAF, a C-5 Galaxy has dropped crates of supplies, weapons and assorted ammunition from high altitude. Our air spotters coordinated our soldiers to pick them up and we brought them to the base warehouses. However, the local radar detected strange signals approaching the Galaxy and had to withdraw before making another launch. "
+       STR_NATO_SUPPLY_EVENT: "NATO Supply Airdrop"
+       STR_NATO_SUPPLY_EVENT_DESCRIPTION: "A C-130 Hercules from the air force of a NATO country approached our base and dropped weapons and ammunition. Our troops picked them up and brought them to the barracks. This equipment will allow us to stay in the fight, although due to unexplained radio interference near our base, it is unlikely that this airdrop will be repeated. "
+       STR_USSR_SUPPLY_EVENT: "USSR Supply Airdrop"
+       STR_USSR_SUPPLY_EVENT_DESCRIPTION: "A Soviet air force plane has risked bringing weapons and supplies as close to our base as possible. It has failed to get close to the runway, but managed to drop its cargo (which has been picked up by our troops). The reason for this was that the escorts of the transport detected strange radar signatures and decided to withdraw. This equipment will help us to reinforce our troops."
