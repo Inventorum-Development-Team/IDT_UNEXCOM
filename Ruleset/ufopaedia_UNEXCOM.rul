@@ -1853,6 +1853,22 @@ ufopaedia:
     text_width: 316
     listOrder: 3214
 
+  - id: STR_ON_OUR_OWN
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: UN_FLAG_IMAGE
+    requires:
+      - STR_ON_OUR_OWN
+    text: STR_ON_OUR_OWN_UFOPEDIA
+    listOrder: 3299
+  - id: STR_UN_CUSTOM_WEAPONS
+    type_id: 7
+    section: STR_UNEXCOM_REPORTS
+    image_id: UN_CUSTOM_WEAPONS_IMAGE
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    text: STR_UN_CUSTOM_WEAPONS_UFOPEDIA
+    listOrder: 3299
   - id: STR_SPECIAL_FORCES_SUPPORT
     type_id: 8
     section: STR_UNEXCOM_REPORTS

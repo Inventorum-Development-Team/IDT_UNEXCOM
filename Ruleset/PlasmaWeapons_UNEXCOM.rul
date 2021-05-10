@@ -1,5 +1,4 @@
-﻿# spellchecker:words PDMR PSMG PLMG
-# spellchecker:words Hyperwave autofire
+﻿
 items:
 # Weapons
 # Changed existing Alien Only Weapons
@@ -1050,20 +1049,8 @@ extraStrings:
       STR_REMAN_HUMAN_PLASMA_RIFLE: Convert Alien Plasma Rifle
       STR_REMAN_HUMAN_PLASMA_PISTOL: Convert Alien Plasma Pistol
       STR_REMAN_SMALL_LAUNCHER: Convert Alien Small Launcher
-      # Armor
-      STR_POWER_SUIT_UC: POWER ARMOR
-      STR_POWER_SUIT: Power Armor
-      STR_FLYING_SUIT_UC: FLYING POWER ARMOR
-      STR_FLYING_SUIT: Flying Power Armor
-      STR_SCOUT_POWER_ARMOR_UC: SCOUT POWER ARMOR
-      STR_SCOUT_POWER_ARMOR: Scout Power Armor
-      STR_SCOUT_POWER_ARMOR_UFOPEDIA: This item combines Power Suit technology and Personal Armor frame to create armor focusing on increasing a soldier's mobility. However, this focus on speed and a need to maximize wearer's field of vision limits the suit's protective capabilities.
-      STR_SCOUT_FLYING_ARMOR_UC: SCOUT FLYING ARMOR
-      STR_SCOUT_FLYING_ARMOR: Scout Flying Armor
-      STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
-      # Hyperwave
+       # Hyperwave
       # Craft Weapons
-  # spellchecker:disable
   - type: fr
     strings:
     # Alien Weapons
@@ -1120,8 +1107,6 @@ extraStrings:
       STR_SCOUT_FLYING_ARMOR_UC: ARMURE FAUCON
       STR_SCOUT_FLYING_ARMOR: Armure Faucon
       STR_SCOUT_FLYING_ARMOR_UFOPEDIA: Cette armure offre la meilleure mobilité possible en plus de permettre de se déplacer rapidement lors d'un vol. Mais en dépit de nos progrès, le blindage est moins résistant que le modèle de base.
-
-# spellchecker:enable
 extraSprites:
   - type: BIGOBS.PCK
     files:

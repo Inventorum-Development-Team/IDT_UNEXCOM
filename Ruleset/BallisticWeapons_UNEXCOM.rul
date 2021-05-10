@@ -5144,6 +5144,62 @@ manufacture:
   ####################################################
   ##### SPECIAL FORCES/MERC WEAPON CONVERSION #######
   ##################################################
+  - name: STR_STONER_AUTOMATIC_RIFLE_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_AUTOMATIC_RIFLE: 1
+    listOrder: 1101
+
+  - name: STR_STONER_CARBINE_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_CARBINE: 1
+    listOrder: 1101
+
+  - name: STR_STONER_COMMANDO_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_COMMANDO: 1
+    listOrder: 1101
+
+  - name: STR_STONER_SNIPER_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_SNIPER: 1
+    listOrder: 1101
+
   - name: STR_5_56MM_NATO_X30_MAG_CREATION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -6166,3 +6222,7 @@ extraStrings:
         additional feature, a modified stock was added (to facilitate
         ergonomics) and it was configured to fire in {ALT}semi-automatic mode
         only.{ALT}"
+      STR_STONER_CARBINE_CONVERSION: "Stoner Rifle to Carbine Conversion"
+      STR_STONER_AUTOMATIC_RIFLE_CONVERSION: "Stoner Rifle to Auto-Rifle Conversion"
+      STR_STONER_COMMANDO_CONVERSION: "Stoner Rifle to Commando Conversion"
+      STR_STONER_SNIPER_CONVERSION: "Stoner Rifle to DMR Conversion"
