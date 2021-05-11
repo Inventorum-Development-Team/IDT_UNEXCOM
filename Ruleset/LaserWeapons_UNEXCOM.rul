@@ -1,4 +1,5 @@
-﻿#Close quarters: defined by default on 1 tile
+﻿# spellchecker:words Nexter Bassenheim Mironov Artemiy Grechko powercell powercells lasersmg laserdmr laserlmg
+#Close quarters: defined by default on 1 tile
 #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
@@ -10,9 +11,55 @@ items:
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
 ###################################
+####### UN LASER WEAPONS #########
+#################################
+  - type: STR_PEACEMAKER
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    size: 0.3
+    costSell: 60000
+    weight: 6
+    bigSprite: 1999
+    floorSprite: 1999
+    handSprite: 1992
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    fireSound: 2963
+    power: 95
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75
+    accuracySnap: 95
+    accuracyAimed: 85
+    costSnap:
+      time: 35
+      mana: 3
+    costAimed:
+      time: 40
+      mana: 6
+    costAuto:
+      time: 45
+      mana: 8
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 36
+    autoRange: 25
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+###################################
 ###### USA LASER WEAPONS #########
 #################################
-
   - type: STR_M1972_LASER_PISTOL
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
@@ -30,6 +77,8 @@ items:
     hitAnimation: 36
     power: 45
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -72,6 +121,8 @@ items:
     hitAnimation: 36
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -115,6 +166,8 @@ items:
     hitAnimation: 36
     power: 60
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_BURST
@@ -162,6 +215,8 @@ items:
     hitAnimation: 36
     power: 50
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -212,6 +267,8 @@ items:
     hitAnimation: -1
     power: 35
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -239,6 +296,7 @@ items:
     aimRange: 9
     snapRange: 13
     autoRange: 11
+    sprayWaypoints: 2
     twoHanded: true
     dropoff: 1
     invWidth: 1
@@ -261,6 +319,8 @@ items:
     hitAnimation: 36
     power: 75
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -312,6 +372,8 @@ items:
     accuracyAimed: 75
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     costSnap:
       time: 40
       mana: 3
@@ -350,6 +412,8 @@ items:
     hitAnimation: -1
     power: 52
     damageType: 4
+    damageAlter:
+      RandomType: 6
     accuracyAuto: 65
     accuracySnap: 65
     confSnap:
@@ -372,6 +436,7 @@ items:
     autoRange: 30
     minRange: 3
     dropoff: 1
+    sprayWaypoints: 2
     invWidth: 2
     invHeight: 3
 
@@ -386,7 +451,7 @@ items:
     bigSprite: 2008
     floorSprite: 2008
     handSprite: 2064
-    bulletSprite: 23
+    bulletSprite: 30
     fireSound: 2967
 #    compatibleAmmo:
 #      - STR_FLAMETHROWER_CLIP
@@ -409,6 +474,7 @@ items:
       mana: 10
     damageType: 2
     damageAlter:
+      RandomType: 6
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
@@ -439,10 +505,12 @@ items:
     hitAnimation: 90
     bulletSprite: 28
     power: 45
+    damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
-    damageType: 4
     accuracySnap: 80
     accuracyAimed: 90
     accuracyAuto: 75
@@ -482,6 +550,8 @@ items:
     bulletSprite: 28
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_BURST
@@ -529,6 +599,8 @@ items:
     bulletSprite: 28
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -575,6 +647,8 @@ items:
     bulletSprite: 28
     power: 52
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_BURST
@@ -621,6 +695,8 @@ items:
     bulletSprite: 28
     power: 45
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -650,10 +726,11 @@ items:
     autoRange: 14
     twoHanded: true
     dropoff: 1
+    sprayWaypoints: 2
     invWidth: 1
     invHeight: 3
 
-  - type: STR_CHURCHILL_MARSKMAN_LASER_RIFLE
+  - type: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
@@ -670,6 +747,8 @@ items:
     bulletSprite: 28
     power: 80
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -714,6 +793,8 @@ items:
     bulletSprite: 28
     power: 55
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confSnap:
       shots: 5
       name: STR_BURST
@@ -736,10 +817,11 @@ items:
     autoRange: 40
     minRange: 3
     dropoff: 1
+    sprayWaypoints: 2
     invWidth: 1
     invHeight: 3
 
-  - type: STR_M72_AUTOMATIC_RECOILESS_RIFLE
+  - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
@@ -794,8 +876,8 @@ items:
     hitAnimation: 0
     power: 80
     damageAlter:
-      IgnoreOverKill: false
       RandomType: 6
+      IgnoreOverKill: false
       IgnoreSelfDestruct: true
       ToArmor: 1.5
     damageType: 3
@@ -818,8 +900,8 @@ items:
     hitAnimation: 0
     power: 80
     damageAlter:
-      IgnoreOverKill: false
       RandomType: 6
+      IgnoreOverKill: false
       IgnoreSelfDestruct: true
       ToWound: 1.3
       RandomWound: true
@@ -844,6 +926,7 @@ items:
     hitAnimation: 0
     power: 95
     damageAlter:
+      RandomType: 6
       IgnoreOverKill: false
       ArmorEffectiveness: 0.75
       ToArmorPre: 0.3
@@ -873,6 +956,7 @@ items:
     hitAnimation: 0
     power: 130
     damageAlter:
+      RandomType: 6
       IgnoreOverKill: false
       RadiusReduction: 40
       IgnoreSelfDestruct: true
@@ -906,6 +990,8 @@ items:
     bulletSprite: 29
     power: 60
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAuto:
       shots: 3
       arcing: false
@@ -948,6 +1034,8 @@ items:
     bulletSprite: 29
     power: 60
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 3
       name: STR_CONTROL_AUTO
@@ -957,8 +1045,8 @@ items:
     confAuto:
       shots: 5
       name: STR_FULL_AUTO
-    accuracyAimed: 75
-    accuracySnap: 60
+    accuracyAimed: 65
+    accuracySnap: 55
     accuracyAuto: 45
     costAimed:
       time: 35
@@ -973,10 +1061,10 @@ items:
     battleType: 1
     twoHanded: true
     maxRange: 80
-    aimRange: 24
-    snapRange: 17
-    autoRange: 10
-    dropoff: 2
+    aimRange: 14
+    snapRange: 10
+    autoRange: 7
+    dropoff: 3
     invWidth: 1
     invHeight: 3
 
@@ -998,6 +1086,7 @@ items:
     power: 75
     damageType: 4
     damageAlter:
+      RandomType: 6
       ArmorEffectiveness: 0.8
     confAuto:
       shots: 2
@@ -1013,7 +1102,7 @@ items:
       mana: 2
     costAuto:
       time: 45
-      mana: 3
+      mana: 4
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -1042,18 +1131,20 @@ items:
     bulletSprite: 29
     power: 40
     damageType: 4
+    damageAlter:
+      RandomType: 6
     confAimed:
       shots: 4
-      name: STR_PRAY_N_SPRAY
+      name: STR_CONTROL_AUTO
     confSnap:
       shots: 7
       name: STR_FULL_AUTO
     confAuto:
       shots: 10
       name: STR_PRAY_N_SPRAY
-    accuracyAimed: 54
-    accuracySnap: 45
-    accuracyAuto: 36
+    accuracyAimed: 75
+    accuracySnap: 55
+    accuracyAuto: 35
     costAimed:
       time: 31
       mana: 3
@@ -1066,11 +1157,11 @@ items:
     clipSize: -1
     battleType: 1
     maxRange: 50
-    aimRange: 12
-    snapRange: 8
+    aimRange: 22
+    snapRange: 13
     autoRange: 4
     twoHanded: false
-    dropoff: 3
+    dropoff: 2
     invWidth: 1
     invHeight: 3
 
@@ -1092,6 +1183,7 @@ items:
     power: 90
     damageType: 4
     damageAlter:
+      RandomType: 6
       ArmorEffectiveness: 0.6
     confAuto:
       shots: 1
@@ -1137,6 +1229,8 @@ items:
     bulletSprite: 29
     power: 65
     damageType: 4
+    damageAlter:
+      RandomType: 6
     accuracyAimed: 70
     accuracySnap: 45
     accuracyAuto: 40
@@ -1168,9 +1262,9 @@ items:
     clipSize: -1
     battleType: 1
     maxRange: 60
-    aimRange: 17
-    snapRange: 11
-    autoRange: 9
+    aimRange: 11
+    snapRange: 8
+    autoRange: 6
     minRange: 5
     dropoff: 2
     invWidth: 1
@@ -1194,6 +1288,7 @@ items:
     power: 110
     damageType: 4
     damageAlter:
+      RandomType: 6
       ArmorEffectiveness: 0.3
     twoHanded: true
     accuracyAimed: 110
@@ -1215,7 +1310,7 @@ items:
     invHeight: 3
 
   - type: STR_BATTERY
-    categories: [STR_LIGHT_EQUIPMENT]
+    categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
     size: 0.1
     costBuy: 1000
     weight: 10
@@ -1272,6 +1367,17 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 5
 
+  - name: STR_PEACEMAKER
+    requires:
+      - STR_HYBRID_LASER_PROJECT
+    space: 1
+    time: 50
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_LASER_RIFLE: 1
+      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_CRYSTAL: 5
+
 
 extraStrings:
   - type: en-US
@@ -1279,6 +1385,8 @@ extraStrings:
       STR_LASER_WEAPONS: Laser Weapons
       STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
 ######################################################################################
+      STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser Rifle"
+      STR_PEACEMAKER_UFOPEDIA: "A feat of ingenuity in desperate situations. Our experimental Laser-1 (XL-1) rifle is a special adaptation of alien technology. It has a damage output similar to the Alien Laser Rifle we used as the basis for building ours, although it draws more energy from our Energy Reserve than weapons built by the World Powers. Dubbed the 'Peacemaker' by our engineers, we think the name is very appropriate."
 ######################################################################################
       STR_M1972_LASER_PISTOL: M1972 Laser Pistol
       STR_M1972_LASER_PISTOL_UFOPEDIA: A laser powered handgun designed and developed by UNEXCOM and US scientists in 1972. Not only is this the first laser gun put into service, it is one of the best sidearms available to UNEXCOM forces.
@@ -1304,17 +1412,17 @@ extraStrings:
       STR_FN_FLA_LASER_BATTLE_RIFLE: "FN FLA 'Leopold' Battle Rifle"
       STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA: The FN FLA is the laser derivative of the famous FN FAL. Although the design and size are similar, the FLA is much more powerful and does not require reloading. This laser was made to provide a weapon for soldiers who desired higher accuracy and power at the cost of rate of fire.
       STR_FN_FLA_LASER_CARBINE: "FN FLA 'Leopold' Carbine"
-      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a colapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
+      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a collapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
       STR_L4_ASSAULT_LASER: "L-44 'Angevin' Assault Laser"
       STR_L4_ASSAULT_LASER_UFOPEDIA: The L-44 Assault Rifle is an experimental West German Assault Laser submitted to the NATO Advanced Laser Weapon Project by Heckler and Koch. At first mocked for its strange design and uncomfortable grip, the L-4 would eventually impress even the greatest skeptics with its high accuracy and light weight. Eventually UNEXCOM officials approved the design for combat.
       STR_MAT72_SUBMACHINE_LASER: "MAT-72 'Charlemagne' Submachine Laser"
       STR_MAT72_SUBMACHINE_LASER_UFOPEDIA: French laser submachine gun developed and supplied by the French weapons manufacturer, Nexter Systems, uses smaller heat sinks than a typical laser rifle, so power input is reduced to avoid overheating. Still, this submachine gun is great for counter terror operations and close combat.
-      STR_CHURCHILL_MARSKMAN_LASER_RIFLE: "'Churchill' Marksman Laser Rifle"
-      STR_CHURCHILL_MARSKMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
+      STR_CHURCHILL_MARKSMAN_LASER_RIFLE: "'Churchill' Marksman Laser Rifle"
+      STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
       STR_ML73_LASER_MACHINE_GUN: "ML-73 'Bassenheim' Laser MG"
       STR_ML73_LASER_MACHINE_GUN_UFOPEDIA: A West German Laser Machine Gun designed by Heckler & Koch. By late 1972 new techniques and technology allowed for larger and more efficient weapons. By converting some of the thermal energy made by firing the gun back into electrical energy, the ML-73 is able to fire large laser beams at a steady rate.
-      STR_M72_AUTOMATIC_RECOILESS_RIFLE: "M72 'Teddy' Auto Recoiless Rifle"
-      STR_M72_AUTOMATIC_RECOILESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
+      STR_M72_AUTOMATIC_RECOILLESS_RIFLE: "M72 'Teddy' Auto Recoilless Rifle"
+      STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
       STR_M72_ARR_HEAT_MAG: M72 ARR HEAT Rack (x6)
       STR_M72_ARR_HE_MAG: M72 ARR HE Rack (x6)
       STR_M72_ARR_SMOKE_MAG: M72 ARR Smoke Rack (x6)
@@ -1324,19 +1432,19 @@ extraStrings:
       STR_X6_SHOT: x6 Auto Shot
 ########################
       STR_P72_COMPACT_LASER: P-72 Compact Laser
-      STR_P72_COMPACT_LASER_UFOPEDIA: The P-72, was the first successful Soviet application of laser weapon technology. Small and powerful, the P-72 makes for a good sidearm, but lags behind in accuracy.The iconic white and silver color scheme, which began with this gun, would become the standard for the new generation of Soviet Weaponry.
+      STR_P72_COMPACT_LASER_UFOPEDIA: The P-72 was the first successful Soviet application of laser weapons technology. Small and powerful, the P-72 makes for a good sidearm, but lags behind in accuracy. The iconic white and silver color scheme, which began with this gun, would become the standard for the new generation of Soviet Weaponry.
       STR_ALK72_LASER_RIFLE: ALK-72 Laser Rifle
-      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The heavy assault weapon was able to quickly prove it's worth in the battle against the aliens, being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
+      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one of the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The heavy assault weapon was able to quickly prove its worth in the battle against the aliens, being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
       STR_KHARITONOV_LASER_BATTLE_RIFLE: Kharitonov Laser Battle Rifle
-      STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA: UNEXCOM officers expressed the need for a weapon that bridges the gap between the ALK-72 and the Mironov Sniper Rifle, and the Kharitonov is what the engineers came up with. Capable of delivering a powerful beam over medium to long distances without sacrificing power or closer combat abilities. Named after the lead designer, Markov Kharitonov.
+      STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA: UNEXCOM officers expressed the need for a weapon that bridges the gap between the ALK-72 and the Mironov Sniper Rifle, and the Kharitonov is what the engineers came up with. This weapon is capable of delivering a powerful beam over medium to long distances without sacrificing power or closer combat abilities. Named after the lead designer, Markov Kharitonov.
       STR_ALP_SUBMACHINE_LASER: ALP Submachine Laser
-      STR_ALP_SUBMACHINE_LASER_UFOPEDIA: This iconic Laser submachine gun was designed by famed Russian laser scientist, Michael Artemiy, and was personally approved by Soviet Minister of Defense, Andrei Grechko. Its balance in design, favoring no aspect over another, makes it one of the most popular weapons among UNEXCOM soldiers.
+      STR_ALP_SUBMACHINE_LASER_UFOPEDIA: This iconic Laser submachine gun was designed by famed Russian laser scientist, Michael Artemiy, and was personally approved by the Soviet Minister of Defense, Andrei Grechko. Its balance in design, favoring no one aspect over any other, makes it one of the most versatile weapons among UNEXCOM soldiers.
       STR_MIRINOV_LASER_SNIPER: Mirinov Laser Sniper
-      STR_MIRINOV_LASER_SNIPER_UFOPEDIA: Laser Sniper weapon from the minds of the Soviet Red Army. Early laser technology suffered in accuracy, due to weaker optics and high power output. After advancements in focusing optics and toning down the power output, Ukrainian General Peter Mironov was able to design an accurate long range rifle, although it suffers somewhat in damage output
+      STR_MIRINOV_LASER_SNIPER_UFOPEDIA: Laser Sniper weapon from the minds of the Soviet Red Army. Early laser technology suffered in accuracy, due to weaker optics and high power output. After advancements in focusing optics and toning down the power output, Ukrainian General Peter Mironov was able to design an accurate long-range rifle, although it suffers somewhat in damage output.
       STR_AN_MACHINE_LASER: AN Machine Laser
       STR_AN_MACHINE_LASER_UFOPEDIA: A Heavy Soviet machine gun developed in cooperation with the Red Army in 1972. It can reliably deliver a lot of damage in a short amount of time, but is heavier than most machine guns.
       STR_AFINA_ANTITANK_LASER: AFINA Anti-Tank Laser
-      STR_AFINA_ANTITANK_LASER_UFOPEDIA: A anti tank laser put into service late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can destroy heavy armor with 2 direct hits and penetrate almost anything except UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
+      STR_AFINA_ANTITANK_LASER_UFOPEDIA: An anti-tank laser put into service in late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can penetrate some of the heaviest armor, short of UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
       STR_MANA: "POWER RESERVE"
       STR_NOT_ENOUGH_MANA: "Not Enough Power"
       STR_MANA_POOL: "POWER RESERVE"
@@ -1345,16 +1453,18 @@ extraStrings:
       STR_MANA_NORMALIZED: "NORMALIZED POWER"
       STR_COST_MANA: "power"
       STR_BATTERY: "Battery"
-      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove neccessary on longer missions. The battery is automatically recharged when returned to the base"
+      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove necessary on longer missions. The battery is automatically recharged when returned to the base"
       STR_ELERIUM_BATTERY: "Elerium Battery"
       STR_ELERIUM_BATTERY_UFOPAEDIA: "This battery is extremely similar to the power cells of alien fusion weaponry, granting it twice the capacity of our regular batteries while being the same weight"
       STR_POWER_RESERVES: "Power Reserves"
-      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves neccessary."
+      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves necessary."
       STR_USE_BATTERY: "Use Battery"
 
 extraSprites:
   - type: BIGOBS.PCK
     files:
+####################
+      1999: Resources/LaserWeapons/UN/BigPeacemaker.png
 ####################
       2000: Resources/LaserWeapons/USA/BigM1972LaserPistol.png
       2001: Resources/LaserWeapons/USA/BigLaserMagnum.png
@@ -1390,6 +1500,9 @@ extraSprites:
 #####################
   - type: FLOOROB.PCK
     files:
+#####################
+      1999: Resources/LaserWeapons/UN/FloorPeacemaker.png
+###################
       2000: Resources/LaserWeapons/USA/FloorM1972LaserPistol.png
       2001: Resources/LaserWeapons/USA/FloorLaserMagnum.png
       2002: Resources/LaserWeapons/USA/FloorCALBR.png
@@ -1427,6 +1540,8 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+####################
+      1992: Resources/LaserWeapons/UN/HandPeacemaker.png
       2000: Resources/LaserWeapons/USA/HandM1972LaserPistol.png
       2008: Resources/LaserWeapons/USA/HandLaserMagnum.png
       2016: Resources/LaserWeapons/USA/HandCALBR.png
@@ -1470,7 +1585,7 @@ extraSprites:
       945: Resources/BulletSprites/WideYellowLaser_Bullet.png # 27
       980: Resources/BulletSprites/WideBlueLaser_Bullet.png # 28
       1015: Resources/BulletSprites/WideRedLaser_Bullet.png # 29
-      805: Resources/BulletSprites/FlameProjectile.png # 23
+      1050: Resources/BulletSprites/FlameProjectile.png # 30
 
 extraSounds:
   - type: BATTLE.CAT

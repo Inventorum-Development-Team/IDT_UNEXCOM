@@ -1,4 +1,5 @@
-
+# spellchecker:words MERCF MERCM INVM INVF ANTIGRAV
+# spellchecker:words jetpack
 soldiers:
   - delete: STR_SOLDIER
   - type: STR_SOLDIER
@@ -128,7 +129,7 @@ soldiers:
       firing: 75
       throwing: 70
       strength: 50
-      psiStrength: 100
+      psiStrength: 75
       psiSkill: 24
       melee: 90
     statCaps:
@@ -140,7 +141,7 @@ soldiers:
       firing: 100
       throwing: 70
       strength: 70
-      psiStrength: 100
+      psiStrength: 75
       psiSkill: 100
       melee: 90
     armor: STR_MERCENARY_UNIFORM_UC
@@ -281,7 +282,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    recover: false
+    recover: true
 
   - type: STR_DELTA_ARMOR_UC
     name: STR_DELTA_ARMOR_UC
@@ -295,7 +296,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 50
-    recover: false
+    recover: true
 
   - type: STR_RIOT_ARMOR_UC
     name: STR_RIOT_ARMOR_UC
@@ -309,7 +310,78 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 50
+    recover: true
+
+  - type: STR_CORPSE_ARMOR
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 28
+    floorSprite: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: true
+
+  - type: STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 512
+    floorSprite: 512
+    invWidth: 2
+    invHeight: 3
+    armor: 30
     recover: false
+
+  - type: STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 515
+    floorSprite: 515
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 513
+    floorSprite: 513
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 516
+    floorSprite: 516
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+# Power Armor
+
+  - type: STR_CORPSE_MARAUDER
+    name: STR_CORPSE
+    weight: 26
+    bigSprite: 517
+    floorSprite: 517
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
+
+  - type: STR_CORPSE_PATHFINDER
+    name: STR_CORPSE
+    weight: 26
+    bigSprite: 518
+    floorSprite: 518
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
 
 # Armor
   - type: STR_PERSONAL_ARMOR
@@ -326,7 +398,36 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 40
-    recover: false
+    recover: true
+
+
+  - type: STR_SCOUT_POWER_ARMOR
+    name: STR_SCOUT_POWER_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_SCOUT_POWER_ARMOR
+    name: STR_CORPSE
+    weight: 22
+    bigSprite: 903
+    floorSprite: 904
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+
+  - type: STR_SCOUT_FLYING_ARMOR
+    name: STR_SCOUT_FLYING_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_SCOUT_FLYING_ARMOR
+    name: STR_CORPSE
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
 
 armors:
   - type: STR_NONE_UC
@@ -493,6 +594,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_COMBAT_ARMOR
     storeItem: STR_COMBAT_ARMOR_UC
+    corpseGeo: STR_CORPSE_COMBAT_ARMOR
     loftempsSet: [ 3 ]
     weight: 10
     frontArmor: 28
@@ -530,6 +632,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_DELTA_ARMOR
     storeItem: STR_DELTA_ARMOR_UC
+    corpseGeo: STR_CORPSE_DELTA_ARMOR
     personalLight: 7
     weight: 15
     stats:
@@ -570,6 +673,7 @@ armors:
     spriteInv: ARMOR_RIOT_INVENTORY
     corpseBattle:
       - STR_CORPSE_RIOT_ARMOR
+    corpseGeo: STR_CORPSE_RIOT_ARMOR
     storeItem: STR_RIOT_ARMOR_UC
     personalLight: 5
     weight: 12
@@ -578,7 +682,7 @@ armors:
        reactions: -3
        bravery: 10
        mana: 40
-    frontArmor: 50
+    frontArmor: 80
     sideArmor: 28
     rearArmor: 16
     underArmor: 12
@@ -611,12 +715,13 @@ armors:
 
 # Standard Armors
   - type: STR_PERSONAL_ARMOR_UC
-    spriteSheet: XCOM_1.PCK
-    spriteInv: MAN_1
+    spriteSheet: PERSONAL_ARMOR.PCK
+    spriteInv: PERSONAL_ARMOR_INV
     weight: 3
     corpseBattle:
       - STR_CORPSE_ARMOR
     storeItem: STR_PERSONAL_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR
     stats:
       tu: -2
       stamina: -3
@@ -646,7 +751,7 @@ armors:
     spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
     spriteInv: HEAVY_PERSONAL_ARMOR_INV
     corpseBattle:
-      - STR_CORPSE
+      - STR_CORPSE_HEAVY_PERSONAL_ARMOR
     corpseGeo: STR_CORPSE_HEAVY_PERSONAL_ARMOR
     storeItem: STR_HEAVY_PERSONAL_ARMOR
     weight: 6
@@ -676,7 +781,285 @@ armors:
       - 0.75
       - 0.92
       - 1.0
+#Power Armors
 
+# Standard Armors
+  - type: STR_POWER_SUIT_UC
+    spriteSheet: MARAUDER_SPRITESHEET.PCK
+    spriteInv: MAN_MARAUDER
+    corpseBattle:
+      - STR_CORPSE_MARAUDER
+    storeItem: STR_POWER_SUIT
+    corpseGeo: STR_CORPSE_MARAUDER
+    loftempsSet: [ 3 ]
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
+    forcedTorso: 1
+    stats:
+      tu: -9
+      stamina: 10
+      reactions: -8
+      firing: -3
+      throwing: -7
+      strength: 15
+      bravery: 7
+      mana: 80
+    damageModifier:
+      - 0.7
+      - 0.45
+      - 0.2
+      - 0.5
+      - 0.6
+      - 0.65
+      - 0.6
+      - 0.70
+      - 0.85
+      - 0.0
+  - type: STR_FLYING_SUIT_UC
+    spriteSheet: PATHFINDER_SPRITESHEET.PCK
+    spriteInv: MAN_PATHFINDER
+    corpseBattle:
+      - STR_CORPSE_PATHFINDER
+    storeItem: STR_FLYING_SUIT
+    corpseGeo: STR_CORPSE_PATHFINDER
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    stats:
+      tu: -9
+      stamina: 10
+      reactions: -8
+      firing: -3
+      throwing: -7
+      strength: 15
+      bravery: 8
+      mana: 80
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
+    movementType: 1
+    damageModifier:
+      - 0.75
+      - 0.50
+      - 0.30
+      - 0.6
+      - 0.65
+      - 0.70
+      - 0.65
+      - 0.73
+      - 0.88
+      - 0.0
+# New Armors
+  - type: STR_SCOUT_POWER_ARMOR_UC
+    spriteSheet: SCOUT_POWER_ARMOR.PCK
+    spriteInv: SCOUT_POWER_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR # should be corpseBattle?
+    storeItem: STR_CORPSE_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -4
+      stamina: 15
+      reactions: -6
+      firing: -2
+      throwing: -5
+      strength: 9
+      bravery: 7
+      mana: 80
+    frontArmor: 55
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
+    movementType: 0
+    damageModifier:
+      - 0.8
+      - 0.5
+      - 0.3
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.65
+      - 0.73
+      - 0.88
+      - 0.0
+  - type: STR_SCOUT_FLYING_ARMOR_UC
+    spriteSheet: SCOUT_FLYING_ARMOR.PCK
+    spriteInv: SCOUT_FLYING_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR
+    storeItem: STR_CORPSE_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -4
+      stamina: 15
+      reactions: -6
+      firing: -2
+      throwing: -5
+      strength: 9
+      bravery: 6
+      mana: 80
+    frontArmor: 50
+    sideArmor: 40
+    rearArmor: 32
+    underArmor: 30
+    movementType: 1
+    damageModifier:
+      - 0.8
+      - 0.55
+      - 0.35
+      - 0.65
+      - 0.65
+      - 0.75
+      - 0.70
+      - 0.77
+      - 0.90
+      - 0.0
+
+#Astronaut Armors
+
+  - &A7LSpacesuitAnchor
+    type: STR_ASTRONAUT_A7L_SPACESUIT_UC
+    spriteSheet: A7L_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5A7L
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    movementType: 0
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    personalLight: 10
+    requires:
+      STR_OLYMPUS
+    stats: &EarthStats
+      stamina: -15
+      health: 0
+      bravery: 20
+      throwing: -15
+      reactions: -10
+      melee: -15
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+
+  - &A7MMUSpacesuitAnchor
+    type: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
+    spriteSheet: A7MMU_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5A7MMU
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    movementType: 1
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    personalLight: 10
+    requires:
+      STR_ALIENS_ONLY
+    stats: &OrbitalStats
+      stamina: 30
+      health: 0
+      bravery: 20
+      throwing: -15
+      reactions: -10
+      melee: -15
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+
+  - &Krechet94SpacesuitAnchor
+    type: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+    spriteSheet: KRECHET94_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5KRECHET94
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    movementType: 0
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    personalLight: 10
+    requires:
+      STR_OLYMPUS
+    stats: *EarthStats
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.1
+
+  - &KrechetMMUSpacesuitAnchor
+    type: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
+    spriteSheet: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5KRECHETMMU
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT
+    frontArmor: 15
+    sideArmor: 12
+    rearArmor: 10
+    underArmor: 8
+    movementType: 1
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    personalLight: 10
+    requires:
+      STR_ALIENS_ONLY
+    stats: *OrbitalStats
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.1
 
 manufacture:
   - name: STR_COMBAT_ARMOR_UC
@@ -727,6 +1110,115 @@ manufacture:
     cost: 30000
     requiredItems:
       STR_ALIEN_ALLOYS: 6
+
+  - name: STR_SCOUT_POWER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_POWER_ARMOR
+    space: 12
+    time: 1000
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 5
+    listOrder: 2711
+  - name: STR_SCOUT_FLYING_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_FLYING_ARMOR
+    space: 15
+    time: 1000
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+      STR_ELERIUM_115: 12
+    listOrder: 2712
+
+  - name: STR_REPAIR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_ARMOR: 1
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_PERSONAL_ARMOR: 1
+  - name: STR_REPAIR_COMBAT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_COMBAT_ARMOR_UC: 1
+  - name: STR_REPAIR_DELTA_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_DELTA_ARMOR_UC: 1
+  - name: STR_REPAIR_RIOT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_RIOT_ARMOR_UC: 1
+  - name: STR_REPAIR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_HEAVY_PERSONAL_ARMOR: 1
+  - name: STR_REPAIR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 16
+    time: 500
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_MARAUDER: 1
+      STR_ALIEN_ALLOYS: 10
+    producedItems:
+      STR_POWER_SUIT: 1
+  - name: STR_REPAIR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 16
+    time: 700
+    cost: 12000
+    requiredItems:
+      STR_CORPSE_PATHFINDER: 1
+      STR_ALIEN_ALLOYS: 12
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_FLYING_SUIT: 1
 
 extraSprites:
   - type: BASEBITS.PCK
@@ -1004,7 +1496,7 @@ extraSprites:
     width: 320
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/RiotArmor/man_6m0.gif
+      0: Resources/SoldiersAndArmors/RiotArmor/man_6m0.png
   - type: RIOT_ARMOR_IMAGE
     singleImage: true
     width: 320
@@ -1075,6 +1567,58 @@ extraSprites:
       0: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_IMAGE.PNG
 
 ########################################
+######### UN PERSONAL ARMOR ############
+######################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      28: Resources/SoldiersAndArmors/PersonalArmor/PA_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      40: Resources/SoldiersAndArmors/PersonalArmor/Floor_PA.png
+  - type: PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/PA.png
+  - type: PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M0.png
+  - type: PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M1.png
+  - type: PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M2.png
+  - type: PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M3.png
+  - type: PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F0.png
+  - type: PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F1.png
+  - type: PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F2.png
+  - type: PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F3.png
+
+
+########################################
 ######### UN HEAVY PERSONAL ARMOR ############
 ######################################
 
@@ -1088,48 +1632,262 @@ extraSprites:
   - type: HEAVY_PERSONAL_ARMOR.PCK
     subX: 32
     subY: 40
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA.png
   - type: HEAVY_PERSONAL_ARMOR_INVM0.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M0.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M0.png
   - type: HEAVY_PERSONAL_ARMOR_INVM1.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M1.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M1.png
   - type: HEAVY_PERSONAL_ARMOR_INVM2.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M2.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M2.png
   - type: HEAVY_PERSONAL_ARMOR_INVM3.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M3.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M3.png
   - type: HEAVY_PERSONAL_ARMOR_INVF0.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F0.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F0.png
   - type: HEAVY_PERSONAL_ARMOR_INVF1.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F1.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F1.png
   - type: HEAVY_PERSONAL_ARMOR_INVF2.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F2.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F2.png
   - type: HEAVY_PERSONAL_ARMOR_INVF3.SPK
     singleImage: true
     files:
-      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.gif
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.png
+
+##################################################
+######### UN MARAUDER POWER ARMOR ###############
+################################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      517: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      517: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_CORPSE_FLOOROB.png
+  - type: MARAUDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_SPRITESHEET.png
+  - type: MAN_MARAUDER
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/MarauderArmor/Inventory/MAN_MARAUDER.png
+
+##################################################
+######### UN PATHFINDER FLYING ARMOR ###############
+################################################
+
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      518: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      518: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_CORPSE_FLOOROB.png
+  - type: PATHFINDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_SPRITESHEET.png
+  - type: MAN_PATHFINDER
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PathfinderArmor/Inventory/MAN_PATHFINDER.png
+
+
+####################################
+####### USA/NATO SPACESUITS #######
+##################################
+  - type: MAN_5A7L.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7LArmor/INVENTORY/MAN_5A7L.png
+  - type: A7L_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_SPRITESHEET.png
+  - type: BIGOBS.PCK
+    files:
+      512: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      512: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_CORPSE_FLOOROB.png
+
+  - type: MAN_5A7MMU.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7MMUArmor/INVENTORY/MAN_5A7MMU.png
+  - type: A7MMU_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7LMMU_SPACESUIT_SPRITESHEET.png
+  - type: BIGOBS.PCK
+    files:
+      515: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      515: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_CORPSE_FLOOROB.png
+
+############################################
+####### USSR/WARSAW PACT SPACESUITS #######
+##########################################
+  - type: MAN_5KRECHET94.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechet94Armor/INVENTORY/MAN_5KRECHET94.png
+  - type: KRECHET94_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_SPRITESHEET.png
+  - type: BIGOBS.PCK
+    files:
+      513: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      513: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_CORPSE_FLOOROB.png
+
+  - type: MAN_5KRECHETMMU.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/INVENTORY/MAN_5KRECHETMMU.png
+  - type: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_SPRITESHEET.png
+  - type: BIGOBS.PCK
+    files:
+      516: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_CORPSE_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      516: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_CORPSE_FLOOROB.png
+
+####################################
+
+  - type: SCOUT_POWER_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/FourthState/ScoutArmor/ScoutPowerArmor.gif
+  - type: SCOUT_POWER_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m0.gif
+  - type: SCOUT_POWER_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m1.gif
+  - type: SCOUT_POWER_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m2.gif
+  - type: SCOUT_POWER_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6m3.gif
+  - type: SCOUT_POWER_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f0.png
+  - type: SCOUT_POWER_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f1.png
+  - type: SCOUT_POWER_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f2.png
+  - type: SCOUT_POWER_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_6f3.png
+  - type: BIGOBS.PCK
+    files:
+      903: Resources/FourthState/ScoutArmor/BigCorpse2.png
+  - type: FLOOROB.PCK
+    files:
+      904: Resources/FourthState/ScoutArmor/FloorCorpse2.png
+  - type: SCOUT_FLYING_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/FourthState/ScoutArmor/ScoutFlyingArmor.gif
+  - type: SCOUT_FLYING_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m0.gif
+  - type: SCOUT_FLYING_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m1.gif
+  - type: SCOUT_FLYING_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m2.gif
+  - type: SCOUT_FLYING_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7m3.gif
+  - type: SCOUT_FLYING_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f0.png
+  - type: SCOUT_FLYING_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f1.png
+  - type: SCOUT_FLYING_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f2.png
+  - type: SCOUT_FLYING_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/FourthState/ScoutArmor/man_7f3.png
+
+######################################
 
 extraStrings:
   - type: en-US
     strings:
       STR_NONE_UC: NONE
-      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and confortable, it wasn't meant to stop plasma bolts, but can be enought to stop light bullets.
+      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and comfortable, it wasn't meant to stop plasma bolts, but can be enough to stop light bullets.
 
       STR_PILOT: Pilot
       STR_PILOT_UC: PILOT FLIGHT SUIT
@@ -1148,6 +1906,7 @@ extraStrings:
 ########################################
       STR_COMBAT_ARMOR: XM-72 Combat Armor
       STR_COMBAT_ARMOR_UC: XM-72 COMBAT ARMOR
+      STR_CORPSE_COMBAT_ARMOR: "XM-72 Combat Armor Wreck"
       STR_COMBAT_ARMOR_UFOPEDIA: Composite armor system, combining Alien Alloy and prototype Kevlar ballistic plates in a bulletproof vest and helmet made of the same material. Given the current limitations of armor manufacturing, it is still a bit heavy and uncomfortable to wear, but it certainly protects the user from light ballistic fire and some indirect plasma fire. Painted blue at our request.
       STR_USA_PROTOTYPE_ARMOR_SYSTEMS: US ARMY PROTOTYPE ARMOR SYSTEM
       STR_USA_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research into the development of flak jackets used by American troops in Vietnam has resulted in this prototype of individual armor. It uses a prototype Kevlar vest (materiel yet unused on large scale) with Alien Alloys plates to prevent damage to the wearer. It is considerably lighter than other metal-based armor and could be the future of infantry armor. We sent the blueprints to the R+D team immediately.
@@ -1156,6 +1915,7 @@ extraStrings:
 ########################################
       STR_DELTA_ARMOR_UC: DELTA EOD ARMOR
       STR_DELTA_ARMOR: Delta EOD Armor
+      STR_CORPSE_DELTA_ARMOR: "Delta EOD Armor Wreck"
       STR_DELTA_ARMOR_UFOPEDIA: "German prototype armor for bomb disposal teams. It offers an incredible resistance to explosive and armor piercing damage, although it is heavy and causes fatigue to the user. The front part is more resistant than the back. It includes a MG3 general machine gun, with integrated brackets on the soldier's right arm to improve grip and precision, as well as to reduce its weight."
       STR_NATO_PROTOTYPE_ARMOR_SYSTEMS: NATO Prototype Armor System
       STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research on personal armor built with Alien Alloys has supported the research of European scientists and engineers. A prototype of armor to defuse explosives has been redesigned to use the new alien material. The plans have been sent to our R&D team for immediate construction.
@@ -1164,6 +1924,7 @@ extraStrings:
 ########################################
       STR_RIOT_ARMOR_UC: BEAR RIOT ARMOR
       STR_RIOT_ARMOR: Bear Riot Armor
+      STR_CORPSE_RIOT_ARMOR: "Bear Riot Armor Wreck"
       STR_RIOT_ARMOR_UFOPEDIA: "Advanced soviet prototype armor, derived from a project for a new riot armor for Spetsnaz special forces, is entirely built in Alien Alloy, includes a visor to protect the user's face from impacts and bullets, although this limits their visibility and mobility a bit. Includes a riot shield 'IM-21 Krepost', to deflect frontal damage."
       STR_USSR_PROTOTYPE_ARMOR_SYSTEMS: USSR Prototype Armor System
       STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: The prototype riot armor designed for the Spetsnaz forces has been improved using the new Alien Alloys. Field tests were used on Soviet volunteers and is able to withstand the direct impact of light weapons. The shield that it has integrated increases even more its resistance, almost at the same of armored vehicles. The schematics have been sent to our R&D team for its construction.
@@ -1172,7 +1933,62 @@ extraStrings:
 ########################################
       STR_HEAVY_PERSONAL_ARMOR_UC: HEAVY ARMOR
       STR_HEAVY_PERSONAL_ARMOR: Heavy Armor
+      STR_CORPSE_HEAVY_PERSONAL_ARMOR: "Heavy Personal Armor Wreck"
       STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
+
+     # Armor
+
+      STR_CORPSE_ARMOR: "Personal Armor Wreck"
+      STR_POWER_SUIT_UC: MARAUDER POWER ARMOR
+      STR_POWER_SUIT: Marauder Power Armor
+      STR_CORPSE_MARAUDER: "Marauder Armor Wreck"
+      STR_FLYING_SUIT_UC: PATHFINDER FLYING ARMOR
+      STR_FLYING_SUIT: Pathfinder Flying Armor
+      STR_CORPSE_PATHFINDER: "Pathfinder Armor Wreck"
+      STR_SCOUT_POWER_ARMOR_UC: SCOUT POWER ARMOR
+      STR_SCOUT_POWER_ARMOR: Scout Power Armor
+      STR_CORPSE_SCOUT_POWER_ARMOR: "Scout Power Armor Wreck"
+      STR_SCOUT_POWER_ARMOR_UFOPEDIA: This item combines Power Suit technology and Personal Armor frame to create armor focusing on increasing a soldier's mobility. However, this focus on speed and a need to maximize wearer's field of vision limits the suit's protective capabilities.
+      STR_SCOUT_FLYING_ARMOR_UC: SCOUT FLYING ARMOR
+      STR_SCOUT_FLYING_ARMOR: Scout Flying Armor
+      STR_CORPSE_SCOUT_FLYING_ARMOR: "Scout Flying Armor Wreck"
+      STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
+
+      STR_REPAIR_PERSONAL_ARMOR: "Repair Personal Armor"
+      STR_REPAIR_COMBAT_ARMOR: "Repair XM-72 Combat Armor"
+      STR_REPAIR_DELTA_ARMOR: "Repair Delta EOD Armor"
+      STR_REPAIR_RIOT_ARMOR: "Repair Bear Riot Armor"
+      STR_REPAIR_HEAVY_PERSONAL_ARMOR: "Repair Heavy Personal Armor"
+      STR_REPAIR_POWER_SUIT: "Repair Marauder Armor"
+      STR_REPAIR_FLYING_SUIT: "Repair Pathfinder Armor"
+
+
+
+
+########################################
+
+      STR_ASTRONAUT_A7L_SPACESUIT_UC: A7-M Spacesuit
+      STR_ASTRONAUT_A7L_SPACESUIT_UC_UFOPEDIA: Fully pressurized suit, perfect for extra vehicular activities in difficult terrain. Improved model of the A7L suit used by the American astronauts of the Apollo missions.  Includes sections of Alien Alloys to lessen the discomfort of the suit, but still limits the movements and reactions of the user. Includes magnetic boots.
+      STR_CORPSE_ASTRONAUT_A7L_SPACESUIT: Fallen Astronaut
+      STR_ASTRONAUT_A7LB_SPACESUIT_UC: A7-D Military Spacesuit
+      STR_ASTRONAUT_A7LB_SPACESUIT_UC_UFOPEDIA: Combat variant of the A7 spacesuit, integrates Alien Alloy plates on the shoulders and legs to provide extra protection to limbs. Its main feature its a ballistic helmet inspired in LEVA (Lunar Extravehicular Visor Assembly) to provide increased resistance to damage that may break the helmet and compromise the survivability of the operator. Includes magnetic boots.
+      STR_CORPSE_ASTRONAUT_A7LB_SPACESUIT: Fallen Astronaut
+      STR_ASTRONAUT_A7_MMU_SPACESUIT_UC: A7 MMU Spacesuit
+      STR_ASTRONAUT_A7_MMU_SPACESUIT_UC_UFOPEDIA: Special A7 spacesuit equipped with a prototype Manned Maneuvering Unit designed by NASA. This 'jetpack' enables untethered EVA operations without restrictions. The propellant used is gaseous nitrogen, stored on armored tanks on the back of the MMU. It contains enough propellant to have 6 hours of EVA. It is smaller than the Soviet counterpart, the SPK.
+      STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT: Fallen Astronaut
+
+
+      STR_ASTRONAUT_KRECHET94_SPACESUIT_UC: Krechet-94 Spacesuit
+      STR_ASTRONAUT_KRECHET94_SPACESUIT_UC_UFOPEDIA: Fully pressurized spacesuit, designed and build on the Soviet Union. Originally meant to be used on the civilian Moon and Mars space programs only, it was quickly put on widespread production to be equipped by Warsaw Pact cosmonauts. Incorporates some parts made with Alien Alloys to help improve mobility of the user. Includes magnetic boots.
+      STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT: Fallen Cosmonaut
+      STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC: Krechet-94-B Spacesuit
+      STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC_UFOPEDIA: Combat variant of Krechet-94 suit, includes Alien Alloy pauldrons and leg armored plates to absorb damage to limbs. It's main difference with the standard Krechet-94 is a build-in Alien Alloys vest, to greatly increase the resistance to damage to torso.
+      STR_CORPSE_ASTRONAUT_KRECHET94B_SPACESUIT: Fallen Cosmonaut
+      STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC: Krechet SPK Spacesuit
+      STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC_UFOPEDIA: Specialized version of the Krechet spacesuit, features a build-in propulsion unit named SPK. Uses compressed oxygen as the propulsion system, stored and protected within the backpack-like structure. It has an autonomy of seven hours of extravehicular activity (EVA). Well liked by Warsaw Pact cosmonauts, it is larger than the American counterpart, the MMU.
+      STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT: Fallen Cosmonaut
+
+      STR_PERSONAL_ANTIGRAV: "Personal Antigravity"
 
 ########################################
       STR_2ND_LIEUTENANT: 2nd Lieutenant

@@ -1,80 +1,81 @@
+# spellchecker:words ufoattack ufohit ufodestroyed planehit ufomain mindprobe hovertank
 extraSounds:
   - type: GEO.CAT
     files:
-      0: Resources/HQSounds/Geo/geo_window.ogg	#geo_button1.ogg	#button1
-    #  1: Resources/HQSounds/Geo/geo_window.ogg	#window close
-    #  2: Resources/HQSounds/Geo/sample.ogg	#window open1
-    #  3: Resources/HQSounds/Geo/sample.ogg	#window open2
-      4: Resources/HQSounds/Geo/geo_cannon.ogg	#cannon
-      5: Resources/HQSounds/Geo/geo_missile.ogg	#missile
-      6: Resources/HQSounds/Geo/geo_button1.ogg #button2
-      7: Resources/HQSounds/Geo/geo_ufoattack.ogg	#FB launch
-      8: Resources/HQSounds/Geo/geo_laser.ogg	#laser
-      9: Resources/HQSounds/Geo/geo_plasma.ogg	#plasma
-      10: Resources/HQSounds/Geo/geo_ufohit.ogg	#ufo hit
-      11: Resources/HQSounds/Geo/geo_ufodestroyed.ogg	#ufo destroyed
-      12: Resources/HQSounds/Geo/geo_planehit.ogg	#xcom craft hit
-    #  13: Resources/HQSounds/Geo/sample.ogg  #xcom craft destroy
+      0: Resources/HQSounds/Geo/geo_window.wav	#geo_button1.ogg	#button1
+    #  1: Resources/HQSounds/Geo/geo_window.wav	#window close
+    #  2: Resources/HQSounds/Geo/sample.wav	#window open1
+    #  3: Resources/HQSounds/Geo/sample.wav	#window open2
+      4: Resources/HQSounds/Geo/geo_cannon.wav	#cannon
+      5: Resources/HQSounds/Geo/geo_missile.wav	#missile
+      6: Resources/HQSounds/Geo/geo_button1.wav #button2
+      7: Resources/HQSounds/Geo/geo_ufoattack.wav	#FB launch
+      8: Resources/HQSounds/Geo/geo_laser.wav	#laser
+      9: Resources/HQSounds/Geo/geo_plasma.wav	#plasma
+      10: Resources/HQSounds/Geo/geo_ufohit.wav	#ufo hit
+      11: Resources/HQSounds/Geo/geo_ufodestroyed.wav	#ufo destroyed
+      12: Resources/HQSounds/Geo/geo_planehit.wav	#xcom craft hit
+    #  13: Resources/HQSounds/Geo/sample.wav  #xcom craft destroy
   - type: BATTLE.CAT
     files:
-      0: Resources/HQSounds/Battle/walk_snakeman.ogg	#snakeman move
-    #  1: Resources/HQSounds/Battle/sample.ogg	#empty
-      2: Resources/HQSounds/Battle/small_explosion.ogg	#big gun shot (small explosion)
-      3: Resources/HQSounds/Battle/door_barn.ogg	#door open
-      4: Resources/HQSounds/Battle/b_normal_fire.ogg	#pistol/rifle shot
-      5: Resources/HQSounds/Battle/large_explosion.ogg	#large explosion
+      0: Resources/HQSounds/Battle/walk_snakeman.wav	#snakeman move
+    #  1: Resources/HQSounds/Battle/sample.wav	#empty
+      2: Resources/HQSounds/Battle/small_explosion.wav	#big gun shot (small explosion)
+      3: Resources/HQSounds/Battle/door_barn.wav	#door open
+      4: Resources/HQSounds/Battle/b_normal_fire.wav	#pistol/rifle shot
+      5: Resources/HQSounds/Battle/large_explosion.wav	#large explosion
 #------------------
-      6: Resources/HQSounds/Battle/death_muton.ogg	#muton scream
-    #  7: Resources/HQSounds/Battle/sample.ogg	#celatid scream
-      8: Resources/HQSounds/Battle/death_snakeman.ogg	#snakeman scream
-      9: Resources/HQSounds/Battle/death_ethereal.ogg	#ethereal scream
-      10: Resources/HQSounds/Battle/death_sectoid.ogg	#sectoid scream
+      6: Resources/HQSounds/Battle/death_muton.wav	#muton scream
+    #  7: Resources/HQSounds/Battle/sample.wav	#celatid scream
+      8: Resources/HQSounds/Battle/death_snakeman.wav	#snakeman scream
+      9: Resources/HQSounds/Battle/death_ethereal.wav	#ethereal scream
+      10: Resources/HQSounds/Battle/death_sectoid.wav	#sectoid scream
 #------------------
-      11: Resources/HQSounds/Battle/b_laser_fire.ogg	#laser shot
-      12: Resources/HQSounds/Battle/b_cannon_fire.ogg	#small explosion (Cannon shoot)
-      13: Resources/HQSounds/Battle/b_cannon_hit.ogg	#ammo metal hit
-      14: Resources/HQSounds/Battle/move_tank.ogg	#tank move
-    #  15: Resources/HQSounds/Battle/move_hover.ogg	#flying tank (floater) move
-      16: Resources/HQSounds/Battle/walk_snakeman.ogg	#celatid move (snakeman)
-      17: Resources/HQSounds/Battle/b_reload.ogg	#reload
-      18: Resources/HQSounds/Battle/b_plasma_fire.ogg	#plasma shot
-      19: Resources/HQSounds/Battle/b_laser_hit.ogg	#laser/plasma hit
-      20: Resources/HQSounds/Battle/door_ufomain.ogg	#ufo door main
-      21: Resources/HQSounds/Battle/door_inner.ogg	#ufo door inner
-      22: Resources/HQSounds/Battle/b_normal_hit.ogg	#pistol/rifle hit
-    #  23: Resources/HQSounds/Battle/sample.ogg	#metal crunch (machine death)
+      11: Resources/HQSounds/Battle/b_laser_fire.wav	#laser shot
+      12: Resources/HQSounds/Battle/b_cannon_fire.wav	#small explosion (Cannon shoot)
+      13: Resources/HQSounds/Battle/b_cannon_hit.wav	#ammo metal hit
+      14: Resources/HQSounds/Battle/move_tank.wav	#tank move
+    #  15: Resources/HQSounds/Battle/move_hover.wav	#flying tank (floater) move
+      16: Resources/HQSounds/Battle/walk_snakeman.wav	#celatid move (snakeman)
+      17: Resources/HQSounds/Battle/b_reload.wav	#reload
+      18: Resources/HQSounds/Battle/b_plasma_fire.wav	#plasma shot
+      19: Resources/HQSounds/Battle/b_laser_hit.wav	#laser/plasma hit
+      20: Resources/HQSounds/Battle/door_ufomain.wav	#ufo door main
+      21: Resources/HQSounds/Battle/door_inner.wav	#ufo door inner
+      22: Resources/HQSounds/Battle/b_normal_hit.wav	#pistol/rifle hit
+    #  23: Resources/HQSounds/Battle/sample.wav	#metal crunch (machine death)
 #-------------------
-      24: Resources/HQSounds/Battle/walk_metal1.ogg	#footsteps metal 1
-      25: Resources/HQSounds/Battle/walk_metal2.ogg	#footsteps metal 2
-      26: Resources/HQSounds/Battle/walk_ground1.ogg	#footsteps ground 1
-      27: Resources/HQSounds/Battle/walk_ground2.ogg	#footsteps ground 2
-      28: Resources/HQSounds/Battle/walk_martian1.ogg	#footsteps mars 1
-      29: Resources/HQSounds/Battle/walk_martian2.ogg	#footsteps mars 2
-      30: Resources/HQSounds/Battle/walk_water1.ogg	#footsteps mud 1
-      31: Resources/HQSounds/Battle/walk_water2.ogg	#footsteps mud 2
-      32: Resources/HQSounds/Battle/walk_sand1.ogg	#footsteps sand 1
-      33: Resources/HQSounds/Battle/walk_sand2.ogg	#footsteps sand 2
-      34: Resources/HQSounds/Battle/walk_snow1.ogg	#footsteps snow 1
-      35: Resources/HQSounds/Battle/walk_snow2.ogg	#footsteps snow 2
+      24: Resources/HQSounds/Battle/walk_metal1.wav	#footsteps metal 1
+      25: Resources/HQSounds/Battle/walk_metal2.wav	#footsteps metal 2
+      26: Resources/HQSounds/Battle/walk_ground1.wav	#footsteps ground 1
+      27: Resources/HQSounds/Battle/walk_ground2.wav	#footsteps ground 2
+      28: Resources/HQSounds/Battle/walk_martian1.wav	#footsteps mars 1
+      29: Resources/HQSounds/Battle/walk_martian2.wav	#footsteps mars 2
+      30: Resources/HQSounds/Battle/walk_water1.wav	#footsteps mud 1
+      31: Resources/HQSounds/Battle/walk_water2.wav	#footsteps mud 2
+      32: Resources/HQSounds/Battle/walk_sand1.wav	#footsteps sand 1
+      33: Resources/HQSounds/Battle/walk_sand2.wav	#footsteps sand 2
+      34: Resources/HQSounds/Battle/walk_snow1.wav	#footsteps snow 1
+      35: Resources/HQSounds/Battle/walk_snow2.wav	#footsteps snow 2
 #---------------------
-      36: Resources/HQSounds/Battle/psy_attack.ogg	#mind control
-    #  37: Resources/HQSounds/Battle/sample.ogg	#mindprobe
-      38: Resources/HQSounds/Battle/place.ogg	#item drop
-      39: Resources/HQSounds/Battle/throw.ogg	#item throw
-      40: Resources/HQSounds/Battle/move_hover.ogg	#hovertank/cyberdisc move
+      36: Resources/HQSounds/Battle/psy_attack.wav	#mind control
+    #  37: Resources/HQSounds/Battle/sample.wav	#mindprobe
+      38: Resources/HQSounds/Battle/place.wav	#item drop
+      39: Resources/HQSounds/Battle/throw.wav	#item throw
+      40: Resources/HQSounds/Battle/move_hover.wav	#hovertank/cyberdisc move
 #---------------------
-      41: Resources/HQSounds/Battle/death_x_m1.ogg	#male scream 1
-      42: Resources/HQSounds/Battle/death_x_m2.ogg	#male scream 2
-      43: Resources/HQSounds/Battle/death_x_m3.ogg	#male scream 3
-      44: Resources/HQSounds/Battle/death_x_f3.ogg	#female scream 1
-    #  45: Resources/HQSounds/Battle/death_x_f1.ogg	#female scream 2
-    #  46: Resources/HQSounds/Battle/death_x_f2.ogg	#female scream 3
+      41: Resources/HQSounds/Battle/death_x_m1.wav	#male scream 1
+      42: Resources/HQSounds/Battle/death_x_m2.wav	#male scream 2
+      43: Resources/HQSounds/Battle/death_x_m3.wav	#male scream 3
+      44: Resources/HQSounds/Battle/death_x_f3.wav	#female scream 1
+    #  45: Resources/HQSounds/Battle/death_x_f1.wav	#female scream 2
+    #  46: Resources/HQSounds/Battle/death_x_f2.wav	#female scream 3
 #---------------------
-    #  47: Resources/HQSounds/Battle/sample.ogg	#rock drag (silacoid move)
-    #  48: Resources/HQSounds/Battle/sample.ogg	#reaper/zombie growl
-    #  49: Resources/HQSounds/Battle/sample.ogg	#chryssalid growl
-    #  50: Resources/HQSounds/Battle/sample.ogg	#silacoid growl
-      51: Resources/HQSounds/Battle/death_celatid.ogg	#celatid growl
+    #  47: Resources/HQSounds/Battle/sample.wav	#rock drag (silacoid move)
+    #  48: Resources/HQSounds/Battle/sample.wav	#reaper/zombie growl
+    #  49: Resources/HQSounds/Battle/sample.wav	#chryssalid growl
+    #  50: Resources/HQSounds/Battle/sample.wav	#silacoid growl
+      51: Resources/HQSounds/Battle/death_celatid.wav	#celatid growl
 #---------------------
-    #  52: Resources/HQSounds/Battle/sample.ogg	#rocket launch
-    #  53: Resources/HQSounds/Battle/sample.ogg	#blaster bomb launcher
+    #  52: Resources/HQSounds/Battle/sample.wav	#rocket launch
+    #  53: Resources/HQSounds/Battle/sample.wav	#blaster bomb launcher

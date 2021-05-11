@@ -1,3 +1,4 @@
+# spellchecker:words LIGHTNIN UFOL
 ufos:
 #scouts
   - type: STR_SMALL_SCOUT
@@ -27,7 +28,6 @@ ufos:
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     breakOffTime: 250
-    hunterKillerPercentage: 40
     radarRange: 20
     radarChance: 30
   - type: STR_LARGE_SCOUT
@@ -45,7 +45,6 @@ ufos:
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     breakOffTime: 300
-    hunterKillerPercentage: 80
     radarRange: 300
     radarChance: 45
 #Fighters
@@ -116,8 +115,6 @@ ufos:
     shieldCapacity: 100
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    hunterKillerPercentage: 100
-    huntMode: 0
     radarRange: 30
     sightRange: 30
 #Research ships
@@ -163,7 +160,7 @@ ufos:
 
   - type: STR_LAB_SHIP
     modSprite: InterceptionLabShip
-    size: STR_VERY_LARGE
+    size: STR_LARGE
     damageMax: 2200
     speedMax: 800
     accel: 5
@@ -191,7 +188,7 @@ ufos:
     reload: 20
     breakOffTime: 2000
   - type: STR_TROOP_LANDER
-    size: STR_LARGE
+    size: STR_VERY_LARGE
     damageMax: 1750
     modSprite: InterceptionTroopLander
     speedMax: 400

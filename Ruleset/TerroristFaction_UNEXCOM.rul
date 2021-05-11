@@ -1,4 +1,5 @@
-﻿#Terrorist Faction by IDT - efrenespartano & Tingcat, for UNEXCOM
+﻿# spellchecker:words Tingcat Thinman
+#Terrorist Faction by IDT - efrenespartano & Tingcat, for UNEXCOM
 items:
   - type: STR_TERRORIST_MALE_CORPSE
     size: 0.4
@@ -412,6 +413,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_TERRORISTS
+      - STR_TERRORISTS_OPERATIONS
     getOneFree:
       - STR_ALIEN_ASSOCIATIONS
 
@@ -618,9 +620,9 @@ extraStrings:
       STR_THIN_MAN_AUTOPSY: "Thin Man Autopsy"
       STR_ALIEN_ASSOCIATIONS: "Alien Associations"
       STR_HYBRID: "Hybrid"
-      STR_ALIEN_ASSOCIATIONS_UFOPEDIA: "The capture of a high ranking terrorist has lead to an alarming development, the terrorist organisations we've been facing seem to have links to extraterestials. Multiple terrorist leaders have been seen armed with weaponry only seen before during highly classified encounters with alien life. The origins of these weapons must be tracked before knowledge of them spreads too far to contain, and before the terrorist can get their hands on anything with which they could cause significant damage."
+      STR_ALIEN_ASSOCIATIONS_UFOPEDIA: "The capture of a high ranking terrorist has lead to an alarming development, the terrorist organisations we've been facing seem to have links to extraterrestrials. Multiple terrorist leaders have been seen armed with weaponry only seen before during highly classified encounters with alien life. The origins of these weapons must be tracked before knowledge of them spreads too far to contain, and before the terrorist can get their hands on anything with which they could cause significant damage."
       STR_TERRORIST_HQ: "Tracing the Weapons"
-      STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop into their operation."
+      STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop to their operation."
       STR_TERRORIST_THIN_MAN: "Terrorists + Thinman"
       STR_THIN_MAN_INFILTRATOR: "Thin Man"
 

@@ -1,3 +1,4 @@
+# spellchecker:words DOUBLETAP
 #Close quarters: defined by default on 1 tile
 #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
@@ -37,7 +38,7 @@ items:
     confSnap:
       shots: 3
       name: STR_AP_BURST
-      ammoSlot: 0
+      ammoSlot: 1
       arcing: false
     confAuto:
       shots: 10
@@ -56,7 +57,6 @@ items:
     tuAuto: 60
     tuSnap: 40
     tuAimed: 40
-    accuracyCloseQuarters: 50
     oneHandedPenalty: 60
     kneelBonus: 120
     invHeight: 3
@@ -95,7 +95,7 @@ items:
     confSnap:
       shots: 1
       name: STR_AP_SNAP
-      ammoSlot: 0
+      ammoSlot: 1
       arcing: false
     confAuto:
       shots: 15
@@ -109,7 +109,6 @@ items:
     tuAuto: 55
     tuSnap: 30
     tuAimed: 30
-    accuracyCloseQuarters: 50
     oneHandedPenalty: 60
     kneelBonus: 120
     maxRange: 60
@@ -158,7 +157,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: -1
-    bulletSprite: 2
+    bulletSprite: 31
     power: 35
     hitSound: 22
     damageAlter:
@@ -208,7 +207,6 @@ items:
       arcing: false
     accuracySnap: 55
     accuracyAuto: 65
-    accuracyCloseQuarters: 100
     tuAuto: 20
     tuSnap: 30
     costThrow:
@@ -259,7 +257,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: 26
-    bulletSprite: 2
+    bulletSprite: 31
     power: 35
     hitSound: 22
     damageAlter:
@@ -284,7 +282,7 @@ items:
     bigSprite: 1202
     floorSprite: 1202
     handSprite: 2900
-    bulletSprite: 2
+    bulletSprite: 31
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
@@ -360,7 +358,7 @@ items:
     bigSprite: 1213
     floorSprite: 1212
     handSprite: 2956
-    bulletSprite: 2
+    bulletSprite: 31
     fireSound: 141
     reloadSound: [183, 184, 185]
     ammo:
@@ -521,7 +519,6 @@ items:
     bigSprite: 1207
     floorSprite: 1206
     handSprite: 2932
-    bulletSprite: 2
     fireSound: 144
     bulletSpeed: 100
     reloadSound: [194, 195, 196]
@@ -540,7 +537,6 @@ items:
       name: STR_FL_BURST
       ammoSlot: 1
       arcing: false
-    accuracyCloseQuarters: 35
     accuracySnap: 40
     accuracyAuto: 50
     tuSnap: 20
@@ -598,7 +594,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: -1
-    bulletSprite: 2
+    bulletSprite: 31
     battleType: 2
     power: 35
     hitSound: 22
@@ -623,7 +619,6 @@ items:
     bigSprite: 1215
     floorSprite: 1214
     handSprite: 2964
-    bulletSprite: 4
     bulletSpeed: 20
     fireSound: 150
     reloadSound: [186, 187, 188, 189]
@@ -642,7 +637,6 @@ items:
       name: STR_FL_SHOT
       ammoSlot: 0
       arcing: false
-    accuracyCloseQuarters: 50
     accuracySnap: 120
     accuracyAimed: 120
     tuSnap: 75
@@ -675,7 +669,7 @@ items:
     floorSprite: 1207
     handSprite: 0
     hitAnimation: 26
-    bulletSprite: 2
+    bulletSprite: 4
     power: 75
     hitSound: 22
     damageType: 1
@@ -703,7 +697,7 @@ items:
     handSprite: 0
     damageType: 1
     hitAnimation: 26
-    bulletSprite: 2
+    bulletSprite: 31
     battleType: 2
     power: 75
     hitSound: 22
@@ -964,6 +958,15 @@ extraSprites:
       2964: Resources/AlloyWeapons/Handob_G_Sniper.png
 
 
+
+  - type: Projectiles
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+     1085: Resources/BulletSprites/Flechette_bullet.png #31
+
 extraStrings:
   - type: en-US
     strings:
@@ -987,7 +990,7 @@ extraStrings:
       STR_FLECHETTE_SNIPER: "XM55 Dual Purpose Sniper Rifle"
       STR_ALLOY_SNIPER_AP: "TC Anti-Materiel Rounds (x5)"
       STR_ALLOY_SNIPER_FL: "Flechette Anti-Personnel Rounds  (x5)"
-      STR_FLECHETTE_RIFLE_UFOPEDIA: "Our new rifle uses a modern handle to provide extra stability to the shooter. Its construction in plastic polymers makes it very lightweight, although there are some concerns regarding its TCrability. Others would have preferred to build them entirely from AA. Either way, it is a stable weapon that will allow any infant who uses it to cause considerable damage to their target."
+      STR_FLECHETTE_RIFLE_UFOPEDIA: "Our new rifle uses a modern handle to provide extra stability to the shooter. Its construction in plastic polymers makes it very lightweight, although there are some concerns regarding its ability. Others would have preferred to build them entirely from AA. Either way, it is a stable weapon that will allow any infant who uses it to cause considerable damage to their target."
       STR_FLECHETTE_MACHINE_PISTOL: "XM35 Flechette Pistol"
       STR_FLECHETTE_MACHINE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored vehicle and artillery crews. It is slightly heavier than our standard M1911 Colt, but its ammunition is considerably lighter. The recoil is very manageable and has a fire selector for bursts and automatic mode. It cannot fire in semi-automatic mode."
       STR_AP_BURST: "Burst Fire, TC"
@@ -1001,11 +1004,11 @@ extraStrings:
       STR_AP_SNAP: "Snap Shot, TC"
       STR_FLECHETTE_CARBINE_UFOPEDIA: "This new carbine design bears many similarities to our alloy rifle design. The design exchanges accuracy with rate of fire and weight, making the carbine suited for closer ranged engagements than the rifle."
       STR_FLECHETTE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored car crews and artillery. It is extremely lightweight and versatile, being able to fire either bursts of flechette rounds or armor-penetrating TC rounds."
-      STR_FLECHETTE_SHOTGUN_UFOPEDIA: "Our team of gunsmiths created this interestin design. Initially, it gives the impression of being some kind of semi-automatic rifle, but in reality it is a shotgun with an exceptionally long barrel. It fires flechette ammunition stored in a cylindrical magazine. Its greatest advantage is its long range."
-      STR_FLECHETTE_SNIPER_UFOPEDIA: "Powerful anti-material rifle, designed to destroylight vehicles and heavy armored soldiers. Our team of engineers created a robust, shockand impact resistant rifle that you can have, without compromising its structural integrity. This allows the shooter to fire without much alteration in the position of the variable telescopicsight from x8 to x16 magnification. Its huge muzzle brake is necessary to give the gun stability."
+      STR_FLECHETTE_SHOTGUN_UFOPEDIA: "Our team of gunsmiths created this interesting design. Initially, it gives the impression of being some kind of semi-automatic rifle, but in reality it is a shotgun with an exceptionally long barrel. It fires flechette ammunition stored in a cylindrical magazine. Its greatest advantage is its long range."
+      STR_FLECHETTE_SNIPER_UFOPEDIA: "Powerful anti-material rifle, designed to destroy light vehicles and heavy armored soldiers. Our team of engineers created a robust, shock and impact resistant rifle that you can have, without compromising its structural integrity. This allows the shooter to fire without much alteration in the position of the variable telescopic sight from x8 to x16 magnification. Its huge muzzle brake is necessary to give the gun stability."
       STR_FLECHETTE_GRENADE_UFOPEDIA: "This fragmentation grenade is designed to inflict the maximum amount of damage possible. Upon detonation, it ejects hundreds of Alien Alloys flechettes which can destroy an organic target within three meters. Its ability to penetrate armor is extremely limited, but its lethal potential is just as incredible."
-      STR_FLECHETE_CANNON_UFOPEDIA: "The need to develop a heavy automatic weapon to support our squadron led to this automatic gun. By mounting two cannons on it, the ROF is doubled without affecting the physical integrity of the weapon. Its entire Alien Alloys construction makes it surprisingly light (approximately the weight of a conventional lightmachine gun), for its size."
-      STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA: "An interesting proposal for arelatively simple design. This grenade launcher uses drum loaders to store the projectilesand fire them fully automatically."
+      STR_FLECHETTE_CANNON_UFOPEDIA: "The need to develop a heavy automatic weapon to support our squadron led to this automatic gun. By mounting two cannons on it, the ROF is doubled without affecting the physical integrity of the weapon. Its entire Alien Alloys construction makes it surprisingly light (approximately the weight of a conventional light machine gun), for its size."
+      STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA: "An interesting proposal for a relatively simple design. This grenade launcher uses drum loaders to store the projectiles and fire them fully automatically."
       STR_FLECHETTE_AUTOMATIC_SHOTGUN_UFOPEDIA: "One of our engineers worked closely on the development of an automatic shotgun similar to an AR15 rifle called the AA-12, which he decided to implement a weapon based on it to equip our troops. The results an impressive weapon: a mixture of the ROF of an assault rifle with the stopping power of shotguns. It only fires in automatic mode, so it is recommended to use it at short range."
 #############################
       STR_ALLOY_RIFLE_AP_UFOPEDIA: "Based on the .280 British (also known as 7mm NATO) experimental cartridge, it has proven to be reliable and can be adapted to our requirements with relative ease. This cartridge contains depleted uranium core and Alien Alloys coating, facilitating target penetration."
@@ -1018,4 +1021,4 @@ extraStrings:
       STR_ALLOY_HEAVY_FL_UFOPEDIA: "A special high-capacity magazine, the Flechettes use a 20mm caliber cap just like the AP depleted uranium bullets, except that they are considerably lighter. Their ability to cause injury is important and the enormous capacity of the magazine allows for long suppression fire on the enemy."
       STR_ALLOY_SNIPER_AP_UFOPEDIA: "A highly specialized projectile is basically a javelin of depleted uranium, placed inside a bullet made of AA. Upon penetrating a target, the TC javelin is propelled by the kinetic energy of the projectile, making a clean hole in various types of armor. Designed to wreak hard targets from far away."
       STR_ALLOY_SNIPER_FL_UFOPEDIA: "This experimental projectile contains an oversized Alien Alloys Flechette, which upon impact with the skin of a soft target, breaks instantly and can cause critical injuries that are very difficult to patch up. However, it will collapse without much damage if it hits a hard enemy. It is specially modified for long distance shooting."
-      STR_30MM_AAG_UFOPEDIA: "Small yet powerful 30mm explosive grenades. Originally designed for a Soviet grenade launcher, we have adopted it.  It's very versatile and light enought to carry it on large quantities."
+      STR_30MM_AAG_UFOPEDIA: "Small yet powerful 30mm explosive grenades. Originally designed for a Soviet grenade launcher, we have adopted it.  It's very versatile and light enough to carry it on large quantities."

@@ -1,3 +1,6 @@
+# spellchecker:words Dioxine Dioxine's freqs rects ALIEBASE UBASE REFINERYS ALIENBASE Solarius CHEMTOWN
+# spellchecker:words INDUSTRIALSLUM COMRCURBAN PORTTFTD STANDARDROADS ISLANDURBAN CARGOSHIP Hellrazor
+# spellchecker:words LINERSHIP
 ############################
 ## C.M.P - MAPSCRIPTS
 ## V0.3
@@ -72,12 +75,6 @@ mapScripts:
       # because these are references to the block numbers within the sets, not the file names.
       blocks: [3, 4, 10, 11, 12, 13, 14]
       freqs: [3, 3, 2, 2, 2, 2, 2]
-  - type: MARS
-    commands:
-    - type: addCraft
-    - type: addBlock
-      groups: 2
-    - type: fillArea
 
   - type: XBASE
     commands:
@@ -95,7 +92,7 @@ mapScripts:
     - type: fillArea
       blocks: 20
 
-####### COMMNITY MAPS BELOW #####
+####### COMMUNITY MAPS BELOW #####
 
 ####################################
 ###### AIRPORT WITHOUT PLANE ######
@@ -222,7 +219,7 @@ mapScripts:
     - type: addBlock #Add 20x20 Map Blocks
       size: 2
       executions: 4
-    - type: addBlock #Add Entertaiment Room
+    - type: addBlock #Add Entertainment Room
       groups: 7
     - type: addBlock #Add Impassable Power Source Block
       groups: 9
@@ -557,3 +554,4 @@ mapScripts:
       size: 2
       executions: 4
     - type: fillArea
+

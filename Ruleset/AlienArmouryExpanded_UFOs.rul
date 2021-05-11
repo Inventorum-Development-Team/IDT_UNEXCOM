@@ -3,6 +3,8 @@
 # 1. Delete one loadout from each alien rank (so that there are 3, not 4 loadouts)
 # 2. Make sure that there are only vanilla items in the loadouts (i.e., no items from mods you don't have, like Alien Armoury Expanded).
 
+# spellchecker:words EXCAVTR UFOL PTURRET LABSHIP DISEC OPER SPTURRET minigun
+
 ufos:
   - type: STR_EXCAVATOR #ignoreDuplicate
     modSprite: InterceptionExcavator
@@ -459,7 +461,7 @@ extraStrings:
       STR_HARVESTER_UFOPEDIA: "The harvester has a trap door in its base and is equipped with lifting gear to haul up cattle or other beasts. Laser cutters are used to extract the desired material and the carcass is dumped on the ground. There are also storage containers for body parts."
       STR_ABDUCTOR_UFOPEDIA: "This vessel is equipped with an examination room for performing horrific experiments on human subjects. The victim is normally paralyzed by telepathic powers, but remains conscious while on the operating table."
       STR_TERROR_SHIP_UFOPEDIA: "The troop transport has a containment facility for large alien terror weapons or creatures. It is used to transport these alien terrorists into populated areas. It uses two short-range cannon point-defense and what appear to be artillery cannons for ground attack, used only for static targets."
-      STR_BATTLESHIP_UFOPEDIA: "The battleship is the largest and most powerful alien craft. It is normally the primary alien mission craft, equipped numerous crew members and communication systems. Equiped with various AA point-defense batteries, they are a slow but dangerous prey."
+      STR_BATTLESHIP_UFOPEDIA: "The battleship is the largest and most powerful alien craft. It is normally the primary alien mission craft, equipped numerous crew members and communication systems. Equipped with various AA point-defense batteries, they are a slow but dangerous prey."
       STR_SUPPLY_SHIP_UFOPEDIA: "The supply vessel is used during the construction of alien bases or for supplying existing bases. It carries alien food containers and reproduction chambers."
 
   - type: en-GB
@@ -472,6 +474,7 @@ extraStrings:
       STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small."
       STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors."
       STR_LAB_SHIP_UFOPEDIA: "Lab Ships are large vessels, tasked with major research and harvest operations.  Much bigger than Harvesters, they are equipped for conducting complex experiments on board.  Their crew is numerous and rather well equipped."
+  # spellchecker:disable
   - type: pl-PL
     strings:
       STR_EXCAVATOR: "Statek wydobywczy"

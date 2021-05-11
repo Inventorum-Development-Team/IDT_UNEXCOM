@@ -1,3 +1,4 @@
+# spellchecker:words TACTICBACK Juliett
 # X-COM 1 (UFO: Enemy Unknown) ruleset
 # For documentation on these values, see http://ufopaedia.org/index.php?title=Rulesets_(OpenXcom)
 startingTime:
@@ -15,6 +16,7 @@ initialFunding: 9000
 alienFuel: [STR_ELERIUM_115, 50]
 crewEmergencyEvacuationSurvivalChance: 65
 pilotsEmergencyEvacuationSurvivalChance: 75
+drawEnemyRadarCircles: 2
 statisticalBulletConservation: true
 surrenderMode: 2
 chanceToStopRetaliation: 50
@@ -26,16 +28,31 @@ fixedUserOptions:
 allowCountriesToCancelAlienPact: true
 showDogfightDistanceInKm: true
 pediaReplaceCraftFuelWithRangeType: 1
-enableCloseQuartersCombat: 1
-closeQuartersAccuracyGlobal: 100
-closeQuartersTuCostGlobal: 0
-closeQuartersEnergyCostGlobal: 8
 pilotAccuracyZeroPoint: 40
 pilotBraveryThresholds: [90, 80, 40] #Very bold, Bold, Normal
 ufoBeamWidthParameter: 1000
 extraNerdyPediaInfo: true
 hunterKillerFastRetarget: true
 maxViewDistance: 30
+stunningImprovesMorale: true
+hiddenMovementBackgrounds:
+  - TACTICBACK00.SCR
+  - TACTICBACK01.SCR
+  - TACTICBACK02.SCR
+  - TACTICBACK03.SCR
+  - TACTICBACK04.SCR
+  - TACTICBACK05.SCR
+  - TACTICBACK06.SCR
+  - TACTICBACK07.SCR
+  - TACTICBACK08.SCR
+  - TACTICBACK09.SCR
+  - TACTICBACK10.SCR
+  - TACTICBACK11.SCR
+  - TACTICBACK12.SCR
+  - TACTICBACK13.SCR
+  - TACTICBACK14.SCR
+constants:
+   damageRange: 50
 ai:
   useDelayPsionic: 3
 mana:

@@ -1,4 +1,4 @@
-
+# spellchecker:words Plasmadestroyer Plasmacaster Plasmasniperrifle
 items:
   - type: STR_SMALL_LAUNCHER
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
@@ -36,7 +36,7 @@ items:
     bigSprite: 1006
     floorSprite: 1006
     handSprite: 1024
-    bulletSprite: 11
+    bulletSprite: 20
     fireSound: 55
     compatibleAmmo:
       - STR_TOXIGUN_FLASK
@@ -559,7 +559,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif
+      700: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif
   - type: BIGOBS.PCK
     files:
       1000: Resources/AlienArmouryExpanded/Aliensniperrifle.gif
@@ -670,6 +670,7 @@ extraStrings:
       STR_REMAN_HUMAN_PLASMA_BLASTER: Convert Alien Plasma Blaster
       STR_REMAN_HUMAN_PLASMA_SNIPER_RIFLE: Convert Alien Plasma Sniper Rifle
       STR_REMAN_HUMAN_PLASMA_CASTER: Convert Alien Plasma Caster
+  # spellchecker:disable
   - type: de
     strings:
       STR_SMALL_LAUNCHER_UFOPEDIA: "Eine kompakte aber sehr wirksame außerirdische Abschussrampe, die sich in verschiedenen Kampfszenarien als nützlich erweist. Es ist eine vielseitige und tödliche Waffe."

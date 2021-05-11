@@ -264,6 +264,7 @@ items:
     dropoff: 3
     invWidth: 1
     invHeight: 2
+    sprayWaypoints: 2
     twoHanded: false
     armor: 70 # 20
     vaporColorSurface: 3
@@ -540,40 +541,7 @@ items:
     power: 90
     blastRadius: 5
     size: 0.1
-# Standard Armors
-  - type: STR_POWER_SUIT
-    size: 0.8
-    costSell: 85000
-  - type: STR_FLYING_SUIT
-    size: 0.8
-    costSell: 115000
-# New Armor
-  - type: STR_SCOUT_FLYING_ARMOR
-    size: 1
-    costSell: 100000
-    listOrder: 10712
-  - type: STR_SCOUT_POWER_ARMOR
-    size: 1
-    costSell: 75000
-    listOrder: 10711
-  - type: STR_CORPSE_SCOUT_POWER_ARMOR
-    name: STR_CORPSE
-    weight: 20
-    bigSprite: 1901
-    floorSprite: 1902
-    invWidth: 2
-    invHeight: 3
-    armor: 40
-    recover: false
-  - type: STR_CORPSE_SCOUT_FLYING_ARMOR
-    name: STR_CORPSE
-    weight: 22
-    bigSprite: 1903
-    floorSprite: 1904
-    invWidth: 2
-    invHeight: 3
-    armor: 50
-    recover: false
+
 # Decoder
   - type: STR_HYPER_WAVE_ENCODER
     categories: [STR_MISC, STR_ALIEN_TECH]
@@ -589,140 +557,7 @@ items:
     recover: true
     recoveryPoints: 50
     armor: 10
-armors:
-# Standard Armors
-  - type: STR_POWER_SUIT_UC
-    spriteSheet: XCOM_2.PCK
-    spriteInv: MAN_2
-    corpseBattle:
-      - STR_CORPSE_SUIT
-    storeItem: STR_POWER_SUIT
-    loftempsSet: [ 3 ]
-    frontArmor: 64
-    sideArmor: 51
-    rearArmor: 45
-    underArmor: 38
-    stats:
-      tu: -9
-      stamina: 10
-      reactions: -8
-      firing: -3
-      throwing: -7
-      strength: 15
-      bravery: 7
-      mana: 80
-    damageModifier:
-      - 0.7
-      - 0.45
-      - 0.2
-      - 0.5
-      - 0.6
-      - 0.65
-      - 0.6
-      - 0.70
-      - 0.85
-      - 0.0
-  - type: STR_FLYING_SUIT_UC
-    spriteSheet: XCOM_2.PCK
-    spriteInv: MAN_3
-    corpseBattle:
-      - STR_CORPSE_SUIT
-    storeItem: STR_FLYING_SUIT
-    loftempsSet: [ 3 ]
-    stats:
-      tu: -9
-      stamina: 10
-      reactions: -8
-      firing: -3
-      throwing: -7
-      strength: 15
-      bravery: 8
-      mana: 80
-    frontArmor: 64
-    sideArmor: 51
-    rearArmor: 45
-    underArmor: 38
-    movementType: 1
-    damageModifier:
-      - 0.75
-      - 0.50
-      - 0.30
-      - 0.6
-      - 0.65
-      - 0.70
-      - 0.65
-      - 0.73
-      - 0.88
-      - 0.0
-# New Armors
-  - type: STR_SCOUT_POWER_ARMOR_UC
-    spriteSheet: SCOUT_POWER_ARMOR.PCK
-    spriteInv: SCOUT_POWER_ARMOR_INV
-    corpseBattle:
-      - STR_CORPSE
-    corpseGeo: STR_CORPSE_SCOUT_POWER_ARMOR # should be corpseBattle?
-    storeItem: STR_SCOUT_POWER_ARMOR
-    weight: 6
-    loftempsSet: [ 3 ]
-    stats:
-      tu: -4
-      stamina: 15
-      reactions: -6
-      firing: -2
-      throwing: -5
-      strength: 9
-      bravery: 7
-      mana: 80
-    frontArmor: 55
-    sideArmor: 44
-    rearArmor: 36
-    underArmor: 30
-    movementType: 0
-    damageModifier:
-      - 0.8
-      - 0.5
-      - 0.3
-      - 0.6
-      - 0.65
-      - 0.7
-      - 0.65
-      - 0.73
-      - 0.88
-      - 0.0
-  - type: STR_SCOUT_FLYING_ARMOR_UC
-    spriteSheet: SCOUT_FLYING_ARMOR.PCK
-    spriteInv: SCOUT_FLYING_ARMOR_INV
-    corpseBattle:
-      - STR_CORPSE
-    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
-    storeItem: STR_SCOUT_FLYING_ARMOR
-    weight: 6
-    loftempsSet: [ 3 ]
-    stats:
-      tu: -4
-      stamina: 15
-      reactions: -6
-      firing: -2
-      throwing: -5
-      strength: 9
-      bravery: 6
-      mana: 80
-    frontArmor: 50
-    sideArmor: 40
-    rearArmor: 32
-    underArmor: 30
-    movementType: 1
-    damageModifier:
-      - 0.8
-      - 0.55
-      - 0.35
-      - 0.65
-      - 0.65
-      - 0.75
-      - 0.70
-      - 0.77
-      - 0.90
-      - 0.0
+
 research:
 # Linked Alien Research
 # Alien Weapon Research Step - allows understanding
@@ -784,7 +619,7 @@ research:
       - STR_REMAN_HUMAN_PLASMA_PISTOL
       - STR_NEW_HUMAN_PLASMA_RIFLE
       - STR_ALLOY_MANUFACTURING
-# (Plasma Rifle is the only weapon that be manu-ed and remanu-ed)
+# (Plasma Rifle is the only weapon that be manufactured and remanufactured)
   - name: STR_NEW_HUMAN_PLASMA_RIFLE
     cost: 500
     points: 20
@@ -906,6 +741,7 @@ research:
   - name: STR_ALIEN_COMMUNICATION
     cost: 100
     points: 10
+    spawnedEvent: STR_OVERSEER_TRACKED_EVENT
     dependencies:
       - STR_FLOATER_NAVIGATOR
       - STR_SNAKEMAN_NAVIGATOR
@@ -1136,28 +972,7 @@ manufacture:
     producedItems:
       STR_SNIPER_PLASMA_CLIP: 1
 # New Armor
-  - name: STR_SCOUT_POWER_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SCOUT_POWER_ARMOR
-    space: 12
-    time: 1000
-    cost: 30000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 5
-      STR_ELERIUM_115: 5
-    listOrder: 2711
-  - name: STR_SCOUT_FLYING_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SCOUT_FLYING_ARMOR
-    space: 15
-    time: 1000
-    cost: 50000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 8
-      STR_ELERIUM_115: 12
-    listOrder: 2712
+
   - name: STR_PLASMA_PISTOL
     requires:
       - STR_ALIENS_ONLY
@@ -1184,7 +999,7 @@ extraStrings:
       STR_ALIEN_PLASMA_WEAPONS: Alien Plasma Weapons
       STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of alien alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
       STR_ALIEN_COMMUNICATION: Alien Communication
-      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communcating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communcation schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the X-com team with the knowledge needed to fully decrypt this communications.
+      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the X-com team with the knowledge needed to fully decrypt this communications.
       STR_HYPER_WAVE_ENCODER: Hyper Wave Encoder
       STR_HYPER_WAVE_ENCODER_UFOPEDIA: With the encryption device captured from the alien base, researchers have broken the encryption used by enemy forces.  With additional research, a new facility for intercepting alien transmissions can be constructed.
       STR_HYPER_WAVE_DECODER: Hyper Wave Decoder
@@ -1199,7 +1014,7 @@ extraStrings:
       STR_HUMAN_PLASMA_PISTOL: Plasma Pistol
       STR_HUMAN_PLASMA_PISTOL_UFOPEDIA: Due to the complexities of adding auto-fire to such a small weapon, the technique and methodology for producing a plasma pistol with the capabilities of the alien's weapon is beyond our reach. However, the research conducted on the weapon now allows engineers to modify and add interfaces familiar to our soldiers to any captured alien plasma pistols.
       STR_HUMAN_PLASMA_RIFLE: Plasma Assault Rifle
-      STR_HUMAN_PLASMA_RIFLE_UFOPEDIA: Using the information and cells gleaned from the captured engineer, researchers provided the manufacturing teams plans on how to modify captured plasma rifles to work for X-com forces, with a configuration familiar to the soldiers.  Additionally, not bound by the size constraints of the plasma pistol, research can be expanded cover how to manufacture new plasma rifles.
+      STR_HUMAN_PLASMA_RIFLE_UFOPEDIA: Using the information and cells gleaned from the captured engineer, researchers provided the manufacturing teams plans on how to modify captured plasma rifles to work for X-com forces, with a configuration familiar to the soldiers. Additionally, not bound by the size constraints of the plasma pistol, research can be expanded to discover how to manufacture new plasma rifles.
       STR_HUMAN_HEAVY_PLASMA: Heavy Plasma
       STR_HUMAN_HEAVY_PLASMA_UFOPEDIA: As the heaviest of the alien plasma weapons, this weapon proved to have it's own difficulties for the design and research team.  Despite a number of promising prototypes, producing a human-built heavy plasma weapon with the same capabilities as the alien version is impossible. Despite this, conversion of captured weapons for use by the X-com team is now possible.
       # Human Plasma Weapons
@@ -1208,7 +1023,7 @@ extraStrings:
       STR_HUMAN_PLASMA_SMG: Plasma SMG
       STR_HUMAN_PLASMA_SMG_UFOPEDIA: Combining aspects of the autofire plasma rifle and previous research done on the plasma pistol, the research team created plans for a plasma submachine gun.  While not as powerful per-shot as the plasma pistol, the flash and recoil is much more manageable and the plasma bolt retains coherency at longer ranges.
       STR_NEW_HUMAN_PLASMA_RIFLE: Manufacture Plasma Assault Rifle
-      STR_NEW_HUMAN_PLASMA_RIFLE_UFOPEDIA: Constructed completely by human hands, the manufacturing team now has plans for an exacty replica of the alien plasma rifle, redesigned to meet the needs of the X-com soldiers.  Other than the missing lock-out technology, this weapon is exactly the same in capabilities as the coverted alien rifles. More importantly, construction of this weapon allows for further research into human designed plasma weaponry adapted for X-com fire teams, instead of just mimicing or converting existing alien weaponry.
+      STR_NEW_HUMAN_PLASMA_RIFLE_UFOPEDIA: Constructed completely by human hands, the manufacturing team now has plans for an exact replica of the alien plasma rifle, redesigned to meet the needs of the X-com soldiers.  Other than the missing lock-out technology, this weapon is exactly the same in capabilities as the converted alien rifles. More importantly, construction of this weapon allows for further research into human designed plasma weaponry adapted for X-com fire teams, instead of just mimicking or converting existing alien weaponry.
       STR_HUMAN_PLASMA_DMR: Plasma DMR
       STR_HUMAN_PLASMA_DMR_UFOPEDIA: Replacing the auto-fire capability of the plasma rifle with the capability of creating heavier plasma shots and a more powerful linear accelerator, a plasma version of the designated marksman's rifle is now ready for construction.
       STR_HUMAN_SNIPER_PLASMA: Sniper Plasma
@@ -1216,7 +1031,7 @@ extraStrings:
       STR_HUMAN_PLASMA_LMG: Plasma LMG
       STR_HUMAN_PLASMA_LMG_UFOPEDIA: Expanding techniques learned with the plasma submachine gun, the research team devised squad support weapon using the plasma weapon technology by scaling up the design.  Compromising on the plasma generator, it instead boasts a staggering rate of fire while mitigating flash and recoil.
       STR_HUMAN_SMALL_LAUNCHER: Human Small Launcher
-      STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA: This adapted launcher features the same superb handling of the alien Small Launcher and the ability to use the same ammo. We can use it againts its masters to stun, capture and if needed, kill any enemy on the sight of this weapon.
+      STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA: This adapted launcher features the same superb handling of the alien Small Launcher and the ability to use the same ammo. We can use it against its masters to stun, capture and if needed, kill any enemy on the sight of this weapon.
       # Ammo
       STR_PLASMA_MAGNUM_CLIP: Plasma Magnum Clip
       STR_PLASMA_SMG_CLIP: Plasma SMG Mag
@@ -1234,18 +1049,7 @@ extraStrings:
       STR_REMAN_HUMAN_PLASMA_RIFLE: Convert Alien Plasma Rifle
       STR_REMAN_HUMAN_PLASMA_PISTOL: Convert Alien Plasma Pistol
       STR_REMAN_SMALL_LAUNCHER: Convert Alien Small Launcher
-      # Armor
-      STR_POWER_SUIT_UC: POWER ARMOR
-      STR_POWER_SUIT: Power Armor
-      STR_FLYING_SUIT_UC: FLYING POWER ARMOR
-      STR_FLYING_SUIT: Flying Power Armor
-      STR_SCOUT_POWER_ARMOR_UC: SCOUT POWER ARMOR
-      STR_SCOUT_POWER_ARMOR: Scout Power Armor
-      STR_SCOUT_POWER_ARMOR_UFOPEDIA: This item combines Power Suit technology and Personal Armor frame to create armor focusing on increasing a soldier's mobility. However, this focus on speed and a need to maximize wearer's field of vision limits the suit's protective capabilities.
-      STR_SCOUT_FLYING_ARMOR_UC: SCOUT FLYING ARMOR
-      STR_SCOUT_FLYING_ARMOR: Scout Flying Armor
-      STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
-      # Hyperwave
+       # Hyperwave
       # Craft Weapons
   - type: fr
     strings:
@@ -1372,90 +1176,7 @@ extraSprites:
       1887: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGh.gif
       1970: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolh.gif
       1979: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolh.gif
-  - type: SCOUT_POWER_ARMOR.PCK
-    subX: 32
-    subY: 40
-    width: 1024
-    height: 360
-    files:
-      0: Resources/FourthState/ScoutArmor/ScoutPowerArmor.gif
-  - type: SCOUT_POWER_ARMOR_INVM0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m0.gif
-  - type: SCOUT_POWER_ARMOR_INVM1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m1.gif
-  - type: SCOUT_POWER_ARMOR_INVM2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m2.gif
-  - type: SCOUT_POWER_ARMOR_INVM3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6m3.gif
-  - type: SCOUT_POWER_ARMOR_INVF0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f0.png
-  - type: SCOUT_POWER_ARMOR_INVF1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f1.png
-  - type: SCOUT_POWER_ARMOR_INVF2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f2.png
-  - type: SCOUT_POWER_ARMOR_INVF3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_6f3.png
-  - type: BIGOBS.PCK
-    files:
-      903: Resources/FourthState/ScoutArmor/BigCorpse2.png
-  - type: FLOOROB.PCK
-    files:
-      904: Resources/FourthState/ScoutArmor/FloorCorpse2.png
-  - type: SCOUT_FLYING_ARMOR.PCK
-    subX: 32
-    subY: 40
-    width: 1024
-    height: 360
-    files:
-      0: Resources/FourthState/ScoutArmor/ScoutFlyingArmor.gif
-  - type: SCOUT_FLYING_ARMOR_INVM0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m0.gif
-  - type: SCOUT_FLYING_ARMOR_INVM1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m1.gif
-  - type: SCOUT_FLYING_ARMOR_INVM2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m2.gif
-  - type: SCOUT_FLYING_ARMOR_INVM3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7m3.gif
-  - type: SCOUT_FLYING_ARMOR_INVF0.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f0.png
-  - type: SCOUT_FLYING_ARMOR_INVF1.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f1.png
-  - type: SCOUT_FLYING_ARMOR_INVF2.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f2.png
-  - type: SCOUT_FLYING_ARMOR_INVF3.SPK
-    singleImage: true
-    files:
-      0: Resources/FourthState/ScoutArmor/man_7f3.png
+
 extraSounds:
   - type: BATTLE.CAT
     files:

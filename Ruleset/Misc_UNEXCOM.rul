@@ -1,4 +1,7 @@
-﻿itemCategories:
+﻿# spellchecker:words DEEPTRENCH FORESTRAIL SNOWVILLAGE SNOWFOREST MOUNTSNOW MOUNTGRASS MOUNTSAND MOUNTROCK MOUNTTROP
+# spellchecker:words PLAINSSNOW PLAINSGRASS PLAINSSAND PLAINSROCK PLAINSTROP HIJACKET CHRYS GEOBORD Ointerception
+# spellchecker:words trooplander nofeed TACTICBACK
+itemCategories:
   - type: STR_TANKS
     listOrder: 1
   - type: STR_ARMORED_CARS
@@ -93,18 +96,29 @@
     listOrder: 210
   - type: STR_ALIEN_TECH
     listOrder: 210
+  - type: STR_SPACE
+    listOrder: 220
 
 extraStrings:
   - type: en-US
     strings:
+##########################################
+      STR_OPENXCOM: "UNEXCOM"
+      STR_NEW_GAME: "War of 1972"
+      STR_NEW_BATTLE: "Operations"
+      STR_MISSION_GENERATOR: "COMBAT OPERATIONS"
+      STR_XCOM_OPERATIVES_KILLED: "UN SOLDIERS KILLED"
+      STR_XCOM_OPERATIVES_MISSING_IN_ACTION: "UN SOLDIERS M.I.A."
+      STR_XCOM_CRAFT_LOST: "UN CRAFT LOST"
 ###########################################
 ############## CATEGORIES ################
 #######################################
-      STR_BALLISTIC: Ballistic Weapons
-      STR_LASER: Laser Weapons
-      STR_PLASMA: Plasma Weapons
+      STR_BALLISTIC: "Ballistic Weapons"
+      STR_LASER: "Laser Weapons"
+      STR_PLASMA: "Plasma Weapons"
       STR_ALLOY: "Alloy Weapons"
-      STR_SMART: Smart Weapons
+      STR_SMART: "Smart Weapons"
+      STR_SPACE: "Space Equipment"
       STR_TANKS: Tanks
       STR_ARMORED_CARS: Armored Cars
       STR_LIGHT_TANKS: Light Tanks
@@ -293,6 +307,7 @@ extraStrings:
       STR_SOVIET_SUPPORT: Warsaw Gunner
       SOVIET_SOLDIER_ARMOR: M69 Uniform
 ##########################################
+# spellchecker:disable
       STR_NORTH_PACIFIC: North Pacific
       STR_SOUTH_PACIFIC: South Pacific
       # NORTH AMERICAN CITIES
@@ -425,6 +440,7 @@ extraStrings:
       STR_COLOMBIA: COLOMBIA
       STR_POLAND: POLAND
 ###########################
+# spellchecker:enable
       MAP_VILLAGE: Village
       MAP_VILLAGE_INFESTED: Infested Village
       MAP_FARM_INFESTED: Infested Farm
@@ -455,15 +471,15 @@ extraStrings:
 ########## Underwater Missions below ###############
 ###################################################
       STR_QD_SLOT: Q-D
-      STR_SMALL_SCOUT_UNDERWATER: Small Scout (Undewater)
-      STR_MEDIUM_SCOUT_UNDERWATER: Medium Scout (Undewater)
-      STR_LARGE_SCOUT_UNDERWATER: Large Scout (Undewater)
-      STR_HARVESTER_UNDERWATER: Harvester (Undewater)
-      STR_ABDUCTOR_UNDERWATER: Abductor (Undewater)
-      STR_TERROR_SHIP_UNDERWATER: Transport Transport (Undewater)
-      STR_BATTLESHIP_UNDERWATER: Battleship (Undewater)
-      STR_SUPPLY_SHIP_UNDERWATER: Supply Ship (Undewater)
-      STR_TERRORIST_UNDEWATER: Terrorist (Undewater)
+      STR_SMALL_SCOUT_UNDERWATER: Small Scout (Underwater)
+      STR_MEDIUM_SCOUT_UNDERWATER: Medium Scout (Underwater)
+      STR_LARGE_SCOUT_UNDERWATER: Large Scout (Underwater)
+      STR_HARVESTER_UNDERWATER: Harvester (Underwater)
+      STR_ABDUCTOR_UNDERWATER: Abductor (Underwater)
+      STR_TERROR_SHIP_UNDERWATER: Transport Transport (Underwater)
+      STR_BATTLESHIP_UNDERWATER: Battleship (Underwater)
+      STR_SUPPLY_SHIP_UNDERWATER: Supply Ship (Underwater)
+      STR_TERRORIST_UNDERWATER: Terrorist (Underwater)
 ####################################################
 
 units:
@@ -662,7 +678,7 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/BACK12.PNG
-  - type: BACK13.SCR #buy stuff, purschase things
+  - type: BACK13.SCR #buy stuff, purchase things
     singleImage: true
     width: 320
     height: 200
@@ -708,6 +724,103 @@ extraSprites:
     height: 52
     files:
      0: Resources/UFOinterception/nofeed.png
+
+### Turn Hidden movement background
+
+  - type: TACTICBACK00.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK00.PNG
+  - type: TACTICBACK01.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK01.PNG
+  - type: TACTICBACK02.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK02.PNG
+  - type: TACTICBACK03.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK03.PNG
+  - type: TACTICBACK04.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK04.PNG
+  - type: TACTICBACK05.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK05.PNG
+  - type: TACTICBACK06.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK06.PNG
+  - type: TACTICBACK07.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK07.PNG
+  - type: TACTICBACK08.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK08.PNG
+
+  - type: TACTICBACK09.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK09.PNG
+  - type: TACTICBACK10.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK10.PNG
+  - type: TACTICBACK11.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK11.PNG
+  - type: TACTICBACK12.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK12.PNG
+  - type: TACTICBACK13.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK13.PNG
+  - type: TACTICBACK14.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK14.PNG
+
+
+
 startingBase:
   facilities:
     - type: STR_ACCESS_LIFT
@@ -739,7 +852,7 @@ startingBase:
       y: 4
   randomSoldiers:
     STR_SOLDIER: 12
-    STR_PILOT: 6
+    STR_PILOT: 8
   crafts:
     - type: STR_TUNNAN
       id: 1
@@ -802,7 +915,7 @@ startingBase:
         STR_FN_FAL: 5
         STR_BERETTA_M12: 4
         STR_POLICE_REVOLVER: 6
-    - type: STR_LINNA
+    - type: STR_BLACKBIRD
       id: 1
       fuel: 1000
       damage: 0
@@ -973,7 +1086,7 @@ missionRatings:
   -2799: STR_MT_RATING_TERRIBLE
   -99999: STR_MT_RATING_ABOMINABLE
 defeatScore: -1600
-defeatFunds: -10000000
+defeatFunds: -1000000
 alienItemLevels:
   - [0, 0, 0, 0, 0, 0, 0, 1, 1, 2]
   - [0, 0, 0, 0, 0, 1, 1, 1, 2, 2]
@@ -1007,10 +1120,3 @@ transparencyLUTs:
       - [ 16,  8,  0, 2 ] # orange
       - [  0, 12, 12, 2 ] # cyan
       - [  4, 16,  4, 2 ] # green
-enviroEffects:
-  - type: STR_Underwater # battlescape underwater missions transformations
-    mapBackgroundColor: 141
-    paletteTransformations:
-      PAL_BATTLESCAPE: PAL_BATTLESCAPE_1
-    # armorTransformations:
-    #   STR_NONE_UC: STR_NONE_UC_UW

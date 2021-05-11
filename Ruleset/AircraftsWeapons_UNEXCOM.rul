@@ -1,13 +1,17 @@
+# spellchecker:words Dyna CULTIVAT DROPPODS TARGETER SARH bistatic hardpoints SIDDELEY SMERCH GAST ESRO Sukhoi SEPECAT
+# spellchecker:words TORNSVALA
+# spellchecker:words Myasishchev Donell Endo Tornsvalan
 crafts:
 #Delete
   - delete: STR_SKYRANGER
   - delete: STR_INTERCEPTOR
+  - delete: STR_AVENGER
 # weaponType 0 = Gatling Cannon (Fast but weak)
 # weaponType 1 = Revolver Cannon (Slow but powerful)
 # weaponType 2 = Light Missile (IR Guidance, short range)
 # weaponType 3 = Heavy Missile (Radar Guidance, long range)
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
-# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc)
+# weaponType 5 = Auxiliary Systems (Targeting pods, afterburners, etc)
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
 
 
@@ -29,7 +33,7 @@ crafts:
     costBuy: 80000
     costSell: 60000
     damageMax: 160
-    speedMax: 570
+    speedMax: 1070
     avoidBonus: 15
     accel: 4
     weapons: 4
@@ -69,7 +73,7 @@ crafts:
     sprite: 399
     fuelMax: 131
     damageMax: 160
-    speedMax: 1474
+    speedMax: 1674
     avoidBonus: 15
     accel: 4
     weapons: 4
@@ -113,7 +117,7 @@ crafts:
     sprite: 825
     fuelMax: 192
     damageMax: 145
-    speedMax: 1303
+    speedMax: 1503
     avoidBonus: 15
     accel: 8
     weapons: 4
@@ -153,7 +157,7 @@ crafts:
     sprite: 826
     fuelMax: 192
     damageMax: 130
-    speedMax: 1258
+    speedMax: 1458
     avoidBonus: 25
     accel: 4
     weapons: 4
@@ -193,7 +197,7 @@ crafts:
     sprite: 827
     fuelMax: 218
     damageMax: 200
-    speedMax: 1148
+    speedMax: 1348
     avoidBonus: 15
     accel: 4
     weapons: 4
@@ -275,7 +279,7 @@ crafts:
     sprite: 830
     fuelMax: 105
     damageMax: 130
-    speedMax: 1269
+    speedMax: 1469
     avoidBonus: 25
     accel: 4
     weapons: 4
@@ -312,6 +316,41 @@ crafts:
 #### TIER II ######
 ##################
 
+  - type: STR_TUNNAN_MK2
+    sprite: 947
+    fuelMax: 220
+    costSell: 160000
+    damageMax: 300
+    speedMax: 1300
+    avoidBonus: 20
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - 6
+      - [2, 5]
+#Revolver Cannon
+#Revolver Cannon
+#Rockets
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_ROCKET_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    refuelRate: 25
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 10
+    score: 400
+    listOrder: 111
   - type: STR_RAPIER
     requires:
       - STR_IMPROVED_FIGHTER
@@ -360,7 +399,7 @@ crafts:
     sprite: 932
     fuelMax: 213
     damageMax: 280
-    speedMax: 1205
+    speedMax: 1405
     avoidBonus: 20
     accel: 6
     weapons: 4
@@ -397,7 +436,7 @@ crafts:
     sprite: 930
     fuelMax: 263
     damageMax: 210
-    speedMax: 1300
+    speedMax: 1500
     avoidBonus: 25
     accel: 6
     weapons: 4
@@ -587,7 +626,7 @@ crafts:
 
   - type: STR_SABRE
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
     sprite: 912
     fuelMax: 950
     damageMax: 550
@@ -622,7 +661,7 @@ crafts:
 
   - type: STR_DYNASOAR # X-21 DynaMOWS
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 913
     fuelMax: 2732
@@ -657,7 +696,7 @@ crafts:
 
   - type: STR_MIG_105
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 915
     fuelMax: 2732
@@ -916,15 +955,17 @@ crafts:
     speedMax: 1050
     avoidBonus: -10
     accel: 4
-    weapons: 3
+    weapons: 4
     weaponTypes:
       - 4
       - [3, 4]
+      - [3, 5]
       - [3, 5]
     weaponStrings:
       - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
       - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
       - STR_CRAFT_HEAVY_AUX_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
     soldiers: 2
     vehicles: 0
     pilots: 2
@@ -990,7 +1031,7 @@ crafts:
       - STR_ADVANCED_BOMBER
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 907
-    fuelMax: 192
+    fuelMax: 500
     damageMax: 520
     speedMax: 2600
     avoidBonus: 5
@@ -1102,7 +1143,7 @@ crafts:
 
   - type: STR_HERMES
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     sprite: 914
     fuelMax: 2732
@@ -1528,6 +1569,96 @@ crafts:
 # 5   1
 # 4 3 2
 
+  - type: STR_SPACE_SHUTTLE
+    sprite: 945
+    requires:
+     - STR_OLYMPUS
+    fuelMax: 2732 # Combat range of 22,000 nmi
+    damageMax: 450
+    speedMax: 14092 # Orbital speed of 27,600 Km/h
+    accel: 3
+    weapons: 0
+    soldiers: 14
+    vehicles: 0
+    pilots: 2
+    allowLanding: true
+    spacecraft: true
+    costBuy: 1000000
+    costRent: 6000
+    refuelRate: 50
+    repairRate: 4
+    transferTime: 48
+    score: 40
+    battlescapeTerrainData:
+      name: SHUTTLE_GROUND
+      mapDataSets:
+        - BLANKS
+        - SHUTTLE
+      mapBlocks:
+        - name: SHUTTLE_GROUND
+          width: 10
+          length: 20
+    craftInventoryTile: [5, 11, 1]
+    deployment:
+#Pilots Cabin
+      - [5, 13, 1, 4]
+      - [4, 13, 1, 4]
+#Payload Bay
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 1, 4]
+      - [5, 5, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+
+  - type: STR_SPACE_SHUTTLE_ORBITAL #For the Orbital missions, payload bay open
+    weapons: 0
+    soldiers: 14
+    vehicles: 0
+#    pilots: 2
+    battlescapeTerrainData:
+      name: SHUTTLE_ORBITAL
+      mapDataSets:
+        - BLANKS
+        - SHUTTLE
+      mapBlocks:
+        - name: SHUTTLE_ORBITAL
+          width: 10
+          length: 20
+    craftInventoryTile: [5, 11, 1]
+    deployment:
+#Pilots Cabin
+      - [5, 13, 1, 4]
+      - [4, 13, 1, 4]
+#Payload Bay
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 1, 4]
+      - [5, 5, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+
+
 #}
 ############################
 ##### RECON SATELLITES #####
@@ -1537,7 +1668,36 @@ crafts:
 #### TIER I #######
 ##################
 
+  - type: STR_BLACKBIRD
+    sprite: 935
+    fuelMax: 1500
+    damageMax: 80
+    speedMax: 2540
+    accel: 7
+    weapons: 1
+    weaponTypes:
+      - 5
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_AUX_ONE
+    costBuy: 500000
+    refuelRate: 1000
+    repairRate: 5
+    radarRange: 500
+    sightRange: 500
+    radarChance: 90
+    transferTime: 96
+    soldiers: 2
+    pilots: 2
+    allowLanding: false
+    undetectable: true
+    score: 100
+    listOrder: 150
+    autoPatrol: true
+
   - type: STR_LINNA
+    requires:
+     - STR_SATELLITES
     sprite: 824
     fuelMax: 1500
     damageMax: 20
@@ -1562,17 +1722,19 @@ crafts:
       - STR_IMPROVED_SATELLITE
     sprite: 868
     fuelMax: 1500
-    damageMax: 20
+    damageMax: 200
     speedMax: 40
     accel: 1
-    weapons: 2
+    weapons: 3
     weaponTypes:
+      - [0, 1]
       - [0, 1]
       - 5
 #Gatling/Revolver Cannon
 #AUX Systems
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ALL_CANNONS_TWO
       - STR_CRAFT_AUX_TWO
     costBuy: 155000
     costRent: 150000
@@ -1595,17 +1757,7 @@ crafts:
     damageMax: 20
     speedMax: 90
     accel: 1
-    weapons: 3
-    weaponTypes:
-      - [0, 1]
-      - [0, 1]
-      - 5
-#Gatling/Revolver Cannon
-#AUX Systems
-    weaponStrings:
-      - STR_CRAFT_ALL_CANNONS_ONE
-      - STR_CRAFT_ALL_CANNONS_TWO
-      - STR_CRAFT_AUX_THREE
+    undetectable: true
     costBuy: 230000
     costRent: 200000
     refuelRate: 75
@@ -1647,17 +1799,21 @@ crafts:
     soldiers: 1
     pilots: 1
     allowLanding: false
-    weapons: 3
+    weapons: 4
     weaponTypes:
       - [0, 1]
-      - 5
       - 2
+      - 2
+      - [2, 3, 6, 5]
 #Gatling/Revolver Cannon
-#AUX Systems
+#Light Missile
+#Light Missile
+#Light/Heavy Missile, Rockets, AUX Systems
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
-      - STR_CRAFT_AUX_TWO
+      - STR_CRAFT_LIGHT_MISSILE_TWO
       - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
 
 craftWeapons:
 #Delete
@@ -1672,7 +1828,7 @@ craftWeapons:
 # weaponType 2 = Light Missile (IR Guidance, short range)
 # weaponType 3 = Heavy Missile (Radar Guidance, long range)
 # weaponType 4 = Super Heavy Missile (Slow, very powerful)
-# weaponType 5 = Auxliary Systems (Targeting pods, afterburners, etc)
+# weaponType 5 = Auxiliary Systems (Targeting pods, afterburners, etc)
 # weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
 
 ##################################
@@ -2850,8 +3006,11 @@ items:
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 15000
+    costBuy: 8000
+    costSell: 4000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_HAMMER_LAUNCHER
@@ -2866,8 +3025,11 @@ items:
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 19000
+    costBuy: 20000
+    costSell: 10000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_PHOENIX_LAUNCHER
@@ -2882,8 +3044,11 @@ items:
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 50000
+    costBuy: 50000
+    costSell: 25000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_HYDRA_LAUNCHER
@@ -2898,8 +3063,11 @@ items:
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
-    costSell: 28000
+    costBuy: 12000
+    costSell: 6000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 8
 
   - type: STR_ATHENA_CANNON
@@ -2914,8 +3082,11 @@ items:
     requires:
       - STR_IMPROVED_GATLING_CANNON
     size: 0.1
-    costSell: 8900
+    costBuy: 7000
+    costSell: 3500
     transferTime: 96
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 50
 
   - type: STR_MAUSER_CANNON
@@ -2930,8 +3101,11 @@ items:
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
-    costSell: 8600
+    costBuy: 7000
+    costSell: 3500
     transferTime: 96
+    requiresBuy:
+     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     clipSize: 50
 
 #############################################
@@ -2956,67 +3130,79 @@ items:
     transferTime: 48
 
   - type: STR_LONGSWORD_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
     costSell: 35000
     transferTime: 48
   - type: STR_LONGSWORD_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 15000
+    costBuy: 12000
+    costSell: 6000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_KATANA_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_KATANA_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 19000
+    costBuy: 24000
+    costSell: 12000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_ADLER_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.8
     costSell: 127000
     transferTime: 48
   - type: STR_ADLER_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 50000
+    costBuy: 70000
+    costSell: 35000
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 1
 
   - type: STR_GORGON_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_GORGON_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
-    costSell: 28000
+    costBuy: 17000
+    costSell: 8500
     transferTime: 48
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     clipSize: 4
 
 #TIER 4
@@ -3027,7 +3213,7 @@ items:
     costSell: 211000
     transferTime: 48
   - type: STR_VOSTOK_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_4]
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
@@ -3040,7 +3226,7 @@ items:
     costSell: 233500
     transferTime: 48
   - type: STR_ZEUS_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_4]
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
     size: 0.1
@@ -3055,62 +3241,62 @@ items:
     transferTime: 48
 
   - type: STR_EXCALIBUR_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
     costSell: 35000
     transferTime: 48
   - type: STR_EXCALIBUR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.4
-    costSell: 15000
+    costSell: 14000
     transferTime: 48
     clipSize: 1
 
   - type: STR_MJOLNIR_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_MJOLNIR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.4
-    costSell: 19000
+    costSell: 15000
     transferTime: 48
     clipSize: 1
 
   - type: STR_KONDOR_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.8
     costSell: 127000
     transferTime: 48
   - type: STR_KONDOR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.4
-    costSell: 50000
+    costSell: 2500
     transferTime: 48
     clipSize: 1
 
   - type: STR_KRAKEN_LAUNCHER
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.8
     costSell: 38000
     transferTime: 48
   - type: STR_KRAKEN_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
+    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
     requires:
       - STR_IMPROVED_ROCKET
     size: 0.4
@@ -3130,6 +3316,20 @@ manufacture:
   - delete: STR_FUSION_BALL_LAUNCHER
   - delete: STR_FUSION_BALL
   - delete: STR_PLASMA_BEAM
+
+
+  - name: STR_TUNNAN_MK2
+    category: STR_CRAFT
+    requires:
+     - STR_IMPROVED_FIGHTER
+     - STR_ON_OUR_OWN
+    listOrder: 3300
+    space: 10
+    time: 400
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_TUNNAN: 1
 
 
   - name: STR_HIND
@@ -3262,7 +3462,7 @@ manufacture:
       - STR_IMPROVED_HEAVY_MISSILE
     space: 6
     time: 100
-    cost: 20000
+    cost: 40000
     producedItems:
       STR_HAMMER_MISSILES: 3
 
@@ -3316,6 +3516,8 @@ manufacture:
 ######### AIRCRAFT #################
 ########## TIER III #################
 ################################
+  - delete: STR_AVENGER
+
   - name: STR_CRUSADER
     category: STR_CRAFT
     requires:
@@ -3343,7 +3545,7 @@ manufacture:
   - name: STR_SABRE
     category: STR_CRAFT
     requires:
-      - STR_ULTIMATE_CRAFT
+      - STR_EXOATMOSPHERIC_FIGHTERS
     listOrder: 3250
     space: 30
     time: 1200
@@ -3365,7 +3567,8 @@ manufacture:
     time: 500
     cost: 182000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_CRYSTAL: 5
   - name: STR_LASER_CANNON
     category: STR_CRAFT_WEAPON
     requires:
@@ -3374,7 +3577,8 @@ manufacture:
     time: 600
     cost: 182000
     requiredItems:
-      STR_ALIEN_ALLOYS: 15
+      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_CRYSTAL: 5
 
   - name: STR_LONGSWORD_LAUNCHER
     listOrder: 50
@@ -3420,7 +3624,7 @@ manufacture:
       - STR_KATANA
     space: 6
     time: 100
-    cost: 30000
+    cost: 50000
     producedItems:
       STR_KATANA_MISSILES: 3
 
@@ -3468,7 +3672,7 @@ manufacture:
       - STR_ADLER
     space: 6
     time: 100
-    cost: 50000
+    cost: 60000
     producedItems:
       STR_ADLER_MISSILES: 1
 
@@ -3578,7 +3782,7 @@ manufacture:
       - STR_MJOLNIR
     space: 6
     time: 100
-    cost: 40000
+    cost: 55000
     producedItems:
       STR_MJOLNIR_MISSILES: 3
 
@@ -3628,7 +3832,7 @@ manufacture:
       - STR_KONDOR
     space: 6
     time: 100
-    cost: 60000
+    cost: 70000
     producedItems:
       STR_KONDOR_MISSILES: 1
 
@@ -3700,6 +3904,10 @@ extraSprites:
       964: Resources/Aircraft/M50NuclearBomber_base.png
       965: Resources/Aircraft/Viggen_base.png
       966: Resources/Aircraft/Jaguar_base.png
+      968: Resources/Aircraft/Blackbird_base.png
+
+      978: Resources/Aircraft/Space_Shuttle_base.png
+      980: Resources/Aircraft/TunnanMK2_base.png
 
 #      152: Resources/Aircraft/Odysseus_base.png
 #      153: Resources/Aircraft/Orion_base.png
@@ -3796,13 +4004,19 @@ extraSprites:
       931: Resources/Aircraft/M50NuclearBomber_minimised.png
       932: Resources/Aircraft/Viggen_minimised.png
       933: Resources/Aircraft/Jaguar_minimised.png
+      935: Resources/Aircraft/Blackbird_minimised.png
 
       941: Resources/Aircraft/Flanker_dogfight.png
       942: Resources/Aircraft/M50NuclearBomber_dogfight.png
       943: Resources/Aircraft/Viggen_dogfight.png
       944: Resources/Aircraft/Jaguar_dogfight.png
+      946: Resources/Aircraft/Blackbird_dogfight.png
 
+      945: Resources/Aircraft/Space_Shuttle_minimised.png
+      956: Resources/Aircraft/Space_Shuttle_dogfight.png
 
+      947: Resources/Aircraft/Tunnan_minimised.png
+      958: Resources/Aircraft/Tunnan_dogfight.png
 #      203: Resources/Aircraft/Sabre_minimised.png
 
 #      206: Resources/Aircraft/Bastion_dogfight.png
@@ -4135,6 +4349,25 @@ extraSprites:
     height: 200
     files:
       0: Resources/Aircraft/LIGHTNING_UFOPEDIA.PNG
+  - type: SPACE_SHUTTLE_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/SPACE_SHUTTLE_UFOPEDIA.png
+  - type: BLACKBIRD_UFOPEDIA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/BLACKBIRD_UFOPEDIA.png
+
+  - type: TUNNAN_MK2_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Aircraft/TORNSVALA_UFOPEDIA.PNG
 ############################################
   - type: SIDEWINDER
     singleImage: true
@@ -4360,6 +4593,7 @@ extraSprites:
 
 
 extraStrings:
+  # cSpell:enable
   - type: en-US
     strings:
 ###CRAFT
@@ -4446,12 +4680,12 @@ extraStrings:
       STR_ROCKET_POD_UFOPEDIA: "Rocket Pods are short range weapons, high speed and fast fire rate. They are not guided, so they are quite imprecise. Trying to use them against small, agile targets is useless. It is basically a shotgun for airplanes. They have the ability to project a large amount of explosives over a large area. Its primary design was to saturate the sky in front of enemy bombers to bring them down."
 
       STR_TUNNAN: "TUNNAN"
-      STR_TUNNAN_UFOPEDIA: "J29 TUNNAN - OLD-FASHIONED MODEL OF AIRPLANE OF SWEDISH ORIGIN, DESPITE ITS AGE IS VERY MANEUVERABLE, TOUGH AND VERY APPRECIATED BY ITS PILOTS. FAMOUS FOR HIS ACTIONS IN THE CONGO AND THE SWEDISH UFO INICIDENT. TUNNAN MEANS 'BARREL'."
+      STR_TUNNAN_UFOPEDIA: "J29 TUNNAN - OLD-FASHIONED MODEL OF AIRPLANE OF SWEDISH ORIGIN, DESPITE ITS AGE IS VERY MANEUVERABLE, TOUGH AND VERY APPRECIATED BY ITS PILOTS. FAMOUS FOR ITS ACTIONS IN THE CONGO AND THE SWEDISH UFO INCIDENT. TUNNAN MEANS 'BARREL'."
 
       STR_HERCULES: "HERCULES"
-      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS.TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION."
+      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS. TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION."
       STR_HUEY: "HUEY"
-      STR_HUEY_UFOPEDIA: "UH-1 HUEY - LIGHT TRANSPORT HELICOPTER, EMPLOYED TO INSERT AND EVACUATE TROOPS QUICKLY IN THE BATTLEFIELD. IT HAS A SHORT RANGE, OUR TROOPS MUST ARE TAKEN ON C-130s TO MISSION SITES BEFORE THE DEPLOYMENT. ARMED WITH WEAPON HARDPOINTS TO PROVIDE CLOSE SUPPORT AND ENGAGE TARGETS"
+      STR_HUEY_UFOPEDIA: "UH-1 HUEY - LIGHT TRANSPORT HELICOPTER, EMPLOYED TO INSERT AND EVACUATE TROOPS QUICKLY IN THE BATTLEFIELD. IT HAS A SHORT RANGE, OUR TROOPS MUST BE TAKEN ON C-130s TO MISSION SITES BEFORE THE DEPLOYMENT. ARMED WITH WEAPON HARDPOINTS TO PROVIDE CLOSE SUPPORT AND ENGAGE TARGETS"
       STR_PHANTOM: "PHANTOM"
       STR_PHANTOM_UFOPEDIA: "F-4 PHANTOM II - STANDARD AIR SUPERIORITY FIGHTER PLANE OF UNEXCOM, IT'S A WIDELY SPREAD AIRCRAFT IN THE NATO AIR FORCES. MODIFIED TO INCORPORATE LARGE INTERNAL FUEL TANKS TO INCREASE COMBAT RANGE."
       STR_THUNDERCHIEF: "THUNDERCHIEF"
@@ -4470,18 +4704,18 @@ extraStrings:
       STR_VULCAN_CANNON: "M61 Vulcan Cannon"
       STR_VULCAN_CANNON_ROUNDS_X50: "M61 Vulcan Cannon Rounds(x50)"
 
-      STR_FOXBAT: "MiG-25"
+      STR_FOXBAT: "FOXBAT"
       STR_FOXBAT_UFOPEDIA: "MiG-25 FOXBAT - SUPERSONIC TWIN-MOTOR INTERCEPTOR AND RECON CRAFT, IT'S AMONGST THE FASTEST MILITARY AIRCRAFTS IN THE WORLD. FEATURES A VERY POWERFUL RADAR, IMPOSSIBLE TO BE INTERFERED WITH ANY TYPE OF COUNTERMEASURES."
-      STR_FISHBED: "MiG-21"
+      STR_FISHBED: "FISHBED"
       STR_FISHBED_UFOPEDIA: "MiG-21BIS FISHBED - SUPERSONIC LIGHTWEIGHT MULTIROLE FIGHTER, FAMOUS FOR BEING CHEAP AND EASY TO HANDLE, AS WELL AS THE MOST PRODUCED SUPERSONIC AIRCRAFT IN HISTORY. IT IS NOT PARTICULARLY FAST OR POWERFUL, BUT IT IS VERY MANEUVERABLE. OUR VERSION INCLUDES IMPROVED FUEL TANKS TO INCREASE COMBAT RADIUS."
-      STR_BACKFIRE: "Tu-22M"
-      STR_BACKFIRE_UFOPEDIA: "Tu-22M BACKFIRE - SUPERSONIC, VARIABLE-SWEEP WING, LONG RANGE STRATEGIC STRIKE BOMBER, CAN CARRY THE MOST POWERFUL MISSILES IN OUR ARSENAL AND HAS THE LONGEST RANGE IN OUR AIR FORCE. IT'S SIZE LIMITES IT'S MANEUVERABILITY."
+      STR_BACKFIRE: "BACKFIRE"
+      STR_BACKFIRE_UFOPEDIA: "Tu-22M BACKFIRE - SUPERSONIC, VARIABLE-SWEEP WING, LONG RANGE STRATEGIC STRIKE BOMBER, CAN CARRY THE MOST POWERFUL MISSILES IN OUR ARSENAL AND HAS THE LONGEST RANGE IN OUR AIR FORCE. ITS SIZE LIMITS ITS MANEUVERABILITY."
       STR_ATOLL: "ATOLL"
       STR_ATOLL_UFOPEDIA: "R-3 'AA-2 ATOLL' - SHORT RANGE AIR TO AIR MISSILE WITH IR GUIDANCE, MISSILE OF ENGINEERING TO THE INVERSE OF THE SIDEWINDER, HAS A LITTLE MORE RANGE, BUT IT IS LESS POWERFUL. LIGHT MISSILE"
       STR_ATOLL_LAUNCHER: "Atoll Launcher"
       STR_ATOLL_MISSILES: "Atoll Missiles"
       STR_ACRID: "ACRID"
-      STR_ACRID_UFOPEDIA: "R-40 'AA-6 ACRID' - SOVIET LONG RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE, EQUIPED WITH THE SAME 'SMERCH-A' RADAR OF THE MiG-25. IT IS THE BIGGEST AA MISSILE IN USE. HEAVY MISSILE"
+      STR_ACRID_UFOPEDIA: "R-40 'AA-6 ACRID' - SOVIET LONG RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE, EQUIPPED WITH THE SAME 'SMERCH-A' RADAR OF THE MiG-25. IT IS THE BIGGEST AA MISSILE IN USE. HEAVY MISSILE"
       STR_ACRID_LAUNCHER: "Acrid Launcher"
       STR_ACRID_MISSILES: "Acrid Missiles"
       STR_GSH_23: "GSh-23"
@@ -4489,30 +4723,30 @@ extraStrings:
       STR_GSH_23_CANNON: "GSh-23 Cannon"
       STR_GSH_23_CANNON_ROUNDS_X50: "GSh-23 Cannon Rounds(x50)"
 
-      STR_LIGHTNING_F6: "LIGHTNING F.6"
-      STR_LIGHTNING_F6_UFOPEDIA: "LIGHTNING F.6 - MAIN INTERCEPTOR IN THE ROYAL AIR FORCE ARSENAL, FEATURES AN INCREDIBLE RATE OF CLIMB, CEILING, SPEED AND ACCELERATION, ALTHOUGH DATA IS CLASSIFIED, IT IS SAYED THAT IT CAN CLIMB MORE THAN 18,000 METERS WITH RELATIVE EASE."
+      STR_LIGHTNING_F6: "LIGHTNING"
+      STR_LIGHTNING_F6_UFOPEDIA: "LIGHTNING F.6 - MAIN INTERCEPTOR IN THE ROYAL AIR FORCE ARSENAL, FEATURES AN INCREDIBLE RATE OF CLIMB, CEILING, SPEED AND ACCELERATION, ALTHOUGH DATA IS CLASSIFIED, IT IS SAID THAT IT CAN CLIMB MORE THAN 18,000 METERS WITH RELATIVE EASE."
       STR_MIRAGE: "MIRAGE"
       STR_MIRAGE_UFOPEDIA: "MIRAGE IV - SUPERSONIC NUCLEAR BOMBER AND RECONNAISSANCE AIRCRAFT. VERY AGILE BOMBER, USES A MODIFIED VERSION OF TAKE-OFF ROCKETS INSTALLED UNDER FUSELAGE, EMPLOYEES TO GIVE EXTRA AGILITY IN EMERGENCY CASES."
       STR_STARFIGHTER: "STARFIGHTER"
       STR_STARFIGHTER_UFOPEDIA: "F-104S STARFIGHTER - CONSIDERED BETTER THAN THE NATIVE AMERICAN VERSION, THIS INTERCEPTOR IS A FINE AND ELEGANT AIRCRAFT. AT THE REQUEST OF UNEXCOM, THE HARDPOINT FOR CANNON WAS REINTRODUCED INSTEAD OF ANOTHER SLOT FOR HEAVY MISSILES. COUNTS WITH A BONUS TO THE AGILITY OF 15%."
       STR_DRAKEN: "DRAKEN"
-      STR_DRAKEN_UFOPEDIA: "S35 DRAKEN - EXCELLENT SWEDISH MODEL, IS DESIGNED TO BE VERY STRONG, PRACTICAL AND RELIABLE. IT HAS STOL CAPACITY AND CAN BE REASSEMBLED BY A TEAM OF INEXPERIENCED SOLDIERS IN 10 MINUTES. IS SOMEWHAT SLOWER THAN OTHER FIGHTERS, BUT COMPENSATES IT WITH IT'S DURABILITY"
+      STR_DRAKEN_UFOPEDIA: "S35 DRAKEN - EXCELLENT SWEDISH MODEL, IS DESIGNED TO BE VERY STRONG, PRACTICAL AND RELIABLE. IT HAS STOL CAPACITY AND CAN BE REASSEMBLED BY A TEAM OF INEXPERIENCED SOLDIERS IN 10 MINUTES. IS SOMEWHAT SLOWER THAN OTHER FIGHTERS, BUT COMPENSATES IT WITH ITS DURABILITY"
 
       STR_RED_TOP: "RED TOP"
       STR_RED_TOP_UFOPEDIA: "RED TOP EX - BRITISH SMALL RANGE AIR TO AIR MISSILE WITH IR GUIDANCE. MODIFIED BY HAWKER SIDDELEY WITH ENHANCED PROPELLER TO INCREASE RANGE. LIGHT MISSILE"
       STR_RED_TOP_LAUNCHER: "Red Top Launcher"
       STR_RED_TOP_MISSILES: "Red Top Missiles"
       STR_MATRA: "MATRA"
-      STR_MATRA_UFOPEDIA: "MATRA R.530 EX - FRENCH MEDIUM RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE. MODIFIED BY MATRA BY ADDING A NEW MOTOR AND FUEL TANK TO DRASTICALLY INCREASE IT'S RANGE. HEAVY MISSILE"
+      STR_MATRA_UFOPEDIA: "MATRA R.530 EX - FRENCH MEDIUM RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE. MODIFIED BY MATRA BY ADDING A NEW MOTOR AND FUEL TANK TO DRASTICALLY INCREASE ITS RANGE. HEAVY MISSILE"
       STR_MATRA_LAUNCHER: "Matra Launcher"
       STR_MATRA_MISSILES: "Matra Missiles"
       STR_ADEN: "ADEN"
-      STR_ADEN_UFOPEDIA: "ADEN - POPULAR BRITISH AIR TO AIR CANNON, USED IN NUMEROUS EUROPEAN AIRCRAFTS. FEATURES A BIG, HEAVY AND LETAL ROUND, CAPABLE OF PENETRATE SEVERAL INCHES OF ARMOR - FIRES 30 MM ROUNDS. REVOLVER CANNON"
+      STR_ADEN_UFOPEDIA: "ADEN - POPULAR BRITISH AIR TO AIR CANNON, USED IN NUMEROUS EUROPEAN AIRCRAFTS. FEATURES A BIG, HEAVY AND LETHAL ROUND, CAPABLE OF PENETRATE SEVERAL INCHES OF ARMOR - FIRES 30 MM ROUNDS. REVOLVER CANNON"
       STR_ADEN_CANNON: "ADEN Cannon"
       STR_ADEN_CANNON_ROUNDS_X50: "ADEN Cannon Rounds(x50)"
 
       STR_FALCON: "FALCON"
-      STR_FALCON_UFOPEDIA: "AIM-26 FALCON - ONLY NUCLEAR AIR TO AIR MISSILE IN AMERICAN ARSENAL. DESIGNED TO PROVIDE AN ENSURE KILL IN ATTACKS ON SOVIET HEAVY BOMBERS. USES SEMI-ACTIVE RADAR HOMING. EQUIPED WITH W45 NUCLEAR WARHEAD, EXPLOSIVE YELD EQUIVALENT TO 250t OF TNT. MODIFIED BY HUGHES ELECTRONICS BY ADDING A LARGE FUEL TANK TO INCREMENT RANGE. SUPER HEAVY MISSILE"
+      STR_FALCON_UFOPEDIA: "AIM-26 FALCON - ONLY NUCLEAR AIR TO AIR MISSILE IN AMERICAN ARSENAL. DESIGNED TO PROVIDE AN ENSURED KILL IN ATTACKS ON SOVIET HEAVY BOMBERS. USES SEMI-ACTIVE RADAR HOMING. EQUIPPED WITH W45 NUCLEAR WARHEAD, EXPLOSIVE YIELD EQUIVALENT TO 250t OF TNT. MODIFIED BY HUGHES ELECTRONICS BY ADDING A LARGE FUEL TANK TO INCREMENT RANGE. SUPER HEAVY MISSILE"
       STR_FALCON_LAUNCHER: "Falcon Launcher"
       STR_FALCON_MISSILES: "Falcon Missiles"
 
@@ -4522,7 +4756,7 @@ extraStrings:
       STR_MIGHTY_MOUSE_ROCKETS: "Mighty Mouse Rockets"
 
       STR_SHORTSWORD_ALLOY_LIGHT_MISSILE: "SHORTSWORD ALLOY LIGHT MISSILE"
-      STR_SHORTSWORD_ALLOY_LIGHT_MISSILE_UFOPEDIA: "AIM-18A - MISSILE CREATED ENTIRELY FROM ALIEN ALLOYS. IS LIGHTER AND THE NEW HEAT SEEKING PROTOTYPE SYSTEMS ARE PROGRAMMED TO SPECIFICALLY SEARCH FOR THE THERMAL WAVES EMITTED BY THE UFO, INCREASING ITS ACCURACY. LIGHT MISSILE"
+      STR_SHORTSWORD_ALLOY_LIGHT_MISSILE_UFOPEDIA: "AIM-18A - MISSILE CREATED ENTIRELY FROM ALIEN ALLOYS. LIGHTER, AND THE NEW HEAT SEEKING PROTOTYPE SYSTEMS ARE PROGRAMMED TO SPECIFICALLY SEARCH FOR THE THERMAL WAVES EMITTED BY THE UFO, INCREASING ITS ACCURACY. LIGHT MISSILE"
       STR_SHORTSWORD_LAUNCHER: "Shortsword Launcher"
       STR_SHORTSWORD_MISSILES: "Shortsword Missiles"
       STR_HAMMER_ALLOY_HEAVY_MISSILE: "SCIMITAR ALLOY HEAVY MISSILE"
@@ -4544,7 +4778,7 @@ extraStrings:
       STR_HYDRA_ALLOY_ROCKETS: "HYDRA ALLOY ROCKET"
       STR_HYDRA_ALLOY_ROCKETS_UFOPEDIA: "MK 9 HYDRA 72 ROCKET - PROTOTYPE VARIANT INSPIRED BY THE CLASSIC MK 4 UNGUIDED ROCKET, THEY HAVE A TUNGSTEN PENETRATOR THAT AT THE MOMENT OF IMPACT PERFORATES THE OUTER SURFACE BEFORE DETONATING THE EXPLOSIVE CHARGE INSIDE. ROCKET"
       STR_HYDRA_LAUNCHER: "Hydra Launcher"
-      STR_HYDRA_ROCKETS: "Hydra Rockets (x8)"
+      STR_HYDRA_ROCKETS: "Hydra Rockets"
 
       STR_LASER_ARRAY: Apollo Laser Gatling
       STR_LASER_ARRAY_UC: APOLLO LASER GATLING # Renamed!
@@ -4554,26 +4788,26 @@ extraStrings:
       STR_KODIAK_LASER_CANNON_UFOPEDIA: YLC-10 KODIAK LASER CANNON - PROTOTYPE OF EXPERIMENTAL LASER CANNON DESIGNED EXCLUSIVELY BY UNEXCOM ENGINEERS. ITS REFRACTING LENSES AND MODERN SELF-RECHARGING POWER CELL ALLOW IT TO HAVE AN UNDISPUTED POWER, EFFECTIVENESS AND ACCEPTABLE RANGE.
       STR_FUEL_TANK_UC: "FUEL TANK"
       STR_FUEL_TANK: "FUEL TANK"
-      STR_FUEL_TANK_UFOPEDIA: "EXTRA FUEL TANK, CARRIED UNDER WING. ADD 150 EXTRA FUEL UNITS, WHICH MEANS ADDITIONAL 400 NAUTICAL MILES OR 740 KM , WITH THE DISADVANTAGE THAT MAKES SLOW (ACCEL -1) AND LESS AGILE (AVOID BONUS -5) TO THE AIRCRAFT THAT USES IT."
+      STR_FUEL_TANK_UFOPEDIA: "EXTRA FUEL TANK, CARRIED UNDER WING. ADD 150 EXTRA FUEL UNITS, WHICH MEANS ADDITIONAL 400 NAUTICAL MILES OR 740 KM, WITH THE DISADVANTAGE THAT IT MAKES THE AIRCRAFT SLOWER (ACCEL -1) AND LESS AGILE (AVOID BONUS -5)."
       STR_AFTERBURNER_UC: "AFTERBURNER"
       STR_AFTERBURNER: "AFTERBURNER"
-      STR_AFTERBURNER_UFOPEDIA: "AUXILIARY UNIT THAT IS INSTALLED DIRECTLY IN THE MOTOR OF THE PLANE THAT USES IT, INCREASES ITS SPEED IN 250 KNOTS, ALMOST 400 KM/H. AS WELL INCREMENTS THE ACCELERATION BY 10 UNITS. LIMITS THE FUEL IN -25"
+      STR_AFTERBURNER_UFOPEDIA: "AUXILIARY UNIT THAT IS INSTALLED DIRECTLY IN THE MOTOR OF THE PLANE THAT USES IT, INCREASES ITS SPEED BY 250 KNOTS, ALMOST 400 KM/H. ALSO INCREMENTS THE ACCELERATION BY 10 UNITS. LIMITS THE FUEL CAPACITY BY -25"
       STR_TARGETING_POD_UC: "TARGETING POD"
       STR_TARGETING_POD: "TARGETING POD"
-      STR_TARGETING_POD_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOYS AND ALIEN NAVIGATION, USING OUR NEWEST RESEACH IN UFOS. INCREASE ACCURACY CAPACITIES BY 25."
+      STR_TARGETING_POD_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOYS AND ALIEN NAVIGATION, USING OUR NEWEST RESEARCH IN UFOS. INCREASE ACCURACY CAPACITIES BY 25."
       STR_STR_ALLOY_CRAFT_ARMOR_UC: "ALLOY CRAFT ARMOR"
       STR_ALLOY_CRAFT_ARMOR_POD: "ALLOY CRAFT ARMOR"
-      STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOY, DESIGNED TO INCREASE THE DURABILITY OF OUR CRAFTS. INCREASES DAMAGE MAX BY 100, BUT REDUCES DODGE BY 10"
+      STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOY, DESIGNED TO INCREASE THE DURABILITY OF OUR CRAFTS. INCREASES MAX DAMAGE BY 100, BUT REDUCES DODGE BY 10"
       STR_LINNA: "LINNA"
-      STR_LINNA_UFOPEDIA: "BUILT IN COLLABORATION WITH OUR SCIENTISTS WITH NASA, ESRO AND THE SOVIET SPACE PROGRAM, IT USES EXPERIMENTAL OPTICAL AND SENSORS TO DETECT UFO's CHARACTERISTIC INFRARED SIGNATURES AND GRAVITY WAVES. 'LINNA' MEANS 'CASTLE' IN FINNISH."
+      STR_LINNA_UFOPEDIA: "BUILT IN COLLABORATION WITH OUR SCIENTISTS WITH NASA, ESRO AND THE SOVIET SPACE PROGRAM, IT USES EXPERIMENTAL OPTICAL AND SENSORS TO DETECT UFOS CHARACTERISTIC INFRARED SIGNATURES AND GRAVITY WAVES. 'LINNA' MEANS 'CASTLE' IN FINNISH."
       STR_RAPIER: "RAPIER"
       STR_RAPIER_UFOPEDIA: "XF-108 RAPIER - LONG-RANGE, HIGH-SPEED INTERCEPTOR AIRCRAFT DESIGNED BY NORTH AMERICAN AVIATION INTENDED TO DEFEND THE UNITED STATES FROM SUPERSONIC SOVIET STRATEGIC BOMBERS. MODIFIED WITH AN ALIEN ALLOY FRAME FOR BETTER PROTECTION AND ENHANCED INTERNAL FUEL TANK TO INCREASE COMBAT RANGE"
       STR_VALKYRIE: "VALKYRIE"
-      STR_VALKYRIE_UFOPEDIA: "XB-70 VALKYRIE - VERY LONG RANGE, DEEP-PENETRATION STRATEGIC NUCLEAR BOMBER. MODIFIED TO INCORPORATE NEW ALIEN ALLOY AIRFRAME AND MODIFIED RADAR. IT'S NEW ENGINES ALLOWS TO INCREASE IT'S COMBAT PERFORMANCE AND REACH HIGHER SPEEDS. CAPABLE OF CARRY NUCLEAR WEAPONS."
+      STR_VALKYRIE_UFOPEDIA: "XB-70 VALKYRIE - VERY LONG RANGE, DEEP-PENETRATION STRATEGIC NUCLEAR BOMBER. MODIFIED TO INCORPORATE NEW ALIEN ALLOY AIRFRAME AND MODIFIED RADAR. ITS NEW ENGINES ALLOWS TO INCREASE ITS COMBAT PERFORMANCE AND REACH HIGHER SPEEDS. CAPABLE OF CARRY NUCLEAR WEAPONS."
       STR_ATALAYA: "ATALAYA"
       STR_ATALAYA_UFOPEDIA: "NEWEST IMPLEMENTATION OF ALIEN TECH ON HUMAN DESIGNS. HAS BETTER FUEL CELLS FOR MORE FLIGHT TIME, AS WELL AS IMPROVED RADARS AND SCANNERS FOR LONGER-RANGE DETECTION. INCORPORATES THE NEWEST AMERICAN AND SOVIET AEROSPACE TECH WITH THE LIGHT AND STRONG ALIEN ALLOYS. INCLUDES A SLOT FOR CANNONS, USED AS SELF-DEFENSE."
       STR_HIND: "HIND"
-      STR_HIND_UFOPEDIA: "MI-24X HIND - ADVANCED SOVIET GUNSHIP MODEL, BUILT IN COLLABORATION WITH MIKHAIL MIL AND UNEXCOM. NICKNAMED 'FLYING TANK' FOR ITS FIRE POWER AND HARDNESS, SACRIFICES A LITTLE THE ABILITY TO TRANSPORT TROOPS FOR INCREASED ARMOR AND SPACE FOR FUEL. PERFORMS A MISSILE STRIKE DURING THE FIRST TURN OF COMBAT"
+      STR_HIND_UFOPEDIA: "MI-24X HIND - ADVANCED SOVIET GUNSHIP MODEL, BUILT IN COLLABORATION WITH MIKHAIL MIL AND UNEXCOM. NICKNAMED 'FLYING TANK' FOR ITS FIRE POWER AND HARDNESS, SACRIFICES A LITTLE THE ABILITY TO TRANSPORT TROOPS FOR INCREASED ARMOR AND SPACE FOR FUEL. PERFORMS A MISSILE STRIKE DURING THE FIRST TURN OF COMBAT (TROOPS CANNOT LEAVE THE CRAFT DURING THE FIRST TURN OF COMBAT)"
 #      STR_VALKYRIE: "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA:  "VALKYRIE"
 #      STR_VALKYRIE_UFOPEDIA: "VALKYRIE"
@@ -4605,7 +4839,7 @@ extraStrings:
       STR_GORGON_ROCKETS_UFOPAEDIA: "THE GORGON ROCKET SYSTEM IS A LIGHT UNGUIDED FUSION MISSILE THAT EXCHANGES RANGE AND ACCURACY FOR DESTRUCTIVE POWER AND CARRYING CAPACITY."
       STR_CASABA_SPIKE: "CASABA HOWITZER NUCLEAR SPIKE"
       STR_LASER_SPIKE: "CASABA NUCLEAR SPIKE"
-      STR_CASABA_SPIKE_UFOPAEDIA: "THE CASABA NUCLEAR SPIKE IS A HIGHLY EXPERIMENTAL WEAPON. USING A NUCLEAR REACTION CONTAINED WITHIN A HEAVILY MODIFIED UFO POWER SOURCE TO POWER ITSELF, THE WEAPON SYSTEM CONCENTRATES ALL THE POWER GENERATED INTO A SINGLE DESTRUCTIVE LASER BEAM."
+      STR_CASABA_SPIKE_UFOPAEDIA: "THE CASABA NUCLEAR SPIKE IS A HIGHLY EXPERIMENTAL WEAPON. USING A NUCLEAR REACTION CONTAINED WITHIN A HEAVILY MODIFIED UFO POWER SOURCE TO POWER ITSELF, THE WEAPON SYSTEM CONCENTRATES ALL THE POWER GENERATED INTO A SINGLE DESTRUCTIVE BEAM."
       STR_EXCALIBUR_LIGHT_MISSILE: "EXCALIBUR SMART LIGHT MISSILE"
       STR_EXCALIBUR_LAUNCHER: "EXCALIBUR LAUNCHER"
       STR_EXCALIBUR_MISSILES: "EXCALIBUR MISSILE"
@@ -4634,17 +4868,17 @@ extraStrings:
       STR_CASABA_LANCE_UFOPAEDIA: "THE CASABA NUCLEAR LANCE IS AN IMPROVEMENT DEVELOPED FROM DATA GAINED FROM THE CASABA NUCLEAR SPIKE. INSTEAD OF HAVING A SINGLE CHAMBER WHERE THE NUCLEAR REACTION OCCURS, THE REACTION IS TRIGGERED IN TWO PARALLEL CHAMBERS."
       STR_VIGGEN: "VIGGEN"
       STR_VIGGEN_UFOPAEDIA: "The Saab 37 Viggen, meaning lightning bolt or a tufted duck in Swedish, is the most advanced European fighter currently available, which utilizes a rarely used canard wing configuration. The aircraft is a significant improvement over its predecessor the Saab 35, boasting improvements in almost every aspect of the plane."
-      STR_FIREFOX: "MIG-31"
+      STR_FIREFOX: "FIREFOX"
       STR_FIREFOX_UFOPAEDIA: "The MiG-31, designated as “Firefox” by NATO, is a highly experimental soviet air superiority fighter. Utilizing the greatest advancements in soviet aerospace design and alien technology in almost every aspect of its design, the MiG-31 is a formidable combatant. Utilizing discoveries into alien psionics, the fighters fire-control system links directly with the pilot’s mind, increasing the accuracy of the fighter’s weaponry."
-      STR_FLANKER: "SU-27"
-      STR_FLANKER_UFOPAEDIA: "The Sukhoi Su-27, designated as Flanker by NATO, is a Soviet air superiority fighter boasting excellent manoeuvrability and operational range. Thanks to insight gained from previous UFO encounters and aerial engagements early in the war, the development of the Su-27 was greatly accelerated."
+      STR_FLANKER: "FLANKER"
+      STR_FLANKER_UFOPAEDIA: "The Sukhoi Su-27, designated as Flanker by NATO, is a Soviet air superiority fighter boasting excellent maneuverability and operational range. Thanks to insight gained from previous UFO encounters and aerial engagements early in the war, the development of the Su-27 was greatly accelerated."
       STR_JAGUAR: "JAGUAR"
-      STR_JAGUAR_UFOPAEDIA: "The SEPECAT Jaguar is an attack aircraft of joint British and French design. Though originally designed for close air support and tactical nuclear strikes, the Jaguar is perfectly capable of engaging UFOs with both long and shortrange weaponry."
-      STR_M50: "M-50"
+      STR_JAGUAR_UFOPAEDIA: "The SEPECAT Jaguar is an attack aircraft of joint British and French design. Though originally designed for close air support and tactical nuclear strikes, the Jaguar is perfectly capable of engaging UFOs with both long and short-range weaponry."
+      STR_M50: "BOUNDER"
       STR_M50_UFOPAEDIA: "The Myasishchev M-50 was a prototype supersonic strategic bomber which development was terminated due to the introduction of intercontinental ballistic missiles. Due to the requirement of high payload, supersonic aircraft to challenge larger UFOs, the design was reintroduced and put into production."
       STR_TU45M: "TU-45M"
       STR_TU45M_UFOPAEDIA: "The Tupolev Tu-45M was a rejected proposed variant of the Tu-22M with the purpose of taking down aircraft carriers. After the outset of the war against extra-terrestrials, the design was revisited and modified to make the bomber a counter to the larger UFO designs encounter. Capable of wielding multiple long-range missiles, the TU-45M has one of the largest payloads of any craft available to us."
-      STR_A12: "A-12 AVENGER"
+      STR_A12: "AVENGER"
       STR_A12_UFOPAEDIA: "The McDonell Douglas A-12 Avenger is the pinnacle of tactical bomber design. Due to a focus on a lightweight design and the application of alien technology the A-12 outperforms even the most advanced strategic bombers in effective combat range, though this achievement comes at a cost to the size of the payload. The A-12:s design also incorporates foldable wings, enabling it to fit in the space of a average fighter."
       STR_PANAVIA: "HURRICANE"
       STR_PANAVIA_UFOPAEDIA: "The Panavia Hurricane is currently jointly developed by Italian, British and German Aeronautic companies as a strike fighter to defend against a possible Soviet offensive in Europe, although its design allows it also to take on a multitude of different missions. A version upgraded to incorporate alien technology has been rushed into production so that UNEXCOM can field it as an interceptor."
@@ -4657,10 +4891,15 @@ extraStrings:
       STR_DYNASOAR: "DYNA-SOAR"
       STR_DYNASOAR_UFOPAEDIA: "The Boeing X-20 Dyna-Soar is a spaceplane design that has been in development since 1957, although plagued by a lack of funds the program has avoided cancellation due to the repeated UFO sightings during the 60s. After the beginning of the alien invasion the program garnered a lot more interest. Although expensive to produce, the Dyna-Soar could provide a significant advantage in our struggle against the Aliens."
       STR_HERMES: "HERMES"
-      STR_HERMES_UFOPAEDIA: "The Hermes was originally planned as a reusable space shuttle to deliver cargo into orbit, but after the alien invasion plans quickly changed. The HERMES became an exo-atmospheric strike fighter capable of delivering nuclear missiles. Due to the non-military origins of the craft the design lacks the durability and manoeuvrability."
-      STR_MIG_105: "MIG-105"
-      STR_MIG_105_UFOPAEDIA: "The MiG-105 entered development shortly after the alien invasion began. Benefitting from innovations discovered by UNEXCOM, the MiG-105 surpassed early expectations despite being the first spaceplane designed for exclusively for military use. However, the MiG-105 still lags behind conventional aircraft designs in some aspects, The size of its payload is limited due to the requirement of having a low weight."
+      STR_HERMES_UFOPAEDIA: "The Hermes was originally planned as a reusable space shuttle to deliver cargo into orbit, but after the alien invasion plans quickly changed. The HERMES became an exo-atmospheric strike fighter capable of delivering nuclear missiles. Due to the non-military origins of the craft the design lacks the durability and maneuverability."
+      STR_MIG_105: "LAPOT"
+      STR_MIG_105_UFOPAEDIA: "The MiG-105, Nicknamed Lapot, entered development shortly after the alien invasion began. Benefitting from innovations discovered by UNEXCOM, the MiG-105 surpassed early expectations despite being the first spaceplane designed exclusively for military use. However, the MiG-105 still lags behind conventional aircraft designs in some aspects; the size of its payload is limited due to the requirement of having a low weight."
       STR_BASTION: "BASTION"
-      STR_BASTION_UFOPAEDIA: "The bastion was designed with the sole purpose of spotting UFOs in mind, Capable of spotting and tracking UFOs in an unprecedented 2300-mile radius. Due to improvements in efficiency, the Bastion is capable of relocating with twice the speed of its predecessor, while still retaining the capability to mount defensive guns."
+      STR_BASTION_UFOPAEDIA: "The bastion was designed with the sole purpose of spotting UFOs in mind, Capable of spotting and tracking UFOs in an unprecedented 2300-mile radius. Due to improvements in efficiency, the Bastion is capable of relocating with twice the speed of its predecessor. It houses a replicated alien IFF system, masking itself as friendly to alien sensors"
+      STR_SPACE_SHUTTLE: "RAIDER SHUTTLE"
+      STR_SPACE_SHUTTLE_UFOPEDIA: "X-73 RAIDER SPACE SHUTTLE - X-73 Raider Shuttle. Prototype space plane with a large cargo bay, planned to replace the Apollo program and intended to start in the 80s, the new technologies allowed us to improve and implement the model. Has VTOL capabilities."
+      STR_BLACKBIRD: "BLACKBIRD"
+      STR_BLACKBIRD_UFOPEDIA: "The SR-71 Blackbird is an american high altitude stealth spy plane. Notorious for its speed, it is currently the fastest aircraft ever built. The plane was painted black so that it would be harder to spot against the night sky, which led to it gaining its nickname."
 
-#}
+      STR_TUNNAN_MK2: "TORNSVALAN"
+      STR_TUNNAN_MK2_UFOPEDIA: "The Saab J29 MK 2 is a retrofitted version of the Saab J29. Designed with the assistance of Saab engineers, The MK 2 incorporates a new engine and an alien alloy fuselage to make it more competitive against the UFOs we are facing. Swedish test-pilots nicknamed the craft 'Tornsvalan', comparing the plane to a Swift in the air."

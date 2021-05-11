@@ -1,3 +1,5 @@
+# spellchecker:words GROM MACHINEGUN ALVIS MINIGUN RPGs SMOKELAUNCHER ENERGYSHELL LASERMINIGUN FERRETM SHERIDANM SALADINM LEGIONNAIREM HESH ATLC
+# spellchecker:words Boyevaya Mashina Desanta
 units:
 #####################################
 ####### DAIMLER FERRET SC ###########
@@ -189,7 +191,7 @@ items:
   - type: STR_FERRET_SMOKE_LAUNCHER
     weight: 0
     bigSprite: 2501
-    fireSound: 1007
+    #fireSound: 1007
     compatibleAmmo:
       - STR_FERRET_SMOKE_GRENADE
     accuracyAimed: 100
@@ -417,12 +419,11 @@ items:
     fireSound: 4334
     compatibleAmmo:
       - STR_M1919A4_AMMO_BOX
-    accuracySnap: 40
-    accuracyAimed: 75
-    accuracyAuto: 80
+    accuracySnap: 80
+    accuracyAuto: 40
     clipSize: 50
-    tuAuto: 30
-    tuSnap: 35
+    tuAuto: 35
+    tuSnap: 30
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -434,7 +435,7 @@ items:
     turretType: -1
     listOrder: 1407
   - type: STR_M1919A4_AMMO_BOX
-    categories: [STR_TANKS, STR_TANK_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    categories: [STR_TANKS, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.6
@@ -837,10 +838,10 @@ extraSprites:
     files:
       0: Resources/Tanks/SALADIN.png
   - type: LEGIONNAIRE.PCK
-#    width: 256
-#    height: 160
     width: 256
-    height: 840
+    height: 160
+#    width: 256
+#    height: 840
     subX: 32
     subY: 40
     files:
@@ -939,6 +940,9 @@ manufacture:
     space: 25
     time: 1200
     cost: 500000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ALIEN_CRYSTAL: 10
 extraStrings:
   - type: en-US
     strings:
