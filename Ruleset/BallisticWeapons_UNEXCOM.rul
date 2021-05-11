@@ -3552,6 +3552,8 @@ items:
     listOrder: 2134
 
   - type: STR_DUCT_TAPE
+    requiresBuy:
+      - STR_OLYMPUS
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 100
@@ -3577,6 +3579,8 @@ items:
     listOrder: 2135
 
   - type: STR_DUCT_GUN
+    requiresBuy:
+      - STR_OLYMPUS
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 100
