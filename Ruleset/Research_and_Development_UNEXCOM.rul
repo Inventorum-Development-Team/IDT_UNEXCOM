@@ -634,15 +634,12 @@ research:
     dependencies:
       - STR_ALLOY_MANUFACTURING
       - STR_ALIEN_LASERS
-    disables:
-      - STR_HYBRID_LASER_PROJECT
 
   - name: STR_LASER_CANNON
     cost: 300
     points: 10
     dependencies:
       - STR_LASER_WEAPONS
-      - STR_HYBRID_LASER_PROJECT
   - name: STR_LASER_ARRAY
     listOrder: 510
     cost: 300
@@ -655,7 +652,6 @@ research:
     points: 10
     dependencies:
       - STR_LASER_WEAPONS
-      - STR_HYBRID_LASER_PROJECT
 
   - name: STR_LASER_DEFENSE
     cost: 510
@@ -700,14 +696,11 @@ research:
       - STR_ALLOY_MANUFACTURING
       - STR_ALIEN_LASERS
       - STR_ON_OUR_OWN
-    disables:
       - STR_LASER_WEAPONS
+    disables:
       - STR_USA_LASER_RESEARCH
       - STR_NATO_LASER_RESEARCH
       - STR_USSR_LASER_RESEARCH
-    unlocks:
-      - STR_LASER_CANNON
-      - STR_CASABA_SPIKE
 
 #########################################
 ####### AMERICAN LASER RESEARCH ########
