@@ -82,6 +82,7 @@ research:
     disables:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_USSR_SUPPORT_RESEARCH
+      - STR_ON_OUR_OWN
     unlocks:
       - STR_556_X20_UNLOCK
       - STR_NATO_LMG_UNLOCK
@@ -94,10 +95,12 @@ research:
     disables:
       - STR_USSR_SUPPORT_RESEARCH
       - STR_USA_SUPPORT_RESEARCH
+      - STR_ON_OUR_OWN
     unlocks:
       - STR_762_X30_UNLOCK
       - STR_9MM_10X_UNLOCK
       - STR_NATO_LMG_UNLOCK
+      - STR_NATO_X5_UNLOCK
 
   - name: STR_USSR_SUPPORT_RESEARCH
     dependencies:
@@ -107,6 +110,7 @@ research:
     disables:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_USA_SUPPORT_RESEARCH
+      - STR_ON_OUR_OWN
     unlocks:
       - STR_SOVIET_762_UNLOCK
       - STR_9MM_10X_UNLOCK
@@ -119,14 +123,16 @@ research:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_USA_SUPPORT_RESEARCH
       - STR_USSR_SUPPORT_RESEARCH
-    unlocks:
-      - STR_UN_CUSTOM_WEAPONS
 
   - name: STR_UN_CUSTOM_WEAPONS
     cost: 500
     points: 200
     dependencies:
       - STR_ON_OUR_OWN
+    unlocks:
+     - STR_762_X30_UNLOCK
+     - STR_NATO_LMG_UNLOCK
+     - STR_NATO_X5_UNLOCK
 
   - name: STR_UN_WEAPON_SUPPLY_1
     cost: 200
@@ -285,6 +291,7 @@ research:
     cost: 0
     dependencies:
      - STR_NATO_SUPPORT_RESEARCH
+     - STR_UN_CUSTOM_WEAPONS
      - STR_BREN
 
   - name: STR_556_X20_UNLOCK
@@ -318,12 +325,18 @@ research:
      - STR_USSR_SUPPORT_RESEARCH
      - STR_NATO_SUPPORT_RESEARCH
 
+  - name: STR_NATO_X5_UNLOCK
+    cost: 0
+    dependencies:
+     - STR_UN_CUSTOM_WEAPONS
+     - STR_NATO_SUPPORT_RESEARCH
 
   - name: STR_NATO_LMG_UNLOCK
     cost: 0
     dependencies:
      - STR_USA_SUPPORT_RESEARCH
      - STR_NATO_SUPPORT_RESEARCH
+     - STR_UN_CUSTOM_WEAPONS
 
 ############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
