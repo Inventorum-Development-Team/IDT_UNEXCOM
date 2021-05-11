@@ -1799,17 +1799,21 @@ crafts:
     soldiers: 1
     pilots: 1
     allowLanding: false
-    weapons: 3
+    weapons: 4
     weaponTypes:
       - [0, 1]
-      - 5
       - 2
+      - 2
+      - [2, 3, 6, 5]
 #Gatling/Revolver Cannon
-#AUX Systems
+#Light Missile
+#Light Missile
+#Light/Heavy Missile, Rockets, AUX Systems
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
-      - STR_CRAFT_AUX_TWO
+      - STR_CRAFT_LIGHT_MISSILE_TWO
       - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
 
 craftWeapons:
 #Delete
