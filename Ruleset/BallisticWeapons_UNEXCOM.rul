@@ -2814,6 +2814,11 @@ items:
       name: STR_AIMED
       ammoSlot: 0
       arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
     accuracySnap: 75
     accuracyAimed: 85
     oneHandedPenalty: 60
@@ -2848,7 +2853,7 @@ items:
       ToArmorPre: 0.7
       ToArmor: 0.7
       RandomWound: false
-    clipSize: 15
+    clipSize: 30
     costThrow:
       energy: 6
     battleType: 2
