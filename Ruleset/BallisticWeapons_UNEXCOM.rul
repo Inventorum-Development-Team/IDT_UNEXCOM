@@ -3358,7 +3358,7 @@ items:
   ###### MEDICAL AND FOOD #######
   ###############################
   - type: STR_CANNED_FOOD
-    categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.1
     costBuy: 500
     costSell: 1200
@@ -3419,7 +3419,7 @@ items:
     listOrder: 2129
 
   - type: STR_FLASK
-    categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.1
     costSell: 2000
     weight: 4
@@ -3448,7 +3448,7 @@ items:
     listOrder: 2130
   ########################################
   - type: STR_MEDI_KIT
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     requires:
       - STR_MEDI_KIT
     size: 0.1
@@ -3612,7 +3612,7 @@ items:
     handSprite: 1004
     battleType: 6
     invWidth: 1
-    invHeight: 1
+    invHeight: 2
     painKiller: 7
     heal: 8
     woundRecovery: 10
