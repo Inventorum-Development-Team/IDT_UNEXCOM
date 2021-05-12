@@ -879,7 +879,7 @@ items:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
-      ToArmor: 1.5
+      ToArmor: 0.5
     damageType: 3
     clipSize: 6
     blastRadius: 4
@@ -903,7 +903,7 @@ items:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
-      ToWound: 1.3
+      ToWound: 0.5
       RandomWound: true
       ToTile: 1.8
     damageType: 3
@@ -928,12 +928,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
-      ToWound: 1.3
-      RandomWound: true
       ToTile: 0.66
     damageType: 9
     clipSize: 6
@@ -960,7 +956,7 @@ items:
       IgnoreOverKill: false
       RadiusReduction: 40
       IgnoreSelfDestruct: true
-      ToWound: 1.3
+      ToWound: 0.5
       RandomWound: true
       ToTile: 0.90
     damageType: 2
