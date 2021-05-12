@@ -77,7 +77,7 @@ items:
     damageAlter:
       RandomType: 2
       IgnoreOverKill: false
-      ToWound: 1.8
+      ToWound: 0.6
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -159,8 +159,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.7
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToArmor: 0.2
       RandomWound: false
     clipSize: 10
     costThrow:
@@ -184,8 +184,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.7
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToArmor: 0.2
       RandomWound: false
     clipSize: 20
     costThrow:
@@ -208,8 +208,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.7
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToArmor: 0.2
       RandomWound: false
     clipSize: 30
     costThrow:
@@ -235,9 +235,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.3
-      ToArmor: 0.5
-      ToWound: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToWound: 0.3
       RandomWound: true
     clipSize: 7
     tuLoad: 4
@@ -264,9 +264,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.3
-      ToArmor: 0.5
-      ToWound: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToWound: 0.3
       RandomWound: true
     clipSize: 30
     costThrow:
@@ -293,8 +293,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.9
-      ToArmor: 1.3
+      ToArmorPre: 0.3
+      ToArmor: 0.4
       RandomWound: false
     clipSize: 20
     battleType: 2
@@ -315,8 +315,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.9
-      ToArmor: 1.3
+      ToArmorPre: 0.3
+      ToArmor: 0.4
       RandomWound: false
     clipSize: 30
     battleType: 2
@@ -347,8 +347,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 1.2
-      ToArmor: 1.6
+      ToArmorPre: 0.4
+      ToArmor: 0.5
       RandomWound: false
     clipSize: 5
     battleType: 2
@@ -370,8 +370,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 1.2
-      ToArmor: 1.4
+      ToArmorPre: 0.4
+      ToArmor: 0.5
       RandomWound: false
     clipSize: 20
     battleType: 2
@@ -395,8 +395,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 1.2
-      ToArmor: 1.4
+      ToArmorPre: 0.4
+      ToArmor: 0.5
       RandomWound: false
     clipSize: 30
     battleType: 2
@@ -420,8 +420,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 1.5
-      ToArmor: 1.6
+      ToArmorPre: 0.4
+      ToArmor: 0.5
       RandomWound: false
     clipSize: 50
     invWidth: 2
@@ -446,8 +446,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 1.6
-      ToArmor: 1.6
+      ToArmorPre: 0.4
+      ToArmor: 0.5
       RandomWound: false
     clipSize: 100
     invHeight: 2
@@ -479,9 +479,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.6
-      ToWound: 1.1
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
       RandomWound: true
     clipSize: 10
     battleType: 2
@@ -504,9 +504,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.6
-      ToWound: 1.1
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
       RandomWound: true
     clipSize: 30
     battleType: 2
@@ -529,8 +529,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToWound: 1.1
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
       RandomWound: true
     clipSize: 40
     battleType: 2
@@ -553,9 +554,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.6
-      ToWound: 1.1
-      ToArmor: 0.7
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
       RandomWound: true
     clipSize: 75
     battleType: 2
@@ -579,8 +580,8 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToWound: 1.5
-      ToArmor: 1.1
+      ToWound: 0.5
+      ToArmor: 0.4
       RandomWound: false
     clipSize: 10
     battleType: 2
@@ -602,7 +603,7 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: true
-      ToWound: 1.2
+      ToWound: 0.4
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -630,8 +631,8 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: true
-      ToWound: 0.3
-      ToArmor: 1.5
+      ToWound: 0.1
+      ToArmor: 0.5
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -654,7 +655,7 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: true
-      ToWound: 1.2
+      ToWound: 0.4
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -707,8 +708,8 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: true
-      ToWound: 0.3
-      ToArmor: 1.5
+      ToWound: 0.1
+      ToArmor: 0.5
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -735,7 +736,7 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: false
-      ToWound: 2.2
+      ToWound: 0.7
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -766,7 +767,7 @@ items:
       RandomType: 6
       IgnoreSelfDestruct: true
       ToTile: 0.8
-      ToWound: 1.0
+      ToWound: 0.3
       RandomWound: true
     damageType: 3
     clipSize: 1
@@ -921,7 +922,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      ToWound: 1.3
+      ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
     damageType: 3
@@ -951,7 +952,7 @@ items:
       ToArmorPre: 0.3
       RadiusReduction: 40
       IgnoreSelfDestruct: true
-      ToWound: 1.3
+      ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
     damageType: 1
@@ -979,7 +980,7 @@ items:
       IgnoreOverKill: false
       RadiusReduction: 40
       IgnoreSelfDestruct: true
-      ToWound: 1.3
+      ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
     damageType: 2
@@ -1014,7 +1015,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      ToWound: 1.5
+      ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
     damageType: 3
@@ -1078,7 +1079,7 @@ items:
       IgnoreOverKill: false
       RandomType: 6
       IgnoreSelfDestruct: true
-      ToWound: 1.3
+      ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
       ArmorEffectiveness: 0.9

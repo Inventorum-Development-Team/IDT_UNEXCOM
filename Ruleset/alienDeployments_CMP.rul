@@ -2326,10 +2326,13 @@ alienDeployments:
     height: 2
     shade: 10
     script: ALIENBASE
+    terrains:
+      - UBASE
     briefing:
       textOffset: -16
       background: BACK01.SCR
       showTarget: false
+      desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
     objectiveType: 3
     markerName: STR_ALIEN_BASE
     markerIcon: 7
@@ -2349,3 +2352,4 @@ extraStrings:
   - type: en-US
     strings:
         STR_BASE_DEFENSE_BRIEFING: "An Alien vessel has landed nearby. Our base is in severe danger. As per standard procedure non-combat personnel and X-Com craft have tried ot evacuate, but some non-combatants still remain inside the base. Alien units will enter the base via hangar doors or the access lift. Defend the base and its vital installations at all costs - this is a fight to the death. If you click on the 'abort mission' icon you will concede defeat and lose the base."
+        STR_ALIEN_BASE_ASSAULT_NO_INTERCEPT: "ALIEN BASE ASSAULT"
