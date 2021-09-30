@@ -1,6 +1,7 @@
 # spellchecker:words PTURRET ATURRET SPTURRET HTURRET
 items:
   - type: STR_HIDDEN_CORPSE
+    battleType: 11
     invHeight: 0
     invWidth: 0
     recover: false
@@ -240,7 +241,7 @@ armors:
     painImmune: true
     zombiImmune: true
     corpseBattle:
-     - STR_M60
+     - STR_HIDDEN_CORPSE
     loftempsSet: [ 3 ]
     frontArmor: 14
     sideArmor: 10
@@ -282,7 +283,7 @@ armors:
     painImmune: true
     zombiImmune: true
     corpseBattle:
-     - STR_PLASMA_RIFLE
+     - STR_HIDDEN_CORPSE
     loftempsSet: [ 3 ]
     createsMeleeThreat: false
     frontArmor: 20
