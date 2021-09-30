@@ -749,29 +749,30 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      ArmorEffectiveness: 0.8
     confAuto:
       shots: 1
       name: STR_HEADSHOT
     twoHanded: true
-    accuracySnap: 95
-    accuracyAimed: 155
-    accuracyAuto: 250
+    accuracySnap: 100
+    accuracyAimed: 150
+    accuracyAuto: 200
     costSnap:
-      time: 33
-      mana: 1
+      time: 40
+      mana: 3
     costAimed:
-      time: 62
-      mana: 1
+      time: 70
+      mana: 3
     costAuto:
-      time: 85
-      mana: 1
+      time: 70
+      mana: 3
     clipSize: -1
     battleType: 1
-    maxRange: 60
+    maxRange: 200
     aimRange: 55
-    snapRange: 50
-    autoRange: 60
-    minRange: 8
+    snapRange: 25
+    autoRange: 25
+    minRange: 25
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1379,46 +1380,27 @@ extraStrings:
   - type: en-US
     strings:
       STR_LASER_WEAPONS: Laser Weapons
-      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
 ######################################################################################
       STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser Rifle"
-      STR_PEACEMAKER_UFOPEDIA: "A feat of ingenuity in desperate situations. Our experimental Laser-1 (XL-1) rifle is a special adaptation of alien technology. It has a damage output similar to the Alien Laser Rifle we used as the basis for building ours, although it draws more energy from our Energy Reserve than weapons built by the World Powers. Dubbed the 'Peacemaker' by our engineers, we think the name is very appropriate."
 ######################################################################################
       STR_M1972_LASER_PISTOL: M1972 Laser Pistol
-      STR_M1972_LASER_PISTOL_UFOPEDIA: A laser powered handgun designed and developed by UNEXCOM and US scientists in 1972. Not only is this the first laser gun put into service, it is one of the best sidearms available to UNEXCOM forces.
       STR_38_LASER_MAGNUM: Laser Magnum
-      STR_38_LASER_MAGNUM_UFOPEDIA: An American heavy laser sidearm for soldiers who feel the need to compensate for the M1972's lack of firepower. Although Heavier than most laser sidearms, it can be useful when going up against more powerful aliens.
       STR_CALBR: CALBR
-      STR_CALBR_UFOPEDIA: The Colt Advanced Laser Battle Rifle is a high power laser rifle made by Colt's Manufacturing Company. This semiautomatic weapon fires a powerful laser beam at the pull of a trigger. The CALBR's high accuracy and power makes it a good mid to long range weapon.
       STR_M20_M203_LASER_CARBINE: M20 M203 Laser Carbine
-      STR_M20_M203_LASER_CARBINE_UFOPEDIA: The M20 is an American laser assault carbine based on the widely used M16. Created as a replacement for the outdated ballistic weapon, this laser share many of the same characteristics. This weapon is very accurate, lightweight, but suffers in Firepower. This variant utilizes an underbarrel grenade launcher.
       STR_M5_LASER_SMG: M5 Laser SMG
-      STR_M5_LASER_SMG_UFOPEDIA: The M5 is America's new laser submachine gun, developed after making a breakthrough in laser technology. The M5 has a higher rate of fire than any other laser weapon due to it's advanced cycling emitter banks. Although this weapon excels in close combat, it suffers at range and stray beams can become an issue.
       STR_ULYSSES_LASER_SNIPER_RIFLE: Ulysses Laser Sniper
-      STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA: The Ulysses is a long range laser available to UNEXCOM marksmen. The advantages of this rifle are it's ease of use and its integrated advanced scope. Although this is the least powerful Sniper available to our forces, the impressive scope has faster target acquisition allowing for more follow up shots. This weapon is useful for picking off weaker targets at long ranges.
       STR_X4_LASER_SHOTGUN: X44 Scatter Laser
-      STR_X4_LASER_SHOTGUN_UFOPEDIA: A laser 'shotgun' developed when an American researcher accidentally shattered a focusing optic during rifle testing, sending several small laser beams flying across the room. Although this incident at first created panic, the scientists later reasoned they could create a laser shotgun for close combat, something previously not thought possible. This laser uses an array of small mirrors to spread the lasers in several directions.
       STR_M4_LASER_LMG: M4 Laser LMG
-      STR_M4_LASER_LMG_UFOPEDIA: The M4 is Squad Automatic Weapon developed by DARPA and UNEXCOM to replace the suddenly outdated M-60. Although it's a bit heavy and unwieldy, the M4 is a reliable machine gun and rather accurate.
       STR_ELERIUM_FLAMETHROWER: X55 Elerium Flamethrower
-      STR_ELERIUM_FLAMETHROWER_UFOPEDIA: After the discovery of Element 115 was made available to the American government, Pentagon officials asked if the element could be used to create a powerful incendiary weapon. By fusing Elerium with Napalm, they were able to create the fuel mixture used by the X55. They discovered that the powerful incendiary mixture could burn even the toughest aliens as well as force them out of hiding spots, but that it could also pose a threat to our own, as well as civilians, if we're not careful. They reluctantly put the weapon into service, with a warning to the soldiers using them.
 ######################
       STR_P71_LASER_PISTOL: "P-71 'Garibaldi' Laser Handgun"
-      STR_P71_LASER_PISTOL_UFOPEDIA: Although several different nations suggested designs for a new standard NATO sidearm, Beretta's P-71 would be the only one adopted. With no need for an external power source or reloading and fine tuned for accuracy, the P-71 represents the next stage in human technology.
       STR_FN_FLA_LASER_BATTLE_RIFLE: "FN FLA 'Leopold' Battle Rifle"
-      STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA: The FN FLA is the laser derivative of the famous FN FAL. Although the design and size are similar, the FLA is much more powerful and does not require reloading. This laser was made to provide a weapon for soldiers who desired higher accuracy and power at the cost of rate of fire.
       STR_FN_FLA_LASER_CARBINE: "FN FLA 'Leopold' Carbine"
-      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a collapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
       STR_L4_ASSAULT_LASER: "L-44 'Angevin' Assault Laser"
-      STR_L4_ASSAULT_LASER_UFOPEDIA: The L-44 Assault Rifle is an experimental West German Assault Laser submitted to the NATO Advanced Laser Weapon Project by Heckler and Koch. At first mocked for its strange design and uncomfortable grip, the L-4 would eventually impress even the greatest skeptics with its high accuracy and light weight. Eventually UNEXCOM officials approved the design for combat.
       STR_MAT72_SUBMACHINE_LASER: "MAT-72 'Charlemagne' Submachine Laser"
-      STR_MAT72_SUBMACHINE_LASER_UFOPEDIA: French laser submachine gun developed and supplied by the French weapons manufacturer, Nexter Systems, uses smaller heat sinks than a typical laser rifle, so power input is reduced to avoid overheating. Still, this submachine gun is great for counter terror operations and close combat.
       STR_CHURCHILL_MARKSMAN_LASER_RIFLE: "'Churchill' Marksman Laser Rifle"
-      STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
       STR_ML73_LASER_MACHINE_GUN: "ML-73 'Bassenheim' Laser MG"
-      STR_ML73_LASER_MACHINE_GUN_UFOPEDIA: A West German Laser Machine Gun designed by Heckler & Koch. By late 1972 new techniques and technology allowed for larger and more efficient weapons. By converting some of the thermal energy made by firing the gun back into electrical energy, the ML-73 is able to fire large laser beams at a steady rate.
       STR_M72_AUTOMATIC_RECOILLESS_RIFLE: "M72 'Teddy' Auto Recoilless Rifle"
-      STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
       STR_M72_ARR_HEAT_MAG: M72 ARR HEAT Rack (x6)
       STR_M72_ARR_HE_MAG: M72 ARR HE Rack (x6)
       STR_M72_ARR_SMOKE_MAG: M72 ARR Smoke Rack (x6)
@@ -1428,19 +1410,12 @@ extraStrings:
       STR_X6_SHOT: x6 Auto Shot
 ########################
       STR_P72_COMPACT_LASER: P-72 Compact Laser
-      STR_P72_COMPACT_LASER_UFOPEDIA: The P-72 was the first successful Soviet application of laser weapons technology. Small and powerful, the P-72 makes for a good sidearm, but lags behind in accuracy. The iconic white and silver color scheme, which began with this gun, would become the standard for the new generation of Soviet Weaponry.
       STR_ALK72_LASER_RIFLE: ALK-72 Laser Rifle
-      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one of the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The heavy assault weapon was able to quickly prove its worth in the battle against the aliens, being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
       STR_KHARITONOV_LASER_BATTLE_RIFLE: Kharitonov Laser Battle Rifle
-      STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA: UNEXCOM officers expressed the need for a weapon that bridges the gap between the ALK-72 and the Mironov Sniper Rifle, and the Kharitonov is what the engineers came up with. This weapon is capable of delivering a powerful beam over medium to long distances without sacrificing power or closer combat abilities. Named after the lead designer, Markov Kharitonov.
       STR_ALP_SUBMACHINE_LASER: ALP Submachine Laser
-      STR_ALP_SUBMACHINE_LASER_UFOPEDIA: This iconic Laser submachine gun was designed by famed Russian laser scientist, Michael Artemiy, and was personally approved by the Soviet Minister of Defense, Andrei Grechko. Its balance in design, favoring no one aspect over any other, makes it one of the most versatile weapons among UNEXCOM soldiers.
       STR_MIRINOV_LASER_SNIPER: Mirinov Laser Sniper
-      STR_MIRINOV_LASER_SNIPER_UFOPEDIA: Laser Sniper weapon from the minds of the Soviet Red Army. Early laser technology suffered in accuracy, due to weaker optics and high power output. After advancements in focusing optics and toning down the power output, Ukrainian General Peter Mironov was able to design an accurate long-range rifle, although it suffers somewhat in damage output.
       STR_AN_MACHINE_LASER: AN Machine Laser
-      STR_AN_MACHINE_LASER_UFOPEDIA: A Heavy Soviet machine gun developed in cooperation with the Red Army in 1972. It can reliably deliver a lot of damage in a short amount of time, but is heavier than most machine guns.
       STR_AFINA_ANTITANK_LASER: AFINA Anti-Tank Laser
-      STR_AFINA_ANTITANK_LASER_UFOPEDIA: An anti-tank laser put into service in late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can penetrate some of the heaviest armor, short of UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
       STR_MANA: "POWER RESERVE"
       STR_NOT_ENOUGH_MANA: "Not Enough Power"
       STR_MANA_POOL: "POWER RESERVE"
@@ -1449,11 +1424,8 @@ extraStrings:
       STR_MANA_NORMALIZED: "NORMALIZED POWER"
       STR_COST_MANA: "power"
       STR_BATTERY: "Battery"
-      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove necessary on longer missions. The battery is automatically recharged when returned to the base"
       STR_ELERIUM_BATTERY: "Elerium Battery"
-      STR_ELERIUM_BATTERY_UFOPAEDIA: "This battery is extremely similar to the power cells of alien fusion weaponry, granting it twice the capacity of our regular batteries while being the same weight"
       STR_POWER_RESERVES: "Power Reserves"
-      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves necessary."
       STR_USE_BATTERY: "Use Battery"
 
 extraSprites:

@@ -232,6 +232,7 @@ soldiers:
 items:
   - type: STR_CORPSE_UNIFORM
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 500
     floorSprite: 500
@@ -242,6 +243,7 @@ items:
 
   - type: STR_CORPSE_SPECIAL_FORCES_UNIFORM
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 503
     floorSprite: 503
@@ -252,6 +254,7 @@ items:
 
   - type: STR_CORPSE_PILOT_SUIT
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 501
     floorSprite: 501
@@ -262,6 +265,7 @@ items:
 
   - type: STR_CORPSE_MERCENARY_UNIFORM
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 504
     floorSprite: 504
@@ -276,6 +280,7 @@ items:
     costSell: 60000
   - type: STR_CORPSE_COMBAT_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 502
     floorSprite: 502
@@ -290,6 +295,7 @@ items:
     costSell: 50000
   - type: STR_CORPSE_DELTA_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 22
     bigSprite: 510
     floorSprite: 510
@@ -304,6 +310,7 @@ items:
     costSell: 50000
   - type: STR_CORPSE_RIOT_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 22
     bigSprite: 510
     floorSprite: 510
@@ -314,6 +321,7 @@ items:
 
   - type: STR_CORPSE_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 28
     floorSprite: 40
@@ -324,6 +332,7 @@ items:
 
   - type: STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 512
     floorSprite: 512
@@ -334,6 +343,7 @@ items:
 
   - type: STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 515
     floorSprite: 515
@@ -343,6 +353,7 @@ items:
     recover: false
   - type: STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 513
     floorSprite: 513
@@ -353,6 +364,7 @@ items:
 
   - type: STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT
     name: STR_CORPSE
+    battleType: 11
     weight: 24
     bigSprite: 516
     floorSprite: 516
@@ -365,6 +377,7 @@ items:
 
   - type: STR_CORPSE_MARAUDER
     name: STR_CORPSE
+    battleType: 11
     weight: 26
     bigSprite: 517
     floorSprite: 517
@@ -375,6 +388,7 @@ items:
 
   - type: STR_CORPSE_PATHFINDER
     name: STR_CORPSE
+    battleType: 11
     weight: 26
     bigSprite: 518
     floorSprite: 518
@@ -392,6 +406,7 @@ items:
     costSell: 68000
   - type: STR_CORPSE_HEAVY_PERSONAL_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 20
     bigSprite: 2905
     floorSprite: 2906
@@ -407,6 +422,7 @@ items:
     costSell: 50000
   - type: STR_CORPSE_SCOUT_POWER_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 22
     bigSprite: 903
     floorSprite: 904
@@ -421,6 +437,7 @@ items:
     costSell: 50000
   - type: STR_CORPSE_SCOUT_FLYING_ARMOR
     name: STR_CORPSE
+    battleType: 11
     weight: 22
     bigSprite: 510
     floorSprite: 510
@@ -1887,19 +1904,15 @@ extraStrings:
   - type: en-US
     strings:
       STR_NONE_UC: NONE
-      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and comfortable, it wasn't meant to stop plasma bolts, but can be enough to stop light bullets.
 
       STR_PILOT: Pilot
       STR_PILOT_UC: PILOT FLIGHT SUIT
-      STR_PILOT_UC_UFOPEDIA: Standard G-suit used by UNEXCOM combat pilots. Made to resist high levels of acceleration forces, it's very practical (has plenty of pockets), and durable (includes fire retardant clothing). Its appearance is usually similar to a jumpsuit.
 
       STR_SPECIAL_FORCES_SOLDIER: Special Forces Operator
       STR_SPECIAL_FORCES_UNIFORM_UC: SPECIAL FORCES UNIFORM
-      STR_SPECIAL_FORCES_UNIFORM_UFOPEDIA: A lighter version of the military uniform worn by regular SoldiersAndArmors allows the Special Forces Operator to move freely on the battlefield. It has no protection against ballistic weapons, but that does not prevent it from being used by the world's elite military. Has a boost to bravery and morale.
 
       STR_MERCENARY: Mercenary
       STR_MERCENARY_UNIFORM_UC: MERCENARY BATTLE DRESS
-      STR_MERCENARY_UNIFORM_UFOPEDIA: The mercenary uniform is a light and comfortable military attire, generally similar to that worn by government armed forces. It is practical enough to allow for use in clandestine operations in a variety of environments and climates.
 
 ########################################
 ###### USA EXPERIMENTAL WEAPONS ########
@@ -1907,34 +1920,27 @@ extraStrings:
       STR_COMBAT_ARMOR: XM-72 Combat Armor
       STR_COMBAT_ARMOR_UC: XM-72 COMBAT ARMOR
       STR_CORPSE_COMBAT_ARMOR: "XM-72 Combat Armor Wreck"
-      STR_COMBAT_ARMOR_UFOPEDIA: Composite armor system, combining Alien Alloy and prototype Kevlar ballistic plates in a bulletproof vest and helmet made of the same material. Given the current limitations of armor manufacturing, it is still a bit heavy and uncomfortable to wear, but it certainly protects the user from light ballistic fire and some indirect plasma fire. Painted blue at our request.
       STR_USA_PROTOTYPE_ARMOR_SYSTEMS: US ARMY PROTOTYPE ARMOR SYSTEM
-      STR_USA_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research into the development of flak jackets used by American troops in Vietnam has resulted in this prototype of individual armor. It uses a prototype Kevlar vest (materiel yet unused on large scale) with Alien Alloys plates to prevent damage to the wearer. It is considerably lighter than other metal-based armor and could be the future of infantry armor. We sent the blueprints to the R+D team immediately.
 ########################################
 ###### NATO EXPERIMENTAL WEAPONS #######
 ########################################
       STR_DELTA_ARMOR_UC: DELTA EOD ARMOR
       STR_DELTA_ARMOR: Delta EOD Armor
       STR_CORPSE_DELTA_ARMOR: "Delta EOD Armor Wreck"
-      STR_DELTA_ARMOR_UFOPEDIA: "German prototype armor for bomb disposal teams. It offers an incredible resistance to explosive and armor piercing damage, although it is heavy and causes fatigue to the user. The front part is more resistant than the back. It includes a MG3 general machine gun, with integrated brackets on the soldier's right arm to improve grip and precision, as well as to reduce its weight."
       STR_NATO_PROTOTYPE_ARMOR_SYSTEMS: NATO Prototype Armor System
-      STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research on personal armor built with Alien Alloys has supported the research of European scientists and engineers. A prototype of armor to defuse explosives has been redesigned to use the new alien material. The plans have been sent to our R&D team for immediate construction.
 ########################################
 ###### USSR EXPERIMENTAL WEAPONS #######
 ########################################
       STR_RIOT_ARMOR_UC: BEAR RIOT ARMOR
       STR_RIOT_ARMOR: Bear Riot Armor
       STR_CORPSE_RIOT_ARMOR: "Bear Riot Armor Wreck"
-      STR_RIOT_ARMOR_UFOPEDIA: "Advanced soviet prototype armor, derived from a project for a new riot armor for Spetsnaz special forces, is entirely built in Alien Alloy, includes a visor to protect the user's face from impacts and bullets, although this limits their visibility and mobility a bit. Includes a riot shield 'IM-21 Krepost', to deflect frontal damage."
       STR_USSR_PROTOTYPE_ARMOR_SYSTEMS: USSR Prototype Armor System
-      STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: The prototype riot armor designed for the Spetsnaz forces has been improved using the new Alien Alloys. Field tests were used on Soviet volunteers and is able to withstand the direct impact of light weapons. The shield that it has integrated increases even more its resistance, almost at the same of armored vehicles. The schematics have been sent to our R&D team for its construction.
 ########################################
 ###### UN PERSONAL ARMORS ##############
 ########################################
       STR_HEAVY_PERSONAL_ARMOR_UC: HEAVY ARMOR
       STR_HEAVY_PERSONAL_ARMOR: Heavy Armor
       STR_CORPSE_HEAVY_PERSONAL_ARMOR: "Heavy Personal Armor Wreck"
-      STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
 
      # Armor
 
@@ -1948,11 +1954,9 @@ extraStrings:
       STR_SCOUT_POWER_ARMOR_UC: SCOUT POWER ARMOR
       STR_SCOUT_POWER_ARMOR: Scout Power Armor
       STR_CORPSE_SCOUT_POWER_ARMOR: "Scout Power Armor Wreck"
-      STR_SCOUT_POWER_ARMOR_UFOPEDIA: This item combines Power Suit technology and Personal Armor frame to create armor focusing on increasing a soldier's mobility. However, this focus on speed and a need to maximize wearer's field of vision limits the suit's protective capabilities.
       STR_SCOUT_FLYING_ARMOR_UC: SCOUT FLYING ARMOR
       STR_SCOUT_FLYING_ARMOR: Scout Flying Armor
       STR_CORPSE_SCOUT_FLYING_ARMOR: "Scout Flying Armor Wreck"
-      STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
 
       STR_REPAIR_PERSONAL_ARMOR: "Repair Personal Armor"
       STR_REPAIR_COMBAT_ARMOR: "Repair XM-72 Combat Armor"
@@ -1968,24 +1972,18 @@ extraStrings:
 ########################################
 
       STR_ASTRONAUT_A7L_SPACESUIT_UC: A7-M Spacesuit
-      STR_ASTRONAUT_A7L_SPACESUIT_UC_UFOPEDIA: Fully pressurized suit, perfect for extra vehicular activities in difficult terrain. Improved model of the A7L suit used by the American astronauts of the Apollo missions.  Includes sections of Alien Alloys to lessen the discomfort of the suit, but still limits the movements and reactions of the user. Includes magnetic boots.
       STR_CORPSE_ASTRONAUT_A7L_SPACESUIT: Fallen Astronaut
       STR_ASTRONAUT_A7LB_SPACESUIT_UC: A7-D Military Spacesuit
-      STR_ASTRONAUT_A7LB_SPACESUIT_UC_UFOPEDIA: Combat variant of the A7 spacesuit, integrates Alien Alloy plates on the shoulders and legs to provide extra protection to limbs. Its main feature its a ballistic helmet inspired in LEVA (Lunar Extravehicular Visor Assembly) to provide increased resistance to damage that may break the helmet and compromise the survivability of the operator. Includes magnetic boots.
       STR_CORPSE_ASTRONAUT_A7LB_SPACESUIT: Fallen Astronaut
       STR_ASTRONAUT_A7_MMU_SPACESUIT_UC: A7 MMU Spacesuit
-      STR_ASTRONAUT_A7_MMU_SPACESUIT_UC_UFOPEDIA: Special A7 spacesuit equipped with a prototype Manned Maneuvering Unit designed by NASA. This 'jetpack' enables untethered EVA operations without restrictions. The propellant used is gaseous nitrogen, stored on armored tanks on the back of the MMU. It contains enough propellant to have 6 hours of EVA. It is smaller than the Soviet counterpart, the SPK.
       STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT: Fallen Astronaut
 
 
       STR_ASTRONAUT_KRECHET94_SPACESUIT_UC: Krechet-94 Spacesuit
-      STR_ASTRONAUT_KRECHET94_SPACESUIT_UC_UFOPEDIA: Fully pressurized spacesuit, designed and build on the Soviet Union. Originally meant to be used on the civilian Moon and Mars space programs only, it was quickly put on widespread production to be equipped by Warsaw Pact cosmonauts. Incorporates some parts made with Alien Alloys to help improve mobility of the user. Includes magnetic boots.
       STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT: Fallen Cosmonaut
       STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC: Krechet-94-B Spacesuit
-      STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC_UFOPEDIA: Combat variant of Krechet-94 suit, includes Alien Alloy pauldrons and leg armored plates to absorb damage to limbs. It's main difference with the standard Krechet-94 is a build-in Alien Alloys vest, to greatly increase the resistance to damage to torso.
       STR_CORPSE_ASTRONAUT_KRECHET94B_SPACESUIT: Fallen Cosmonaut
       STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC: Krechet SPK Spacesuit
-      STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC_UFOPEDIA: Specialized version of the Krechet spacesuit, features a build-in propulsion unit named SPK. Uses compressed oxygen as the propulsion system, stored and protected within the backpack-like structure. It has an autonomy of seven hours of extravehicular activity (EVA). Well liked by Warsaw Pact cosmonauts, it is larger than the American counterpart, the MMU.
       STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT: Fallen Cosmonaut
 
       STR_PERSONAL_ANTIGRAV: "Personal Antigravity"
