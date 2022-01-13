@@ -79,22 +79,24 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+    confAimed:
+      spendPerShot: -10
+    confSnap:
+      spendPerShot: -10
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
+      spendPerShot: -10
     accuracySnap: 65
     accuracyAimed: 70
     accuracyAuto: 60
     costSnap:
       time: 16
-      mana: 1
     costAimed:
       time: 45
-      mana: 1
     costAuto:
       time: 25
-      mana: 3
-    clipSize: -1
+    clipSize: 500
     battleType: 1
     maxRange: 60
     aimRange: 13
