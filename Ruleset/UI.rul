@@ -1,0 +1,76 @@
+extraSprites:
+  - type: InvCopy
+    width: 32
+    height: 22
+    singleImage: true
+    files:
+      0: Resources/UI/invcopy.png
+  - type: InvCopyActive
+    width: 32
+    height: 22
+    singleImage: true
+    files:
+      0: Resources/UI/invcopy_active.png
+  - type: InvPaste
+    width: 32
+    height: 22
+    singleImage: true
+    files:
+      0: Resources/UI/invpaste.png
+  - type: InvPasteEmpty
+    width: 32
+    height: 22
+    singleImage: true
+    files:
+      0: Resources/UI/invpaste_empty.png
+  - type: TAC01.SCR
+    singleImage: true
+    files:
+      0: Resources/UI/TAC01.png
+  - type: ICONS.PCK
+    singleImage: true
+    files:
+      0: Resources/UI/ui.png
+  - type: KneelButton
+    width: 32
+    height: 32
+    subX: 32
+    subY: 16
+    files:
+      0: Resources/UI/kneelButton.png
+#  - type: SCANBORD.PCK
+#    singleImage: true
+#    files:
+#      0: Resources/UI/SCANBORD.png
+  - type: BigBurnIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/burning.png
+  - type: BigStunIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Zzz.png
+  - type: BigWoundIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Bleed.png
+  - type: BigShockIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Shock.png
+  - type: FloorBurnIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/burning.png
+  - type: FloorStunIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Zzz.png
+  - type: FloorWoundIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Bleed.png
+  - type: FloorShockIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Shock.png

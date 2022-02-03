@@ -62,13 +62,15 @@ Credits by name:
 *Internet: UFOPedia images, further artwork reference
 *Istrebitel: craft weapon reference codes
 *KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
-*Meridian: modding help on the forums, OXCE dev
+*Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
 *Mitra Lightbringer: bug hunter
 *Noah193: bug hunter and ideas
 *Nord: Aqualung sprites, Mi-8 map and sprites
+*Noyemi-K: UI stats bar (adapted into custom UI)
 *Luke83: overall Terrain & Map support
 *PERLHA: IDT bug hunter
 *Pvt.Dropleaf: bug hunter
+*Riccardo Gasperi: original Android buttons art (modified)
 *Ryskeliini: Grenade Launcher (now unused)
 *StormRangerX: bug hunter
 *SG_Barton: bug hunter
@@ -84,7 +86,9 @@ Credits by name:
 *XOps: Alien Plasma Weapons
 *xover88: XCOM 2012 Music
 *Yataka Shimaoka: bug hunter
+*Yeti: bug hunter, feedback support, plus ideas
 *wolwerin: Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, sprites and sounds, plus debugging support
 *Zane: original Delta sprites
 *zaphnath: bug hunter
 *zombieclone111: bug hunter
+*XCROSS: UI reference ruleset and inspiration
