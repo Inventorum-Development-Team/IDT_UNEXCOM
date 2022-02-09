@@ -45,16 +45,16 @@ Credits by name:
 *danielpembrink: bug hunter
 *DarkDust: bug hunter
 *Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo, alien Fusion weapons
-*Duke_Falcon: Alien Turret sprites
+*Duke_Falcon: Alien Turret sprites, unarmored Snakepeople sprites, alien body armor templates, Armored Floaters, Disk Drone sprites
 *Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper
 *efrenespartano: main ruleset and sprite creation, lead designer
-*Filip H: Huey, alien Turrets, bug hunter
+*Filip H: lead modder, overall code, Huey & alien Turrets, bug hunter
 *Finnik: Astronaut sprites, original code added to the main OXCE, bug hunter
 *Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 *garretrgang: bug hunter
-*Hans Woofington: bug hunter
+*Hans Woofington: All UNEXCOM armor sprites, artist help, ideas & bug hunter
 *hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused)
-*Hobbes: Terrain Mod (now unused), Tech-Comm HKs, ruleset reference.
+*Hobbes: Terrain Pack Mod (now unused), Tech-Comm HKs code, ruleset reference.
 *JustTheDude: Terrorist Grenadier sprites
 *IgnisAbentorn: bug hunter
 *Ikhanad: FN FSC sprites, plus ideas.
@@ -64,6 +64,7 @@ Credits by name:
 *KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
 *Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
 *Mitra Lightbringer: bug hunter
+*NeoWorm: Sectoid, Muton, Floater paperdolls, Floater spritesheets (adapted and expanded)
 *Noah193: bug hunter and ideas
 *Nord: Aqualung sprites, Mi-8 map and sprites
 *Noyemi-K: UI stats bar (adapted into custom UI)
@@ -75,13 +76,15 @@ Credits by name:
 *StormRangerX: bug hunter
 *SG_Barton: bug hunter
 *Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
-*Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs sprites
+*Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites
 *Tal'Raziid: IDT bug hunter
 *ThatDude: JustRussia AK original weapons (now adapted)
+*The Martian: Cybersphere sprites
 *The Reaver of Darkness: overall balance support, LIGHTNIA mapset, plus ideas
 *theemperorofmankind: bug hunter
 *Tingcat: Terrorists Paperdolls
 *Valmont and his girlfriend: bug hunters
+*Vesparco: Sectoid Commander spritesheet
 *Warboy1982: Shotgun firing sound
 *XOps: Alien Plasma Weapons
 *xover88: XCOM 2012 Music
