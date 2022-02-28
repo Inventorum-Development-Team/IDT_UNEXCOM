@@ -11,11 +11,11 @@ items:
   - type: STR_FLASHBANG_GRENADE #ignoreDuplicate
     tags:
      FlashBang: 1
-  - type: STR_M1972_LASER_PISTOL
-    isExplodingInHands: true # won't explode though as it's not a grenade
-    isConsumable: true
-    tags:
-      CoolsPerTurn: 10
+  # - type: STR_M1972_LASER_PISTOL
+  #   isExplodingInHands: true # won't explode though as it's not a grenade
+  #   isConsumable: true
+  #   tags:
+  #     CoolsPerTurn: 10
 armors:
   - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
     tags:
