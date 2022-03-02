@@ -49,28 +49,30 @@ Credits by name:
 *Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper
 *efrenespartano: main ruleset and sprite creation, lead designer
 *Filip H: lead modder, overall code, Huey & alien Turrets, bug hunter
-*Finnik: Astronaut sprites, original code added to the main OXCE, bug hunter
+*Finnik: Astronaut sprites (modified), original code added to the main OXCE, bug hunter
 *Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 *garretrgang: bug hunter
 *Hans Woofington: All UNEXCOM armor sprites, artist help, ideas & bug hunter
 *hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused)
-*Hobbes: Terrain Pack Mod (now unused), Tech-Comm HKs code, ruleset reference.
+*Hobbes: Terrain Pack Mod (unused), Tech-Comm HKs code, ruleset reference.
+*Jackstaw2323: Mechtoid sprites (modified)
 *JustTheDude: Terrorist Grenadier sprites
 *IgnisAbentorn: bug hunter
 *Ikhanad: FN FSC sprites, plus ideas.
 *im bored: bug hunter
 *Internet: UFOPedia images, further artwork reference
 *Istrebitel: craft weapon reference codes
-*KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
+*KingMob4313: Plasma ruleset and sprites from Equal Terms, inspiration (laser removed)
 *Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
 *Mitra Lightbringer: bug hunter
 *NeoWorm: Sectoid, Muton, Floater paperdolls, Floater spritesheets (adapted and expanded)
 *Noah193: bug hunter and ideas
-*Nord: Aqualung sprites, Mi-8 map and sprites
+*Nord: Aqualung sprites (unused), Mi-8 map and sprites
 *Noyemi-K: UI stats bar (adapted into custom UI)
 *Luke83: overall Terrain & Map support
 *PERLHA: IDT bug hunter
 *Pvt.Dropleaf: bug hunter
+*Rclipse: IDT bug hunter
 *Riccardo Gasperi: original Android buttons art (modified)
 *Ryskeliini: Grenade Launcher (now unused)
 *StormRangerX: bug hunter
@@ -90,7 +92,7 @@ Credits by name:
 *xover88: XCOM 2012 Music
 *Yataka Shimaoka: bug hunter
 *Yeti: bug hunter, feedback support, plus ideas
-*wolwerin: Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, sprites and sounds, plus debugging support
+*wolwerin: Russian translation, Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, Armored Sectoid, overall improvement of weapon sprites, some sounds, plus debugging support
 *Zane: original Delta sprites
 *zaphnath: bug hunter
 *zombieclone111: bug hunter
