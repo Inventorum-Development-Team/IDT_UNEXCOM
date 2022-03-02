@@ -556,54 +556,6 @@ units:
 # This is formatted different for the OXC nightly versions
 
 
-armors:
-  - type: CHRYSSALID_ARMOR
-    spriteSheet: CHRYS.PCK
-    allowInv: false
-    corpseBattle:
-      - STR_CHRYSSALID_CORPSE
-    frontArmor: 34
-    sideArmor: 34
-    rearArmor: 34
-    underArmor: 34
-    drawingRoutine: 7
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.0
-    loftempsSet: [ 3 ]
-  - type: ZOMBIE_ARMOR
-    painImmune: true # no secondary stun damage
-    spriteSheet: ZOMBIE.PCK
-    allowInv: false
-    corpseBattle:
-      - STR_CHRYSSALID_CORPSE
-    frontArmor: 4
-    sideArmor: 4
-    rearArmor: 4
-    underArmor: 4
-    drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.8
-      - 0.8
-      - 0.7
-      - 0.7
-      - 0.0
-      - 1.0
-      - 1.0
-      - 0.0
-    loftempsSet: [ 3 ]
-    deathFrames: 18
-
 items:
 #DELETE
   - delete: STR_STINGRAY_LAUNCHER
