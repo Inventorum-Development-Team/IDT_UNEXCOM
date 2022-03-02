@@ -10,7 +10,7 @@ items:
     costSell: 13500
     bigSprite: 1962
     floorSprite: 1965
-    handSprite: 1970 # ALL GOOD
+    handSprite: 1442 # ALL GOOD
     bulletSpeed: 6
     weight: 3 # 3
     accuracyAuto: 38 # 50
@@ -102,7 +102,7 @@ items:
     costSell: 40000
     bigSprite: 1860
     floorSprite: 1865
-    handSprite: 1870 # ALL GOOD
+    handSprite: 1418 # ALL GOOD
     accuracyAuto: 42 # 50
     accuracySnap: 50 # 75
     accuracyAimed: 95 # 110
@@ -149,7 +149,7 @@ items:
     battleType: 1
     bigSprite: 1963 #
     floorSprite: 1966
-    handSprite: 1979 # ALL GOOD
+    handSprite: 1450 # ALL GOOD
     bulletSprite: 8
     bulletSpeed: 6
     weight: 3
@@ -189,7 +189,7 @@ items:
       - STR_PLASMA_MAGNUM_CLIP
     bigSprite: 1763
     floorSprite: 1765
-    handSprite: 1770  # ALL GOOD
+    handSprite: 1410  # ALL GOOD
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 1931 # FIX THIS
@@ -238,7 +238,7 @@ items:
       - STR_PLASMA_SMG_CLIP
     bigSprite: 1563
     floorSprite: 1565
-    handSprite: 1570 # ALL GOOD
+    handSprite: 1394 # ALL GOOD
     bulletSprite: 8
     bulletSpeed: 12
     fireSound: 1932 # FIX THIS
@@ -300,7 +300,7 @@ items:
       - STR_PLASMA_RIFLE_CLIP
     bigSprite: 1363
     floorSprite: 1366
-    handSprite: 1379
+    handSprite: 1378
     bulletSprite: 8
     bulletSpeed: 6
     fireSound: 1933 # FIX THIS
@@ -336,7 +336,7 @@ items:
       - STR_PLASMA_DMR_CLIP
     bigSprite: 1463
     floorSprite: 1465
-    handSprite: 1470
+    handSprite: 1386
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 1934 # FIX THIS
@@ -433,7 +433,7 @@ items:
     battleType: 1
     bigSprite: 1863
     floorSprite: 1868
-    handSprite: 1887 # ALL GOOD
+    handSprite: 1434 # ALL GOOD
     weight: 15
     compatibleAmmo:
       - STR_PLASMA_LMG_PACK
@@ -490,7 +490,7 @@ items:
       - STR_HEAVY_PLASMA_CLIP
     bigSprite: 1861
     floorSprite: 1866
-    handSprite: 1879 # ALL GOOD
+    handSprite: 1426 # ALL GOOD
     requires:
       - STR_REMAN_HUMAN_HEAVY_PLASMA
     fireSound: 1937
@@ -1039,6 +1039,18 @@ extraSprites:
   - type: BIGOBS.PCK
     files:
     # Weapons
+      1000: Resources/AlienArmouryExpanded/Aliensniperrifle.gif
+      1001: Resources/AlienArmouryExpanded/Aliensniperrifle_Clip.gif
+      1002: Resources/AlienArmouryExpanded/Plasmadestroyer.gif
+      1003: Resources/AlienArmouryExpanded/Plasmadestroyer_Clip.gif
+      1004: Resources/AlienArmouryExpanded/Plasmacaster.gif
+      1005: Resources/AlienArmouryExpanded/Plasmacaster_clip.gif
+      1006: Resources/AlienArmouryExpanded/Toxigun.gif
+      1007: Resources/AlienArmouryExpanded/Toxigun_flask.gif
+      1008: Resources/AlienArmouryExpanded/big_SL_EleriumBomb.gif
+      1009: Resources/AlienArmouryExpanded/Plasmacaster1.gif
+      1010: Resources/AlienArmouryExpanded/Plasmasniperrifle1.gif
+      1011: Resources/AlienArmouryExpanded/Plasmadestroyer1.gif
       1320: Resources/FourthState/SmallLauncher/Alien/SmallLauncher.gif
       1330: Resources/FourthState/SmallLauncher/Human/HumanSmallLauncher.gif
       1362: Resources/FourthState/PlasmaRifle/Alien/PlasmaRifle.gif
@@ -1065,6 +1077,18 @@ extraSprites:
       1901: Resources/FourthState/ScoutArmor/BigCorpse.png
   - type: FLOOROB.PCK
     files:
+      1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
+      1001: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle_Clip.gif
+      1002: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer.gif
+      1003: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer_Clip.gif
+      1004: Resources/AlienArmouryExpanded/floorob_Plasmacaster.gif
+      1005: Resources/AlienArmouryExpanded/floorob_Plasmacaster_Clip.gif
+      1006: Resources/AlienArmouryExpanded/floorob_Toxigun.gif
+      1007: Resources/AlienArmouryExpanded/floorob_Toxigun_flask.gif
+      1008: Resources/AlienArmouryExpanded/floorobj_SL_EleriumBomb.gif
+      1009: Resources/AlienArmouryExpanded/floorob_Plasmacaster1.gif
+      1010: Resources/AlienArmouryExpanded/floorob_Plasmasniperrifle1.gif
+      1011: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer1.gif
       1365: Resources/FourthState/PlasmaRifle/Alien/PlasmaRiflef.gif
       1366: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRiflef.gif
       1367: Resources/FourthState/PlasmaRifle/PlasmaRifleClipf.gif
@@ -1094,16 +1118,20 @@ extraSprites:
     subY: 40
     files:
       1370: Resources/FourthState/PlasmaRifle/Alien/PlasmaRifleh.gif
-      1379: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRifleh.gif
-      1470: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMRh.gif
-      1570: Resources/FourthState/PlasmaSMG/Human/HumanPlasmaSMGh.gif
+      1378: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRifleh.gif
+      1386: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMRh.gif
+      1394: Resources/FourthState/PlasmaSMG/Human/HumanPlasmaSMGh.gif
       1670: Resources/FourthState/SniperPlasma/Human/HumanSniperPlasmah.gif
-      1770: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnumh.gif
-      1870: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasmah.gif
-      1879: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasmah.gif
-      1887: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGh.gif
-      1970: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolh.gif
-      1979: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolh.gif
+      1410: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnumh.gif
+      1418: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasmah.gif
+      1426: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasmah.gif
+      1434: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGh.gif
+      1442: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolh.gif
+      1450: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolh.gif
+      1458: Resources/AlienArmouryExpanded/handob_Aliensniperrifle.gif
+      1466: Resources/AlienArmouryExpanded/handob_Plasmadestroyer.gif
+      1474: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
+      1482: Resources/AlienArmouryExpanded/handob_Toxigun.gif
 
 extraSounds:
   - type: BATTLE.CAT

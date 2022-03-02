@@ -35,7 +35,7 @@ items:
     weight: 3
     bigSprite: 1006
     floorSprite: 1006
-    handSprite: 1024
+    handSprite: 1482
     bulletSprite: 20
     fireSound: 55
     compatibleAmmo:
@@ -78,7 +78,7 @@ items:
     weight: 6 # 6
     bigSprite: 1004
     floorSprite: 1004
-    handSprite: 1016
+    handSprite: 1474
     bulletSprite: 8
     fireSound: 18
     compatibleAmmo:
@@ -130,7 +130,7 @@ items:
     weight: 6 # 6
     bigSprite: 1000
     floorSprite: 1000
-    handSprite: 1000
+    handSprite: 1458
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 18
@@ -185,7 +185,7 @@ items:
     weight: 14 # 12
     bigSprite: 1002
     floorSprite: 1002
-    handSprite: 1008
+    handSprite: 1466
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 18
@@ -239,7 +239,7 @@ items:
     weight: 6
     bigSprite: 1009
     floorSprite: 1009
-    handSprite: 1979
+    handSprite: 1474
     bulletSprite: 8
     fireSound: 18
     compatibleAmmo:
@@ -268,7 +268,7 @@ items:
     weight: 6
     bigSprite: 1010
     floorSprite: 1010
-    handSprite: 1379
+    handSprite: 1670
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 18
@@ -298,7 +298,7 @@ items:
     weight: 14 # 12
     bigSprite: 1011
     floorSprite: 1011
-    handSprite: 1879
+    handSprite: 1378
     bulletSprite: 8
     fireSound: 18
     compatibleAmmo:
@@ -560,50 +560,13 @@ extraSprites:
     subY: 3
     files:
       700: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif
-  - type: BIGOBS.PCK
-    files:
-      1000: Resources/AlienArmouryExpanded/Aliensniperrifle.gif
-      1001: Resources/AlienArmouryExpanded/Aliensniperrifle_Clip.gif
-      1002: Resources/AlienArmouryExpanded/Plasmadestroyer.gif
-      1003: Resources/AlienArmouryExpanded/Plasmadestroyer_Clip.gif
-      1004: Resources/AlienArmouryExpanded/Plasmacaster.gif
-      1005: Resources/AlienArmouryExpanded/Plasmacaster_clip.gif
-      1006: Resources/AlienArmouryExpanded/Toxigun.gif
-      1007: Resources/AlienArmouryExpanded/Toxigun_flask.gif
-      1008: Resources/AlienArmouryExpanded/big_SL_EleriumBomb.gif
-      1009: Resources/AlienArmouryExpanded/Plasmacaster1.gif
-      1010: Resources/AlienArmouryExpanded/Plasmasniperrifle1.gif
-      1011: Resources/AlienArmouryExpanded/Plasmadestroyer1.gif
-  - type: FLOOROB.PCK
-    files:
-      1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
-      1001: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle_Clip.gif
-      1002: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer.gif
-      1003: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer_Clip.gif
-      1004: Resources/AlienArmouryExpanded/floorob_Plasmacaster.gif
-      1005: Resources/AlienArmouryExpanded/floorob_Plasmacaster_Clip.gif
-      1006: Resources/AlienArmouryExpanded/floorob_Toxigun.gif
-      1007: Resources/AlienArmouryExpanded/floorob_Toxigun_flask.gif
-      1008: Resources/AlienArmouryExpanded/floorobj_SL_EleriumBomb.gif
-      1009: Resources/AlienArmouryExpanded/floorob_Plasmacaster1.gif
-      1010: Resources/AlienArmouryExpanded/floorob_Plasmasniperrifle1.gif
-      1011: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer1.gif
+
 #  - type: HANDOB.PCK
 #    files:
 #      210: Resources/AlienArmouryExpanded/handob_Aliensniperrifle/
 #      218: Resources/AlienArmouryExpanded/handob_Plasmadestroyer/
 #      226: Resources/AlienArmouryExpanded/handob_Plasmacaster/
 #      234: Resources/AlienArmouryExpanded/handob_Toxigun/
-  - type: HANDOB.PCK
-    subX: 32
-    subY: 40
-    width: 256
-    height: 40
-    files:
-      1000: Resources/AlienArmouryExpanded/handob_Aliensniperrifle.gif
-      1008: Resources/AlienArmouryExpanded/handob_Plasmadestroyer.gif
-      1016: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
-      1024: Resources/AlienArmouryExpanded/handob_Toxigun.gif
   - type: SMOKE.PCK
     height: 80
     width: 160
