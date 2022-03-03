@@ -160,6 +160,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.2
+      ToWound: 0.3
       ToArmor: 0.2
       RandomWound: false
     clipSize: 10
@@ -185,6 +186,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.2
+      ToWound: 0.3
       ToArmor: 0.2
       RandomWound: false
     clipSize: 20
@@ -209,6 +211,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.2
+      ToWound: 0.3
       ToArmor: 0.2
       RandomWound: false
     clipSize: 30
@@ -294,6 +297,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.3
+      ToWound: 0.3
       ToArmor: 0.4
       RandomWound: false
     clipSize: 20
@@ -316,6 +320,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.3
+      ToWound: 0.3
       ToArmor: 0.4
       RandomWound: false
     clipSize: 30
@@ -348,6 +353,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.4
+      ToWound: 0.3
       ToArmor: 0.5
       RandomWound: false
     clipSize: 5
@@ -371,6 +377,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.4
+      ToWound: 0.3
       ToArmor: 0.5
       RandomWound: false
     clipSize: 20
@@ -396,6 +403,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.4
+      ToWound: 0.3
       ToArmor: 0.5
       RandomWound: false
     clipSize: 30
@@ -421,6 +429,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.4
+      ToWound: 0.3
       ToArmor: 0.5
       RandomWound: false
     clipSize: 50
@@ -447,6 +456,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.4
+      ToWound: 0.3
       ToArmor: 0.5
       RandomWound: false
     clipSize: 100
@@ -580,7 +590,7 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToWound: 0.5
+      ToWound: 0.15
       ToArmor: 0.4
       RandomWound: false
     clipSize: 10
@@ -757,7 +767,7 @@ items:
     size: 0.1
     costBuy: 500
     costSell: 470
-    weight: 1
+    weight: 2
     bigSprite: 123
     floorSprite: 123
     hitSound: 0
@@ -783,7 +793,7 @@ items:
     size: 0.1
     costBuy: 600
     costSell: 400
-    weight: 1
+    weight: 2
     bigSprite: 124
     floorSprite: 124
     hitSound: 0
@@ -805,7 +815,7 @@ items:
     size: 0.1
     costBuy: 300
     costSell: 200
-    weight: 1
+    weight: 2
     bigSprite: 125
     floorSprite: 125
     hitSound: 0
@@ -825,7 +835,7 @@ items:
     size: 0.1
     costBuy: 1500
     costSell: 800
-    weight: 1
+    weight: 2
     bigSprite: 126
     floorSprite: 126
     handSprite: 308
@@ -1117,6 +1127,7 @@ items:
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 45
@@ -1166,6 +1177,7 @@ items:
     confAimed:
       shots: 1
       name: STR_FIRE_M203
+      shortName: STR_FIRE_M203_SHORT
       ammoSlot: 1
       arcing: true
     confAuto:
@@ -1220,11 +1232,13 @@ items:
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 70
@@ -1265,6 +1279,7 @@ items:
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -1319,6 +1334,7 @@ items:
     confAuto:
       shots: 1
       name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 70
@@ -1370,6 +1386,7 @@ items:
     confAuto:
       shots: 8
       name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 55
@@ -1490,11 +1507,13 @@ items:
     confSnap:
       shots: 5
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 32
@@ -1579,6 +1598,7 @@ items:
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 80
@@ -1627,6 +1647,7 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -1685,11 +1706,13 @@ items:
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     accuracyAuto: 50
@@ -1737,6 +1760,7 @@ items:
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -1792,6 +1816,7 @@ items:
     confAuto:
       shots: 1
       name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 70
@@ -1838,11 +1863,13 @@ items:
     confSnap:
       shots: 5
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 52
@@ -1926,11 +1953,13 @@ items:
     confSnap:
       shots: 2
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 5
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     accuracyAuto: 45
@@ -1985,6 +2014,7 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -2055,11 +2085,13 @@ items:
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     accuracyAuto: 40
@@ -2108,6 +2140,7 @@ items:
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -2161,6 +2194,7 @@ items:
     confAuto:
       shots: 1
       name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 62
@@ -2213,6 +2247,7 @@ items:
     confAuto:
       shots: 4
       name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 60
@@ -2302,11 +2337,13 @@ items:
     confSnap:
       shots: 5
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 45
@@ -2354,6 +2391,7 @@ items:
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 65
@@ -2404,6 +2442,7 @@ items:
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 65
@@ -2488,6 +2527,7 @@ items:
     confAuto:
       shots: 2
       name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 55
@@ -2575,6 +2615,7 @@ items:
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 70
@@ -2622,6 +2663,7 @@ items:
     confAuto:
       shots: 6
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -2680,6 +2722,7 @@ items:
     confAuto:
       shots: 4
       name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 60
@@ -2766,6 +2809,7 @@ items:
         compatibleAmmo: [ STR_30_CARBINE_X15 ]
     confAuto:
       name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
       ammoSlot: 0
       shots: 3
       arcing: false
@@ -2852,6 +2896,7 @@ items:
       RandomType: 6
       IgnoreOverKill: true
       ToArmorPre: 0.7
+      ToWound: 0.3
       ToArmor: 0.7
       RandomWound: false
     clipSize: 30
@@ -2889,6 +2934,7 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -2939,6 +2985,7 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -2987,11 +3034,13 @@ items:
     confSnap:
       shots: 5
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 52
@@ -3033,6 +3082,7 @@ items:
     confAuto:
       shots: 5
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -3097,6 +3147,7 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -3203,6 +3254,7 @@ items:
     confAimed:
       shots: 5
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -3463,7 +3515,7 @@ items:
     painKiller: 10
     heal: 10
     stimulant: 10
-    woundRecovery: 4
+    woundRecovery: 3
     healthRecovery: 5
     stunRecovery: 5
     energyRecovery: 10
@@ -3488,7 +3540,7 @@ items:
     painKiller: 6
     heal: 6
     stimulant: 6
-    woundRecovery: 4
+    woundRecovery: 3
     healthRecovery: 5
     stunRecovery: 6
     energyRecovery: 15
@@ -3566,13 +3618,13 @@ items:
     battleType: 6
     invWidth: 1
     invHeight: 1
-    heal: 3
-    woundRecovery: 4
+    heal: 15
+    woundRecovery: 1
     isConsumable: true
     medikitTargetSelf: true
     medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
     costUse:
-      time: 7
+      time: 5
     flatRate: true
     attraction: 6
     experienceTrainingMode: 19
@@ -3593,14 +3645,14 @@ items:
     battleType: 6
     invWidth: 1
     invHeight: 2
-    heal: 5
-    woundRecovery: 8
-    healthRecovery: 1
+    heal: 25
+    woundRecovery: 2
+    healthRecovery: 0
     isConsumable: true
     medikitTargetSelf: true
     medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
     costUse:
-      time: 7
+      time: 5
     flatRate: true
     attraction: 6
     experienceTrainingMode: 19
@@ -3620,7 +3672,7 @@ items:
     invHeight: 2
     painKiller: 7
     heal: 8
-    woundRecovery: 10
+    woundRecovery: 3
     healthRecovery: 2
     stunRecovery: 5
     isConsumable: true
@@ -3744,6 +3796,7 @@ items:
     confAuto:
       shots: 2
       name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 55
@@ -3829,16 +3882,17 @@ items:
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
-      shots: 10
-      name: STR_FULL_AUTO
+      shots: 6
+      name: STR_CONTROL_AUTO
       ammoSlot: 0
       arcing: false
-    accuracySnap: 85
-    accuracyAimed: 110
-    accuracyAuto: 65
+    accuracySnap: 95
+    accuracyAimed: 150
+    accuracyAuto: 75
     tuAuto: 45
     tuSnap: 29
     tuAimed: 65
@@ -3882,11 +3936,13 @@ items:
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -3898,7 +3954,7 @@ items:
     accuracyAuto: 65
     tuAuto: 45
     tuSnap: 29
-    tuAimed: 55
+    tuAimed: 40
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 40
@@ -3945,20 +4001,23 @@ items:
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
       shots: 1
       name: STR_FIRE_M203
+      shortName: STR_FIRE_M203_SHORT
       ammoSlot: 1
       arcing: true
     accuracySnap: 70
-    accuracyAimed: 110
+    accuracyAimed: 80
     accuracyAuto: 65
     tuAuto: 45
     tuSnap: 29
@@ -3969,6 +4028,7 @@ items:
     invWidth: 1
     invHeight: 3
     autoRange: 11
+    aimRange: 11
     attraction: 8
     listOrder: 200620
 
@@ -4000,6 +4060,7 @@ items:
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -4057,11 +4118,13 @@ items:
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     accuracyAuto: 50
@@ -4107,22 +4170,17 @@ items:
     ammo:
       0:
         compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
-    confAimed:
-      shots: 2
-      name: STR_DOUBLE_TAP
-      ammoSlot: 0
-      arcing: false
     confAuto:
-      shots: 7
-      name: STR_FULL_AUTO
+      shots: 4
+      name: STR_CONTROL_AUTO
       ammoSlot: 0
       arcing: false
     accuracyAuto: 65
-    accuracySnap: 85
-    accuracyAimed: 110
+    accuracySnap: 95
+    accuracyAimed: 135
     tuAuto: 33
     tuSnap: 24
-    tuAimed: 46
+    tuAimed: 38
     costThrow:
       energy: 12
     battleType: 1
@@ -4163,16 +4221,18 @@ items:
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
-    accuracyAuto: 45
-    accuracySnap: 65
-    accuracyAimed: 80
+    accuracyAuto: 47
+    accuracySnap: 66
+    accuracyAimed: 84
     tuAuto: 33
     tuSnap: 24
     tuAimed: 46
@@ -4234,25 +4294,26 @@ items:
     confAimed:
       shots: 1
       name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 7
-      name: STR_FULL_AUTO
+      name: STR_CONTROL_AUTO
       ammoSlot: 0
       arcing: false
-    accuracySnap: 85
-    accuracyAimed: 90
-    accuracyAuto: 40
+    accuracySnap: 90
+    accuracyAimed: 140
+    accuracyAuto: 60
     oneHandedPenalty: 60
     kneelBonus: 120
     maxRange: 60
     aimRange: 25
     snapRange: 22
-    autoRange: 18
+    autoRange: 14
     dropoff: 1
     tuSnap: 30
-    tuAimed: 45
+    tuAimed: 60
     tuAuto: 33
     invHeight: 3
     invWidth: 1
@@ -4298,11 +4359,13 @@ items:
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     confAimed:
@@ -4311,13 +4374,13 @@ items:
       ammoSlot: 1
     accuracySnap: 65
     accuracyAimed: 75
-    accuracyAuto: 45
+    accuracyAuto: 40
     oneHandedPenalty: 60
     kneelBonus: 120
     maxRange: 60
     aimRange: 16
     snapRange: 20
-    autoRange: 18
+    autoRange: 10
     dropoff: 1
     tuSnap: 30
     tuAimed: 45
@@ -4357,6 +4420,7 @@ items:
     confAimed:
       shots: 1
       name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 40
@@ -4426,6 +4490,7 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
@@ -4476,11 +4541,13 @@ items:
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
       ammoSlot: 0
       arcing: false
     accuracyAuto: 50
@@ -4526,11 +4593,13 @@ items:
     confSnap:
       shots: 5
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 10
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 95
@@ -4575,11 +4644,13 @@ items:
     confSnap:
       shots: 5
       name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 85
@@ -4622,6 +4693,7 @@ items:
     confAuto:
       shots: 1
       name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
     accuracySnap: 70
@@ -5658,17 +5730,33 @@ extraStrings:
       ########################
       ###### FIRE MODES ######
       ########################
+      STR_SHOT_TYPE_AUTO: "Auto (x{0})"
+      STR_SHOT_TYPE_SNAP: "Snap (x{0})"
+      STR_SHOT_TYPE_AIMED: "Aimed (x{0})"
+      #
       STR_RAPID_FIRE: "Rapid Fire"
+      STR_RAPID_FIRE_SHORT: "Rapid (x{0})"
       STR_BURST: "Burst"
+      STR_BURST_SHORT: "Burst (x{0})"
       STR_CONTROL_AUTO: "Controlled Auto"
+      STR_CONTROL_AUTO_SHORT: "Control (x{0})"
       STR_DOUBLE_TAP: "Double Tap"
+      STR_DOUBLE_TAP_SHORT: "Double (x{0})"
       STR_FULL_AUTO: "Full Auto"
+      STR_FULL_AUTO_SHORT: "Full Auto (x{0})"
       STR_HEADSHOT: "Headshot!"
+      STR_HEADSHOT_SHORT: "Headshot (x{0})"
       STR_RAGE_FIRE: "Rage Fire!"
+      STR_RAGE_FIRE_SHORT: "Rage Fire (x{0})"
       STR_SUPPRESSION: "Suppression"
+      STR_SUPPRESSION_SHORT: "Suppress (x{0})"
       STR_FIRE_M203: "Fire M203"
+      STR_FIRE_M203_SHORT: "M203 (x{0})"
       STR_FIRE_SHOTGUN: "Fire Shotgun"
+      STR_FIRE_SHOTGUN_SHORT: "Shotgun (x{0})"
       STR_PRAY_N_SPRAY: "Spray n' Pray"
+      STR_PRAY_N_SPRAY_SHORT: "Spray (x{0})"
+      #
       STR_UNPRIME_GRENADE: "Unprime Grenade"
       ###########################
       ####### US WEAPONS ########
