@@ -91,8 +91,8 @@ items:
     size: 0.4
     costSell: 20000
     weight: 30
-    bigSprite: 46
-    floorSprite: 42
+    bigSprite: 3102
+    floorSprite: 3102
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
@@ -104,55 +104,60 @@ items:
 ##############################
 
   - type: STR_FLOATER_SOLDIER_CORPSE
+    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3103
+    floorSprite: 3103
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
     armor: 26
   - type: STR_FLOATER_NAVIGATOR_CORPSE
+    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3104
+    floorSprite: 3104
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
     armor: 26
   - type: STR_FLOATER_MEDIC_CORPSE
+    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3105
+    floorSprite: 3105
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
     armor: 26
   - type: STR_FLOATER_ENGINEER_CORPSE
+    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3106
+    floorSprite: 3106
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
     armor: 26
   - type: STR_FLOATER_LEADER_CORPSE
+    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3107
+    floorSprite: 3107
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
@@ -167,23 +172,25 @@ items:
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3108
+    floorSprite: 3108
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_ARMORED_FLOATER_ALL_CORPSE
     armor: 26
   - type: STR_ARMORED_FLOATER_LEADER_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
-    bigSprite: 52
-    floorSprite: 48
+    bigSprite: 3109
+    floorSprite: 3109
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_ARMORED_FLOATER_ALL_CORPSE
     armor: 26
 
 ################################
@@ -213,19 +220,20 @@ items:
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3116
+    floorSprite: 3116
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_MUTON_ALL_CORPSE
     armor: 26
   - type: STR_MUTON_NAVIGATOR_CORPSE
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3117
+    floorSprite: 3117
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
@@ -235,34 +243,37 @@ items:
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3118
+    floorSprite: 3118
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
+    name: STR_MUTON_ALL_CORPSE
     battleType: 11
     armor: 26
   - type: STR_MUTON_ENGINEER_CORPSE
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3119
+    floorSprite: 3119
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_MUTON_ALL_CORPSE
     armor: 26
   - type: STR_MUTON_LEADER_CORPSE
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3120
+    floorSprite: 3120
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_MUTON_ALL_CORPSE
     armor: 26
 
 
@@ -274,23 +285,25 @@ items:
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3121
+    floorSprite: 3121
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_ARMORED_MUTON_ALL_CORPSE
     armor: 26
   - type: STR_ARMORED_MUTON_LEADER_CORPSE
     size: 0.4
     costSell: 20000
     weight: 40
-    bigSprite: 48
-    floorSprite: 44
+    bigSprite: 3122
+    floorSprite: 3122
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    name: STR_ARMORED_MUTON_ALL_CORPSE
     armor: 26
 
 ################################
@@ -380,25 +393,25 @@ items:
     battleType: 11
   - type: MECHTOID_CORPSE_1
     name: STR_MECHTOID_CORPSE
-    floorSprite: 415
+    floorSprite: 3124
     invWidth: 0
     invHeight: 0
     battleType: 11
     recoveryPoints: 3
   - type: MECHTOID_CORPSE_2
-    floorSprite: 416
+    floorSprite: 3125
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: MECHTOID_CORPSE_3
-    floorSprite: 417
+    floorSprite: 3126
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: MECHTOID_CORPSE_4
-    floorSprite: 418
+    floorSprite: 3127
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -407,8 +420,8 @@ items:
     size: 0.4
     costSell: 20000
     weight: 30
-    bigSprite: 212
-    floorSprite: 212
+    bigSprite: 3129
+    floorSprite: 3129
     invWidth: 2
     invHeight: 2
     recoveryPoints: 5
@@ -421,8 +434,8 @@ items:
     size: 0.4
     costSell: 20000
     weight: 30
-    bigSprite: 212
-    floorSprite: 212
+    bigSprite: 3128
+    floorSprite: 3128
     invWidth: 2
     invHeight: 2
     recoveryPoints: 5
@@ -538,6 +551,31 @@ items:
 ###### ARMORED SECTOIDS #######
 ##############################
 
+  - type: STR_ARMORED_SECTOID_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
 
 ################################
 ##### UNARMORED FLOATERS ######
@@ -579,7 +617,36 @@ items:
 ###### ARMORED FLOATERS #######
 ##############################
 
-
+  - type: STR_ARMORED_FLOATER_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
 
 ################################
 ###### UNARMORED SNAKES #######
@@ -621,6 +688,16 @@ items:
 ###### UNARMORED MUTONS #######
 ##############################
 
+  - type: STR_MUTON_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_MUTON_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
   - type: STR_MUTON_ENGINEER
     size: 0.0
     recover: true
@@ -641,6 +718,31 @@ items:
 ####### ARMORED MUTONS ########
 ##############################
 
+  - type: STR_ARMORED_MUTON_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_ARMORED_MUTON_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_ARMORED_MUTON_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_MUTON_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_MUTON_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
 
 ################################
 ######### ETHEREALS ###########
@@ -682,6 +784,11 @@ items:
     recover: false
     liveAlien: true
   - type: STR_PROBE_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_CYBERSPHERE_TERRORIST
     size: 0.0
     recover: true
     liveAlien: true
@@ -3260,3 +3367,62 @@ extraSprites:
     files:
       0: Resources/AlienFactions/Mechtoid/MECHTOID_INVENTORY.png
 ##########################
+
+extraStrings:
+  - type: en-US
+    strings:
+      MECHTOID_WEAPON: "Mechtoid Pulse Cannon"
+      PROBE_WEAPON: "Probe Laser Cutter"
+      STR_SECTOID_COMMANDER_CORPSE: "Sectoid Corpse"
+      STR_ARMORED_SECTOID_CORPSE: "Armored Sectoid Corpse"
+      STR_FLOATER_ALL_CORPSE: "Floater Corpse"
+      STR_ARMORED_FLOATER_ALL_CORPSE: "Armored Floater Corpse"
+      STR_MUTON_ALL_CORPSE: "Muton Corpse"
+      STR_ARMORED_MUTON_ALL_CORPSE: "Armored Muton Corpse"
+      STR_CYBERDISC_CORPSE: "Cyberdisc Wreckage"
+      STR_SECTOPOD_CORPSE: "Sectopod Wreckage"
+      STR_MECHTOID_CORPSE: "Mechtoid Wreckage"
+      STR_PROBE_CORPSE: "Probe Wreckage"
+      STR_CYBERSPHERE_CORPSE: "Cybersphere Wreckage"
+      STR_ARMORED_SECTOID_LEADER: "Armored Sectoid Leader"
+      STR_ARMORED_SECTOID_ENGINEER: "Armored Sectoid Engineer"
+      STR_ARMORED_SECTOID_MEDIC: "Armored Sectoid Medic"
+      STR_ARMORED_SECTOID_NAVIGATOR: "Armored Sectoid Navigator"
+      STR_ARMORED_SECTOID_SOLDIER: "Armored Sectoid Soldier"
+      STR_ARMORED_FLOATER_COMMANDER: "Armored Floater Commander"
+      STR_ARMORED_FLOATER_LEADER: "Armored Floater Leader"
+      STR_ARMORED_FLOATER_ENGINEER: "Armored Floater Engineer"
+      STR_ARMORED_FLOATER_MEDIC: "Armored Floater Medic"
+      STR_ARMORED_FLOATER_NAVIGATOR: "Armored Floater Navigator"
+      STR_ARMORED_FLOATER_SOLDIER: "Armored Floater Soldier"
+      STR_MUTON_LEADER: "Muton Guard"
+      STR_MUTON_MEDIC: "Muton Medic"
+      STR_MUTON_ENGINEER: "Muton Engineer"
+      STR_ARMORED_MUTON_LEADER: "Muton Elite Guard"
+      STR_ARMORED_MUTON_MEDIC: "Muton Elite Medic"
+      STR_ARMORED_MUTON_ENGINEER: "Muton Elite Engineer"
+      STR_ARMORED_MUTON_NAVIGATOR: "Muton Elite Navigator"
+      STR_ARMORED_MUTON_SOLDIER: "Muton Elite Soldier"
+      STR_MECHTOID_TERRORIST: "Mechtoid Terrorist"
+      STR_PROBE_TERRORIST: "Probe Terrorist"
+      STR_CYBERSPHERE_TERRORIST: "Cybersphere Terrorist"
+      SECTOID_ARMOR0: "Sectoid Skin"
+      SECTOID_COMMANDER_ARMOR: "Sectoid Skin"
+      ARMORED_SECTOID_ARMOR: "Sectoid Power Armor"
+      FLOATER_SOLDIER_ARMOR: "Floater Light Harness"
+      FLOATER_NAVIGATOR_ARMOR: "Floater Light Harness"
+      FLOATER_MEDIC_ARMOR: "Floater Light Harness"
+      FLOATER_ENGINEER_ARMOR: "Floater Light Harness"
+      FLOATER_LEADER_ARMOR: "Floater Light Harness"
+      ARMORED_FLOATER_SOLDIER_ARMOR: "Floater Armored Harness"
+      ARMORED_FLOATER_LEADER_ARMOR: "Floater Armored Harness"
+      MUTON_SOLDIER_ARMOR: "Muton Synthmuscle Coverall"
+      MUTON_NAVIGATOR_ARMOR: "Muton Synthmuscle Coverall"
+      MUTON_MEDIC_ARMOR: "Muton Synthmuscle Coverall"
+      MUTON_ENGINEER_ARMOR: "Muton Synthmuscle Coverall"
+      MUTON_LEADER_ARMOR: "Muton Synthmuscle Coverall"
+      ARMORED_MUTON_SOLDIER_ARMOR: "Muton Warrior Armor"
+      ARMORED_MUTON_LEADER_ARMOR: "Muton Elite Guard Armor"
+      MECHTOID_ARMOR: "Mechtoid Alien Alloy Plating"
+      PROBE_ARMOR: "Probe Chassis"
+      CYBERSPHERE_ARMOR: "Cybersphere Chassis"
