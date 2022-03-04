@@ -121,21 +121,21 @@ alienMissions:
         STR_CHTONITE: 25
         STR_REPTOID: 20
       5:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 20
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 20
         STR_ETHEREAL: 40
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_FLOATER: 20
+        STR_ARMORED_MUTON: 10
       6:
         STR_CHTONITE: 20
         STR_REPTOID: 10
         STR_CEREBREAL: 15
       7:
-        STR_SECTOID: 20
-        STR_SNAKEMAN: 10
+        STR_ARMORED_SECTOID: 20
+        STR_ARMORED_SNAKEMAN: 10
         STR_ETHEREAL: 20
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_FLOATER: 20
+        STR_ARMORED_MUTON: 10
         STR_REPTOID: 5
         STR_CHTONITE: 5
         STR_CEREBREAL: 10
@@ -217,9 +217,9 @@ alienMissions:
         STR_CHTONITE: 30
         STR_FLOATER: 40
       7:
-        STR_SECTOID: 30
-        STR_MUTON: 30
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 30
+        STR_ARMORED_MUTON: 30
+        STR_ARMORED_FLOATER: 10
         STR_CHTONITE: 20
         STR_CEREBREAL: 10
       8:
@@ -262,8 +262,8 @@ alienMissions:
         STR_CEREBREAL: 20
         STR_REPTOID: 10
       7:
-        STR_SECTOID: 30
-        STR_FLOATER: 20
+        STR_ARMORED_SECTOID: 30
+        STR_ARMORED_FLOATER: 20
         STR_CEREBREAL: 20
         STR_REPTOID: 10
         STR_CHTONITE: 10
@@ -297,23 +297,23 @@ alienMissions:
         STR_FLOATER: 5
         STR_REPTOID: 10
       3:
-        STR_SECTOID: 40
-        STR_SNAKEMAN: 20
-        STR_FLOATER: 30
+        STR_ARMORED_SECTOID: 40
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_FLOATER: 30
         STR_REPTOID: 10
       5:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 10
-        STR_ETHEREAL: 40
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_ETHEREAL: 40
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 10
         STR_REPTOID: 10
       7:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 20
-        STR_ETHEREAL: 10
-        STR_MUTON: 30
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_ETHEREAL: 10
+        STR_ARMORED_MUTON: 30
+        STR_ARMORED_FLOATER: 10
         STR_REPTOID: 20
     waves:
       - ufo: STR_SMALL_SCOUT
@@ -363,11 +363,11 @@ alienMissions:
         STR_CHTONITE: 10
         STR_REPTOID: 10
       7:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 10
-        STR_ETHEREAL: 30
-        STR_MUTON: 10
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_ETHEREAL: 30
+        STR_ARMORED_MUTON: 10
+        STR_ARMORED_FLOATER: 10
         STR_CHTONITE: 15
         STR_REPTOID: 10
         STR_CEREBREAL: 5
@@ -399,11 +399,11 @@ alienMissions:
     spawnUfo: STR_TROOP_LANDER # Spawned for the final retaliation run
     raceWeights: # In the case of a shoot-down, race comes from the UFO that triggered the mission.
       0:
-        STR_SECTOID: 20
-        STR_SNAKEMAN: 20
-        STR_ETHEREAL: 20
-        STR_MUTON: 20
-        STR_FLOATER: 20
+        STR_ARMORED_SECTOID: 20
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_ETHEREAL: 20
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 20
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -424,11 +424,11 @@ alienMissions:
     spawnUfo: STR_TROOP_LANDER # Spawned for the final retaliation run
     raceWeights: # In the case of a shoot-down, race comes from the UFO that triggered the mission.
       0:
-        STR_SECTOID: 20
-        STR_SNAKEMAN: 20
-        STR_ETHEREAL: 20
-        STR_MUTON: 20
-        STR_FLOATER: 20
+        STR_ARMORED_SECTOID: 20
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_ETHEREAL: 20
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 20
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -469,9 +469,9 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
       7:
-        STR_SECTOID: 30
-        STR_SNAKEMAN: 10
-        STR_MUTON: 30
+        STR_ARMORED_SECTOID: 30
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_MUTON: 30
         STR_REPTOID: 30
     waves:
       - ufo: STR_SMALL_FIGHTER
@@ -519,9 +519,9 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
       7:
-        STR_SECTOID: 30
-        STR_SNAKEMAN: 10
-        STR_MUTON: 30
+        STR_ARMORED_SECTOID: 30
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_MUTON: 30
         STR_REPTOID: 30
     waves:
       - ufo: STR_FIGHTER_SHIP
@@ -547,9 +547,9 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
       7:
-        STR_SECTOID: 30
-        STR_SNAKEMAN: 10
-        STR_MUTON: 30
+        STR_ARMORED_SECTOID: 30
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_MUTON: 30
         STR_REPTOID: 30
     waves:
       - ufo: STR_SMALL_FIGHTER
@@ -571,9 +571,9 @@ alienMissions:
         STR_MUTON: 30
         STR_REPTOID: 30
       7:
-        STR_SECTOID: 30
-        STR_SNAKEMAN: 10
-        STR_MUTON: 30
+        STR_ARMORED_SECTOID: 30
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_MUTON: 30
         STR_REPTOID: 30
     waves:
       - ufo: STR_SMALL_FIGHTER
@@ -683,21 +683,21 @@ alienMissions:
     spawnZone: 3 #Mission zone for terror missions
     raceWeights:
       0:
-        STR_SECTOID: 25
-        STR_SNAKEMAN: 25
-        STR_FLOATER: 50
+        STR_ARMORED_SECTOID: 25
+        STR_ARMORED_SNAKEMAN: 25
+        STR_ARMORED_FLOATER: 50
       5:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 20
-        STR_ETHEREAL: 40
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_ETHEREAL: 40
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 10
       7:
-        STR_SECTOID: 20
-        STR_SNAKEMAN: 10
-        STR_ETHEREAL: 20
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 20
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_ETHEREAL: 20
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 10
     waves: *DummyUFO
 
   - type: STR_EUROPEAN_CITY_DEFENSE
@@ -708,21 +708,21 @@ alienMissions:
     spawnZone: 3
     raceWeights:
       0:
-        STR_SECTOID: 25
-        STR_SNAKEMAN: 25
-        STR_FLOATER: 50
+        STR_ARMORED_SECTOID: 25
+        STR_ARMORED_SNAKEMAN: 25
+        STR_ARMORED_FLOATER: 50
       5:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 20
-        STR_ETHEREAL: 40
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_ETHEREAL: 40
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 10
       7:
-        STR_SECTOID: 20
-        STR_SNAKEMAN: 10
-        STR_ETHEREAL: 20
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 20
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_ETHEREAL: 20
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 10
     waves: *DummyUFO
   - type: STR_SOVIET_CITY_DEFENSE
     despawnEvenIfTargeted: true
@@ -732,20 +732,20 @@ alienMissions:
     spawnZone: 3
     raceWeights:
       0:
-        STR_SECTOID: 25
-        STR_SNAKEMAN: 25
-        STR_FLOATER: 50
+        STR_ARMORED_SECTOID: 25
+        STR_ARMORED_SNAKEMAN: 25
+        STR_ARMORED_FLOATER: 50
       5:
-        STR_SECTOID: 10
-        STR_SNAKEMAN: 20
-        STR_ETHEREAL: 40
-        STR_MUTON: 20
-        STR_FLOATER: 10
+        STR_ARMORED_SECTOID: 10
+        STR_ARMORED_SNAKEMAN: 20
+        STR_ARMORED_ETHEREAL: 40
+        STR_ARMORED_MUTON: 20
+        STR_ARMORED_FLOATER: 10
       7:
-        STR_SECTOID: 20
-        STR_SNAKEMAN: 10
-        STR_ETHEREAL: 20
-        STR_MUTON: 20
+        STR_ARMORED_SECTOID: 20
+        STR_ARMORED_SNAKEMAN: 10
+        STR_ARMORED_ETHEREAL: 20
+        STR_ARMORED_MUTON: 20
         STR_FLOATER: 10
     waves: *DummyUFO
 
@@ -773,7 +773,7 @@ alienMissions:
     spawnZone: 0
     raceWeights:
       0:
-          STR_SECTOID: 100
+          STR_ARMORED_ETHEREAL: 100
     waves:
       - ufo: dummy
         count: 1

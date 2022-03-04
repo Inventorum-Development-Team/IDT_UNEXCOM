@@ -1,6 +1,58 @@
 ﻿# spellchecker:words Tingcat Thinman
 
 items:
+########################################
+######## ALIEN BUILD-IN WEAPONS #######
+######################################
+  - type: MECHTOID_WEAPON
+    damageType: 5
+    battleType: 1
+    weight: 6
+    bigSprite: 7
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    accuracySnap: 70
+#    accuracyAuto: 50
+    tuSnap: 50
+    confSnap:
+      shots: 6
+    clipSize: -1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.15
+      ToArmorPre: 0.15
+      ToArmor: 0
+  - type: PROBE_WEAPON
+    damageType: 4
+    battleType: 1
+    weight: 6
+    bigSprite: 11
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    bulletSpeed: 10
+    accuracySnap: 50
+#    accuracyAuto: 50
+    tuSnap: 30
+    confSnap:
+      shots: 3
+    clipSize: -1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    power: 40
+    damageAlter:
+      ArmorEffectiveness: 0.75
+      ToArmor: 1.2
+
 ####################################
 ####### ALIEN CORPSE ITEMS #########
 ####################################
@@ -51,7 +103,51 @@ items:
 ##### UNARMORED FLOATERS ######
 ##############################
 
-  - type: STR_FLOATER_CORPSE
+  - type: STR_FLOATER_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 52
+    floorSprite: 48
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_FLOATER_NAVIGATOR_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 52
+    floorSprite: 48
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_FLOATER_MEDIC_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 52
+    floorSprite: 48
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_FLOATER_ENGINEER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 52
+    floorSprite: 48
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_FLOATER_LEADER_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
@@ -67,6 +163,28 @@ items:
 ###### ARMORED FLOATERS #######
 ##############################
 
+  - type: STR_ARMORED_FLOATER_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 52
+    floorSprite: 48
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_ARMORED_FLOATER_LEADER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 52
+    floorSprite: 48
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
 
 ################################
 ###### UNARMORED SNAKES #######
@@ -91,7 +209,51 @@ items:
 ###### UNARMORED MUTONS #######
 ##############################
 
-  - type: STR_MUTON_CORPSE
+  - type: STR_MUTON_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 48
+    floorSprite: 44
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_MUTON_NAVIGATOR_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 48
+    floorSprite: 44
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_MUTON_MEDIC_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 48
+    floorSprite: 44
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_MUTON_ENGINEER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 48
+    floorSprite: 44
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_MUTON_LEADER_CORPSE
     size: 0.4
     costSell: 20000
     weight: 40
@@ -103,9 +265,33 @@ items:
     battleType: 11
     armor: 26
 
+
 ################################
 ####### ARMORED MUTONS ########
 ##############################
+
+  - type: STR_ARMORED_MUTON_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 48
+    floorSprite: 44
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_ARMORED_MUTON_LEADER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 48
+    floorSprite: 44
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
 
 ################################
 ########## ETHEREAL ###########
@@ -126,36 +312,6 @@ items:
 #################################
 ##### ALIEN DRONES & MECHS #####
 ###############################
-
-  - type: STR_SECTOPOD_CORPSE
-    size: 1
-    costSell: 20000
-    battleType: 11
-  - type: SECTOPOD_CORPSE_1
-    name: STR_SECTOPOD_CORPSE
-    floorSprite: 60
-    invWidth: 0
-    invHeight: 0
-    battleType: 11
-    recoveryPoints: 3
-  - type: SECTOPOD_CORPSE_2
-    floorSprite: 61
-    invWidth: 0
-    invHeight: 0
-    battleType: 11
-    recover: false
-  - type: SECTOPOD_CORPSE_3
-    floorSprite: 62
-    invWidth: 0
-    invHeight: 0
-    battleType: 11
-    recover: false
-  - type: SECTOPOD_CORPSE_4
-    floorSprite: 63
-    invWidth: 0
-    invHeight: 0
-    battleType: 11
-    recover: false
   - type: STR_CYBERDISC_CORPSE
     size: 1
     costSell: 20000
@@ -189,6 +345,89 @@ items:
     invHeight: 0
     battleType: 11
     recover: false
+  - type: STR_SECTOPOD_CORPSE
+    size: 1
+    costSell: 20000
+    battleType: 11
+  - type: SECTOPOD_CORPSE_1
+    name: STR_SECTOPOD_CORPSE
+    floorSprite: 60
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+  - type: SECTOPOD_CORPSE_2
+    floorSprite: 61
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SECTOPOD_CORPSE_3
+    floorSprite: 62
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SECTOPOD_CORPSE_4
+    floorSprite: 63
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_MECHTOID_CORPSE
+    size: 1
+    costSell: 20000
+    battleType: 11
+  - type: MECHTOID_CORPSE_1
+    name: STR_MECHTOID_CORPSE
+    floorSprite: 415
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+  - type: MECHTOID_CORPSE_2
+    floorSprite: 416
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: MECHTOID_CORPSE_3
+    floorSprite: 417
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: MECHTOID_CORPSE_4
+    floorSprite: 418
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PROBE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 212
+    floorSprite: 212
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    listOrder: 7550
+    power: 2
+    damageAlter:
+      FixRadius: -1
+  - type: STR_CYBERSPHERE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 212
+    floorSprite: 212
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    listOrder: 7550
 
 ################################
 ######## ALIEN BEASTS #########
@@ -437,6 +676,16 @@ items:
     recover: true
     liveAlien: true
     costSell: 80000
+  - type: STR_MECHTOID_TERRORIST
+    size: 0.0
+    costSell: 80000
+    recover: false
+    liveAlien: true
+  - type: STR_PROBE_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
 
 ################################
 ######## ALIEN BEASTS #########
@@ -473,7 +722,32 @@ armors:
 ##### UNARMORED SECTOIDS ######
 ##############################
   - type: SECTOID_ARMOR0
+    allowInv: true
+    spriteInv: SECTOID_INVENTORY.SPK
     spriteSheet: SECTOID.PCK
+    corpseBattle:
+      - STR_SECTOID_CORPSE
+    frontArmor: 4
+    sideArmor: 3
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 2 ]
+
+  - type: SECTOID_COMMANDER_ARMOR
+    allowInv: true
+    spriteInv: SECTOID_COMMANDER_INVENTORY.SPK
+    spriteSheet: SECTOID_COMMANDER_SPRITESHEET.PCK
     corpseBattle:
       - STR_SECTOID_CORPSE
     frontArmor: 4
@@ -497,16 +771,39 @@ armors:
 ###### ARMORED SECTOIDS #######
 ##############################
 
-
+  - type: ARMORED_SECTOID_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_SECTOID_INVENTORY.SPK
+    spriteSheet: ARMORED_SECTOID_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_ARMORED_SECTOID_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 10
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.7
+      - 1.0
+      - 1.2
+      - 0.8
+      - 0.0
+    loftempsSet: [ 2 ]
 
 ################################
 ##### UNARMORED FLOATERS ######
 ##############################
 
-  - type: FLOATER_ARMOR0
-    spriteSheet: FLOATER.PCK
+  - type: FLOATER_SOLDIER_ARMOR
+    spriteSheet: FLOATER_SOLDIER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_SOLDIER_INVENTORY.SPK
     corpseBattle:
-      - STR_FLOATER_CORPSE
+      - STR_FLOATER_SOLDIER_CORPSE
     frontArmor: 8
     sideArmor: 6
     rearArmor: 4
@@ -525,10 +822,12 @@ armors:
       - 1.6
       - 0.0
     loftempsSet: [ 3 ]
-  - type: FLOATER_ARMOR1
-    spriteSheet: FLOATER.PCK
+  - type: FLOATER_NAVIGATOR_ARMOR
+    spriteSheet: FLOATER_NAVIGATOR_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_NAVIGATOR_INVENTORY.SPK
     corpseBattle:
-      - STR_FLOATER_CORPSE
+      - STR_FLOATER_NAVIGATOR_CORPSE
     frontArmor: 16
     sideArmor: 12
     rearArmor: 8
@@ -547,10 +846,60 @@ armors:
       - 1.6
       - 0.0
     loftempsSet: [ 3 ]
-  - type: FLOATER_ARMOR2
-    spriteSheet: FLOATER.PCK
+  - type: FLOATER_MEDIC_ARMOR
+    spriteSheet: FLOATER_MEDIC_ARMOR
+    allowInv: true
+    spriteInv: FLOATER_MEDIC_INVENTORY.SPK
     corpseBattle:
-      - STR_FLOATER_CORPSE
+      - STR_FLOATER_MEDIC_CORPSE
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 12
+    underArmor: 16
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: FLOATER_ENGINEER_ARMOR
+    spriteSheet: FLOATER_ENGINEER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_ENGINEER_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_ENGINEER_CORPSE
+    frontArmor: 18
+    sideArmor: 16
+    rearArmor: 10
+    underArmor: 12
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: FLOATER_LEADER_ARMOR
+    spriteSheet: FLOATER_LEADER_ARMOR
+    allowInv: true
+    spriteInv: FLOATER_LEADER_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_LEADER_CORPSE
     frontArmor: 24
     sideArmor: 18
     rearArmor: 12
@@ -574,7 +923,54 @@ armors:
 ###### ARMORED FLOATERS #######
 ##############################
 
-
+  - type: ARMORED_FLOATER_SOLDIER_ARMOR
+    spriteSheet: ARMORED_FLOATER_SOLDIER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: ARMORED_FLOATER_SOLDIER_INVENTORY.SPK
+    corpseBattle:
+      - STR_ARMORED_FLOATER_SOLDIER_CORPSE
+    frontArmor: 18
+    sideArmor: 16
+    rearArmor: 14
+    underArmor: 12
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: ARMORED_FLOATER_LEADER_ARMOR
+    spriteSheet: ARMORED_FLOATER_LEADER_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_FLOATER_LEADER_INVENTORY.SPK
+    corpseBattle:
+      - STR_ARMORED_FLOATER_LEADER_CORPSE
+    frontArmor: 34
+    sideArmor: 28
+    rearArmor: 22
+    underArmor: 26
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 3 ]
 
 ################################
 ###### UNARMORED SNAKES #######
@@ -657,10 +1053,12 @@ armors:
 ###### UNARMORED MUTONS #######
 ##############################
 
-  - type: MUTON_ARMOR0
-    spriteSheet: MUTON.PCK
+  - type: MUTON_SOLDIER_ARMOR
+    allowInv: true
+    spriteInv: MUTON_SOLDIER_INVENTORY.SPK
+    spriteSheet: MUTON_SOLDIER_SPRITESHEET.PCK
     corpseBattle:
-      - STR_MUTON_CORPSE
+      - STR_MUTON_SOLDIER_CORPSE
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
@@ -678,10 +1076,12 @@ armors:
       - 1.0
       - 0.0
     loftempsSet: [ 3 ]
-  - type: MUTON_ARMOR1
-    spriteSheet: MUTON.PCK
+  - type: MUTON_NAVIGATOR_ARMOR
+    allowInv: true
+    spriteInv: MUTON_NAVIGATOR_INVENTORY.SPK
+    spriteSheet: MUTON_NAVIGATOR_SPRITESHEET.PCK
     corpseBattle:
-      - STR_MUTON_CORPSE
+      - STR_MUTON_NAVIGATOR_CORPSE
     frontArmor: 24
     sideArmor: 24
     rearArmor: 24
@@ -699,13 +1099,63 @@ armors:
       - 1.0
       - 0.0
     loftempsSet: [ 3 ]
-  - type: MUTON_ARMOR2
-    spriteSheet: MUTON.PCK
+  - type: MUTON_MEDIC_ARMOR
+    allowInv: true
+    spriteInv: MUTON_MEDIC_INVENTORY.SPK
+    spriteSheet: MUTON_MEDIC_SPRITESHEET.PCK
     corpseBattle:
-      - STR_MUTON_CORPSE
+      - STR_MUTON_MEDIC_CORPSE
     frontArmor: 28
     sideArmor: 28
     rearArmor: 28
+    underArmor: 20
+    drawingRoutine: 10
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+
+  - type: MUTON_ENGINEER_ARMOR
+    allowInv: true
+    spriteInv: MUTON_ENGINEER_INVENTORY.SPK
+    spriteSheet: MUTON_ENGINEER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_ENGINEER_CORPSE
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 28
+    underArmor: 20
+    drawingRoutine: 10
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+
+  - type: MUTON_LEADER_ARMOR
+    allowInv: true
+    spriteInv: MUTON_LEADER_INVENTORY.SPK
+    spriteSheet: MUTON_LEADER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_LEADER_CORPSE
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 30
     underArmor: 20
     drawingRoutine: 10
     damageModifier:
@@ -725,7 +1175,53 @@ armors:
 ####### ARMORED MUTONS ########
 ##############################
 
+  - type: ARMORED_MUTON_SOLDIER_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_MUTON_SOLDIER_INVENTORY.SPK
+    spriteSheet: ARMORED_MUTON_SOLDIER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_ARMORED_MUTON_SOLDIER_CORPSE
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 20
+    underArmor: 10
+    drawingRoutine: 10
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
 
+  - type: ARMORED_MUTON_LEADER_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_MUTON_LEADER_INVENTORY.SPK
+    spriteSheet: ARMORED_MUTON_LEADER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_ARMORED_MUTON_LEADER_CORPSE
+    frontArmor: 45
+    sideArmor: 30
+    rearArmor: 30
+    underArmor: 20
+    drawingRoutine: 10
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
 
 ################################
 ######### ETHEREALS ###########
@@ -804,7 +1300,8 @@ armors:
 
   - type: CYBERDISC_ARMOR
     spriteSheet: CYBER.PCK
-    allowInv: false
+    allowInv: true
+    spriteInv: CYBERDISC_INVENTORY.SPK
     corpseBattle:
       - CYBERDISC_CORPSE_1
       - CYBERDISC_CORPSE_2
@@ -834,7 +1331,8 @@ armors:
 
   - type: SECTOPOD_ARMOR
     spriteSheet: X_ROB.PCK
-    allowInv: false
+    allowInv: true
+    spriteInv: SECTOPOD_INVENTORY.SPK
     corpseBattle:
       - SECTOPOD_CORPSE_1
       - SECTOPOD_CORPSE_2
@@ -859,6 +1357,113 @@ armors:
       - 1.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
+
+  - type: MECHTOID_ARMOR
+    spriteSheet: MECHTOID_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: MECHTOID_INVENTORY.SPK
+    corpseBattle:
+      - MECHTOID_CORPSE_1
+      - MECHTOID_CORPSE_2
+      - MECHTOID_CORPSE_3
+      - MECHTOID_CORPSE_4
+    corpseGeo: STR_MECHTOID_CORPSE
+    frontArmor: 50
+    sideArmor: 46
+    rearArmor: 42
+    underArmor: 45
+    drawingRoutine: 5
+    painImmune: true
+    size: 2
+    damageModifier:
+      - 1
+      - 1
+      - 0.8
+      - 0.8
+      - 1
+      - 1
+      - 0
+      - 0.8
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1.1
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: PROBE_ARMOR
+    allowInv: true
+    spriteInv: PROBE_INVENTORY.SPK
+    spriteSheet: PROBE_SPRITESHEET.PCK
+    scripts: # <- this node
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        unit.isWalking walking;
+        if eq walking 0;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 8 8 7;
+          mul sprite_offset 8;
+          add sprite_offset 8;
+          add sprite_offset temp;
+          set sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    corpseBattle:
+      - STR_PROBE_CORPSE
+    frontArmor: 15
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    drawingRoutine: 4
+    constantAnimation: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [1]
+  - type: CYBERSPHERE_ARMOR
+    spriteInv: CYBERDISC_INVENTORY.SPK
+    spriteSheet: CYBERSPHERE_SPRITESHEET.PCK
+    deathFrames: 3
+    allowInv: true
+    corpseBattle:
+      - STR_CYBERSPHERE_CORPSE
+    frontArmor: 3
+    sideArmor: 3
+    rearArmor: 3
+    underArmor: 3
+    drawingRoutine: 8
+    movementType: 1
+    size: 1
+    damageModifier:
+      - 1
+      - 1
+      - 0.8
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1.2
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1.3
+    painImmune: true
+    loftempsSet: [3]
+    meleeDodge:
+      reactions: 0.3
 
 ################################
 ######## ALIEN BEASTS #########
@@ -894,7 +1499,8 @@ armors:
 
   - type: CHRYSSALID_ARMOR
     spriteSheet: CHRYS.PCK
-    allowInv: false
+    allowInv: true
+    spriteInv: CHRYSSALID_INVENTORY.SPK
     corpseBattle:
       - STR_CHRYSSALID_CORPSE
     frontArmor: 34
@@ -940,7 +1546,8 @@ armors:
     deathFrames: 18
   - type: SILACOID_ARMOR
     spriteSheet: SILACOID.PCK
-    allowInv: false
+    allowInv: true
+    spriteInv: SILACOID_INVENTORY.SPK
     corpseBattle:
       - STR_SILACOID_CORPSE
     frontArmor: 50
@@ -964,7 +1571,8 @@ armors:
     loftempsSet: [ 5 ]
   - type: CELATID_ARMOR
     spriteSheet: CELATID.PCK
-    allowInv: false
+    allowInv: true
+    spriteInv: CELATID_INVENTORY.SPK
     corpseBattle:
       - STR_CELATID_CORPSE
     frontArmor: 20
@@ -1116,7 +1724,7 @@ units:
       psiStrength: 50
       psiSkill: 60
       melee: 76
-    armor: SECTOID_ARMOR0
+    armor: SECTOID_COMMANDER_ARMOR
     standHeight: 16
     kneelHeight: 12
     value: 25
@@ -1128,7 +1736,138 @@ units:
 ###### ARMORED SECTOIDS #######
 ##############################
 
-
+  - type: STR_ARMORED_SECTOID_SOLDIER
+    race: STR_ARMORED_SECTOID
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 65
+      throwing: 58
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_SECTOID_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 10
+    deathSound: 10
+    intelligence: 3
+    aggression: 2
+  - type: STR_ARMORED_SECTOID_ENGINEER
+    race: STR_ARMORED_SECTOID
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 65
+      throwing: 58
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_SECTOID_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 16
+    deathSound: 10
+    intelligence: 6
+    aggression: 2
+  - type: STR_ARMORED_SECTOID_MEDIC
+    race: STR_ARMORED_SECTOID
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 65
+      throwing: 58
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_SECTOID_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 14
+    deathSound: 10
+    intelligence: 5
+    aggression: 1
+  - type: STR_ARMORED_SECTOID_NAVIGATOR
+    race: STR_ARMORED_SECTOID
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 65
+      throwing: 58
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_SECTOID_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 12
+    deathSound: 10
+    intelligence: 4
+    aggression: 2
+  - type: STR_ARMORED_SECTOID_LEADER
+    race: STR_ARMORED_SECTOID
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 65
+      throwing: 58
+      strength: 30
+      psiStrength: 50
+      psiSkill: 50
+      melee: 76
+    armor: SECTOID_ARMOR0
+    standHeight: 16
+    kneelHeight: 12
+    value: 20
+    deathSound: 10
+    intelligence: 7
+    aggression: 1
+  - type: STR_SECTOID_COMMANDER
+    race: STR_SECTOID
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 65
+      throwing: 58
+      strength: 30
+      psiStrength: 50
+      psiSkill: 60
+      melee: 76
+    armor: SECTOID_COMMANDER_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 25
+    deathSound: 10
+    intelligence: 8
+    aggression: 0
 
 ################################
 ##### UNARMORED FLOATERS ######
@@ -1149,7 +1888,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 70
-    armor: FLOATER_ARMOR0
+    armor: FLOATER_SOLDIER_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -1173,7 +1912,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 70
-    armor: FLOATER_ARMOR0
+    armor: FLOATER_ENGINEER_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -1197,7 +1936,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 70
-    armor: FLOATER_ARMOR0
+    armor: FLOATER_NAVIGATOR_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -1221,7 +1960,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 70
-    armor: FLOATER_ARMOR0
+    armor: FLOATER_MEDIC_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -1245,7 +1984,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 70
-    armor: FLOATER_ARMOR1
+    armor: FLOATER_LEADER_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -1269,7 +2008,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 76
-    armor: FLOATER_ARMOR2
+    armor: FLOATER_LEADER_ARMOR
     standHeight: 21
     kneelHeight: 16
     floatHeight: 2
@@ -1283,6 +2022,150 @@ units:
 ###### ARMORED FLOATERS #######
 ##############################
 
+  - type: STR_ARMORED_FLOATER_SOLDIER
+    race: STR_ARMORED_FLOATER
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 50
+      firing: 62
+      throwing: 58
+      strength: 40
+      psiStrength: 35
+      psiSkill: 0
+      melee: 70
+    armor: ARMORED_FLOATER_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 12
+    deathSound: 10
+    moveSound: 15
+    intelligence: 4
+    aggression: 2
+  - type: STR_ARMORED_FLOATER_ENGINEER
+    race: STR_ARMORED_FLOATER
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 50
+      firing: 62
+      throwing: 58
+      strength: 40
+      psiStrength: 35
+      psiSkill: 0
+      melee: 70
+    armor: ARMORED_FLOATER_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: 10
+    moveSound: 15
+    intelligence: 7
+    aggression: 2
+  - type: STR_ARMORED_FLOATER_NAVIGATOR
+    race: STR_ARMORED_FLOATER
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 50
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 50
+      firing: 62
+      throwing: 58
+      strength: 40
+      psiStrength: 35
+      psiSkill: 0
+      melee: 70
+    armor: ARMORED_FLOATER_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: 10
+    moveSound: 15
+    intelligence: 5
+    aggression: 2
+  - type: STR_ARMORED_FLOATER_MEDIC
+    race: STR_ARMORED_FLOATER
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 50
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 50
+      firing: 62
+      throwing: 58
+      strength: 40
+      psiStrength: 35
+      psiSkill: 0
+      melee: 70
+    armor: ARMORED_FLOATER_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 16
+    deathSound: 10
+    moveSound: 15
+    intelligence: 6
+    aggression: 1
+  - type: STR_ARMORED_FLOATER_LEADER
+    race: STR_ARMORED_FLOATER
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 95
+      health: 40
+      bravery: 80
+      reactions: 60
+      firing: 65
+      throwing: 58
+      strength: 47
+      psiStrength: 40
+      psiSkill: 0
+      melee: 70
+    armor: ARMORED_FLOATER_LEADER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 25
+    deathSound: 10
+    moveSound: 15
+    intelligence: 8
+    aggression: 0
+  - type: STR_ARMORED_FLOATER_COMMANDER
+    race: STR_ARMORED_FLOATER
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 60
+      stamina: 100
+      health: 45
+      bravery: 80
+      reactions: 66
+      firing: 68
+      throwing: 65
+      strength: 48
+      psiStrength: 45
+      psiSkill: 0
+      melee: 76
+    armor: FLOATER_LEADER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 35
+    deathSound: 10
+    moveSound: 15
+    intelligence: 8
+    aggression: 0
 
 ################################
 ###### UNARMORED SNAKES #######
@@ -1428,7 +2311,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 76
-    armor: MUTON_ARMOR0
+    armor: MUTON_SOLDIER_ARMOR
     standHeight: 21
     kneelHeight: 16
     value: 15
@@ -1451,7 +2334,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 76
-    armor: MUTON_ARMOR1
+    armor: MUTON_NAVIGATOR_ARMOR
     standHeight: 21
     kneelHeight: 16
     value: 17
@@ -1474,7 +2357,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 76
-    armor: MUTON_ARMOR2
+    armor: MUTON_ENGINEER_ARMOR
     standHeight: 21
     kneelHeight: 16
     value: 19
@@ -1482,11 +2365,171 @@ units:
     intelligence: 4
     aggression: 2
     energyRecovery: 40
-
+  - type: STR_MUTON_MEDIC
+    race: STR_MUTON
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 56
+      stamina: 90
+      health: 125
+      bravery: 80
+      reactions: 60
+      firing: 54
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: MUTON_MEDIC_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: 6
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+  - type: STR_MUTON_LEADER
+    race: STR_MUTON
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 65
+      stamina: 90
+      health: 135
+      bravery: 80
+      reactions: 70
+      firing: 54
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: MUTON_LEADER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: 6
+    intelligence: 6
+    aggression: 2
+    energyRecovery: 40
 
 ################################
 ####### ARMORED MUTONS ########
 ##############################
+  - type: STR_ARMORED_MUTON_SOLDIER
+    race: STR_ARMORED_MUTON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 125
+      bravery: 80
+      reactions: 60
+      firing: 66
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_MUTON_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 15
+    deathSound: 6
+    intelligence: 2
+    aggression: 2
+    energyRecovery: 40
+  - type: STR_ARMORED_MUTON_NAVIGATOR
+    race: STR_ARMORED_MUTON
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 56
+      stamina: 90
+      health: 125
+      bravery: 80
+      reactions: 60
+      firing: 66
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_MUTON_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 17
+    deathSound: 6
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 40
+  - type: STR_ARMORED_MUTON_ENGINEER
+    race: STR_ARMORED_MUTON
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 125
+      bravery: 80
+      reactions: 60
+      firing: 66
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_MUTON_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: 6
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+  - type: STR_ARMORED_MUTON_MEDIC
+    race: STR_ARMORED_MUTON
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 56
+      stamina: 90
+      health: 125
+      bravery: 80
+      reactions: 60
+      firing: 66
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_MUTON_SOLDIER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: 6
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+  - type: STR_ARMORED_MUTON_LEADER
+    race: STR_ARMORED_MUTON
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 145
+      bravery: 90
+      reactions: 70
+      firing: 70
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: ARMORED_MUTON_LEADER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: 6
+    intelligence: 6
+    aggression: 2
+    energyRecovery: 40
 
 ################################
 ######### ETHEREALS ###########
@@ -1619,6 +2662,82 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 50
+    livingWeapon: true
+    capturable: false
+
+  - type: STR_MECHTOID_TERRORIST
+    race: STR_MECHTOID
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 50
+      stamina: 90
+      health: 200
+      bravery: 110
+      reactions: 65
+      firing: 70
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 50
+      melee: 80
+    armor: MECHTOID_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 30
+    deathSound: 23
+    intelligence: 3
+    aggression: 5
+    energyRecovery: 50
+    livingWeapon: true
+    capturable: false
+  - type: STR_PROBE_TERRORIST
+    race: STR_PROBE
+    stats:
+      tu: 100
+      stamina: 105
+      health: 40
+      bravery: 110
+      reactions: 20
+      firing: 0
+      throwing: 0
+      strength: 10
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: PROBE_ARMOR
+    standHeight: 6
+    kneelHeight: 5
+    value: 25
+    deathSound: 23
+    moveSound: 40
+    intelligence: 2
+    aggression: 1
+    specab: 1
+    livingWeapon: true
+    capturable: false
+  - type: STR_CYBERSPHERE_TERRORIST
+    race: STR_CYBERSPHERE
+    stats:
+      tu: 150
+      stamina: 105
+      health: 25
+      bravery: 110
+      reactions: 20
+      firing: 0
+      throwing: 0
+      strength: 10
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: CYBERSPHERE_ARMOR
+    standHeight: 6
+    kneelHeight: 5
+    value: 25
+    deathSound: 23
+    intelligence: 8
+    aggression: 1
+    #specab: 1
+    moveSound: 40
     livingWeapon: true
     capturable: false
 
@@ -1764,7 +2883,7 @@ extraSprites:
     width: 256
     height: 1360
     files:
-      0: Path/SECTOID_COMMANDER_SPRITESHEET.png
+      0: Resources/AlienFactions/Sectoids/SECTOID_COMMANDER_SPRITESHEET.png
 
   - type: ARMORED_SECTOID_SPRITESHEET.PCK
     subX: 32
@@ -1772,7 +2891,7 @@ extraSprites:
     width: 320
     height: 1080
     files:
-      0: Path/ARMORED_SECTOID_SPRITESHEET.png
+      0: Resources/AlienFactions/ArmoredSectoids/ARMORED_SECTOID_SPRITESHEET.png
 
 #################################
   - type: FLOATER_SOLDIER_SPRITESHEET.PCK
@@ -1781,35 +2900,35 @@ extraSprites:
     width: 512
     height: 280
     files:
-      0: Path/FLOATER_SOLDIER_SPRITESHEET.png
+      0: Resources/AlienFactions/Floaters/FLOATER_SOLDIER_SPRITESHEET.png
   - type: FLOATER_NAVIGATOR_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 512
     height: 280
     files:
-      0: Path/FLOATER_NAVIGATOR_SPRITESHEET.png
+      0: Resources/AlienFactions/Floaters/FLOATER_NAVIGATOR_SPRITESHEET.png
   - type: FLOATER_MEDIC_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 512
     height: 280
     files:
-      0: Path/FLOATER_MEDIC_SPRITESHEET.png
+      0: Resources/AlienFactions/Floaters/FLOATER_MEDIC_SPRITESHEET.png
   - type: FLOATER_ENGINEER_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 512
     height: 280
     files:
-      0: Path/FLOATER_ENGINEER_SPRITESHEET.png
-  - type: FLOATER_ENGINEER_SPRITESHEET.PCK
+      0: Resources/AlienFactions/Floaters/FLOATER_ENGINEER_SPRITESHEET.png
+  - type: FLOATER_LEADER_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 512
     height: 280
     files:
-      0: Path/FLOATER_ENGINEER_SPRITESHEET.png
+      0: Resources/AlienFactions/Floaters/FLOATER_LEADER_SPRITESHEET.png
 
   - type: STRIDER_SOLDIER_SPRITESHEET.PCK
     subX: 32
@@ -1817,7 +2936,7 @@ extraSprites:
     width: 512
     height: 680
     files:
-      0: Path/STRIDER_SOLDIER_SPRITESHEET.png
+      0: Resources/AlienFactions/Striders/STRIDER_SOLDIER_SPRITESHEET.png
 ##################################
 
   - type: ARMORED_FLOATER_SOLDIER_SPRITESHEET.PCK
@@ -1826,14 +2945,14 @@ extraSprites:
     width: 512
     height: 280
     files:
-      0: Path/ARMORED_FLOATER_SOLDIER_SPRITESHEET.png
+      0: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_SOLDIER_SPRITESHEET.png
   - type: ARMORED_FLOATER_LEADER_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 512
     height: 280
     files:
-      0: Path/ARMORED_FLOATER_LEADER_SPRITESHEET.png
+      0: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_LEADER_SPRITESHEET.png
 
 
 ##################################
@@ -1843,35 +2962,35 @@ extraSprites:
     width: 256
     height: 1360
     files:
-      0: Path/MUTON_SOLDIER_SPRITESHEET.png
+      0: Resources/AlienFactions/Mutons/MUTON_SOLDIER_SPRITESHEET.png
   - type: MUTON_NAVIGATOR_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 256
     height: 1360
     files:
-      0: Path/MUTON_NAVIGATOR_SPRITESHEET.png
+      0: Resources/AlienFactions/Mutons/MUTON_NAVIGATOR_SPRITESHEET.png
   - type: MUTON_MEDIC_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 256
     height: 1360
     files:
-      0: Path/MUTON_MEDIC_SPRITESHEET.png
+      0: Resources/AlienFactions/Mutons/MUTON_MEDIC_SPRITESHEET.png
   - type: MUTON_ENGINEER_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 256
     height: 1360
     files:
-      0: Path/MUTON_ENGINEER_SPRITESHEET.png
+      0: Resources/AlienFactions/Mutons/MUTON_ENGINEER_SPRITESHEET.png
   - type: MUTON_LEADER_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 256
     height: 1360
     files:
-      0: Path/MUTON_LEADER_SPRITESHEET.png
+      0: Resources/AlienFactions/Mutons/MUTON_LEADER_SPRITESHEET.png
 ################################
 
   - type: ARMORED_MUTON_SOLDIER_SPRITESHEET.PCK
@@ -1880,14 +2999,37 @@ extraSprites:
     width: 256
     height: 1360
     files:
-      0: Path/ARMORED_MUTON_SOLDIER_SPRITESHEET.png
+      0: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_SOLDIER_SPRITESHEET.png
   - type: ARMORED_MUTON_LEADER_SPRITESHEET.PCK
     subX: 32
     subY: 40
     width: 256
     height: 1360
     files:
-      0: Path/ARMORED_MUTON_LEADER_SPRITESHEET.png
+      0: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_LEADER_SPRITESHEET.png
+################################
+
+  - type: MECHTOID_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/AlienFactions/Mechtoid/MECHTOID_SPRITESHEET.png
+  - type: PROBE_SPRITESHEET.PCK
+    width: 512
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AlienFactions/Probe/PROBE_SPRITESHEET.png
+  - type: CYBERSPHERE_SPRITESHEET.PCK
+    width: 256
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AlienFactions/Cybersphere/CYBERSPHERE_SPRITESHEET.png
 
 ################################
   - type: BIGOBS.PCK
@@ -2067,6 +3209,25 @@ extraSprites:
     height: 200
     files:
       0: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_LEADER_INVENTORY.png
+######################################
+  - type: SILACOID_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AlienFactions/Silacoids/SILACOID_INVENTORY.png
+  - type: CELATID_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AlienFactions/Celatids/CELATID_INVENTORY.png
+  - type: CHRYSSALID_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AlienFactions/Chryssalids/CHRYSSALID_INVENTORY.png
 ######################################
   - type: CYBERDISC_INVENTORY.SPK
     singleImage: true
