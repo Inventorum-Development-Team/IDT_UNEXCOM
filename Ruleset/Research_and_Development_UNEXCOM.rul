@@ -1195,6 +1195,17 @@ research:
       - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
 
+  - name: STR_ARMORED_FLOATER_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_FLOATER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_ORIGINS
+
   - name: STR_REPTOID_COMMANDER
     listOrder: 8675
     cost: 192
@@ -1287,6 +1298,15 @@ research:
 #####################################
 ############# LEADERS ##############
 ###################################
+  - name: STR_SECTOID_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_SECTOID
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    destroyItem: true
   - name: STR_FLOATER_LEADER
     cost: 192
     points: 50
@@ -1297,6 +1317,34 @@ research:
     needItem: true
     destroyItem: true
   - name: STR_MUTON_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_MUTON
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    destroyItem: true
+
+  - name: STR_ARMORED_SECTOID_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_SECTOID
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    destroyItem: true
+  - name: STR_ARMORED_FLOATER_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_FLOATER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+    needItem: true
+    destroyItem: true
+  - name: STR_ARMORED_MUTON_LEADER
     cost: 192
     points: 50
     lookup: STR_MUTON
@@ -1876,7 +1924,7 @@ research:
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
-  - name: STR_SECTOID_FLOATER_MEDIC
+  - name: STR_ARMORED_SECTOID_MEDIC
     cost: 192
     points: 50
     lookup: STR_SECTOID
@@ -2460,6 +2508,36 @@ research:
     lookup: STR_SECTOID_AUTOPSY
     needItem: true
   - name: STR_ARMORED_SECTOID_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SECTOID_AUTOPSY
+    needItem: true
+  - name: STR_ARMORED_SECTOID_SOLDIER_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SECTOID_AUTOPSY
+    needItem: true
+  - name: STR_ARMORED_SECTOID_NAVIGATOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SECTOID_AUTOPSY
+    needItem: true
+  - name: STR_ARMORED_SECTOID_MEDIC_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SECTOID_AUTOPSY
+    needItem: true
+  - name: STR_ARMORED_SECTOID_ENGINEER_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SECTOID_AUTOPSY
+    needItem: true
+  - name: STR_ARMORED_SECTOID_LEADER_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_SECTOID_AUTOPSY
+    needItem: true
+  - name: STR_ARMORED_SECTOID_COMMANDER_CORPSE
     cost: 180
     points: 50
     lookup: STR_SECTOID_AUTOPSY
