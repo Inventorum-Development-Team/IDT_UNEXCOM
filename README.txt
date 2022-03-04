@@ -63,6 +63,7 @@ Credits by name:
 *Internet: UFOPedia images, further artwork reference
 *Istrebitel: craft weapon reference codes
 *KingMob4313: Plasma ruleset and sprites from Equal Terms, inspiration (laser removed)
+*Memmaker: Mechtoid rulesets
 *Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
 *Mitra Lightbringer: bug hunter
 *NeoWorm: Sectoid, Muton, Floater paperdolls, Floater spritesheets (adapted and expanded)
@@ -71,6 +72,7 @@ Credits by name:
 *Noyemi-K: UI stats bar (adapted into custom UI)
 *Luke83: overall Terrain & Map support
 *PERLHA: IDT bug hunter
+*Pjlasl: Probe ruleset snippet
 *Pvt.Dropleaf: bug hunter
 *Rclipse: IDT bug hunter
 *Riccardo Gasperi: original Android buttons art (modified)
@@ -82,7 +84,7 @@ Credits by name:
 *Tal'Raziid: IDT bug hunter
 *ThatDude: JustRussia AK original weapons (now adapted)
 *The Martian: Cybersphere sprites
-*The Reaver of Darkness: overall balance support, LIGHTNIA mapset, plus ideas
+*The Reaver of Darkness: major balance support, LIGHTNIA mapset, plus ideas
 *theemperorofmankind: bug hunter
 *Tingcat: Terrorists Paperdolls
 *Valmont and his girlfriend: bug hunters
