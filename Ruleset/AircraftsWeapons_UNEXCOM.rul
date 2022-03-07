@@ -1315,7 +1315,14 @@ crafts:
 #### TIER II ######
 ##################
 
-  - type: STR_HIND
+
+#  - type: STR_GALAXY # C-5 Galaxy, US T2 Paratrooper
+#  - type: STR_XC142 # XC-142, US T2 VTOL
+#  - type: STR_TRANSALL # C-160 Transall, NATO T2 Paratrooper
+#  - type: STR_DORNIER # Do-31 Dornier, NATO T2 VTOL
+#  - type: STR_ILYUSHIN # Il-76 Ilyushin, USSR T2 Paratrooper
+
+  - type: STR_HIND # USSR T2 VTOL
     requires:
       - STR_IMPROVED_VTOL_TRANSPORT
     sprite: 867
@@ -1382,6 +1389,8 @@ crafts:
 ####################
 #### TIER III #####
 ##################
+
+#  - type: STR_ACHILLES # UNEXCOM T3 VTOL
 
 # #  - type: STR_ORION
 #     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
