@@ -932,8 +932,6 @@ research:
       - STR_TUNLUN_TERRORIST
       - STR_CEREBREAL_COMMANDER
       - STR_CEREBREAL_LEADER
-      - STR_CEREBREAL_ENGINEER
-      - STR_CEREBREAL_MEDIC
       - STR_CEREBREAL_NAVIGATOR
       - STR_CEREBREAL_SOLDIER
       - STR_CEREBREAL_LARVA_TERRORIST
@@ -1885,6 +1883,136 @@ research:
 #####################################
 ############# MEDICS ###############
 ###################################
+
+  - name: STR_CHTONITE_MEDIC
+    cost: 192
+    points: 50
+    lookup: STR_CHTONITE
+    destroyItem: true
+    needItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_REPTOID
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_SOLDIER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+    listOrder: 8682
+  - name: STR_REPTOID_MEDIC
+    cost: 192
+    points: 50
+    lookup: STR_REPTOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_CHTONITE
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_CEREBREAL_LARVA
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_SOLDIER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
+    listOrder: 8672
+
+
+  - name: STR_SNAKEMAN_MEDIC
+    needItem: true
+    destroyItem: true
+    cost: 192
+    points: 50
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    lookup: STR_SECTOID
+    getOneFree:
+      - STR_CEREBREAL
+      - STR_CHTONITE
+      - STR_TUNLUN
+      - STR_SECTOID
+      - STR_FLOATER
+      - STR_SNAKEMAN
+      - STR_MUTON
+      - STR_ETHEREAL
+      - STR_CHRYSSALID
+      - STR_SECTOPOD
+      - STR_CYBERDISC
+      - STR_SILACOID
+      - STR_CELATID
+      - STR_REAPER
+      - STR_SALAMANDRON
+      - STR_CEREBREAL_LARVA
+      - STR_REPTOID_CORPSE
+      - STR_SALAMANDRON_CORPSE
+      - STR_CHTONITE_CORPSE
+      - STR_TUNLUN_CORPSE
+      - STR_SECTOID_CORPSE
+      - STR_SNAKEMAN_CORPSE
+      - STR_MUTON_CORPSE
+      - STR_ETHEREAL_CORPSE
+      - STR_FLOATER_SOLDIER_CORPSE
+      - STR_CHRYSSALID_CORPSE
+      - STR_SECTOPOD_CORPSE
+      - STR_CYBERDISC_CORPSE
+      - STR_SILACOID_CORPSE
+      - STR_CELATID_CORPSE
+      - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
+
+
   - name: STR_SECTOID_MEDIC
     cost: 192
     points: 50
@@ -2123,256 +2251,6 @@ research:
       - STR_REAPER_CORPSE
 
 
-  - name: STR_CEREBREAL_MEDIC
-    cost: 192
-    points: 50
-    lookup: STR_CEREBREAL
-    destroyItem: true
-    needItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_CHTONITE
-      - STR_REPTOID
-      - STR_TUNLUN
-      - STR_SECTOID
-      - STR_FLOATER
-      - STR_SNAKEMAN
-      - STR_MUTON
-      - STR_ETHEREAL
-      - STR_CHRYSSALID
-      - STR_SECTOPOD
-      - STR_CYBERDISC
-      - STR_SILACOID
-      - STR_CELATID
-      - STR_REAPER
-      - STR_SALAMANDRON
-      - STR_REPTOID_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_TUNLUN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_SOLDIER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SECTOPOD_CORPSE
-      - STR_CYBERDISC_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-    listOrder: 8692
-  - name: STR_CHTONITE_MEDIC
-    cost: 192
-    points: 50
-    lookup: STR_CHTONITE
-    destroyItem: true
-    needItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_CEREBREAL
-      - STR_REPTOID
-      - STR_TUNLUN
-      - STR_SECTOID
-      - STR_FLOATER
-      - STR_SNAKEMAN
-      - STR_MUTON
-      - STR_ETHEREAL
-      - STR_CHRYSSALID
-      - STR_SECTOPOD
-      - STR_CYBERDISC
-      - STR_SILACOID
-      - STR_CELATID
-      - STR_REAPER
-      - STR_SALAMANDRON
-      - STR_REPTOID_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_TUNLUN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_SOLDIER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SECTOPOD_CORPSE
-      - STR_CYBERDISC_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-    listOrder: 8682
-  - name: STR_REPTOID_MEDIC
-    cost: 192
-    points: 50
-    lookup: STR_REPTOID
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_CEREBREAL
-      - STR_CHTONITE
-      - STR_TUNLUN
-      - STR_SECTOID
-      - STR_FLOATER
-      - STR_SNAKEMAN
-      - STR_MUTON
-      - STR_ETHEREAL
-      - STR_CHRYSSALID
-      - STR_SECTOPOD
-      - STR_CYBERDISC
-      - STR_SILACOID
-      - STR_CELATID
-      - STR_REAPER
-      - STR_SALAMANDRON
-      - STR_CEREBREAL_LARVA
-      - STR_REPTOID_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_TUNLUN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_SOLDIER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SECTOPOD_CORPSE
-      - STR_CYBERDISC_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-      - STR_CEREBREAL_CORPSE
-      - STR_CEREBREAL_LARVA_CORPSE
-    listOrder: 8672
-  - name: STR_FLOATER_MEDIC
-    cost: 192
-    points: 50
-    lookup: STR_FLOATER
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-    getOneFree:
-      - STR_CEREBREAL
-      - STR_CHTONITE
-      - STR_TUNLUN
-      - STR_SECTOID
-      - STR_FLOATER
-      - STR_SNAKEMAN
-      - STR_MUTON
-      - STR_ETHEREAL
-      - STR_CHRYSSALID
-      - STR_SECTOPOD
-      - STR_CYBERDISC
-      - STR_SILACOID
-      - STR_CELATID
-      - STR_REAPER
-      - STR_SALAMANDRON
-      - STR_CEREBREAL_LARVA
-      - STR_REPTOID_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_TUNLUN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_SOLDIER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SECTOPOD_CORPSE
-      - STR_CYBERDISC_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-      - STR_CEREBREAL_CORPSE
-      - STR_CEREBREAL_LARVA_CORPSE
-  - name: STR_SECTOID_MEDIC
-    cost: 192
-    points: 50
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ALIEN_ORIGINS
-    lookup: STR_SECTOID
-    getOneFree:
-      - STR_CEREBREAL
-      - STR_CHTONITE
-      - STR_TUNLUN
-      - STR_SECTOID
-      - STR_FLOATER
-      - STR_SNAKEMAN
-      - STR_MUTON
-      - STR_ETHEREAL
-      - STR_CHRYSSALID
-      - STR_SECTOPOD
-      - STR_CYBERDISC
-      - STR_SILACOID
-      - STR_CELATID
-      - STR_REAPER
-      - STR_SALAMANDRON
-      - STR_CEREBREAL_LARVA
-      - STR_REPTOID_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_TUNLUN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_SOLDIER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SECTOPOD_CORPSE
-      - STR_CYBERDISC_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-      - STR_CEREBREAL_CORPSE
-      - STR_CEREBREAL_LARVA_CORPSE
-  - name: STR_SNAKEMAN_MEDIC
-    needItem: true
-    destroyItem: true
-    cost: 192
-    points: 50
-    unlocks:
-      - STR_ALIEN_ORIGINS
-    lookup: STR_SECTOID
-    getOneFree:
-      - STR_CEREBREAL
-      - STR_CHTONITE
-      - STR_TUNLUN
-      - STR_SECTOID
-      - STR_FLOATER
-      - STR_SNAKEMAN
-      - STR_MUTON
-      - STR_ETHEREAL
-      - STR_CHRYSSALID
-      - STR_SECTOPOD
-      - STR_CYBERDISC
-      - STR_SILACOID
-      - STR_CELATID
-      - STR_REAPER
-      - STR_SALAMANDRON
-      - STR_CEREBREAL_LARVA
-      - STR_REPTOID_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_TUNLUN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_SOLDIER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SECTOPOD_CORPSE
-      - STR_CYBERDISC_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-      - STR_CEREBREAL_CORPSE
-      - STR_CEREBREAL_LARVA_CORPSE
-
 ###################################
 ########### SOLDIERS #############
 #################################
@@ -2561,9 +2439,6 @@ research:
     lookup: STR_ETHEREAL_AUTOPSY
     needItem: true
 
-  - name: STR_MUTON_AUTOPSY
-    points: 50
-    needItem: true
   - name: STR_MUTON_CORPSE
     cost: 180
     points: 50

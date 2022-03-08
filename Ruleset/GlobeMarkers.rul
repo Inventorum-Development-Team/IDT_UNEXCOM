@@ -7,3 +7,258 @@ extraSprites:
     subY: 7
     files:
       0: Resources/GlobeMarkers/BaseGlobeMarkers.png
+  - type: GlobeMarkers # ignoreDuplicate
+    width: 610
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      9: Resources/GlobeMarkers/CraftGlobeMarkers.png
+crafts:
+  - type: STR_TUNNAN # ignoreDuplicate
+    marker: 9
+  - type: STR_PHANTOM # ignoreDuplicate
+    marker: 10
+  - type: STR_LIGHTNING_F6 # ignoreDuplicate
+    marker: 11
+  - type: STR_STARFIGHTER # ignoreDuplicate
+    marker: 12
+  - type: STR_DRAKEN # ignoreDuplicate
+    marker: 13
+  - type: STR_FOXBAT # ignoreDuplicate
+    marker: 14
+
+  - type: STR_FISHBED # ignoreDuplicate
+    marker: 15
+  - type: STR_TUNNAN_MK2 # ignoreDuplicate
+    marker: 16
+  - type: STR_RAPIER # ignoreDuplicate
+    marker: 17
+  - type: STR_VIGGEN # ignoreDuplicate
+    marker: 18
+  - type: STR_FLANKER # ignoreDuplicate
+    marker: 19
+  - type: STR_CRUSADER # ignoreDuplicate
+    marker: 20
+
+  - type: STR_PANAVIA # ignoreDuplicate
+    marker: 21
+  - type: STR_FIREFOX # ignoreDuplicate
+    marker: 22
+  - type: STR_COBRA # ignoreDuplicate
+    marker: 23
+  - type: STR_SABRE # ignoreDuplicate
+    marker: 24
+  - type: STR_DYNASOAR # ignoreDuplicate
+    marker: 25
+  - type: STR_MIG_105 # ignoreDuplicate
+    marker: 26
+  - type: STR_THUNDERCHIEF # ignoreDuplicate
+    marker: 27
+  - type: STR_MIRAGE # ignoreDuplicate
+    marker: 28
+  - type: STR_BACKFIRE # ignoreDuplicate
+    marker: 29
+  - type: STR_VALKYRIE # ignoreDuplicate
+    marker: 30
+
+  - type: STR_JAGUAR # ignoreDuplicate
+    marker: 31
+  - type: STR_M50 # ignoreDuplicate
+    marker: 32
+  - type: STR_SARACEN # ignoreDuplicate
+    marker: 33
+  - type: STR_TU45M # ignoreDuplicate
+    marker: 34
+  - type: STR_LAMPYRIDAE # ignoreDuplicate
+    marker: 35
+  - type: STR_A12 # ignoreDuplicate
+    marker: 36
+  - type: STR_HERMES # ignoreDuplicate
+    marker: 37
+  - type: STR_HERCULES # ignoreDuplicate
+    marker: 38
+  - type: STR_HUEY # ignoreDuplicate
+    marker: 39
+  #- type: STR_GALAXY # ignoreDuplicate
+  #  marker: 40
+
+  #- type: STR_XC142 # ignoreDuplicate
+  #  marker: 41
+  #- type: STR_TRANSALL # ignoreDuplicate
+  #  marker: 42
+  #- type: STR_DORNIER # ignoreDuplicate
+  #  marker: 43
+  #- type: STR_ILYUSHIN # ignoreDuplicate
+  #  marker: 44
+  - type: STR_HIND # ignoreDuplicate
+    marker: 45
+  #- type: STR_ACHILLES # ignoreDuplicate
+  #  marker: 46
+  #- type: STR_ORION # ignoreDuplicate
+  #  marker: 47
+  #- type: STR_HYPERION # ignoreDuplicate
+  #  marker: 49
+  - type: STR_SPACE_SHUTTLE # ignoreDuplicate
+    marker: 50
+  - type: STR_BLACKBIRD # ignoreDuplicate
+    marker: 51
+
+  - type: STR_LINNA # ignoreDuplicate
+    marker: 52
+  - type: STR_ATALAYA # ignoreDuplicate
+    marker: 53
+  - type: STR_BASTION # ignoreDuplicate
+    marker: 54
+  - type: STR_FIRESTORM # ignoreDuplicate
+    marker: 55
+  - type: STR_LIGHTNING # ignoreDuplicate
+    marker: 56
+
+ufos:
+  - type: STR_TEXAN_UFO # ignoreDuplicate
+    marker: 57
+    markerLand: 57
+    markerCrash: 57
+  - type: STR_MAGISTER_UFO # ignoreDuplicate
+    marker: 57
+    markerLand: 57
+    markerCrash: 57
+  #- type: STR_MIG21_UFO # ignoreDuplicate
+  #  marker: 58
+  #  markerLand: 58
+  #  markerCrash: 58
+  - type: STR_MI8_UFO # ignoreDuplicate
+    marker: 59
+    markerLand: 59
+    markerCrash: 59
+  #- type: STR_MIG17_UFO # ignoreDuplicate
+  #  marker: 60
+  #  markerLand: 60
+  #  markerCrash: 60
+
+# Very Small
+  - type: STR_SMALL_SCOUT # ignoreDuplicate
+    marker: 61
+    markerLand: 66
+    markerCrash: 71
+  - type: STR_SMALL_FIGHTER # ignoreDuplicate
+    marker: 61
+    markerLand: 66
+    markerCrash: 71
+# Small
+  - type: STR_MEDIUM_SCOUT  # ignoreDuplicate
+    marker: 62
+    markerLand: 67
+    markerCrash: 72
+  - type: STR_LARGE_SCOUT # ignoreDuplicate
+    marker: 62
+    markerLand: 67
+    markerCrash: 72
+  - type: STR_FIGHTER_SHIP  # ignoreDuplicate
+    marker: 62
+    markerLand: 67
+    markerCrash: 72
+  - type: STR_SENTRY_SHIP  # ignoreDuplicate
+    marker: 62
+    markerLand: 67
+    markerCrash: 72
+  - type: STR_EXCAVATOR  # ignoreDuplicate
+    marker: 62
+    markerLand: 67
+    markerCrash: 72
+  - type: STR_OVERSEER  # ignoreDuplicate
+    marker: 62
+    markerLand: 67
+    markerCrash: 72
+# Medium
+  - type: STR_HARVESTER # ignoreDuplicate
+    marker: 63
+    markerLand: 68
+    markerCrash: 73
+  - type: STR_ABDUCTOR # ignoreDuplicate
+    marker: 63
+    markerLand: 68
+    markerCrash: 73
+# Large
+  - type: STR_TERROR_SHIP # ignoreDuplicate
+    marker: 64
+    markerLand: 69
+    markerCrash: 74
+  - type: STR_LAB_SHIP # ignoreDuplicate
+    marker: 64
+    markerLand: 69
+    markerCrash: 74
+  - type: STR_SUPPLY_SHIP # ignoreDuplicate
+    marker: 64
+    markerLand: 69
+    markerCrash: 74
+# Very Large
+  - type: STR_TROOP_LANDER # ignoreDuplicate
+    marker: 65
+    markerLand: 70
+    markerCrash: 75
+  - type: STR_BATTLESHIP # ignoreDuplicate
+    marker: 65
+    markerLand: 70
+    markerCrash: 75
+  - type: STR_CARRIER # ignoreDuplicate
+    marker: 65
+    markerLand: 70
+    markerCrash: 75
+
+alienDeployments:
+# Operation Red Flag
+  - type: STR_OVERSEER # ignoreDuplicate
+    markerIcon: 76
+# Operation Devastation
+  - type: STR_OPERATION_DEVASTATION # ignoreDuplicate
+    markerIcon: 77
+# Human Space Station
+  #- type: STR_HUMAN_SPACE_STATION # ignoreDuplicate
+  #  markerIcon: 78
+# Human Moon Base
+  #- type: STR_HUMAN_MOON_BASE # ignoreDuplicate
+  #  markerIcon: 79
+# Alien Space Station
+  - type: STR_SPACE_STATION # ignoreDuplicate
+    markerIcon: 80
+# American Combat Operation
+  - type: STR_AMERICAN_OPERATIONS_MISSION # ignoreDuplicate
+    markerIcon: 81
+# European Combat Operation
+  - type: STR_EUROPEAN_OPERATIONS_MISSION # ignoreDuplicate
+    markerIcon: 82
+# Soviet Combat Operation
+  - type: STR_SOVIET_OPERATIONS_MISSION # ignoreDuplicate
+    markerIcon: 83
+# American City Defense
+  - type: STR_AMERICAN_CITY_DEFENSE # ignoreDuplicate
+    markerIcon: 84
+# European City Defense
+  - type: STR_EUROPEAN_CITY_DEFENSE # ignoreDuplicate
+    markerIcon: 85
+# Soviet City Defense
+  - type: STR_SOVIET_CITY_DEFENSE # ignoreDuplicate
+    markerIcon: 86
+# American VIP Rescue
+  #- type: STR_AMERICAN_VIP_RESCUE # ignoreDuplicate
+  #  markerIcon: 87
+# European VIP Rescue
+  #- type: STR_EUROPEAN_VIP_RESCUE # ignoreDuplicate
+  #  markerIcon: 88
+# Soviet VIP Rescue
+  #- type: STR_SOVIET_VIP_RESCUEE # ignoreDuplicate
+  #  markerIcon: 89
+# Terrorist Hostage Crisis
+  - type: STR_HOSTAGE_CRISIS # ignoreDuplicate
+    markerIcon: 90
+# Terrorist Attack
+  - type: STR_HUMAN_TERROR_ATTACK # ignoreDuplicate
+    markerIcon: 90
+# Terrorist Hijacked Plane
+  - type: STR_HIJACKED_PLANE # ignoreDuplicate
+    markerIcon: 91
+# Terrorist HQ Raid
+  - type: STR_TERRORIST_HQ_RAID # ignoreDuplicate
+    markerIcon: 92
