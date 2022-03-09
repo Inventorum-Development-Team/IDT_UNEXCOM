@@ -1783,6 +1783,9 @@ crafts:
 
   - type: STR_LIGHTNING
     pilots: 2
+    soldiers: 18
+    maxItems: 432
+    vehicles: 4
     weapons: 2
     weaponTypes:
       - [0, 1]
@@ -1792,6 +1795,35 @@ crafts:
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
       - STR_CRAFT_AUX_TWO
+    battlescapeTerrainData:
+      name: LIGHTNI
+      mapDataSets:
+        - BLANKS
+        - LIGHTNIN
+        - LIGHTNIAR
+      mapBlocks:
+        - name: LIGHTNI
+          width: 20
+          length: 20
+    deployment:
+      - [6, 9, 1, 6]
+      - [9, 6, 1, 0]
+      - [12, 9, 1, 2]
+      - [9, 13, 1, 4]
+      - [6, 10, 1, 6]
+      - [10, 6, 1, 0]
+      - [13, 10, 1, 2]
+      - [10, 13, 1, 4]
+      - [7, 9, 1, 6]
+      - [10, 7, 1, 0]
+      - [13, 9, 1, 2]
+      - [9, 12, 1, 4]
+      - [7, 10, 1, 6]
+      - [9, 7, 1, 0]
+      - [12, 10, 1, 2]
+      - [10, 12, 1, 4]
+      - [7, 8, 1, 6]
+      - [12, 11, 1, 2]
   - type: STR_AVENGER
     weapons: 4
     pilots: 4

@@ -12,7 +12,7 @@ units:
     deathSound: 901
   - type: STR_SECTOID_COMMANDER #ignoreDuplicate
     deathSound: 901
-  - type: STR_CYBERDISC_TERRORIST
+  - type: STR_CYBERDISC_TERRORIST #ignoreDuplicate
     deathSound: 902
   - type: STR_FLOATER_SOLDIER #ignoreDuplicate
     deathSound: 903
@@ -36,7 +36,7 @@ units:
     deathSound: 904
   - type: STR_SNAKEMAN_COMMANDER #ignoreDuplicate
     deathSound: 904
-  - type: STR_CHRYSSALID_TERRORIST
+  - type: STR_CHRYSSALID_TERRORIST #ignoreDuplicate
     deathSound: 905
   - type: STR_MUTON_SOLDIER #ignoreDuplicate
     deathSound: 906
@@ -44,9 +44,9 @@ units:
     deathSound: 906
   - type: STR_MUTON_ENGINEER #ignoreDuplicate
     deathSound: 906
-  - type: STR_SILACOID_TERRORIST
+  - type: STR_SILACOID_TERRORIST #ignoreDuplicate
     deathSound: 907
-  - type: STR_CELATID_TERRORIST
+  - type: STR_CELATID_TERRORIST #ignoreDuplicate
     deathSound: 908
   - type: STR_ETHEREAL_SOLDIER #ignoreDuplicate
     deathSound: 909
@@ -54,7 +54,7 @@ units:
     deathSound: 909
   - type: STR_ETHEREAL_COMMANDER #ignoreDuplicate
     deathSound: 909
-  - type: STR_SECTOPOD_TERRORIST
+  - type: STR_SECTOPOD_TERRORIST #ignoreDuplicate
     deathSound: 910
 extraSounds:
   - type: BATTLE.CAT
