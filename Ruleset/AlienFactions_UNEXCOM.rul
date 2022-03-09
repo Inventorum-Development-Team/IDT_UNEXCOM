@@ -52,7 +52,24 @@ items:
     damageAlter:
       ArmorEffectiveness: 0.75
       ToArmor: 1.2
-
+  - type: ZOMBIE_UNDEAD_WEAPON
+    weight: 3
+    bigSprite: 61
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 49
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    zombieUnit: STR_ZOMBIE_UNDEAD
+    flatRate: true
 ####################################
 ####### ALIEN CORPSE ITEMS #########
 ####################################
@@ -507,7 +524,17 @@ items:
     invHeight: 0
     battleType: 11
     recover: false
-
+  - type: STR_ZOMBIE_UNDEAD_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3130
+    floorSprite: 3130
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 26
+    recover: false
 ####################################
 ######### ALIEN POW ITEMS ##########
 ####################################
@@ -1630,7 +1657,8 @@ armors:
   - type: ZOMBIE_ARMOR
     painImmune: true # no secondary stun damage
     spriteSheet: ZOMBIE.PCK
-    allowInv: false
+    allowInv: true
+    spriteInv: ZOMBIE_INVENTORY.SPK
     corpseBattle:
       - STR_CHRYSSALID_CORPSE
     frontArmor: 4
@@ -1651,6 +1679,31 @@ armors:
       - 0.0
     loftempsSet: [ 3 ]
     deathFrames: 18
+  - type: ZOMBIE_UNDEAD_ARMOR
+    painImmune: true # no secondary stun damage
+    spriteSheet: ZOMBIE_NORMAL_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: ZOMBIE_INVENTORY.SPK
+    corpseBattle:
+      - STR_ZOMBIE_UNDEAD_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 4
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.8
+      - 0.8
+      - 0.7
+      - 0.7
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    deathFrames: 3
   - type: SILACOID_ARMOR
     spriteSheet: SILACOID.PCK
     allowInv: true
@@ -2956,6 +3009,31 @@ units:
     spawnUnit: STR_CHRYSSALID_TERRORIST
     livingWeapon: true
     # Zombies are silent on death, no deathSound
+  - type: STR_ZOMBIE_UNDEAD
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 150
+      health: 84
+      bravery: 110
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 84
+      psiStrength: 80
+      psiSkill: 0
+      melee: 80
+    armor: ZOMBIE_UNDEAD_ARMOR
+    standHeight: 18
+    kneelHeight: 18
+    value: 18
+    intelligence: 1
+    aggression: 8
+    energyRecovery: 20
+    livingWeapon: true
+    deathSound: 907
+    # Zombies are silent on death, no deathSound
 
 
 
@@ -3114,7 +3192,14 @@ extraSprites:
     subY: 40
     files:
       0: Resources/AlienFactions/Cybersphere/CYBERSPHERE_SPRITESHEET.png
-
+################################
+  - type: ZOMBIE_NORMAL_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_SPRITESHEET.png
 ################################
   - type: BIGOBS.PCK
     files:
@@ -3148,6 +3233,7 @@ extraSprites:
       3127: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_4.png
       3128: Resources/AlienFactions/Cybersphere/CYBERSHPERE_CORPSE_BIGOB.png
       3129: Resources/AlienFactions/Probe/PROBE_CORPSE_BIGOB.png
+      3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_BIGOB.png
 
   - type: FLOOROB.PCK
     files:
@@ -3181,6 +3267,7 @@ extraSprites:
       3127: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_4.png
       3128: Resources/AlienFactions/Cybersphere/CYBERSHPERE_CORPSE_FLOOROB.png
       3129: Resources/AlienFactions/Probe/PROBE_CORPSE_FLOOROB.png
+      3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_FLOOROB.png
 
   - type: SECTOID_INVENTORY.SPK
     singleImage: true
@@ -3312,6 +3399,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/AlienFactions/Chryssalids/CHRYSSALID_INVENTORY.png
+  - type: ZOMBIE_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AlienFactions/Zombies/ZOMBIE_INVENTORY.png
 ######################################
   - type: CYBERDISC_INVENTORY.SPK
     singleImage: true
@@ -3403,3 +3496,5 @@ extraStrings:
       MECHTOID_ARMOR: "Mechtoid Alien Alloy Plating"
       PROBE_ARMOR: "Probe Chassis"
       CYBERSPHERE_ARMOR: "Cybersphere Chassis"
+      STR_ZOMBIE_UNDEAD: "Zombie Runner"
+      STR_ZOMBIE_UNDEAD_CORPSE: "Zombie Runner Carcass"

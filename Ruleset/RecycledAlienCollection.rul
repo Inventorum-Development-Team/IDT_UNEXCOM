@@ -61,6 +61,24 @@
     invHeight: 3
     clipSize: -1
     recover: false
+  - type: CEREBREAL_ZOMBIE_WEAPON
+    weight: 3
+    bigSprite: 61
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 49
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    zombieUnit: STR_CEREBREAL_ZOMBIE
+    flatRate: true
   - type: CEREBREAL_LARVA_WEAPON
     weight: 3
     bigSprite: 100
@@ -393,6 +411,31 @@ armors:
       - 1.4
       - 0.0
     loftempsSet: [ 3 ]
+  - type: CEREBREAL_ZOMBIE_ARMOR
+    painImmune: true # no secondary stun damage
+    spriteInv: CEREBREAL_ZOMBIE_INVENTORY
+    spriteSheet: CEREBREAL_ZOMBIE_SPRITESHEET.PCK
+    allowInv: true
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.8
+      - 0.8
+      - 0.7
+      - 0.7
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    deathFrames: 3
   - type: CEREBREAL_LARVA_ARMOR
     spriteSheet: CEREBREAL_LARVA.PCK
     corpseBattle:
@@ -780,6 +823,31 @@ units:
     intelligence: 8
     aggression: 0
     livingWeapon: true
+  - type: STR_CEREBREAL_ZOMBIE
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 80
+      stamina: 110
+      health: 84
+      bravery: 110
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 84
+      psiStrength: 80
+      psiSkill: 0
+      melee: 80
+    armor: CEREBREAL_ZOMBIE_ARMOR
+    standHeight: 18
+    kneelHeight: 18
+    value: 18
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 20
+    spawnUnit: STR_CEREBREAL_SOLDIER
+    livingWeapon: true
+    # Zombies are silent on death, no deathSound
   - type: STR_CEREBREAL_LARVA_TERRORIST
     race: STR_CEREBREAL_LARVA
     rank: STR_LIVE_TERRORIST
@@ -1165,6 +1233,10 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/RecycledAlienCollection/CerebrealRace/inventory_CEREBREAL.gif
+  - type: CEREBREAL_ZOMBIE_INVENTORY
+    singleImage: true
+    files:
+      0: Resources/AlienFactions/Zombies/ZOMBIE_CEREBREAL_INVENTORY.png
   - type: CHTONITE.PCK
     subX: 32
     subY: 40
@@ -1198,6 +1270,13 @@ extraSprites:
     height: 40
     files:
       0: Resources/RecycledAlienCollection/CerebrealRace/CEREBREAL_LARVA.png
+  - type: CEREBREAL_ZOMBIE_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1400
+    files:
+      0: Resources/AlienFactions/Zombies/ZOMBIE_CEREBREAL_SPRITESHEET.png
   - type: TUNLUN.PCK
     subX: 32
     subY: 40
@@ -1365,6 +1444,7 @@ extraStrings:
   - type: en-US
     strings:
       STR_CEREBREAL: Cerebreal
+      STR_CEREBREAL_ZOMBIE: Cerebreal Infestor
       STR_CEREBREAL_LARVA: Cerebreal Larva
       STR_CEREBREAL_LARVA_TERRORIST: Cerebreal Larva Terrorist
       STR_CEREBREAL_SOLDIER: Cerebreal Soldier
