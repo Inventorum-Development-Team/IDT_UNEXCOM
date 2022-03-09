@@ -1,0 +1,39 @@
+
+cutscenes:
+  - delete: winGame
+  - delete: loseGame
+  - type: winGame
+    winGame: true
+    slideshow:
+      transitionSeconds: 30
+      musicId: GMMARS
+      slides:
+        - imagePath: Resources/Cutscenes/GoodEnding_1.png
+          caption: STR_GOOD_ENDING_1
+          captionSize: [195, 56]
+          captionPos: [5, 0]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/GoodEnding_2.png
+          caption: STR_GOOD_ENDING_2
+          captionSize: [232, 64]
+          captionPos: [88, 136]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/GoodEnding_3.png
+          caption: STR_GOOD_ENDING_3
+          captionSize: [254, 48]
+          captionPos: [66, 152]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/GoodEnding_4.png
+          caption: STR_GOOD_ENDING_4
+          captionSize: [300, 200]
+          captionPos: [5, 0]
+          captionColor: 244
+
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_GOOD_ENDING_1: "After breaching through the depths of the alien command center, our troops we able to destroy the Brain, a supercomputer used by the aliens to coordinate efforts on Earth. A nuclear attack from orbit happened right after our troops left the facility, negating the enemy the possibility of retrieving any artifacts or data. No known alien survivors are reported."
+      STR_GOOD_ENDING_2: "Other UN-led forces around the planet report similar success on their designated objectives. There is still heavy resistance, but we have crippled their military forces and they are routed."
+      STR_GOOD_ENDING_3: "Operation Downfall meant the beginning of the colonization of the space. Human spaceships are built, meant to reach the planets and moons on the Solar System. A dream that was impossible a decade ago. The power of the atom, instead of destroying the Mankind, has propel us to the stars and beyond."
+      STR_GOOD_ENDING_4: "Mars is still a contested planet. Estimations expect our troops to be outmatched in 10 to 1. But this won't be a stop to our campaign, as new scientific and military vessels are prepared to arrive to the Red Planet and establish a firm foothold. The War for Mars has begun."
