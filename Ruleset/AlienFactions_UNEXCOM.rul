@@ -54,9 +54,9 @@ items:
       ToArmor: 1.2
   - type: ZOMBIE_UNDEAD_WEAPON
     weight: 3
-    bigSprite: 61
-    floorSprite: 31
-    handSprite: 104
+    bigSprite: 3131
+    #floorSprite: 31
+    #handSprite: 104
     meleeSound: 49
     clipSize: -1
     strengthApplied: true
@@ -3234,6 +3234,7 @@ extraSprites:
       3128: Resources/AlienFactions/Cybersphere/CYBERSHPERE_CORPSE_BIGOB.png
       3129: Resources/AlienFactions/Probe/PROBE_CORPSE_BIGOB.png
       3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_BIGOB.png
+      3131: Resources/AlienFactions/Zombies/ZombieBite.png
 
   - type: FLOOROB.PCK
     files:
