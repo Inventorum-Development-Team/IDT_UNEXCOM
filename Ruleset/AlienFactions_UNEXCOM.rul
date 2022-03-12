@@ -4,6 +4,57 @@ items:
 ########################################
 ######## ALIEN BUILD-IN WEAPONS #######
 ######################################
+  - type: CYBERDISC_WEAPON
+    weight: 3
+    bigSprite: 1002
+    #floorSprite: 31
+    #handSprite: 104
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    vaporColorSurface: 3
+    vaporDensitySurface: 30
+    power: 130
+    damageType: 5
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuSnap: 30
+    tuAimed: 60
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: SECTOPOD_WEAPON
+    weight: 3
+    bigSprite: 3404
+    #floorSprite: 31
+    #handSprite: 104
+    bulletSprite: 29
+    bulletSpeed: 10
+    fireSound: 11
+    hitSound: 19
+    hitAnimation: 100
+    confSnap:
+      shots: 4
+    confAuto:
+      shots: 8
+    power: 100
+    damageType: 4
+    accuracyAuto: 50
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
   - type: MECHTOID_WEAPON
     damageType: 5
     battleType: 1
@@ -13,7 +64,7 @@ items:
     fireSound: 18
     hitSound: 19
     hitAnimation: 46
-    accuracySnap: 70
+    accuracySnap: 50
 #    accuracyAuto: 50
     tuSnap: 50
     confSnap:
@@ -28,6 +79,8 @@ items:
       ArmorEffectiveness: 0.15
       ToArmorPre: 0.15
       ToArmor: 0
+    vaporColorSurface: 3
+    vaporDensitySurface: 30
   - type: PROBE_WEAPON
     damageType: 4
     battleType: 1
