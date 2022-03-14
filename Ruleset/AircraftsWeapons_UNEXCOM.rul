@@ -923,12 +923,12 @@ crafts:
       - 1
       - 1
       - [3, 4]
-      - [2, 3]
+      - [2, 3, 5]
     weaponStrings:
       - STR_CRAFT_CANNON_ONE
       - STR_CRAFT_CANNON_TWO
       - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_THREE
-      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_AUX_FOUR
     soldiers: 1
     vehicles: 0
     pilots: 1
@@ -2798,85 +2798,76 @@ items:
 #{
   - type: STR_SIDEWINDER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     costBuy: 21000
     costSell: 18000
     transferTime: 48
-
   - type: STR_SPARROW_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-
   - type: STR_VULCAN_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_GATLING_CANNONS, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-
   - type: STR_ATOLL_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     costBuy: 21000
     costSell: 18000
     transferTime: 48
-
   - type: STR_ACRID_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-
   - type: STR_GSH_23_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-
   - type: STR_RED_TOP_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     costBuy: 21000
     costSell: 18000
     transferTime: 48
-
   - type: STR_MATRA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-
   - type: STR_ADEN_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-
   - type: STR_FALCON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
     size: 1
@@ -4353,6 +4344,8 @@ extraStrings:
       STR_CRAFT_ROCKET_AUX_FOUR: "ROCKET/AUX-4>{ALT}{0}"
 
       STR_CRAFT_ROCKET_LIGHT_TWO: "LIGHT MISSILE/ROCKET-2{ALT}{0}"
+
+      STR_CRAFT_LIGHT_HEAVY_MISSILE_AUX_FOUR: "LIGHT/HEAVY MISSILE/AUX-4>{ALT}{0}"
 
       STR_UNEXCOM_FIGHTERS: "UNEXCOM AIRCRAFT"
       STR_LIGHT_MISSILE: "LIGHT MISSILES"
