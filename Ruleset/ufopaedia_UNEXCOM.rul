@@ -3719,33 +3719,95 @@ ufopaedia:
   #Alien Lifeforms
 
   - id: STR_SECTOID
+    image_id: SECTOID_UFOPEDIA_IMAGE
     listOrder: 11000
-  - id: STR_SECTOID_AUTOPSY
+  - id: STR_SECTOID_COMMANDER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SECTOID_COMMANDER
+    image_id: SECTOID_COMMANDER_UFOPEDIA_IMAGE
+    text: STR_SECTOID_COMMANDER_UFOPAEDIA
+    text_width: 158
     listOrder: 11001
-
-  - id: STR_FLOATER
+  - id: STR_ARMORED_SECTOID
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_SECTOID
+    image_id: ARMORED_SECTOID_UFOPEDIA_IMAGE
+    text: STR_ARMORED_SECTOID_UFOPAEDIA
+    text_width: 158
     listOrder: 11002
-
-  - id: STR_FLOATER_AUTOPSY
+  - id: STR_SECTOID_AUTOPSY
     listOrder: 11003
 
-  - id: STR_SNAKEMAN
+  - id: STR_FLOATER
+    image_id: FLOATER_UFOPEDIA_IMAGE
     listOrder: 11004
-
-  - id: STR_SNAKEMAN_AUTOPSY
+  - id: STR_ARMORED_FLOATER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_FLOATER
+    image_id: ARMORED_FLOATER_UFOPEDIA_IMAGE
+    text: STR_ARMORED_FLOATER_UFOPAEDIA
+    text_width: 158
     listOrder: 11005
 
-  - id: STR_MUTON
+  - id: STR_FLOATER_AUTOPSY
     listOrder: 11006
 
-  - id: STR_MUTON_AUTOPSY
+  - id: STR_SNAKEMAN
     listOrder: 11007
+  #- id: STR_NAKED_SNAKEMAN
+  #  listOrder: 11008
+
+  - id: STR_SNAKEMAN_AUTOPSY
+    listOrder: 11009
+
+  - id: STR_MUTON
+    image_id: MUTON_UFOPEDIA_IMAGE
+    listOrder: 11010
+  - id: STR_MUTON_LEADER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MUTON_LEADER
+    image_id: MUTON_LEADER_UFOPEDIA_IMAGE
+    text: STR_MUTON_LEADER_UFOPAEDIA
+    text_width: 158
+    listOrder: 11011
+  - id: STR_ARMORED_MUTON
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_MUTON
+    image_id: ARMORED_MUTON_UFOPEDIA_IMAGE
+    text: STR_ARMORED_MUTON_UFOPAEDIA
+    text_width: 158
+    listOrder: 11012
+  - id: STR_ARMORED_MUTON_LEADER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_MUTON_LEADER
+    image_id: ARMORED_MUTON_LEADER_UFOPEDIA_IMAGE
+    text: STR_ARMORED_MUTON_LEADER_UFOPAEDIA
+    text_width: 158
+    listOrder: 11013
+  - id: STR_MUTON_AUTOPSY
+    listOrder: 11014
 
   - id: STR_ETHEREAL
-    listOrder: 11008
+    listOrder: 11015
+  #- id: STR_ETHEREAL
+  #  listOrder: 11016
+  #- id: STR_ETHEREAL
+  #  listOrder: 11017
 
   - id: STR_ETHEREAL_AUTOPSY
-    listOrder: 11009
+    listOrder: 11018
 
   - id: STR_CHTONITE
     type_id: 7
@@ -3755,7 +3817,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CHTONITE
     text: STR_CHTONITE_UFOPAEDIA
     text_width: 158
-    listOrder: 11010
+    listOrder: 11019
   - id: STR_CHTONITE_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3764,7 +3826,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CHTONITE_AUTOPSY
     text: STR_CHTONITE_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11011
+    listOrder: 11020
   - id: STR_CEREBREAL
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3773,7 +3835,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL
     text: STR_CEREBREAL_UFOPAEDIA
     text_width: 158
-    listOrder: 11012
+    listOrder: 11021
   - id: STR_CEREBREAL_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3782,7 +3844,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL_AUTOPSY
     text: STR_CEREBREAL_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11013
+    listOrder: 11022
   - id: STR_CEREBREAL_LARVA
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3791,7 +3853,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA
     text: STR_CEREBREAL_LARVA_UFOPAEDIA
     text_width: 158
-    listOrder: 11014
+    listOrder: 11023
   - id: STR_CEREBREAL_LARVA_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3800,7 +3862,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA_AUTOPSY
     text: STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11013
+    listOrder: 11024
   - id: STR_REPTOID
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3809,7 +3871,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_REPTOID
     text: STR_REPTOID_UFOPAEDIA
     text_width: 158
-    listOrder: 11013
+    listOrder: 11025
   - id: STR_REPTOID_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3818,43 +3880,73 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_REPTOID_AUTOPSY
     text: STR_REPTOID_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11014
-
-  - id: STR_CYBERDISC
-    listOrder: 11100
-
-  - id: STR_CYBERDISC_AUTOPSY
-    listOrder: 11101
-
-  - id: STR_REAPER
-    listOrder: 11102
-
-  - id: STR_REAPER_AUTOPSY
-    listOrder: 11103
-
-  - id: STR_CHRYSSALID
-    listOrder: 11104
-
-  - id: STR_CHRYSSALID_AUTOPSY
-    listOrder: 11105
-
-  - id: STR_CELATID
-    listOrder: 11106
-
-  - id: STR_CELATID_AUTOPSY
-    listOrder: 11107
-
-  - id: STR_SILACOID
-    listOrder: 11108
-
-  - id: STR_SILACOID_AUTOPSY
-    listOrder: 11109
+    listOrder: 11026
 
   - id: STR_SECTOPOD
-    listOrder: 11110
+    listOrder: 11127
 
   - id: STR_SECTOPOD_AUTOPSY
-    listOrder: 11111
+    listOrder: 11128
+
+  - id: STR_CYBERDISC
+    listOrder: 11129
+
+  - id: STR_CYBERDISC_AUTOPSY
+    listOrder: 11130
+
+  - id: STR_MECHTOID
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MECHTOID
+    image_id: MECHTOID_UFOPEDIA_IMAGE
+    text: STR_MECHTOID_UFOPAEDIA
+    text_width: 158
+    listOrder: 11131
+
+  - id: STR_CYBERSPHERE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CYBERSPHERE
+    image_id: CYBERSPHERE_UFOPEDIA_IMAGE
+    text: STR_CYBERSPHERE_UFOPAEDIA
+    text_width: 158
+    listOrder: 11132
+
+  - id: STR_PROBE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_PROBE
+    image_id: PROBE_UFOPEDIA_IMAGE
+    text: STR_PROBE_UFOPAEDIA
+    text_width: 158
+    listOrder: 11133
+
+  - id: STR_REAPER
+    listOrder: 11134
+
+  - id: STR_REAPER_AUTOPSY
+    listOrder: 11135
+
+  - id: STR_CHRYSSALID
+    listOrder: 11136
+
+  - id: STR_CHRYSSALID_AUTOPSY
+    listOrder: 11137
+
+  - id: STR_CELATID
+    listOrder: 11138
+
+  - id: STR_CELATID_AUTOPSY
+    listOrder: 11139
+
+  - id: STR_SILACOID
+    listOrder: 11140
+
+  - id: STR_SILACOID_AUTOPSY
+    listOrder: 11141
 
   - id: STR_TUNLUN
     type_id: 7
@@ -3864,7 +3956,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_TUNLUN
     text: STR_TUNLUN_UFOPAEDIA
     text_width: 158
-    listOrder: 11112
+    listOrder: 11142
   - id: STR_TUNLUN_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3873,7 +3965,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_TUNLUN_AUTOPSY
     text: STR_TUNLUN_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11113
+    listOrder: 11143
 
   - id: STR_SALAMANDRON
     type_id: 7
@@ -3883,7 +3975,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_SALAMANDRON
     text: STR_SALAMANDRON_UFOPAEDIA
     text_width: 158
-    listOrder: 11114
+    listOrder: 11144
   - id: STR_SALAMANDRON_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3892,7 +3984,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_SALAMANDRON_AUTOPSY
     text: STR_SALAMANDRON_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11115
+    listOrder: 11145
 
   #Alien Equipment
 
@@ -5863,3 +5955,22 @@ extraStrings:
       STR_SMALL_FIGHTER_UFOPEDIA: "Though this UFO may not look like much, it is a fearsome combatant. Despite its lack of an aerodynamic design, it is faster than any aircraft found on Earth."
 
       STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant."
+
+      STR_SECTOID_COMMANDER:
+      STR_SECTOID_COMMANDER_UFOPAEDIA:
+      STR_ARMORED_SECTOID:
+      STR_ARMORED_SECTOID_UFOPAEDIA:
+      STR_ARMORED_FLOATER:
+      STR_ARMORED_FLOATER_UFOPAEDIA:
+      STR_MUTON_LEADER:
+      STR_MUTON_LEADER_UFOPEDIA:
+      STR_ARMORED_MUTON:
+      STR_ARMORED_MUTON_UFOPAEDIA:
+      STR_ARMORED_MUTON_LEADER:
+      STR_ARMORED_MUTON_LEADER_UFOPAEDIA:
+      STR_MECHTOID:
+      STR_MECHTOID_UFOPAEDIA:
+      STR_CYBERSPHERE:
+      STR_CYBERSPHERE_UFOPAEDIA:
+      STR_PROBE:
+      STR_PROBE_UFOPEDIA:
