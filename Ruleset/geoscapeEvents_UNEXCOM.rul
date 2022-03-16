@@ -7,6 +7,10 @@ eventScripts:
       - STR_FALL_OF_SAIGON_EVENT
       - STR_RED_MOON_EVENT
       - STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT
+      - STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT
+      - STR_FRENCH_OFFICIAL_ABDUCTED_EVENT
+      - STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT
+      - STR_GERMAN_COOPERATION_EVENT
     firstMonth: 0
     lastMonth: 20
     executionOdds: 100
@@ -26,28 +30,47 @@ eventScripts:
         STR_HUMAN_ABDUCTION_EVENT: 10
         STR_STRANGE_LIGHTS_EVENT: 50
         STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 10
+        STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT: 10
+        STR_SUDDEN_CITY_BLACKOUT_EVENT: 20
       2:
         STR_CATTLE_ABDUCTION_EVENT: 25
         STR_HUMAN_ABDUCTION_EVENT: 25
         STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 30
         STR_STRANGE_LIGHTS_EVENT: 20
-      4:
+        STR_COMMS_SATELLITE_SHOTDOWN_EVENT: 20
+        STR_UNUSUAL_RADAR_SIGHTINGS_EVENT: 20
+      5:
         STR_CATTLE_ABDUCTION_EVENT: 10
-        STR_HUMAN_ABDUCTION_EVENT: 50
+        STR_HUMAN_ABDUCTION_EVENT: 30
         STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 20
         STR_STRANGE_LIGHTS_EVENT: 20
-      6:
+        STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT: 20
+      8:
         STR_CATTLE_ABDUCTION_EVENT: 10
         STR_HUMAN_ABDUCTION_EVENT: 20
         STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 10
-        STR_STRANGE_LIGHTS_EVENT: 60
-      8:
+        STR_STRANGE_LIGHTS_EVENT: 30
+        STR_SUDDEN_CITY_BLACKOUT_EVENT: 20
+        STR_UNUSUAL_RADAR_SIGHTINGS_EVENT: 10
+        STR_COMMS_SATELLITE_SHOTDOWN_EVENT: 20
+      10:
         STR_CATTLE_ABDUCTION_EVENT: 10
         STR_HUMAN_ABDUCTION_EVENT: 30
-        STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 50
+        STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 20
         STR_STRANGE_LIGHTS_EVENT: 10
+        STR_SUDDEN_CITY_BLACKOUT_EVENT: 20
+        STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT: 20
+        STR_COMMS_SATELLITE_SHOTDOWN_EVENT: 30
+      14:
+        STR_CATTLE_ABDUCTION_EVENT: 10
+        STR_HUMAN_ABDUCTION_EVENT: 30
+        STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: 20
+        STR_STRANGE_LIGHTS_EVENT: 10
+        STR_SUDDEN_CITY_BLACKOUT_EVENT: 20
+        STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT: 20
+        STR_COMMS_SATELLITE_SHOTDOWN_EVENT: 30
     firstMonth: 0
-    lastMonth: 20
+    lastMonth: 14
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
@@ -58,11 +81,13 @@ eventScripts:
         STR_FACTORY_MALFUNCTION_EVENT: 20
         STR_LABORATORY_EXPLOSION_EVENT: 20
         STR_FREAK_STORM_EVENT: 60
+        STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT: 20
       3:
         STR_FACTORY_MALFUNCTION_EVENT: 30
         STR_LABORATORY_EXPLOSION_EVENT: 30
         STR_ALLIED_BASE_ATTACKED_EVENT: 20
         STR_FREAK_STORM_EVENT: 20
+        STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT: 20
       6:
         STR_FACTORY_MALFUNCTION_EVENT: 10
         STR_LABORATORY_EXPLOSION_EVENT: 20
@@ -74,7 +99,7 @@ eventScripts:
         STR_ALLIED_BASE_ATTACKED_EVENT: 50
         STR_FREAK_STORM_EVENT: 10
     firstMonth: 1
-    lastMonth: 20
+    lastMonth: 9
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
@@ -87,18 +112,125 @@ eventScripts:
       6:
         STR_POLITICAL_ASSASSINATION_EVENT: 50
         STR_LEAKED_SECRET_FILES_EVENT: 50
-      8:
+      9:
         STR_POLITICAL_ASSASSINATION_EVENT: 50
         STR_LEAKED_SECRET_FILES_EVENT: 50
-      10:
+      12:
         STR_POLITICAL_ASSASSINATION_EVENT: 50
         STR_LEAKED_SECRET_FILES_EVENT: 50
     firstMonth: 3
-    lastMonth: 20
+    lastMonth: 12
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
 
+  - type: STR_TERRORIST_ACTIVITY_SCRIPT
+    eventWeights:
+      0:
+        STR_TERRORIST_ACTIVITY_EVENT: 10
+        STR_TERRORISTS_THREATEN_US_EVENT: 10
+      1:
+        STR_TERRORIST_ACTIVITY_EVENT: 20
+        STR_TERRORISTS_THREATEN_US_EVENT: 20
+      2:
+        STR_TERRORIST_ACTIVITY_EVENT: 10
+        STR_TERRORISTS_THREATEN_US_EVENT: 10
+      3:
+        STR_TERRORIST_ACTIVITY_EVENT: 10
+        STR_TERRORISTS_THREATEN_US_EVENT: 10
+    firstMonth: 0
+    lastMonth: 3
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+
+  - type: STR_EARTH_FIGHTS_BACK_SCRIPT
+    eventWeights:
+      4:
+        STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: 10
+        STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: 10
+        STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: 20
+        STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: 10
+        STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: 20
+        STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: 10
+        STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: 0
+        STR_SMALLER_NATION_ARMAMENT_EVENT: 5
+        STR_US_BOMBS_ALIEN_BASE_EVENT: 5
+        STR_US_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_US_CARRIER_GROUP_ATTACKED_EVENT: 5
+        STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: 10
+        STR_SOVIET_SILO_DESTROYED_EVENT: 10
+        STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: 10
+      7:
+        STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: 30
+        STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: 10
+        STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: 1
+        STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: 10
+        STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: 10
+        STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: 10
+        STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: 30
+        STR_SMALLER_NATION_ARMAMENT_EVENT: 5
+        STR_US_BOMBS_ALIEN_BASE_EVENT: 5
+        STR_US_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_US_CARRIER_GROUP_ATTACKED_EVENT: 5
+        STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: 0
+        STR_SOVIET_SILO_DESTROYED_EVENT: 10
+        STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: 10
+      9:
+        STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: 10
+        STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: 10
+        STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: 20
+        STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: 10
+        STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: 10
+        STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: 10
+        STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: 1
+        STR_SMALLER_NATION_ARMAMENT_EVENT: 5
+        STR_US_BOMBS_ALIEN_BASE_EVENT: 5
+        STR_US_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_US_CARRIER_GROUP_ATTACKED_EVENT: 5
+        STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: 1
+        STR_SOVIET_SILO_DESTROYED_EVENT: 10
+        STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: 20
+      12:
+        STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: 10
+        STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: 10
+        STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: 1
+        STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: 10
+        STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: 10
+        STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: 10
+        STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: 1
+        STR_SMALLER_NATION_ARMAMENT_EVENT: 5
+        STR_US_BOMBS_ALIEN_BASE_EVENT: 30
+        STR_US_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_US_CARRIER_GROUP_ATTACKED_EVENT: 5
+        STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: 1
+        STR_SOVIET_SILO_DESTROYED_EVENT: 10
+        STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: 10
+      14:
+        STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: 10
+        STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: 10
+        STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: 1
+        STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: 10
+        STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: 10
+        STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: 10
+        STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: 1
+        STR_SMALLER_NATION_ARMAMENT_EVENT: 5
+        STR_US_BOMBS_ALIEN_BASE_EVENT: 5
+        STR_US_FIGHTERS_ENGAGE_UFO_EVENT: 20
+        STR_US_CARRIER_GROUP_ATTACKED_EVENT: 5
+        STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: 5
+        STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: 1
+        STR_SOVIET_SILO_DESTROYED_EVENT: 10
+        STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: 10
+    firstMonth: 4
+    lastMonth: 14
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
 
 # - type: STR_TEST_EVENT_SCRIPT
 #    eventWeights:                 # randomly generated repeatable events
@@ -156,9 +288,46 @@ events:
     timer: 600
     timerRandom: 43500
 
+  - name: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT
+    description: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT_DESCRIPTION
+    background: FRENCH_OFFICIAL_ABDUCTED_EVENT_BACKGROUND
+    points: -10
+    timer: 600
+    timerRandom: 45500
+
+  - name: STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT
+    description: STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT_DESCRIPTION
+    background: COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA]
+    city: true
+    points: -10
+    timer: 600
+    timerRandom: 45500
+
+  - name: STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT
+    description: STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_DESCRIPTION
+    background: TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_BACKGROUND
+    points: -10
+    timer: 600
+    timerRandom: 45500
+
   - name: STR_WORLD_AT_WAR_EVENT
     description: STR_WORLD_AT_WAR_EVENT_DESCRIPTION
     background: WORLD_AT_WAR_EVENT_BACKGROUND
+    points: 1000
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_GERMAN_COOPERATION_EVENT
+    description: STR_GERMAN_COOPERATION_EVENT_DESCRIPTION
+    background: WORLD_AT_WAR_EVENT_BACKGROUND
+    points: 1000
+    timer: 600
+    timerRandom: 600
+
+  - name: STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT
+    description: STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_DESCRIPTION
+    background: UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 600
@@ -222,6 +391,56 @@ events:
     timer: 4000
     timerRandom: 45000
 
+  - name: STR_COMMS_SATELLITE_SHOTDOWN_EVENT
+    description: STR_COMMS_SATELLITE_SHOTDOWN_EVENT_DESCRIPTION
+    background: COMMS_SATELLITE_SHOTDOWN_EVENT_BACKGROUND
+#    points: -5
+    timer: 4000
+    timerRandom: 45000
+
+  - name: STR_MILITARY_SATELLITE_DESTROYED_EVENT
+    description: STR_MILITARY_SATELLITE_DESTROYED_EVENT_DESCRIPTION
+    background: MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND
+#    points: -5
+    timer: 4000
+    timerRandom: 45000
+
+  - name: STR_MILITARY_BASES_ON_HIGH_ALERT_EVENT
+    description: STR_MILITARY_BASES_ON_HIGH_ALERT_EVENT_DESCRIPTION
+    background: MILITARY_BASES_ON_HIGH_ALERT_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -5
+    timer: 4000
+    timerRandom: 45000
+
+  - name: STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT
+    description: STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_DESCRIPTION
+    background: CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_BACKGROUND
+    regionList: [STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: false
+#    points: -5
+    timer: 4000
+    timerRandom: 45000
+
+  - name: STR_SUDDEN_CITY_BLACKOUT_EVENT
+    description: STR_SUDDEN_CITY_BLACKOUT_EVENT_DESCRIPTION
+    background: SUDDEN_CITY_BLACKOUT_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -5
+    timer: 4000
+    timerRandom: 45000
+
+  - name: STR_UNUSUAL_RADAR_SIGHTINGS_EVENT
+    description: STR_UNUSUAL_RADAR_SIGHTINGS_EVENT_DESCRIPTION
+    background: UNUSUAL_RADAR_SIGHTINGS_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -5
+    timer: 4000
+    timerRandom: 45000
+
 #############################
 ##### DISASTER EVENTS ######
 ###########################
@@ -260,6 +479,183 @@ events:
 #    points: -25
     timer: 2700
     timerRandom: 43500
+
+  - name: STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT
+    description: STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT_DESCRIPTION
+    background: LOCAL_ARMIES_ON_HIGH_ALERT_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_NORTH_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+#######################################
+##### HUMAN FIGHTS BACK EVENTS #######
+#####################################
+
+  - name: STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT
+    description: STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_DESCRIPTION
+    background: LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT
+    description: STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT_DESCRIPTION
+    background: LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT
+    description: STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION
+    background: LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT
+    description: STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION
+    background: LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT
+    description: STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_DESCRIPTION
+    background: LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT
+    description: STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_DESCRIPTION
+    background: LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT
+    description: STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_DESCRIPTION
+    background: LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_BACKGROUND
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_SMALLER_NATION_ARMAMENT_EVENT
+    description: STR_SMALLER_NATION_ARMAMENT_EVENT_DESCRIPTION
+    background: SMALLER_NATION_ARMAMENT_EVENT_BACKGROUND
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT
+    description: STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_DESCRIPTION
+    background: NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_BACKGROUND
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_US_BOMBS_ALIEN_BASE_EVENT
+    description: STR_US_BOMBS_ALIEN_BASE_EVENT_DESCRIPTION
+    background: US_BOMBS_ALIEN_BASE_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+    #city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_US_FIGHTERS_ENGAGE_UFO_EVENT
+    description: STR_US_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION
+    background: US_FIGHTERS_ENGAGE_UFO_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_SOUTH_EAST_ASIA]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_US_CARRIER_GROUP_ATTACKED_EVENT
+    description: STR_US_CARRIER_GROUP_ATTACKED_EVENT_DESCRIPTION
+    background: US_CARRIER_GROUP_ATTACKED_EVENT_BACKGROUND
+    regionList: [STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT
+    description: STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION
+    background: SOVIET_FIGHTERS_ENGAGE_UFO_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT
+    description: STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT_DESCRIPTION
+    background: SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT_BACKGROUND
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_SOVIET_SILO_DESTROYED_EVENT
+    description: STR_SOVIET_SILO_DESTROYED_EVENT_DESCRIPTION
+    background: SOVIET_SILO_DESTROYED_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+  - name: STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT
+    description: STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_DESCRIPTION
+    background: NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA]
+    city: true
+#    points: -50
+    timer: 2700
+    timerRandom: 43500
+
+####################################
+####### TERRORIST EVENTS ##########
+##################################
+
+  - name: STR_TERRORIST_ACTIVITY_EVENT
+    description: STR_TERRORIST_ACTIVITY_EVENT_DESCRIPTION
+    background: TERRORIST_ACTIVITY_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_NORTH_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA]
+    city: true
+    points: -50
+    timer: 600
+    timerRandom: 2700
+
+  - name: STR_TERRORISTS_THREATEN_US_EVENT
+    description: STR_TERRORIST_TERRORISTS_THREATEN_US_EVENT_DESCRIPTION
+    background: TERRORISTS_THREATEN_US_EVENT_BACKGROUND
+    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_NORTH_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA]
+    city: true
+    points: -50
+    timer: 600
+    timerRandom: 2700
+
+  - name: STR_TERRORISTS_DEFEATED_EVENT
+    description: STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION
+    background: TERRORISTS_THREATEN_US_EVENT_BACKGROUND
+    points: 1000
+    timer: 600
+    timerRandom: 300
 
 #############################
 ####### SPY EVENTS #########
@@ -615,13 +1011,6 @@ events:
     timer: 600
     timerRandom: 600
 
-  - name: STR_TERRORISTS_DEFEATED_EVENT
-    description: STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION
-    background: REINFORCEMENTS_EVENT_BACKGROUND
-    points: 1000
-    timer: 600
-    timerRandom: 300
-
 extraSprites:
 ##########################################
 ############ BACKGROUNDS #################
@@ -668,6 +1057,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/OVERSEER_TRACKED_EVENT_BACKGROUND.PNG
+  - type: GERMAN_COOPERATION_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/GERMAN_COOPERATION_EVENT_BACKGROUND.PNG
 ######################################
   - type: SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
     singleImage: true
@@ -757,6 +1152,21 @@ extraSprites:
     files:
       0: Resources/Backgrounds/Events/COMMS_SATELLITE_SHOTDOWN_EVENT_BACKGROUND.PNG
 
+  - type: MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND.PNG
+
+  - type: MILITARY_BASES_ON_HIGH_ALERT_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/MILITARY_BASES_ON_HIGH_ALERT_EVENT_BACKGROUND.PNG
+
+
   - type: CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_BACKGROUND
     singleImage: true
     width: 320
@@ -818,6 +1228,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_BACKGROUND.PNG
+  - type: NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_BACKGROUND.PNG
+
 
   - type: LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_BACKGROUND
     singleImage: true
@@ -856,7 +1273,7 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/SUDDEN_CITY_BLACKOUT_EVENT_BACKGROUND.PNG
-  - type: TENSIONS_SCALATE_AFTER_UFO_SIGHTING_EVENT_BACKGROUND
+  - type: TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
@@ -911,6 +1328,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/US_FIGHTERS_ENGAGE_UFO_EVENT_BACKGROUND.PNG
+  - type: NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Events/NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_BACKGROUND.PNG
+
 
 ##################################
   - type: SPY_MISSION_EVENT_BACKGROUND
@@ -947,8 +1371,18 @@ extraStrings:
        STR_RED_MOON_EVENT_DESCRIPTION: "After numerous delays and several years after the United States, the Soviet Union has put a man on the Moon. Alexei Leonov, the first cosmonaut to set foot on our satellite This is a milestone in the Space Race and ensures the continuation of the Soviet space program. In an unprecedented move, President Nixon called his counterpart Brezhnev to congratulate him, signaling that tensions between the two powers are easing."
        STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT: "Apollo-Soyuz Test Program"
        STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT_DESCRIPTION: "A joint effort, the first of its kind, has marked a before and after in the Space Race and the Cold War. For the first time, a Soviet and an American shook hands in orbit. The epic moment when cosmonaut Leonov and astronaut Stafford met has begun a new stage in the race, where both world powers collaborate with each other. However, NATO views the event with distrust and European-Soviet relations deteriorate."
+       STR_FRENCH_OFFICIAL_ABDUCTED_EVENT: "French Official Abducted"
+       STR_FRENCH_OFFICIAL_ABDUCTED_EVENT_DESCRIPTION: "Today, six armed individuals stormed a government office building in Marseille, France, and swept through the building, engaging in a firefight with security, before barging into the personal office of Michel Garnier, a French official working for the Ministry of Finance, before abducting him from the building. Though we have no information as to the identities of his attackers, we suspect this may have been an act perpetrated by the terrorist group we have been encountering."
+       STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT: "Tensions Escalate After UFO Sighting"
+       STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_DESCRIPTION: "After the sighting of an unidentified aircraft on radar late last night near Omsk, Soviet MiGs attempted an interception of the aircraft, but were outran, before it exited radar range. Moscow today made a public demand that the United States cease infringing upon it's air space, threatening  to take 'drastic defensive measures' if the alleged air space violations do not cease."
+       STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT: "Country Refuses To Comment On 'Alien' Threat"
+       STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT_DESCRIPTION: "A press release about the global terrorist attacks was cut short after government officials in {0} were confronted with questions about the presence of extraterrestrials on Earth. Only a few short months ago, the reporter would have been laughed out of the room. Reliable evidence has been mounting of UFOs, abductions and terror attacks. It is only a matter of time until the truth comes out"
        STR_WORLD_AT_WAR_EVENT: "World at War"
        STR_WORLD_AT_WAR_EVENT_DESCRIPTION: "Today, Secretary-General Waldheim addressed the General Assembly: 'Our world has been shaken by a series of incidents that could not be explained... until today. Attacks on cities by unknown forces, abnormal weather phenomena, interference in communications; all correspond to the extraterrestrial presence. Scientists all around the world have confirmed the existence of life outside the Earth. It is hostile. I call nations to fight under the same flag. United we Stand.' The world powers are mobilizing to fight the enemy."
+       STR_GERMAN_COOPERATION_EVENT: "German Cooperation"
+       STR_GERMAN_COOPERATION_EVENT_DESCRIPTION: "During a recent NATO combat operation near the southern portion of the border between East and West Germany, West German troops managed to successfully drive a small force of alien infantry to the border, where East German troops were seen to also engage the enemy upon visual contact, resulting in their annihilation. Though no words were exchanged between the two forces, this is a sign that relations between the two Germany may improve in the future."
+       STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT: "UN Increases it's presence around the world"
+       STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_DESCRIPTION: "With the agreement of the Security Council, more UN Peacekeeping Forces had been deployed to third-world countries, in an effort to bolster the security of the civilian population and local industrial sectors. While this deployment may seen as 'limited', compared to the larger military forces each member of the Council assigns to their own nations, it's nonetheless welcomed and appreciated by the local governments."
        STR_CATTLE_ABDUCTION_EVENT: "Cattle Abduction in {0}"
        STR_CATTLE_ABDUCTION_EVENT_DESCRIPTION: "Local news reports indicate mysterious cattle disappearances from multiple farms in the area. Eyewitnesses claim to see bright lights moments after the alleged abduction of the cattle. Local authorities are investigating what happened."
        STR_HUMAN_ABDUCTION_EVENT: "Human Abduction in {0}"
@@ -991,3 +1425,51 @@ extraStrings:
        STR_NATO_SUPPLY_EVENT_DESCRIPTION: "A C-130 Hercules from the air force of a NATO country approached our base and dropped weapons and ammunition. Our troops picked them up and brought them to the barracks. This equipment will allow us to stay in the fight, although due to unexplained radio interference near our base, it is unlikely that this airdrop will be repeated. "
        STR_USSR_SUPPLY_EVENT: "USSR Supply Airdrop"
        STR_USSR_SUPPLY_EVENT_DESCRIPTION: "A Soviet air force plane has risked bringing weapons and supplies as close to our base as possible. It has failed to get close to the runway, but managed to drop its cargo (which has been picked up by our troops). The reason for this was that the escorts of the transport detected strange radar signatures and decided to withdraw. This equipment will help us to reinforce our troops."
+       STR_TERRORIST_ACTIVITY_EVENT: "Terrorist Activity in {0}"
+       STR_TERRORIST_ACTIVITY_EVENT_DESCRIPTION: "Local authorities have reported an increase of the terrorist activity all over the urban center. Earlier today, major explosions happened, the amount of injuried civilians is yet to be confirmed. Several suspects where detected near the area and a shooting with the police left several officers wounded. The population demands an increase of the local security forces."
+       STR_TERRORISTS_THREATEN_US_EVENT: "Terrorists Threaten Us"
+       STR_TERRORISTS_THREATEN_US_EVENT_DESCRIPTION:  "A television station in {0} was hijacked today partway through a weather forecast, and for seven minutes broadcasted a rogue message originating from an unknown location. For that time, a masked individual who we believe is a member of the unknown terrorist group spoke to the camera, making vague statements about the world's impending doom, and made multiple direct references to actions UNEXCOM has taken against terrorist cells, closing his remarks with a vow of revenge against 'those who have murdered our brothers'."
+       STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT: "Military bases on high alert"
+       STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT_DESCRIPTION: "National army facilities in {0} went to high readiness level today due explosions near their perimeter. Military officers have reported 'The reason of the raid or their targets are yet to be confirmed. We suspect a testing of our defense capabilities by foreign countries'. No known terrorist group or nation has claimed responsibly for the attack."
+       STR_UNUSUAL_RADAR_SIGHTINGS_EVENT: "Unusual radar sightings in {0}"
+       STR_UNUSUAL_RADAR_SIGHTINGS_EVENT_DESCRIPTION: "Local radar stations have detected abnormal readings early today. The detected craft appeared from nowhere, remained static for 2 minutes and then zoomed to the upper atmosphere in a matter of seconds. Military officials are trying to confirm if it's a legit tracking or a software issue on the station's computer systems. "
+       STR_SUDDEN_CITY_BLACKOUT_EVENT: "Sudden city blackout in {0}"
+       STR_SUDDEN_CITY_BLACKOUT_EVENT_DESCRIPTION: "Last night, a city-wide power outage left the population in darkness. The suspected reason was a malfunction in the nearby power station. Citizens report seeing 'dozens of lights in the sky, like shooting stars'. City services are working to restore the electric supply."
+       STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT: "Contact lost with survey vessel"
+       STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_DESCRIPTION: "Civilian oceanographic services have reported one of their ships as missing. Said ship was conducting activities on international waters before the cease of communications with their mainland base. Multinational navies are looking for traces of the vessel or its crew."
+       STR_COMMS_SATELLITE_SHOTDOWN_EVENT: "Communications satellite shot down"
+       STR_COMMS_SATELLITE_SHOTDOWN_EVENT_DESCRIPTION: "An allied space agency lost signal of one of their comms sats. Ground observers confirmed the reentry of the debris shortly after the report. Authorities are still investigating the incident."
+       STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: "Allied armies get new recruits"
+       STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_DESCRIPTION: "Earlier today, govt officers reported a major increase on the recruitment of men and women in their armed forces. Most volunteers 'feel a strong conviction' of enlisting in the military. Analysts consider at least half of them lost a close relative on the recent alien raids on major cities and the other half was convinced by local propaganda."
+       STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: "Local fighters save civilian airliner"
+       STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT_DESCRIPTION: "A civilian aircraft reported to ground control at {0} International Airport it was being tailed by UFOs. Inmediately, two fighter crafts of the local air force were scrambled. They were equipped with new light missiles designed by UNEXCOM and managed to scare away the UFOs. The transport plane managed to land safely. "
+       STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: "Local AA batteries engage UFO"
+       STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION: "Last night, radar systems in {0} detected an alien craft flying over the city. Anti-air batteries near the area opened fire for ten minutes. Local military officers claimed shooting down the alien vessel, but the wreckage are yet to be found."
+       STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: "Local Laser AA batteries engage UFO"
+       STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION: "Earlier this night, local radar systems detected UFOs approaching the {0} urban zone. Coordinating with Laser air defenses deployed near the city and nearby air forces, most of the enemy craft were destroyed mid-air. No wreckage were found."
+       STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: "Allied nations reinforce their cities"
+       STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_DESCRIPTION: "A government spokesperson has announcement the deployment of mobile Surface-to-Air Missile (SAM) batteries near {0}. The intention is to defend the civilian population of alien raids. The missile systems are expected to be operational within the next few days."
+       STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: "Allied armies deployed to defend cities"
+       STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_DESCRIPTION: "A govt spokesperson reported to nation-wide TV the deployment of several Army and Air Force combat units in {0}, with the orders to defend the civilian population and valuable strategic assets in the city, in case of an alien incursion. Citizens are reported to cheer the troops upon their entry on the city."
+       STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: "Lone fighter pilot scares off UFO"
+       STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_DESCRIPTION: "A national allied fighter on training mission was engaged by alien crafts. The fighter jet was armed with new UNEXCOM-made missiles and was able to damage one UFO and nearly shoot down the other before the enemy flew away. The pilot was praised for their bravery."
+       STR_SMALLER_NATION_ARMAMENT_EVENT: "Smaller Nation Armament"
+       STR_SMALLER_NATION_ARMAMENT_EVENT_DESCRIPTION: "Recently smaller nations, have been receiving funds and equipment from UNEXCOM and allied nations to help battle the alien threat. Government officers from {0} thank the military assistance and the public perception of the UNEXCOM increased."
+       STR_US_BOMBS_ALIEN_BASE_EVENT: "USAF bombs Alien base"
+       STR_US_BOMBS_ALIEN_BASE_EVENT_DESCRIPTION: "US air elements of the Strategic Air Command (SAC) conducted a bombing raid over a suspected location where air recon found an enemy stronghold in a remote area in {0}. American aircraft released several tons of explosive ordnance over a wide patch of terrain. Radar sightings confirmed UFO presence near the area, but none engaged the US forces. Ground forces have landed near the zone and are advancing towards the base."
+       STR_US_FIGHTERS_ENGAGE_UFO_EVENT: "USAF fighters engage UFOs"
+       STR_US_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION: "A dogfight happened when a US air squadron conducting Combat Air Patrol (CAP) near {0}. The American fighters were intercepted by a fight of 3 UFOs, after several minutes of combat the enemy craft were destroyed. USAF reports the lost of two aircraft."
+       STR_US_CARRIER_GROUP_ATTACKED_EVENT: "US Navy Carrier Group attacked"
+       STR_US_CARRIER_GROUP_ATTACKED_EVENT_DESCRIPTION: "An American Carrier Task Force patrolling international waters was attacked by a squadron of UFOs. The interceptors aboard the flagship were equipped with UNEXCOM-build cannons and were scrambled immediately. The fighters, plus AA fire from the escort frigates and cruisers managed to destroy most of the bandits before fleeing. US Navy report light damage on their vessels."
+       STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: "Soviet fighters engage UFO"
+       STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION: "A Soviet Air Force squadron patrolling the outskirts of {0} detected a group of alien craft approaching the city. Immediately, they intercepted the enemy squadron and an intense dogfight ensured. The Soviet airmen reported two loses and all the alien fighters destroyed."
+       STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: "Soviet Platoon Survives Against all Odds"
+       STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT_DESCRIPTION: "A platoon of Soviet air assault were station on Hill 3234, when they were assaulted by terrorists armed with hard-light and aided by hybrids. For nearly five days they held out, even with their own hard-light weapons running low on ammo. Barages of plasma rockets hit the mountain side. They held on. By day five a column of armor arrived and extracted them."
+       STR_SOVIET_SILO_DESTROYED_EVENT: "Soviet Silo Destroyed"
+       STR_SOVIET_SILO_DESTROYED_EVENT_DESCRIPTION: "Two weeks ago, a Soviet missile silo detected an UFO in high atmosphere. They fired a SAM from air defense on site, damaging the UFO. Today a large UFO was detected and, despite the valiant efforts of the AA on site, destroyed the nuclear silo. Reportedly two large balls of plasma flew off its underside, and almost like a guided missile, arced one after another into the silo. The first evaporated the silo doors, the second detonated the missile."
+       STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: "NATO Force UFO Take Off"
+       STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_DESCRIPTION: "After civilians reported a landed UFO in {0} nation, NATO troops mobilized and engaged the threat. After using hard-light weapons developed by UNEXCOM they successfully forced the craft into the air"
+       STR_MILITARY_SATELLITE_DESTROYED_EVENT: "Military satellite destroyed"
+       STR_MILITARY_SATELLITE_DESTROYED_EVENT_DESCRIPTION: "Earlier today, we've been informed of an allied military recon satellite destroyed by unknown forces. Ground control reported a 'beam of light' and lost of comms. The lost of this sat has crippled the ability of ground detection of allied military forces."
+       STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT: "New radar systems deployed"
+       STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_DESCRIPTION: "A new radar facility was build near {0}. Using tech derived from alien research conducted by UNEXCOM, the array is part of a new multinational system to track down UFOs and assist UN fighters and bombers"
