@@ -2,6 +2,7 @@ X-Mar-2022 v0.9.2 Armored Kill
 Changes made:
 *New UI and globeMarkers, by efrenespartano
 *Craft weapons doesn't require purchased ammo
+*32 new Geoscape events, written by efrenespartano, Rclipse, Kael Schwabauer and Brother2
 *Reduced excessive wounding, balances scopes, adds attack shortnames, a few other minor changes by The Reaver of Darkness
 *Most alien units have inventories now
 *New colored ranks for Floater and Muton units
@@ -17,6 +18,16 @@ Changes made:
 - USA: UH-1 Huey, F-4 Phantom II, F-105 Thunderchief, F-104 Rapier, B-70 Valkyrie, YF-17 Cobra
 - NATO: F.6 Lightning, Mirage IV, Saab 35 Draken, Saab 37 Viggen, SEPECAT Jaguar, MBB Lampyridae
 - USSR: Su-30 'Flanker', MiG-31 'Firefox'
+*Replaced Lighting with improved map by The Reaver of Darkness
+*Buffed Alloy Weapons, accuracy improved between 10% and 20%, TC rounds now have ToArmorPre between 0.5 and 0.7. Added white vapor trails for TC and blue for Flechette rounds.
+*Several bugfixes by Buscher
+- Craft Weapons can be equipped at any time even if Research is not completed, Research is only used for purchasing. Also Jaguar gets an options for a fuel tank
+- Tonfa does Stun damageType instead of Melee
+- Terrorists don't do Retaliation Missions
+- Display Ufopedia Article for Special Forces Armor once they join
+- Fix types according to openxcom.log (mainly with liveAlien: "")
+- Fix low missile speed according to openxcom.log
+- PNG/GIF Palette Fixes
 
 05.01.22 v0.9.1
 Changes made:
