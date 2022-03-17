@@ -2013,7 +2013,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_CLOSE
-    text: STR_FLECHETTE_PISTOL_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_PISTOL
+      text: STR_FLECHETTE_PISTOL_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_PISTOL
+      text: STR_FLECHETTE_PISTOL_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4014
   - id: STR_HUMAN_PLASMA_PISTOL
     type_id: 4
@@ -2193,7 +2199,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_CLOSE
-    text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_SHOTGUN
+      text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_PISTOL
+      text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4208
   - id: STR_FLECHETTE_AUTO_SHOTGUN
     type_id: 4
@@ -2320,7 +2332,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_RIFLES
-    text: STR_FLECHETTE_CARBINE_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_CARBINE
+      text: STR_FLECHETTE_CARBINE_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_CARBINE
+      text: STR_FLECHETTE_CARBINE_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4314
 
   - id: STR_RIFLE_REPORT
@@ -2453,7 +2471,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_RIFLES
-    text: STR_FLECHETTE_RIFLE_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_RIFLE
+      text: STR_FLECHETTE_RIFLE_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_RIFLE
+      text: STR_FLECHETTE_RIFLE_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4416
 
   - id: STR_HUMAN_PLASMA_RIFLE
@@ -2558,7 +2582,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_HEAVY
-    text: STR_FLECHETTE_CANNON_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_CANNON
+      text: STR_FLECHETTE_CANNON_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_CANNON
+      text: STR_FLECHETTE_CANNON_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4508
 
   - id: STR_HUMAN_PLASMA_LMG
@@ -2649,12 +2679,18 @@ ufopaedia:
     text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
     listOrder: 4609
 
-  - id: STR_FLECHETTE_SNIPER
+  - id: STR_FLECHETTE_SNIPER_UFOPEDIA
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_HEAVY
-    text: STR_FLECHETTE_SNIPER_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_SNIPER_UFOPEDIA
+      text: STR_FLECHETTE_SNIPER_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_SNIPER_UFOPEDIA
+      text: STR_FLECHETTE_SNIPER_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4610
 
   - id: STR_HUMAN_PLASMA_DMR
@@ -3727,7 +3763,16 @@ ufopaedia:
     requires:
       - STR_SECTOID_COMMANDER
     image_id: SECTOID_COMMANDER_UFOPEDIA_IMAGE
-    text: STR_SECTOID_COMMANDER_UFOPAEDIA
+    text: STR_SECTOID_COMMANDER_UFOPEDIA
+    text_width: 158
+    listOrder: 11001
+  - id: STR_SECTOID_COMMANDER_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SECTOID_COMMANDER_CORPSE
+    image_id: UP025.SPK
+    text: STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA
     text_width: 158
     listOrder: 11001
   - id: STR_ARMORED_SECTOID
@@ -3736,7 +3781,7 @@ ufopaedia:
     requires:
       - STR_ARMORED_SECTOID
     image_id: ARMORED_SECTOID_UFOPEDIA_IMAGE
-    text: STR_ARMORED_SECTOID_UFOPAEDIA
+    text: STR_ARMORED_SECTOID_UFOPEDIA
     text_width: 158
     listOrder: 11002
   - id: STR_SECTOID_AUTOPSY
@@ -3751,7 +3796,7 @@ ufopaedia:
     requires:
       - STR_ARMORED_FLOATER
     image_id: ARMORED_FLOATER_UFOPEDIA_IMAGE
-    text: STR_ARMORED_FLOATER_UFOPAEDIA
+    text: STR_ARMORED_FLOATER_UFOPEDIA
     text_width: 158
     listOrder: 11005
 
@@ -3775,16 +3820,17 @@ ufopaedia:
     requires:
       - STR_MUTON_LEADER
     image_id: MUTON_LEADER_UFOPEDIA_IMAGE
-    text: STR_MUTON_LEADER_UFOPAEDIA
+    text: STR_MUTON_LEADER_UFOPEDIA
     text_width: 158
     listOrder: 11011
+
   - id: STR_ARMORED_MUTON
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_ARMORED_MUTON
     image_id: ARMORED_MUTON_UFOPEDIA_IMAGE
-    text: STR_ARMORED_MUTON_UFOPAEDIA
+    text: STR_ARMORED_MUTON_UFOPEDIA
     text_width: 158
     listOrder: 11012
   - id: STR_ARMORED_MUTON_LEADER
@@ -3793,7 +3839,7 @@ ufopaedia:
     requires:
       - STR_ARMORED_MUTON_LEADER
     image_id: ARMORED_MUTON_LEADER_UFOPEDIA_IMAGE
-    text: STR_ARMORED_MUTON_LEADER_UFOPAEDIA
+    text: STR_ARMORED_MUTON_LEADER_UFOPEDIA
     text_width: 158
     listOrder: 11013
   - id: STR_MUTON_AUTOPSY
@@ -3883,6 +3929,7 @@ ufopaedia:
     listOrder: 11026
 
   - id: STR_SECTOPOD
+    text: STR_SECTOPOD_UFOPEDIA
     listOrder: 11127
 
   - id: STR_SECTOPOD_AUTOPSY
@@ -3900,7 +3947,16 @@ ufopaedia:
     requires:
       - STR_MECHTOID
     image_id: MECHTOID_UFOPEDIA_IMAGE
-    text: STR_MECHTOID_UFOPAEDIA
+    text: STR_MECHTOID_UFOPEDIA
+    text_width: 150
+    listOrder: 11131
+  - id: STR_MECHTOID_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: AUTOPSY_IMAGE
+    text: STR_MECHTOID_AUTOPSY_UFOPEDIA
+    requires:
+      - STR_MECHTOID_CORPSE
     text_width: 158
     listOrder: 11131
 
@@ -3910,7 +3966,16 @@ ufopaedia:
     requires:
       - STR_CYBERSPHERE
     image_id: CYBERSPHERE_UFOPEDIA_IMAGE
-    text: STR_CYBERSPHERE_UFOPAEDIA
+    text: STR_CYBERSPHERE_UFOPEDIA
+    text_width: 150
+    listOrder: 11132
+  - id: STR_CYBERSPHERE_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: AUTOPSY_IMAGE
+    text: STR_CYBERSPHERE_AUTOPSY_UFOPEDIA
+    requires:
+      - STR_CYBERSPHERE_CORPSE
     text_width: 158
     listOrder: 11132
 
@@ -3920,7 +3985,16 @@ ufopaedia:
     requires:
       - STR_PROBE
     image_id: PROBE_UFOPEDIA_IMAGE
-    text: STR_PROBE_UFOPAEDIA
+    text: STR_PROBE_UFOPEDIA
+    text_width: 150
+    listOrder: 11133
+  - id: STR_PROBE_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_PROBE_CORPSE
+    image_id: PROBE_AUTOPSY_UFOPEDIA
+    text: STR_PROBE_AUTOPSY_UFOPEDIA
     text_width: 158
     listOrder: 11133
 
@@ -5956,21 +6030,34 @@ extraStrings:
 
       STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant."
 
-      STR_SECTOID_COMMANDER:
-      STR_SECTOID_COMMANDER_UFOPAEDIA:
-      STR_ARMORED_SECTOID:
-      STR_ARMORED_SECTOID_UFOPAEDIA:
-      STR_ARMORED_FLOATER:
-      STR_ARMORED_FLOATER_UFOPAEDIA:
-      STR_MUTON_LEADER:
-      STR_MUTON_LEADER_UFOPEDIA:
-      STR_ARMORED_MUTON:
-      STR_ARMORED_MUTON_UFOPAEDIA:
-      STR_ARMORED_MUTON_LEADER:
-      STR_ARMORED_MUTON_LEADER_UFOPAEDIA:
-      STR_MECHTOID:
-      STR_MECHTOID_UFOPAEDIA:
-      STR_CYBERSPHERE:
-      STR_CYBERSPHERE_UFOPAEDIA:
-      STR_PROBE:
-      STR_PROBE_UFOPEDIA:
+      STR_SECTOID_COMMANDER: "Sectoid Commander"
+      STR_SECTOID_COMMANDER_AUTOPSY: "Sectoid Commander Autopsy"
+      STR_ARMORED_SECTOID: "Armored Sectoid"
+      STR_ARMORED_FLOATER: "Armored Floater"
+      STR_MUTON_LEADER: "Muton Guard"
+      STR_ARMORED_MUTON: "Shock Muton"
+      STR_ARMORED_MUTON_LEADER: "Elite Muton Guard"
+      STR_MECHTOID: "Mechtoid"
+      STR_CYBERSPHERE: "Cybersphere"
+      STR_PROBE: "Probe"
+      STR_SECTOID_PSION_AUTOPSY_UFOPEDIA: "This Sectoid has a specially build 'harness' on its body. Connected directly on the brain, provides the user of extra energy to focus and expand the intensity of the psionic energy. Basically an antenna and a battery for the user's brain. It's use seems focused on controlling minds of lesser beings."
+      STR_SECTOID_PSION_UFOPEDIA: "The 'Psions' are Sectoids specially trained to control alien beasts, even some allied aliens with lower intelligence. The 'Psionic Harness' transmits the orders directly into the subconscious mind and allows the Psion to control every aspect of the beast, from movement to neuronal activity... Pretty much like a puppeteer."
+      STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA: "This Sectoid features a larger head than it's brethren. Looks naturally grown, as there are no signs of surgical procedures. The body seems to struggle to resist the weight of the larger cranium and the brain matter inside. Obviously, a perfect target for our snipers."
+      STR_SECTOID_COMMANDER_UFOPEDIA: "A highly evolved Sectoid, it's cranial cavity was genetically expanded to fit a larger brain. The Commander has a vast array of tactical and cultural knowledge, turning it into a literal genius on the battlefield. The heightened intelligence allows to take control of larger and more complex squads of aliens than a regular Sectoid."
+      STR_MECHTOID_AUTOPSY_UFOPEDIA: "The broken chassis of this mechanized unit reveals a complex array of tubbing and armored plates, along with two powerful legs. The propulsion unit looks a miniature Elerium reactor, but protected to avoid killing the user. Deeply inside, lies the rotten corpse of a Sectoid. Probably the pilot of the armored unit. The arm-mounted Heavy Plasma Cannons are very dangerous, but relatively slow to use."
+      STR_MECHTOID_UFOPEDIA: "In order to bolster the strength of Sectoid squads, a Navigator boards a tall mechanized bipedal armor. Just the head remains unprotected. Powerful servomotors allow the 'Mechtoid' to run across large distances with ease. Compared to other units, features a relatively lighter armor (albeit still stronger than a regular human armored vehicle). It's crewman is still capable of using Psionics unhindered."
+      STR_ARMORED_SECTOID_UFOPEDIA: "In order to increase the durability of Sectoids in frontline combat against us, they have developed a fairly effective powered armor. Fully enclosed and with a breathing system, the user can withstand NBC environments and deflect standard human ballistic and plasma weaponry. They are susceptible to explosions and lasers, however."
+      STR_SECTOPOD_UFOPEDIA: "A fearsome alien robotic unit, it's often the vanguard of enemy assaults. Heavy armored and highly resistant to most damage types (lasers and explosives seem to be effective). It's biggest weakness is also it's main weapon: dual Laser Gatling-like Cannons can easily dispatch most infantry with a hailstorm of energy beams."
+      STR_ARMORED_MUTON_UFOPEDIA: "The Shock Mutons are specially trained to engage against highly organized enemy forces. Their armor protects them from all kind of damage and their enclosed helmet allows them to operate on toxic environments. The foot are unprotected, being a vulnerable side."
+      STR_ARMORED_MUTON_LEADER_UFOPEDIA: "An extremely skilled Muton warrior, employed as both commanders of large alien contingents and personal guard for the Ethereal leaders. Their armors and helmets are decorated with large ornaments, shown with pride as a sign of status. They are the peak of the Muton hierarchy."
+      STR_MUTON_LEADER_UFOPEDIA: "While regular Mutons are highly dependant on a psionic link with a superior being like Ethereals and Sectoids, this kind of alien serves as a NCOs for alien squads. They have developed a stronger individualism and will power. This is enough to command other aliens and support higher castes."
+      STR_ARMORED_FLOATER_UFOPEDIA: "Serving as the usual frontline and recon unit is costly due the poor protection of the standard harness. This is why the Floater soldiers have been improved with armor whose protection rate is similar to other frontline units. This effectively doubles the survival rate within their ranks."
+      STR_STRIDER_UFOPEDIA: "This is a subspecies of the Floaters, stronger and more resilient than their cybernetic-enhanced cousins. We think on them like the Homo Neanderthals and Homo Sapiens: two similar species with different specializations. They often wear heavy armor and provide close combat support to Floaters."
+      STR_STRIDER_AUTOPSY_UFOPEDIA: "This alien is very similar to the Floater, perhaps a variation of them or a genetic relative. The cranium looks more sturdy but with more primitive facial features. The legs and arms are muscular in appearance, probably indicating this alien is used on heavy work."
+      STR_PROBE_UFOPEDIA: "A small and very distinctive robotic unit. Used on survey and scientific missions, it's widely used to conduct recon over the area subject of study. Carries a defensive laser gun. Slow, but could kill a human soldier if left unchecked."
+      STR_PROBE_AUTOPSY_UFOPEDIA: "The small hovering unit seems to be used to scout ahead the mission site and provide light support to other combat units. The chassis seems light and somewhat weak, but we have reports of a small energy weapon used on what appears self-defense."
+      STR_CYBERSPHERE_UFOPEDIA: "A very specialized robot drone, used to seek, detect and pin down possible objectives. The data collected by this unit is relayed directly into the brains of the alien squad members, effectively turning this drone into another pair of eyes. It's extremely fast and agile."
+      STR_CYBERSPHERE_AUTOPSY_UFOPEDIA: "The wreck reveals few things about the purpose of the flying object. It doesn't have any weapon and the chassis is really thin and light, it barely resists a couple of rifle rounds. The antigravity propulsion unit is very compact too, looks like it's meant mostly as recon and survey tasks."
+      STR_ALIEN_RANKS_UFOPEDIA: "Aliens have a cohesive, organized and highly specialized military. Similar to human armies, each member of a squad has assigned a role and function. It seems they haven't developed the concept of concealment nor camuflaje, because they often use bright colors to identify each rank. Capturing them could give us a better perspective of our enemy. Red is meant to leaders. Brown is used on technicians and combat engineers. Blue is employed by sanitary and medical personnel. Orange is assigned to pilots and ship crew. Green is the color of the regular soldiers. It's unknown if the colors meant something for them or not. But at least, makes things easier to us."
+      STR_ARMORED_ALIENS_UFOPEDIA: "Personal armor is widely distributed to alien infantry. However, it's use is restricted according the mission carried by the crew of a ship. If the personnel is conducting 'scientific' missions, lighter weapons and few or no personal armor are used. However, if the enemy expects to engage in heavy combat, said restrictions are lefted and more destructive equipment is used without hesitation. We are the one of the few, if not the first, race who resisted longer than a couple of weeks. We could expect a change in their equipment strategy anytime soon."
+

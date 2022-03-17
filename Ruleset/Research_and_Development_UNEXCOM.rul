@@ -1079,6 +1079,51 @@ research:
 ########################
 #### RACE RESEARCH ####
 ######################
+  - name: STR_SECTOID_COMMANDER
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_ARMORED_SECTOID
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_ARMORED_FLOATER
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_MUTON_LEADER
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_ARMORED_MUTON
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_ARMORED_MUTON_LEADER
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_MECHTOID
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_CYBERSPHERE
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
+  - name: STR_PROBE
+    cost: 0
+    points: 50
+    needItem: true
+    destroyItem: true
 
   - name: STR_CYDONIA_DEP
     cost: 0
@@ -1118,6 +1163,8 @@ research:
       - STR_CHTONITE_LEADER
       - STR_CEREBREAL_COMMANDER
       - STR_CEREBREAL_LEADER
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON_LEADER
 #########################################
 
 
@@ -1197,7 +1244,7 @@ research:
   - name: STR_ARMORED_FLOATER_COMMANDER
     cost: 192
     points: 50
-    lookup: STR_FLOATER
+    lookup: STR_ARMORED_FLOATER
     needItem: true
     destroyItem: true
     unlocks:
@@ -1328,7 +1375,7 @@ research:
   - name: STR_ARMORED_SECTOID_LEADER
     cost: 192
     points: 50
-    lookup: STR_SECTOID
+    lookup: STR_ARMORED_SECTOID
     unlocks:
       - STR_LEADER_PLUS
       - STR_ALIEN_ORIGINS
@@ -1337,7 +1384,7 @@ research:
   - name: STR_ARMORED_FLOATER_LEADER
     cost: 192
     points: 50
-    lookup: STR_FLOATER
+    lookup: STR_ARMORED_FLOATER
     unlocks:
       - STR_LEADER_PLUS
       - STR_ALIEN_ORIGINS
@@ -1346,7 +1393,7 @@ research:
   - name: STR_ARMORED_MUTON_LEADER
     cost: 192
     points: 50
-    lookup: STR_MUTON
+    lookup: STR_ARMORED_MUTON_LEADER
     unlocks:
       - STR_LEADER_PLUS
       - STR_ALIEN_ORIGINS
@@ -1383,7 +1430,7 @@ research:
   - name: STR_ARMORED_SECTOID_NAVIGATOR
     cost: 192
     points: 50
-    lookup: STR_SECTOID
+    lookup: STR_ARMORED_SECTOID
     needItem: true
     destroyItem: true
     unlocks:
@@ -1452,7 +1499,7 @@ research:
   - name: STR_ARMORED_MUTON_NAVIGATOR
     cost: 192
     points: 50
-    lookup: STR_MUTON
+    lookup: STR_ARMORED_MUTON
     needItem: true
     destroyItem: true
     unlocks:
@@ -1498,7 +1545,7 @@ research:
   - name: STR_ARMORED_FLOATER_NAVIGATOR
     cost: 192
     points: 50
-    lookup: STR_FLOATER
+    lookup: STR_ARMORED_FLOATER
     needItem: true
     destroyItem: true
     unlocks:
@@ -1626,7 +1673,7 @@ research:
   - name: STR_ARMORED_MUTON_ENGINEER
     cost: 192
     points: 50
-    lookup: STR_MUTON
+    lookup: STR_ARMORED_MUTON
     needItem: true
     destroyItem: true
     unlocks:
@@ -1684,7 +1731,7 @@ research:
   - name: STR_ARMORED_FLOATER_ENGINEER
     cost: 192
     points: 50
-    lookup: STR_FLOATER
+    lookup: STR_ARMORED_FLOATER
     needItem: true
     destroyItem: true
     unlocks:
@@ -1776,7 +1823,7 @@ research:
     unlocks:
       - STR_ALIEN_PLASMA_WEAPONS
       - STR_ALIEN_ORIGINS
-    lookup: STR_SECTOID
+    lookup: STR_ARMORED_SECTOID
     getOneFree:
       - STR_SMALL_SCOUT
       - STR_MEDIUM_SCOUT
@@ -1898,12 +1945,21 @@ research:
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -1920,10 +1976,15 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
     listOrder: 8682
   - name: STR_REPTOID_MEDIC
     cost: 192
@@ -1935,21 +1996,29 @@ research:
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_CEREBREAL
-      - STR_CHTONITE
+      - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
       - STR_REAPER
       - STR_SALAMANDRON
-      - STR_CEREBREAL_LARVA
       - STR_REPTOID_CORPSE
       - STR_SALAMANDRON_CORPSE
       - STR_CHTONITE_CORPSE
@@ -1961,6 +2030,9 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
@@ -1980,21 +2052,29 @@ research:
     lookup: STR_SECTOID
     getOneFree:
       - STR_CEREBREAL
-      - STR_CHTONITE
+      - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
       - STR_REAPER
       - STR_SALAMANDRON
-      - STR_CEREBREAL_LARVA
       - STR_REPTOID_CORPSE
       - STR_SALAMANDRON_CORPSE
       - STR_CHTONITE_CORPSE
@@ -2006,6 +2086,9 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
@@ -2023,16 +2106,25 @@ research:
     unlocks:
       - STR_ALIEN_ORIGINS
     getOneFree:
-      - STR_CHTONITE
+      - STR_CEREBREAL
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -2049,29 +2141,43 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
   - name: STR_ARMORED_SECTOID_MEDIC
     cost: 192
     points: 50
-    lookup: STR_SECTOID
+    lookup: STR_ARMORED_SECTOID
     needItem: true
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
     getOneFree:
-      - STR_CHTONITE
+      - STR_CEREBREAL
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -2088,10 +2194,15 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
 
   - name: STR_FLOATER_MEDIC
     cost: 192
@@ -2102,16 +2213,25 @@ research:
     unlocks:
       - STR_ALIEN_ORIGINS
     getOneFree:
-      - STR_CHTONITE
+      - STR_CEREBREAL
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -2128,29 +2248,43 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
   - name: STR_ARMORED_FLOATER_MEDIC
     cost: 192
     points: 50
-    lookup: STR_FLOATER
+    lookup: STR_ARMORED_FLOATER
     needItem: true
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
     getOneFree:
-      - STR_CHTONITE
+      - STR_CEREBREAL
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -2167,10 +2301,15 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
 
   - name: STR_MUTON_MEDIC
     cost: 192
@@ -2181,16 +2320,25 @@ research:
     unlocks:
       - STR_ALIEN_ORIGINS
     getOneFree:
-      - STR_CHTONITE
+      - STR_CEREBREAL
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -2207,29 +2355,43 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
   - name: STR_ARMORED_MUTON_MEDIC
     cost: 192
     points: 50
-    lookup: STR_MUTON
+    lookup: STR_ARMORED_MUTON
     needItem: true
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
     getOneFree:
-      - STR_CHTONITE
+      - STR_CEREBREAL
       - STR_REPTOID
       - STR_TUNLUN
       - STR_SECTOID
+      - STR_SECTOID_COMMANDER
+      - STR_ARMORED_SECTOID
       - STR_FLOATER
+      - STR_ARMORED_FLOATER
       - STR_SNAKEMAN
       - STR_MUTON
+      - STR_MUTON_LEADER
+      - STR_ARMORED_MUTON
+      - STR_ARMORED_MUTON_LEADER
       - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SECTOPOD
+      - STR_MECHTOID
+      - STR_CYBERSPHERE
+      - STR_PROBE
       - STR_CYBERDISC
       - STR_SILACOID
       - STR_CELATID
@@ -2246,10 +2408,15 @@ research:
       - STR_FLOATER_SOLDIER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SECTOPOD_CORPSE
+      - STR_MECHTOID_CORPSE
+      - STR_CYBERSPHERE_CORPSE
+      - STR_PROBE_CORPSE
       - STR_CYBERDISC_CORPSE
       - STR_SILACOID_CORPSE
       - STR_CELATID_CORPSE
       - STR_REAPER_CORPSE
+      - STR_CEREBREAL_CORPSE
+      - STR_CEREBREAL_LARVA_CORPSE
 
 
 ###################################
@@ -2290,7 +2457,7 @@ research:
   - name: STR_ARMORED_SECTOID_SOLDIER
     cost: 192
     points: 50
-    lookup: STR_SECTOID
+    lookup: STR_ARMORED_SECTOID
     unlocks:
       - STR_ALIEN_ORIGINS
     needItem: true
@@ -2298,7 +2465,7 @@ research:
   - name: STR_ARMORED_FLOATER_SOLDIER
     cost: 192
     points: 50
-    lookup: STR_FLOATER
+    lookup: STR_ARMORED_FLOATER
     needItem: true
     destroyItem: true
     unlocks:
@@ -2343,7 +2510,7 @@ research:
 ######### MECHS #############
 ############################
 
-  - name: STR_MECHTOID
+  - name: STR_MECHTOID_TERRORIST
     cost: 170
     points: 50
     lookup: STR_MECHTOID
@@ -2351,7 +2518,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
-  - name: STR_PROBE
+  - name: STR_PROBE_TERRORIST
     cost: 170
     points: 50
     lookup: STR_PROBE
@@ -2359,7 +2526,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
-  - name: STR_CYBERSPHERE
+  - name: STR_CYBERSPHERE_TERRORIST
     cost: 170
     points: 50
     lookup: STR_CYBERSPHERE
@@ -2376,6 +2543,9 @@ research:
   - name: STR_SECTOID_AUTOPSY
     points: 50
     needItem: true
+  - name: STR_SECTOID_COMMANDER_AUTOPSY
+    points: 50
+    needItem: true
   - name: STR_SECTOID_CORPSE
     cost: 180
     points: 50
@@ -2384,7 +2554,7 @@ research:
   - name: STR_SECTOID_COMMANDER_CORPSE
     cost: 180
     points: 50
-    lookup: STR_SECTOID_AUTOPSY
+    lookup: STR_SECTOID_COMMANDER_AUTOPSY
     needItem: true
   - name: STR_ARMORED_SECTOID_CORPSE
     cost: 180
@@ -2619,6 +2789,34 @@ research:
     lookup: STR_TUNLUN_AUTOPSY
     needItem: true
     listOrder: 6050
+
+  - name: STR_MECHTOID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_MECHTOID_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_MECHTOID_AUTOPSY
+    needItem: true
+  - name: STR_CYBERSPHERE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_CYBERSPHERE_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_CYBERSPHERE_AUTOPSY
+    needItem: true
+  - name: STR_PROBE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_PROBE_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_PROBE_AUTOPSY
+    needItem: true
 
   - name: STR_REPTOID_AUTOPSY
     cost: 0
