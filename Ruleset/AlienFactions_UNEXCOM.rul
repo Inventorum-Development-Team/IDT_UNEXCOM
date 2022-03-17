@@ -964,7 +964,7 @@ armors:
     spriteSheet: ARMORED_SECTOID_SPRITESHEET.PCK
     corpseBattle:
       - STR_ARMORED_SECTOID_CORPSE
-    frontArmor: 20
+    frontArmor: 30
     sideArmor: 20
     rearArmor: 20
     underArmor: 10
@@ -2487,7 +2487,7 @@ units:
 ###### UNARMORED MUTONS #######
 ##############################
 
-  - type: STR_MUTON_SOLDIER
+  - type: STR_MUTON_SO<LDIER
     race: STR_MUTON
     rank: STR_LIVE_SOLDIER
     stats:
@@ -2855,13 +2855,14 @@ units:
     energyRecovery: 50
     livingWeapon: true
     capturable: false
+    sniper: 10
 
   - type: STR_MECHTOID_TERRORIST
     race: STR_MECHTOID
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 50
-      stamina: 90
+      tu: 80
+      stamina: 150
       health: 200
       bravery: 110
       reactions: 65
@@ -2882,11 +2883,12 @@ units:
     livingWeapon: true
     capturable: false
     liveAlien: ""
+    spotter: 5
   - type: STR_PROBE_TERRORIST
     race: STR_PROBE
     stats:
       tu: 100
-      stamina: 105
+      stamina: 165
       health: 40
       bravery: 110
       reactions: 20
@@ -2908,11 +2910,12 @@ units:
     livingWeapon: true
     capturable: false
     liveAlien: ""
+    spotter: 8
   - type: STR_CYBERSPHERE_TERRORIST
     race: STR_CYBERSPHERE
     stats:
       tu: 150
-      stamina: 105
+      stamina: 200
       health: 25
       bravery: 110
       reactions: 20
@@ -2934,6 +2937,7 @@ units:
     livingWeapon: true
     capturable: false
     liveAlien: ""
+    spotter: 10
 
 ################################
 ######## ALIEN BEASTS #########
