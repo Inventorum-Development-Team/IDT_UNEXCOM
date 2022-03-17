@@ -451,6 +451,7 @@ armors:
     spriteSheet: XCOM_10.PCK
     spriteInv: MAN_0wd
     storeItem: STR_NONE
+    customArmorPreviewIndex: 502
     loftempsSet: [ 3 ]
     frontArmor: 14
     sideArmor: 10
@@ -490,6 +491,7 @@ armors:
   - type: STR_PILOT_UC
     spriteSheet: PILOT.PCK
     spriteInv:  MAN_5
+    customArmorPreviewIndex: 543
     storeItem: STR_NONE
     isPilotArmor: true
     loftempsSet: [ 3 ]
@@ -523,6 +525,7 @@ armors:
   - type: STR_SPECIAL_FORCES_UNIFORM_UC
     spriteSheet: XCOM_4SF.PCK
     spriteInv: MAN_4SF
+    customArmorPreviewIndex: 546
     storeItem: STR_NONE
     corpseBattle:
       - STR_CORPSE_SPECIAL_FORCES_UNIFORM
@@ -565,6 +568,7 @@ armors:
   - type: STR_MERCENARY_UNIFORM_UC
     spriteSheet: XCOM_4MERC.PCK
     spriteInv: MAN_4MERC
+    customArmorPreviewIndex: 548
     storeItem: STR_NONE
     corpseBattle:
       - STR_CORPSE_MERCENARY_UNIFORM
@@ -608,6 +612,7 @@ armors:
   - type: STR_COMBAT_ARMOR_UC
     spriteSheet: XCOM_4UN.PCK
     spriteInv: MAN_4UN
+    customArmorPreviewIndex: 550
     corpseBattle:
       - STR_CORPSE_COMBAT_ARMOR
     storeItem: STR_COMBAT_ARMOR_UC
@@ -646,6 +651,7 @@ armors:
   - type: STR_DELTA_ARMOR_UC
     spriteSheet: ARMOR_DELTA.PCK
     spriteInv: ARMOR_DELTA_INVENTORY
+    customArmorPreviewIndex: 551
     corpseBattle:
       - STR_CORPSE_DELTA_ARMOR
     storeItem: STR_DELTA_ARMOR_UC
@@ -688,6 +694,7 @@ armors:
   - type: STR_RIOT_ARMOR_UC
     spriteSheet: ARMOR_RIOT.PCK
     spriteInv: ARMOR_RIOT_INVENTORY
+    customArmorPreviewIndex: 552
     corpseBattle:
       - STR_CORPSE_RIOT_ARMOR
     corpseGeo: STR_CORPSE_RIOT_ARMOR
@@ -734,6 +741,7 @@ armors:
   - type: STR_PERSONAL_ARMOR_UC
     spriteSheet: PERSONAL_ARMOR.PCK
     spriteInv: PERSONAL_ARMOR_INV
+    customArmorPreviewIndex: 507
     weight: 3
     corpseBattle:
       - STR_CORPSE_ARMOR
@@ -767,6 +775,7 @@ armors:
   - type: STR_HEAVY_PERSONAL_ARMOR_UC
     spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
     spriteInv: HEAVY_PERSONAL_ARMOR_INV
+    customArmorPreviewIndex: 511
     corpseBattle:
       - STR_CORPSE_HEAVY_PERSONAL_ARMOR
     corpseGeo: STR_CORPSE_HEAVY_PERSONAL_ARMOR
@@ -804,6 +813,7 @@ armors:
   - type: STR_POWER_SUIT_UC
     spriteSheet: MARAUDER_SPRITESHEET.PCK
     spriteInv: MAN_MARAUDER
+    customArmorPreviewIndex: 516
     corpseBattle:
       - STR_CORPSE_MARAUDER
     storeItem: STR_POWER_SUIT
@@ -837,6 +847,7 @@ armors:
   - type: STR_FLYING_SUIT_UC
     spriteSheet: PATHFINDER_SPRITESHEET.PCK
     spriteInv: MAN_PATHFINDER
+    customArmorPreviewIndex: 526
     corpseBattle:
       - STR_CORPSE_PATHFINDER
     storeItem: STR_FLYING_SUIT
@@ -872,6 +883,7 @@ armors:
   - type: STR_SCOUT_POWER_ARMOR_UC
     spriteSheet: SCOUT_POWER_ARMOR.PCK
     spriteInv: SCOUT_POWER_ARMOR_INV
+    customArmorPreviewIndex: 531
     corpseBattle:
       - STR_CORPSE_ARMOR
     corpseGeo: STR_CORPSE_ARMOR # should be corpseBattle?
@@ -906,6 +918,7 @@ armors:
   - type: STR_SCOUT_FLYING_ARMOR_UC
     spriteSheet: SCOUT_FLYING_ARMOR.PCK
     spriteInv: SCOUT_FLYING_ARMOR_INV
+    customArmorPreviewIndex: 536
     corpseBattle:
       - STR_CORPSE_ARMOR
     corpseGeo: STR_CORPSE_ARMOR
@@ -944,6 +957,7 @@ armors:
     type: STR_ASTRONAUT_A7L_SPACESUIT_UC
     spriteSheet: A7L_SPACESUIT_SPRITESHEET.PCK
     spriteInv:  MAN_5A7L
+    customArmorPreviewIndex: 553
     storeItem: STR_NONE
     loftempsSet: [ 3 ]
     corpseBattle:
@@ -982,6 +996,7 @@ armors:
     type: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
     spriteSheet: A7MMU_SPACESUIT_SPRITESHEET.PCK
     spriteInv:  MAN_5A7MMU
+    customArmorPreviewIndex: 554
     storeItem: STR_NONE
     loftempsSet: [ 3 ]
     corpseBattle:
@@ -1020,6 +1035,7 @@ armors:
     type: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
     spriteSheet: KRECHET94_SPACESUIT_SPRITESHEET.PCK
     spriteInv:  MAN_5KRECHET94
+    customArmorPreviewIndex: 555
     storeItem: STR_NONE
     loftempsSet: [ 3 ]
     corpseBattle:
@@ -1051,6 +1067,7 @@ armors:
     type: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
     spriteSheet: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
     spriteInv:  MAN_5KRECHETMMU
+    customArmorPreviewIndex: 556
     storeItem: STR_NONE
     loftempsSet: [ 3 ]
     corpseBattle:
