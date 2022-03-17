@@ -46,9 +46,9 @@ items:
       name: STR_FL_AUTO
       ammoSlot: 0
       arcing: false
-    accuracySnap: 50
-    accuracyAimed: 50
-    accuracyAuto: 75
+    accuracySnap: 70
+    accuracyAimed: 70
+    accuracyAuto: 65
     maxRange: 60
     aimRange: 35
     snapRange: 32
@@ -103,8 +103,8 @@ items:
       name: STR_FL_AUTO
       ammoSlot: 0
       arcing: false
-    accuracySnap: 45
-    accuracyAimed: 45
+    accuracySnap: 65
+    accuracyAimed: 65
     accuracyAuto: 65
     tuAuto: 55
     tuSnap: 30
@@ -140,12 +140,15 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.5
       ToWound: 0.3
       RandomWound: false
     clipSize: 20
     battleType: 2
     attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
   - type: STR_ALLOY_RIFLE_FL
     requires:
       - STR_ALLOY_RIFLES
@@ -172,6 +175,9 @@ items:
     clipSize: 60
     battleType: 2
     attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
   - type: STR_FLECHETTE_PISTOL
     requires:
@@ -206,7 +212,7 @@ items:
       name: STR_FL_AUTO
       ammoSlot: 0
       arcing: false
-    accuracySnap: 55
+    accuracySnap: 75
     accuracyAuto: 65
     tuAuto: 20
     tuSnap: 30
@@ -240,12 +246,15 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.5
       ToWound: 0.3
       RandomWound: false
     clipSize: 10
     battleType: 2
     attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
   - type: STR_ALLOY_PISTOL_FL
     requires:
@@ -273,6 +282,9 @@ items:
     clipSize: 30
     battleType: 2
     attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
   - type: STR_FLECHETTE_AUTO_SHOTGUN
     requires:
@@ -302,8 +314,8 @@ items:
       name: STR_RAGE_FIRE
       ammoSlot: 0
       arcing: false
-    accuracySnap: 60
-    accuracyAuto: 50
+    accuracySnap: 70
+    accuracyAuto: 60
     tuSnap: 30
     tuAuto: 45
     maxRange: 60
@@ -349,6 +361,9 @@ items:
     shotgunSpread: 60
     battleType: 2
     armor: 250
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
   - type: STR_FLECHETTE_SHOTGUN
     requires:
@@ -373,9 +388,9 @@ items:
       name: STR_RAGE_FIRE
       ammoSlot: 0
       arcing: false
-    accuracySnap: 60
-    accuracyAimed: 75
-    accuracyAuto: 45
+    accuracySnap: 70
+    accuracyAimed: 85
+    accuracyAuto: 55
     tuSnap: 45
     tuAimed: 50
     tuAuto: 60
@@ -422,7 +437,9 @@ items:
     shotgunSpread: 30
     battleType: 2
     armor: 250
-
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
   - type: STR_FLECHETTE_GL
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY]
@@ -539,7 +556,7 @@ items:
       name: STR_FL_BURST
       ammoSlot: 1
       arcing: false
-    accuracySnap: 40
+    accuracySnap: 60
     accuracyAuto: 50
     tuSnap: 20
     tuAuto: 50
@@ -577,13 +594,15 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.7
       ToWound: 0.3
       RandomWound: false
     clipSize: 30
     battleType: 2
     attraction: 8
-
+    vaporColorSurface: 0
+    vaporDensitySurface: 3
+    vaporProbabilitySurface: 33
 
   - type: STR_ALLOY_HEAVY_FL
     requires:
@@ -611,6 +630,9 @@ items:
       RandomWound: false
     clipSize: 160
     attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 33
 
   - type: STR_FLECHETTE_SNIPER
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
@@ -681,13 +703,16 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.7
       ToArmor: 1.2
       ToWound: 0.3
       RandomWound: false
     clipSize: 5
     battleType: 2
     attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
   - type: STR_ALLOY_SNIPER_FL
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
@@ -717,7 +742,9 @@ items:
       RandomWound: false
     clipSize: 5
     attraction: 8
-
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
 
 manufacture:
   - name: STR_FLECHETTE_PISTOL
