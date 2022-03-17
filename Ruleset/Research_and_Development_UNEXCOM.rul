@@ -1094,17 +1094,7 @@ research:
     points: 50
     needItem: true
     destroyItem: true
-  - name: STR_MUTON_LEADER
-    cost: 0
-    points: 50
-    needItem: true
-    destroyItem: true
   - name: STR_ARMORED_MUTON
-    cost: 0
-    points: 50
-    needItem: true
-    destroyItem: true
-  - name: STR_ARMORED_MUTON_LEADER
     cost: 0
     points: 50
     needItem: true
@@ -1365,7 +1355,6 @@ research:
   - name: STR_MUTON_LEADER
     cost: 192
     points: 50
-    lookup: STR_MUTON
     unlocks:
       - STR_LEADER_PLUS
       - STR_ALIEN_ORIGINS
@@ -1393,7 +1382,6 @@ research:
   - name: STR_ARMORED_MUTON_LEADER
     cost: 192
     points: 50
-    lookup: STR_ARMORED_MUTON_LEADER
     unlocks:
       - STR_LEADER_PLUS
       - STR_ALIEN_ORIGINS
