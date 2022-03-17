@@ -964,10 +964,10 @@ armors:
     spriteSheet: ARMORED_SECTOID_SPRITESHEET.PCK
     corpseBattle:
       - STR_ARMORED_SECTOID_CORPSE
-    frontArmor: 30
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 10
+    frontArmor: 55
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
     damageModifier:
       - 1.0
       - 0.8
@@ -1368,10 +1368,10 @@ armors:
     spriteSheet: ARMORED_MUTON_SOLDIER_SPRITESHEET.PCK
     corpseBattle:
       - STR_ARMORED_MUTON_SOLDIER_CORPSE
-    frontArmor: 35
-    sideArmor: 30
-    rearArmor: 20
-    underArmor: 10
+    frontArmor: 65
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
     drawingRoutine: 10
     damageModifier:
       - 1.0
@@ -1392,10 +1392,10 @@ armors:
     spriteSheet: ARMORED_MUTON_LEADER_SPRITESHEET.PCK
     corpseBattle:
       - STR_ARMORED_MUTON_LEADER_CORPSE
-    frontArmor: 45
-    sideArmor: 30
-    rearArmor: 30
-    underArmor: 20
+    frontArmor: 75
+    sideArmor: 54
+    rearArmor: 36
+    underArmor: 30
     drawingRoutine: 10
     damageModifier:
       - 1.0
@@ -1495,10 +1495,10 @@ armors:
       - CYBERDISC_CORPSE_3
       - CYBERDISC_CORPSE_4
     corpseGeo: STR_CYBERDISC_CORPSE
-    frontArmor: 34
-    sideArmor: 34
-    rearArmor: 34
-    underArmor: 34
+    frontArmor: 54
+    sideArmor: 54
+    rearArmor: 54
+    underArmor: 54
     drawingRoutine: 3
     constantAnimation: true
     movementType: 1
@@ -1555,9 +1555,9 @@ armors:
       - MECHTOID_CORPSE_3
       - MECHTOID_CORPSE_4
     corpseGeo: STR_MECHTOID_CORPSE
-    frontArmor: 50
-    sideArmor: 46
-    rearArmor: 42
+    frontArmor: 80
+    sideArmor: 66
+    rearArmor: 62
     underArmor: 45
     drawingRoutine: 5
     painImmune: true
