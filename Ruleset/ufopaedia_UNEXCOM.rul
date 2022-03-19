@@ -2203,9 +2203,6 @@ ufopaedia:
     - title: STR_FLECHETTE_SHOTGUN
       text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
       ammoSlot: 0
-    - title: STR_FLECHETTE_PISTOL
-      text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
-      ammoSlot: 1
     listOrder: 4208
   - id: STR_FLECHETTE_AUTO_SHOTGUN
     type_id: 4
@@ -2679,16 +2676,16 @@ ufopaedia:
     text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
     listOrder: 4609
 
-  - id: STR_FLECHETTE_SNIPER_UFOPEDIA
+  - id: STR_FLECHETTE_SNIPER
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_HEAVY
     pages:
-    - title: STR_FLECHETTE_SNIPER_UFOPEDIA
+    - title: STR_FLECHETTE_SNIPER
       text: STR_FLECHETTE_SNIPER_UFOPEDIA
       ammoSlot: 0
-    - title: STR_FLECHETTE_SNIPER_UFOPEDIA
+    - title: STR_FLECHETTE_SNIPER
       text: STR_FLECHETTE_SNIPER_UFOPEDIA
       ammoSlot: 1
     listOrder: 4610
