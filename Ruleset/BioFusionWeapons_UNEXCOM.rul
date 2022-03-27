@@ -5,7 +5,7 @@ items:
     listOrder: 100
     size: 2
     costSell: 65000
-    categories: [STR_PISTOLS, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_PISTOLS, STR_ALIEN_TECH]
     weight: 8
     floorSprite: 1100
     bigSprite: 1100
@@ -17,6 +17,7 @@ items:
     accuracyAuto: 0
     accuracySnap: 65
     accuracyAimed: 90
+    accuracyMelee: 45
     tuAuto: 0
     tuSnap: 38
     tuAimed: 66
@@ -24,6 +25,20 @@ items:
     snapRange: 14
     aimRange: 26
     dropoff: 1
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 45
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
     bulletSpeed: 5
     tuLoad: 12
     battleType: 1
@@ -37,18 +52,19 @@ items:
     listOrder: 101
     size: 1
     costSell: 70000
-    categories: [STR_SMGS, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_SMGS, STR_ALIEN_TECH]
     weight: 14
     floorSprite: 1101
     bigSprite: 1101
     handSprite: 2508
     bulletSprite: 21
-    fireSound: 1939
+    fireSound: 1940
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_LIGHT
     accuracyAuto: 57
     accuracySnap: 48
     accuracyAimed: 0
+    accuracyMelee: 50
     tuAuto: 62
     tuSnap: 31
     tuAimed: 0
@@ -56,6 +72,20 @@ items:
     snapRange: 18
     aimRange: 0
     dropoff: 2
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 55
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
     bulletSpeed: 5
     autoShots: 3
     tuLoad: 9
@@ -71,7 +101,7 @@ items:
     listOrder: 102
     size: 1
     costSell: 75000
-    categories: [STR_PISTOLS, STR_SMGS, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_PISTOLS, STR_SMGS, STR_ALIEN_TECH]
     weight: 4
     floorSprite: 1102
     bigSprite: 1102
@@ -98,23 +128,38 @@ items:
     listOrder: 103
     size: 2
     costSell: 78000
-    categories: [STR_RIFLES, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_RIFLES, STR_ALIEN_TECH]
     weight: 16
     bigSprite: 1103
     floorSprite: 1103
     handSprite: 2516
     bulletSprite: 21
-    fireSound: 1939
+    fireSound: 1941
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
     accuracySnap: 78
     accuracyAimed: 109
+    accuracyMelee: 65
     tuSnap: 45
     tuAimed: 78
-    autoRange: 8
+    #autoRange: 8
     snapRange: 16
     aimRange: 32
     dropoff: 1
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 60
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 30
+      energy: 10
+    flatMelee:
+      time: true
     bulletSpeed: 5
     autoShots: 2
     tuLoad: 11
@@ -130,18 +175,19 @@ items:
     listOrder: 104
     size: 1
     costSell: 8000
-    categories: [STR_SNIPER_RIFLES, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
     weight: 18
     bigSprite: 1104
     floorSprite: 1104
     handSprite: 2524
     bulletSprite: 21
-    fireSound: 1939
+    fireSound: 1942
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
     accuracyAuto: 0
     accuracySnap: 95
     accuracyAimed: 145
+    accuracyMelee: 65
     tuAuto: 0
     tuSnap: 68
     tuAimed: 84
@@ -149,6 +195,20 @@ items:
     snapRange: 22
     aimRange: 40
     dropoff: 1
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 65
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 30
+      energy: 15
+    flatMelee:
+      time: true
     bulletSpeed: 5
     tuLoad: 13
     battleType: 1
@@ -163,7 +223,7 @@ items:
     listOrder: 105
     size: 1
     costSell: 10000
-    categories: [STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
     weight: 8
     bigSprite: 1105
     floorSprite: 1105
@@ -184,6 +244,286 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 60
+
+  - type: STR_FUSION_SPLITTER
+    requires:
+      - STR_ALIENS_ONLY
+    listOrder: 104
+    size: 1
+    costSell: 8000
+    categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
+    weight: 18
+    bigSprite: 1106
+    floorSprite: 1106
+    handSprite: 2532
+    bulletSprite: 21
+    fireSound: 1943
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HUGE
+    accuracyAuto: 0
+    accuracySnap: 75
+    accuracyAimed: 95
+    accuracyMelee: 100
+    tuAuto: 0
+    tuSnap: 40
+    tuAimed: 70
+    autoRange: 0
+    snapRange: 15
+    aimRange: 20
+    dropoff: 1
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 80
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
+    bulletSpeed: 5
+    tuLoad: 13
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_FUSION_POWER_CELL_HUGE
+    requires:
+      - STR_ALIENS_ONLY
+    listOrder: 105
+    size: 1
+    costSell: 10000
+    categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
+    weight: 8
+    bigSprite: 1107
+    floorSprite: 1107
+    shotgunBehavior: 0
+    shotgunPellets: 7
+    shotgunSpread: 50
+    hitSound: 19
+    hitAnimation: 36
+    power: 50
+    damageType: 4
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    damageAlter:
+      RadiusReduction: 50
+      IgnoreOverKill: false
+      ToWound: 5
+      ToArmorPre: 0.05
+      #ToTile: 0.73
+    clipSize: 8
+    #blastRadius: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 60
+  - type: STR_FUSION_LANCE
+    requires:
+      - STR_ALIENS_ONLY
+    listOrder: 104
+    size: 1
+    costSell: 8000
+    categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
+    weight: 18
+    bigSprite: 1108
+    floorSprite: 1108
+    handSprite: 2540
+    bulletSprite: 27
+    fireSound: 1944
+    clipSize: 10
+    accuracyAuto: 0
+    accuracySnap: 95
+    accuracyAimed: 145
+    hitSound: 19
+    hitAnimation: 36
+    tuAuto: 0
+    tuSnap: 68
+    tuAimed: 84
+    autoRange: 0
+    snapRange: 22
+    aimRange: 40
+    dropoff: 1
+    bulletSpeed: 5
+    tuLoad: 13
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+    power: 120
+    damageType: 4
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    damageAlter:
+      RadiusReduction: 50
+      IgnoreOverKill: false
+      #ToWound: 5
+      ToArmorPre: 1.1
+      #ToTile: 0.73
+
+  - type: STR_ETHEREAL_NOBLE_SWORD
+    categories: [STR_FUSION, STR_MELEE, STR_ALIEN_TECH]
+    size: 0.2
+    costSell: 35000
+    weight: 6
+    bigSprite: 1109
+    floorSprite: 1109
+    handSprite: 2548
+    fireSound: 1947
+    accuracySnap: 50
+    accuracyAimed: 100
+    tuSnap: 15
+    tuAimed: 30
+    confAimed:
+      shots: 1
+      spendPerShot: 10
+      name: STR_THRUST
+    confSnap:
+      shots: 1
+      spendPerShot: 10
+      name: STR_CUT
+    battleType: 1
+    twoHanded: false
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    maxRange: 2
+    aimRange: 2
+    snapRange: 1
+    damageType: 5
+    #hitAnimation: 150
+    power: 150
+    damageBonus:
+      psiSkill:
+        - 1.1
+      psiStrength:
+        - 0.5
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.5
+      ToArmor: 0.5
+      ToMorale: 1.2
+      #ToMana: 2.0
+
+  - type: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    requires:
+      - STR_ALIENS_ONLY
+    listOrder: 104
+    size: 1
+    costSell: 8000
+    categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
+    weight: 18
+    bigSprite: 1110
+    floorSprite: 1110
+    handSprite: 2556
+    bulletSprite: 21
+    fireSound: 1945
+    compatibleAmmo:
+      - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+    accuracyAuto: 0
+    accuracySnap: 80
+    accuracyAimed: 125
+    tuAuto: 0
+    tuSnap: 65
+    tuAimed: 90
+    autoRange: 0
+    snapRange: 35
+    aimRange: 40
+    dropoff: 1
+    bulletSpeed: 5
+    tuLoad: 13
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    invWidth: 2
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+  - type: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+    requires:
+      - STR_ALIENS_ONLY
+    listOrder: 105
+    size: 1
+    costSell: 10000
+    categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
+    weight: 8
+    bigSprite: 1111
+    floorSprite: 1111
+    explosionSpeed: 4
+    power: 130
+    damageType: 3
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    damageAlter:
+      RadiusReduction: 50
+      FixRadius: 2
+      IgnoreOverKill: false
+      ToArmor: 0
+      ToArmorPre: 0.8
+      ToTile: 1.8
+    clipSize: 6
+    #blastRadius: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 60
+
+  - type: STR_HUMAN_FUSION_RIFLE
+    listOrder: 103
+    size: 2
+    costSell: 88000
+    categories: [STR_FUSION, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    weight: 16
+    bigSprite: 1112
+    floorSprite: 1112
+    handSprite: 2564
+    bulletSprite: 21
+    fireSound: 1946
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HEAVY
+    accuracySnap: 80
+    accuracyAimed: 115
+    accuracyAuto: 60
+    tuSnap: 45
+    tuAimed: 70
+    tuAuto: 50
+    autoRange: 12
+    snapRange: 16
+    aimRange: 32
+    dropoff: 1
+    bulletSpeed: 5
+    autoShots: 2
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 65
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    accuracyMelee: 60
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
+    tuLoad: 11
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
+
 #  - type: STR_FUSION_
     # listOrder: 0
     # size: 0
@@ -243,6 +583,149 @@ items:
     # battleType: 2
     # armor: 60
 
+  - type: STR_ALIEN_CEPHALOPOD_TISSUE
+    size: 0.3
+    costSell: 19500
+    bigSprite: 1113
+
+manufacture:
+  - name: STR_HUMAN_FUSION_RIFLE
+    requires:
+      - STR_HYBRID_FUSION_PROJECT
+    space: 1
+    time: 70
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 5
+      STR_ALIEN_ALLOYS: 10
+
+  - name: STR_DISASSEMBLE_FUSION_POWER_CELL_LIGHT
+    requires:
+     - STR_INITIAL_FUSION_CELLS_RESEARCH
+    time: 20
+    space: 1
+    cost: 25000
+    requiredItems:
+      STR_FUSION_POWER_CELL_LIGHT: 1
+    producedItems:
+      STR_ELERIUM_115: 5
+
+  - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HEAVY
+    requires:
+     - STR_INITIAL_FUSION_CELLS_RESEARCH
+    time: 20
+    space: 1
+    cost: 30000
+    requiredItems:
+      STR_FUSION_POWER_CELL_HEAVY: 1
+    producedItems:
+      STR_ELERIUM_115: 10
+
+  - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HUGE
+    requires:
+     - STR_INITIAL_FUSION_CELLS_RESEARCH
+    time: 20
+    space: 1
+    cost: 35000
+    requiredItems:
+      STR_FUSION_POWER_CELL_HUGE: 1
+    producedItems:
+      STR_ELERIUM_115: 15
+
+  - name: STR_DISASSEMBLE_FUSION_HANDGUN
+    requires:
+     - STR_FUSION_HANDGUN
+    time: 20
+    space: 1
+    cost: 9000
+    requiredItems:
+      STR_FUSION_HANDGUN: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 1
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_DISASSEMBLE_FUSION_SMG
+    requires:
+     - STR_FUSION_SMG
+    time: 20
+    space: 1
+    cost: 10000
+    requiredItems:
+      STR_FUSION_SMG: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 2
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_DISASSEMBLE_FUSION_RIFLE
+    requires:
+     - STR_FUSION_RIFLE
+    time: 30
+    space: 1
+    cost: 12000
+    requiredItems:
+      STR_FUSION_RIFLE: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 3
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_DISASSEMBLE_FUSION_SNIPER
+    requires:
+     - STR_FUSION_SNIPER
+    time: 40
+    space: 1
+    cost: 20000
+    requiredItems:
+      STR_FUSION_SNIPER: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 3
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_DISASSEMBLE_FUSION_SPLITTER
+    requires:
+     - STR_FUSION_SPLITTER
+    time: 40
+    space: 1
+    cost: 14000
+    requiredItems:
+      STR_FUSION_SPLITTER: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 2
+      STR_ALIEN_ALLOYS: 2
+
+  - name: STR_DISASSEMBLE_FUSION_LANCE
+    requires:
+     - STR_FUSION_LANCE
+    time: 40
+    space: 3
+    cost: 25000
+    requiredItems:
+      STR_FUSION_LANCE: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 5
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_DISASSEMBLE_ETHEREAL_NOBLE_SWORD
+    requires:
+     - STR_ETHEREAL_NOBLE_SWORD
+    time: 10
+    space: 2
+    cost: 10000
+    requiredItems:
+      STR_ETHEREAL_NOBLE_SWORD: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 1
+      STR_ALIEN_ALLOYS: 3
+  - name: STR_DISASSEMBLE_STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    requires:
+     - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    time: 20
+    space: 1
+    cost: 16000
+    requiredItems:
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 2
+      STR_ALIEN_ALLOYS: 1
+
 research:
   - name: STR_FUSION_HANDGUN
     cost: 300
@@ -260,6 +743,27 @@ research:
     cost: 300
     points: 10
     needItem: true
+  - name: STR_FUSION_SPLITTER
+    cost: 300
+    points: 10
+    needItem: true
+  - name: STR_FUSION_LANCE
+    cost: 300
+    points: 10
+    needItem: true
+  - name: STR_ETHEREAL_NOBLE_SWORD
+    cost: 300
+    points: 10
+    needItem: true
+  - name: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    cost: 300
+    points: 10
+    needItem: true
+  - name: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+    cost: 300
+    points: 10
+    needItem: true
+
 
   - name: STR_INITIAL_FUSION_CELLS_RESEARCH
     cost: 300
@@ -268,6 +772,7 @@ research:
     dependencies:
       - STR_FUSION_POWER_CELL_LIGHT
       - STR_FUSION_POWER_CELL_HEAVY
+      - STR_FUSION_POWER_CELL_HUGE
 
   - name: STR_FUSION_POWER_CELL_LIGHT
     cost: 300
@@ -281,19 +786,42 @@ research:
     needItem: true
     unlocks:
       - STR_INITIAL_FUSION_CELLS_RESEARCH
+  - name: STR_FUSION_POWER_CELL_HUGE
+    cost: 300
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
 
   - name: STR_FUSION_WEAPONS_RESEARCH
     cost: 800
     points: 20
     dependencies:
-      - STR_SECTOID_ENGINEER
-      - STR_FLOATER_ENGINEER
-      - STR_SNAKEMAN_ENGINEER
-      - STR_MUTON_ENGINEER
+      #- STR_SECTOID_ENGINEER
+      #- STR_FLOATER_ENGINEER
+      #- STR_SNAKEMAN_ENGINEER
+      #- STR_MUTON_ENGINEER
+      #- STR_REPTOID_ENGINEER
       - STR_FUSION_HANDGUN
       - STR_FUSION_RIFLE
       - STR_FUSION_SMG
       - STR_FUSION_SNIPER
+      - STR_FUSION_SPLITTER
+      - STR_FUSION_LANCE
+      - STR_ETHEREAL_NOBLE_SWORD
+      - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+      - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
+
+##################################
+  - name: STR_HYBRID_FUSION_PROJECT
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_INITIAL_FUSION_CELLS_RESEARCH
+      - STR_FUSION_WEAPONS_RESEARCH
+      - STR_ON_OUR_OWN
+      - STR_ELERIUM_FUSION
 
 extraSprites:
   - type: BIGOBS.PCK
@@ -304,12 +832,14 @@ extraSprites:
       1103: Resources/FusionWeapons/BigFusionRifle.png
       1104: Resources/FusionWeapons/BigFusionSniper.png
       1105: Resources/FusionWeapons/BigHeavyFusionCell.png
-#      1106: Resources/FusionWeapons/BigFusionSplitter.png
-#      1107: Resources/FusionWeapons/BigHugeFusionCell.png
-#      1108: Resources/FusionWeapons/BigFusionLance.png
-#      1109: Resources/FusionWeapons/BigEtherealNobleSword.png
-#      1110: Resources/FusionWeapons/BigThermonuclearProjectileLauncher.png
-#      1111: Resources/FusionWeapons/BigThermonuclearProjectileLauncherMagazine.png
+      1106: Resources/FusionWeapons/BigFusionSplitter.png
+      1107: Resources/FusionWeapons/BigHugeFusionCell.png
+      1108: Resources/FusionWeapons/BigFusionLance.png
+      1109: Resources/FusionWeapons/BigEtherealNobleSword.png
+      1110: Resources/FusionWeapons/BigThermonuclearProjectileLauncher.png
+      1111: Resources/FusionWeapons/BigThermonuclearProjectileLauncherMagazine.png
+      1112: Resources/FusionWeapons/BigHumanFusionRifle.png
+      1113: Resources/FusionWeapons/BigAlienCephalopodTissue.png
 
   - type: FLOOROB.PCK
     files:
@@ -319,13 +849,13 @@ extraSprites:
       1103: Resources/FusionWeapons/FloorFusionRifle.png
       1104: Resources/FusionWeapons/FloorFusionSniper.png
       1105: Resources/FusionWeapons/FloorHeavyFusionCell.png
-#      1106: Resources/FusionWeapons/FloorFusionSplitter.png
-#      1107: Resources/FusionWeapons/FloorHugeFusionCell.png
-#      1108: Resources/FusionWeapons/FloorFusionLance.png
-#      1108: Resources/FusionWeapons/FloorEtherealNobleSword.png
-#      1108: Resources/FusionWeapons/FloorThermonuclearProjectileLauncher.png
-#      1108: Resources/FusionWeapons/FloorThermonuclearProjectileLauncherMagazine.png
-
+      1106: Resources/FusionWeapons/FloorFusionSplitter.png
+      1107: Resources/FusionWeapons/FloorHugeFusionCell.png
+      1108: Resources/FusionWeapons/FloorFusionLance.png
+      1109: Resources/FusionWeapons/FloorEtherealNobleSword.png
+      1110: Resources/FusionWeapons/FloorThermonuclearProjectileLauncher.png
+      1111: Resources/FusionWeapons/FloorThermonuclearProjectileLauncherMagazine.png
+      1112: Resources/FusionWeapons/FloorHumanFusionRifle.png
 
   - type: HANDOB.PCK
     width: 256
@@ -337,10 +867,11 @@ extraSprites:
       2508: Resources/FusionWeapons/HandFusionSMG.png
       2516: Resources/FusionWeapons/HandFusionRifle.png
       2524: Resources/FusionWeapons/HandFusionSniper.png
-#      2532: Resources/FusionWeapons/HandFusionSplitter.png
-#      2564: Resources/FusionWeapons/HandFusionLance.png
-#      2564: Resources/FusionWeapons/HandEtherealNobleSword.png
-#      2564: Resources/FusionWeapons/HandThermonuclearProjectileLauncher.png
+      2532: Resources/FusionWeapons/HandFusionSplitter.png
+      2540: Resources/FusionWeapons/HandFusionLance.png
+      2548: Resources/FusionWeapons/HandEtherealNobleSword.png
+      2556: Resources/FusionWeapons/HandThermonuclearProjectileLauncher.png
+      2564: Resources/FusionWeapons/HandHumanFusionRifle.png
 
   - type: Projectiles
     width: 105
@@ -383,10 +914,31 @@ extraStrings:
       STR_FUSION_WEAPONS_RESEARCH_2: Fusion Weapons Research II
 
       STR_INITIAL_FUSION_CELLS_RESEARCH: Fusion Cells Research
+
+      STR_HYBRID_FUSION_PROJECT: Hybrid Fusion Weapon Project
+      STR_HUMAN_FUSION_RIFLE: "XF-10 'Hellfire' Hybrid Fusion Rifle "
 ############################################
       STR_FUSION_HANDGUN: Fusion Handgun
       STR_FUSION_SMG: Fusion SMG
       STR_FUSION_POWER_CELL_LIGHT: Light Fusion Cell
       STR_FUSION_RIFLE: Fusion Rifle
       STR_FUSION_SNIPER: Fusion Sniper
+      STR_FUSION_SPLITTER: Fusion Splitter
+      STR_FUSION_LANCE: Fusion Lance
+      STR_ETHEREAL_NOBLE_SWORD: Ethereal Noble Sword
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER: Thermonuclear Projectile Launcher
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE: TLP Magazine
       STR_FUSION_POWER_CELL_HEAVY: Heavy Fusion Cell
+      STR_FUSION_POWER_CELL_HUGE: Huge Fusion Cell
+      STR_ALIEN_CEPHALOPOD_TISSUE: "Alien Cephalopod Tissue"
+      STR_DISASSEMBLE_FUSION_POWER_CELL_LIGHT: "Disassemble Light Fusion Cell"
+      STR_DISASSEMBLE_FUSION_POWER_CELL_HEAVY: "Disassemble Heavy Fusion Cell"
+      STR_DISASSEMBLE_FUSION_POWER_CELL_HUGE: "Disassemble Huge Fusion Cell"
+      STR_DISASSEMBLE_FUSION_HANDGUN: "Disassemble Fusion Handgun"
+      STR_DISASSEMBLE_FUSION_SMG: "Disassemble Fusion SMG"
+      STR_DISASSEMBLE_FUSION_RIFLE: "Disassemble Fusion Rifle"
+      STR_DISASSEMBLE_FUSION_SNIPER: "Disassemble Fusion Sniper"
+      STR_DISASSEMBLE_FUSION_SPLITTER: "Disassemble Fusion Splitter"
+      STR_DISASSEMBLE_FUSION_LANCE: "Disassemble Fusion Lance"
+      STR_DISASSEMBLE_ETHEREAL_NOBLE_SWORD: "Disassemble Ethereal Noble Sword"
+      STR_DISASSEMBLE_STR_THERMONUCLEAR_PROJECTILE_LAUNCHER: "Disassemble TPL"

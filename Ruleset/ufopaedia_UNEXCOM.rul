@@ -2485,6 +2485,14 @@ ufopaedia:
     text: STR_HUMAN_PLASMA_RIFLE_UFOPEDIA
     listOrder: 4417
 
+  - id: STR_HUMAN_FUSION_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HYBRID_FUSION_PROJECT
+    text: STR_HUMAN_FUSION_RIFLE_UFOPEDIA
+    listOrder: 4418
+
   - id: STR_LMG_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -4211,27 +4219,30 @@ ufopaedia:
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12016
 
+  - id: STR_ALIEN_CEPHALOPOD_TISSUE
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_CEPHALOPOD_TISSUE_UFOPEDIA
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
+    listOrder: 12100
   - id: STR_FUSION_HANDGUN
     requires:
       - STR_FUSION_HANDGUN
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
     text: STR_FUSION_HANDGUN_UFOPEDIA
-    listOrder: 12100
+    listOrder: 12101
   - id: STR_FUSION_SMG
     requires:
       - STR_FUSION_SMG
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
     text: STR_FUSION_SMG_UFOPEDIA
-    listOrder: 12101
+    listOrder: 12102
   - id: STR_FUSION_POWER_CELL_LIGHT
     type_id: 4
-    section: STR_ALIEN_EQUIPMENT
-    text: ...
-    listOrder: 12102
-    requires:
-      - STR_FUSION_WEAPONS_RESEARCH
+    section: STR_NOT_AVAILABLE
   - id: STR_FUSION_RIFLE
     requires:
       - STR_FUSION_RIFLE
@@ -4248,11 +4259,41 @@ ufopaedia:
     listOrder: 12104
   - id: STR_FUSION_POWER_CELL_HEAVY
     type_id: 4
-    section: STR_ALIEN_EQUIPMENT
-    text: ...
-    listOrder: 12105
+    section: STR_NOT_AVAILABLE
+  - id: STR_FUSION_SPLITTER
     requires:
-      - STR_FUSION_WEAPONS_RESEARCH
+      - STR_FUSION_SPLITTER
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_FUSION_SPLITTER_UFOPEDIA
+    listOrder: 12105
+  - id: STR_FUSION_POWER_CELL_HUGE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_FUSION_LANCE
+    requires:
+      - STR_FUSION_LANCE
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_FUSION_LANCE_UFOPEDIA
+    listOrder: 12106
+  - id: STR_ETHEREAL_NOBLE_SWORD
+    requires:
+      - STR_ETHEREAL_NOBLE_SWORD
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ETHEREAL_NOBLE_SWORD_UFOPEDIA
+    listOrder: 12107
+  - id: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    requires:
+      - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_UFOPEDIA
+    listOrder: 12108
+  - id: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
   - id: STR_MIND_PROBE
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12200
@@ -5613,7 +5654,11 @@ extraStrings:
 
       STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA: They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher. The energy released seems to be controlled and focused on a certain area.
 
-      STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency. A real mystery.
+      STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Bio-Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency, which can be harvested to obtain raw Elerium. A real mystery.
+
+      STR_ALIEN_CEPHALOPOD_TISSUE_UFOPEDIA: The partially rotten carcasses of the Fusion weapon remains are essentially alien crab and squid corpses, cobbled together around a miniature reactor. The incredible resistance of the biological structure allow the weapons to withstand the huge surges of power when used with Alien Alloys used to support and make wielding surfaces (like stocks, handguards and triggers). We can reuse them with relative ease, as they are strickling similar to Earth's biological fauna - which we have abundant theory -.
+
+      STR_HUMAN_FUSION_RIFLE_UFOPEDIA: The most powerful handheld weapon available to our forces, capable of obliterating both alien infantry and armor with ease. Our inability to replicate the process of bio-fusion, these weapons are built from captured alien weaponry. Several parts have been modified or substituted to make them suitable for field operation by our forces. The alloy casing is not only meant to make the weapon light enough to be man-portable, but to also protect the user and their squad in the case of a catastrophic malfunction.
 
       STR_FUSION_HANDGUN_UFOPEDIA: The Fusion Handgun is a lightweight, compact weapon made of a material equally resistant to Alien Alloys, but of unknown origin. It can fire energy projectiles at high speed and appears to be our enemy's new secondary weapon. Its devastating effect is surprising for its size.
 
@@ -5622,6 +5667,14 @@ extraStrings:
       STR_FUSION_RIFLE_UFOPEDIA: This is a new, robust and powerful battle rifle. For some strange reason, its firing mechanism limits it to semi-automatic fire, which is a relief for our troops. It's not very accurate, perhaps because of the material it's made of. But it is precisely this material that allows it to be used in close combat, like a mallet or a club.
 
       STR_FUSION_SNIPER_UFOPEDIA: Fearsome long-range weapon. Judging by our analysis in combat, it is difficult to use (it is rarely fired in the course of battle) because of its considerable weight, but it is compensated for by its terrifying accuracy. The design and functionality is very reminiscent of an anti-tank rifle, similar to those used in WW2. Perhaps the designers' intention was to use it to disable our vehicles.
+
+      STR_FUSION_SPLITTER_UFOPEDIA: A large yet light alien close combat weapon, its used as a shotgun to clear human fortified positions and urban zones. The most fearsome characteristic of this weapon, its the claw-like protrude on the front of the weapon. Similar to crab or ant claws, it closes quickly and is able to amputate limbs of humans with ease.
+
+      STR_FUSION_LANCE_UFOPEDIA: It seems a squid-like creature was surgically attached to a large structure made of Alien Alloys. While this may be an unusual configuration, even unwieldy, this weapon projects a large and wide Fusion energy beam able to penetrate thick layers of titanium in a matter of seconds. The large stress on the alien squid-like creature kills it after approximately 10 uses.
+
+      STR_ETHEREAL_NOBLE_SWORD_UFOPEDIA: An ancient relic from a distant past, used by the Ethereal equivalent of our knights and lords. It's an extremely rare item used just by the very best soldiers in the enemy's army. It's use is not longer restricted to Ethereals only, but they are the only ones able to make them and bestow them on their new users. It channels the psi-force of the wielder to bolster the damage of the attack.
+
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_UFOPEDIA: Perhaps one of the most destructive weapons on the alien arsenal, this siege weapon is designed to obliterate fortifications with pinpoint accuracy. It's roughly the equivalent of our tactical nuclear launchers (like the M29 Davy Crockett), but with the unique ability of focusing all the Elerium Fusion energy blast into a very small area.
 
       STR_TEXAN_UFO_UFOPEDIA: Old turboprop aircraft created in 1935, recognized worldwide as a stable and reliable aircraft. Often used as a training and light attack aircraft, it is incredibly popular. Terrorists often steal them from civilian airfields and equip them with black market weapons for use in their missions.
 
@@ -5691,7 +5744,7 @@ extraStrings:
 
       STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of alien alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
 
-      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the X-com team with the knowledge needed to fully decrypt this communications.
+      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the UNEXCOM team with the knowledge needed to fully decrypt this communications.
 
       STR_HYPER_WAVE_ENCODER_UFOPEDIA: With the encryption device captured from the alien base, researchers have broken the encryption used by enemy forces.  With additional research, a new facility for intercepting alien transmissions can be constructed.
 
