@@ -116,7 +116,7 @@ items:
       ToArmor: 0
       ToArmorPre: 0.05
       ToTile: 0.69
-    clipSize: 3
+    clipSize: 8
     blastRadius: 2
     battleType: 2
     invWidth: 1
@@ -217,10 +217,59 @@ items:
     invHeight: 3
     armor: 135
     experienceTrainingMode: 0
+  - type: STR_HUMAN_FUSION_RIFLE
+    listOrder: 105
+    size: 2
+    costSell: 100000
+    categories: [STR_FUSION, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    weight: 10
+    bigSprite: 1112
+    floorSprite: 1112
+    handSprite: 2564
+    bulletSprite: 21
+    fireSound: 1946
+    compatibleAmmo:
+      - STR_FUSION_POWER_CELL_HEAVY
+    accuracySnap: 90
+    accuracyAimed: 125
+    accuracyAuto: 75
+    tuSnap: 45
+    tuAimed: 70
+    tuAuto: 50
+    autoRange: 12
+    snapRange: 16
+    aimRange: 32
+    dropoff: 1
+    bulletSpeed: 5
+    damageAlter:
+      ToArmorPre: 2.0
+    autoShots: 2
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 65
+    meleeBonus:
+      strength: 0.5
+      melee: 0.5
+    accuracyMelee: 65
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
+    tuLoad: 11
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 135
+    experienceTrainingMode: 0
   - type: STR_FUSION_POWER_CELL_HEAVY
     requires:
       - STR_ALIENS_ONLY
-    listOrder: 105
+    listOrder: 106
     size: 1
     costSell: 10000
     categories: [STR_FUSION, STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
@@ -238,7 +287,7 @@ items:
       ToArmor: 0
       ToArmorPre: 0.05
       ToTile: 0.73
-    clipSize: 4
+    clipSize: 6
     blastRadius: 3
     battleType: 2
     invWidth: 1
@@ -248,7 +297,7 @@ items:
   - type: STR_FUSION_SPLITTER
     requires:
       - STR_ALIENS_ONLY
-    listOrder: 104
+    listOrder: 107
     size: 1
     costSell: 8000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
@@ -296,7 +345,7 @@ items:
   - type: STR_FUSION_POWER_CELL_HUGE
     requires:
       - STR_ALIENS_ONLY
-    listOrder: 105
+    listOrder: 108
     size: 1
     costSell: 10000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
@@ -327,7 +376,7 @@ items:
   - type: STR_FUSION_LANCE
     requires:
       - STR_ALIENS_ONLY
-    listOrder: 104
+    listOrder: 109
     size: 1
     costSell: 8000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
@@ -416,7 +465,7 @@ items:
   - type: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
     requires:
       - STR_ALIENS_ONLY
-    listOrder: 104
+    listOrder: 110
     size: 1
     costSell: 8000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
@@ -450,7 +499,7 @@ items:
   - type: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
     requires:
       - STR_ALIENS_ONLY
-    listOrder: 105
+    listOrder: 111
     size: 1
     costSell: 10000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
@@ -476,55 +525,7 @@ items:
     invHeight: 1
     armor: 60
 
-  - type: STR_HUMAN_FUSION_RIFLE
-    listOrder: 103
-    size: 2
-    costSell: 100000
-    categories: [STR_FUSION, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    weight: 10
-    bigSprite: 1112
-    floorSprite: 1112
-    handSprite: 2564
-    bulletSprite: 21
-    fireSound: 1946
-    compatibleAmmo:
-      - STR_FUSION_POWER_CELL_HEAVY
-    accuracySnap: 90
-    accuracyAimed: 125
-    accuracyAuto: 75
-    tuSnap: 45
-    tuAimed: 70
-    tuAuto: 50
-    autoRange: 12
-    snapRange: 16
-    aimRange: 32
-    dropoff: 1
-    bulletSpeed: 5
-    damageAlter:
-      ToArmorPre: 2.0
-    autoShots: 2
-    meleeAnimation: 0
-    meleeType: 7
-    meleePower: 65
-    meleeBonus:
-      strength: 0.5
-      melee: 0.5
-    accuracyMelee: 65
-    meleeMultiplier:
-      flatHundred: 0.5
-      melee: 0.5
-    costMelee:
-      time: 20
-      energy: 8
-    flatMelee:
-      time: true
-    tuLoad: 11
-    battleType: 1
-    twoHanded: true
-    invWidth: 1
-    invHeight: 3
-    armor: 135
-    experienceTrainingMode: 0
+
 
 #  - type: STR_FUSION_
     # listOrder: 0
