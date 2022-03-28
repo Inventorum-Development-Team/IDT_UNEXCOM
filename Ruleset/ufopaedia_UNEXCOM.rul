@@ -2612,13 +2612,21 @@ ufopaedia:
     text_width: 150
     listOrder: 4600
 
+  - id: STR_STONER_SNIPER
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_STONER_SNIPER_UFOPEDIA
+    listOrder: 4301
+
   - id: STR_HUNTING_RIFLE
     requires:
       - STR_HUNTING_RIFLE
     type_id: 4
     section: STR_WEAPONS
     text: STR_HUNTING_RIFLE_UFOPEDIA
-    listOrder: 4601
+    listOrder: 4602
 
   - id: STR_AR5
     requires:
@@ -2626,7 +2634,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_AR5_UFOPEDIA
-    listOrder: 4602
+    listOrder: 4603
 
   - id: STR_SKS
     requires:
@@ -2634,7 +2642,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_SKS_UFOPEDIA
-    listOrder: 4603
+    listOrder: 4604
 
   - id: STR_XM21
     requires:
@@ -2642,7 +2650,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_XM21_UFOPEDIA
-    listOrder: 4604
+    listOrder: 4605
 
   - id: STR_PSG1
     requires:
@@ -2650,7 +2658,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_PSG1_UFOPEDIA
-    listOrder: 4605
+    listOrder: 4606
 
   - id: STR_DRAGUNOV
     requires:
@@ -2658,7 +2666,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_DRAGUNOV_UFOPEDIA
-    listOrder: 4606
+    listOrder: 4607
 
   - id: STR_ULYSSES_LASER_SNIPER_RIFLE
     type_id: 4
@@ -2666,7 +2674,7 @@ ufopaedia:
     requires:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
-    listOrder: 4607
+    listOrder: 4608
 
   - id: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     type_id: 4
@@ -2674,7 +2682,7 @@ ufopaedia:
     requires:
       - STR_NATO_LASER_HEAVY_WEAPONS
     text: STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA
-    listOrder: 4608
+    listOrder: 4609
 
   - id: STR_MIRINOV_LASER_SNIPER
     type_id: 4
@@ -2682,7 +2690,7 @@ ufopaedia:
     requires:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
-    listOrder: 4609
+    listOrder: 4610
 
   - id: STR_FLECHETTE_SNIPER
     type_id: 4
@@ -2696,7 +2704,7 @@ ufopaedia:
     - title: STR_FLECHETTE_SNIPER
       text: STR_FLECHETTE_SNIPER_UFOPEDIA
       ammoSlot: 1
-    listOrder: 4610
+    listOrder: 4611
 
   - id: STR_HUMAN_PLASMA_DMR
     type_id: 4
@@ -2704,14 +2712,14 @@ ufopaedia:
     requires:
       - STR_HUMAN_PLASMA_DMR
     text: STR_HUMAN_PLASMA_DMR_UFOPEDIA
-    listOrder: 4611
+    listOrder: 4612
   - id: STR_HUMAN_SNIPER_PLASMA
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_HUMAN_SNIPER_PLASMA
     text: STR_HUMAN_SNIPER_PLASMA_UFOPEDIA
-    listOrder: 4612
+    listOrder: 4613
 
   - id: STR_ARTILLERY_REPORT
     type_id: 7
@@ -3280,10 +3288,6 @@ ufopaedia:
     listOrder: 5207
     requires:
       - STR_HUMAN_PLASMA_LMG
-
-  - id: STR_STUN_BOMB
-    section: STR_AMMUNITION
-    listOrder: 5300
 
   #Equipment
 
@@ -4204,9 +4208,26 @@ ufopaedia:
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
     requires:
-      - STR_ELERIUM_BOMB
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_PLASMA_WEAPONS
     text: STR_ELERIUM_BOMB_UFOPEDIA
     listOrder: 12013
+  - id: STR_STUN_BOMB
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    listOrder: 5300
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_PLASMA_WEAPONS
+    text: STR_STUN_BOMB_UFOPEDIA
+  - id: STR_ACID_BOMB
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    listOrder: 12014
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_PLASMA_WEAPONS
+    text: STR_ACID_BOMB_UFOPEDIA
   - id: STR_BLASTER_LAUNCHER
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12014
@@ -4883,6 +4904,8 @@ extraStrings:
       STR_SMALL_LAUNCHER_UFOPEDIA: "Compact but powerful alien launcher, useful in a variety of combat scenarios. Versatile and deadly weapon."
 
       STR_ELERIUM_BOMB_UFOPEDIA: "Elerium Bomb, used mainly by alien terrorists, is a powerful and deadly ammunition for Small Launcher."
+
+      STR_ACID_BOMB_UFOPEDIA: "Acid Bomb rack, filled with a highly toxic chemical compound of unknown origin. Known to corrode organic tissue within minutes, even titanium armored plates offer little protection against it."
 
       STR_PLASMA_CASTER_UFOPEDIA: "This plasma pistol variant fires its charged particles at a wide spread, making it a devastating weapon."
 
@@ -5658,7 +5681,7 @@ extraStrings:
 
       STR_ALIEN_CEPHALOPOD_TISSUE_UFOPEDIA: The partially rotten carcasses of the Fusion weapon remains are essentially alien crab and squid corpses, cobbled together around a miniature reactor. The incredible resistance of the biological structure allow the weapons to withstand the huge surges of power when used with Alien Alloys used to support and make wielding surfaces (like stocks, handguards and triggers). We can reuse them with relative ease, as they are strickling similar to Earth's biological fauna - which we have abundant theory -.
 
-      STR_HUMAN_FUSION_RIFLE_UFOPEDIA: The most powerful handheld weapon available to our forces, capable of obliterating both alien infantry and armor with ease. Our inability to replicate the process of bio-fusion, these weapons are built from captured alien weaponry. Several parts have been modified or substituted to make them suitable for field operation by our forces. The alloy casing is not only meant to make the weapon light enough to be man-portable, but to also protect the user and their squad in the case of a catastrophic malfunction.
+      STR_HUMAN_FUSION_RIFLE_UFOPEDIA: The most powerful handheld weapon available to our forces, capable of obliterating both alien infantry and armor with ease. Due our inability to replicate the process of bio-fusion, these weapons are built from captured alien weaponry. Several parts have been modified to make them suitable for field operation by our forces. The alloy casing is not only meant to make the weapon light enough to be man-portable, but to also protect the user and their squad in the case of a catastrophic malfunction.
 
       STR_FUSION_HANDGUN_UFOPEDIA: The Fusion Handgun is a lightweight, compact weapon made of a material equally resistant to Alien Alloys, but of unknown origin. It can fire energy projectiles at high speed and appears to be our enemy's new secondary weapon. Its devastating effect is surprising for its size.
 
