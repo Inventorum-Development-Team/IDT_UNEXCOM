@@ -479,9 +479,9 @@ items:
   - type: STR_HUMAN_FUSION_RIFLE
     listOrder: 103
     size: 2
-    costSell: 88000
+    costSell: 100000
     categories: [STR_FUSION, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    weight: 16
+    weight: 10
     bigSprite: 1112
     floorSprite: 1112
     handSprite: 2564
@@ -489,9 +489,9 @@ items:
     fireSound: 1946
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
-    accuracySnap: 80
-    accuracyAimed: 115
-    accuracyAuto: 60
+    accuracySnap: 90
+    accuracyAimed: 125
+    accuracyAuto: 75
     tuSnap: 45
     tuAimed: 70
     tuAuto: 50
@@ -500,14 +500,16 @@ items:
     aimRange: 32
     dropoff: 1
     bulletSpeed: 5
+    damageAlter:
+      ToArmorPre: 2.0
     autoShots: 2
     meleeAnimation: 0
     meleeType: 7
     meleePower: 65
     meleeBonus:
       strength: 0.5
-      melee: 0.1
-    accuracyMelee: 60
+      melee: 0.5
+    accuracyMelee: 65
     meleeMultiplier:
       flatHundred: 0.5
       melee: 0.5
@@ -808,7 +810,6 @@ research:
       - STR_FUSION_SNIPER
       - STR_FUSION_SPLITTER
       - STR_FUSION_LANCE
-      - STR_ETHEREAL_NOBLE_SWORD
       - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
       - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
       - STR_INITIAL_FUSION_CELLS_RESEARCH

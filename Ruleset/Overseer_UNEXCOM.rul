@@ -49,6 +49,11 @@ alienDeployments:
         percentageOutsideUfo: 70
         itemSets:
           -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_MIND_PROBE
+          -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
@@ -76,6 +81,10 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
@@ -100,6 +109,10 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 50
         itemSets:
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
           -
             - STR_TOXIGUN
             - STR_TOXIGUN_FLASK
@@ -146,6 +159,8 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
+          -
+            - STR_FUSION_LANCE
       - alienRank: 1
         lowQty: 2
         highQty: 3
@@ -160,11 +175,14 @@ alienDeployments:
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
           -
             - STR_PLASMA_BLASTER
             - STR_PLASMA_BLASTER_CLIP
             - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
           -
             - STR_FUSION_SNIPER
             - STR_FUSION_POWER_CELL_HEAVY
@@ -178,29 +196,25 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_ETHEREAL_NOBLE_SWORD
+          -
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
+          -
+            - STR_ETHEREAL_NOBLE_SWORD
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
           -
-            - STR_PLASMA_BLASTER
-            - STR_PLASMA_BLASTER_CLIP
-            - STR_PLASMA_BLASTER_CLIP
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
           -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-          -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
 extraStrings:
   - type: en-US
     strings:

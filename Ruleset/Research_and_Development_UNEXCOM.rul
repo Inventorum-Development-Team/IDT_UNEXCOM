@@ -936,6 +936,29 @@ research:
       - STR_CEREBREAL_SOLDIER
       - STR_CEREBREAL_LARVA_TERRORIST
 
+# Hyperwave Encoder
+  - name: STR_ALIEN_COMMUNICATION
+    cost: 100
+    points: 10
+    spawnedEvent: STR_OVERSEER_TRACKED_EVENT
+    dependencies:
+      - STR_FLOATER_NAVIGATOR
+      - STR_SNAKEMAN_NAVIGATOR
+      - STR_MUTON_NAVIGATOR
+      - STR_SECTOID_NAVIGATOR
+      - STR_REPTOID_NAVIGATOR
+      - STR_CEREBREAL_NAVIGATOR
+      - STR_CHTONITE_NAVIGATOR
+  - name: STR_HYPER_WAVE_ENCODER
+    cost: 300
+    points: 15
+    needItem: true
+  - name: STR_HYPER_WAVE_DECODER
+    cost: 370 # 670
+    points: 10
+    dependencies:
+      - STR_HYPER_WAVE_ENCODER
+      - STR_ALIEN_COMMUNICATION
 
   - name: STR_OVERSEER_PREREQ
     cost: 0 # 670

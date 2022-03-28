@@ -51,10 +51,6 @@ alienDeployments:
             - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_ALIEN_LASER_RIFLE_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
@@ -62,6 +58,11 @@ alienDeployments:
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
             - STR_ALIEN_GRENADE
       - alienRank: 4
         lowQty: 1
@@ -113,6 +114,10 @@ alienDeployments:
             - STR_STUN_BOMB
             - STR_STUN_BOMB
             - STR_STUN_BOMB
+          -
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
       - alienRank: 2
         lowQty: 1
         highQty: 2
@@ -137,6 +142,10 @@ alienDeployments:
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
+          -
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
       - alienRank: 1
         lowQty: 2
         highQty: 4
@@ -162,6 +171,10 @@ alienDeployments:
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
+          -
+            - STR_FUSION_LANCE
+            - STR_ALIEN_GRENADE
+            - STR_FUSION_LANCE
       - alienRank: 0
         lowQty: 1
         highQty: 1
@@ -183,9 +196,14 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
     width: 60
     length: 60
@@ -215,14 +233,14 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_MIND_PROBE
           -
             - STR_PLASMA_SNIPER_RIFLE
@@ -247,18 +265,18 @@ alienDeployments:
         percentageOutsideUfo: 60
         itemSets:
           -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_MIND_PROBE
+          -
             - STR_ALIEN_LASER_RIFLE
             - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_ALIEN_LASER_RIFLE_BATTERY
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
             - STR_MIND_PROBE
           -
             - STR_PLASMA_SNIPER_RIFLE
@@ -278,25 +296,30 @@ alienDeployments:
         percentageOutsideUfo: 20
         itemSets:
           -
-            - STR_ALIEN_LASER_RIFLE
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
             - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
   - type: STR_LARGE_SCOUT
     civilians: 4
     missionBountyItem: STR_LARGE_SCOUT_ANALYSIS
@@ -313,9 +336,9 @@ alienDeployments:
             - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_ALIEN_LASER_RIFLE_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_MIND_PROBE
           -
             - STR_PLASMA_RIFLE
@@ -340,28 +363,62 @@ alienDeployments:
         percentageOutsideUfo: 25
         itemSets:
           -
-            - STR_ALIEN_LASER_RIFLE
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
             - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
+
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_ACID_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_ACID_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+          -
+            - STR_FUSION_SMG
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+          -
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
+
       - alienRank: 2
         lowQty: 1
         highQty: 2
@@ -373,13 +430,14 @@ alienDeployments:
             - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_ALIEN_LASER_RIFLE_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
             - STR_MIND_PROBE
           -
             - STR_PLASMA_RIFLE
@@ -434,24 +492,30 @@ alienDeployments:
         percentageOutsideUfo: 20
         itemSets:
           -
-            - STR_ALIEN_LASER_RIFLE
-            - STR_ALIEN_LASER_RIFLE_BATTERY
-            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_MIND_PROBE
           -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
       - alienRank: 3
         lowQty: 1
         highQty: 2
@@ -469,16 +533,23 @@ alienDeployments:
             - STR_STUN_BOMB
             - STR_STUN_BOMB
           -
-            - STR_FUSION_SMG
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-          -
             - STR_SMALL_LAUNCHER
             - STR_STUN_BOMB
             - STR_STUN_BOMB
             - STR_STUN_BOMB
             - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_ACID_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_ACID_BOMB
+            - STR_ACID_BOMB
       - alienRank: 2
         lowQty: 2
         highQty: 2
@@ -498,11 +569,13 @@ alienDeployments:
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_FUSION_LANCE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_FUSION_LANCE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
       - alienRank: 1
         lowQty: 1
         highQty: 1
@@ -518,11 +591,6 @@ alienDeployments:
             - STR_ALIEN_HEAVY_LASER_BATTERY
             - STR_ALIEN_HEAVY_LASER_BATTERY
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_PLASMA_RIFLE_CLIP
-          -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
@@ -531,8 +599,11 @@ alienDeployments:
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
             - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
   - type: STR_ABDUCTOR
     civilians: 6
     missionBountyItem: STR_ABDUCTOR_ANALYSIS
@@ -549,19 +620,19 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_MIND_PROBE
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
             - STR_MIND_PROBE
           -
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_SNIPER_RIFLE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
             - STR_MIND_PROBE
           -
             - STR_FUSION_RIFLE
@@ -580,22 +651,26 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_MIND_PROBE
+          -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
       - alienRank: 3
         lowQty: 2
         highQty: 4
@@ -607,9 +682,10 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
           -
             - STR_TOXIGUN
             - STR_TOXIGUN_FLASK
@@ -619,7 +695,7 @@ alienDeployments:
             - STR_SMALL_LAUNCHER
             - STR_STUN_BOMB
             - STR_STUN_BOMB
-            - STR_STUN_BOMB
+            - STR_ACID_BOMB
           -
             - STR_FUSION_SMG
             - STR_FUSION_POWER_CELL_LIGHT
@@ -730,19 +806,23 @@ alienDeployments:
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
       - alienRank: 3
         lowQty: 1
         highQty: 1
@@ -898,24 +978,27 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
+          -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_SMG
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
       - alienRank: 3
         lowQty: 1
         highQty: 2
@@ -943,6 +1026,11 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+          -
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
       - alienRank: 2
         lowQty: 1
         highQty: 2
@@ -1030,11 +1118,11 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
           -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_ETHEREAL_NOBLE_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
       - alienRank: 6
         lowQty: 0
         highQty: 2
@@ -1113,21 +1201,23 @@ alienDeployments:
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
           -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_MIND_PROBE
       - alienRank: 3
         lowQty: 1
         highQty: 2
@@ -1153,6 +1243,11 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
+          -
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
       - alienRank: 2
         lowQty: 1
         highQty: 2
@@ -1244,9 +1339,9 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
@@ -1254,9 +1349,11 @@ alienDeployments:
           -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
       - alienRank: 2
         lowQty: 1
         highQty: 3
@@ -1300,9 +1397,9 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
@@ -1310,9 +1407,11 @@ alienDeployments:
           -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
     width: 40
     length: 40
     civilians: 3
@@ -1358,9 +1457,9 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
           -
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
@@ -1368,9 +1467,11 @@ alienDeployments:
           -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
       - alienRank: 2
         lowQty: 1
         highQty: 1
@@ -1446,21 +1547,21 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
       - alienRank: 3
         lowQty: 1
         highQty: 2
@@ -1633,16 +1734,18 @@ alienDeployments:
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
           -
             - STR_FUSION_HANDGUN
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_POWER_CELL_LIGHT
+          -
+            - STR_FUSION_SMG
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
             - STR_FUSION_POWER_CELL_LIGHT
@@ -1658,24 +1761,23 @@ alienDeployments:
             - STR_PLASMA_CASTER
             - STR_PLASMA_CASTER_CLIP
             - STR_PLASMA_CASTER_CLIP
-            - STR_ALIEN_GRENADE
           -
             - STR_TOXIGUN
             - STR_TOXIGUN_FLASK
             - STR_TOXIGUN_FLASK
-            - STR_ALIEN_GRENADE
           -
             - STR_SMALL_LAUNCHER
             - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
+            - STR_ACID_BOMB
+            - STR_ELERIUM_BOMB
           -
-            - STR_FUSION_SMG
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
-            - STR_FUSION_POWER_CELL_LIGHT
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
+          -
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
       - alienRank: 2
         lowQty: 1
         highQty: 2
@@ -1691,10 +1793,6 @@ alienDeployments:
             - STR_ALIEN_HEAVY_LASER_BATTERY
             - STR_ALIEN_HEAVY_LASER_BATTERY
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
@@ -1703,6 +1801,8 @@ alienDeployments:
             - STR_PLASMA_BLASTER
             - STR_PLASMA_BLASTER_CLIP
             - STR_PLASMA_BLASTER_CLIP
+          -
+            - STR_FUSION_LANCE
       - alienRank: 1
         lowQty: 1
         highQty: 1
@@ -1724,13 +1824,11 @@ alienDeployments:
           -
             - STR_PLASMA_SNIPER_RIFLE
             - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
             - STR_PLASMA_SNIPER_RIFLE_CLIP
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
+            - STR_FUSION_SNIPER
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
       - alienRank: 6
         lowQty: 1
         highQty: 3
@@ -1966,17 +2064,17 @@ alienDeployments:
             - STR_ALIEN_LASER_PISTOL_BATTERY
             - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
           -
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
           -
             - STR_FUSION_HANDGUN
             - STR_FUSION_POWER_CELL_LIGHT
