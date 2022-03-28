@@ -61,6 +61,7 @@ items:
     weight: 6
     bigSprite: 7
     bulletSprite: 8
+    bulletSpeed: 10
     fireSound: 18
     hitSound: 19
     hitAnimation: 46
@@ -1555,7 +1556,7 @@ armors:
       - MECHTOID_CORPSE_3
       - MECHTOID_CORPSE_4
     corpseGeo: STR_MECHTOID_CORPSE
-    frontArmor: 80
+    frontArmor: 60
     sideArmor: 66
     rearArmor: 62
     underArmor: 45
@@ -1563,19 +1564,16 @@ armors:
     painImmune: true
     size: 2
     damageModifier:
-      - 1
-      - 1
+      - 1.0
       - 0.8
+      - 1.0
       - 0.8
-      - 1
-      - 1
-      - 0
-      - 0.8
-      - 1
-      - 0
-      - 1
-      - 1
-      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: PROBE_ARMOR
     allowInv: true
