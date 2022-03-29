@@ -11,6 +11,11 @@ items:
   - type: STR_FLASHBANG_GRENADE #ignoreDuplicate
     tags:
      FlashBang: 1
+  # - type: STR_M1972_LASER_PISTOL
+  #   isExplodingInHands: true # won't explode though as it's not a grenade
+  #   isConsumable: true
+  #   tags:
+  #     CoolsPerTurn: 10
 armors:
   - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
     tags:
@@ -23,6 +28,7 @@ extended:
     RuleItem:
       STRIKE: int
       FlashBang: int
+      CoolsPerTurn: int #Note, currently runs for xcom, alien and civilian turn, so basically 3x the value here
     RuleArmor:
       Hind_Turret: int
     BattleUnit:
@@ -35,11 +41,53 @@ extended:
   # spellchecker:words flashbanged Gaccuracy Greactions Gfiring setFatalwounds
   scripts:
 
+    createItem: #Overheating sets ammo to 1 at the start of battles
+        - offset: 1
+          code: |
+            var int x;
+            BattleItem.getTag item x Tag.CoolsPerTurn;
+            if gt x 0;
+              item.setAmmoQuantity 1;
+            end;
+
+            return;
+
     newTurnItem: #Maintains a tag with turn number
         - offset: 1
           code: |
            BattleGame.setTag battle_game Tag.Turn turn;
            return;
+
+        - offset: 2 #Overheating Script
+          code: |
+            var int x;
+            var int ammo;
+            var int turnside;
+
+            BattleItem.getTag item x Tag.CoolsPerTurn;
+
+            if gt x 0;
+
+              item.getAmmoQuantity ammo;
+              if gt ammo 100;
+
+                item.setFuseEnabled 1; # destroy weapon
+                item.setFuseTimer 0;
+                return;
+              end;
+
+              battle_game.getTurnSide turnside;
+              if eq turnside FACTION_HOSTILE;
+                sub ammo x;
+                if le ammo 0;
+                  set ammo 1;
+                end;
+                item.setAmmoQuantity ammo;
+              end;
+
+
+            end;
+            return;
 
 
     selectItemSprite: # Air Strike Smoke sprite Script
@@ -130,3 +178,21 @@ extended:
               end;
              end;
              return power part side;
+
+
+    accuracyMultiplierBonusStats: #Overheating accuracy penalty
+          - offset: 1
+            code: |
+              var int ammoQuantity;
+              var int value;
+              var int x;
+              BattleItem.getTag weapon x Tag.CoolsPerTurn;
+              if gt x 0;
+                weapon.getAmmoQuantity ammoQuantity;
+
+                set value 101;
+                sub value ammoQuantity;
+                muldiv bonus value 100;
+
+              end;
+              return bonus;

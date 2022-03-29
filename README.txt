@@ -1,4 +1,4 @@
-United Nations Extraterrestrial Combat Command mod by efrenespartano
+United Nations Extraterrestrial Combat Command mod by IDT
 
 
 Inspiration:
@@ -25,66 +25,4 @@ To alinare, for his incredible source of codes and sprites in his mod The Endles
 To Nord, for his recomendation about Android apps to mod OpenXcom, they are very useful!
 And finally, but not at the end, to the OpenXcom community, for all the mods, the resources and all the available help.
 
-Credits by name:
 
-*Alex_D: UH-1 Huey, Mi-24 Hind maps
-*ahnyoungjune: bug hunter
-*alinare: BMD-1 & Laser Tank sprites
-*Andr: M12 Beretta, M72 LAW, FN MAG, XM117 (and variants), M16A1 (and variants) 9mm Pistol x20 Mag sprite, F-104S Starfighter & MiG-21 sprite, Remington Combat Shotgun sprites, plus ideas and historical/technical advice
-*Arpia: SCOUTCAR (Ferret AC) sprites and codes
-*Badfella: Mercenary & Special Forces artwork, plus ideas.
-*Barabas: bug hunter
-*Black Onix: Romania and Bulgaria accurate flags
-*Blood Angel Tactical Marine: bug hunter.
-*Bobit: bug hunter
-*boodman123726: XCOM 2 Music Pack
-*Brother^2: IDT bug hunter
-*bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
-*cubick2k: bug hunter
-*Cupon4uk: bug hunter
-*danielpembrink: bug hunter
-*DarkDust: bug hunter
-*Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo, alien Fusion weapons
-*Duke_Falcon: Alien Turret sprites
-*Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper
-*efrenespartano: main ruleset and sprite creation, lead designer
-*Filip H: Huey, alien Turrets, bug hunter
-*Finnik: Astronaut sprites, original code added to the main OXCE, bug hunter
-*Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
-*garretrgang: bug hunter
-*Hans Woofington: bug hunter
-*hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused)
-*Hobbes: Terrain Mod (now unused), Tech-Comm HKs, ruleset reference.
-*JustTheDude: Terrorist Grenadier sprites
-*IgnisAbentorn: bug hunter
-*Ikhanad: FN FSC sprites, plus ideas.
-*im bored: bug hunter
-*Internet: UFOPedia images, further artwork reference
-*Istrebitel: craft weapon reference codes
-*KingMob4313: Plasma & Laser ruleset and sprites from Equal Terms
-*Meridian: modding help on the forums, OXCE dev
-*Mitra Lightbringer: bug hunter
-*Noah193: bug hunter and ideas
-*Nord: Aqualung sprites, Mi-8 map and sprites
-*Luke83: overall Terrain & Map support
-*PERLHA: IDT bug hunter
-*Pvt.Dropleaf: bug hunter
-*Ryskeliini: Grenade Launcher (now unused)
-*StormRangerX: bug hunter
-*SG_Barton: bug hunter
-*Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
-*Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs sprites
-*Tal'Raziid: IDT bug hunter
-*ThatDude: JustRussia AK original weapons (now adapted)
-*The Reaver of Darkness: overall balance support, LIGHTNIA mapset, plus ideas
-*theemperorofmankind: bug hunter
-*Tingcat: Terrorists Paperdolls
-*Valmont and his girlfriend: bug hunters
-*Warboy1982: Shotgun firing sound
-*XOps: Alien Plasma Weapons
-*xover88: XCOM 2012 Music
-*Yataka Shimaoka: bug hunter
-*wolwerin: Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, sprites and sounds, plus debugging support
-*Zane: original Delta sprites
-*zaphnath: bug hunter
-*zombieclone111: bug hunter

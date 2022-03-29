@@ -645,8 +645,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recover: true
-    recoveryPoints: 0
+    recover: false
     armor: 35
   - type: STR_HUMAN_SOLDIER_4_4_CORPSE
     name: STR_CORPSE
@@ -4468,6 +4467,7 @@ units:
         - STR_12GAUGE_BUCKSHOT_X2
         - STR_12GAUGE_SLUG_X2
         - STR_MACHETE
+    liveAlien: ""
   - type: STR_FEMALE_FARMER
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4496,6 +4496,7 @@ units:
         - STR_12GAUGE_BUCKSHOT_X2
         - STR_12GAUGE_SLUG_X2
         - STR_MACHETE
+    liveAlien: ""
 ###################################
 ########### POLICE ###############
 #################################
@@ -4623,6 +4624,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_0_1
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4634,6 +4636,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_0_2
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4645,6 +4648,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_0_3
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4656,6 +4660,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_0_4
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4667,6 +4672,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_1_0
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4678,6 +4684,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_1_1
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4689,6 +4696,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_1_2
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4700,6 +4708,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_1_3
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4711,6 +4720,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_1_4
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4722,6 +4732,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_0
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4733,6 +4744,7 @@ units:
     deathSound: [44, 45, 46]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_1
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4744,6 +4756,7 @@ units:
     deathSound: [44, 45, 46]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_2
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4755,6 +4768,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_3
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4766,6 +4780,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_4
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4777,6 +4792,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_5
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4788,6 +4804,7 @@ units:
     deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_6
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4799,6 +4816,7 @@ units:
     deathSound: [44, 45, 46]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
   - type: STR_HUMAN_JUMPSUIT_2_7
     race: STR_CIVILIAN
     rank: STR_CIVILIAN
@@ -4810,6 +4828,7 @@ units:
     deathSound: [44, 45, 46]
     intelligence: 4
     aggression: 0
+    liveAlien: ""
 #########################################
 ########### ARMED MILITARY #############
 #######################################
@@ -4854,6 +4873,7 @@ units:
         - STR_38_REVOLVER_AMMO_X6
         - STR_GRENADE
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_0_1
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -4895,6 +4915,7 @@ units:
         - STR_9MM_PISTOL_X20
         - STR_GRENADE
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_0_2
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -4933,6 +4954,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_0_3
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -4971,6 +4993,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X75
         - STR_7_62MM_SOVIET_RIFLE_X75
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_0_4
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5009,6 +5032,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_1_0
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5047,6 +5071,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_1_1
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5084,6 +5109,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_30_CARBINE_X15
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_1_2
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5122,6 +5148,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_1_3
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5159,6 +5186,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_1_4
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5197,6 +5225,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_1_5
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5234,6 +5263,7 @@ units:
         - STR_9MM_PISTOL_X30
         - STR_9MM_PISTOL_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_0
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5272,6 +5302,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_30_CARBINE_X15
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_1
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5309,6 +5340,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_2
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5346,6 +5378,7 @@ units:
         - STR_9MM_PISTOL_X30
         - STR_9MM_PISTOL_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_3
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5383,6 +5416,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_4
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5421,6 +5455,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_5
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5458,6 +5493,7 @@ units:
         - STR_AKM
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_6
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5495,6 +5531,7 @@ units:
         - STR_AKM
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_7
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5530,6 +5567,7 @@ units:
         - STR_M3_GREASEGUN
         - STR_45_PISTOL_X30
         - STR_45_PISTOL_X30
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_8
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5568,6 +5606,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_9
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5605,6 +5644,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_30_CARBINE_X15
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_10
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5643,6 +5683,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_2_11
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5680,6 +5721,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_3_0
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5718,6 +5760,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_3_1
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5756,6 +5799,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_3_2
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5794,6 +5838,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_3_3
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5831,6 +5876,7 @@ units:
         - STR_30_CARBINE_X15
         - STR_30_CARBINE_X15
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_3_4
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5869,6 +5915,7 @@ units:
         - STR_40MM_FRAG
         - STR_40MM_FRAG
         - STR_40MM_SMOKE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_3_5
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5906,6 +5953,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_4_0
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5944,6 +5992,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_7_62MM_SOVIET_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_4_1
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -5979,6 +6028,7 @@ units:
         - STR_M3_GREASEGUN
         - STR_45_PISTOL_X30
         - STR_45_PISTOL_X30
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_4_2
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -6017,6 +6067,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_7_62MM_NATO_RIFLE_X30
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_4_3
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -6054,6 +6105,7 @@ units:
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_7_62MM_SOVIET_RIFLE_X10
         - STR_GRENADE
+    liveAlien: ""
   - type: STR_HUMAN_SOLDIER_4_4
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
@@ -6092,6 +6144,7 @@ units:
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_7_62MM_NATO_RIFLE_X20
         - STR_GRENADE
+    liveAlien: ""
 ###################################
 ######## AMERICAN ALLIES ##########
 #################################

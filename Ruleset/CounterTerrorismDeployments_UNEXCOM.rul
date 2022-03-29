@@ -193,14 +193,13 @@ alienDeployments:
       background: HOSTAGE_CRISIS_BACKGROUND
       desc: STR_HOSTAGE_CRISIS_BRIEFING
       palette: 3
-      textOffset: -16
+      #textOffset: -16
       showTarget: true
       showCraft: true
     objectiveType: 3
     duration: [72,72]
     markerName: STR_COUNTER_TERRORISM_MARKER
     startingCondition: STR_TERRORIST_MISSION
-    markerIcon: 7
     points: 5
 
   - type: STR_HIJACKED_PLANE
@@ -390,14 +389,13 @@ alienDeployments:
       background: HIJACKED_PLANE_BACKGROUND
       desc: STR_HIJACKED_PLANE_BRIEFING
       palette: 3
-      textOffset: -16
+      #textOffset: -16
       showTarget: true
       showCraft: true
     objectiveType: 3
     duration: [72,72]
     markerName: STR_COUNTER_TERRORISM_MARKER
     startingCondition: STR_TERRORIST_MISSION
-    markerIcon: 7
     points: 5
 
   - type: STR_HUMAN_TERROR_ATTACK
@@ -598,14 +596,13 @@ alienDeployments:
       background: URBAN_TERROR_BACKGROUND
       desc: STR_URBAN_TERROR_BRIEFING
       palette: 3
-      textOffset: -16
+      #textOffset: -16
       showTarget: true
       showCraft: true
     objectiveType: 3
     duration: [72,72]
     markerName: STR_COUNTER_TERRORISM_MARKER
     startingCondition: STR_TERRORIST_MISSION
-    markerIcon: 7
     points: 5
 
 
@@ -786,7 +783,6 @@ alienDeployments:
     duration: [288,312]
     markerName: STR_TERRORIST_HQ_MARKER
     startingCondition: STR_TERRORIST_MISSION
-    markerIcon: 7
     civilians: 3
 
 

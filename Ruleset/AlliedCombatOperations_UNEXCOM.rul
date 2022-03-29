@@ -59,17 +59,25 @@ alienDeployments:
         percentageOutsideUfo: 70
         itemSets:
           -
-            - STR_PLASMA_CASTER
-            - STR_PLASMA_CASTER_CLIP
-            - STR_PLASMA_CASTER_CLIP
+            - STR_ALIEN_LASER_PISTOL
+            - STR_ALIEN_LASER_PISTOL_BATTERY
+            - STR_ALIEN_LASER_PISTOL_BATTERY
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_BATTERY
+            - STR_ALIEN_LASER_RIFLE_BATTERY
           -
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
           -
             - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
       - alienRank: 1
@@ -91,9 +99,13 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
           -
-            - STR_FUSION_SNIPER
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_SPLITTER
+            - STR_FUSION_POWER_CELL_HUGE
+            - STR_FUSION_POWER_CELL_HUGE
+          -
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+            - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
   - type: STR_EUROPEAN_OPERATIONS_MISSION
     width: 60
     length: 60

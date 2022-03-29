@@ -309,7 +309,7 @@ items:
     bigSprite: -1
     floorSprite: 12
     hitSound: 4332
-    hitAnimation: 26
+    hitAnimation: 0
     power: 100
     damageType: 3
     damageAlter:
@@ -659,7 +659,7 @@ armors:
     spriteSheet: FERRET.PCK
     spriteInv: FERRET
     allowInv: true
-    customArmorPreviewIndex: 28
+    customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
@@ -683,6 +683,8 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 6
+
 #####################################
 ####### M551 SHERIDAN ###############
 #####################################
@@ -690,7 +692,7 @@ armors:
     spriteSheet: SHERIDAN.PCK
     spriteInv: SHERIDAN
     allowInv: true
-    customArmorPreviewIndex: 28
+    customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
@@ -714,6 +716,8 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 6
+
 #####################################
 ####### BMD-1 AIRBORNE IFV ##########
 #####################################
@@ -721,7 +725,7 @@ armors:
     spriteSheet: BMD1.PCK
     spriteInv: BMD1
     allowInv: true
-    customArmorPreviewIndex: 28
+    customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
@@ -744,7 +748,9 @@ armors:
      - 0.0 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
-    loftempsSet: [ 92, 89, 90, 91 ]
+    loftempsSet: [ 92, 89, 90, 91 ]#
+    personalLight: 6
+
 #####################################
 ########## ALVIS SALADIN AC #############
 #####################################
@@ -752,7 +758,7 @@ armors:
     spriteSheet: SALADIN.PCK
     spriteInv: SALADIN
     allowInv: true
-    customArmorPreviewIndex: 28
+    customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
@@ -776,6 +782,8 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 6
+
 #####################################
 ####### LEGIONNAIRE LASER TANK ###########
 #####################################
@@ -783,7 +791,7 @@ armors:
     spriteSheet: LEGIONNAIRE.PCK
     spriteInv: LEGIONNAIRE
     allowInv: true
-    customArmorPreviewIndex: 28
+    customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
@@ -807,6 +815,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 6
 
 extraSprites:
   - type: FERRET.PCK

@@ -923,12 +923,12 @@ crafts:
       - 1
       - 1
       - [3, 4]
-      - [2, 3]
+      - [2, 3, 5]
     weaponStrings:
       - STR_CRAFT_CANNON_ONE
       - STR_CRAFT_CANNON_TWO
       - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_THREE
-      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_AUX_FOUR
     soldiers: 1
     vehicles: 0
     pilots: 1
@@ -1315,7 +1315,14 @@ crafts:
 #### TIER II ######
 ##################
 
-  - type: STR_HIND
+
+#  - type: STR_GALAXY # C-5 Galaxy, US T2 Paratrooper
+#  - type: STR_XC142 # XC-142, US T2 VTOL
+#  - type: STR_TRANSALL # C-160 Transall, NATO T2 Paratrooper
+#  - type: STR_DORNIER # Do-31 Dornier, NATO T2 VTOL
+#  - type: STR_ILYUSHIN # Il-76 Ilyushin, USSR T2 Paratrooper
+
+  - type: STR_HIND # USSR T2 VTOL
     requires:
       - STR_IMPROVED_VTOL_TRANSPORT
     sprite: 867
@@ -1382,6 +1389,8 @@ crafts:
 ####################
 #### TIER III #####
 ##################
+
+#  - type: STR_ACHILLES # UNEXCOM T3 VTOL
 
 # #  - type: STR_ORION
 #     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
@@ -1774,6 +1783,9 @@ crafts:
 
   - type: STR_LIGHTNING
     pilots: 2
+    soldiers: 18
+    maxItems: 432
+    vehicles: 4
     weapons: 2
     weaponTypes:
       - [0, 1]
@@ -1783,6 +1795,35 @@ crafts:
     weaponStrings:
       - STR_CRAFT_ALL_CANNONS_ONE
       - STR_CRAFT_AUX_TWO
+    battlescapeTerrainData:
+      name: LIGHTNI
+      mapDataSets:
+        - BLANKS
+        - LIGHTNIN
+        - LIGHTNIAR
+      mapBlocks:
+        - name: LIGHTNI
+          width: 20
+          length: 20
+    deployment:
+      - [6, 9, 1, 6]
+      - [9, 6, 1, 0]
+      - [12, 9, 1, 2]
+      - [9, 13, 1, 4]
+      - [6, 10, 1, 6]
+      - [10, 6, 1, 0]
+      - [13, 10, 1, 2]
+      - [10, 13, 1, 4]
+      - [7, 9, 1, 6]
+      - [10, 7, 1, 0]
+      - [13, 9, 1, 2]
+      - [9, 12, 1, 4]
+      - [7, 10, 1, 6]
+      - [9, 7, 1, 0]
+      - [12, 10, 1, 2]
+      - [10, 12, 1, 4]
+      - [7, 8, 1, 6]
+      - [12, 11, 1, 2]
   - type: STR_AVENGER
     weapons: 4
     pilots: 4
@@ -1851,7 +1892,6 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 2
     launcher: STR_SIDEWINDER_LAUNCHER
-    clip: STR_SIDEWINDER_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
@@ -1868,7 +1908,6 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 2
     launcher: STR_ATOLL_LAUNCHER
-    clip: STR_ATOLL_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
@@ -1885,7 +1924,6 @@ craftWeapons:
     reloadAggressive: 40
     ammoMax: 2
     launcher: STR_RED_TOP_LAUNCHER
-    clip: STR_RED_TOP_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
@@ -1905,7 +1943,6 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 2
     launcher: STR_SHORTSWORD_LAUNCHER
-    clip: STR_SHORTSWORD_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
@@ -1925,7 +1962,6 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 2
     launcher: STR_LONGSWORD_LAUNCHER
-    clip: STR_LONGSWORD_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
@@ -1944,7 +1980,6 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 2
     launcher: STR_EXCALIBUR_LAUNCHER
-    clip: STR_EXCALIBUR_MISSILES
     projectileType: 0
     projectileSpeed: 8
 
@@ -1969,7 +2004,6 @@ craftWeapons:
     reloadAggressive: 72
     ammoMax: 2
     launcher: STR_SPARROW_LAUNCHER
-    clip: STR_SPARROW_MISSILES
     projectileType: 1
     projectileSpeed: 8
 
@@ -1986,7 +2020,6 @@ craftWeapons:
     reloadAggressive: 72
     ammoMax: 2
     launcher: STR_ACRID_LAUNCHER
-    clip: STR_ACRID_MISSILES
     projectileType: 1
     projectileSpeed: 8
 
@@ -2003,7 +2036,6 @@ craftWeapons:
     reloadAggressive: 72
     ammoMax: 2
     launcher: STR_MATRA_LAUNCHER
-    clip: STR_MATRA_MISSILES
     projectileType: 1
     projectileSpeed: 8
 
@@ -2023,7 +2055,6 @@ craftWeapons:
     reloadAggressive: 72
     ammoMax: 2
     launcher: STR_HAMMER_LAUNCHER
-    clip: STR_HAMMER_MISSILES
     projectileType: 1
     projectileSpeed: 8
 
@@ -2043,7 +2074,6 @@ craftWeapons:
     reloadAggressive: 72
     ammoMax: 2
     launcher: STR_KATANA_LAUNCHER
-    clip: STR_KATANA_MISSILES
     projectileType: 1
     projectileSpeed: 8
 
@@ -2062,7 +2092,6 @@ craftWeapons:
     reloadAggressive: 72
     ammoMax: 2
     launcher: STR_MJOLNIR_LAUNCHER
-    clip: STR_MJOLNIR_MISSILES
     projectileType: 1
     projectileSpeed: 8
 #}
@@ -2086,9 +2115,8 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 1
     launcher: STR_FALCON_LAUNCHER
-    clip: STR_FALCON_MISSILES
     projectileType: 3
-    projectileSpeed: 5
+    projectileSpeed: 6
 
 ####################
 #### TIER II ######
@@ -2106,9 +2134,8 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 1
     launcher: STR_PHOENIX_LAUNCHER
-    clip: STR_PHOENIX_MISSILES
     projectileType: 3
-    projectileSpeed: 5
+    projectileSpeed: 6
 ####################
 #### TIER III #####
 ##################
@@ -2125,9 +2152,8 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 1
     launcher: STR_ADLER_LAUNCHER
-    clip: STR_ADLER_MISSILES
     projectileType: 3
-    projectileSpeed: 5
+    projectileSpeed: 6
 # #  - type: STR_KONDO
 #     weaponType: 4
 #     sprite: 219
@@ -2174,9 +2200,8 @@ craftWeapons:
     reloadAggressive: 48
     ammoMax: 1
     launcher: STR_KONDOR_LAUNCHER
-    clip: STR_KONDOR_MISSILES
     projectileType: 3
-    projectileSpeed: 5
+    projectileSpeed: 6
 
   - type: STR_CASABA_LANCE
     weaponType: 4
@@ -2215,7 +2240,6 @@ craftWeapons:
     ammoMax: 200
     rearmRate: 50
     launcher: STR_VULCAN_CANNON
-    clip: STR_VULCAN_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
 
@@ -2236,7 +2260,6 @@ craftWeapons:
     ammoMax: 200
     rearmRate: 100
     launcher: STR_ATHENA_CANNON
-    clip: STR_ATHENA_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 10
 
@@ -2276,7 +2299,6 @@ craftWeapons:
     ammoMax: 200
     rearmRate: 200
     launcher: STR_ZEUS_CANNON
-    clip: STR_ZEUS_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
 
@@ -2302,7 +2324,6 @@ craftWeapons:
     ammoMax: 150
     rearmRate: 50
     launcher: STR_GSH_23_CANNON
-    clip: STR_GSH_23_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
 
@@ -2320,7 +2341,6 @@ craftWeapons:
     ammoMax: 100
     rearmRate: 50
     launcher: STR_ADEN_CANNON
-    clip: STR_ADEN_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 7
 
@@ -2341,7 +2361,6 @@ craftWeapons:
     ammoMax: 150
     rearmRate: 150
     launcher: STR_MAUSER_CANNON
-    clip: STR_MAUSER_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
 
@@ -2398,7 +2417,6 @@ craftWeapons:
     reloadStandard: 8
     reloadAggressive: 8
     launcher: STR_VOSTOK_CANNON
-    clip: STR_VOSTOK_CANNON_ROUNDS_X50
     projectileType: 5
     weaponType: 1
     ammoMax: 50
@@ -2702,7 +2720,6 @@ craftWeapons:
     ammoMax: 4
     rearmRate: 4
     launcher: STR_MIGHTY_MOUSE_LAUNCHER
-    clip: STR_MIGHTY_MOUSE_ROCKETS
     projectileType: 0
     projectileSpeed: 8
 
@@ -2723,7 +2740,6 @@ craftWeapons:
     ammoMax: 4
     rearmRate: 16
     launcher: STR_HYDRA_LAUNCHER
-    clip: STR_HYDRA_ROCKETS
     projectileType: 0
     projectileSpeed: 8
 
@@ -2741,7 +2757,6 @@ craftWeapons:
     ammoMax: 4
     rearmRate: 16
     launcher: STR_GORGON_LAUNCHER
-    clip: STR_GORGON_ROCKETS
     projectileType: 0
     projectileSpeed: 8
 
@@ -2758,7 +2773,6 @@ craftWeapons:
     ammoMax: 4
     rearmRate: 16
     launcher: STR_KRAKEN_LAUNCHER
-    clip: STR_KRAKEN_ROCKETS
     projectileType: 0
     projectileSpeed: 8
 #}
@@ -2784,183 +2798,90 @@ items:
 #{
   - type: STR_SIDEWINDER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     costBuy: 21000
     costSell: 18000
     transferTime: 48
-  - type: STR_SIDEWINDER_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
-      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
-    size: 0.4
-    costBuy: 6000
-    costSell: 4000
-    transferTime: 48
-    clipSize: 1
   - type: STR_SPARROW_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-  - type: STR_SPARROW_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
-      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
-    size: 1.5
-    costBuy: 17500
-    costSell: 15000
-    transferTime: 48
-    clipSize: 1
   - type: STR_VULCAN_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_GATLING_CANNONS, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-  - type: STR_VULCAN_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_GATLING_CANNONS, STR_TIER_1]
-    requires:
-      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
-    size: 0.1
-    costBuy: 2080
-    costSell: 1600
-    transferTime: 96
-    clipSize: 50
   - type: STR_ATOLL_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     costBuy: 21000
     costSell: 18000
     transferTime: 48
-  - type: STR_ATOLL_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
-      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    size: 0.4
-    costBuy: 6000
-    costSell: 4000
-    transferTime: 48
-    clipSize: 1
   - type: STR_ACRID_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-  - type: STR_ACRID_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
-      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    size: 1.5
-    costBuy: 17500
-    costSell: 15000
-    transferTime: 48
-    clipSize: 1
   - type: STR_GSH_23_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-  - type: STR_GSH_23_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_SOVIET_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
-    requires:
-      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-    size: 0.1
-    costBuy: 2080
-    costSell: 1600
-    transferTime: 48
-    clipSize: 50
   - type: STR_RED_TOP_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     costBuy: 21000
     costSell: 18000
     transferTime: 48
-  - type: STR_RED_TOP_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_LIGHT_MISSILES, STR_TIER_1]
-    requires:
-      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    size: 0.4
-    costBuy: 6000
-    costSell: 4000
-    transferTime: 48
-    clipSize: 1
   - type: STR_MATRA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-  - type: STR_MATRA_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_HEAVY_MISSILES, STR_TIER_1]
-    requires:
-      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    size: 1.5
-    costBuy: 17500
-    costSell: 15000
-    transferTime: 48
-    clipSize: 1
   - type: STR_ADEN_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
-    requires:
+    requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-  - type: STR_ADEN_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_NATO_TECH, STR_REVOLVER_CANNONS, STR_TIER_1]
-    requires:
-      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-    size: 0.1
-    costBuy: 2080
-    costSell: 1600
-    transferTime: 48
-    clipSize: 50
   - type: STR_FALCON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
     size: 1
     costBuy: 32000
     costSell: 27000
     transferTime: 48
-  - type: STR_FALCON_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
-    size: 1.5
-    costBuy: 17500
-    costSell: 15000
-    transferTime: 48
-    clipSize: 1
+
   - type: STR_MIGHTY_MOUSE_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_ROCKETS, STR_TIER_1]
     size: 1.5
     costBuy: 35000
     costSell: 37500
     transferTime: 48
-  - type: STR_MIGHTY_MOUSE_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_ROCKETS, STR_TIER_1]
-    size: 0.1
-    costBuy: 2080
-    costSell: 1600
-    transferTime: 48
-    clipSize: 4
+
 ########################################
   - type: STR_FUEL_TANK
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_AUX, STR_TIER_1]
@@ -3001,17 +2922,7 @@ items:
     size: 0.8
     costSell: 35000
     transferTime: 48
-  - type: STR_SHORTSWORD_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
-    requires:
-      - STR_IMPROVED_LIGHT_MISSILE
-    size: 0.4
-    costBuy: 8000
-    costSell: 4000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-    clipSize: 1
+
 
   - type: STR_HAMMER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
@@ -3020,17 +2931,7 @@ items:
     size: 0.8
     costSell: 38000
     transferTime: 48
-  - type: STR_HAMMER_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
-    requires:
-      - STR_IMPROVED_HEAVY_MISSILE
-    size: 0.4
-    costBuy: 20000
-    costSell: 10000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-    clipSize: 1
+
 
   - type: STR_PHOENIX_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
@@ -3039,17 +2940,7 @@ items:
     size: 0.8
     costSell: 127000
     transferTime: 48
-  - type: STR_PHOENIX_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
-    requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
-    size: 0.4
-    costBuy: 50000
-    costSell: 25000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-    clipSize: 1
+
 
   - type: STR_HYDRA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
@@ -3058,17 +2949,7 @@ items:
     size: 0.8
     costSell: 38000
     transferTime: 48
-  - type: STR_HYDRA_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_2]
-    requires:
-      - STR_IMPROVED_ROCKET
-    size: 0.4
-    costBuy: 12000
-    costSell: 6000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-    clipSize: 8
+
 
   - type: STR_ATHENA_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
@@ -3077,17 +2958,7 @@ items:
     size: 1.5
     costSell: 38500
     transferTime: 48
-  - type: STR_ATHENA_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
-    requires:
-      - STR_IMPROVED_GATLING_CANNON
-    size: 0.1
-    costBuy: 7000
-    costSell: 3500
-    transferTime: 96
-    requiresBuy:
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-    clipSize: 50
+
 
   - type: STR_MAUSER_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
@@ -3096,17 +2967,7 @@ items:
     size: 1.5
     costSell: 37500
     transferTime: 48
-  - type: STR_MAUSER_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
-    requires:
-      - STR_IMPROVED_REVOLVER_CANNON
-    size: 0.1
-    costBuy: 7000
-    costSell: 3500
-    transferTime: 96
-    requiresBuy:
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-    clipSize: 50
+
 
 #############################################
 ###### TIER III LASER CRAFT WEAPONS #########
@@ -3136,17 +2997,7 @@ items:
     size: 0.8
     costSell: 35000
     transferTime: 48
-  - type: STR_LONGSWORD_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
-    requires:
-      - STR_IMPROVED_LIGHT_MISSILE
-    size: 0.4
-    costBuy: 12000
-    costSell: 6000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
-    clipSize: 1
+
 
   - type: STR_KATANA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
@@ -3155,36 +3006,18 @@ items:
     size: 0.8
     costSell: 38000
     transferTime: 48
-  - type: STR_KATANA_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
-    requires:
-      - STR_IMPROVED_HEAVY_MISSILE
-    size: 0.4
-    costBuy: 24000
-    costSell: 12000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
-    clipSize: 1
+
 
   - type: STR_ADLER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
+#    requiresBuy:
+#     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
     costSell: 127000
     transferTime: 48
-  - type: STR_ADLER_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
-    requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
-    size: 0.4
-    costBuy: 70000
-    costSell: 35000
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
-    clipSize: 1
+
 
   - type: STR_GORGON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
@@ -3193,17 +3026,7 @@ items:
     size: 0.8
     costSell: 38000
     transferTime: 48
-  - type: STR_GORGON_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_3]
-    requires:
-      - STR_IMPROVED_ROCKET
-    size: 0.4
-    costBuy: 17000
-    costSell: 8500
-    transferTime: 48
-    requiresBuy:
-     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
-    clipSize: 4
+
 
 #TIER 4
 
@@ -3212,27 +3035,13 @@ items:
     size: 2.0
     costSell: 211000
     transferTime: 48
-  - type: STR_VOSTOK_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_4]
-    requires:
-      - STR_IMPROVED_REVOLVER_CANNON
-    size: 0.1
-    costSell: 8600
-    transferTime: 96
-    clipSize: 50
+
   - type: STR_ZEUS_CANNON
     listOrder: 910
     size: 2.0
     costSell: 233500
     transferTime: 48
-  - type: STR_ZEUS_CANNON_ROUNDS_X50
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_4]
-    requires:
-      - STR_IMPROVED_REVOLVER_CANNON
-    size: 0.1
-    costSell: 8600
-    transferTime: 96
-    clipSize: 50
+
 
   - type: STR_LASER_LANCE
     listOrder: 910
@@ -3247,14 +3056,7 @@ items:
     size: 0.8
     costSell: 35000
     transferTime: 48
-  - type: STR_EXCALIBUR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
-    requires:
-      - STR_IMPROVED_LIGHT_MISSILE
-    size: 0.4
-    costSell: 14000
-    transferTime: 48
-    clipSize: 1
+
 
   - type: STR_MJOLNIR_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3263,14 +3065,7 @@ items:
     size: 0.8
     costSell: 38000
     transferTime: 48
-  - type: STR_MJOLNIR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
-    requires:
-      - STR_IMPROVED_HEAVY_MISSILE
-    size: 0.4
-    costSell: 15000
-    transferTime: 48
-    clipSize: 1
+
 
   - type: STR_KONDOR_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3279,14 +3074,7 @@ items:
     size: 0.8
     costSell: 127000
     transferTime: 48
-  - type: STR_KONDOR_MISSILES
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
-    requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
-    size: 0.4
-    costSell: 2500
-    transferTime: 48
-    clipSize: 1
+
 
   - type: STR_KRAKEN_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3295,14 +3083,7 @@ items:
     size: 0.8
     costSell: 38000
     transferTime: 48
-  - type: STR_KRAKEN_ROCKETS
-    categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_HEAVY_MISSILES, STR_TIER_4]
-    requires:
-      - STR_IMPROVED_ROCKET
-    size: 0.4
-    costSell: 28000
-    transferTime: 48
-    clipSize: 4
+
 
 #}
 manufacture:
@@ -3397,28 +3178,6 @@ manufacture:
       STR_ALIEN_ALLOYS: 12
     producedItems:
       STR_MAUSER_CANNON: 1
-  - name: STR_ALLOY_CANNON_CRAFT_WEAPONS_AMMO
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_IMPROVED_REVOLVER_CANNON
-    space: 6
-    time: 100
-    cost: 20000
-    producedItems:
-      STR_MAUSER_CANNON_ROUNDS_X50: 4
-
-  - name: STR_ALLOY_GATLING_CRAFT_WEAPONS_AMMO
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_IMPROVED_GATLING_CANNON
-    space: 6
-    time: 100
-    cost: 20000
-    producedItems:
-      STR_ATHENA_CANNON_ROUNDS_X50: 4
-
 
   - name: STR_SHORTSWORD_LAUNCHER
     listOrder: 50
@@ -3432,16 +3191,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 15
     producedItems:
       STR_SHORTSWORD_LAUNCHER: 1
-  - name: STR_SHORTSWORD_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_IMPROVED_LIGHT_MISSILE
-    space: 6
-    time: 100
-    cost: 20000
-    producedItems:
-      STR_SHORTSWORD_MISSILES: 3
+
 
   - name: STR_HAMMER_LAUNCHER
     listOrder: 50
@@ -3455,16 +3205,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 25
     producedItems:
       STR_HAMMER_LAUNCHER: 1
-  - name: STR_HAMMER_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_IMPROVED_HEAVY_MISSILE
-    space: 6
-    time: 100
-    cost: 40000
-    producedItems:
-      STR_HAMMER_MISSILES: 3
+
 
   - name: STR_HYDRA_LAUNCHER
     listOrder: 50
@@ -3478,16 +3219,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 25
     producedItems:
       STR_HYDRA_LAUNCHER: 1
-  - name: STR_HYDRA_ROCKETS
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_IMPROVED_ROCKET
-    space: 6
-    time: 100
-    cost: 20000
-    producedItems:
-      STR_HYDRA_ROCKETS: 2
+
 
   - name: STR_PHOENIX_LAUNCHER
     listOrder: 50
@@ -3501,16 +3233,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 30
     producedItems:
       STR_PHOENIX_LAUNCHER: 1
-  - name: STR_PHOENIX_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_IMPROVED_SUPER_HEAVY_MISSILE
-    space: 6
-    time: 100
-    cost: 40000
-    producedItems:
-      STR_PHOENIX_MISSILES: 1
+
 
 ####################################
 ######### AIRCRAFT #################
@@ -3593,16 +3316,7 @@ manufacture:
       STR_ELERIUM_115: 5
     producedItems:
       STR_LONGSWORD_LAUNCHER: 1
-  - name: STR_LONGSWORD_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_LONGSWORD_FUSION_MISSILE
-    space: 6
-    time: 100
-    cost: 30000
-    producedItems:
-      STR_LONGSWORD_MISSILES: 3
+
 
   - name: STR_KATANA_LAUNCHER
     listOrder: 50
@@ -3617,16 +3331,7 @@ manufacture:
       STR_ELERIUM_115: 5
     producedItems:
       STR_KATANA_LAUNCHER: 1
-  - name: STR_KATANA_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_KATANA
-    space: 6
-    time: 100
-    cost: 50000
-    producedItems:
-      STR_KATANA_MISSILES: 3
+
 
   - name: STR_GORGON_LAUNCHER
     listOrder: 50
@@ -3641,16 +3346,7 @@ manufacture:
       STR_ELERIUM_115: 5
     producedItems:
       STR_GORGON_LAUNCHER: 1
-  - name: STR_GORGON_ROCKETS
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_GORGON_ROCKETS
-    space: 6
-    time: 100
-    cost: 30000
-    producedItems:
-      STR_GORGON_ROCKETS: 2
+
 
   - name: STR_ADLER_LAUNCHER
     listOrder: 50
@@ -3665,16 +3361,7 @@ manufacture:
       STR_ELERIUM_115: 10
     producedItems:
       STR_ADLER_LAUNCHER: 1
-  - name: STR_ADLER_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_ADLER
-    space: 6
-    time: 100
-    cost: 60000
-    producedItems:
-      STR_ADLER_MISSILES: 1
+
 
   - name: STR_LASER_SPIKE
     listOrder: 50
@@ -3704,16 +3391,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 20
       STR_ELERIUM_115: 5
-  - name: STR_ZEUS_CANNON_ROUNDS_X50
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_ZEUS
-    space: 6
-    time: 100
-    cost: 50000
-    producedItems:
-      STR_ZEUS_CANNON_ROUNDS_X50: 4
+
 
   - name: STR_VOSTOK_CANNON
     category: STR_CRAFT_WEAPON
@@ -3725,16 +3403,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 25
       STR_ELERIUM_115: 5
-  - name: STR_VOSTOK_CANNON_ROUNDS_X50
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_VOSTOK_PLASMA_CANNON
-    space: 6
-    time: 100
-    cost: 50000
-    producedItems:
-      STR_VOSTOK_CANNON_ROUNDS_X50: 4
+
 
   - name: STR_EXCALIBUR_LAUNCHER
     listOrder: 50
@@ -3750,16 +3419,7 @@ manufacture:
       STR_UFO_NAVIGATION: 1
     producedItems:
       STR_EXCALIBUR_LAUNCHER: 1
-  - name: STR_EXCALIBUR_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_EXCALIBUR_LIGHT_MISSILE
-    space: 6
-    time: 100
-    cost: 40000
-    producedItems:
-      STR_EXCALIBUR_MISSILES: 3
+
 
   - name: STR_MJOLNIR_LAUNCHER
     listOrder: 50
@@ -3775,16 +3435,7 @@ manufacture:
       STR_UFO_NAVIGATION: 1
     producedItems:
       STR_MJOLNIR_LAUNCHER: 1
-  - name: STR_MJOLNIR_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_MJOLNIR
-    space: 6
-    time: 100
-    cost: 55000
-    producedItems:
-      STR_MJOLNIR_MISSILES: 3
+
 
   - name: STR_KRAKEN_LAUNCHER
     listOrder: 50
@@ -3800,16 +3451,7 @@ manufacture:
       STR_UFO_NAVIGATION: 1
     producedItems:
       STR_KRAKEN_LAUNCHER: 1
-  - name: STR_KRAKEN_ROCKETS
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_KRAKEN_ROCKETS
-    space: 6
-    time: 100
-    cost: 40000
-    producedItems:
-      STR_KRAKEN_ROCKETS: 2
+
 
   - name: STR_KONDOR_LAUNCHER
     listOrder: 50
@@ -3825,16 +3467,7 @@ manufacture:
       STR_UFO_NAVIGATION: 1
     producedItems:
       STR_KONDOR_LAUNCHER: 1
-  - name: STR_KONDOR_MISSILES
-    listOrder: 50
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_KONDOR
-    space: 6
-    time: 100
-    cost: 70000
-    producedItems:
-      STR_KONDOR_MISSILES: 1
+
 
   - name: STR_LASER_LANCE
     listOrder: 50
@@ -4513,6 +4146,54 @@ extraSprites:
     height: 200
     files:
       0: Resources/AircraftWeapons/KODIAK.png
+  - type: ZEUS_PLASMA_GATLING
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/ZEUS_PLASMA_GATLING.png
+  - type: VOSTOK_PLASMA_CANNON
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/VOSTOK_PLASMA_CANNON.png
+  - type: GORGON_FUSSION_ROCKET_POD
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/GORGON_FUSSION_ROCKET_POD.png
+  - type: LONGSWORD_FUSION_LIGHT_MISSILE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/LONGSWORD_FUSION_LIGHT_MISSILE.png
+  - type: KATANA_FUSION_HEAVY_MISSILE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/KATANA_FUSION_HEAVY_MISSILE.png
+  - type: KONDOR_FUSION_SUPER_HEAVY_MISSILE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/KONDOR_FUSION_SUPER_HEAVY_MISSILE.png
+  - type: CASABA_HOWITZER_IMPROVED
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/CASABA_HOWITZER_IMPROVED.png
+  - type: CASABA_HOWITZER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AircraftWeapons/CASABA_HOWITZER.png
 ################################
 ####### CRAFT RESEARCH ########
 ##############################
@@ -4664,6 +4345,8 @@ extraStrings:
 
       STR_CRAFT_ROCKET_LIGHT_TWO: "LIGHT MISSILE/ROCKET-2{ALT}{0}"
 
+      STR_CRAFT_LIGHT_HEAVY_MISSILE_AUX_FOUR: "LIGHT/HEAVY MISSILE/AUX-4>{ALT}{0}"
+
       STR_UNEXCOM_FIGHTERS: "UNEXCOM AIRCRAFT"
       STR_LIGHT_MISSILE: "LIGHT MISSILES"
       STR_HEAVY_MISSILE: "HEAVY MISSILES"
@@ -4813,7 +4496,7 @@ extraStrings:
       STR_SABRE: "SABRE"
       STR_DYNASOAR: "DYNA-SOAR"
       STR_HERMES: "HERMES"
-      STR_MIG_105: "Fiery"
+      STR_MIG_105: "FIERY"
       STR_BASTION: "BASTION"
       STR_SPACE_SHUTTLE: "RAIDER SHUTTLE"
       STR_BLACKBIRD: "BLACKBIRD"

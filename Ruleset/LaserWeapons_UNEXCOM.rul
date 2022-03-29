@@ -467,7 +467,7 @@ items:
     invHeight: 3
     armor: 30
 #    explosionHitSound: 113
-    hitAnimation: 8
+    hitAnimation: 0
     power: 80
     costAuto:
       time: 35
@@ -484,6 +484,9 @@ items:
 #    bulletSpeed: 8
     experienceTrainingMode: 7
     attraction: 7
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
 
 ###################################
 ###### NATO LASER WEAPONS #########
@@ -500,7 +503,7 @@ items:
     bigSprite: 2009
     floorSprite: 2009
     handSprite: 2072
-    fireSound: 2960
+    fireSound: 2970
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
@@ -544,7 +547,7 @@ items:
     bigSprite: 2010
     floorSprite: 2010
     handSprite: 2080
-    fireSound: 2963
+    fireSound: 2972
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
@@ -593,7 +596,7 @@ items:
     bigSprite: 2011
     floorSprite: 2011
     handSprite: 2088
-    fireSound: 2963
+    fireSound: 2972
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 28
@@ -641,7 +644,7 @@ items:
     bigSprite: 2012
     floorSprite: 2012
     handSprite: 2096
-    fireSound: 2963
+    fireSound: 2976
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
@@ -689,7 +692,7 @@ items:
     bigSprite: 2013
     floorSprite: 2013
     handSprite: 2104
-    fireSound: 2962
+    fireSound: 2971
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 28
@@ -741,7 +744,7 @@ items:
     bigSprite: 2014
     floorSprite: 2014
     handSprite: 2112
-    fireSound: 2964
+    fireSound: 2975
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
@@ -788,7 +791,7 @@ items:
     bigSprite: 2015
     floorSprite: 2015
     handSprite: 2120
-    fireSound: 2966
+    fireSound: 2974
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 28
@@ -981,7 +984,7 @@ items:
     bigSprite: 2021
     floorSprite: 2021
     handSprite: 2128
-    fireSound: 2960
+    fireSound: 2980
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
@@ -1025,7 +1028,7 @@ items:
     bigSprite: 2022
     floorSprite: 2022
     handSprite: 2136
-    fireSound: 2963
+    fireSound: 2982
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
@@ -1076,7 +1079,7 @@ items:
     bigSprite: 2023
     floorSprite: 2023
     handSprite: 2144
-    fireSound: 2963
+    fireSound: 2983
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
@@ -1122,7 +1125,7 @@ items:
     bigSprite: 2024
     floorSprite: 2024
     handSprite: 2152
-    fireSound: 2962
+    fireSound: 2981
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 29
@@ -1173,7 +1176,7 @@ items:
     bigSprite: 2025
     floorSprite: 2025
     handSprite: 2160
-    fireSound: 2964
+    fireSound: 2984
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
@@ -1220,7 +1223,7 @@ items:
     bigSprite: 2026
     floorSprite: 2026
     handSprite: 2168
-    fireSound: 2966
+    fireSound: 2985
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 29
@@ -1278,7 +1281,7 @@ items:
     bigSprite: 2027
     floorSprite: 2027
     handSprite: 2176
-    fireSound: 2964
+    fireSound: 2986
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
@@ -1555,14 +1558,3 @@ extraSprites:
       1015: Resources/BulletSprites/WideRedLaser_Bullet.png # 29
       1050: Resources/BulletSprites/FlameProjectile.png # 30
 
-extraSounds:
-  - type: BATTLE.CAT
-    files:
-      2960: Resources/LaserWeapons/Sounds/laserpistol_fire.wav
-      2961: Resources/LaserWeapons/Sounds/lasermagnum_fire.wav
-      2962: Resources/LaserWeapons/Sounds/lasersmg_fire.wav
-      2963: Resources/LaserWeapons/Sounds/laserrifle_fire.wav
-      2964: Resources/LaserWeapons/Sounds/laserdmr_fire.wav
-      2965: Resources/LaserWeapons/Sounds/lasersniper_fire.wav
-      2966: Resources/LaserWeapons/Sounds/laserlmg_fire.wav
-      2967: Resources/LaserWeapons/Sounds/flamethrower_fire.wav

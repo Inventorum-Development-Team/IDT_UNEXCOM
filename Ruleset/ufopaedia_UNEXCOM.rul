@@ -851,7 +851,7 @@ ufopaedia:
   - id: STR_ZEUS
     section: STR_CRAFT_ARMAMENT
     listOrder: 1005
-    image_id: UP011.SPK
+    image_id: ZEUS_PLASMA_GATLING
     requires:
       - STR_ZEUS
     type_id: 2
@@ -901,7 +901,7 @@ ufopaedia:
 
   - id: STR_VOSTOK_PLASMA_CANNON
     section: STR_CRAFT_ARMAMENT
-    image_id: UP011.SPK
+    image_id: VOSTOK_PLASMA_CANNON
     requires:
       - STR_VOSTOK_PLASMA_CANNON
     type_id: 2
@@ -934,7 +934,7 @@ ufopaedia:
 
   - id: STR_GORGON_ROCKETS
     section: STR_CRAFT_ARMAMENT
-    image_id: HYDRA
+    image_id: GORGON_FUSSION_ROCKET_POD
     requires:
       - STR_GORGON_ROCKETS
     type_id: 2
@@ -996,7 +996,7 @@ ufopaedia:
 
   - id: STR_LONGSWORD_FUSION_MISSILE
     section: STR_CRAFT_ARMAMENT
-    image_id: SHORTSWORD
+    image_id: LONGSWORD_FUSION_LIGHT_MISSILE
     requires:
       - STR_LONGSWORD_FUSION_MISSILE
     type_id: 2
@@ -1058,7 +1058,7 @@ ufopaedia:
 
   - id: STR_KATANA
     section: STR_CRAFT_ARMAMENT
-    image_id: HAMMER
+    image_id: KATANA_FUSION_HEAVY_MISSILE
     requires:
       - STR_KATANA
     type_id: 2
@@ -1109,7 +1109,7 @@ ufopaedia:
 
   - id: STR_KONDOR
     section: STR_CRAFT_ARMAMENT
-    image_id: PHOENIX
+    image_id: KONDOR_FUSION_SUPER_HEAVY_MISSILE
     requires:
       - STR_KONDOR
     type_id: 2
@@ -1118,7 +1118,7 @@ ufopaedia:
 
   - id: STR_CASABA_SPIKE
     section: STR_CRAFT_ARMAMENT
-    image_id: KODIAK
+    image_id: CASABA_HOWITZER
     requires:
       - STR_CASABA_SPIKE
     type_id: 2
@@ -1127,7 +1127,7 @@ ufopaedia:
 
   - id: STR_CASABA_LANCE
     section: STR_CRAFT_ARMAMENT
-    image_id: KODIAK
+    image_id: CASABA_HOWITZER_IMPROVED
     requires:
       - STR_CASABA_LANCE
     type_id: 2
@@ -2013,7 +2013,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_CLOSE
-    text: STR_FLECHETTE_PISTOL_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_PISTOL
+      text: STR_FLECHETTE_PISTOL_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_PISTOL
+      text: STR_FLECHETTE_PISTOL_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4014
   - id: STR_HUMAN_PLASMA_PISTOL
     type_id: 4
@@ -2193,7 +2199,10 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_CLOSE
-    text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_SHOTGUN
+      text: STR_FLECHETTE_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
     listOrder: 4208
   - id: STR_FLECHETTE_AUTO_SHOTGUN
     type_id: 4
@@ -2320,7 +2329,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_RIFLES
-    text: STR_FLECHETTE_CARBINE_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_CARBINE
+      text: STR_FLECHETTE_CARBINE_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_CARBINE
+      text: STR_FLECHETTE_CARBINE_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4314
 
   - id: STR_RIFLE_REPORT
@@ -2453,7 +2468,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_RIFLES
-    text: STR_FLECHETTE_RIFLE_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_RIFLE
+      text: STR_FLECHETTE_RIFLE_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_RIFLE
+      text: STR_FLECHETTE_RIFLE_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4416
 
   - id: STR_HUMAN_PLASMA_RIFLE
@@ -2463,6 +2484,14 @@ ufopaedia:
       - STR_REMAN_HUMAN_PLASMA_RIFLE
     text: STR_HUMAN_PLASMA_RIFLE_UFOPEDIA
     listOrder: 4417
+
+  - id: STR_HUMAN_FUSION_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HYBRID_FUSION_PROJECT
+    text: STR_HUMAN_FUSION_RIFLE_UFOPEDIA
+    listOrder: 4418
 
   - id: STR_LMG_REPORT
     type_id: 7
@@ -2558,7 +2587,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_HEAVY
-    text: STR_FLECHETTE_CANNON_UFOPEDIA
+    pages:
+    - title: STR_FLECHETTE_CANNON
+      text: STR_FLECHETTE_CANNON_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_CANNON
+      text: STR_FLECHETTE_CANNON_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4508
 
   - id: STR_HUMAN_PLASMA_LMG
@@ -2577,13 +2612,21 @@ ufopaedia:
     text_width: 150
     listOrder: 4600
 
+  - id: STR_STONER_SNIPER
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_STONER_SNIPER_UFOPEDIA
+    listOrder: 4301
+
   - id: STR_HUNTING_RIFLE
     requires:
       - STR_HUNTING_RIFLE
     type_id: 4
     section: STR_WEAPONS
     text: STR_HUNTING_RIFLE_UFOPEDIA
-    listOrder: 4601
+    listOrder: 4602
 
   - id: STR_AR5
     requires:
@@ -2591,7 +2634,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_AR5_UFOPEDIA
-    listOrder: 4602
+    listOrder: 4603
 
   - id: STR_SKS
     requires:
@@ -2599,7 +2642,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_SKS_UFOPEDIA
-    listOrder: 4603
+    listOrder: 4604
 
   - id: STR_XM21
     requires:
@@ -2607,7 +2650,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_XM21_UFOPEDIA
-    listOrder: 4604
+    listOrder: 4605
 
   - id: STR_PSG1
     requires:
@@ -2615,7 +2658,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_PSG1_UFOPEDIA
-    listOrder: 4605
+    listOrder: 4606
 
   - id: STR_DRAGUNOV
     requires:
@@ -2623,7 +2666,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_DRAGUNOV_UFOPEDIA
-    listOrder: 4606
+    listOrder: 4607
 
   - id: STR_ULYSSES_LASER_SNIPER_RIFLE
     type_id: 4
@@ -2631,7 +2674,7 @@ ufopaedia:
     requires:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
-    listOrder: 4607
+    listOrder: 4608
 
   - id: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     type_id: 4
@@ -2639,7 +2682,7 @@ ufopaedia:
     requires:
       - STR_NATO_LASER_HEAVY_WEAPONS
     text: STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA
-    listOrder: 4608
+    listOrder: 4609
 
   - id: STR_MIRINOV_LASER_SNIPER
     type_id: 4
@@ -2647,15 +2690,21 @@ ufopaedia:
     requires:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
-    listOrder: 4609
+    listOrder: 4610
 
   - id: STR_FLECHETTE_SNIPER
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_ALLOY_HEAVY
-    text: STR_FLECHETTE_SNIPER_UFOPEDIA
-    listOrder: 4610
+    pages:
+    - title: STR_FLECHETTE_SNIPER
+      text: STR_FLECHETTE_SNIPER_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FLECHETTE_SNIPER
+      text: STR_FLECHETTE_SNIPER_UFOPEDIA
+      ammoSlot: 1
+    listOrder: 4611
 
   - id: STR_HUMAN_PLASMA_DMR
     type_id: 4
@@ -2663,14 +2712,14 @@ ufopaedia:
     requires:
       - STR_HUMAN_PLASMA_DMR
     text: STR_HUMAN_PLASMA_DMR_UFOPEDIA
-    listOrder: 4611
+    listOrder: 4612
   - id: STR_HUMAN_SNIPER_PLASMA
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_HUMAN_SNIPER_PLASMA
     text: STR_HUMAN_SNIPER_PLASMA_UFOPEDIA
-    listOrder: 4612
+    listOrder: 4613
 
   - id: STR_ARTILLERY_REPORT
     type_id: 7
@@ -3240,10 +3289,6 @@ ufopaedia:
     requires:
       - STR_HUMAN_PLASMA_LMG
 
-  - id: STR_STUN_BOMB
-    section: STR_AMMUNITION
-    listOrder: 5300
-
   #Equipment
 
   - id: STR_MOTION_SCANNER
@@ -3442,7 +3487,7 @@ ufopaedia:
     section: STR_ARMOR
     listOrder: 7002
     requires:
-      - STR_SPECIAL_FORCES_RESEARCH
+      - STR_SPECIAL_FORCES_SUPPORT
     text: STR_SPECIAL_FORCES_UNIFORM_UFOPEDIA
 
   - id: STR_MERCENARY_UNIFORM_UC
@@ -3719,33 +3764,105 @@ ufopaedia:
   #Alien Lifeforms
 
   - id: STR_SECTOID
+    image_id: SECTOID_UFOPEDIA_IMAGE
     listOrder: 11000
-  - id: STR_SECTOID_AUTOPSY
+  - id: STR_SECTOID_COMMANDER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SECTOID_COMMANDER
+    image_id: SECTOID_COMMANDER_UFOPEDIA_IMAGE
+    text: STR_SECTOID_COMMANDER_UFOPEDIA
+    text_width: 158
     listOrder: 11001
-
-  - id: STR_FLOATER
+  - id: STR_SECTOID_COMMANDER_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SECTOID_COMMANDER_CORPSE
+    image_id: UP025.SPK
+    text: STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA
+    text_width: 158
+    listOrder: 11001
+  - id: STR_ARMORED_SECTOID
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_SECTOID
+    image_id: ARMORED_SECTOID_UFOPEDIA_IMAGE
+    text: STR_ARMORED_SECTOID_UFOPEDIA
+    text_width: 158
     listOrder: 11002
-
-  - id: STR_FLOATER_AUTOPSY
+  - id: STR_SECTOID_AUTOPSY
     listOrder: 11003
 
-  - id: STR_SNAKEMAN
+  - id: STR_FLOATER
+    image_id: FLOATER_UFOPEDIA_IMAGE
     listOrder: 11004
-
-  - id: STR_SNAKEMAN_AUTOPSY
+  - id: STR_ARMORED_FLOATER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_FLOATER
+    image_id: ARMORED_FLOATER_UFOPEDIA_IMAGE
+    text: STR_ARMORED_FLOATER_UFOPEDIA
+    text_width: 158
     listOrder: 11005
 
-  - id: STR_MUTON
+  - id: STR_FLOATER_AUTOPSY
     listOrder: 11006
 
-  - id: STR_MUTON_AUTOPSY
+  - id: STR_SNAKEMAN
     listOrder: 11007
+  #- id: STR_NAKED_SNAKEMAN
+  #  listOrder: 11008
+
+  - id: STR_SNAKEMAN_AUTOPSY
+    listOrder: 11009
+
+  - id: STR_MUTON
+    image_id: MUTON_UFOPEDIA_IMAGE
+    listOrder: 11010
+  - id: STR_MUTON_LEADER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MUTON_LEADER
+    image_id: MUTON_LEADER_UFOPEDIA_IMAGE
+    text: STR_MUTON_LEADER_UFOPEDIA
+    text_width: 158
+    listOrder: 11011
+
+  - id: STR_ARMORED_MUTON
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_MUTON
+    image_id: ARMORED_MUTON_UFOPEDIA_IMAGE
+    text: STR_ARMORED_MUTON_UFOPEDIA
+    text_width: 158
+    listOrder: 11012
+  - id: STR_ARMORED_MUTON_LEADER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMORED_MUTON_LEADER
+    image_id: ARMORED_MUTON_LEADER_UFOPEDIA_IMAGE
+    text: STR_ARMORED_MUTON_LEADER_UFOPEDIA
+    text_width: 158
+    listOrder: 11013
+  - id: STR_MUTON_AUTOPSY
+    listOrder: 11014
 
   - id: STR_ETHEREAL
-    listOrder: 11008
+    listOrder: 11015
+  #- id: STR_ETHEREAL
+  #  listOrder: 11016
+  #- id: STR_ETHEREAL
+  #  listOrder: 11017
 
   - id: STR_ETHEREAL_AUTOPSY
-    listOrder: 11009
+    listOrder: 11018
 
   - id: STR_CHTONITE
     type_id: 7
@@ -3755,7 +3872,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CHTONITE
     text: STR_CHTONITE_UFOPAEDIA
     text_width: 158
-    listOrder: 11010
+    listOrder: 11019
   - id: STR_CHTONITE_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3764,7 +3881,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CHTONITE_AUTOPSY
     text: STR_CHTONITE_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11011
+    listOrder: 11020
   - id: STR_CEREBREAL
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3773,7 +3890,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL
     text: STR_CEREBREAL_UFOPAEDIA
     text_width: 158
-    listOrder: 11012
+    listOrder: 11021
   - id: STR_CEREBREAL_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3782,7 +3899,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL_AUTOPSY
     text: STR_CEREBREAL_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11013
+    listOrder: 11022
   - id: STR_CEREBREAL_LARVA
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3791,7 +3908,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA
     text: STR_CEREBREAL_LARVA_UFOPAEDIA
     text_width: 158
-    listOrder: 11014
+    listOrder: 11023
   - id: STR_CEREBREAL_LARVA_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3800,7 +3917,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_CEREBREAL_LARVA_AUTOPSY
     text: STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11013
+    listOrder: 11024
   - id: STR_REPTOID
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3809,7 +3926,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_REPTOID
     text: STR_REPTOID_UFOPAEDIA
     text_width: 158
-    listOrder: 11013
+    listOrder: 11025
   - id: STR_REPTOID_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3818,43 +3935,101 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_REPTOID_AUTOPSY
     text: STR_REPTOID_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11014
-
-  - id: STR_CYBERDISC
-    listOrder: 11100
-
-  - id: STR_CYBERDISC_AUTOPSY
-    listOrder: 11101
-
-  - id: STR_REAPER
-    listOrder: 11102
-
-  - id: STR_REAPER_AUTOPSY
-    listOrder: 11103
-
-  - id: STR_CHRYSSALID
-    listOrder: 11104
-
-  - id: STR_CHRYSSALID_AUTOPSY
-    listOrder: 11105
-
-  - id: STR_CELATID
-    listOrder: 11106
-
-  - id: STR_CELATID_AUTOPSY
-    listOrder: 11107
-
-  - id: STR_SILACOID
-    listOrder: 11108
-
-  - id: STR_SILACOID_AUTOPSY
-    listOrder: 11109
+    listOrder: 11026
 
   - id: STR_SECTOPOD
-    listOrder: 11110
+    text: STR_SECTOPOD_UFOPEDIA
+    listOrder: 11127
 
   - id: STR_SECTOPOD_AUTOPSY
-    listOrder: 11111
+    listOrder: 11128
+
+  - id: STR_CYBERDISC
+    listOrder: 11129
+
+  - id: STR_CYBERDISC_AUTOPSY
+    listOrder: 11130
+
+  - id: STR_MECHTOID
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MECHTOID
+    image_id: MECHTOID_UFOPEDIA_IMAGE
+    text: STR_MECHTOID_UFOPEDIA
+    text_width: 150
+    listOrder: 11131
+  - id: STR_MECHTOID_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: AUTOPSY_IMAGE
+    text: STR_MECHTOID_AUTOPSY_UFOPEDIA
+    requires:
+      - STR_MECHTOID_CORPSE
+    text_width: 158
+    listOrder: 11131
+
+  - id: STR_CYBERSPHERE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CYBERSPHERE
+    image_id: CYBERSPHERE_UFOPEDIA_IMAGE
+    text: STR_CYBERSPHERE_UFOPEDIA
+    text_width: 150
+    listOrder: 11132
+  - id: STR_CYBERSPHERE_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: AUTOPSY_IMAGE
+    text: STR_CYBERSPHERE_AUTOPSY_UFOPEDIA
+    requires:
+      - STR_CYBERSPHERE_CORPSE
+    text_width: 158
+    listOrder: 11132
+
+  - id: STR_PROBE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_PROBE
+    image_id: PROBE_UFOPEDIA_IMAGE
+    text: STR_PROBE_UFOPEDIA
+    text_width: 150
+    listOrder: 11133
+  - id: STR_PROBE_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_PROBE_CORPSE
+    image_id: PROBE_AUTOPSY_UFOPEDIA
+    text: STR_PROBE_AUTOPSY_UFOPEDIA
+    text_width: 158
+    listOrder: 11133
+
+  - id: STR_REAPER
+    listOrder: 11134
+
+  - id: STR_REAPER_AUTOPSY
+    listOrder: 11135
+
+  - id: STR_CHRYSSALID
+    listOrder: 11136
+
+  - id: STR_CHRYSSALID_AUTOPSY
+    listOrder: 11137
+
+  - id: STR_CELATID
+    listOrder: 11138
+
+  - id: STR_CELATID_AUTOPSY
+    listOrder: 11139
+
+  - id: STR_SILACOID
+    listOrder: 11140
+
+  - id: STR_SILACOID_AUTOPSY
+    listOrder: 11141
 
   - id: STR_TUNLUN
     type_id: 7
@@ -3864,7 +4039,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_TUNLUN
     text: STR_TUNLUN_UFOPAEDIA
     text_width: 158
-    listOrder: 11112
+    listOrder: 11142
   - id: STR_TUNLUN_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3873,7 +4048,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_TUNLUN_AUTOPSY
     text: STR_TUNLUN_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11113
+    listOrder: 11143
 
   - id: STR_SALAMANDRON
     type_id: 7
@@ -3883,7 +4058,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_SALAMANDRON
     text: STR_SALAMANDRON_UFOPAEDIA
     text_width: 158
-    listOrder: 11114
+    listOrder: 11144
   - id: STR_SALAMANDRON_AUTOPSY
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -3892,7 +4067,7 @@ ufopaedia:
     image_id: UFOPAEDIA_IMG_SALAMANDRON_AUTOPSY
     text: STR_SALAMANDRON_AUTOPSY_UFOPAEDIA
     text_width: 158
-    listOrder: 11115
+    listOrder: 11145
 
   #Alien Equipment
 
@@ -4033,9 +4208,26 @@ ufopaedia:
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
     requires:
-      - STR_ELERIUM_BOMB
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_PLASMA_WEAPONS
     text: STR_ELERIUM_BOMB_UFOPEDIA
     listOrder: 12013
+  - id: STR_STUN_BOMB
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    listOrder: 5300
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_PLASMA_WEAPONS
+    text: STR_STUN_BOMB_UFOPEDIA
+  - id: STR_ACID_BOMB
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    listOrder: 12014
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_PLASMA_WEAPONS
+    text: STR_ACID_BOMB_UFOPEDIA
   - id: STR_BLASTER_LAUNCHER
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12014
@@ -4048,27 +4240,30 @@ ufopaedia:
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12016
 
+  - id: STR_ALIEN_CEPHALOPOD_TISSUE
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ALIEN_CEPHALOPOD_TISSUE_UFOPEDIA
+    requires:
+      - STR_FUSION_WEAPONS_RESEARCH
+    listOrder: 12100
   - id: STR_FUSION_HANDGUN
     requires:
       - STR_FUSION_HANDGUN
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
     text: STR_FUSION_HANDGUN_UFOPEDIA
-    listOrder: 12100
+    listOrder: 12101
   - id: STR_FUSION_SMG
     requires:
       - STR_FUSION_SMG
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
     text: STR_FUSION_SMG_UFOPEDIA
-    listOrder: 12101
+    listOrder: 12102
   - id: STR_FUSION_POWER_CELL_LIGHT
     type_id: 4
-    section: STR_ALIEN_EQUIPMENT
-    text: ...
-    listOrder: 12102
-    requires:
-      - STR_FUSION_WEAPONS_RESEARCH
+    section: STR_NOT_AVAILABLE
   - id: STR_FUSION_RIFLE
     requires:
       - STR_FUSION_RIFLE
@@ -4085,11 +4280,41 @@ ufopaedia:
     listOrder: 12104
   - id: STR_FUSION_POWER_CELL_HEAVY
     type_id: 4
-    section: STR_ALIEN_EQUIPMENT
-    text: ...
-    listOrder: 12105
+    section: STR_NOT_AVAILABLE
+  - id: STR_FUSION_SPLITTER
     requires:
-      - STR_FUSION_WEAPONS_RESEARCH
+      - STR_FUSION_SPLITTER
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_FUSION_SPLITTER_UFOPEDIA
+    listOrder: 12105
+  - id: STR_FUSION_POWER_CELL_HUGE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_FUSION_LANCE
+    requires:
+      - STR_FUSION_LANCE
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_FUSION_LANCE_UFOPEDIA
+    listOrder: 12106
+  - id: STR_ETHEREAL_NOBLE_SWORD
+    requires:
+      - STR_ETHEREAL_NOBLE_SWORD
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_ETHEREAL_NOBLE_SWORD_UFOPEDIA
+    listOrder: 12107
+  - id: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    requires:
+      - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    type_id: 4
+    section: STR_ALIEN_EQUIPMENT
+    text: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_UFOPEDIA
+    listOrder: 12108
+  - id: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
   - id: STR_MIND_PROBE
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12200
@@ -4679,6 +4904,8 @@ extraStrings:
       STR_SMALL_LAUNCHER_UFOPEDIA: "Compact but powerful alien launcher, useful in a variety of combat scenarios. Versatile and deadly weapon."
 
       STR_ELERIUM_BOMB_UFOPEDIA: "Elerium Bomb, used mainly by alien terrorists, is a powerful and deadly ammunition for Small Launcher."
+
+      STR_ACID_BOMB_UFOPEDIA: "Acid Bomb rack, filled with a highly toxic chemical compound of unknown origin. Known to corrode organic tissue within minutes, even titanium armored plates offer little protection against it."
 
       STR_PLASMA_CASTER_UFOPEDIA: "This plasma pistol variant fires its charged particles at a wide spread, making it a devastating weapon."
 
@@ -5450,7 +5677,11 @@ extraStrings:
 
       STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA: They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher. The energy released seems to be controlled and focused on a certain area.
 
-      STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency. A real mystery.
+      STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Bio-Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency, which can be harvested to obtain raw Elerium. A real mystery.
+
+      STR_ALIEN_CEPHALOPOD_TISSUE_UFOPEDIA: The partially rotten carcasses of the Fusion weapon remains are essentially alien crab and squid corpses, cobbled together around a miniature reactor. The incredible resistance of the biological structure allow the weapons to withstand the huge surges of power when used with Alien Alloys used to support and make wielding surfaces (like stocks, handguards and triggers). We can reuse them with relative ease, as they are strickling similar to Earth's biological fauna - which we have abundant theory -.
+
+      STR_HUMAN_FUSION_RIFLE_UFOPEDIA: The most powerful handheld weapon available to our forces, capable of obliterating both alien infantry and armor with ease. Due our inability to replicate the process of bio-fusion, these weapons are built from captured alien weaponry. Several parts have been modified to make them suitable for field operation by our forces. The alloy casing is not only meant to make the weapon light enough to be man-portable, but to also protect the user and their squad in the case of a catastrophic malfunction.
 
       STR_FUSION_HANDGUN_UFOPEDIA: The Fusion Handgun is a lightweight, compact weapon made of a material equally resistant to Alien Alloys, but of unknown origin. It can fire energy projectiles at high speed and appears to be our enemy's new secondary weapon. Its devastating effect is surprising for its size.
 
@@ -5460,6 +5691,14 @@ extraStrings:
 
       STR_FUSION_SNIPER_UFOPEDIA: Fearsome long-range weapon. Judging by our analysis in combat, it is difficult to use (it is rarely fired in the course of battle) because of its considerable weight, but it is compensated for by its terrifying accuracy. The design and functionality is very reminiscent of an anti-tank rifle, similar to those used in WW2. Perhaps the designers' intention was to use it to disable our vehicles.
 
+      STR_FUSION_SPLITTER_UFOPEDIA: A large yet light alien close combat weapon, its used as a shotgun to clear human fortified positions and urban zones. The most fearsome characteristic of this weapon, its the claw-like protrude on the front of the weapon. Similar to crab or ant claws, it closes quickly and is able to amputate limbs of humans with ease.
+
+      STR_FUSION_LANCE_UFOPEDIA: It seems a squid-like creature was surgically attached to a large structure made of Alien Alloys. While this may be an unusual configuration, even unwieldy, this weapon projects a large and wide Fusion energy beam able to penetrate thick layers of titanium in a matter of seconds. The large stress on the alien squid-like creature kills it after approximately 10 uses.
+
+      STR_ETHEREAL_NOBLE_SWORD_UFOPEDIA: An ancient relic from a distant past, used by the Ethereal equivalent of our knights and lords. It's an extremely rare item used just by the very best soldiers in the enemy's army. It's use is not longer restricted to Ethereals only, but they are the only ones able to make them and bestow them on their new users. It channels the psi-force of the wielder to bolster the damage of the attack.
+
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_UFOPEDIA: Perhaps one of the most destructive weapons on the alien arsenal, this siege weapon is designed to obliterate fortifications with pinpoint accuracy. It's roughly the equivalent of our tactical nuclear launchers (like the M29 Davy Crockett), but with the unique ability of focusing all the Elerium Fusion energy blast into a very small area.
+
       STR_TEXAN_UFO_UFOPEDIA: Old turboprop aircraft created in 1935, recognized worldwide as a stable and reliable aircraft. Often used as a training and light attack aircraft, it is incredibly popular. Terrorists often steal them from civilian airfields and equip them with black market weapons for use in their missions.
 
       STR_MAGISTER_UFO_UFOPEDIA: Advanced training plane, built in France. It is often used as a ground attack plane and has seen action in various conflicts, both on the government force and on the rebel side. Terrorists have purchased Sidewinder missiles on the black market and are equipping them at Magister on intercept missions.
@@ -5468,7 +5707,7 @@ extraStrings:
 
       STR_MI8_UFO_UFOPEDIA: One of the most widely used helicopters in the world, the Mi-8s we face were supplied to our enemies by Superpowers, secret agencies, rebel countries or simply stolen from government hangars. It has short-range defensive weapons and can transport large numbers of troops.
 
-      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
+#      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
 
       STR_PEACEMAKER_UFOPEDIA: "A feat of ingenuity in desperate situations. Our experimental Laser-1 (XL-1) rifle is a special adaptation of alien technology. It has a damage output similar to the Alien Laser Rifle we used as the basis for building ours, although it draws more energy from our Energy Reserve than weapons built by the World Powers. Dubbed the 'Peacemaker' by our engineers, we think the name is very appropriate."
 
@@ -5528,7 +5767,7 @@ extraStrings:
 
       STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of alien alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
 
-      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the X-com team with the knowledge needed to fully decrypt this communications.
+      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the UNEXCOM team with the knowledge needed to fully decrypt this communications.
 
       STR_HYPER_WAVE_ENCODER_UFOPEDIA: With the encryption device captured from the alien base, researchers have broken the encryption used by enemy forces.  With additional research, a new facility for intercepting alien transmissions can be constructed.
 
@@ -5761,7 +6000,7 @@ extraStrings:
 
       STR_ALIEN_SHIELDS_UFOPEDIA: "Some of the alien craft are equipped with force shields that may absorb damage from missiles and bullets. They are not invincible, but they can greatly increase UFO's resistance at unexpected levels. Usually the bigger craft use them, however some small ships equip them as well."
 
-      STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: Armor plates made of Alien Alloys, designed to be installed in  UNEXCOM aircrafts to increase durability. Damage Max +100
+#     STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: Armor plates made of Alien Alloys, designed to be installed in  UNEXCOM aircrafts to increase durability. Damage Max +100
 
       STR_IMPROVED_LIGHT_MISSILE_UFOPEDIA: "Recent advances in materials science have allowed us, in collaboration with the Raytheon company, to create a new model of lightweight missile, equipped with a modern chassis built entirely with Alien Alloys. Because it is lighter, it can carry more of a heavier warhead. In addition, avionics systems designed by our engineers, based on air combat so far, have allowed to improve the built-in heat tracker."
 
@@ -5863,3 +6102,35 @@ extraStrings:
       STR_SMALL_FIGHTER_UFOPEDIA: "Though this UFO may not look like much, it is a fearsome combatant. Despite its lack of an aerodynamic design, it is faster than any aircraft found on Earth."
 
       STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant."
+
+      STR_SECTOID_COMMANDER: "Sectoid Commander"
+      STR_SECTOID_COMMANDER_AUTOPSY: "Sectoid Commander Autopsy"
+      STR_ARMORED_SECTOID: "Armored Sectoid"
+      STR_ARMORED_FLOATER: "Armored Floater"
+      STR_MUTON_LEADER: "Muton Guard"
+      STR_ARMORED_MUTON: "Shock Muton"
+      STR_ARMORED_MUTON_LEADER: "Elite Muton Guard"
+      STR_MECHTOID: "Mechtoid"
+      STR_CYBERSPHERE: "Cybersphere"
+      STR_PROBE: "Probe"
+      STR_SECTOID_PSION_AUTOPSY_UFOPEDIA: "This Sectoid has a specially build 'harness' on its body. Connected directly on the brain, provides the user of extra energy to focus and expand the intensity of the psionic energy. Basically an antenna and a battery for the user's brain. It's use seems focused on controlling minds of lesser beings."
+      STR_SECTOID_PSION_UFOPEDIA: "The 'Psions' are Sectoids specially trained to control alien beasts, even some allied aliens with lower intelligence. The 'Psionic Harness' transmits the orders directly into the subconscious mind and allows the Psion to control every aspect of the beast, from movement to neuronal activity... Pretty much like a puppeteer."
+      STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA: "This Sectoid features a larger head than it's brethren. Looks naturally grown, as there are no signs of surgical procedures. The body seems to struggle to resist the weight of the larger cranium and the brain matter inside. Obviously, a perfect target for our snipers."
+      STR_SECTOID_COMMANDER_UFOPEDIA: "A highly evolved Sectoid, it's cranial cavity was genetically expanded to fit a larger brain. The Commander has a vast array of tactical and cultural knowledge, turning it into a literal genius on the battlefield. The heightened intelligence allows to take control of larger and more complex squads of aliens than a regular Sectoid."
+      STR_MECHTOID_AUTOPSY_UFOPEDIA: "The broken chassis of this mechanized unit reveals a complex array of tubbing and armored plates, along with two powerful legs. The propulsion unit looks a miniature Elerium reactor, but protected to avoid killing the user. Deeply inside, lies the rotten corpse of a Sectoid. Probably the pilot of the armored unit. The arm-mounted Heavy Plasma Cannons are very dangerous, but relatively slow to use."
+      STR_MECHTOID_UFOPEDIA: "In order to bolster the strength of Sectoid squads, a Navigator boards a tall mechanized bipedal armor. Just the head remains unprotected. Powerful servomotors allow the 'Mechtoid' to run across large distances with ease. Compared to other units, features a relatively lighter armor (albeit still stronger than a regular human armored vehicle). It's crewman is still capable of using Psionics unhindered."
+      STR_ARMORED_SECTOID_UFOPEDIA: "In order to increase the durability of Sectoids in frontline combat against us, they have developed a fairly effective powered armor. Fully enclosed and with a breathing system, the user can withstand NBC environments and deflect standard human ballistic and plasma weaponry. They are susceptible to explosions and lasers, however."
+      STR_SECTOPOD_UFOPEDIA: "A fearsome alien robotic unit, it's often the vanguard of enemy assaults. Heavy armored and highly resistant to most damage types (lasers and explosives seem to be effective). It's biggest weakness is also it's main weapon: dual Laser Gatling-like Cannons can easily dispatch most infantry with a hailstorm of energy beams."
+      STR_ARMORED_MUTON_UFOPEDIA: "The Shock Mutons are specially trained to engage against highly organized enemy forces. Their armor protects them from all kind of damage and their enclosed helmet allows them to operate on toxic environments. The foot are unprotected, being a vulnerable side."
+      STR_ARMORED_MUTON_LEADER_UFOPEDIA: "An extremely skilled Muton warrior, employed as both commanders of large alien contingents and personal guard for the Ethereal leaders. Their armors and helmets are decorated with large ornaments, shown with pride as a sign of status. They are the peak of the Muton hierarchy."
+      STR_MUTON_LEADER_UFOPEDIA: "While regular Mutons are highly dependant on a psionic link with a superior being like Ethereals and Sectoids, this kind of alien serves as a NCOs for alien squads. They have developed a stronger individualism and will power. This is enough to command other aliens and support higher castes."
+      STR_ARMORED_FLOATER_UFOPEDIA: "Serving as the usual frontline and recon unit is costly due the poor protection of the standard harness. This is why the Floater soldiers have been improved with armor whose protection rate is similar to other frontline units. This effectively doubles the survival rate within their ranks."
+      STR_STRIDER_UFOPEDIA: "This is a subspecies of the Floaters, stronger and more resilient than their cybernetic-enhanced cousins. We think on them like the Homo Neanderthals and Homo Sapiens: two similar species with different specializations. They often wear heavy armor and provide close combat support to Floaters."
+      STR_STRIDER_AUTOPSY_UFOPEDIA: "This alien is very similar to the Floater, perhaps a variation of them or a genetic relative. The cranium looks more sturdy but with more primitive facial features. The legs and arms are muscular in appearance, probably indicating this alien is used on heavy work."
+      STR_PROBE_UFOPEDIA: "A small and very distinctive robotic unit. Used on survey and scientific missions, it's widely used to conduct recon over the area subject of study. Carries a defensive laser gun. Slow, but could kill a human soldier if left unchecked."
+      STR_PROBE_AUTOPSY_UFOPEDIA: "The small hovering unit seems to be used to scout ahead the mission site and provide light support to other combat units. The chassis seems light and somewhat weak, but we have reports of a small energy weapon used on what appears self-defense."
+      STR_CYBERSPHERE_UFOPEDIA: "A very specialized robot drone, used to seek, detect and pin down possible objectives. The data collected by this unit is relayed directly into the brains of the alien squad members, effectively turning this drone into another pair of eyes. It's extremely fast and agile."
+      STR_CYBERSPHERE_AUTOPSY_UFOPEDIA: "The wreck reveals few things about the purpose of the flying object. It doesn't have any weapon and the chassis is really thin and light, it barely resists a couple of rifle rounds. The antigravity propulsion unit is very compact too, looks like it's meant mostly as recon and survey tasks."
+      STR_ALIEN_RANKS_UFOPEDIA: "Aliens have a cohesive, organized and highly specialized military. Similar to human armies, each member of a squad has assigned a role and function. It seems they haven't developed the concept of concealment nor camuflaje, because they often use bright colors to identify each rank. Capturing them could give us a better perspective of our enemy. Red is meant to leaders. Brown is used on technicians and combat engineers. Blue is employed by sanitary and medical personnel. Orange is assigned to pilots and ship crew. Green is the color of the regular soldiers. It's unknown if the colors meant something for them or not. But at least, makes things easier to us."
+      STR_ARMORED_ALIENS_UFOPEDIA: "Personal armor is widely distributed to alien infantry. However, it's use is restricted according the mission carried by the crew of a ship. If the personnel is conducting 'scientific' missions, lighter weapons and few or no personal armor are used. However, if the enemy expects to engage in heavy combat, said restrictions are lefted and more destructive equipment is used without hesitation. We are the one of the few, if not the first, race who resisted longer than a couple of weeks. We could expect a change in their equipment strategy anytime soon."
+

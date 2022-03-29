@@ -34,7 +34,7 @@ itemCategories:
     listOrder: 16
   - type: STR_ALLOY
     listOrder: 16
-  - type: STR_SMART
+  - type: STR_FUSION
     listOrder: 18
   - type: STR_PLASMA
     listOrder: 17
@@ -117,7 +117,7 @@ extraStrings:
       STR_LASER: "Laser Weapons"
       STR_PLASMA: "Plasma Weapons"
       STR_ALLOY: "Alloy Weapons"
-      STR_SMART: "Smart Weapons"
+      STR_FUSION: "Fusion Weapons"
       STR_SPACE: "Space Equipment"
       STR_TANKS: Tanks
       STR_ARMORED_CARS: Armored Cars
@@ -181,6 +181,8 @@ extraStrings:
       STR_MT_RATING_ABOMINABLE: End is here
 
       STR_HUMAN_RECON: Human Recon
+      STR_THRUST: Thrust
+      STR_CUT: Cut
 
 ####################################################
 
@@ -482,127 +484,10 @@ extraStrings:
       STR_TERRORIST_UNDERWATER: Terrorist (Underwater)
 ####################################################
 
-units:
-  - type: STR_SECTOID_SOLDIER
-    stats:
-      firing: 65
-  - type: STR_SECTOID_ENGINEER
-    stats:
-      firing: 65
-  - type: STR_SECTOID_MEDIC
-    stats:
-      firing: 65
-  - type: STR_SECTOID_NAVIGATOR
-    stats:
-      firing: 65
-  - type: STR_SECTOID_LEADER
-    stats:
-      firing: 65
-  - type: STR_SECTOID_COMMANDER
-    stats:
-      firing: 62
-  - type: STR_FLOATER_SOLDIER
-    stats:
-      firing: 62
-  - type: STR_FLOATER_ENGINEER
-    stats:
-      firing: 62
-  - type: STR_FLOATER_NAVIGATOR
-    stats:
-      firing: 62
-  - type: STR_FLOATER_MEDIC
-    stats:
-      firing: 62
-  - type: STR_FLOATER_LEADER
-    stats:
-      firing: 62
-  - type: STR_FLOATER_COMMANDER
-    stats:
-      firing: 62
-  - type: STR_SNAKEMAN_SOLDIER
-    stats:
-      firing: 71
-  - type: STR_SNAKEMAN_ENGINEER
-    stats:
-      firing: 71
-  - type: STR_SNAKEMAN_NAVIGATOR
-    stats:
-      firing: 71
-  - type: STR_SNAKEMAN_LEADER
-    stats:
-      firing: 71
-  - type: STR_SNAKEMAN_COMMANDER
-    stats:
-      firing: 71
-  - type: STR_MUTON_NAVIGATOR
-    stats:
-      firing: 66
-  - type: STR_MUTON_ENGINEER
-    stats:
-      firing: 66
-  - type: STR_MUTON_SOLDIER
-    stats:
-      firing: 66
-  - type: STR_ETHEREAL_SOLDIER
-    stats:
-      firing: 86
-  - type: STR_ETHEREAL_LEADER
-    stats:
-      firing: 86
-  - type: STR_ETHEREAL_COMMANDER
-    stats:
-      firing: 86
+
 # New terrain values for the planted 'Hyper Wave Encoder"
 # This is formatted different for the OXC nightly versions
 
-
-armors:
-  - type: CHRYSSALID_ARMOR
-    spriteSheet: CHRYS.PCK
-    allowInv: false
-    corpseBattle:
-      - STR_CHRYSSALID_CORPSE
-    frontArmor: 34
-    sideArmor: 34
-    rearArmor: 34
-    underArmor: 34
-    drawingRoutine: 7
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.0
-    loftempsSet: [ 3 ]
-  - type: ZOMBIE_ARMOR
-    painImmune: true # no secondary stun damage
-    spriteSheet: ZOMBIE.PCK
-    allowInv: false
-    corpseBattle:
-      - STR_CHRYSSALID_CORPSE
-    frontArmor: 4
-    sideArmor: 4
-    rearArmor: 4
-    underArmor: 4
-    drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.8
-      - 0.8
-      - 0.7
-      - 0.7
-      - 0.0
-      - 1.0
-      - 1.0
-      - 0.0
-    loftempsSet: [ 3 ]
-    deathFrames: 18
 
 items:
 #DELETE
@@ -922,11 +807,7 @@ startingBase:
   items:
     STR_FUEL_TANK: 2
     STR_MIGHTY_MOUSE_LAUNCHER: 2
-    STR_MIGHTY_MOUSE_ROCKETS: 24
     STR_VULCAN_CANNON: 2
-    STR_VULCAN_CANNON_ROUNDS_X50: 20
-    STR_ADEN_CANNON_ROUNDS_X50: 30
-    STR_SIDEWINDER_MISSILES: 20
     STR_GRENADE: 5
     STR_7_62MM_NATO_RIFLE_X20: 40
     STR_9MM_PISTOL_X20: 20

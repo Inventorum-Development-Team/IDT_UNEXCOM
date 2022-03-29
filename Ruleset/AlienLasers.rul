@@ -151,6 +151,7 @@ manufacture:
       STR_ALIEN_LASER_PISTOL: 1
     producedItems:
       STR_ALIEN_CRYSTAL: 1
+      STR_ALIEN_ALLOYS: 2
 
   - name: STR_DISASSEMBLE_LASER_RIFLE
     requires:
@@ -162,6 +163,7 @@ manufacture:
       STR_ALIEN_LASER_RIFLE: 1
     producedItems:
       STR_ALIEN_CRYSTAL: 2
+      STR_ALIEN_ALLOYS: 3
 
   - name: STR_DISASSEMBLE_HEAVY_LASER
     requires:
@@ -173,6 +175,7 @@ manufacture:
       STR_ALIEN_HEAVY_LASER: 1
     producedItems:
       STR_ALIEN_CRYSTAL: 3
+      STR_ALIEN_ALLOYS: 4
 extraSprites:
   - type: BIGOBS.PCK
     files:
