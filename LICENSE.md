@@ -1,6 +1,8 @@
 # IDT_UNEXCOM
 ***United Nations Extraterrestrial Combat Command, UNEXCOM*** is a **free** mod made by *Inventorum Development Team, IDT* for OpenXcom Extended. Most of the work done by our members and the OpenXcom Community is distributed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License** [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/) license. This means, you are able to share and adapt the materials only for non-commercial purposes and when providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart). **Any** derivatives (this is, assets made using our work or the Community members' work) must be distributed **under the same license** You cannot use (copy, adapt, etc.) the materials presented in this project in your project, if it is not distributed under the CC BY-NC-SA 4.0 license.
 
+XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Games, composed by Michael McCann
+
 However, there are certain graphical assets you cannot use, copy, adapt nor distribute without the **explicit** consent of their copyright holders, Dr Hans Woofington and Dauntless1942. Said assets are distributed under **All Rights Reserved license**. Below a list of said assets:
 
 **Dr Hans Woofington**
