@@ -2159,7 +2159,13 @@ ufopaedia:
   - id: STR_POLICE_SHOTGUN
     type_id: 4
     section: STR_WEAPONS
-    text: STR_POLICE_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_POLICE_SHOTGUN
+      text: STR_POLICE_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_POLICE_SHOTGUN
+      text: STR_POLICE_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
     listOrder: 4203
 
   - id: STR_ANGRY_WIFE
@@ -2175,7 +2181,13 @@ ufopaedia:
       - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
-    text: STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_REMINGTON_COMBAT_SHOTGUN
+      text: STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_REMINGTON_COMBAT_SHOTGUN
+      text: STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
     listOrder: 4205
 
   - id: STR_KS23_SHOTGUN
@@ -2281,7 +2293,13 @@ ufopaedia:
       - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
-    text: STR_XM117_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_XM117_SHOTGUN
+      text: STR_XM117_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_XM117_SHOTGUN
+      text: STR_XM117_SHOTGUN_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4308
 
   - id: STR_XM117_M203
@@ -2289,7 +2307,13 @@ ufopaedia:
       - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
-    text: STR_XM117_M203_UFOPEDIA
+    pages:
+    - title: STR_XM117_M203
+      text: STR_XM117_M203_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_XM117_M203
+      text: STR_XM117_M203_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4309
 
   - id: STR_SG510_CARBINE
@@ -2375,7 +2399,13 @@ ufopaedia:
       - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
-    text: STR_M16A1_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_M16A1_SHOTGUN
+      text: STR_M16A1_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_M16A1_SHOTGUN
+      text: STR_M16A1_SHOTGUN_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4404
 
   - id: STR_M16_M203
@@ -2383,7 +2413,13 @@ ufopaedia:
       - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
-    text: STR_M16_M203_UFOPEDIA
+    pages:
+    - title: STR_M16_M203
+      text: STR_M16_M203_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_M16_M203
+      text: STR_M16_M203_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4405
 
   - id: STR_FN_FAL
@@ -2397,7 +2433,13 @@ ufopaedia:
       - STR_NATO_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
-    text: STR_FN_FAL_SHOTGUN_UFOPEDIA
+    pages:
+    - title: STR_FN_FAL_SHOTGUN
+      text: STR_FN_FAL_SHOTGUN_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_FN_FAL_SHOTGUN
+      text: STR_FN_FAL_SHOTGUN_UFOPEDIA
+      ammoSlot: 1
     listOrder: 4407
 
   - id: STR_AKM
@@ -2618,7 +2660,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_STONER_SNIPER_UFOPEDIA
-    listOrder: 4301
+    listOrder: 4601
 
   - id: STR_HUNTING_RIFLE
     requires:
@@ -2758,7 +2800,13 @@ ufopaedia:
     section: STR_WEAPONS
     requires:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    text: STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA
+    pages:
+    - title: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
+      text: STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
+      text: STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA
+      ammoSlot: 0
     listOrder: 4704
 
   - id: STR_AFINA_ANTITANK_LASER
@@ -2782,7 +2830,13 @@ ufopaedia:
       - STR_SPECIAL_FORCES_RESEARCH
     type_id: 4
     section: STR_WEAPONS
-    text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
+    pages:
+    - title: STR_SAWEDOFF_M79_THUMPER
+      text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_SAWEDOFF_M79_THUMPER
+      text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
+      ammoSlot: 0
     listOrder: 4707
 
   - id: STR_M79_THUMPER_GL
@@ -2791,6 +2845,13 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_M79_THUMPER_GL_UFOPEDIA
+    pages:
+    - title: STR_M79_THUMPER_GL
+      text: STR_M79_THUMPER_GL_UFOPEDIA
+      ammoSlot: 0
+    - title: STR_M79_THUMPER_GL
+      text: STR_M79_THUMPER_GL_UFOPEDIA
+      ammoSlot: 0
     listOrder: 4708
 
   - id: STR_FLECHETTE_GL
