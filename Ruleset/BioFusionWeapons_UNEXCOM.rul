@@ -96,7 +96,7 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_POWER_CELL_LIGHT
-    requires:
+    requiresBuy:
       - STR_ALIENS_ONLY
     listOrder: 102
     size: 1
@@ -268,7 +268,7 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_POWER_CELL_HEAVY
-    requires:
+    requiresBuy:
       - STR_ALIENS_ONLY
     listOrder: 106
     size: 1
@@ -344,7 +344,7 @@ items:
     armor: 135
     experienceTrainingMode: 0
   - type: STR_FUSION_POWER_CELL_HUGE
-    requires:
+    requiresBuy:
       - STR_ALIENS_ONLY
     listOrder: 108
     size: 1
@@ -772,7 +772,6 @@ research:
   - name: STR_INITIAL_FUSION_CELLS_RESEARCH
     cost: 300
     points: 10
-    needItem: true
     dependencies:
       - STR_FUSION_POWER_CELL_LIGHT
       - STR_FUSION_POWER_CELL_HEAVY
