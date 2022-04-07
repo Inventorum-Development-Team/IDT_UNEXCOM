@@ -1,5 +1,6 @@
 items:
   - type: STR_HE_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     requires:
       - STR_AIR_STRIKES
@@ -19,6 +20,7 @@ items:
       throwTrigger: true
 
   - type: STR_INC_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     requires:
       - STR_AIR_STRIKES
