@@ -826,7 +826,7 @@ items:
     invHeight: 3
 
   - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
-    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY]
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
     size: 0.4
@@ -884,7 +884,7 @@ items:
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
       ToArmor: 0.5
-    damageType: 3
+    damageType: 5
     clipSize: 6
     blastRadius: 4
     battleType: 2
@@ -943,7 +943,7 @@ items:
     invHeight: 2
     attraction: 9
   - type: STR_M72_ARR_ELERIUM_MAG
-    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
       - STR_ELERIUM_FUSION
@@ -963,7 +963,7 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 0.90
-    damageType: 2
+    damageType: 10
     clipSize: 6
     blastRadius: 1
     battleType: 2

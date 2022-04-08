@@ -109,7 +109,7 @@ items:
     vaporColorSurface: 1
     vaporDensitySurface: 10
     power: 75
-    damageType: 3
+    damageType: 10
     damageAlter:
       RadiusReduction: 45
       IgnoreOverKill: false
@@ -279,7 +279,7 @@ items:
     floorSprite: 1105
     explosionSpeed: 4
     power: 80
-    damageType: 3
+    damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
     damageAlter:
@@ -359,7 +359,7 @@ items:
     hitSound: 19
     hitAnimation: 36
     power: 50
-    damageType: 4
+    damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
     damageAlter:
@@ -380,7 +380,7 @@ items:
     listOrder: 109
     size: 1
     costSell: 8000
-    categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
+    categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
     weight: 18
     bigSprite: 1108
     floorSprite: 1108
@@ -409,7 +409,7 @@ items:
     armor: 135
     experienceTrainingMode: 0
     power: 120
-    damageType: 4
+    damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
     damageAlter:
@@ -448,7 +448,7 @@ items:
     maxRange: 2
     aimRange: 2
     snapRange: 1
-    damageType: 5
+    damageType: 4
     #hitAnimation: 150
     power: 150
     damageBonus:
@@ -509,7 +509,7 @@ items:
     floorSprite: 1111
     explosionSpeed: 4
     power: 130
-    damageType: 3
+    damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
     damageAlter:

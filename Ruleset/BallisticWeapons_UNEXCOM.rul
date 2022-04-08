@@ -733,7 +733,7 @@ items:
     armor: 250
     listOrder: 200300
   - type: STR_12GAUGE_ELERIUM_SHARDS_X8
-    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_FUSION ]
     size: 0.1
     requires:
       - STR_ELERIUM_FUSION
@@ -742,7 +742,7 @@ items:
     bigSprite: 122
     floorSprite: 122
     power: 65
-    damageType: 5
+    damageType: 10
     damageAlter:
       RandomType: 7
       IgnoreOverKill: false
@@ -995,7 +995,7 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
-    damageType: 1
+    damageType: 5
     clipSize: 1
     blastRadius: 1
     battleType: 2
@@ -1004,7 +1004,7 @@ items:
     attraction: 9
     listOrder: 201650
   - type: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
-    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION ]
     requires:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_ELERIUM_FUSION
@@ -1023,7 +1023,7 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
-    damageType: 2
+    damageType: 10
     clipSize: 1
     blastRadius: 1
     battleType: 2
@@ -1102,7 +1102,8 @@ items:
         STR_FIREARMS,
         STR_ARTILLERY,
         STR_SOVIET_TECH,
-        STR_CLIPS
+        STR_CLIPS,
+        STR_FUSION
       ]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -1125,7 +1126,7 @@ items:
       ArmorEffectiveness: 0.9
       ToArmorPre: 0.3
       RadiusReduction: 40
-    damageType: 3
+    damageType: 10
     clipSize: 1
     blastRadius: 1
     battleType: 2
@@ -1388,7 +1389,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_US_TECH,
-        STR_SHOTGUNS
+        STR_SHOTGUNS,
+        STR_FUSION
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
@@ -1964,7 +1966,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_NATO_TECH,
-        STR_ARTILLERY
+        STR_ARTILLERY,
+        STR_FUSION
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
@@ -2345,7 +2348,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_SOVIET_TECH,
-        STR_ARTILLERY
+        STR_ARTILLERY,
+        STR_FUSION
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2768,7 +2772,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_CIVILIAN_TECH,
-        STR_SHOTGUNS
+        STR_SHOTGUNS,
+        STR_FUSION
       ]
     size: 0.2
     costBuy: 1500
@@ -3401,7 +3406,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_SOVIET_TECH,
-        STR_SHOTGUNS
+        STR_SHOTGUNS,
+        STR_FUSION
       ]
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
