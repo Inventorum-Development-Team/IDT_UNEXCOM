@@ -922,7 +922,7 @@ items:
     size: 0.2
     costBuy: 1600
     costSell: 1200
-    weight: 6
+    weight: 8
     bigSprite: 1080
     floorSprite: 1080
     handSprite: 1080
@@ -934,7 +934,8 @@ items:
       RandomType: 6
       IgnoreSelfDestruct: true
       ToMorale: 0.3
-      ToTile: 0.6
+      ToWound: 0.3
+      ToTile: 0.8
       FixRadius: 5
     damageType: 2
     clipSize: 4
@@ -1527,7 +1528,7 @@ items:
     size: 0.4
     costBuy: 25000
     costSell: 30000
-    weight: 12
+    weight: 6
     bigSprite: 1072
     floorSprite: 1072
     handSprite: 1072
@@ -1536,13 +1537,13 @@ items:
     compatibleAmmo:
       - STR_M202_FLASH_RACK
     accuracyAuto: 50
-    accuracyAimed: 80
+    accuracyAimed: 85
     tuAuto: 35
     tuAimed: 50
     autoShots: 4
-    autoRange: 20
-    aimRange: 25
-    minRange: 5
+    autoRange: 22
+    aimRange: 28
+    minRange: 7
     dropoff: 3
     tuLoad: 30
     battleType: 1
@@ -1552,6 +1553,7 @@ items:
     invWidth: 2
     invHeight: 3
     attraction: 8
+    kneelBonus: 150
     listOrder: 2036
 
   - type: STR_M60
