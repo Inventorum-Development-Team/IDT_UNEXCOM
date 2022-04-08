@@ -29,7 +29,7 @@ items:
     recover: false
   - type: SECTOPOD_WEAPON
     weight: 3
-    bigSprite: 3404
+    bigSprite: 7
     #floorSprite: 31
     #handSprite: 104
     bulletSprite: 29
@@ -59,7 +59,7 @@ items:
     damageType: 5
     battleType: 1
     weight: 6
-    bigSprite: 7
+    bigSprite: 1860
     bulletSprite: 8
     bulletSpeed: 10
     fireSound: 18
@@ -67,15 +67,18 @@ items:
     hitAnimation: 46
     accuracySnap: 50
 #    accuracyAuto: 50
+    snapRange: 28
+    minRange: 5
+    dropoff: 3
     tuSnap: 50
     confSnap:
-      shots: 6
+      shots: 2
     clipSize: -1
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
     recover: false
-    power: 30
+    power: 75
     damageAlter:
       ArmorEffectiveness: 0.15
       ToArmorPre: 0.15
@@ -86,7 +89,7 @@ items:
     damageType: 4
     battleType: 1
     weight: 6
-    bigSprite: 11
+    bigSprite: 3400
     fireSound: 18
     hitSound: 19
     hitAnimation: 100
