@@ -2779,13 +2779,21 @@ ufopaedia:
     text: STR_M72_LAW_UFOPEDIA
     listOrder: 4701
 
+  - id: STR_M202_FLASH
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_M202_FLASH_UFOPEDIA
+    listOrder: 4702
+
   - id: STR_CARL_GUSTAF_M2
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_CARL_GUSTAF_M2_UFOPEDIA
-    listOrder: 4702
+    listOrder: 4703
 
   - id: STR_RPG
     requires:
@@ -2793,7 +2801,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     text: STR_RPG_UFOPEDIA
-    listOrder: 4703
+    listOrder: 4704
 
   - id: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     type_id: 4
@@ -2807,7 +2815,7 @@ ufopaedia:
     - title: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
       text: STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA
       ammoSlot: 0
-    listOrder: 4704
+    listOrder: 4705
 
   - id: STR_AFINA_ANTITANK_LASER
     type_id: 4
@@ -2815,7 +2823,7 @@ ufopaedia:
     requires:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
-    listOrder: 4705
+    listOrder: 4706
 
   - id: STR_HUMAN_HEAVY_PLASMA
     type_id: 4
@@ -2823,7 +2831,7 @@ ufopaedia:
     requires:
       - STR_REMAN_HUMAN_HEAVY_PLASMA
     text: STR_HUMAN_HEAVY_PLASMA_UFOPEDIA
-    listOrder: 4706
+    listOrder: 4707
 
   - id: STR_SAWEDOFF_M79_THUMPER
     requires:
@@ -2837,7 +2845,7 @@ ufopaedia:
     - title: STR_SAWEDOFF_M79_THUMPER
       text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
       ammoSlot: 0
-    listOrder: 4707
+    listOrder: 4708
 
   - id: STR_M79_THUMPER_GL
     requires:
@@ -2852,7 +2860,7 @@ ufopaedia:
     - title: STR_M79_THUMPER_GL
       text: STR_M79_THUMPER_GL_UFOPEDIA
       ammoSlot: 0
-    listOrder: 4708
+    listOrder: 4709
 
   - id: STR_FLECHETTE_GL
     type_id: 4
@@ -2860,7 +2868,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_EXPLOSIVE
     text: STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA
-    listOrder: 4709
+    listOrder: 4710
 
   - id: STR_ELERIUM_FLAMETHROWER
     type_id: 4
@@ -2868,7 +2876,7 @@ ufopaedia:
     requires:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_ELERIUM_FLAMETHROWER_UFOPEDIA
-    listOrder: 4710
+    listOrder: 4711
 
   - id: STR_HUMAN_SMALL_LAUNCHER
     type_id: 4
@@ -2876,7 +2884,7 @@ ufopaedia:
     requires:
       - STR_REMAN_SMALL_LAUNCHER
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
-    listOrder: 4711
+    listOrder: 4712
 
   - id: STR_MELEE_REPORT
     type_id: 7
@@ -3143,13 +3151,21 @@ ufopaedia:
     text: STR_FAL_SHOTGUN_SHELLS_UFOPEDIA
     listOrder: 5034
 
+  - id: STR_M202_FLASH_RACK
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_M202_FLASH_RACK_UFOPEDIA
+    listOrder: 5035
+
   - id: STR_CARL_GUSTAF_M2_HE_ROUND
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     type_id: 4
     section: STR_AMMUNITION
     text: STR_CARL_GUSTAF_M2_HE_ROUND_UFOPEDIA
-    listOrder: 5035
+    listOrder: 5036
 
   - id: STR_CARL_GUSTAF_M2_HEAT_ROUND
     requires:
@@ -3157,7 +3173,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_CARL_GUSTAF_M2_HEAT_ROUND_UFOPEDIA
-    listOrder: 5036
+    listOrder: 5037
 
   - id: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
     requires:
@@ -3166,7 +3182,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_CARL_GUSTAF_M2_ELERIUM_ROUND_UFOPEDIA
-    listOrder: 5037
+    listOrder: 5038
 
   - id: STR_RPG_HE_ROCKET
     requires:
@@ -3174,7 +3190,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_RPG_HE_ROCKET_UFOPEDIA
-    listOrder: 5038
+    listOrder: 5039
 
   - id: STR_RPG_INC_ROCKET
     requires:
@@ -3182,7 +3198,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_RPG_INC_ROCKET_UFOPEDIA
-    listOrder: 5039
+    listOrder: 5040
 
   - id: STR_RPG_EWH_ROCKET
     requires:
@@ -3191,7 +3207,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: STR_RPG_EWH_ROCKET_UFOPEDIA
-    listOrder: 5040
+    listOrder: 5041
 
   - id: STR_ALLOY_RIFLE_AP
     requires:
@@ -5203,6 +5219,7 @@ extraStrings:
         Elerium crystals to a regular .12 Gauge we have increased the firepower
         of our shotguns by far. The wounding and penetrating capacity of this
         shells are simply terrible."
+      STR_M202_FLASH_RACK_UFOPEDIA: "A four 66mm rocket rack clip employed on the M202 FLASH launcher. The M74 Incendiary rockets employ a substance called 'thickened pyrophoric agent', TPA. It burns spontaneously at 1600°C/2912°F and it's intense enough to produce burn skins even at distance. It's hotter than gasoline or napalm."
       STR_40MM_FRAG_UFOPEDIA: "..."
 
       STR_40MM_INCENDIARY_UFOPEDIA: "..."
@@ -5303,6 +5320,7 @@ extraStrings:
         of the old WWII Bazooka. Made as a disposable one-shot weapons, {ALT}a
         soldier could carry many of them{ALT}, allowing an infantryman to
         disable multiple armored threats on the battlefield."
+      STR_M202_FLASH_UFOPEDIA: "A very peculiar launcher, the M202 FLASH (FLame Assault SHoulder) is a new addition to the US arsenal. Meant to replace WWII-era flamethrowers, has the ability to shoot four incendiary rockets on rapid succession. Best used on anti-fortification roles."
       STR_M60_UFOPEDIA: "Powerful Light Machine Gun, an iconic weapon very used in the
 
         Vietnam War, fires {ALT}7.62x51mm NATO{ALT} rounds, very accurate at

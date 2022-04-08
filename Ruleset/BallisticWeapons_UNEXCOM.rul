@@ -915,6 +915,35 @@ items:
     shotgunSpread: 25
     listOrder: 201080
 
+  - type: STR_M202_FLASH_RACK
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.2
+    costBuy: 1600
+    costSell: 1200
+    weight: 6
+    bigSprite: 1080
+    floorSprite: 1080
+    handSprite: 1080
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToMorale: 0.3
+      ToTile: 0.6
+      FixRadius: 5
+    damageType: 2
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 2037
+
   - type: STR_CARL_GUSTAF_M2_HE_ROUND
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
@@ -1485,6 +1514,45 @@ items:
     blastRadius: 2
     hitSound: 143
     listOrder: 2035
+  - type: STR_M202_FLASH
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_US_TECH,
+        STR_ARTILLERY
+      ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.4
+    costBuy: 25000
+    costSell: 30000
+    weight: 12
+    bigSprite: 1072
+    floorSprite: 1072
+    handSprite: 1072
+    bulletSprite: 0
+    fireSound: 152
+    compatibleAmmo:
+      - STR_M202_FLASH_RACK
+    accuracyAuto: 50
+    accuracyAimed: 80
+    tuAuto: 35
+    tuAimed: 50
+    autoShots: 4
+    autoRange: 20
+    aimRange: 25
+    minRange: 5
+    dropoff: 3
+    tuLoad: 30
+    battleType: 1
+    arcingShot: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    listOrder: 2036
 
   - type: STR_M60
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_LMGS ]
@@ -2160,7 +2228,7 @@ items:
     snapRange: 12
     kneelBonus: 105
     battleType: 1
-    twoHanded: true
+    #twoHanded: true
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -4971,6 +5039,8 @@ extraSprites:
       1048: Resources/BallisticWeapons/UN/BigStoner63AutomaticRifle.png
       1056: Resources/BallisticWeapons/UN/BigStoner63Commando.png
       1064: Resources/BallisticWeapons/UN/BigStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/BigM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/BigM202FlashAmmo.png
 
   - type: FLOOROB.PCK
     files:
@@ -5105,6 +5175,8 @@ extraSprites:
       1048: Resources/BallisticWeapons/UN/FloorStoner63AutomaticRifle.png
       1056: Resources/BallisticWeapons/UN/FloorStoner63Commando.png
       1064: Resources/BallisticWeapons/UN/FloorStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/FloorM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/FloorM202FlashAmmo.png
 
   - type: HANDOB.PCK
     width: 256
@@ -5234,6 +5306,8 @@ extraSprites:
       1048: Resources/BallisticWeapons/UN/HandStoner63AutomaticRifle.png
       1056: Resources/BallisticWeapons/UN/HandStoner63Commando.png
       1064: Resources/BallisticWeapons/UN/HandStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/HandM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/HandM202FlashAmmo.png
 
   - type: SMOKE.PCK
     height: 80
@@ -5620,7 +5694,7 @@ extraStrings:
 
       STR_12GAUGE_ELERIUM_SHARDS_X8: "12-Gauge Elerium Shards (x8)"
 
-
+      STR_M202_FLASH_RACK: "M235 Incendiary Missile Rack (x4)"
       STR_40MM_FRAG: "40mm Frag Grenade (x1)"
       STR_40MM_INCENDIARY: "40mm INC Grenade (x1)"
       STR_40MM_SMOKE: "40mm Smoke Grenade (x1)"
@@ -5694,6 +5768,8 @@ extraStrings:
       STR_M79_THUMPER_GL: "M79 Grenade Launcher"
 
       STR_M72_LAW: "M72 LAW"
+
+      STR_M202_FLASH: "M202 FLASH"
 
       STR_M60: "M60 LMG"
 
