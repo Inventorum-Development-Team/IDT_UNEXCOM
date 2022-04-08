@@ -4676,6 +4676,20 @@ ufopaedia:
       - STR_ALIEN_SUPPLY
     text: STR_ALIEN_SUPPLY_UFOPEDIA
     listOrder: 15007
+  - id: STR_ALIEN_RANKS
+    type_id: 8
+    section: STR_ALIEN_MISSIONS
+    requires:
+      - STR_ALIEN_RANKS
+    text: STR_ALIEN_RANKS_UFOPEDIA
+    listOrder: 15008
+  - id: STR_ARMORED_ALIENS
+    type_id: 8
+    section: STR_ALIEN_MISSIONS
+    requires:
+      - STR_ARMORED_ALIENS
+    text: STR_ARMORED_ALIENS_UFOPEDIA
+    listOrder: 15008
 
   #Terrorists
 
@@ -6178,6 +6192,7 @@ extraStrings:
       STR_SECTOID_PSION_UFOPEDIA: "The 'Psions' are Sectoids specially trained to control alien beasts, even some allied aliens with lower intelligence. The 'Psionic Harness' transmits the orders directly into the subconscious mind and allows the Psion to control every aspect of the beast, from movement to neuronal activity... Pretty much like a puppeteer."
       STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA: "This Sectoid features a larger head than it's brethren. Looks naturally grown, as there are no signs of surgical procedures. The body seems to struggle to resist the weight of the larger cranium and the brain matter inside. Obviously, a perfect target for our snipers."
       STR_SECTOID_COMMANDER_UFOPEDIA: "A highly evolved Sectoid, it's cranial cavity was genetically expanded to fit a larger brain. The Commander has a vast array of tactical and cultural knowledge, turning it into a literal genius on the battlefield. The heightened intelligence allows to take control of larger and more complex squads of aliens than a regular Sectoid."
+      STR_MECHTOID_AUTOPSY: "Mechtoid Autopsy"
       STR_MECHTOID_AUTOPSY_UFOPEDIA: "The broken chassis of this mechanized unit reveals a complex array of tubbing and armored plates, along with two powerful legs. The propulsion unit looks a miniature Elerium reactor, but protected to avoid killing the user. Deeply inside, lies the rotten corpse of a Sectoid. Probably the pilot of the armored unit. The arm-mounted Heavy Plasma Cannons are very dangerous, but relatively slow to use."
       STR_MECHTOID_UFOPEDIA: "In order to bolster the strength of Sectoid squads, a Navigator boards a tall mechanized bipedal armor. Just the head remains unprotected. Powerful servomotors allow the 'Mechtoid' to run across large distances with ease. Compared to other units, features a relatively lighter armor (albeit still stronger than a regular human armored vehicle). It's crewman is still capable of using Psionics unhindered."
       STR_ARMORED_SECTOID_UFOPEDIA: "In order to increase the durability of Sectoids in frontline combat against us, they have developed a fairly effective powered armor. Fully enclosed and with a breathing system, the user can withstand NBC environments and deflect standard human ballistic and plasma weaponry. They are susceptible to explosions and lasers, however."
@@ -6189,9 +6204,13 @@ extraStrings:
       STR_STRIDER_UFOPEDIA: "This is a subspecies of the Floaters, stronger and more resilient than their cybernetic-enhanced cousins. We think on them like the Homo Neanderthals and Homo Sapiens: two similar species with different specializations. They often wear heavy armor and provide close combat support to Floaters."
       STR_STRIDER_AUTOPSY_UFOPEDIA: "This alien is very similar to the Floater, perhaps a variation of them or a genetic relative. The cranium looks more sturdy but with more primitive facial features. The legs and arms are muscular in appearance, probably indicating this alien is used on heavy work."
       STR_PROBE_UFOPEDIA: "A small and very distinctive robotic unit. Used on survey and scientific missions, it's widely used to conduct recon over the area subject of study. Carries a defensive laser gun. Slow, but could kill a human soldier if left unchecked."
+      STR_PROBE_AUTOPSY: "Probe Autopsy"
       STR_PROBE_AUTOPSY_UFOPEDIA: "The small hovering unit seems to be used to scout ahead the mission site and provide light support to other combat units. The chassis seems light and somewhat weak, but we have reports of a small energy weapon used on what appears self-defense."
       STR_CYBERSPHERE_UFOPEDIA: "A very specialized robot drone, used to seek, detect and pin down possible objectives. The data collected by this unit is relayed directly into the brains of the alien squad members, effectively turning this drone into another pair of eyes. It's extremely fast and agile."
+      STR_CYBERSPHERE_AUTOPSY: "Cybersphere Autopsy"
       STR_CYBERSPHERE_AUTOPSY_UFOPEDIA: "The wreck reveals few things about the purpose of the flying object. It doesn't have any weapon and the chassis is really thin and light, it barely resists a couple of rifle rounds. The antigravity propulsion unit is very compact too, looks like it's meant mostly as recon and survey tasks."
+      STR_ALIEN_RANKS: "Alien Ranks"
       STR_ALIEN_RANKS_UFOPEDIA: "Aliens have a cohesive, organized and highly specialized military. Similar to human armies, each member of a squad has assigned a role and function. It seems they haven't developed the concept of concealment nor camuflaje, because they often use bright colors to identify each rank. Capturing them could give us a better perspective of our enemy. Red is meant to leaders. Brown is used on technicians and combat engineers. Blue is employed by sanitary and medical personnel. Orange is assigned to pilots and ship crew. Green is the color of the regular soldiers. It's unknown if the colors meant something for them or not. But at least, makes things easier to us."
-      STR_ARMORED_ALIENS_UFOPEDIA: "Personal armor is widely distributed to alien infantry. However, it's use is restricted according the mission carried by the crew of a ship. If the personnel is conducting 'scientific' missions, lighter weapons and few or no personal armor are used. However, if the enemy expects to engage in heavy combat, said restrictions are lefted and more destructive equipment is used without hesitation. We are the one of the few, if not the first, race who resisted longer than a couple of weeks. We could expect a change in their equipment strategy anytime soon."
+      STR_ARMORED_ALIENS: "Armored Aliens"
+      STR_ARMORED_ALIENS_UFOPEDIA: "Personal armor is widely distributed to alien infantry. However, it's use is restricted according the mission carried by the crew of a ship. If the personnel is conducting 'scientific' missions, lighter weapons and few or no personal armor are used. However, if the enemy expects to engage in heavy combat, said restrictions are lifted and more destructive equipment is used without hesitation. We are the one of the few, if not the first, race who resisted longer than a couple of weeks. We could expect a change in their equipment strategy anytime soon."
 
