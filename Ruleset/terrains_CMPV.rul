@@ -339,7 +339,7 @@ terrains:
       - U_BASE2
       - U_DISEC2
       - U_OPER2
-    mapBlocks:
+    mapBlocks: &UBASE_MAPBLOCKS
       - name: UBASE_00 #01 #Command Center W
         width: 20
         length: 20
@@ -691,6 +691,20 @@ terrains:
         width: 20
         length: 20
 #END EXPANDED UBASE
+
+  - name: UBASE_MARS
+    mapDataSets:
+      - BLANKS
+      - U_BASE_MARS
+      - U_WALL02_MARS
+      - U_PODS_MARS
+      - BRAIN
+      - U_BASE2
+      - U_DISEC2
+      - U_OPER2
+    mapBlocks: *UBASE_MAPBLOCKS
+
+###############################
 
   - name: ACULTA   # by bulletdesigner
     script: FARM
