@@ -83,6 +83,8 @@ items:
       ArmorEffectiveness: 0.15
       ToArmorPre: 0.15
       ToArmor: 0
+      RandomType: 6
+      IgnoreOverKill: false
     vaporColorSurface: 3
     vaporDensitySurface: 30
   - type: PROBE_WEAPON
@@ -178,7 +180,6 @@ items:
 ##############################
 
   - type: STR_FLOATER_SOLDIER_CORPSE
-    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
@@ -190,7 +191,6 @@ items:
     battleType: 11
     armor: 26
   - type: STR_FLOATER_NAVIGATOR_CORPSE
-    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
@@ -202,7 +202,6 @@ items:
     battleType: 11
     armor: 26
   - type: STR_FLOATER_MEDIC_CORPSE
-    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
@@ -214,7 +213,6 @@ items:
     battleType: 11
     armor: 26
   - type: STR_FLOATER_ENGINEER_CORPSE
-    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
@@ -226,7 +224,6 @@ items:
     battleType: 11
     armor: 26
   - type: STR_FLOATER_LEADER_CORPSE
-    name: STR_FLOATER_ALL_CORPSE
     size: 0.4
     costSell: 20000
     weight: 20
@@ -252,7 +249,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_ARMORED_FLOATER_ALL_CORPSE
     armor: 26
   - type: STR_ARMORED_FLOATER_LEADER_CORPSE
     size: 0.4
@@ -264,7 +260,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_ARMORED_FLOATER_ALL_CORPSE
     armor: 26
 
 ################################
@@ -300,7 +295,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_MUTON_ALL_CORPSE
     armor: 26
   - type: STR_MUTON_NAVIGATOR_CORPSE
     size: 0.4
@@ -322,7 +316,6 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    name: STR_MUTON_ALL_CORPSE
     battleType: 11
     armor: 26
   - type: STR_MUTON_ENGINEER_CORPSE
@@ -335,7 +328,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_MUTON_ALL_CORPSE
     armor: 26
   - type: STR_MUTON_LEADER_CORPSE
     size: 0.4
@@ -347,7 +339,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_MUTON_ALL_CORPSE
     armor: 26
 
 
@@ -365,7 +356,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_ARMORED_MUTON_ALL_CORPSE
     armor: 26
   - type: STR_ARMORED_MUTON_LEADER_CORPSE
     size: 0.4
@@ -377,7 +367,6 @@ items:
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
-    name: STR_ARMORED_MUTON_ALL_CORPSE
     armor: 26
 
 ################################
@@ -1559,10 +1548,10 @@ armors:
       - MECHTOID_CORPSE_3
       - MECHTOID_CORPSE_4
     corpseGeo: STR_MECHTOID_CORPSE
-    frontArmor: 60
-    sideArmor: 66
-    rearArmor: 62
-    underArmor: 45
+    frontArmor: 54
+    sideArmor: 50
+    rearArmor: 42
+    underArmor: 40
     drawingRoutine: 5
     painImmune: true
     size: 2
@@ -2746,7 +2735,7 @@ units:
     standHeight: 20
     kneelHeight: 15
     value: 20
-
+    sniper: 5
     intelligence: 6
     aggression: 1
     energyRecovery: 40
@@ -2769,7 +2758,7 @@ units:
     standHeight: 20
     kneelHeight: 15
     value: 30
-
+    sniper: 5
     intelligence: 7
     aggression: 1
     energyRecovery: 40
@@ -2792,7 +2781,7 @@ units:
     standHeight: 20
     kneelHeight: 15
     value: 40
-
+    sniper: 5
     intelligence: 8
     aggression: 1
     energyRecovery: 40
@@ -2829,6 +2818,7 @@ units:
     specab: 1
     livingWeapon: true
     capturable: false
+    sniper: 10
 
   - type: STR_SECTOPOD_TERRORIST
     race: STR_SECTOPOD
@@ -3612,10 +3602,17 @@ extraStrings:
     strings:
       MECHTOID_WEAPON: "Mechtoid Pulse Cannon"
       PROBE_WEAPON: "Probe Laser Cutter"
-      STR_SECTOID_COMMANDER_CORPSE: "Sectoid Corpse"
+      STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
       STR_ARMORED_SECTOID_CORPSE: "Armored Sectoid Corpse"
       STR_FLOATER_ALL_CORPSE: "Floater Corpse"
+      STR_FLOATER_SOLDIER_CORPSE: "Floater Soldier Corpse"
+      STR_FLOATER_NAVIGATOR_CORPSE: "Floater Navigator Corpse"
+      STR_FLOATER_MEDIC_CORPSE: "Floater Medic Corpse"
+      STR_FLOATER_ENGINEER_CORPSE: "Floater Engineer Corpse"
+      STR_FLOATER_LEADER_CORPSE: "Floater Leader Corpse"
       STR_ARMORED_FLOATER_ALL_CORPSE: "Armored Floater Corpse"
+      STR_ARMORED_FLOATER_SOLDIER_CORPSE: "Armored Floater Corpse"
+      STR_ARMORED_FLOATER_LEADER_CORPSE: "Armored Floater Leader Corpse"
       STR_MUTON_ALL_CORPSE: "Muton Corpse"
       STR_ARMORED_MUTON_ALL_CORPSE: "Shock Muton Corpse"
       STR_CYBERDISC_CORPSE: "Cyberdisc Wreckage"
@@ -3637,11 +3634,18 @@ extraStrings:
       STR_MUTON_LEADER: "Muton Guard"
       STR_MUTON_MEDIC: "Muton Medic"
       STR_MUTON_ENGINEER: "Muton Engineer"
+      STR_MUTON_SOLDIER_CORPSE: "Muton Soldier Corpse"
+      STR_MUTON_NAVIGATOR_CORPSE: "Muton Navigator Corpse"
+      STR_MUTON_MEDIC_CORPSE: "Muton Medic Corpse"
+      STR_MUTON_ENGINEER_CORPSE: "Muton Engineer Corpse"
+      STR_MUTON_LEADER_CORPSE: "Muton Guard Corpse"
       STR_ARMORED_MUTON_LEADER: "Muton Elite Guard"
       STR_ARMORED_MUTON_MEDIC: "Shock Muton Medic"
       STR_ARMORED_MUTON_ENGINEER: "Shock Muton Engineer"
       STR_ARMORED_MUTON_NAVIGATOR: "Shock Muton Navigator"
       STR_ARMORED_MUTON_SOLDIER: "Shock Muton Soldier"
+      STR_ARMORED_MUTON_SOLDIER_CORPSE: "Shock Muton Corpse"
+      STR_ARMORED_MUTON_LEADER_CORPSE: "Muton Elite Guard Corpse"
       STR_MECHTOID_TERRORIST: "Mechtoid Terrorist"
       STR_PROBE_TERRORIST: "Probe Terrorist"
       STR_CYBERSPHERE_TERRORIST: "Cybersphere Terrorist"
