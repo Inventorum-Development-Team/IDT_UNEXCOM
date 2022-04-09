@@ -245,6 +245,29 @@ mapScripts:
             entry: 63
 #END ALIEN UBASE
 
+#BEGIN OUTPOST UBASE
+
+  - type: ALIEN_OUTPOST # forest, mountain
+    commands:
+    - type: addCraft
+      executions: 1
+      groups: 1
+    - type: addBlock #Add Command Center
+      size: 2
+      groups: 3
+    - type: addUFO
+      UFOName: STR_EXCAVATOR
+      executions: 1
+      groups: 1
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+      groups: [0, 1, 5]
+      freqs: [3, 3, 2]
+
+#END OUTPOST UBASE
+
 
   - type: REFINERYS  # Thanks to BulletDesigner
     commands:
