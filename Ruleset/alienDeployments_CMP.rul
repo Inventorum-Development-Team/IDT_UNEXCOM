@@ -2397,21 +2397,12 @@ alienDeployments:
     width: 40
     length: 40
     height: 10
-    #shade: 10
-    #script: ALIEN_BASE_SURFACE
-    #customUfo: ALIEN_BASE_ENTRY
-    #terrains:
-    #  - UBASE_BASE_SURFACE
-    #markerName: STR_ALIEN_BASE
-
     script: ALIEN_BASE_SURFACE
     objectiveType: 3
     markerName: STR_ALIEN_BASE
     markerIcon: 7
     terrains:
       - UBASE_BASE_SURFACE
-
-    #markerIcon: 7
     nextStage: STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND
     genMission:
       STR_ALIEN_SUPPLY: 100
@@ -2423,11 +2414,7 @@ alienDeployments:
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
     huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
-    huntMissionWeights: &INTERCEPTION_MISSIONS
-      6:
-        STR_ALIEN_INTERCEPTION_1: 100
-      9:
-        STR_ALIEN_INTERCEPTION_2: 100
+    huntMissionWeights: *INTERCEPTION_MISSIONS
 
 
   - type: STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND
@@ -2680,11 +2667,7 @@ alienDeployments:
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
     huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
-    huntMissionWeights: &INTERCEPTION_MISSIONS
-      6:
-        STR_ALIEN_INTERCEPTION_1: 100
-      9:
-        STR_ALIEN_INTERCEPTION_2: 100
+    huntMissionWeights: *INTERCEPTION_MISSIONS
 
 
   - type: STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND
@@ -2951,11 +2934,15 @@ extraStrings:
         STR_ALIEN_BASE: "Alien Structure"
         STR_ALIEN_BASE_ASSAULT_NO_INTERCEPT: "ALIEN FORT ASSAULT"
         STR_ALIEN_BASE_ASSAULT: "ALIEN OUTPOST ASSAULT"
-        STR_ALIEN_BASE_ASSAULT_BRIEFING: "UNEXCOM forces have gained entrance to an alien outpost. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
-        STR_ALIEN_BASE_ASSAULT_STAGE_2: "ALIEN BASE ASSAULT"
-        STR_ALIEN_BASE_ASSAULT_STAGE_2_BRIEFING: "UNEXCOM forces have gained entrance to an alien base. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
-        STR_ALIEN_BASE_ASSAULT_STAGE_3: "ALIEN FORT ASSAULT"
-        STR_ALIEN_BASE_ASSAULT_STAGE_3_BRIEFING: "UNEXCOM forces have gained entrance to an alien fortified base. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
+        STR_ALIEN_BASE_ASSAULT_BRIEFING: "UNEXCOM forces have landed next to an alien outpost. The facility is still under construction, so the control center isn't underground yet. The mission will terminate when all enemies are eliminated or the control center is destroyed and the squad has returned to the transport."
+        STR_ALIEN_BASE_ASSAULT_STAGE_2: "ALIEN BASE ASSAULT - SURFACE"
+        STR_ALIEN_BASE_ASSAULT_STAGE_2_BRIEFING: "UNEXCOM forces have landed next to to an alien base.  The entrance to the large facility underground is on the open sight, signaled as a large green area. In order to access the hidden base, our forces must eliminate all enemies or rush the green area (click on the 'abort mission' icon to start the next stage of the mission)"
+        STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND: "ALIEN BASE ASSAULT - UNDERGROUND"
+        STR_ALIEN_BASE_ASSAULT_UNDERGROUND_BRIEFING: "We have gone deeper inside the alien base. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
+        STR_ALIEN_BASE_ASSAULT_STAGE_3: "ALIEN FORT ASSAULT - SURFACE"
+        STR_ALIEN_BASE_ASSAULT_STAGE_3_BRIEFING: "UNEXCOM forces have landed next to an alien fortified facility. The entrance to the hidden facility underground is heavily defended, signaled as a large green area inside a pyramid-like structure. In order to access the rest of the fort, our forces must eliminate all enemies or rush the green area (click on the 'abort mission' icon to start the next stage of the mission)"
+        STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND: "We have gone deeper inside the alien fort. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
+        STR_ALIEN_FORT_ASSAULT_UNDERGROUND_BRIEFING:  "ALIEN FORT ASSAULT - UNDERGROUND"
         STR_ALIEN_BASE_STILL_INTACT: "Alien Structure still intact"
         STR_ALIEN_BASE_DESTROYED: "Alien Structure destroyed"
         STR_ALIEN_BASE_RECOVERY: "ALIEN STRUCTURE RECOVERY"
