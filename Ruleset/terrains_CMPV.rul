@@ -356,6 +356,97 @@ terrains:
             - [ 16, 4, 1]
         fuseTimers:
           SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_OUTPOST_01
+        width: 20
+        length: 20
+      - name: UBASE_OUTPOST_02
+        width: 20
+        length: 20
+        items:
+          SPTURRET_SPAWNER:
+            - [ 2, 7, 1]
+            - [ 2, 2, 1]
+            - [ 17, 2, 1]
+            - [ 17, 17, 1]
+        fuseTimers:
+          SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_OUTPOST_03
+        width: 20
+        length: 20
+        items:
+          STR_ELERIUM_115:
+            - [2, 14, 0]
+            - [2, 16, 0]
+      - name: UBASE_OUTPOST_04
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_05
+        width: 10
+        length: 10
+      - name: UBASE_OUTPOST_06
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_07
+        width: 10
+        length: 10
+        groups: 5
+        items:
+          STR_ELERIUM_115:
+            - [4, 4, 0]
+      - name: UBASE_OUTPOST_08
+        width: 10
+        length: 10
+      - name: UBASE_OUTPOST_09
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_10
+        width: 10
+        length: 10
+        groups: 5
+      - name: UBASE_OUTPOST_11
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_12
+        width: 10
+        length: 10
+        groups: 5
+        items:
+          STR_ELERIUM_115:
+            - [4, 4, 0]
+      - name: UBASE_OUTPOST_13
+        width: 10
+        length: 10
+        items:
+          SPTURRET_SPAWNER:
+            - [ 4, 4, 0]
+        fuseTimers:
+          SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_OUTPOST_14
+        width: 10
+        length: 10
+        items:
+          SPTURRET_SPAWNER:
+            - [ 3, 4, 1]
+            - [ 5, 4, 1]
+            - [ 3, 6, 1]
+            - [ 5, 6, 1]
+        fuseTimers:
+          SPTURRET_SPAWNER: [0, 0]
+
+  - name: UBASE_BASE_SURFACE
+    mapDataSets:
+      - BLANKS
+      - U_BASE
+      - U_WALL02
+      - U_PODS
+      - BRAIN
+      - U_EXT02
+#END OUTPOST UBASE
+    mapBlocks:
       - name: UBASE_OUTPOST_00
         width: 20
         length: 20
@@ -440,6 +531,119 @@ terrains:
             - [ 5, 6, 1]
         fuseTimers:
           SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_SURFACE00
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_SURFACE01
+        width: 10
+        length: 10
+        groups: 1
+
+  - name: UBASE_FORT_SURFACE
+    mapDataSets:
+      - BLANKS
+      - U_BASE
+      - U_WALL02
+      - U_PODS
+      - BRAIN
+      - U_EXT02
+#END OUTPOST UBASE
+    mapBlocks:
+      - name: UBASE_OUTPOST_00
+        width: 20
+        length: 20
+        groups: 3
+      - name: UBASE_OUTPOST_01
+        width: 20
+        length: 20
+      - name: UBASE_OUTPOST_02
+        width: 20
+        length: 20
+        items:
+          SPTURRET_SPAWNER:
+            - [ 2, 7, 1]
+            - [ 2, 2, 1]
+            - [ 17, 2, 1]
+            - [ 17, 17, 1]
+        fuseTimers:
+          SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_OUTPOST_03
+        width: 20
+        length: 20
+        items:
+          STR_ELERIUM_115:
+            - [2, 14, 0]
+            - [2, 16, 0]
+      - name: UBASE_OUTPOST_04
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_05
+        width: 10
+        length: 10
+      - name: UBASE_OUTPOST_06
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_07
+        width: 10
+        length: 10
+        groups: 5
+        items:
+          STR_ELERIUM_115:
+            - [4, 4, 0]
+      - name: UBASE_OUTPOST_08
+        width: 10
+        length: 10
+      - name: UBASE_OUTPOST_09
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_10
+        width: 10
+        length: 10
+        groups: 5
+      - name: UBASE_OUTPOST_11
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_OUTPOST_12
+        width: 10
+        length: 10
+        groups: 5
+        items:
+          STR_ELERIUM_115:
+            - [4, 4, 0]
+      - name: UBASE_OUTPOST_13
+        width: 10
+        length: 10
+        items:
+          SPTURRET_SPAWNER:
+            - [ 4, 4, 0]
+        fuseTimers:
+          SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_OUTPOST_14
+        width: 10
+        length: 10
+        items:
+          SPTURRET_SPAWNER:
+            - [ 3, 4, 1]
+            - [ 5, 4, 1]
+            - [ 3, 6, 1]
+            - [ 5, 6, 1]
+        fuseTimers:
+          SPTURRET_SPAWNER: [0, 0]
+      - name: UBASE_SURFACE00
+        width: 10
+        length: 10
+        groups: 1
+      - name: UBASE_SURFACE01
+        width: 10
+        length: 10
+        groups: 1
+
+################################
 #BEGIN EXPANDED UBASE
   - name: UBASE
     mapDataSets:

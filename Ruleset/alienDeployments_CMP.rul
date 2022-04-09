@@ -2396,14 +2396,23 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_HEAVY
     width: 40
     length: 40
-    height: 2
-    shade: 10
-    script: ALIENBASE
-    terrains:
-      - UBASE
+    height: 10
+    #shade: 10
+    #script: ALIEN_BASE_SURFACE
+    #customUfo: ALIEN_BASE_ENTRY
+    #terrains:
+    #  - UBASE_BASE_SURFACE
+    #markerName: STR_ALIEN_BASE
+
+    script: ALIEN_BASE_SURFACE
     objectiveType: 3
     markerName: STR_ALIEN_BASE
     markerIcon: 7
+    terrains:
+      - UBASE_BASE_SURFACE
+
+    #markerIcon: 7
+    nextStage: STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND
     genMission:
       STR_ALIEN_SUPPLY: 100
     briefing:
@@ -2411,8 +2420,6 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
-    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
-    objectivePopup: STR_CONTROL_CENTER_DESTROYED
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
     huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
@@ -2421,6 +2428,25 @@ alienDeployments:
         STR_ALIEN_INTERCEPTION_1: 100
       9:
         STR_ALIEN_INTERCEPTION_2: 100
+
+
+  - type: STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND
+    data: *AlienBaseRanks
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_ALIEN_BASE_ASSAULT_UNDERGROUND_BRIEFING
+    width: 40
+    length: 40
+    height: 2
+    shade: 10
+    script: ALIENBASE
+    terrains:
+      - UBASE
+    objectiveType: 3
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED
 #END ALIEN BASE ASSAULT STAGE 2
 
 #BEGIN ALIEN BASE ASSAULT STAGE 3, FULLY CREWED BASE
@@ -2633,14 +2659,14 @@ alienDeployments:
           -
             - STR_FUSION_LANCE
             - STR_FUSION_LANCE
-    width: 60
-    length: 60
-    height: 2
-    shade: 10
-    script: ALIENBASE
+    width: 50
+    length: 50
+    height: 10
+    #shade: 10
+    script: ALIEN_FORT_SURFACE
+    #customUfo: ALIEN_FORT_ENTRY
     terrains:
-      - UBASE
-    objectiveType: 3
+      - UBASE_FORT_SURFACE
     markerName: STR_ALIEN_BASE
     markerIcon: 7
     genMission:
@@ -2650,8 +2676,7 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
-    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
-    objectivePopup: STR_CONTROL_CENTER_DESTROYED
+    nextStage: STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
     huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
@@ -2660,6 +2685,25 @@ alienDeployments:
         STR_ALIEN_INTERCEPTION_1: 100
       9:
         STR_ALIEN_INTERCEPTION_2: 100
+
+
+  - type: STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND
+    data: *AlienFortRanks
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_ALIEN_FORT_ASSAULT_UNDERGROUND_BRIEFING
+    width: 60
+    length: 60
+    height: 2
+    shade: 10
+    script: ALIENBASE
+    terrains:
+      - UBASE
+    objectiveType: 3
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED
 #END ALIEN BASE, STAGE 3
 
 #BEGIN ANTARCTIC BEACON

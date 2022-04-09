@@ -1216,4 +1216,41 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
 #END SUPPLY SHIP
+
+  - type: ALIEN_FORT_ENTRY
+    size: STR_SMALL
+    sprite: 1
+    battlescapeTerrainData:
+      name: P4_C
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: P4_C
+          width: 20
+          length: 20
+
+  - type: ALIEN_BASE_ENTRY
+    size: STR_SMALL
+    sprite: 1
+    battlescapeTerrainData:
+      name: PTOWER_ENTRY
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: PTOWER_ENTRY
+          width: 20
+          length: 20
+
 ##END UFOS
