@@ -2394,8 +2394,8 @@ alienDeployments:
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
             - STR_FUSION_POWER_CELL_HEAVY
-    width: 40
-    length: 40
+    width: 50
+    length: 50
     height: 10
     script: ALIEN_BASE_SURFACE
     objectiveType: 3
@@ -2410,7 +2410,7 @@ alienDeployments:
       textOffset: -16
       background: BACK01.SCR
       showTarget: false
-      desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
+      desc: STR_ALIEN_BASE_ASSAULT_STAGE_2_BRIEFING
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
     huntMissionMaxFrequency: 1440       # generate hunt mission max every 720 minutes (= 12 hours)
@@ -2662,7 +2662,7 @@ alienDeployments:
       textOffset: -16
       background: BACK01.SCR
       showTarget: false
-      desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
+      desc: STR_ALIEN_BASE_ASSAULT_STAGE_3_BRIEFING
     nextStage: STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
@@ -2940,9 +2940,9 @@ extraStrings:
         STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND: "ALIEN BASE ASSAULT - UNDERGROUND"
         STR_ALIEN_BASE_ASSAULT_UNDERGROUND_BRIEFING: "We have gone deeper inside the alien base. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
         STR_ALIEN_BASE_ASSAULT_STAGE_3: "ALIEN FORT ASSAULT - SURFACE"
-        STR_ALIEN_BASE_ASSAULT_STAGE_3_BRIEFING: "UNEXCOM forces have landed next to an alien fortified facility. The entrance to the hidden facility underground is heavily defended, signaled as a large green area inside a pyramid-like structure. In order to access the rest of the fort, our forces must eliminate all enemies or rush the green area (click on the 'abort mission' icon to start the next stage of the mission)"
-        STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND: "We have gone deeper inside the alien fort. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
-        STR_ALIEN_FORT_ASSAULT_UNDERGROUND_BRIEFING:  "ALIEN FORT ASSAULT - UNDERGROUND"
+        STR_ALIEN_BASE_ASSAULT_STAGE_3_BRIEFING: "UNEXCOM forces have landed next to an alien fortified facility. The entrance to the hidden underground section is heavily defended, signaled as a large green area inside a pyramid-like structure. In order to access the rest of the fort, our forces must eliminate all enemies or rush the green area (click on the 'abort mission' icon to start the next stage of the mission)"
+        STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND: "ALIEN FORT ASSAULT - UNDERGROUND"
+        STR_ALIEN_FORT_ASSAULT_UNDERGROUND_BRIEFING: "We have gone deeper inside the alien fort. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your squad has returned to the green exit area (click on the 'abort mission' icon to escape)."
         STR_ALIEN_BASE_STILL_INTACT: "Alien Structure still intact"
         STR_ALIEN_BASE_DESTROYED: "Alien Structure destroyed"
         STR_ALIEN_BASE_RECOVERY: "ALIEN STRUCTURE RECOVERY"
