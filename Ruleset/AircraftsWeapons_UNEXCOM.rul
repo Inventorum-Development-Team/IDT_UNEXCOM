@@ -1917,7 +1917,7 @@ craftWeapons:
     sound: 5
     damage: 65
     shieldDamageModifier: 50
-    range: 20
+    range: 30
     accuracy: 55
     reloadCautious: 40
     reloadStandard: 40
@@ -1956,7 +1956,7 @@ craftWeapons:
     damage: 80
     shieldDamageModifier: 75
     range: 40
-    accuracy: 65
+    accuracy: 75
     reloadCautious: 48
     reloadStandard: 48
     reloadAggressive: 48
@@ -2381,7 +2381,7 @@ craftWeapons:
     accuracy: 50
     reloadCautious: 10
     reloadStandard: 10
-    reloadAggressive: 10
+    reloadAggressive: 6
     ammoMax: 100
     rearmRate: 50
     launcher: STR_LASER_CANNON
@@ -2410,17 +2410,17 @@ craftWeapons:
   - type: STR_VOSTOK_PLASMA_CANNON
     sprite: 208
     sound: 4
-    damage: 45
-    range: 15
-    accuracy: 40
+    damage: 55
+    range: 25
+    accuracy: 60
     reloadCautious: 8
     reloadStandard: 8
     reloadAggressive: 8
     launcher: STR_VOSTOK_CANNON
     projectileType: 5
     weaponType: 1
-    ammoMax: 50
-    rearmRate: 100
+    ammoMax: 80
+    rearmRate: 40
 
 #  - type: STR_TLALOC_GAUSS_CANNON_UC
 #    weaponType: 1
@@ -2747,14 +2747,14 @@ craftWeapons:
     weaponType: 6
     sprite: 210
     sound: 5
-    damage: 105
+    damage: 115
     shieldDamageModifier: 75
-    range: 15
+    range: 20
     accuracy: 65
     reloadCautious: 35
     reloadStandard: 35
     reloadAggressive: 35
-    ammoMax: 4
+    ammoMax: 6
     rearmRate: 16
     launcher: STR_GORGON_LAUNCHER
     projectileType: 0
@@ -2764,13 +2764,13 @@ craftWeapons:
     weaponType: 6
     sprite: 210
     sound: 5
-    damage: 115
-    range: 20
+    damage: 135
+    range: 25
     accuracy: 80
     reloadCautious: 35
     reloadStandard: 35
     reloadAggressive: 35
-    ammoMax: 4
+    ammoMax: 8
     rearmRate: 16
     launcher: STR_KRAKEN_LAUNCHER
     projectileType: 0
