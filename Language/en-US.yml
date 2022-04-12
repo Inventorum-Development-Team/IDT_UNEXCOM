@@ -65,8 +65,8 @@ en-US:
       STR_CUSTOM_WEAPON: Custom Weapons
       STR_AIRCRAFTS: Aircrafts
       STR_TRANSPORTS: Transports
-      STR_FIGHTERS: Fighters
-      STR_BOMBERS: Bombers
+      #STR_FIGHTERS: Fighters
+      #STR_BOMBERS: Bombers
       STR_VTOL_TRANSPORTS: VTOL Transports
       STR_PARATROOPER_TRANSPORTS: Paratrooper Transports
       STR_RECON_SATELLITES: Recon Satellites
@@ -88,6 +88,12 @@ en-US:
 
       STR_DAMAGE_10: ELERIUM FUSION
       STR_DAMAGE_11: ELECTRIC
+
+      STR_OVERSEER: "Overseer"
+      STR_OVERSEER_LANDING: "Overseer Trap Opportunity"
+      STR_POWER_DESTROYED: "POWER SOURCES DESTROYED"
+      STR_OVERSEER_BRIEFING: "CODENAME: Operation False Flag - Using a captured Hyper Wave Encoder we were able to get the Overseer UFO to land, faking a base location. Our mission: we have to either kill all aliens or destroy the power source and evacuate before the time runs out and the aliens realize what is happening and lift off. They'll never know - we give no warning. We set a trap, they took the bait."
+
 
 ####################################################
 
@@ -568,7 +574,7 @@ en-US:
       STR_ARMORED_FLOATER_MEDIC: "Armored Floater Medic"
       STR_ARMORED_FLOATER_NAVIGATOR: "Armored Floater Navigator"
       STR_ARMORED_FLOATER_SOLDIER: "Armored Floater Soldier"
-      STR_MUTON_LEADER: "Muton Guard"
+      #STR_MUTON_LEADER: "Muton Guard"
       STR_MUTON_MEDIC: "Muton Medic"
       STR_MUTON_ENGINEER: "Muton Engineer"
       STR_MUTON_SOLDIER_CORPSE: "Muton Soldier Corpse"
@@ -1175,10 +1181,1440 @@ en-US:
       STR_GOOD_ENDING_3: "Operation Downfall meant the beginning of the colonization of the space. Human spaceships are built, meant to reach the planets and moons on the Solar System. A dream that was impossible a decade ago. The power of the atom, instead of destroying the Mankind, has propel us to the stars and beyond."
       STR_GOOD_ENDING_4: "Mars is still a contested planet. Estimations expect our troops to be outmatched in 10 to 1. But this won't be a stop to our campaign, as new scientific and military vessels are prepared to arrive to the Red Planet and establish a firm foothold. The War for Mars has begun."
 
+      STR_XCOM_CRAFTS: "UNEXCOM CRAFT"
+      STR_CRAFT_ARMAMENT: "CRAFT ARMAMENT"
+      STR_UNEXCOM_RESEARCH: "UNEXCOM RESEARCH"
+      STR_WEAPONS: "WEAPONS"
+      STR_EQUIPMENT: "EQUIPMENT"
+      STR_ARMOR: "ARMOR"
+      STR_VEHICLES: "ARMORED VEHICLES"
+      STR_ALIEN_MISSIONS: "ALIEN MISSIONS"
+      STR_ALIEN_EQUIPMENT: "ALIEN EQUIPMENT"
+      STR_TERRORIST_RESEARCH: "COUNTERTERRORIST RESEARCH"
+      STR_FIGHTERS: "Fighters"
+      STR_FIGHTERS_UFOPEDIA: "Fighter craft are both fast and agile, suitable for hunting smaller UFOs. Usually only equipped with short-range weaponry, they rely on agility to dodge enemy attacks to survive. Fighters are most effective when used in groups, since it is integral to shoot down the target UFO as quickly as possible to minimize the amount of fire the fighter takes."
+      STR_BOMBERS: "Bombers"
+      STR_BOMBERS_UFOPEDIA: "Bomber craft are capable of carrying large amounts of heavy munitions. Equipped with long-range weaponry, they are usually capable to engage UFOs without entering their weapon-range. This makes bombers suitable to engage larger UFOs equipped with lethal weaponry without risk. However bombers struggle to catch smaller UFOs and can easily get caught by hunter-killer UFOs."
+      STR_RECONS: "Reconnaissance Craft"
+      STR_RECONS_UFOPEDIA: "Reconnaissance craft have the sole purpose of spotting UFOs, they are also the only type of craft capable of finding alien bases. {NEWLINE} {NEWLINE}Spy planes are fast moving craft undetectable by hunter-killers, suitable for chasing and identifying UFOs. They are also exceptional at finding bases, since they do not get targeted by the base's interceptors. {NEWLINE} {NEWLINE}Satellites are slow-moving, however they excel at detecting UFOs compared to ground based installations. Early satellites are vulnerable to hunter-killer UFOs, while upgraded designs get access to ways in which to defend themselves."
+
+      STR_UNEXCOM_FIGHTERS_UFOPEDIA: "Our fighters and bombers are the first line of defense we have, we have them to defend the skies of our planet. Powers such as the US, NATO and USSR allow us to have access to the quantities we need from their aircraft, as well as support personnel and pilots, as well as the best in aeronautics and weapons technology. All of our fighters, bombers and transports has been upgraded with fuel tanks to increase combat range. Also, we can use prototype recon satellites to help us in our mission to guard the skies."
+
+      STR_LIGHT_MISSILE_UFOPEDIA: "Infrared homing is a passive weapon guidance system which uses the infrared (IR) light emission from a target to track and follow it. Missiles which use infrared seeking are often referred to as 'heat-seekers', since infrared is radiated strongly by hot bodies. Aircraft generate and emit heat, are especially visible in the infrared wavelengths of light compared to objects in the background. Analysis conducted in the air combat of Massachusetts led to that, apparently, the UFOs reflect certain type of heat. Probably from their engines. It's not some kind of radiation known to us, but it can get some lock using the IR missiles."
+
+      STR_HEAVY_MISSILE_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Semi-active radar homing (SARH) is a common type of missile guidance system, perhaps the most common type for longer-range air-to-air. The name refers to the fact that the missile itself is only a passive detector of a radar signal – provided by an external source, (mostly craft-mounted radar) as it reflects off the target. Semi-active missile systems use bistatic continuous-wave radar. Our collected information reports that the material with which they appear to be constructed reflects the radar waves, making it more difficult to lock an enemy with this kind of missiles. "
+
+      STR_SUPER_HEAVY_MISSILE_UFOPEDIA: "Missiles armed with nuclear warheads, modified for use by UNEXCOM. Slow, but more accurate than conventional missiles, having more time to compute the path and distance of the target, employ a combination of IR and active radar guidance. Their weight and characteristics prevent them from having a long reach. It is highly recommended to use them only in cases of emergency."
+
+      STR_GATLING_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Gatling-type cannon is a rapid-firing weapon that utilizes multiple barrels in a rotating cluster to provide a sustained rate of fire greater than single-barreled machine guns or automatic cannon of equivalent caliber. The loading, firing, and unloading functions are performed simultaneously in different barrels as they rotate, and the rotation also permits the barrels some time to cool. However, they tend to be somewhat inaccurate because of the enormous power generated by the weapon's mechanism."
+
+      STR_REVOLVER_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}This type of autocannon uses the revolver principle to accelerate the cycle of loading, firing and ejecting multiple rounds of ammunition, achieving a very high rate of fire compared to conventional cannon of the same calibre. Revolver cannon are generally able to be made much lighter than gatling guns, requiring less support and mounting hardware. The power and reliability of this type of guns allow to use heavier ammunition calibres without compromising the stability or accuracy of the weapon."
+
+      STR_AUXILIARY_POD_UFOPEDIA: "{NEWLINE}{NEWLINE}These auxiliary systems are mounted in hardpoints in the wings and under the fuselage, are used to increase the performance in some aspects of the aircraft that carries them, such as combat range or performance in battle. It is recommended to choose carefully, most include some drawbacks."
+
+      STR_ROCKET_POD_UFOPEDIA: "Rocket Pods are short range weapons, high speed and fast fire rate. They are not guided, so they are quite imprecise. Trying to use them against small, agile targets is useless. It is basically a shotgun for airplanes. They have the ability to project a large amount of explosives over a large area. Its primary design was to saturate the sky in front of enemy bombers to bring them down."
+
+      STR_TUNNAN_UFOPEDIA: "J29 TUNNAN - OLD-FASHIONED MODEL OF AIRPLANE OF SWEDISH ORIGIN, DESPITE ITS AGE IS VERY MANEUVERABLE, TOUGH AND VERY APPRECIATED BY ITS PILOTS. FAMOUS FOR ITS ACTIONS IN THE CONGO AND THE SWEDISH UFO INCIDENT. TUNNAN MEANS 'BARREL'."
+
+      STR_HERCULES_UFOPEDIA: "C-130 HERCULES - MILITARY TRANSPORT AIRCRAFT, EXTENDEDLY EMPLOYED BY NUMEROUS ARMIES. USED TO TRANSPORT UNEXCOM PERSONNEL, TROOPS AND SUPPLIES, MODIFIED TO INCLUDE ENHANCED FUEL TANKS. TROOPERS JUMP ON PARACHUTE FROM THE PLANE DIRECTLY INTO BATTLE, ALLOWING A QUICK AND STEALTH INSERTION."
+
+      STR_HUEY_UFOPEDIA: "UH-1 HUEY - LIGHT TRANSPORT HELICOPTER, EMPLOYED TO INSERT AND EVACUATE TROOPS QUICKLY IN THE BATTLEFIELD. IT HAS A SHORT RANGE, OUR TROOPS MUST BE TAKEN ON C-130s TO MISSION SITES BEFORE THE DEPLOYMENT. ARMED WITH WEAPON HARDPOINTS TO PROVIDE CLOSE SUPPORT AND ENGAGE TARGETS"
+
+      STR_PHANTOM_UFOPEDIA: "F-4 PHANTOM II - STANDARD AIR SUPERIORITY FIGHTER PLANE OF UNEXCOM, IT'S A WIDELY SPREAD AIRCRAFT IN THE NATO AIR FORCES. MODIFIED TO INCORPORATE LARGE INTERNAL FUEL TANKS TO INCREASE COMBAT RANGE."
+
+      STR_THUNDERCHIEF_UFOPEDIA: "F-105 THUNDERCHIEF - SUPERSONIC STRIKE BOMBER, HAS MORE BOMB LOAD THAN SOME BOMBERS OF WWII. IT'S EMPLOYED BY UNEXCOM TO PROVIDE HEAVY AERIAL SUPPORT WHEN ENGAGING UFOs."
+
+      STR_SIDEWINDER_UFOPEDIA: "AIM-9E SIDEWINDER - AMERICAN SMALL RANGE AIR TO AIR MISSILE WITH IR GUIDANCE. LIGHT MISSILE"
+
+      STR_SPARROW_UFOPEDIA: "AIM-7E SPARROW - AMERICAN MEDIUM RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE. HEAVY MISSILE"
+
+      STR_VULCAN_UFOPEDIA: "M-61 VULCAN - STANDARD AMERICAN AIR TO AIR CANNON, FOUND IN ALMOST EVERY USAF AIRCRAFT. FEATURES AN EXTREMELY HIGH RATE (6000 ROUNDS PER MINUTE) AND IS VERY RELIABLE, BUT NOT VERY ACCURATE - FIRES 20 MM ROUNDS. GATLING CANNON"
+
+      STR_FOXBAT_UFOPEDIA: "MiG-25 FOXBAT - SUPERSONIC TWIN-MOTOR INTERCEPTOR AND RECON CRAFT, IT'S AMONGST THE FASTEST MILITARY AIRCRAFTS IN THE WORLD. FEATURES A VERY POWERFUL RADAR, IMPOSSIBLE TO BE INTERFERED WITH ANY TYPE OF COUNTERMEASURES."
+
+      STR_FISHBED_UFOPEDIA: "MiG-21BIS FISHBED - SUPERSONIC LIGHTWEIGHT MULTIROLE FIGHTER, FAMOUS FOR BEING CHEAP AND EASY TO HANDLE, AS WELL AS THE MOST PRODUCED SUPERSONIC AIRCRAFT IN HISTORY. IT IS NOT PARTICULARLY FAST OR POWERFUL, BUT IT IS VERY MANEUVERABLE. OUR VERSION INCLUDES IMPROVED FUEL TANKS TO INCREASE COMBAT RADIUS."
+
+      STR_BACKFIRE_UFOPEDIA: "Tu-22M BACKFIRE - SUPERSONIC, VARIABLE-SWEEP WING, LONG RANGE STRATEGIC STRIKE BOMBER, CAN CARRY THE MOST POWERFUL MISSILES IN OUR ARSENAL AND HAS THE LONGEST RANGE IN OUR AIR FORCE. ITS SIZE LIMITS ITS MANEUVERABILITY."
+
+      STR_ATOLL_UFOPEDIA: "R-3 'AA-2 ATOLL' - SHORT RANGE AIR TO AIR MISSILE WITH IR GUIDANCE, MISSILE OF ENGINEERING TO THE INVERSE OF THE SIDEWINDER, HAS A LITTLE MORE RANGE, BUT IT IS LESS POWERFUL. LIGHT MISSILE"
+
+      STR_ACRID_UFOPEDIA: "R-40 'AA-6 ACRID' - SOVIET LONG RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE, EQUIPPED WITH THE SAME 'SMERCH-A' RADAR OF THE MiG-25. IT IS THE BIGGEST AA MISSILE IN USE. HEAVY MISSILE"
+
+      STR_GSH_23_UFOPEDIA: "GSH-23 - TWIN-BARRELED 23 MM AUTOCANNON, DESIGNED FOR SOVIET CRAFT. USES THE GAST PRINCIPLE, THE RECOIL OF ONE BARREL RELOADS AND CHARGES THE SECOND. - FIRES 23 MM ROUNDS. REVOLVER CANNON"
+
+      STR_LIGHTNING_F6_UFOPEDIA: "LIGHTNING F.6 - MAIN INTERCEPTOR IN THE ROYAL AIR FORCE ARSENAL, FEATURES AN INCREDIBLE RATE OF CLIMB, CEILING, SPEED AND ACCELERATION, ALTHOUGH DATA IS CLASSIFIED, IT IS SAID THAT IT CAN CLIMB MORE THAN 18,000 METERS WITH RELATIVE EASE."
+
+      STR_MIRAGE_UFOPEDIA: "MIRAGE IV - SUPERSONIC NUCLEAR BOMBER AND RECONNAISSANCE AIRCRAFT. VERY AGILE BOMBER, USES A MODIFIED VERSION OF TAKE-OFF ROCKETS INSTALLED UNDER FUSELAGE, EMPLOYEES TO GIVE EXTRA AGILITY IN EMERGENCY CASES."
+
+      STR_STARFIGHTER_UFOPEDIA: "F-104S STARFIGHTER - CONSIDERED BETTER THAN THE NATIVE AMERICAN VERSION, THIS INTERCEPTOR IS A FINE AND ELEGANT AIRCRAFT. AT THE REQUEST OF UNEXCOM, THE HARDPOINT FOR CANNON WAS REINTRODUCED INSTEAD OF ANOTHER SLOT FOR HEAVY MISSILES. COUNTS WITH A BONUS TO THE AGILITY OF 15%."
+
+      STR_DRAKEN_UFOPEDIA: "S35 DRAKEN - EXCELLENT SWEDISH MODEL, IS DESIGNED TO BE VERY STRONG, PRACTICAL AND RELIABLE. IT HAS STOL CAPACITY AND CAN BE REASSEMBLED BY A TEAM OF INEXPERIENCED SOLDIERS IN 10 MINUTES. IS SOMEWHAT SLOWER THAN OTHER FIGHTERS, BUT COMPENSATES IT WITH ITS DURABILITY"
+
+      STR_RED_TOP_UFOPEDIA: "RED TOP EX - BRITISH SMALL RANGE AIR TO AIR MISSILE WITH IR GUIDANCE. MODIFIED BY HAWKER SIDDELEY WITH ENHANCED PROPELLER TO INCREASE RANGE. LIGHT MISSILE"
+
+      STR_MATRA_UFOPEDIA: "MATRA R.530 EX - FRENCH MEDIUM RANGE AIR TO AIR MISSILE WITH PASSIVE RADAR GUIDANCE. MODIFIED BY MATRA BY ADDING A NEW MOTOR AND FUEL TANK TO DRASTICALLY INCREASE ITS RANGE. HEAVY MISSILE"
+
+      STR_ADEN_UFOPEDIA: "ADEN - POPULAR BRITISH AIR TO AIR CANNON, USED IN NUMEROUS EUROPEAN AIRCRAFTS. FEATURES A BIG, HEAVY AND LETHAL ROUND, CAPABLE OF PENETRATE SEVERAL INCHES OF ARMOR - FIRES 30 MM ROUNDS. REVOLVER CANNON"
+
+      STR_FALCON_UFOPEDIA: "AIM-26 FALCON - ONLY NUCLEAR AIR TO AIR MISSILE IN AMERICAN ARSENAL. DESIGNED TO PROVIDE AN ENSURED KILL IN ATTACKS ON SOVIET HEAVY BOMBERS. USES SEMI-ACTIVE RADAR HOMING. EQUIPPED WITH W45 NUCLEAR WARHEAD, EXPLOSIVE YIELD EQUIVALENT TO 250t OF TNT. MODIFIED BY HUGHES ELECTRONICS BY ADDING A LARGE FUEL TANK TO INCREMENT RANGE. SUPER HEAVY MISSILE"
+
+      STR_MIGHTY_MOUSE_UFOPEDIA: " MK 4 FOLDING-FIN AERIAL ROCKET - POWERFUL AIR-TO-AIR ROCKET USED IN THE EARLY 1950S TO SHOOT DOWN ENEMY BOMBERS. THEIR WIDE DISPERSION LIMITS THEIR USE, ALTHOUGH THEY ARE POWERFUL ENOUGH TO TEAR A WING OUT OF AN AIRPLANE AT HIGH ALTITUDE. NICKNAMED 'MIGHTY MOUSE' BY THE CARTOON. ROCKET"
+
+      STR_SHORTSWORD_ALLOY_LIGHT_MISSILE_UFOPEDIA: "AIM-18A - MISSILE CREATED ENTIRELY FROM ALIEN ALLOYS. LIGHTER, AND THE NEW HEAT SEEKING PROTOTYPE SYSTEMS ARE PROGRAMMED TO SPECIFICALLY SEARCH FOR THE THERMAL WAVES EMITTED BY THE UFO, INCREASING ITS ACCURACY. LIGHT MISSILE"
+
+      STR_HAMMER_ALLOY_HEAVY_MISSILE_UFOPEDIA: "R-72 'AA-12 AQUILA' - HEAVY MISSILE OF SOVIET ORIGIN, INCORPORATES NEW TECHNOLOGIES BASED ON ALIEN ALLOYS. ITS NEW AVIONICS SYSTEMS, GIVE IT UNPRECEDENTED ACCURACY AND THE IMPROVED PAYLOAD IT CARRIES ENSURES MAXIMUM DAMAGE. HEAVY MISSILE"
+
+      STR_ATHENA_ALLOY_GATLING_UFOPEDIA: "GAU-33 ATHENA - REDESIGN OF THE VULCAN GATLING GUN, EMPLOYS A NEW SEMI-AUTOMATED ELECTRIC MOTOR THAT IS LINKED TO A NEW PROXIMITY RADAR, INCREASING THE POSSIBILITY OF DAMAGE TO A TARGET. GATLING CANNON"
+
+      STR_MAUSER_ALLOY_CANNON_UFOPEDIA: "MAUSER BK-28 - CANNON DESIGNED BY WEST GERMANY ENGINEERS, USES A SPECIAL 27MM AMMUNITION BUILT WITH A MIXTURE OF ALIEN ALLOYS AND TUNGSTEN, IN ORDER TO MAXIMIZE THE PENETRATION POWER OF THE WEAPON. REVOLVER CANNON"
+
+      STR_PHOENIX_ALLOY_SUPER_HEAVY_MISSILE_UFOPEDIA: "AIM-90 PHOENIX - IMPROVED MODEL OF NUCLEAR AIR-AIR MISSILE, IS BASICALLY AN UPGRADE OF THE FALCON MISSILE CURRENTLY. A FALCON IS REQUIRED FOR PRODUCTION AND THE SAME WARHEAD IS USED, BUT WITH A COMPLETELY NEW AVIONICS SET AND STRUCTURE MADE OF ALIEN ALLOYS. SUPER HEAVY MISSILE."
+
+      STR_HYDRA_ALLOY_ROCKETS_UFOPEDIA: "MK 9 HYDRA 72 ROCKET - PROTOTYPE VARIANT INSPIRED BY THE CLASSIC MK 4 UNGUIDED ROCKET, THEY HAVE A TUNGSTEN PENETRATOR THAT AT THE MOMENT OF IMPACT PERFORATES THE OUTER SURFACE BEFORE DETONATING THE EXPLOSIVE CHARGE INSIDE. ROCKET"
+
+      STR_APOLLO_LASER_GATLING_UFOPEDIA: GAU-50 APOLLO - THE MOST RECENT ADVANCES IN LASER WEAPONRY HAVE ALLOWED US TO DEVELOP A MECHANISM TO ALLOW A FAST AND INTERMITTENT LIGHT PULSE, BUT SIGNIFICANTLY REDUCING ITS POWER. THIS GENERAL ELECTRIC DESIGNED CANNON IS FOCUSED ON SHORT RANGE.
+
+      STR_KODIAK_LASER_CANNON_UFOPEDIA: YLC-10 KODIAK LASER CANNON - PROTOTYPE OF EXPERIMENTAL LASER CANNON DESIGNED EXCLUSIVELY BY UNEXCOM ENGINEERS. ITS REFRACTING LENSES AND MODERN SELF-RECHARGING POWER CELL ALLOW IT TO HAVE AN UNDISPUTED POWER, EFFECTIVENESS AND ACCEPTABLE RANGE.
+
+      STR_FUEL_TANK_UFOPEDIA: "EXTRA FUEL TANK, CARRIED UNDER WING. ADD 150 EXTRA FUEL UNITS, WHICH MEANS ADDITIONAL 400 NAUTICAL MILES OR 740 KM, WITH THE DISADVANTAGE THAT IT MAKES THE AIRCRAFT SLOWER (ACCEL -1) AND LESS AGILE (AVOID BONUS -5)."
+
+      STR_AFTERBURNER_UFOPEDIA: "AUXILIARY UNIT THAT IS INSTALLED DIRECTLY IN THE MOTOR OF THE PLANE THAT USES IT, INCREASES ITS SPEED BY 250 KNOTS, ALMOST 400 KM/H. ALSO INCREMENTS THE ACCELERATION BY 10 UNITS. LIMITS THE FUEL CAPACITY BY -25"
+
+      STR_TARGETING_POD_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOYS AND ALIEN NAVIGATION, USING OUR NEWEST RESEARCH IN UFOS. INCREASE ACCURACY CAPACITIES BY 25."
+
+      STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: "AUXILIARY UNIT MADE WITH ALIEN ALLOY, DESIGNED TO INCREASE THE DURABILITY OF OUR CRAFTS. INCREASES MAX DAMAGE BY 100, BUT REDUCES DODGE BY 10"
+
+      STR_LINNA_UFOPEDIA: "BUILT IN COLLABORATION WITH OUR SCIENTISTS WITH NASA, ESRO AND THE SOVIET SPACE PROGRAM, IT USES EXPERIMENTAL OPTICAL AND SENSORS TO DETECT UFOS CHARACTERISTIC INFRARED SIGNATURES AND GRAVITY WAVES. 'LINNA' MEANS 'CASTLE' IN FINNISH."
+
+      STR_RAPIER_UFOPEDIA: "XF-108 RAPIER - LONG-RANGE, HIGH-SPEED INTERCEPTOR AIRCRAFT DESIGNED BY NORTH AMERICAN AVIATION INTENDED TO DEFEND THE UNITED STATES FROM SUPERSONIC SOVIET STRATEGIC BOMBERS. MODIFIED WITH AN ALIEN ALLOY FRAME FOR BETTER PROTECTION AND ENHANCED INTERNAL FUEL TANK TO INCREASE COMBAT RANGE"
+
+      STR_VALKYRIE_UFOPEDIA: "XB-70 VALKYRIE - VERY LONG RANGE, DEEP-PENETRATION STRATEGIC NUCLEAR BOMBER. MODIFIED TO INCORPORATE NEW ALIEN ALLOY AIRFRAME AND MODIFIED RADAR. ITS NEW ENGINES ALLOWS TO INCREASE ITS COMBAT PERFORMANCE AND REACH HIGHER SPEEDS. CAPABLE OF CARRY NUCLEAR WEAPONS."
+
+      STR_ATALAYA_UFOPEDIA: "NEWEST IMPLEMENTATION OF ALIEN TECH ON HUMAN DESIGNS. HAS BETTER FUEL CELLS FOR MORE FLIGHT TIME, AS WELL AS IMPROVED RADARS AND SCANNERS FOR LONGER-RANGE DETECTION. INCORPORATES THE NEWEST AMERICAN AND SOVIET AEROSPACE TECH WITH THE LIGHT AND STRONG ALIEN ALLOYS. INCLUDES A SLOT FOR CANNONS, USED AS SELF-DEFENSE."
+
+      STR_HIND_UFOPEDIA: "MI-24X HIND - ADVANCED SOVIET GUNSHIP MODEL, BUILT IN COLLABORATION WITH MIKHAIL MIL AND UNEXCOM. NICKNAMED 'FLYING TANK' FOR ITS FIRE POWER AND HARDNESS, SACRIFICES A LITTLE THE ABILITY TO TRANSPORT TROOPS FOR INCREASED ARMOR AND SPACE FOR FUEL. PERFORMS A MISSILE STRIKE DURING THE FIRST TURN OF COMBAT (TROOPS CANNOT LEAVE THE CRAFT DURING THE FIRST TURN OF COMBAT)"
+
+      STR_CRUSADER_UFOPEDIA: "XF-38 CRUSADER - HYBRID INTERCEPTOR CREATED WITH STEALTH TECHNOLOGY, SPECIALLY DESIGNED FOR UFO COMBAT. ITS STEALTH TECHNOLOGY ALLOWS IT TO HAVE SOME ROOM TO MANOEUVRE WITHOUT BEING DETECTED, WHILE MAINTAINING ITS COMBAT CAPABILITY."
+
+      STR_SARACEN_UFOPEDIA: "XB-90 SARACEN - HYBRID BOMBER CREATED WITH ALIEN AVIONICS AND HUMAN STEALTH TECHNOLOGY. ITS INTERNAL WEAPONS BAY CAN CARRY AN ENORMOUS VARIETY OF MISSILES AND BOMBS WITHOUT COMPROMISING ITS INFILTRATION CAPABILITIES. "
+
+      STR_SPACE_SHUTTLE_UFOPEDIA: "X-73 RAIDER SPACE SHUTTLE - X-73 Raider Shuttle. Prototype space plane with a large cargo bay, planned to replace the Apollo program and intended to start in the 80s, the new technologies allowed us to improve and implement the model. Has VTOL capabilities."
+
+      STR_BLACKBIRD_UFOPEDIA: "The SR-71 Blackbird is an american high altitude stealth spy plane. Notorious for its speed, it is currently the fastest aircraft ever built. The plane was painted black so that it would be harder to spot against the night sky, which led to it gaining its nickname."
+
+      STR_TUNNAN_MK2_UFOPEDIA: "The Saab J29 MK 2 is a retrofitted version of the Saab J29. Designed with the assistance of Saab engineers, The MK 2 incorporates a new engine and an alien alloy fuselage to make it more competitive against the UFOs we are facing. Swedish test-pilots nicknamed the craft 'Tornsvalan', comparing the plane to a Swift in the air."
+
+      STR_LONGSWORD_FUSION_MISSILE_UFOPAEDIA: "THE LONGSWORD FUSION MISSILE INCORPORATES THE TECHNOLOGY OF ALIEN FUSION WEAPONRY INTO OUR AIRCRAFTS’ ARMAMENTS. IT IS MORE POWERFUL THAN CONVENTIONAL WARHEADS, BUT ALSO MORE EFFICIENT AT TAKING DOWN UFO SHIELDS."
+
+      STR_KATANA_UFOPAEDIA: "THE KATANA FUSION MISSILE BENEFITS FROM THE LIGHTNESS OF A FUSION WARHEAD, GRANTING THE WEAPON AN INCREASED RANGE. THE KATANA IS THE FIRST MISSILE IN OUR ARSENAL THAT IS CAPABLE OF OUTRANGING AN ALIEN BATTLESHIP."
+
+      STR_ADLER_UFOPAEDIA: "THE ADLER SUPER-HEAVY MISSILE UTILIZES ALIEN FUSION TECHNOLOGY TO CREATE A LARGE BLAST ALMOST THIRTY METERS IN DIAMETER, MAKING DODGING THE MISSILE A DIFFICULT TASK FOR ANY TARGET FIRED UPON."
+
+      STR_GORGON_ROCKETS_UFOPAEDIA: "THE GORGON ROCKET SYSTEM IS A LIGHT UNGUIDED FUSION MISSILE THAT EXCHANGES RANGE AND ACCURACY FOR DESTRUCTIVE POWER AND CARRYING CAPACITY."
+
+      STR_CASABA_SPIKE_UFOPAEDIA: "THE CASABA NUCLEAR SPIKE IS A HIGHLY EXPERIMENTAL WEAPON. USING A NUCLEAR REACTION CONTAINED WITHIN A HEAVILY MODIFIED UFO POWER SOURCE TO POWER ITSELF, THE WEAPON SYSTEM CONCENTRATES ALL THE POWER GENERATED INTO A SINGLE DESTRUCTIVE BEAM."
+
+      STR_EXCALIBUR_LIGHT_MISSILE_UFOPAEDIA: "THE EXCALIBUR SMART MISSILE IS A SUCH AN ADVANCED WEAPON THAT A YEAR AGO CREATING A WEAPON OF ITS CAPABILITIES WOULD HAVE SEEMED LIKE A PIPEDREAM. IT RIVALS AND EVEN SURPASSES MOST HEAVY MISSILES IN RANGE, POWER, AND ACCURACY."
+
+      STR_MJOLNIR_UFOPAEDIA: "THE MJOLNIR SMART MISSILE IS THE PINNACLE OF HUMAN-ALIEN HYBRID MISSILE TECHNOLOGY. IT UTILIZES AN ALIEN ALLOY FRAME AND A FUSION WARHEAD, WHILE ALSO USING A CONVENTIONAL PROPULSION SYSTEM."
+
+      STR_KONDOR_UFOPAEDIA: "THE KONDOR SUPER-HEAVY MISSILE IS THE MOST POWERFUL WEAPON OUR AIRCRAFTS CAN FIELD. IT IS ALMOST INCAPABLE OF MISSING ITS TARGET AND HAS A FUSION WARHEAD WITH ENOUGH POWER TO TAKE DOWN ANY UNSHIELDED UFO WITH THE EXCEPTION OF THE BATTLESHIP."
+
+      STR_VOSTOK_PLASMA_CANNON_UFOPAEDIA: "THE VOSTOK PLASMA CANNON REPRESENTS THE INCORPORATION OF PLASMA WEAPONRY INTO OUR ARSENAL OF AIRCRAFT WEAPONRY. BEARING MANY SIMILARITIES TO UFO POINT DEFENCE CANNONS, THE VOSTOK ALSO SHARES THEIR CAPABILITY TO SHRED ALIEN ALLOYS APART."
+
+      STR_ZEUS_UFOPAEDIA: "THE ZEUS PLASMA CANNON INCORPORATES MULTIPLE BARRELS TO GREATLY INCREASE RATE OF FIRE IN EXCHANGE FOR LOWER POWER AND RANGE. DUE TO AN EFFICIENT POWER CELL, THE WEAPON HAS A HIGHER CAPACITY OF ROUNDS THAN CONVENTIONAL WEAPONS."
+
+      STR_KRAKEN_ROCKETS_UFOPAEDIA: "DESPITE FIRING UNGUIDED ROCKETS, THE KRAKEN ROCKET SYSTEMS ACCURACY EXCEEDS THE ACCURACY OF MOST CONVENTIONAL MISSILES. THIS IS THANKS TO AN ADVANCED TARGETING COMPUTER CONSTRUCTED FROM ALIEN NAVIGATION SYSTEMS."
+
+      STR_CASABA_LANCE_UFOPAEDIA: "THE CASABA NUCLEAR LANCE IS AN IMPROVEMENT DEVELOPED FROM DATA GAINED FROM THE CASABA NUCLEAR SPIKE. INSTEAD OF HAVING A SINGLE CHAMBER WHERE THE NUCLEAR REACTION OCCURS, THE REACTION IS TRIGGERED IN TWO PARALLEL CHAMBERS."
+
+      STR_VIGGEN_UFOPAEDIA: "The Saab 37 Viggen, meaning lightning bolt or a tufted duck in Swedish, is the most advanced European fighter currently available, which utilizes a rarely used canard wing configuration. The aircraft is a significant improvement over its predecessor the Saab 35, boasting improvements in almost every aspect of the plane."
+
+      STR_FIREFOX_UFOPAEDIA: "The MiG-31, designated as “Firefox” by NATO, is a highly experimental soviet air superiority fighter. Utilizing the greatest advancements in soviet aerospace design and alien technology in almost every aspect of its design, the MiG-31 is a formidable combatant. Utilizing discoveries into alien psionics, the fighters fire-control system links directly with the pilot’s mind, increasing the accuracy of the fighter’s weaponry."
+
+      STR_FLANKER_UFOPAEDIA: "The Sukhoi Su-27, designated as Flanker by NATO, is a Soviet air superiority fighter boasting excellent maneuverability and operational range. Thanks to insight gained from previous UFO encounters and aerial engagements early in the war, the development of the Su-27 was greatly accelerated."
+
+      STR_JAGUAR_UFOPAEDIA: "The SEPECAT Jaguar is an attack aircraft of joint British and French design. Though originally designed for close air support and tactical nuclear strikes, the Jaguar is perfectly capable of engaging UFOs with both long and short-range weaponry."
+
+      STR_M50_UFOPAEDIA: "The Myasishchev M-50 was a prototype supersonic strategic bomber which development was terminated due to the introduction of intercontinental ballistic missiles. Due to the requirement of high payload, supersonic aircraft to challenge larger UFOs, the design was reintroduced and put into production."
+
+      STR_TU45M_UFOPAEDIA: "The Tupolev Tu-45M was a rejected proposed variant of the Tu-22M with the purpose of taking down aircraft carriers. After the outset of the war against extra-terrestrials, the design was revisited and modified to make the bomber a counter to the larger UFO designs encounter. Capable of wielding multiple long-range missiles, the TU-45M has one of the largest payloads of any craft available to us."
+
+      STR_A12_UFOPAEDIA: "The McDonell Douglas A-12 Avenger is the pinnacle of tactical bomber design. Due to a focus on a lightweight design and the application of alien technology the A-12 outperforms even the most advanced strategic bombers in effective combat range, though this achievement comes at a cost to the size of the payload. The A-12:s design also incorporates foldable wings, enabling it to fit in the space of a average fighter."
+
+      STR_PANAVIA_UFOPAEDIA: "The Panavia Hurricane is currently jointly developed by Italian, British and German Aeronautic companies as a strike fighter to defend against a possible Soviet offensive in Europe, although its design allows it also to take on a multitude of different missions. A version upgraded to incorporate alien technology has been rushed into production so that UNEXCOM can field it as an interceptor."
+
+      STR_LAMPYRIDAE_UFOPAEDIA: "The MBB Lampyridae is a stealth missile fighter of west German origin. Its design forgoes close range combat capabilities in exchange for a lighter frame and larger payload. The design also has excellent aerodynamic properties, greatly increasing the fighter’s top speed."
+
+      STR_COBRA_UFOPAEDIA: "The Northrop YF-17, Nicknamed the “Cobra” due to it’s shape resembling a cobras head, is a prototype fighter developed by Northrop aviation. Originally designed to replace the F-4 Phantom II:s, it was quickly redesigned to incorporate alien materials so that it could serve UNEXCOMs purposes. Its frame is composed of alien alloys making the plane extremely lightweight and granting it unprecedented durability and agility."
+
+      STR_SABRE_UFOPAEDIA: "The Sabre Endo/Exo-atmospheric fighter is a revolutionary aircraft design developed by UNEXCOM. The aircraft is capable of high-atmospheric flight and even short exo-atmospheric flight if required. Due to being able to operate in these high altitudes the Sabre encounters minimal air resistance, making its extreme speed possible. In addition, the Sabre can carry a versatile set of weaponry."
+
+      STR_DYNASOAR_UFOPAEDIA: "The Boeing X-20 Dyna-Soar is a spaceplane design that has been in development since 1957, although plagued by a lack of funds the program has avoided cancellation due to the repeated UFO sightings during the 60s. After the beginning of the alien invasion the program garnered a lot more interest. Although expensive to produce, the Dyna-Soar could provide a significant advantage in our struggle against the Aliens."
+
+      STR_HERMES_UFOPAEDIA: "The Hermes was originally planned as a reusable space shuttle to deliver cargo into orbit, but after the alien invasion plans quickly changed. The HERMES became an exo-atmospheric strike fighter capable of delivering nuclear missiles. Due to the non-military origins of the craft the design lacks the durability and maneuverability."
+
+      STR_MIG_105_UFOPAEDIA: "The MiG-105, Nicknamed Fiery, entered development shortly after the alien invasion began. Benefitting from innovations discovered by UNEXCOM, the MiG-105 surpassed early expectations despite being the first spaceplane designed exclusively for military use. However, the MiG-105 still lags behind conventional aircraft designs in some aspects; the size of its payload is limited due to the requirement of having a low weight."
+
+      STR_BASTION_UFOPAEDIA: "The bastion was designed with the sole purpose of spotting UFOs in mind, Capable of spotting and tracking UFOs in an unprecedented 2300-mile radius. Due to improvements in efficiency, the Bastion is capable of relocating with twice the speed of its predecessor. It houses a replicated alien IFF system, masking itself as friendly to alien sensors"
+
+      #STR_EXCAVATOR_UFOPEDIA: "Excavators are small ships that are mainly used for digging and construction work.  They represent little threat to our ships."
+      ##STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small."
+      #STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors."
+      #STR_LAB_SHIP_UFOPEDIA: "Lab Ships are large vessels, tasked with major research and harvest operations.  Much bigger than Harvesters, they are equipped for conducting complex experiments on board.  Their crew is numerous and rather well equipped."
+      STR_SMALL_SCOUT_UFOPEDIA: "This tiny craft is primarily used for reconnaissance or research. It normally precedes larger vessels at the start of an alien mission. Uses some sort of small plasma minigun for self-defense."
+      STR_MEDIUM_SCOUT_UFOPEDIA: "A medium sized scout vessel that poses little threat to earth forces. Normally appears before larger vessels during missions."
+      STR_LARGE_SCOUT_UFOPEDIA: "The largest alien scout craft is a general purpose vessel that is used in all types of alien mission, including Alien Interception."
+      STR_HARVESTER_UFOPEDIA: "The harvester has a trap door in its base and is equipped with lifting gear to haul up cattle or other beasts. Laser cutters are used to extract the desired material and the carcass is dumped on the ground. There are also storage containers for body parts."
+      STR_ABDUCTOR_UFOPEDIA: "This vessel is equipped with an examination room for performing horrific experiments on human subjects. The victim is normally paralyzed by telepathic powers, but remains conscious while on the operating table."
+      STR_TERROR_SHIP_UFOPEDIA: "The troop transport has a containment facility for large alien terror weapons or creatures. It is used to transport these alien terrorists into populated areas. It uses two short-range cannon point-defense and what appear to be artillery cannons for ground attack, used only for static targets."
+      STR_BATTLESHIP_UFOPEDIA: "The battleship is the largest and most powerful alien craft. It is normally the primary alien mission craft, equipped numerous crew members and communication systems. Equipped with various AA point-defense batteries, they are a slow but dangerous prey."
+      STR_SUPPLY_SHIP_UFOPEDIA: "The supply vessel is used during the construction of alien bases or for supplying existing bases. It carries alien food containers and reproduction chambers."
+
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Compact but powerful alien launcher, useful in a variety of combat scenarios. Versatile and deadly weapon."
+
+      STR_ELERIUM_BOMB_UFOPEDIA: "Elerium Bomb, used mainly by alien terrorists, is a powerful and deadly ammunition for Small Launcher."
+
+      STR_ACID_BOMB_UFOPEDIA: "Acid Bomb rack, filled with a highly toxic chemical compound of unknown origin. Known to corrode organic tissue within minutes, even titanium armored plates offer little protection against it."
+
+      STR_PLASMA_CASTER_UFOPEDIA: "This plasma pistol variant fires its charged particles at a wide spread, making it a devastating weapon."
+
+      STR_PLASMA_CASTER_CLIP_UFOPEDIA: "This roughly cubic device is used as ammunition for a Plasma Caster.  It contains a small quantity of Elerium."
+
+      STR_PLASMA_SNIPER_RIFLE_UFOPEDIA: "This is an extremely precise and powerful weapon based on accelerating particles from within a minute anti-gravity field."
+
+      STR_PLASMA_SNIPER_RIFLE_CLIP_UFOPEDIA: "This small object is used as a power source for a Plasma Sniper Rifle - a precision alien weapon.  Contains a small quantity of Elerium."
+
+      STR_PLASMA_BLASTER_UFOPEDIA: "This is a devastating anti-armor weapon based on plasma technology, vaporizing everything around the impact point."
+
+      STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "This compact device is used as ammunition for a Plasma Blaster.  It contains a small quantity of Elerium."
+
+      STR_TOXIGUN_UFOPEDIA: "This weapon squirts a complex mixture of powerful chemical agents, able to dissolve almost any material known to Earth science within a few seconds.  Naturally, it is deadly to all living beings."
+
+      STR_TOXIGUN_FLASK_UFOPEDIA: "This small tank filled with potent acid functions as ammunition for the Toxigun."
+
+
+      STR_ALIEN_LASERS_UFOPEDIA: "These weapons emit a powerful beam seemingly powered
+        by a peculiar crystal found inside of the devices. The internals are
+        housed inside a durable casing, made out of an unknown metal alloy. The
+        alien laser weaponry we've recovered isn't a total mystery to us,
+        multiple similar weapons have been found at the few previous sites where
+        humanity has encountered hostile alien life. Attempts to reverse
+        engineer and replicate the laser weaponry has been made by multiple
+        governments in secret during the past decade. While the origins and
+        manufacture of some parts of the alien weaponry still remains a mystery,
+        almost all of the components have been managed to be substituted with
+        materials available on earth, leading to the development of functional
+        prototypes."
+
+
+      STR_ALIEN_LASER_PISTOL_UFOPEDIA: "This 'hand weapon' (named by our technicians,
+        judging by the size and use of this weapon by the enemy) uses novel
+        technology to emit a powerful beam of light. When passing a Geiger
+        counter, we can see that it emits a small amount of radiation, so it is
+        not recommended for analysis without adequate protection."
+
+
+      STR_ALIEN_LASER_RIFLE_UFOPEDIA: "Our studies and field reports point to this
+        weapon as the standard weaponry of the enemy infantry (similar to our
+        doctrines). This 'rifle', if you can call it that, has a compact power
+        generator, which emits a light beam powered by a crystal of unknown
+        origin. The beam is capable of penetrating armor without problems."
+
+      STR_ALIEN_HEAVY_LASER_UFOPEDIA: "A really heavy weapon, but extremely powerful.
+        This cannon uses the same concept of an energy source that emits a
+        laser, amplified by an alien crystal. This crystal is quite large, more
+        than in other enemy devices, which we believe contributes to give it a
+        greater range. We have noticed that it has a tendency to overheat."
+
+
+      STR_ALIEN_CRYSTAL_UFOPEDIA: "This crystal is found in every alien laser weapon. While early research concluded that the crystal is the power source of the laser weaponry, this is only partially true. Funneling a weak laser trough the crystal seems to cause a nuclear reaction within it, amplifying the power of the laser. If we extract these crystals from the alien weaponry we could use them to construct powerful laser weapons of our own"
+      STR_FLECHETTE_RIFLE_UFOPEDIA: "Our new rifle uses a modern handle to provide extra stability to the shooter. Its construction in plastic polymers makes it very lightweight, although there are some concerns regarding its ability. Others would have preferred to build them entirely from AA. Either way, it is a stable weapon that will allow any infant who uses it to cause considerable damage to their target."
+
+      STR_FLECHETTE_MACHINE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored vehicle and artillery crews. It is slightly heavier than our standard M1911 Colt, but its ammunition is considerably lighter. The recoil is very manageable and has a fire selector for bursts and automatic mode. It cannot fire in semi-automatic mode."
+
+      STR_FLECHETTE_CARBINE_UFOPEDIA: "This new carbine design bears many similarities to our alloy rifle design. The design exchanges accuracy with rate of fire and weight, making the carbine suited for closer ranged engagements than the rifle."
+
+      STR_FLECHETTE_PISTOL_UFOPEDIA: "This compact machine gun is intended to be the standard secondary weapon for light and mechanized infantry troops, as well as armored car crews and artillery. It is extremely lightweight and versatile, being able to fire either bursts of flechette rounds or armor-penetrating TC rounds."
+
+      STR_FLECHETTE_SHOTGUN_UFOPEDIA: "Our team of gunsmiths created this interesting design. Initially, it gives the impression of being some kind of semi-automatic rifle, but in reality it is a shotgun with an exceptionally long barrel. It fires flechette ammunition stored in a cylindrical magazine. Its greatest advantage is its long range."
+
+      STR_FLECHETTE_SNIPER_UFOPEDIA: "Powerful anti-material rifle, designed to destroy light vehicles and heavy armored soldiers. Our team of engineers created a robust, shock and impact resistant rifle that you can have, without compromising its structural integrity. This allows the shooter to fire without much alteration in the position of the variable telescopic sight from x8 to x16 magnification. Its huge muzzle brake is necessary to give the gun stability."
+
+      STR_FLECHETTE_GRENADE_UFOPEDIA: "This fragmentation grenade is designed to inflict the maximum amount of damage possible. Upon detonation, it ejects hundreds of Alien Alloys flechettes which can destroy an organic target within three meters. Its ability to penetrate armor is extremely limited, but its lethal potential is just as incredible."
+
+      STR_FLECHETTE_CANNON_UFOPEDIA: "The need to develop a heavy automatic weapon to support our squadron led to this automatic gun. By mounting two cannons on it, the ROF is doubled without affecting the physical integrity of the weapon. Its entire Alien Alloys construction makes it surprisingly light (approximately the weight of a conventional light machine gun), for its size."
+
+      STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA: "An interesting proposal for a relatively simple design. This grenade launcher uses drum loaders to store the projectiles and fire them fully automatically."
+
+      STR_FLECHETTE_AUTOMATIC_SHOTGUN_UFOPEDIA: "One of our engineers worked closely on the development of an automatic shotgun similar to an AR15 rifle called the AA-12, which he decided to implement a weapon based on it to equip our troops. The results an impressive weapon: a mixture of the ROF of an assault rifle with the stopping power of shotguns. It only fires in automatic mode, so it is recommended to use it at short range."
+
+      STR_ALLOY_RIFLE_AP_UFOPEDIA: "Based on the .280 British (also known as 7mm NATO) experimental cartridge, it has proven to be reliable and can be adapted to our requirements with relative ease. This cartridge contains depleted uranium core and Alien Alloys coating, facilitating target penetration."
+
+      STR_ALLOY_RIFLE_FL_UFOPEDIA: "This intermediate cartridge has the right size to be adapted to shoot Flechette bullets. Compared to the original .280 British cartridge (recognized for its ease of use), our 7mm FL bullets are light enough to be transported in large quantities. It is recommended to avoid their use against armored enemies, TCe to the poor penetration of AA Flechettes."
+
+      STR_ALLOY_PISTOL_AP_UFOPEDIA: "Using a modified version of the .45 ACP bullets we have been able to obtain satisfactory results in the armor penetration tests. Having the size of a .45 ACP bullet, but with a depleted uranium core, this cartridge has the stopping power of a conventional battle rifle, but with the size of a pistol bullet. "
+
+      STR_ALLOY_PISTOL_FL_UFOPEDIA: "Using .45 ACP bullets as a base, our gunsmith engineers have created a hollow cartridge containing Flechettes made with AA. In addition to the bullet's own stopping power, the interior of the bullet contains an unspecified amount of Alien Alloys that fragment upon impact with a soft object... this is in addition to its very light weight."
+
+      STR_ALLOY_SHOTGUN_FL_UFOPEDIA: "Designed to provide containment fire at greater distances than those offered by other shotguns, they are the perfect complement to the XM12 shotgun. Their range is quite limited, but this (far from being a problem) is quite useful to create a very concentrated cloud of fire over medium distances. "
+
+      STR_ALLOY_AUTO_SHOTGUN_FL_UFOPEDIA: "The pellets of this shotgun were specially optimized to cover a wide surface, saturating the area with Flechettes. Its power at short distance is unrivaled, but it is completely useless at longer distances. Each .12 gauge cartridge used by the XM120 shotgun contains 10 Alien Alloy Flechettes"
+
+      STR_ALLOY_HEAVY_AP_UFOPEDIA: "Powerful 20mm caliber ammunition, contains a core of depleted uranium and tungsten It is optimized for tearing down heavy armor, the high firepower greatly boosts in this function. Many soldiers are surprised to see such a large yet lightweight projectile."
+
+      STR_ALLOY_HEAVY_FL_UFOPEDIA: "A special high-capacity magazine, the Flechettes use a 20mm caliber cap just like the AP depleted uranium bullets, except that they are considerably lighter. Their ability to cause injury is important and the enormous capacity of the magazine allows for long suppression fire on the enemy."
+
+      STR_ALLOY_SNIPER_AP_UFOPEDIA: "A highly specialized projectile is basically a javelin of depleted uranium, placed inside a bullet made of AA. Upon penetrating a target, the TC javelin is propelled by the kinetic energy of the projectile, making a clean hole in various types of armor. Designed to wreak hard targets from far away."
+
+      STR_ALLOY_SNIPER_FL_UFOPEDIA: "This experimental projectile contains an oversized Alien Alloys Flechette, which upon impact with the skin of a soft target, breaks instantly and can cause critical injuries that are very difficult to patch up. However, it will collapse without much damage if it hits a hard enemy. It is specially modified for long distance shooting."
+
+      STR_30MM_AAG_UFOPEDIA: "Small yet powerful 30mm explosive grenades. Originally designed for a Soviet grenade launcher, we have adopted it.  It's very versatile and light enough to carry it on large quantities."
+      STR_9MM_PISTOL_X10_UFOPEDIA: "The 9mm caliber ammunition is a popular small,
+
+        lightweight projectile used by pistols from WW2. This magazine contains
+        10 bullets and is mainly used in pistols, although a soldier can take
+        the bullets out to fill other magazines."
+      STR_9MM_PISTOL_X20_UFOPEDIA: "Due to its ease of construction and weight, it is
+
+        easy to supply a large quantity of 9mm calibre bullets to the troops. It
+        has little recoil, but also little stopping power. This magazine carries
+        20 useful projectiles."
+      STR_9MM_PISTOL_X30_UFOPEDIA: "Thanks to the controllability of firing a 9mm
+
+        calibre weapon in automatic mode, many sub-machine guns use this
+        cartridge. The 30 bullet magazine allows a large quantity of ammunition
+        to be transported without greatly increasing the weight of the magazine,
+        especially useful in weapons with high fire rates."
+      STR_45_PISTOL_X7_UFOPEDIA: "The .45 caliber ACP ammunition was invented by J. M.
+
+        Browning in 1905 for the famous M1911 pistol. Its introduction was due
+        to the fact that smaller calibers of revolvers had difficulty in taking
+        down an enemy in one shot. This magazine allows 7 bullets to be loaded
+        and is used only on the M1911 handgun."
+      STR_45_PISTOL_X30_UFOPEDIA: "Very appreciated by its stopping power, it has been
+
+        used on numerous firearms, such as pistols and sub-machine guns.
+        However, due to its power and size, bullets of this caliber are more
+        expensive and heavier than other pistol calibers, such as the 9mm
+        Parabellum. This magazine can carry 30 useful rounds and can be used in
+        sub-machine guns."
+      STR_5_56MM_NATO_RIFLE_X20_UFOPEDIA: "The intermediate cartridge 5.56x45mm NATO
+
+        was born as a response to the experiments of ArmaLite (creators of the
+        AR-15/M-16 family) with smaller, faster and lighter projectiles than the
+        7.62mm NATO. It is derived from the civilian .223 Remington cartridge,
+        being similar in performance. This 20-rds magazine is used in NATO
+        assault weapons. "
+      STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA: "This 30-rds magazine for the 5.56mm NATO is
+
+        an experiment. During the Vietnam war some units had them, some units
+        had but didn't use them (because unreliable). For example MAC/SOG
+        purchased them on the civilian market, but the had very few. Usually a
+        SOG member on operations had only one 30 rounds mag (inserted in the
+        weapon) and the rest was composed of the standard 20-rds mags. Our
+        engineers can manufacture them at the workshop (and we can even sell
+        them, are quite profitable)"
+      STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA: "Defined by NATO since 1950 as the
+
+        Organization's standard firearms cartridge, the 7.62x51mm ammunition is
+        a heavy projectile, used in battle rifles, precision and machine guns of
+        all types. It is appreciated for its armor-penetrating power. This
+        magazine holds 5 bullets and its used only on the PSG-1 Sniper Rifle."
+      STR_7_62MM_NATO_RIFLE_X20_UFOPEDIA: "Although it has been replaced to some
+
+        extent by the 5.56x45mm intermediate cartridge developed for the AR-15
+        rifle, it was decided that it would still be used in various battle
+        rifles, one of the most famous being the Belgian FN FAL rifle. This
+        magazine has a capacity of 20 bullets and is the most commonly used."
+      STR_7_62MM_NATO_RIFLE_X30_UFOPEDIA: "The firepower provided by this caliber
+
+        limits its use in weapons with automatic fire, but becomes much more
+        controllable in its use in weapons with long, heavy barrels. This
+        particular magazine is not widely used, mostly on LMGs and some modified
+        weapons. This is because it is heavier than the 20-bullet one, although
+        it can be used without major problems with the same guns chambered in
+        7.62x51mm."
+      STR_7_62MM_NATO_LMG_X50_UFOPEDIA: "The 7.62mm ammunition used in light machine
+
+        guns is mounted on the popular M13, a metallic disintegrating link
+        specifically designed for ammunition belt-fed firearms. This
+        configuration allows more ammunition to be transported in a more compact
+        manner."
+      STR_7_62MM_NATO_LMG_X100_UFOPEDIA: "Ammunition drum with 100 rounds, 7.62mm NATO
+
+        caliber, allows to transport a large amount of bullets and is mainly
+        used in automatic squad weapons. However, its weight is considerable.
+        After depleting its content, the drum have to be carefully reloaded,
+        making it a nuisance until it is returned to base."
+      STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA: "This ammunition was designed at the end
+
+        of WW2 to equip the SKS carbine. It is inspired by the 7.92x33mm Kurz
+        cartridge of German origin, used in the first assault rifle in the
+        world, the StG-44. This stripper clip has capacity for 10-rds and is
+        used exclusively in the SKS."
+      STR_7_62MM_SOVIET_RIFLE_X30_UFOPEDIA: "Ammunition created in 1947 by a committee
+
+        led by NM Elizarov. Its popularity has been increased by its ease of use
+        and power, feeding virtually all the infantry weapons of the Soviet
+        Union and dozens of other countries. This 30-rds mag is the standard on
+        the AK family."
+      STR_7_62MM_SOVIET_RIFLE_X40_UFOPEDIA: "Despite having the same bullet diameter
+
+        as the 7.62mm NATO, it is considerably smaller and more manageable. It
+        has less range and less firepower, but its lethality at short and medium
+        range is indisputable. The 40-rds magazine is used by a large majority
+        of countries using the Kalashnikov family weapons."
+      STR_7_62MM_SOVIET_RIFLE_X75_UFOPEDIA: "High capacity magazine, designed to be
+
+        equipped on light machine guns based on the Kalashnikov. It contains
+        {ALT}75 rounds of 7.62x39mm Soviet{ALT}, although it is heavy and
+        somewhat complicated to replace when the ammunition runs out."
+      STR_7_62MM_SOVIET_SNIPER_X10_UFOPEDIA: "This projectile, designed specifically
+
+        for the first sniper rifle in the world, the Dragunov rifle, is derived
+        from the 7.62x39mm used by most Soviet weapons. It is bigger and more
+        powerful, its main function is accurate long distance shooting."
+      STR_12GAUGE_BUCKSHOT_X2_UFOPEDIA: "This type of shells is very popular for home
+
+        defense and big/small game. It contains many small pellets that spread
+        out on a deadly cloud. Used by {ALT}shotguns with two barrels{ALT}"
+      STR_12GAUGE_SLUG_X2_UFOPEDIA: "Solid slugs made of lead and other metals are
+
+        used for big and small game. It does damage like a normal bullet, but
+        with stronger stopping power. Used by {ALT}shotguns with two
+        barrels{ALT}."
+      STR_12GAUGE_BUCKSHOT_X8_UFOPEDIA: "With so much stopping power, this shotgun
+
+        shell is perfect to engage targets at close range. Caution is
+        recommended when used in the presence of allies, to avoid a friendly
+        fire incident."
+      STR_12GAUGE_SLUG_X8_UFOPEDIA: "Solid slugs made of lead and other metals are
+        used for big and small game. "
+      STR_12GAUGE_NON_LETHAL_X8_UFOPEDIA: "Rubber shells, specially designed to
+        control riots and avoid injuring civilians. Used by most
+        {ALT}Shotguns{ALT}."
+      STR_12GAUGE_ELERIUM_SHARDS_X8_UFOPEDIA: "By adding splinter shards of inert
+        Elerium crystals to a regular .12 Gauge we have increased the firepower
+        of our shotguns by far. The wounding and penetrating capacity of this
+        shells are simply terrible."
+      STR_M202_FLASH_RACK_UFOPEDIA: "A four 66mm rocket rack clip employed on the M202 FLASH launcher. The M74 Incendiary rockets employ a substance called 'thickened pyrophoric agent', TPA. It burns spontaneously at 1600°C/2912°F and it's intense enough to produce burn skins even at distance. It's hotter than gasoline or napalm."
+      STR_40MM_FRAG_UFOPEDIA: "..."
+
+      STR_40MM_INCENDIARY_UFOPEDIA: "..."
+
+      STR_40MM_SMOKE_UFOPEDIA: "..."
+
+      STR_40MM_NON_LETHAL_UFOPEDIA: "..."
+
+      STR_CARL_GUSTAF_M2_HE_ROUND_UFOPEDIA: "..."
+
+      STR_CARL_GUSTAF_M2_HEAT_ROUND_UFOPEDIA: "..."
+
+      STR_CARL_GUSTAF_M2_ELERIUM_ROUND_UFOPEDIA: "..."
+
+      STR_RPG_HE_ROCKET_UFOPEDIA: "..."
+
+      STR_RPG_INC_ROCKET_UFOPEDIA: "..."
+
+      STR_RPG_EWH_ROCKET_UFOPEDIA: "By adding a small amount of Elerium to an standard warhead"
+
+      STR_38_REVOLVER_AMMO_X6_UFOPEDIA: "..."
+
+      STR_22_LONG_RIFLE_X14_UFOPEDIA: "..."
+
+      STR_FAL_SHOTGUN_SHELLS_UFOPEDIA: "..."
+
+      STR_KS23_SHRAPNEL-25_X4_UFOPEDIA: "The Shrapnel-25 cartridge is composed of
+
+        pellets with an effective range of 25 meters, with a wide range of
+        dispersion that allows the annihilation of various targets with a single
+        shot. It is considered a heavy projectile and can only be used by the
+        KS-23 shotgun."
+      STR_KS23_BARRIKADE_X4_UFOPEDIA: "The Barrikade pellet is a 23mm solid steel-core
+
+        projectile capable of destroying the engine block of a car up to 100
+        meters. It is used primarily to eliminate individual targets with a
+        single, devastating blow."
+      STR_KS23_SATANA_X4_UFOPEDIA: "Satana cartridges are specially designed to create
+
+        a curtain of fire. They contain a mixture of white phosphorus and other
+        classified material, both highly flammable, which burn off all oxygen
+        present in the environment, even if the target lacks this material. This
+        cartridge is exclusive for use in the KS-23 heavy shotgun."
+      STR_30_CARBINE_X15_UFOPEDIA: "This cartridge was designed specifically for the
+
+        M1 Carbine, prior to WW2. It is lightweight and similar in appearance to
+        a .45 ACP pistol bullet, renowned for its accuracy, although lacking in
+        penetration power. The .30 Carbine cartridge was developed by Winchester
+        and is basically a rimless .30 caliber (7.62 mm) version of the much
+        older .32 Winchester Self-Loading cartridge of 1906."
+      STR_50_CAL_REVOLVER_AMMO_X6_UFOPEDIA: "Speedloader used to reload quickly six
+
+        12.7mm rounds on a revolver specially adapted to use it. It packs a
+        punch. A serious punch. But it's heavy and hard to use."
+      STR_M1911_COLT45_UFOPEDIA: "This great handgun uses {ALT}.45 ACP{ALT} rounds and
+
+        has been in use since 1911, in all the wars of the 20th Century,
+        including WWI, WWII, Korea War, Vietnam War and now Alien War. Standard
+        side weapon of US personnel. Uses x7 .45 ACP Ammo"
+      STR_M16_M203_UFOPEDIA: "Modified version of the standard assault rifle used by
+
+        U.S. Army forces. Lightweight, but not very powerful, it's quite
+        accurate and fires {ALT}5.56 mm NATO{ALT} ammunition, uses x20 and x30
+        mags. Equipped with an underbarrel {ALT}M203 40mm Grenade Launcher{ALT},
+        uses a the same version of the M79 round."
+      STR_XM117_UFOPEDIA: "Also known as CAR-15, this assault carbine is based on the
+
+        larger M16A1. With a shorter stock and barrel, is perfect for urban and
+        guerrilla operations. However, its use over very long distances is not
+        recommended because it is somewhat imprecise. Chambered in the
+        intermediate {ALT}5.56mm NATO{ALT} round, employs x20 and x30 round
+        magazines."
+      STR_M3_GREASEGUN_UFOPEDIA: "Very cheap and easy to manufacture, this SMG is used
+
+        since WWII. It fires the {ALT}.45 ACP{ALT} round and it's very light to
+        carry. It is nicknamed 'Grease gun' for its appearance and sound
+        characteristic of the mechanical tool. Uses x30 and x7 .45 ACP mags"
+      STR_XM21_UFOPEDIA: "The M21 Sniper Weapon System (SWS) is the semi-automatic
+
+        sniper rifle adaptation of the M14 battle rifle. It's chambered for the
+        powerful {ALT}7.62x51mm NATO{ALT} cartridge and has an 8x magnification
+        scope, combined with its removable magazine and semi-automatic fire make
+        it a formidable weapon. You can employ x20 and x5 magazines on this
+        sniper rifle."
+      STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA: "Powerful close range weapon {ALT}12.
+
+        Gauge shotgun{ALT}, manufactured exclusively for the UNEXCOM project by
+        Remington. Perfect for close quarters encounters inside UFOs and
+        buildings. Can use standard Armor Piercing shells or Rubber Non-Lethal
+        Shells."
+      STR_M79_THUMPER_GL_UFOPEDIA: "The M-79 'Thumper' Grenade launcher resembles a
+
+        large bore, break-action, sawed-off shotgun. Has a variety of different
+        {ALT}40mm{ALT} munition types at its disposal, contributing to its
+        effectiveness in a wide range of situations."
+      STR_M72_LAW_UFOPEDIA: "LAW stands for Light Anti-tank Weapon, is the replacement
+
+        of the old WWII Bazooka. Made as a disposable one-shot weapons, {ALT}a
+        soldier could carry many of them{ALT}, allowing an infantryman to
+        disable multiple armored threats on the battlefield."
+      STR_M202_FLASH_UFOPEDIA: "A very peculiar launcher, the M202 FLASH (FLame Assault SHoulder) is a new addition to the US arsenal. Meant to replace WWII-era flamethrowers, has the ability to {ALT}shoot four incendiary rockets on rapid succession{ALT} over medium distances. Best used on {ALT}anti-fortification roles.{ALT}"
+      STR_M60_UFOPEDIA: "Powerful Light Machine Gun, an iconic weapon very used in the
+
+        Vietnam War, fires {ALT}7.62x51mm NATO{ALT} rounds, very accurate at
+        long ranges. Firing this gun in bursts increments it's reliability,
+        because the automatic fire can overheat the barrel and melt it. It is
+        fed on x50 and x100 ammo boxes."
+      STR_AR5_UFOPEDIA: "The ArmaLite AR-5 is a lightweight bolt-action rifle,
+
+        chambered for the {ALT}.22 Hornet{ALT} cartridge, and adopted as the
+        MA-1 aircrew survival rifle by the United States Air Force. Designed to
+        be stowed in cramped aircraft cockpits, the rifle was made from
+        lightweight plastics and aluminum alloys, can carry all of the firing
+        system inside the stock and and can float in the water."
+      STR_BERETTA_92FS_UFOPEDIA: "The Browning HiPower is a handgun designed by John
+
+        Browning, legendary weapons creator and manufactured by the Belgian
+        armory FN Herstal. It fires 9mm Parabellum caliber ammunition and has a
+        high capacity magazine. Used by numerous countries around the world
+        (especially special operations units), it is particularly appreciated
+        for its reliability and ease of use. Uses x10 and x20 magazines."
+      STR_FN_FAL_SHOTGUN_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN
+
+        Herstal, is called 'the right hand of the free world', for its wide use
+        in armies around the world. This variant for UNEXCOM includes an
+        underbarrel semi automatic 12 gauge shotgun, with a 5 shells detachable
+        magazine. UBS stands for 'Under-Barrel Shotgun'. Employs x20 ammo mags"
+      STR_SG510_CARBINE_UFOPEDIA: "Version specially designed for UNEXCOM by SIG based
+
+        on its SG 510-4 battle rifle. It has a cut-off barrel, a retractable
+        paratrooper stock, using the same powerful {ALT}7.62mm NATO{ALT} round
+        of its larger brother. It has been designed to be more compact and
+        maneuverable without losing firepower, but it can be still difficult to
+        control with sustained fire. Can use x20 and x30 rounds mags."
+      STR_MP5_UFOPEDIA: "Automatic sub-machine gun manufactured by Heckler & Koch,
+
+        adopted by the West Germany armed forces. Lightweight and reliable, uses
+        {ALT}9x19mm Parabellum rounds.{ALT} this modern sub-machine gun is
+        expected to be used en masse by special operations groups and police
+        forces around the world because of its excellent performance. Uses all
+        of the three 9mm magazines."
+      STR_PSG1_UFOPEDIA: "Präzisionsschützengewehr, German for 'precision shooter
+
+        rifle'. Powerful precision rifle, based on the design of the H&K G3
+        combat rifle, uses {ALT}7.62x51 NATO{ALT} ammunition. It combines
+        excellent long-range precision, high fire rate and very powerful
+        ammunition, making it a lethal weapon in the right hands. Uses the x5
+        and x20 ammo clips."
+      STR_CARL_GUSTAF_M2_UFOPEDIA: "The Carl Gustaf M2 is an 84 mm man-portable
+
+        reusable anti-tank weapon produced in Sweden. Although its design dates
+        back to the years after WW2, the high quality of its construction and
+        its variety of warheads make it an ideal choice when using heavy support
+        on the battlefields of Europe."
+      STR_FN_MAG_UFOPEDIA: "Powerful infantry support weapon chambered in {ALT}7.62mm
+
+        NATO{ALT} and fed on x50 and x100 ammo belts, it keeps certain
+        similarities with German machine guns of the WW2. Its design allows for
+        a high continuous fire rate without greatly affecting its accuracy. The
+        MAG is known for its outstanding reliability"
+      STR_STECHKIN_APS_UFOPEDIA: "Selective fire machine pistol chambered for {ALT}9mm
+
+        rounds.{ALT} Designed as a side-weapon for tank crews, it was adopted by
+        Spetsnaz for its for its adaptability and its high rate of fire. Employs
+        only 20-rds mags"
+      STR_AKM_BAYONETED_UFOPEDIA: "Modernized version of the iconic weapon of Soviet
+
+        origin, calibrated to use ammunition {ALT}7.62x39mm Soviet{ALT} on x30
+        and x40 magazines. Due to its excellent performance, the AKM became the
+        backbone of the Red Army. Powerful at short range, but imprecise. This
+        particular version, supplied to the troops of UNEXCOM, is a little
+        shortened to facilitate its use in the narrow cabin of our transports.
+        It has a bayonet. Melee power: 45~"
+      STR_AKMSU_UFOPEDIA: "Labeled as 'The Secret Soviet Rifle', this carbine based on
+
+        the AKM was designed for the VDV Airborne Troops. Is optimized for close
+        combat, Its structure makes it an excellent weapon that hardly breaks or
+        jams, without increasing much its weight. Uses the {ALT}7.62x39mm
+        Soviet{ALT} round, the same of the AK family."
+      STR_SKORPION_UFOPEDIA: "Personal Defense Weapon, made in Czechoslovakia. Our
+
+        particular version is chambered in {ALT}9mm{ALT} instead the original
+        7.65mm, to maximize its flexibility and have extra firepower on the
+        battlefield. An hybrid between an SMG and a pistol, it was designed for
+        tank and artillery crew for it's short size and light weight. Employs
+        x10 and x20 mags."
+      STR_DRAGUNOV_UFOPEDIA: "The SVD is the first semiautomatic rifle in the world
+
+        designed specifically to be used in military precision shooting.
+        Semi-automatic sniper/designated marksman rifle chambered in extremely
+        powerful {ALT}7.62x54mmR{ALT} and developed in the Soviet Union."
+      STR_KS23_SHOTGUN_UFOPEDIA: "This shotgun is designated as a 'special carbine' by
+
+       its Soviet manufacturers, due to its barrel with rifled bore. It is an
+        excellent and brutal weapon, effective at short and long distances.
+        Built with 23mm AA battery barrels, is the largest shotgun in military
+        service."
+      STR_RPG_UFOPEDIA: "Lethal shoulder-launched, anti-tank rocket-propelled grenade
+
+        launcher, used in conflicts around the world. Use rockets with
+        {ALT}HE{ALT} warhead effective against most {ALT}vehicles and fortified
+        targets{ALT} and thermobaric {ALT}INC{ALT} warhead for
+        {ALT}anti-personnel{ALT} and urban warfare."
+      STR_RPKS_UFOPEDIA: "Version of the AKM modified to function as an LMG, uses the
+
+        same firing mechanism and ammunition. The possibility of exchanging
+        parts between the RPK and its original weapon is surprising. This
+        paratrooper variant has a heavy barrel for sustained fire and a foldable
+        wooden butt and uses the x30, x40 and x75 ammo magazines."
+      STR_MAKAROV_UFOPEDIA: "Semi-automatic pistol from Soviet origin, chambered for
+
+        {ALT}9x18{ALT} rounds and x10 magazines. It is very reliable and light,
+        distributed in numerous armies and police forces."
+      STR_SNUBNOSE_PISTOL_UFOPEDIA: "A cut-out version of the classic {ALT}.38
+
+        caliber{ALT} revolver, its especially short barrel allows it to be
+        hidden among the clothes and luggage of a civilian, making it a popular
+        self-defense weapon, although its performance is mediocre due to its
+        short range and stopping power."
+      STR_HUNTING_RIFLE_UFOPEDIA: "Calibrated in the cheap and very light ammunition
+
+        {ALT}.22 Long Rifle.{ALT} Used by many people around the world for big
+        and small game, sport shooting and personal defense. It does not have
+        much stopping power and is very unlikely to cause fatal injuries,
+        although it can be fired even in inexperienced hands."
+      STR_DOUBLE_BARRELED_SHOTGUN_UFOPEDIA: "Popular shotgun model, break action, easy
+
+        to find in gun shops. It has a surprisingly long range to be a shotgun.
+        Its main disadvantage is something slow to recharge. It is a formidable
+        weapon for self defense."
+      STR_MACHETE_UFOPEDIA: "A cutting weapon used all over the world to cut foliage,
+
+        clear crops and for self-defense. Its handle is resistant and allows
+        fast and powerful slices, although not always its blade is sharpened
+        properly. "
+      STR_POLICE_REVOLVER_UFOPEDIA: "The ultimate law enforcement weapon, the Colt
+
+        Official Police revolver became a icon of the law enforcement.
+        Calibrated at the common and popular {ALT}.38 Special{ALT}, it is a
+        weapon that has gradually been replaced by more modern handguns, but
+        remains the same effective for policemen. "
+      STR_POLICE_SNIPER_RIFLE_UFOPEDIA: "Bolt action rifle, used by police forces from
+
+        various countries of the world, assigned to the best shooters of each
+        squadron to provide support to their fellow officers. Calibrated in the
+        {ALT}7.62x51mm NATO{ALT} round"
+      STR_BERETTA_M12_UFOPEDIA: "Great submachine gun of Italian design, built by the
+
+        company Beretta. It equips various armies and security forces in Italy,
+        South America and the Arab countries. It is light, trustworthy and has a
+        good cadence. It uses rounds calibrated in the {ALT}9mm{ALT} ammunition
+        and is fed on x10 and x20 round magazines. It had its baptism of fire in
+        the Offensive of the Tet in 1968, demonstrating its reliability."
+      STR_POLICE_SHOTGUN_UFOPEDIA: "Mythical shotgun used in the trenches of the WW1,
+
+        became an icon of the police forces in the 30s and 40s. Uses {ALT}12
+        Gauge{ALT} shells. Many law enforcement agencies around the world use
+        them to provide their officers with high firepower on the streets."
+      STR_POLICE_TONFA_UFOPEDIA: "Blunt weapon used by police to control crowds and
+
+        criminals, is made of black solid plastic. It is very difficult to kill
+        someone with this weapon, although enough damage can be done to
+        {ALT}stun them.{ALT}"
+      STR_M1_CARBINE_UFOPEDIA: "The M1 Carbine is an old design born in the WW2 as a
+
+        light-weight weapon. Uses the {ALT}.30 Carbine{ALT} rounds, light but
+        with limited stopping power. Still, the weapon is comfortable to use and
+        quite popular among many police and military forces."
+      STR_M16A1_UFOPEDIA: "Standard US Army rifle, it is very precise and its
+
+        ammunition is lighter than those of other assault rifles, making the
+        automatic fire more controllable. Its main defect is the tendency to
+        jamming and the fragility of its components, all made of plastic. Fires
+        {ALT}5.56mm NATO rounds.{ALT} on x20 and x30 magazines, if there are any
+        available"
+      STR_FN_FAL_UFOPEDIA: "Battle rifle of Belgian origin, manufactured by FN
+
+        Herstal, is called 'the right hand of the free world', for its wide use
+        in armies around the world. Uses both 20-round and 30-round magazines,
+        although the latter are often used for light machine gun variants.
+        Calibrated to fire NATO standard ammunition, {ALT}7.62x51mm{ALT}, on x20
+        rds mags."
+      STR_BREN_UFOPEDIA: "Old light machine gun from the WWII used by the Commonwealth
+
+        armies, including British forces. It's lighter than other LMGs and its
+        magazine-fed system prevented the ammunition from getting dirty. Uses
+        the {ALT}7.62x51mm NATO{ALT} cartridge"
+      STR_OWEN_SMG_UFOPEDIA: Submachine gun of Australian design and construction,
+
+        calibrated in {ALT}9mm ammunition{ALT}, can employ x20 and x30
+        magazines. It is operated by open bolt and is very reliable and
+        resistant, works despite having been submerged in mud or water. Although
+        it has been in service since 1942, it is still used by various military
+        forces, such as the Australian and British armies.
+      STR_AKM_UFOPEDIA: "One of the best rifles in the world, like our bayonet
+
+        variant, resists dust, corrosion, water, dirt and mud. The standard
+        version of the Red Army and its allies is longer than ours, having
+        increased accuracy. Uses {ALT}7.62mm Soviet{ALT} ammunition"
+      STR_PPS_43_UFOPEDIA: "Cheap submachine gun used by Red Army soldiers on WW2,
+
+        still used as a reserve weapon in many countries of the Communist bloc,
+        both the Warsaw Pact and its African and Asian allies. It does not have
+        semiautomatic firing, only automatic.  Its stamped steel construction
+        makes it extremely easy to produce. The USSR has modified many PPS-43 to
+        fire {ALT}9mm{ALT} ammunition instead of the 7.62mm Tokarev, on x20 and
+        x30 mags."
+      STR_SKS_UFOPEDIA: "Semi-automatic carbine, similar to the AK-47. Use the same
+
+        ammunition as the AK family, but it has a little more range due to the
+        longer cannon. Equipped with a medium range scope, to serve as a DMR.
+        Uses a special {ALT}7.62x39 10-round clip.{ALT} Requires almost no
+        maintenance. Melee power: 55~"
+      STR_WEAPON_TOOLKIT_UFOPEDIA: "Box used by gunsmiths, contains various tools
+
+        needed to maintain a weapon, as well as to change its caliber, add
+        accessories and even cut it out. A toolkit is required to make
+        modifications to the weapons."
+      STR_COLT_SCOPE_ACCESSORY_UFOPEDIA: This small accessory is a four magnification
+
+        rifle scope manufactured by Colt (creator of the AR-15 family of rifles
+        and their derivatives, such as the M16). It is designed to be mounted on
+        service rifles, to provide the shooter with more precise support with a
+        clear sight. This does not replace the iron sight, so the gun can still
+        be used in short range. It can be used in Manufacturing to attach it to
+        a rifle with the correct blueprints.
+      STR_M203_ACCESSORY_UFOPEDIA: Single shot grenade launcher, uses the same 40mm
+
+        rounds as the largest and heaviest M79 Thumper. Manufactured by several
+        companies, including Colt, it is quite versatile and can be mounted on
+        various models of assault rifles, battle rifles and carbines. It is not
+        designed to be an anti-tank weapon, rather an anti-personnel weapon, due
+        to the limited power of the 40mm grenades, however it facilitates the
+        cleaning of enemy zones without having to deploy heavier weapons. It can
+        be mounted on a rifle or carbine via Manufacture.
+      STR_SAWEDOFF_M79_THUMPER_UFOPEDIA: "Nicknamed 'Pirate Gun' for its resemblance
+
+        to the one-shot pistols of the 17th and 18th century pirates, it is
+        basically a M79 Thumper trimmed from the butt and cannon, making it
+        short enough to be used with one hand. It is incredibly imprecise and
+        has short range, but can be useful for providing cover fire quickly.
+        Uses the same {ALT}40mm ammo{ALT} as the full M79."
+      STR_SAWEDOFF_SHOTGUN_UFOPEDIA: "It is a double barrel shotgun that has been cut
+
+        considerably the barrel and the butt has been removed, replacing it with
+        a pistol handle. It is incredibly practical and can be fired with only
+        one hand. It is commonly known as 'Lupara', for its use by the Sicilian
+        Mafia. It employs several types of {ALT}.12 Gauge shells.{ALT}"
+      STR_COMBAT_KNIFE_UFOPEDIA: "Mythical KA-BAR knife, used since WW2 both as a
+
+        utility tool and weapon for melee combat. It is very resistant and its
+        handling is quite adequate, allowing to give blows and cuts really fast.
+        It can even be used to cut various types of materials in an emergency
+        situation."
+      STR_XM117_SCOPED_UFOPEDIA: "Modified version of the XM117 carbine, incorporates
+
+        a Colt x4 sight, incorporated into the carry handle of the gun, allowing
+        even the iron sight to be used without problem. This allows this variant
+        to be used for shooting at greater distances than other carbines, giving
+        it precision and lethality."
+      STR_XM117_SHOTGUN_UFOPEDIA: "This custom variant of the Colt XM117 combines a
+
+        sawed-off version of the Remington shotgun attached to the bottom of the
+        gun, to increase its firepower over short distances. This underbarrel
+        shotgun uses {ALT}.12 Gauge ammunition{ALT} as the original weapon."
+      STR_XM117_M203_UFOPEDIA: "The heavy version of the XM117 includes an M203
+
+        grenade launcher, similar to the model mounted on the M16 rifles. This
+        significantly increases the firepower, combining the versatility of a
+        compact carbine with the devastating power of the {ALT}40mm
+        grenades{ALT}, while increasing the weight of the weapon."
+      STR_MAT49_UFOPEDIA: "Submachine gun created by Manufacture Nationale d'Armes de
+
+        Tulle (MAT) for the needs of the French army. It is practical, light,
+        very cheap to produce and transport, which makes it a weapon much
+        appreciated by Special Forces and mercenary units. It possesses a high
+        rate of fire, calibrated in the ammunition {ALT}9mm Parabellum{ALT}."
+      STR_FN_FSC_UFOPEDIA: "An adapted version of the commercial failure of the FN
+
+        CAL, this conversion kit for the FAL makes it possible to make a highly
+        modular carbine. The firing mechanism is modified and parts such as the
+        barrel and butt of the weapon are replaced to create the model known as
+        Forces Spéciales Carabine. Uses {ALT}5.56mm NATO rounds.{ALT}"
+      STR_FN_FSC_SCOPED_UFOPEDIA: "Attachment for FSC, allows to mount a Colt sight of
+
+        x4 magnification, special for short and medium range combat. While the
+        intermediate caliber {ALT}5.56x45mm NATO{ALT} is not a bullet designed
+        for long-range firing, it allows the user of this weapon to engage
+        enemies that would otherwise be difficult to shoot with iron sights."
+      STR_FN_FSC_BAYONET_UFOPEDIA: "This version has a folded stock and incorporates a
+
+        bayonet for CQB. As the stock is not mounted, the accuracy of the weapon
+        decreases considerably, so it is recommended to use this FSC
+        configuration for shorter distances. It also uses the same {ALT}5.56mm
+        ammunition{ALT} magazines as the other FSC variants."
+      STR_M16A1_SCOPED_UFOPEDIA: "Modified version of the M16A1, a Colt x4 sight has
+
+        been added and the stock barrel has been replaced with a longer and
+        heavier, giving it extra control for medium and long range shooting. It
+        is used by paramilitary and Special Forces as a designated marksman's
+        rifle. Calibrated in the {ALT}5.56mm NATO ammunition{ALT}"
+      STR_M16A1_SHOTGUN_UFOPEDIA: "Customized assault rifle for short-range combat The
+
+        handguard was changed to a longer version of the one used on the XM117,
+        as well as a cut-down version of the Remington 870 shotgun was added to
+        maximize its firepower in close combat. The rifle uses standard
+        {ALT}5.56x45mm NATO{ALT} ammunition used in the AR-15 family and the
+        added under-barrel shotgun uses {ALT}.12 Gauge{ALT} ammunition in its
+        {ALT}Buckshot, Slug and Non-Lethal{ALT} variants."
+      STR_ENFORCER_UFOPEDIA: "Sawed-off version of the popular M1 Carbine, this is
+
+        build shortening the length of the barrel considerably and removing the
+        buttstock, replacing it with a pistol grip. The {ALT}.30 Carbine{ALT}
+        ammo used on it allows for a steady accuracy, due the small recoil it
+        has."
+      STR_50_CAL_MAGNUM_UFOPEDIA: "This was an old Magnum revolver that someone
+
+        modified and adapted to use powerful .50 Cal rounds. It is very, very
+        powerful and very very easy to miss a target if you don't aim
+        accurately, due the heavy recoil. This weapon is most suited to close
+        range combat, almost point-blank, where the low accuracy doesn't
+        matters."
+      STR_MG3_UFOPEDIA: All-purpose German-made machine gun, based on the MG42 model
+
+        used in WWII. This was modified to fit in a support installed on the
+        right arm of the Delta EOD Armor, to distribute all the recoil of the
+        weapon uniformly, which makes it very accurate. The operator has an
+        integrated feed system into the Armor.
+      STR_ANGRY_WIFE_UFOPEDIA: Classified as 'Tactical Light Weapon' can be loaded
+
+        different {ALT}12-Gauge{ALT} shells very quickly. Its official name is
+        'TLO-72', but it is sarcastically nicknamed 'The Angry Wife' by its
+        users.
+      STR_RIOT_SHIELD_UFOPEDIA: Prototype shield built entirely with Alien Alloys. Its
+
+        name in Russian means 'Fortress'. It is surprisingly light and
+        resistant, allows {ALT}frontal assaults{ALT} without fear of being
+        damaged. Its size is something cumbersome for the user, which
+        {ALT}limits its agility{ALT} a bit. If used with sufficient force, it
+        can blind the opponent with the shield's strobe lights.
+      STR_CANNED_FOOD_UFOPEDIA: "Nicknamed by some as 'dog food', this small can can
+
+        contain a wide variety of processed foods, from canned ham, vegetable
+        soup, stew, beef or pork. It takes a little time to open the can and its
+        contents can help the consumer to calm their nerves and regain some
+        energy and health. ENERGY +20, MORALE +25, HEALTH +5 "
+      STR_CIGARETTES_UFOPEDIA: "Popular 'Unlucky Stripes' brand cigarettes, quite
+
+        common among civilians and military personnel around the world. Smoking
+        a cigarette helps relieve the pressure and stress of everyday (or
+        battlefield) life. You recover considerably morale, at the cost of
+        stamina and health, due to the toxic components with which they are
+        made. ENERGY -5, MORALE +50, HEALTH -15"
+      STR_FLASK_UFOPEDIA: "Canteen filled with a warm and comforting alcoholic liquid.
+
+        Probably whiskey or bourbon. Its use helps considerably to relax the
+        consumer, lessening the impact of strong emotions, both in everyday life
+        and on the battlefield. But beware, because its abuse can cause daze and
+        can end up intoxicating the person who drinks it. MORALE +70, STUN +15"
+      STR_MEDI_KIT_UFOPEDIA: "Very advanced medical device, designed to be used by
+
+        both civilian and military paramedics to immediately treat trauma and
+        wounds of various types in the patient. It has a modern scanner that
+        makes it easier for medical personnel to analyze the area where an
+        injury has occurred that can put the patient's life in danger. It also
+        contains various types of syringes with various doses of analgesics,
+        painkillers, stimulants and antibiotics. Its construction with Alien
+        Alloys makes this equipment very light, which would otherwise require an
+        ambulance to transport it."
+      STR_MEDICAL_BAG_UFOPEDIA: "First aid bag with various medical and healing items
+
+        inside. It is used by paramedics on the battlefield to stabilize
+        seriously injured patients. The bag contains various medicines such as
+        antibiotics, anti-inflammatory drugs, morphine and stimulants. One of
+        the most appreciated tools by the users of this kit is a practical field
+        surgery kit with which bullets or splinters can be removed from
+        patients' wounds. It is somewhat heavy and slow to use, but can save a
+        patient's life."
+      STR_FIELD_DRESSING_UFOPEDIA: "Pack of sterile gauze and bandages, very useful
+
+        for stopping bleeding from a serious injury or wound. The bandage can be
+        applied by the same user to avoid losing too much blood while waiting
+        for specialized medical attention. "
+      STR_MEDICAL_POUCH_UFOPEDIA: "Small medical case packed in a plastic bag, it is
+
+        similar to those found in civilian life, such as in offices and schools.
+        This small first aid kit is used to quickly apply medication to a
+        serious, life-threatening injury, allowing the user to arrive at
+        appropriate medical facilities. It can be used by the user himself,
+        although it does not contain a large amount of medication and when
+        consumed the pouch is discarded."
+      STR_DUCT_TAPE_UFOPEDIA: "There is nothing on earth that cannot be repaired with duct tape. This tape can be used as an improvised bandage to plug an artery or a ruptured spacesuit. It can be used on the most extreme conditions."
+
+      STR_DUCT_GUN_UFOPEDIA: "By employing a reinforced tape and a special automatic dispenser, the already-not-so-improvised ability to plug ruptured arteries and space suits of basic duct tape can be improved. The ergonomic handle allows it to be used with heavy gloves without major problems."
+
+      STR_BIO_FOAM_UFOPEDIA: "Alien-alloyed based nano-foam, better known as 'Bio-Foam' is a chemical compound using alien materials as a base. Its main function is to quickly pack wounds, which contains as a side effect the mitigation of pain (although at the moment of applying the foam it is extremely painful), as well as a slight increase of the patient's health. One of the few medical instruments that can be used in outer space. "
+
+      STR_SMOKE_GRENADE_UFOPEDIA: "This American manufactured grenade dates from the
+
+        end of the WW2, is used as a signaling device, a target or landing zone
+        marking device. This particular model deploys a white smoke curtain and
+        can be used to cover the movement of allied units, disperse civilians or
+        block the enemy's line of fire. "
+      STR_FLASHBANG_GRENADE_UFOPEDIA: "Non-lethal grenade of British origin, it is
+
+        produced almost exclusively for the Special Air Service.  It is used to
+        confuse, disorient, or distract a potential threat. The mixture of
+        substances created when activated causes a chemical reaction that
+        manifests itself in a very intense light and a very loud sound that can
+        even stun the enemy. It explodes as soon as it comes into contact with
+        the ground. It reduces TUs, Accuracy, Reactions and Stamina, as well as
+        stuns the affected target."
+      STR_ELECTRO_FLARE_UFOPEDIA: "This compact device produces a bright flare light
+
+        when it is lit. This will highlight enemy units in the vicinity of the
+        flare during night time missions."
+      STR_STONER_RIFLE_UFOPEDIA: "Modified version of the modular rifle created by
+
+        Eugene Stoner, it fires {ALT}7.62x51mm NATO{ALT} caliber ammunition as
+        it is the most accessible to our arsenal. A bit heavy for an assault
+        rifle, but undoubtedly effective. All the versions of this weapon system
+        employed by us {ALT}fire the same cartridge.{ALT}"
+      STR_STONER_CARBINE_UFOPEDIA: "Variant focused on the mobility of the soldier who
+
+        carries it, this carbine has a reduced barrel size and the stock
+        removed. The disadvantage is a {ALT}reduction in accuracy and effective
+        range{ALT}, but it is compensated by the {ALT}weight decrease.{ALT}"
+      STR_STONER_AUTOMATIC_RIFLE_UFOPEDIA: "Variant of the Stoner rifle focused on
+
+        automatic and accurate fire. The heavy barrel and bipod provide
+        {ALT}unprecedented accuracy{ALT}, as well as an accuracy bonus when
+        firing from a {ALT}kneeling position{ALT}. Its major disadvantage is its
+        limited ammunition capacity, which is quickly depleted by sustained
+        fire."
+      STR_STONER_COMMANDO_UFOPEDIA: "This variant is similar to the one used by the US
+
+        Navy SEALs, designed to be used as a squad automatic weapon and provide
+        cover fire. It is quite {ALT}accurate{ALT} for an LMG and the
+        {ALT}belt-fed capability{ALT} is a great advantage."
+      STR_STONER_SNIPER_UFOPEDIA: "Variant designed for {ALT}long range combat{ALT},
+
+        with a long barrel and a precision sight with x6 magnification. As an
+        additional feature, a modified stock was added (to facilitate
+        ergonomics) and it was configured to fire in {ALT}semi-automatic mode
+        only.{ALT}"
+
+      STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA: The complete analysis on this new type of alien weapons has been finished. With this data and the interrogations made to enemy engineers, we have discovered that these weapons are clearly of animal origin, of an aquatic species. Some of these are living beings, but the vast majority are shells and claws of what appear to be crustaceans.
+
+      STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA: They are incredibly resistant to heat and high pressure, so we believe that the animals from which these artifacts come are incredibly tough. The brutal energy discharge from these weapons makes them terrifying, it's as if every alien soldier is armed with a powerful rocket launcher. The energy released seems to be controlled and focused on a certain area.
+
+      STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA: Bio-Fusion weapons use a very interesting source of power. We have no record of anything similar in our research, which leads us to believe that aliens are constantly improving their technology to stay one step ahead of us. The texture of these batteries (if you can call them that) is viscous and their smell is foul. It stores a lot of energy with unprecedented efficiency, which can be harvested to obtain raw Elerium. A real mystery.
+
+      STR_ALIEN_CEPHALOPOD_TISSUE_UFOPEDIA: The partially rotten carcasses of the Fusion weapon remains are essentially alien crab and squid corpses, cobbled together around a miniature reactor. The incredible resistance of the biological structure allow the weapons to withstand the huge surges of power when used with Alien Alloys used to support and make wielding surfaces (like stocks, handguards and triggers). We can reuse them with relative ease, as they are strickling similar to Earth's biological fauna - which we have abundant theory -.
+
+      STR_HUMAN_FUSION_RIFLE_UFOPEDIA: The most powerful handheld weapon available to our forces, capable of obliterating both alien infantry and armor with ease. Due our inability to replicate the process of bio-fusion, these weapons are built from captured alien weaponry. Several parts have been modified to make them suitable for field operation by our forces. The alloy casing is not only meant to make the weapon light enough to be man-portable, but to also protect the user and their squad in the case of a catastrophic malfunction.
+
+      STR_FUSION_HANDGUN_UFOPEDIA: The Fusion Handgun is a lightweight, compact weapon made of a material equally resistant to Alien Alloys, but of unknown origin. It can fire energy projectiles at high speed and appears to be our enemy's new secondary weapon. Its devastating effect is surprising for its size.
+
+      STR_FUSION_SMG_UFOPEDIA: Powerful assault weapon, in concept it is similar to our sub-machine guns. It's quite bulky, but surprisingly light when carried, suggesting that it's used for quick and sneak attacks. Its lethality lies in its ability to saturate an area with small fusion explosions, obliterating any unprotected living creature in its range.
+
+      STR_FUSION_RIFLE_UFOPEDIA: This is a new, robust and powerful battle rifle. For some strange reason, its firing mechanism limits it to semi-automatic fire, which is a relief for our troops. It's not very accurate, perhaps because of the material it's made of. But it is precisely this material that allows it to be used in close combat, like a mallet or a club.
+
+      STR_FUSION_SNIPER_UFOPEDIA: Fearsome long-range weapon. Judging by our analysis in combat, it is difficult to use (it is rarely fired in the course of battle) because of its considerable weight, but it is compensated for by its terrifying accuracy. The design and functionality is very reminiscent of an anti-tank rifle, similar to those used in WW2. Perhaps the designers' intention was to use it to disable our vehicles.
+
+      STR_FUSION_SPLITTER_UFOPEDIA: A large yet light alien close combat weapon, its used as a shotgun to clear human fortified positions and urban zones. The most fearsome characteristic of this weapon, its the claw-like protrude on the front of the weapon. Similar to crab or ant claws, it closes quickly and is able to amputate limbs of humans with ease.
+
+      STR_FUSION_LANCE_UFOPEDIA: It seems a squid-like creature was surgically attached to a large structure made of Alien Alloys. While this may be an unusual configuration, even unwieldy, this weapon projects a large and wide Fusion energy beam able to penetrate thick layers of titanium in a matter of seconds. The large stress on the alien squid-like creature kills it after approximately 10 uses.
+
+      STR_ETHEREAL_NOBLE_SWORD_UFOPEDIA: An ancient relic from a distant past, used by the Ethereal equivalent of our knights and lords. It's an extremely rare item used just by the very best soldiers in the enemy's army. It's use is not longer restricted to Ethereals only, but they are the only ones able to make them and bestow them on their new users. It channels the psi-force of the wielder to bolster the damage of the attack.
+
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_UFOPEDIA: Perhaps one of the most destructive weapons on the alien arsenal, this siege weapon is designed to obliterate fortifications with pinpoint accuracy. It's roughly the equivalent of our tactical nuclear launchers (like the M29 Davy Crockett), but with the unique ability of focusing all the Elerium Fusion energy blast into a very small area.
+
+      STR_TEXAN_UFO_UFOPEDIA: Old turboprop aircraft created in 1935, recognized worldwide as a stable and reliable aircraft. Often used as a training and light attack aircraft, it is incredibly popular. Terrorists often steal them from civilian airfields and equip them with black market weapons for use in their missions.
+
+      STR_MAGISTER_UFO_UFOPEDIA: Advanced training plane, built in France. It is often used as a ground attack plane and has seen action in various conflicts, both on the government force and on the rebel side. Terrorists have purchased Sidewinder missiles on the black market and are equipping them at Magister on intercept missions.
+
+      STR_MI8_TERRORIST_UFO_UFOPEDIA: One of the most widely used helicopters in the world, the Mi-8s we face were supplied to our enemies by Superpowers, secret agencies, rebel countries or simply stolen from government hangars. It has short-range defensive weapons and can transport large numbers of troops.
+
+      STR_MI8_UFO_UFOPEDIA: One of the most widely used helicopters in the world, the Mi-8s we face were supplied to our enemies by Superpowers, secret agencies, rebel countries or simply stolen from government hangars. It has short-range defensive weapons and can transport large numbers of troops.
+
+#      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
+
+      STR_PEACEMAKER_UFOPEDIA: "A feat of ingenuity in desperate situations. Our experimental Laser-1 (XL-1) rifle is a special adaptation of alien technology. It has a damage output similar to the Alien Laser Rifle we used as the basis for building ours, although it draws more energy from our Energy Reserve than weapons built by the World Powers. Dubbed the 'Peacemaker' by our engineers, we think the name is very appropriate."
+
+      STR_M1972_LASER_PISTOL_UFOPEDIA: A laser powered handgun designed and developed by UNEXCOM and US scientists in 1972. Not only is this the first laser gun put into service, it is one of the best sidearms available to UNEXCOM forces.
+
+      STR_38_LASER_MAGNUM_UFOPEDIA: An American heavy laser sidearm for soldiers who feel the need to compensate for the M1972's lack of firepower. Although Heavier than most laser sidearms, it can be useful when going up against more powerful aliens.
+
+      STR_CALBR_UFOPEDIA: The Colt Advanced Laser Battle Rifle is a high power laser rifle made by Colt's Manufacturing Company. This semiautomatic weapon fires a powerful laser beam at the pull of a trigger. The CALBR's high accuracy and power makes it a good mid to long range weapon.
+
+      STR_M20_M203_LASER_CARBINE_UFOPEDIA: The M20 is an American laser assault carbine based on the widely used M16. Created as a replacement for the outdated ballistic weapon, this laser share many of the same characteristics. This weapon is very accurate, lightweight, but suffers in Firepower. This variant utilizes an underbarrel grenade launcher.
+
+      STR_M5_LASER_SMG_UFOPEDIA: The M5 is America's new laser submachine gun, developed after making a breakthrough in laser technology. The M5 has a higher rate of fire than any other laser weapon due to it's advanced cycling emitter banks. Although this weapon excels in close combat, it suffers at range and stray beams can become an issue.
+
+      STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA: The Ulysses is a long range laser available to UNEXCOM marksmen. The advantages of this rifle are it's ease of use and its integrated advanced scope. Although this is the least powerful Sniper available to our forces, the impressive scope has faster target acquisition allowing for more follow up shots. This weapon is useful for picking off weaker targets at long ranges.
+
+      STR_X4_LASER_SHOTGUN_UFOPEDIA: A laser 'shotgun' developed when an American researcher accidentally shattered a focusing optic during rifle testing, sending several small laser beams flying across the room. Although this incident at first created panic, the scientists later reasoned they could create a laser shotgun for close combat, something previously not thought possible. This laser uses an array of small mirrors to spread the lasers in several directions.
+
+      STR_M4_LASER_LMG_UFOPEDIA: The M4 is Squad Automatic Weapon developed by DARPA and UNEXCOM to replace the suddenly outdated M-60. Although it's a bit heavy and unwieldy, the M4 is a reliable machine gun and rather accurate.
+
+      STR_ELERIUM_FLAMETHROWER_UFOPEDIA: After the discovery of Element 115 was made available to the American government, Pentagon officials asked if the element could be used to create a powerful incendiary weapon. By fusing Elerium with Napalm, they were able to create the fuel mixture used by the X55. They discovered that the powerful incendiary mixture could burn even the toughest aliens as well as force them out of hiding spots, but that it could also pose a threat to our own, as well as civilians, if we're not careful. They reluctantly put the weapon into service, with a warning to the soldiers using them.
+
+      STR_P71_LASER_PISTOL_UFOPEDIA: Although several different nations suggested designs for a new standard NATO sidearm, Beretta's P-71 would be the only one adopted. With no need for an external power source or reloading and fine tuned for accuracy, the P-71 represents the next stage in human technology.
+
+      STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA: The FN FLA is the laser derivative of the famous FN FAL. Although the design and size are similar, the FLA is much more powerful and does not require reloading. This laser was made to provide a weapon for soldiers who desired higher accuracy and power at the cost of rate of fire.
+
+      STR_FN_FLA_LASER_CARBINE_UFOPEDIA: A smaller and lighter version of the FN FLA laser rifle, meant for airborne and light infantry troops. It includes a collapsible stock and shorter barrel. Better for close combat but lacks the range and accuracy of the Leopold Battle Rifle.
+
+      STR_L4_ASSAULT_LASER_UFOPEDIA: The L-44 Assault Rifle is an experimental West German Assault Laser submitted to the NATO Advanced Laser Weapon Project by Heckler and Koch. At first mocked for its strange design and uncomfortable grip, the L-4 would eventually impress even the greatest skeptics with its high accuracy and light weight. Eventually UNEXCOM officials approved the design for combat.
+
+      STR_MAT72_SUBMACHINE_LASER_UFOPEDIA: French laser submachine gun developed and supplied by the French weapons manufacturer, Nexter Systems, uses smaller heat sinks than a typical laser rifle, so power input is reduced to avoid overheating. Still, this submachine gun is great for counter terror operations and close combat.
+
+      STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA: A Laser Sniper of British origin. Unlike their Soviet and American counterparts, British engineers, with the help of our scientists, were able to retain the full power of the laser as well as the accuracy. The Churchill can cut through enemies from far away, but its weight prevents quick relocation. Named after late British Prime Minister Winston Churchill.
+
+      STR_ML73_LASER_MACHINE_GUN_UFOPEDIA: A West German Laser Machine Gun designed by Heckler & Koch. By late 1972 new techniques and technology allowed for larger and more efficient weapons. By converting some of the thermal energy made by firing the gun back into electrical energy, the ML-73 is able to fire large laser beams at a steady rate.
+
+      STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA: An American 40mm recoilless rifle that combines old and new technology, used both by the US and NATO. The 'Teddy' is capable of firing 6 rounds without reloading and fires both anti infantry and anti tank munitions. Named after US president Theodore Roosevelt.
+
+      STR_P72_COMPACT_LASER_UFOPEDIA: The P-72 was the first successful Soviet application of laser weapons technology. Small and powerful, the P-72 makes for a good sidearm, but lags behind in accuracy. The iconic white and silver color scheme, which began with this gun, would become the standard for the new generation of Soviet Weaponry.
+
+      STR_ALK72_LASER_RIFLE_UFOPEDIA: The backbone of the Red Army and integral in the war against the alien threat, the ALK-72 is one of the first laser assault rifles ever made. After pulsed laser fire was proven to be possible, a new weapon to replace the AK-47 was quickly designed by Markov Kharitonov. The heavy assault weapon was able to quickly prove its worth in the battle against the aliens, being both cheap and powerful, although some soldiers have complained about its less than favorable accuracy and weight.
+
+      STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA: UNEXCOM officers expressed the need for a weapon that bridges the gap between the ALK-72 and the Mironov Sniper Rifle, and the Kharitonov is what the engineers came up with. This weapon is capable of delivering a powerful beam over medium to long distances without sacrificing power or closer combat abilities. Named after the lead designer, Markov Kharitonov.
+
+      STR_ALP_SUBMACHINE_LASER_UFOPEDIA: This iconic Laser submachine gun was designed by famed Russian laser scientist, Michael Artemiy, and was personally approved by the Soviet Minister of Defense, Andrei Grechko. Its balance in design, favoring no one aspect over any other, makes it one of the most versatile weapons among UNEXCOM soldiers.
+
+      STR_MIRINOV_LASER_SNIPER_UFOPEDIA: Laser Sniper weapon from the minds of the Soviet Red Army. Early laser technology suffered in accuracy, due to weaker optics and high power output. After advancements in focusing optics and toning down the power output, Ukrainian General Peter Mironov was able to design an accurate long-range rifle, although it suffers somewhat in damage output.
+
+      STR_AN_MACHINE_LASER_UFOPEDIA: A Heavy Soviet machine gun developed in cooperation with the Red Army in 1972. It can reliably deliver a lot of damage in a short amount of time, but is heavier than most machine guns.
+
+      STR_AFINA_ANTITANK_LASER_UFOPEDIA: An anti-tank laser put into service in late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can penetrate some of the heaviest armor, short of UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
+
+      STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves necessary."
+
+      STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove necessary on longer missions. The battery is automatically recharged when returned to the base"
+
+      STR_ELERIUM_BATTERY_UFOPAEDIA: "This battery is extremely similar to the power cells of alien fusion weaponry, granting it twice the capacity of our regular batteries while being the same weight"
+
+      STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of alien alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
+
+      STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each ufo communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the UNEXCOM team with the knowledge needed to fully decrypt this communications.
+
+      STR_HYPER_WAVE_ENCODER_UFOPEDIA: With the encryption device captured from the alien base, researchers have broken the encryption used by enemy forces.  With additional research, a new facility for intercepting alien transmissions can be constructed.
+
+      STR_HYPER_WAVE_DECODER_UFOPEDIA: With all the details now known of the alien microwave communication protocol, researchers have produced plans for a facility that can intercept all alien communications from alien crafts within nearly a 2500 mile radius. Translators should be able to provide information on the type of UFO, the alien race and specific activity.
+
+      STR_PLASMA_PISTOL_UFOPEDIA: This lightweight plasma PDW is the sidearm fielded by the alien forces. The weapons retrieved from the battlefield have a tamper-proof friend-or-foe lock on it that we cannot seem to circumvent, and disassembly activates a process that renders the internals of the weapon to slag. Capture of an alien engineer may allow the research team to discover methods to bypass this lock.
+
+      STR_PLASMA_RIFLE_UFOPEDIA: The alien plasma rifle is the main weapon platform for the aliens and can be found on a majority of their armed forces.  Like the other alien weapons, it seems to have a lock-out of some sort that prevents soldiers from simply picking up and using it and disassembly activates a self-destruct module in it.  Interrogation of a living alien engineer may provide the information needed to bypass this lock-out technology.
+
+      STR_HEAVY_PLASMA_UFOPEDIA: While alien heavy plasma weapon is the most powerful of the alien plasma weaponry, the weapon's relative inaccuracy and slow rate of fire limits its usefulness. As with the other alien plasma weapons, it is protected with a lock-out feature, capture of an alien engineer may allow the research team to discover methods to bypass this lock.
+
+      STR_HUMAN_PLASMA_PISTOL_UFOPEDIA: Due to the complexities of adding auto-fire to such a small weapon, the technique and methodology for producing a plasma pistol with the capabilities of the alien's weapon is beyond our reach. However, the research conducted on the weapon now allows engineers to modify and add interfaces familiar to our soldiers to any captured alien plasma pistols.
+
+      STR_HUMAN_PLASMA_RIFLE_UFOPEDIA: Using the information and cells gleaned from the captured engineer, researchers provided the manufacturing teams plans on how to modify captured plasma rifles to work for X-com forces, with a configuration familiar to the soldiers. Additionally, not bound by the size constraints of the plasma pistol, research can be expanded to discover how to manufacture new plasma rifles.
+
+      STR_HUMAN_HEAVY_PLASMA_UFOPEDIA: As the heaviest of the alien plasma weapons, this weapon proved to have it's own difficulties for the design and research team.  Despite a number of promising prototypes, producing a human-built heavy plasma weapon with the same capabilities as the alien version is impossible. Despite this, conversion of captured weapons for use by the X-com team is now possible.
+
+      STR_HUMAN_PLASMA_MAGNUM_UFOPEDIA: Re-examining abandoned prototypes used in the failed attempts at creating new plasma pistols, the research team abandoned attempts at including auto-fire for pistol and instead concentrated on power output.  The new pistol design is analogous to the gunpowder magnum, providing more wounding energy than the .50 BMG in a one-handed weapon.
+
+      STR_HUMAN_PLASMA_SMG_UFOPEDIA: Combining aspects of the autofire plasma rifle and previous research done on the plasma pistol, the research team created plans for a plasma submachine gun.  While not as powerful per-shot as the plasma pistol, the flash and recoil is much more manageable and the plasma bolt retains coherency at longer ranges.
+
+      STR_NEW_HUMAN_PLASMA_RIFLE_UFOPEDIA: Constructed completely by human hands, the manufacturing team now has plans for an exact replica of the alien plasma rifle, redesigned to meet the needs of the X-com soldiers.  Other than the missing lock-out technology, this weapon is exactly the same in capabilities as the converted alien rifles. More importantly, construction of this weapon allows for further research into human designed plasma weaponry adapted for X-com fire teams, instead of just mimicking or converting existing alien weaponry.
+
+      STR_HUMAN_PLASMA_DMR_UFOPEDIA: Replacing the auto-fire capability of the plasma rifle with the capability of creating heavier plasma shots and a more powerful linear accelerator, a plasma version of the designated marksman's rifle is now ready for construction.
+
+      STR_HUMAN_SNIPER_PLASMA_UFOPEDIA: Combining knowledge gained through the failed replication of the alien heavy plasma weapon and the successful duplication of the alien plasma rifle, scientists and engineers scaled up the plasma generator and concentrated on providing a more powerful linear accelerator, providing the weapon with high accuracy and massive damage potential.
+
+      STR_HUMAN_PLASMA_LMG_UFOPEDIA: Expanding techniques learned with the plasma submachine gun, the research team devised squad support weapon using the plasma weapon technology by scaling up the design.  Compromising on the plasma generator, it instead boasts a staggering rate of fire while mitigating flash and recoil.
+
+      STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA: This adapted launcher features the same superb handling of the alien Small Launcher and the ability to use the same ammo. We can use it against its masters to stun, capture and if needed, kill any enemy on the sight of this weapon.
+
+      STR_CEREBREAL_UFOPAEDIA: "Cerebreals are a race that is not fully integrated into the alien hive-like society; they are more like allies, who agreed to serve the invaders for some unfathomable reasons.  They bear incredibly strong psionic powers, which can be focused as a weapon:  a violent discharge of plasma, fuelled by will alone.  Their independent and completely alien pattern of thinking make them unpredictable, but also more prone to panic than other alien races."
+
+      STR_CEREBREAL_AUTOPSY_UFOPAEDIA: "This specimen are not your typical alien race: its genetics are completely different to both Earth and most alien species, and it seems even stranger than most other types of alien life.  Most of its body mass is neural matter, and the rest is almost exclusively advanced cybernetics to keep this enormous 'brain' running.  It seems unable to use hand weapons, and it has no significant natural means of defense.  There is little else we can say about this terrifying creature."
+
+      STR_CEREBREAL_LARVA_UFOPAEDIA: "This creature is a young form of a Cerebreal, encased in a tiny UFO-like vehicle for protection on the battlefield.  While not as potent as an adult Cerebreal, it's still a formidable monster, with high intelligence and notable psionic resilience.  Its vessel is equipped with a deadly plasma weapon."
+
+      STR_CEREBREAL_LARVA_AUTOPSY_UFOPAEDIA: "This creature is almost entirely composed of brain tissue, encased in a hovering capsule.  This capsule is quite resilient to damage, especially bullets and laser beams.  It also features a plasma weapon, which is similar in profile to the Plasma Rifle."
+
+      STR_CHTONITE_UFOPAEDIA: "Chtonites are a sturdy alien race, very well suited for menial work and harsh environmental conditions.  They prefer to live in underground compounds and would be harmed by sunlight, if not for their ocular implants.  Their intelligence is average, but they are more than capable of waging a war against mankind."
+
+      STR_CHTONITE_AUTOPSY_UFOPAEDIA: "This alien has a strong and resilient body, but is otherwise quite similar to us.  Its thick skin gives it a good protection against bullets and blades alike.  Its eyes are protected by a pair of cybernetic 'goggles', which seem to enhance its vision as well as protect the eyes."
+
+      STR_TUNLUN_UFOPAEDIA: "Tunluns burrow through the earth by spitting acid to corrode rocks for digestion, then shovel it aside with their flipper-like limbs. They are used by the Chtonites as living burrowing machines to build outposts and bases on Earth.  However, their acidic spit makes them perfect terror weapons as well.  Luckily, their overall intelligence is well below human."
+
+      STR_TUNLUN_AUTOPSY_UFOPAEDIA: "This peculiar alien has a very small brain for a sentient creature, which suggests low intelligence.  It is equipped with a large tube for a mouth, which produces large amounts of highly corrosive substance that can be propelled and therefore used as a weapon.  Its skin is very tough and extremely difficult to puncture, as well as virtually immune to the creature's own acid."
+
+      STR_REPTOID_UFOPAEDIA: Reptoids have been on Earth for quite a while, long before the invasion began.  Despite their bestial appearance, they possess extraordinary intelligence, which makes them excellent spies and field agents.  There is not much we can say about their origins, but their long history on Earth and their genetic closeness to ourselves point to a terrestrial genesis.  Nonetheless, their loyalty to aliens is absolute.
+
+      STR_REPTOID_AUTOPSY_UFOPAEDIA: This creature is covered with tough scales, able to withstand small caliber bullets with ease.  Curiously, despite its reptilian appearance, it seems to be quite resistant to heat.  Its brain is highly developed, suggesting a possibly superhuman intelligence.  Its most interesting feature however is their DNA, which is either terrestrial in origin or modelled after Earth creatures.
+
+      STR_SALAMANDRON_UFOPAEDIA: The Salamandron is a frightening beast, vaguely resembling ancient predators but also quite different.  Designed solely for terror, it is equipped with incendiary rockets, able to lay waste to a small town within minutes.  Its behavior can regulated by a set of small receivers implanted into its brain, but it largely operates on its own, making it difficult to control but also virtually invulnerable to jamming.
+
+      STR_SALAMANDRON_AUTOPSY_UFOPAEDIA: This creature is very sturdy, covered with thick scales and extremely resistant to heat, but not so much to laser cutters.  Its tiny brain features a number of small implants whose purpose seems to be provoking basic 'fight or flight' reactions within its system.
+      STR_UNEXCOM_HISTORY_1_UFOPEDIA: "Since July 10, 1947, we know that there is alien life. The famous Roswell case, which was said to be a meteorological balloon, was actually a Small Scout who collided during what we believe was a reconnaissance mission. The United States government quickly secured the remains and began its investigation. These data collected, despite having more than 25 years, are useful in these moments of terror."
+
+      STR_UNEXCOM_HISTORY_2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The number of UFO sightings around the world has increased, ranging from strange lights around military and civilian aircraft, strange spots on the radar that appear and disappear, to abductions, livestock theft and unprecedented climate change. It seems that our belligerence attracts them, given that there are military reports of lights in the skies of the battlefield and near military bases."
+
+      STR_UNEXCOM_HISTORY_3_UFOPEDIA: "In the last decade, contacts with extraterrestrial entities have begun to be more violent. On April 25, 1968, a Lufthansa commercial aircraft was shot down in mysterious conditions after disappearing from the radar, near the Alps. Authorities attributed it to a fissure in the fuselage, although military observers noticed a strange flash before the accident.{NEWLINE}{NEWLINE} A similar case, but this time on American soil, occurs on October 5, 1971. A commercial TWA flight is intercepted over Massachusetts. Units of the Tactical Air Command are scrambled to engage the hostiles and an air combat takes place between four F-4 Phantom II and the UFO. {NEWLINE}{NEWLINE}The Boeing 747 and three Phantom were shot down. The UFO, despite being severely damaged, was able to escape. However, this aerial battle served to understand better the enemy that awaits us. Our surveillance systems could briefly analyze their characteristics."
+
+      STR_UNEXCOM_HISTORY_4_UFOPEDIA: "Motivated by these acts of war, on March 18, 1972 a session of the UN Security Council is called in New York. At this meeting, representatives of the world powers agreed to form a more aggressive initiative to contain the growing unknown threat. The project is called the United Nations Extraterrestrial Combat Command and should take action by autumn of the same year. Enough time to gather all the equipment, planes, weapons and necessary personnel, both civil and military, to be able to face any threat to the Earth."
+
+      STR_UNEXCOM_HISTORY_5_UFOPEDIA: "UNEXCOM has the best scientists, engineers, specialists and soldiers from different armed forces from all around the world, including army, navy and air force. We count on the support of various space agencies, such as NASA, the European Space Research Organisation and Soviet space agencies to support UNEXCOM in the astronautics and scientific fields that may be required. We have absolute clearance to overfly any country and to deploy combat missions without any restrictions, sometimes even with local support. Our motto is 'AD HONOREM. AD PERPETUA MEMORIA. DEFENDER TERRA', translated to 'For Honor. For Eternal Memory. Defend Earth'."
+
+      STR_UNEXCOM_BLUE_HELMETS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}At the time of the foundation of the UNEXCOM project, the armies of the world were asked to collaborate with soldiers, field medics, combat engineers and other military specialists. All these use the distinctive blue color of the United Nations Peacekeeping Forces, but in a darker tone, to symbolize that their mission is not exclusive to maintaining peace, but to defend the planet and humanity."
+
+      STR_UNEXCOM_PILOTS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Our pilots are the Crème de la crème of the world's air forces. Experienced fighters from all over the world volunteered for the Project. Most have fought in Vietnam, Korea and there are even veterans of World War II. They were selected for the almost suicidal mission to protect the skies of Earth. Maybe we do not have the technology of the alien pilots and crafts, but we compensate with skill, dexterity and bravery. All airplanes need pilots, it is recommended to choose the most aggressive for fighters and bombers."
+
+      STR_AIR_COMBAT_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}One of our most important weapons to defend the planet is military aviation. In 1961, on what is known today as 'Nordiska Kraschen',The Nordic Crash, a single unidentified flying object (which we now believe was a Medium Scout) was spotted throughout northern Europe, flying at incredible speed. A pair of SAAB J29F Tunnan were scrambled to engage the object and after a dogfight, was shot down. This, along with the Massachusetts event, showed that UFOs aren't invincible. The United Nations equipped us with surplus Tunnan fighters provided by the Swedish Air Force. Old, but reliable."
+
+      STR_UNEXCOM_WEAPONS_UFOPEDIA: "The weaponry used in UNEXCOM is varied and for all tastes. Many guns overlap each other and you will find many weapons of the same type. Feel free to pick your favorite and ignore the others, most are meant to be sell if unused. You may notice that each weapon class has a different set of fire modes. Each class is meant for a purpose, some are best used up close and personal, some others are best for ranged combat. You can find a explanation of the different Special attacks on the reports below."
+
+      STR_RIFLE_REPORT_UFOPEDIA: "This type of weapon is widely used by armies all around the world. Two types of rifles are used: Battle Rifles, heavier and more powerful, but difficult to fire and Assault Rifles, lighter and more accurate. {NEWLINE}{NEWLINE}Special attack: {NEWLINE}Burst, three shots (Aimed slot). {NEWLINE}Control Auto, five shots (Auto slot)"
+
+      STR_PISTOL_REPORT_UFOPEDIA: "The classic and trustworthy sidearm of the infantryman. Reliable and easy to use, it can save your life if used properly. Most of them are light and you can pull the trigger very fast (just keep in mind you will need to reload often). {NEWLINE}{NEWLINE}Special attack: {NEWLINE}Rapid fire, 3 shots (Auto slot)"
+
+      STR_CARBINE_REPORT_UFOPEDIA: "This kind of weapons are used by special operation forces and commandos, basically a shortened version of a rifle that combines the firepower and lightness of an SMG and a Rifle, having a niche between the two. {NEWLINE}{NEWLINE}Special attack: {NEWLINE}Double Tap, two shots (Snap slot). {NEWLINE}Full Auto, 10 shots (Auto slot)"
+
+      STR_SMG_REPORT_UFOPEDIA: "Best used in close quarters and to clear buildings, this weapon type is focused on fire power and ROF rather than ranged combat. Best used for scouts and recon units. {NEWLINE}Special attack: {NEWLINE}{NEWLINE}Full Auto, 5-7 shots (Auto slot), {NEWLINE}Pray n' Spray, 10 shots (Aimed slot)"
+
+      STR_SNIPER_RIFLE_REPORT_UFOPEDIA: "Often are heavier rifles, meant to be used by marksmen and snipers to eliminate targets far away. Heavy and long barrels, with magnification scopes are the signature of this class of weapons. It's use at close range is not recommended. {NEWLINE}Special attack: Headshot, 1 shot (Auto slot)"
+
+      STR_SHOTGUN_REPORT_UFOPEDIA: "Shotguns are powerful weapons and like SMGs, are meant to be used on close combat. Buckshots are great for crowd control and slugs are best for mid-range combat. The best use is to blast away an enemy at point-blank, still. {NEWLINE}Special attack: {NEWLINE}{NEWLINE}Rage Fire, all the ammo fired (Auto slot)"
+
+      STR_ARTILLERY_REPORT_UFOPEDIA: "Large, heavy and adaptable. 'Artillery' is the nickname of the ordnance used by heavy weapons, like rocket launchers and recoilless rifles. Doesn't have a Special attack, but has varied ammo for many different situations, like destroying light enemies with HE rounds and tough adversaries with AP ammo."
+
+      STR_LMG_REPORT_UFOPEDIA: "Squad-issued automatic weapons, meant to support the troops on the battlefield. The primary function is to saturate an area with fire to keep the enemy behind cover. {NEWLINE}Special attack: {NEWLINE}{NEWLINE}Burst, 5 shots (Snap slot). {NEWLINE}Suppression, 10-15 shots (Auto slot)"
+
+      STR_WEAPON_REQUISITION_UFOPEDIA: "We can request a requisition of some weapons that we find on the battlefield, used by allied troops. This is completely optional, since we have our own weapons. Once the request is processed, the weapon in question will be available in our arsenal for acquisition."
+
+      STR_GRENADE_REPORT_UFOPEDIA: "Explosive devices that require a steady and strong arm to be propelled into the air. Light and very useful, it is recommended to have a skilled soldier to use them properly. "
+
+      STR_MELEE_REPORT_UFOPEDIA: "Melee weapons are very cheap tools, meant to be used in close combat when a weapon isn't available (either due running out of ammo or being broken). The effectiveness varies on the skill of the soldier using them, both melee and strength."
+
+      STR_MEDICAL_ITEMS_REPORT_UFOPEDIA: "Healing and recovering tools and medicine, meant to patch up wounds, recover stamina and health. Having a healthy soldier means another weapon firing on the enemies, don't forget to carry enough on the battlefield."
+
+      STR_FOOD_REPORT_UFOPEDIA: "It is said that an army marches on it stomach. Food rations, like canned meat or cigarettes, are important to keep a high morale. Read carefully the instructions on each item report to know the pros and cons of each ration."
+
+      STR_WEAPON_MODIFICATION_UFOPEDIA: "Our gunsmiths and engineers are very skilled and are able to design and modify certain weapons to create customized variants of those. To customise a weapon, we need the weapon itself and an another part (like scopes, grenade launchers, et cetera). We can get further blueprints with the help of experts, like Special Forces operators and even Mercenaries. However, asking for the help of one faction will permanently disable the other one, choose carefully."
+
+      STR_SPECIAL_FORCES_SUPPORT_UFOPEDIA: "Members of selected units from Security Council countries have volunteered to train our soldiers and support them in combat, if necessary. We are still negotiating the recruitment of these elite soldiers, but for now the support provided by volunteers will be more than sufficient. They have shared their modifications to their personal weapons with the R&D team in the Workshop, we can customize our weapons based on their blueprints."
+
+      STR_MERCENARY_SUPPORT_UFOPEDIA: "Through non-official means, we have managed to contact soldiers who are members of a private military company, who have agreed to provide us with their services as military advisors, even participating in combat, if necessary. At the moment, we cannot hire them, although some volunteers will arrive at our base in a couple of days. They have provided us with several blueprints to modify weapons, which we can start producing on right now."
+
+      STR_ON_OUR_OWN_UFOPEDIA: "We have declined the offer of entirely siding along the World Powers, in favor of neutrality. While this may pose an initial difficulty, we feel it is the option that would least affect the delicate geopolitical balance by not favoring any one faction. Instead, we have the support of the rest of the UN to equip our troops. This does not mean that we are antagonizing anyone, as we will still work side by side with all UN member countries. We can ask up to three times for a supply airdrop from the UN and one from each World Power."
+
+      STR_UN_CUSTOM_WEAPONS_UFOPEDIA: "Our Diplomatic Liaison has secured a contact with a private defense company, which has offered to supply us with the novel (but sadly ignored) modular weapons system created by Eugene Stoner. We will be able to purchase the basic rifle pattern, as well as blueprints to adapt the weapon to our needs. It will undoubtedly enhance our flexibility in combat."
+
+      STR_USA_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "One of our diplomatic liaisons in the United States has secured a meeting with senior military officials from various branches. This meeting has sought to obtain material support to equip our troops, yet they have refused to do so by unofficial means. But they have assured us of their support if we openly ask for American help, but only if we seek it exclusively from them. At the end of the interview, we were gifted with a Remington Combat Shotgun, designed to be equipped in elite troops. "
+
+      STR_NATO_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Secret contacts with top European figures have brought us closer to them to try and get the material support our cause so badly needs. At the end of our meeting, we were given an SG 510-4 Carbine, informing us that this exclusive weapon could be given to our soldiers. We have been warned that European politicians and military do not like cooperation with the Soviets, so it is a fact that they will withdraw their support if we engage in official talks with the USSR. The Americans have also expressed that they'll only support us if we ask exclusively them, so they will turn away if we seek european support. "
+
+      STR_USSR_INITIAL_APPROACH_RESEARCH_UFOPEDIA: "Our diplomatic contacts have managed to get close to certain important figures in the USSR. We cannot reveal their names, but they have offered to assist us in soliciting support from the Warsaw Pact and the Soviet Union in general, if we so wish.  As a sign of good faith, they have given us an AKMSU carbine, for the exclusive use of the VDV airborne forces, a rare piece to find. However, we have been informed that Soviet politicians will not tolerate a rapprochement with NATO or the United States, so perhaps we should be careful not to lose possible open Soviet help."
+
+      STR_USA_SUPPORT_UFOPEDIA: "Members of our diplomatic relations team have approached the U.S. Ambassador to the UN, George H.W. Bush to request American military support and equipment to arm our troops. It has taken some time, but he has agreed to provide us with the most modern equipment in the American arsenal, such as the M1911 Colt 45, M16/M203, XM117 Carbine, Remington Combat Shotgun, XM21, M79 Thumper, M72 LAW and M60. He also offered to equip our interception squadrons with USAF aircraft, but Ambassador Bush had to withdraw before continuing negotiations. We must contact him again if we want his support in the future."
+
+      STR_USSR_SUPPORT_UFOPEDIA: "We have spoken with the Soviet representative on the UN Security Council, Yakov Malik, to ask him for support in obtaining weapons and extra resources for our operation. After several hours of dialogue, he has agreed to provide us with first-class equipment available for the best of the Red Army. The following list of weapons is available at the Shop: Stechkin APS, AKM with bayonet, AKMSU, Skorpion vz. 68, KS-23 Heavy Shotgun, RPG7 and RPKS. To request air support from the Soviet Air Forces, our diplomatic team must continue to negotiate with Representative Malik."
+
+      STR_NATO_SUPPORT_UFOPEDIA: "Our diplomatic team has begun talks with Joseph Luns, Secretary General of NATO. After several talks over several days, he has agreed to our request to provide us with weapons and equipment from the various nations that make up the North Atlantic Treaty. His only condition was to support the NATO countries in case of any alien aggression. We have at our disposal the most recent models of Beretta 92FS, FN FAL with shotgun, SG 510-4 Carbine, H&K MP5, H&K PSG1, Carl Gustav M2 and FN MAG. However, if we wish to obtain aircraft and weapons, we must return to dialogue with Secretary Luns once again."
+
+      STR_USA_AERONAUTIC_SUPPORT_UFOPEDIA: "We have finally managed to speak again with Ambassador Bush about our request for the use of USAF aircraft and weapons. We have also contacted Air Force Secretary Harold Brown, who has given us his support to equip our combat squadrons with USAF fighters and bombers. As soon as we request them, they will arrive at our bases in the following days, together with technical personnel specialized in the maintenance of the airplanes and their weapons systems. NEW CRAFTS: F-4 Phantom II fighter, F-105 Thunderchief bomber. NEW CRAFT WEAPONS: AIM-9 Sidewinder Light Missile, AIM-7 Sparrow Heavy Missile, GAU-61 Vulcan Gatling Cannon"
+
+      STR_NATO_AERONAUTIC_SUPPORT_UFOPEDIA: "Once again we turn to NATO Secretary Luns to formally request his support. Our diplomatic representatives attended an extraordinary session of the North Atlantic Council in which the representatives of the countries that make up the Organization offered their respective aircraft to our operation. Representatives from Great Britain, Italy and even Sweden (even if it does not formally belong to NATO) offer to equip us with their fighters, as well as France will offer us its strategic bombers. However, due to budgetary constraints, we can only choose one type of fighter from the three proposed. The representatives are waiting for our response. NEW CRAFTS: Fighter requires further diplomatic talks, Mirage IV bomber. NEW CRAFT WEAPONS: Matra R.530X Heavy Missile, Red Top X Light Missile. British fighter: accel +8. Italian fighter: avoidBonus: +20. Swedish fighter: 200 HPs"
+
+      STR_USSR_AERONAUTIC_SUPPORT_UFOPEDIA: "After a heated afternoon of diplomatic talks, the Soviet representative of the UNSC, Yakov Malik, and the head of the Soviet Air Force have given us their military support, equipping us with the best of the entire Soviet air arsenal. We have two fighter options: a very fast MiG-25 interceptor or a light but cheap MiG-21 fighter. We need to select one option, the other option will then no longer be available. They have also provided us with some teams of military engineers to maintain the planes and weapons we request. NEW CRAFTS: Needs further research, Tu-22 Backfire M bomber. NEW CRAFT WEAPONS: AA-6 Acrid Heavy Missile, AA-2 Atoll Light Missile, GSh-23 Revolver Cannon"
+
+      STR_NATO_AIRCRAFT_OPTION1_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The Royal Air Force offers us the fast F.6 Lightning to equip our interceptor squadrons. It is very fast, has excellent acceleration and above all, its rate of ascent is record, allowing us to catch UFOs at high altitudes. Its armament consists mainly of cannons, which is particularly useful in close encounters. As we chose the British aircraft, both Italy and Sweden withdrew their offer to equip us with their national models."
+
+      STR_NATO_AIRCRAFT_OPTION2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}This Italian model of Lockheed aircraft is produced by Aeritalia and is even better than the original model. It incorporates important avionics improvements, making it a highly maneuverable fighter in interceptions. Its armament is focused on light missiles for mid-range encounters. Since we accepted the Italian aircraft, Sweden and Great Britain withdrew their offers permanently."
+
+      STR_NATO_AIRCRAFT_OPTION3_UFOPEDIA: "Sweden invites us to accept their Draken heavy hunting model. Their focus is on durability and has better reach than other fighters. It was reinforced with extra armour plates to resist UFO weapons (Sweden has secretly prepared for other possible air threats since its encounter with a Medium Scout in 1961), although this makes it not very fast or agile. In choosing it, the United Kingdom and Italy withdrew their offers."
+
+      STR_USSR_AIRCRAFT_OPTION1_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The USSR makes available to us the powerful MiG-25 interceptor (NATO code name: Foxbat) designed to face enemy bombers at extreme altitude and speed. It is considered by Western and Soviet analysts as the best interceptor of the moment, with a potent radar and a mighty engine. However, it is limited in its armament and is not agile in close combat. As we have chosen it, the Soviet authorities have permanently declined their proposal of their light fighter."
+
+      STR_USSR_AIRCRAFT_OPTION2_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}The USSR provides us with the agile MiG-21 fighter (NATO code name: Fishbed). This aircraft combines the characteristics of fighter and light interceptor, has proved its worth on the skies of Vietnam by successfully confronting American aircraft. It is also considerably cheap. Its particular arrow shape guarantees good stability in extreme flight regimes, increasing safety for pilots.  By accepting the suggestion of this light aircraft, the USSR has withdrawn the offer to equip us with heavy interceptors."
+
+      STR_SPECIAL_FORCES_RESEARCH_UFOPEDIA: After a long series of diplomatic talks, we got the support of the world's best Special Forces operatives (including the American Green Berets and the British SAS) to join our cause, some have volunteered. Their experience and high training make them way superior to the project's average volunteers. Their skills are unparalleled on the battlefield, perfect to fight an unknown enemy. Their recruiting cost is very high, but it's worth it.
+
+      STR_MERCENARY_RESEARCH_UFOPEDIA: We have requested once again the support of these private soldiers to increase our combat capabilities. Most are veterans of elite groups from various armies around the world, making them more combat experienced than many of our volunteers. Their skills will be especially useful to our combat operations against the alien invaders. The recruitment cost is not very high, although their salary certainly is.
+
+      STR_SUBMARINE_WARFARE_RESEARCH_UFOPEDIA: Our enemy seems to come from above the skies and below the seas. The ocean has been a place of mystery and unknown since centuries ago. To prepare ourselves to fight in this environment so strange to us, we have requested modified Spearguns and frogmen swimsuits. Underwater combat is tough, our weapons will inflict less damage with the distance.
+
+      STR_SDV_MINISUB_UFOPEDIA: SEAL Delivery Vehicle. Small sized submarine meant to be used in special operations by the US Navy SEALs. It is small enough to fit inside a cargo plane or a mothership nuclear submarine. Our troops will deploy to underwater combat zones using it, but only 8 soldiers can be deployed, 4 per SDV.
+
+      STR_AIRDROP_SDV_UFOPEDIA: Our troopers must be ferried in Paratrooper planes only. Another allied cargo plane, sometimes even a nuclear sub, will carry our SDVs into a designed LZ, were our soldiers will paradrop and aboard the subs, navigating to the combat zone. Recovery of artifacts and our forces will be done by allied naval ships.
+
+      STR_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA: Recent research made by our engineers working along allied armories have come with a solution to increase underwater firepower, by using allen alloy darts to increase the lethality of our weapons. We can select a weapon set from our allies. The USA offer us heavy equipment. The NATO will give us cheaper weapons and the USSR offer us a wide variety of weapons.
+
+      STR_USA_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA: The UN Navy has developed a series of heavy weapons, to bring as much firepower as possible. A powerful torpedo launcher with guided projectiles, an improvement to the Speargun currently used and a sidearm with good ammo capacity are now available to us.
+
+      STR_NATO_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA: A series of joint projects between the British, German, French and Italian Navy Commandos, have result in very cheap, yet powerful, underwater equipment meant to be used by Commandos on special operations. This includes the brand new submarine handgun by H&K, a guided disposable torpedo and a magnetic mine with electronic timer are now available.
+
+      STR_USSR_IMPROVED_AQUATIC_WEAPONS_UFOPEDIA: The Soviet Navy has designed highly specialized weapons for their frogmen, in the form of a practical handgun, a superb assault rifle based on the Kalashnikov series and an accurate light machine gun. Those weapons are available for purchase now.
+
+      STR_ALLOY_BALLISTIC_WEAPONS_UFOPEDIA: "Field testing had confirmed that Alien Alloys are incredibly light and hard. We have decided to use the knowledge we have to create ballistic weapons that use AA as ammunition. In addition, we have experimented on weapon designs that utilize two parallel magazines with different munitions. This innovation greatly improves tactical versatility, at the cost of reliability.  Our engineers requested permission to develop our own designs. The Council has approved our request, because gun shops around the world are focusing on creating laser weapons and we have the most AA available."
+
+      STR_FLECHETTE_WEAPONS_UFOPEDIA: "Flechette ammunition is a little explored concept, in which small metal darts, stabilized with fins, are used. These inflict serious injuries and are extremely lightweight. Our new set of weapons, created by our engineers, uses flechettes from Alien Alloys, inside a normal ammunition casing of various calibres. Its futuristic design has pleased our troops and those of allied countries alike. While capable of inflicting horrific wounds, flechettes have extremely poor armour penetrating capabilities. They are so light that a large number of them can be transported. Simply terrifying."
+
+      STR_DEPLETED_URANIUM_UFOPEDIA: The Council has authorized us to use the super-dense material known as tungsten carbide. This material will form the core of the bullets and will be wrapped in an alien alloy casing, compensating for the weight of the core. This tungsten carbide is super dense and very strong, combined with the speed and kinetic energy of our weapons, make the perfect combination to annihilate any type of armor."
+
+      STR_ALLOY_CLOSE_UFOPEDIA: "After we received an urgent request from our soldiers specialized in storming UFOs (popularly known among our ranks as 'Raiders') in which they asked us for weapons specifically focused on breaking and tearing apart all enemies in close combat. Taking this into consideration, we have put special emphasis on the creation of a machine pistol as a secondary weapon, as well as various shotguns for two purposes: short and medium range. The blueprints were sent to the workshop for their manufacture."
+
+      STR_ALLOY_RIFLES_UFOPEDIA: "Rifles and carbines are the weapons par excellence of the average soldier. Our scientists have created a couple of practical weapons that are extremely adaptable to any situation. Its strength is the combat at short and medium distance. Although they can be used to shoot down more distant targets, it is not recommended. Our soldiers are very interested in equipping these weapons, we can start producing them as soon as possible."
+
+      STR_ALLOY_HEAVY_UFOPEDIA: "The heavy equipment we are designing allows our troops to have specialized support on the battlefield. While rifles and pistols are more standardized weapons among our soldiers, intended for a general purpose, heavy weapons are used in situations where a rifle or carbine is not sufficient. The construction in Alien Alloys makes these weapons incredibly light, unlike their conventional equivalents. We are ready to begin manufacturing if needed."
+
+      STR_ALLOY_EXPLOSIVE_UFOPEDIA: "Explosives are quite useful when one bullet is not enough. The new explosive weapons have similar concepts behind them, although with a different implementation. Whether in the form of a throwing weapon or a specialized remote weapon with an automatic fire option, explosives must be used with caution to avoid friendly fire incidents."
+
+      STR_LASER_WEAPONS_UFOPEDIA: "For more than 10 years, American and Soviet technicians have worked on creating an efficient system to shoot down intercontinental ballistic missiles (ICBMs) without using interceptor missiles and also secretly combat a potential extraterrestrial threat.  The first examples were tested in 1962, in the form of the heavy, US-made China Lake Laser Gun. Each faction has focused on a particular type of laser. USA uses Helium-Neon lasers. NATO uses Alexandrite lasers and Soviet lasers use Garnet/Nd-YAG lasers. Our research notes can help world powers improve their designs, which will be provided to us upon request."
+
+      STR_HYBRID_LASER_PROJECT_UFOPEDIA: "During the 1960s, a joint US and USSR secret project developed laser weaponry based on samples of unknown technology collected between 1961 and 1963. This is not publicly available information, but our contacts in the governments of both powers have made this known to us. It is not possible for us to acquire laser weapons - due to our neutrality policies - but using the notes of our R&D staff, as well as American and Soviet researchers, we have designed an adaptation of the laser rifle employed by the aliens. It requires a lot of energy, but it is also more powerful than the equivalent of the other nations."
+
+      STR_USA_LASER_RESEARCH_UFOPEDIA: American laser weapons are balanced in terms of power and mobility. By employing Helium-Neon power cells, the laser beam released is consistent and powerful. To avoid overheating the weapon, liquid nitrogen is used and the crystals employed are calibrated to release the energy in the form of pulses, allowing for higher rates of fire without compromising the firing system.  The structure of the weapon is solid and does not require much maintenance.
+
+      STR_USA_LASER_HANDGUNS_UFOPEDIA: The handheld laser weapons created for the U.S. armed forces are characterized by their power and compactness, although a little heavier than their Soviet and European counterparts. Based on the reliability and performance of the legendary M1911 Colt 45, American engineers have managed to reduce the size of the refractor crystals without altering their firepower.
+
+      STR_USA_LASER_RIFLES_UFOPEDIA: The U.S.-designed laser rifles have the iconic silhouette of the M16, in service with U.S. troops. The carrying handle used on the Armalite family of rifles is the same on this new generation of assault weapons. With a focus on fast, accurate fire, the new weapons for the American soldier are designed so that an experienced M16 marksman will have no trouble getting used to the new M20 or CALBR.
+
+      STR_USA_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA: The United States has learned its lesson in the Vietnam War. The assault rifles employed by the MACV troops performed less well than expected in close quarters fighting in the jungle. To compensate for this, the new short-range weapons are specially designed to saturate an area with a lot of firepower, denying the enemy the possibility of getting close to the soldier using them. We are confident that these new weapons will be useful to soldiers who assault a UFO or an alien base.
+
+      STR_USA_LASER_HEAVY_WEAPONS_UFOPEDIA: "American tactical doctrine assigns heavy weapons to infantry platoons to provide cover or long-range fire. These new support weapons are focused on suppressing the enemy's combat capability, although by their nature, they are quite uncomfortable to use and transport. It is recommended that soldiers who use them maintain fixed and stable positions, and that they do not compromise their bodily integrity when using this new laser weaponry."
+
+      STR_NATO_LASER_RESEARCH_UFOPEDIA: Research over the past ten years, using the knowledge gained in the 1961-1963 Crisis, has resulted in the use of Alexandrite lasers and the development of a range of light and accurate weaponry. The Alexandrite crystal is not exactly the most powerful, although it does prevent the light beam from being widely dispersed. NATO has submitted the 'NATO Advanced Laser Weapon Project' to get support from the European countries to create the wide set of weapons that will be required on the War against the aliens.
+
+      STR_NATO_LASER_HANDGUNS_UFOPEDIA: The handheld laser weaponry project that won the NATO tender was presented by the Italian firm Beretta. Their proposal includes a fast and accurate laser weapon, designed for medium range shooting. NATO officers are particularly pleased and many have adopted it as a secondary weapon.
+
+      STR_NATO_LASER_RIFLES_UFOPEDIA: At the time NATO requested the NATO Advanced Laser Weapon Project, only two armouries prevailed - Heckler & Koch and FN Herstal. Their standard infantry weapons models prevailed over the other competitors and the fight was so close that the evaluation committee could not decide on either the L-4 or the FLA, so both entered service.
+
+      STR_NATO_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA: The current NATO doctrine favors the mobility of troops to face threats to the territories of member countries, moving away from fighting in fixed locations. The laser sub-machine gun of French origin chosen to equip the European troops is so light that a soldier can run with it and practically not notice it. It is expected to be well received among airborne troops.
+
+      STR_NATO_LASER_HEAVY_WEAPONS_UFOPEDIA: An important section in the NATO Advanced Laser Weapon Project program consisted of a wide range of heavy and support weapons. Among the winning projects were a powerful British precision rifle, a German machine gun and artillery co-created with the USA. Its function is to complement and enhance the firepower of every European brigade.
+
+      STR_USSR_LASER_RESEARCH_UFOPEDIA: Using information gathered since 1963, the Soviets have been able to slowly create a variety of laser weaponry employing Yttrium aluminium garnet (YAG) technology, developed by the Experimental Weapons Design Committee, led by the General Peter Mirinov. This is an important development, since among the military applications, there is also the possibility of improving communications (the YAG laser is particularly efficient in this). Brute power is synonymous with lasers used by Warsaw Pact troops.
+
+      STR_USSR_LASER_HANDGUNS_UFOPEDIA: Small arms developed since the late 1960s have seen their flourishing in more recent years due to increased funding for the Development Committee. Based on designs created by General Mirinov, with improvements by Dr. Artemiy, Soviet short-range weapons are noted for their reliability.
+
+      STR_USSR_LASER_RIFLES_UFOPEDIA: The crown jewel of Soviet laser technology, the rifles are considered the most important application of laser technology created by the Soviet Union. Due to the problems caused by the alien invasion, they have been put into mass production to equip the millions of soldiers of the Warsaw Pact and defend the Motherland and planet Earth.
+
+      STR_USSR_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA:
+
+      STR_USSR_LASER_HEAVY_WEAPONS_UFOPEDIA: The new military strategy of the countries aligned with the Soviet Union prioritizes the use of heavy weapons from fortified positions to defeat a considerably superior enemy. To this end, the Committee has ordered the creation of powerful weapons for a war of attrition. They are not very comfortable to use, but their firepower is unmatched.
+
+      STR_UNITED_WE_STAND_RESEARCH_UFOPEDIA: "The report of the interrogation of the captured alien has reached the Security Council. The members are widely surprised (and we could notice that they are also frightened) by the reliable proof of aggressive alien life. Until this moment, it had been an open secret. The resolution they passed was resolutive: humanity must take action before it is too late. Secretary-General Waldheim is going to make a statement in front of the General Assembly, but rumor has it that we will be sent on some kind of joint operation. We are standing by."
+
+      STR_IMPROVED_BOMBER_UFOPEDIA: "Returning to the abandoned project of the XB-70 Valkyrie supersonic bomber, in collaboration with North American Aviation, improved avionics, new weapons and navigation systems have been integrated, as well as a new engine and fuselage built in Alien Alloys, which substantially increases the speed and combat range of the bomber. It will be available for its manufacture in the workshop."
+
+      STR_IMPROVED_FIGHTER_UFOPEDIA: "Returning to the abandoned project of the XF-108 Rapier long-range supersonic interceptor, in collaboration with North American Aviation, improved avionics, new weapons and navigation systems have been integrated, as well as a new engine and fuselage built in Alien Alloys, which substantially increases the speed and combat range of the fighter. It will be available for its manufacture in the workshop."
+
+      STR_IMPROVED_VTOL_TRANSPORT_UFOPEDIA: "Working in close collaboration with Soviet designer Mikhail Mil, this attack and transport helicopter based on the Hind model (which has just entered service with Soviet military forces) includes a fuselage built entirely of Alien Alloys that considerably reduces its weight. In addition, the cockpit has been redesigned to incorporate new avionics systems. It is equipped with a variety of rockets and cannons, turning it into a 'flying tank'."
+
+      STR_IMPROVED_SATELLITE_UFOPEDIA: "New gravitational wave and infrared detection systems, in collaboration with NASA, ESRO and the Soviet Space Program have culminated in a new military reconnaissance satellite model. At the request of Soviet scientists, a slot has been incorporated to mount cannons of various types and calibres, in order to defend the satellite from UFO attacks when flying over Earth's orbit. We hope that this model will help us to improve the surveillance of our planet in the face of the alien threat."
+
+      STR_ALLOY_MANUFACTURING_UFOPEDIA: "Research into the alloys used in alien craft and weaponry opened up new avenues of super-material construction. While this research permits the creation of the precise rare-earth doped alloys used by the alien forces, this construction technology is more effective and efficient at creating 'super alloys' than terrestrial electrical sintering, or chemical vapor deposition. Creating new alloys with this methodology will facilitate the manufacture of new armor, improved small arms and allow for further research into directed-energy weapon technology. Additionally, this technology can be used to synthesize new chemical compounds for a variety of applications from explosives, power cells to medical technology."
+
+      STR_ALLOY_AEROSPACE_UFOPEDIA: "With the understanding gleaned from the alien alloy manufacturing process, the techniques for creating super alloys and chemical compounds suited for explosive warheads, penetrators and propellant can be applied to aircraft weaponry.  This should improve our air to air weaponry greatly."
+
+      STR_IMPROVED_CRAFT_ACCURACY_UFOPEDIA: "Alien saucer craft we have encountered proved to be quite a challenge for the terrestrial air-to-air weaponry. While our means of dealing damage are certainly effective even against alien armor, the weapon targeting and missile guidance systems are found to be severely lacking.\n\nAfter researching the navigation systems installed on alien craft, we believe we can now propose several improvements to the terrestrial air-to-air weaponry. By tuning key components we could greatly improve their effectiveness against alien evasive maneuvers and allow for better tracking of alien saucers.\n\n NEW AUXILIARY UNIT: TARGETING POD"
+
+      STR_IMPROVED_CRAFT_ARMOR_UFOPEDIA: "It is clear that the armor plating employed by conventional earth aircraft will provide little protection when engaging all but the smallest UFOs.\n\nWe have experimented with the newly discovered Alien Alloys and we believe we can now propose several ways to upgrade our current terrestrial craft. By employing lighter materials we also expect to achieve improvements other areas, such as avionics and maximum thrust. After some additional experiments and testing we believe this new kind of materials, will be ready for production. Our new aircrafts with be manufactured with this new alloy.\n\nAs we are neither legally allowed nor sufficiently equipped to manufacture a whole craft, we have negotiated a deal with the U.N. Security Council for the purpose of this project. Upon our request they will provide us with the base hull and all relevant parts. NEW AUXILIARY UNIT: ALLOY CRAFT ARMOR"
+
+      STR_ELERIUM_FUSION_UFOPEDIA: "We have managed to decipher the secret behind the handling of the mysterious mineral 115, the Elerium. This mineral is similar in use to our radioactive minerals such as uranium or plutonium, but thousands of times more efficient and with less radiation, although it is still dangerous to be near the Elerium without adequate protection. Being isolated with a strong magnetic field it is possible to stabilize it enough to use it safely in weapons, ammunition, armor and vehicles. Its enormous energy is released by being bombarded with highly charged particles. These types of reactors can make nuclear power obsolete in a matter of years. We must do even more research to apply it to various uses, although for the moment we can use Elerium to make ammunition for our existing weapons."
+
+      STR_ALIEN_CAPITAL_SHIPS_UFOPEDIA: "Huge alien battle ships are the equivalent of our naval warships. They lead the most important missions, such as Infiltrations, Terror Sites and Retaliations. Equipped with powerful shields and a large amount of armor. The gravity and the enormous air drag makes them very slow in our atmosphere. Most take point-defense cannons, very fast but weak and short-range. Our nuclear missiles are made to knock them down."
+
+      STR_ALIEN_FIGHTER_SHIPS_UFOPEDIA: "Ships dedicated exclusively to the interception of our aircraft, both civil and military. Fast, agile, with very powerful weapons. They are a more than worthy rival for our fighters and bombers. Our pilots call them 'Hunter Killers' for the enormous efficiency in doing both tasks."
+
+      STR_ALIEN_SCOUT_SHIPS_UFOPEDIA: "Recon, exploration and surveillance ships. They are relatively slow and their weapons are not very powerful, they usually precede the main ships. Some will try to attack our planes, but they are no match for them."
+
+      STR_ALIEN_SUPPORT_SHIPS_UFOPEDIA: "Highly specialized ships with specific tasks of each one. Their weapons are designed for self-defense, although they are dangerous for some types of aircraft. Caution is recommended."
+
+      STR_ALIEN_SHIELDS_UFOPEDIA: "Some of the alien craft are equipped with force shields that may absorb damage from missiles and bullets. They are not invincible, but they can greatly increase UFO's resistance at unexpected levels. Usually the bigger craft use them, however some small ships equip them as well."
+
+#     STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: Armor plates made of Alien Alloys, designed to be installed in  UNEXCOM aircrafts to increase durability. Damage Max +100
+
+      STR_IMPROVED_LIGHT_MISSILE_UFOPEDIA: "Recent advances in materials science have allowed us, in collaboration with the Raytheon company, to create a new model of lightweight missile, equipped with a modern chassis built entirely with Alien Alloys. Because it is lighter, it can carry more of a heavier warhead. In addition, avionics systems designed by our engineers, based on air combat so far, have allowed to improve the built-in heat tracker."
+
+      STR_IMPROVED_HEAVY_MISSILE_UFOPEDIA: "Using our knowledge gained from using heavy radar-guided missiles against UFOs, we have been able to isolate the waves they reflect to some extent. This new active radar is considerably larger and more advanced. It is still in prototype stages, but the new R-72 Scimitar missile, built with the help of NPO Vympel, includes the new Alien Alloys frames and all the explosives that could fit inside the missile."
+
+      STR_IMPROVED_GATLING_CANNON_UFOPEDIA: "General Electric engineers have been very enthusiastic about improving their famous Gatling M61 Vulcan cannon. They have visited our laboratory and engineering bay to support us in creating a new gun based on the Vulcan. By using the famous Alien Alloys, we have designed a more efficient weapon that resists the intense heat of the weapon much better. We are satisfied with the result. Improved Revolver research is required to produce the ammunition."
+
+      STR_IMPROVED_REVOLVER_CANNON_UFOPEDIA: "Our gunsmiths had the idea to use the BK-27 gun created by Mauser to improve it with the new Alien Alloys. The result could not have been better, and even the designers in West Germany congratulated our team of engineers. Being lighter, we were able to put in a new firing mechanism and a considerably stronger barrel. After firing 10,000 rounds, the barrel barely warmed up at all. The extra firepower will benefit our pilots. Improved Gatling research is required to produce the ammunition."
+
+      STR_IMPROVED_SUPER_HEAVY_MISSILE_UFOPEDIA: "Nuclear weapons remain a difficult subject to deal with, even though this war is being waged against non-human enemies. We have obtained authorization from the UNSC to upgrade our Falcon missiles using the new technology being researched. They have allowed us to design a new fuselage and avionics system (which translates into more range and accuracy), but we still have to keep the same W54 warhead, so the damage inflicted will remain the same. To produce it, we must use an existing Falcon and modify it completely."
+
+      STR_IMPROVED_ROCKET_UFOPEDIA: "This project is incredibly cheap, since we are using a cost-efficient platform as a base. The unguided Mk 4 Hydra 70 rocket, used by the USAF since the Korean War to provide close support, has been adapted with new Alien Alloy materials and an improved penetration head, made of tungsten. Laboratory tests have proven its reliability. The Soviets are said to be very interested in this weapon to equip the Hind they have provided us with, a further sign that the rivalries between the USA and the USSR are diminishing... at least a little."
+
+      STR_ADVANCED_BOMBER_UFOPEDIA: "Tactical bomber project implementing hybrid and stealth technology For this project we have moved away from classic aircraft construction and have taken a more 'organic' design.  In tests it has proven to be considerably invisible to the radar used by our aircraft, and we hope that this same feature will be used in aerial combat against UFOs."
+
+      STR_ADVANCED_FIGHTER_UFOPEDIA: "This is a novel project. Grumman has created a new heavy naval fighter designed to protect American fleets and our diplomatic liaisons have managed to contact this company to design an aircraft entirely built by UNEXCOM. Using the F-14 Tomcat as a base, we have added for the first time stealth technology based on a modified version of the Alien Alloys, retaining the large weapon carrying capacity and sweep wings. "
+
+      STR_AIR_STRIKES_UFOPEDIA: "The Council has provided us access to close air support from airbases located in council nations near the area of operations. Though expensive, they can grant a tactical advantage if used correctly. UNEXCOM operatives can call in close air support by priming and throwing a signal smoke grenade. The air support will take a few turns to arrive, it is advised this time is used to make sure no friendly combatants are in the blast zone. Signal smoke grenades should not be used indoors, as this prevents the close air support from finding the target, meaning the attack run will not be completed"
+
+      STR_OUTSOURCE_UFOPEDIA: "Due to the growing size of our airwing, our engineering department cannot keep up with the demand of manufacturing ammunition for the advanced weapons systems developed by our research department. Therefore the council has approved our request to move production of certain weapon system munitions into factories maintained by council members. While this arrangement will free up our resources to focus on other things, giving individual council nations access to powerful new weapons might have repercussions once this conflict is over"
+
+      STR_OLYMPUS_UFOPEDIA: "It is clear that the only way to end this invasion is to attack the enemy directly at their door. We cannot win a war of attrition on Earth, it only costs us more men and cities. The Security Council determined to reactivate Project Olympus, focused on creating an interplanetary strike force. The blueprints and partially build ships were stored in a secure vault for 10 years until the worst event happened and our planet became besieged by alien forces. It will take us a while to get everything ready, in the meantime we must buy as much time as possible."
+
+      STR_OLYMPUS_ORION_UFOPEDIA: "The design was created in the early 60s by NASA as an effective mean to get to Mars and beyond using the existing technology. But the fears of an alien invasion motivated president Kennedy and Premier Kruschev to propose an armed version. Our most reliable and effective way to use nuclear weapons is to adapt them into shaped charges (similar of those used by Casaba Howitzers) to propel the pusher plate behind the ship. Their armament is composed of naval batteries, ballistic missile racks and 20mm CWIS cannons plus Hangar storage for 6 smaller vehicles."
+
+      STR_OLYMPUS_SHUTTLE_UFOPEDIA: "This project has its origins in the late 1960s, when several concepts were explored by NASA for a reusable space vehicle to replace the Apollo capsules. A space plane, which would take off vertically and land on a runway. Due to the invasion, we have applied new materials, as well as additional shielding and engines for VTOL maneuvers. The X-73 Raider is the only aircraft in our arsenal that can transport troops into space."
+
+      STR_THE_MARTIAN_SOLUTION_UFOPEDIA: "Our Recon probes found the characteristic gravitational signals emitted by UFOs in the surface of the Moon. More specifically, Tycho Crater. Pyramid-like structures with what seems AA batteries and turrets has been spotted. Our task force is getting ready for deployment using the new space shuttles. NASA Command will help with us recon and logistics support and the Soviet forces will land alongside us. "
+
+      STR_DESTINATION_MARS_UFOPEDIA: "The Viking probes sent to Mars have found the location of the suspected alien base on a region identified as Cydonia. The most shocking news are the clear evidence of a city-like complex and what appears to be a humanoid face. The information has been shared to the UN General Assembly and the Security Council has approved the creation of the United Nations Space Command to coordinate the joint efforts of the American, Soviet and European aerospace forces. The Orion Nuclear Battleships are almost ready to go. We need to hold the invaders on the ground as much as we can to gain more time for the invasion fleet."
+
+      STR_CYDONIA_OR_BUST_UFOPEDIA: "We have completed the construction of the three Orion Nuclear Battleships. Each World Power has christened each one and provided crew and landing troops, with vehicle complement of Sabre Exoatmospheric Fighters and Raider Shuttles. The Ares Expeditionary Force will be composed of UNS Enterprise, UNS Marathon and UNS Stalingrad and will be take us three weeks to get to Mars orbit. The time has come. Operation Downfall will begin as soon as we are ready to take off."
+
+      STR_EXOATMOSPHERIC_FIGHTERS_UFOPEDIA: "To take the fight back to the aliens, we need to be able to fight them outside of our atmosphere. To do this a new generation of fighter craft has been created. Capable of fighting with equal ability both outside and inside our atmosphere, these craft can also reach immense speeds by exiting the atmosphere and therefore avoiding air resistance altogether."
+      STR_NONE_UC_UFOPEDIA: Standard Field Combat Uniform, provided by United Nations to all UNEXCOM troops at the incorporation to our forces, includes a darker version of the emblematic Blue Beret used by U.N. Peacekeeping forces. Lightweight and comfortable, it wasn't meant to stop plasma bolts, but can be enough to stop light bullets.
+
+      STR_PILOT_UC_UFOPEDIA: Standard G-suit used by UNEXCOM combat pilots. Made to resist high levels of acceleration forces, it's very practical (has plenty of pockets), and durable (includes fire retardant clothing). Its appearance is usually similar to a jumpsuit.
+
+      STR_SPECIAL_FORCES_UNIFORM_UFOPEDIA: A lighter version of the military uniform worn by regular SoldiersAndArmors allows the Special Forces Operator to move freely on the battlefield. It has no protection against ballistic weapons, but that does not prevent it from being used by the world's elite military. Has a boost to bravery and morale.
+
+      STR_MERCENARY_UNIFORM_UFOPEDIA: The mercenary uniform is a light and comfortable military attire, generally similar to that worn by government armed forces. It is practical enough to allow for use in clandestine operations in a variety of environments and climates.
+
+      STR_COMBAT_ARMOR_UFOPEDIA: Composite armor system, combining Alien Alloy and prototype Kevlar ballistic plates in a bulletproof vest and helmet made of the same material. Given the current limitations of armor manufacturing, it is still a bit heavy and uncomfortable to wear, but it certainly protects the user from light ballistic fire and some indirect plasma fire. Painted blue at our request.
+
+      STR_USA_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research into the development of flak jackets used by American troops in Vietnam has resulted in this prototype of individual armor. It uses a prototype Kevlar vest (materiel yet unused on large scale) with Alien Alloys plates to prevent damage to the wearer. It is considerably lighter than other metal-based armor and could be the future of infantry armor. We sent the blueprints to the R+D team immediately.
+
+      STR_DELTA_ARMOR_UFOPEDIA: "German prototype armor for bomb disposal teams. It offers an incredible resistance to explosive and armor piercing damage, although it is heavy and causes fatigue to the user. The front part is more resistant than the back. It includes a MG3 general machine gun, with integrated brackets on the soldier's right arm to improve grip and precision, as well as to reduce its weight."
+
+      STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: Research on personal armor built with Alien Alloys has supported the research of European scientists and engineers. A prototype of armor to defuse explosives has been redesigned to use the new alien material. The plans have been sent to our R&D team for immediate construction.
+
+      STR_RIOT_ARMOR_UFOPEDIA: "Advanced soviet prototype armor, derived from a project for a new riot armor for Spetsnaz special forces, is entirely built in Alien Alloy, includes a visor to protect the user's face from impacts and bullets, although this limits their visibility and mobility a bit. Includes a riot shield 'IM-21 Krepost', to deflect frontal damage."
+
+      STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA: The prototype riot armor designed for the Spetsnaz forces has been improved using the new Alien Alloys. Field tests were used on Soviet volunteers and is able to withstand the direct impact of light weapons. The shield that it has integrated increases even more its resistance, almost at the same of armored vehicles. The schematics have been sent to our R&D team for its construction.
+
+      STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
+
+      STR_SCOUT_POWER_ARMOR_UFOPEDIA: This item combines Power Suit technology and Personal Armor frame to create armor focusing on increasing a soldier's mobility. However, this focus on speed and a need to maximize wearer's field of vision limits the suit's protective capabilities.
+
+      STR_SCOUT_FLYING_ARMOR_UFOPEDIA: This armor is an improvement over the Scout Power Armor, incorporating advances from the Flying Suit technology. The Scout Flying Armor offers the best mobility so far, combining faster movement and flight. But despite our advances, the suit is still less armored than a basic Power Suit.
+
+      STR_ASTRONAUT_A7L_SPACESUIT_UC_UFOPEDIA: Fully pressurized suit, perfect for extra vehicular activities in difficult terrain. Improved model of the A7L suit used by the American astronauts of the Apollo missions.  Includes sections of Alien Alloys to lessen the discomfort of the suit, but still limits the movements and reactions of the user. Includes magnetic boots.
+
+      STR_ASTRONAUT_A7LB_SPACESUIT_UC_UFOPEDIA: Combat variant of the A7 spacesuit, integrates Alien Alloy plates on the shoulders and legs to provide extra protection to limbs. Its main feature its a ballistic helmet inspired in LEVA (Lunar Extravehicular Visor Assembly) to provide increased resistance to damage that may break the helmet and compromise the survivability of the operator. Includes magnetic boots.
+
+      STR_ASTRONAUT_A7_MMU_SPACESUIT_UC_UFOPEDIA: Special A7 spacesuit equipped with a prototype Manned Maneuvering Unit designed by NASA. This 'jetpack' enables untethered EVA operations without restrictions. The propellant used is gaseous nitrogen, stored on armored tanks on the back of the MMU. It contains enough propellant to have 6 hours of EVA. It is smaller than the Soviet counterpart, the SPK.
+
+      STR_ASTRONAUT_KRECHET94_SPACESUIT_UC_UFOPEDIA: Fully pressurized spacesuit, designed and build on the Soviet Union. Originally meant to be used on the civilian Moon and Mars space programs only, it was quickly put on widespread production to be equipped by Warsaw Pact cosmonauts. Incorporates some parts made with Alien Alloys to help improve mobility of the user. Includes magnetic boots.
+
+      STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC_UFOPEDIA: Combat variant of Krechet-94 suit, includes Alien Alloy pauldrons and leg armored plates to absorb damage to limbs. It's main difference with the standard Krechet-94 is a build-in Alien Alloys vest, to greatly increase the resistance to damage to torso.
+
+      STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC_UFOPEDIA: Specialized version of the Krechet spacesuit, features a build-in propulsion unit named SPK. Uses compressed oxygen as the propulsion system, stored and protected within the backpack-like structure. It has an autonomy of seven hours of extravehicular activity (EVA). Well liked by Warsaw Pact cosmonauts, it is larger than the American counterpart, the MMU.
+
+      STR_FERRET_CAR_UFOPEDIA:  The Ferret Scout Car is a British armoured fighting vehicle designed and built for reconnaissance purposes. These vehicles are provided by the United Nations, very used by the UN Peacekeeping Forces all around the globe. It has reduced armor, but is equipped with two powerful .50 caliber M2 Machine Guns (50 rds) and a smoke grenade dispenser (6 rds).
+
+      STR_SHERIDAN_UFOPEDIA: The M551 Sheridan AR/AAV (Armored Reconnaissance/Airborne Assault Vehicle) is a light tank developed by the United States, provided to UNEXCOM for ground combat support. It's designed to be landed by parachute and to swim across rivers. It's armed with the technically advanced M81E1 152mm gun/launcher (20 rds), adapted for the use of the MGM-51 Shillelagh guided anti-tank missile (9 rds).
+
+      STR_BMD1_UFOPEDIA: The BMD-1 is a Soviet airborne amphibious tracked infantry fighting vehicle, first introduced in 1969. BMD stands for Boyevaya Mashina Desanta (literally 'Combat Vehicle of the Airborne'). It can be dropped by parachute and can be carried by our C-130 Hercules and although it resembles the BMP-1 it is in fact much smaller. It's main armament is composed of a 2A28 Grom 73mm semi-auto gun (40 rds) and a PKT coaxial MG (50 rds).
+
+      STR_SALADIN_CAR_UFOPEDIA:  Excellent 6x6 armored car of British origin, was designed in the 50s and has been exported to numerous nations since then, proving its worth in Middle East countries. It is also used by the United Nations. Its Royal Ordnance Factory L5A1 76mm Gun (30 rds) is not designed to combat tanks, but to destroy fortifications and light vehicles. It has a coaxial M1919A4 machine gun (50 rds) to combat infantry.
+
+      STR_IMP_TANK_CHASSIS_UFOPEDIA: Our tanks have proven to be highly useful on the battlefield when supporting our troops in their missions. However, the escalation in the conflict and the increase in the losses of the same, have led our engineers and scientists, together with tank developers of the world, to create a new type of tank using our new scientific advances. For this project we are developing a powerful laser cannon similar to the one mounted on airplanes, the 'Laser Gun, Model 34-3 Heavy Anti Tank Laser Cannon', we will use it in the developed tank.
+
+      STR_LEGIONNAIRE_TANK_UFOPEDIA: Result of a joint project of USA, West Germany, UK and UNEXCOM engineers, the Light Assault Tank XM22 Legionnaire is armored with a strong armor based on Alien Alloys. It uses a unique cannon, the LGM34-3H ATLC, which fires high-powered laser munitions. Their 'cartridges' are actually one-use-per-shot batteries, physically similar to 90mm shells but 10 times more powerful (30 rds). It's support weapon is a turret mounted Laser Minigun (100 rds).
+
+      STR_THIN_MAN_UFOPEDIA: "The Thin Man is an alien creature fused with human DNA to create what seems to be an infiltration agent. It has been shown to showcase some kind of psionic abilities, something that no doubt assists it when establishing networks of operatives."
+
+      STR_THIN_MAN_AUTOPSY_UFOPEDIA: "While on the surface the subject, which we've christened as 'Thin Man', seems human, its internal organs show significant deviation. The Thin Mans DNA is similar to a regular humans, but it contains portions unlike anything found on earth. The subject is most likely a result of genetic manipulation."
+
+      STR_ALIEN_ASSOCIATIONS_UFOPEDIA: "The capture of a high ranking terrorist has lead to an alarming development, the terrorist organisations we've been facing seem to have links to extraterrestrials. Multiple terrorist leaders have been seen armed with weaponry only seen before during highly classified encounters with alien life. The origins of these weapons must be tracked before knowledge of them spreads too far to contain, and before the terrorist can get their hands on anything with which they could cause significant damage."
+
+      STR_TERRORIST_HQ_UFOPEDIA: "Thanks to the information gained from an high ranking terrorist and the assistance of multiple intelligence agencies we've been able to track down the source of the alien weapons. They seem to have been distributed by a small cell seemingly operating from a sizable suburban house. A raid into the building should put an stop to their operation."
+
+      STR_TERRORISTS_UFOPEDIA: Terrorists are a diverse group of political, religious and ideological radicals who use violence and fear to impose their ideals or make demands on the world's governments. Each cell is independent of the others, but they use similar equipment and weaponry. They are extremely dangerous because they are not afraid to die.
+
+      STR_TERRORISTS_OPERATIONS_UFOPEDIA: Terrorist operations are often financed by extremist political or religious factions in countries around the world, who use terrorists as the means to achieve their goals without getting their hands dirty. They usually demand a ransom in the form of money or the release of prisoners loyal to their faction. Their activity has been greatly increased by the massive export of weapons from the Superpowers to Third World countries.
+
+      STR_TERRORIST_AUTOPSY_UFOPEDIA: This is an ordinary human, with nothing we would not have seen in another member of our species and as easy to kill as an ordinary soldier. Some were equipped with bulletproof vests under their clothes, although in general their attire is that of a civilian, with some tactical elements of military origin, probably obtained illegally on the black market.
+
+      STR_SMALL_FIGHTER_UFOPEDIA: "Though this UFO may not look like much, it is a fearsome combatant. Despite its lack of an aerodynamic design, it is faster than any aircraft found on Earth."
+
+      STR_TROOP_LANDER_UFOPEDIA: "This massive vessel seems to serve as the aliens main method of transporting troops. Though being a transport, it is equipped with an extensive point-defence system, making it a severe threat to any assailant."
+
+      STR_SECTOID_COMMANDER: "Sectoid Commander"
+      STR_SECTOID_COMMANDER_AUTOPSY: "Sectoid Commander Autopsy"
+      STR_ARMORED_SECTOID: "Armored Sectoid"
+      STR_ARMORED_FLOATER: "Armored Floater"
+      STR_MUTON_LEADER: "Muton Guard"
+      STR_ARMORED_MUTON: "Shock Muton"
+      #STR_ARMORED_MUTON_LEADER: "Elite Muton Guard"
+      STR_MECHTOID: "Mechtoid"
+      STR_CYBERSPHERE: "Cybersphere"
+      STR_PROBE: "Probe"
+      STR_SECTOID_PSION_AUTOPSY_UFOPEDIA: "This Sectoid has a specially build 'harness' on its body. Connected directly on the brain, provides the user of extra energy to focus and expand the intensity of the psionic energy. Basically an antenna and a battery for the user's brain. It's use seems focused on controlling minds of lesser beings."
+      STR_SECTOID_PSION_UFOPEDIA: "The 'Psions' are Sectoids specially trained to control alien beasts, even some allied aliens with lower intelligence. The 'Psionic Harness' transmits the orders directly into the subconscious mind and allows the Psion to control every aspect of the beast, from movement to neuronal activity... Pretty much like a puppeteer."
+      STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA: "This Sectoid features a larger head than it's brethren. Looks naturally grown, as there are no signs of surgical procedures. The body seems to struggle to resist the weight of the larger cranium and the brain matter inside. Obviously, a perfect target for our snipers."
+      STR_SECTOID_COMMANDER_UFOPEDIA: "A highly evolved Sectoid, it's cranial cavity was genetically expanded to fit a larger brain. The Commander has a vast array of tactical and cultural knowledge, turning it into a literal genius on the battlefield. The heightened intelligence allows to take control of larger and more complex squads of aliens than a regular Sectoid."
+      STR_MECHTOID_AUTOPSY: "Mechtoid Autopsy"
+      STR_MECHTOID_AUTOPSY_UFOPEDIA: "The broken chassis of this mechanized unit reveals a complex array of tubbing and armored plates, along with two powerful legs. The propulsion unit looks a miniature Elerium reactor, but protected to avoid killing the user. Deeply inside, lies the rotten corpse of a Sectoid. Probably the pilot of the armored unit. The arm-mounted Heavy Plasma Cannons are very dangerous, but relatively slow to use."
+      STR_MECHTOID_UFOPEDIA: "In order to bolster the strength of Sectoid squads, a Navigator boards a tall mechanized bipedal armor. Just the head remains unprotected. Powerful servomotors allow the 'Mechtoid' to run across large distances with ease. Compared to other units, features a relatively lighter armor (albeit still stronger than a regular human armored vehicle). It's crewman is still capable of using Psionics unhindered."
+      STR_ARMORED_SECTOID_UFOPEDIA: "In order to increase the durability of Sectoids in frontline combat against us, they have developed a fairly effective powered armor. Fully enclosed and with a breathing system, the user can withstand NBC environments and deflect standard human ballistic and plasma weaponry. They are susceptible to explosions and lasers, however."
+      STR_SECTOPOD_UFOPEDIA: "A fearsome alien robotic unit, it's often the vanguard of enemy assaults. Heavy armored and highly resistant to most damage types (lasers and explosives seem to be effective). It's biggest weakness is also it's main weapon: dual Laser Gatling-like Cannons can easily dispatch most infantry with a hailstorm of energy beams."
+      STR_ARMORED_MUTON_UFOPEDIA: "The Shock Mutons are specially trained to engage against highly organized enemy forces. Their armor protects them from all kind of damage and their enclosed helmet allows them to operate on toxic environments. The foot are unprotected, being a vulnerable side."
+      STR_ARMORED_MUTON_LEADER_UFOPEDIA: "An extremely skilled Muton warrior, employed as both commanders of large alien contingents and personal guard for the Ethereal leaders. Their armors and helmets are decorated with large ornaments, shown with pride as a sign of status. They are the peak of the Muton hierarchy."
+      STR_MUTON_LEADER_UFOPEDIA: "While regular Mutons are highly dependant on a psionic link with a superior being like Ethereals and Sectoids, this kind of alien serves as a NCOs for alien squads. They have developed a stronger individualism and will power. This is enough to command other aliens and support higher castes."
+      STR_ARMORED_FLOATER_UFOPEDIA: "Serving as the usual frontline and recon unit is costly due the poor protection of the standard harness. This is why the Floater soldiers have been improved with armor whose protection rate is similar to other frontline units. This effectively doubles the survival rate within their ranks."
+      STR_STRIDER_UFOPEDIA: "This is a subspecies of the Floaters, stronger and more resilient than their cybernetic-enhanced cousins. We think on them like the Homo Neanderthals and Homo Sapiens: two similar species with different specializations. They often wear heavy armor and provide close combat support to Floaters."
+      STR_STRIDER_AUTOPSY_UFOPEDIA: "This alien is very similar to the Floater, perhaps a variation of them or a genetic relative. The cranium looks more sturdy but with more primitive facial features. The legs and arms are muscular in appearance, probably indicating this alien is used on heavy work."
+      STR_PROBE_UFOPEDIA: "A small and very distinctive robotic unit. Used on survey and scientific missions, it's widely used to conduct recon over the area subject of study. Carries a defensive laser gun. Slow, but could kill a human soldier if left unchecked."
+      STR_PROBE_AUTOPSY: "Probe Autopsy"
+      STR_PROBE_AUTOPSY_UFOPEDIA: "The small hovering unit seems to be used to scout ahead the mission site and provide light support to other combat units. The chassis seems light and somewhat weak, but we have reports of a small energy weapon used on what appears self-defense."
+      STR_CYBERSPHERE_UFOPEDIA: "A very specialized robot drone, used to seek, detect and pin down possible objectives. The data collected by this unit is relayed directly into the brains of the alien squad members, effectively turning this drone into another pair of eyes. It's extremely fast and agile."
+      STR_CYBERSPHERE_AUTOPSY: "Cybersphere Autopsy"
+      STR_CYBERSPHERE_AUTOPSY_UFOPEDIA: "The wreck reveals few things about the purpose of the flying object. It doesn't have any weapon and the chassis is really thin and light, it barely resists a couple of rifle rounds. The antigravity propulsion unit is very compact too, looks like it's meant mostly as recon and survey tasks."
+      STR_ALIEN_RANKS: "Alien Ranks"
+      STR_ALIEN_RANKS_UFOPEDIA: "Aliens have a cohesive, organized and highly specialized military. Similar to human armies, each member of a squad has assigned a role and function. It seems they haven't developed the concept of concealment nor camuflaje, because they often use bright colors to identify each rank. Capturing them could give us a better perspective of our enemy. Red is meant to leaders. Brown is used on technicians and combat engineers. Blue is employed by sanitary and medical personnel. Orange is assigned to pilots and ship crew. Green is the color of the regular soldiers. It's unknown if the colors meant something for them or not. But at least, makes things easier to us."
+      STR_ARMORED_ALIENS: "Armored Aliens"
+      STR_ARMORED_ALIENS_UFOPEDIA: "Personal armor is widely distributed to alien infantry. However, it's use is restricted according the mission carried by the crew of a ship. If the personnel is conducting 'scientific' missions, lighter weapons and few or no personal armor are used. However, if the enemy expects to engage in heavy combat, said restrictions are lifted and more destructive equipment is used without hesitation. We are the one of the few, if not the first, race who resisted longer than a couple of weeks. We could expect a change in their equipment strategy anytime soon."
+
       MAP_ACULTA: "Gothic Grass"
       MAP_ACULTASNOW: "Gothic Snow"
       MAP_ACULTASAND: "Gothic Sand"
-      MAP_MOUNT: "Mountains Wasteland"
+      MAP_MOUNT: "Mountains"
       MAP_MOUNTSNOW: High Mountain
       MAP_MOUNTGRASS: Low Mountain
       MAP_MOUNTSAND: Desert Mountain
@@ -1825,11 +3261,6 @@ en-US:
       STR_POWER_RESERVES: "Power Reserves"
       STR_USE_BATTERY: "Use Battery"
 
-      STR_OVERSEER: "Overseer"
-      STR_OVERSEER_LANDING: "Overseer Trap Opportunity"
-      STR_POWER_DESTROYED: "POWER SOURCES DESTROYED"
-      STR_OVERSEER_BRIEFING: "CODENAME: Operation False Flag - Using a captured Hyper Wave Encoder we were able to get the Overseer UFO to land, faking a base location. Our mission: we have to either kill all aliens or destroy the power source and evacuate before the time runs out and the aliens realize what is happening and lift off. They'll never know - we give no warning. We set a trap, they took the bait."
-
     # Alien Weapons
       STR_ALIEN_PLASMA_WEAPONS: Alien Plasma Weapons
       STR_ALIEN_COMMUNICATION: Alien Communication
@@ -2266,5 +3697,5 @@ en-US:
       STR_IMP_TANK_CHASSIS: Laser/Alloy Tank Project
       STR_TANK_LASER_CANNON: XM22 Legionnaire
       LEGIONNAIRE_TANK_ARMOR: Alien Alloys hull
-      STR_XM343: Kodiak Laser Cannon
+      STR_XM343: LGM34-3H Kodiak Laser Cannon
       STR_TANK_LASER_MINIGUN: XM250 Laser Minigun
