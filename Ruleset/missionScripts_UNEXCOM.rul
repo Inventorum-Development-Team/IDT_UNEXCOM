@@ -12,21 +12,6 @@ missionScripts:
   - delete: superhumanRetaliation
   - delete: recurringTerror
 
-  - type: TestBase
-    missionWeights:
-      0:
-        STR_ALIEN_BASE: 100
-    firstMonth: 0
-    raceWeights:
-      0:
-        STR_SECTOID: 100
-    startDelay: 30
-    #randomDelay: 43500
-    #maxRuns: 6
-    varName: TestBase
-    executionOdds: 100
-    targetBaseOdds: 100
-
   - type: invasionStart
     missionWeights:
       0:

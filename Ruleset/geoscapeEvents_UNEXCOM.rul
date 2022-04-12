@@ -107,17 +107,17 @@ eventScripts:
   - type: STR_SPY_EVENT_SCRIPT
     eventWeights:
       3:
-        STR_POLITICAL_ASSASSINATION_EVENT: 50
-        STR_LEAKED_SECRET_FILES_EVENT: 50
+        STR_POLITICAL_ASSASSINATION_EVENT: 20
+        STR_LEAKED_SECRET_FILES_EVENT: 20
       6:
-        STR_POLITICAL_ASSASSINATION_EVENT: 50
-        STR_LEAKED_SECRET_FILES_EVENT: 50
+        STR_POLITICAL_ASSASSINATION_EVENT: 20
+        STR_LEAKED_SECRET_FILES_EVENT: 20
       9:
-        STR_POLITICAL_ASSASSINATION_EVENT: 50
-        STR_LEAKED_SECRET_FILES_EVENT: 50
+        STR_POLITICAL_ASSASSINATION_EVENT: 20
+        STR_LEAKED_SECRET_FILES_EVENT: 20
       12:
-        STR_POLITICAL_ASSASSINATION_EVENT: 50
-        STR_LEAKED_SECRET_FILES_EVENT: 50
+        STR_POLITICAL_ASSASSINATION_EVENT: 20
+        STR_LEAKED_SECRET_FILES_EVENT: 20
     firstMonth: 3
     lastMonth: 12
     executionOdds: 100
@@ -143,6 +143,8 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
+    researchTriggers:
+      STR_END_OF_TERRORISTS: false
 
   - type: STR_EARTH_FIGHTS_BACK_SCRIPT
     eventWeights:
@@ -401,15 +403,6 @@ events:
   - name: STR_MILITARY_SATELLITE_DESTROYED_EVENT
     description: STR_MILITARY_SATELLITE_DESTROYED_EVENT_DESCRIPTION
     background: MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND
-#    points: -5
-    timer: 4000
-    timerRandom: 45000
-
-  - name: STR_MILITARY_BASES_ON_HIGH_ALERT_EVENT
-    description: STR_MILITARY_BASES_ON_HIGH_ALERT_EVENT_DESCRIPTION
-    background: MILITARY_BASES_ON_HIGH_ALERT_EVENT_BACKGROUND
-    regionList: [STR_EUROPE, STR_NORTH_AMERICA, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_INDIAN_OCEAN, STR_SOUTH_ATLANTIC, STR_NORTH_ATLANTIC, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC]
-    city: true
 #    points: -5
     timer: 4000
     timerRandom: 45000
@@ -1358,118 +1351,3 @@ extraSprites:
     files:
       0: Resources/Backgrounds/Events/ANTARCTIC_ACTIVITY_EVENT_BACKGROUND.PNG
 
-extraStrings:
-   - type: en-US
-     strings:
-       STR_OPERATION_LINEBACKER_EVENT: "Operation Linebacker Ends"
-       STR_OPERATION_LINEBACKER_EVENT_DESCRIPTION: "A major bombing campaign over North Vietnam has ended. Dozens of B-52 Stratofortress, A-4 Skyhawks, F-4 Phantom IIs and F-105 Thunderchiefs from the US Navy and USAF flew over communist positions for weeks in an effort to isolate North Vietnam from outside support. The end of the campaign is a sign that the Vietnam War is coming to an end. American leaders consider it a complete success."
-       STR_VIETNAM_WAR_ENDS_EVENT: "Vietnam War Ends"
-       STR_VIETNAM_WAR_ENDS_EVENT_DESCRIPTION: "After almost a decade of bitter battles, the peace conference in Paris have finished and an armistice was signed between the United States and North Vietnam, where the US pledged to leave Vietnamese territory. Thousands of people are celebrating the end of a bloody and futile war, but... now South Vietnam is on its own. How much longer will it hold out without American support?"
-       STR_FALL_OF_SAIGON_EVENT: "The Fall of Saigon"
-       STR_FALL_OF_SAIGON_EVENT_DESCRIPTION: "After a couple of weeks of struggle, North Vietnam has managed to lay siege to Saigon, the capital of the Southern regime. Hundreds of helicopters are working hard to evacuate thousands of South Vietnamese and foreign refugees, while aircraft carriers are approaching the coast to serve as temporary bases. But even so, hundreds will be left behind. A dark chapter in the Cold War is over."
-       STR_RED_MOON_EVENT: "Red Moon"
-       STR_RED_MOON_EVENT_DESCRIPTION: "After numerous delays and several years after the United States, the Soviet Union has put a man on the Moon. Alexei Leonov, the first cosmonaut to set foot on our satellite This is a milestone in the Space Race and ensures the continuation of the Soviet space program. In an unprecedented move, President Nixon called his counterpart Brezhnev to congratulate him, signaling that tensions between the two powers are easing."
-       STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT: "Apollo-Soyuz Test Program"
-       STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT_DESCRIPTION: "A joint effort, the first of its kind, has marked a before and after in the Space Race and the Cold War. For the first time, a Soviet and an American shook hands in orbit. The epic moment when cosmonaut Leonov and astronaut Stafford met has begun a new stage in the race, where both world powers collaborate with each other. However, NATO views the event with distrust and European-Soviet relations deteriorate."
-       STR_FRENCH_OFFICIAL_ABDUCTED_EVENT: "French Official Abducted"
-       STR_FRENCH_OFFICIAL_ABDUCTED_EVENT_DESCRIPTION: "Today, six armed individuals stormed a government office building in Marseille, France, and swept through the building, engaging in a firefight with security, before barging into the personal office of Michel Garnier, a French official working for the Ministry of Finance, before abducting him from the building. Though we have no information as to the identities of his attackers, we suspect this may have been an act perpetrated by the terrorist group we have been encountering."
-       STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT: "Tensions Escalate After UFO Sighting"
-       STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_DESCRIPTION: "After the sighting of an unidentified aircraft on radar late last night near Omsk, Soviet MiGs attempted an interception of the aircraft, but were outran, before it exited radar range. Moscow today made a public demand that the United States cease infringing upon it's air space, threatening  to take 'drastic defensive measures' if the alleged air space violations do not cease."
-       STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT: "Country Refuses To Comment On 'Alien' Threat"
-       STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT_DESCRIPTION: "A press release about the global terrorist attacks was cut short after government officials in {0} were confronted with questions about the presence of extraterrestrials on Earth. Only a few short months ago, the reporter would have been laughed out of the room. Reliable evidence has been mounting of UFOs, abductions and terror attacks. It is only a matter of time until the truth comes out"
-       STR_WORLD_AT_WAR_EVENT: "World at War"
-       STR_WORLD_AT_WAR_EVENT_DESCRIPTION: "Today, Secretary-General Waldheim addressed the General Assembly: 'Our world has been shaken by a series of incidents that could not be explained... until today. Attacks on cities by unknown forces, abnormal weather phenomena, interference in communications; all correspond to the extraterrestrial presence. Scientists all around the world have confirmed the existence of life outside the Earth. It is hostile. I call nations to fight under the same flag. United we Stand.' The world powers are mobilizing to fight the enemy."
-       STR_GERMAN_COOPERATION_EVENT: "German Cooperation"
-       STR_GERMAN_COOPERATION_EVENT_DESCRIPTION: "During a recent NATO combat operation near the southern portion of the border between East and West Germany, West German troops managed to successfully drive a small force of alien infantry to the border, where East German troops were seen to also engage the enemy upon visual contact, resulting in their annihilation. Though no words were exchanged between the two forces, this is a sign that relations between the two Germany may improve in the future."
-       STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT: "UN Increases it's presence around the world"
-       STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_DESCRIPTION: "With the agreement of the Security Council, more UN Peacekeeping Forces had been deployed to third-world countries, in an effort to bolster the security of the civilian population and local industrial sectors. While this deployment may seen as 'limited', compared to the larger military forces each member of the Council assigns to their own nations, it's nonetheless welcomed and appreciated by the local governments."
-       STR_CATTLE_ABDUCTION_EVENT: "Cattle Abduction in {0}"
-       STR_CATTLE_ABDUCTION_EVENT_DESCRIPTION: "Local news reports indicate mysterious cattle disappearances from multiple farms in the area. Eyewitnesses claim to see bright lights moments after the alleged abduction of the cattle. Local authorities are investigating what happened."
-       STR_HUMAN_ABDUCTION_EVENT: "Human Abduction in {0}"
-       STR_HUMAN_ABDUCTION_EVENT_DESCRIPTION: "The local population in {0} is terrified due to the unreported disappearance of an entire family in rural areas of the area. Police are unable to explain what happened and there are reports of increased purchases of weapons for self-defence. Local authorities are trying to find the whereabouts of the missing family by land and by air."
-       STR_STRANGE_LIGHTS_EVENT: "Strange Lights over Urban center"
-       STR_STRANGE_LIGHTS_EVENT_DESCRIPTION: "Dozens of people looked with surprise at the appearance of some beautiful and striking lights that appeared in the night sky of {0}. Local weather services tried to give a logical explanation without success, although the radar of a nearby airport detected the sighting on its screens. Local air forces on alert for possible foreign threat."
-       STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT: "Missing Commercial Flight"
-       STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT_DESCRIPTION: "Today, commercial aviation regrets the unexplained loss of a plane loaded with passengers en route to {0}. Air traffic controllers at the destination airport reported the sudden appearance of multiple signals near the missing plane and the loss of communications shortly thereafter. Local air force planes and rescue teams tried to locate the missing plane, but to no avail. We believe that an extraterrestrial force may be behind this event."
-       STR_LABORATORY_EXPLOSION_EVENT: "Lab explosion on {0}"
-       STR_LABORATORY_EXPLOSION_EVENT_DESCRIPTION: "Early this morning, reports came in that an allied laboratory conducting important research has been attacked. The origin or reason for the attack is unknown, but several personnel were reportedly injured. Local authorities have taken action, but a considerable amount of progress in the laboratory's investigation has been lost."
-       STR_ALLIED_BASE_ATTACKED_EVENT: "Allied military base attacked"
-       STR_ALLIED_BASE_ATTACKED_EVENT_DESCRIPTION: "A military base near {0} was attacked by unknown forces. The base's anti-missile sirens sounded and automatic anti-aircraft batteries attacked the unidentified enemy. There are reports of injuries and light casualties among military personnel assigned to the facility, but fuel and ammunition tanks were blown up. The national military forces are on high alert."
-       STR_FREAK_STORM_EVENT: "Freak Storm reported"
-       STR_FREAK_STORM_EVENT_DESCRIPTION: "A mysterious storm appeared out of nowhere in {0}. Eyewitness reports reported that the weather was typical of the area, until a cylinder-shaped cloud formation was generated in less than 5 minutes. Atmospheric sensors went crazy trying to analyze the nature of the storm, but before they could determine the magnitude and scope of the storm, as well as alert the population to take shelter... the storm disappeared without a trace. Authorities are disconcerted by this event."
-       STR_POLITICAL_ASSASSINATION_EVENT: "Political Assassination reported"
-       STR_POLITICAL_ASSASSINATION_EVENT_DESCRIPTION: "Information from allied intelligence services has informed us of the assassination of a dissident politician, which occurred last night in {0}. Local police found the body of the politician in his office, no trace of the possible perpetrator was found. However, our contacts indicate that the politician was secretly supporting rebel and terrorist cells in neighboring countries. The world will not mourn his loss."
-       STR_FACTORY_MALFUNCTION_EVENT: "Factory disaster in {0}"
-       STR_FACTORY_MALFUNCTION_EVENT_DESCRIPTION: "Local authority reports that an accident has occurred in a major industry in the region, paralyzing production for an undetermined time. The origins of the incident are unknown, although enemy agents are suspected."
-       STR_LEAKED_SECRET_FILES_EVENT: "Leaked Secret Files"
-       STR_LEAKED_SECRET_FILES_EVENT_DESCRIPTION: "The intelligence services of the Council countries have indicated that one of their field agents managed to find the whereabouts of an important secret document that indicated possible connections of a government official in {0} to a dissident terrorist cell, responsible for a recent attack. This government official is on the run and is being hunted by allied agents, to be placed under arrest on charges of treason. "
-       STR_SPECIAL_FORCES_ARRIVAL_EVENT: "Special Forces volunteers arrived"
-       STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION: "A squad of Special Forces volunteers has just arrived at our main base. They have asked to bring their weapons with them, which we have allowed. Our troops are excited to have such highly trained soldiers to support our missions; we are confident they will be a key part of our war effort."
-       STR_MERCENARY_ARRIVAL_EVENT: "PMC volunteers arrived"
-       STR_MERCENARY_ARRIVAL_EVENT_DESCRIPTION: "A group of volunteers belonging to a PMC has just arrived at our HQ to support our troops. Although it was not necessary, they have brought their personal weapons with them. With the support of these experienced mercenaries, we can improve our combat capabilities considerably."
-       STR_TERRORISTS_DEFEATED_EVENT: "Terrorist activity declines"
-       STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION: "Since eliminating the Alien Infiltrator and shutting down its terrorist cell, reports of major terrorist attacks have been going down. According to intelligence reports, many terrorist organisations have gone dormant, ceasing most of their operations. The Council has therefore decided to allocate counterterrorism operations to local forces, letting us focus on the alien threat."
-       STR_OVERSEER_TRACKED_EVENT: "Unknown Transmissions on Stratosphere"
-       STR_OVERSEER_TRACKED_EVENT_DESCRIPTION: "Our recon satellites have detected multiple unusual alien transmissions sent to moving points high in the atmosphere. Our science staff has managed to find the origin, it's related to the 'Overseer' alien craft mentioned by alien navigators, that is used as a command vessel. We need to engage this UFO, as it is vital for the enemy war efforts. As the UFO is moving too fast to get caught by our interceptors, we need to construct a trap. If we can get our hands onto an alien encryption device, we could use it to lure the Overseer in"
-       STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT: "Successful Shuttle Launch"
-       STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION: "Earlier today, we received confirmation from NASA Command that one of the first X-73 Raider Shuttle was successfully launched from Cape Canaveral. This new spacecraft will be our spearhead in the war against the invaders and more Raider Shuttles are being built to bolster Earth's space defenses. This Shuttle will remain in Low Earth Orbit, ready to deploy its detachment of Marines anywhere on the globe."
-       STR_ANTARCTIC_ACTIVITY_EVENT: "Antarctic Activity"
-       STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION: "Argentinian and NATO warships operating in the Antarctic ocean have reported a significant increase of UFO sightings heading towards the Antarctican interior. Among them have been reported to be massive ships, rarely seen before. The aliens seem to have taken interest in something in Antarctica, we should send a satellite or spy plane to investigate."
-       STR_UN_WEAPON_SUPPLY_EVENT_1: "UN Supply Airdrop I"
-       STR_UN_WEAPON_SUPPLY_EVENT_2: "UN Supply Airdrop II"
-       STR_UN_WEAPON_SUPPLY_EVENT_3: "UN Supply Airdrop III"
-       STR_UN_SUPPLY_EVENT_DESCRIPTION: "An allied aircraft has approached our base and dropped weapons, ammunition and supplies. Our equipment has been contributed by the national forces of UN countries and will enable us to continue the fight against the invader."
-       STR_US_SUPPLY_EVENT: "US Supply Airdrop"
-       STR_US_SUPPLY_EVENT_DESCRIPTION: "Coordinating with the USAF, a C-5 Galaxy has dropped crates of supplies, weapons and assorted ammunition from high altitude. Our air spotters coordinated our soldiers to pick them up and we brought them to the base warehouses. However, the local radar detected strange signals approaching the Galaxy and had to withdraw before making another launch. "
-       STR_NATO_SUPPLY_EVENT: "NATO Supply Airdrop"
-       STR_NATO_SUPPLY_EVENT_DESCRIPTION: "A C-130 Hercules from the air force of a NATO country approached our base and dropped weapons and ammunition. Our troops picked them up and brought them to the barracks. This equipment will allow us to stay in the fight, although due to unexplained radio interference near our base, it is unlikely that this airdrop will be repeated. "
-       STR_USSR_SUPPLY_EVENT: "USSR Supply Airdrop"
-       STR_USSR_SUPPLY_EVENT_DESCRIPTION: "A Soviet air force plane has risked bringing weapons and supplies as close to our base as possible. It has failed to get close to the runway, but managed to drop its cargo (which has been picked up by our troops). The reason for this was that the escorts of the transport detected strange radar signatures and decided to withdraw. This equipment will help us to reinforce our troops."
-       STR_TERRORIST_ACTIVITY_EVENT: "Terrorist Activity in {0}"
-       STR_TERRORIST_ACTIVITY_EVENT_DESCRIPTION: "Local authorities have reported an increase of the terrorist activity all over the urban center. Earlier today, major explosions happened, the amount of injuried civilians is yet to be confirmed. Several suspects where detected near the area and a shooting with the police left several officers wounded. The population demands an increase of the local security forces."
-       STR_TERRORISTS_THREATEN_US_EVENT: "Terrorists Threaten Us"
-       STR_TERRORISTS_THREATEN_US_EVENT_DESCRIPTION:  "A television station in {0} was hijacked today partway through a weather forecast, and for seven minutes broadcasted a rogue message originating from an unknown location. For that time, a masked individual who we believe is a member of the unknown terrorist group spoke to the camera, making vague statements about the world's impending doom, and made multiple direct references to actions UNEXCOM has taken against terrorist cells, closing his remarks with a vow of revenge against 'those who have murdered our brothers'."
-       STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT: "Military bases on high alert"
-       STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT_DESCRIPTION: "National army facilities in {0} went to high readiness level today due explosions near their perimeter. Military officers have reported 'The reason of the raid or their targets are yet to be confirmed. We suspect a testing of our defense capabilities by foreign countries'. No known terrorist group or nation has claimed responsibly for the attack."
-       STR_UNUSUAL_RADAR_SIGHTINGS_EVENT: "Unusual radar sightings in {0}"
-       STR_UNUSUAL_RADAR_SIGHTINGS_EVENT_DESCRIPTION: "Local radar stations have detected abnormal readings early today. The detected craft appeared from nowhere, remained static for 2 minutes and then zoomed to the upper atmosphere in a matter of seconds. Military officials are trying to confirm if it's a legit tracking or a software issue on the station's computer systems. "
-       STR_SUDDEN_CITY_BLACKOUT_EVENT: "Sudden city blackout in {0}"
-       STR_SUDDEN_CITY_BLACKOUT_EVENT_DESCRIPTION: "Last night, a city-wide power outage left the population in darkness. The suspected reason was a malfunction in the nearby power station. Citizens report seeing 'dozens of lights in the sky, like shooting stars'. City services are working to restore the electric supply."
-       STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT: "Contact lost with survey vessel"
-       STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_DESCRIPTION: "Civilian oceanographic services have reported one of their ships as missing. Said ship was conducting activities on international waters before the cease of communications with their mainland base. Multinational navies are looking for traces of the vessel or its crew."
-       STR_COMMS_SATELLITE_SHOTDOWN_EVENT: "Communications satellite shot down"
-       STR_COMMS_SATELLITE_SHOTDOWN_EVENT_DESCRIPTION: "An allied space agency lost signal of one of their comms sats. Ground observers confirmed the reentry of the debris shortly after the report. Authorities are still investigating the incident."
-       STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT: "Allied armies get new recruits"
-       STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_DESCRIPTION: "Earlier today, govt officers reported a major increase on the recruitment of men and women in their armed forces. Most volunteers 'feel a strong conviction' of enlisting in the military. Analysts consider at least half of them lost a close relative on the recent alien raids on major cities and the other half was convinced by local propaganda."
-       STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT: "Local fighters save civilian airliner"
-       STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT_DESCRIPTION: "A civilian aircraft reported to ground control at {0} International Airport it was being tailed by UFOs. Inmediately, two fighter crafts of the local air force were scrambled. They were equipped with new light missiles designed by UNEXCOM and managed to scare away the UFOs. The transport plane managed to land safely. "
-       STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT: "Local AA batteries engage UFO"
-       STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION: "Last night, radar systems in {0} detected an alien craft flying over the city. Anti-air batteries near the area opened fire for ten minutes. Local military officers claimed shooting down the alien vessel, but the wreckage are yet to be found."
-       STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT: "Local Laser AA batteries engage UFO"
-       STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION: "Earlier this night, local radar systems detected UFOs approaching the {0} urban zone. Coordinating with Laser air defenses deployed near the city and nearby air forces, most of the enemy craft were destroyed mid-air. No wreckage were found."
-       STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT: "Allied nations reinforce their cities"
-       STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_DESCRIPTION: "A government spokesperson has announcement the deployment of mobile Surface-to-Air Missile (SAM) batteries near {0}. The intention is to defend the civilian population of alien raids. The missile systems are expected to be operational within the next few days."
-       STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT: "Allied armies deployed to defend cities"
-       STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_DESCRIPTION: "A govt spokesperson reported to nation-wide TV the deployment of several Army and Air Force combat units in {0}, with the orders to defend the civilian population and valuable strategic assets in the city, in case of an alien incursion. Citizens are reported to cheer the troops upon their entry on the city."
-       STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT: "Lone fighter pilot scares off UFO"
-       STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_DESCRIPTION: "A national allied fighter on training mission was engaged by alien crafts. The fighter jet was armed with new UNEXCOM-made missiles and was able to damage one UFO and nearly shoot down the other before the enemy flew away. The pilot was praised for their bravery."
-       STR_SMALLER_NATION_ARMAMENT_EVENT: "Smaller Nation Armament"
-       STR_SMALLER_NATION_ARMAMENT_EVENT_DESCRIPTION: "Recently smaller nations, have been receiving funds and equipment from UNEXCOM and allied nations to help battle the alien threat. Government officers from {0} thank the military assistance and the public perception of the UNEXCOM increased."
-       STR_US_BOMBS_ALIEN_BASE_EVENT: "USAF bombs Alien base"
-       STR_US_BOMBS_ALIEN_BASE_EVENT_DESCRIPTION: "US air elements of the Strategic Air Command (SAC) conducted a bombing raid over a suspected location where air recon found an enemy stronghold in a remote area in {0}. American aircraft released several tons of explosive ordnance over a wide patch of terrain. Radar sightings confirmed UFO presence near the area, but none engaged the US forces. Ground forces have landed near the zone and are advancing towards the base."
-       STR_US_FIGHTERS_ENGAGE_UFO_EVENT: "USAF fighters engage UFOs"
-       STR_US_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION: "A dogfight happened when a US air squadron conducting Combat Air Patrol (CAP) near {0}. The American fighters were intercepted by a fight of 3 UFOs, after several minutes of combat the enemy craft were destroyed. USAF reports the lost of two aircraft."
-       STR_US_CARRIER_GROUP_ATTACKED_EVENT: "US Navy Carrier Group attacked"
-       STR_US_CARRIER_GROUP_ATTACKED_EVENT_DESCRIPTION: "An American Carrier Task Force patrolling international waters was attacked by a squadron of UFOs. The interceptors aboard the flagship were equipped with UNEXCOM-build cannons and were scrambled immediately. The fighters, plus AA fire from the escort frigates and cruisers managed to destroy most of the bandits before fleeing. US Navy report light damage on their vessels."
-       STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT: "Soviet fighters engage UFO"
-       STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION: "A Soviet Air Force squadron patrolling the outskirts of {0} detected a group of alien craft approaching the city. Immediately, they intercepted the enemy squadron and an intense dogfight ensured. The Soviet airmen reported two loses and all the alien fighters destroyed."
-       STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT: "Soviet Platoon Survives Against all Odds"
-       STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT_DESCRIPTION: "A platoon of Soviet air assault were station on Hill 3234, when they were assaulted by terrorists armed with hard-light and aided by hybrids. For nearly five days they held out, even with their own hard-light weapons running low on ammo. Barages of plasma rockets hit the mountain side. They held on. By day five a column of armor arrived and extracted them."
-       STR_SOVIET_SILO_DESTROYED_EVENT: "Soviet Silo Destroyed"
-       STR_SOVIET_SILO_DESTROYED_EVENT_DESCRIPTION: "Two weeks ago, a Soviet missile silo detected an UFO in high atmosphere. They fired a SAM from air defense on site, damaging the UFO. Today a large UFO was detected and, despite the valiant efforts of the AA on site, destroyed the nuclear silo. Reportedly two large balls of plasma flew off its underside, and almost like a guided missile, arced one after another into the silo. The first evaporated the silo doors, the second detonated the missile."
-       STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT: "NATO Force UFO Take Off"
-       STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_DESCRIPTION: "After civilians reported a landed UFO in {0} nation, NATO troops mobilized and engaged the threat. After using hard-light weapons developed by UNEXCOM they successfully forced the craft into the air"
-       STR_MILITARY_SATELLITE_DESTROYED_EVENT: "Military satellite destroyed"
-       STR_MILITARY_SATELLITE_DESTROYED_EVENT_DESCRIPTION: "Earlier today, we've been informed of an allied military recon satellite destroyed by unknown forces. Ground control reported a 'beam of light' and lost of comms. The lost of this sat has crippled the ability of ground detection of allied military forces."
-       STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT: "New radar systems deployed"
-       STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_DESCRIPTION: "A new radar facility was build near {0}. Using tech derived from alien research conducted by UNEXCOM, the array is part of a new multinational system to track down UFOs and assist UN fighters and bombers"
