@@ -485,6 +485,7 @@ armors:
       - 1.0
       - 1.6
       - 1.1
+      - 1.3
     units:
       - STR_SOLDIER
     personalLight: 6
@@ -520,6 +521,7 @@ armors:
       - 1.0
       - 1.6
       - 1.1
+      - 1.3
     units:
       - STR_PILOT
     personalLight: 6
@@ -564,6 +566,7 @@ armors:
       - 1.0
       - 1.6
       - 1.1
+      - 1.3
     units:
       - STR_SPECIAL_FORCES_SOLDIER
     personalLight: 6
@@ -608,6 +611,7 @@ armors:
       - 1.0
       - 1.6
       - 1.1
+      - 1.3
     units:
       - STR_MERCENARY
     personalLight: 6
@@ -650,6 +654,7 @@ armors:
       - 0.8
       - 0.7
       - 1.0
+      - 1.1
     personalLight: 6
 
   - type: STR_DELTA_ARMOR_UC
@@ -689,6 +694,7 @@ armors:
       - 0.8
       - 0.7
       - 0.0
+      - 1.1
     loftempsSet: [ 3 ]
     forcedTorso: 1
     builtInWeapons:
@@ -735,6 +741,7 @@ armors:
       - 0.8
       - 1.0
       - 0.0
+      - 1.1
     loftempsSet: [ 3 ]
     forcedTorso: 1
     builtInWeapons:
@@ -776,6 +783,7 @@ armors:
       - 0.80
       - 0.95
       - 1.0
+      - 1.0
     personalLight: 6
 
   - type: STR_HEAVY_PERSONAL_ARMOR_UC
@@ -812,6 +820,7 @@ armors:
       - 0.7
       - 0.75
       - 0.92
+      - 1.0
       - 1.0
     personalLight: 6
 #Power Armors
@@ -851,6 +860,7 @@ armors:
       - 0.70
       - 0.85
       - 0.0
+      - 0.8
     personalLight: 6
 
   - type: STR_FLYING_SUIT_UC
@@ -888,6 +898,7 @@ armors:
       - 0.73
       - 0.88
       - 0.0
+      - 0.8
     personalLight: 6
 
 # New Armors
@@ -926,6 +937,7 @@ armors:
       - 0.73
       - 0.88
       - 0.0
+      - 0.8
     personalLight: 6
     units:
       - STR_SOLDIER
@@ -968,6 +980,7 @@ armors:
       - 0.77
       - 0.90
       - 0.0
+      - 0.8
     personalLight: 6
     units:
       - STR_SOLDIER
@@ -1014,6 +1027,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     personalLight: 6
 
   - &A7MMUSpacesuitAnchor
@@ -1053,6 +1067,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     personalLight: 6
 
   - &Krechet94SpacesuitAnchor
@@ -1085,6 +1100,7 @@ armors:
       - 1.0
       - 1.0
       - 1.1
+      - 1.3
     personalLight: 6
 
   - &KrechetMMUSpacesuitAnchor
@@ -1117,6 +1133,7 @@ armors:
       - 1.0
       - 1.0
       - 1.1
+      - 1.3
     personalLight: 6
 
 manufacture:

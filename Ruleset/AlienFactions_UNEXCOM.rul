@@ -29,7 +29,7 @@ items:
     recover: false
   - type: SECTOPOD_WEAPON
     weight: 3
-    bigSprite: 7
+    bigSprite: 3133
     #floorSprite: 31
     #handSprite: 104
     bulletSprite: 29
@@ -59,7 +59,7 @@ items:
     damageType: 5
     battleType: 1
     weight: 6
-    bigSprite: 1860
+    bigSprite: 3132
     bulletSprite: 8
     bulletSpeed: 10
     fireSound: 18
@@ -922,6 +922,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 2 ]
 
   - type: SECTOID_COMMANDER_ARMOR
@@ -945,6 +946,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 2 ]
 
 ################################
@@ -972,6 +974,7 @@ armors:
       - 1.2
       - 0.8
       - 0.0
+      - 1.1
     loftempsSet: [ 2 ]
 
 ################################
@@ -1001,6 +1004,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: FLOATER_NAVIGATOR_ARMOR
     spriteSheet: FLOATER_NAVIGATOR_SPRITESHEET.PCK
@@ -1025,6 +1029,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: FLOATER_MEDIC_ARMOR
     spriteSheet: FLOATER_MEDIC_SPRITESHEET.PCK
@@ -1049,6 +1054,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: FLOATER_ENGINEER_ARMOR
     spriteSheet: FLOATER_ENGINEER_SPRITESHEET.PCK
@@ -1073,6 +1079,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: FLOATER_LEADER_ARMOR
     spriteSheet: FLOATER_LEADER_SPRITESHEET.PCK
@@ -1097,6 +1104,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
 
 ################################
@@ -1117,15 +1125,16 @@ armors:
     movementType: 1
     damageModifier:
       - 1.0
+      - 0.8
       - 1.0
-      - 1.0
-      - 1.0
+      - 0.8
       - 1.0
       - 1.0
       - 1.0
       - 1.2
       - 1.6
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: ARMORED_FLOATER_LEADER_ARMOR
     spriteSheet: ARMORED_FLOATER_LEADER_SPRITESHEET.PCK
@@ -1141,15 +1150,16 @@ armors:
     movementType: 1
     damageModifier:
       - 1.0
+      - 0.7
       - 1.0
-      - 1.0
-      - 1.0
+      - 0.8
       - 1.0
       - 1.0
       - 1.0
       - 1.2
       - 1.6
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
 
 ################################
@@ -1183,6 +1193,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: SNAKEMAN_ARMOR1
     spriteSheet: SNAKEMAN.PCK
@@ -1205,6 +1216,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: SNAKEMAN_ARMOR2
     spriteSheet: SNAKEMAN.PCK
@@ -1227,6 +1239,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
 
 ################################
@@ -1255,6 +1268,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: MUTON_NAVIGATOR_ARMOR
     allowInv: true
@@ -1278,6 +1292,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: MUTON_MEDIC_ARMOR
     allowInv: true
@@ -1301,6 +1316,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
 
   - type: MUTON_ENGINEER_ARMOR
@@ -1325,6 +1341,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
 
   - type: MUTON_LEADER_ARMOR
@@ -1349,6 +1366,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
 
 ################################
@@ -1368,15 +1386,16 @@ armors:
     drawingRoutine: 10
     damageModifier:
       - 1.0
-      - 0.6
+      - 0.8
       - 1.0
       - 1.0
-      - 1.0
-      - 1.0
+      - 0.9
+      - 0.9
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.1
     loftempsSet: [ 3 ]
 
   - type: ARMORED_MUTON_LEADER_ARMOR
@@ -1392,15 +1411,16 @@ armors:
     drawingRoutine: 10
     damageModifier:
       - 1.0
-      - 0.6
+      - 0.8
       - 1.0
       - 1.0
-      - 1.0
-      - 1.0
+      - 0.9
+      - 0.9
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.1
     loftempsSet: [ 3 ]
 
 ################################
@@ -1428,6 +1448,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: ETHEREAL_ARMOR1
     spriteSheet: ETHEREAL.PCK
@@ -1450,6 +1471,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
   - type: ETHEREAL_ARMOR2
     spriteSheet: ETHEREAL.PCK
@@ -1472,6 +1494,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.3
     loftempsSet: [ 3 ]
 
 #################################
@@ -1507,6 +1530,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 0.9
     loftempsSet: [ 92, 89, 90, 91 ]
 
   - type: SECTOPOD_ARMOR
@@ -1536,6 +1560,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.1
     loftempsSet: [ 92, 89, 90, 91 ]
 
   - type: MECHTOID_ARMOR
@@ -1566,6 +1591,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.2
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: PROBE_ARMOR
     allowInv: true
@@ -1608,6 +1634,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [1]
   - type: CYBERSPHERE_ARMOR
     spriteInv: CYBERDISC_INVENTORY.SPK
@@ -1672,6 +1699,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.5
     loftempsSet: [ 92, 89, 90, 91 ]
 
   - type: CHRYSSALID_ARMOR
@@ -1696,6 +1724,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.5
     loftempsSet: [ 3 ]
   - type: ZOMBIE_ARMOR
     painImmune: true # no secondary stun damage
@@ -1720,6 +1749,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.5
     loftempsSet: [ 3 ]
     deathFrames: 18
   - type: ZOMBIE_UNDEAD_ARMOR
@@ -1745,6 +1775,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.5
     loftempsSet: [ 3 ]
     deathFrames: 3
   - type: SILACOID_ARMOR
@@ -1771,6 +1802,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.5
     loftempsSet: [ 5 ]
   - type: CELATID_ARMOR
     spriteSheet: CELATID.PCK
@@ -1795,6 +1827,7 @@ armors:
       - 1.2
       - 1.6
       - 0.0
+      - 1.5
     loftempsSet: [ 3 ]
 
 
@@ -3286,6 +3319,8 @@ extraSprites:
       3129: Resources/AlienFactions/Probe/PROBE_CORPSE_BIGOB.png
       3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_BIGOB.png
       3131: Resources/AlienFactions/Zombies/ZombieBite.png
+      3132: Resources/AlienFactions/Mechtoid/BigMechtoidCannon.png
+      3133: Resources/AlienFactions/Sectopod/BigSectopodGatling.png
 
   - type: FLOOROB.PCK
     files:
