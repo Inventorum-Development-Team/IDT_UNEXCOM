@@ -2663,6 +2663,7 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2104
+
   ###############################################
   ############### POLICE WEAPONS #################
   #############################################
@@ -2976,7 +2977,7 @@ items:
       ToWound: 0.3
       ToArmor: 0.7
       RandomWound: false
-    clipSize: 30
+    clipSize: 15
     costThrow:
       energy: 6
     battleType: 2
@@ -3519,6 +3520,37 @@ items:
     recoveryPoints: 10
     listOrder: 2128
 
+  - type: STR_BREAD
+    categories: [ STR_LIGHT_EQUIPMENT ]
+    size: 0.1
+    costBuy: 50
+    costSell: 120
+    weight: 1
+    bigSprite: 1088
+    floorSprite: 1088
+    #handSprite: 820
+    hitSound: 207
+    battleType: 6
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    painKiller: 1
+    costUse:
+      time: 10
+      energy: -10
+      morale: -15
+      health: -5
+    costThrow:
+      energy: 4
+      time: 10
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    experienceTrainingMode: 21
+    recoveryPoints: 10
+    listOrder: 2129
+
   - type: STR_CIGARETTES
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.1
@@ -3547,7 +3579,7 @@ items:
     invHeight: 1
     experienceTrainingMode: 21
     recoveryPoints: 10
-    listOrder: 2129
+    listOrder: 2135
 
   - type: STR_FLASK
     categories: [ STR_LIGHT_EQUIPMENT ]
@@ -3576,7 +3608,7 @@ items:
     invHeight: 1
     experienceTrainingMode: 21
     recoveryPoints: 10
-    listOrder: 2130
+    listOrder: 2136
   ########################################
   - type: STR_MEDI_KIT
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3600,7 +3632,7 @@ items:
     tuUse: 10
     flatRate: true
     medikitActionName: STR_ACTIVATE_MEDIKIT
-    listOrder: 2131
+    listOrder: 2137
 
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
@@ -3629,7 +3661,7 @@ items:
     attraction: 5
     experienceTrainingMode: 19
     medikitActionName: STR_DEPLOY_MEDICAL_BAG
-    listOrder: 2132
+    listOrder: 2138
 
   - type: STR_FIELD_DRESSING
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3655,7 +3687,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_USE_FIELD_DRESSING
-    listOrder: 2133
+    listOrder: 2139
 
   - type: STR_MEDICAL_POUCH
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3680,7 +3712,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_USE_MEDICAL_POUCH
-    listOrder: 2134
+    listOrder: 2140
 
   - type: STR_DUCT_TAPE
     requiresBuy:
@@ -3707,7 +3739,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
-    listOrder: 2135
+    listOrder: 2141
 
   - type: STR_DUCT_GUN
     requiresBuy:
@@ -3735,7 +3767,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
-    listOrder: 2135
+    listOrder: 2142
 
   - type: STR_BIO_FOAM
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
@@ -3762,7 +3794,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_APPLY_FOAM
-    listOrder: 2135
+    listOrder: 2143
 
   - type: STR_ELECTRO_FLARE
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
@@ -3773,6 +3805,12 @@ items:
     battleType: 10
     primeActionName: STR_PRIME_FLARE
     fuseType: -2
+
+  - type: STR_PSI_AMP
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+
+  - type: STR_STUN_ROD
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
 
   ####################################
   ###### WEAPON CUSTOMIZATION #######
@@ -5052,6 +5090,7 @@ extraSprites:
       1064: Resources/BallisticWeapons/UN/BigStoner63Sniper.png
       1072: Resources/BallisticWeapons/USA/BigM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/BigM202FlashAmmo.png
+      1088: Resources/BallisticWeapons/Medical&Food/BigBread.png
 
   - type: FLOOROB.PCK
     files:
@@ -5188,6 +5227,7 @@ extraSprites:
       1064: Resources/BallisticWeapons/UN/FloorStoner63Sniper.png
       1072: Resources/BallisticWeapons/USA/FloorM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/FloorM202FlashAmmo.png
+      1088: Resources/BallisticWeapons/Medical&Food/FloorBread.png
 
   - type: HANDOB.PCK
     width: 256
