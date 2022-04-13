@@ -33,3 +33,75 @@ interfaces:
         color: 6     # brown
       - id: errorMessage
         color: 33   # bright green
+
+  - type: articleArmor
+    elements:
+      - id: button
+        color: 66    # orange
+      - id: text
+        color: 8   # 239 grey
+        color2: 71  # 244 light blue
+      - id: list
+        color: 6   # 55 seems good green
+        color2: 71  # light blue
+  - type: articleCraftWeapon
+    elements:
+      - id: button
+        color: 66    # orange
+      - id: text
+        color: 8   # 239 grey
+        color2: 71  # 244 light blue
+      - id: list
+        color: 6   # 55 seems good green
+        color2: 71  # light blue
+
+  - type: articleItem
+    elements:
+      - id: button
+        color: 66   # 144 orange
+      - id: text
+        color: 8   # 239 grey
+        color2: 71  # 244 light blue
+      - id: list
+        color: 6   # 55 seems good green
+        color2: 71  # light blue
+      - id: ammoColor
+        color: 32    # red
+      - id: ammoColorDTAP
+        color: 161     #gray # 112 steely blue, AP
+      - id: ammoColorDTIN
+        color: 147    # orange, Incendiary
+      - id: ammoColorDTHE
+        color: 38    # tame red, HE
+      - id: ammoColorDTLaser
+        color: 34    # 32 red
+      - id: ammoColorDTPlasma
+        color: 67    # green, Plasma
+      - id: ammoColorDTStun
+        color: 195    # purple, Stun
+      - id: ammoColorDTMelee
+        color: 176    # fleshy pink, Melee
+      - id: ammoColorDTAcid
+        color: 64    # lime green, Acid
+      - id: ammoColorDTSmoke
+        color: 84    # 80 soap, Smoke
+      - id: ammoColorDT10
+        color: 17    # golden, Elerium Fusion
+      #- id: ammoColorDT11
+      #  color: 32    # red
+      #- id: ammoColorDT12
+      #  color: 32    # red
+      #- id: ammoColorDT13
+      #  color: 32    # red
+      #- id: ammoColorDT14
+      #  color: 32    # red
+      #- id: ammoColorDT15
+      #  color: 32    # red
+      #- id: ammoColorDT16
+      #  color: 32    # red
+      #- id: ammoColorDT17
+      #  color: 32    # red
+      #- id: ammoColorDT18
+      #  color: 32    # red
+      #- id: ammoColorDT19
+      #  color: 32    # red
