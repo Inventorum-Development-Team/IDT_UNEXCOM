@@ -138,6 +138,11 @@ items:
     shotgunBehavior: 1
     shotgunPellets: 4
     shotgunSpread: 75
+    damageAlter:
+      RandomType: 6
+      ToMorale: 0.5
+      FireThreshold: 1
+      SmokeThreshold: 1000
     battleType: 2
     armor: 250
     listOrder: 201690
@@ -726,9 +731,6 @@ items:
     clipSize: 8
     invHeight: 1
     invWidth: 1
-    shotgunBehavior: 1
-    shotgunPellets: 4
-    shotgunSpread: 75
     battleType: 2
     armor: 250
     listOrder: 200300
