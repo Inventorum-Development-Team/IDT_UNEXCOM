@@ -1546,7 +1546,7 @@ items:
     tuAimed: 50
     autoShots: 4
     autoRange: 22
-    aimRange: 28
+    aimRange: 30
     minRange: 7
     dropoff: 3
     tuLoad: 30
@@ -3284,24 +3284,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 30
-    # Bayonet segment
-    meleeHitSound: 178
-    meleeAnimation: 0
-    meleeType: 7
-    meleePower: 70
-    meleeBonus:
-      strength: 0.3
-      melee: 0.5
-    accuracyMelee: 110
-    meleeMultiplier:
-      flatHundred: 0.5
-      melee: 0.5
-    costMelee:
-      time: 25
-      energy: 8
-    flatMelee:
-      time: true
-    # Bayonet segment end
+
     attraction: 7
     listOrder: 201200
 
