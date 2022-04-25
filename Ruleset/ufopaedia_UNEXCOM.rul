@@ -56,13 +56,268 @@ ufopaedia:
   - delete: STR_AVENGER
   - delete: STR_THE_MARTIAN_SOLUTION
   - delete: STR_CYDONIA_OR_BUST
+
+########################################
+########### COMMENDATIONS ##############
+######################################
+
+  - id: STR_MEDALS_AND_AWARDS
+    type_id: 8
+    listOrder: 1
+    text: STR_MEDALS_AND_AWARDS_UFOPEDIA
+    section: STR_MEDALS_AND_AWARDS_UC
+
+
+  - id: STR_MEDAL_SERVICE
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_SERVICE_IMAGE
+    text: STR_MEDAL_SERVICE_UFOPEDIA
+    listOrder: 10
+    text_width: 180
+  - id: STR_MEDAL_NATION_GRATITUDE
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_NATION_GRATITUDE_IMAGE
+    text: STR_MEDAL_NATION_GRATITUDE_UFOPEDIA
+    listOrder: 11
+    text_width: 180
+  - id: STR_MEDAL_COMBAT_MEDIC
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_COMBAT_MEDIC_IMAGE
+    text: STR_MEDAL_COMBAT_MEDIC_UFOPEDIA
+    listOrder: 12
+    text_width: 180
+  - id: STR_MEDAL_PURPLE_HEART
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_PURPLE_HEART_IMAGE
+    text: STR_MEDAL_PURPLE_HEART_UFOPEDIA
+    listOrder: 13
+    text_width: 180
+  - id: STR_MEDAL_VALIANT_CRUX
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_VALIANT_CRUX_IMAGE
+    text: STR_MEDAL_VALIANT_CRUX_UFOPEDIA
+    listOrder: 14
+    text_width: 180
+  - id: STR_MEDAL_FIELD_SUPPORT
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_FIELD_SUPPORT_IMAGE
+    text: STR_MEDAL_FIELD_SUPPORT_UFOPEDIA
+    listOrder: 15
+    text_width: 180
+  - id: STR_MEDAL_DISTINGUISHED_SERVICE
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_DISTINGUISHED_SERVICE_IMAGE
+    text: STR_MEDAL_DISTINGUISHED_SERVICE_UFOPEDIA
+    listOrder: 16
+    text_width: 180
+  - id: STR_MEDAL_EXEMPLARY_SERVICE
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_EXEMPLARY_SERVICE_IMAGE
+    text: STR_MEDAL_EXEMPLARY_SERVICE_UFOPEDIA
+    listOrder: 17
+    text_width: 180
+  - id: STR_MEDAL_FALLEN_HERO
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_FALLEN_HERO_IMAGE
+    text: STR_MEDAL_FALLEN_HERO_UFOPEDIA
+    listOrder: 18
+    text_width: 180
+  - id: STR_MEDAL_ENEMY_CRAFT_SPECIALIST
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_ENEMY_CRAFT_SPECIALIST_IMAGE
+    text: STR_MEDAL_ENEMY_CRAFT_SPECIALIST_UFOPEDIA
+    listOrder: 19
+    text_width: 180
+  - id: STR_MEDAL_DEFENDER_OF_EARTH
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_DEFENDER_OF_EARTH_IMAGE
+    text: STR_MEDAL_DEFENDER_OF_EARTH_UFOPEDIA
+    listOrder: 20
+    text_width: 180
+  - id: STR_MEDAL_NIGHT_STALKER
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_NIGHT_STALKER_IMAGE
+    text: STR_MEDAL_NIGHT_STALKER_UFOPEDIA
+    listOrder: 21
+    text_width: 180
+  - id: STR_MEDAL_ORBITAL_DEFENDER
+    type_id: 7
+    requires:
+      - STR_DEVASTATION_COMPLETED
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_ORBITAL_DEFENDER_IMAGE
+    text: STR_MEDAL_ORBITAL_DEFENDER_UFOPEDIA
+    listOrder: 22
+    text_width: 180
+  - id: STR_MEDAL_JOINT_OPERATIONS
+    type_id: 7
+    requires:
+      - STR_UNITED_WE_STAND_RESEARCH
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_JOINT_OPERATIONS_IMAGE
+    text: STR_MEDAL_JOINT_OPERATIONS_UFOPEDIA
+    listOrder: 23
+    text_width: 180
+  - id: STR_MEDAL_ALIEN_BASE_ASSAULT
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_ALIEN_BASE_ASSAULT_IMAGE
+    text: STR_MEDAL_ALIEN_BASE_ASSAULT_UFOPEDIA
+    listOrder: 24
+    text_width: 180
+  - id: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_IMAGE
+    text: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_UFOPEDIA
+    listOrder: 25
+    text_width: 180
+  - id: STR_MEDAL_EARTH_CAMPAIGN_RIBBON
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_EARTH_CAMPAIGN_RIBBON_IMAGE
+    text: STR_MEDAL_EARTH_CAMPAIGN_RIBBON_UFOPEDIA
+    listOrder: 26
+    text_width: 180
+  - id: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_IMAGE
+    text: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_UFOPEDIA
+    listOrder: 28
+    text_width: 180
+  - id: STR_MEDAL_OPERATION_FALSE_FLAG
+    type_id: 7
+    requires:
+      - STR_ALIEN_ID_CODES
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_OPERATION_FALSE_FLAG_IMAGE
+    text: STR_MEDAL_OPERATION_FALSE_FLAG_UFOPEDIA
+    listOrder: 29
+    text_width: 180
+  - id: STR_MEDAL_OPERATION_DEVASTATION
+    type_id: 7
+    requires:
+      - STR_DEVASTATION_COMPLETED
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_OPERATION_DEVASTATION_IMAGE
+    text: STR_MEDAL_OPERATION_DEVASTATION_UFOPEDIA
+    listOrder: 30
+    text_width: 180
+  - id: STR_MEDAL_WEAPON_PROFICIENCY
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_WEAPON_PROFICIENCY_IMAGE
+    text: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
+    listOrder: 31
+    text_width: 180
+  - id: STR_MEDAL_SHARPSHOOTER
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_SHARPSHOOTER_IMAGE
+    text: STR_MEDAL_SHARPSHOOTER_UFOPEDIA
+    listOrder: 32
+    text_width: 180
+  - id: STR_MEDAL_RIFLE_MARKSMAN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_RIFLE_MARKSMAN_IMAGE
+    text: STR_MEDAL_RIFLE_MARKSMAN_UFOPEDIA
+    listOrder: 33
+    text_width: 180
+  - id: STR_MEDAL_PISTOL_MARKSMAN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_PISTOL_MARKSMAN_IMAGE
+    text: STR_MEDAL_PISTOL_MARKSMAN_UFOPEDIA
+    listOrder: 34
+    text_width: 180
+  - id: STR_MEDAL_CARBINE_MARKSMAN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_CARBINE_MARKSMAN_IMAGE
+    text: STR_MEDAL_CARBINE_MARKSMAN_UFOPEDIA
+    listOrder: 35
+    text_width: 180
+  - id: STR_MEDAL_LMG_MARKSMAN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_LMG_MARKSMAN_IMAGE
+    text: STR_MEDAL_LMG_MARKSMAN_UFOPEDIA
+    listOrder: 36
+    text_width: 180
+  - id: STR_MEDAL_SMG_MARKSMAN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_SMG_MARKSMAN_IMAGE
+    text: STR_MEDAL_SMG_MARKSMAN_UFOPEDIA
+    listOrder: 37
+    text_width: 180
+  - id: STR_MEDAL_ARTILLERY_SPECIALIST
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_ARTILLERY_SPECIALIST_IMAGE
+    text: STR_MEDAL_ARTILLERY_SPECIALIST_UFOPEDIA
+    listOrder: 38
+    text_width: 180
+  - id: STR_MEDAL_SNIPER_MARKSMAN
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_SNIPER_MARKSMAN_IMAGE
+    text: STR_MEDAL_SNIPER_MARKSMAN_UFOPEDIA
+    listOrder: 39
+    text_width: 180
+  - id: STR_MEDAL_SHOTGUN_SPECIALIST
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_SHOTGUN_SPECIALIST_IMAGE
+    text: STR_MEDAL_SHOTGUN_SPECIALIST_UFOPEDIA
+    listOrder: 40
+    text_width: 180
+  - id: STR_MEDAL_GRENADIER_SPECIALIST
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_GRENADIER_SPECIALIST_IMAGE
+    text: STR_MEDAL_GRENADIER_SPECIALIST_UFOPEDIA
+    listOrder: 41
+    text_width: 180
+  - id: STR_MEDAL_RAIDER_SPECIALIST
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_RAIDER_SPECIALIST_IMAGE
+    text: STR_MEDAL_RAIDER_SPECIALIST_UFOPEDIA
+    listOrder: 42
+    text_width: 180
+  - id: STR_MEDAL_CAPTURE_SPECIALIST
+    type_id: 7
+    section: STR_MEDALS_AND_AWARDS_UC
+    image_id: MEDAL_CAPTURE_SPECIALIST_IMAGE
+    text: STR_MEDAL_CAPTURE_SPECIALIST_UFOPEDIA
+    listOrder: 43
+    text_width: 180
+
+
+########################################
+
   #Fighters
   - id: STR_UNEXCOM_FIGHTERS
     type_id: 7
     section: STR_XCOM_CRAFTS
     image_id: UNEXCOM_FIGHTERS_IMAGE
     text: STR_UNEXCOM_FIGHTERS_UFOPEDIA
-    listOrder: 1
+    listOrder: 49
     text_width: 316
 
   - id: STR_FIGHTERS
