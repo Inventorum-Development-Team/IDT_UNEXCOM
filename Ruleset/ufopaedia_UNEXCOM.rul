@@ -2290,6 +2290,13 @@ ufopaedia:
       - STR_HUMAN_PLASMA_MAGNUM
     text: STR_HUMAN_PLASMA_MAGNUM_UFOPEDIA
     listOrder: 4016
+  - id: STR_GYROJET_PISTOL
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_OLYMPUS
+    text: STR_GYROJET_PISTOL_UFOPEDIA
+    listOrder: 4017
 
   #SMGs
   - id: STR_SMG_REPORT
@@ -2617,6 +2624,14 @@ ufopaedia:
       ammoSlot: 1
     listOrder: 4314
 
+  - id: STR_FN_FLA_LASER_CARBINE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_NATO_LASER_RIFLES
+    text: STR_FN_FLA_LASER_CARBINE_UFOPEDIA
+    listOrder: 4313
+
   - id: STR_RIFLE_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -2789,6 +2804,14 @@ ufopaedia:
       - STR_HYBRID_FUSION_PROJECT
     text: STR_HUMAN_FUSION_RIFLE_UFOPEDIA
     listOrder: 4418
+
+  - id: STR_GYROJET_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_OLYMPUS
+    text: STR_GYROJET_RIFLE_UFOPEDIA
+    listOrder: 4419
 
   - id: STR_LMG_REPORT
     type_id: 7
@@ -3157,13 +3180,21 @@ ufopaedia:
     text: STR_MACHETE_UFOPEDIA
     listOrder: 4801
 
+  - id: STR_SHOVEL
+    requires:
+      - STR_SHOVEL
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_SHOVEL_UFOPEDIA
+    listOrder: 4802
+
   - id: STR_POLICE_TONFA
     requires:
       - STR_POLICE_TONFA
     type_id: 4
     section: STR_WEAPONS
     text: STR_POLICE_TONFA_UFOPEDIA
-    listOrder: 4802
+    listOrder: 4803
 
   - id: STR_RIOT_SHIELD
     type_id: 4
@@ -3171,17 +3202,34 @@ ufopaedia:
     text: STR_RIOT_SHIELD_UFOPEDIA
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-    listOrder: 4803
+    listOrder: 4804
 
   - id: STR_COMBAT_KNIFE
     type_id: 4
     section: STR_WEAPONS
     text: STR_COMBAT_KNIFE_UFOPEDIA
-    listOrder: 4804
+    listOrder: 4805
+
+  - id: STR_SPACE_KNIFE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_OLYMPUS
+    text: STR_SPACE_KNIFE_UFOPEDIA
+    listOrder: 4806
 
   - id: STR_STUN_ROD
     section: STR_WEAPONS
-    listOrder: 4805
+    listOrder: 4807
+
+  - id: STR_GENERATOR_STICK
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_GENERATOR_STICK
+    text: STR_GENERATOR_STICK_UFOPEDIA
+    listOrder: 4808
+
 
   #Ammunition
   - id: STR_KS23_SHRAPNEL-25_X4
@@ -3620,6 +3668,14 @@ ufopaedia:
     listOrder: 5207
     requires:
       - STR_HUMAN_PLASMA_LMG
+  - id: STR_GYROJET_AMMO_MAGAZINE
+    requires:
+      - STR_OLYMPUS
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
+    listOrder: 5208
+
 
   #Equipment
 

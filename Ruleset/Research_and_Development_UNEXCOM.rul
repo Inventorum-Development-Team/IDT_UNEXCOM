@@ -33,6 +33,12 @@ research:
       - STR_MEDI_KIT
       - STR_OLYMPUS
     cost: 250
+    points: 25
+
+  - name: STR_GENERATOR_STICK
+    dependencies:
+      - STR_OLYMPUS
+    cost: 200
     points: 20
 
   - name: STR_WEAPON_MODIFICATION
@@ -818,6 +824,10 @@ research:
     unlocks:
      - STR_12G_X2_UNLOCK
   - name: STR_MACHETE
+    cost: 5
+    points: 5
+    needItem: true
+  - name: STR_SHOVEL
     cost: 5
     points: 5
     needItem: true

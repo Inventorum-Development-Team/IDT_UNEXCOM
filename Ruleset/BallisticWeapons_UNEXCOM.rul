@@ -2664,6 +2664,47 @@ items:
     attraction: 7
     listOrder: 2104
 
+  - type: STR_SHOVEL
+    requiresBuy:
+      - STR_SHOVEL
+    categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
+    size: 0.2
+    costBuy: 1200
+    costSell: 800
+    weight: 8
+    bigSprite: 1096
+    floorSprite: 1096
+    handSprite: 1096
+    meleeHitSound: 165
+    power: 55
+    damageType: 7
+    damageBonus:
+      strength: 0.8
+      melee: 0.4
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToTile: 1.2
+      ToArmorPre: 0.7
+      ToWound: 0.4
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 12
+      energy: 4
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2105
+
   ###############################################
   ############### POLICE WEAPONS #################
   #############################################
@@ -3794,6 +3835,25 @@ items:
 
   - type: STR_STUN_ROD
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.1
+    costBuy: 1260
+    costSell: 945
+    weight: 6
+    bigSprite: 26
+    floorSprite: 26
+    handSprite: 80
+    meleeSound: 54
+    power: 65
+    damageType: 6
+    accuracyMelee: 100
+    tuMelee: 30
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    clipSize: -1
+    listOrder: 2121
 
   ####################################
   ###### WEAPON CUSTOMIZATION #######
@@ -4934,9 +4994,6 @@ items:
     attraction: 6
 
 extraSprites:
-  #########################################
-  ######### TIER I WEAPONS USA ############
-  #########################################
   - type: BIGOBS.PCK
     files:
       97: Resources/BallisticWeapons/Ammo/BigKS23Sharpnel25Ammo_x4.png
@@ -5074,6 +5131,7 @@ extraSprites:
       1072: Resources/BallisticWeapons/USA/BigM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/BigM202FlashAmmo.png
       1088: Resources/BallisticWeapons/Medical&Food/BigBread.png
+      1096: Resources/BallisticWeapons/Civilian/Bigob_Shovel.png
 
   - type: FLOOROB.PCK
     files:
@@ -5211,6 +5269,7 @@ extraSprites:
       1072: Resources/BallisticWeapons/USA/FloorM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/FloorM202FlashAmmo.png
       1088: Resources/BallisticWeapons/Medical&Food/FloorBread.png
+      1096: Resources/BallisticWeapons/Civilian/Floorob_Shovel.png
 
   - type: HANDOB.PCK
     width: 256
@@ -5342,6 +5401,7 @@ extraSprites:
       1064: Resources/BallisticWeapons/UN/HandStoner63Sniper.png
       1072: Resources/BallisticWeapons/USA/HandM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/HandM202FlashAmmo.png
+      1096: Resources/BallisticWeapons/Civilian/Handob_Shovel.png
 
   - type: SMOKE.PCK
     height: 80
