@@ -6,6 +6,76 @@
 ## Comments:
 ###########################
 terrains:
+  - name: CULTA
+    script: FARM
+    civilianTypes:
+      - STR_FEMALE_FARMER
+      - STR_MALE_FARMER
+    mapDataSets:
+      - BLANKS
+      - CULTIVAT
+      - BARN
+    mapBlocks:
+      - name: CULTA00
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA01
+        width: 10
+        length: 10
+      - name: CULTA02
+        width: 10
+        length: 10
+      - name: CULTA03
+        width: 10
+        length: 10
+      - name: CULTA04
+        width: 10
+        length: 10
+      - name: CULTA05
+        width: 10
+        length: 10
+      - name: CULTA06
+        width: 10
+        length: 10
+      - name: CULTA07
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA08
+        width: 10
+        length: 10
+      - name: CULTA09
+        width: 10
+        length: 10
+      - name: CULTA10
+        width: 10
+        length: 10
+      - name: CULTA11
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA12
+        width: 10
+        length: 10
+      - name: CULTA13
+        width: 10
+        length: 10
+      - name: CULTA14
+        width: 10
+        length: 10
+      - name: CULTA15
+        width: 10
+        length: 10
+      - name: CULTA16
+        width: 10
+        length: 10
+      - name: CULTA17
+        width: 10
+        length: 10
+      - name: CULTA18
+        width: 10
+        length: 10
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -195,6 +265,9 @@ terrains:
 
   - name: RICE_FARM # by IDT - Luke83
     script: RICE_FARM_SCRIPT
+    civilianTypes:
+      - STR_FEMALE_FARMER
+      - STR_MALE_FARMER
     mapDataSets:
       - BLANKS
       - IDT_FARM
