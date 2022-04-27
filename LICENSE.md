@@ -16,13 +16,13 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Blood Angel Tactical Marine: bug hunter.
 * Bobit: bug hunter
 * boodman123726: XCOM 2 Music Pack
-* Brother^2: IDT bug hunter
+* Brother^2: IDT bug hunter, ideas and feedback
 * bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
 * cubick2k: bug hunter
 * Cupon4uk: bug hunter
 * danielpembrink: bug hunter
 * DarkDust: bug hunter
-* Dauntless1942: new USA/NATO/USSR Laser weapons, new UNEXCOM logo, alien Fusion weapons
+* Dauntless1942: IDT Special Collaborator, USA/NATO/USSR Laser weapons, UNEXCOM logo, alien Fusion weapons, ideas and feedback
 * Duke_Falcon: Alien Turret sprites, unarmored Snakepeople sprites, alien body armor templates, Armored Floaters, Disk Drone sprites
 * Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper (now unused)
 * efrenespartano: lead modder, main ruleset and sprite creation
@@ -58,7 +58,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * StormRangerX: bug hunter
 * SG_Barton: bug hunter
 * Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
-* Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites
+* Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites, Ethereal, Sectopod, Cyberdisk inventory sprites
 * Tal'Raziid: IDT bug hunter
 * ThatDude: JustRussia AK original weapons (now adapted)
 * The Martian: Cybersphere sprites
@@ -72,7 +72,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * xover88: XCOM 2012 Music
 * Yataka Shimaoka: bug hunter
 * Yeti: bug hunter, feedback support, plus ideas
-* wolwerin: Russian translation, Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, Armored Sectoid, overall improvement of weapon sprites, some sounds, plus debugging support
+* wolwerin: Russian translation, Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, Alien Space Station maps, Armored Sectoid, overall improvement of weapon sprites, some sounds, plus debugging support
 * Zane: original Delta sprites
 * zaphnath: bug hunter
 * zombieclone111: bug hunter
