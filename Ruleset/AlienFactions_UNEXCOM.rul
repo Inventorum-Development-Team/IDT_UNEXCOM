@@ -1429,6 +1429,8 @@ armors:
 
   - type: ETHEREAL_ARMOR0
     spriteSheet: ETHEREAL.PCK
+    allowInv: true
+    spriteInv: ETHEREAL_INVENTORY.SPK
     corpseBattle:
       - STR_ETHEREAL_CORPSE
     frontArmor: 35
@@ -1452,6 +1454,8 @@ armors:
     loftempsSet: [ 3 ]
   - type: ETHEREAL_ARMOR1
     spriteSheet: ETHEREAL.PCK
+    allowInv: true
+    spriteInv: ETHEREAL_INVENTORY.SPK
     corpseBattle:
       - STR_ETHEREAL_CORPSE
     frontArmor: 40
@@ -1475,6 +1479,8 @@ armors:
     loftempsSet: [ 3 ]
   - type: ETHEREAL_ARMOR2
     spriteSheet: ETHEREAL.PCK
+    allowInv: true
+    spriteInv: ETHEREAL_INVENTORY.SPK
     corpseBattle:
       - STR_ETHEREAL_CORPSE
     frontArmor: 45
@@ -1637,7 +1643,7 @@ armors:
       - 1.0
     loftempsSet: [1]
   - type: CYBERSPHERE_ARMOR
-    spriteInv: CYBERDISC_INVENTORY.SPK
+    spriteInv: CYBERSPHERE_INVENTORY.SPK
     spriteSheet: CYBERSPHERE_SPRITESHEET.PCK
     deathFrames: 3
     allowInv: true
@@ -3523,6 +3529,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/AlienFactions/Mechtoid/MECHTOID_INVENTORY.png
+  - type: ETHEREAL_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AlienFactions/Ethereals/ETHEREAL_INVENTORY.png
 ##########################
 
   - type: SECTOID_UFOPEDIA_IMAGE
