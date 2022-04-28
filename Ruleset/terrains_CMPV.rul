@@ -172,7 +172,6 @@ terrains:
 
   - name: IDT_AIRPORT # by IDT - Luke83 & efrenespartano
     script: OLD_PORT_SCRIPT
-    # enviroEffects: STR_LAND
     mapDataSets:
       - BLANKS
       - IDT_PLANE_2
@@ -180,6 +179,10 @@ terrains:
       - PORT01_UFO
       - PORT02_UFO
       - PORT05_UFO
+      - IDT_AIRPORT_CRISTAL_WALLS
+      - MILITARY_BARRICADES
+      - MISSILES_1
+      - MISSILES_2
     mapBlocks: &AIRPORT_MAPBLOCKS
       - name: AIRBASE00
         width: 10
@@ -238,9 +241,9 @@ terrains:
       - name: AIRBASE17
         width: 20
         length: 20
-      - name: AIRBASE18
-        width: 20
-        length: 20
+      #- name: AIRBASE18
+      #  width: 20
+      #  length: 20
       - name: AIRBASE19
         width: 20
         length: 20
@@ -262,6 +265,9 @@ terrains:
         width: 10
         length: 10
         groups: 4
+      - name: AIRBASE30
+        width: 10
+        length: 10
 
   - name: RICE_FARM # by IDT - Luke83
     script: RICE_FARM_SCRIPT
@@ -354,6 +360,153 @@ terrains:
       #   length: 10
       #   groups: 4 # HILLS
 
+  - name: IDT_RED_FARM # By efrenespartano, Luke83 & Solarius Scorch
+    script: FARM_RED
+    mapDataSets:
+      - BLANKS
+      - IDT_CULTIVAT_RED
+      - IDT_BARN_RED
+      - IDT_FARM_RED
+      - IDT_ROOF_RED
+      - SOL_SILO_PLAIN
+      - CULTMACHINES
+      - IDT_BARN_RED_2
+    mapBlocks:
+      - name: CULTARED00 # grass, flat LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTARED01 # grass, two N-S plantpots
+        width: 10
+        length: 10
+        groups: 5
+      - name: CULTARED02 # grass, two E-W plantpots
+        width: 10
+        length: 10
+        groups: 5
+      - name: CULTARED03 # grass, plantpot
+        width: 10
+        length: 10
+        groups: 5
+      - name: CULTARED04 # grass, minor pines
+        width: 10
+        length: 10
+      - name: CULTARED05 # cornfield, N-S
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED06 # cornfield, W-E
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED07 # tall grass, LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTARED08 # carrot field
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED09 # radish field
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED10 # cornfield, new grown
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED11 # dirt, dead grass LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTARED12 # dirt, corral
+        width: 10
+        length: 10
+      - name: CULTARED13 # grass, W-E pens
+        width: 20
+        length: 10
+        groups: 5
+      - name: CULTARED14 # grass, W-E workshop, corral and plantpots
+        width: 20
+        length: 10
+        groups: 5
+      - name: CULTARED15 # cornfield, W-E dried & bales fence
+        width: 20
+        length: 10
+        groups: 6
+      - name: CULTARED16 # grass barn, small bales
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED17 # dirt, workshop
+        width: 10
+        length: 10
+        groups: 6
+      - name: CULTARED18 # stone, small house
+        width: 10
+        length: 10
+        groups: 7
+      - name: CULTARED19 # grass, barn small, furniture & corral
+        width: 10
+        length: 10
+        groups: 6
+      - name: SOL_SILO20 # grass, 2 silos, stone walls
+        width: 10
+        length: 10
+        groups: 7
+      - name: CULTARED22 # grass, W-E barn and corral
+        width: 20
+        length: 10
+        groups: 7
+      - name: CULTARED23 # grass, W-E workshop and corral
+        width: 20
+        length: 10
+        groups: 7
+      - name: CULTARED30 # grass, chicken pen
+        width: 10
+        length: 10
+        groups: 7
+      - name: CULTARED31 # grass, chicken pen
+        width: 10
+        length: 10
+        groups: 7
+      - name: CULTARED32 # grass, cornfield
+        width: 10
+        length: 10
+        groups: 7
+      - name: CULTARED33 # grass, cornfield
+        width: 10
+        length: 10
+        groups: 7
+      - name: CULTARED40 # grass, W-E road, tractor with stone fence
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTARED41 # grass, W-E road with stone fence
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTARED42 # grass, W-E road, toilet with stone fence
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTARED43 # grass, W-E road, grain silo with stone fence
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTARED44 # grass, W-E road with stone fence
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTARED45 # grass, W-E road with stone fence
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTARED31 # grass, pen and workshop
+        width: 10
+        length: 10
+        groups: 7
+
   - name: EXPANDED_TERROR #Thanks to HellRazor
     mapDataSets:
       - BLANKS
@@ -362,9 +515,39 @@ terrains:
       - URBAN
       - FRNITURE
       - MADDECOR
-    civilianTypes:
+    civilianTypes: &CIVILIANS_TERROR
       - MALE_CIVILIAN
+      - MALE_CIVILIAN2
+      - MALE_CIVILIAN3
+      - MALE_CIVILIAN4
+      - MALE_CIVILIAN6
+      - MALE_CIVILIAN9
+      - MALE_CIVILIAN10
+      - POLICE_FEMALE_CIVILIAN
+      - POLICE_MALE_CIVILIAN
       - FEMALE_CIVILIAN
+      - FEMALE_CIVILIAN2
+      - FEMALE_CIVILIAN3
+      - FEMALE_CIVILIAN4
+      - FEMALE_CIVILIAN7
+      - FEMALE_CIVILIAN8
+      - FEMALE_CIVILIAN9
+      - FEMALE_CIVILIAN10
+      - FEMALE_CIVILIAN13
+      - POLICE_FEMALE_CIVILIAN
+      - POLICE_MALE_CIVILIAN
+      - STR_HUMAN_SUIT_BLACK_1
+      - STR_HUMAN_SUIT_BLACK_2
+      - STR_HUMAN_SUIT_BLACK_3
+      - STR_HUMAN_SUIT_BLACK_4
+      - STR_HUMAN_SUIT_BLACK_5
+      - STR_HUMAN_SUIT_BLACK_6
+      - STR_HUMAN_SUIT_BLACK_7
+      - STR_HUMAN_SUIT_BLACK_8
+      - POLICE_FEMALE_CIVILIAN
+      - POLICE_MALE_CIVILIAN
+      - POLICE_SWAT
+      - POLICE_SWAT
     script: EXPANDED_TERROR
     mapBlocks:
       - name: EXPANDEDTERROR00 #Landingzone Dirt 1
@@ -2259,9 +2442,7 @@ terrains:
       - IDT_SNOWCULTIVAT
       - IDT_SNOWVILBAN
       - FRNITURE
-    # civilianTypes:
-    #   - MALE_CIVILIAN
-    #   - FEMALE_CIVILIAN
+    civilianTypes: *CIVILIANS_TERROR
     script: S_IDT_VILLAGE
     mapBlocks:
       - name: IDT_SNOWVILLAGE00
@@ -2400,9 +2581,7 @@ terrains:
       - IDT_CULTIVAT
       - IDT_VILBAN
       - FRNITURE
-    # civilianTypes:
-    #   - MALE_CIVILIAN
-    #   - FEMALE_CIVILIAN
+    civilianTypes: *CIVILIANS_TERROR
     script: S_IDT_VILLAGE
     mapBlocks:
       - name: IDT_VILLAGE00
@@ -3493,7 +3672,7 @@ terrains:
       - URBITS
       - SEAURBAN
       - SEABITS
-#    civilianTypes: *CIVILIAN_TYPES_STANDARD
+    civilianTypes: *CIVILIANS_TERROR
     script: PORTTFTD6
     mapBlocks: &SECTION_PORTTFTD_MAPS
       - name: PORTUFO00
@@ -3598,12 +3777,12 @@ terrains:
         groups: 2
   - name: PORTTFTD5 # by Dioxine
     mapDataSets: *SECTION_PORTTFTD_SETS
-#    civilianTypes: *CIVILIAN_TYPES_STANDARD
+    civilianTypes: *CIVILIANS_TERROR
     script: PORTTFTD5
     mapBlocks: *SECTION_PORTTFTD_MAPS
   - name: PORTUFO # by Dioxine
     mapDataSets: *SECTION_PORTTFTD_SETS
-#    civilianTypes: *CIVILIAN_TYPES_STANDARD
+    civilianTypes: *CIVILIANS_TERROR
     script: STANDARDROADS6
     mapBlocks: *SECTION_PORTTFTD_MAPS
 
@@ -3617,7 +3796,7 @@ terrains:
       - ISLANDURBAN2
       - ISLANDURBAN3
       - SEABITS
-#    civilianTypes: *CIVILIAN_TYPES_STANDARD
+    civilianTypes: *CIVILIANS_TERROR
     script: ISLANDURBAN
     mapBlocks: &SECTION_ISLANDURBAN_MAPS
       - name: ISLANDURBAN00
@@ -3670,6 +3849,103 @@ terrains:
       - name: ISLANDURBAN14
         width: 10
         length: 10
+
+  - name: NOOBERIA # by Dioxine, Solarius Scorch & Brain_322
+    mapDataSets:
+      - BLANKS
+      - MOUNTSNOW
+      - URBAN40K2
+      - COMPLEXBITS
+    script: NOOBERIA
+    mapBlocks:
+      - name: NOOBERIA0X0X
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA01
+        width: 10
+        length: 10
+      - name: NOOBERIA02
+        width: 10
+        length: 10
+      - name: NOOBERIA03
+        width: 10
+        length: 10
+      - name: NOOBERIA04
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA05
+        width: 10
+        length: 10
+      - name: NOOBERIA06
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA07
+        width: 10
+        length: 10
+      - name: NOOBERIA08
+        width: 10
+        length: 10
+      - name: NOOBERIA09
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA10
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA11
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA12
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA13
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA14
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA15
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA16
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA20
+        width: 20
+        length: 20
+        groups: 5
+      - name: NOOBERIA21
+        width: 10
+        length: 10
+      - name: NOOBERIA24
+        width: 10
+        length: 10
+      - name: NOOBERIA25
+        width: 10
+        length: 10
+      - name: NOOBERIA26
+        width: 10
+        length: 10
+      - name: NOOBERIA27
+        width: 10
+        length: 10
+      - name: NOOBERIA28
+        width: 10
+        length: 10
+      - name: NOOBERIA29
+        width: 10
+        length: 10
+
 ############################################
 ###### CRUISE LINER BY SOLARIUS SCORCH ####
 ##########################################
@@ -3684,8 +3960,7 @@ terrains:
       - DECKSHIPC
       - LIFTER
       - BATHBITZ_HT
-#    civilianTypes:
-#      - STR_MALE_SAILOR
+    civilianTypes: *CIVILIANS_TERROR
     script: CRUISE_LINER
     mapBlocks:
       - name: LINERT00

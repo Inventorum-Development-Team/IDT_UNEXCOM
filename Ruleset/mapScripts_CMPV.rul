@@ -24,6 +24,23 @@ mapScripts:
     - type: fillArea
       blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
       maxUses: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  - type: FARM_RED
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: addLine
+      #label: 2
+      #conditionals: -1
+      executionChances: 65
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: fillArea
+      groups: [0, 1, 5, 6, 7]
+      freqs: [2, 2, 2, 3, 4]
   - type: DESERT
     commands:
     - type: addUFO
@@ -617,3 +634,13 @@ mapScripts:
       executions: 4
     - type: fillArea
 
+  - type: NOOBERIA
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addCraft
+    - type: addBlock
+      groups: 6
+      executions: 3
+    - type: fillArea

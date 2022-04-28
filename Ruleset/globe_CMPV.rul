@@ -69,16 +69,18 @@ globe:
             weight: 20
             area: [85, 170, -48, -6]
           - name: PLAINSTROP
-            weight: 40
+            weight: 25
           - name: ACULTA
-            weight: 20
+            weight: 10
           - name: IDT_VILLAGE
-            weight: 30
+            weight: 20
           - name: RURAL
+            weight: 20
+          - name: IDT_RED_FARM
             weight: 20
     - id: 2 # Diverse farmland, high habitation
       terrain:
-        - name: CULTA
+        - name: IDT_RED_FARM
           area: [0, 360, -90, 0]
           weight: 40
         - name: INDUSTRIALSLUM
@@ -182,7 +184,9 @@ globe:
           - name: IDT_SNOWVILLAGE
             weight: 40
           - name: IDT_SNOWFOREST
-            weight: 50
+            weight: 40
+          - name: NOOBERIA
+            weight: 10
     - id: 10  # Tropical Jungles
       terrain:
           - name: MOUNTGRASS
@@ -210,11 +214,13 @@ globe:
           - name: ACULTASNOW
             weight: 10
           - name: POLAR
-            weight: 35
+            weight: 25
           - name: POLAR_BD
-            weight: 35
+            weight: 25
           - name: PLAINSSNOW
             weight: 20
+          - name: NOOBERIA
+            weight: 10
     - id: 13 # Swallow water, now unused
       terrain:
           - name: POLAR
@@ -380,7 +386,7 @@ globe:
          STR_TERROR_MISSION_RURAL: 100
     - id: -9 # Snow city
       deployments:
-         STR_TERROR_MISSION_ISLAND: 100
+         STR_TERROR_MISSION_SNOW: 100
     - id: -10
       deployments:
          STR_AMERICAN_OPERATIONS_MISSION: 100
