@@ -33,237 +33,75 @@ interfaces:
         color: 6     # brown
       - id: errorMessage
         color: 33   # bright green
-  - type: intercept
-    backgroundImage: BACK12.SCR
+
+  - type: articleArmor
     elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: text2
-        color: 111   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
       - id: button
-        color: 39   # minty green
+        color: 66    # orange
+      - id: text
+        color: 8   # 239 grey
+        color2: 71  # 244 light blue
       - id: list
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-  - type: ufoTracker
-    backgroundImage: BACK12.SCR
+        color: 6   # 55 seems good green
+        color2: 71  # light blue
+  - type: articleCraftWeapon
     elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: text2
-        color: 111   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
       - id: button
-        color: 39   # minty green
+        color: 66    # orange
+      - id: text
+        color: 8   # 239 grey
+        color2: 71  # 244 light blue
       - id: list
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-  - type: craftPatrol
-    backgroundImage: BACK12.SCR
+        color: 6   # 55 seems good green
+        color2: 71  # light blue
+
+  - type: articleItem
     elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
       - id: button
-        color: 39   # minty green
-  - type: craftError
-    backgroundImage: BACK12.SCR
-    elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: button
-        color: 39   # minty green
-  - type: craftPilotError
-    backgroundImage: BACK12.SCR
-    elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: button
-        color: 39   # minty green
-  - type: targetInfo
-    backgroundImage: BACK01.SCR
-    elements:
-      - id: palette
-        color: 0     # brown
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-      - id: text2
-        color: 111   # bright green
-      - id: button
-        color: 39   # minty green
-  - type: confirmDestination
-    backgroundImage: BACK12.SCR
-    elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
+        color: 66   # 144 orange
       - id: text
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: button
-        color: 39   # minty green
-  - type: confirmCydonia
-    backgroundImage: BACK12.SCR
-    elements:
-      - id: palette
-        color: 5     # red
-      - id: window
-        color: 133   # minty green
-      - id: button
-        color: 133   # minty green
-      - id: text
-        color: 138   # yellow
-  - type: confirmLanding
-    backgroundImage: BACK15.SCR
-    elements:
-      - id: palette
-        color: 3     # pink
-      - id: window
-        color: 33   # bright green
-      - id: text
-        color: 90   # bright green
-        color2: 138  # yellow
-      - id: button
-        color: 39   # minty green
-  - type: lowFuel
-    backgroundImage: BACK12.SCR
-    elements:
-      - id: palette
-        color: 4     # aqua
-      - id: text
-        color: 90   # bright green
-      - id: window
-        color: 33   # bright green
-      - id: button
-        color: 39   # minty green
-  - type: UFOInfo
-    backgroundImage: BACK15.SCR
-    elements:
-      - id: palette
-        color: 7     # dark blue/purple
-        color2: 2    # red/orange
-      - id: window
-        color: 133   # minty green
-      - id: text
-        color: 133   # minty green
-        color2: 138  # yellow
-      - id: button
-        color: 133   # minty green
-  - type: UFOLost
-    backgroundImage: BACK15.SCR
-    elements:
-      - id: palette
-        color: 7     # dark blue/purple
-        color2: 2    # red/orange
-      - id: window
-        color: 33   # bright green
-      - id: text
-        color: 90   # bright green
-        color2: 138  # yellow
-      - id: button
-        color: 39   # minty green
-  - type: multipleTargets
-    backgroundImage: BACK15.SCR
-    elements:
-      - id: palette
-        color: 7     # dark blue/purple
-        color2: 2    # red/orange
-      - id: window
-        color: 33   # bright green
-      - id: text
-        color: 90   # bright green
-        color2: 138  # yellow
-      - id: button
-        color: 39   # minty green
-  - type: dogfightInfo
-    backgroundImage: BACK15.SCR
-    elements:
-      - id: palette
-        color: 0     # brown
-      - id: window
-        color: 33   # bright green
-      - id: text
-        color: 90   # bright green
-      - id: button
-        color: 39   # minty green
-  - type: geoCraft
-    backgroundImage: BACK12.SCR
-    elements:
-      - id: palette
-        color: 4     # aqua
-        color2: 6    # oxide
-      - id: window
-        color: 33   # bright green
-      - id: text1
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: text2
-        color: 111   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: text3
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-      - id: button
-        color: 39   # minty green
+        color: 8   # 239 grey
+        color2: 71  # 244 light blue
       - id: list
-        color: 90   # bright green
-        color2: 138  # yellow
-        border: 39  # minty green
-  - type: pauseMenu
-    backgroundImage: BACK01.SCR
-    elements:
-      - id: palette
-        color: 0     # brown
-      - id: window
-        color: 133   # minty green
-      - id: button
-        color: 133   # minty green
-      - id: text
-        color: 138   # yellow
+        color: 6   # 55 seems good green
+        color2: 71  # light blue
+      - id: ammoColor
+        color: 32    # red
+      - id: ammoColorDTAP
+        color: 161     #gray # 112 steely blue, AP
+      - id: ammoColorDTIN
+        color: 147    # orange, Incendiary
+      - id: ammoColorDTHE
+        color: 38    # tame red, HE
+      - id: ammoColorDTLaser
+        color: 34    # 32 red
+      - id: ammoColorDTPlasma
+        color: 67    # green, Plasma
+      - id: ammoColorDTStun
+        color: 195    # purple, Stun
+      - id: ammoColorDTMelee
+        color: 176    # fleshy pink, Melee
+      - id: ammoColorDTAcid
+        color: 64    # lime green, Acid
+      - id: ammoColorDTSmoke
+        color: 84    # 80 soap, Smoke
+      - id: ammoColorDT10
+        color: 17    # golden, Elerium Fusion
+      #- id: ammoColorDT11
+      #  color: 32    # red
+      #- id: ammoColorDT12
+      #  color: 32    # red
+      #- id: ammoColorDT13
+      #  color: 32    # red
+      #- id: ammoColorDT14
+      #  color: 32    # red
+      #- id: ammoColorDT15
+      #  color: 32    # red
+      #- id: ammoColorDT16
+      #  color: 32    # red
+      #- id: ammoColorDT17
+      #  color: 32    # red
+      #- id: ammoColorDT18
+      #  color: 32    # red
+      #- id: ammoColorDT19
+      #  color: 32    # red

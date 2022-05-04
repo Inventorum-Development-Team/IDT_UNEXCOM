@@ -253,54 +253,37 @@ mapScripts:
     commands:
     - type: addCraft
       executions: 1
-      groups: 1
+      rects:
+        - [0, 0, 1, 1]
+        - [0, 1, 1, 1]
+        - [6, 0, 1, 1]
+        - [6, 1, 1, 1]
+        - [0, 0, 1, 2]
+        - [6, 0, 1, 2]
     - type: addBlock
       terrain: IDT_PLANE_HIJACKED
       size: [3, 2]
       executions: 1
+      executionChances: 100
       rects:
-        - [1, 1, 3, 2]
-      executionChances: 100
-    - type: addBlock #North runway
-      executions: 1
-      executionChances: 100
-      groups: 3
-      rects:
-        - [0, 1, 1, 1]
-    - type: addBlock #North South
-      executions: 1
-      executionChances: 100
-      groups: 4
-      rects:
-        - [0, 2, 1, 1]
-    - type: addBlock #North runway
-      executions: 1
-      executionChances: 100
-      groups: 3
-      rects:
-        - [4, 1, 1, 1]
-    - type: addBlock #North South
-      executions: 1
-      executionChances: 100
-      groups: 4
-      rects:
-        - [4, 2, 1, 1]
-    - type: addBlock
-      size: 2
-      executions: 1
-    - type: addBlock
-      size: 2
-      executions: 1
-    - type: addBlock
-      executionChances: 100
-      size: [2, 1]
-      executions: 1
-    - type: addBlock
-      executionChances: 50
-      size: [2, 1]
-      executions: 1
+        - [2, 0, 3, 2]
+
+    #- type: addBlock
+    #  size: 2
+    #  executions: 1
+    #- type: addBlock
+    #  size: 2
+    #  executions: 1
+    #- type: addBlock
+    #  executionChances: 100
+    #  size: [2, 1]
+    #  executions: 1
+    #- type: addBlock
+    #  executionChances: 50
+    #  size: [2, 1]
+    #  executions: 1
     - type: fillArea
-      # groups: 1
+      groups: 1
 
   - type: TERRORIST_HQ_SCRIPT
     commands:

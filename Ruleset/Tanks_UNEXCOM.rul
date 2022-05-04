@@ -683,7 +683,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
-    personalLight: 6
+    personalLight: 20
 
 #####################################
 ####### M551 SHERIDAN ###############
@@ -716,7 +716,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
-    personalLight: 6
+    personalLight: 20
 
 #####################################
 ####### BMD-1 AIRBORNE IFV ##########
@@ -749,7 +749,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]#
-    personalLight: 6
+    personalLight: 20
 
 #####################################
 ########## ALVIS SALADIN AC #############
@@ -782,7 +782,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
-    personalLight: 6
+    personalLight: 20
 
 #####################################
 ####### LEGIONNAIRE LASER TANK ###########
@@ -815,7 +815,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
-    personalLight: 6
+    personalLight: 20
 
 extraSprites:
   - type: FERRET.PCK
@@ -952,43 +952,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 30
       STR_ALIEN_CRYSTAL: 10
-extraStrings:
-  - type: en-US
-    strings:
-      STR_FERRET_CAR: FV701 Ferret Scout Car
-      FERRET_CAR_ARMOR: Aluminum hull
-      STR_DOUBLE_50CAL: Double M2 50 Cal. MG
-      STR_DOUBLE_50CAL_BOX: x50 .50 BMG Rounds
-      STR_FERRET_SMOKE_LAUNCHER: Smoke Screen Launcher
-      STR_FERRET_SMOKE_GRENADE: Smoke Screen Grenade
-      STR_HWP_POP_SMOKE: Smoke Screen!
-########################################################
-      STR_SHERIDAN_TANK: M551 Sheridan
-      SHERIDAN_TANK_ARMOR: Aluminum hull with steel turret
-      STR_M81E1: M81E1 152mm Rifled Gun
-      STR_152MM_CANNON_SHELLS: 152mm AP Rounds
-      STR_SHILLELAGH: MGM-51 Shillelagh Guided Missile
-      STR_MGM51_MISSILE: MGM-51 Shillelagh Guided Missile
-########################################################
-      STR_BMD1_TANK: BMD-1 Airborne IFV
-      BMD1_TANK_ARMOR: Welded aluminium alloy
-      STR_2A28_GROM: 2A28 73mm Grom Cannon
-      STR_73MM_CANNON_SHELLS: 73mm HE Rounds
-      STR_PKT_MACHINEGUN: 7.62mm PKT Machine Gun
-      STR_PKT_AMMO_BOX: x50 PKT 7.62mm Rounds
-########################################################
-      STR_SALADIN_CAR: FV601 Saladin Armored Car
-      SALADIN_CAR_ARMOR: Aluminum hull
-      STR_L5A1_GUN: ROF L5A1 76mm Gun
-      STR_76MM_CANNON_SHELLS: 76mm HESH Rounds
-      STR_M1919A4_MACHINEGUN: 7.62mm M1919A4 Machine Gun
-      STR_M1919A4_AMMO_BOX: x50 M1919A4 7.62mm Rounds
-########################################################
-      STR_IMP_TANK_CHASSIS: Laser/Alloy Tank Project
-      STR_TANK_LASER_CANNON: XM22 Legionnaire
-      TANK_LASER_CANNON_ARMOR: Alien Alloys hull
-      STR_XM343: LGM34-3H AT Laser Cannon
-      STR_TANK_LASER_MINIGUN: XM250 Laser Minigun
+
 extraSounds:
   - type: BATTLE.CAT
     files:

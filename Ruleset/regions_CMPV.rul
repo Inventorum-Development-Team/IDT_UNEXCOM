@@ -217,9 +217,9 @@ regions:
         - [0, 359.875, 87.5, 90]
       -
 #BEGIN NEW CITIES
-        - [299.474, 299.474, 73.638, 73.638, -1, STR_MCMURDO]
-        - [116.782, 116.782, 75.239, 75.239, -1, STR_VOSTOK]
-        - [0, 0, 90, 90, -1, STR_AMUNDSEN]
+        - [299.474, 299.474, 73.638, 73.638, -1, STR_MCMURDOSTATION]
+        - [116.782, 116.782, 75.239, 75.239, -1, STR_VOSTOKSTATION]
+        - [0, 0, 90, 90, -1, STR_AMUNDSENSCOTTSTATION]
         - [-58.96, -58.96, 62.2, 62.2, -1, STR_BELLINGSHAUSEN]
 #END NEW CITIES
       -
@@ -1910,16 +1910,3 @@ regions:
 
 ###END REGIONS
 
-
-extraStrings:
-  - type: en-US
-    strings:
-     STR_KENNEDY_SPACE_CENTER: "Kennedy Space Center"
-     STR_VANDERBERG_AIR_FORCE_BASE: "Vandenberg Air Force Base"
-     STR_GUIANA_SPACE_CENTRE: "Guiana Space Centre"
-     STR_BAIKONUR_COSMODROME: "Baikonur Cosmodrome"
-     STR_KAPUSTIN_YAR_COSMODROME: "Kapustin Yar Cosmodrome"
-     STR_PLESETSK_COSMODROME: "Plesetsk Cosmodrome"
-     STR_VOSTOCHNY_COSMODROME: "Vostochny Cosmodrome"
-     STR_TANEGASHIMA_SPACE_CENTER: "Tanegashima Space Center"
-     STR_BLOFELD_ISLAND_SPACE_CENTER: "Blofeld Island Space Center"

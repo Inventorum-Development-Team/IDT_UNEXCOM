@@ -1,5 +1,6 @@
 items:
   - type: STR_HE_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     requires:
       - STR_AIR_STRIKES
@@ -19,6 +20,7 @@ items:
       throwTrigger: true
 
   - type: STR_INC_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.1
     requires:
       - STR_AIR_STRIKES
@@ -80,11 +82,6 @@ extraSounds:
       108: Resources/BallisticWeapons/Sounds/airstrike_cannons3.wav
       109: Resources/BallisticWeapons/Sounds/airstrike_a10a.wav
 
-extraStrings:
-  - type: en-US
-    strings:
-      STR_HE_STRIKE: "HE Air Strike"
-      STR_INC_STRIKE: "Napalm Air Strike"
 
 
 

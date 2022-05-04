@@ -1,0 +1,1537 @@
+soldierBonuses:
+# Template
+  - name: STR_FIRST_TEST
+    visibilityAtDark: 20     # +20 tiles
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 0
+    recovery:
+      time:
+        flatOne: -10
+      energy:
+        flatOne: 100
+      morale:
+        flatOne: -15       # -15 morale per turn
+      health:
+        flatOne: -5
+      mana:
+        flatOne: -1
+      stun:
+        flatOne: 4
+
+# Commendations
+  - name: STR_MEDAL_ORIGINAL8_NAME
+    stats:
+      tu: 1
+      stamina: 1
+      health: 1
+      bravery: 0
+      reactions: 1
+      firing: 1
+      throwing: 1
+      strength: 1
+      psiStrength: 1
+      melee: 1
+      mana: 1
+
+#####################
+#Service Medal
+#Granted by joining UNEXCOM, new bonus after 6 months
+  - name: STR_MEDAL_SERVICE_1
+    stats:
+      tu: 1
+      stamina: 1
+      health: 1
+      bravery: 0
+      reactions: 1
+      firing: 1
+      throwing: 1
+      strength: 1
+      psiStrength: 1
+      melee: 1
+      mana: 1
+  - name: STR_MEDAL_SERVICE_2
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 5
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 5
+      melee: 5
+      mana: 5
+  - name: STR_MEDAL_SERVICE_3
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 5
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 5
+      melee: 5
+      mana: 5
+  - name: STR_MEDAL_SERVICE_4
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 5
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 5
+      melee: 5
+      mana: 5
+  - name: STR_MEDAL_SERVICE_5
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 5
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 5
+      melee: 5
+      mana: 5
+  - name: STR_MEDAL_SERVICE_6
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 5
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 5
+      melee: 5
+      mana: 5
+
+##############################
+#Nation Gratitude Commendation
+#Granted by having the globetrotter value, silver
+
+  - name: STR_MEDAL_GLOBETROTTER
+    stats:
+      strength: 5
+      health: 1
+
+#############################
+#Combat Medic Commendation
+##Granted by healing allies, bronze
+
+  - name: STR_MEDAL_COMBAT_MEDIC_1
+    stats:
+      stamina: 1
+      health: 1
+  - name: STR_MEDAL_COMBAT_MEDIC_2
+    stats:
+      stamina: 2
+      health: 2
+  - name: STR_MEDAL_COMBAT_MEDIC_3
+    stats:
+      stamina: 3
+      health: 3
+  - name: STR_MEDAL_COMBAT_MEDIC_4
+    stats:
+      stamina: 4
+      health: 4
+  - name: STR_MEDAL_COMBAT_MEDIC_5
+    stats:
+      stamina: 5
+      health: 5
+  - name: STR_MEDAL_COMBAT_MEDIC_6
+    stats:
+      stamina: 6
+      health: 6
+  - name: STR_MEDAL_COMBAT_MEDIC_7
+    stats:
+      stamina: 7
+      health: 7
+  - name: STR_MEDAL_COMBAT_MEDIC_8
+    stats:
+      stamina: 8
+      health: 8
+  - name: STR_MEDAL_COMBAT_MEDIC_9
+    stats:
+      stamina: 9
+      health: 9
+  - name: STR_MEDAL_COMBAT_MEDIC_10
+    stats:
+      stamina: 10
+      health: 10
+
+############################
+#Purple Heart Medal
+#Granted by being wounded
+
+  - name: STR_MEDAL_PURPLE_HEART_1
+    stats:
+      health: 1
+  - name: STR_MEDAL_PURPLE_HEART_2
+    stats:
+      health: 2
+  - name: STR_MEDAL_PURPLE_HEART_3
+    stats:
+      health: 3
+  - name: STR_MEDAL_PURPLE_HEART_4
+    stats:
+      health: 4
+  - name: STR_MEDAL_PURPLE_HEART_5
+    stats:
+      health: 5
+  - name: STR_MEDAL_PURPLE_HEART_6
+    stats:
+      health: 6
+  - name: STR_MEDAL_PURPLE_HEART_7
+    stats:
+      health: 7
+  - name: STR_MEDAL_PURPLE_HEART_8
+    stats:
+      health: 8
+  - name: STR_MEDAL_PURPLE_HEART_9
+    stats:
+      health: 9
+  - name: STR_MEDAL_PURPLE_HEART_10
+    stats:
+      health: 10
+
+#############################
+#Valor Cross
+#Granted by valientCrux
+
+  - name: STR_MEDAL_VALIANT_CRUX_1
+    stats:
+      stamina: 2
+  - name: STR_MEDAL_VALIANT_CRUX_2
+    stats:
+      stamina: 2
+      health: 2
+  - name: STR_MEDAL_VALIANT_CRUX_3
+    stats:
+      stamina: 2
+      health: 2
+      strength: 2
+  - name: STR_MEDAL_VALIANT_CRUX_4
+    stats:
+      stamina: 2
+      health: 2
+      strength: 2
+      throwing: 2
+  - name: STR_MEDAL_VALIANT_CRUX_5
+    stats:
+      tu: 2
+      stamina: 2
+      health: 2
+      strength: 2
+      throwing: 2
+  - name: STR_MEDAL_VALIANT_CRUX_6
+    stats:
+      tu: 2
+      stamina: 2
+      health: 2
+      strength: 2
+      throwing: 2
+      mana: 2
+  - name: STR_MEDAL_VALIANT_CRUX_7
+    stats:
+      tu: 2
+      stamina: 2
+      health: 2
+      strength: 2
+      throwing: 2
+      melee: 2
+      mana: 2
+  - name: STR_MEDAL_VALIANT_CRUX_8
+    stats:
+      tu: 2
+      stamina: 2
+      health: 2
+      throwing: 2
+      strength: 2
+      psiStrength: 2
+      melee: 2
+      mana: 2
+  - name: STR_MEDAL_VALIANT_CRUX_9
+    stats:
+      tu: 2
+      stamina: 2
+      health: 2
+      reactions: 2
+      throwing: 2
+      strength: 2
+      psiStrength: 2
+      melee: 2
+      mana: 2
+  - name: STR_MEDAL_VALIANT_CRUX_10
+    stats:
+      tu: 2
+      stamina: 2
+      health: 2
+      reactions: 2
+      firing: 2
+      throwing: 2
+      strength: 2
+      psiStrength: 2
+      melee: 2
+      mana: 2
+
+####################
+#Field Support Commendation
+#Granted by using reaction fire
+
+  - name: STR_MEDAL_FIELD_SUPPORT_1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_FIELD_SUPPORT_2
+    stats:
+      reactions: 2
+  - name: STR_MEDAL_FIELD_SUPPORT_3
+    stats:
+      reactions: 3
+  - name: STR_MEDAL_FIELD_SUPPORT_4
+    stats:
+      reactions: 4
+  - name: STR_MEDAL_FIELD_SUPPORT_5
+    stats:
+      reactions: 5
+  - name: STR_MEDAL_FIELD_SUPPORT_6
+    stats:
+      reactions: 6
+  - name: STR_MEDAL_FIELD_SUPPORT_7
+    stats:
+      reactions: 7
+  - name: STR_MEDAL_FIELD_SUPPORT_8
+    stats:
+      reactions: 8
+  - name: STR_MEDAL_FIELD_SUPPORT_9
+    stats:
+      reactions: 9
+  - name: STR_MEDAL_FIELD_SUPPORT_10
+    stats:
+      reactions: 10
+
+###########################
+#Distinguished Service Medal
+#Granted by capturing an important enemy, gold
+
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_1
+    stats:
+      firing: 1
+      strength: 1
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_2
+    stats:
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_3
+    stats:
+      firing: 3
+      strength: 3
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_4
+    stats:
+      firing: 4
+      strength: 4
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_5
+    stats:
+      firing: 5
+      strength: 5
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_6
+    stats:
+      firing: 6
+      strength: 6
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_7
+    stats:
+      firing: 7
+      strength: 7
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_8
+    stats:
+      firing: 8
+      strength: 8
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_9
+    stats:
+      firing: 9
+      strength: 9
+  - name: STR_MEDAL_DISTINGUISHED_SERVICE_10
+    stats:
+      firing: 10
+      strength: 10
+
+##############################
+#Exemplary Service Medal
+#Granted by killing and stunning all the aliens in a single mission, gold
+
+
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_1
+    stats:
+      firing: 1
+      strength: 1
+      melee: 1
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_2
+    stats:
+      firing: 2
+      strength: 2
+      melee: 2
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_3
+    stats:
+      firing: 3
+      strength: 3
+      melee: 3
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_4
+    stats:
+      firing: 4
+      strength: 4
+      melee: 4
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_5
+    stats:
+      firing: 5
+      strength: 5
+      melee: 5
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_6
+    stats:
+      firing: 6
+      strength: 6
+      melee: 6
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_7
+    stats:
+      firing: 7
+      strength: 7
+      melee: 7
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_8
+    stats:
+      firing: 8
+      strength: 8
+      melee: 8
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_9
+    stats:
+      firing: 9
+      strength: 9
+      melee: 9
+  - name: STR_MEDAL_EXEMPLARY_SERVICE_10
+    stats:
+      firing: 10
+      strength: 10
+      melee: 10
+
+########################
+#Enemy Craft Specialist Commendation
+#Granted by doing missions in all UFOs
+#+Stamina, +TUs
+
+  - name: STR_MEDAL_ENEMY_CRAFT_SPECIALIST_1
+    stats:
+      stamina: 10
+      tu: 10
+
+#######################
+#Defender of Earth Medal
+#Granted by defending the base
+
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_1
+    stats:
+      health: 1
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_2
+    stats:
+      health: 2
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_3
+    stats:
+      health: 3
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_4
+    stats:
+      health: 4
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_5
+    stats:
+      health: 5
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_6
+    stats:
+      health: 6
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_7
+    stats:
+      health: 7
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_8
+    stats:
+      health: 8
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_9
+    stats:
+      health: 9
+  - name: STR_MEDAL_DEFENDER_OF_EARTH_10
+    stats:
+      health: 10
+
+#######################
+#Night Stalker Commendation
+#Granted by conducting night missions
+
+  - name: STR_MEDAL_NIGHT_STALKER_1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_NIGHT_STALKER_2
+    visibilityAtDark: 1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_NIGHT_STALKER_3
+    visibilityAtDark: 1
+    stats:
+      reactions: 2
+  - name: STR_MEDAL_NIGHT_STALKER_4
+    visibilityAtDark: 2
+    stats:
+      reactions: 2
+  - name: STR_MEDAL_NIGHT_STALKER_5
+    visibilityAtDark: 2
+    stats:
+      reactions: 3
+  - name: STR_MEDAL_NIGHT_STALKER_6
+    visibilityAtDark: 3
+    stats:
+      reactions: 3
+  - name: STR_MEDAL_NIGHT_STALKER_7
+    visibilityAtDark: 3
+    stats:
+      reactions: 4
+  - name: STR_MEDAL_NIGHT_STALKER_8
+    visibilityAtDark: 4
+    stats:
+      reactions: 4
+  - name: STR_MEDAL_NIGHT_STALKER_9
+    visibilityAtDark: 4
+    stats:
+      reactions: 5
+  - name: STR_MEDAL_NIGHT_STALKER_10
+    visibilityAtDark: 5
+    stats:
+      reactions: 5
+
+#######################
+#Orbital Defender Commendation
+#Granted by conducting space missions
+
+  - name: STR_MEDAL_ORBITAL_DEFENDER_1
+    stats:
+      bravery: 10
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_ORBITAL_DEFENDER_2
+    stats:
+      stamina: 1
+      bravery: 10
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_ORBITAL_DEFENDER_3
+    stats:
+      stamina: 1
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_ORBITAL_DEFENDER_4
+    stats:
+      stamina: 2
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_ORBITAL_DEFENDER_5
+    stats:
+      stamina: 2
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_ORBITAL_DEFENDER_6
+    stats:
+      stamina: 3
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_ORBITAL_DEFENDER_7
+    stats:
+      stamina: 3
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_ORBITAL_DEFENDER_8
+    stats:
+      stamina: 4
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_ORBITAL_DEFENDER_9
+    stats:
+      stamina: 4
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 3
+  - name: STR_MEDAL_ORBITAL_DEFENDER_10
+    stats:
+      stamina: 5
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 3
+
+#######################
+#Joint Operations Ribbon
+#Granted by conducting Allied Operations Missions
+
+  - name: STR_MEDAL_JOINT_OPERATIONS_1
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_JOINT_OPERATIONS_2
+    stats:
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_JOINT_OPERATIONS_3
+    stats:
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_JOINT_OPERATIONS_4
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_JOINT_OPERATIONS_5
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 3
+  - name: STR_MEDAL_JOINT_OPERATIONS_6
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 3
+    visibilityAtDark: 1
+  - name: STR_MEDAL_JOINT_OPERATIONS_7
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_JOINT_OPERATIONS_8
+    stats:
+      bravery: 30
+    recovery:
+      morale:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_JOINT_OPERATIONS_9
+    stats:
+      bravery: 30
+    recovery:
+      morale:
+        flatOne: 5
+    visibilityAtDark: 1
+  - name: STR_MEDAL_JOINT_OPERATIONS_10
+    stats:
+      bravery: 30
+    recovery:
+      morale:
+        flatOne: 5
+    visibilityAtDark: 2
+
+#####################
+#Subterranean Assault Commendation
+#Granted by doing alien base assaults
+
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_1
+    stats:
+      tu: 2
+      bravery: 10
+
+#####################
+#Undeground Defense Campaign Ribbon
+#Granted by doing alien base assaults
+
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_1
+    stats:
+      tu: 1
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_2
+    stats:
+      tu: 2
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_3
+    stats:
+      tu: 3
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_4
+    stats:
+      tu: 4
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_5
+    stats:
+      tu: 5
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_6
+    stats:
+      tu: 6
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_7
+    stats:
+      tu: 7
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_8
+    stats:
+      tu: 8
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_9
+    stats:
+      tu: 9
+  - name: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_10
+    stats:
+      tu: 10
+
+######################
+#Earth Campaign Ribbon
+#Granted by conducting missions in a Region
+
+  - name: STR_EARTH_CAMPAIGN_RIBBON_1
+    stats:
+      reactions: 1
+  - name: STR_EARTH_CAMPAIGN_RIBBON_2
+    stats:
+      reactions: 1
+      melee: 1
+  - name: STR_EARTH_CAMPAIGN_RIBBON_3
+    stats:
+      reactions: 1
+      melee: 1
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_EARTH_CAMPAIGN_RIBBON_4
+    stats:
+      reactions: 2
+      melee: 1
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_EARTH_CAMPAIGN_RIBBON_5
+    stats:
+      reactions: 2
+      melee: 1
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_EARTH_CAMPAIGN_RIBBON_6
+    stats:
+      reactions: 2
+      melee: 2
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_EARTH_CAMPAIGN_RIBBON_7
+    stats:
+      reactions: 2
+      melee: 2
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_EARTH_CAMPAIGN_RIBBON_8
+    stats:
+      reactions: 3
+      melee: 2
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_EARTH_CAMPAIGN_RIBBON_9
+    stats:
+      reactions: 3
+      melee: 3
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_EARTH_CAMPAIGN_RIBBON_10
+    stats:
+      reactions: 3
+      melee: 3
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 3
+
+########################
+#Counter-Terrorism Campaign Ribbon
+#Granted by participating in C-O missions
+
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_2
+    stats:
+      stamina: 1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_3
+    stats:
+      stamina: 1
+    recovery:
+      energy:
+        flatOne: 2
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_4
+    stats:
+      stamina: 2
+    recovery:
+      energy:
+        flatOne: 2
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_5
+    stats:
+      stamina: 2
+    recovery:
+      energy:
+        flatOne: 3
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_6
+    stats:
+      stamina: 3
+    recovery:
+      energy:
+        flatOne: 3
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_7
+    stats:
+      stamina: 3
+    recovery:
+      energy:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_8
+    stats:
+      stamina: 4
+    recovery:
+      energy:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_9
+    stats:
+      stamina: 4
+    recovery:
+      energy:
+        flatOne: 5
+    visibilityAtDark: 1
+  - name: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_10
+    stats:
+      stamina: 5
+    recovery:
+      energy:
+        flatOne: 5
+    visibilityAtDark: 1
+
+######################
+#Moon Campaign Ribbon
+#Granted by conducting missions in the Moon
+#sprite: 21
+
+########################
+#Operation False Flag Commendation
+#Granted by participating on the Overseer Mission
+
+  - name: STR_MEDAL_OPERATION_FALSE_FLAG_1
+    stats:
+      strength: 3
+      firing: 3
+
+##############################
+#Operation Devastation Commendation
+#Granted by participating on the Moon Mission
+
+  - name: STR_MEDAL_OPERATION_DEVASTATION_1
+    stats:
+      reactions: 3
+      firing: 3
+
+#############################
+#Weapon Proficiency Commendation
+#Granted by killing enemies with certain weapons
+#+3 firing accuracy
+
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_1
+    stats:
+      throwing: 1
+      melee: 1
+      firing: 1
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_2
+    stats:
+      throwing: 1
+      melee: 1
+      firing: 1
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_3
+    stats:
+      throwing: 1
+      melee: 1
+      firing: 1
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_4
+    stats:
+      throwing: 2
+      melee: 1
+      firing: 1
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_5
+    stats:
+      throwing: 2
+      melee: 2
+      firing: 1
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_6
+    stats:
+      throwing: 2
+      melee: 2
+      firing: 2
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_7
+    stats:
+      throwing: 3
+      melee: 2
+      firing: 2
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_8
+    stats:
+      throwing: 3
+      melee: 3
+      firing: 2
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_9
+    stats:
+      throwing: 3
+      melee: 3
+      firing: 3
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_10
+    stats:
+      throwing: 3
+      melee: 3
+      firing: 3
+      bravery: 10
+
+######################
+#Sharpshooter Medal
+#Granted by shooting far away, bronze
+#+Firing accuracy
+
+  - name: STR_MEDAL_SHARPSHOOTER_1
+    stats:
+      psiStrength: 1
+      firing: 1
+  - name: STR_MEDAL_SHARPSHOOTER_2
+    stats:
+      psiStrength: 2
+      firing: 2
+  - name: STR_MEDAL_SHARPSHOOTER_3
+    stats:
+      psiStrength: 3
+      firing: 3
+  - name: STR_MEDAL_SHARPSHOOTER_4
+    stats:
+      psiStrength: 4
+      firing: 4
+  - name: STR_MEDAL_SHARPSHOOTER_5
+    stats:
+      psiStrength: 5
+      firing: 5
+  - name: STR_MEDAL_SHARPSHOOTER_6
+    stats:
+      psiStrength: 6
+      firing: 6
+  - name: STR_MEDAL_SHARPSHOOTER_7
+    stats:
+      psiStrength: 7
+      firing: 7
+  - name: STR_MEDAL_SHARPSHOOTER_8
+    stats:
+      psiStrength: 8
+      firing: 8
+  - name: STR_MEDAL_SHARPSHOOTER_9
+    stats:
+      psiStrength: 9
+      firing: 9
+  - name: STR_MEDAL_SHARPSHOOTER_10
+    stats:
+      psiStrength: 10
+      firing: 10
+
+######################
+#Rifle Marksman Medal
+#Granted by using rifles
+
+  - name: STR_MEDAL_RIFLE_MARKSMAN_1
+    stats:
+      firing: 1
+      stamina: 1
+  - name: STR_MEDAL_RIFLE_MARKSMAN_2
+    stats:
+      firing: 2
+      stamina: 2
+  - name: STR_MEDAL_RIFLE_MARKSMAN_3
+    stats:
+      firing: 3
+      stamina: 3
+  - name: STR_MEDAL_RIFLE_MARKSMAN_4
+    stats:
+      firing: 4
+      stamina: 4
+  - name: STR_MEDAL_RIFLE_MARKSMAN_5
+    stats:
+      firing: 5
+      stamina: 5
+  - name: STR_MEDAL_RIFLE_MARKSMAN_6
+    stats:
+      firing: 6
+      stamina: 6
+  - name: STR_MEDAL_RIFLE_MARKSMAN_7
+    stats:
+      firing: 7
+      stamina: 7
+  - name: STR_MEDAL_RIFLE_MARKSMAN_8
+    stats:
+      firing: 8
+      stamina: 8
+  - name: STR_MEDAL_RIFLE_MARKSMAN_9
+    stats:
+      firing: 9
+      stamina: 9
+  - name: STR_MEDAL_RIFLE_MARKSMAN_10
+    stats:
+      firing: 10
+      stamina: 10
+
+######################
+#Pistol Marksman Medal
+#Granted by using pistols
+
+  - name: STR_MEDAL_PISTOL_MARKSMAN_1
+    stats:
+      firing: 1
+      tu: 1
+  - name: STR_MEDAL_PISTOL_MARKSMAN_2
+    stats:
+      firing: 2
+      tu: 1
+      reactions: 1
+  - name: STR_MEDAL_PISTOL_MARKSMAN_3
+    stats:
+      firing: 3
+      tu: 2
+      reactions: 1
+  - name: STR_MEDAL_PISTOL_MARKSMAN_4
+    stats:
+      firing: 4
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_PISTOL_MARKSMAN_5
+    stats:
+      firing: 5
+      tu: 3
+      reactions: 2
+  - name: STR_MEDAL_PISTOL_MARKSMAN_6
+    stats:
+      firing: 6
+      tu: 3
+      reactions: 3
+  - name: STR_MEDAL_PISTOL_MARKSMAN_7
+    stats:
+      firing: 7
+      tu: 4
+      reactions: 3
+  - name: STR_MEDAL_PISTOL_MARKSMAN_8
+    stats:
+      firing: 8
+      tu: 4
+      reactions: 4
+  - name: STR_MEDAL_PISTOL_MARKSMAN_9
+    stats:
+      firing: 9
+      tu: 5
+      reactions: 4
+  - name: STR_MEDAL_PISTOL_MARKSMAN_10
+    stats:
+      firing: 10
+      tu: 5
+      reactions: 5
+
+######################
+#Carbine Marksman Medal
+#Granted by using Carbines
+
+  - name: STR_MEDAL_CARBINE_MARKSMAN_1
+    stats:
+      reactions: 1
+      firing: 1
+  - name: STR_MEDAL_CARBINE_MARKSMAN_2
+    stats:
+      reactions: 2
+      firing: 1
+      tu: 1
+  - name: STR_MEDAL_CARBINE_MARKSMAN_3
+    stats:
+      reactions: 3
+      firing: 2
+      tu: 1
+  - name: STR_MEDAL_CARBINE_MARKSMAN_4
+    stats:
+      reactions: 4
+      firing: 2
+      tu: 2
+  - name: STR_MEDAL_CARBINE_MARKSMAN_5
+    stats:
+      reactions: 5
+      firing: 3
+      tu: 2
+  - name: STR_MEDAL_CARBINE_MARKSMAN_6
+    stats:
+      reactions: 6
+      firing: 3
+      tu: 3
+  - name: STR_MEDAL_CARBINE_MARKSMAN_7
+    stats:
+      reactions: 7
+      firing: 4
+      tu: 3
+  - name: STR_MEDAL_CARBINE_MARKSMAN_8
+    stats:
+      reactions: 8
+      firing: 4
+      tu: 4
+  - name: STR_MEDAL_CARBINE_MARKSMAN_9
+    stats:
+      reactions: 9
+      firing: 5
+      tu: 4
+  - name: STR_MEDAL_CARBINE_MARKSMAN_10
+    stats:
+      reactions: 10
+      firing: 5
+      tu: 5
+
+######################
+#Machine Gun Marksman Medal
+#Granted by using LMGs
+
+  - name: STR_MEDAL_LMG_MARKSMAN_1
+    stats:
+      strength: 1
+      firing: 1
+  - name: STR_MEDAL_LMG_MARKSMAN_2
+    stats:
+      strength: 2
+      firing: 2
+  - name: STR_MEDAL_LMG_MARKSMAN_3
+    stats:
+      strength: 3
+      firing: 3
+  - name: STR_MEDAL_LMG_MARKSMAN_4
+    stats:
+      strength: 4
+      firing: 4
+  - name: STR_MEDAL_LMG_MARKSMAN_5
+    stats:
+      strength: 5
+      firing: 5
+  - name: STR_MEDAL_LMG_MARKSMAN_6
+    stats:
+      strength: 6
+      firing: 6
+  - name: STR_MEDAL_LMG_MARKSMAN_7
+    stats:
+      strength: 7
+      firing: 7
+  - name: STR_MEDAL_LMG_MARKSMAN_8
+    stats:
+      strength: 8
+      firing: 8
+  - name: STR_MEDAL_LMG_MARKSMAN_9
+    stats:
+      strength: 9
+      firing: 9
+  - name: STR_MEDAL_LMG_MARKSMAN_10
+    stats:
+      strength: 10
+      firing: 10
+
+######################
+#SMG Marksman Medal
+#Granted by using SMGs
+
+  - name: STR_MEDAL_SMG_MARKSMAN_1
+    stats:
+      health: 1
+      tu: 1
+  - name: STR_MEDAL_SMG_MARKSMAN_2
+    stats:
+      health: 2
+      tu: 2
+  - name: STR_MEDAL_SMG_MARKSMAN_3
+    stats:
+      health: 3
+      tu: 3
+  - name: STR_MEDAL_SMG_MARKSMAN_4
+    stats:
+      health: 4
+      tu: 4
+  - name: STR_MEDAL_SMG_MARKSMAN_5
+    stats:
+      health: 5
+      tu: 5
+  - name: STR_MEDAL_SMG_MARKSMAN_6
+    stats:
+      health: 6
+      tu: 6
+  - name: STR_MEDAL_SMG_MARKSMAN_7
+    stats:
+      health: 7
+      tu: 7
+  - name: STR_MEDAL_SMG_MARKSMAN_8
+    stats:
+      health: 8
+      tu: 8
+  - name: STR_MEDAL_SMG_MARKSMAN_9
+    stats:
+      health: 9
+      tu: 9
+  - name: STR_MEDAL_SMG_MARKSMAN_10
+    stats:
+      health: 10
+      tu: 10
+
+################################
+#Artillery Specialist Medal
+#Granted by using Artillery
+
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_1
+    stats:
+      strength: 1
+      stamina: 1
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_2
+    stats:
+      strength: 2
+      stamina: 1
+      firing: 1
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_3
+    stats:
+      strength: 3
+      stamina: 2
+      firing: 1
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_4
+    stats:
+      strength: 4
+      stamina: 2
+      firing: 2
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_5
+    stats:
+      strength: 5
+      stamina: 3
+      firing: 2
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_6
+    stats:
+      strength: 6
+      stamina: 3
+      firing: 3
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_7
+    stats:
+      strength: 7
+      stamina: 4
+      firing: 3
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_8
+    stats:
+      strength: 8
+      stamina: 4
+      firing: 4
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_9
+    stats:
+      strength: 9
+      stamina: 5
+      firing: 4
+  - name: STR_MEDAL_ARTILLERY_SPECIALIST_10
+    stats:
+      strength: 10
+      stamina: 5
+      firing: 5
+
+######################
+#Sniper Marksman Medal
+#Granted by using Sniper
+
+  - name: STR_MEDAL_SNIPER_MARKSMAN_1
+    stats:
+      firing: 1
+      reactions: 1
+  - name: STR_MEDAL_SNIPER_MARKSMAN_2
+    stats:
+      firing: 2
+      reactions: 2
+  - name: STR_MEDAL_SNIPER_MARKSMAN_3
+    stats:
+      firing: 3
+      reactions: 3
+  - name: STR_MEDAL_SNIPER_MARKSMAN_4
+    stats:
+      firing: 4
+      reactions: 4
+  - name: STR_MEDAL_SNIPER_MARKSMAN_5
+    stats:
+      firing: 5
+      reactions: 5
+  - name: STR_MEDAL_SNIPER_MARKSMAN_6
+    stats:
+      firing: 6
+      reactions: 6
+  - name: STR_MEDAL_SNIPER_MARKSMAN_7
+    stats:
+      firing: 7
+      reactions: 7
+  - name: STR_MEDAL_SNIPER_MARKSMAN_8
+    stats:
+      firing: 8
+      reactions: 8
+  - name: STR_MEDAL_SNIPER_MARKSMAN_9
+    stats:
+      firing: 9
+      reactions: 9
+  - name: STR_MEDAL_SNIPER_MARKSMAN_10
+    stats:
+      firing: 10
+      reactions: 10
+
+######################
+#Shotgun Specialist Medal
+#Granted by using Shotguns
+
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_1
+    stats:
+      tu: 1
+      firing: 1
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_2
+    stats:
+      tu: 2
+      firing: 1
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_3
+    stats:
+      tu: 3
+      firing: 2
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_4
+    stats:
+      tu: 4
+      firing: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_5
+    stats:
+      tu: 5
+      firing: 3
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_6
+    stats:
+      tu: 6
+      firing: 3
+      reactions: 3
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_7
+    stats:
+      tu: 7
+      firing: 4
+      reactions: 3
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_8
+    stats:
+      tu: 8
+      firing: 4
+      reactions: 4
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_9
+    stats:
+      tu: 9
+      firing: 5
+      reactions: 4
+  - name: STR_MEDAL_SHOTGUN_SPECIALIST_10
+    stats:
+      tu: 10
+      firing: 5
+      reactions: 5
+
+######################
+#Grenadier Specialist Medal
+#Granted by using Grenades and Explosives
+
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_1
+    stats:
+      strength: 1
+      throwing: 1
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_2
+    stats:
+      strength: 2
+      throwing: 2
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_3
+    stats:
+      strength: 3
+      throwing: 3
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_4
+    stats:
+      strength: 4
+      throwing: 4
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_5
+    stats:
+      strength: 5
+      throwing: 5
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_6
+    stats:
+      strength: 6
+      throwing: 6
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_7
+    stats:
+      strength: 7
+      throwing: 7
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_8
+    stats:
+      strength: 8
+      throwing: 8
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_9
+    stats:
+      strength: 9
+      throwing: 9
+  - name: STR_MEDAL_GRENADIER_SPECIALIST_10
+    stats:
+      strength: 10
+      throwing: 10
+
+######################
+#Raider Specialist Medal
+#Granted by using Melee and Stun
+
+  - name: STR_MEDAL_RAIDER_SPECIALIST_1
+    stats:
+      tu: 1
+      strength: 2
+      melee: 1
+      health: 1
+  - name: STR_MEDAL_RAIDER_SPECIALIST_2
+    stats:
+      tu: 1
+      strength: 2
+      melee: 1
+      health: 1
+  - name: STR_MEDAL_RAIDER_SPECIALIST_3
+    stats:
+      tu: 2
+      strength: 2
+      melee: 1
+      health: 1
+  - name: STR_MEDAL_RAIDER_SPECIALIST_4
+    stats:
+      tu: 2
+      strength: 2
+      melee: 2
+      health: 2
+  - name: STR_MEDAL_RAIDER_SPECIALIST_5
+    stats:
+      tu: 3
+      strength: 3
+      melee: 2
+      health: 2
+  - name: STR_MEDAL_RAIDER_SPECIALIST_6
+    stats:
+      tu: 3
+      strength: 3
+      melee: 3
+      health: 3
+  - name: STR_MEDAL_RAIDER_SPECIALIST_7
+    stats:
+      tu: 4
+      strength: 4
+      melee: 3
+      health: 3
+  - name: STR_MEDAL_RAIDER_SPECIALIST_8
+    stats:
+      tu: 4
+      strength: 4
+      melee: 4
+      health: 4
+  - name: STR_MEDAL_RAIDER_SPECIALIST_9
+    stats:
+      tu: 5
+      strength: 5
+      melee: 4
+      health: 4
+  - name: STR_MEDAL_RAIDER_SPECIALIST_10
+    stats:
+      tu: 5
+      strength: 5
+      melee: 5
+      health: 5
+
+######################
+#Enemy Capture Specialist Medal
+#Granted by capturing enemies
+
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_1
+    stats:
+      psiSkill: 1
+      reactions: 1
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_2
+    stats:
+      psiSkill: 2
+      reactions: 2
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_3
+    stats:
+      psiSkill: 3
+      reactions: 3
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_4
+    stats:
+      psiSkill: 4
+      reactions: 4
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_5
+    stats:
+      psiSkill: 5
+      reactions: 5
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_6
+    stats:
+      psiSkill: 6
+      reactions: 6
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_7
+    stats:
+      psiSkill: 7
+      reactions: 7
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_8
+    stats:
+      psiSkill: 8
+      reactions: 8
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_9
+    stats:
+      psiSkill: 9
+      reactions: 9
+  - name: STR_MEDAL_CAPTURE_SPECIALIST_10
+    stats:
+      psiSkill: 10
+      reactions: 10

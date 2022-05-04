@@ -24,6 +24,23 @@ mapScripts:
     - type: fillArea
       blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
       maxUses: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  - type: FARM_RED
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: addLine
+      #label: 2
+      #conditionals: -1
+      executionChances: 65
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: fillArea
+      groups: [0, 1, 5, 6, 7]
+      freqs: [2, 2, 2, 3, 4]
   - type: DESERT
     commands:
     - type: addUFO
@@ -245,6 +262,68 @@ mapScripts:
             entry: 63
 #END ALIEN UBASE
 
+#BEGIN OUTPOST UBASE
+
+  - type: ALIEN_OUTPOST # forest, mountain
+    commands:
+    - type: addCraft
+      executions: 1
+      groups: 1
+    - type: addBlock #Add Command Center
+      size: 2
+      groups: 3
+    - type: addUFO
+      UFOName: STR_EXCAVATOR
+      executions: 1
+      groups: 1
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+      groups: [0, 1, 5]
+      freqs: [3, 3, 2]
+
+#END OUTPOST UBASE
+
+#BEGIN BASE SURFACE UBASE
+
+  - type: ALIEN_BASE_SURFACE #
+    commands:
+    - type: addCraft
+      executions: 1
+      groups: 1
+    - type: addUFO
+      UFOName: ALIEN_BASE_ENTRY
+      executions: 1
+      groups: 1
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: fillArea
+      groups: [0, 1, 5]
+      freqs: [2, 5, 1]
+
+#END BASE SURFACE UBASE
+
+#BEGIN FORT SURFACE UBASE
+
+  - type: ALIEN_FORT_SURFACE #
+    commands:
+    - type: addCraft
+      executions: 1
+      groups: 1
+    - type: addUFO
+      UFOName: ALIEN_FORT_ENTRY
+      executions: 1
+      groups: 1
+    #- type: addBlock
+    #  size: 1
+    #  executions: 1
+    - type: fillArea
+      groups: [0, 1, 5]
+      freqs: [1, 5, 1]
+
+#END FORT SURFACE UBASE
 
   - type: REFINERYS  # Thanks to BulletDesigner
     commands:
@@ -555,3 +634,13 @@ mapScripts:
       executions: 4
     - type: fillArea
 
+  - type: NOOBERIA
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addCraft
+    - type: addBlock
+      groups: 6
+      executions: 3
+    - type: fillArea

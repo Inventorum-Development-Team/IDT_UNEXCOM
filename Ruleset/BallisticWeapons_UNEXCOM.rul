@@ -138,6 +138,11 @@ items:
     shotgunBehavior: 1
     shotgunPellets: 4
     shotgunSpread: 75
+    damageAlter:
+      RandomType: 6
+      ToMorale: 0.5
+      FireThreshold: 1
+      SmokeThreshold: 1000
     battleType: 2
     armor: 250
     listOrder: 201690
@@ -726,14 +731,11 @@ items:
     clipSize: 8
     invHeight: 1
     invWidth: 1
-    shotgunBehavior: 1
-    shotgunPellets: 4
-    shotgunSpread: 75
     battleType: 2
     armor: 250
     listOrder: 200300
   - type: STR_12GAUGE_ELERIUM_SHARDS_X8
-    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_FUSION ]
     size: 0.1
     requires:
       - STR_ELERIUM_FUSION
@@ -742,7 +744,7 @@ items:
     bigSprite: 122
     floorSprite: 122
     power: 65
-    damageType: 5
+    damageType: 10
     damageAlter:
       RandomType: 7
       IgnoreOverKill: false
@@ -915,6 +917,36 @@ items:
     shotgunSpread: 25
     listOrder: 201080
 
+  - type: STR_M202_FLASH_RACK
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.2
+    costBuy: 1600
+    costSell: 1200
+    weight: 8
+    bigSprite: 1080
+    floorSprite: 1080
+    handSprite: 1080
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToMorale: 0.3
+      ToWound: 0.3
+      ToTile: 0.8
+      FixRadius: 5
+    damageType: 2
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 2037
+
   - type: STR_CARL_GUSTAF_M2_HE_ROUND
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
@@ -965,7 +997,7 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
-    damageType: 1
+    damageType: 5
     clipSize: 1
     blastRadius: 1
     battleType: 2
@@ -974,7 +1006,7 @@ items:
     attraction: 9
     listOrder: 201650
   - type: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
-    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION ]
     requires:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_ELERIUM_FUSION
@@ -993,7 +1025,7 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 0.66
-    damageType: 2
+    damageType: 10
     clipSize: 1
     blastRadius: 1
     battleType: 2
@@ -1072,7 +1104,8 @@ items:
         STR_FIREARMS,
         STR_ARTILLERY,
         STR_SOVIET_TECH,
-        STR_CLIPS
+        STR_CLIPS,
+        STR_FUSION
       ]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -1095,7 +1128,7 @@ items:
       ArmorEffectiveness: 0.9
       ToArmorPre: 0.3
       RadiusReduction: 40
-    damageType: 3
+    damageType: 10
     clipSize: 1
     blastRadius: 1
     battleType: 2
@@ -1358,7 +1391,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_US_TECH,
-        STR_SHOTGUNS
+        STR_SHOTGUNS,
+        STR_FUSION
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
@@ -1485,6 +1519,46 @@ items:
     blastRadius: 2
     hitSound: 143
     listOrder: 2035
+  - type: STR_M202_FLASH
+    categories:
+      [
+        STR_BALLISTIC,
+        STR_FIREARMS,
+        STR_US_TECH,
+        STR_ARTILLERY
+      ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.4
+    costBuy: 25000
+    costSell: 30000
+    weight: 6
+    bigSprite: 1072
+    floorSprite: 1072
+    handSprite: 1072
+    bulletSprite: 0
+    fireSound: 152
+    compatibleAmmo:
+      - STR_M202_FLASH_RACK
+    accuracyAuto: 50
+    accuracyAimed: 85
+    tuAuto: 35
+    tuAimed: 50
+    autoShots: 4
+    autoRange: 22
+    aimRange: 30
+    minRange: 7
+    dropoff: 3
+    tuLoad: 30
+    battleType: 1
+    arcingShot: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    kneelBonus: 150
+    listOrder: 2036
 
   - type: STR_M60
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_LMGS ]
@@ -1894,7 +1968,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_NATO_TECH,
-        STR_ARTILLERY
+        STR_ARTILLERY,
+        STR_FUSION
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
@@ -1917,8 +1992,8 @@ items:
     tuAimed: 70
     tuLoad: 20
     battleType: 1
-    twoHanded: false
-    blockBothHands: false
+    twoHanded: true
+    blockBothHands: true
     invWidth: 2
     invHeight: 3
     attraction: 8
@@ -2160,7 +2235,7 @@ items:
     snapRange: 12
     kneelBonus: 105
     battleType: 1
-    twoHanded: true
+    #twoHanded: true
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -2275,7 +2350,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_SOVIET_TECH,
-        STR_ARTILLERY
+        STR_ARTILLERY,
+        STR_FUSION
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2587,6 +2663,48 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2104
+
+  - type: STR_SHOVEL
+    requiresBuy:
+      - STR_SHOVEL
+    categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
+    size: 0.2
+    costBuy: 1200
+    costSell: 800
+    weight: 8
+    bigSprite: 1096
+    floorSprite: 1096
+    handSprite: 1096
+    meleeHitSound: 165
+    power: 55
+    damageType: 7
+    damageBonus:
+      strength: 0.8
+      melee: 0.4
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToTile: 1.2
+      ToArmorPre: 0.7
+      ToWound: 0.4
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 12
+      energy: 4
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2105
+
   ###############################################
   ############### POLICE WEAPONS #################
   #############################################
@@ -2698,7 +2816,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_CIVILIAN_TECH,
-        STR_SHOTGUNS
+        STR_SHOTGUNS,
+        STR_FUSION
       ]
     size: 0.2
     costBuy: 1500
@@ -2899,7 +3018,7 @@ items:
       ToWound: 0.3
       ToArmor: 0.7
       RandomWound: false
-    clipSize: 30
+    clipSize: 15
     costThrow:
       energy: 6
     battleType: 2
@@ -3206,24 +3325,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 30
-    # Bayonet segment
-    meleeHitSound: 178
-    meleeAnimation: 0
-    meleeType: 7
-    meleePower: 70
-    meleeBonus:
-      strength: 0.3
-      melee: 0.5
-    accuracyMelee: 110
-    meleeMultiplier:
-      flatHundred: 0.5
-      melee: 0.5
-    costMelee:
-      time: 25
-      energy: 8
-    flatMelee:
-      time: true
-    # Bayonet segment end
+
     attraction: 7
     listOrder: 201200
 
@@ -3331,7 +3433,8 @@ items:
         STR_BALLISTIC,
         STR_FIREARMS,
         STR_SOVIET_TECH,
-        STR_SHOTGUNS
+        STR_SHOTGUNS,
+        STR_FUSION
       ]
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
@@ -3441,6 +3544,37 @@ items:
     recoveryPoints: 10
     listOrder: 2128
 
+  - type: STR_BREAD
+    categories: [ STR_LIGHT_EQUIPMENT ]
+    size: 0.1
+    costBuy: 50
+    costSell: 120
+    weight: 1
+    bigSprite: 1088
+    floorSprite: 1088
+    #handSprite: 820
+    hitSound: 207
+    battleType: 6
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    painKiller: 1
+    costUse:
+      time: 10
+      energy: -10
+      morale: -15
+      health: -5
+    costThrow:
+      energy: 4
+      time: 10
+    flatThrow:
+      time: true
+    invWidth: 2
+    invHeight: 1
+    experienceTrainingMode: 21
+    recoveryPoints: 10
+    listOrder: 2129
+
   - type: STR_CIGARETTES
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.1
@@ -3469,7 +3603,7 @@ items:
     invHeight: 1
     experienceTrainingMode: 21
     recoveryPoints: 10
-    listOrder: 2129
+    listOrder: 2135
 
   - type: STR_FLASK
     categories: [ STR_LIGHT_EQUIPMENT ]
@@ -3498,7 +3632,7 @@ items:
     invHeight: 1
     experienceTrainingMode: 21
     recoveryPoints: 10
-    listOrder: 2130
+    listOrder: 2136
   ########################################
   - type: STR_MEDI_KIT
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3522,7 +3656,7 @@ items:
     tuUse: 10
     flatRate: true
     medikitActionName: STR_ACTIVATE_MEDIKIT
-    listOrder: 2131
+    listOrder: 2137
 
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
@@ -3551,7 +3685,7 @@ items:
     attraction: 5
     experienceTrainingMode: 19
     medikitActionName: STR_DEPLOY_MEDICAL_BAG
-    listOrder: 2132
+    listOrder: 2138
 
   - type: STR_FIELD_DRESSING
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3577,7 +3711,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_USE_FIELD_DRESSING
-    listOrder: 2133
+    listOrder: 2139
 
   - type: STR_MEDICAL_POUCH
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3602,7 +3736,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_USE_MEDICAL_POUCH
-    listOrder: 2134
+    listOrder: 2140
 
   - type: STR_DUCT_TAPE
     requiresBuy:
@@ -3629,7 +3763,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
-    listOrder: 2135
+    listOrder: 2141
 
   - type: STR_DUCT_GUN
     requiresBuy:
@@ -3657,7 +3791,7 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
-    listOrder: 2135
+    listOrder: 2142
 
   - type: STR_BIO_FOAM
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
@@ -3684,9 +3818,10 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_APPLY_FOAM
-    listOrder: 2135
+    listOrder: 2143
 
   - type: STR_ELECTRO_FLARE
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     bigSprite: 888
     handSprite: 888
     floorSprite: 888
@@ -3694,6 +3829,31 @@ items:
     battleType: 10
     primeActionName: STR_PRIME_FLARE
     fuseType: -2
+
+  - type: STR_PSI_AMP
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+
+  - type: STR_STUN_ROD
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.1
+    costBuy: 1260
+    costSell: 945
+    weight: 6
+    bigSprite: 26
+    floorSprite: 26
+    handSprite: 80
+    meleeSound: 54
+    power: 65
+    damageType: 6
+    accuracyMelee: 100
+    tuMelee: 30
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    clipSize: -1
+    listOrder: 2121
 
   ####################################
   ###### WEAPON CUSTOMIZATION #######
@@ -4834,9 +4994,6 @@ items:
     attraction: 6
 
 extraSprites:
-  #########################################
-  ######### TIER I WEAPONS USA ############
-  #########################################
   - type: BIGOBS.PCK
     files:
       97: Resources/BallisticWeapons/Ammo/BigKS23Sharpnel25Ammo_x4.png
@@ -4971,6 +5128,10 @@ extraSprites:
       1048: Resources/BallisticWeapons/UN/BigStoner63AutomaticRifle.png
       1056: Resources/BallisticWeapons/UN/BigStoner63Commando.png
       1064: Resources/BallisticWeapons/UN/BigStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/BigM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/BigM202FlashAmmo.png
+      1088: Resources/BallisticWeapons/Medical&Food/BigBread.png
+      1096: Resources/BallisticWeapons/Civilian/Bigob_Shovel.png
 
   - type: FLOOROB.PCK
     files:
@@ -5105,6 +5266,10 @@ extraSprites:
       1048: Resources/BallisticWeapons/UN/FloorStoner63AutomaticRifle.png
       1056: Resources/BallisticWeapons/UN/FloorStoner63Commando.png
       1064: Resources/BallisticWeapons/UN/FloorStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/FloorM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/FloorM202FlashAmmo.png
+      1088: Resources/BallisticWeapons/Medical&Food/FloorBread.png
+      1096: Resources/BallisticWeapons/Civilian/Floorob_Shovel.png
 
   - type: HANDOB.PCK
     width: 256
@@ -5234,6 +5399,9 @@ extraSprites:
       1048: Resources/BallisticWeapons/UN/HandStoner63AutomaticRifle.png
       1056: Resources/BallisticWeapons/UN/HandStoner63Commando.png
       1064: Resources/BallisticWeapons/UN/HandStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/HandM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/HandM202FlashAmmo.png
+      1096: Resources/BallisticWeapons/Civilian/Handob_Shovel.png
 
   - type: SMOKE.PCK
     height: 80
@@ -5566,338 +5734,3 @@ manufacture:
     producedItems:
       STR_M16_M203: 1
     listOrder: 1101
-
-extraStrings:
-  - type: en-US
-    strings:
-      ###################
-      ##### AMMO ########
-      ###################
-      STR_AMMUNITION: AMMUNITION
-      STR_9MM_PISTOL_X10: "9mm Pistol Rounds (x10)"
-
-      STR_9MM_PISTOL_X20: "9mm Pistol Rounds (x20)"
-
-      STR_9MM_PISTOL_X30: "9mm Pistol Rounds (x30)"
-
-      STR_45_PISTOL_X7: ".45 ACP Pistol Rounds (x7)"
-
-      STR_45_PISTOL_X30: ".45 ACP Pistol Rounds (x30)"
-
-      STR_5_56MM_NATO_RIFLE_X20: "5.56mm NATO Rifle Rounds (x20)"
-
-      STR_5_56MM_NATO_RIFLE_X30: "5.56mm NATO Rifle Rounds (x30)"
-
-      STR_7_62MM_NATO_RIFLE_X5: "7.62mm NATO Rifle Rounds (x5)"
-
-      STR_7_62MM_NATO_RIFLE_X20: "7.62mm NATO Rifle Rounds (x20)"
-
-      STR_7_62MM_NATO_RIFLE_X30: "7.62mm NATO Rifle Rounds (x30)"
-
-      STR_7_62MM_NATO_LMG_X50: "7.62mm NATO LMG Rounds (x50)"
-
-      STR_7_62MM_NATO_LMG_X100: "7.62mm NATO LMG Rounds (x100)"
-
-      STR_7_62MM_SOVIET_RIFLE_X10: "7.62mm Soviet Rifle Rounds (x10)"
-
-      STR_7_62MM_SOVIET_RIFLE_X30: "7.62mm Soviet Rifle Rounds (x30)"
-
-      STR_7_62MM_SOVIET_RIFLE_X40: "7.62mm Soviet Rifle Rounds (x40)"
-
-      STR_7_62MM_SOVIET_RIFLE_X75: "7.62mm Soviet Rifle Rounds (x75)"
-
-      STR_7_62MM_SOVIET_SNIPER_X10: "7.62mmR Soviet Sniper Rounds (x10)"
-
-      STR_12GAUGE_BUCKSHOT_X2: "12-Gauge Buckshot Shells (x2)"
-
-      STR_12GAUGE_SLUG_X2: "12-Gauge Slug (x2)"
-
-      STR_12GAUGE_BUCKSHOT_X8: "12-Gauge Buckshot (x8)"
-
-      STR_12GAUGE_SLUG_X8: "12-Gauge Slug (x8)"
-
-      STR_12GAUGE_NON_LETHAL_X8: "12-Gauge Non-Lethal Shells (x8)"
-
-      STR_12GAUGE_ELERIUM_SHARDS_X8: "12-Gauge Elerium Shards (x8)"
-
-
-      STR_40MM_FRAG: "40mm Frag Grenade (x1)"
-      STR_40MM_INCENDIARY: "40mm INC Grenade (x1)"
-      STR_40MM_SMOKE: "40mm Smoke Grenade (x1)"
-      STR_40MM_NON_LETHAL: "40mm Non-Lethal Grenade (x1)"
-      STR_CARL_GUSTAF_M2_HE_ROUND: "CG M2 HE Round"
-      STR_CARL_GUSTAF_M2_HEAT_ROUND: "CG M2 HEAT Round"
-      STR_CARL_GUSTAF_M2_ELERIUM_ROUND: "CG M2 E113 Round"
-      STR_RPG_HE_ROCKET: "RPG-7 HE Rocket"
-      STR_RPG_INC_ROCKET: "RPG-7 INC Rocket"
-      STR_RPG_EWH_ROCKET: "RPG-7 Elerium WH Rocket"
-      STR_38_REVOLVER_AMMO_X6: ".38 Revolver Rounds (x6)"
-      STR_22_LONG_RIFLE_X14: ".22 Long Rifle Rounds (x14)"
-      STR_AR5_CLIP: ".22 Hornet AR5 Clip (x10)"
-      STR_FAL_SHOTGUN_SHELLS: "12-Gauge FAL Shotgun Shells (x5)"
-      STR_KS23_SHRAPNEL-25_X4: "23mm KS23 Shrapnel-25 Shells (x4)"
-
-      STR_KS23_BARRIKADE_X4: "23mm KS23 Barrikade Slug (x4)"
-
-      STR_KS23_SATANA_X4: "23mm KS23 Satana Shells (x4)"
-
-      STR_30_CARBINE_X15: ".30 Carbine (x15)"
-
-      STR_50_CAL_REVOLVER_AMMO_X6: ".50 Cal Revolver Speedloader (x6)"
-
-      ########################
-      ###### FIRE MODES ######
-      ########################
-      STR_SHOT_TYPE_AUTO: "Auto (x{0})"
-      STR_SHOT_TYPE_SNAP: "Snap (x{0})"
-      STR_SHOT_TYPE_AIMED: "Aimed (x{0})"
-      #
-      STR_RAPID_FIRE: "Rapid Fire"
-      STR_RAPID_FIRE_SHORT: "Rapid (x{0})"
-      STR_BURST: "Burst"
-      STR_BURST_SHORT: "Burst (x{0})"
-      STR_CONTROL_AUTO: "Controlled Auto"
-      STR_CONTROL_AUTO_SHORT: "Control (x{0})"
-      STR_DOUBLE_TAP: "Double Tap"
-      STR_DOUBLE_TAP_SHORT: "Double (x{0})"
-      STR_FULL_AUTO: "Full Auto"
-      STR_FULL_AUTO_SHORT: "Full Auto (x{0})"
-      STR_HEADSHOT: "Headshot!"
-      STR_HEADSHOT_SHORT: "Headshot (x{0})"
-      STR_RAGE_FIRE: "Rage Fire!"
-      STR_RAGE_FIRE_SHORT: "Rage Fire (x{0})"
-      STR_SUPPRESSION: "Suppression"
-      STR_SUPPRESSION_SHORT: "Suppress (x{0})"
-      STR_FIRE_M203: "Fire M203"
-      STR_FIRE_M203_SHORT: "M203 (x{0})"
-      STR_FIRE_SHOTGUN: "Fire Shotgun"
-      STR_FIRE_SHOTGUN_SHORT: "Shotgun (x{0})"
-      STR_PRAY_N_SPRAY: "Spray n' Pray"
-      STR_PRAY_N_SPRAY_SHORT: "Spray (x{0})"
-      #
-      STR_UNPRIME_GRENADE: "Unprime Grenade"
-      ###########################
-      ####### US WEAPONS ########
-      ###########################
-      STR_M1911_COLT45: "M1911 Colt .45"
-
-      STR_M16_M203: "M16 M203"
-
-      STR_XM117: "XM117 Carbine"
-
-      STR_M3_GREASEGUN: "M3 Greasegun"
-
-      STR_XM21: "XM21 SWS"
-
-      STR_REMINGTON_COMBAT_SHOTGUN: "Remington Combat Shotgun"
-
-      STR_M79_THUMPER_GL: "M79 Grenade Launcher"
-
-      STR_M72_LAW: "M72 LAW"
-
-      STR_M60: "M60 LMG"
-
-      STR_AR5: "AR-5 Survival Rifle"
-
-      #############################
-      ####### NATO WEAPONS ########
-      #############################
-      STR_BERETTA_92FS: "Browning HP"
-
-      STR_FN_FAL_SHOTGUN: "FN FAL-UBS"
-
-      STR_SG510_CARBINE: "SIG SG510-4 Carbine"
-
-      STR_MP5: "H&K MP5"
-
-      STR_PSG1: "H&K PSG-1"
-
-      STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoilless Rifle"
-
-      STR_FN_MAG: "FN MAG LMG"
-
-      #############################
-      ####### USSR WEAPONS ########
-      #############################
-      STR_STECHKIN_APS: "Stechkin APS"
-
-      STR_AKM_BAYONETED: "AKM Bayoneted"
-
-      STR_AKMSU: "AKMSU Carbine"
-
-      STR_SKORPION: "Skorpion vz. 68"
-
-      STR_DRAGUNOV: "Dragunov SVD"
-
-      STR_KS23_SHOTGUN: "KS-23 Heavy Shotgun"
-
-      STR_RPG: "RPG-7"
-
-      STR_RPKS: "RPKS LMG"
-
-      ###############################
-      ##### CIVILIAN WEAPONS ########
-      ###############################
-      STR_MAKAROV: "Makarov"
-
-      STR_SNUBNOSE_PISTOL: "Snubnose Revolver"
-
-      STR_HUNTING_RIFLE: "Hunting Rifle"
-
-      STR_DOUBLE_BARRELED_SHOTGUN: "Double Barreled Shotgun"
-
-      STR_MACHETE: "Machete"
-
-      #############################
-      ##### POLICE WEAPONS ########
-      #############################
-      STR_POLICE_REVOLVER: "Police Revolver"
-
-      STR_POLICE_SNIPER_RIFLE: "Police Sniper Rifle"
-
-      STR_BERETTA_M12: "Beretta M12 SMG"
-
-      STR_POLICE_SHOTGUN: "Police Winchester Shotgun"
-
-      STR_POLICE_TONFA: "Tonfa"
-
-      STR_M1_CARBINE: "M1 Carbine"
-
-      ####################################
-      ###### ALLIED ARMIES WEAPONS #######
-      ####################################
-      STR_M16A1: "M16A1"
-
-      STR_FN_FAL: "FN FAL"
-
-      STR_BREN: "Bren LMG"
-
-      STR_OWEN_SMG: "Owen SMG"
-
-      STR_AKM: "AKM"
-
-      STR_PPS_43: "PPS-43 SMG"
-
-      STR_SKS: "SKS"
-
-      #############################################
-      ####### SPECIAL FORCES & MERC WEAPONS #######
-      #############################################
-      STR_WEAPON_CONVERSION: WEAPON CONVERSION
-      STR_WEAPON_TOOLKIT: "Weapon Toolkit"
-
-      STR_COLT_SCOPE_ACCESSORY: Colt Scope Accessory
-
-      STR_M203_ACCESSORY: M203 Accessory
-
-      STR_M79_THUMPER_CONVERSION: "Sawed-off M79 Conversion"
-      STR_DOUBLE_BARRELED_SHOTGUN_CONVERSION: "Sawed-off DB Shotgun Conversion"
-      STR_XM117_SCOPED_CONVERSION: "XM117 Scoped Conversion"
-      STR_XM117_SHOTGUN_CONVERSION: "XM117 Shotgun Conversion"
-      STR_XM117_M203_CONVERSION: "XM117 M203 Conversion"
-      STR_FN_FSC_CONVERSION: "FN FSC Conversion"
-      STR_FN_FSC_BAYONET_CONVERSION: "FN FSC Bayonet Conversion"
-      STR_FN_FSC_SCOPED_CONVERSION: "FN FSC Scoped Conversion"
-      STR_M16A1_SCOPED_CONVERSION: "M16A1 Scoped Conversion"
-      STR_M16A1_SHOTGUN_CONVERSION: "M16A1 Shotgun Conversion"
-      STR_M16A1_M203_CONVERSION: "M16 M203 Conversion"
-      STR_ENFORCER_CONVERSION: "Enforcer Pistol Conversion"
-      STR_5_56MM_NATO_X30_MAG_CREATION: "5.56mm NATO 30-rds mag creation"
-      ####################################
-      ###### SPECIAL FORCES WEAPONS ######
-      ####################################
-      STR_SAWEDOFF_M79_THUMPER: "Sawed-off M79 Thumper"
-
-      STR_SAWEDOFF_SHOTGUN: "Sawed-off Shotgun"
-
-      STR_COMBAT_KNIFE: "Combat Knife"
-
-      STR_XM117_SCOPED: "XM117 Scoped Carbine"
-
-      STR_XM117_SHOTGUN: "XM117 with Shotgun"
-
-      STR_XM117_M203: "XM117 M203"
-
-      ####################################
-      ######## MERCENARY WEAPONS #########
-      ####################################
-      STR_MAT49: "MAT-49 SMG"
-
-      STR_FN_FSC: "FN FSC"
-
-      STR_FN_FSC_SCOPED: "FN FSC Scoped"
-
-      STR_FN_FSC_BAYONET: "FN FSC Bayoneted"
-
-      STR_M16A1_SCOPED: "M16A1 Scoped"
-
-      STR_M16A1_SHOTGUN: "M16A1 Shotgun"
-
-      STR_ENFORCER: "Enforcer Pistol"
-
-      STR_50_CAL_MAGNUM: "50. Cal Magnum"
-
-      ########################################
-      ###### FACTION PROTOTYPE WEAPONS #######
-      ########################################
-      STR_MG3: MG3 Machine Gun
-      STR_MG3_BELT: MG3 Belt
-
-      STR_ANGRY_WIFE: The Angry Wife
-      STR_ANGRY_WIFE_CLIP: The Angry Wife Clip
-
-      STR_RIOT_SHIELD: IM-21 Krepost Shield
-
-      ########################################
-      ####### FOOD AND MEDICAL ITEMS #########
-      ########################################
-      STR_CANNED_FOOD: "Canned Food"
-
-      STR_CIGARETTES: "Cigarettes"
-
-      STR_FLASK: "Flask"
-
-      STR_MEDI_KIT: "Medikit"
-
-      STR_MEDICAL_BAG: "Medical Bag"
-
-      STR_FIELD_DRESSING: "Field Dressing"
-
-      STR_MEDICAL_POUCH: "Medical Pouch"
-
-      STR_DUCT_TAPE: "Duct Tape"
-      STR_DUCT_GUN: "Tape Gun Dispenser"
-      STR_BIO_FOAM: "Bio-Foam"
-      STR_ACTIVATE_MEDIKIT: "Activate Medikit"
-      STR_DEPLOY_MEDICAL_BAG: "Deploy Medical Bag"
-      STR_USE_FIELD_DRESSING: "Use Field Dressing"
-      STR_USE_MEDICAL_POUCH: "Use Medical Pouch"
-      STR_TAPE_IT: "Tape it up!"
-      STR_APPLY_FOAM: "Fill it with Foam!"
-      ########################################
-      ############ EXPLOSIVES ################
-      ########################################
-      STR_SMOKE_GRENADE: "M18 Smoke Grenade"
-
-      STR_FLASHBANG_GRENADE: "G60 Flashbang Grenade"
-
-      STR_ELECTRO_FLARE: "Flare"
-      STR_PRIME_FLARE: "Light Flare"
-
-      #############################
-      ####### UN WEAPONS ##########
-      #############################
-      STR_STONER_RIFLE: "Stoner Rifle"
-
-      STR_STONER_CARBINE: "Stoner Carbine"
-
-      STR_STONER_AUTOMATIC_RIFLE: "Stoner Automatic Rifle"
-
-      STR_STONER_COMMANDO: "Stoner Commando LMG"
-
-      STR_STONER_SNIPER: "Stoner DMR"
-
-      STR_STONER_CARBINE_CONVERSION: "Stoner Rifle to Carbine Conversion"
-      STR_STONER_AUTOMATIC_RIFLE_CONVERSION: "Stoner Rifle to Auto-Rifle Conversion"
-      STR_STONER_COMMANDO_CONVERSION: "Stoner Rifle to Commando Conversion"
-      STR_STONER_SNIPER_CONVERSION: "Stoner Rifle to DMR Conversion"

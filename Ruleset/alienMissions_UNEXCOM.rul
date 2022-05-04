@@ -120,13 +120,13 @@ alienMissions:
       4:
         STR_CHTONITE: 25
         STR_REPTOID: 20
-      6:
+      8:
         STR_ARMORED_SECTOID: 10
         STR_ARMORED_SNAKEMAN: 20
         STR_ETHEREAL: 40
         STR_ARMORED_FLOATER: 20
         STR_ARMORED_MUTON: 10
-      7:
+      9:
         STR_CHTONITE: 20
         STR_REPTOID: 10
         STR_CEREBREAL: 15
@@ -216,13 +216,10 @@ alienMissions:
         STR_SECTOID: 30
         STR_CHTONITE: 30
         STR_FLOATER: 40
-      10:
+      12:
         STR_ARMORED_SECTOID: 30
         STR_ARMORED_MUTON: 30
         STR_ARMORED_FLOATER: 10
-        STR_CHTONITE: 20
-        STR_CEREBREAL: 10
-      12:
         STR_CHTONITE: 20
         STR_CEREBREAL: 10
     waves:
@@ -259,7 +256,7 @@ alienMissions:
         STR_CHTONITE: 20
         STR_CEREBREAL: 20
         STR_REPTOID: 10
-      10:
+      12:
         STR_ARMORED_SECTOID: 30
         STR_ARMORED_FLOATER: 20
         STR_CEREBREAL: 20
@@ -294,19 +291,19 @@ alienMissions:
         STR_SNAKEMAN: 10
         STR_FLOATER: 5
         STR_REPTOID: 10
-      5:
+      7:
         STR_ARMORED_SECTOID: 40
         STR_ARMORED_SNAKEMAN: 20
         STR_ARMORED_FLOATER: 30
         STR_REPTOID: 10
-      7:
+      9:
         STR_ARMORED_SECTOID: 10
         STR_ARMORED_SNAKEMAN: 10
         STR_ARMORED_ETHEREAL: 40
         STR_ARMORED_MUTON: 20
         STR_ARMORED_FLOATER: 10
         STR_REPTOID: 10
-      9:
+      11:
         STR_ARMORED_SECTOID: 10
         STR_ARMORED_SNAKEMAN: 20
         STR_ARMORED_ETHEREAL: 10
@@ -352,7 +349,7 @@ alienMissions:
         STR_FLOATER: 30
         STR_CHTONITE: 10
         STR_REPTOID: 10
-      7:
+      8:
         STR_SECTOID: 10
         STR_SNAKEMAN: 20
         STR_ETHEREAL: 10
@@ -360,7 +357,7 @@ alienMissions:
         STR_FLOATER: 20
         STR_CHTONITE: 10
         STR_REPTOID: 10
-      9:
+      12:
         STR_ARMORED_SECTOID: 10
         STR_ARMORED_SNAKEMAN: 10
         STR_ARMORED_ETHEREAL: 30
@@ -817,16 +814,3 @@ alienMissions:
         timer: 100
         objective: true
 
-
-
-extraStrings:
-  - type: en-US
-    strings:
-      STR_INVASION_START: "Alien Reconnaissance"
-      STR_HUMAN_RECON2: "Human Recon"
-      STR_ALIEN_INTERCEPTION_1: "Alien Interception"
-      STR_ALIEN_INTERCEPTION_2: "Alien Interception"
-      STR_AIR_SUPERIORITY_1: "Alien Air Superiority"
-      STR_AIR_SUPERIORITY_2: "Alien Air Superiority"
-      STR_AIR_SUPERIORITY_3: "Alien Air Superiority"
-      STR_COUNTER_ATTACK: "Alien Retaliation"

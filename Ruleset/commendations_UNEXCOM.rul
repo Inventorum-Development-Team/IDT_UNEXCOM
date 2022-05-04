@@ -1,0 +1,729 @@
+# Ruleset for diary and commendations mod
+# When stats reach the criteria threshold, the commendation is awarded
+# Any vector greater than 10 will require more strings and more sprites decorations.
+# Commendations may have multiple criteria.
+# Multiple awards are handled in 10 positions in a vector []
+# There are four levels that represent the following of blank, 3 bronze stars, 3 silver stars, 3 gold stars for total of 10
+# so each position in the vector represents a level => [blank, bs, bs, bs, ss, ss, ss, gs, gs, gs]
+# List of possible criteria:
+#   totalKills
+#   totalMissions
+#   totalWins
+#   totalScore
+#   totalStuns
+#   totalDaysWounded
+#   totalBaseDefenseMissions
+#   totalTerrorMissions
+#   totalNightMissions
+#   totalNightTerrorMissions
+#   totalMonthlyService
+#   totalFellUnconcious
+#   totalShotAt10Times
+#   totalHit5Times
+#   totalFriendlyFired
+#   total_lone_survivor
+#   totalIronMan
+#   totalImportantMissions
+#   totalLongDistanceHits
+#   totalLowAccuracyHits
+#   totalReactionFire
+#   totalTimesWounded
+#   totalDaysWounded
+#   totalValientCrux
+#   isDead
+#   totalTrapKills
+#   totalAlienBaseAssaults
+#   totalAllAliensKilled
+#   totalAllAliensStunned
+#   totalWoundsHealed
+#   totalAllUFOs
+#   totalAllMissionTypes
+#   totalStatGain
+#   totalRevives
+#   totalWholeMedikit
+#   totalBraveryGain
+#   bestOfRank
+#   bestSoldier
+#   isMIA
+#   totalMartyrKills
+#   totalPostMortemKills
+#   globeTrotter
+#   totalSlaveKills
+# The following criteria use a hardcoded noun for the name/description.
+# They are INCOMPATIBLE with eachother. If used together,
+# the commendation will be given out repeatedly.
+#   totalKillsWithAWeapon
+#   totalMissionsInARegion
+#   totalKillsByRace
+#   totalKillsByRank
+# Also Hardcoded is
+#   STR_MEDAL_ORIGINAL8_NAME
+# The following criteria allow more control over the kinds of kills that can be awarded.
+# To use, you must define a killCriteria.
+# The killCriteria can list any race, rank, weapon, ammo,
+# or one of these statuses: STATUS_DEAD and STATUS_UNCONSCIOUS,
+# STATUS_PANICKED for a unit that has been psi-panicked,
+# STATUS_TURNING for a unit that has been mind controlled,
+# or one of these factions: FACTION_HOSTILE, FACTION_NEUTRAL, FACTION_PLAYER.
+# or one of these battle types: BT_FIREARM, BT_AMMO, BT_MELEE, BT_GRENADE, BT_PROXIMITYGRENADE, BT_MEDIKIT, BT_SCANNER, BT_MINDPROBE, BT_PSIAMP, BT_FLARE, BT_CORPSE
+# or one of these damage types: DT_AP, DT_IN, DT_HE, DT_LASER, DT_PLASMA, DT_STUN, DT_MELEE, DT_ACID, DT_SMOKE
+# or one of these sides: SIDE_FRONT, SIDE_LEFT, SIDE_RIGHT, SIDE_REAR, SIDE_UNDER
+# or one of these body parts: BODYPART_HEAD, BODYPART_TORSO, BODYPART_RIGHTARM, BODYPART_LEFTARM, BODYPART_RIGHTLEG, BODYPART_LEFTLEG
+# Use the strings from the ruleset to define them (mods can be used too).
+# For example, look at "STR_MEDAL_IMPORTANT_ALIENS_KNOCKED_OUT". It is awarded if a soldier
+# stuns one hostile commander or stuns one hostile leader.
+#   killsWithCriteriaCareer
+#   killsWithCriteriaMission
+#   killsWithCriteriaTurn
+# It is possible to reduce the amount of awards a commendation gets, but still reaching
+# the triple gold star decoration. To do this, repeat the numbres in the criteria vector.
+# For example, [5, 10, 20, 20, 20, 20, 40, 40, 40, 40] will have one award for 5, will have a
+# second award for 10 (bronze star), will have a third award for 20 (2 silver stars) and
+# will have a fourth award for 40 (3 gold stars).
+commendations:
+#####################
+#Service Medal
+#Granted by joining UNEXCOM, new bonus after 6 months
+  - type: STR_MEDAL_SERVICE
+    description: STR_MEDAL_SERVICE_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_SERVICE_1, STR_MEDAL_SERVICE_2, STR_MEDAL_SERVICE_3, STR_MEDAL_SERVICE_4,STR_MEDAL_SERVICE_5, STR_MEDAL_SERVICE_6]
+    sprite: 1
+    criteria:
+      totalMonthlyService: [1, 6, 6, 12, 12, 18, 18, 24, 30, 36]
+
+##############################
+#Nation Gratitude Commendation
+#Granted by having the globetrotter value, silver
+
+
+  - type: STR_MEDAL_NATION_GRATITUDE
+    description: STR_MEDAL_NATION_GRATITUDE_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_GLOBETROTTER]
+    sprite: 2
+    criteria:
+      globeTrotter: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+#############################
+#Combat Medic Commendation
+##Granted by healing allies, bronze
+
+  - type: STR_MEDAL_COMBAT_MEDIC
+    description: STR_MEDAL_COMBAT_MEDIC_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_COMBAT_MEDIC_1, STR_MEDAL_COMBAT_MEDIC_2, STR_MEDAL_COMBAT_MEDIC_3, STR_MEDAL_COMBAT_MEDIC_4, STR_MEDAL_COMBAT_MEDIC_5, STR_MEDAL_COMBAT_MEDIC_6, STR_MEDAL_COMBAT_MEDIC_7, STR_MEDAL_COMBAT_MEDIC_8, STR_MEDAL_COMBAT_MEDIC_9, STR_MEDAL_COMBAT_MEDIC_10]
+    sprite: 3
+    criteria:
+      totalWoundsHealed: [3, 6, 9, 9, 9, 9, 12, 12, 12, 12]
+############################
+#Purple Heart Medal
+#Granted by being wounded
+
+  - type: STR_MEDAL_PURPLE_HEART #being wounded
+    description: STR_MEDAL_PURPLE_HEART_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_PURPLE_HEART_1, STR_MEDAL_PURPLE_HEART_2, STR_MEDAL_PURPLE_HEART_3, STR_MEDAL_PURPLE_HEART_4, STR_MEDAL_PURPLE_HEART_5, STR_MEDAL_PURPLE_HEART_6, STR_MEDAL_PURPLE_HEART_7, STR_MEDAL_PURPLE_HEART_8, STR_MEDAL_PURPLE_HEART_9, STR_MEDAL_PURPLE_HEART_10]
+    sprite: 4
+    criteria:
+      totalTimesWounded: [1, 2, 4, 7, 10, 15, 20, 30, 40, 50]
+
+#############################
+#Valor Cross
+#Granted by valientCrux
+
+  - type: STR_MEDAL_VALIANT_CRUX
+    description: STR_MEDAL_VALIANT_CRUX_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_VALIANT_CRUX_1, STR_MEDAL_VALIANT_CRUX_2, STR_MEDAL_VALIANT_CRUX_3, STR_MEDAL_VALIANT_CRUX_4, STR_MEDAL_VALIANT_CRUX_5, STR_MEDAL_VALIANT_CRUX_6, STR_MEDAL_VALIANT_CRUX_7, STR_MEDAL_VALIANT_CRUX_8, STR_MEDAL_VALIANT_CRUX_9, STR_MEDAL_VALIANT_CRUX_10]
+    sprite: 5
+    criteria:
+      totalValientCrux: [1, 2, 3, 3, 3, 3, 4, 4, 4, 4]
+####################
+#Field Support Commendation
+#Granted by using reaction fire
+
+  - type: STR_MEDAL_FIELD_SUPPORT
+    description: STR_MEDAL_FIELD_SUPPORT_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_FIELD_SUPPORT_1, STR_MEDAL_FIELD_SUPPORT_2, STR_MEDAL_FIELD_SUPPORT_3, STR_MEDAL_FIELD_SUPPORT_4, STR_MEDAL_FIELD_SUPPORT_5, STR_MEDAL_FIELD_SUPPORT_6, STR_MEDAL_FIELD_SUPPORT_7, STR_MEDAL_FIELD_SUPPORT_8, STR_MEDAL_FIELD_SUPPORT_9, STR_MEDAL_FIELD_SUPPORT_10]
+    sprite: 6
+    criteria:
+      totalReactionFire: [2, 4, 6, 6, 8, 10, 15, 20, 25, 30]
+
+###########################
+#Distinguished Service Medal
+#Granted by capturing an important enemy, gold
+
+  - type: STR_MEDAL_DISTINGUISHED_SERVICE
+    description: STR_MEDAL_DISTINGUISHED_SERVICE_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_DISTINGUISHED_SERVICE_1, STR_MEDAL_DISTINGUISHED_SERVICE_2, STR_MEDAL_DISTINGUISHED_SERVICE_3, STR_MEDAL_DISTINGUISHED_SERVICE_4, STR_MEDAL_DISTINGUISHED_SERVICE_5, STR_MEDAL_DISTINGUISHED_SERVICE_6, STR_MEDAL_DISTINGUISHED_SERVICE_7, STR_MEDAL_DISTINGUISHED_SERVICE_8, STR_MEDAL_DISTINGUISHED_SERVICE_9, STR_MEDAL_DISTINGUISHED_SERVICE_10]
+    sprite: 7
+    criteria:
+      killsWithCriteriaCareer: [1, 1, 2, 2, 2, 2, 3, 4, 5, 6]
+    killCriteria:
+      -
+        - [1, ["STR_LIVE_COMMANDER", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      -
+        - [1, ["STR_LIVE_LEADER", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+##############################
+#Exemplary Service Medal
+#Granted by killing and stunning all the aliens in a single mission, gold
+
+  - type: STR_MEDAL_EXEMPLARY_SERVICE
+    description: STR_MEDAL_EXEMPLARY_SERVICE_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_EXEMPLARY_SERVICE_1, STR_MEDAL_EXEMPLARY_SERVICE_2, STR_MEDAL_EXEMPLARY_SERVICE_3, STR_MEDAL_EXEMPLARY_SERVICE_4, STR_MEDAL_EXEMPLARY_SERVICE_5, STR_MEDAL_EXEMPLARY_SERVICE_6, STR_MEDAL_EXEMPLARY_SERVICE_7, STR_MEDAL_EXEMPLARY_SERVICE_8, STR_MEDAL_EXEMPLARY_SERVICE_9, STR_MEDAL_EXEMPLARY_SERVICE_10]
+    sprite: 8
+    criteria:
+      totalAllAliensKilled: [1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
+
+#########################
+##Fallen Hero Commendation
+#Granted on death
+
+  - type: STR_MEDAL_FALLEN_HERO
+    description: STR_MEDAL_FALLEN_HERO_DESCRIPTION
+    sprite: 9
+    criteria:
+      isDead: [1]
+
+########################
+#Enemy Craft Specialist Commendation
+#Granted by doing missions in all UFOs
+#+Stamina, +TUs
+
+  - type: STR_MEDAL_ENEMY_CRAFT_SPECIALIST
+    description: STR_MEDAL_ENEMY_CRAFT_SPECIALIST_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_ENEMY_CRAFT_SPECIALIST_1]
+    sprite: 10
+    criteria:
+      totalAllUFOs: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+#######################
+#Defender of Earth Medal
+#Granted by defending the base
+
+
+  - type: STR_MEDAL_DEFENDER_OF_EARTH
+    description: STR_MEDAL_DEFENDER_OF_EARTH_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_DEFENDER_OF_EARTH_1, STR_MEDAL_DEFENDER_OF_EARTH_2, STR_MEDAL_DEFENDER_OF_EARTH_3, STR_MEDAL_DEFENDER_OF_EARTH_4, STR_MEDAL_DEFENDER_OF_EARTH_5, STR_MEDAL_DEFENDER_OF_EARTH_6, STR_MEDAL_DEFENDER_OF_EARTH_7, STR_MEDAL_DEFENDER_OF_EARTH_8, STR_MEDAL_DEFENDER_OF_EARTH_9, STR_MEDAL_DEFENDER_OF_EARTH_10]
+    sprite: 11
+    criteria:
+      totalBaseDefenseMissions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+#######################
+#Night Stalker Commendation
+#Granted by conducting night missions
+
+  - type: STR_MEDAL_NIGHT_STALKER  #Night Ops
+    description: STR_MEDAL_NIGHT_STALKER_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_NIGHT_STALKER_1, STR_MEDAL_NIGHT_STALKER_2, STR_MEDAL_NIGHT_STALKER_3, STR_MEDAL_NIGHT_STALKER_4, STR_MEDAL_NIGHT_STALKER_5, STR_MEDAL_NIGHT_STALKER_6, STR_MEDAL_NIGHT_STALKER_7, STR_MEDAL_NIGHT_STALKER_8, STR_MEDAL_NIGHT_STALKER_9, STR_MEDAL_NIGHT_STALKER_10]
+    sprite: 12
+    criteria:
+      totalNightMissions: [2, 4, 6, 8, 10, 15, 20, 25, 30, 40]
+
+#######################
+#Orbital Defender Commendation
+#Granted by conducting space missions
+
+  - type: STR_MEDAL_ORBITAL_DEFENDER # Space missions participation
+    description: STR_MEDAL_ORBITAL_DEFENDER_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_ORBITAL_DEFENDER_1, STR_MEDAL_ORBITAL_DEFENDER_2, STR_MEDAL_ORBITAL_DEFENDER_3, STR_MEDAL_ORBITAL_DEFENDER_4, STR_MEDAL_ORBITAL_DEFENDER_5, STR_MEDAL_ORBITAL_DEFENDER_6, STR_MEDAL_ORBITAL_DEFENDER_7, STR_MEDAL_ORBITAL_DEFENDER_8, STR_MEDAL_ORBITAL_DEFENDER_9, STR_MEDAL_ORBITAL_DEFENDER_10]
+    sprite: 13
+    missionMarkerFilter: ["STR_MOON_ASSAULT_MARKER", "STR_SPACE_STATION"]
+    criteria:
+      totalMissions: [1, 2, 3, 5, 8, 10, 15, 20, 25, 30]
+
+#######################
+#Joint Operations Ribbon
+#Granted by conducting Allied Operations Missions
+
+  - type: STR_MEDAL_JOINT_OPERATIONS
+    description: STR_MEDAL_JOINT_OPERATIONS_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_JOINT_OPERATIONS_1, STR_MEDAL_JOINT_OPERATIONS_2, STR_MEDAL_JOINT_OPERATIONS_3, STR_MEDAL_JOINT_OPERATIONS_4, STR_MEDAL_JOINT_OPERATIONS_5, STR_MEDAL_JOINT_OPERATIONS_6, STR_MEDAL_JOINT_OPERATIONS_7, STR_MEDAL_JOINT_OPERATIONS_8, STR_MEDAL_JOINT_OPERATIONS_9, STR_MEDAL_JOINT_OPERATIONS_10]
+    sprite: 14
+    missionMarkerFilter: ["STR_ALLIED_OPERATION"]
+    criteria:
+      totalMissions: [1, 2, 3, 5, 8, 10, 15, 20, 25, 30]
+
+#####################
+#Subterranean Assault Commendation
+#Granted by doing alien base assaults
+
+  - type: STR_MEDAL_ALIEN_BASE_ASSAULT
+    description: STR_MEDAL_ALIEN_BASE_ASSAULT_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_ALIEN_BASE_ASSAULT_1]
+    sprite: 15
+    missionTypeFilter: ["STR_ALIEN_BASE_ASSAULT", "STR_ALIEN_BASE_ASSAULT_STAGE_2", "STR_ALIEN_BASE_ASSAULT_STAGE_3"]
+    criteria:
+      totalMissions: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+#####################
+#Underground Defense Campaign Ribbon
+#Granted by doing alien base assaults
+
+  - type: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN
+    description: STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_1, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_2, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_3, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_4, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_5, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_6, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_7, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_8, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_9, STR_MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_10]
+    sprite: 16
+    missionTypeFilter: ["STR_ALIEN_BASE_ASSAULT", "STR_ALIEN_BASE_ASSAULT_STAGE_2", "STR_ALIEN_BASE_ASSAULT_STAGE_3"]
+    criteria:
+      totalMissions: [2, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+######################
+#Earth Campaign Ribbon
+#Granted by conducting missions in a Region
+
+  - type: STR_MEDAL_EARTH_CAMPAIGN_RIBBON
+    description: STR_MEDAL_EARTH_CAMPAIGN_RIBBON_DESCRIPTION
+    soldierBonusTypes: [STR_EARTH_CAMPAIGN_RIBBON_1, STR_EARTH_CAMPAIGN_RIBBON_2, STR_EARTH_CAMPAIGN_RIBBON_3, STR_EARTH_CAMPAIGN_RIBBON_4, STR_EARTH_CAMPAIGN_RIBBON_5, STR_EARTH_CAMPAIGN_RIBBON_6, STR_EARTH_CAMPAIGN_RIBBON_7, STR_EARTH_CAMPAIGN_RIBBON_8, STR_EARTH_CAMPAIGN_RIBBON_9, STR_EARTH_CAMPAIGN_RIBBON_10]
+    sprite: 17
+    criteria:
+      totalMissionsInARegion: [5, 10, 15, 20, 25, 30, 40, 50, 60, 70]
+
+########################
+#Counter-Terrorism Campaign Ribbon
+#Granted by participating in C-O missions
+
+  - type: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON # Space missions participation
+    description: STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_1, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_2, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_3, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_4, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_5, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_6, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_7, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_8, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_9, STR_MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_10]
+    sprite: 18
+    missionMarkerFilter: ["STR_COUNTER_TERRORISM_MARKER", "STR_TERRORIST_HQ_MARKER"]
+    criteria:
+      totalMissions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+######################
+#Moon Campaign Ribbon
+#Granted by conducting missions in the Moon
+#sprite: 19
+
+########################
+#Operation False Flag Commendation
+#Granted by participating on the Overseer Mission
+
+  - type: STR_MEDAL_OPERATION_FALSE_FLAG # Overseer trap participation
+    description: STR_MEDAL_OPERATION_FALSE_FLAG_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_OPERATION_FALSE_FLAG_1]
+    sprite: 20
+    missionMarkerFilter: ["STR_OVERSEER_LANDING"]
+    criteria:
+      totalMissions: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+##############################
+#Operation Devastation Commendation
+#Granted by participating on the Moon Mission
+
+  - type: STR_MEDAL_OPERATION_DEVASTATION # Space missions participation
+    description: STR_MEDAL_OPERATION_DEVASTATION_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_OPERATION_DEVASTATION_1]
+    sprite: 21
+    missionMarkerFilter: ["STR_MOON_ASSAULT_MARKER"]
+    criteria:
+      totalMissions: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+#############################
+#Weapon Proficiency Commendation
+#Granted by killing enemies with certain weapons
+#+3 firing accuracy
+
+  - type: STR_MEDAL_WEAPON_PROFICIENCY
+    description: STR_MEDAL_WEAPON_PROFICIENCY_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_WEAPON_PROFICIENCY_1, STR_MEDAL_WEAPON_PROFICIENCY_2, STR_MEDAL_WEAPON_PROFICIENCY_3, STR_MEDAL_WEAPON_PROFICIENCY_4, STR_MEDAL_WEAPON_PROFICIENCY_5, STR_MEDAL_WEAPON_PROFICIENCY_6, STR_MEDAL_WEAPON_PROFICIENCY_7, STR_MEDAL_WEAPON_PROFICIENCY_8, STR_MEDAL_WEAPON_PROFICIENCY_9, STR_MEDAL_WEAPON_PROFICIENCY_10]
+    sprite: 22
+    criteria:
+      totalKillsWithAWeapon: [10, 10, 20, 20, 20, 20, 30, 30, 30, 30]
+
+######################
+#Sharpshooter Medal
+#Granted by shooting far away, bronze
+#+Firing accuracy
+
+  - type: STR_MEDAL_SHARPSHOOTER
+    description: STR_MEDAL_SHARPSHOOTER_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_SHARPSHOOTER_1, STR_MEDAL_SHARPSHOOTER_2, STR_MEDAL_SHARPSHOOTER_3, STR_MEDAL_SHARPSHOOTER_4, STR_MEDAL_SHARPSHOOTER_5, STR_MEDAL_SHARPSHOOTER_6, STR_MEDAL_SHARPSHOOTER_7, STR_MEDAL_SHARPSHOOTER_8, STR_MEDAL_SHARPSHOOTER_9, STR_MEDAL_SHARPSHOOTER_10]
+    sprite: 23
+    criteria:
+      totalLongDistanceHits: [3, 6, 9, 9, 9, 9, 12, 12, 12, 12]
+
+######################
+#Rifle Marksman Medal
+#Granted by using rifles
+
+  - type: STR_MEDAL_RIFLE_MARKSMAN
+    description: STR_MEDAL_RIFLE_MARKSMAN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_RIFLE_MARKSMAN_1, STR_MEDAL_RIFLE_MARKSMAN_2, STR_MEDAL_RIFLE_MARKSMAN_3, STR_MEDAL_RIFLE_MARKSMAN_4, STR_MEDAL_RIFLE_MARKSMAN_5, STR_MEDAL_RIFLE_MARKSMAN_6, STR_MEDAL_RIFLE_MARKSMAN_7, STR_MEDAL_RIFLE_MARKSMAN_8, STR_MEDAL_RIFLE_MARKSMAN_9, STR_MEDAL_RIFLE_MARKSMAN_10]
+    sprite: 24
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_M16_M203", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FAL_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_AKM_BAYONETED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M16A1", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FAL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_AKM", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M16A1_SCOPED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M16A1_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STONER_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_PEACEMAKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_CALBR", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FLA_LASER_BATTLE_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_L4_ASSAULT_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ALK72_LASER_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_KHARITONOV_LASER_BATTLE_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_PLASMA_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_FUSION_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_GYROJET_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+######################
+#Pistol Marksman Medal
+#Granted by using pistols
+
+  - type: STR_MEDAL_PISTOL_MARKSMAN
+    description: STR_MEDAL_PISTOL_MARKSMAN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_PISTOL_MARKSMAN_1, STR_MEDAL_PISTOL_MARKSMAN_2, STR_MEDAL_PISTOL_MARKSMAN_3, STR_MEDAL_PISTOL_MARKSMAN_4, STR_MEDAL_PISTOL_MARKSMAN_5, STR_MEDAL_PISTOL_MARKSMAN_6, STR_MEDAL_PISTOL_MARKSMAN_7, STR_MEDAL_PISTOL_MARKSMAN_8, STR_MEDAL_PISTOL_MARKSMAN_9, STR_MEDAL_PISTOL_MARKSMAN_10]
+    sprite: 25
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_M1911_COLT45", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_BERETTA_92FS", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STECHKIN_APS", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_MAKAROV", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SNUBNOSE_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_POLICE_REVOLVER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ENFORCER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_50_CAL_MAGNUM", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M1972_LASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_38_LASER_MAGNUM", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_P71_LASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_P72_COMPACT_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_PLASMA_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_PLASMA_MAGNUM", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_GYROJET_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+######################
+#Carbine Marksman Medal
+#Granted by using Carbines
+
+  - type: STR_MEDAL_CARBINE_MARKSMAN
+    description: STR_MEDAL_CARBINE_MARKSMAN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_CARBINE_MARKSMAN_1, STR_MEDAL_CARBINE_MARKSMAN_2, STR_MEDAL_CARBINE_MARKSMAN_3, STR_MEDAL_CARBINE_MARKSMAN_4, STR_MEDAL_CARBINE_MARKSMAN_5, STR_MEDAL_CARBINE_MARKSMAN_6, STR_MEDAL_CARBINE_MARKSMAN_7, STR_MEDAL_CARBINE_MARKSMAN_8, STR_MEDAL_CARBINE_MARKSMAN_9, STR_MEDAL_CARBINE_MARKSMAN_10]
+    sprite: 26
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_XM117", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SG510_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_AKMSU", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M1_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_XM117_SCOPED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_XM117_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_XM117_M203", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_MAT49", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FSC", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FSC_SCOPED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FSC_BAYONET", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STONER_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M20_M203_LASER_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_FLA_LASER_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+######################
+#Machine Gun Marksman Medal
+#Granted by using LMGs
+
+  - type: STR_MEDAL_LMG_MARKSMAN
+    description: STR_MEDAL_LMG_MARKSMAN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_LMG_MARKSMAN_1, STR_MEDAL_LMG_MARKSMAN_2, STR_MEDAL_LMG_MARKSMAN_3, STR_MEDAL_LMG_MARKSMAN_4, STR_MEDAL_LMG_MARKSMAN_5, STR_MEDAL_LMG_MARKSMAN_6, STR_MEDAL_LMG_MARKSMAN_7, STR_MEDAL_LMG_MARKSMAN_8, STR_MEDAL_LMG_MARKSMAN_9, STR_MEDAL_LMG_MARKSMAN_10]
+    sprite: 27
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_M60", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FN_MAG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_RPKS", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_BREN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STONER_AUTOMATIC_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STONER_COMMANDO", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M4_LASER_LMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ML73_LASER_MACHINE_GUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_AN_MACHINE_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_PLASMA_LMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+######################
+#SMG Marksman Medal
+#Granted by using SMGs
+
+  - type: STR_MEDAL_SMG_MARKSMAN
+    description: STR_MEDAL_SMG_MARKSMAN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_SMG_MARKSMAN_1, STR_MEDAL_SMG_MARKSMAN_2, STR_MEDAL_SMG_MARKSMAN_3, STR_MEDAL_SMG_MARKSMAN_4, STR_MEDAL_SMG_MARKSMAN_5, STR_MEDAL_SMG_MARKSMAN_6, STR_MEDAL_SMG_MARKSMAN_7, STR_MEDAL_SMG_MARKSMAN_8, STR_MEDAL_SMG_MARKSMAN_9, STR_MEDAL_SMG_MARKSMAN_10]
+    sprite: 28
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_M3_GREASEGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_MP5", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SKORPION", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_BERETTA_M12", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_OWEN_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_PPS_43", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M5_LASER_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_MAT72_SUBMACHINE_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ALP_SUBMACHINE_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_PLASMA_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+################################
+#Artillery Specialist Medal
+#Granted by using Artillery
+
+  - type: STR_MEDAL_ARTILLERY_SPECIALIST
+    description: STR_MEDAL_ARTILLERY_SPECIALIST_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_ARTILLERY_SPECIALIST_1, STR_MEDAL_ARTILLERY_SPECIALIST_2, STR_MEDAL_ARTILLERY_SPECIALIST_3, STR_MEDAL_ARTILLERY_SPECIALIST_4, STR_MEDAL_ARTILLERY_SPECIALIST_5, STR_MEDAL_ARTILLERY_SPECIALIST_6, STR_MEDAL_ARTILLERY_SPECIALIST_7, STR_MEDAL_ARTILLERY_SPECIALIST_8, STR_MEDAL_ARTILLERY_SPECIALIST_9, STR_MEDAL_ARTILLERY_SPECIALIST_10]
+    sprite: 29
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_M79_THUMPER_GL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M72_LAW", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M202_FLASH", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_CARL_GUSTAF_M2", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_RPG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SAWEDOFF_M79_THUMPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ELERIUM_FLAMETHROWER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_M72_AUTOMATIC_RECOILLESS_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_AFINA_ANTITANK_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_HEAVY_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_SMALL_LAUNCHER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_CANNON", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+
+######################
+#Sniper Marksman Medal
+#Granted by using Sniper
+
+  - type: STR_MEDAL_SNIPER_MARKSMAN
+    description: STR_MEDAL_SNIPER_MARKSMAN_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_SNIPER_MARKSMAN_1, STR_MEDAL_SNIPER_MARKSMAN_2, STR_MEDAL_SNIPER_MARKSMAN_3, STR_MEDAL_SNIPER_MARKSMAN_4, STR_MEDAL_SNIPER_MARKSMAN_5, STR_MEDAL_SNIPER_MARKSMAN_6, STR_MEDAL_SNIPER_MARKSMAN_7, STR_MEDAL_SNIPER_MARKSMAN_8, STR_MEDAL_SNIPER_MARKSMAN_9, STR_MEDAL_SNIPER_MARKSMAN_10]
+    sprite: 30
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_XM21", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_AR5", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_PSG1", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_DRAGUNOV", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUNTING_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SKS", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STONER_SNIPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ULYSSES_LASER_SNIPER_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_CHURCHILL_MARKSMAN_LASER_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_MIRINOV_LASER_SNIPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_PLASMA_DMR", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_HUMAN_SNIPER_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_SNIPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+
+######################
+#Shotgun Specialist Medal
+#Granted by using Shotguns
+
+  - type: STR_MEDAL_SHOTGUN_SPECIALIST
+    description: STR_MEDAL_SHOTGUN_SPECIALIST_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_SHOTGUN_SPECIALIST_1, STR_MEDAL_SHOTGUN_SPECIALIST_2, STR_MEDAL_SHOTGUN_SPECIALIST_3, STR_MEDAL_SHOTGUN_SPECIALIST_4, STR_MEDAL_SHOTGUN_SPECIALIST_5, STR_MEDAL_SHOTGUN_SPECIALIST_6, STR_MEDAL_SHOTGUN_SPECIALIST_7, STR_MEDAL_SHOTGUN_SPECIALIST_8, STR_MEDAL_SHOTGUN_SPECIALIST_9, STR_MEDAL_SHOTGUN_SPECIALIST_10]
+    sprite: 31
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_REMINGTON_COMBAT_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_KS23_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_DOUBLE_BARRELED_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_POLICE_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ANGRY_WIFE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SAWEDOFF_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_X4_LASER_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_AUTO_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+
+######################
+#Grenadier Specialist Medal
+#Granted by using Grenades and Explosives
+
+  - type: STR_MEDAL_GRENADIER_SPECIALIST
+    description: STR_MEDAL_GRENADIER_SPECIALIST_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_GRENADIER_SPECIALIST_1, STR_MEDAL_GRENADIER_SPECIALIST_2, STR_MEDAL_GRENADIER_SPECIALIST_3, STR_MEDAL_GRENADIER_SPECIALIST_4, STR_MEDAL_GRENADIER_SPECIALIST_5, STR_MEDAL_GRENADIER_SPECIALIST_6, STR_MEDAL_GRENADIER_SPECIALIST_7, STR_MEDAL_GRENADIER_SPECIALIST_8, STR_MEDAL_GRENADIER_SPECIALIST_9, STR_MEDAL_GRENADIER_SPECIALIST_10]
+    sprite: 32
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 50, 60, 80]
+    killCriteria:
+      -
+         - [1, ["STR_GRENADE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_PROXIMITY_GRENADE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SMOKE_GRENADE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      -
+         - [1, ["STR_FLASHBANG_GRENADE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      -
+         - [1, ["STR_HIGH_EXPLOSIVE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_GRENADE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+
+######################
+#Raider Specialist Medal
+#Granted by using Melee and Stun
+
+  - type: STR_MEDAL_RAIDER_SPECIALIST
+    description: STR_MEDAL_RAIDER_SPECIALIST_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_RAIDER_SPECIALIST_1, STR_MEDAL_RAIDER_SPECIALIST_2, STR_MEDAL_RAIDER_SPECIALIST_3, STR_MEDAL_RAIDER_SPECIALIST_4, STR_MEDAL_RAIDER_SPECIALIST_5, STR_MEDAL_RAIDER_SPECIALIST_6, STR_MEDAL_RAIDER_SPECIALIST_7, STR_MEDAL_RAIDER_SPECIALIST_8, STR_MEDAL_RAIDER_SPECIALIST_9, STR_MEDAL_RAIDER_SPECIALIST_10]
+    sprite: 33
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 15, 20, 30, 35, 40, 45, 50, 55]
+    killCriteria:
+      -
+         - [1, ["STR_MACHETE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SHOVEL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_POLICE_TONFA", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      -
+         - [1, ["STR_COMBAT_KNIFE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SPACE_KNIFE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_STUN_ROD", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      -
+         - [1, ["STR_GENERATOR_STICK", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+######################
+#Enemy Capture Specialist Medal
+#Granted by capturing enemies
+
+  - type: STR_MEDAL_CAPTURE_SPECIALIST #Number of Stuns total.
+    description: STR_MEDAL_CAPTURE_SPECIALIST_DESCRIPTION
+    soldierBonusTypes: [STR_MEDAL_CAPTURE_SPECIALIST_1, STR_MEDAL_CAPTURE_SPECIALIST_2, STR_MEDAL_CAPTURE_SPECIALIST_3, STR_MEDAL_CAPTURE_SPECIALIST_4, STR_MEDAL_CAPTURE_SPECIALIST_5, STR_MEDAL_CAPTURE_SPECIALIST_6, STR_MEDAL_CAPTURE_SPECIALIST_7, STR_MEDAL_CAPTURE_SPECIALIST_8, STR_MEDAL_CAPTURE_SPECIALIST_9, STR_MEDAL_CAPTURE_SPECIALIST_10]
+    sprite: 34
+    criteria:
+      killsWithCriteriaCareer: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    killCriteria:
+      -
+         - [1, ["FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+extraSprites:
+  - type: Commendations #Hardcoded
+    width: 31
+    height: 496
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/Commendations/UNEXCOM_Commendations_Spritesheet.png
+  - type: CommendationDecorations #Hardcoded
+    width: 31
+    height: 80
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/Commendations/Commendation_Decorations_Spritesheet.png
