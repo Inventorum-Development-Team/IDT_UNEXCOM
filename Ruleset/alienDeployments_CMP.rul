@@ -2200,7 +2200,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      showTarget: false
+      showTarget: true
       desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
@@ -2410,7 +2410,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      showTarget: false
+      showTarget: true
       desc: STR_ALIEN_BASE_ASSAULT_STAGE_2_BRIEFING
     baseDetectionRange: 500            # base radar range, in nautical miles
     baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
@@ -2423,7 +2423,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      showTarget: false
+      showTarget: true
       desc: STR_ALIEN_BASE_ASSAULT_UNDERGROUND_BRIEFING
     width: 40
     length: 40
@@ -2662,7 +2662,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      showTarget: false
+      showTarget: true
       desc: STR_ALIEN_BASE_ASSAULT_STAGE_3_BRIEFING
     nextStage: STR_ALIEN_BASE_ASSAULT_STAGE_3_UNDERGROUND
     baseDetectionRange: 500            # base radar range, in nautical miles
@@ -2676,7 +2676,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      showTarget: false
+      showTarget: true
       desc: STR_ALIEN_FORT_ASSAULT_UNDERGROUND_BRIEFING
     width: 60
     length: 60
@@ -2910,7 +2910,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      showTarget: false
+      showTarget: true
       desc: STR_ALIEN_BASE_ASSAULT_BRIEFING
     objectiveType: 3
     markerName: STR_ALIEN_BASE
