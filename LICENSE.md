@@ -5,6 +5,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 
 ***Credits by name:***
 
+* afsoc4life: bug hunter
 * Alex_D: UH-1 Huey, Mi-24 Hind maps
 * ahnyoungjune: bug hunter
 * alinare: BMD-1 & Laser Tank sprites
@@ -16,6 +17,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Blood Angel Tactical Marine: bug hunter.
 * Bobit: bug hunter
 * boodman123726: XCOM 2 Music Pack
+* Branes51: bug hunter
 * Brother^2: IDT bug hunter, ideas and feedback
 * bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
 * cubick2k: bug hunter
@@ -26,24 +28,28 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Duke_Falcon: Alien Turret sprites, unarmored Snakepeople sprites, alien body armor templates, Armored Floaters, Disk Drone sprites
 * Dioxine: Original Double-barreled shotgun (now unused), M79 Thumper (now unused)
 * efrenespartano: lead modder, main ruleset and sprite creation
+* Fegelein: bug hunter
 * Filip H: lead modder, overall code, Huey & alien Turrets, bug hunter
 * Finnik: Astronaut sprites (modified), original code added to the main OXCE, bug hunter
 * Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 * garretrgang: bug hunter
 * Hans Woofington: All UNEXCOM armor sprites, artist help, ideas & bug hunter
-* hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused)
+* hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused), Commendations template
 * Hobbes: Terrain Pack Mod (unused), Tech-Comm HKs code, ruleset reference, modding help.
-* Jackstaw2323: Mechtoid sprites (modified)
-* JustTheDude: Terrorist Grenadier sprites
 * IgnisAbentorn: bug hunter
 * Ikhanad: FN FSC sprites, plus ideas.
 * im bored: bug hunter
 * Internet: UFOPedia images, further artwork reference
 * Istrebitel: craft weapon reference codes
+* Ivan Dogovich: Commendation ruleset template
+* Jackstaw2323: Mechtoid sprites (modified)
+* JustTheDude: Terrorist Grenadier sprites
+* Kael Schwabuer: IDT bug hunter
 * KingMob4313: Plasma ruleset and sprites from Equal Terms, inspiration (laser removed)
 * Memmaker: Mechtoid rulesets
 * Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
 * Mitra Lightbringer: bug hunter
+* MosesManWithAPlan: bug hunter
 * NeoWorm: Sectoid, Muton, Floater paperdolls, Floater spritesheets (adapted and expanded)
 * Noah193: bug hunter and ideas
 * Nord: Aqualung sprites (unused), Mi-8 map and sprites
@@ -54,17 +60,20 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Pvt.Dropleaf: bug hunter
 * Rclipse: IDT bug hunter
 * Riccardo Gasperi: original Android buttons art (modified)
+* Richard_Averton: bug hunter
 * Ryskeliini: Grenade Launcher (now unused)
 * StormRangerX: bug hunter
 * SG_Barton: bug hunter
 * Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
-* Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites, Ethereal, Sectopod, Cyberdisk inventory sprites
+* Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites, Ethereal, Sectopod, Cyberdisk inventory sprites, Commendation ruleset template
+* Shoes: Commendation sprite template
 * Tal'Raziid: IDT bug hunter
 * ThatDude: JustRussia AK original weapons (now adapted)
 * The Martian: Cybersphere sprites
 * The Reaver of Darkness: major balance support, LIGHTNIA mapset, plus ideas
 * theemperorofmankind: bug hunter
 * Tingcat: Terrorists Paperdolls
+* Ultrakiroxei: bug hunter
 * Valmont and his girlfriend: bug hunters
 * Vesparco: Sectoid Commander spritesheet
 * Warboy1982: Shotgun firing sound
@@ -72,7 +81,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * xover88: XCOM 2012 Music
 * Yataka Shimaoka: bug hunter
 * Yeti: bug hunter, feedback support, plus ideas
-* wolwerin: Russian translation, Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, Alien Space Station maps, Armored Sectoid, overall improvement of weapon sprites, some sounds, plus debugging support
+* wolwerin: Russian translation, Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, Alien Space Station maps, Armored Sectoid, overall improvement of weapon sprites, Space Weapons, some sounds, plus debugging support
 * Zane: original Delta sprites
 * zaphnath: bug hunter
 * zombieclone111: bug hunter
