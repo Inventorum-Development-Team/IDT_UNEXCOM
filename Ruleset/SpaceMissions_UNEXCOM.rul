@@ -1,4 +1,4 @@
-# spellchecker:words GMDEFEND GMNEWMAR UBASE BOSSBATTLE MOONMOUNT LIFTERL DISEC OPER PUFOL PABDUCT UFOL SITREP
+# spellchecker:words GMDEFEND GMNEWMAR UBASE BOSSBATTLE IDT_MOON_MOUNT LIFTERL DISEC OPER PUFOL PABDUCT UFOL SITREP
 # spellchecker:words Zvezda
 alienDeployments:
   - type: STR_OPERATION_DEVASTATION
@@ -513,7 +513,7 @@ terrains:
       - BLANKS
       - IDT_MOON
       - GREENHOUSE
-      - MOONMOUNT
+      - IDT_MOON_MOUNT
       - LIFTERL83
       - U_BASE3A
       - POLAR_DOORS
@@ -585,7 +585,7 @@ terrains:
       - BLANKS
       - IDT_MOON
       - GREENHOUSE
-      - MOONMOUNT
+      - IDT_MOON_MOUNT
       - LIFTERL83
       - U_BASE3A
       - POLAR_DOORS
@@ -775,6 +775,7 @@ ufos:
         - U_OPER1
         - PUFOL83
         - PUFOL83-B
+        - U_PODS
       mapBlocks:
         - name: P4_A
           width: 20

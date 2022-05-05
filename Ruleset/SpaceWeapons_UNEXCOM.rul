@@ -97,6 +97,8 @@ items:
     listOrder: 201820
 
   - type: STR_SPACE_KNIFE
+    requiresBuy:
+      - STR_OLYMPUS
     categories: [ STR_MELEE, STR_SPACE, STR_LIGHT_EQUIPMENT ]
     size: 0.2
     costBuy: 1200
@@ -134,6 +136,8 @@ items:
     listOrder: 2119
 
   - type: STR_GENERATOR_STICK
+    requiresBuy:
+      - STR_GENERATOR_STICK
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 3260

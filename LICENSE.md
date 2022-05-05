@@ -63,6 +63,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Richard_Averton: bug hunter
 * Ryskeliini: Grenade Launcher (now unused)
 * StormRangerX: bug hunter
+* Seven: bug hunter
 * SG_Barton: bug hunter
 * Shawn Clarke: M1 Carbine, Enforcer and .30 Carbine ammo
 * Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites, Ethereal, Sectopod, Cyberdisk inventory sprites, Commendation ruleset template
