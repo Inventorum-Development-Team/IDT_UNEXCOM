@@ -340,6 +340,7 @@ missionScripts:
       STR_ALIEN_ID_CODES: false
     startDelay: 17500
     randomDelay: 40000
+    maxRuns: 3
     executionOdds: 100
 
   - type: OperationDevastation
@@ -351,8 +352,7 @@ missionScripts:
         REGION_SPACEPORTS_DEVASTATION: 100
     useTable: false
     researchTriggers:
-      STR_OLYMPUS: true
-      STR_UNITED_WE_STAND_RESEARCH: true
+      STR_THE_MARTIAN_SOLUTION: true
       STR_DEVASTATION_COMPLETED: false
     startDelay: 17500
     randomDelay: 40000
