@@ -1,4 +1,4 @@
-﻿# spellchecker:words Nexter Bassenheim Mironov Artemiy Grechko powercell powercells lasersmg laserdmr laserlmg
+# spellchecker:words Nexter Bassenheim Mironov Artemiy Grechko powercell powercells lasersmg laserdmr laserlmg
 #Close quarters: defined by default on 1 tile
 #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
@@ -656,19 +656,19 @@ items:
       shots: 3
       name: STR_BURST
     confAuto:
-      shots: 5
+      shots: 7
       name: STR_CONTROL_AUTO
     accuracyAuto: 75
     accuracySnap: 85
     accuracyAimed: 80
     costSnap:
-      time: 25
+      time: 20
       mana: 1
     costAimed:
-      time: 55
+      time: 40
       mana: 3
     costAuto:
-      time: 30
+      time: 25
       mana: 5
     clipSize: -1
     battleType: 1
