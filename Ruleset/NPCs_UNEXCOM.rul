@@ -6269,6 +6269,53 @@ units:
         - STR_7_62MM_NATO_LMG_X50
         - STR_7_62MM_NATO_LMG_X50
         - STR_GRENADE
+  - type: STR_AMERICAN_ELITE
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 70
+      health: 70
+      bravery: 100
+      reactions: 66
+      firing: 75
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: 41
+    intelligence: 6
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_CALBR
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_M20_M203_LASER_CARBINE
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_M4_LASER_LMG
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
 ###################################
 ######## EUROPEAN ALLIES #########
 #################################
@@ -6388,6 +6435,50 @@ units:
         - STR_CARL_GUSTAF_M2_HE_ROUND
         - STR_CARL_GUSTAF_M2_HEAT_ROUND
         - STR_CARL_GUSTAF_M2_HEAT_ROUND
+  - type: STR_EUROPEAN_ELITE
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 70
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 80
+      throwing: 80
+      strength: 50
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: 41
+    intelligence: 6
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_FN_FLA_LASER_CARBINE
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_MAT72_SUBMACHINE_LASER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_CHURCHILL_MARKSMAN_LASER_RIFLE
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
 ###################################
 ######## SOVIET ALLIES  ##########
 #################################
@@ -6509,4 +6600,48 @@ units:
         - STR_RPKS
         - STR_7_62MM_SOVIET_RIFLE_X75
         - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_GRENADE
+  - type: STR_SOVIET_ELITE
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 65
+      bravery: 100
+      reactions: 70
+      firing: 75
+      throwing: 90
+      strength: 60
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_ALK72_LASER_RIFLE
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_MIRINOV_LASER_SNIPER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_AN_MACHINE_LASER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
         - STR_GRENADE
