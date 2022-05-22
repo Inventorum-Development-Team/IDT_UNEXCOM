@@ -1080,7 +1080,7 @@ items:
     fireSound: 4330
     bulletSpeed: 10
     #accuracyAuto: 65
-    accuracySnap: 70
+    accuracySnap: 95
     #tuAuto: 30
     tuSnap: 20
     #autoShots: 6
@@ -1095,7 +1095,7 @@ items:
     snapRange: 29
     autoRange: 22
     minRange: 0
-    dropoff: 2
+    dropoff: 1
     invWidth: 2
     invHeight: 3
     hitSound: 4332
@@ -1106,7 +1106,7 @@ items:
       RandomType: 2
       IgnoreOverKill: false
       ToTile: 0.66
-      ToArmorPre: 0.9
+      ToArmorPre: 1.2
       FixRadius: -1
       RadiusReduction: 50
     #sprayWaypoints: 2
@@ -1127,7 +1127,7 @@ items:
     fireSound: 4330
     bulletSpeed: 10
     #accuracyAuto: 65
-    accuracySnap: 70
+    accuracySnap: 75
     #tuAuto: 30
     tuSnap: 20
     #autoShots: 6
@@ -1152,7 +1152,7 @@ items:
     damageAlter:
       RandomType: 2
       IgnoreOverKill: false
-      ToTile: 0.50
+      ToTile: 1.1
       ToArmorPre: 0.8
       FixRadius: -1
       RadiusReduction: 50
@@ -3662,10 +3662,10 @@ armors:
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 62
-    sideArmor: 28
-    rearArmor: 24
-    underArmor: 16
+    frontArmor: 93
+    sideArmor: 74
+    rearArmor: 41
+    underArmor: 30
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -3673,10 +3673,10 @@ armors:
      - 0.4 # AP
      - 0.6 # Incendiary
      - 0.8 # HE
-     - 1.0 # Laser
-     - 1.0 # Plasma
+     - 0.8 # Laser
+     - 0.8 # Plasma
      - 0.0 # Stun
-     - 0.0 # Melee
+     - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -3713,7 +3713,7 @@ armors:
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 62
+    frontArmor: 70
     sideArmor: 28
     rearArmor: 24
     underArmor: 16
@@ -3725,9 +3725,9 @@ armors:
      - 0.6 # Incendiary
      - 0.8 # HE
      - 1.0 # Laser
-     - 1.0 # Plasma
+     - 0.8 # Plasma
      - 0.0 # Stun
-     - 0.0 # Melee
+     - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -3764,10 +3764,10 @@ armors:
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 62
-    sideArmor: 28
-    rearArmor: 24
-    underArmor: 16
+    frontArmor: 120
+    sideArmor: 79
+    rearArmor: 60
+    underArmor: 20
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -3776,9 +3776,9 @@ armors:
      - 0.6 # Incendiary
      - 0.8 # HE
      - 1.0 # Laser
-     - 1.0 # Plasma
+     - 0.8 # Plasma
      - 0.0 # Stun
-     - 0.0 # Melee
+     - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -6509,7 +6509,7 @@ units:
       stamina: 100
       health: 90
       bravery: 110
-      reactions: 20
+      reactions: 45
       firing: 100
       throwing: 0
       strength: 100
@@ -6523,6 +6523,8 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
+    intelligence: 6
+    aggression: 4
     builtInWeaponSets:
       -
         - STR_105MM_CANNON
@@ -6593,7 +6595,7 @@ units:
     value: 10
     deathSound: 41
     intelligence: 6
-    aggression: 0
+    aggression: 2
     builtInWeaponSets:
       -
         - STR_BERETTA_M12
@@ -6631,7 +6633,7 @@ units:
     value: 10
     deathSound: 41
     intelligence: 6
-    aggression: 0
+    aggression: 1
     builtInWeaponSets:
       -
         - STR_BREN
@@ -6695,11 +6697,11 @@ units:
   - type: STR_LEOPARD_TANK
     race: STR_ALLIED_FORCES
     stats:
-      tu: 130
-      stamina: 100
+      tu: 150
+      stamina: 150
       health: 90
       bravery: 110
-      reactions: 20
+      reactions: 60
       firing: 100
       throwing: 0
       strength: 100
@@ -6713,6 +6715,8 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
+    intelligence: 6
+    aggression: 6
     builtInWeaponSets:
       -
         - STR_105MM_CANNON
@@ -6888,11 +6892,11 @@ units:
   - type: STR_T54_TANK
     race: STR_ALLIED_FORCES
     stats:
-      tu: 130
+      tu: 100
       stamina: 100
       health: 90
       bravery: 110
-      reactions: 20
+      reactions: 30
       firing: 100
       throwing: 0
       strength: 100
@@ -6906,6 +6910,8 @@ units:
     deathSound: 23
     moveSound: 14
     energyRecovery: 50
+    intelligence: 6
+    aggression: 3
     builtInWeaponSets:
       -
         - STR_100MM_CANNON
