@@ -3652,16 +3652,16 @@ armors:
       - 1.0
     loftempsSet: [ 3 ]
 
-  - type: PATTON_TANK_ARMOR
+  - type: PATTON_ARMOR
     spriteSheet: PATTON.PCK
     spriteInv: PATTON
     allowInv: true
     customArmorPreviewIndex: 557
     corpseBattle:
-     - TANK_CORPSE_1
-     - TANK_CORPSE_2
-     - TANK_CORPSE_3
-     - TANK_CORPSE_4
+     - CORPSE_1
+     - CORPSE_2
+     - CORPSE_3
+     - CORPSE_4
     frontArmor: 93
     sideArmor: 74
     rearArmor: 41
@@ -3679,6 +3679,7 @@ armors:
      - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
 ####################################
@@ -3703,16 +3704,16 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
-  - type: LEOPARD_TANK_ARMOR
+  - type: LEOPARD_ARMOR
     spriteSheet: LEOPARD.PCK
     spriteInv: LEOPARD
     allowInv: true
     customArmorPreviewIndex: 557
     corpseBattle:
-     - TANK_CORPSE_1
-     - TANK_CORPSE_2
-     - TANK_CORPSE_3
-     - TANK_CORPSE_4
+     - CORPSE_1
+     - CORPSE_2
+     - CORPSE_3
+     - CORPSE_4
     frontArmor: 70
     sideArmor: 28
     rearArmor: 24
@@ -3730,6 +3731,7 @@ armors:
      - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
 ##################################
@@ -3754,16 +3756,16 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
-  - type: T54_TANK_ARMOR
+  - type: T54_ARMOR
     spriteSheet: T54.PCK
     spriteInv: T54
     allowInv: true
     customArmorPreviewIndex: 557
     corpseBattle:
-     - TANK_CORPSE_1
-     - TANK_CORPSE_2
-     - TANK_CORPSE_3
-     - TANK_CORPSE_4
+     - CORPSE_1
+     - CORPSE_2
+     - CORPSE_3
+     - CORPSE_4
     frontArmor: 120
     sideArmor: 79
     rearArmor: 60
@@ -3781,6 +3783,7 @@ armors:
      - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
 
@@ -6516,7 +6519,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-    armor: PATTON_TANK_ARMOR
+    armor: PATTON_ARMOR
     standHeight: 16
     kneelHeight: 16
     value: 50
@@ -6708,7 +6711,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-    armor: LEOPARD_TANK_ARMOR
+    armor: LEOPARD_ARMOR
     standHeight: 16
     kneelHeight: 16
     value: 50
@@ -6903,7 +6906,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-    armor: T54_TANK_ARMOR
+    armor: T54_ARMOR
     standHeight: 16
     kneelHeight: 16
     value: 50
