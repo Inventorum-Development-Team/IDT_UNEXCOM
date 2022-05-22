@@ -1069,6 +1069,100 @@ items:
     recover: false
     armor: 35
 
+  - type: STR_105MM_CANNON
+    size: 0.2
+    #costSell: 27500
+    weight: 50
+    bigSprite: 2510
+    floorSprite: 0
+    handSprite: 0
+    #bulletSprite: 4
+    fireSound: 4330
+    bulletSpeed: 10
+    #accuracyAuto: 65
+    accuracySnap: 70
+    #tuAuto: 30
+    tuSnap: 20
+    #autoShots: 6
+    clipSize: 50
+    battleType: 1
+    bulletSprite: 4
+    #damageType: 5
+    twoHanded: true
+    recover: false
+    arcingShot: true
+    maxRange: 200
+    snapRange: 29
+    autoRange: 22
+    minRange: 0
+    dropoff: 2
+    invWidth: 2
+    invHeight: 3
+    hitSound: 4332
+    hitAnimation: 0
+    power: 105
+    damageType: 3
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      ToTile: 0.66
+      ToArmorPre: 0.9
+      FixRadius: -1
+      RadiusReduction: 50
+    #sprayWaypoints: 2
+    #listOrder: 2116
+    kneelBonus: 110
+    fixedWeapon: true
+    fixedWeaponShow: true
+    defaultInventorySlot: STR_RIGHT_HAND
+
+  - type: STR_100MM_CANNON
+    size: 0.2
+    #costSell: 27500
+    weight: 50
+    bigSprite: 2511
+    floorSprite: 0
+    handSprite: 0
+    #bulletSprite: 4
+    fireSound: 4330
+    bulletSpeed: 10
+    #accuracyAuto: 65
+    accuracySnap: 70
+    #tuAuto: 30
+    tuSnap: 20
+    #autoShots: 6
+    clipSize: 45
+    battleType: 1
+    bulletSprite: 4
+    arcingShot: true
+    #damageType: 5
+    twoHanded: true
+    recover: false
+    maxRange: 200
+    snapRange: 29
+    autoRange: 22
+    minRange: 0
+    dropoff: 2
+    invWidth: 2
+    invHeight: 3
+    hitSound: 4332
+    hitAnimation: 0
+    power: 100
+    damageType: 3
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      ToTile: 0.50
+      ToArmorPre: 0.8
+      FixRadius: -1
+      RadiusReduction: 50
+    #sprayWaypoints: 2
+    #listOrder: 2116
+    kneelBonus: 110
+    fixedWeapon: true
+    fixedWeaponShow: true
+    defaultInventorySlot: STR_RIGHT_HAND
+
 armors:
   - type: CIVM_ARMOR
     spriteInv: INV_MALE_CIVILIAN
@@ -3533,7 +3627,9 @@ armors:
       - 1.6
       - 1.0
     loftempsSet: [ 3 ]
-
+####################################
+######### FACTION NPCS ############
+##################################
   - type: AMERICAN_SOLDIER_ARMOR
     spriteInv: INV_AMERICAN_SOLDIER
     spriteSheet: AMERICAN_SOLDIER.PCK
@@ -3555,6 +3651,37 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
+
+  - type: PATTON_TANK_ARMOR
+    spriteSheet: PATTON.PCK
+    spriteInv: PATTON
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 62
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 16
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+####################################
   - type: EUROPEAN_SOLDIER_ARMOR
     spriteInv: INV_EUROPEAN_SOLDIER
     spriteSheet: EUROPEAN_SOLDIER.PCK
@@ -3576,6 +3703,36 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
+  - type: LEOPARD_TANK_ARMOR
+    spriteSheet: LEOPARD.PCK
+    spriteInv: LEOPARD
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 62
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 16
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+##################################
   - type: SOVIET_SOLDIER_ARMOR
     spriteInv: INV_SOVIET_SOLDIER
     spriteSheet: SOVIET_SOLDIER.PCK
@@ -3597,6 +3754,35 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
+  - type: T54_TANK_ARMOR
+    spriteSheet: T54.PCK
+    spriteInv: T54
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 62
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 16
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
 
 units:
   - type: MALE_CIVILIAN
@@ -6316,6 +6502,33 @@ units:
         - STR_FIELD_DRESSING
         - STR_MEDICAL_POUCH
         - STR_GRENADE
+  - type: STR_PATTON_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: PATTON_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+        - STR_105MM_CANNON
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
 ###################################
 ######## EUROPEAN ALLIES #########
 #################################
@@ -6479,6 +6692,33 @@ units:
         - STR_FIELD_DRESSING
         - STR_MEDICAL_POUCH
         - STR_GRENADE
+  - type: STR_LEOPARD_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: LEOPARD_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+        - STR_105MM_CANNON
+        - STR_FN_MAG
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
 ###################################
 ######## SOVIET ALLIES  ##########
 #################################
@@ -6645,3 +6885,29 @@ units:
         - STR_FIELD_DRESSING
         - STR_MEDICAL_POUCH
         - STR_GRENADE
+  - type: STR_T54_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: T54_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+        - STR_100MM_CANNON
+        - STR_PKT_MACHINEGUN
+        - STR_PKT_AMMO_BOX

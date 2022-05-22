@@ -48,6 +48,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * KingMob4313: Plasma ruleset and sprites from Equal Terms, inspiration (laser removed)
 * Memmaker: Mechtoid rulesets
 * Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
+* MigEater: Original Sheridan, Patton, Leopard, Legionnnarie and T-54 sprites from D-Day mod (adapted to OXC format)
 * Mitra Lightbringer: bug hunter
 * MosesManWithAPlan: bug hunter
 * NeoWorm: Sectoid, Muton, Floater paperdolls, Floater spritesheets (adapted and expanded)
@@ -69,6 +70,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Solarius Scorch: RecycledAlienCollection, Alien Armory Expanded, Celebrate Diversity, original XM21, FN FAL, old M16, old M60 sprites (now unused), ruleset reference, Farmer NPCs, knee sections for Mutons and Sectoids sprites, Ethereal, Sectopod, Cyberdisk inventory sprites, Commendation ruleset template
 * Shoes: Commendation sprite template
 * Tal'Raziid: IDT bug hunter
+* Tank Encyclopedia: Tank inventory images (adapted to OXC format)
 * ThatDude: JustRussia AK original weapons (now adapted)
 * The Martian: Cybersphere sprites
 * The Reaver of Darkness: major balance support, LIGHTNIA mapset, plus ideas
