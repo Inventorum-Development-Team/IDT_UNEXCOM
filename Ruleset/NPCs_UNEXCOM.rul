@@ -1090,7 +1090,7 @@ items:
     #damageType: 5
     twoHanded: true
     recover: false
-    arcingShot: true
+    #arcingShot: true
     maxRange: 200
     snapRange: 29
     autoRange: 22
@@ -1134,7 +1134,7 @@ items:
     clipSize: 45
     battleType: 1
     bulletSprite: 4
-    arcingShot: true
+    #arcingShot: true
     #damageType: 5
     twoHanded: true
     recover: false
@@ -3652,7 +3652,7 @@ armors:
       - 1.0
     loftempsSet: [ 3 ]
 
-  - type: PATTON_ARMOR
+  - type: PATTON_TANK_ARMOR
     spriteSheet: PATTON.PCK
     spriteInv: PATTON
     allowInv: true
@@ -3704,7 +3704,7 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
-  - type: LEOPARD_ARMOR
+  - type: LEOPARD_TANK_ARMOR
     spriteSheet: LEOPARD.PCK
     spriteInv: LEOPARD
     allowInv: true
@@ -3756,7 +3756,7 @@ armors:
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
-  - type: T54_ARMOR
+  - type: T54_TANK_ARMOR
     spriteSheet: T54.PCK
     spriteInv: T54
     allowInv: true
@@ -6479,7 +6479,7 @@ units:
     value: 20
     deathSound: 41
     intelligence: 8
-    aggression: 0
+    aggression: 8
     builtInWeaponSets:
       -
         - STR_CALBR
@@ -6519,7 +6519,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-    armor: PATTON_ARMOR
+    armor: PATTON_TANK_ARMOR
     standHeight: 16
     kneelHeight: 16
     value: 50
@@ -6531,9 +6531,9 @@ units:
     builtInWeaponSets:
       -
         - STR_105MM_CANNON
-        - STR_M60
-        - STR_7_62MM_NATO_LMG_X50
-        - STR_7_62MM_NATO_LMG_X50
+        #- STR_M60
+        #- STR_7_62MM_NATO_LMG_X50
+        #- STR_7_62MM_NATO_LMG_X50
 ###################################
 ######## EUROPEAN ALLIES #########
 #################################
@@ -6674,7 +6674,7 @@ units:
     value: 20
     deathSound: 41
     intelligence: 8
-    aggression: 0
+    aggression: 8
     builtInWeaponSets:
       -
         - STR_FN_FLA_LASER_CARBINE
@@ -6691,7 +6691,7 @@ units:
         - STR_MEDICAL_POUCH
         - STR_GRENADE
       -
-        - STR_CHURCHILL_MARKSMAN_LASER_RIFLE
+        - STR_L4_ASSAULT_LASER
         - STR_BATTERY
         - STR_BATTERY
         - STR_FIELD_DRESSING
@@ -6711,7 +6711,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-    armor: LEOPARD_ARMOR
+    armor: LEOPARD_TANK_ARMOR
     standHeight: 16
     kneelHeight: 16
     value: 50
@@ -6723,9 +6723,9 @@ units:
     builtInWeaponSets:
       -
         - STR_105MM_CANNON
-        - STR_FN_MAG
-        - STR_7_62MM_NATO_LMG_X50
-        - STR_7_62MM_NATO_LMG_X50
+        #- STR_FN_MAG
+        #- STR_7_62MM_NATO_LMG_X50
+        #- STR_7_62MM_NATO_LMG_X50
 ###################################
 ######## SOVIET ALLIES  ##########
 #################################
@@ -6833,6 +6833,11 @@ units:
     aggression: 0
     builtInWeaponSets:
       -
+        - STR_RPKS
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_GRENADE
+      -
         - STR_RPG
         - STR_RPG_HE_ROCKET
         - STR_RPG_INC_ROCKET
@@ -6842,11 +6847,6 @@ units:
         - STR_RPKS
         - STR_7_62MM_SOVIET_RIFLE_X40
         - STR_7_62MM_SOVIET_RIFLE_X40
-        - STR_GRENADE
-      -
-        - STR_RPKS
-        - STR_7_62MM_SOVIET_RIFLE_X75
-        - STR_7_62MM_SOVIET_RIFLE_X75
         - STR_GRENADE
   - type: STR_SOVIET_ELITE
     race: STR_ALLIED_FORCES
@@ -6869,7 +6869,7 @@ units:
     value: 20
     deathSound: [41, 42, 43]
     intelligence: 7
-    aggression: 0
+    aggression: 8
     builtInWeaponSets:
       -
         - STR_ALK72_LASER_RIFLE
@@ -6906,7 +6906,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-    armor: T54_ARMOR
+    armor: T54_TANK_ARMOR
     standHeight: 16
     kneelHeight: 16
     value: 50
@@ -6918,5 +6918,5 @@ units:
     builtInWeaponSets:
       -
         - STR_100MM_CANNON
-        - STR_PKT_MACHINEGUN
-        - STR_PKT_AMMO_BOX
+        #- STR_PKT_MACHINEGUN
+        #- STR_PKT_AMMO_BOX
