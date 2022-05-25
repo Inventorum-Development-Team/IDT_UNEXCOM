@@ -362,6 +362,9 @@ terrains:
 
   - name: IDT_RED_FARM # By efrenespartano, Luke83 & Solarius Scorch
     script: FARM_RED
+    civilianTypes:
+      - STR_FEMALE_FARMER
+      - STR_MALE_FARMER
     mapDataSets:
       - BLANKS
       - IDT_CULTIVAT_RED

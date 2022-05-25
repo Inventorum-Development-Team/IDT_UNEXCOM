@@ -27,7 +27,11 @@ mapScripts:
   - type: FARM_RED
     commands:
     - type: addUFO
+      executions: 1
+      groups: 1
     - type: addCraft
+      executions: 1
+      groups: 1
     - type: addBlock
       size: 2
       executions: 3
@@ -41,6 +45,8 @@ mapScripts:
     - type: fillArea
       groups: [0, 1, 5, 6, 7]
       freqs: [2, 2, 2, 3, 4]
+      #blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+      #maxUses: [3, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   - type: DESERT
     commands:
     - type: addUFO
