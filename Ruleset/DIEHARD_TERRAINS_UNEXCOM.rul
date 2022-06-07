@@ -1,5 +1,33 @@
 # spellchecker:words URBITS DHARD DAWNURBAN DAWNURBITS CRIBDECOR MANSIONBITS CITYFRNITURE
 # spellchecker:words rects
+crafts:
+  - type: STR_LITTLE_BIRD_HIJACKED_PLANE
+    soldiers: 12
+    vehicles: 0
+    battlescapeTerrainData:
+      name: MEDIUM_DEPLOYMENT
+      mapDataSets:
+        - BLANKS
+        - LITTLE_BIRD
+      mapBlocks:
+        - name: MEDIUM_DEPLOYMENT
+          width: 10
+          length: 20
+    craftInventoryTile: [7, 17, 0]
+    deployment:
+      - [8, 18, 0, 3]
+      - [3, 18, 0, 5]
+      - [7, 7, 0, 3]
+      - [2, 7, 0, 5]
+      - [3, 17, 0, 3]
+      - [8, 17, 0, 5]
+      - [2, 6, 0, 3]
+      - [7, 6, 0, 5]
+      - [3, 16, 0, 6]
+      - [8, 16, 0, 2]
+      - [2, 5, 0, 6]
+      - [7, 5, 0, 2]
+
 terrains:
   - name: DIEHARD_G
     script: DIEHARD_SCRIPT
@@ -252,6 +280,7 @@ mapScripts:
   - type: AIRPORT_HIJACKED_PLANE_SCRIPT
     commands:
     - type: addCraft
+      craftName: STR_LITTLE_BIRD_HIJACKED_PLANE
       executions: 1
       rects:
         - [0, 0, 1, 1]
