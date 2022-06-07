@@ -1162,6 +1162,50 @@ items:
     fixedWeapon: true
     fixedWeaponShow: true
     defaultInventorySlot: STR_RIGHT_HAND
+  - type: STR_2A28_GROM
+    size: 0.2
+    #costSell: 27500
+    weight: 30
+    bigSprite: 2506
+    floorSprite: 0
+    handSprite: 0
+    #bulletSprite: 4
+    fireSound: 4333
+    bulletSpeed: 10
+    accuracySnap: 60
+    accuracyAimed: 80
+    #tuAuto: 30
+    tuSnap: 30
+    #autoShots: 6
+    clipSize: 40
+    battleType: 1
+    bulletSprite: 4
+    #arcingShot: true
+    #damageType: 5
+    twoHanded: true
+    recover: false
+    maxRange: 200
+    snapRange: 29
+    autoRange: 22
+    minRange: 0
+    dropoff: 2
+    invWidth: 2
+    invHeight: 3
+    hitSound: 4335
+    hitAnimation: 0
+    power: 63
+    damageType: 3
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    #sprayWaypoints: 2
+    #listOrder: 2116
+    kneelBonus: 110
+    fixedWeapon: true
+    fixedWeaponShow: true
+    defaultInventorySlot: STR_RIGHT_HAND
 
 armors:
   - type: CIVM_ARMOR
@@ -3785,6 +3829,36 @@ armors:
      - 0.0 # Smoke
      - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+  - type: BMP_TANK_ARMOR
+    spriteSheet: BMP.PCK
+    spriteInv: BMP
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 45
+    sideArmor: 30
+    rearArmor: 35
+    underArmor: 20
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]#
     personalLight: 20
 
 units:
@@ -6918,5 +6992,33 @@ units:
     builtInWeaponSets:
       -
         - STR_100MM_CANNON
+        #- STR_PKT_MACHINEGUN
+        #- STR_PKT_AMMO_BOX
+  - type: STR_BMP_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 90
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 40
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: BMP_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    intelligence: 6
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_2A28_GROM
         #- STR_PKT_MACHINEGUN
         #- STR_PKT_AMMO_BOX

@@ -880,6 +880,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Tanks/T54.png
+  - type: BMP.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/BMP.png
   - type: FERRET_BACKGROUND
     singleImage: true
     width: 320
@@ -968,6 +975,10 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Tanks/Inventory/T54_INVENTORY.png
+  - type: BMPM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/BMP_INVENTORY.png
 research:
   - name: STR_IMP_TANK_CHASSIS
     cost: 500

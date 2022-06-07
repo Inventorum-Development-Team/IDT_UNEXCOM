@@ -363,6 +363,8 @@ mapScripts:
     commands:
     - type: addCraft
       groups: 1
+    - type: addUFO
+      groups: 1
     - type: addLine
       label: 1
       direction: vertical
@@ -381,8 +383,6 @@ mapScripts:
       direction: both
       rects:
         - [1, 1, 4, 4]
-    - type: addUFO
-      groups: 1
     - type: addBlock
       size: 2
       executions: 2
