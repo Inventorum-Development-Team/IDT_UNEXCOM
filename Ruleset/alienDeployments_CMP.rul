@@ -761,6 +761,8 @@ alienDeployments:
     civilians: 10
     missionBountyItem: STR_TERROR_SHIP_ANALYSIS
     height: 10
+    length: 60
+    width: 60
     data:
       - alienRank: 5
         lowQty: 4
@@ -941,6 +943,8 @@ alienDeployments:
     civilians: 10
     missionBountyItem: STR_BATTLESHIP_ANALYSIS
     height: 10
+    length: 60
+    width: 60
     data:
       - alienRank: 5
         lowQty: 4
@@ -1388,7 +1392,7 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
     width: 50
     length: 50
-    height: 9
+    height: 10
     missionBountyItem: STR_EXCAVATOR_ANALYSIS
   - type: STR_FIGHTER_SHIP
     data:
@@ -1691,8 +1695,8 @@ alienDeployments:
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
-    width: 50
-    length: 50
+    width: 60
+    length: 60
     civilians: 6
     height: 10
     missionBountyItem: STR_LAB_SHIP_ANALYSIS
@@ -2419,6 +2423,7 @@ alienDeployments:
 
 
   - type: STR_ALIEN_BASE_ASSAULT_STAGE_2_UNDERGROUND
+    missionBountyItem: STR_HYPER_WAVE_ENCODER
     data: *AlienBaseRanks
     briefing:
       textOffset: -16

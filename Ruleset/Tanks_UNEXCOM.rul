@@ -710,11 +710,12 @@ armors:
      - 0.6 # Incendiary
      - 0.8 # HE
      - 1.0 # Laser
-     - 1.0 # Plasma
+     - 0.9 # Plasma
      - 0.0 # Stun
-     - 0.0 # Melee
+     - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
 
@@ -743,11 +744,12 @@ armors:
      - 0.6 # Incendiary
      - 0.8 # HE
      - 1.0 # Laser
-     - 1.0 # Plasma
+     - 0.9 # Plasma
      - 0.0 # Stun
-     - 0.0 # Melee
+     - 0.2 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]#
     personalLight: 20
 
@@ -776,11 +778,12 @@ armors:
      - 0.7 # Incendiary
      - 1.0 # HE
      - 1.0 # Laser
-     - 1.0 # Plasma
+     - 0.9 # Plasma
      - 0.0 # Stun
      - 0.0 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
 
@@ -809,11 +812,12 @@ armors:
      - 0.6 # Incendiary
      - 0.5 # HE
      - 0.7 # Laser
-     - 1.0 # Plasma
+     - 0.7 # Plasma
      - 0.0 # Stun
-     - 0.0 # Melee
+     - 0.1 # Melee
      - 0.4 # Acid
      - 0.0 # Smoke
+     - 0.7 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
 
@@ -855,6 +859,34 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Tanks/LEGIONNAIRE.png
+  - type: PATTON.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/PATTON.png
+  - type: LEOPARD.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/LEOPARD.png
+  - type: T54.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/T54.png
+  - type: BMP.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/BMP.png
   - type: FERRET_BACKGROUND
     singleImage: true
     width: 320
@@ -908,8 +940,9 @@ extraSprites:
       2508: Resources/Tanks/ENERGYSHELL.png
       2509: Resources/Tanks/LASERMINIGUN.png
 
-#      2510: Resources/Tanks/ENERGYSHELL.png
-#      2511: Resources/Tanks/LASERMINIGUN.png
+      2510: Resources/Tanks/105MM.png
+      2511: Resources/Tanks/100MM.png
+      2512: Resources/Tanks/50CAL.png
   - type: FERRETM0.SPK
     singleImage: true
     files:
@@ -930,6 +963,22 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Tanks/Inventory/LEGIONNAIRE_INVENTORY.png
+  - type: PATTONM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/PATTON_INVENTORY.png
+  - type: LEOPARDM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/LEOPARD_INVENTORY.png
+  - type: T54M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/T54_INVENTORY.png
+  - type: BMPM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/BMP_INVENTORY.png
 research:
   - name: STR_IMP_TANK_CHASSIS
     cost: 500

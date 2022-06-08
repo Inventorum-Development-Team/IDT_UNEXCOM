@@ -238,8 +238,8 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UNITED_WE_STAND_RESEARCH: true
-    startDelay: 43500
-    randomDelay: 43500
+    startDelay: 17500
+    randomDelay: 40000
     executionOdds: 30
 
   - type: EuropeanCombatOperations
@@ -255,8 +255,8 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UNITED_WE_STAND_RESEARCH: true
-    startDelay: 43500
-    randomDelay: 43500
+    startDelay: 17500
+    randomDelay: 40000
     executionOdds: 30
 
   - type: SovietCombatOperations
@@ -272,8 +272,8 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UNITED_WE_STAND_RESEARCH: true
-    startDelay: 43500
-    randomDelay: 43500
+    startDelay: 17500
+    randomDelay: 40000
     executionOdds: 30
 #######################################
   - type: AmericanCityDefense
@@ -289,8 +289,8 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UNITED_WE_STAND_RESEARCH: true
-    startDelay: 43500
-    randomDelay: 43500
+    startDelay: 17500
+    randomDelay: 40000
     executionOdds: 30
 
   - type: EuropeanCityDefense
@@ -306,8 +306,8 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UNITED_WE_STAND_RESEARCH: true
-    startDelay: 43500
-    randomDelay: 43500
+    startDelay: 17500
+    randomDelay: 40000
     executionOdds: 30
 
   - type: SovietCityDefense
@@ -323,8 +323,8 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UNITED_WE_STAND_RESEARCH: true
-    startDelay: 43500
-    randomDelay: 43500
+    startDelay: 17500
+    randomDelay: 40000
     executionOdds: 30
 ######################################
   - type: OperationFalseFlagOverseerTrap
@@ -340,6 +340,8 @@ missionScripts:
       STR_ALIEN_ID_CODES: false
     startDelay: 17500
     randomDelay: 40000
+    varName: OperationFalseFlagOverseerTrap
+    maxRuns: 3
     executionOdds: 100
 
   - type: OperationDevastation
@@ -351,8 +353,7 @@ missionScripts:
         REGION_SPACEPORTS_DEVASTATION: 100
     useTable: false
     researchTriggers:
-      STR_OLYMPUS: true
-      STR_UNITED_WE_STAND_RESEARCH: true
+      STR_THE_MARTIAN_SOLUTION: true
       STR_DEVASTATION_COMPLETED: false
     startDelay: 17500
     randomDelay: 40000

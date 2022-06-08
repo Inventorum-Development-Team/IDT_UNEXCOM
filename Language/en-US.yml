@@ -210,14 +210,17 @@ en-US:
       STR_AMERICAN_RIFLEMAN: US Army Rifleman
       STR_AMERICAN_ASSAULT: US Army Assault
       STR_AMERICAN_SUPPORT: US Army Sapper
+      STR_AMERICAN_ELITE: US Army Ranger
       AMERICAN_SOLDIER_ARMOR: OG-107 Uniform
       STR_EUROPEAN_RIFLEMAN: NATO Infantryman
-      STR_EUROPEAN_ASSAULT: NATO Commando
+      STR_EUROPEAN_ASSAULT: NATO Chasseur
       STR_EUROPEAN_SUPPORT: NATO Engineer
+      STR_EUROPEAN_ELITE: NATO Jaeger
       EUROPEAN_SOLDIER_ARMOR: Combat Fatigues
       STR_SOVIET_RIFLEMAN: Warsaw Pact Soldier
       STR_SOVIET_ASSAULT: Warsaw Pact Raider
       STR_SOVIET_SUPPORT: Warsaw Pact Machine Gunner
+      STR_SOVIET_ELITE: VDV Paratrooper
       SOVIET_SOLDIER_ARMOR: M69 Uniform
 
       STR_ROOKIE: "Private"
@@ -734,6 +737,13 @@ en-US:
       STR_SOVIET_OPERATIONS_MISSION_DESCRIPTION: The Kremlin has ordered an attack on alien enemies on the ground. The Security Council requests our support to reinforce Soviet positions in the area.
       STR_SOVIET_OPERATIONS_MISSION_BRIEFING: The Warsaw Pact soldiers are facing a larger enemy than they expected. Casualties are high, but their morale is still high. Our arrival will be decisive in changing the course of the battle, your orders are to wiping out every invader in front of them.
 
+      STR_AMERICAN_TANK_BATTLE_MISSION: American Tank Battle
+      STR_AMERICAN_TANK_BATTLE_BRIEFING: An armored battalion of the US Army was mobilized to engage an alien landing zone. We think the enemy spearhead was meant to attack a nearby population center. The Council has requested our support in the tank clash, we can expect a high number of heavy enemy units.
+      STR_EUROPEAN_TANK_BATTLE_MISSION: NATO Tank Battle
+      STR_EUROPEAN_TANK_BATTLE_MISSION_BRIEFING: European tanks was sent to intercept an alien armored column traveling in direction to an urban center. The NATO armored brigade is currently engaging the enemy and the Security Council requested our support in the ensuing battle.
+      STR_SOVIET_TANK_BATTLE_MISSION: Warsaw Pact Tank Battle
+      STR_SOVIET_TANK_BATTLE_MISSION_BRIEFING: Into the Mother Earth, the Ethereal army march. WTO armored units have ambushed a large contingent of alien heavy vehicles, not so far a human city. The Council sent us to support the Soviet tanks in their task to destroy the alien force.
+
       STR_AMERICAN_CITY_DEFENSE: American City Defense
       STR_AMERICAN_CITY_DEFENSE_DESCRIPTION: National Guard units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
       STR_AMERICAN_CITY_DEFENSE_BRIEFING: Aliens have attacked an American city. National Guard units have mobilized to confront the enemy, but are in danger of being overrun. It is our job to help the US armed forces to protect the civilians in the area.
@@ -742,7 +752,7 @@ en-US:
       STR_EUROPEAN_CITY_DEFENSE_BRIEFING: A city in a NATO country has been attacked by hostile forces. The Security Council has authorized the deployment of our forces to help contain the threat. Strong resistance is expected, try to help the European allies to protect as many civilians as possible.
       STR_SOVIET_CITY_DEFENSE: Warsaw Pact City Defense
       STR_SOVIET_CITY_DEFENSE_DESCRIPTION: National army units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
-      STR_SOVIET_CITY_DEFENSE_BRIEFING: A core population of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to liaise with Covenant troops in the area, to help contain the threat and evacuate the civilians.
+      STR_SOVIET_CITY_DEFENSE_BRIEFING: A major population center of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to link up with WTO troops in the area, to help contain the threat and evacuate the civilians.
 
       POLICE_SWAT: "SWAT Officer"
 
@@ -2461,7 +2471,7 @@ en-US:
 
       STR_USSR_LASER_RIFLES_UFOPEDIA: The crown jewel of Soviet laser technology, the rifles are considered the most important application of laser technology created by the Soviet Union. Due to the problems caused by the alien invasion, they have been put into mass production to equip the millions of soldiers of the Warsaw Pact and defend the Motherland and planet Earth.
 
-      STR_USSR_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA:
+      STR_USSR_LASER_CLOSE_RANGE_WEAPONS_UFOPEDIA: "The completion of laser compact pistols allows Soviet researchers to develop new laser weapons for light skirmishes. Soviet engineers have managed to design a close quarters combat weapon to conduct special operations against alien logistic units. These close range weapons are useful for Warsaw Pact military and foreign operators."
 
       STR_USSR_LASER_HEAVY_WEAPONS_UFOPEDIA: The new military strategy of the countries aligned with the Soviet Union prioritizes the use of heavy weapons from fortified positions to defeat a considerably superior enemy. To this end, the Committee has ordered the creation of powerful weapons for a war of attrition. They are not very comfortable to use, but their firepower is unmatched.
 
@@ -2604,6 +2614,7 @@ en-US:
       STR_ARMORED_FLOATER: "Armored Floater"
       STR_MUTON_LEADER: "Muton Guard"
       STR_ARMORED_MUTON: "Shock Muton"
+      STR_ALIEN_TANK_BATTALION: "Alien Tank Battalion"
       #STR_ARMORED_MUTON_LEADER: "Elite Muton Guard"
       STR_MECHTOID: "Mechtoid"
       STR_CYBERSPHERE: "Cybersphere"
@@ -3601,6 +3612,8 @@ en-US:
       STR_REPAIR_HEAVY_PERSONAL_ARMOR: "Repair Heavy Personal Armor"
       STR_REPAIR_POWER_SUIT: "Repair Marauder Armor"
       STR_REPAIR_FLYING_SUIT: "Repair Pathfinder Armor"
+      STR_REPAIR_SCOUT_POWER_ARMOR: "Repair Scout Power Armor"
+      STR_REPAIR_SCOUT_FLYING_ARMOR: "Repair Scout Flying Armor"
 
 
 
@@ -3707,6 +3720,8 @@ en-US:
 ########################################################
       STR_BMD1_TANK: BMD-1 Airborne IFV
       BMD1_TANK_ARMOR: Welded aluminium alloy
+      STR_BMP_TANK: BMP IFV
+      BMP_TANK_ARMOR: Welded rolled steel
       STR_2A28_GROM: 2A28 73mm Grom Cannon
       STR_73MM_CANNON_SHELLS: 73mm HE Rounds
       STR_PKT_MACHINEGUN: 7.62mm PKT Machine Gun
@@ -3724,7 +3739,15 @@ en-US:
       LEGIONNAIRE_TANK_ARMOR: Alien Alloys hull
       STR_XM343: LGM34-3H Kodiak Laser Cannon
       STR_TANK_LASER_MINIGUN: XM250 Laser Minigun
-
+#######################################
+      STR_PATTON_TANK: M60 Patton Tank
+      PATTON_TANK_ARMOR: Steel hull armor
+      STR_105MM_CANNON: RO L7A3 105mm Gun
+      STR_LEOPARD_TANK: Leopard 1 Tank
+      LEOPARD_TANK_ARMOR: Steel hull armor
+      STR_T54_TANK: T-54 Tank
+      T54_TANK_ARMOR: Steel hull armor
+      STR_100MM_CANNON: D-10T2G 100mm Cannon
 
 ##########################################
 ########## COMMENDATIONS ###############

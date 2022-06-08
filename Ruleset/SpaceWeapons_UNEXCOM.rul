@@ -81,7 +81,8 @@ items:
     requires:
       - STR_OLYMPUS
     size: 0.1
-    costSell: 250
+    costBuy: 400
+    costSell: 350
     weight: 2
     bigSprite: 1136
     floorSprite: 1136
@@ -97,6 +98,8 @@ items:
     listOrder: 201820
 
   - type: STR_SPACE_KNIFE
+    requiresBuy:
+      - STR_OLYMPUS
     categories: [ STR_MELEE, STR_SPACE, STR_LIGHT_EQUIPMENT ]
     size: 0.2
     costBuy: 1200
@@ -134,6 +137,8 @@ items:
     listOrder: 2119
 
   - type: STR_GENERATOR_STICK
+    requiresBuy:
+      - STR_GENERATOR_STICK
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.1
     costBuy: 3260
