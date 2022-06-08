@@ -907,9 +907,9 @@ armors:
     spriteInv: SCOUT_POWER_ARMOR_INV
     customArmorPreviewIndex: 531
     corpseBattle:
-      - STR_CORPSE_ARMOR
+      - STR_CORPSE_SCOUT_POWER_ARMOR
     corpseGeo: STR_CORPSE_ARMOR # should be corpseBattle?
-    storeItem: STR_CORPSE_ARMOR
+    storeItem: STR_SCOUT_POWER_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
     stats:
@@ -950,9 +950,9 @@ armors:
     spriteInv: SCOUT_FLYING_ARMOR_INV
     customArmorPreviewIndex: 536
     corpseBattle:
-      - STR_CORPSE_ARMOR
-    corpseGeo: STR_CORPSE_ARMOR
-    storeItem: STR_CORPSE_ARMOR
+      - STR_CORPSE_SCOUT_FLYING_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
+    storeItem: STR_SCOUT_FLYING_ARMOR
     weight: 6
     loftempsSet: [ 3 ]
     stats:
@@ -1294,6 +1294,33 @@ manufacture:
       STR_ELERIUM_115: 3
     producedItems:
       STR_FLYING_SUIT: 1
+  - name: STR_REPAIR_SCOUT_POWER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_POWER_ARMOR
+    space: 16
+    time: 700
+    cost: 12000
+    requiredItems:
+      STR_CORPSE_SCOUT_POWER_ARMOR: 1
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_SCOUT_POWER_ARMOR: 1
+  - name: STR_REPAIR_SCOUT_FLYING_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_FLYING_ARMOR
+    space: 16
+    time: 700
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_SCOUT_FLYING_ARMOR: 1
+      STR_ALIEN_ALLOYS: 3
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_SCOUT_FLYING_ARMOR: 1
+
 
 extraSprites:
   - type: BASEBITS.PCK
