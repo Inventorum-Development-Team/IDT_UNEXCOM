@@ -6,7 +6,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 ***Credits by name:***
 
 * afsoc4life: bug hunter
-* Alex_D: UH-1 Huey, Mi-24 Hind maps
+* Alex_D: UH-1 Huey, Mi-24 Hind, Little Bird maps
 * ahnyoungjune: bug hunter
 * alinare: BMD-1 & Laser Tank sprites
 * Andr: M12 Beretta, M72 LAW, FN MAG, XM117 (and variants), M16A1 (and variants) 9mm Pistol x20 Mag sprite, F-104S Starfighter & MiG-21 sprite, Remington Combat Shotgun sprites, plus ideas and historical/technical advice
@@ -20,6 +20,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Branes51: bug hunter
 * Brother^2: IDT bug hunter, ideas and feedback
 * bulletdesigner: Old Pilots graphics from 40k mod (now unused), COPTER map (Huey placeholder, now unused), Improved Maps terrains
+* Bu7loos: original creator of Panhard Armored Car and Scimitar Laser Tank(adapted to OXC format)
 * cubick2k: bug hunter
 * Cupon4uk: bug hunter
 * danielpembrink: bug hunter
@@ -48,7 +49,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * KingMob4313: Plasma ruleset and sprites from Equal Terms, inspiration (laser removed)
 * Memmaker: Mechtoid rulesets
 * Meridian: modding help on the forums, OXCE dev, corpse situation icons (stun, bleed, shock, etc)
-* MigEater: Original Sheridan, Patton, Leopard, Legionnnarie and T-54 sprites from D-Day mod (adapted to OXC format)
+* MigEater: Original M41 Walker Bulldog,  Patton, Leopard I, Legionnnarie and T-54 sprites from D-Day mod (adapted to OXC format)
 * Mitra Lightbringer: bug hunter
 * MosesManWithAPlan: bug hunter
 * NeoWorm: Sectoid, Muton, Floater paperdolls, Floater spritesheets (adapted and expanded)
@@ -76,7 +77,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * The Reaver of Darkness: major balance support, LIGHTNIA mapset, plus ideas
 * theemperorofmankind: bug hunter
 * Tingcat: Terrorists Paperdolls
-* Ultrakiroxei: bug hunter
+* Ultrakiroxei: bug hunter, USSR Close Range Laser Pedia text 
 * Valmont and his girlfriend: bug hunters
 * Vesparco: Sectoid Commander spritesheet
 * Warboy1982: Shotgun firing sound
@@ -84,6 +85,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * xover88: XCOM 2012 Music
 * Yataka Shimaoka: bug hunter
 * Yeti: bug hunter, feedback support, plus ideas
+* Yuri_Prime and Kerbiter: original creators of M551 Sheridan, BMP-1 models (adapted to OXC format)
 * wolwerin: Russian translation, Flechette Weapons, Tesla Weapons, Alien lasers, Terrorist HQ map, Alien Space Station maps, Armored Sectoid, overall improvement of weapon sprites, Space Weapons, some sounds, plus debugging support
 * Zane: original Delta sprites
 * zaphnath: bug hunter
