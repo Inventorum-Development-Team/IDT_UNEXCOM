@@ -15,6 +15,8 @@ research:
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
   - delete: STR_ULTIMATE_CRAFT
+  - delete: STR_THE_MARTIAN_SOLUTION
+  - delete: STR_CYDONIA_OR_BUST
 #################################
   - name: STR_MEDI_KIT
     dependencies:
@@ -1020,7 +1022,7 @@ research:
     points: 60
     unlockFinalMission: true
     dependencies:
-      - STR_CYDONIA_DEP
+      #- STR_COMMANDER_PLUS
       - STR_DESTINATION_MARS
 
 
@@ -1154,7 +1156,7 @@ research:
     needItem: true
     destroyItem: true
 
-  - name: STR_CYDONIA_DEP
+  - name: STR_COMMANDER_PLUS
     cost: 0
     points: 0
     unlocks:
@@ -1351,7 +1353,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_LEADER_PLUS
-      - STR_CYDONIA_DEP
+      - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_ALIEN_RANKS
