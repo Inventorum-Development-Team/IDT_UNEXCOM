@@ -1,5 +1,8 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+Ruleset/** text=auto
+*.md text=auto
+*.txt text=auto
+*.rul text=auto
 # ignore stuff
 TERRAIN/** linguist-vendored
 .vscode/* linguist-vendored
