@@ -1,13 +1,20 @@
 # Auto detect text files and perform LF normalization
-Ruleset/** text=auto
 *.md text=auto
 *.txt text=auto
 *.rul text=auto
-# ignore stuff
-TERRAIN/** linguist-vendored
-.vscode/* linguist-vendored
+MercenaryNames/** text=auto
+PilotNames/** text=auto
+Ruleset/** text=auto
+SpecialForcesNames/** text=auto
 # correct language types
-#MercenaryNames/*.nam linguist-language=YAML
-#PilotNames/*.nam linguist-language=YAML
-#Ruleset/*.rul linguist-language=YAML
-#SpecialForcesNames/*.nam linguist-language=YAML
+MercenaryNames/*.nam linguist-language=YAML
+PilotNames/*.nam linguist-language=YAML
+Ruleset/*.rul linguist-language=YAML
+SpecialForcesNames/*.nam linguist-language=YAML
+# ignore stuff
+.vscode/* linguist-vendored
+GEODATA/** linguist-vendored
+MAPS/** linguist-vendored
+ROUTES/** linguist-vendored
+SOUND/** linguist-vendored
+TERRAIN/** linguist-vendored
