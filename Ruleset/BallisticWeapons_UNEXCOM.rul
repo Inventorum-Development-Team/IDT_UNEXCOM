@@ -3398,9 +3398,20 @@ items:
     fireSound: 175
     accuracyAuto: 65
     accuracySnap: 70
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false    
     tuAuto: 30
     tuSnap: 20
-    autoShots: 6
     clipSize: 300
     power: 60
     battleType: 1
