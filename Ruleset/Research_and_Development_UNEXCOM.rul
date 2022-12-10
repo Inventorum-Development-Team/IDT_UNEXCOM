@@ -710,6 +710,13 @@ research:
       - STR_NATO_LASER_RESEARCH
       - STR_USSR_LASER_RESEARCH
 
+  - name: STR_SECRET_CRISIS_PROTOTYPES
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HYBRID_LASER_PROJECT
+      - STR_ON_OUR_OWN
+
 #########################################
 ####### AMERICAN LASER RESEARCH ########
 #######################################
