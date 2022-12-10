@@ -1599,14 +1599,21 @@ ufopaedia:
     requires:
       - STR_LASER_WEAPONS
     text: STR_LASER_WEAPONS_UFOPEDIA
-    listOrder: 2099
+    listOrder: 2060
   - id: STR_HYBRID_LASER_PROJECT
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
     requires:
       - STR_HYBRID_LASER_PROJECT
     text: STR_HYBRID_LASER_PROJECT_UFOPEDIA
-    listOrder: 2100
+    listOrder: 2070
+  - id: STR_SECRET_CRISIS_PROTOTYPES
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_SECRET_CRISIS_PROTOTYPES_UFOPEFIA
+    listOrder: 2080   
   ####################################
   - id: STR_USA_LASER_RESEARCH
     type_id: 7
