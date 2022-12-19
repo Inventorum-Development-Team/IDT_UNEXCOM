@@ -1612,8 +1612,8 @@ ufopaedia:
     section: STR_UNEXCOM_RESEARCH
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_SECRET_CRISIS_PROTOTYPES_UFOPEFIA
-    listOrder: 2080   
+    text: STR_SECRET_CRISIS_PROTOTYPES_UFOPEDIA
+    listOrder: 2080
   ####################################
   - id: STR_USA_LASER_RESEARCH
     type_id: 7
@@ -1792,6 +1792,54 @@ ufopaedia:
       - STR_NEW_HUMAN_PLASMA_RIFLE
     text: STR_NEW_HUMAN_PLASMA_RIFLE_UFOPEDIA
     listOrder: 2250
+
+################################
+#### HUMAN PLASMA WEAPONS ####
+#############################
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_THEORY
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_THEORY
+    text: STR_HUMAN_PLASMA_WEAPONS_THEORY_UFOPEDIA
+    listOrder: 2260
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+    text: STR_HUMAN_PLASMA_WEAPONS_PROGRESS_UFOPEDIA
+    listOrder: 2265
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_UFOPEDIA
+    listOrder: 2270
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS_UFOPEDIA
+    listOrder: 2275
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS_UFOPEDIA
+    listOrder: 2278
+############################
+###### ELERIUM FUSION #####
+##########################
+
   - id: STR_ELERIUM_FUSION
     type_id: 7
     requires:

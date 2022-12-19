@@ -808,6 +808,74 @@ research:
       - STR_USSR_LASER_RIFLES
 
 ########################################
+####### PLASMA RESEARCH TOPICS #########
+########################################
+
+  - name: STR_ALIEN_PLASMA_WEAPONS
+    cost: 800
+    points: 80
+    dependencies:
+      - STR_SECTOID_ENGINEER
+      - STR_FLOATER_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
+      - STR_CHTONITE_ENGINEER
+      - STR_REPTOID_ENGINEER
+      - STR_CEREBREAL_ENGINEER
+      - STR_ARMORED_MUTON_ENGINEER
+      - STR_ARMORED_FLOATER_ENGINEER
+      - STR_ARMORED_SECTOID_ENGINEER
+      - STR_PLASMA_PISTOL
+      - STR_HEAVY_PLASMA
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_BLASTER
+      - STR_PLASMA_SNIPER_RIFLE
+
+  - name: STR_HUMAN_PLASMA_WEAPONS_THEORY
+    cost: 1000
+    points: 100
+    dependencies:
+      - STR_ALIEN_PLASMA_WEAPONS
+
+  - name: STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+    cost: 1000
+    points: 100
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_THEORY
+
+#########################################
+####### AMERICAN PLASMA RESEARCH ########
+#######################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_USA_SUPPORT_RESEARCH
+
+#########################################
+####### EUROPEAN PLASMA RESEARCH ########
+#######################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_NATO_SUPPORT_RESEARCH
+
+#########################################
+######## SOVIET PLASMA RESEARCH #########
+########################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_USSR_SUPPORT_RESEARCH
+
+
+########################################
 ######### WEAPON REQUISITION ###########
 ########################################
   - name: STR_MAKAROV
