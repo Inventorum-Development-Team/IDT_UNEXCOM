@@ -3162,12 +3162,12 @@ ufopaedia:
     text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
     listOrder: 4706
 
-  - id: STR_HUMAN_HEAVY_PLASMA
+  - id: STR_US_PLASMA_RL
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-    text: STR_HUMAN_HEAVY_PLASMA_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    text: STR_US_PLASMA_RL_UFOPEDIA
     listOrder: 4707
 
   - id: STR_SAWEDOFF_M79_THUMPER
@@ -3743,16 +3743,18 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: ...
-    listOrder: 5207
+    listOrder: 5208
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-  - id: STR_GYROJET_AMMO_MAGAZINE
-    requires:
-      - STR_OLYMPUS
+
+  - id: STR_NATO_PLASMA_CARBINE_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
-    listOrder: 5208
+    text: ...
+    listOrder: 5209
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+
   - id: STR_US_PLASMA_RL_HEAT_ROCKET
     type_id: 4
     section: STR_AMMUNITION
@@ -3767,6 +3769,14 @@ ufopaedia:
     listOrder: 5212
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+
+  - id: STR_GYROJET_AMMO_MAGAZINE
+    requires:
+      - STR_OLYMPUS
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
+    listOrder: 5215
 
   #Equipment
 
