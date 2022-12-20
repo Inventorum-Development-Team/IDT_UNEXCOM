@@ -2331,7 +2331,7 @@ ufopaedia:
       text: STR_FLECHETTE_PISTOL_UFOPEDIA
       ammoSlot: 1
     listOrder: 4014
-    
+
   - id: STR_NATO_PLASMA_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -3686,7 +3686,7 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: ...
-    listOrder: 5203    
+    listOrder: 5203
   - id: STR_NATO_PLASMA_PISTOL_MAG
     type_id: 4
     section: STR_AMMUNITION
@@ -3700,7 +3700,7 @@ ufopaedia:
     text: ...
     listOrder: 5202
     requires:
-      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS      
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
   - id: STR_SOVIET_PLASMA_SMG_MAG
     type_id: 4
     section: STR_AMMUNITION
@@ -3745,7 +3745,7 @@ ufopaedia:
     text: ...
     listOrder: 5207
     requires:
-      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS      
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
   - id: STR_GYROJET_AMMO_MAGAZINE
     requires:
       - STR_OLYMPUS
@@ -3753,7 +3753,20 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
     listOrder: 5208
-
+  - id: STR_US_PLASMA_RL_HEAT_ROCKET
+    type_id: 4
+    section: STR_AMMUNITION
+    text: ...
+    listOrder: 5210
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+  - id: STR_US_PLASMA_RL_ELERIUM_ROCKET
+    type_id: 4
+    section: STR_AMMUNITION
+    text: ...
+    listOrder: 5212
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
 
   #Equipment
 

@@ -1032,23 +1032,20 @@ items:
     fireSound: 143
     confSnap:
       shots: 1
-      name: STR_AIMED_SHOT
-    confAuto:
-      shots: 3
-      name: STR_X3_SHOT
+      #name: STR_AIMED_SHOT
     confAimed:
-      shots: 6
-      name: STR_X6_SHOT
+      shots: 1
+      #name: STR_X6_SHOT
     compatibleAmmo:
       - STR_US_PLASMA_RL_HEAT_ROCKET
       - STR_US_PLASMA_RL_ELERIUM_ROCKET
     accuracyCloseQuarters: 25
     accuracySnap: 125
     accuracyAimed: 80
-    accuracyAuto: 60
+    #accuracyAuto: 60
     tuSnap: 40
     tuAimed: 60
-    tuAuto: 80
+    #tuAuto: 80
     tuLoad: 20
     battleType: 1
     twoHanded: true
