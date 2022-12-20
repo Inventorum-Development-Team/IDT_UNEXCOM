@@ -3690,40 +3690,34 @@ ufopaedia:
   - id: STR_NATO_PLASMA_PISTOL_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_NATO_PLASMA_PISTOL_MAG_UFOPEDIA
     listOrder: 5201
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
   - id: STR_SOVIET_PLASMA_SMG_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_SOVIET_PLASMA_SMG_MAG_UFOPEDIA
     listOrder: 5202
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-  - id: STR_SOVIET_PLASMA_SMG_MAG
-    type_id: 4
-    section: STR_AMMUNITION
-    text: ...
-    listOrder: 5202
-    requires:
-      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+
   - id: STR_US_PLASMA_RIFLE_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_US_PLASMA_RIFLE_MAG_UFOPEDIA
     listOrder: 5203
   - id: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG_UFOPEDIA
     listOrder: 5204
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
   - id: STR_NATO_SNIPER_PLASMA_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_NATO_SNIPER_PLASMA_MAG_UFOPEDIA
     listOrder: 5205
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
@@ -3735,14 +3729,14 @@ ufopaedia:
   - id: STR_SOVIET_PLASMA_LMG_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_SOVIET_PLASMA_LMG_MAG_UFOPEDIA
     listOrder: 5207
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
   - id: STR_US_PLASMA_SHOTGUN_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_US_PLASMA_SHOTGUN_MAG_UFOPEDIA
     listOrder: 5208
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
@@ -3750,7 +3744,7 @@ ufopaedia:
   - id: STR_NATO_PLASMA_CARBINE_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_NATO_PLASMA_CARBINE_MAG_UFOPEDIA
     listOrder: 5209
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
@@ -3758,14 +3752,14 @@ ufopaedia:
   - id: STR_US_PLASMA_RL_HEAT_ROCKET
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_US_PLASMA_RL_HEAT_ROCKET_UFOPEDIA
     listOrder: 5210
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
   - id: STR_US_PLASMA_RL_ELERIUM_ROCKET
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_US_PLASMA_RL_ELERIUM_ROCKET_UFOPEDIA
     listOrder: 5212
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
