@@ -1,4 +1,4 @@
-﻿
+
 items:
 # Weapons
 # Changed existing Alien Only Weapons
@@ -957,7 +957,7 @@ items:
     size: 0.3
     costBuy: 50000
     costSell: 40000
-    weight: 6
+    weight: 30
     bigSprite: 3208
     floorSprite: 3208
     handSprite: 3208
@@ -972,22 +972,26 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 65
-    accuracySnap: 65
-    accuracyAimed: 60
+    accuracyAuto: 30
+    accuracySnap: 100
+    accuracyAimed: 65
     costSnap:
-      time: 35
+      time: 60
     costAimed:
-      time: 40
+      time: 75
     costAuto:
-      time: 45
+      time: 70
+    tuLoad: 30
+    tuUnload: 15
     battleType: 1
-    twoHanded: true
+    twoHanded: true 
+    twoHandedPenalty: 30
+    kneelBonus: 125
     maxRange: 60
-    aimRange: 30
-    snapRange: 36
-    autoRange: 25
-    dropoff: 1
+    aimRange: 32
+    snapRange: 28
+    autoRange: 16
+    dropoff: 10
     invWidth: 1
     invHeight: 3
 
@@ -1002,7 +1006,7 @@ items:
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
-    weight: 3 # 3
+    weight: 5 # 3
     hitSound: 1938
     hitAnimation: 110
     power: 80
@@ -1025,7 +1029,7 @@ items:
     size: 0.4
     costBuy: 36000
     costSell: 30000
-    weight: 9
+    weight: 38
     bigSprite: 3216
     floorSprite: 3216
     handSprite: 3216
@@ -1120,7 +1124,7 @@ items:
     size: 0.3
     costBuy: 38000
     costSell: 32000
-    weight: 7
+    weight: 25
     bigSprite: 3224
     floorSprite: 3224
     handSprite: 3224
@@ -1142,11 +1146,14 @@ items:
     #costAimed:
     #  time: 60
     costAuto:
-      time: 55
-    maxRange: 60
-    tuLoad: 10
+      time: 40
+    maxRange: 20
+    tuLoad: 20
+    tuUnload: 10
+    dropoff: 10
+    kneelBonus: 115
     #snapRange: 12
-    autoRange: 10
+    autoRange: 12
     #arcingShot: true
     invHeight: 3
     invWidth: 1
@@ -1173,12 +1180,12 @@ items:
       IgnoreOverKill: false
       ToArmorPre: 0.4
       FireThreshold: 80
-    weight: 1 # 3
+    weight: 10 # 3
     hitSound: 1938
     shotgunBehavior: 1
     shotgunPellets: 15
-    shotgunSpread: 50
-    shotgunChoke: 75
+    shotgunSpread: 75
+    shotgunChoke: 60
     armor: 30 # 20
     battleType: 2
     vaporColorSurface: 2
