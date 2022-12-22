@@ -985,7 +985,7 @@ items:
     tuUnload: 15
     battleType: 1
     twoHanded: true 
-    twoHandedPenalty: 30
+    oneHandedPenalty: 30
     kneelBonus: 125
     maxRange: 60
     aimRange: 32
@@ -1202,7 +1202,7 @@ items:
     size: 0.3
     costBuy: 50000
     costSell: 44000
-    weight: 4
+    weight: 25
     bigSprite: 3232
     floorSprite: 3232
     handSprite: 3232
@@ -1218,22 +1218,26 @@ items:
     confAuto:
       shots: 10
       name: STR_FULL_AUTO
-    accuracyAuto: 70
-    accuracySnap: 80
-    accuracyAimed: 105
+    accuracyAuto: 65
+    accuracySnap: 70
+    accuracyAimed: 80
     costSnap:
-      time: 25
-    costAimed:
-      time: 55
-    costAuto:
       time: 30
+    costAimed:
+      time: 65
+    costAuto:
+      time: 35
     battleType: 1
-    twoHanded: true
-    maxRange: 60
-    aimRange: 23
-    snapRange: 25
-    autoRange: 22
-    dropoff: 1
+    tuLoad: 30
+    tuUnload: 15
+    twoHanded: true 
+    oneHandedPenalty: 40 
+    kneelBonus: 120
+    maxRange: 50
+    aimRange: 20
+    snapRange: 10
+    autoRange: 5
+    dropoff: 5
     invWidth: 1
     invHeight: 3
 
@@ -1271,7 +1275,7 @@ items:
     size: 0.1
     costBuy: 30000
     costSell: 20000
-    weight: 3
+    weight: 6
     bigSprite: 3240
     floorSprite: 3240
     handSprite: 3240
@@ -1283,21 +1287,20 @@ items:
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
-    accuracySnap: 80
-    accuracyAimed: 90
-    accuracyAuto: 75
+    accuracySnap: 65
+    accuracyAimed: 85
     costSnap:
-      time: 16
+      time: 25
     costAimed:
-      time: 45
-    costAuto:
-      time: 30
+      time: 40
     battleType: 1
-    maxRange: 60
+    kneelBonus: 100
+    tuLoad: 10
+    tuUnload: 10
+    maxRange: 25
     aimRange: 15
-    snapRange: 15
-    autoRange: 13
-    dropoff: 1
+    snapRange: 10
+    dropoff: 5
     invWidth: 1
     invHeight: 2
 
@@ -1329,10 +1332,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.3
+    size: 0.4
     costBuy: 66000
     costSell: 55000
-    weight: 7
+    weight: 35
     bigSprite: 3248
     floorSprite: 3248
     handSprite: 3248
@@ -1345,22 +1348,27 @@ items:
       shots: 1
       name: STR_HEADSHOT
     twoHanded: true
-    accuracySnap: 100
+    accuracySnap: 110
     accuracyAimed: 150
-    accuracyAuto: 200
+    accuracyAuto: 220
     costSnap:
-      time: 40
+      time: 65
     costAimed:
-      time: 70
+      time: 75
     costAuto:
-      time: 70
+      time: 85
     battleType: 1
+    tuLoad: 40
+    tuUnload: 20
+    kneelBonus: 125
+    noLOSAccuracyPenalty: 100
     maxRange: 200
-    aimRange: 55
+    minRange: 10
+    aimRange: 50
     snapRange: 25
-    autoRange: 25
+    autoRange: 50
     minRange: 25
-    dropoff: 1
+    dropoff: 5
     invWidth: 2
     invHeight: 3
 
@@ -1417,15 +1425,15 @@ items:
     confAuto:
       shots: 5
       name: STR_FULL_AUTO
-    accuracyAimed: 65
-    accuracySnap: 55
+    accuracyAimed: 75
+    accuracySnap: 65
     accuracyAuto: 45
     costAimed:
-      time: 35
+      time: 65
     costSnap:
-      time: 33
+      time: 50
     costAuto:
-      time: 31
+      time: 55
     # melee segment
     meleeHitSound: 198
     meleeAnimation: 0
@@ -1445,12 +1453,15 @@ items:
       time: true
     # melee segment end
     battleType: 1
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    
     twoHanded: true
     maxRange: 80
-    aimRange: 14
-    snapRange: 10
-    autoRange: 7
-    dropoff: 3
+    aimRange: 24
+    snapRange: 26
+    autoRange: 10
+    dropoff: 5
     invWidth: 1
     invHeight: 3
 
