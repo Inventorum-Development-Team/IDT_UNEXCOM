@@ -958,6 +958,7 @@ items:
     costBuy: 50000
     costSell: 40000
     weight: 30
+    armor: 60
     bigSprite: 3208
     floorSprite: 3208
     handSprite: 3208
@@ -991,7 +992,7 @@ items:
     aimRange: 32
     snapRange: 28
     autoRange: 16
-    dropoff: 10
+    dropoff: 5
     invWidth: 1
     invHeight: 3
 
@@ -1026,10 +1027,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.4
+    size: 0.5
     costBuy: 36000
     costSell: 30000
-    weight: 38
+    weight: 45
+    armor: 80
     bigSprite: 3216
     floorSprite: 3216
     handSprite: 3216
@@ -1052,9 +1054,10 @@ items:
     tuSnap: 40
     tuAimed: 60
     #tuAuto: 80
-    tuLoad: 20
+    tuLoad: 45
+    tuUnload: 22
     battleType: 1
-    waypoints: 9
+    waypoints: 6
     twoHanded: true
     blockBothHands: true
     invWidth: 2
@@ -1121,7 +1124,8 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.3
+    size: 0.2
+    armor: 50
     costBuy: 38000
     costSell: 32000
     weight: 25
@@ -1158,8 +1162,8 @@ items:
     invHeight: 3
     invWidth: 1
     battleType: 1
-    twoHanded: true
-    armor: 250
+    twoHanded: true 
+    blockBothHands: true
 
   - type: STR_US_PLASMA_SHOTGUN_MAG
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_US_TECH, STR_CLIPS]
@@ -1203,6 +1207,7 @@ items:
     costBuy: 50000
     costSell: 44000
     weight: 25
+    armor: 60
     bigSprite: 3232
     floorSprite: 3232
     handSprite: 3232
@@ -1276,6 +1281,7 @@ items:
     costBuy: 30000
     costSell: 20000
     weight: 6
+    armor: 40
     bigSprite: 3240
     floorSprite: 3240
     handSprite: 3240
@@ -1336,6 +1342,7 @@ items:
     costBuy: 66000
     costSell: 55000
     weight: 35
+    armor: 60
     bigSprite: 3248
     floorSprite: 3248
     handSprite: 3248
@@ -1358,6 +1365,8 @@ items:
     costAuto:
       time: 85
     battleType: 1
+    twoHanded: true 
+    blockBothHands: true
     tuLoad: 40
     tuUnload: 20
     kneelBonus: 125
@@ -1407,7 +1416,8 @@ items:
     size: 0.3
     costBuy: 48000
     costSell: 42000
-    weight: 9
+    weight: 28
+    armor: 60
     bigSprite: 3256
     floorSprite: 3256
     handSprite: 3256
@@ -1455,7 +1465,8 @@ items:
     battleType: 1
     oneHandedPenalty: 30
     kneelBonus: 125
-    
+    tuLoad: 40
+    tuUnload: 20
     twoHanded: true
     maxRange: 80
     aimRange: 24
@@ -1479,7 +1490,7 @@ items:
     weight: 3 # 3
     hitSound: 1938
     hitAnimation: 110
-    power: 80
+    power: 92
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
@@ -1496,10 +1507,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.3
+    size: 0.4
     costBuy: 75000
     costSell: 69000
-    weight: 18
+    weight: 40
+    armor: 70
     bigSprite: 3264
     floorSprite: 3264
     handSprite: 3264
@@ -1508,36 +1520,35 @@ items:
     bulletSpeed: 6
     compatibleAmmo:
       - STR_SOVIET_PLASMA_LMG_MAG
-    accuracyAimed: 70
     accuracySnap: 45
-    accuracyAuto: 40
-    confAimed:
-      shots: 4
-      name: STR_CONTROL_AUTO
-      ammoSlot: 0
-      arcing: false
+    accuracyAuto: 20
     confSnap:
-      shots: 9
-      name: STR_FULL_AUTO
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
       ammoSlot: 0
       arcing: false
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
       ammoSlot: 0
       arcing: false
-    costAimed:
-      time: 37
     costSnap:
-      time: 45
+      time: 60
     costAuto:
-      time: 75
-    twoHanded: true
+      time: 80
+    twoHanded: true 
+    blockBothHands: true 
+    tuLoad: 45
+    tuUnload: 22
+    sprayWaypoints: 3
+    kneelBonus: 200
     battleType: 1
     maxRange: 60
-    aimRange: 11
-    snapRange: 8
-    autoRange: 6
+    minRange: 7
+    snapRange: 23
+    autoRange: 15
     minRange: 5
     dropoff: 2
     invWidth: 2
@@ -1560,8 +1571,9 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
-    weight: 5 # 3
+      IgnoreOverKill: false 
+      ToArmorPre: 0.3
+    weight: 6 # 3
     armor: 35 # 20
     battleType: 2
     vaporColorSurface: 2
@@ -1574,7 +1586,7 @@ items:
     size: 0.2
     costBuy: 27000
     costSell: 22000
-    weight: 6
+    weight: 20
     bigSprite: 3272
     floorSprite: 3272
     handSprite: 3272
@@ -1593,21 +1605,25 @@ items:
       shots: 10
       name: STR_PRAY_N_SPRAY
     accuracyAimed: 75
-    accuracySnap: 55
-    accuracyAuto: 35
+    accuracySnap: 66
+    accuracyAuto: 30
     costAimed:
-      time: 31
+      time: 35
     costSnap:
-      time: 34
+      time: 45
     costAuto:
-      time: 33
+      time: 50
     battleType: 1
-    maxRange: 50
-    aimRange: 22
-    snapRange: 13
-    autoRange: 4
+    sprayWaypoints: 2
+    kneelBonus: 115
+    tuLoad: 25
+    tuUnload: 12
+    maxRange: 25
+    aimRange: 7
+    snapRange: 10
+    autoRange: 5
     twoHanded: false
-    dropoff: 2
+    dropoff: 5
     invWidth: 1
     invHeight: 3
 
@@ -1619,7 +1635,7 @@ items:
     costBuy: 12000
     costSell: 11000
     hitAnimation: 110
-    power: 70 # 52
+    power: 80 # 52
     clipSize: 25 # 26
     bigSprite: 3352
     floorSprite: 3352
