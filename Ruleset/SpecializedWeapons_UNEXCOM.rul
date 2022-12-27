@@ -218,12 +218,12 @@ items:
     armor: 200
     listOrder: 238
 
-# Vikhr Electromagnetic Rifle
-  - type: STR_VIKHR_ELECTROMAGNETIC_RIFLE
-    categories: [STR_WEAPONS, STR_FIREARMS, STR_SNIPER_RIFLES]
+# Burya Electromagnetic Rifle
+  - type: STR_GAUSS_RIFLE
+    categories: [STR_WEAPONS, STR_FIREARMS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
     size: 0.2
     costSell: 240000
-    weight: 13
+    weight: 38
     bigSprite: 720
     floorSprite: 720
     handSprite: 720
@@ -231,23 +231,23 @@ items:
     fireSound: 245
     reloadSound: 246
     compatibleAmmo:
-      - STR_VIKHR_ELECTROMAGNETIC_RIFLE_MAG
+      - STR_GAUSS_RIFLE_MAG
+    costAuto:
+      time: 85
+    autoRange: 50
+    accuracyAuto: 250
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false      
     costAimed:
-      time: 55
-    confAimed:
-      shots: 1
-      name: STR_DEADEYE
-      ammoSlot: 0
-      arcing: false
+      time: 75
     aimRange: 60
-    accuracyAimed: 200
+    accuracyAimed: 150
     costSnap:
-      time: 40
-    confSnap:
-      shots: 1
-      name: STR_STEADY_SHOT
-      ammoSlot: 0
-      arcing: false
+      time: 60
     snapRange: 20
     accuracySnap: 110
     accuracyCloseQuarters: 10
@@ -261,21 +261,22 @@ items:
     twoHanded: true
     armor: 200
     listOrder: 239
-  - type: STR_VIKHR_ELECTROMAGNETIC_RIFLE_MAG
-    categories: [STR_WEAPONS, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
+  - type: STR_GAUSS_RIFLE_MAG
+    categories: [STR_WEAPONS, STR_FIREARMS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH, STR_CLIPS]
     size: 0.1
-    costSell: 420
+    costSell: 42000
     weight: 4
     bigSprite: 736
     floorSprite: 736
     handSprite: 736
     hitSound: 13
     hitAnimation: 110
-    power: 200
+    power: 150
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.3
-      ToHealth: 1.25
+      ToArmorPre: 0.55
+      ToArmor: 0.5
+      ToWound: 0.5
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -285,19 +286,24 @@ items:
 extraSprites:
   - type: BIGOBS.PCK
     files:
-      1120: Resources/SpaceWeapons/BigGyrojetPistol.png
-      1128: Resources/SpaceWeapons/BigGyrojetCarbine.png
-      1136: Resources/SpaceWeapons/BigGyrojetAmmo.png
-      1144: Resources/SpaceWeapons/BigSpaceKnife.png
-      1152: Resources/SpaceWeapons/BigGeneratorStick.png
+      2500: Resources/SpecializedWeapons/BigGaussAmmo.png
+      1128: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
+      1144: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png      
+      1136: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
+      2500: Resources/SpecializedWeapons/BigGaussAmmo.png
+      1128: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
+      1144: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png      
+      1136: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
+
+      1152: Resources/SpecializedWeapons/BigGeneratorStick.png
 
   - type: FLOOROB.PCK
     files:
-      1120: Resources/SpaceWeapons/FloorGyrojetPistol.png
-      1128: Resources/SpaceWeapons/FloorGyrojetCarbine.png
-      1136: Resources/SpaceWeapons/FloorGyrojetAmmo.png
-      1144: Resources/SpaceWeapons/FloorSpaceKnife.png
-      1152: Resources/SpaceWeapons/FloorGeneratorStick.png
+      1120: Resources/SpecializedWeapons/FloorGyrojetPistol.png
+      1128: Resources/SpecializedWeapons/FloorGyrojetCarbine.png
+      1136: Resources/SpecializedWeapons/FloorGyrojetAmmo.png
+      1144: Resources/SpecializedWeapons/FloorSpaceKnife.png
+      1152: Resources/SpecializedWeapons/FloorGeneratorStick.png
 
   - type: HANDOB.PCK
     width: 256
@@ -305,9 +311,9 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      1120: Resources/SpaceWeapons/HandGyrojetPistol.png
-      1128: Resources/SpaceWeapons/HandGyrojetCarbine.png
-      #1120: Resources/SpaceWeapons/HandGyrojetAmmo.png
-      1144: Resources/SpaceWeapons/HandSpaceKnife.png
-      1152: Resources/SpaceWeapons/HandGeneratorStick.png
+      1120: Resources/SpecializedWeapons/HandGyrojetPistol.png
+      1128: Resources/SpecializedWeapons/HandGyrojetCarbine.png
+      #1120: Resources/SpecializedWeapons/HandGyrojetAmmo.png
+      1144: Resources/SpecializedWeapons/HandSpaceKnife.png
+      1152: Resources/SpecializedWeapons/HandGeneratorStick.png
 
