@@ -1,0 +1,453 @@
+items:
+# Burya Electromagnetic Rifle
+  - type: STR_GAUSS_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.2
+    costSell: 240000
+    weight: 38
+    bigSprite: 2016
+    floorSprite: 2016
+    handSprite: 2016
+    bulletSprite: 31
+    fireSound: [3001, 3002, 3003]
+    reloadSound: 3000
+    compatibleAmmo:
+      - STR_GAUSS_RIFLE_MAG
+    costAuto:
+      time: 85
+    autoRange: 50
+    accuracyAuto: 250
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    costAimed:
+      time: 75
+    aimRange: 60
+    accuracyAimed: 150
+    costSnap:
+      time: 60
+    snapRange: 20
+    accuracySnap: 110
+    accuracyCloseQuarters: 10
+    tuLoad: 30
+    maxRange: 60
+    dropoff: 1
+    kneelBonus: 150
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    listOrder: 239
+  - type: STR_GAUSS_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.1
+    costSell: 42000
+    weight: 4
+    bigSprite: 2500
+    floorSprite: 2500
+    #handSprite: 2500
+    hitSound: 13
+    hitAnimation: 110
+    power: 150
+    damageAlter:
+      RandomType: 7
+      ToArmorPre: 0.55
+      ToArmor: 0.5
+      ToWound: 0.5
+    damageType: 1
+    clipSize: 10
+    battleType: 2
+    armor: 200
+    listOrder: 240
+
+# Groza Electromagnetic Heavy Rifle
+  - type: STR_GAUSS_HEAVY_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.2
+    costSell: 240000
+    weight: 38
+    bigSprite: 2024
+    floorSprite: 2024
+    handSprite: 2024
+    bulletSprite: 31
+    fireSound: [3004, 3005, 3006]
+    reloadSound: 300
+    compatibleAmmo:
+      - STR_GAUSS_RIFLE_MAG
+    costAuto:
+      time: 85
+    autoRange: 50
+    accuracyAuto: 250
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    costAimed:
+      time: 75
+    aimRange: 60
+    accuracyAimed: 150
+    costSnap:
+      time: 60
+    snapRange: 20
+    accuracySnap: 110
+    accuracyCloseQuarters: 10
+    tuLoad: 30
+    maxRange: 60
+    dropoff: 1
+    kneelBonus: 150
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    listOrder: 239
+
+# Grad Electromagnetic Carbine
+  - type: STR_GAUSS_CARBINE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_CARBINES, STR_SNIPER_RIFLES]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.2
+    costSell: 240000
+    weight: 38
+    bigSprite: 2008
+    floorSprite: 2008
+    handSprite: 2008
+    bulletSprite: 31
+    fireSound: [3007, 3008, 3009]
+    reloadSound: 3000
+    compatibleAmmo:
+      - STR_GAUSS_RIFLE_MAG
+    costAuto:
+      time: 85
+    autoRange: 50
+    accuracyAuto: 250
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    costAimed:
+      time: 75
+    aimRange: 60
+    accuracyAimed: 150
+    costSnap:
+      time: 60
+    snapRange: 20
+    accuracySnap: 110
+    accuracyCloseQuarters: 10
+    tuLoad: 30
+    maxRange: 60
+    dropoff: 1
+    kneelBonus: 150
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    listOrder: 239
+
+##############################
+
+# Hurrikan Electric Rifle
+  - type: STR_ELECTRIC_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.25
+    costSell: 10000
+    transferTime: 96
+    weight: 14
+    bigSprite: 2032
+    floorSprite: 2032
+    handSprite: 2032
+    bulletSprite: 9
+    fireSound: 3011
+    reloadSound: 3010
+    compatibleAmmo:
+      - STR_ELECTRIC_RIFLE_MAG
+    accuracySnap: 75
+    accuracyAimed: 90
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.5
+    tuSnap: 30
+    tuAimed: 47
+    costThrow:
+      energy: 15
+      time: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    invWidth: 2
+    invHeight: 3
+    snapRange: 12
+    aimRange: 17
+    dropoff: 6
+    powerRangeThreshold: 8
+    powerRangeReduction: 6
+    maxRange: 26
+    recoveryPoints: 3
+    attraction: 12
+    listOrder: 12393
+
+  - type: STR_ELECTRIC_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.05
+    costBuy: 3000
+    costSell: 1200
+    transferTime: 96
+    weight: 3
+    bigSprite: 2040
+    floorSprite: 2040
+    #handSprite: 2040
+    hitSound: 0
+    hitAnimation: 207
+    power: 85
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    damageType: 14
+    damageAlter:
+      RandomType: 6
+      ToHealth: 0.0
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0.0
+      ToTime: 0.5
+      ArmorEffectiveness: 0.5
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+    clipSize: 5
+    costThrow:
+      energy: 6
+      time: 40
+    battleType: 2
+    armor: 30
+    listOrder: 12394
+
+# Taifun Heavy Electric Rifle
+  - type: STR_ELECTRIC_HEAVY_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.25
+    costBuy: 90000
+    costSell: 30000
+    transferTime: 96
+    weight: 19
+    bigSprite: 2048
+    floorSprite: 2048
+    handSprite: 2048
+    bulletSprite: 9
+    fireSound: 3012
+    reloadSound: 3010
+    compatibleAmmo:
+      - STR_ELECTRIC_HEAVY_RIFLE_MAG
+    accuracySnap: 85
+    accuracyAimed: 105
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.5
+    tuSnap: 35
+    tuAimed: 55
+    costThrow:
+      energy: 20
+      time: 30
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    invWidth: 2
+    invHeight: 3
+    snapRange: 12
+    aimRange: 18
+    dropoff: 6
+    powerRangeThreshold: 10
+    powerRangeReduction: 6
+    maxRange: 30
+    recoveryPoints: 3
+    attraction: 12
+    listOrder: 12390
+
+  - type: STR_ELECTRIC_HEAVY_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.05
+    costBuy: 3000
+    costSell: 1200
+    transferTime: 96
+    weight: 4
+    bigSprite: 2056
+    floorSprite: 2056
+    hitSound: 0
+    hitAnimation: 207
+    power: 105
+    damageType: 14
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 10
+    shotgunChoke: 10
+    damageAlter:
+      RandomType: 6
+      ToHealth: 0.0
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0.0
+      ToTime: 0.5
+      ArmorEffectiveness: 0.5
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+    clipSize: 5
+    costThrow:
+      energy: 6
+      time: 40
+    battleType: 2
+    armor: 30
+    listOrder: 12391
+
+# Zyklon Electric Handgun
+  - type: STR_ELECTRIC_PISTOL
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.2
+    costSell: 180000
+    weight: 22
+    bigSprite: 2064
+    floorSprite: 2064
+    handSprite: 2064
+    bulletSpeed: 1
+    fireSound: 3012
+    reloadSound: 3010
+    compatibleAmmo:
+      - STR_ELECTRIC_PISTOL_MAG
+    costAimed:
+      time: 45
+    confAimed:
+      shots: 1
+      name: STR_STEADY_SHOT
+      ammoSlot: 0
+      arcing: false
+    aimRange: 18
+    accuracyAimed: 110
+    costSnap:
+      time: 20
+    confSnap:
+      shots: 1
+      name: STR_HIP_FIRE
+      ammoSlot: 0
+      arcing: false
+    snapRange: 12
+    accuracySnap: 90
+    accuracyCloseQuarters: 90
+    dropoff: 4
+    tuLoad: 30
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    listOrder: 237
+  - type: STR_ELECTRIC_PISTOL_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.1
+    costSell: 35000
+    weight: 3
+    bigSprite: 2072
+    floorSprite: 2072
+    handSprite: 2072
+    bulletSprite: 30
+    hitAnimation: 100
+    power: 40
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    shotgunChoke: 60
+    damageAlter:
+      RandomType: 6
+      ToHealth: 0.0
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0.0
+      ToTime: 0.5
+      ArmorEffectiveness: 0.5
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+    damageType: 11
+    clipSize: 10
+    battleType: 2
+    armor: 200
+    listOrder: 238
+
+#########################################
+
+
+
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      2500: Resources/SpecializedWeapons/BigGaussAmmo.png
+      2008: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
+      2016: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png
+      2024: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
+      2032: Resources/SpecializedWeapons/BigTeslaRifle_ammo1.png
+      2040: Resources/SpecializedWeapons/BigTeslaRifleBattery.png
+      2048: Resources/SpecializedWeapons/BigTeslaHeavy_ammo1.png
+      2056: Resources/SpecializedWeapons/BigTeslaHeavyBattery.png
+      2064: Resources/SpecializedWeapons/BigTeslaPistol_ammo1.png
+      2072: Resources/SpecializedWeapons/BigTeslaPistolBattery.png
+
+  - type: FLOOROB.PCK
+    files:
+      2500: Resources/SpecializedWeapons/FloorGaussAmmo.png
+      2008: Resources/SpecializedWeapons/FloorGaussCarbine_ammo1.png
+      2016: Resources/SpecializedWeapons/FloorGaussRifle_ammo1.png
+      2024: Resources/SpecializedWeapons/FloorGaussHeavy_ammo1.png
+      2032: Resources/SpecializedWeapons/FloorTeslaRifle_ammo1.png
+      2040: Resources/SpecializedWeapons/FloorTeslaRifleBattery.png
+      2048: Resources/SpecializedWeapons/FloorTeslaHeavy_ammo1.png
+      2056: Resources/SpecializedWeapons/FloorTeslaHeavyBattery.png
+      2064: Resources/SpecializedWeapons/FloorTeslaPistol_ammo1.png
+      2072: Resources/SpecializedWeapons/FloorTeslaPistolBattery.png
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2500: Resources/SpecializedWeapons/HandGaussAmmo.png
+      2008: Resources/SpecializedWeapons/HandGaussCarbine_ammo1.png
+      2016: Resources/SpecializedWeapons/HandGaussRifle_ammo1.png
+      2024: Resources/SpecializedWeapons/HandGaussHeavy_ammo1.png
+      2032: Resources/SpecializedWeapons/HandTeslaRifle_ammo1.png
+      2040: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
+      2048: Resources/SpecializedWeapons/HandTeslaHeavy_ammo1.png
+      2056: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
+      2064: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
+      2072: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
+
