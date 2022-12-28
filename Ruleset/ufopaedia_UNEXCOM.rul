@@ -3156,6 +3156,24 @@ ufopaedia:
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
     listOrder: 4712
 
+  #Special Weapons
+  - id: STR_SPECIALIZED_WEAPONS_REPORT
+    type_id: 7
+    section: STR_WEAPONS
+    image_id: SHOTGUN_REPORT_IMAGE
+    text: STR_SPECIALIZED_WEAPONS_REPORT_UFOPEDIA
+    text_width: 150
+    listOrder: 4750
+
+  - id: STR_HUMAN_SMALL_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_REMAN_SMALL_LAUNCHER
+    text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
+    listOrder: 4712
+
+#Melee
   - id: STR_MELEE_REPORT
     type_id: 7
     section: STR_WEAPONS
