@@ -3240,13 +3240,45 @@ ufopaedia:
     text: STR_ELECTRIC_RIFLE_UFOPEDIA
     listOrder: 4750
 
+  - id: STR_ELECTRIC_HEAVY_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_HEAVY_RIFLE_UFOPEDIA
+    listOrder: 4751
+
+  - id: STR_ELECTRIC_PISTOL
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_PISTOL_UFOPEDIA
+    listOrder: 4752
+
   - id: STR_GAUSS_RIFLE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_GAUSS_RIFLE_UFOPEDIA
-    listOrder: 4751
+    listOrder: 4753
+
+  - id: STR_GAUSS_HEAVY_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_GAUSS_HEAVY_RIFLE_UFOPEDIA
+    listOrder: 4754
+
+  - id: STR_GAUSS_CARBINE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_GAUSS_CARBINE_UFOPEDIA
+    listOrder: 4755
 
 #Melee
 
@@ -3798,6 +3830,38 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
     listOrder: 5215
+
+  - id: STR_ELECTRIC_RIFLE_MAG
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_RIFLE_MAG_UFOPEDIA
+    listOrder: 5225
+
+  - id: STR_ELECTRIC_HEAVY_RIFLE_MAG
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_HEAVY_RIFLE_MAG_UFOPEDIA
+    listOrder: 5226
+
+  - id: STR_ELECTRIC_PISTOL_MAG
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_PISTOL_MAG_UFOPEDIA
+    listOrder: 5227
+  
+  - id: STR_GAUSS_RIFLE_MAG
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_GAUSS_RIFLE_MAG_UFOPEDIA
+    listOrder: 5228
 
   #Equipment
 
