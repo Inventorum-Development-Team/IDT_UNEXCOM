@@ -7,10 +7,10 @@ items:
     size: 0.2
     costSell: 240000
     weight: 38
-    bigSprite: 2716
-    floorSprite: 2716
-    handSprite: 2716
-    bulletSprite: 31
+    bigSprite: 2416
+    floorSprite: 2416
+    handSprite: 2416
+    bulletSprite: 33
     fireSound: [3001, 3002, 3003]
     reloadSound: 3000
     compatibleAmmo:
@@ -51,19 +51,19 @@ items:
     size: 0.1
     costSell: 42000
     weight: 4
-    bigSprite: 2700
-    floorSprite: 2700
-    #handSprite: 2700
+    bigSprite: 2400
+    floorSprite: 2400
+    #handSprite: 2400
     hitSound: 13
-    hitAnimation: 110
+    hitAnimation: 120
     power: 150
     damageAlter:
       RandomType: 7
-      ToArmorPre: 0.55
-      ToArmor: 0.5
-      ToWound: 0.5
+      ToArmorPre: 0.9
+      ToArmor: 0.8
+      ToWound: 0.3
     damageType: 1
-    clipSize: 10
+    clipSize: 12
     battleType: 2
     armor: 200
     listOrder: 240
@@ -76,10 +76,10 @@ items:
     size: 0.2
     costSell: 240000
     weight: 38
-    bigSprite: 2724
-    floorSprite: 2724
-    handSprite: 2724
-    bulletSprite: 31
+    bigSprite: 2424
+    floorSprite: 2424
+    handSprite: 2424
+    bulletSprite: 33
     fireSound: [3004, 3005, 3006]
     reloadSound: 300
     compatibleAmmo:
@@ -122,10 +122,10 @@ items:
     size: 0.2
     costSell: 240000
     weight: 38
-    bigSprite: 2708
-    floorSprite: 2708
-    handSprite: 2708
-    bulletSprite: 31
+    bigSprite: 2408
+    floorSprite: 2408
+    handSprite: 2408
+    bulletSprite: 33
     fireSound: [3007, 3008, 3009]
     reloadSound: 3000
     compatibleAmmo:
@@ -171,10 +171,10 @@ items:
     costSell: 10000
     transferTime: 96
     weight: 14
-    bigSprite: 2732
-    floorSprite: 2732
-    handSprite: 2732
-    bulletSprite: 9
+    bigSprite: 2432
+    floorSprite: 2432
+    handSprite: 2432
+    bulletSprite: 34
     fireSound: 3011
     reloadSound: 3010
     compatibleAmmo:
@@ -213,21 +213,21 @@ items:
     costSell: 1200
     transferTime: 96
     weight: 3
-    bigSprite: 2740
-    floorSprite: 2740
-    #handSprite: 2740
+    bigSprite: 2440
+    floorSprite: 2440
+    #handSprite: 2440
     hitSound: 0
-    hitAnimation: 207
+    hitAnimation: 130
     power: 85
     shotgunBehavior: 1
     shotgunPellets: 8
     shotgunSpread: 50
-    damageType: 14
+    damageType: 11
     damageAlter:
       RandomType: 6
       ToHealth: 0.0
       ToStun: 1.0
-      ToArmor: 0.0
+      ToArmor: 0.1
       ToWound: 0.0
       ToTile: 0.0
       ToTime: 0.5
@@ -235,7 +235,7 @@ items:
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
-    clipSize: 5
+    clipSize: 10
     costThrow:
       energy: 6
       time: 40
@@ -253,10 +253,10 @@ items:
     costSell: 30000
     transferTime: 96
     weight: 19
-    bigSprite: 2748
-    floorSprite: 2748
-    handSprite: 2748
-    bulletSprite: 9
+    bigSprite: 2448
+    floorSprite: 2448
+    handSprite: 2448
+    bulletSprite: 34
     fireSound: 3012
     reloadSound: 3010
     compatibleAmmo:
@@ -295,12 +295,12 @@ items:
     costSell: 1200
     transferTime: 96
     weight: 4
-    bigSprite: 2756
-    floorSprite: 2756
+    bigSprite: 2456
+    floorSprite: 2456
     hitSound: 0
-    hitAnimation: 207
+    hitAnimation: 130
     power: 105
-    damageType: 14
+    damageType: 11
     shotgunBehavior: 1
     shotgunPellets: 8
     shotgunSpread: 10
@@ -309,7 +309,7 @@ items:
       RandomType: 6
       ToHealth: 0.0
       ToStun: 1.0
-      ToArmor: 0.0
+      ToArmor: 0.1
       ToWound: 0.0
       ToTile: 0.0
       ToTime: 0.5
@@ -333,10 +333,10 @@ items:
     size: 0.2
     costSell: 180000
     weight: 22
-    bigSprite: 2764
-    floorSprite: 2764
-    handSprite: 2764
-    bulletSpeed: 1
+    bigSprite: 2464
+    floorSprite: 2464
+    handSprite: 2464
+    bulletSprite: 34
     fireSound: 3012
     reloadSound: 3010
     compatibleAmmo:
@@ -375,11 +375,10 @@ items:
     size: 0.1
     costSell: 35000
     weight: 3
-    bigSprite: 2772
-    floorSprite: 2772
-    handSprite: 2772
-    bulletSprite: 30
-    hitAnimation: 100
+    bigSprite: 2472
+    floorSprite: 2472
+    handSprite: 2472
+    hitAnimation: 130
     power: 40
     shotgunBehavior: 1
     shotgunPellets: 8
@@ -389,7 +388,7 @@ items:
       RandomType: 6
       ToHealth: 0.0
       ToStun: 1.0
-      ToArmor: 0.0
+      ToArmor: 0.1
       ToWound: 0.0
       ToTile: 0.0
       ToTime: 0.5
@@ -410,29 +409,29 @@ items:
 extraSprites:
   - type: BIGOBS.PCK
     files:
-      2700: Resources/SpecializedWeapons/BigGaussAmmo.png
-      2708: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
-      2716: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png
-      2724: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
-      2732: Resources/SpecializedWeapons/BigTeslaRifle_ammo1.png
-      2740: Resources/SpecializedWeapons/BigTeslaRifleBattery.png
-      2748: Resources/SpecializedWeapons/BigTeslaHeavy_ammo1.png
-      2756: Resources/SpecializedWeapons/BigTeslaHeavyBattery.png
-      2764: Resources/SpecializedWeapons/BigTeslaPistol_ammo1.png
-      2772: Resources/SpecializedWeapons/BigTeslaPistolBattery.png
+      2400: Resources/SpecializedWeapons/BigGaussAmmo.png
+      2408: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/BigTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/BigTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/BigTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/BigTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/BigTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/BigTeslaPistolBattery.png
 
   - type: FLOOROB.PCK
     files:
-      2700: Resources/SpecializedWeapons/FloorGaussAmmo.png
-      2708: Resources/SpecializedWeapons/FloorGaussCarbine_ammo1.png
-      2716: Resources/SpecializedWeapons/FloorGaussRifle_ammo1.png
-      2724: Resources/SpecializedWeapons/FloorGaussHeavy_ammo1.png
-      2732: Resources/SpecializedWeapons/FloorTeslaRifle_ammo1.png
-      2740: Resources/SpecializedWeapons/FloorTeslaRifleBattery.png
-      2748: Resources/SpecializedWeapons/FloorTeslaHeavy_ammo1.png
-      2756: Resources/SpecializedWeapons/FloorTeslaHeavyBattery.png
-      2764: Resources/SpecializedWeapons/FloorTeslaPistol_ammo1.png
-      2772: Resources/SpecializedWeapons/FloorTeslaPistolBattery.png
+      2400: Resources/SpecializedWeapons/FloorGaussAmmo.png
+      2408: Resources/SpecializedWeapons/FloorGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/FloorGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/FloorGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/FloorTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/FloorTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/FloorTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/FloorTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/FloorTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/FloorTeslaPistolBattery.png
 
   - type: HANDOB.PCK
     width: 256
@@ -440,16 +439,16 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      2700: Resources/SpecializedWeapons/HandGaussAmmo.png
-      2708: Resources/SpecializedWeapons/HandGaussCarbine_ammo1.png
-      2716: Resources/SpecializedWeapons/HandGaussRifle_ammo1.png
-      2724: Resources/SpecializedWeapons/HandGaussHeavy_ammo1.png
-      2732: Resources/SpecializedWeapons/HandTeslaRifle_ammo1.png
-      2740: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
-      2748: Resources/SpecializedWeapons/HandTeslaHeavy_ammo1.png
-      2756: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
-      2764: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
-      2772: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
+      2400: Resources/SpecializedWeapons/HandGaussAmmo.png
+      2408: Resources/SpecializedWeapons/HandGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/HandGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/HandGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/HandTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/HandTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
 
   - type: Projectiles
     height: 3
