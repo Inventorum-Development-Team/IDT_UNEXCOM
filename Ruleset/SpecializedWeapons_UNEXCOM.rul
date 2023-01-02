@@ -1,3 +1,9 @@
+#Close quarters: defined by default on 1 tile
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+
 items:
 # Burya Electromagnetic Rifle
   - type: STR_GAUSS_RIFLE
@@ -17,7 +23,7 @@ items:
       - STR_GAUSS_RIFLE_MAG
     costAuto:
       time: 85
-    autoRange: 50
+    autoRange: 60
     accuracyAuto: 250
     confAuto:
       shots: 1
@@ -25,13 +31,16 @@ items:
       shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
     costAimed:
       time: 75
-    aimRange: 60
+    aimRange: 50
     accuracyAimed: 150
     costSnap:
       time: 60
-    snapRange: 20
+    snapRange: 55
     accuracySnap: 110
     accuracyCloseQuarters: 10
     tuLoad: 30
@@ -43,30 +52,7 @@ items:
     invHeight: 3
     twoHanded: true
     armor: 200
-    listOrder: 239
-  - type: STR_GAUSS_RIFLE_MAG
-    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    size: 0.1
-    costSell: 42000
-    weight: 4
-    bigSprite: 2400
-    floorSprite: 2400
-    #handSprite: 2400
-    hitSound: 13
-    hitAnimation: 120
-    power: 150
-    damageAlter:
-      RandomType: 7
-      ToArmorPre: 0.9
-      ToArmor: 0.8
-      ToWound: 0.3
-    damageType: 1
-    clipSize: 12
-    battleType: 2
-    armor: 200
-    listOrder: 240
+    #listOrder: 239
 
 # Groza Electromagnetic Heavy Rifle
   - type: STR_GAUSS_HEAVY_RIFLE
@@ -86,7 +72,7 @@ items:
       - STR_GAUSS_RIFLE_MAG
     costAuto:
       time: 85
-    autoRange: 50
+    autoRange: 60
     accuracyAuto: 250
     confAuto:
       shots: 1
@@ -96,11 +82,14 @@ items:
       arcing: false
     costAimed:
       time: 75
-    aimRange: 60
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    aimRange: 50
     accuracyAimed: 150
     costSnap:
       time: 60
-    snapRange: 20
+    snapRange: 55
     accuracySnap: 110
     accuracyCloseQuarters: 10
     tuLoad: 30
@@ -112,7 +101,7 @@ items:
     invHeight: 3
     twoHanded: true
     armor: 200
-    listOrder: 239
+    #listOrder: 239
 
 # Grad Electromagnetic Carbine
   - type: STR_GAUSS_CARBINE
@@ -144,6 +133,9 @@ items:
       time: 75
     aimRange: 60
     accuracyAimed: 150
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
     costSnap:
       time: 60
     snapRange: 20
@@ -158,7 +150,34 @@ items:
     invHeight: 3
     twoHanded: true
     armor: 200
-    listOrder: 239
+    #listOrder: 239
+
+  - type: STR_GAUSS_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.1
+    costSell: 42000
+    weight: 4
+    bigSprite: 2400
+    floorSprite: 2400
+    #handSprite: 2400
+    hitSound: 13
+    hitAnimation: 120
+    power: 165
+    damageAlter:
+      RandomType: 7
+      ToArmorPre: 0.9
+      ToArmor: 0.8
+      ToWound: 0.3
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 200
+    #listOrder: 240
+    vaporColorSurface: 5
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
 
 ##############################
 
@@ -202,7 +221,7 @@ items:
     maxRange: 26
     recoveryPoints: 3
     attraction: 12
-    listOrder: 12393
+    #listOrder: 12393
 
   - type: STR_ELECTRIC_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
@@ -241,7 +260,10 @@ items:
       time: 40
     battleType: 2
     armor: 30
-    listOrder: 12394
+    #listOrder: 12394
+    vaporColorSurface: 4
+    vaporDensitySurface: 5
+    vaporProbabilitySurface: 100
 
 # Taifun Heavy Electric Rifle
   - type: STR_ELECTRIC_HEAVY_RIFLE
@@ -266,6 +288,7 @@ items:
     accuracyCloseQuarters: 100
     accuracyMultiplier:
       firing: 0.5
+    
     tuSnap: 35
     tuAimed: 55
     costThrow:
@@ -284,7 +307,7 @@ items:
     maxRange: 30
     recoveryPoints: 3
     attraction: 12
-    listOrder: 12390
+    #listOrder: 12390
 
   - type: STR_ELECTRIC_HEAVY_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
@@ -323,7 +346,10 @@ items:
       time: 40
     battleType: 2
     armor: 30
-    listOrder: 12391
+    #listOrder: 12391
+    vaporColorSurface: 4
+    vaporDensitySurface: 8
+    vaporProbabilitySurface: 100
 
 # Zyklon Electric Handgun
   - type: STR_ELECTRIC_PISTOL
@@ -341,22 +367,20 @@ items:
     reloadSound: 3010
     compatibleAmmo:
       - STR_ELECTRIC_PISTOL_MAG
+ 
+    confAuto:
+      shots: 8
+      name: STR_RAGE_FIRE 
     costAimed:
-      time: 45
-    confAimed:
-      shots: 1
-      name: STR_STEADY_SHOT
-      ammoSlot: 0
-      arcing: false
+      time: 30
     aimRange: 18
     accuracyAimed: 110
     costSnap:
       time: 20
-    confSnap:
-      shots: 1
-      name: STR_HIP_FIRE
-      ammoSlot: 0
-      arcing: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    aimRange: 10
     snapRange: 12
     accuracySnap: 90
     accuracyCloseQuarters: 90
@@ -367,7 +391,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 200
-    listOrder: 237
+    #listOrder: 237
   - type: STR_ELECTRIC_PISTOL_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
     requires:
@@ -397,10 +421,13 @@ items:
       RandomStun: false
       IgnorePainImmunity: true
     damageType: 11
-    clipSize: 10
+    clipSize: 15
     battleType: 2
     armor: 200
-    listOrder: 238
+    #listOrder: 238
+    vaporColorSurface: 4
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
 
 #########################################
 
