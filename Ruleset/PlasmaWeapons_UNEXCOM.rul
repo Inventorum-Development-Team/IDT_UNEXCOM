@@ -558,7 +558,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 5
 
   - type: STR_US_PLASMA_RL
@@ -730,7 +730,7 @@ items:
     shotgunChoke: 60
     armor: 30 # 20
     battleType: 2
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 5
 
 ###############
@@ -808,7 +808,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 8
 
   - type: STR_NATO_PLASMA_PISTOL
@@ -869,7 +869,7 @@ items:
     hitSound: 1938
     armor: 30 # 20
     battleType: 2
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 3
 
   - type: STR_NATO_SNIPER_PLASMA
@@ -940,7 +940,7 @@ items:
     weight: 5 # 3
     armor: 35 # 20
     battleType: 2
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 20
 
 ################
@@ -1038,7 +1038,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 30 # 20
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 11
 
   - type: STR_SOVIET_PLASMA_LMG
@@ -1114,7 +1114,7 @@ items:
     weight: 6 # 3
     armor: 35 # 20
     battleType: 2
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 16
 
   - type: STR_SOVIET_PLASMA_SMG
@@ -1186,27 +1186,10 @@ items:
     hitSound: 1938
     armor: 30 # 20
     battleType: 2
-    vaporColorSurface: 2
+    vaporColorSurface: 5
     vaporDensitySurface: 6
 
 research:
-# Linked Alien Research
-# Alien Weapon Research Step - allows understanding
-  - name: STR_PLASMA_PISTOL
-    cost: 300
-    points: 10
-    needItem: true
-  - name: STR_PLASMA_RIFLE
-    cost: 350
-    points: 10
-    needItem: true
-  - name: STR_HEAVY_PLASMA
-    cost: 400
-    points: 10
-    needItem: true
-# this is how to defeat the lockout is unlocked by alien weapons but will need a live engineer to allow it to go forward to be researched
-
-
 
   - name: STR_ELERIUM_BOMB
     cost: 180
@@ -1302,21 +1285,33 @@ research:
 # New Armor
 
   - name: STR_PLASMA_PISTOL
+    cost: 0
+    points: 10
+    needItem: true
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_PISTOL_CLIP
+    cost: 0
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_RIFLE
+    cost: 0
+    points: 10
+    needItem: true
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_RIFLE_CLIP
+    cost: 0
     requires:
       - STR_ALIENS_ONLY
   - name: STR_HEAVY_PLASMA
+    cost: 0
+    points: 10
+    needItem: true
     requires:
       - STR_ALIENS_ONLY
   - name: STR_HEAVY_PLASMA_CLIP
+    cost: 0
     requires:
       - STR_ALIENS_ONLY
 

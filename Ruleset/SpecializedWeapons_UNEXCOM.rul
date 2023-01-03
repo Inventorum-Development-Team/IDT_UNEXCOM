@@ -288,7 +288,7 @@ items:
     accuracyCloseQuarters: 100
     accuracyMultiplier:
       firing: 0.5
-    
+
     tuSnap: 35
     tuAimed: 55
     costThrow:
@@ -367,10 +367,10 @@ items:
     reloadSound: 3010
     compatibleAmmo:
       - STR_ELECTRIC_PISTOL_MAG
- 
+
     confAuto:
       shots: 8
-      name: STR_RAGE_FIRE 
+      name: STR_RAGE_FIRE
     costAimed:
       time: 30
     aimRange: 18
@@ -380,7 +380,6 @@ items:
     confAimed:
       shots: 3
       name: STR_BURST
-    aimRange: 10
     snapRange: 12
     accuracySnap: 90
     accuracyCloseQuarters: 90
@@ -466,16 +465,16 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      2400: Resources/SpecializedWeapons/HandGaussAmmo.png
+      #2400: Resources/SpecializedWeapons/HandGaussAmmo.png
       2408: Resources/SpecializedWeapons/HandGaussCarbine_ammo1.png
       2416: Resources/SpecializedWeapons/HandGaussRifle_ammo1.png
       2424: Resources/SpecializedWeapons/HandGaussHeavy_ammo1.png
       2432: Resources/SpecializedWeapons/HandTeslaRifle_ammo1.png
-      2440: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
+      #2440: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
       2448: Resources/SpecializedWeapons/HandTeslaHeavy_ammo1.png
-      2456: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
+      #2456: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
       2464: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
-      2472: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
+      #2472: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
 
   - type: Projectiles
     height: 3
