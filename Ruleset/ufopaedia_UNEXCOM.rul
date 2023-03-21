@@ -1785,13 +1785,7 @@ ufopaedia:
     text: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
     text_width: 170
     listOrder: 2222
-  - id: STR_NEW_HUMAN_PLASMA_RIFLE
-    type_id: 8
-    section: STR_UNEXCOM_RESEARCH
-    requires:
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-    text: STR_NEW_HUMAN_PLASMA_RIFLE_UFOPEDIA
-    listOrder: 2250
+
 
 ################################
 #### HUMAN PLASMA WEAPONS ####
@@ -1812,6 +1806,22 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
     text: STR_HUMAN_PLASMA_WEAPONS_PROGRESS_UFOPEDIA
     listOrder: 2265
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_I_UFOPEDIA
+    listOrder: 2276
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_iI_UFOPEDIA
+    listOrder: 2267
 
   - id: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     type_id: 8
@@ -2847,6 +2857,14 @@ ufopaedia:
       ammoSlot: 1
     listOrder: 4416
 
+  - id: STR_UN_PLASMA_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    text: STR_UN_PLASMA_RIFLE_UFOPEDIA
+    listOrder: 4417
+
   - id: STR_US_PLASMA_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3854,7 +3872,7 @@ ufopaedia:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_ELECTRIC_PISTOL_MAG_UFOPEDIA
     listOrder: 5227
-  
+
   - id: STR_GAUSS_RIFLE_MAG
     type_id: 4
     section: STR_WEAPONS
