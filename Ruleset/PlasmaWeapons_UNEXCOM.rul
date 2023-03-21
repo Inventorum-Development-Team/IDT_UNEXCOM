@@ -72,6 +72,55 @@ items:
     autoRange: 25
     dropoff: 3
     armor: 75 # 20
+
+###################
+#### UNEXCOM #####
+##################
+
+
+  - type: STR_UN_PLASMA_RIFLE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    size: 0.3
+    costSell: 60000
+    weight: 15
+    armor: 60
+    bigSprite: 3208
+    floorSprite: 3208
+    handSprite: 3208
+    bulletSpeed: 6
+    fireSound: 1933
+    compatibleAmmo:
+      - STR_PLASMA_RIFLE_CLIP
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 40
+    accuracySnap: 85
+    accuracyAimed: 55
+    costSnap:
+      time: 30
+    costAimed:
+      time: 40
+    costAuto:
+      time: 60
+    tuLoad: 30
+    tuUnload: 15
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    maxRange: 60
+    aimRange: 39
+    snapRange: 40
+    autoRange: 20
+    dropoff: 5
+    invWidth: 1
+    invHeight: 3
+
+
   - type: STR_PLASMA_RIFLE_CLIP
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
     listOrder: 5251
