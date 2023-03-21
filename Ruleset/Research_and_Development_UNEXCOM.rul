@@ -844,6 +844,21 @@ research:
     dependencies:
       - STR_HUMAN_PLASMA_WEAPONS_THEORY
 
+
+#########################################
+####### UNEXCOM PLASMA RESEARCH ########
+#######################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_ON_OUR_OWN
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+
 #########################################
 ####### AMERICAN PLASMA RESEARCH ########
 #######################################
@@ -853,6 +868,10 @@ research:
     dependencies:
       - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
       - STR_USA_SUPPORT_RESEARCH
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
 
 #########################################
 ####### EUROPEAN PLASMA RESEARCH ########
@@ -863,6 +882,10 @@ research:
     dependencies:
       - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
       - STR_NATO_SUPPORT_RESEARCH
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
 
 #########################################
 ######## SOVIET PLASMA RESEARCH #########
@@ -873,6 +896,10 @@ research:
     dependencies:
       - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
       - STR_USSR_SUPPORT_RESEARCH
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
 
 
 ########################################
