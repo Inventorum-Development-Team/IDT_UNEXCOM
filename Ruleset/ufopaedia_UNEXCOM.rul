@@ -1820,7 +1820,7 @@ ufopaedia:
     section: STR_UNEXCOM_RESEARCH
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
-    text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_iI_UFOPEDIA
+    text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_II_UFOPEDIA
     listOrder: 2267
 
   - id: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
@@ -3237,7 +3237,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_REMAN_SMALL_LAUNCHER
+      - STR_SMALL_LAUNCHER
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
     listOrder: 4712
 
@@ -3258,22 +3258,6 @@ ufopaedia:
     text: STR_ELECTRIC_RIFLE_UFOPEDIA
     listOrder: 4750
 
-  - id: STR_ELECTRIC_HEAVY_RIFLE
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_ELECTRIC_HEAVY_RIFLE_UFOPEDIA
-    listOrder: 4751
-
-  - id: STR_ELECTRIC_PISTOL
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_ELECTRIC_PISTOL_UFOPEDIA
-    listOrder: 4752
-
   - id: STR_GAUSS_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3282,21 +3266,7 @@ ufopaedia:
     text: STR_GAUSS_RIFLE_UFOPEDIA
     listOrder: 4753
 
-  - id: STR_GAUSS_HEAVY_RIFLE
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_GAUSS_HEAVY_RIFLE_UFOPEDIA
-    listOrder: 4754
 
-  - id: STR_GAUSS_CARBINE
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_GAUSS_CARBINE_UFOPEDIA
-    listOrder: 4755
 
 #Melee
 
@@ -3856,22 +3826,6 @@ ufopaedia:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_ELECTRIC_RIFLE_MAG_UFOPEDIA
     listOrder: 5225
-
-  - id: STR_ELECTRIC_HEAVY_RIFLE_MAG
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_ELECTRIC_HEAVY_RIFLE_MAG_UFOPEDIA
-    listOrder: 5226
-
-  - id: STR_ELECTRIC_PISTOL_MAG
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_SECRET_CRISIS_PROTOTYPES
-    text: STR_ELECTRIC_PISTOL_MAG_UFOPEDIA
-    listOrder: 5227
 
   - id: STR_GAUSS_RIFLE_MAG
     type_id: 4
