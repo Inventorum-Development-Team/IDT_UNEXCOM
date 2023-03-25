@@ -15,6 +15,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Barabas: bug hunter
 * Black Onix: Romania and Bulgaria accurate flags
 * Blood Angel Tactical Marine: bug hunter.
+* BlondeKnight: UN plasma rifle sprites and text
 * Bobit: bug hunter
 * boodman123726: XCOM 2 Music Pack
 * Branes51: bug hunter
@@ -77,7 +78,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * The Reaver of Darkness: major balance support, LIGHTNIA mapset, plus ideas
 * theemperorofmankind: bug hunter
 * Tingcat: Terrorists Paperdolls
-* Ultrakiroxei: bug hunter, USSR Close Range Laser Pedia text 
+* Ultrakiroxei: bug hunter, USSR Close Range Laser Pedia text
 * Valmont and his girlfriend: bug hunters
 * Vesparco: Sectoid Commander spritesheet
 * Warboy1982: Shotgun firing sound
