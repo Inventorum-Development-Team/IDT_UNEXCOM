@@ -29,9 +29,9 @@ items:
     dropoff: 3
     battleType: 1
     armor: 70 # 20
+    listOrder: 5000
   - type: STR_PLASMA_PISTOL_CLIP
     categories: [STR_PLASMA, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5451
     power: 70 # 52
     clipSize: 22 # 26
     bigSprite: 1964
@@ -45,6 +45,7 @@ items:
     armor: 30 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
+    listOrder: 5010
 
   - type: STR_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_FIREARMS]
@@ -72,6 +73,7 @@ items:
     autoRange: 25
     dropoff: 3
     armor: 75 # 20
+    listOrder: 5020
 
 ###################
 #### UNEXCOM #####
@@ -84,10 +86,11 @@ items:
     costSell: 60000
     weight: 15
     armor: 60
-    bigSprite: 3208
-    floorSprite: 3208
-    handSprite: 3208
+    bigSprite: 3200
+    floorSprite: 3200
+    handSprite: 3200
     bulletSpeed: 6
+    bulletSprite: 8
     fireSound: 1933
     compatibleAmmo:
       - STR_PLASMA_RIFLE_CLIP
@@ -119,11 +122,11 @@ items:
     dropoff: 5
     invWidth: 1
     invHeight: 3
-
+    listOrder: 5030
 
   - type: STR_PLASMA_RIFLE_CLIP
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5251
+    #listOrder: 5251
     size: 0.2
     costSell: 3000
     bigSprite: 1364
@@ -144,10 +147,11 @@ items:
     armor: 30 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
+    listOrder: 5040
 
   - type: STR_HEAVY_PLASMA
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
-    listOrder: 5175
+    #listOrder: 5175
     requires:
       - STR_ALIENS_ONLY
     weight: 19 # 8
@@ -174,9 +178,10 @@ items:
     dropoff: 3
     autoShots: 2 # 3
     armor: 80 # 20
+    listOrder: 5050
   - type: STR_HEAVY_PLASMA_CLIP
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5177
+    #listOrder: 5177
     power: 150 # 115
     clipSize: 14 # 35
     bigSprite: 1862
@@ -190,6 +195,7 @@ items:
     armor: 35 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
+    listOrder: 5060
   - type: STR_SMALL_LAUNCHER
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
     requires:
@@ -217,6 +223,33 @@ items:
     aimRange: 12
     snapRange: 8
     recoveryPoints: 4
+    listOrder: 5070
+  - type: STR_HUMAN_SMALL_LAUNCHER
+    categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
+    requires:
+      - STR_SMALL_LAUNCHER
+    size: 0.2
+    costSell: 120000
+    weight: 10
+    bigSprite: 1330
+    floorSprite: 36
+    handSprite: 64 #
+    bulletSprite: 9
+    fireSound: 53
+    compatibleAmmo:
+      - STR_STUN_BOMB
+      - STR_ACID_BOMB
+      - STR_ELERIUM_BOMB
+    accuracySnap: 65
+    accuracyAimed: 110
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 4
+    listOrder: 5075
   - type: STR_STUN_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -234,6 +267,7 @@ items:
     clipSize: 1
     battleType: 2
     recoveryPoints: 1
+    listOrder: 5080
   - type: STR_ACID_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -251,6 +285,7 @@ items:
     clipSize: 1
     battleType: 2
     recoveryPoints: 1
+    listOrder: 5090
   - type: STR_ELERIUM_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -268,7 +303,8 @@ items:
     clipSize: 1
     battleType: 2
     blastRadius: 4
-    listOrder: 5901
+    #listOrder: 5901
+    listOrder: 5100
 
   - type: STR_TOXIGUN
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
@@ -293,7 +329,8 @@ items:
     recoveryPoints: 3
     armor: 20
     attraction: 1
-    listOrder: 5950
+    #listOrder: 5950
+    listOrder: 5110
   - type: STR_TOXIGUN_FLASK
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -314,7 +351,8 @@ items:
     recoveryPoints: 1
     attraction: 1
     shotgunPellets: 5
-    listOrder: 5951
+    ##listOrder: 5951
+    listOrder: 5120
   - type: STR_PLASMA_CASTER
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_ALIEN_TECH]
     requires:
@@ -345,7 +383,8 @@ items:
     twoHanded: false
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    listOrder: 5550
+    ##listOrder: 5550
+    listOrder: 5130
   - type: STR_PLASMA_CASTER_CLIP
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -367,8 +406,9 @@ items:
     recoveryPoints: 1
     attraction: 1
     shotgunPellets: 8 # 5
-    listOrder: 5551
+    ##listOrder: 5551
     armor: 30 # 20
+    listOrder: 5140
   - type: STR_PLASMA_SNIPER_RIFLE
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
     requires:
@@ -401,7 +441,8 @@ items:
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    listOrder: 5148
+    ##listOrder: 5148
+    listOrder: 5150
   - type: STR_PLASMA_SNIPER_RIFLE_CLIP
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -422,10 +463,11 @@ items:
     battleType: 2
     recoveryPoints: 1
     attraction: 1
-    listOrder: 5149
+    ##listOrder: 5149
     vaporColorSurface: 3
     vaporDensitySurface: 20
     armor: 30 # 20
+    listOrder: 5160
   - type: STR_PLASMA_BLASTER
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH]
     requires:
@@ -458,7 +500,8 @@ items:
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    listOrder: 4980
+    ##listOrder: 4980
+    listOrder: 5170
   - type: STR_PLASMA_BLASTER_CLIP
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -479,8 +522,9 @@ items:
     recoveryPoints: 1
     blastRadius: 3
     attraction: 1
-    listOrder: 4981
+    ##listOrder: 4981
     armor: 35 # 20
+    listOrder: 5180
 
   - type: STR_ALIEN_GRENADE
     categories: [STR_PLASMA, STR_EXPLOSIVES, STR_ALIEN_TECH]
@@ -489,33 +533,9 @@ items:
     size: 0.1
     bigSprite: 39
     floorSprite: 38
+    listOrder: 5190
 
 
-  - type: STR_HUMAN_SMALL_LAUNCHER
-    categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
-    requires:
-      - STR_SMALL_LAUNCHER
-    size: 0.2
-    costSell: 120000
-    weight: 10
-    bigSprite: 1330
-    floorSprite: 36
-    handSprite: 64 #
-    bulletSprite: 9
-    fireSound: 53
-    compatibleAmmo:
-      - STR_STUN_BOMB
-      - STR_ACID_BOMB
-      - STR_ELERIUM_BOMB
-    accuracySnap: 65
-    accuracyAimed: 110
-    tuSnap: 40
-    tuAimed: 75
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 2
-    recoveryPoints: 4
 # Decoder
   - type: STR_HYPER_WAVE_ENCODER
     categories: [STR_MISC, STR_ALIEN_TECH]
@@ -531,6 +551,7 @@ items:
     recover: true
     recoveryPoints: 50
     armor: 10
+    listOrder: 5200
 
 ##############
 #### USA #####
@@ -582,12 +603,13 @@ items:
     dropoff: 5
     invWidth: 1
     invHeight: 3
+    listOrder: 5210
 
   - type: STR_US_PLASMA_RIFLE_MAG
     categories: [STR_PLASMA, STR_RIFLES, STR_US_TECH, STR_CLIPS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    listOrder: 5251
+    ##listOrder: 5251
     size: 0.2
     costBuy: 9000
     costSell: 3000
@@ -609,6 +631,7 @@ items:
     armor: 30 # 20
     vaporColorSurface: 5
     vaporDensitySurface: 5
+    listOrder: 5220
 
   - type: STR_US_PLASMA_RL
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
@@ -650,6 +673,7 @@ items:
     invWidth: 2
     invHeight: 3
     attraction: 8
+    listOrder: 5230
 
   - type: STR_US_PLASMA_RL_HEAT_ROCKET
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
@@ -678,6 +702,7 @@ items:
     invWidth: 1
     invHeight: 2
     attraction: 9
+    listOrder: 5240
   - type: STR_US_PLASMA_RL_ELERIUM_ROCKET
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     requiresBuy:
@@ -706,6 +731,7 @@ items:
     invWidth: 1
     invHeight: 2
     attraction: 9
+    listOrder: 5250
 
   - type: STR_US_PLASMA_SHOTGUN
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
@@ -751,12 +777,13 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
+    listOrder: 5260
 
   - type: STR_US_PLASMA_SHOTGUN_MAG
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_US_TECH, STR_CLIPS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    #listOrder: 5451
+    ##listOrder: 5451
     costBuy: 14000
     costSell: 12000
     hitAnimation: 110
@@ -781,6 +808,7 @@ items:
     battleType: 2
     vaporColorSurface: 5
     vaporDensitySurface: 5
+    listOrder: 5270
 
 ###############
 #### NATO #####
@@ -832,10 +860,11 @@ items:
     dropoff: 5
     invWidth: 1
     invHeight: 3
+    listOrder: 5280
 
   - type: STR_NATO_PLASMA_CARBINE_MAG
     categories: [STR_PLASMA, STR_CARBINES, STR_NATO_TECH, STR_CLIPS]
-    #listOrder: 5251
+    ##listOrder: 5251
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     size: 0.2
@@ -859,6 +888,7 @@ items:
     armor: 30 # 20
     vaporColorSurface: 5
     vaporDensitySurface: 8
+    listOrder: 5290
 
   - type: STR_NATO_PLASMA_PISTOL
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
@@ -896,10 +926,11 @@ items:
     dropoff: 5
     invWidth: 1
     invHeight: 2
+    listOrder: 5300
 
   - type: STR_NATO_PLASMA_PISTOL_MAG
     categories: [STR_PLASMA, STR_PISTOLS, STR_NATO_TECH, STR_CLIPS]
-    #listOrder: 5451
+    ##listOrder: 5451
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     costBuy: 6000
@@ -920,6 +951,7 @@ items:
     battleType: 2
     vaporColorSurface: 5
     vaporDensitySurface: 3
+    listOrder: 5310
 
   - type: STR_NATO_SNIPER_PLASMA
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
@@ -967,10 +999,11 @@ items:
     dropoff: 5
     invWidth: 2
     invHeight: 3
+    listOrder: 5320
 
   - type: STR_NATO_SNIPER_PLASMA_MAG
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_NATO_TECH, STR_CLIPS]
-    #listOrder: 5177
+    ##listOrder: 5177
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     costBuy: 13000
@@ -991,6 +1024,7 @@ items:
     battleType: 2
     vaporColorSurface: 5
     vaporDensitySurface: 20
+    listOrder: 5330
 
 ################
 #### USSR ######
@@ -1062,10 +1096,11 @@ items:
     dropoff: 5
     invWidth: 1
     invHeight: 3
+    listOrder: 5340
 
   - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
     categories: [STR_PLASMA, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS]
-    #listOrder: 5251
+    ##listOrder: 5251
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     size: 0.2
@@ -1089,6 +1124,7 @@ items:
     armor: 30 # 20
     vaporColorSurface: 5
     vaporDensitySurface: 11
+    listOrder: 5350
 
   - type: STR_SOVIET_PLASMA_LMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
@@ -1140,10 +1176,11 @@ items:
     dropoff: 5
     invWidth: 2
     invHeight: 3
+    listOrder: 5360
 
   - type: STR_SOVIET_PLASMA_LMG_MAG
     categories: [STR_PLASMA, STR_LMGS, STR_SOVIET_TECH, STR_CLIPS]
-    #listOrder: 5177
+    ##listOrder: 5177
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     costBuy: 170000
@@ -1165,6 +1202,7 @@ items:
     battleType: 2
     vaporColorSurface: 5
     vaporDensitySurface: 16
+    listOrder: 5370
 
   - type: STR_SOVIET_PLASMA_SMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
@@ -1213,10 +1251,11 @@ items:
     dropoff: 5
     invWidth: 1
     invHeight: 3
+    listOrder: 5380
 
   - type: STR_SOVIET_PLASMA_SMG_MAG
     categories: [STR_PLASMA, STR_SMGS, STR_SOVIET_TECH, STR_CLIPS]
-    #listOrder: 5451
+    ##listOrder: 5451
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     costBuy: 12000
@@ -1237,6 +1276,7 @@ items:
     battleType: 2
     vaporColorSurface: 5
     vaporDensitySurface: 6
+    listOrder: 5390
 
 research:
 
@@ -1244,47 +1284,47 @@ research:
     cost: 180
     points: 10
     needItem: true
-    listOrder: 4401
+    #listOrder: 4401
   - name: STR_TOXIGUN
     cost: 200
     points: 20
     needItem: true
-    listOrder: 4450
+    #listOrder: 4450
   - name: STR_TOXIGUN_FLASK
     cost: 300
     points: 15
     needItem: true
-    listOrder: 4451
+    #listOrder: 4451
   - name: STR_PLASMA_CASTER
     cost: 400
     points: 25
     needItem: true
-    listOrder: 3750
+    #listOrder: 3750
   - name: STR_PLASMA_CASTER_CLIP
     cost: 400
     points: 6
     needItem: true
-    listOrder: 3751
+    #listOrder: 3751
   - name: STR_PLASMA_BLASTER
     cost: 900
     points: 25
     needItem: true
-    listOrder: 2750
+    #listOrder: 2750
   - name: STR_PLASMA_BLASTER_CLIP
     cost: 400
     points: 6
     needItem: true
-    listOrder: 2751
+    #listOrder: 2751
   - name: STR_PLASMA_SNIPER_RIFLE
     cost: 700
     points: 25
     needItem: true
-    listOrder: 3950
+    #listOrder: 3950
   - name: STR_PLASMA_SNIPER_RIFLE_CLIP
     cost: 400
     points: 6
     needItem: true
-    listOrder: 3951
+    #listOrder: 3951
 
   - name: STR_PLASMA_CANNON_DEP2
     cost: 0
@@ -1408,7 +1448,7 @@ extraSprites:
 ##### FACTION SPECIFIC WEAPONS #####
 ###################################
 
-      #3200: Resources/PlasmaWeapons/UN/BigUNPlasmaRifle.png
+      3200: Resources/PlasmaWeapons/UN/BigUNPlasmaRifle_ammo1.png
       3208: Resources/PlasmaWeapons/USA/BigPlasmaBattleRifle_ammo1.png
       3216: Resources/PlasmaWeapons/USA/BigPlasmaRL_ammo1.png
       3224: Resources/PlasmaWeapons/USA/BigPlasmaShotgun_ammo1.png
@@ -1470,7 +1510,7 @@ extraSprites:
 ##### FACTION SPECIFIC WEAPONS #####
 ###################################
 
-      #3200: Resources/PlasmaWeapons/UN/FloorUNPlasmaRifle.png
+      3200: Resources/PlasmaWeapons/UN/FloorUNPlasmaRifle_ammo1.png
       3208: Resources/PlasmaWeapons/USA/FloorPlasmaBattleRifle_ammo1.png
       3216: Resources/PlasmaWeapons/USA/FloorPlasmaRL_ammo1.png
       3224: Resources/PlasmaWeapons/USA/FloorPlasmaShotgun_ammo1.png
@@ -1517,7 +1557,7 @@ extraSprites:
 ##### FACTION SPECIFIC WEAPONS #####
 ###################################
 
-      #3200: Resources/PlasmaWeapons/UN/HandUNPlasmaRifle.png
+      3200: Resources/PlasmaWeapons/UN/HandUNPlasmaRifle_ammo1.png
       3208: Resources/PlasmaWeapons/USA/HandPlasmaBattleRifle_ammo1.png
       3216: Resources/PlasmaWeapons/USA/HandPlasmaRL_ammo1.png
       3224: Resources/PlasmaWeapons/USA/HandPlasmaShotgun_ammo1.png
