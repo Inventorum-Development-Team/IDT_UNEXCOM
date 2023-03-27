@@ -911,18 +911,19 @@ armors:
     sideArmor: 3
     rearArmor: 2
     underArmor: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: &SoftAlienInfantryDamageModifier
+      - 1.0 #none
+      - 1.0 #Balistic
+      - 1.0 #Incendiary
+      - 1.0 #HE
+      - 1.0 #Laser
+      - 1.0 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 1.6 #Acid
+      - 1.0 #Smoke
+      - 1.3 #Elerium Fusion
+      - 1.0 #Electric
     loftempsSet: [ 2 ]
 
   - type: SECTOID_COMMANDER_ARMOR
@@ -935,18 +936,7 @@ armors:
     sideArmor: 3
     rearArmor: 2
     underArmor: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 2 ]
 
 ################################
@@ -963,18 +953,20 @@ armors:
     sideArmor: 44
     rearArmor: 36
     underArmor: 30
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.2
-      - 0.8
-      - 0.0
-      - 1.1
+    damageModifier: &HardAlienInfantryDamageModifier
+      - 1.0 #none
+      - 0.8 #Balistic
+      - 1.0 #Incendiary
+      - 0.8 #HE
+      - 1.0 #Laser
+      - 0.7 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.1 #Elerium Fusion
+      - 1.1 #Electric
+
     loftempsSet: [ 2 ]
 
 ################################
@@ -993,18 +985,7 @@ armors:
     underArmor: 12
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: FLOATER_NAVIGATOR_ARMOR
     spriteSheet: FLOATER_NAVIGATOR_SPRITESHEET.PCK
@@ -1018,18 +999,7 @@ armors:
     underArmor: 12
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: FLOATER_MEDIC_ARMOR
     spriteSheet: FLOATER_MEDIC_SPRITESHEET.PCK
@@ -1043,18 +1013,7 @@ armors:
     underArmor: 16
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: FLOATER_ENGINEER_ARMOR
     spriteSheet: FLOATER_ENGINEER_SPRITESHEET.PCK
@@ -1068,18 +1027,7 @@ armors:
     underArmor: 12
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: FLOATER_LEADER_ARMOR
     spriteSheet: FLOATER_LEADER_SPRITESHEET.PCK
@@ -1093,18 +1041,7 @@ armors:
     underArmor: 16
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
 
 ################################
@@ -1123,18 +1060,7 @@ armors:
     underArmor: 12
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.0
+    damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: ARMORED_FLOATER_LEADER_ARMOR
     spriteSheet: ARMORED_FLOATER_LEADER_SPRITESHEET.PCK
@@ -1148,18 +1074,7 @@ armors:
     underArmor: 26
     drawingRoutine: 1
     movementType: 1
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.0
+    damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
 
 ################################
@@ -1182,18 +1097,7 @@ armors:
     underArmor: 12
     drawingRoutine: 6
     movementType: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: SNAKEMAN_ARMOR1
     spriteSheet: SNAKEMAN.PCK
@@ -1205,18 +1109,7 @@ armors:
     underArmor: 20
     drawingRoutine: 6
     movementType: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: SNAKEMAN_ARMOR2
     spriteSheet: SNAKEMAN.PCK
@@ -1228,18 +1121,7 @@ armors:
     underArmor: 20
     drawingRoutine: 6
     movementType: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
 
 ################################
@@ -1257,18 +1139,19 @@ armors:
     rearArmor: 20
     underArmor: 10
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: &SoftMutonInfantryDamageModifier
+      - 1.0 #none
+      - 0.7 #Balistic
+      - 1.0 #Incendiary
+      - 1.0 #HE
+      - 0.9 #Laser
+      - 0.8 #Plasma
+      - 1.0 #Stun
+      - 0.8 #Melee
+      - 1.2 #Acid
+      - 1.0 #Smoke
+      - 1.3 #Elerium Fusion
+      - 1.0 #Electric
     loftempsSet: [ 3 ]
   - type: MUTON_NAVIGATOR_ARMOR
     allowInv: true
@@ -1281,18 +1164,7 @@ armors:
     rearArmor: 24
     underArmor: 15
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: MUTON_MEDIC_ARMOR
     allowInv: true
@@ -1305,18 +1177,7 @@ armors:
     rearArmor: 28
     underArmor: 20
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
 
   - type: MUTON_ENGINEER_ARMOR
@@ -1330,18 +1191,7 @@ armors:
     rearArmor: 28
     underArmor: 20
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
 
   - type: MUTON_LEADER_ARMOR
@@ -1355,18 +1205,7 @@ armors:
     rearArmor: 30
     underArmor: 20
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
 
 ################################
@@ -1384,18 +1223,19 @@ armors:
     rearArmor: 36
     underArmor: 30
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.1
+    damageModifier: &HardMutonInfantryDamageModifier
+      - 1.0 #none
+      - 0.6 #Balistic
+      - 1.0 #Incendiary
+      - 1.0 #HE
+      - 0.8 #Laser
+      - 0.6 #Plasma
+      - 1.0 #Stun
+      - 0.6 #Melee
+      - 1.2 #Acid
+      - 0.0 #Smoke
+      - 1.2 #Elerium Fusion
+      - 1.0 #Electric
     loftempsSet: [ 3 ]
 
   - type: ARMORED_MUTON_LEADER_ARMOR
@@ -1409,18 +1249,7 @@ armors:
     rearArmor: 36
     underArmor: 30
     drawingRoutine: 10
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.1
+    damageModifier: *HardMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
 
 ################################
@@ -1439,18 +1268,7 @@ armors:
     underArmor: 35
     movementType: 1
     drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: ETHEREAL_ARMOR1
     spriteSheet: ETHEREAL.PCK
@@ -1464,18 +1282,7 @@ armors:
     underArmor: 40
     movementType: 1
     drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
   - type: ETHEREAL_ARMOR2
     spriteSheet: ETHEREAL.PCK
@@ -1489,18 +1296,7 @@ armors:
     underArmor: 45
     movementType: 1
     drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
+    damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
 
 #################################
@@ -1525,18 +1321,19 @@ armors:
     constantAnimation: true
     movementType: 1
     size: 2
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.9
+    damageModifier: &HardAlienMechDamageModifier
+      - 1.0 #none
+      - 0.8 #Balistic
+      - 1.0 #Incendiary
+      - 1.3 #HE
+      - 0.7 #Laser
+      - 0.8 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.1 #Elerium Fusion
+      - 1.6 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
 
   - type: SECTOPOD_ARMOR
@@ -1556,17 +1353,18 @@ armors:
     drawingRoutine: 5
     size: 2
     damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.5
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.1
+      - 1.0 #none
+      - 0.8 #Balistic
+      - 1.0 #Incendiary
+      - 1.3 #HE
+      - 1.2 #Laser
+      - 0.7 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.1 #Elerium Fusion
+      - 1.6 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
 
   - type: MECHTOID_ARMOR
@@ -1586,18 +1384,19 @@ armors:
     drawingRoutine: 5
     painImmune: true
     size: 2
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.2
+    damageModifier: &SoftAlienMechDamageModifier
+      - 1.0 #none
+      - 1.1 #Balistic
+      - 1.0 #Incendiary
+      - 1.2 #HE
+      - 0.8 #Laser
+      - 0.7 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.1 #Elerium Fusion
+      - 1.8 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: PROBE_ARMOR
     allowInv: true
@@ -1629,18 +1428,7 @@ armors:
     underArmor: 10
     drawingRoutine: 4
     constantAnimation: true
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *SoftAlienMechDamageModifier
     loftempsSet: [1]
   - type: CYBERSPHERE_ARMOR
     spriteInv: CYBERSPHERE_INVENTORY.SPK
@@ -1656,20 +1444,7 @@ armors:
     drawingRoutine: 8
     movementType: 1
     size: 1
-    damageModifier:
-      - 1
-      - 1
-      - 0.8
-      - 1
-      - 1
-      - 1
-      - 0
-      - 1.2
-      - 1
-      - 0
-      - 1
-      - 1
-      - 1.3
+    damageModifier: *SoftAlienMechDamageModifier
     painImmune: true
     loftempsSet: [3]
     meleeDodge:
@@ -1695,17 +1470,18 @@ armors:
     drawingRoutine: 5
     size: 2
     damageModifier:
-      - 1.0
-      - 1.0
-      - 1.7
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.5
+      - 1.0 #none
+      - 0.9 #Balistic
+      - 1.5 #Incendiary
+      - 1.1 #HE
+      - 0.7 #Laser
+      - 0.6 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 1.1 #Acid
+      - 0.0 #Smoke
+      - 1.5 #Elerium Fusion
+      - 1.1 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
 
   - type: CHRYSSALID_ARMOR
@@ -1720,17 +1496,18 @@ armors:
     underArmor: 34
     drawingRoutine: 7
     damageModifier:
-      - 1.0
-      - 1.0
-      - 1.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.5
+      - 1.0 #none
+      - 1.0 #Balistic
+      - 1.8 #Incendiary
+      - 1.2 #HE
+      - 1.1 #Laser
+      - 1.0 #Plasma
+      - 1.0 #Stun
+      - 1.5 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.8 #Elerium Fusion
+      - 1.0 #Electric
     loftempsSet: [ 3 ]
   - type: ZOMBIE_ARMOR
     painImmune: true # no secondary stun damage
@@ -1744,18 +1521,19 @@ armors:
     rearArmor: 4
     underArmor: 4
     drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.8
-      - 0.8
-      - 0.7
-      - 0.7
-      - 0.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.5
+    damageModifier: &BiologicalNightmareDamageModifier
+      - 1.0 #none
+      - 1.0 #Balistic
+      - 1.5 #Incendiary
+      - 1.3 #HE
+      - 1.1 #Laser
+      - 1.1 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 1.0 #Acid
+      - 0.0 #Smoke
+      - 1.5 #Elerium Fusion
+      - 1.2 #Electric
     loftempsSet: [ 3 ]
     deathFrames: 18
   - type: ZOMBIE_UNDEAD_ARMOR
@@ -1770,18 +1548,7 @@ armors:
     rearArmor: 4
     underArmor: 4
     drawingRoutine: 4
-    damageModifier:
-      - 1.0
-      - 0.6
-      - 1.8
-      - 0.8
-      - 0.7
-      - 0.7
-      - 0.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.5
+    damageModifier: *BiologicalNightmareDamageModifier
     loftempsSet: [ 3 ]
     deathFrames: 3
   - type: SILACOID_ARMOR
@@ -1797,18 +1564,7 @@ armors:
     drawingRoutine: 8
     constantAnimation: true
     movementType: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.5
+    damageModifier: *BiologicalNightmareDamageModifier
     loftempsSet: [ 5 ]
   - type: CELATID_ARMOR
     spriteSheet: CELATID.PCK
@@ -1822,18 +1578,7 @@ armors:
     underArmor: 20
     drawingRoutine: 9
     constantAnimation: true
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 1.5
+    damageModifier: *BiologicalNightmareDamageModifier
     loftempsSet: [ 3 ]
 
 
