@@ -1930,6 +1930,34 @@ ufopaedia:
     text: STR_UNEXCOM_HISTORY_5_UFOPEDIA
     text_width: 316
     listOrder: 3004
+
+  - id: STR_UNEXCOM_HISTORY_6
+    type_id: 8
+    requires:
+      - STR_ON_OUR_OWN
+    section: STR_UNEXCOM_REPORTS
+    text: STR_UNEXCOM_HISTORY_6_UFOPEDIA
+    text_width: 316
+    listOrder: 3005
+
+  - id: STR_UNEXCOM_HISTORY_7
+    type_id: 8
+    requires:
+      - STR_ON_OUR_OWN
+    section: STR_UNEXCOM_REPORTS
+    text: STR_UNEXCOM_HISTORY_7_UFOPEDIA
+    text_width: 316
+    listOrder: 3006
+
+  - id: STR_UNEXCOM_HISTORY_8
+    type_id: 8
+    requires:
+      - STR_ON_OUR_OWN
+    section: STR_UNEXCOM_REPORTS
+    text: STR_UNEXCOM_HISTORY_8_UFOPEDIA
+    text_width: 316
+    listOrder: 3007
+
   - id: STR_UNITED_WE_STAND_RESEARCH
     type_id: 7
     requires:
@@ -1937,7 +1965,7 @@ ufopaedia:
     section: STR_UNEXCOM_REPORTS
     image_id: UNITED_WE_STAND_IMAGE
     text: STR_UNITED_WE_STAND_RESEARCH_UFOPEDIA
-    listOrder: 3005
+    listOrder: 3008
     text_width: 316
 
   - id: STR_ALIEN_ORIGINS
@@ -1946,7 +1974,7 @@ ufopaedia:
     requires:
       - STR_ALIEN_ORIGINS
     text: STR_ALIEN_ORIGINS_UFOPEDIA
-    listOrder: 3006
+    listOrder: 3009
   - id: STR_OLYMPUS
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1955,7 +1983,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_OLYMPUS_UFOPEDIA
-    listOrder: 3007
+    listOrder: 3010
   - id: STR_OLYMPUS_ORION
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1964,7 +1992,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_OLYMPUS_ORION_UFOPEDIA
-    listOrder: 3008
+    listOrder: 3011
   - id: STR_OLYMPUS_SHUTTLE
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1973,7 +2001,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_OLYMPUS_SHUTTLE_UFOPEDIA
-    listOrder: 3009
+    listOrder: 3012
 
   - id: STR_THE_MARTIAN_SOLUTION
     type_id: 7
@@ -1983,7 +2011,7 @@ ufopaedia:
     requires:
       - STR_THE_MARTIAN_SOLUTION
     text: STR_THE_MARTIAN_SOLUTION_UFOPEDIA
-    listOrder: 3010
+    listOrder: 3015
   - id: STR_DESTINATION_MARS
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1992,7 +2020,7 @@ ufopaedia:
     requires:
       - STR_DESTINATION_MARS
     text: STR_DESTINATION_MARS_UFOPEDIA
-    listOrder: 3011
+    listOrder: 3016
   - id: STR_CYDONIA_OR_BUST
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -2001,7 +2029,7 @@ ufopaedia:
     requires:
       - STR_CYDONIA_OR_BUST
     text: STR_CYDONIA_OR_BUST_UFOPEDIA
-    listOrder: 3012
+    listOrder: 3017
 
   - id: STR_UNEXCOM_BLUE_HELMETS
     type_id: 7
@@ -3245,7 +3273,7 @@ ufopaedia:
   - id: STR_SPECIALIZED_WEAPONS_REPORT
     type_id: 7
     section: STR_WEAPONS
-    image_id: SHOTGUN_REPORT_IMAGE
+    image_id: ELECTRIC_WEAPONS_RESEARCH_IMAGE
     text: STR_SPECIALIZED_WEAPONS_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4750
