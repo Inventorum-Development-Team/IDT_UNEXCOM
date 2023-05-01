@@ -20,6 +20,7 @@ en-US:
       STR_PLASMA: "Plasma Weapons"
       STR_ALLOY: "Alloy Weapons"
       STR_FUSION: "Fusion Weapons"
+      STR_SPECIALIZED_WEAPONS: "Specialized Weapons"
       STR_SPACE: "Space Equipment"
       STR_TANKS: Tanks
       STR_ARMORED_CARS: Armored Cars
@@ -438,6 +439,11 @@ en-US:
       STR_TARGETING_POD: "TARGETING POD"
       STR_STR_ALLOY_CRAFT_ARMOR_UC: "ALLOY CRAFT ARMOR"
       STR_ALLOY_CRAFT_ARMOR_POD: "ALLOY CRAFT ARMOR"
+      STR_GAUSS_CRAFT_CANNON: "Airborne Gauss Cannon"
+      STR_GAUSS_CRAFT_CANNON_UC: "AIRBORNE GAUSS CANNON"
+      STR_HYBRID_TRACTOR_BEAM: "Tractor Beam"
+      STR_HYBRID_TRACTOR_BEAM_UC: "TRACTOR BEAM"
+
       STR_LINNA: "LINNA"
       STR_RAPIER: "RAPIER"
       STR_VALKYRIE: "VALKYRIE"
@@ -1158,7 +1164,7 @@ en-US:
       STR_INITIAL_FUSION_CELLS_RESEARCH: Fusion Cells Research
 
       STR_HYBRID_FUSION_PROJECT: Hybrid Fusion Weapon Project
-      STR_HUMAN_FUSION_RIFLE: "XF-10 'Hellfire' Hybrid Fusion Rifle "
+      STR_HUMAN_FUSION_RIFLE: "XF-3 'Peacekeeper' Hybrid Fusion"
 ############################################
       STR_FUSION_HANDGUN: Fusion Handgun
       STR_FUSION_SMG: Fusion SMG
@@ -1306,6 +1312,10 @@ en-US:
       STR_TARGETING_POD_UFOPEDIA: "Auxiliary unit made with Alien Alloys and alien navigation, using our newest research in UFOs. Increase accuracy capacities by 25."
 
       STR_ALLOY_CRAFT_ARMOR_UFOPEDIA: "Auxiliary unit made with alien alloy, designed to increase the durability of our crafts. Increases max damage by 100, but reduces dodge by 10"
+
+      STR_GAUSS_CRAFT_CANNON_UFOPEDIA: "An experimental Russian electromagnetic-induced heavy anti-aircraft weapon, designed to be mounted onboard our crafts. A special hardpoint was modified to mount it in the Auxiliary slot instead of a regular Cannon slot, in order to increase the tactical flexiblity of the weapon in a wider range of UN crafts. Hard hitting, albeit slow to fire."
+
+      STR_HYBRID_TRACTOR_BEAM_UFOPEDIA: "The gravitational traction beam emitter directly reverse-engineered from the alien Science-class ships, our engineers have managed to mount it in a custom hardpoint for our aircrafts. Instead of using it to abduct cows and humans, we can use it to slow down and even stop enemy crafts."
 
       STR_LINNA_UFOPEDIA: "Built in collaboration with our scientists with NASA, ESRO and the Soviet Space Program, it uses experimental optical and sensors to detect UFOs characteristic infrared signatures and gravity waves. 'Linna' means 'castle' in finnish."
 
@@ -2264,13 +2274,31 @@ en-US:
 
       STR_AFINA_ANTITANK_LASER_UFOPEDIA: An anti-tank laser put into service in late 1973. It is named after the Greek Goddess of Wisdom and War, Athena. The Afina was created in response to the threat posed by Cyberdiscs to UNEXCOM forces. By using all of the advancements made in laser technology in 1972, this powerful anti-tank weapon can penetrate some of the heaviest armor, short of UFO outer walls. If you can overcome the weight and the time it takes to aim and fire, the Afina is one of the greatest assets to our cause.
 
+
       STR_POWER_RESERVES_UFOPEDIA: "Each UNEXCOM soldier carries a small powercell as a part of their equipment, which is used to power electronic equipment, such as laser weaponry, in the field. These powercells are recharged once a soldier returns from a mission, though they can be recharged during a operation by using a battery if it proves necessary."
 
       STR_BATTERY_UFOPAEDIA: "This battery holds enough power to recharge the powercell of our soldiers attires fully. It is heavy, but might prove necessary on longer missions. The battery is automatically recharged when returned to the base"
 
       STR_ELERIUM_BATTERY_UFOPAEDIA: "This battery is extremely similar to the power cells of Alien Fusion weaponry, granting it twice the capacity of our regular batteries while being the same weight"
 
-      STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of Alien Alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
+#################################
+###### ELECTRIC AND GAUSS WEAPONS #####
+###############################
+
+      STR_ELECTRIC_RIFLE: "Hurrikan Egewehr"
+      STR_ELECTRIC_RIFLE_MAG: "Hurrikan Egewehr Battery (x10)"
+      STR_ELECTRIC_RIFLE_UFOPEDIA: "Developed by a joint Anglo-German R&D team from the heavy and cumbersome Sturm electric cannon of the early 60s, the 'Hurricane' includes a powerful energy generator able to project a lightning discharge at mid range, able to fry enemy automated attackers with ease over a wide area. The downside is the limited battery supply, as each discharge severely depletes it."
+      STR_ELECTRIC_RIFLE_MAG_UFOPEDIA: "The most difficult obstacle was the limited energy charge stored by the Mk.II lithium batteries used by the Stum Ekanone. A couple of discharges were enough to deplete the battery. The lightning barely disabled a standard Warsaw Pact armored vehicle, let alone an alien mechanized unit. Improvements and a major rework led to thr implementation of Mk.VII magnesium power cells, with the possibility of storing and transferring twice the energy of the previous designs."
+      STR_GAUSS_RIFLE: "Burya EMR"
+      STR_GAUSS_RIFLE_MAG: "Ferromagnetic 8mm Mag (x15)"
+      STR_GAUSS_RIFLE_UFOPEDIA: "A successor of the Vikhr EMR, the 'Storm' Electromagnetic Rifle features a heavy barrel with reinforced coils, learning from the experience of having melted bbarrel due the extreme amount of energy emitted by firing the gun continuously. The size and weight were increased, but the recoil felt by the operation is barely noticed. Chambered in special ferromagnetic 8mm rounds able to pierce enemy armor. "
+      STR_GAUSS_RIFLE_MAG_UFOPEDIA: "The 2K66V Tungsten Carbide/Aluminum 8mm Ferromagnetic Slug is the experimental ammunition for the Soviet 'Gauss' weapons. The aluminum casing allows the electric current to propel the ammo to extreme speeds. Compared to the previous heavier and more expensive 2K53C 10mm TC/Copper slugs developed in 1959 (and successfully used against Mechtoid units in the Battle of Havana), the density and terminal velocity of the round and were reduced to prevent significant wear to the barrel and the coils; several Vikhr EMRs had their barrels white-hot, almost melting, at the end of the battle.  "
+
+#################################
+
+      #STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA_1: The capture and interrogation of the alien engineer allowed researchers to finally break the lock-out technology on their weapons and fully explore the design of the alien plasma weapons. Each weapon ionizes a small pellet of Alien Alloys and uses a linear accelerator to fire the superheated metal at a target. Cultured living cells from the captured alien will have to be built into re-purposed/captured weapons in order to use the weapons, while newly constructed plasma weapons will not require this bypass.
+
+      STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: "The capture and subsequent interrogation of the alien engineer finally unveiled the uncanny mechanics behind the plasma weapons; a powerful particle generator ionizes and propels a super hot Alien Alloys pellet, which is channeled towards the target using magnetic induction. Basically a molten metal slug guided by a magnetic field. The direct replication of the technology seems next to imposible and our limited funding prevents us to further investigate this particular topic. However, based on our research notes, we could support the World Powers' research projects working on reverse- engineering the Plasma tech and applying it into human-made assets. It's a secret hard to crack, but there's nothing our unified investigation efforts cannot accomplish."
 
       STR_ALIEN_COMMUNICATION_UFOPEDIA: The method of communication between alien ships seems to be a simple star style network, with each UFO communicating back with some sort of central base along a dual band microwave channel.  While the captured alien navigator provided researchers with information on the digital communication schema, decrypting the messages seems nearly impossible due to an encryption system similar to a 'one-time-pad'. Artifacts gained from a raid on an alien base may provide the UNEXCOM team with the knowledge needed to fully decrypt this communications.
 
@@ -2303,6 +2331,72 @@ en-US:
       STR_HUMAN_PLASMA_LMG_UFOPEDIA: Expanding techniques learned with the plasma submachine gun, the research team devised squad support weapon using the plasma weapon technology by scaling up the design.  Compromising on the plasma generator, it instead boasts a staggering rate of fire while mitigating flash and recoil.
 
       STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA: This adapted launcher features the same superb handling of the alien Small Launcher and the ability to use the same ammo. We can use it against its masters to stun, capture and if needed, kill any enemy on the sight of this weapon.
+#############################################
+#### FACTION SPECIFIC PLASMA WEAPONS #######
+###########################################
+
+      STR_HUMAN_PLASMA_WEAPONS_THEORY: "Human Plasma Weapons Theory"
+      STR_HUMAN_PLASMA_WEAPONS_THEORY_UFOPEDIA: "Our R&D staff continued collaborating with several military and civilian labs working to adapt the enemy's energy weapons to our needs. Now, we understand how the invaders are able to mass produce such sophisticated engineering parts in such a short time. The aliens' grow all of their materials from genetically engineered micro-organic cyberorganisms (nicknamed cybermicrobes) which they suspend in a solution containing the right ingredients, and the microbes assemble the material at the molecular level. Our science experts are astonished at the near perfect combination of organic and mechanic elements, present in most of the technology field by the aggressors. Our field experience and continued involvement with alien tech greatly augments the allied efforts"
+      STR_HUMAN_PLASMA_WEAPONS_PROGRESS: "Human Plasma Project Progress"
+      STR_HUMAN_PLASMA_WEAPONS_PROGRESS_UFOPEDIA: "The Command's representatives assigned to various labs working on the 'Plasma Applications Project', codename KRATOS, inform substantial advances on the theorical phase, but unexpected issues in the application phase. Privately, our scientists report certain distrust between competing research teams, as each one has managed to get different data from the very same samples. We theorized each of the three Powers have partially unlocked one of the core secrets to how the alien tech works, and through this understanding, they are able to manipulate alien tech in a way others cannot. But they won't share the knowledge with anyone else and keep it locked up as top secret military intel, perhaps motivated by political reasons. Their lack of foresight is indirectly hindering the progress and they don't even notice it. In order to avoid a diplomatic incident, our experts have returned to our HQ. Each faction need to continue their research on their own."
+
+      STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I: "UN Hybrid Plasma Project I"
+      STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I_UFOPEDIA: "The successful aplication of Alien plasma technology due the outcome of Project Kratos presented the UNEXCOM design bureau with the opportunity to design a personal weapon tailor-made for its own unique mission parameters. As an entirely air-mobile force doing the grand majority of its fighting in cramped interiors, it was decided the new weapon should be as short as possible while remaining ergonomic. For this reason a 'bullpup' layout was selected, placing the standard energy pack behind the firing grip and dramatically reducing the overall length. The next matter of importance for the team was cost. "
+      STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II: "UN Hybrid Plasma Project II"
+      STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II_UFOPEDIA: "A Swiss materials lab was able to develop a cost-effective procedure for converting alien weapons into human-friendly, standardized firing units. These were mated to an almost entirely conventional, though modern, polymer lower assembly made by the UNEXCOM gunsmiths. For a very marginal increase in weight and cost over the previous laser rifle, it is hoped the entire force could be equipped wholesale with a single standard pattern of these new devastating 'plasma rifles' - each shot producing the power of a miniature sun - and thus save money on specialized equipment, as well as simplify supply. As each weapon is basically handcrafted by our technicians, we cannot allow ourselves to share the designs with other Powers."
+      STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS: "Project Kratos: US Applications"
+      STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_UFOPEDIA: "American scientists working on the newly established NASA Exobiology Institute have managed to learn how to extract cybermicrobe DNA data for material production from alien artifacts, codenamed 'R.E.A.V.E.R Procedure.'. Basically, by programing the microbes you can directly define how those ensamble any kind of item; from a small pencil to high-tech targeting computer for military satellites. Combined by the advances in plasma release and contention procedures developed by the Princeton Plasma Physics Laboratory, allows the US weapon manufacturers to create highly complex particle accelerators and have limited capacity of growing alien biomaterials in the way that the aliens grow them... so more radical designs can be created and used. The major downside is prohibitive costs of each model, severely reducing the posibility of mass-producing them."
+      STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS: "Project Kratos: Soviet Applications"
+      STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS_UFOPEDIA: "We have reports of the Budker Institute of Nuclear Physics has managed to accomplish something that was previously a myth of the alchemists of the past: the transmutation of materials. And more specifically, low-grade Elerium (such as the residues located at sites of alien activity since the late 50s) into refined Elerium, which is needed to power weapons and vehicles. So far, the process to refine Elerium was not clear, as the documentation collected in the last decades is reduced and the knowledge limited. By employing technology recovered from alien equipment, the Soviets managed to transmute even inert shrapnel into pure Elerium. This scientific breakthrough makes it possible to create more powerful and more efficient batteries in plasma weapons, designed by the Cherenkov Institute for Advanced Energy Projects bureau."
+      STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS: "Project Kratos: NATO Applications"
+      STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS_UFOPEDIA: "The various nation members of NATO were conducting research on their own with varying degrees of success until the formation of NATO Science and Technology Centre based in NATO HQ, Brussels. The unified European research network focused on the discovery of the hybridization of human and alien tech in order to ease the replication of the latter. Recently, one of the R&D teams managed incorporate human tech with alien components, with the idea to improve the already existing designs. The initial application was a high-powered radio transmitter using Alien Entertainment device, but prototype weapons are expected to be augmented with extraterrestrial tech. With the European development, the NATO hybrid weapons are going to be cheaper and easier to manufacture. The leading European weapon firms are ready to produce energy weapons for the Treaty armed forces."
+
+
+      STR_UN_PLASMA_RIFLE: "XP-2 'Peacebringer' Hybrid Plasma"
+      STR_UN_PLASMA_RIFLE_UFOPEDIA: "A bullpup approach on the most direct application of the Alien plasma tech so far, this is a bulky yet surprisingly light battle rifle. An Alien particle generator forms the core of the weapon, with a magnifiying scope attached to a carrying handle. A small, removable battery provides backup energy to the electronic systems, as we haven't found a reliable way to extract it from the alien battery."
+
+      STR_US_PLASMA_RIFLE: "XM590 Plasma Battle Rifle"
+      STR_US_PLASMA_RIFLE_MAG: "P-EC1 Plasma BR Cell (x30)"
+      STR_US_PLASMA_RIFLE_UFOPEDIA: "The XM590 had its outer furnishing be based on Eugene Stoner's rifle designs, to make adoption easier by the regular infantryman. However the internals have little in common, as it includes a MOD12-P particle accelerator. Field testers report some unexpected issues with the full auto mode, it has a tendency to deplete ammo too quickly and overheat the weapon. Nonetheless, the weapon is expected to increase the firepower of US Special Forces squads."
+      STR_US_PLASMA_RIFLE_MAG_UFOPEDIA: "The Battle Rifle's MOD12-P particle accelerator is powered by a Plasma-Energy Cell 1, 5 mW Elerium battery. Said battery provides enough power to energize the power source inside the weapon. The Cells are relatively easier (although not cheaper) to make, compared to other batteries of contemporary Plasma weaponry field by other Powers, using the R.E.A.V.E.R. Procedure."
+      STR_US_PLASMA_SHOTGUN: "X80 Plasma Stormgun"
+      STR_US_PLASMA_SHOTGUN_MAG: "X8A Plasma Stormgun Container (x5)"
+      STR_US_PLASMA_SHOTGUN_UFOPEDIA: "Single-shot, thermobaric projectile launcher. A top-secret chemical compound is directly fed into the particle accelerator, ejecting extremely hot gases in a wide area. Powerful enough to melt alien alloys, it poses a threat to even alien armour. However careful tactics are required to properly utilize it due to short range and unusual operating procedures."
+      STR_US_PLASMA_SHOTGUN_MAG_UFOPEDIA: "The highly-classified compound inside the Container used to fuel the Stormgun is the motive of much speculation among the troop. Only high-ranked engineering personnel has clearance enough to have said information. It is said it contains traces of white phosporous or Elerium-infused napalm. The only thing well known is the devastating effects on the targets.  "
+      STR_US_PLASMA_RL: "FGM-77 Dragon Guided Munitions Launcher"
+      STR_US_PLASMA_RL_HEAT_ROCKET: "Dragon M222 HEAT Rocket"
+      STR_US_PLASMA_RL_ELERIUM_ROCKET: "Dragon XM225 Elerium Rocket"
+      STR_US_PLASMA_RL_UFOPEDIA: "The guided launcher began as a heavy medium-range assault weapon developed through the decade of the 60s. Using blaster launcher tech, the rocket became wireless and gained extreme maneuverability. Capable of eliminating alien armor from miles away, bank tight corners and even take out small ufos, the weapon system is a force to be reckoned with."
+      STR_US_PLASMA_RL_HEAT_ROCKET_UFOPEDIA: "The standard munition used by the Dragon rocket launcher is a High-Explosive, Anti-Tank shaped charge round, with the optimal 330mm armor penetrating capability. Not an extremely powerful munition, but the greatest advantage is the reverse-engineered 'BLASTER' guidance system used to follow up to 9 waypoints without losing target lock."
+      STR_US_PLASMA_RL_ELERIUM_ROCKET_UFOPEDIA: "By modifying a standard M222 HEAT rocket with the addition of a 5 kilograms low-yield Elerium warhead, the offensive capabilities of the Dragon are greatly increased. Meant to be used in anti-fortification roles, the violent fusion reaction severly wounds any unfortunate live being near the blast zone."
+
+      STR_NATO_PLASMA_CARBINE: "MAS-73 E1 Plasma Carbine"
+      STR_NATO_PLASMA_CARBINE_MAG: "Plasma Carbine Standard Battery (x20)"
+      STR_NATO_PLASMA_CARBINE_UFOPEDIA: "Initially a project to replace the aging MAS-49 rifles, the development of Plasma tech motivated French General Paul Tellie, head of the project, to adapt their model to become an energy weapon. The bullpup design and lightweight frame made it a versatile weapon both inside ufos and in combat in terrain, with its only drawbacks being a somewhat limited ammo capacity, slightly reduced damage and range."
+      STR_NATO_PLASMA_CARBINE_MAG_UFOPEDIA: "The NATO researchers had a tough time trying to create an Elerium battery strong enough to power a carbine-sized firearm. The result was less than satisfactory, but with the main advantage of being cheap and fast to make. There were some concerns of the security measures in the manufacturing of the 4 mW Elerium Standard Battery, but so far there are not accidents reported."
+      STR_NATO_PLASMA_PISTOL: "Enfield APEX Plasma Pistol"
+      STR_NATO_PLASMA_PISTOL_MAG: "Plasma Pistol Compact Battery (x12)"
+      STR_NATO_PLASMA_PISTOL_UFOPEDIA: "'Advanced Pistol, Energy, eXperimental', a compact-yet-surprisingly heavy handgun made by RSAF Enfield. The design bureau was tasked to develop a very powerful sidearm for offensive purposes, meant to be used by assault squads. The recoil feels similary to a regular combat revolver, but with greatly increased damage capabilities. The pistol includes a quick battery-ejecting mechanism."
+      STR_NATO_PLASMA_PISTOL_MAG_UFOPEDIA: "Royal Small Arms Factory (RSAF) Enfield worked directly with the physics specialists at NATO Science and Technology Centre to create the most compact-yet-efficient Elerium battery as possible, in an effort to miniaturize the particle accelerator without losing stopping power. The main idea in RSAF was creating a 'hand cannon', a trustworthy sidearm but very powerful, as the enemy is deploying more and more armored units, and rear echeleon and support units were often outgunned."
+      STR_NATO_SNIPER_PLASMA: "Walther L/Pl-SG 200 Sniper Plasma"
+      STR_NATO_SNIPER_PLASMA_MAG: "Sniper Plasma Heavy Battery (x6)"
+      STR_NATO_SNIPER_PLASMA_UFOPEDIA: "A high quality semi-automatic sniper rifle, with a bullpup configuration to make room for a larger particle accelerator and barrel. The initial design was made after the failed Munich Olympics terror attack that nearly cost the lives of the Israeli delegation. The need of a powerful precision rifle with pin-point accuracy was latent until the development of hybrid plasma weaponry. Lacks iron sights, instead it uses a fixed x8 optical sight."
+      STR_NATO_SNIPER_PLASMA_MAG_UFOPEDIA: "We could consider these finely-crafted 7 mW Elerium Heavy Batteries another staple of the German engineering feats. Even when European plasma developments are directed as being 'lighter, cheaper, efficient', the West Germans had put an extra amount of work to create an above-average energy cell to power their long gun. No less level of quality could be accepted into such promising sniper rifle. "
+
+      STR_SOVIET_PLASMA_ASSAULT_RIFLE: "APVCh Plasma Assault Rifle"
+      STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG: "Plasma Assault Optimal Elerium Cell (x35)"
+      STR_SOVIET_PLASMA_ASSAULT_RIFLE_UFOPEDIA: "The 'Avtomatichyeskaya Plazmyemmaya Vintovka Chyeryenkova' is a sturdy automatic rifle designed by the Cherenkov Institute for Advanced Energy Projects. The accelerator is reinforced and the wooden furniture is specifically treated to resist high temperatures. The frame is strong enough to withstand lots of physical punishment without compromising the power source, theorically allowing an infantryman to engage in melee."
+      STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG_UFOPEDIA: "The Soviet scientist working for the Cherenkov Institute had some doubts of adding a very powerful (and a bit inestable) Elerium cell for the next main infantry rifle of the Warsaw Pact. So they underwent a series of redesings and reworks until they came with a decently protected battery. The only concern is the fact their rifle's frame is strong enough to be used as a club to melee enemies, but the still delicate Elerium containers may be compromised with fatal results."
+      STR_SOVIET_PLASMA_SMG: "PShAB Plasma PDW"
+      STR_SOVIET_PLASMA_SMG_MAG: "Plasma PDW Miniaturized Elerium Cell (x25)"
+      STR_SOVIET_PLASMA_SMG_UFOPEDIA: "'Plazmyenniy Shturmovoy Avtomat Budkyer', the only Plasma weapon designed by the Budker Nuclear Institute and made by Tula Arms Plant. The compact submachine gun features a special wire stock with arm support, used to increase the stability of the weapon used by one-hand only. The hard-hitting plasma bolts are shot at decent ROF. The small Elerium battery limits the prolongated use."
+      STR_SOVIET_PLASMA_SMG_MAG_UFOPEDIA: "The size and weigh constrains limited the Budker Institute weaponry bureau to develop a larger Elerium cell to power their submachine gun. A compromise was made to reduce the rate of fire of the PShAb gun and keep the quality of the power cells, to increase the total amount of plasma discharges. Still, the large energy output of the transmuted Elerium makes the Budker submachine gun a competent support weapon."
+      STR_SOVIET_PLASMA_LMG: "PPCh Plasma MG"
+      STR_SOVIET_PLASMA_LMG_MAG: "Plasma MG High-Density Elerium Cell (x50)"
+      STR_SOVIET_PLASMA_LMG_UFOPEDIA: "A heavy squad automatic weapon, the 'Pulyemyet Plazmyenniy Chyeryenkova' features a large barrel shroud with the purpose of quickly cooling down after sustained plasma discharges. High-powered energy bolts are able to rip apart lightly armored enemies with ease. Field testers argued about the weight of the weapon and the size, as it makes it somewhat cumbersome."
+      STR_SOVIET_PLASMA_LMG_MAG_UFOPEDIA: "The Cherenkov Energy Institute scientists were very proud of this particular model of Elerium Cell. By transmuting a large amount of inert Elerium shards into a pure element again, it was possible to fill as much as possible... again, with the latent risk of a contention failure in case of a strong physical impact. Machine Gunners trained with the PPCh are taught to keep their 9 mW cells in special armored cases, to avoid an accident."
+
+#############################################
 
       STR_CEREBREAL_UFOPAEDIA: "Cerebreals are a race that is not fully integrated into the alien hive-like society; they are more like allies, who agreed to serve the invaders for some unfathomable reasons.  They bear incredibly strong psionic powers, which can be focused as a weapon:  a violent discharge of plasma, fuelled by will alone.  Their independent and completely alien pattern of thinking make them unpredictable, but also more prone to panic than other alien races."
 
@@ -2337,6 +2431,15 @@ en-US:
 
       STR_UNEXCOM_HISTORY_5_UFOPEDIA: "UNEXCOM has the best scientists, engineers, specialists and soldiers from different armed forces from all around the world, including army, navy and air force. We count on the support of various space agencies, such as NASA, the European Space Research Organisation and Soviet space agencies to support UNEXCOM in the astronautics and scientific fields that may be required. We have absolute clearance to overfly any country and to deploy combat missions without any restrictions, sometimes even with local support. Our motto is 'AD HONOREM. AD PERPETUA MEMORIA. DEFENDER TERRA', translated to 'For Honor. For Eternal Memory. Defend Earth'."
 
+      STR_UNEXCOM_HISTORY_6: "Reserved Intel: Paving the way"
+      STR_UNEXCOM_HISTORY_6_UFOPEDIA: "After the culmination of the Cuban Crisis, the Unites States and Soviet Union agreed on forming a joint investigation force to search for any signs of extra-terrestial activity. Though initially compromising only of agents from the two World Powers, the permanent members of the UN Security Council were soon invited to participate, to ensure the agency had global outreach. Dubbed the United Nations Department of Extraterrestrial Investigations, the clandestine organization established its headquarters in Vauxhall, London, though many of its agents were often covertly attached onto existing UN missions. Under the last decade, operating from the shadows, UNDETI had worked to identify and eliminate any alien operatives that they could find.  In the early days of the organization, the agency sat idle for months waiting for leads to follow, yet eventually it found itself outstretched and barely able to react to all threats it uncovers."
+
+      STR_UNEXCOM_HISTORY_7: "Reserved Intel: Careful approach"
+      STR_UNEXCOM_HISTORY_7_UFOPEDIA: "Officially presenting as a protection service for UN personnel operating in hostile environments, the UN Envoy Security Service operated in actuality as the paramilitary wing of UNDETI. Dealing with targets that sole UNDETI agents can't handle trough simple subterfuge or assassinations, members of the Security Service operated in hit-squads of up to 8 soldiers strong. Often wearing unmarked uniforms , or even ones carrying the symbols of other intelligence services, the UNESS completed its missions with brutal efficiency, careful not to let any trace of their activity become known."
+
+      STR_UNEXCOM_HISTORY_8: "Reserved Intel: Breaking point"
+      STR_UNEXCOM_HISTORY_8_UFOPEDIA: "Due to the difficulty of inducting recruits to the organization and the increase of operations it was forced to undertake, the ESS went into a steady decline. The final nail in the coffin for the organization was a mission undertook the May 18th, 1971, where contact was lost with two squads conducting a mission in a water treatment facility in Madras, India. All the agents sent to investigate found was charred corpses. The decline of the UNESS and the result of the ill-fated Madras mission led to calls for the formation of a full military unit to replace it and to better combat the looming extraterrestrial threat. This is where we take the baton. We must prevail, no matter the cost."
+
       STR_UNEXCOM_BLUE_HELMETS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}At the time of the foundation of the UNEXCOM project, the armies of the world were asked to collaborate with soldiers, field medics, combat engineers and other military specialists. All these use the distinctive blue color of the United Nations Peacekeeping Forces, but in a darker tone, to symbolize that their mission is not exclusive to maintaining peace, but to defend the planet and humanity."
 
       STR_UNEXCOM_PILOTS_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Our pilots are the Crème de la crème of the world's air forces. Experienced fighters from all over the world volunteered for the Project. Most have fought in Vietnam, Korea and there are even veterans of World War II. They were selected for the almost suicidal mission to protect the skies of Earth. Maybe we do not have the technology of the alien pilots and crafts, but we compensate with skill, dexterity and bravery. All airplanes need pilots, it is recommended to choose the most aggressive for fighters and bombers."
@@ -2362,6 +2465,8 @@ en-US:
       STR_SPECIALIZED_WEAPONS_REPORT_UFOPEDIA: "The special weapons combine features of different weapon classes, like fire modes and effective ranges. As such, each weapon is grants commendations for both of the classes. Our advice is not fielding the devices as a regular rifle or shotgun - even when the name of the weapon may refer it as a regular firearm -, but deploy them in situations where highly dangerous enemies are expected (like enemy mechanized infantry or armored vehicles) {NEWLINE}Special attack: {NEWLINE}{NEWLINE}Unique for each weapon."
 
       STR_LMG_REPORT_UFOPEDIA: "Squad-issued automatic weapons, meant to support the troops on the battlefield. The primary function is to saturate an area with fire to keep the enemy behind cover. {NEWLINE}Special attack: {NEWLINE}{NEWLINE}Burst, 5 shots (Snap slot). {NEWLINE}Suppression, 10-15 shots (Auto slot)"
+
+      STR_SPECIALIZED_WEAPONS_REPORT_UFOPEDIA: "The special weapons combine features of different weapon classes, like fire modes and effective ranges. As such, each weapon is grants commendations for both of the classes. Our advice is not fielding the devices as a regular rifle or shotgun - even when the name of the weapon may refer it as a regular firearm -, but deploy them in situations where highly dangerous enemies are expected (like enemy mechanized infantry or armored vehicles) {NEWLINE}Special attack: {NEWLINE}{NEWLINE}Unique for each weapon."
 
       STR_WEAPON_REQUISITION_UFOPEDIA: "We can request a requisition of some weapons that we find on the battlefield, used by allied troops. This is completely optional, since we have our own weapons. Once the request is processed, the weapon in question will be available in our arsenal for acquisition."
 
@@ -2446,6 +2551,9 @@ en-US:
       STR_LASER_WEAPONS_UFOPEDIA: "For more than 10 years, American and Soviet technicians have worked on creating an efficient system to shoot down intercontinental ballistic missiles (ICBMs) without using interceptor missiles and also secretly combat a potential extraterrestrial threat.  The first examples were tested in 1962, in the form of the heavy, US-made China Lake Laser Gun. Each faction has focused on a particular type of laser. USA uses Helium-Neon lasers. NATO uses Alexandrite lasers and Soviet lasers use Garnet/Nd-YAG lasers. Our research notes can help world powers improve their designs, which will be provided to us upon request."
 
       STR_HYBRID_LASER_PROJECT_UFOPEDIA: "During the 1960s, a joint US and USSR secret project developed laser weaponry based on samples of unknown technology collected between 1961 and 1963. This is not publicly available information, but our contacts in the governments of both powers have made this known to us. It is not possible for us to acquire laser weapons - due to our neutrality policies - but using the notes of our R&D staff, as well as American and Soviet researchers, we have designed an adaptation of the laser rifle employed by the aliens. It requires a lot of energy, but it is also more powerful than the equivalent of the other nations."
+
+      STR_SECRET_CRISIS_PROTOTYPES: "Secret Crisis Experimental Weapons"
+      STR_SECRET_CRISIS_PROTOTYPES_UFOPEDIA: "While we're unable to directly acquire high tech weaponry from the World Powers, we aren't forbidden to contact our friends in high places. Thanks to the Commander's connections in the various intelligence services like MI6, BND and D17, we're able to secure prototypes developed as side projects by the original R&D teams who worked back in the Secret War to outgun and outsmart the invaders. They had most of their funding cut out due the relocation of assets towards the laser weapons developed by the major defense contractors, so they had to conduct their research mostly paid by their own pockets. The results are greatly specialized weapons, but almost handmade. We were given the blueprints by our friends in the services, now we can start producing those in our gunsmiths."
 
       STR_USA_LASER_RESEARCH_UFOPEDIA: American laser weapons are balanced in terms of power and mobility. By employing Helium-Neon power cells, the laser beam released is consistent and powerful. To avoid overheating the weapon, liquid nitrogen is used and the crystals employed are calibrated to release the energy in the form of pulses, allowing for higher rates of fire without compromising the firing system.  The structure of the weapon is solid and does not require much maintenance.
 
@@ -3252,7 +3360,7 @@ en-US:
 
       #STR_LASER_WEAPONS: Laser Weapons
 ######################################################################################
-      STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser Rifle"
+      STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser"
 ######################################################################################
       STR_M1972_LASER_PISTOL: M1972 Laser Pistol
       STR_38_LASER_MAGNUM: Laser Magnum
@@ -3417,6 +3525,7 @@ en-US:
       STR_SNIPER_RIFLE_REPORT: "Sniper Rifle Report"
       STR_SHOTGUN_REPORT: "Shotgun Report"
       STR_ARTILLERY_REPORT: "Artillery Report"
+      STR_SPECIALIZED_WEAPONS_REPORT: "Specialized Weapons Report"
       STR_LMG_REPORT: "LMG Report"
       STR_SPECIALIZED_WEAPONS_REPORT: "Specialized Weapons Report"
       STR_WEAPON_REQUISITION: "Weapon Requisition"

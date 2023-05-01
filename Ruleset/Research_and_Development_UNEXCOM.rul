@@ -15,6 +15,8 @@ research:
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
   - delete: STR_ULTIMATE_CRAFT
+  - delete: STR_THE_MARTIAN_SOLUTION
+  - delete: STR_CYDONIA_OR_BUST
 #################################
   - name: STR_MEDI_KIT
     dependencies:
@@ -708,6 +710,13 @@ research:
       - STR_NATO_LASER_RESEARCH
       - STR_USSR_LASER_RESEARCH
 
+  - name: STR_SECRET_CRISIS_PROTOTYPES
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HYBRID_LASER_PROJECT
+      - STR_ON_OUR_OWN
+
 #########################################
 ####### AMERICAN LASER RESEARCH ########
 #######################################
@@ -797,6 +806,101 @@ research:
     points: 10
     dependencies:
       - STR_USSR_LASER_RIFLES
+
+########################################
+####### PLASMA RESEARCH TOPICS #########
+########################################
+
+  - name: STR_ALIEN_PLASMA_WEAPONS
+    cost: 800
+    points: 80
+    dependencies:
+      - STR_SECTOID_ENGINEER
+      - STR_FLOATER_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
+      - STR_CHTONITE_ENGINEER
+      - STR_REPTOID_ENGINEER
+      - STR_CEREBREAL_ENGINEER
+      - STR_ARMORED_MUTON_ENGINEER
+      - STR_ARMORED_FLOATER_ENGINEER
+      - STR_ARMORED_SECTOID_ENGINEER
+      - STR_PLASMA_PISTOL
+      - STR_HEAVY_PLASMA
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_BLASTER
+      - STR_PLASMA_SNIPER_RIFLE
+
+  - name: STR_HUMAN_PLASMA_WEAPONS_THEORY
+    cost: 1000
+    points: 100
+    dependencies:
+      - STR_ALIEN_PLASMA_WEAPONS
+
+  - name: STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+    cost: 1000
+    points: 100
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_THEORY
+
+
+#########################################
+####### UNEXCOM PLASMA RESEARCH ########
+#######################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_ON_OUR_OWN
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+
+#########################################
+####### AMERICAN PLASMA RESEARCH ########
+#######################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_USA_SUPPORT_RESEARCH
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+
+#########################################
+####### EUROPEAN PLASMA RESEARCH ########
+#######################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_NATO_SUPPORT_RESEARCH
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+
+#########################################
+######## SOVIET PLASMA RESEARCH #########
+########################################
+  - name: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_USSR_SUPPORT_RESEARCH
+    disables:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+
 
 ########################################
 ######### WEAPON REQUISITION ###########
@@ -1020,7 +1124,7 @@ research:
     points: 60
     unlockFinalMission: true
     dependencies:
-      - STR_CYDONIA_DEP
+      #- STR_COMMANDER_PLUS
       - STR_DESTINATION_MARS
 
 
@@ -1154,7 +1258,7 @@ research:
     needItem: true
     destroyItem: true
 
-  - name: STR_CYDONIA_DEP
+  - name: STR_COMMANDER_PLUS
     cost: 0
     points: 0
     unlocks:
@@ -1351,7 +1455,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_LEADER_PLUS
-      - STR_CYDONIA_DEP
+      - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
     getOneFree:
       - STR_ALIEN_RANKS
@@ -3036,6 +3140,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/FOOD_REPORT_IMAGE.PNG
+  - type: ELECTRIC_WEAPONS_RESEARCH_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UFOpedia/ELECTRIC_WEAPONS_RESEARCH_IMAGE.PNG
+
 
 #####################################################
   - type: USA_INITIAL_APPROACH_IMAGE

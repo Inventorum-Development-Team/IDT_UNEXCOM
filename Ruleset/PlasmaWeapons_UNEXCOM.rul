@@ -1,4 +1,4 @@
-﻿
+
 items:
 # Weapons
 # Changed existing Alien Only Weapons
@@ -29,9 +29,9 @@ items:
     dropoff: 3
     battleType: 1
     armor: 70 # 20
+    listOrder: 5000
   - type: STR_PLASMA_PISTOL_CLIP
     categories: [STR_PLASMA, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5451
     power: 70 # 52
     clipSize: 22 # 26
     bigSprite: 1964
@@ -45,6 +45,7 @@ items:
     armor: 30 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
+    listOrder: 5010
 
   - type: STR_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_FIREARMS]
@@ -72,9 +73,60 @@ items:
     autoRange: 25
     dropoff: 3
     armor: 75 # 20
+    listOrder: 5020
+
+###################
+#### UNEXCOM #####
+##################
+
+
+  - type: STR_UN_PLASMA_RIFLE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    size: 0.3
+    costSell: 60000
+    weight: 15
+    armor: 60
+    bigSprite: 3200
+    floorSprite: 3200
+    handSprite: 3200
+    bulletSpeed: 6
+    bulletSprite: 8
+    fireSound: 1933
+    compatibleAmmo:
+      - STR_PLASMA_RIFLE_CLIP
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 40
+    accuracySnap: 85
+    accuracyAimed: 55
+    costSnap:
+      time: 30
+    costAimed:
+      time: 40
+    costAuto:
+      time: 60
+    tuLoad: 30
+    tuUnload: 15
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    maxRange: 60
+    aimRange: 39
+    snapRange: 40
+    autoRange: 20
+    dropoff: 5
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5030
+
   - type: STR_PLASMA_RIFLE_CLIP
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5251
+    #listOrder: 5251
     size: 0.2
     costSell: 3000
     bigSprite: 1364
@@ -95,10 +147,11 @@ items:
     armor: 30 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
+    listOrder: 5040
 
   - type: STR_HEAVY_PLASMA
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
-    listOrder: 5175
+    #listOrder: 5175
     requires:
       - STR_ALIENS_ONLY
     weight: 19 # 8
@@ -125,9 +178,10 @@ items:
     dropoff: 3
     autoShots: 2 # 3
     armor: 80 # 20
+    listOrder: 5050
   - type: STR_HEAVY_PLASMA_CLIP
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
-    listOrder: 5177
+    #listOrder: 5177
     power: 150 # 115
     clipSize: 14 # 35
     bigSprite: 1862
@@ -141,6 +195,7 @@ items:
     armor: 35 # 20
     vaporColorSurface: 3
     vaporDensitySurface: 20
+    listOrder: 5060
   - type: STR_SMALL_LAUNCHER
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
     requires:
@@ -168,6 +223,33 @@ items:
     aimRange: 12
     snapRange: 8
     recoveryPoints: 4
+    listOrder: 5070
+  - type: STR_HUMAN_SMALL_LAUNCHER
+    categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
+    requires:
+      - STR_SMALL_LAUNCHER
+    size: 0.2
+    costSell: 120000
+    weight: 10
+    bigSprite: 1330
+    floorSprite: 36
+    handSprite: 64 #
+    bulletSprite: 9
+    fireSound: 53
+    compatibleAmmo:
+      - STR_STUN_BOMB
+      - STR_ACID_BOMB
+      - STR_ELERIUM_BOMB
+    accuracySnap: 65
+    accuracyAimed: 110
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 4
+    listOrder: 5075
   - type: STR_STUN_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -185,6 +267,7 @@ items:
     clipSize: 1
     battleType: 2
     recoveryPoints: 1
+    listOrder: 5080
   - type: STR_ACID_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -202,6 +285,7 @@ items:
     clipSize: 1
     battleType: 2
     recoveryPoints: 1
+    listOrder: 5090
   - type: STR_ELERIUM_BOMB
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -219,7 +303,8 @@ items:
     clipSize: 1
     battleType: 2
     blastRadius: 4
-    listOrder: 5901
+    #listOrder: 5901
+    listOrder: 5100
 
   - type: STR_TOXIGUN
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
@@ -244,7 +329,8 @@ items:
     recoveryPoints: 3
     armor: 20
     attraction: 1
-    listOrder: 5950
+    #listOrder: 5950
+    listOrder: 5110
   - type: STR_TOXIGUN_FLASK
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
     requires:
@@ -265,7 +351,8 @@ items:
     recoveryPoints: 1
     attraction: 1
     shotgunPellets: 5
-    listOrder: 5951
+    ##listOrder: 5951
+    listOrder: 5120
   - type: STR_PLASMA_CASTER
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_ALIEN_TECH]
     requires:
@@ -296,7 +383,8 @@ items:
     twoHanded: false
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    listOrder: 5550
+    ##listOrder: 5550
+    listOrder: 5130
   - type: STR_PLASMA_CASTER_CLIP
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -318,8 +406,9 @@ items:
     recoveryPoints: 1
     attraction: 1
     shotgunPellets: 8 # 5
-    listOrder: 5551
+    ##listOrder: 5551
     armor: 30 # 20
+    listOrder: 5140
   - type: STR_PLASMA_SNIPER_RIFLE
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
     requires:
@@ -352,7 +441,8 @@ items:
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    listOrder: 5148
+    ##listOrder: 5148
+    listOrder: 5150
   - type: STR_PLASMA_SNIPER_RIFLE_CLIP
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -373,10 +463,11 @@ items:
     battleType: 2
     recoveryPoints: 1
     attraction: 1
-    listOrder: 5149
+    ##listOrder: 5149
     vaporColorSurface: 3
     vaporDensitySurface: 20
     armor: 30 # 20
+    listOrder: 5160
   - type: STR_PLASMA_BLASTER
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH]
     requires:
@@ -409,7 +500,8 @@ items:
     attraction: 1
     vaporColorSurface: 3
     vaporDensitySurface: 20
-    listOrder: 4980
+    ##listOrder: 4980
+    listOrder: 5170
   - type: STR_PLASMA_BLASTER_CLIP
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -430,8 +522,9 @@ items:
     recoveryPoints: 1
     blastRadius: 3
     attraction: 1
-    listOrder: 4981
+    ##listOrder: 4981
     armor: 35 # 20
+    listOrder: 5180
 
   - type: STR_ALIEN_GRENADE
     categories: [STR_PLASMA, STR_EXPLOSIVES, STR_ALIEN_TECH]
@@ -440,494 +533,8 @@ items:
     size: 0.1
     bigSprite: 39
     floorSprite: 38
+    listOrder: 5190
 
-# New Human Weapons
-  - type: STR_HUMAN_PLASMA_PISTOL
-    categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
-    listOrder: 5450
-    size: 0.1
-    costSell: 56000
-    battleType: 1
-    bigSprite: 1963 #
-    floorSprite: 1966
-    handSprite: 1450 # ALL GOOD
-    bulletSprite: 8
-    bulletSpeed: 6
-    weight: 3
-    requires:
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-    compatibleAmmo:
-      - STR_PLASMA_PISTOL_CLIP
-    fireSound: 1930 # FIX THIS
-    accuracyAuto: 38 # 50
-    accuracySnap: 55 # 65
-    accuracyAimed: 75 # 85
-    confAuto:
-      shots: 3
-      name: STR_RAPID_FIRE
-    tuAuto: 27 # 30
-    tuSnap: 14 # 30
-    tuAimed: 31 # 60
-    maxRange: 100 # 0
-    aimRange: 30 # 0
-    snapRange: 14 # 0
-    autoRange: 10 # 0
-    dropoff: 3 # 0
-    invWidth: 1
-    invHeight: 2
-    twoHanded: false
-    armor: 70 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_HUMAN_PLASMA_MAGNUM
-    categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_UNEXCOM_TECH]
-    listOrder: 5470
-    size: 0.2
-    costSell: 80000 #
-    weight: 5
-    battleType: 1
-    compatibleAmmo:
-      - STR_PLASMA_MAGNUM_CLIP
-    bigSprite: 1763
-    floorSprite: 1765
-    handSprite: 1410  # ALL GOOD
-    bulletSprite: 8
-    bulletSpeed: 2
-    fireSound: 1931 # FIX THIS
-    accuracySnap: 60
-    accuracyAimed: 85
-    tuSnap: 18
-    tuAimed: 40
-    maxRange: 60
-    aimRange: 12
-    snapRange: 8
-    autoRange: 8
-    minRange: 1
-    dropoff: 3
-    invWidth: 1
-    invHeight: 2
-    twoHanded: false
-    armor: 70 # 20
-  - type: STR_PLASMA_MAGNUM_CLIP
-    categories: [STR_PLASMA, STR_CLIPS, STR_PISTOLS, STR_UNEXCOM_TECH]
-    listOrder: 5471
-    size: 0.1
-    costSell: 2500
-    weight: 1
-    hitSound: 1938
-    bigSprite: 1764
-    floorSprite: 1766
-    handSprite: 120 # ALL GOOD
-    hitAnimation: 26 # FIX THIS
-    power: 75
-    damageType: 5
-    clipSize: 7
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    armor: 30 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_HUMAN_PLASMA_SMG
-    categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_UNEXCOM_TECH]
-    listOrder: 5480
-    size: 0.2
-    costSell: 90000
-    weight: 3
-    battleType: 1
-    compatibleAmmo:
-      - STR_PLASMA_SMG_CLIP
-    bigSprite: 1563
-    floorSprite: 1565
-    handSprite: 1394 # ALL GOOD
-    bulletSprite: 8
-    bulletSpeed: 12
-    fireSound: 1932 # FIX THIS
-    accuracyAuto: 36
-    accuracySnap: 54
-    accuracyAimed: 68
-    confAuto:
-      shots: 7
-      name: STR_FULL_AUTO
-    confAimed:
-      shots: 10
-      name: STR_PRAY_N_SPRAY
-    confSnap:
-      shots: 3
-      name: STR_BURST
-    tuAuto: 24
-    tuSnap: 21
-    tuAimed: 38
-    maxRange: 60
-    aimRange: 9
-    snapRange: 15
-    autoRange: 10
-    dropoff: 3
-    invWidth: 1
-    invHeight: 2
-    sprayWaypoints: 2
-    twoHanded: false
-    armor: 70 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_PLASMA_SMG_CLIP
-    categories: [STR_PLASMA, STR_CLIPS, STR_SMGS, STR_UNEXCOM_TECH]
-    listOrder: 5481
-    size: 0.1
-    costSell: 2750
-    weight: 2
-    hitSound: 1938
-    bigSprite: 1564
-    floorSprite: 1566
-    handSprite: 120 # ALL GOOD
-    hitAnimation: -1 # FAST AUTO
-    power: 65
-    damageType: 5
-    clipSize: 32
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    armor: 30 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_HUMAN_PLASMA_RIFLE
-    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    listOrder: 5250
-    size: 0.2
-    costSell: 120000
-    weight: 11
-    battleType: 1
-    compatibleAmmo:
-      - STR_PLASMA_RIFLE_CLIP
-    bigSprite: 1363
-    floorSprite: 1366
-    handSprite: 1378
-    bulletSprite: 8
-    bulletSpeed: 6
-    fireSound: 1933 # FIX THIS
-    accuracyAuto: 40
-    accuracySnap: 55
-    accuracyAimed: 105
-    tuAuto: 40
-    tuSnap: 25
-    tuAimed: 45
-    confAimed:
-      shots: 3
-      name: STR_BURST
-    confAuto:
-      shots: 5
-      name: STR_CONTROL_AUTO
-    maxRange: 60
-    aimRange: 35
-    snapRange: 33
-    autoRange: 28
-    dropoff: 3
-    invWidth: 1
-    invHeight: 3
-    twoHanded: true
-    armor: 75 # 20
-  - type: STR_HUMAN_PLASMA_DMR
-    categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
-    listOrder: 5300
-    size: 0.3
-    costSell: 154000
-    weight: 9
-    battleType: 1
-    compatibleAmmo:
-      - STR_PLASMA_DMR_CLIP
-    bigSprite: 1463
-    floorSprite: 1465
-    handSprite: 1386
-    bulletSprite: 8
-    bulletSpeed: 2
-    fireSound: 1934 # FIX THIS
-    accuracySnap: 65
-    accuracyAimed: 120
-    tuSnap: 35
-    tuAimed: 65
-    maxRange: 60
-    aimRange: 40
-    snapRange: 36
-    dropoff: 3
-    invWidth: 1
-    invHeight: 3
-    twoHanded: true
-    armor: 75 # 20
-  - type: STR_PLASMA_DMR_CLIP
-    categories: [STR_PLASMA, STR_CLIPS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
-    listOrder: 5301
-    size: 0.1
-    costSell: 4000
-    bigSprite: 1464
-    floorSprite: 1466
-    hitSound: 1938
-    handSprite: 120 # ALL GOOD
-    weight: 2
-    hitAnimation: 26 # FIX THIS
-    power: 100
-    damageType: 5
-    clipSize: 15
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    armor: 30 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_HUMAN_SNIPER_PLASMA
-    categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
-    listOrder: 5500
-    size: 1
-    costSell: 190000
-    battleType: 1
-    bigSprite: 1663
-    floorSprite: 1665
-    handSprite: 1670  # ALL GOOD
-    weight: 15
-    compatibleAmmo:
-      - STR_SNIPER_PLASMA_CLIP
-    bulletSprite: 8
-    fireSound: 1935 # FIX THIS
-    accuracySnap: 50
-    accuracyAimed: 112
-    accuracyAuto: 145
-    tuSnap: 42
-    tuAimed: 73
-    tuAuto: 85
-    maxRange: 60
-    aimRange: 55
-    autoRange: 60
-    snapRange: 45
-    confAuto:
-      shots: 1
-      name: STR_HEADSHOT
-    minRange: 5
-    dropoff: 3
-    invWidth: 2
-    invHeight: 3
-    twoHanded: true
-    armor: 75 # 20
-  - type: STR_SNIPER_PLASMA_CLIP
-    categories: [STR_PLASMA, STR_CLIPS, STR_SNIPER_RIFLES, STR_UNEXCOM_TECH]
-    listOrder: 5501
-    size: 0.5
-    costSell: 5000
-    weight: 4
-    bigSprite: 1664
-    floorSprite: 1666
-    hitSound: 1938
-    handSprite: 120 # ALL GOOD
-    hitAnimation: 26 # FIX THIS
-    power: 160
-    damageType: 5
-    clipSize: 5
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    armor: 30 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_HUMAN_PLASMA_LMG
-    categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_UNEXCOM_TECH]
-    listOrder: 5150
-    size: 1
-    costSell: 185000
-    battleType: 1
-    bigSprite: 1863
-    floorSprite: 1868
-    handSprite: 1434 # ALL GOOD
-    weight: 15
-    compatibleAmmo:
-      - STR_PLASMA_LMG_PACK
-    bulletSprite: 8
-    bulletSpeed: 15
-    fireSound: 1936 # FIX THIS
-    accuracyAuto: 38
-    accuracySnap: 45
-    tuAuto: 38
-    tuSnap: 23
-    confSnap:
-      shots: 5
-      name: STR_BURST
-    confAuto:
-      shots: 15
-      name: STR_SUPPRESSION
-    maxRange: 60
-    snapRange: 35
-    autoRange: 30
-    minRange: 3
-    dropoff: 3
-    invWidth: 2
-    invHeight: 3
-    sprayWaypoints: 2
-    twoHanded: true
-    armor: 80 # 20
-  - type: STR_PLASMA_LMG_PACK
-    categories: [STR_PLASMA, STR_CLIPS, STR_LMGS, STR_UNEXCOM_TECH]
-    listOrder: 5151
-    size: 0.5
-    costSell: 6000
-    weight: 7
-    bigSprite: 1864
-    floorSprite: 1869
-    hitSound: 1938
-    handSprite: 120 # ALL GOOD
-    hitAnimation: -1 # FAST AUTO
-    power: 80
-    damageType: 5
-    clipSize: 48
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    armor: 35 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-  - type: STR_HUMAN_HEAVY_PLASMA
-    categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
-    listOrder: 5176
-    costBuy: 0
-    costSell: 175000
-    weight: 19
-    compatibleAmmo:
-      - STR_HEAVY_PLASMA_CLIP
-    bigSprite: 1861
-    floorSprite: 1866
-    handSprite: 1426 # ALL GOOD
-    requires:
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-    fireSound: 1937
-    battleType: 1
-    bulletSprite: 8
-    bulletSpeed: 6
-    accuracyAuto: 42 # 50
-    accuracySnap: 50 # 75
-    accuracyAimed: 95 # 110
-    tuAuto: 46 # 35
-    tuSnap: 38 # 30
-    tuAimed: 70 # 60
-    maxRange: 60
-    aimRange: 35
-    snapRange: 25
-    autoRange: 20
-    dropoff: 3
-    autoShots: 2 # 3
-    invWidth: 2
-    invHeight: 3
-    twoHanded: true
-    armor: 80 # 20
-  - type: STR_HUMAN_SMALL_LAUNCHER
-    categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
-    requires:
-      - STR_SMALL_LAUNCHER
-    size: 0.2
-    costSell: 120000
-    weight: 10
-    bigSprite: 1330
-    floorSprite: 36
-    handSprite: 64 #
-    bulletSprite: 9
-    fireSound: 53
-    compatibleAmmo:
-      - STR_STUN_BOMB
-      - STR_ACID_BOMB
-      - STR_ELERIUM_BOMB
-    accuracySnap: 65
-    accuracyAimed: 110
-    tuSnap: 40
-    tuAimed: 75
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 2
-    recoveryPoints: 4
-  - type: STR_HUMAN_PLASMA_CASTER
-    requires:
-      - STR_PLASMA_CASTER
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-    size: 0.2
-    costSell: 115000
-    weight: 6
-    bigSprite: 1009
-    floorSprite: 1009
-    handSprite: 1474
-    bulletSprite: 8
-    fireSound: 18
-    compatibleAmmo:
-      - STR_PLASMA_CASTER_CLIP
-    accuracySnap: 45 # 45
-    accuracyAimed: 65 # 0
-    tuSnap: 22 # 35
-    tuAimed: 46 # 0
-    snapRange: 8 # 0
-    aimRange: 18 # 0
-    dropoff: 2 # 2
-    battleType: 1
-    invWidth: 1
-    invHeight: 2
-    recoveryPoints: 3
-    armor: 70 # 50
-    attraction: 1
-    twoHanded: false
-    listOrder: 5550
-  - type: STR_HUMAN_PLASMA_SNIPER_RIFLE
-    requires:
-      - STR_PLASMA_SNIPER_RIFLE
-      - STR_REMAN_HUMAN_PLASMA_RIFLE
-    size: 0.2
-    costSell: 135000
-    weight: 6
-    bigSprite: 1010
-    floorSprite: 1010
-    handSprite: 1670
-    bulletSprite: 8
-    bulletSpeed: 2
-    fireSound: 18
-    compatibleAmmo:
-      - STR_PLASMA_SNIPER_RIFLE_CLIP
-    accuracySnap: 83 # 90
-    accuracyAimed: 140 # 150
-    tuSnap: 46 # 50
-    tuAimed: 75 # 70
-    aimRange: 50 # 0
-    minRange: 15
-    dropoff: 1 # 2
-    battleType: 1
-    twoHanded: true
-    invWidth: 1
-    invHeight: 3
-    recoveryPoints: 4
-    armor: 75 # 50
-    attraction: 1
-    listOrder: 5148
-  - type: STR_HUMAN_PLASMA_BLASTER
-    requires:
-      - STR_PLASMA_BLASTER
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-    size: 0.2
-    costSell: 241600
-    weight: 14 # 12
-    bigSprite: 1011
-    floorSprite: 1011
-    handSprite: 1378
-    bulletSprite: 8
-    fireSound: 18
-    compatibleAmmo:
-      - STR_PLASMA_BLASTER_CLIP
-    accuracySnap: 55 # 55
-    accuracyAimed: 90 # 95
-    tuSnap: 45 # 45
-    tuAimed: 75 # 80
-    snapRange: 20 # 0
-    aimRange: 35 # 0
-    minRange: 11 # 0
-    dropoff: 2 # 2
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 5
-    armor: 80 # 50
-    attraction: 1
-    listOrder: 4980
 
 # Decoder
   - type: STR_HYPER_WAVE_ENCODER
@@ -944,253 +551,781 @@ items:
     recover: true
     recoveryPoints: 50
     armor: 10
+    listOrder: 5200
+
+##############
+#### USA #####
+##############
+
+
+  - type: STR_US_PLASMA_RIFLE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.3
+    costBuy: 50000
+    costSell: 40000
+    weight: 30
+    armor: 60
+    bigSprite: 3208
+    floorSprite: 3208
+    handSprite: 3208
+    bulletSprite: 32
+    bulletSpeed: 6
+    fireSound: [2064, 2065, 2066, 2067, 2070, 2071]
+    compatibleAmmo:
+      - STR_US_PLASMA_RIFLE_MAG
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 30
+    accuracySnap: 100
+    accuracyAimed: 65
+    costSnap:
+      time: 60
+    costAimed:
+      time: 75
+    costAuto:
+      time: 70
+    tuLoad: 30
+    tuUnload: 15
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    maxRange: 60
+    aimRange: 32
+    snapRange: 28
+    autoRange: 16
+    dropoff: 5
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5210
+
+  - type: STR_US_PLASMA_RIFLE_MAG
+    categories: [STR_PLASMA, STR_RIFLES, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    ##listOrder: 5251
+    size: 0.2
+    costBuy: 9000
+    costSell: 3000
+    bigSprite: 3280
+    floorSprite: 3280
+    handSprite: 3280 # ALL GOOD
+    weight: 5 # 3
+    hitSound: 1938
+    hitAnimation: 110
+    power: 80
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    damageType: 5
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30 # 20
+    vaporColorSurface: 5
+    vaporDensitySurface: 5
+    listOrder: 5220
+
+  - type: STR_US_PLASMA_RL
+    categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.5
+    costBuy: 36000
+    costSell: 30000
+    weight: 45
+    armor: 80
+    bigSprite: 3216
+    floorSprite: 3216
+    handSprite: 3216
+    bulletSprite: 0
+    bulletSpeed: 6
+    fireSound: 143
+    confSnap:
+      shots: 1
+      #name: STR_AIMED_SHOT
+    confAimed:
+      shots: 1
+      #name: STR_X6_SHOT
+    compatibleAmmo:
+      - STR_US_PLASMA_RL_HEAT_ROCKET
+      - STR_US_PLASMA_RL_ELERIUM_ROCKET
+    accuracyCloseQuarters: 25
+    accuracySnap: 125
+    accuracyAimed: 80
+    #accuracyAuto: 60
+    tuSnap: 40
+    tuAimed: 60
+    #tuAuto: 80
+    tuLoad: 45
+    tuUnload: 22
+    battleType: 1
+    waypoints: 6
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    listOrder: 5230
+
+  - type: STR_US_PLASMA_RL_HEAT_ROCKET
+    categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.2
+    costBuy: 2600
+    costSell: 1200
+    weight: 6
+    bigSprite: 3288
+    handSprite: 3288
+    floorSprite: 3288
+    hitSound: 0
+    hitAnimation: 0
+    power: 90
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToArmor: 0.5
+      ToArmorPre: 0.5
+    damageType: 5
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 5240
+  - type: STR_US_PLASMA_RL_ELERIUM_ROCKET
+    categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.2
+    costBuy: 2600
+    costSell: 1200
+    weight: 6
+    bigSprite: 3296
+    handSprite: 3296
+    floorSprite: 3296
+    hitSound: 0
+    hitAnimation: 0
+    power: 140
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 1.8
+    damageType: 10
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 5250
+
+  - type: STR_US_PLASMA_SHOTGUN
+    categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.2
+    armor: 50
+    costBuy: 38000
+    costSell: 32000
+    weight: 25
+    bigSprite: 3224
+    floorSprite: 3224
+    handSprite: 3224
+    bulletSprite: 32
+    bulletSpeed: 6
+    fireSound: [2084, 2085, 2086, 2087]
+    hitSound: 19
+    compatibleAmmo:
+      - STR_US_PLASMA_SHOTGUN_MAG
+    confAuto:
+      shots: 5
+      name: STR_RAGE_FIRE
+      arcing: true
+    #accuracySnap: 60
+    accuracyAuto: 65
+    #accuracyAimed: 75
+    #costSnap:
+    #  time: 40
+    #costAimed:
+    #  time: 60
+    costAuto:
+      time: 40
+    maxRange: 20
+    tuLoad: 20
+    tuUnload: 10
+    dropoff: 10
+    kneelBonus: 115
+    #snapRange: 12
+    autoRange: 12
+    #arcingShot: true
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 5260
+
+  - type: STR_US_PLASMA_SHOTGUN_MAG
+    categories: [STR_PLASMA, STR_SHOTGUNS, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    ##listOrder: 5451
+    costBuy: 14000
+    costSell: 12000
+    hitAnimation: 110
+    power: 70 # 52
+    clipSize: 5 # 26
+    bigSprite: 3304
+    floorSprite: 3304
+    handSprite: 3304 # ALL GOOD
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.4
+      FireThreshold: 80
+    weight: 10 # 3
+    hitSound: 1938
+    shotgunBehavior: 1
+    shotgunPellets: 15
+    shotgunSpread: 75
+    shotgunChoke: 60
+    armor: 30 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 5
+    listOrder: 5270
+
+###############
+#### NATO #####
+###############
+
+  - type: STR_NATO_PLASMA_CARBINE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.3
+    costBuy: 50000
+    costSell: 44000
+    weight: 25
+    armor: 60
+    bigSprite: 3232
+    floorSprite: 3232
+    handSprite: 3232
+    fireSound: [2072, 2073, 2074, 2075, 2076, 2080]
+    hitSound: 19
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_NATO_PLASMA_CARBINE_MAG
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+    accuracyAuto: 65
+    accuracySnap: 70
+    accuracyAimed: 80
+    costSnap:
+      time: 30
+    costAimed:
+      time: 65
+    costAuto:
+      time: 35
+    battleType: 1
+    tuLoad: 30
+    tuUnload: 15
+    twoHanded: true
+    oneHandedPenalty: 40
+    kneelBonus: 120
+    maxRange: 50
+    aimRange: 20
+    snapRange: 10
+    autoRange: 5
+    dropoff: 5
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5280
+
+  - type: STR_NATO_PLASMA_CARBINE_MAG
+    categories: [STR_PLASMA, STR_CARBINES, STR_NATO_TECH, STR_CLIPS]
+    ##listOrder: 5251
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.2
+    costSell: 3000
+    costBuy: 5000
+    bigSprite: 3312
+    floorSprite: 3312
+    handSprite: 3312 # ALL GOOD
+    weight: 3 # 3
+    hitSound: 1938
+    hitAnimation: 110 # FIX THIS
+    power: 80
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    damageType: 5
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30 # 20
+    vaporColorSurface: 5
+    vaporDensitySurface: 8
+    listOrder: 5290
+
+  - type: STR_NATO_PLASMA_PISTOL
+    categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.1
+    costBuy: 30000
+    costSell: 20000
+    weight: 6
+    armor: 40
+    bigSprite: 3240
+    floorSprite: 3240
+    handSprite: 3240
+    bulletSprite: 32
+    bulletSpeed: 6
+    fireSound: [2081, 2082, 2083]
+    compatibleAmmo:
+      - STR_NATO_PLASMA_PISTOL_MAG
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 85
+    costSnap:
+      time: 25
+    costAimed:
+      time: 40
+    battleType: 1
+    kneelBonus: 100
+    tuLoad: 10
+    tuUnload: 10
+    maxRange: 25
+    aimRange: 15
+    snapRange: 10
+    dropoff: 5
+    invWidth: 1
+    invHeight: 2
+    listOrder: 5300
+
+  - type: STR_NATO_PLASMA_PISTOL_MAG
+    categories: [STR_PLASMA, STR_PISTOLS, STR_NATO_TECH, STR_CLIPS]
+    ##listOrder: 5451
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    costBuy: 6000
+    costSell: 5500
+    hitAnimation: 110
+    power: 70 # 52
+    clipSize: 12 # 26
+    bigSprite: 3320
+    floorSprite: 3320
+    handSprite: 3320 # ALL GOOD
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    weight: 1 # 3
+    damageType: 5
+    hitSound: 1938
+    armor: 30 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 3
+    listOrder: 5310
+
+  - type: STR_NATO_SNIPER_PLASMA
+    categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.4
+    costBuy: 66000
+    costSell: 55000
+    weight: 35
+    armor: 60
+    bigSprite: 3248
+    floorSprite: 3248
+    handSprite: 3248
+    fireSound: [2088, 2089, 2090, 2091]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_NATO_SNIPER_PLASMA_MAG
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+    twoHanded: true
+    accuracySnap: 110
+    accuracyAimed: 150
+    accuracyAuto: 220
+    costSnap:
+      time: 65
+    costAimed:
+      time: 75
+    costAuto:
+      time: 85
+    battleType: 1
+    #twoHanded: true
+    blockBothHands: true
+    tuLoad: 40
+    tuUnload: 20
+    kneelBonus: 125
+    noLOSAccuracyPenalty: 100
+    maxRange: 200
+    minRange: 10
+    aimRange: 50
+    snapRange: 25
+    autoRange: 50
+    #minRange: 25
+    dropoff: 5
+    invWidth: 2
+    invHeight: 3
+    listOrder: 5320
+
+  - type: STR_NATO_SNIPER_PLASMA_MAG
+    categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_NATO_TECH, STR_CLIPS]
+    ##listOrder: 5177
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    costBuy: 13000
+    costSell: 11000
+    hitAnimation: 110
+    power: 150 # 115
+    clipSize: 6 # 35
+    bigSprite: 3328
+    floorSprite: 3328
+    handSprite: 3328
+    hitSound: 1938
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    weight: 5 # 3
+    armor: 35 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 20
+    listOrder: 5330
+
+################
+#### USSR ######
+################
+
+  - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.3
+    costBuy: 48000
+    costSell: 42000
+    weight: 28
+    armor: 60
+    bigSprite: 3256
+    floorSprite: 3256
+    handSprite: 3256
+    fireSound: [2064, 2065, 2066, 2067, 2070, 2071]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
+    confAimed:
+      shots: 3
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 4
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_FULL_AUTO
+    accuracyAimed: 75
+    accuracySnap: 65
+    accuracyAuto: 45
+    costAimed:
+      time: 65
+    costSnap:
+      time: 50
+    costAuto:
+      time: 55
+    # melee segment
+    meleeHitSound: 198
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 30
+    meleeBonus:
+      strength: 0.6
+      melee: 0.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.2
+      melee: 0.5
+    costMelee:
+      time: 15
+      energy: 10
+    flatMelee:
+      time: true
+    # melee segment end
+    battleType: 1
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    tuLoad: 40
+    tuUnload: 20
+    twoHanded: true
+    maxRange: 80
+    aimRange: 24
+    snapRange: 26
+    autoRange: 10
+    dropoff: 5
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5340
+
+  - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
+    categories: [STR_PLASMA, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS]
+    ##listOrder: 5251
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.2
+    costSell: 8000
+    costBuy: 9000
+    bigSprite: 3336
+    floorSprite: 3336
+    handSprite: 3336 # ALL GOOD
+    weight: 3 # 3
+    hitSound: 1938
+    hitAnimation: 110
+    power: 92
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    damageType: 5
+    clipSize: 35
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30 # 20
+    vaporColorSurface: 5
+    vaporDensitySurface: 11
+    listOrder: 5350
+
+  - type: STR_SOVIET_PLASMA_LMG
+    categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.4
+    costBuy: 75000
+    costSell: 69000
+    weight: 40
+    armor: 70
+    bigSprite: 3264
+    floorSprite: 3264
+    handSprite: 3264
+    fireSound: [2084, 2085, 2086, 2087]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_SOVIET_PLASMA_LMG_MAG
+    accuracySnap: 45
+    accuracyAuto: 20
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    costSnap:
+      time: 60
+    costAuto:
+      time: 80
+    twoHanded: true
+    blockBothHands: true
+    tuLoad: 45
+    tuUnload: 22
+    sprayWaypoints: 3
+    kneelBonus: 200
+    battleType: 1
+    maxRange: 60
+    minRange: 7
+    snapRange: 23
+    autoRange: 15
+    #minRange: 5
+    dropoff: 5
+    invWidth: 2
+    invHeight: 3
+    listOrder: 5360
+
+  - type: STR_SOVIET_PLASMA_LMG_MAG
+    categories: [STR_PLASMA, STR_LMGS, STR_SOVIET_TECH, STR_CLIPS]
+    ##listOrder: 5177
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    costBuy: 170000
+    costSell: 15000
+    hitAnimation: 110
+    power: 75 # 115
+    clipSize: 50 # 35
+    bigSprite: 3344
+    floorSprite: 3344
+    handSprite: 3344
+    hitSound: 1938
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.3
+    weight: 6 # 3
+    armor: 35 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 16
+    listOrder: 5370
+
+  - type: STR_SOVIET_PLASMA_SMG
+    categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.2
+    costBuy: 27000
+    costSell: 22000
+    weight: 20
+    bigSprite: 3272
+    floorSprite: 3272
+    handSprite: 3272
+    fireSound: [2060, 2061, 2062, 2063]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_SOVIET_PLASMA_SMG_MAG
+    confAimed:
+      shots: 4
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAuto:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    accuracyAimed: 75
+    accuracySnap: 66
+    accuracyAuto: 30
+    costAimed:
+      time: 35
+    costSnap:
+      time: 45
+    costAuto:
+      time: 50
+    battleType: 1
+    sprayWaypoints: 2
+    kneelBonus: 115
+    tuLoad: 25
+    tuUnload: 12
+    maxRange: 25
+    aimRange: 7
+    snapRange: 10
+    autoRange: 5
+    twoHanded: false
+    dropoff: 5
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5380
+
+  - type: STR_SOVIET_PLASMA_SMG_MAG
+    categories: [STR_PLASMA, STR_SMGS, STR_SOVIET_TECH, STR_CLIPS]
+    ##listOrder: 5451
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    costBuy: 12000
+    costSell: 11000
+    hitAnimation: 110
+    power: 80 # 52
+    clipSize: 25 # 26
+    bigSprite: 3352
+    floorSprite: 3352
+    handSprite: 3352 # ALL GOOD
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+    weight: 1 # 3
+    hitSound: 1938
+    armor: 30 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 6
+    listOrder: 5390
 
 research:
-# Linked Alien Research
-# Alien Weapon Research Step - allows understanding
-  - name: STR_PLASMA_PISTOL
-    cost: 300
-    points: 10
-    needItem: true
-  - name: STR_PLASMA_RIFLE
-    cost: 350
-    points: 10
-    needItem: true
-  - name: STR_HEAVY_PLASMA
-    cost: 400
-    points: 10
-    needItem: true
-# this is how to defeat the lockout is unlocked by alien weapons but will need a live engineer to allow it to go forward to be researched
-  - name: STR_ALIEN_PLASMA_WEAPONS
-    cost: 800
-    points: 20
-    dependencies:
-      - STR_SECTOID_ENGINEER
-      - STR_FLOATER_ENGINEER
-      - STR_SNAKEMAN_ENGINEER
-      - STR_MUTON_ENGINEER
-      - STR_PLASMA_PISTOL
-      - STR_HEAVY_PLASMA
-      - STR_PLASMA_RIFLE
-      - STR_PLASMA_CASTER
-      - STR_PLASMA_BLASTER
-      - STR_PLASMA_SNIPER_RIFLE
-# Human reworked weapons - all require the base alien weapon, how to defeat the lockout and alien alloys to build the human interfaces
-  - name: STR_REMAN_HUMAN_PLASMA_PISTOL
-    cost: 400
-    points: 10
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_PISTOL
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_REMAN_HUMAN_PLASMA_RIFLE
-    cost: 500
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_RIFLE
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_REMAN_HUMAN_HEAVY_PLASMA
-    cost: 600
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HEAVY_PLASMA
-      - STR_ALLOY_MANUFACTURING
-# New Human Manufactured weapons
-  - name: STR_HUMAN_PLASMA_SMG
-    cost: 400
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-      - STR_ALLOY_MANUFACTURING
-# (Plasma Rifle is the only weapon that be manufactured and remanufactured)
-  - name: STR_NEW_HUMAN_PLASMA_RIFLE
-    cost: 500
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_REMAN_HUMAN_PLASMA_RIFLE
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_HUMAN_PLASMA_MAGNUM
-    cost: 400
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_HUMAN_SNIPER_PLASMA
-    cost: 800
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_HUMAN_PLASMA_DMR
-    cost: 700 # FIX THIS
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_SNIPER_PLASMA
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_HUMAN_PLASMA_LMG
-    cost: 900
-    points: 20
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_PLASMA_SMG
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_REMAN_SMALL_LAUNCHER
-    cost: 400
-    points: 10
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_SMALL_LAUNCHER
-      - STR_ALLOY_MANUFACTURING
-# New Ammo
-  - name: STR_PLASMA_MAGNUM_CLIP
-    cost: 300 # FIX THIS
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_PLASMA_MAGNUM
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_PLASMA_DMR_CLIP
-    cost: 500 # FIX THIS
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_PLASMA_DMR
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_PLASMA_SMG_CLIP
-    cost: 300 # FIX THIS
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_PLASMA_SMG
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_PLASMA_LMG_PACK
-    cost: 600 # FIX THIS
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_PLASMA_LMG
-      - STR_ALLOY_MANUFACTURING
-  - name: STR_SNIPER_PLASMA_CLIP
-    cost: 600 # FIX THIS
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HUMAN_SNIPER_PLASMA
-      - STR_ALLOY_MANUFACTURING
-# Cheap ammo conversion
-  - name: STR_PR_TO_PDMR
-    cost: 20
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_DMR_CLIP
-      - STR_PLASMA_RIFLE_CLIP
-  - name: STR_PR_TO_PSMG
-    cost: 20
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_SMG_CLIP
-      - STR_PLASMA_RIFLE_CLIP
-  - name: STR_PP_TO_PM
-    cost: 20
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_MAGNUM_CLIP
-      - STR_PLASMA_PISTOL_CLIP
-  - name: STR_HPC_TO_PLMG_PACK
-    cost: 20
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_PLASMA_LMG_PACK
-  - name: STR_HPC_TO_SP_CLIP
-    cost: 20
-    points: 2
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_SNIPER_PLASMA_CLIP
 
   - name: STR_ELERIUM_BOMB
     cost: 180
     points: 10
     needItem: true
-    listOrder: 4401
+    #listOrder: 4401
   - name: STR_TOXIGUN
     cost: 200
     points: 20
     needItem: true
-    listOrder: 4450
+    #listOrder: 4450
   - name: STR_TOXIGUN_FLASK
     cost: 300
     points: 15
     needItem: true
-    listOrder: 4451
+    #listOrder: 4451
   - name: STR_PLASMA_CASTER
     cost: 400
     points: 25
     needItem: true
-    listOrder: 3750
+    #listOrder: 3750
   - name: STR_PLASMA_CASTER_CLIP
     cost: 400
     points: 6
     needItem: true
-    listOrder: 3751
+    #listOrder: 3751
   - name: STR_PLASMA_BLASTER
     cost: 900
     points: 25
     needItem: true
-    listOrder: 2750
+    #listOrder: 2750
   - name: STR_PLASMA_BLASTER_CLIP
     cost: 400
     points: 6
     needItem: true
-    listOrder: 2751
+    #listOrder: 2751
   - name: STR_PLASMA_SNIPER_RIFLE
     cost: 700
     points: 25
     needItem: true
-    listOrder: 3950
+    #listOrder: 3950
   - name: STR_PLASMA_SNIPER_RIFLE_CLIP
     cost: 400
     points: 6
     needItem: true
-    listOrder: 3951
-  - name: STR_REMAN_HUMAN_PLASMA_PISTOL_DEP1
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_CASTER
-      - STR_ALLOY_MANUFACTURING
-    unlocks:
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-  - name: STR_REMAN_HUMAN_PLASMA_RIFLE_DEP1
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_SNIPER_RIFLE
-      - STR_ALLOY_MANUFACTURING
-    unlocks:
-      - STR_REMAN_HUMAN_PLASMA_RIFLE
-  - name: STR_REMAN_HUMAN_HEAVY_PLASMA_DEP1
-    dependencies:
-      - STR_ALIEN_PLASMA_WEAPONS
-      - STR_PLASMA_BLASTER
-      - STR_ALLOY_MANUFACTURING
-    unlocks:
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
+    #listOrder: 3951
+
   - name: STR_PLASMA_CANNON_DEP2
     cost: 0
     dependencies:
@@ -1235,360 +1370,37 @@ research:
     cost: 250
     points: 20
     needItem: true
-manufacture:
-# alien weapon remanufacture
-  - name: STR_REMAN_HUMAN_PLASMA_PISTOL
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-    space: 5
-    time: 40
-    cost: 4000
-    requiredItems:
-      STR_PLASMA_PISTOL: 1
-    producedItems:
-      STR_HUMAN_PLASMA_PISTOL: 1
-  - name: STR_REMAN_HUMAN_PLASMA_RIFLE
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_HUMAN_PLASMA_RIFLE
-    space: 5
-    time: 40
-    cost: 6000
-    requiredItems:
-      STR_PLASMA_RIFLE: 1
-    producedItems:
-      STR_HUMAN_PLASMA_RIFLE: 1
-  - name: STR_REMAN_HUMAN_HEAVY_PLASMA
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-    space: 5
-    time: 55
-    cost: 6000
-    requiredItems:
-      STR_HEAVY_PLASMA: 1
-    producedItems:
-      STR_HUMAN_HEAVY_PLASMA: 1
-  - name: STR_REMAN_SMALL_LAUNCHER
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_SMALL_LAUNCHER
-    space: 5
-    time: 40
-    cost: 4000
-    requiredItems:
-      STR_SMALL_LAUNCHER: 1
-    producedItems:
-      STR_HUMAN_SMALL_LAUNCHER: 1
-# human personal weapons
-  - name: STR_HUMAN_PLASMA_MAGNUM
-    category: STR_WEAPON
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    requires:
-      - STR_HUMAN_PLASMA_MAGNUM
-    space: 5
-    time: 700 # 600 pistol
-    cost: 60000 # 56000 pistol
-  - name: STR_HUMAN_PLASMA_SMG
-    category: STR_WEAPON
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    requires:
-      - STR_HUMAN_PLASMA_SMG
-    space: 5
-    time: 800 #
-    cost: 65000
-# You can manufacture new or reman rifles.
-  - name: STR_NEW_HUMAN_PLASMA_RIFLE
-    category: STR_WEAPON
-    requires:
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-    space: 5
-    time: 820
-    cost: 88000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    producedItems:
-      STR_HUMAN_PLASMA_RIFLE: 1
-  - name: STR_HUMAN_PLASMA_DMR
-    category: STR_WEAPON
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    requires:
-      - STR_HUMAN_PLASMA_DMR
-    space: 5
-    time: 850
-    cost: 110000
-  - name: STR_HUMAN_SNIPER_PLASMA
-    category: STR_WEAPON
-    requiredItems:
-      STR_ALIEN_ALLOYS: 2
-    requires:
-      - STR_HUMAN_SNIPER_PLASMA
-    space: 5
-    time: 900
-    cost: 120000
-  - name: STR_HUMAN_PLASMA_LMG
-    category: STR_WEAPON
-    requiredItems:
-      STR_ALIEN_ALLOYS: 2
-    requires:
-      - STR_HUMAN_PLASMA_LMG
-    space: 5
-    time: 950
-    cost: 120000
- # New Ammo
-  - name: STR_PLASMA_MAGNUM_CLIP
-    category: STR_AMMUNITION
-    requires:
-      - STR_PLASMA_MAGNUM_CLIP
-    space: 2
-    time: 40
-    cost: 3000
-    requiredItems:
-      STR_ELERIUM_115: 1
-  - name: STR_PLASMA_SMG_CLIP
-    category: STR_AMMUNITION
-    requires:
-      - STR_PLASMA_SMG_CLIP
-    space: 2
-    time: 45
-    cost: 2500
-    requiredItems:
-      STR_ELERIUM_115: 1
-  - name: STR_PLASMA_DMR_CLIP
-    category: STR_AMMUNITION
-    requires:
-      - STR_PLASMA_DMR_CLIP
-    space: 2
-    time: 95
-    cost: 4000
-    requiredItems:
-      STR_ELERIUM_115: 2
-  - name: STR_SNIPER_PLASMA_CLIP
-    category: STR_AMMUNITION
-    requires:
-      - STR_SNIPER_PLASMA_CLIP
-    space: 2
-    time: 100
-    cost: 6000
-    requiredItems:
-      STR_ELERIUM_115: 3
-  - name: STR_PLASMA_LMG_PACK
-    category: STR_AMMUNITION
-    requires:
-      - STR_PLASMA_LMG_PACK
-    space: 2
-    time: 100
-    cost: 6000
-    requiredItems:
-      STR_ELERIUM_115: 3
- # Changing Ammo
-  - name: STR_PR_TO_PDMR
-    category: STR_AMMUNITION
-    requires:
-      - STR_PR_TO_PDMR
-    space: 2
-    time: 10
-    cost: 1500
-    requiredItems:
-      STR_PLASMA_RIFLE_CLIP: 1
-    producedItems:
-      STR_PLASMA_DMR_CLIP: 1
-  - name: STR_PR_TO_PSMG
-    category: STR_AMMUNITION
-    requires:
-      - STR_PR_TO_PSMG
-    space: 2
-    time: 10
-    cost: 1500
-    requiredItems:
-      STR_PLASMA_RIFLE_CLIP: 1
-    producedItems:
-      STR_PLASMA_SMG_CLIP: 1
-  - name: STR_PP_TO_PM
-    category: STR_AMMUNITION
-    requires:
-      - STR_PP_TO_PM
-    space: 2
-    time: 10
-    cost: 1250
-    requiredItems:
-      STR_PLASMA_PISTOL_CLIP: 1
-    producedItems:
-      STR_PLASMA_MAGNUM_CLIP: 1
-  - name: STR_HPC_TO_PLMG_PACK
-    category: STR_AMMUNITION
-    requires:
-      - STR_HPC_TO_PLMG_PACK
-    space: 2
-    time: 10
-    cost: 2000
-    requiredItems:
-      STR_HEAVY_PLASMA_CLIP: 1
-    producedItems:
-      STR_PLASMA_LMG_PACK: 1
-  - name: STR_HPC_TO_SP_CLIP
-    category: STR_AMMUNITION
-    requires:
-      - STR_HPC_TO_SP_CLIP
-    space: 2
-    time: 10
-    cost: 2000
-    requiredItems:
-      STR_HEAVY_PLASMA_CLIP: 1
-    producedItems:
-      STR_SNIPER_PLASMA_CLIP: 1
-
-  - name: STR_ELERIUM_BOMB
-    category: STR_AMMUNITION
-    requires:
-      - STR_ELERIUM_BOMB
-    space: 2
-    time: 180
-    cost: 6000
-    requiredItems:
-      STR_ELERIUM_115: 1
-    listOrder: 2401
-# alien weapon remanufacture
-  - name: STR_REMAN_HUMAN_PLASMA_CASTER
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-      - STR_PLASMA_CASTER
-    space: 5
-    time: 45
-    cost: 4500
-    requiredItems:
-      STR_PLASMA_CASTER: 1
-    producedItems:
-      STR_HUMAN_PLASMA_CASTER: 1
-  - name: STR_REMAN_HUMAN_PLASMA_SNIPER_RIFLE
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_HUMAN_PLASMA_RIFLE
-      - STR_PLASMA_SNIPER_RIFLE
-    space: 5
-    time: 50
-    cost: 6500
-    requiredItems:
-      STR_PLASMA_SNIPER_RIFLE: 1
-    producedItems:
-      STR_HUMAN_PLASMA_SNIPER_RIFLE: 1
-  - name: STR_REMAN_HUMAN_PLASMA_BLASTER
-    category: STR_WEAPON
-    requires:
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-      - STR_PLASMA_BLASTER
-    space: 5
-    time: 60
-    cost: 7500
-    requiredItems:
-      STR_PLASMA_BLASTER: 1
-    producedItems:
-      STR_HUMAN_PLASMA_BLASTER: 1
-# no manufacture of new weapons
-  - name: STR_PLASMA_SNIPER_RIFLE
-    category: STR_WEAPON
-    requires:
-      - STR_ALIENS_ONLY
-    space: 4
-    time: 890
-    cost: 102000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    listOrder: 1670
-  - name: STR_PLASMA_SNIPER_RIFLE_CLIP
-    category: STR_AMMUNITION
-    listOrder: 1671
-    requires:
-      - STR_ALIENS_ONLY
-    space: 4
-    time: 70
-    cost: 2600
-    requiredItems:
-      STR_ELERIUM_115: 1
-  - name: STR_PLASMA_BLASTER
-    category: STR_WEAPON
-    listOrder: 1450
-    requires:
-      - STR_ALIENS_ONLY
-    space: 6
-    time: 1180
-    cost: 152000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 2
-  - name: STR_PLASMA_BLASTER_CLIP
-    category: STR_AMMUNITION
-    listOrder: 1451
-    requires:
-      - STR_ALIENS_ONLY
-    space: 4
-    time: 80
-    cost: 6500
-    requiredItems:
-      STR_ELERIUM_115: 2
-  - name: STR_PLASMA_CASTER
-    category: STR_WEAPON
-    listOrder: 1850
-    requires:
-      - STR_ALIENS_ONLY
-    space: 6
-    time: 1180
-    cost: 84000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 2
-  - name: STR_PLASMA_CASTER_CLIP
-    category: STR_AMMUNITION
-    listOrder: 1851
-    requires:
-      - STR_ALIENS_ONLY
-    space: 4
-    time: 80
-    cost: 1500
-    requiredItems:
-      STR_ELERIUM_115: 2
-  - name: STR_TOXIGUN
-    category: STR_WEAPON
-    listOrder: 2450
-    requires:
-      - STR_TOXIGUN
-      - STR_TOXIGUN_FLASK
-    space: 5
-    time: 700
-    cost: 54000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-  - name: STR_TOXIGUN_FLASK
-    category: STR_AMMUNITION
-    listOrder: 2351
-    requires:
-      - STR_TOXIGUN_FLASK
-    space: 7
-    time: 120
-    cost: 4500
-
 
 # New Armor
 
   - name: STR_PLASMA_PISTOL
+    cost: 0
+    points: 10
+    needItem: true
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_PISTOL_CLIP
+    cost: 0
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_RIFLE
+    cost: 0
+    points: 10
+    needItem: true
     requires:
       - STR_ALIENS_ONLY
   - name: STR_PLASMA_RIFLE_CLIP
+    cost: 0
     requires:
       - STR_ALIENS_ONLY
   - name: STR_HEAVY_PLASMA
+    cost: 0
+    points: 10
+    needItem: true
     requires:
       - STR_ALIENS_ONLY
   - name: STR_HEAVY_PLASMA_CLIP
+    cost: 0
     requires:
       - STR_ALIENS_ONLY
 
@@ -1631,7 +1443,32 @@ extraSprites:
       1964: Resources/FourthState/PlasmaPistol/PlasmaPistolClip.gif
       1115: Resources/FourthState/HWE/HyperWaveEncoder.gif
     # Armor
-      1901: Resources/FourthState/ScoutArmor/BigCorpse.png
+      1901: Resources/SoldiersAndArmors/ScoutArmor/BigCorpse.png
+#####################################
+##### FACTION SPECIFIC WEAPONS #####
+###################################
+
+      3200: Resources/PlasmaWeapons/UN/BigUNPlasmaRifle_ammo1.png
+      3208: Resources/PlasmaWeapons/USA/BigPlasmaBattleRifle_ammo1.png
+      3216: Resources/PlasmaWeapons/USA/BigPlasmaRL_ammo1.png
+      3224: Resources/PlasmaWeapons/USA/BigPlasmaShotgun_ammo1.png
+      3232: Resources/PlasmaWeapons/NATO/BigPlasmaCarbine_ammo1.png
+      3240: Resources/PlasmaWeapons/NATO/BigPlasmaPistol_ammo1.png
+      3248: Resources/PlasmaWeapons/NATO/BigPlasmaSniper_ammo1.png
+      3256: Resources/PlasmaWeapons/USSR/BigPlasmaAssaultRifle_ammo1.png
+      3264: Resources/PlasmaWeapons/USSR/BigPlasmaLMG_ammo1.png
+      3272: Resources/PlasmaWeapons/USSR/BigPlasmaSMG_ammo1.png
+      3280: Resources/PlasmaWeapons/Ammo/BigPlasmaBattleRifleMag.png
+      3288: Resources/PlasmaWeapons/Ammo/BigPlasmaRLHEATRocket.png
+      3296: Resources/PlasmaWeapons/Ammo/BigPlasmaRLEleriumRocket.png
+      3304: Resources/PlasmaWeapons/Ammo/BigPlasmaShotgunMag.png
+      3312: Resources/PlasmaWeapons/Ammo/BigPlasmaCarbineMag.png
+      3320: Resources/PlasmaWeapons/Ammo/BigPlasmaPistolMag.png
+      3328: Resources/PlasmaWeapons/Ammo/BigPlasmaSniperMag.png
+      3336: Resources/PlasmaWeapons/Ammo/BigPlasmaAssaultRifleMag.png
+      3344: Resources/PlasmaWeapons/Ammo/BigPlasmaLMGMag.png
+      3352: Resources/PlasmaWeapons/Ammo/BigPlasmaSMGMag.png
+
   - type: FLOOROB.PCK
     files:
       1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
@@ -1667,7 +1504,33 @@ extraSprites:
       1967: Resources/FourthState/PlasmaPistol/PlasmaPistolClipf.gif
       1115: Resources/FourthState/HWE/HyperWaveEncoderf.gif
       # Armor
-      1902: Resources/FourthState/ScoutArmor/FloorCorpse.png
+      1902: Resources/SoldiersAndArmors/ScoutArmor/FloorCorpse.png
+
+#####################################
+##### FACTION SPECIFIC WEAPONS #####
+###################################
+
+      3200: Resources/PlasmaWeapons/UN/FloorUNPlasmaRifle_ammo1.png
+      3208: Resources/PlasmaWeapons/USA/FloorPlasmaBattleRifle_ammo1.png
+      3216: Resources/PlasmaWeapons/USA/FloorPlasmaRL_ammo1.png
+      3224: Resources/PlasmaWeapons/USA/FloorPlasmaShotgun_ammo1.png
+      3232: Resources/PlasmaWeapons/NATO/FloorPlasmaCarbine_ammo1.png
+      3240: Resources/PlasmaWeapons/NATO/FloorPlasmaPistol_ammo1.png
+      3248: Resources/PlasmaWeapons/NATO/FloorPlasmaSniper_ammo1.png
+      3256: Resources/PlasmaWeapons/USSR/FloorPlasmaAssaultRifle_ammo1.png
+      3264: Resources/PlasmaWeapons/USSR/FloorPlasmaLMG_ammo1.png
+      3272: Resources/PlasmaWeapons/USSR/FloorPlasmaSMG_ammo1.png
+      3280: Resources/PlasmaWeapons/Ammo/FloorPlasmaBattleRifleMag.png
+      3288: Resources/PlasmaWeapons/Ammo/FloorPlasmaRLHEATRocket.png
+      3296: Resources/PlasmaWeapons/Ammo/FloorPlasmaRLEleriumRocket.png
+      3304: Resources/PlasmaWeapons/Ammo/FloorPlasmaShotgunMag.png
+      3312: Resources/PlasmaWeapons/Ammo/FloorPlasmaCarbineMag.png
+      3320: Resources/PlasmaWeapons/Ammo/FloorPlasmaPistolMag.png
+      3328: Resources/PlasmaWeapons/Ammo/FloorPlasmaSniperMag.png
+      3336: Resources/PlasmaWeapons/Ammo/FloorPlasmaAssaultRifleMag.png
+      3344: Resources/PlasmaWeapons/Ammo/FloorPlasmaLMGMag.png
+      3352: Resources/PlasmaWeapons/Ammo/FloorPlasmaSMGMag.png
+
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -1690,13 +1553,39 @@ extraSprites:
       1474: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
       1482: Resources/AlienArmouryExpanded/handob_Toxigun.gif
 
+#####################################
+##### FACTION SPECIFIC WEAPONS #####
+###################################
+
+      3200: Resources/PlasmaWeapons/UN/HandUNPlasmaRifle_ammo1.png
+      3208: Resources/PlasmaWeapons/USA/HandPlasmaBattleRifle_ammo1.png
+      3216: Resources/PlasmaWeapons/USA/HandPlasmaRL_ammo1.png
+      3224: Resources/PlasmaWeapons/USA/HandPlasmaShotgun_ammo1.png
+      3232: Resources/PlasmaWeapons/NATO/HandPlasmaCarbine_ammo1.png
+      3240: Resources/PlasmaWeapons/NATO/HandPlasmaPistol_ammo1.png
+      3248: Resources/PlasmaWeapons/NATO/HandPlasmaSniper_ammo1.png
+      3256: Resources/PlasmaWeapons/USSR/HandPlasmaAssaultRifle_ammo1.png
+      3264: Resources/PlasmaWeapons/USSR/HandPlasmaLMG_ammo1.png
+      3272: Resources/PlasmaWeapons/USSR/HandPlasmaSMG_ammo1.png
+      3280: Resources/PlasmaWeapons/Ammo/HandPlasmaBattleRifleMag.png
+      3288: Resources/PlasmaWeapons/Ammo/HandPlasmaRLHEATRocket.png
+      3296: Resources/PlasmaWeapons/Ammo/HandPlasmaRLEleriumRocket.png
+      3304: Resources/PlasmaWeapons/Ammo/HandPlasmaShotgunMag.png
+      3312: Resources/PlasmaWeapons/Ammo/HandPlasmaCarbineMag.png
+      3320: Resources/PlasmaWeapons/Ammo/HandPlasmaPistolMag.png
+      3328: Resources/PlasmaWeapons/Ammo/HandPlasmaSniperMag.png
+      3336: Resources/PlasmaWeapons/Ammo/HandPlasmaAssaultRifleMag.png
+      3344: Resources/PlasmaWeapons/Ammo/HandPlasmaLMGMag.png
+      3352: Resources/PlasmaWeapons/Ammo/HandPlasmaSMGMag.png
+
   - type: Projectiles
     height: 3
     width: 105
     subX: 3
     subY: 3
     files:
-      700: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif
+      700: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif # 20
+      1120: Resources/BulletSprites/HumanPlasma_Bullet.PNG # 32
 
   - type: SMOKE.PCK
     height: 80
@@ -1705,6 +1594,7 @@ extraSprites:
     subY: 40
     files:
       56: Resources/AlienArmouryExpanded/Bullets/toxic_hit.gif
+      110: Resources/HitAnimations/HumanPlasma_Hit.png
 
 extraSounds:
   - type: BATTLE.CAT

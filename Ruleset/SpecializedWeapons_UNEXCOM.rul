@@ -1,0 +1,235 @@
+#Close quarters: defined by default on 1 tile
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+
+items:
+# Burya Electromagnetic Rifle
+  - type: STR_GAUSS_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.2
+    costSell: 240000
+    weight: 27
+    bigSprite: 2416
+    floorSprite: 2416
+    handSprite: 2416
+    bulletSprite: 33
+    fireSound: [3001, 3002, 3003]
+    reloadSound: 3000
+    compatibleAmmo:
+      - STR_GAUSS_RIFLE_MAG
+    costAuto:
+      time: 85
+    autoRange: 60
+    accuracyAuto: 250
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    costAimed:
+      time: 75
+    aimRange: 50
+    accuracyAimed: 150
+    costSnap:
+      time: 50
+    snapRange: 55
+    accuracySnap: 110
+    accuracyCloseQuarters: 10
+    tuLoad: 30
+    maxRange: 60
+    dropoff: 1
+    kneelBonus: 150
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    #listOrder: 239
+
+  - type: STR_GAUSS_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.1
+    costSell: 42000
+    weight: 4
+    bigSprite: 2400
+    floorSprite: 2400
+    #handSprite: 2400
+    hitSound: 13
+    hitAnimation: 120
+    power: 165
+    damageAlter:
+      RandomType: 7
+      ToArmorPre: 0.9
+      ToArmor: 0.8
+      ToWound: 0.3
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 200
+    #listOrder: 240
+    vaporColorSurface: 5
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+
+##############################
+
+# Hurrikan Electric Rifle
+  - type: STR_ELECTRIC_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.25
+    costSell: 10000
+    transferTime: 96
+    weight: 14
+    bigSprite: 2432
+    floorSprite: 2432
+    handSprite: 2432
+    bulletSprite: 34
+    fireSound: 3011
+    reloadSound: 3010
+    compatibleAmmo:
+      - STR_ELECTRIC_RIFLE_MAG
+    accuracySnap: 75
+    accuracyAimed: 90
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.5
+    tuSnap: 30
+    tuAimed: 47
+    costThrow:
+      energy: 15
+      time: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    invWidth: 2
+    invHeight: 3
+    snapRange: 12
+    aimRange: 17
+    dropoff: 6
+    powerRangeThreshold: 8
+    powerRangeReduction: 6
+    maxRange: 26
+    recoveryPoints: 3
+    attraction: 12
+    #listOrder: 12393
+
+  - type: STR_ELECTRIC_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.05
+    costBuy: 3000
+    costSell: 1200
+    transferTime: 96
+    weight: 3
+    bigSprite: 2440
+    floorSprite: 2440
+    #handSprite: 2440
+    hitSound: 0
+    hitAnimation: 130
+    power: 85
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToHealth: 0.8
+      ToStun: 0.8
+      ToArmor: 0.5
+      ToWound: 0.0
+      ToTile: 0.0
+      ToTime: 1.2
+      ArmorEffectiveness: 0.5
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+    clipSize: 10
+    costThrow:
+      energy: 6
+      time: 40
+    battleType: 2
+    armor: 30
+    #listOrder: 12394
+    vaporColorSurface: 4
+    vaporDensitySurface: 5
+    vaporProbabilitySurface: 100
+
+
+#########################################
+
+
+
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      2400: Resources/SpecializedWeapons/BigGaussAmmo.png
+      2408: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/BigTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/BigTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/BigTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/BigTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/BigTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/BigTeslaPistolBattery.png
+
+  - type: FLOOROB.PCK
+    files:
+      2400: Resources/SpecializedWeapons/FloorGaussAmmo.png
+      2408: Resources/SpecializedWeapons/FloorGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/FloorGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/FloorGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/FloorTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/FloorTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/FloorTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/FloorTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/FloorTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/FloorTeslaPistolBattery.png
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      #2400: Resources/SpecializedWeapons/HandGaussAmmo.png
+      2408: Resources/SpecializedWeapons/HandGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/HandGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/HandGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/HandTeslaRifle_ammo1.png
+      #2440: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/HandTeslaHeavy_ammo1.png
+      #2456: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
+      #2472: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
+
+  - type: Projectiles
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      1155: Resources/BulletSprites/Railgun_Bullet.PNG # 33
+      1190: Resources/BulletSprites/HumanElectric_Bullet.PNG # 34
+
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      120: Resources/HitAnimations/Gauss_Hit.png
+      130: Resources/HitAnimations/HumanElectric_Hit.png

@@ -1599,14 +1599,21 @@ ufopaedia:
     requires:
       - STR_LASER_WEAPONS
     text: STR_LASER_WEAPONS_UFOPEDIA
-    listOrder: 2099
+    listOrder: 2060
   - id: STR_HYBRID_LASER_PROJECT
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
     requires:
       - STR_HYBRID_LASER_PROJECT
     text: STR_HYBRID_LASER_PROJECT_UFOPEDIA
-    listOrder: 2100
+    listOrder: 2070
+  - id: STR_SECRET_CRISIS_PROTOTYPES
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_SECRET_CRISIS_PROTOTYPES_UFOPEDIA
+    listOrder: 2080
   ####################################
   - id: STR_USA_LASER_RESEARCH
     type_id: 7
@@ -1778,13 +1785,71 @@ ufopaedia:
     text: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
     text_width: 170
     listOrder: 2222
-  - id: STR_NEW_HUMAN_PLASMA_RIFLE
+
+
+################################
+#### HUMAN PLASMA WEAPONS ####
+#############################
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_THEORY
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
     requires:
-      - STR_NEW_HUMAN_PLASMA_RIFLE
-    text: STR_NEW_HUMAN_PLASMA_RIFLE_UFOPEDIA
-    listOrder: 2250
+      - STR_HUMAN_PLASMA_WEAPONS_THEORY
+    text: STR_HUMAN_PLASMA_WEAPONS_THEORY_UFOPEDIA
+    listOrder: 2260
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+    text: STR_HUMAN_PLASMA_WEAPONS_PROGRESS_UFOPEDIA
+    listOrder: 2265
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I_UFOPEDIA
+    listOrder: 2266
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II_UFOPEDIA
+    listOrder: 2267
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_UFOPEDIA
+    listOrder: 2270
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS_UFOPEDIA
+    listOrder: 2275
+
+  - id: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    type_id: 8
+    section: STR_UNEXCOM_RESEARCH
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    text: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS_UFOPEDIA
+    listOrder: 2278
+############################
+###### ELERIUM FUSION #####
+##########################
+
   - id: STR_ELERIUM_FUSION
     type_id: 7
     requires:
@@ -1865,6 +1930,34 @@ ufopaedia:
     text: STR_UNEXCOM_HISTORY_5_UFOPEDIA
     text_width: 316
     listOrder: 3004
+
+  - id: STR_UNEXCOM_HISTORY_6
+    type_id: 8
+    requires:
+      - STR_ON_OUR_OWN
+    section: STR_UNEXCOM_REPORTS
+    text: STR_UNEXCOM_HISTORY_6_UFOPEDIA
+    text_width: 316
+    listOrder: 3005
+
+  - id: STR_UNEXCOM_HISTORY_7
+    type_id: 8
+    requires:
+      - STR_ON_OUR_OWN
+    section: STR_UNEXCOM_REPORTS
+    text: STR_UNEXCOM_HISTORY_7_UFOPEDIA
+    text_width: 316
+    listOrder: 3006
+
+  - id: STR_UNEXCOM_HISTORY_8
+    type_id: 8
+    requires:
+      - STR_ON_OUR_OWN
+    section: STR_UNEXCOM_REPORTS
+    text: STR_UNEXCOM_HISTORY_8_UFOPEDIA
+    text_width: 316
+    listOrder: 3007
+
   - id: STR_UNITED_WE_STAND_RESEARCH
     type_id: 7
     requires:
@@ -1872,7 +1965,7 @@ ufopaedia:
     section: STR_UNEXCOM_REPORTS
     image_id: UNITED_WE_STAND_IMAGE
     text: STR_UNITED_WE_STAND_RESEARCH_UFOPEDIA
-    listOrder: 3005
+    listOrder: 3008
     text_width: 316
 
   - id: STR_ALIEN_ORIGINS
@@ -1881,7 +1974,7 @@ ufopaedia:
     requires:
       - STR_ALIEN_ORIGINS
     text: STR_ALIEN_ORIGINS_UFOPEDIA
-    listOrder: 3006
+    listOrder: 3009
   - id: STR_OLYMPUS
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1890,7 +1983,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_OLYMPUS_UFOPEDIA
-    listOrder: 3007
+    listOrder: 3010
   - id: STR_OLYMPUS_ORION
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1899,7 +1992,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_OLYMPUS_ORION_UFOPEDIA
-    listOrder: 3008
+    listOrder: 3011
   - id: STR_OLYMPUS_SHUTTLE
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1908,7 +2001,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_OLYMPUS_SHUTTLE_UFOPEDIA
-    listOrder: 3009
+    listOrder: 3012
 
   - id: STR_THE_MARTIAN_SOLUTION
     type_id: 7
@@ -1918,7 +2011,7 @@ ufopaedia:
     requires:
       - STR_THE_MARTIAN_SOLUTION
     text: STR_THE_MARTIAN_SOLUTION_UFOPEDIA
-    listOrder: 3010
+    listOrder: 3015
   - id: STR_DESTINATION_MARS
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1927,7 +2020,7 @@ ufopaedia:
     requires:
       - STR_DESTINATION_MARS
     text: STR_DESTINATION_MARS_UFOPEDIA
-    listOrder: 3011
+    listOrder: 3016
   - id: STR_CYDONIA_OR_BUST
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1936,7 +2029,7 @@ ufopaedia:
     requires:
       - STR_CYDONIA_OR_BUST
     text: STR_CYDONIA_OR_BUST_UFOPEDIA
-    listOrder: 3012
+    listOrder: 3017
 
   - id: STR_UNEXCOM_BLUE_HELMETS
     type_id: 7
@@ -2276,20 +2369,15 @@ ufopaedia:
       text: STR_FLECHETTE_PISTOL_UFOPEDIA
       ammoSlot: 1
     listOrder: 4014
-  - id: STR_HUMAN_PLASMA_PISTOL
+
+  - id: STR_NATO_PLASMA_PISTOL
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_REMAN_HUMAN_PLASMA_PISTOL
-    text: STR_HUMAN_PLASMA_PISTOL_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    text: STR_NATO_PLASMA_PISTOL_UFOPEDIA
     listOrder: 4015
-  - id: STR_HUMAN_PLASMA_MAGNUM
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_HUMAN_PLASMA_MAGNUM
-    text: STR_HUMAN_PLASMA_MAGNUM_UFOPEDIA
-    listOrder: 4016
+
   - id: STR_GYROJET_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -2384,12 +2472,12 @@ ufopaedia:
     text: STR_ALP_SUBMACHINE_LASER_UFOPEDIA
     listOrder: 4110
 
-  - id: STR_HUMAN_PLASMA_SMG
+  - id: STR_SOVIET_PLASMA_SMG
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_HUMAN_PLASMA_SMG
-    text: STR_HUMAN_PLASMA_SMG_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    text: STR_SOVIET_PLASMA_SMG_UFOPEDIA
     listOrder: 4111
 
   #Shotguns
@@ -2485,6 +2573,14 @@ ufopaedia:
       - STR_ALLOY_CLOSE
     text: STR_FLECHETTE_AUTOMATIC_SHOTGUN_UFOPEDIA
     listOrder: 4209
+
+  - id: STR_US_PLASMA_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    text: STR_US_PLASMA_SHOTGUN_UFOPEDIA
+    listOrder: 4210
 
   - id: STR_CARBINE_REPORT
     type_id: 7
@@ -2623,6 +2719,14 @@ ufopaedia:
       text: STR_FLECHETTE_CARBINE_UFOPEDIA
       ammoSlot: 1
     listOrder: 4314
+
+  - id: STR_NATO_PLASMA_CARBINE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    text: STR_NATO_PLASMA_CARBINE_UFOPEDIA
+    listOrder: 4315
 
   - id: STR_RIFLE_REPORT
     type_id: 7
@@ -2781,13 +2885,29 @@ ufopaedia:
       ammoSlot: 1
     listOrder: 4416
 
-  - id: STR_HUMAN_PLASMA_RIFLE
+  - id: STR_UN_PLASMA_RIFLE
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_REMAN_HUMAN_PLASMA_RIFLE
-    text: STR_HUMAN_PLASMA_RIFLE_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+    text: STR_UN_PLASMA_RIFLE_UFOPEDIA
     listOrder: 4417
+
+  - id: STR_US_PLASMA_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    text: STR_US_PLASMA_RIFLE_UFOPEDIA
+    listOrder: 4418
+
+  - id: STR_SOVIET_PLASMA_ASSAULT_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    text: STR_SOVIET_PLASMA_ASSAULT_RIFLE_UFOPEDIA
+    listOrder: 4419
 
   - id: STR_HUMAN_FUSION_RIFLE
     type_id: 4
@@ -2795,7 +2915,7 @@ ufopaedia:
     requires:
       - STR_HYBRID_FUSION_PROJECT
     text: STR_HUMAN_FUSION_RIFLE_UFOPEDIA
-    listOrder: 4418
+    listOrder: 4420
 
   - id: STR_GYROJET_RIFLE
     type_id: 4
@@ -2803,7 +2923,7 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_GYROJET_RIFLE_UFOPEDIA
-    listOrder: 4419
+    listOrder: 4421
 
   - id: STR_LMG_REPORT
     type_id: 7
@@ -2908,12 +3028,12 @@ ufopaedia:
       ammoSlot: 1
     listOrder: 4508
 
-  - id: STR_HUMAN_PLASMA_LMG
+  - id: STR_SOVIET_PLASMA_LMG
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_HUMAN_PLASMA_LMG
-    text: STR_HUMAN_PLASMA_LMG_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    text: STR_SOVIET_PLASMA_LMG_UFOPEDIA
     listOrder: 4509
 
   - id: STR_SNIPER_RIFLE_REPORT
@@ -3018,19 +3138,12 @@ ufopaedia:
       ammoSlot: 1
     listOrder: 4611
 
-  - id: STR_HUMAN_PLASMA_DMR
+  - id: STR_NATO_SNIPER_PLASMA
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_HUMAN_PLASMA_DMR
-    text: STR_HUMAN_PLASMA_DMR_UFOPEDIA
-    listOrder: 4612
-  - id: STR_HUMAN_SNIPER_PLASMA
-    type_id: 4
-    section: STR_WEAPONS
-    requires:
-      - STR_HUMAN_SNIPER_PLASMA
-    text: STR_HUMAN_SNIPER_PLASMA_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    text: STR_NATO_SNIPER_PLASMA_UFOPEDIA
     listOrder: 4613
 
   - id: STR_ARTILLERY_REPORT
@@ -3095,12 +3208,12 @@ ufopaedia:
     text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
     listOrder: 4706
 
-  - id: STR_HUMAN_HEAVY_PLASMA
+  - id: STR_US_PLASMA_RL
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_REMAN_HUMAN_HEAVY_PLASMA
-    text: STR_HUMAN_HEAVY_PLASMA_UFOPEDIA
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    text: STR_US_PLASMA_RL_UFOPEDIA
     listOrder: 4707
 
   - id: STR_SAWEDOFF_M79_THUMPER
@@ -3152,7 +3265,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS
     requires:
-      - STR_REMAN_SMALL_LAUNCHER
+      - STR_SMALL_LAUNCHER
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
     listOrder: 4712
 
@@ -3160,10 +3273,26 @@ ufopaedia:
   - id: STR_SPECIALIZED_WEAPONS_REPORT
     type_id: 7
     section: STR_WEAPONS
-    image_id: SHOTGUN_REPORT_IMAGE
+    image_id: ELECTRIC_WEAPONS_RESEARCH_IMAGE
     text: STR_SPECIALIZED_WEAPONS_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4750
+
+  - id: STR_ELECTRIC_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_RIFLE_UFOPEDIA
+    listOrder: 4750
+
+  - id: STR_GAUSS_RIFLE
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_GAUSS_RIFLE_UFOPEDIA
+    listOrder: 4753
 
   - id: STR_HUMAN_SMALL_LAUNCHER
     type_id: 4
@@ -3172,8 +3301,9 @@ ufopaedia:
       - STR_REMAN_SMALL_LAUNCHER
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
     listOrder: 4712
-
+    
 #Melee
+
   - id: STR_MELEE_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -3632,60 +3762,112 @@ ufopaedia:
     type_id: 4
     section: STR_AMMUNITION
     text: ...
-    listOrder: 5200
-  - id: STR_PLASMA_MAGNUM_CLIP
-    type_id: 4
-    section: STR_AMMUNITION
-    text: ...
-    listOrder: 5201
-    requires:
-      - STR_HUMAN_PLASMA_MAGNUM
-  - id: STR_PLASMA_SMG_CLIP
-    type_id: 4
-    section: STR_AMMUNITION
-    text: ...
-    listOrder: 5202
-    requires:
-      - STR_HUMAN_PLASMA_SMG
+    listOrder: 5190
   - id: STR_PLASMA_RIFLE_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5203
-  - id: STR_PLASMA_DMR_CLIP
+  - id: STR_NATO_PLASMA_PISTOL_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_NATO_PLASMA_PISTOL_MAG_UFOPEDIA
+    listOrder: 5201
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+  - id: STR_SOVIET_PLASMA_SMG_MAG
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_SOVIET_PLASMA_SMG_MAG_UFOPEDIA
+    listOrder: 5202
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+
+  - id: STR_US_PLASMA_RIFLE_MAG
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_US_PLASMA_RIFLE_MAG_UFOPEDIA
+    listOrder: 5203
+  - id: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG_UFOPEDIA
     listOrder: 5204
     requires:
-      - STR_HUMAN_PLASMA_DMR
-  - id: STR_SNIPER_PLASMA_CLIP
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+  - id: STR_NATO_SNIPER_PLASMA_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_NATO_SNIPER_PLASMA_MAG_UFOPEDIA
     listOrder: 5205
     requires:
-      - STR_HUMAN_SNIPER_PLASMA
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
   - id: STR_HEAVY_PLASMA_CLIP
     type_id: 4
     section: STR_AMMUNITION
     text: ...
     listOrder: 5206
-  - id: STR_PLASMA_LMG_PACK
+  - id: STR_SOVIET_PLASMA_LMG_MAG
     type_id: 4
     section: STR_AMMUNITION
-    text: ...
+    text: STR_SOVIET_PLASMA_LMG_MAG_UFOPEDIA
     listOrder: 5207
     requires:
-      - STR_HUMAN_PLASMA_LMG
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+  - id: STR_US_PLASMA_SHOTGUN_MAG
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_US_PLASMA_SHOTGUN_MAG_UFOPEDIA
+    listOrder: 5208
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+
+  - id: STR_NATO_PLASMA_CARBINE_MAG
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_NATO_PLASMA_CARBINE_MAG_UFOPEDIA
+    listOrder: 5209
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+
+  - id: STR_US_PLASMA_RL_HEAT_ROCKET
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_US_PLASMA_RL_HEAT_ROCKET_UFOPEDIA
+    listOrder: 5210
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+  - id: STR_US_PLASMA_RL_ELERIUM_ROCKET
+    type_id: 4
+    section: STR_AMMUNITION
+    text: STR_US_PLASMA_RL_ELERIUM_ROCKET_UFOPEDIA
+    listOrder: 5212
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+
   - id: STR_GYROJET_AMMO_MAGAZINE
     requires:
       - STR_OLYMPUS
     type_id: 4
     section: STR_AMMUNITION
     text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
-    listOrder: 5208
+    listOrder: 5215
 
+  - id: STR_ELECTRIC_RIFLE_MAG
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_ELECTRIC_RIFLE_MAG_UFOPEDIA
+    listOrder: 5225
+
+  - id: STR_GAUSS_RIFLE_MAG
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    text: STR_GAUSS_RIFLE_MAG_UFOPEDIA
+    listOrder: 5228
 
   #Equipment
 

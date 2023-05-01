@@ -4,6 +4,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
+    customUfo: STR_LARGE_SCOUT
     terrains: &AlliedOperationTerrains
       - MOUNTGRASS
       - PLAINSGRASS
@@ -114,6 +115,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
+    customUfo: STR_LARGE_SCOUT
     terrains: *AlliedOperationTerrains
     civiliansByType: &EuropeanTroopers
       STR_EUROPEAN_RIFLEMAN: 4
@@ -136,6 +138,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
+    customUfo: STR_LARGE_SCOUT
     terrains: *AlliedOperationTerrains
     civiliansByType: &SovietTroopers
       STR_SOVIET_RIFLEMAN: 4
@@ -159,6 +162,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
+    customUfo: STR_TROOP_LANDER
     terrains: &AlliedCityDefenseTerrains
       - CULTA
       - RURAL
@@ -200,6 +204,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
+    customUfo: STR_TROOP_LANDER
     terrains: *AlliedCityDefenseTerrains
     civiliansByType: &EuropeanTroopersCityDefense
       STR_EUROPEAN_RIFLEMAN: 4
@@ -235,6 +240,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 10
+    customUfo: STR_TROOP_LANDER
     terrains: *AlliedCityDefenseTerrains
     civiliansByType: &SovietTroopersCityDefense
       STR_SOVIET_RIFLEMAN: 4

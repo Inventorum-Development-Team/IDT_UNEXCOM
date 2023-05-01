@@ -382,13 +382,21 @@ commendations:
       -
          - [1, ["STR_KHARITONOV_LASER_BATTLE_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
-         - [1, ["STR_HUMAN_PLASMA_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+         - [1, ["STR_UN_PLASMA_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_US_PLASMA_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_SOVIET_PLASMA_ASSAULT_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]         
       -
          - [1, ["STR_HUMAN_FUSION_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
          - [1, ["STR_FLECHETTE_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
          - [1, ["STR_GYROJET_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_GAUSS_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_ELECTRIC_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
 ######################
 #Pistol Marksman Medal
@@ -426,9 +434,7 @@ commendations:
       -
          - [1, ["STR_P72_COMPACT_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
-         - [1, ["STR_HUMAN_PLASMA_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
-      -
-         - [1, ["STR_HUMAN_PLASMA_MAGNUM", "FACTION_HOSTILE", "STATUS_DEAD"]]
+         - [1, ["STR_NATO_PLASMA_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
          - [1, ["STR_FLECHETTE_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
@@ -474,6 +480,8 @@ commendations:
       -
          - [1, ["STR_FN_FLA_LASER_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
+         - [1, ["STR_NATO_PLASMA_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]         
+      -
          - [1, ["STR_FLECHETTE_CARBINE", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
 ######################
@@ -506,7 +514,10 @@ commendations:
       -
          - [1, ["STR_AN_MACHINE_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
-         - [1, ["STR_HUMAN_PLASMA_LMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+         - [1, ["STR_SOVIET_PLASMA_LMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_FLECHETTE_CANNON", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
 
 ######################
 #SMG Marksman Medal
@@ -538,7 +549,7 @@ commendations:
       -
          - [1, ["STR_ALP_SUBMACHINE_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
-         - [1, ["STR_HUMAN_PLASMA_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+         - [1, ["STR_SOVIET_PLASMA_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
 ################################
 #Artillery Specialist Medal
@@ -570,7 +581,9 @@ commendations:
       -
          - [1, ["STR_AFINA_ANTITANK_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
-         - [1, ["STR_HUMAN_HEAVY_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+         - [1, ["STR_US_PLASMA_RL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      -
+         - [1, ["STR_US_PLASMA_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]   
       -
          - [1, ["STR_HUMAN_SMALL_LAUNCHER", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
@@ -609,12 +622,11 @@ commendations:
       -
          - [1, ["STR_MIRINOV_LASER_SNIPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
-         - [1, ["STR_HUMAN_PLASMA_DMR", "FACTION_HOSTILE", "STATUS_DEAD"]]
-      -
-         - [1, ["STR_HUMAN_SNIPER_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+         - [1, ["STR_NATO_SNIPER_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
          - [1, ["STR_FLECHETTE_SNIPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
-
+      -
+         - [1, ["STR_GAUSS_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
 ######################
 #Shotgun Specialist Medal
@@ -642,10 +654,13 @@ commendations:
       -
          - [1, ["STR_X4_LASER_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
+         - [1, ["STR_US_PLASMA_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]         
+      -
          - [1, ["STR_FLECHETTE_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
       -
          - [1, ["STR_FLECHETTE_AUTO_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
-
+      -
+         - [1, ["STR_ELECTRIC_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
 ######################
 #Grenadier Specialist Medal
