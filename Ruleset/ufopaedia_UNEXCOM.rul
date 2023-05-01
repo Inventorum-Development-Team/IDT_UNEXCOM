@@ -3294,8 +3294,14 @@ ufopaedia:
     text: STR_GAUSS_RIFLE_UFOPEDIA
     listOrder: 4753
 
-
-
+  - id: STR_HUMAN_SMALL_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS
+    requires:
+      - STR_REMAN_SMALL_LAUNCHER
+    text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
+    listOrder: 4712
+    
 #Melee
 
   - id: STR_MELEE_REPORT
