@@ -11,13 +11,14 @@ items:
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
     size: 0.2
-    costBuy: 400000
+    #costBuy: 400000
     costSell: 240000
     weight: 27
     bigSprite: 2416
     floorSprite: 2416
     handSprite: 2416
     bulletSprite: 33
+    bulletSpeed: 15
     fireSound: [3001, 3002, 3003]
     reloadSound: 3000
     compatibleAmmo:
@@ -60,7 +61,7 @@ items:
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
     size: 0.1
-    costBuy: 60000
+    #costBuy: 60000
     costSell: 42000
     weight: 4
     bigSprite: 2400
@@ -91,7 +92,7 @@ items:
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
     size: 0.25
-    costBuy: 300000
+    #costBuy: 300000
     costSell: 100000
     transferTime: 96
     weight: 14
@@ -133,8 +134,8 @@ items:
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
     size: 0.05
-    costBuy: 3000
-    costSell: 1200
+    #costBuy: 3000
+    costSell: 12000
     transferTime: 96
     weight: 3
     bigSprite: 2440
@@ -173,7 +174,46 @@ items:
 
 #########################################
 
+manufacture:
+  - name: STR_GAUSS_RIFLE
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 80000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
 
+  - name: STR_GAUSS_RIFLE_MAG
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+
+  - name: STR_ELECTRIC_RIFLE
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
+
+  - name: STR_ELECTRIC_RIFLE_MAG
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
 
 extraSprites:
   - type: BIGOBS.PCK
