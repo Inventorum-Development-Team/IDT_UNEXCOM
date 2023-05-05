@@ -1278,6 +1278,16 @@ items:
     vaporDensitySurface: 6
     listOrder: 5390
 
+manufacture:
+  - name: STR_UN_PLASMA_RIFLE
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
 research:
 
   - name: STR_ELERIUM_BOMB
