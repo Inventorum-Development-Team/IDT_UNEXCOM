@@ -176,6 +176,9 @@ missionScripts:
     missionWeights:
       0:
         STR_HUMAN_TERROR_ATTACK: 100
+    regionWeights:
+      0:
+        REGION_TERRORIST_ATTACK: 100
     useTable: false
     researchTriggers:
       STR_END_OF_TERRORISTS: false
@@ -187,6 +190,9 @@ missionScripts:
     missionWeights:
       0:
         STR_TERRORIST_HQ: 100
+    regionWeights:
+      0:
+        REGION_TERRORIST_HQ: 100
     useTable: false
     researchTriggers:
       STR_TERRORIST_HQ: true

@@ -832,6 +832,119 @@ research:
       - STR_PLASMA_BLASTER
       - STR_PLASMA_SNIPER_RIFLE
 
+  - name: STR_HEAVY_PLASMA
+    cost: 800
+    points: 30
+    needItem: true
+  - name: STR_HEAVY_PLASMA_CLIP
+    cost: 400
+    points: 7
+    needItem: true
+  - name: STR_PLASMA_RIFLE
+    cost: 700
+    points: 25
+    needItem: true
+  - name: STR_PLASMA_RIFLE_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+  - name: STR_PLASMA_PISTOL
+    cost: 600
+    points: 20
+    needItem: true
+  - name: STR_PLASMA_PISTOL_CLIP
+    cost: 400
+    points: 5
+    needItem: true
+  - name: STR_ELERIUM_BOMB
+    cost: 180
+    points: 10
+    needItem: true
+    #listOrder: 4401
+  - name: STR_TOXIGUN
+    cost: 200
+    points: 20
+    needItem: true
+    #listOrder: 4450
+  - name: STR_TOXIGUN_FLASK
+    cost: 300
+    points: 15
+    needItem: true
+    #listOrder: 4451
+  - name: STR_PLASMA_CASTER
+    cost: 400
+    points: 25
+    needItem: true
+    #listOrder: 3750
+  - name: STR_PLASMA_CASTER_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    #listOrder: 3751
+  - name: STR_PLASMA_BLASTER
+    cost: 900
+    points: 25
+    needItem: true
+    #listOrder: 2750
+  - name: STR_PLASMA_BLASTER_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    #listOrder: 2751
+  - name: STR_PLASMA_SNIPER_RIFLE
+    cost: 700
+    points: 25
+    needItem: true
+    #listOrder: 3950
+  - name: STR_PLASMA_SNIPER_RIFLE_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    #listOrder: 3951
+
+  - name: STR_PLASMA_CANNON_DEP2
+    cost: 0
+    dependencies:
+      - STR_PLASMA_BLASTER
+      - STR_PLASMA_BLASTER_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+  - name: STR_PLASMA_CANNON_DEP3
+    dependencies:
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_PLASMA_SNIPER_RIFLE
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+  - name: STR_PLASMA_CANNON_DEP4
+    cost: 0
+    dependencies:
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_CASTER_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+  - name: STR_PLASMA_CANNON_DEP5
+    cost: 0
+    dependencies:
+      - STR_PLASMA_SNIPER_RIFLE
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_PLASMA_CASTER
+      - STR_PLASMA_CASTER_CLIP
+    unlocks:
+      - STR_PLASMA_CANNON
+
+  - name: STR_ALIEN_GRENADE
+    cost: 250
+    points: 20
+    needItem: true
+
   - name: STR_HUMAN_PLASMA_WEAPONS_THEORY
     cost: 1000
     points: 100
