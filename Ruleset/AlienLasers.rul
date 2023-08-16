@@ -142,6 +142,7 @@ items:
 manufacture:
 
   - name: STR_DISASSEMBLE_LASER_PISTOL
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_ALIEN_LASER_PISTOL
     time: 20
@@ -154,6 +155,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 2
 
   - name: STR_DISASSEMBLE_LASER_RIFLE
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_ALIEN_LASER_RIFLE
     time: 25
@@ -166,6 +168,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 3
 
   - name: STR_DISASSEMBLE_HEAVY_LASER
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_ALIEN_HEAVY_LASER
     time: 30
