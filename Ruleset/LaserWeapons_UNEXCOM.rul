@@ -168,24 +168,24 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
-    confAimed:
+    confSnap:
       shots: 3
       name: STR_BURST
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 65
-    accuracySnap: 65
-    accuracyAimed: 60
-    costSnap:
-      time: 35
-      mana: 1
-    costAimed:
-      time: 40
-      mana: 3
+    accuracyAuto: 50
+    accuracySnap: 60
+    accuracyAimed: 75
     costAuto:
       time: 45
       mana: 5
+    costSnap:
+      time: 40
+      mana: 1
+    costAimed:
+      time: 50
+      mana: 3
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -1091,8 +1091,8 @@ items:
     confAuto:
       shots: 2
       name: STR_DOUBLE_TAP
-    accuracyAimed: 90
-    accuracySnap: 70
+    accuracyAimed: 90 
+    accuracySnap: 70 
     accuracyAuto: 50
     costAimed:
       time: 40
