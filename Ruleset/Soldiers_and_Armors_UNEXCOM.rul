@@ -98,6 +98,7 @@ soldiers:
     standHeight: 22
     kneelHeight: 14
     femaleFrequency: 25
+    allowPiloting: false
     soldierNames:
       - delete
       - SpecialForcesNames/
@@ -148,6 +149,11 @@ soldiers:
     standHeight: 22
     kneelHeight: 14
     femaleFrequency: 25
+    allowPiloting: true
+    dogfightExperience:
+      bravery: 50
+      reactions: 50
+      firing: 80
     soldierNames:
       - delete
       - MercenaryNames/
@@ -209,7 +215,7 @@ soldiers:
     deathFemale: [44, 45, 46]
     allowPiloting: true
     dogfightExperience:
-      bravery: 50
+      bravery: 80
       reactions: 75
       firing: 100
     rankStrings:
