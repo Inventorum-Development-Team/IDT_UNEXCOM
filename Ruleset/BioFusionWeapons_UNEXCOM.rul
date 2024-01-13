@@ -3,7 +3,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 100
-    size: 2
+    size: 0.08
     costSell: 65000
     categories: [STR_FUSION, STR_PISTOLS, STR_ALIEN_TECH]
     weight: 8
@@ -50,7 +50,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 101
-    size: 1
+    size: 0.1
     costSell: 70000
     categories: [STR_FUSION, STR_SMGS, STR_ALIEN_TECH]
     weight: 14
@@ -99,7 +99,7 @@ items:
     requiresBuy:
       - STR_ALIENS_ONLY
     listOrder: 102
-    size: 1
+    size: 0.1
     costSell: 75000
     categories: [STR_FUSION, STR_PISTOLS, STR_SMGS, STR_ALIEN_TECH]
     weight: 4
@@ -126,7 +126,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 103
-    size: 2
+    size: 0.2
     costSell: 78000
     categories: [STR_FUSION, STR_RIFLES, STR_ALIEN_TECH]
     weight: 16
@@ -173,7 +173,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 104
-    size: 1
+    size: 0.3
     costSell: 8000
     categories: [STR_FUSION, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
     weight: 18
@@ -219,7 +219,7 @@ items:
     experienceTrainingMode: 0
   - type: STR_HUMAN_FUSION_RIFLE
     listOrder: 105
-    size: 2
+    size: 0.2
     costSell: 100000
     categories: [STR_FUSION, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
     weight: 10
@@ -271,7 +271,7 @@ items:
     requiresBuy:
       - STR_ALIENS_ONLY
     listOrder: 106
-    size: 1
+    size: 0.05
     costSell: 10000
     categories: [STR_FUSION, STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
     weight: 8
@@ -299,7 +299,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 107
-    size: 1
+    size: 0.1
     costSell: 8000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
     weight: 18
@@ -347,7 +347,7 @@ items:
     requiresBuy:
       - STR_ALIENS_ONLY
     listOrder: 108
-    size: 1
+    size: 0.1
     costSell: 10000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
     weight: 8
@@ -378,7 +378,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 109
-    size: 1
+    size: 0.1
     costSell: 8000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
     weight: 18
@@ -421,7 +421,7 @@ items:
 
   - type: STR_ETHEREAL_NOBLE_SWORD
     categories: [STR_FUSION, STR_MELEE, STR_ALIEN_TECH]
-    size: 0.2
+    size: 0.1
     costSell: 35000
     weight: 6
     bigSprite: 1109
@@ -467,7 +467,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 110
-    size: 1
+    size: 0.1
     costSell: 8000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
     weight: 18
@@ -501,7 +501,7 @@ items:
     requires:
       - STR_ALIENS_ONLY
     listOrder: 111
-    size: 1
+    size: 0.1
     costSell: 10000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
     weight: 8

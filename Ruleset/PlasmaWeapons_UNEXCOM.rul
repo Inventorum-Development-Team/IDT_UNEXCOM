@@ -562,9 +562,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiredBuyCountry:
+      - STR_USA
     weight: 30
     armor: 60
     bigSprite: 3208
@@ -610,9 +612,11 @@ items:
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     ##listOrder: 5251
-    size: 0.2
+    size: 0.02
     costBuy: 9000
     costSell: 3000
+    requiredBuyCountry:
+      - STR_USA
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
@@ -637,9 +641,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.5
+    size: 0.05
     costBuy: 36000
     costSell: 30000
+    requiredBuyCountry:
+      - STR_USA
     weight: 45
     armor: 80
     bigSprite: 3216
@@ -679,9 +685,11 @@ items:
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costBuy: 2600
     costSell: 1200
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 3288
     handSprite: 3288
@@ -707,9 +715,11 @@ items:
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costBuy: 2600
     costSell: 1200
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 3296
     handSprite: 3296
@@ -737,10 +747,12 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.2
+    size: 0.02
     armor: 50
     costBuy: 38000
     costSell: 32000
+    requiredBuyCountry:
+      - STR_USA
     weight: 25
     bigSprite: 3224
     floorSprite: 3224
@@ -784,8 +796,11 @@ items:
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     ##listOrder: 5451
+    size: 0.01
     costBuy: 14000
     costSell: 12000
+    requiredBuyCountry:
+      - STR_USA
     hitAnimation: 110
     power: 70 # 52
     clipSize: 5 # 26
@@ -818,9 +833,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 44000
+    requiredBuyCountry:
+      - STR_FRANCE
     weight: 25
     armor: 60
     bigSprite: 3232
@@ -867,9 +884,11 @@ items:
     ##listOrder: 5251
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costSell: 3000
     costBuy: 5000
+    requiredBuyCountry:
+      - STR_FRANCE
     bigSprite: 3312
     floorSprite: 3312
     handSprite: 3312 # ALL GOOD
@@ -894,9 +913,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.1
+    size: 0.01
     costBuy: 30000
     costSell: 20000
+    requiredBuyCountry:
+      - STR_UK
     weight: 6
     armor: 40
     bigSprite: 3240
@@ -933,8 +954,11 @@ items:
     ##listOrder: 5451
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
     costBuy: 6000
     costSell: 5500
+    requiredBuyCountry:
+      - STR_UK
     hitAnimation: 110
     power: 70 # 52
     clipSize: 12 # 26
@@ -957,9 +981,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.4
+    size: 0.04
     costBuy: 66000
     costSell: 55000
+    requiredBuyCountry:
+      - STR_WEST_GERMANY
     weight: 35
     armor: 60
     bigSprite: 3248
@@ -1006,8 +1032,11 @@ items:
     ##listOrder: 5177
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
     costBuy: 13000
     costSell: 11000
+    requiredBuyCountry:
+      - STR_WEST_GERMANY
     hitAnimation: 110
     power: 150 # 115
     clipSize: 6 # 35
@@ -1034,9 +1063,12 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.3
+    size: 0.03
     costBuy: 48000
     costSell: 42000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 28
     armor: 60
     bigSprite: 3256
@@ -1103,9 +1135,12 @@ items:
     ##listOrder: 5251
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costSell: 8000
     costBuy: 9000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     bigSprite: 3336
     floorSprite: 3336
     handSprite: 3336 # ALL GOOD
@@ -1130,9 +1165,12 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.4
+    size: 0.04
     costBuy: 75000
     costSell: 69000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 40
     armor: 70
     bigSprite: 3264
@@ -1183,8 +1221,12 @@ items:
     ##listOrder: 5177
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.01
     costBuy: 170000
     costSell: 15000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     hitAnimation: 110
     power: 75 # 115
     clipSize: 50 # 35
@@ -1208,9 +1250,12 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costBuy: 27000
     costSell: 22000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 20
     bigSprite: 3272
     floorSprite: 3272
@@ -1258,8 +1303,12 @@ items:
     ##listOrder: 5451
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.01
     costBuy: 12000
     costSell: 11000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     hitAnimation: 110
     power: 80 # 52
     clipSize: 25 # 26

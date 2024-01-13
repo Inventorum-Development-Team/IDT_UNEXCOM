@@ -65,9 +65,12 @@ items:
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 900
     costSell: 250
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 3
     bigSprite: 97
     floorSprite: 97
@@ -97,6 +100,9 @@ items:
     size: 0.1
     costBuy: 900
     costSell: 250
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 3
     bigSprite: 98
     floorSprite: 98
@@ -121,9 +127,12 @@ items:
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 900
     costSell: 250
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 3
     bigSprite: 99
     floorSprite: 99
@@ -152,9 +161,12 @@ items:
     requiresBuy:
       - STR_9MM_10X_UNLOCK
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 100
     costSell: 50
+    requiresBuyCountry:
+      - STR_WEST_GERMANY
+      - STR_EAST_GERMANY
     weight: 3
     bigSprite: 100
     floorSprite: 100
@@ -177,9 +189,12 @@ items:
   - type: STR_9MM_PISTOL_X20
     refNode: *STR_9MM_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 200
     costSell: 100
+    requiresBuyCountry:
+      - STR_WEST_GERMANY
+      - STR_EAST_GERMANY
     weight: 3
     bigSprite: 101
     floorSprite: 101
@@ -203,9 +218,12 @@ items:
   - type: STR_9MM_PISTOL_X30
     refNode: *STR_9MM_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 300
     costSell: 200
+    requiresBuyCountry:
+      - STR_WEST_GERMANY
+      - STR_EAST_GERMANY
     weight: 3
     bigSprite: 102
     floorSprite: 102
@@ -231,9 +249,11 @@ items:
       - STR_USA_SUPPORT_RESEARCH
     refNode: *STR_45_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 200
     costSell: 10
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 103
     floorSprite: 103
@@ -260,9 +280,11 @@ items:
       - STR_USA_SUPPORT_RESEARCH
     refNode: *STR_45_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 300
     costSell: 230
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 104
     floorSprite: 104
@@ -288,9 +310,11 @@ items:
       - STR_556_X20_UNLOCK
     refNode: *STR_5_56MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 275
     costSell: 225
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 105
     floorSprite: 105
@@ -312,8 +336,10 @@ items:
   - type: STR_5_56MM_NATO_RIFLE_X30
     refNode: *STR_5_56MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costSell: 525
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 106
     floorSprite: 106
@@ -344,9 +370,11 @@ items:
       ]
     requiresBuy:
       - STR_NATO_X5_UNLOCK
-    size: 0.1
+    size: 0.01
     costBuy: 100
     costSell: 75
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 107
     floorSprite: 107
@@ -368,9 +396,11 @@ items:
   - type: STR_7_62MM_NATO_RIFLE_X20
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 295
     costSell: 275
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 108
     floorSprite: 108
@@ -394,9 +424,11 @@ items:
       - STR_762_X30_UNLOCK
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 355
     costSell: 325
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 109
     floorSprite: 109
@@ -421,9 +453,11 @@ items:
       - STR_NATO_LMG_UNLOCK
     refNode: *STR_7_62MM_NATO_LMG_AMMO
     categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 400
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 110
     floorSprite: 110
@@ -448,9 +482,11 @@ items:
       - STR_NATO_LMG_UNLOCK
     refNode: *STR_7_62MM_NATO_LMG_AMMO
     categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 700
     costSell: 600
+    requiresBuyCountry:
+      - STR_USA
     weight: 3
     bigSprite: 111
     floorSprite: 111
@@ -482,9 +518,12 @@ items:
         STR_SNIPER_RIFLES,
         STR_CLIPS
       ]
-    size: 0.1
+    size: 0.01
     costBuy: 275
     costSell: 225
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 1
     bigSprite: 112
     floorSprite: 112
@@ -507,9 +546,12 @@ items:
       - STR_SOVIET_762_UNLOCK
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 375
     costSell: 325
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 3
     bigSprite: 113
     floorSprite: 113
@@ -532,9 +574,12 @@ items:
       - STR_SOVIET_762_UNLOCK
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 475
     costSell: 425
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 4
     bigSprite: 114
     floorSprite: 114
@@ -557,9 +602,12 @@ items:
     categories: [ STR_FIREARMS, STR_RIFLES, STR_LMGS, STR_CLIPS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 675
     costSell: 525
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 5
     bigSprite: 115
     floorSprite: 115
@@ -583,9 +631,12 @@ items:
     categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 675
     costSell: 525
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 4
     bigSprite: 116
     floorSprite: 116
@@ -607,7 +658,7 @@ items:
     requiresBuy:
       - STR_12G_X2_UNLOCK
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 100
     costSell: 50
     weight: 3
@@ -635,7 +686,7 @@ items:
     requiresBuy:
       - STR_12G_X2_UNLOCK
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 100
     costSell: 50
     weight: 3
@@ -659,7 +710,7 @@ items:
     listOrder: 200120
   - type: STR_12GAUGE_BUCKSHOT_X8
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 250
     weight: 3
@@ -685,7 +736,7 @@ items:
     listOrder: 200280
   - type: STR_12GAUGE_NON_LETHAL_X8
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 900
     costSell: 850
     weight: 3
@@ -712,7 +763,7 @@ items:
     listOrder: 200290
   - type: STR_12GAUGE_SLUG_X8
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 600
     costSell: 250
     weight: 3
@@ -736,7 +787,7 @@ items:
     listOrder: 200300
   - type: STR_12GAUGE_ELERIUM_SHARDS_X8
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_FUSION ]
-    size: 0.1
+    size: 0.01
     requires:
       - STR_ELERIUM_FUSION
     costSell: 25000
@@ -766,9 +817,11 @@ items:
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 470
+    requiresBuyCountry:
+    - STR_USA
     weight: 2
     bigSprite: 123
     floorSprite: 123
@@ -792,9 +845,11 @@ items:
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 600
     costSell: 400
+    requiresBuyCountry:
+    - STR_USA
     weight: 2
     bigSprite: 124
     floorSprite: 124
@@ -814,9 +869,11 @@ items:
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 300
     costSell: 200
+    requiresBuyCountry:
+    - STR_USA
     weight: 2
     bigSprite: 125
     floorSprite: 125
@@ -834,9 +891,11 @@ items:
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 1500
     costSell: 800
+    requiresBuyCountry:
+    - STR_USA
     weight: 2
     bigSprite: 126
     floorSprite: 126
@@ -858,9 +917,11 @@ items:
 
   - type: STR_38_REVOLVER_AMMO_X6
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_CLIPS ]
-    size: 0.1
+    size: 0.01
     costBuy: 80
     costSell: 40
+    requiresBuyCountry:
+    - STR_USA
     weight: 2
     bigSprite: 127
     floorSprite: 127
@@ -878,9 +939,11 @@ items:
     requiresBuy:
       - STR_LR_UNLOCK
     categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 600
     costSell: 500
+    requiresBuyCountry:
+    - STR_USA
     weight: 3
     bigSprite: 128
     floorSprite: 128
@@ -900,7 +963,7 @@ items:
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 300
     costSell: 250
     weight: 2
@@ -921,9 +984,11 @@ items:
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 1600
     costSell: 1200
+    requiresBuyCountry:
+    - STR_USA
     weight: 8
     bigSprite: 1080
     floorSprite: 1080
@@ -951,7 +1016,7 @@ items:
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 1600
     costSell: 1200
     weight: 6
@@ -979,7 +1044,7 @@ items:
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 6200
     costSell: 5000
     weight: 6
@@ -1010,7 +1075,7 @@ items:
     requires:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_ELERIUM_FUSION
-    size: 0.2
+    size: 0.02
     costSell: 50000
     weight: 6
     bigSprite: 132
@@ -1044,9 +1109,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 1600
     costSell: 1200
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 6
     bigSprite: 133
     floorSprite: 133
@@ -1078,9 +1146,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 2200
     costSell: 2000
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 6
     bigSprite: 134
     floorSprite: 134
@@ -1110,7 +1181,7 @@ items:
     requires:
       - STR_USSR_SUPPORT_RESEARCH
       - STR_ELERIUM_FUSION
-    size: 0.2
+    size: 0.02
     costSell: 30000
     weight: 6
     bigSprite: 135
@@ -1144,9 +1215,11 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_PISTOLS ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 1200
     costSell: 900
+    requiresBuyCountry:
+    - STR_USA
     weight: 3
     bigSprite: 136
     floorSprite: 136
@@ -1183,7 +1256,7 @@ items:
 
   - type: STR_M16_M203
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES ]
-    size: 0.3
+    size: 0.03
     costSell: 5400
     weight: 12
     bigSprite: 137
@@ -1248,9 +1321,11 @@ items:
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 3000
     costSell: 2750
+    requiresBuyCountry:
+    - STR_USA
     weight: 8
     bigSprite: 138
     floorSprite: 138
@@ -1293,9 +1368,11 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SMGS ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 2000
     costSell: 1800
+    requiresBuyCountry:
+    - STR_USA
     weight: 9
     bigSprite: 139
     floorSprite: 139
@@ -1350,9 +1427,11 @@ items:
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 5000
     costSell: 4750
+    requiresBuyCountry:
+    - STR_USA
     weight: 12
     bigSprite: 140
     floorSprite: 140
@@ -1396,9 +1475,11 @@ items:
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.3
+    size: 0.03
     costBuy: 1700
     costSell: 520
+    requiresBuyCountry:
+    - STR_USA
     weight: 7
     bigSprite: 141
     floorSprite: 141
@@ -1446,9 +1527,11 @@ items:
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 5500
     costSell: 2250
+    requiresBuyCountry:
+    - STR_USA
     weight: 15
     bigSprite: 142
     floorSprite: 142
@@ -1481,9 +1564,11 @@ items:
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.4
+    size: 0.04
     costBuy: 950
     costSell: 850
+    requiresBuyCountry:
+    - STR_USA
     weight: 7
     bigSprite: 143
     floorSprite: 143
@@ -1529,9 +1614,11 @@ items:
       ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.4
+    size: 0.04
     costBuy: 25000
     costSell: 30000
+    requiresBuyCountry:
+    - STR_USA
     weight: 6
     bigSprite: 1072
     floorSprite: 1072
@@ -1564,9 +1651,11 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_LMGS ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
-    size: 0.4
+    size: 0.04
     costBuy: 12000
     costSell: 9400
+    requiresBuyCountry:
+    - STR_USA
     weight: 20
     bigSprite: 144
     floorSprite: 144
@@ -1614,11 +1703,13 @@ items:
         STR_US_TECH,
         STR_SNIPER_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     requiresBuy:
       - STR_IMPROVED_BOMBER
     costBuy: 1500
     costSell: 1150
+    requiresBuyCountry:
+    - STR_USA
     weight: 5
     bigSprite: 145
     floorSprite: 145
@@ -1656,9 +1747,11 @@ items:
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 700
     costSell: 580
+    requiresBuyCountry:
+    - STR_ITALY
     weight: 4
     bigSprite: 146
     floorSprite: 146
@@ -1707,7 +1800,7 @@ items:
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 6500
     costSell: 5750
     weight: 12
@@ -1764,7 +1857,7 @@ items:
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 3000
     costSell: 2500
     weight: 7
@@ -1812,9 +1905,11 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 3000
     costSell: 2500
+    requiresBuyCountry:
+    - STR_WEST_GERMANY
     weight: 6
     bigSprite: 149
     floorSprite: 149
@@ -1873,9 +1968,11 @@ items:
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.3
+    size: 0.03
     costBuy: 15000
     costSell: 8200
+    requiresBuyCountry:
+    - STR_WEST_GERMANY
     weight: 16
     bigSprite: 150
     floorSprite: 150
@@ -1920,7 +2017,7 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LMGS ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.3
+    size: 0.03
     costBuy: 11000
     costSell: 9000
     weight: 13
@@ -1973,7 +2070,7 @@ items:
       ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
-    size: 0.4
+    size: 0.04
     costBuy: 16000
     costSell: 10000
     weight: 10
@@ -2012,9 +2109,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.1
+    size: 0.01
     costBuy: 400
     costSell: 250
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 4
     bigSprite: 153
     floorSprite: 153
@@ -2068,9 +2168,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 2700
     costSell: 1550
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 10
     bigSprite: 154
     floorSprite: 154
@@ -2140,9 +2243,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 3200
     costSell: 2000
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 8
     bigSprite: 155
     floorSprite: 155
@@ -2198,9 +2304,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.3
+    size: 0.03
     costBuy: 350
     costSell: 250
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 6
     bigSprite: 156
     floorSprite: 156
@@ -2252,9 +2361,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 7000
     costSell: 5500
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 12
     bigSprite: 157
     floorSprite: 157
@@ -2299,9 +2411,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 2200
     costSell: 1800
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 12
     bigSprite: 158
     floorSprite: 158
@@ -2355,9 +2470,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.2
+    size: 0.02
     costBuy: 7600
     costSell: 6600
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 8
     bigSprite: 159
     floorSprite: 159
@@ -2392,9 +2510,12 @@ items:
       ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
-    size: 0.3
+    size: 0.03
     costBuy: 9000
     costSell: 8000
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 15
     bigSprite: 160
     floorSprite: 160
@@ -2451,9 +2572,12 @@ items:
         STR_CIVILIAN_TECH,
         STR_PISTOLS
       ]
-    size: 0.1
+    size: 0.01
     costBuy: 900
     costSell: 800
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 4
     bigSprite: 161
     floorSprite: 161
@@ -2501,7 +2625,7 @@ items:
         STR_CIVILIAN_TECH,
         STR_PISTOLS
       ]
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 400
     weight: 3
@@ -2550,7 +2674,7 @@ items:
         STR_CIVILIAN_TECH,
         STR_SNIPER_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 1600
     costSell: 1000
     weight: 11
@@ -2588,7 +2712,7 @@ items:
         STR_CIVILIAN_TECH,
         STR_SHOTGUNS
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 1500
     costSell: 2000
     weight: 11
@@ -2630,7 +2754,7 @@ items:
     requiresBuy:
       - STR_MACHETE
     categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
-    size: 0.2
+    size: 0.02
     costBuy: 800
     costSell: 500
     weight: 5
@@ -2668,7 +2792,7 @@ items:
     requiresBuy:
       - STR_SHOVEL
     categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
-    size: 0.2
+    size: 0.02
     costBuy: 1200
     costSell: 800
     weight: 8
@@ -2716,9 +2840,11 @@ items:
         STR_CIVILIAN_TECH,
         STR_PISTOLS
       ]
-    size: 0.1
+    size: 0.01
     costBuy: 1500
     costSell: 1000
+    requiresBuyCountry:
+    - STR_USA
     weight: 5
     bigSprite: 166
     floorSprite: 166
@@ -2764,9 +2890,11 @@ items:
         STR_CIVILIAN_TECH,
         STR_SMGS
       ]
-    size: 0.3
+    size: 0.03
     costBuy: 3000
     costSell: 2500
+    requiresBuyCountry:
+    - STR_ITALY
     weight: 5
     bigSprite: 167
     floorSprite: 167
@@ -2819,7 +2947,7 @@ items:
         STR_SHOTGUNS,
         STR_FUSION
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 1500
     costSell: 1100
     weight: 8
@@ -2868,7 +2996,7 @@ items:
     requiresBuy:
       - STR_POLICE_TONFA
     categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
-    size: 0.2
+    size: 0.02
     costBuy: 600
     costSell: 500
     weight: 5
@@ -2911,9 +3039,11 @@ items:
         STR_MERCENARY_TECH,
         STR_PISTOLS
       ]
-    size: 0.2
-    costBuy: 0
+    size: 0.02
+    costBuy: 2000
     costSell: 1100
+    requiresBuyCountry:
+    - STR_USA
     weight: 4
     bigSprite: 224
     floorSprite: 224
@@ -2959,9 +3089,11 @@ items:
         STR_US_TECH,
         STR_CARBINES
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 900
     costSell: 400
+    requiresBuyCountry:
+    - STR_USA
     weight: 5
     bigSprite: 248
     floorSprite: 248
@@ -3001,9 +3133,11 @@ items:
       - STR_M1_CARBINE
     refNode: *STR_9MM_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_CLIPS ]
-    size: 0.05
+    size: 0.005
     costBuy: 100
     costSell: 50
+    requiresBuyCountry:
+    - STR_USA
     weight: 3
     bigSprite: 102
     floorSprite: 102
@@ -3035,9 +3169,11 @@ items:
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES ]
-    size: 0.2
+    size: 0.02
     costBuy: 4500
     costSell: 3750
+    requiresBuyCountry:
+    - STR_USA
     weight: 7
     bigSprite: 170
     floorSprite: 170
@@ -3092,7 +3228,7 @@ items:
         STR_NATO_TECH,
         STR_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 4500
     costSell: 3750
     weight: 12
@@ -3136,9 +3272,11 @@ items:
     requiresBuy:
       - STR_BREN
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LMGS ]
-    size: 0.4
+    size: 0.04
     costBuy: 6200
     costSell: 5000
+    requiresBuyCountry:
+    - STR_UK
     weight: 10
     bigSprite: 172
     floorSprite: 172
@@ -3184,9 +3322,11 @@ items:
     requiresBuy:
       - STR_OWEN_SMG
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS ]
-    size: 0.3
+    size: 0.03
     costBuy: 2600
     costSell: 2000
+    requiresBuyCountry:
+    - STR_AUSTRALIA
     weight: 7
     bigSprite: 173
     floorSprite: 173
@@ -3243,9 +3383,12 @@ items:
         STR_SOVIET_TECH,
         STR_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 2500
     costSell: 1500
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 8
     bigSprite: 174
     floorSprite: 174
@@ -3299,9 +3442,12 @@ items:
         STR_SOVIET_TECH,
         STR_SNIPER_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 3500
     costSell: 2750
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 9
     bigSprite: 175
     floorSprite: 175
@@ -3339,9 +3485,12 @@ items:
         STR_SOVIET_TECH,
         STR_SMGS
       ]
-    size: 0.2
+    size: 0.02
     costBuy: 2500
     costSell: 1900
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 7
     bigSprite: 176
     floorSprite: 176
@@ -3390,7 +3539,7 @@ items:
   ######### UNEXCOM  NATO PROTOTYPE WEAPONS  ##########
   #####################################################
   - type: STR_MG3
-    size: 0.2
+    size: 0.02
     costSell: 27500
     weight: 8
     bigSprite: 177
@@ -3449,9 +3598,12 @@ items:
       ]
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-    size: 0.1
+    size: 0.01
     costBuy: 1750
     costSell: 800
+    requiresBuyCountry:
+    - STR_RUSSIA
+    - STR_UKRAINE
     weight: 6
     bigSprite: 178
     floorSprite: 178
@@ -3488,7 +3640,7 @@ items:
   - type: STR_RIOT_SHIELD
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-    size: 0
+    size: 0.01
     weight: 9
     costSell: 5000
     bigSprite: 179
@@ -3526,7 +3678,7 @@ items:
   ###############################
   - type: STR_CANNED_FOOD
     categories: [ STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 1200
     weight: 4
@@ -3557,7 +3709,7 @@ items:
 
   - type: STR_BREAD
     categories: [ STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 50
     costSell: 120
     weight: 1
@@ -3588,7 +3740,7 @@ items:
 
   - type: STR_CIGARETTES
     categories: [ STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.001
     costSell: 2000
     weight: 4
     bigSprite: 193
@@ -3618,7 +3770,7 @@ items:
 
   - type: STR_FLASK
     categories: [ STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costSell: 2000
     weight: 4
     bigSprite: 194
@@ -3649,7 +3801,7 @@ items:
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     requires:
       - STR_MEDI_KIT
-    size: 0.1
+    size: 0.01
     costSell: 46500
     weight: 5
     bigSprite: 24
@@ -3672,7 +3824,7 @@ items:
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
-    size: 0.5
+    size: 0.05
     costBuy: 2000
     costSell: 1000
     weight: 10
@@ -3700,7 +3852,7 @@ items:
 
   - type: STR_FIELD_DRESSING
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 100
     costSell: 50
     weight: 1
@@ -3726,7 +3878,7 @@ items:
 
   - type: STR_MEDICAL_POUCH
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 200
     costSell: 250
     weight: 2
@@ -3753,7 +3905,7 @@ items:
     requiresBuy:
       - STR_OLYMPUS
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-    size: 0.1
+    size: 0.01
     costBuy: 100
     costSell: 50
     weight: 1
@@ -3780,7 +3932,7 @@ items:
     requiresBuy:
       - STR_OLYMPUS
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-    size: 0.1
+    size: 0.01
     costBuy: 100
     costSell: 50
     weight: 3
@@ -3806,7 +3958,7 @@ items:
 
   - type: STR_BIO_FOAM
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-    size: 0.1
+    size: 0.01
     weight: 5
     costSell: 35000
     bigSprite: 204
@@ -3833,6 +3985,7 @@ items:
 
   - type: STR_ELECTRO_FLARE
     categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.005
     bigSprite: 888
     handSprite: 888
     floorSprite: 888
@@ -3846,7 +3999,7 @@ items:
 
   - type: STR_STUN_ROD
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-    size: 0.1
+    size: 0.01
     costBuy: 1260
     costSell: 945
     weight: 6
@@ -3874,9 +4027,11 @@ items:
       - STR_WEAPON_MODIFICATION
     categories: [ STR_MISC, STR_CUSTOM_WEAPON ]
     weight: 2
-    size: 0.1
+    size: 0.01
     costBuy: 300
     costSell: 250
+    requiresBuyCountry:
+    - STR_USA
     bigSprite: 190
     floorSprite: 190
     invWidth: 1
@@ -3890,9 +4045,11 @@ items:
       - STR_WEAPON_MODIFICATION
     categories: [ STR_MISC, STR_CUSTOM_WEAPON ]
     weight: 2
-    size: 0.1
+    size: 0.01
     costBuy: 400
     costSell: 350
+    requiresBuyCountry:
+    - STR_USA
     bigSprite: 191
     floorSprite: 191
     invWidth: 1
@@ -3915,7 +4072,7 @@ items:
       ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 2250
     weight: 8
     bigSprite: 181
@@ -3953,7 +4110,7 @@ items:
         STR_SHOTGUNS,
         STR_CUSTOM_WEAPON
       ]
-    size: 0.2
+    size: 0.02
     costSell: 3000
     weight: 8
     bigSprite: 182
@@ -3992,7 +4149,7 @@ items:
 
   - type: STR_COMBAT_KNIFE
     categories: [ STR_MELEE, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH ]
-    size: 0.2
+    size: 0.02
     costBuy: 300
     costSell: 200
     weight: 3
@@ -4037,7 +4194,7 @@ items:
       ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 1750
     weight: 9
     bigSprite: 183
@@ -4087,7 +4244,7 @@ items:
       ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 1750
     weight: 10
     bigSprite: 184
@@ -4146,7 +4303,7 @@ items:
       ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 1750
     weight: 12
     bigSprite: 185
@@ -4214,9 +4371,11 @@ items:
       ]
     requires:
       - STR_MERCENARY_SUPPORT
-    size: 0.2
+    size: 0.02
     costBuy: 3000
     costSell: 2500
+    requiresBuyCountry:
+    - STR_FRANCE
     weight: 5
     bigSprite: 180
     floorSprite: 180
@@ -4273,7 +4432,7 @@ items:
       ]
     requires:
       - STR_MERCENARY_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 2500
     weight: 7
     bigSprite: 186
@@ -4328,7 +4487,7 @@ items:
       ]
     requires:
       - STR_MERCENARY_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 2500
     weight: 7
     bigSprite: 187
@@ -4376,7 +4535,7 @@ items:
       ]
     requires:
       - STR_MERCENARY_SUPPORT
-    size: 0.2
+    size: 0.02
     costSell: 2500
     weight: 8
     bigSprite: 188
@@ -4448,7 +4607,7 @@ items:
         STR_RIFLES,
         STR_CUSTOM_WEAPON
       ]
-    size: 0.2
+    size: 0.02
     costSell: 3750
     weight: 7
     bigSprite: 211
@@ -4504,7 +4663,7 @@ items:
         STR_RIFLES,
         STR_CUSTOM_WEAPON
       ]
-    size: 0.2
+    size: 0.02
     costSell: 3750
     weight: 7
     bigSprite: 212
@@ -4574,9 +4733,11 @@ items:
       ]
     requires:
       - STR_MERCENARY_SUPPORT
-    size: 0.1
+    size: 0.01
     costBuy: 10500
     costSell: 9000
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 213
     floorSprite: 213
@@ -4620,7 +4781,7 @@ items:
       ]
     requires:
       - STR_MERCENARY_SUPPORT
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 600
     weight: 3
@@ -4647,11 +4808,13 @@ items:
         STR_UNEXCOM_TECH,
         STR_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     requiresBuy:
       - STR_ON_OUR_OWN
     costBuy: 4500
     costSell: 3750
+    requiredBuyCountry:
+      - STR_USA
     weight: 8
     fireSound: 170
     reloadSound: [ 186, 187, 188, 189 ]
@@ -4697,7 +4860,7 @@ items:
         STR_UNEXCOM_TECH,
         STR_CARBINES
       ]
-    size: 0.2
+    size: 0.02
     costSell: 2000
     weight: 6
     bigSprite: 1040
@@ -4748,7 +4911,7 @@ items:
         STR_UNEXCOM_TECH,
         STR_LMGS
       ]
-    size: 0.4
+    size: 0.04
     costSell: 5000
     weight: 13
     bigSprite: 1048
@@ -4799,7 +4962,7 @@ items:
         STR_UNEXCOM_TECH,
         STR_LMGS
       ]
-    size: 0.3
+    size: 0.03
     costSell: 9000
     weight: 10
     bigSprite: 1056
@@ -4848,7 +5011,7 @@ items:
         STR_UNEXCOM_TECH,
         STR_SNIPER_RIFLES
       ]
-    size: 0.2
+    size: 0.02
     costSell: 4750
     weight: 9
     bigSprite: 1064
@@ -4887,7 +5050,7 @@ items:
   #####################################
   - type: STR_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 300
     costSell: 240
     weight: 3
@@ -4910,7 +5073,7 @@ items:
 
   - type: STR_PROXIMITY_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 500
     costSell: 400
     weight: 3
@@ -4934,7 +5097,7 @@ items:
 
   - type: STR_HIGH_EXPLOSIVE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
-    size: 0.2
+    size: 0.02
     costBuy: 1500
     costSell: 1200
     weight: 6
@@ -4977,7 +5140,7 @@ items:
 
   - type: STR_FLASHBANG_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     costBuy: 1000
     costSell: 850
     weight: 4

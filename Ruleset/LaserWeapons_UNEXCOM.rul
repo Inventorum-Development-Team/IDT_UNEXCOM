@@ -15,7 +15,7 @@ items:
 #################################
   - type: STR_PEACEMAKER
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    size: 0.3
+    size: 0.03
     costSell: 60000
     weight: 6
     bigSprite: 1999
@@ -64,9 +64,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
-    size: 0.1
+    size: 0.01
     costBuy: 30000
     costSell: 20000
+    requiredBuyCountry:
+      - STR_USA
     weight: 4
     bigSprite: 2000
     floorSprite: 2000
@@ -108,9 +110,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
-    size: 0.2
+    size: 0.02
     costBuy: 40000
     costSell: 30000
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2001
     floorSprite: 2001
@@ -153,9 +157,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2002
     floorSprite: 2002
@@ -202,9 +208,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 45000
     costSell: 40000
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2003
     floorSprite: 2003
@@ -254,9 +262,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 40000
     costSell: 32000
+    requiredBuyCountry:
+      - STR_USA
     weight: 4
     bigSprite: 2004
     floorSprite: 2004
@@ -306,9 +316,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 65000
     costSell: 55000
+    requiredBuyCountry:
+      - STR_USA
     weight: 10
     bigSprite: 2005
     floorSprite: 2005
@@ -352,9 +364,11 @@ items:
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 38000
     costSell: 32000
+    requiredBuyCountry:
+      - STR_USA
     weight: 7
     bigSprite: 2006
     floorSprite: 2006
@@ -399,9 +413,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiredBuyCountry:
+      - STR_USA
     weight: 12
     bigSprite: 2007
     floorSprite: 2007
@@ -444,9 +460,11 @@ items:
     categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 42000
     costSell: 36500
+    requiredBuyCountry:
+      - STR_USA
     weight: 10
     bigSprite: 2008
     floorSprite: 2008
@@ -496,9 +514,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HANDGUNS
-    size: 0.1
+    size: 0.01
     costBuy: 30000
     costSell: 20000
+    requiredBuyCountry:
+      - STR_ITALY
     weight: 3
     bigSprite: 2009
     floorSprite: 2009
@@ -540,7 +560,7 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 52000
     costSell: 44000
     weight: 5
@@ -589,7 +609,7 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 44000
     weight: 4
@@ -637,9 +657,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiredBuyCountry:
+      - STR_WEST_GERMANY
     weight: 4
     bigSprite: 2012
     floorSprite: 2012
@@ -685,9 +707,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 30000
     costSell: 22000
+    requiredBuyCountry:
+      - STR_FRANCE
     weight: 3
     bigSprite: 2013
     floorSprite: 2013
@@ -737,9 +761,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 66000
     costSell: 55000
+    requiredBuyCountry:
+      - STR_UK
     weight: 7
     bigSprite: 2014
     floorSprite: 2014
@@ -784,9 +810,11 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 65000
     costSell: 54000
+    requiredBuyCountry:
+      - STR_WEST_GERMANY
     weight: 8
     bigSprite: 2015
     floorSprite: 2015
@@ -829,9 +857,11 @@ items:
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.4
+    size: 0.04
     costBuy: 36000
     costSell: 30000
+    requiredBuyCountry:
+      - STR_USA
     weight: 9
     bigSprite: 2016
     floorSprite: 2016
@@ -871,9 +901,11 @@ items:
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 2600
     costSell: 1200
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2017
     hitSound: 0
@@ -898,6 +930,8 @@ items:
     size: 0.2
     costBuy: 2600
     costSell: 1200
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2018
     hitSound: 0
@@ -921,9 +955,11 @@ items:
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 2200
     costSell: 1000
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2019
     hitSound: 0
@@ -947,9 +983,11 @@ items:
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
       - STR_ELERIUM_FUSION
-    size: 0.2
+    size: 0.02
     costBuy: 10000
     costSell: 8000
+    requiredBuyCountry:
+      - STR_USA
     weight: 6
     bigSprite: 2020
     hitSound: 0
@@ -977,9 +1015,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HANDGUNS
-    size: 0.1
+    size: 0.01
     costBuy: 25000
     costSell: 20000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 6
     bigSprite: 2021
     floorSprite: 2021
@@ -1021,9 +1062,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 48000
     costSell: 42000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 9
     bigSprite: 2022
     floorSprite: 2022
@@ -1072,9 +1116,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 38000
     costSell: 32000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 12
     bigSprite: 2023
     floorSprite: 2023
@@ -1091,8 +1138,8 @@ items:
     confAuto:
       shots: 2
       name: STR_DOUBLE_TAP
-    accuracyAimed: 90 
-    accuracySnap: 70 
+    accuracyAimed: 90
+    accuracySnap: 70
     accuracyAuto: 50
     costAimed:
       time: 40
@@ -1118,9 +1165,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 27000
     costSell: 22000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 6
     bigSprite: 2024
     floorSprite: 2024
@@ -1169,9 +1219,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 68000
     costSell: 59000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 15
     bigSprite: 2025
     floorSprite: 2025
@@ -1216,9 +1269,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 75000
     costSell: 69000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 18
     bigSprite: 2026
     floorSprite: 2026
@@ -1274,9 +1330,12 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 100000
     costSell: 89000
+    requiredBuyCountry:
+      - STR_RUSSIA
+      - STR_UKRAINE
     weight: 20
     bigSprite: 2027
     floorSprite: 2027
@@ -1311,7 +1370,7 @@ items:
 
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
-    size: 0.1
+    size: 0.01
     costBuy: 1000
     weight: 10
     bigSprite: 2028
@@ -1333,7 +1392,7 @@ items:
 
   - type: STR_ELERIUM_BATTERY
     categories: [ STR_LIGHT_EQUIPMENT]
-    size: 0.1
+    size: 0.01
     weight: 10
     bigSprite: 1105
     floorSprite: 1105
