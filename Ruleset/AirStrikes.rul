@@ -36,7 +36,6 @@ items:
     power: 100
     damageType: 2
     battleType: 4
-    blastRadius: 12
     fuseType: 5
     fuseTriggerEvents:
       throwTrigger: true
@@ -69,8 +68,8 @@ items:
     damageAlter:
       FixRadius: 8
       ToMorale: 0.6
-      ToArmorPre: 0.5
-      ToTile: 0.3
+      ToArmorPre: 0.6
+      ToTile: 0.1
       FireThreshold: 1000
       RadiusReduction: 0.0
 
