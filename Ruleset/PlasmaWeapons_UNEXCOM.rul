@@ -565,8 +565,7 @@ items:
     size: 0.03
     costBuy: 50000
     costSell: 40000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 30
     armor: 60
     bigSprite: 3208
@@ -615,8 +614,7 @@ items:
     size: 0.02
     costBuy: 9000
     costSell: 3000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
@@ -644,8 +642,7 @@ items:
     size: 0.05
     costBuy: 36000
     costSell: 30000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 45
     armor: 80
     bigSprite: 3216
@@ -688,8 +685,7 @@ items:
     size: 0.02
     costBuy: 2600
     costSell: 1200
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 3288
     handSprite: 3288
@@ -718,8 +714,7 @@ items:
     size: 0.02
     costBuy: 2600
     costSell: 1200
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 3296
     handSprite: 3296
@@ -751,8 +746,7 @@ items:
     armor: 50
     costBuy: 38000
     costSell: 32000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 25
     bigSprite: 3224
     floorSprite: 3224
@@ -799,8 +793,7 @@ items:
     size: 0.01
     costBuy: 14000
     costSell: 12000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     hitAnimation: 110
     power: 70 # 52
     clipSize: 5 # 26
@@ -836,8 +829,7 @@ items:
     size: 0.03
     costBuy: 50000
     costSell: 44000
-    requiredBuyCountry:
-      - STR_FRANCE
+    requiresBuyCountry: STR_FRANCE
     weight: 25
     armor: 60
     bigSprite: 3232
@@ -887,8 +879,7 @@ items:
     size: 0.02
     costSell: 3000
     costBuy: 5000
-    requiredBuyCountry:
-      - STR_FRANCE
+    requiresBuyCountry: STR_FRANCE
     bigSprite: 3312
     floorSprite: 3312
     handSprite: 3312 # ALL GOOD
@@ -916,8 +907,7 @@ items:
     size: 0.01
     costBuy: 30000
     costSell: 20000
-    requiredBuyCountry:
-      - STR_UK
+    requiresBuyCountry: STR_UK
     weight: 6
     armor: 40
     bigSprite: 3240
@@ -957,8 +947,7 @@ items:
     size: 0.01
     costBuy: 6000
     costSell: 5500
-    requiredBuyCountry:
-      - STR_UK
+    requiresBuyCountry: STR_UK
     hitAnimation: 110
     power: 70 # 52
     clipSize: 12 # 26
@@ -984,8 +973,7 @@ items:
     size: 0.04
     costBuy: 66000
     costSell: 55000
-    requiredBuyCountry:
-      - STR_WEST_GERMANY
+    requiresBuyCountry: STR_WEST_GERMANY
     weight: 35
     armor: 60
     bigSprite: 3248
@@ -1035,8 +1023,7 @@ items:
     size: 0.01
     costBuy: 13000
     costSell: 11000
-    requiredBuyCountry:
-      - STR_WEST_GERMANY
+    requiresBuyCountry: STR_WEST_GERMANY
     hitAnimation: 110
     power: 150 # 115
     clipSize: 6 # 35
@@ -1066,9 +1053,7 @@ items:
     size: 0.03
     costBuy: 48000
     costSell: 42000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 28
     armor: 60
     bigSprite: 3256
@@ -1138,9 +1123,7 @@ items:
     size: 0.02
     costSell: 8000
     costBuy: 9000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     bigSprite: 3336
     floorSprite: 3336
     handSprite: 3336 # ALL GOOD
@@ -1168,9 +1151,7 @@ items:
     size: 0.04
     costBuy: 75000
     costSell: 69000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 40
     armor: 70
     bigSprite: 3264
@@ -1224,9 +1205,7 @@ items:
     size: 0.01
     costBuy: 170000
     costSell: 15000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     hitAnimation: 110
     power: 75 # 115
     clipSize: 50 # 35
@@ -1253,9 +1232,7 @@ items:
     size: 0.02
     costBuy: 27000
     costSell: 22000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 20
     bigSprite: 3272
     floorSprite: 3272
@@ -1306,9 +1283,7 @@ items:
     size: 0.01
     costBuy: 12000
     costSell: 11000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     hitAnimation: 110
     power: 80 # 52
     clipSize: 25 # 26

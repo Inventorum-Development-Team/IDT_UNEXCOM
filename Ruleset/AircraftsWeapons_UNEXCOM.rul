@@ -70,6 +70,7 @@ crafts:
   - type: STR_PHANTOM
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    requiresBuyCountry: STR_USA
     sprite: 399
     fuelMax: 131
     damageMax: 160
@@ -114,6 +115,7 @@ crafts:
     requires:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
       - STR_NATO_AIRCRAFT_OPTION1
+    requiresBuyCountry: STR_UK
     sprite: 825
     fuelMax: 192
     damageMax: 145
@@ -154,6 +156,7 @@ crafts:
     requires:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
       - STR_NATO_AIRCRAFT_OPTION2
+    requiresBuyCountry: STR_ITALY
     sprite: 826
     fuelMax: 192
     damageMax: 130
@@ -261,6 +264,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 750000
     costSell: 350000
     refuelRate: 20
@@ -301,6 +305,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 350000
     costSell: 250000
     refuelRate: 20
@@ -380,6 +385,7 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
+    requiresBuyCountry: STR_USA
     costBuy: 800000
     costSell: 450000
     refuelRate: 60
@@ -454,6 +460,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 450000
     costSell: 350000
     refuelRate: 60
@@ -534,6 +541,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_UK
     costBuy: 800000
     costSell: 500000
     refuelRate: 80
@@ -573,6 +581,7 @@ crafts:
     pilots: 1
     allowLanding: false
     undetectable: true
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 900000
     costSell: 750000
     refuelRate: 80
@@ -608,6 +617,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_USA
     costBuy: 760000
     costSell: 600000
     refuelRate: 80
@@ -682,6 +692,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_USA
     costBuy: 1100000
     costSell: 1000000
     refuelRate: 100
@@ -717,6 +728,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 1210000
     costSell: 1000000
     refuelRate: 100
@@ -766,6 +778,7 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
+    requiresBuyCountry: STR_USA
     costBuy: 675000
     costSell: 600000
     refuelRate: 20
@@ -808,6 +821,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_FRANCE
     costBuy: 650000
     costSell: 600000
     refuelRate: 20
@@ -851,6 +865,7 @@ crafts:
     vehicles: 0
     pilots: 4
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 820000
     costSell: 600000
     refuelRate: 20
@@ -896,6 +911,7 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
+    requiresBuyCountry: STR_USA
     costBuy: 900000
     costSell: 750000
     refuelRate: 40
@@ -912,6 +928,7 @@ crafts:
     requires:
       - STR_IMPROVED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    requiresBuyCountry: STR_UK
     sprite: 933
     fuelMax: 174
     damageMax: 300
@@ -970,6 +987,7 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 980000
     costSell: 800000
     refuelRate: 60
@@ -1051,6 +1069,7 @@ crafts:
     vehicles: 0
     pilots: 2
     allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 800000
     costSell: 650000
     refuelRate: 60
@@ -1067,6 +1086,7 @@ crafts:
     requires:
       - STR_ADVANCED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    requiresBuyCountry: STR_WEST_GERMANY
     sprite: 909
     fuelMax: 384
     damageMax: 480
@@ -1125,6 +1145,7 @@ crafts:
     pilots: 2
     allowLanding: false
     undetectable: true
+    requiresBuyCountry: STR_USA
     costBuy: 920000
     costSell: 800000
     refuelRate: 60
@@ -1164,6 +1185,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
+    requiresBuyCountry: STR_FRANCE
     costBuy: 1250000
     costSell: 1100000
     refuelRate: 100
@@ -1200,6 +1222,7 @@ crafts:
     soldiers: 14
     vehicles: 1
     pilots: 0
+    requiresBuyCountry: STR_USA
     costBuy: 600000
     costSell: 550000
     refuelRate: 20
@@ -1265,6 +1288,7 @@ crafts:
     soldiers: 16
     vehicles: 0
     pilots: 4
+    requiresBuyCountry: STR_USA
     costBuy: 100000
     costRent: 6000
     refuelRate: 50
@@ -1689,6 +1713,7 @@ crafts:
 #AUX Systems
     weaponStrings:
       - STR_CRAFT_AUX_ONE
+    requiresBuyCountry: STR_USA
     costBuy: 500000
     refuelRate: 1000
     repairRate: 5

@@ -67,8 +67,7 @@ items:
     size: 0.01
     costBuy: 30000
     costSell: 20000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 4
     bigSprite: 2000
     floorSprite: 2000
@@ -113,8 +112,7 @@ items:
     size: 0.02
     costBuy: 40000
     costSell: 30000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2001
     floorSprite: 2001
@@ -160,8 +158,7 @@ items:
     size: 0.03
     costBuy: 50000
     costSell: 40000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2002
     floorSprite: 2002
@@ -211,8 +208,7 @@ items:
     size: 0.03
     costBuy: 45000
     costSell: 40000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2003
     floorSprite: 2003
@@ -265,8 +261,7 @@ items:
     size: 0.02
     costBuy: 40000
     costSell: 32000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 4
     bigSprite: 2004
     floorSprite: 2004
@@ -319,8 +314,7 @@ items:
     size: 0.03
     costBuy: 65000
     costSell: 55000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 10
     bigSprite: 2005
     floorSprite: 2005
@@ -367,8 +361,7 @@ items:
     size: 0.03
     costBuy: 38000
     costSell: 32000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 7
     bigSprite: 2006
     floorSprite: 2006
@@ -416,8 +409,7 @@ items:
     size: 0.03
     costBuy: 50000
     costSell: 40000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 12
     bigSprite: 2007
     floorSprite: 2007
@@ -463,8 +455,7 @@ items:
     size: 0.02
     costBuy: 42000
     costSell: 36500
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 10
     bigSprite: 2008
     floorSprite: 2008
@@ -517,8 +508,7 @@ items:
     size: 0.01
     costBuy: 30000
     costSell: 20000
-    requiredBuyCountry:
-      - STR_ITALY
+    requiresBuyCountry: STR_ITALY
     weight: 3
     bigSprite: 2009
     floorSprite: 2009
@@ -660,8 +650,7 @@ items:
     size: 0.03
     costBuy: 50000
     costSell: 40000
-    requiredBuyCountry:
-      - STR_WEST_GERMANY
+    requiresBuyCountry: STR_WEST_GERMANY
     weight: 4
     bigSprite: 2012
     floorSprite: 2012
@@ -710,8 +699,7 @@ items:
     size: 0.02
     costBuy: 30000
     costSell: 22000
-    requiredBuyCountry:
-      - STR_FRANCE
+    requiresBuyCountry: STR_FRANCE
     weight: 3
     bigSprite: 2013
     floorSprite: 2013
@@ -764,8 +752,7 @@ items:
     size: 0.03
     costBuy: 66000
     costSell: 55000
-    requiredBuyCountry:
-      - STR_UK
+    requiresBuyCountry: STR_UK
     weight: 7
     bigSprite: 2014
     floorSprite: 2014
@@ -813,8 +800,7 @@ items:
     size: 0.03
     costBuy: 65000
     costSell: 54000
-    requiredBuyCountry:
-      - STR_WEST_GERMANY
+    requiresBuyCountry: STR_WEST_GERMANY
     weight: 8
     bigSprite: 2015
     floorSprite: 2015
@@ -860,8 +846,7 @@ items:
     size: 0.04
     costBuy: 36000
     costSell: 30000
-    requiredBuyCountry:
-      - STR_USA
+    requireBuyCountry: STR_USA
     weight: 9
     bigSprite: 2016
     floorSprite: 2016
@@ -904,8 +889,7 @@ items:
     size: 0.02
     costBuy: 2600
     costSell: 1200
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2017
     hitSound: 0
@@ -930,8 +914,7 @@ items:
     size: 0.2
     costBuy: 2600
     costSell: 1200
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2018
     hitSound: 0
@@ -958,8 +941,7 @@ items:
     size: 0.02
     costBuy: 2200
     costSell: 1000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2019
     hitSound: 0
@@ -986,8 +968,7 @@ items:
     size: 0.02
     costBuy: 10000
     costSell: 8000
-    requiredBuyCountry:
-      - STR_USA
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2020
     hitSound: 0
@@ -1018,9 +999,7 @@ items:
     size: 0.01
     costBuy: 25000
     costSell: 20000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 6
     bigSprite: 2021
     floorSprite: 2021
@@ -1065,9 +1044,7 @@ items:
     size: 0.03
     costBuy: 48000
     costSell: 42000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 9
     bigSprite: 2022
     floorSprite: 2022
@@ -1119,9 +1096,7 @@ items:
     size: 0.03
     costBuy: 38000
     costSell: 32000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 12
     bigSprite: 2023
     floorSprite: 2023
@@ -1168,9 +1143,7 @@ items:
     size: 0.02
     costBuy: 27000
     costSell: 22000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 6
     bigSprite: 2024
     floorSprite: 2024
@@ -1222,9 +1195,7 @@ items:
     size: 0.03
     costBuy: 68000
     costSell: 59000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 15
     bigSprite: 2025
     floorSprite: 2025
@@ -1272,9 +1243,7 @@ items:
     size: 0.03
     costBuy: 75000
     costSell: 69000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 18
     bigSprite: 2026
     floorSprite: 2026
@@ -1333,9 +1302,7 @@ items:
     size: 0.03
     costBuy: 100000
     costSell: 89000
-    requiredBuyCountry:
-      - STR_RUSSIA
-      - STR_UKRAINE
+    requiresBuyCountry: STR_RUSSIA
     weight: 20
     bigSprite: 2027
     floorSprite: 2027
