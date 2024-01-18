@@ -1,0 +1,517 @@
+crafts:
+  - type: STR_CARGOTRUCK
+    requires:
+      - STR_TERRORISTS_OPERATIONS
+    sprite: 1000
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 150
+    accel: 2
+    soldiers: 48
+    vehicles: 8
+    pilots: 4
+    costBuy: 100000
+    costRent: 50000
+    refuelRate: 9999
+    transferTime: 48
+    score: 200
+    undetectable: true
+    battlescapeTerrainData:
+      name: CARGOTRUCK
+      mapDataSets:
+        - BLANKS
+        - CARGOTRUCK
+      mapBlocks:
+        - name: CARGOTRUCK
+          width: 20
+          length: 20
+    craftInventoryTile: [2, 10, 1]
+    deployment:
+    ##### First Layer Tanks
+      - [2, 5, 1, 0]
+      - [3, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [3, 6, 1, 0]
+      - [6, 5, 1, 0]
+      - [7, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [7, 6, 1, 0]
+      - [11, 5, 1, 0]
+      - [12, 5, 1, 0]
+      - [11, 6, 1, 0]
+      - [12, 6, 1, 0]
+      - [16, 5, 1, 0]
+      - [17, 5, 1, 0]
+      - [16, 6, 1, 0]
+      - [17, 6, 1, 0]
+    ###### Second Layer Tanks
+      - [2, 7, 1, 0]
+      - [3, 7, 1, 0]
+      - [2, 8, 1, 0]
+      - [3, 8, 1, 0]
+      - [6, 7, 1, 0]
+      - [7, 7, 1, 0]
+      - [6, 8, 1, 0]
+      - [7, 8, 1, 0]
+      - [11, 7, 1, 0]
+      - [12, 7, 1, 0]
+      - [11, 8, 1, 0]
+      - [12, 8, 1, 0]
+      - [16, 7, 1, 0]
+      - [17, 7, 1, 0]
+      - [16, 8, 1, 0]
+      - [17, 8, 1, 0]
+    ##### Infantry Behind Tanks
+      - [2, 9, 1, 0]
+      - [3, 9, 1, 0]
+      - [2, 10, 1, 0]
+      - [3, 10, 1, 0]
+      - [6, 9, 1, 0]
+      - [7, 9, 1, 0]
+      - [6, 10, 1, 0]
+      - [7, 10, 1, 0]
+      - [11, 9, 1, 0]
+      - [12, 9, 1, 0]
+      - [11, 10, 1, 0]
+      - [12, 10, 1, 0]
+      - [16, 9, 1, 0]
+      - [17, 9, 1, 0]
+      - [16, 10, 1, 0]
+      - [17, 10, 1, 0]
+#####
+  - type: STR_CARGOTRUCK1
+    requires:
+      - STR_TERRORISTS_OPERATIONS
+    sprite: 1000
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 160
+    accel: 4
+    soldiers: 40
+    vehicles: 6
+    pilots: 2
+    costBuy: 80000
+    costRent: 40000
+    refuelRate: 9999
+    transferTime: 48
+    score: 200
+    undetectable: true
+    battlescapeTerrainData:
+      name: CARGOTRUCK1
+      mapDataSets:
+        - BLANKS
+        - CARGOTRUCK
+      mapBlocks:
+        - name: CARGOTRUCK1
+          width: 10
+          length: 20
+    craftInventoryTile: [2, 15, 1]
+    deployment:
+    ##### First Layer Tanks
+      - [2, 5, 1, 0]
+      - [3, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [3, 6, 1, 0]
+      - [2, 7, 1, 0]
+      - [3, 7, 1, 0]
+      - [2, 8, 1, 0]
+      - [3, 8, 1, 0]
+      - [2, 9, 1, 0]
+      - [3, 9, 1, 0]
+      - [2, 10, 1, 0]
+      - [3, 10, 1, 0]
+      - [6, 5, 1, 0]
+      - [7, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [7, 6, 1, 0]
+      - [6, 7, 1, 0]
+      - [7, 7, 1, 0]
+      - [6, 8, 1, 0]
+      - [7, 8, 1, 0]
+      - [6, 9, 1, 0]
+      - [7, 9, 1, 0]
+      - [6, 10, 1, 0]
+      - [7, 10, 1, 0]
+    ##### Infantry Behind Tanks
+      - [2, 12, 1, 0]
+      - [3, 12, 1, 0]
+      - [2, 13, 1, 0]
+      - [3, 13, 1, 0]
+      - [2, 14, 1, 0]
+      - [3, 14, 1, 0]
+      - [2, 15, 1, 0]
+      - [3, 15, 1, 0]
+      - [6, 12, 1, 0]
+      - [7, 12, 1, 0]
+      - [6, 13, 1, 0]
+      - [7, 13, 1, 0]
+      - [6, 14, 1, 0]
+      - [7, 14, 1, 0]
+      - [6, 15, 1, 0]
+      - [7, 15, 1, 0]
+#####
+  - type: STR_UNRAIDER14A
+    requires:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_ALIEN_CAPITAL_SHIPS
+    sprite: 945
+    fuelMax: 3000
+    damageMax: 600
+    speedMax: 15000
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 0
+      - 2
+      - 2
+      - 4
+    soldiers: 30
+    vehicles: 4
+    pilots: 4
+    costBuy: 1000000
+    costRent: 500000
+    refuelRate: 25
+    transferTime: 72
+    score: 2000
+    undetectable: true
+    spacecraft: true
+    allowLanding: true
+    autoPatrol: true
+    radarRange: 700
+    radarChance: 30
+    sightRange: 2000
+    hitBonus: 25
+    avoidBonus: 10
+    powerBonus: 110
+    armor: 15
+    battlescapeTerrainData:
+      name: UNRAIDER14A
+      mapDataSets:
+        - BLANKS
+        - SHUTTLE
+        - LIGHTNIA
+      mapBlocks:
+        - name: UNRAIDER14A
+          width: 10
+          length: 20
+    craftInventoryTile: [3, 12, 2]
+    deployment:
+    ##### Tanks First
+      - [4, 5, 1, 0]
+      - [5, 5, 1, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 9, 1, 0]
+      - [5, 9, 1, 0]
+      - [4, 10, 1, 0]
+      - [5, 10, 1, 0]
+      - [4, 11, 1, 0]
+      - [5, 11, 1, 0]
+      - [4, 12, 1, 0]
+      ### Infantry
+      - [6, 8, 1, 0]
+      - [6, 9, 1, 0]
+      - [6, 10, 1, 0]
+      - [6, 11, 1, 0]
+      - [6, 12, 1, 0]
+      - [6, 13, 1, 0]
+      - [4, 6, 2, 0]
+      - [5, 6, 2, 0]
+      - [4, 7, 2, 0]
+      - [5, 7, 2, 0]
+      - [4, 8, 2, 0]
+      - [5, 8, 2, 0]
+      - [4, 9, 2, 0]
+      - [5, 9, 2, 0]
+###########
+  - type: STR_UNRAIDER15B
+    requires:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_GRAV_SHIELD
+      - STR_MIND_SHIELD
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_SHIELDS
+    sprite: 945
+    fuelMax: 3000
+    damageMax: 1110
+    speedMax: 15000
+    accel: 5
+    weapons: 4
+    weaponTypes:
+      - [0, 1, 4]
+      - [0, 1, 4]
+      - [2, 3]
+      - [2, 3]
+    soldiers: 60
+    vehicles: 10
+    pilots: 6
+    refuelRate: 25
+    transferTime: 72
+    score: 5000
+    allowLanding: true
+    undetectable: true
+    spacecraft: true
+    autoPatrol: true
+    radarRange: 5000
+    radarChance: 100
+    sightRange: 3000
+    hitBonus: 100
+    avoidBonus: 25
+    powerBonus: 200
+    armor: 50
+    shieldCapacity: 1000
+    shieldRecharge: 125
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 5
+    battlescapeTerrainData:
+      name: UNRAIDER15B
+      mapDataSets:
+        - BLANKS
+        - SHUTTLE
+        - LIGHTNIA
+      mapBlocks:
+        - name: UNRAIDER15B
+          width: 20
+          length: 20
+    craftInventoryTile: [8, 8, 2]
+    deployment:
+    ##### Tanks First
+      - [8, 5, 1, 0]
+      - [9, 5, 1, 0]
+      - [8, 6, 1, 0]
+      - [9, 6, 1, 0]
+      - [10, 5, 1, 0]
+      - [11, 5, 1, 0]
+      - [10, 6, 1, 0]
+      - [11, 6, 1, 0]
+      - [4, 7, 1, 6]
+      - [5, 7, 1, 6]
+      - [4, 8, 1, 6]
+      - [5, 8, 1, 6]
+      - [6, 7, 1, 6]
+      - [7, 7, 1, 6]
+      - [6, 8, 1, 6]
+      - [7, 8, 1, 6]
+      - [8, 7, 1, 0]
+      - [9, 7, 1, 0]
+      - [8, 8, 1, 0]
+      - [9, 8, 1, 0]
+      - [10, 7, 1, 0]
+      - [11, 7, 1, 0]
+      - [10, 8, 1, 0]
+      - [11, 8, 1, 0]
+      - [12, 7, 1, 2]
+      - [13, 7, 1, 2]
+      - [12, 8, 1, 2]
+      - [13, 8, 1, 2]
+      - [14, 7, 1, 2]
+      - [15, 7, 1, 2]
+      - [14, 8, 1, 2]
+      - [15, 8, 1, 2]
+      - [8, 9, 1, 0]
+      - [9, 9, 1, 0]
+      - [8, 10, 1, 0]
+      - [9, 10, 1, 0]
+      - [10, 9, 1, 0]
+      - [11, 9, 1, 0]
+      - [10, 10, 1, 0]
+      - [11, 10, 1, 0]
+#### Infantry
+      - [8, 8, 2, 0]
+      - [9, 8, 2, 0]
+      - [10, 8, 2, 0]
+      - [11, 8, 2, 0]
+      - [8, 9, 2, 0]
+      - [9, 9, 2, 0]
+      - [8, 10, 2, 0]
+      - [9, 10, 2, 0]
+      - [10, 9, 2, 0]
+      - [11, 9, 2, 0]
+      - [10, 10, 2, 0]
+      - [11, 10, 2, 0]
+      - [8, 11, 2, 0]
+      - [9, 11, 2, 0]
+      - [10, 11, 2, 0]
+      - [11, 11, 2, 0]
+      - [8, 12, 2, 0]
+      - [9, 12, 2, 0]
+      - [10, 12, 2, 0]
+      - [11, 12, 2, 0]
+########################
+manufacture:
+  - name: STR_UNRAIDER15B
+    category: STR_CRAFT
+    requires:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_GRAV_SHIELD
+      - STR_MIND_SHIELD
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_SHIELDS
+    listOrder: 17003
+    space: 30
+    time: 1200
+    cost: 2000000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 500
+      STR_UFO_NAVIGATION: 12
+      STR_UFO_POWER_SOURCE: 12
+      STR_BATTLESHIP_ANALYSIS: 2
+      STR_TROOP_LANDER_ANALYSIS: 2
+      STR_HYPER_WAVE_ENCODER: 2
+
+###########
+research:
+  - name: STR_CARGOTRUCK
+    cost: 72
+    points: 100
+    listOrder: 17000
+    dependencies:
+      - STR_TERRORISTS_OPERATIONS
+  - name: STR_CARGOTRUCK1
+    cost: 72
+    points: 100
+    listOrder: 17001
+    dependencies:
+      - STR_TERRORISTS_OPERATIONS
+  - name: STR_UNRAIDER14A
+    cost: 720
+    points: 200
+    listOrder: 17002
+    dependencies:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_ALIEN_CAPITAL_SHIPS
+  - name: STR_UNRAIDER15B
+    cost: 720
+    points: 200
+    listOrder: 17003
+    dependencies:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_GRAV_SHIELD
+      - STR_MIND_SHIELD
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_SHIELDS
+####
+ufopaedia:
+  - id: STR_CARGOTRUCK
+    requires:
+      - STR_TERRORISTS_OPERATIONS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_CARGOTRUCKWIKI
+    listOrder: 17000
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: CARGOTRUCK.SPK
+  - id: STR_CARGOTRUCK1
+    requires:
+      - STR_TERRORISTS_OPERATIONS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_CARGOTRUCK1WIKI
+    listOrder: 17001
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: CARGOTRUCK.SPK
+  - id: STR_UNRAIDER14A
+    requires:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_ALIEN_CAPITAL_SHIPS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_UNRAIDER14AWIKI
+    listOrder: 17002
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: SPACE_SHUTTLE_UFOPEDIA
+  - id: STR_UNRAIDER15B
+    requires:
+      - STR_OLYMPUS
+      - STR_BATTLESHIP_ANALYSIS
+      - STR_TROOP_LANDER_ANALYSIS
+      - STR_GRAV_SHIELD
+      - STR_MIND_SHIELD
+      - STR_ALIEN_CAPITAL_SHIPS
+      - STR_ALIEN_SHIELDS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_UNDRAIDER15BWIKI
+    listOrder: 17003
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: SPACE_SHUTTLE_UFOPEDIA
+####
+extraStrings:
+  - type: en-US
+    strings: &STRINGS_EN
+      STR_CARGOTRUCK: CARGO TRUCK CONVOY
+      STR_CARGOTRUCKWIKI: The formation of 4 transport vehicles, carries up to 48 personel with 8 small vehicles. Designed to fight quantity companies of enemies and their aggressive formation.
+      STR_CARGOTRUCK1: CARGO TRUCK+TRAIL
+      STR_CARGOTRUCK1WIKI: The formation of 2 transport vehicles attached with cargo trailer. It carries up to 40 personel with 6 small vehicles. Designed to fight quantity companies of enemies and their aggressive formation.
+####
+extraSprites:
+  - type: CARGOTRUCK.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/TRANSPORT_TRUCK_UFOPEDIA_1.png
+  - type: BASEBITS.PCK
+    files:
+      1033: Resources/Crafts/Cargotruck/TransportTruck_Basebits.png
+  - type: INTICON.PCK
+    files:
+      1011: Resources/Crafts/CargoTruck/TransportTruck_Dogfight.png
+      1000: Resources/Crafts/CargoTruck/TransportTruck_Minimised.png
+#### Start at 1000 Kiro Xei Marks the Spot
+#### Mimimized + 0
+#### Dogfight + 11
+#### Basebit + 33
+####### Author: Cirius: Original author who made the sprites by using PCK and MCD and Mapview2

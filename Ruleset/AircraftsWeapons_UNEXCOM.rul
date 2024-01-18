@@ -1387,7 +1387,7 @@ crafts:
           length: 20
           items:
             HIND_TURRET_SPAWNER:
-              - [4, 10, 2]
+              - [4, 10, 3]
             STR_HIND_DOOR_BOMB:
               - [4, 12, 0]
               - [6, 12, 0]
@@ -1881,25 +1881,6 @@ crafts:
       - STR_CRAFT_LIGHT_MISSILE_THREE
       - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
 
-######## Kiroxeipros Extra Addings
-
-
-##### Raider 14
-
-
-##### Raider 15
-
-
-
-##### Actraizer
-
-
-
-
-##### Exile; Ixier
-
-
-
 
 ##### On Our Own Ground Vehicles
 #### Basic
@@ -1911,8 +1892,6 @@ crafts:
 #### Hyperwave
 
 #### Space Program
-
-
 
 
 craftWeapons:
@@ -2860,6 +2839,7 @@ items:
     requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
+    requiresBuyCountry: STR_USA
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2868,6 +2848,7 @@ items:
     requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
+    requiresBuyCountry: STR_USA
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2876,6 +2857,7 @@ items:
     requiresBuy:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
+    requiresBuyCountry: STR_USA
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2884,6 +2866,7 @@ items:
     requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2892,6 +2875,7 @@ items:
     requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2900,6 +2884,7 @@ items:
     requiresBuy:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
+    requiresBuyCountry: STR_RUSSIA
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2908,6 +2893,7 @@ items:
     requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
+    requiresBuyCountry: STR_UK
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2916,6 +2902,7 @@ items:
     requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
+    requiresBuyCountry: STR_FRANCE
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2924,12 +2911,14 @@ items:
     requiresBuy:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
+    requiresBuyCountry: STR_UK
     costBuy: 35000
     costSell: 37500
     transferTime: 48
   - type: STR_FALCON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
     size: 1
+    requiresBuyCountry: STR_USA
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2937,6 +2926,7 @@ items:
   - type: STR_MIGHTY_MOUSE_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_ROCKETS, STR_TIER_1]
     size: 1.5
+    requiresBuyCountry: STR_USA
     costBuy: 35000
     costSell: 37500
     transferTime: 48
