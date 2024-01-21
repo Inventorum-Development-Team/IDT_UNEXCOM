@@ -29,6 +29,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_BURST
@@ -80,6 +84,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -125,6 +133,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -171,6 +183,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confSnap:
       shots: 3
       name: STR_BURST
@@ -221,6 +237,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -274,6 +294,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -327,6 +351,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -381,6 +409,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     costSnap:
       time: 40
       mana: 3
@@ -422,6 +454,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     accuracyAuto: 65
     accuracySnap: 65
     confSnap:
@@ -484,6 +520,7 @@ items:
     damageType: 2
     damageAlter:
       RandomType: 6
+      ToArmorPre: 0.4
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
@@ -521,6 +558,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -565,6 +606,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_BURST
@@ -614,6 +659,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -663,6 +712,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_BURST
@@ -712,6 +765,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -765,6 +822,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.8
     confAuto:
       shots: 1
@@ -813,6 +874,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confSnap:
       shots: 5
       name: STR_BURST
@@ -846,7 +911,7 @@ items:
     size: 0.04
     costBuy: 36000
     costSell: 30000
-    requireBuyCountry: STR_USA
+    requiresBuyCountry: STR_USA
     weight: 9
     bigSprite: 2016
     floorSprite: 2016
@@ -899,7 +964,7 @@ items:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
-      ToArmor: 0.5
+      ToArmorPre: 0.8
     damageType: 5
     clipSize: 6
     blastRadius: 4
@@ -1012,6 +1077,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       arcing: false
@@ -1057,6 +1126,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_CONTROL_AUTO
@@ -1109,6 +1182,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.8
     confAuto:
       shots: 2
@@ -1156,6 +1233,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 4
       name: STR_CONTROL_AUTO
@@ -1208,6 +1289,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.6
     confAuto:
       shots: 1
@@ -1256,6 +1341,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     accuracyAimed: 70
     accuracySnap: 45
     accuracyAuto: 40
@@ -1315,6 +1404,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.8
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.3
     twoHanded: true
     accuracyAimed: 110

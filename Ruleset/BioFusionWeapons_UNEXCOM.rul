@@ -113,8 +113,8 @@ items:
     damageAlter:
       RadiusReduction: 45
       IgnoreOverKill: false
-      ToArmor: 0
-      ToArmorPre: 0.05
+      ToArmor: 0.5
+      ToArmorPre: 0.5
       ToTile: 0.69
     clipSize: 8
     blastRadius: 2
@@ -285,8 +285,8 @@ items:
     damageAlter:
       RadiusReduction: 50
       IgnoreOverKill: false
-      ToArmor: 0
-      ToArmorPre: 0.05
+      ToArmor: 0.5
+      ToArmorPre: 0.5
       ToTile: 0.73
     clipSize: 6
     blastRadius: 3
@@ -365,7 +365,7 @@ items:
     damageAlter:
       RadiusReduction: 50
       IgnoreOverKill: false
-      ToWound: 5
+      ToWound: 0.5
       ToArmorPre: 0.05
       #ToTile: 0.73
     clipSize: 8

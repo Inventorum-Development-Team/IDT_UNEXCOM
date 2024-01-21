@@ -39,7 +39,10 @@ items:
     handSprite: 120 # ALL GOOD
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 1 # 3
     hitSound: 1938
     armor: 30 # 20
@@ -139,6 +142,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     damageType: 5
     clipSize: 25
     battleType: 2
@@ -625,6 +631,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     damageType: 5
     clipSize: 30
     battleType: 2
@@ -697,8 +706,8 @@ items:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
-      ToArmor: 0.5
-      ToArmorPre: 0.5
+      ToArmor: 0.9
+      ToArmorPre: 0.9
     damageType: 5
     clipSize: 1
     blastRadius: 4
@@ -804,7 +813,7 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
-      ToArmorPre: 0.4
+      ToArmorPre: 0.6
       FireThreshold: 80
     weight: 10 # 3
     hitSound: 1938
@@ -887,10 +896,13 @@ items:
     hitSound: 1938
     hitAnimation: 110 # FIX THIS
     power: 80
+    damageType: 5
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
-    damageType: 5
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     clipSize: 20
     battleType: 2
     invWidth: 1
@@ -957,6 +969,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     weight: 1 # 3
     damageType: 5
     hitSound: 1938
@@ -1034,7 +1049,10 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 5 # 3
     armor: 35 # 20
     battleType: 2
@@ -1133,7 +1151,10 @@ items:
     power: 92
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     damageType: 5
     clipSize: 35
     battleType: 2
@@ -1216,8 +1237,10 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
-      ToArmorPre: 0.3
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 6 # 3
     armor: 35 # 20
     battleType: 2
@@ -1293,7 +1316,10 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 1 # 3
     hitSound: 1938
     armor: 30 # 20
