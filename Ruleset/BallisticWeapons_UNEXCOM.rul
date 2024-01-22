@@ -87,7 +87,7 @@ items:
     invWidth: 1
     shotgunBehavior: 1
     shotgunPellets: 6
-    shotgunSpread: 50
+    shotgunSpread: 76
     battleType: 2
     armor: 250
     listOrder: 201700
@@ -109,7 +109,7 @@ items:
       RandomType: 2
       IgnoreOverKill: true
       ToWound: 0.1
-      ToArmor: 1.1
+      ToArmorPre: 0.6
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -666,8 +666,8 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: true
-      ToWound: 0.1
-      ToArmor: 0.5
+      ToStun: 0.3
+      ToArmorPre: 0.5
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
@@ -699,7 +699,7 @@ items:
     invWidth: 1
     shotgunBehavior: 1
     shotgunPellets: 6
-    shotgunSpread: 50
+    shotgunSpread: 80
     battleType: 2
     armor: 250
     listOrder: 200280
@@ -726,7 +726,7 @@ items:
     invWidth: 1
     shotgunBehavior: 1
     shotgunPellets: 8
-    shotgunSpread: 45
+    shotgunSpread: 75
     battleType: 2
     armor: 250
     listOrder: 200290
@@ -743,8 +743,8 @@ items:
     damageAlter:
       RandomType: 7
       IgnoreOverKill: true
-      ToWound: 0.1
-      ToArmor: 0.5
+      ToStun: 0.3
+      ToArmorPre: 0.5
       RandomWound: true
     hitSound: 22
     hitAnimation: 26
