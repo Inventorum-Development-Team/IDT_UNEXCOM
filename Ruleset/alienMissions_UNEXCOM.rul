@@ -394,11 +394,11 @@ alienMissions:
     spawnUfo: STR_TROOP_LANDER # Spawned for the final retaliation run
     raceWeights: # In the case of a shoot-down, race comes from the UFO that triggered the mission.
       0:
-        STR_ARMORED_SECTOID: 20
-        STR_ARMORED_SNAKEMAN: 20
-        STR_ARMORED_ETHEREAL: 20
-        STR_ARMORED_MUTON: 20
-        STR_ARMORED_FLOATER: 20
+        STR_SECTOID: 30
+        STR_SNAKEMAN: 20
+        STR_ETHEREAL: 10
+        STR_MUTON: 10
+        STR_FLOATER: 30
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
