@@ -500,11 +500,11 @@ mapScripts:
 
   - type: MARS_CYDONIA_LANDING
     commands:
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_MOON_STATION
-      executions: 1
-    - type: fillArea
+      - type: addCraft
+      - type: addUFO
+        UFOName: STR_MOON_STATION
+        executions: 1
+      - type: fillArea
 
 terrains:
   - name: IDT_MOON
@@ -731,12 +731,12 @@ terrains:
   - name: MARS_ENTRY
     enviroEffects: STR_MARS_ENVIRO
     mapDataSets:
-        - BLANKS
-        - MARS_NEW_ENTRY_FLOOR
+      - BLANKS
+      - MARS_NEW_ENTRY_FLOOR
     mapBlocks:
-        - name: MARS_ENTRY_GROUND
-          width: 10
-          length: 20
+      - name: MARS_ENTRY_GROUND
+        width: 10
+        length: 20
 
 ufos:
   - type: STR_SPACE_SHUTTLE_NPC

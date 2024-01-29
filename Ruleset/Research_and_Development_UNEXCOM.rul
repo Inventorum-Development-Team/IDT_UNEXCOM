@@ -6,8 +6,8 @@
 
 items:
 
-   - type: STR_ALIEN_ID_CODES
-     size: 0.1
+  - type: STR_ALIEN_ID_CODES
+    size: 0.1
 
 
 research:
@@ -138,9 +138,9 @@ research:
     dependencies:
       - STR_ON_OUR_OWN
     unlocks:
-     - STR_762_X30_UNLOCK
-     - STR_NATO_LMG_UNLOCK
-     - STR_NATO_X5_UNLOCK
+      - STR_762_X30_UNLOCK
+      - STR_NATO_LMG_UNLOCK
+      - STR_NATO_X5_UNLOCK
 
   - name: STR_UN_WEAPON_SUPPLY_1
     cost: 200
@@ -298,75 +298,75 @@ research:
   - name: STR_762_X30_UNLOCK
     cost: 0
     dependencies:
-     - STR_NATO_SUPPORT_RESEARCH
-     - STR_UN_CUSTOM_WEAPONS
-     - STR_BREN
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_UN_CUSTOM_WEAPONS
+      - STR_BREN
 
   - name: STR_556_X20_UNLOCK
     cost: 0
     dependencies:
-     - STR_MERCENARY_SUPPORT
-     - STR_USA_SUPPORT_RESEARCH
+      - STR_MERCENARY_SUPPORT
+      - STR_USA_SUPPORT_RESEARCH
 
   - name: STR_LR_UNLOCK
     cost: 0
     dependencies:
-     - STR_HUNTING_RIFLE
-     - STR_IMPROVED_BOMBER
+      - STR_HUNTING_RIFLE
+      - STR_IMPROVED_BOMBER
 
   - name: STR_12G_X2_UNLOCK
     cost: 0
     dependencies:
-     - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
-     - STR_DOUBLE_BARRELED_SHOTGUN
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+      - STR_DOUBLE_BARRELED_SHOTGUN
 
   - name: STR_SOVIET_762_UNLOCK
     cost: 0
     dependencies:
-     - STR_AKM
-     - STR_USSR_SUPPORT_RESEARCH
+      - STR_AKM
+      - STR_USSR_SUPPORT_RESEARCH
 
   - name: STR_9MM_10X_UNLOCK
     cost: 0
     dependencies:
-     - STR_MAKAROV
-     - STR_USSR_SUPPORT_RESEARCH
-     - STR_NATO_SUPPORT_RESEARCH
+      - STR_MAKAROV
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_NATO_SUPPORT_RESEARCH
 
   - name: STR_NATO_X5_UNLOCK
     cost: 0
     dependencies:
-     - STR_UN_CUSTOM_WEAPONS
-     - STR_NATO_SUPPORT_RESEARCH
+      - STR_UN_CUSTOM_WEAPONS
+      - STR_NATO_SUPPORT_RESEARCH
 
   - name: STR_NATO_LMG_UNLOCK
     cost: 0
     dependencies:
-     - STR_USA_SUPPORT_RESEARCH
-     - STR_NATO_SUPPORT_RESEARCH
-     - STR_UN_CUSTOM_WEAPONS
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_UN_CUSTOM_WEAPONS
 
 ############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
     points: 100
     dependencies:
-     - STR_USA_SUPPORT_RESEARCH
-     - STR_ALLOY_MANUFACTURING
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
   - name: STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
     points: 100
     dependencies:
-     - STR_NATO_SUPPORT_RESEARCH
-     - STR_ALLOY_MANUFACTURING
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
   - name: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
     points: 100
     dependencies:
-     - STR_USSR_SUPPORT_RESEARCH
-     - STR_ALLOY_MANUFACTURING
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
     unlocks:
-     - STR_12G_X2_UNLOCK
+      - STR_12G_X2_UNLOCK
 ###############################################
   - name: STR_ALLOY_AEROSPACE
     listOrder: 902
@@ -413,7 +413,7 @@ research:
     dependencies:
       - STR_ALLOY_AEROSPACE
     unlocks:
-     - STR_LR_UNLOCK
+      - STR_LR_UNLOCK
   - name: STR_IMPROVED_FIGHTER
     cost: 300
     points: 20
@@ -457,13 +457,13 @@ research:
   - name: STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     cost: 600
     dependencies:
-     - STR_IMPROVED_LIGHT_MISSILE
-     - STR_IMPROVED_HEAVY_MISSILE
-     - STR_IMPROVED_GATLING_CANNON
-     - STR_IMPROVED_REVOLVER_CANNON
-     - STR_IMPROVED_SUPER_HEAVY_MISSILE
-     - STR_IMPROVED_ROCKET
-     - STR_FUSION_CRAFT_WEAPONS
+      - STR_IMPROVED_LIGHT_MISSILE
+      - STR_IMPROVED_HEAVY_MISSILE
+      - STR_IMPROVED_GATLING_CANNON
+      - STR_IMPROVED_REVOLVER_CANNON
+      - STR_IMPROVED_SUPER_HEAVY_MISSILE
+      - STR_IMPROVED_ROCKET
+      - STR_FUSION_CRAFT_WEAPONS
 
   - name: STR_ADVANCED_BOMBER
     cost: 400
@@ -482,9 +482,9 @@ research:
     cost: 1200
     points: 30
     dependencies:
-     - STR_ADVANCED_BOMBER
-     - STR_ADVANCED_FIGHTER
-     - STR_OLYMPUS
+      - STR_ADVANCED_BOMBER
+      - STR_ADVANCED_FIGHTER
+      - STR_OLYMPUS
 
   - name: STR_MIMIC_UFOS
     cost: 600
@@ -543,12 +543,12 @@ research:
   - name: STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     cost: 800
     dependencies:
-     - STR_LONGSWORD_FUSION_MISSILE
-     - STR_KATANA
-     - STR_ADLER
-     - STR_GORGON_ROCKETS
-     - STR_SMART_CRAFT_WEAPONS
-     - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
+      - STR_LONGSWORD_FUSION_MISSILE
+      - STR_KATANA
+      - STR_ADLER
+      - STR_GORGON_ROCKETS
+      - STR_SMART_CRAFT_WEAPONS
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
 
   - name: STR_ZEUS
     cost: 750
@@ -1023,7 +1023,7 @@ research:
     points: 5
     needItem: true
     unlocks:
-     - STR_9MM_10X_UNLOCK
+      - STR_9MM_10X_UNLOCK
   - name: STR_SNUBNOSE_PISTOL
     cost: 5
     points: 5
@@ -1033,13 +1033,13 @@ research:
     points: 5
     needItem: true
     unlocks:
-     - STR_LR_UNLOCK
+      - STR_LR_UNLOCK
   - name: STR_DOUBLE_BARRELED_SHOTGUN
     cost: 5
     points: 5
     needItem: true
     unlocks:
-     - STR_12G_X2_UNLOCK
+      - STR_12G_X2_UNLOCK
   - name: STR_MACHETE
     cost: 5
     points: 5
@@ -1203,7 +1203,7 @@ research:
     cost: 500
     points: 50
     dependencies:
-     - STR_ALIEN_ID_CODES
+      - STR_ALIEN_ID_CODES
     spawnedEvent: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT
 
   - name: STR_UNITED_WE_STAND_RESEARCH
@@ -1229,7 +1229,7 @@ research:
   - name: STR_DESTINATION_MARS
     cost: 200
     dependencies:
-     - STR_DEVASTATION_COMPLETED
+      - STR_DEVASTATION_COMPLETED
     spawnedEvent: STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT
 
   - name: STR_CYDONIA_OR_BUST
@@ -1279,8 +1279,8 @@ research:
     cost: 750
     points: 400
     dependencies:
-     - STR_ELERIUM_115
-     - STR_UFO_POWER_SOURCE
+      - STR_ELERIUM_115
+      - STR_UFO_POWER_SOURCE
 
   - name: STR_UFO_CONSTRUCTION
     cost: 450

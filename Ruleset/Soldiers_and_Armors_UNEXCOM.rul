@@ -67,7 +67,7 @@ soldiers:
 
   - type: STR_SPECIAL_FORCES_SOLDIER
     requires:
-     - STR_SPECIAL_FORCES_RESEARCH
+      - STR_SPECIAL_FORCES_RESEARCH
     costBuy: 180000
     costSalary: 50000
     monthlyBuyLimit: 3
@@ -132,7 +132,7 @@ soldiers:
 
   - type: STR_MERCENARY
     requires:
-     - STR_MERCENARY_RESEARCH
+      - STR_MERCENARY_RESEARCH
     costBuy: 90000
     costSalary: 90000
     monthlyBuyLimit: 4
@@ -273,12 +273,12 @@ soldiers:
       reactions: 75
       firing: 100
     rankStrings:
-    - STR_2ND_LIEUTENANT
-    - STR_1ST_LIEUTENANT
-    - STR_CAPTAIN
-    - STR_MAJOR
-    - STR_PILOT_COLONEL
-    - STR_BRIGADIER
+      - STR_2ND_LIEUTENANT
+      - STR_1ST_LIEUTENANT
+      - STR_CAPTAIN
+      - STR_MAJOR
+      - STR_PILOT_COLONEL
+      - STR_BRIGADIER
 
 ###############
 # SIDE NOTE: The Astronaut Soldier-class uniform/armor
@@ -771,10 +771,10 @@ armors:
     corpseGeo: STR_CORPSE_DELTA_ARMOR
     weight: 15
     stats:
-       stamina: -10
-       reactions: -5
-       firing: -5
-       mana: 40
+      stamina: -10
+      reactions: -5
+      firing: -5
+      mana: 40
     frontArmor: 40
     sideArmor: 32
     rearArmor: 15
@@ -815,10 +815,10 @@ armors:
     storeItem: STR_RIOT_ARMOR_UC
     weight: 12
     stats:
-       stamina: -5
-       reactions: -3
-       bravery: 20
-       mana: 40
+      stamina: -5
+      reactions: -3
+      bravery: 20
+      mana: 40
     frontArmor: 80
     sideArmor: 28
     rearArmor: 16

@@ -1605,7 +1605,7 @@ crafts:
   - type: STR_SPACE_SHUTTLE
     sprite: 945
     requires:
-     - STR_OLYMPUS
+      - STR_OLYMPUS
     fuelMax: 2732 # Combat range of 22,000 nmi
     damageMax: 450
     speedMax: 14092 # Orbital speed of 27,600 Km/h
@@ -1731,7 +1731,7 @@ crafts:
 
   - type: STR_LINNA
     requires:
-     - STR_SATELLITES
+      - STR_SATELLITES
     sprite: 824
     fuelMax: 1500
     damageMax: 20
@@ -3151,8 +3151,8 @@ manufacture:
   - name: STR_TUNNAN_MK2
     category: STR_CRAFT
     requires:
-     - STR_IMPROVED_FIGHTER
-     - STR_ON_OUR_OWN
+      - STR_IMPROVED_FIGHTER
+      - STR_ON_OUR_OWN
     listOrder: 3300
     space: 10
     time: 400
