@@ -147,6 +147,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_SECTOID_COMMANDER_CORPSE
     size: 0.4
     costSell: 20000
@@ -158,6 +160,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 ################################
 ###### ARMORED SECTOIDS #######
@@ -174,6 +178,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 ################################
 ##### UNARMORED FLOATERS ######
@@ -190,6 +196,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_FLOATER_NAVIGATOR_CORPSE
     size: 0.4
     costSell: 20000
@@ -201,6 +209,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_FLOATER_MEDIC_CORPSE
     size: 0.4
     costSell: 20000
@@ -212,6 +222,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_FLOATER_ENGINEER_CORPSE
     size: 0.4
     costSell: 20000
@@ -223,6 +235,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_FLOATER_LEADER_CORPSE
     size: 0.4
     costSell: 20000
@@ -234,6 +248,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 ################################
 ###### ARMORED FLOATERS #######
@@ -250,6 +266,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_ARMORED_FLOATER_LEADER_CORPSE
     size: 0.4
     costSell: 20000
@@ -261,6 +279,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 ################################
 ###### UNARMORED SNAKES #######
@@ -280,6 +300,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 ################################
 ###### UNARMORED MUTONS #######
@@ -296,6 +318,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_MUTON_NAVIGATOR_CORPSE
     size: 0.4
     costSell: 20000
@@ -307,6 +331,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_MUTON_MEDIC_CORPSE
     size: 0.4
     costSell: 20000
@@ -318,6 +344,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_MUTON_ENGINEER_CORPSE
     size: 0.4
     costSell: 20000
@@ -329,6 +357,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_MUTON_LEADER_CORPSE
     size: 0.4
     costSell: 20000
@@ -340,7 +370,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
-
+    categories:
+      - STR_CORPSES
 
 ################################
 ####### ARMORED MUTONS ########
@@ -357,6 +388,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_ARMORED_MUTON_LEADER_CORPSE
     size: 0.4
     costSell: 20000
@@ -368,6 +401,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 ################################
 ########## ETHEREAL ###########
@@ -384,6 +419,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
 
 #################################
 ##### ALIEN DRONES & MECHS #####
@@ -394,6 +431,8 @@ items:
     battleType: 11
     power: 120
     blastRadius: 6
+    categories:
+      - STR_CORPSES
   - type: CYBERDISC_CORPSE_1
     name: STR_CYBERDISC_CORPSE
     floorSprite: 56
@@ -401,6 +440,8 @@ items:
     invHeight: 0
     battleType: 11
     recoveryPoints: 3
+    categories:
+      - STR_CORPSES
   - type: CYBERDISC_CORPSE_2
     floorSprite: 57
     invWidth: 0
@@ -425,6 +466,8 @@ items:
     size: 1
     costSell: 20000
     battleType: 11
+    categories:
+      - STR_CORPSES
   - type: SECTOPOD_CORPSE_1
     name: STR_SECTOPOD_CORPSE
     floorSprite: 60
@@ -432,6 +475,8 @@ items:
     invHeight: 0
     battleType: 11
     recoveryPoints: 3
+    categories:
+      - STR_CORPSES
   - type: SECTOPOD_CORPSE_2
     floorSprite: 61
     invWidth: 0
@@ -454,6 +499,8 @@ items:
     size: 1
     costSell: 20000
     battleType: 11
+    categories:
+      - STR_CORPSES
   - type: MECHTOID_CORPSE_1
     name: STR_MECHTOID_CORPSE
     floorSprite: 3124
@@ -461,6 +508,8 @@ items:
     invHeight: 0
     battleType: 11
     recoveryPoints: 3
+    categories:
+      - STR_CORPSES
   - type: MECHTOID_CORPSE_2
     floorSprite: 3125
     invWidth: 0
@@ -493,6 +542,8 @@ items:
     power: 2
     damageAlter:
       FixRadius: -1
+    categories:
+      - STR_CORPSES
   - type: STR_CYBERSPHERE_CORPSE
     size: 0.4
     costSell: 20000
@@ -504,6 +555,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     listOrder: 7550
+    categories:
+      - STR_CORPSES
 
 ################################
 ######## ALIEN BEASTS #########
@@ -520,6 +573,8 @@ items:
     recoveryPoints: 3
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_SILACOID_CORPSE
     size: 0.4
     costSell: 20000
@@ -531,6 +586,8 @@ items:
     recoveryPoints: 3
     battleType: 11
     armor: 26
+    categories:
+      - STR_CORPSES
   - type: STR_CHRYSSALID_CORPSE
     size: 0.4
     costSell: 20000
@@ -541,10 +598,14 @@ items:
     invHeight: 3
     recoveryPoints: 3
     battleType: 11
+    categories:
+      - STR_CORPSES
   - type: STR_REAPER_CORPSE
     size: 1
     costSell: 20000
     battleType: 11
+    categories:
+      - STR_CORPSES
   - type: REAPER_CORPSE_1
     name: STR_REAPER_CORPSE
     floorSprite: 52
@@ -552,6 +613,8 @@ items:
     invHeight: 0
     battleType: 11
     recoveryPoints: 3
+    categories:
+      - STR_CORPSES
   - type: REAPER_CORPSE_2
     floorSprite: 55
     invWidth: 0
