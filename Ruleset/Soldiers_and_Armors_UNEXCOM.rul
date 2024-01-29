@@ -588,7 +588,6 @@ armors:
     units:
       - STR_SOLDIER
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_PILOT_UC
     spriteSheet: PILOT.PCK
@@ -625,7 +624,6 @@ armors:
     units:
       - STR_PILOT
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_SPECIAL_FORCES_UNIFORM_UC
     spriteSheet: XCOM_4SF.PCK
@@ -671,7 +669,6 @@ armors:
     units:
       - STR_SPECIAL_FORCES_SOLDIER
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_MERCENARY_UNIFORM_UC
     spriteSheet: XCOM_4MERC.PCK
@@ -717,7 +714,6 @@ armors:
     units:
       - STR_MERCENARY
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_COMBAT_ARMOR_UC
     spriteSheet: XCOM_4UN.PCK
@@ -759,7 +755,6 @@ armors:
       - 1.0
       - 1.1
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_DELTA_ARMOR_UC
     spriteSheet: ARMOR_DELTA.PCK
@@ -851,7 +846,6 @@ armors:
     builtInWeapons:
       - STR_RIOT_SHIELD
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
 # Standard Armors
   - type: STR_PERSONAL_ARMOR_UC
@@ -890,7 +884,6 @@ armors:
       - 1.0
       - 1.0
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_HEAVY_PERSONAL_ARMOR_UC
     spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
@@ -929,7 +922,6 @@ armors:
       - 1.0
       - 1.0
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 #Power Armors
 
 # Standard Armors
@@ -969,7 +961,6 @@ armors:
       - 0.0
       - 0.8
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - type: STR_FLYING_SUIT_UC
     spriteSheet: PATHFINDER_SPRITESHEET.PCK
@@ -1008,7 +999,6 @@ armors:
       - 0.0
       - 0.8
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
 # New Armors
   - type: STR_SCOUT_POWER_ARMOR_UC
@@ -1048,7 +1038,6 @@ armors:
       - 0.0
       - 0.8
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
     units:
       - STR_SOLDIER
       - STR_PILOT
@@ -1092,7 +1081,6 @@ armors:
       - 0.0
       - 0.8
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
     units:
       - STR_SOLDIER
       - STR_PILOT
@@ -1140,7 +1128,6 @@ armors:
       - 0.0
       - 1.3
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - &A7MMUSpacesuitAnchor
     type: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
@@ -1181,7 +1168,6 @@ armors:
       - 0.0
       - 1.3
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - &Krechet94SpacesuitAnchor
     type: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
@@ -1215,7 +1201,6 @@ armors:
       - 1.1
       - 1.3
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
   - &KrechetMMUSpacesuitAnchor
     type: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
@@ -1249,7 +1234,6 @@ armors:
       - 1.1
       - 1.3
     personalLight: 6
-    specialWeapon: STR_UNARMED_UNIFORM
 
 manufacture:
   - name: STR_COMBAT_ARMOR_UC
