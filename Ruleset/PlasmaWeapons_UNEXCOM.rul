@@ -107,11 +107,11 @@ items:
     accuracySnap: 85
     accuracyAimed: 55
     costSnap:
-      time: 30
+      time: 25
     costAimed:
-      time: 40
+      time: 30
     costAuto:
-      time: 60
+      time: 50
     tuLoad: 30
     tuUnload: 15
     battleType: 1
@@ -122,7 +122,7 @@ items:
     aimRange: 39
     snapRange: 40
     autoRange: 20
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5030
@@ -592,11 +592,11 @@ items:
     accuracySnap: 100
     accuracyAimed: 65
     costSnap:
-      time: 60
+      time: 40
     costAimed:
-      time: 75
+      time: 55
     costAuto:
-      time: 70
+      time: 65
     tuLoad: 30
     tuUnload: 15
     battleType: 1
@@ -607,7 +607,7 @@ items:
     aimRange: 32
     snapRange: 28
     autoRange: 16
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5210
@@ -671,12 +671,12 @@ items:
       - STR_US_PLASMA_RL_ELERIUM_ROCKET
     accuracyCloseQuarters: 25
     accuracySnap: 125
-    accuracyAimed: 80
+    accuracyAimed: 150
     #accuracyAuto: 60
     tuSnap: 40
     tuAimed: 60
     #tuAuto: 80
-    tuLoad: 45
+    tuLoad: 44
     tuUnload: 22
     battleType: 1
     waypoints: 6
@@ -770,11 +770,11 @@ items:
       shots: 5
       name: STR_RAGE_FIRE
       arcing: true
-    #accuracySnap: 60
+    accuracySnap: 80
     accuracyAuto: 65
     #accuracyAimed: 75
-    #costSnap:
-    #  time: 40
+    costSnap:
+      time: 20
     #costAimed:
     #  time: 60
     costAuto:
@@ -782,10 +782,10 @@ items:
     maxRange: 20
     tuLoad: 20
     tuUnload: 10
-    dropoff: 10
+    dropoff: 8
     kneelBonus: 115
-    #snapRange: 12
-    autoRange: 12
+    snapRange: 20
+    autoRange: 14
     #arcingShot: true
     invHeight: 3
     invWidth: 1
@@ -860,11 +860,11 @@ items:
     accuracySnap: 70
     accuracyAimed: 80
     costSnap:
-      time: 30
+      time: 20
     costAimed:
-      time: 65
+      time: 30
     costAuto:
-      time: 35
+      time: 45
     battleType: 1
     tuLoad: 30
     tuUnload: 15
@@ -875,7 +875,7 @@ items:
     aimRange: 20
     snapRange: 10
     autoRange: 5
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5280
@@ -936,17 +936,17 @@ items:
     accuracySnap: 65
     accuracyAimed: 85
     costSnap:
-      time: 25
+      time: 20
     costAimed:
-      time: 40
+      time: 35
     battleType: 1
-    kneelBonus: 100
+    kneelBonus: 120
     tuLoad: 10
     tuUnload: 10
     maxRange: 25
     aimRange: 15
     snapRange: 10
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 2
     listOrder: 5300
@@ -1007,11 +1007,11 @@ items:
     accuracyAimed: 150
     accuracyAuto: 220
     costSnap:
-      time: 65
+      time: 40
     costAimed:
-      time: 75
+      time: 60
     costAuto:
-      time: 85
+      time: 80
     battleType: 1
     #twoHanded: true
     blockBothHands: true
@@ -1025,7 +1025,7 @@ items:
     snapRange: 25
     autoRange: 50
     #minRange: 25
-    dropoff: 5
+    dropoff: 4
     invWidth: 2
     invHeight: 3
     listOrder: 5320
@@ -1095,9 +1095,9 @@ items:
     accuracySnap: 65
     accuracyAuto: 45
     costAimed:
-      time: 65
+      time: 45
     costSnap:
-      time: 50
+      time: 35
     costAuto:
       time: 55
     # melee segment
@@ -1128,7 +1128,7 @@ items:
     aimRange: 24
     snapRange: 26
     autoRange: 10
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5340
@@ -1198,9 +1198,9 @@ items:
       ammoSlot: 0
       arcing: false
     costSnap:
-      time: 60
+      time: 45
     costAuto:
-      time: 80
+      time: 65
     twoHanded: true
     blockBothHands: true
     tuLoad: 45
@@ -1213,7 +1213,7 @@ items:
     snapRange: 23
     autoRange: 15
     #minRange: 5
-    dropoff: 5
+    dropoff: 3
     invWidth: 2
     invHeight: 3
     listOrder: 5360
@@ -1278,11 +1278,11 @@ items:
     accuracySnap: 66
     accuracyAuto: 30
     costAimed:
-      time: 35
+      time: 25
     costSnap:
-      time: 45
+      time: 35
     costAuto:
-      time: 50
+      time: 40
     battleType: 1
     sprayWaypoints: 2
     kneelBonus: 115
@@ -1293,7 +1293,7 @@ items:
     snapRange: 10
     autoRange: 5
     twoHanded: false
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5380
