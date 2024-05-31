@@ -21,6 +21,7 @@ startingConditions:
     forbiddenItems:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
+      - STR_CANNON_STRIKE
 
   - type: STR_TERRORIST_MISSION_NO_TANKS
     forbiddenVehicles:
@@ -32,6 +33,7 @@ startingConditions:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
       - STR_HIGH_EXPLOSIVE
+      - STR_CANNON_STRIKE
 
   - type: STR_OPERATION_FALSE_FLAG_CONDITION
     requiredItems:
