@@ -15,7 +15,7 @@ items:
 #################################
   - type: STR_PEACEMAKER
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    size: 0.3
+    size: 0.03
     costSell: 60000
     weight: 6
     bigSprite: 1999
@@ -29,6 +29,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_BURST
@@ -64,9 +68,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
-    size: 0.1
+    size: 0.01
     costBuy: 30000
     costSell: 20000
+    requiresBuyCountry: STR_USA
     weight: 4
     bigSprite: 2000
     floorSprite: 2000
@@ -79,6 +84,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -108,9 +117,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
-    size: 0.2
+    size: 0.02
     costBuy: 40000
     costSell: 30000
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2001
     floorSprite: 2001
@@ -123,6 +133,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -153,9 +167,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2002
     floorSprite: 2002
@@ -168,24 +183,28 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
-    confAimed:
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confSnap:
       shots: 3
       name: STR_BURST
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 65
-    accuracySnap: 65
-    accuracyAimed: 60
-    costSnap:
-      time: 35
-      mana: 1
-    costAimed:
-      time: 40
-      mana: 3
+    accuracyAuto: 50
+    accuracySnap: 60
+    accuracyAimed: 75
     costAuto:
       time: 45
       mana: 5
+    costSnap:
+      time: 40
+      mana: 1
+    costAimed:
+      time: 50
+      mana: 3
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -202,9 +221,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 45000
     costSell: 40000
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2003
     floorSprite: 2003
@@ -217,6 +237,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -254,9 +278,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 40000
     costSell: 32000
+    requiresBuyCountry: STR_USA
     weight: 4
     bigSprite: 2004
     floorSprite: 2004
@@ -269,6 +294,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -306,9 +335,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 65000
     costSell: 55000
+    requiresBuyCountry: STR_USA
     weight: 10
     bigSprite: 2005
     floorSprite: 2005
@@ -321,6 +351,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -352,9 +386,10 @@ items:
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 38000
     costSell: 32000
+    requiresBuyCountry: STR_USA
     weight: 7
     bigSprite: 2006
     floorSprite: 2006
@@ -374,6 +409,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     costSnap:
       time: 40
       mana: 3
@@ -399,9 +438,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiresBuyCountry: STR_USA
     weight: 12
     bigSprite: 2007
     floorSprite: 2007
@@ -414,6 +454,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     accuracyAuto: 65
     accuracySnap: 65
     confSnap:
@@ -444,9 +488,10 @@ items:
     categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 42000
     costSell: 36500
+    requiresBuyCountry: STR_USA
     weight: 10
     bigSprite: 2008
     floorSprite: 2008
@@ -475,6 +520,7 @@ items:
     damageType: 2
     damageAlter:
       RandomType: 6
+      ToArmorPre: 0.4
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
@@ -496,9 +542,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HANDGUNS
-    size: 0.1
+    size: 0.01
     costBuy: 30000
     costSell: 20000
+    requiresBuyCountry: STR_ITALY
     weight: 3
     bigSprite: 2009
     floorSprite: 2009
@@ -511,6 +558,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       name: STR_RAPID_FIRE
@@ -540,7 +591,7 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 52000
     costSell: 44000
     weight: 5
@@ -555,6 +606,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_BURST
@@ -589,7 +644,7 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 44000
     weight: 4
@@ -604,6 +659,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -637,9 +696,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiresBuyCountry: STR_WEST_GERMANY
     weight: 4
     bigSprite: 2012
     floorSprite: 2012
@@ -652,6 +712,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_BURST
@@ -685,9 +749,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 30000
     costSell: 22000
+    requiresBuyCountry: STR_FRANCE
     weight: 3
     bigSprite: 2013
     floorSprite: 2013
@@ -700,6 +765,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -737,9 +806,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 66000
     costSell: 55000
+    requiresBuyCountry: STR_UK
     weight: 7
     bigSprite: 2014
     floorSprite: 2014
@@ -752,6 +822,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.8
     confAuto:
       shots: 1
@@ -784,9 +858,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 65000
     costSell: 54000
+    requiresBuyCountry: STR_WEST_GERMANY
     weight: 8
     bigSprite: 2015
     floorSprite: 2015
@@ -799,6 +874,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confSnap:
       shots: 5
       name: STR_BURST
@@ -829,9 +908,10 @@ items:
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.4
+    size: 0.04
     costBuy: 36000
     costSell: 30000
+    requiresBuyCountry: STR_USA
     weight: 9
     bigSprite: 2016
     floorSprite: 2016
@@ -871,9 +951,10 @@ items:
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 2600
     costSell: 1200
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2017
     hitSound: 0
@@ -883,7 +964,7 @@ items:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
-      ToArmor: 0.5
+      ToArmorPre: 0.9
     damageType: 5
     clipSize: 6
     blastRadius: 4
@@ -898,6 +979,7 @@ items:
     size: 0.2
     costBuy: 2600
     costSell: 1200
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2018
     hitSound: 0
@@ -921,9 +1003,10 @@ items:
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 2200
     costSell: 1000
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2019
     hitSound: 0
@@ -947,9 +1030,10 @@ items:
     requiresBuy:
       - STR_NATO_LASER_HEAVY_WEAPONS
       - STR_ELERIUM_FUSION
-    size: 0.2
+    size: 0.02
     costBuy: 10000
     costSell: 8000
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 2020
     hitSound: 0
@@ -977,9 +1061,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HANDGUNS
-    size: 0.1
+    size: 0.01
     costBuy: 25000
     costSell: 20000
+    requiresBuyCountry: STR_RUSSIA
     weight: 6
     bigSprite: 2021
     floorSprite: 2021
@@ -992,6 +1077,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAuto:
       shots: 3
       arcing: false
@@ -1021,9 +1110,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 48000
     costSell: 42000
+    requiresBuyCountry: STR_RUSSIA
     weight: 9
     bigSprite: 2022
     floorSprite: 2022
@@ -1036,6 +1126,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 3
       name: STR_CONTROL_AUTO
@@ -1072,9 +1166,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_RIFLES
-    size: 0.3
+    size: 0.03
     costBuy: 38000
     costSell: 32000
+    requiresBuyCountry: STR_RUSSIA
     weight: 12
     bigSprite: 2023
     floorSprite: 2023
@@ -1087,6 +1182,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.8
     confAuto:
       shots: 2
@@ -1118,9 +1217,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
+    size: 0.02
     costBuy: 27000
     costSell: 22000
+    requiresBuyCountry: STR_RUSSIA
     weight: 6
     bigSprite: 2024
     floorSprite: 2024
@@ -1133,6 +1233,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     confAimed:
       shots: 4
       name: STR_CONTROL_AUTO
@@ -1169,9 +1273,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 68000
     costSell: 59000
+    requiresBuyCountry: STR_RUSSIA
     weight: 15
     bigSprite: 2025
     floorSprite: 2025
@@ -1184,6 +1289,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.6
     confAuto:
       shots: 1
@@ -1216,9 +1325,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 75000
     costSell: 69000
+    requiresBuyCountry: STR_RUSSIA
     weight: 18
     bigSprite: 2026
     floorSprite: 2026
@@ -1231,6 +1341,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     accuracyAimed: 70
     accuracySnap: 45
     accuracyAuto: 40
@@ -1274,9 +1388,10 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
+    size: 0.03
     costBuy: 100000
     costSell: 89000
+    requiresBuyCountry: STR_RUSSIA
     weight: 20
     bigSprite: 2027
     floorSprite: 2027
@@ -1289,6 +1404,10 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 1.2
+      ToWound: 0.1
+      RandomWound: false
       ArmorEffectiveness: 0.3
     twoHanded: true
     accuracyAimed: 110
@@ -1311,7 +1430,7 @@ items:
 
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
-    size: 0.1
+    size: 0.01
     costBuy: 1000
     weight: 10
     bigSprite: 2028
@@ -1333,7 +1452,7 @@ items:
 
   - type: STR_ELERIUM_BATTERY
     categories: [ STR_LIGHT_EQUIPMENT]
-    size: 0.1
+    size: 0.01
     weight: 10
     bigSprite: 1105
     floorSprite: 1105

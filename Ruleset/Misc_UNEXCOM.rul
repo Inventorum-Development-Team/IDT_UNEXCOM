@@ -100,6 +100,12 @@ itemCategories:
     listOrder: 210
   - type: STR_SPACE
     listOrder: 220
+  - type: STR_PRISONERS
+    listOrder: 230
+  - type: STR_CORPSES
+    listOrder: 240
+
+
 
 # New terrain values for the planted 'Hyper Wave Encoder"
 # This is formatted different for the OXC nightly versions
@@ -229,14 +235,14 @@ extraSprites:
     width: 160
     height: 52
     files:
-     0: Resources/UFOinterception/trooplander.png
+      0: Resources/UFOinterception/trooplander.png
 
   - type: InterceptionNoFeed
     singleImage: true
     width: 160
     height: 52
     files:
-     0: Resources/UFOinterception/nofeed.png
+      0: Resources/UFOinterception/nofeed.png
 
 ### Turn Hidden movement background
 

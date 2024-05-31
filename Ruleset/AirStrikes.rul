@@ -1,7 +1,7 @@
 items:
   - type: STR_HE_STRIKE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     requires:
       - STR_AIR_STRIKES
     costBuy: 100000
@@ -11,6 +11,7 @@ items:
     floorSprite: 956
     handSprite: 956
     explosionHitSound: [100, 101, 102]
+    primeSound: [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
     power: 200
     damageType: 3
     battleType: 4
@@ -21,7 +22,7 @@ items:
 
   - type: STR_INC_STRIKE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
-    size: 0.1
+    size: 0.01
     requires:
       - STR_AIR_STRIKES
     costBuy: 100000
@@ -31,10 +32,10 @@ items:
     floorSprite: 972
     handSprite: 972
     explosionHitSound: [103, 104, 105]
+    primeSound: [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
     power: 100
     damageType: 2
     battleType: 4
-    blastRadius: 12
     fuseType: 5
     fuseTriggerEvents:
       throwTrigger: true
@@ -44,6 +45,34 @@ items:
       FireThreshold: 0
       RadiusReduction: 0.0
 
+  - type: STR_CANNON_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    requires:
+      - STR_AIR_STRIKES
+    costBuy: 100000
+    costSell: 50000
+    weight: 1
+    bigSprite: 988
+    floorSprite: 988
+    handSprite: 988
+    explosionHitSound: [106, 107, 108]
+    primeSound: [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+    power: 150
+    damageType: 3
+    battleType: 4
+    blastRadius: 12
+    fuseType: 5
+    fuseTriggerEvents:
+      throwTrigger: true
+    damageAlter:
+      FixRadius: 8
+      ToMorale: 0.6
+      ToArmorPre: 0.6
+      ToTile: 0.1
+      FireThreshold: 1000
+      RadiusReduction: 0.0
+
 extraSprites:
     - type: BIGOBS.PCK
       files:
@@ -51,12 +80,16 @@ extraSprites:
         964: Resources/BallisticWeapons/Explosives/BigHEAirStrike.png
         972: Resources/BallisticWeapons/Explosives/BigNapalmAirStrike.png
         980: Resources/BallisticWeapons/Explosives/BigNapalmAirStrike.png
+        988: Resources/BallisticWeapons/Explosives/BigCannonAirStrike.png
+        996: Resources/BallisticWeapons/Explosives/BigCannonAirStrike.png
     - type: FLOOROB.PCK
       files:
         956: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
         964: Resources/BallisticWeapons/Explosives/FloorSignalGrenade.png
         972: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
         980: Resources/BallisticWeapons/Explosives/FloorSignalGrenadeYellow.png
+        988: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+        996: Resources/BallisticWeapons/Explosives/FloorSignalGrenadeBlue.png
     - type: HANDOB.PCK
       width: 256
       height: 40
@@ -81,7 +114,16 @@ extraSounds:
       107: Resources/BallisticWeapons/Sounds/airstrike_cannons2.wav
       108: Resources/BallisticWeapons/Sounds/airstrike_cannons3.wav
       109: Resources/BallisticWeapons/Sounds/airstrike_a10a.wav
-
+      110: Resources/BallisticWeapons/Sounds/ready[ready1].wav
+      111: Resources/BallisticWeapons/Sounds/ready[ready2].wav
+      112: Resources/BallisticWeapons/Sounds/ready[ready3].wav
+      113: Resources/BallisticWeapons/Sounds/ready[ready4].wav
+      114: Resources/BallisticWeapons/Sounds/ready[ready5].wav
+      115: Resources/BallisticWeapons/Sounds/targeted[targeted1].wav
+      116: Resources/BallisticWeapons/Sounds/targeted[targeted2].wav
+      117: Resources/BallisticWeapons/Sounds/targeted[targeted3].wav
+      118: Resources/BallisticWeapons/Sounds/targeted[targeted4].wav
+      119: Resources/BallisticWeapons/Sounds/targeted[targeted5].wav
 
 
 

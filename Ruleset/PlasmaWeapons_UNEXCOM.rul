@@ -39,7 +39,10 @@ items:
     handSprite: 120 # ALL GOOD
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 1 # 3
     hitSound: 1938
     armor: 30 # 20
@@ -104,11 +107,11 @@ items:
     accuracySnap: 85
     accuracyAimed: 55
     costSnap:
-      time: 30
+      time: 25
     costAimed:
-      time: 40
+      time: 30
     costAuto:
-      time: 60
+      time: 50
     tuLoad: 30
     tuUnload: 15
     battleType: 1
@@ -119,7 +122,7 @@ items:
     aimRange: 39
     snapRange: 40
     autoRange: 20
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5030
@@ -139,6 +142,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     damageType: 5
     clipSize: 25
     battleType: 2
@@ -562,9 +568,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 40000
+    requiresBuyCountry: STR_USA
     weight: 30
     armor: 60
     bigSprite: 3208
@@ -585,11 +592,11 @@ items:
     accuracySnap: 100
     accuracyAimed: 65
     costSnap:
-      time: 60
+      time: 40
     costAimed:
-      time: 75
+      time: 55
     costAuto:
-      time: 70
+      time: 65
     tuLoad: 30
     tuUnload: 15
     battleType: 1
@@ -600,7 +607,7 @@ items:
     aimRange: 32
     snapRange: 28
     autoRange: 16
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5210
@@ -610,9 +617,10 @@ items:
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     ##listOrder: 5251
-    size: 0.2
+    size: 0.02
     costBuy: 9000
     costSell: 3000
+    requiresBuyCountry: STR_USA
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
@@ -623,6 +631,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     damageType: 5
     clipSize: 30
     battleType: 2
@@ -637,9 +648,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.5
+    size: 0.05
     costBuy: 36000
     costSell: 30000
+    requiresBuyCountry: STR_USA
     weight: 45
     armor: 80
     bigSprite: 3216
@@ -659,12 +671,12 @@ items:
       - STR_US_PLASMA_RL_ELERIUM_ROCKET
     accuracyCloseQuarters: 25
     accuracySnap: 125
-    accuracyAimed: 80
+    accuracyAimed: 150
     #accuracyAuto: 60
     tuSnap: 40
     tuAimed: 60
     #tuAuto: 80
-    tuLoad: 45
+    tuLoad: 44
     tuUnload: 22
     battleType: 1
     waypoints: 6
@@ -679,9 +691,10 @@ items:
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costBuy: 2600
     costSell: 1200
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 3288
     handSprite: 3288
@@ -693,8 +706,8 @@ items:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
-      ToArmor: 0.5
-      ToArmorPre: 0.5
+      ToArmor: 0.9
+      ToArmorPre: 0.9
     damageType: 5
     clipSize: 1
     blastRadius: 4
@@ -707,9 +720,10 @@ items:
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costBuy: 2600
     costSell: 1200
+    requiresBuyCountry: STR_USA
     weight: 6
     bigSprite: 3296
     handSprite: 3296
@@ -737,10 +751,11 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-    size: 0.2
+    size: 0.02
     armor: 50
     costBuy: 38000
     costSell: 32000
+    requiresBuyCountry: STR_USA
     weight: 25
     bigSprite: 3224
     floorSprite: 3224
@@ -755,11 +770,11 @@ items:
       shots: 5
       name: STR_RAGE_FIRE
       arcing: true
-    #accuracySnap: 60
+    accuracySnap: 80
     accuracyAuto: 65
     #accuracyAimed: 75
-    #costSnap:
-    #  time: 40
+    costSnap:
+      time: 20
     #costAimed:
     #  time: 60
     costAuto:
@@ -767,10 +782,10 @@ items:
     maxRange: 20
     tuLoad: 20
     tuUnload: 10
-    dropoff: 10
+    dropoff: 8
     kneelBonus: 115
-    #snapRange: 12
-    autoRange: 12
+    snapRange: 20
+    autoRange: 14
     #arcingShot: true
     invHeight: 3
     invWidth: 1
@@ -784,8 +799,10 @@ items:
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     ##listOrder: 5451
+    size: 0.01
     costBuy: 14000
     costSell: 12000
+    requiresBuyCountry: STR_USA
     hitAnimation: 110
     power: 70 # 52
     clipSize: 5 # 26
@@ -796,7 +813,7 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
-      ToArmorPre: 0.4
+      ToArmorPre: 1.2
       FireThreshold: 80
     weight: 10 # 3
     hitSound: 1938
@@ -818,9 +835,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.3
+    size: 0.03
     costBuy: 50000
     costSell: 44000
+    requiresBuyCountry: STR_FRANCE
     weight: 25
     armor: 60
     bigSprite: 3232
@@ -842,11 +860,11 @@ items:
     accuracySnap: 70
     accuracyAimed: 80
     costSnap:
-      time: 30
+      time: 20
     costAimed:
-      time: 65
+      time: 30
     costAuto:
-      time: 35
+      time: 45
     battleType: 1
     tuLoad: 30
     tuUnload: 15
@@ -857,7 +875,7 @@ items:
     aimRange: 20
     snapRange: 10
     autoRange: 5
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5280
@@ -867,9 +885,10 @@ items:
     ##listOrder: 5251
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costSell: 3000
     costBuy: 5000
+    requiresBuyCountry: STR_FRANCE
     bigSprite: 3312
     floorSprite: 3312
     handSprite: 3312 # ALL GOOD
@@ -877,10 +896,13 @@ items:
     hitSound: 1938
     hitAnimation: 110 # FIX THIS
     power: 80
+    damageType: 5
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
-    damageType: 5
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     clipSize: 20
     battleType: 2
     invWidth: 1
@@ -894,9 +916,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.1
+    size: 0.01
     costBuy: 30000
     costSell: 20000
+    requiresBuyCountry: STR_UK
     weight: 6
     armor: 40
     bigSprite: 3240
@@ -913,17 +936,17 @@ items:
     accuracySnap: 65
     accuracyAimed: 85
     costSnap:
-      time: 25
+      time: 20
     costAimed:
-      time: 40
+      time: 35
     battleType: 1
-    kneelBonus: 100
+    kneelBonus: 120
     tuLoad: 10
     tuUnload: 10
     maxRange: 25
     aimRange: 15
     snapRange: 10
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 2
     listOrder: 5300
@@ -933,8 +956,10 @@ items:
     ##listOrder: 5451
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
     costBuy: 6000
     costSell: 5500
+    requiresBuyCountry: STR_UK
     hitAnimation: 110
     power: 70 # 52
     clipSize: 12 # 26
@@ -944,6 +969,9 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
     weight: 1 # 3
     damageType: 5
     hitSound: 1938
@@ -957,9 +985,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-    size: 0.4
+    size: 0.04
     costBuy: 66000
     costSell: 55000
+    requiresBuyCountry: STR_WEST_GERMANY
     weight: 35
     armor: 60
     bigSprite: 3248
@@ -978,11 +1007,11 @@ items:
     accuracyAimed: 150
     accuracyAuto: 220
     costSnap:
-      time: 65
+      time: 40
     costAimed:
-      time: 75
+      time: 60
     costAuto:
-      time: 85
+      time: 80
     battleType: 1
     #twoHanded: true
     blockBothHands: true
@@ -996,7 +1025,7 @@ items:
     snapRange: 25
     autoRange: 50
     #minRange: 25
-    dropoff: 5
+    dropoff: 4
     invWidth: 2
     invHeight: 3
     listOrder: 5320
@@ -1006,8 +1035,10 @@ items:
     ##listOrder: 5177
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
     costBuy: 13000
     costSell: 11000
+    requiresBuyCountry: STR_WEST_GERMANY
     hitAnimation: 110
     power: 150 # 115
     clipSize: 6 # 35
@@ -1018,7 +1049,10 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 5 # 3
     armor: 35 # 20
     battleType: 2
@@ -1034,9 +1068,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.3
+    size: 0.03
     costBuy: 48000
     costSell: 42000
+    requiresBuyCountry: STR_RUSSIA
     weight: 28
     armor: 60
     bigSprite: 3256
@@ -1060,9 +1095,9 @@ items:
     accuracySnap: 65
     accuracyAuto: 45
     costAimed:
-      time: 65
+      time: 45
     costSnap:
-      time: 50
+      time: 35
     costAuto:
       time: 55
     # melee segment
@@ -1093,7 +1128,7 @@ items:
     aimRange: 24
     snapRange: 26
     autoRange: 10
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5340
@@ -1103,19 +1138,23 @@ items:
     ##listOrder: 5251
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costSell: 8000
     costBuy: 9000
+    requiresBuyCountry: STR_RUSSIA
     bigSprite: 3336
     floorSprite: 3336
     handSprite: 3336 # ALL GOOD
     weight: 3 # 3
     hitSound: 1938
-    hitAnimation: 110
+    hitAnimation: 90
     power: 92
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     damageType: 5
     clipSize: 35
     battleType: 2
@@ -1130,9 +1169,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.4
+    size: 0.04
     costBuy: 75000
     costSell: 69000
+    requiresBuyCountry: STR_RUSSIA
     weight: 40
     armor: 70
     bigSprite: 3264
@@ -1158,9 +1198,9 @@ items:
       ammoSlot: 0
       arcing: false
     costSnap:
-      time: 60
+      time: 45
     costAuto:
-      time: 80
+      time: 65
     twoHanded: true
     blockBothHands: true
     tuLoad: 45
@@ -1173,7 +1213,7 @@ items:
     snapRange: 23
     autoRange: 15
     #minRange: 5
-    dropoff: 5
+    dropoff: 3
     invWidth: 2
     invHeight: 3
     listOrder: 5360
@@ -1183,8 +1223,10 @@ items:
     ##listOrder: 5177
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.01
     costBuy: 170000
     costSell: 15000
+    requiresBuyCountry: STR_RUSSIA
     hitAnimation: 110
     power: 75 # 115
     clipSize: 50 # 35
@@ -1195,8 +1237,10 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
-      ToArmorPre: 0.3
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 6 # 3
     armor: 35 # 20
     battleType: 2
@@ -1208,9 +1252,10 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-    size: 0.2
+    size: 0.02
     costBuy: 27000
     costSell: 22000
+    requiresBuyCountry: STR_RUSSIA
     weight: 20
     bigSprite: 3272
     floorSprite: 3272
@@ -1233,11 +1278,11 @@ items:
     accuracySnap: 66
     accuracyAuto: 30
     costAimed:
-      time: 35
+      time: 25
     costSnap:
-      time: 45
+      time: 35
     costAuto:
-      time: 50
+      time: 40
     battleType: 1
     sprayWaypoints: 2
     kneelBonus: 115
@@ -1248,7 +1293,7 @@ items:
     snapRange: 10
     autoRange: 5
     twoHanded: false
-    dropoff: 5
+    dropoff: 3
     invWidth: 1
     invHeight: 3
     listOrder: 5380
@@ -1258,9 +1303,11 @@ items:
     ##listOrder: 5451
     requiresBuy:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.01
     costBuy: 12000
     costSell: 11000
-    hitAnimation: 110
+    requiresBuyCountry: STR_RUSSIA
+    hitAnimation: 90
     power: 80 # 52
     clipSize: 25 # 26
     bigSprite: 3352
@@ -1269,7 +1316,10 @@ items:
     damageType: 5
     damageAlter:
       RandomType: 6
-      IgnoreOverKill: false
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
     weight: 1 # 3
     hitSound: 1938
     armor: 30 # 20

@@ -7,7 +7,8 @@ items:
     categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
     requires:
       - STR_OLYMPUS
-    size: 0.1
+    size: 0.01
+    requiresBuyCountry: STR_USA
     costBuy: 2500
     costSell: 2900
     weight: 3
@@ -40,7 +41,8 @@ items:
     categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES]
     requires:
       - STR_OLYMPUS
-    size: 0.2
+    size: 0.02
+    requiresBuyCountry: STR_USA
     costBuy: 3200
     costSell: 4000
     weight: 6
@@ -80,7 +82,8 @@ items:
     categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES, STR_PISTOLS]
     requires:
       - STR_OLYMPUS
-    size: 0.1
+    size: 0.02
+    requiresBuyCountry: STR_USA
     costBuy: 400
     costSell: 350
     weight: 2
@@ -101,7 +104,7 @@ items:
     requiresBuy:
       - STR_OLYMPUS
     categories: [ STR_MELEE, STR_SPACE, STR_LIGHT_EQUIPMENT ]
-    size: 0.2
+    size: 0.02
     costBuy: 1200
     costSell: 2200
     weight: 3
@@ -140,7 +143,7 @@ items:
     requiresBuy:
       - STR_GENERATOR_STICK
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-    size: 0.1
+    size: 0.01
     costBuy: 3260
     costSell: 4045
     weight: 5

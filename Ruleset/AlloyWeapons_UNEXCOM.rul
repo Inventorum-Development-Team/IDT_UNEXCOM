@@ -12,7 +12,7 @@ items:
     requires:
       - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
-    size: 0.2
+    size: 0.02
     costSell: 37500
     weight: 6
     bigSprite: 1211
@@ -69,7 +69,7 @@ items:
     requires:
       - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
-    size: 0.2
+    size: 0.02
     costSell: 37500
     weight: 5
     bigSprite: 1204
@@ -126,7 +126,7 @@ items:
     requires:
       - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 4
     bigSprite: 1212
@@ -140,7 +140,7 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.5
+      ToArmorPre: 0.6
       ToWound: 0.3
       RandomWound: false
     clipSize: 20
@@ -153,7 +153,7 @@ items:
     requires:
       - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 2
     bigSprite: 1220
@@ -183,7 +183,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_PISTOLS]
-    size: 0.1
+    size: 0.01
     costSell: 25000
     weight: 3
     bigSprite: 1209
@@ -232,7 +232,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 2
     bigSprite: 1210
@@ -260,7 +260,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 1
     bigSprite: 1219
@@ -290,7 +290,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
-    size: 0.3
+    size: 0.03
     costSell: 52000
     weight: 6
     bigSprite: 1202
@@ -335,7 +335,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2500
     weight: 2
     bigSprite: 1203
@@ -369,7 +369,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
-    size: 0.3
+    size: 0.03
     costSell: 5200
     weight: 6
     bigSprite: 1213
@@ -411,7 +411,7 @@ items:
     requires:
       - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 3500
     weight: 2
     bigSprite: 1214
@@ -445,7 +445,7 @@ items:
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY]
     requires:
       - STR_ALLOY_EXPLOSIVE
-    size: 0.2
+    size: 0.02
     costSell: 42500
     weight: 10
     bigSprite: 1206
@@ -476,7 +476,7 @@ items:
     requires:
       - STR_ALLOY_EXPLOSIVE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_CLIPS, STR_ARTILLERY]
-    size: 0.1
+    size: 0.01
     costSell: 4700
     weight: 3
     bigSprite: 1217
@@ -508,7 +508,7 @@ items:
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_LIGHT_EQUIPMENT, STR_EXPLOSIVES]
     requires:
       - STR_ALLOY_EXPLOSIVE
-    size: 0.1
+    size: 0.01
     costSell: 2400
     weight: 2
     bigSprite: 1205
@@ -532,7 +532,7 @@ items:
     requires:
       - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY, STR_LMGS]
-    size: 0.4
+    size: 0.04
     costSell: 54000
     weight: 14
     bigSprite: 1207
@@ -580,7 +580,7 @@ items:
     requires:
       - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 6
     bigSprite: 1208
@@ -608,7 +608,7 @@ items:
     requires:
       - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 4
     bigSprite: 1218
@@ -638,7 +638,7 @@ items:
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requires:
       - STR_ALLOY_HEAVY
-    size: 0.3
+    size: 0.03
     costSell: 62600
     weight: 10
     bigSprite: 1215
@@ -687,7 +687,7 @@ items:
     requires:
       - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 2
     bigSprite: 1216
@@ -703,7 +703,7 @@ items:
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
-      ToArmorPre: 0.7
+      ToArmorPre: 0.8
       ToArmor: 1.2
       ToWound: 0.3
       RandomWound: false
@@ -718,7 +718,7 @@ items:
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requires:
       - STR_ALLOY_HEAVY
-    size: 0.1
+    size: 0.01
     costSell: 2250
     weight: 2
     bigSprite: 1221
@@ -996,7 +996,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-     1085: Resources/BulletSprites/Flechette_bullet.png #31
+      1085: Resources/BulletSprites/Flechette_bullet.png #31
 
 
 #############################

@@ -5,12 +5,15 @@ items:
   - type: STR_INC_STRIKE #ignoreDuplicate
     tags:
       STRIKE: 1
+  - type: STR_CANNON_STRIKE #ignoreDuplicate
+    tags:
+      STRIKE: 1
   - type: STR_ELECTRO_FLARE #ignoreDuplicate
     tags:
       STRIKE: 1
   - type: STR_FLASHBANG_GRENADE #ignoreDuplicate
     tags:
-     FlashBang: 1
+      FlashBang: 1
   # - type: STR_M1972_LASER_PISTOL
   #   isExplodingInHands: true # won't explode though as it's not a grenade
   #   isConsumable: true
@@ -19,7 +22,7 @@ items:
 armors:
   - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
     tags:
-     Hind_Turret: 1
+      Hind_Turret: 1
 
 
 # spellchecker:disable

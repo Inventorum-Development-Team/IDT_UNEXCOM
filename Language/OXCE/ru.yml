@@ -1,4 +1,6 @@
 ru:
+#=================== Basescape ===================
+#SoldierAvatarState.cpp
   STR_AVATAR_NAME_1: "#01 Муж, Блондин"
   STR_AVATAR_NAME_2: "#02 Муж, Шатен"
   STR_AVATAR_NAME_3: "#03 Муж, Азиат"
@@ -7,9 +9,17 @@ ru:
   STR_AVATAR_NAME_6: "#06 Жен, Брюнетка"
   STR_AVATAR_NAME_7: "#07 Жен, Азиатка"
   STR_AVATAR_NAME_8: "#08 Жен, Негр"
+#=================== Battlescape ===================
+#InventoryState.cpp
   STR_PSI_SHORT: "ПСИ>{ALT}{0}/{1}"
+#=================== Geoscape ===================
+#DogfightState.cpp
+  STR_EVASIVE_MANEUVERS: "МАНЕВРЫ УКЛОНЕНИЯ"
+#GeoscapeState.cpp
   STR_UFO_HAS_LANDED: "НЛО приземлился в{NEWLINE}{0}"
+#SelectMusicTrackState.cpp
   GMGEO1: "Трек #1 в такт. режиме"
   GMGEO2: "Трек #2 в такт. режиме"
   GMTACTIC: "Трек в страт. режиме"
-  STR_SHOT_TYPE_AUTO: "Очер. (x{0})"
+#==================================================================================================================
+  STR_SHOT_TYPE_AUTO: "Авто (x{0})"

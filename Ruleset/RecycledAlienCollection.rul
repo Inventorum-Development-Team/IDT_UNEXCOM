@@ -1,4 +1,4 @@
-﻿items:
+items:
   - type: STR_SALAMANDRON_BITE
     weight: 3
     bigSprite: 3010
@@ -26,6 +26,7 @@
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    categories: [STR_CORPSES]
     armor: 26
     listOrder: 6715
   - type: STR_CEREBREAL_LARVA_CORPSE
@@ -38,6 +39,7 @@
     invHeight: 2
     recoveryPoints: 5
     battleType: 11
+    categories: [STR_CORPSES]
     armor: 26
     listOrder: 7020
   - type: CEREBREAL_WEAPON
@@ -46,7 +48,7 @@
     floorSprite: 31
     handSprite: 104
     bulletSprite: 11
-    fireSound: 112
+    fireSound: 122
     hitSound: 19
     hitAnimation: 57
     power: 110
@@ -106,42 +108,49 @@
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 40000
     listOrder: 14401
   - type: STR_CEREBREAL_ENGINEER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14402
   - type: STR_CEREBREAL_MEDIC
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14403
   - type: STR_CEREBREAL_NAVIGATOR
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14404
   - type: STR_CEREBREAL_LEADER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14405
   - type: STR_CEREBREAL_COMMANDER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14406
   - type: STR_CEREBREAL_LARVA_TERRORIST
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 40000
     listOrder: 14407
   - type: STR_CHTONITE_CORPSE
@@ -154,6 +163,7 @@
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    categories: [STR_CORPSES]
     armor: 26
     listOrder: 6715
   - type: STR_TUNLUN_CORPSE
@@ -166,6 +176,7 @@
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    categories: [STR_CORPSES]
     armor: 26
     listOrder: 7020
   - type: TUNLUN_WEAPON
@@ -194,42 +205,49 @@
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 40000
     listOrder: 14401
   - type: STR_CHTONITE_ENGINEER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14402
   - type: STR_CHTONITE_MEDIC
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14403
   - type: STR_CHTONITE_NAVIGATOR
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14404
   - type: STR_CHTONITE_LEADER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14405
   - type: STR_CHTONITE_COMMANDER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14406
   - type: STR_TUNLUN_TERRORIST
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 40000
     listOrder: 14407
   - type: STR_REPTOID_CORPSE
@@ -242,12 +260,14 @@
     invHeight: 3
     recoveryPoints: 5
     battleType: 11
+    categories: [STR_CORPSES]
     armor: 26
     listOrder: 6715
   - type: STR_SALAMANDRON_CORPSE
     size: 1
     costSell: 9000
     battleType: 11
+    categories: [STR_CORPSES]
     listOrder: 7025
   - type: SALAMANDRON_CORPSE_1
     name: STR_SALAMANDRON_CORPSE
@@ -255,6 +275,7 @@
     invWidth: 0
     invHeight: 0
     battleType: 11
+    categories: [STR_CORPSES]
     recover: true
     recoveryPoints: 3
     listOrder: 7026
@@ -263,18 +284,21 @@
     invWidth: 0
     invHeight: 0
     battleType: 11
+    categories: [STR_CORPSES]
     recover: false
   - type: SALAMANDRON_CORPSE_3
     floorSprite: 3012
     invWidth: 0
     invHeight: 0
     battleType: 11
+    categories: [STR_CORPSES]
     recover: false
   - type: SALAMANDRON_CORPSE_4
     floorSprite: 3013
     invWidth: 0
     invHeight: 0
     battleType: 11
+    categories: [STR_CORPSES]
     recover: false
   - type: SALAMANDRON_WEAPON
     weight: 3
@@ -300,44 +324,52 @@
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 40000
     listOrder: 14401
   - type: STR_REPTOID_ENGINEER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14402
   - type: STR_REPTOID_MEDIC
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14403
   - type: STR_REPTOID_NAVIGATOR
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14404
   - type: STR_REPTOID_LEADER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14405
   - type: STR_REPTOID_COMMANDER
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14406
   - type: STR_SALAMANDRON_TERRORIST
     size: 0.0
     recover: true
     liveAlien: true
+    categories: [STR_PRISONERS]
     costSell: 60000
     listOrder: 14407
+######## Punch Here #######
 armors:
   - type: CEREBREAL_ARMOR0
     allowInv: true
@@ -363,6 +395,7 @@ armors:
       - 1.4
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: CEREBREAL_ARMOR1
     allowInv: true
     spriteInv: inventory_CEREBREAL
@@ -411,6 +444,7 @@ armors:
       - 1.4
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: CEREBREAL_ZOMBIE_ARMOR
     painImmune: true # no secondary stun damage
     spriteInv: CEREBREAL_ZOMBIE_INVENTORY
@@ -476,6 +510,7 @@ armors:
       - 0.0
       - 0.9
     loftempsSet: [ 2 ]
+    specialWeapon: STR_UNARMED_UNIFORM
     drawingRoutine: 16
     constantAnimation: true
   - type: CHTONITE_ARMOR0
@@ -502,6 +537,7 @@ armors:
       - 0.8
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: CHTONITE_ARMOR1
     allowInv: true
     spriteInv: inventory_CHTONITE
@@ -526,6 +562,7 @@ armors:
       - 0.8
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: CHTONITE_ARMOR2
     allowInv: true
     spriteInv: inventory_CHTONITE
@@ -550,6 +587,7 @@ armors:
       - 0.8
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: TUNLUN_ARMOR
     allowInv: true
     spriteInv: inventory_TUNLUN
@@ -574,6 +612,7 @@ armors:
       - 0.0
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: REPTOID_ARMOR0
     allowInv: true
     spriteInv: inventory_REPTOID
@@ -598,6 +637,7 @@ armors:
       - 1.4
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: REPTOID_ARMOR1
     allowInv: true
     spriteInv: inventory_REPTOID
@@ -622,6 +662,7 @@ armors:
       - 1.4
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: REPTOID_ARMOR2
     allowInv: true
     spriteInv: inventory_REPTOID
@@ -646,6 +687,7 @@ armors:
       - 1.4
       - 0.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
   - type: SALAMANDRON_ARMOR
     spriteSheet: SALAMANDRON.PCK
     corpseBattle:
@@ -1191,7 +1233,7 @@ units:
     standHeight: 24
     kneelHeight: 18
     value: 25
-    deathSound: 111
+    deathSound: 123
     intelligence: 2
     aggression: 2
     builtInWeaponSets:
@@ -1385,8 +1427,8 @@ extraSprites:
 extraSounds:
   - type: BATTLE.CAT
     files:
-      112: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
-      111: Resources/RecycledAlienCollection/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
+      122: Resources/RecycledAlienCollection/CerebrealRace/CerebrealBlast.wav
+      123: Resources/RecycledAlienCollection/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
 extraStrings:
   - type: en-GB
     strings:
