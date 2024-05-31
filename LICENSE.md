@@ -35,6 +35,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Finnik: Astronaut sprites (modified), original code added to the main OXCE, bug hunter
 * Fox105iwsp: original UN Combat Uniform and XM-72 Combat Armor sprites
 * garretrgang: bug hunter
+* GumChewer1980: bug hunter, debugging support
 * Hans Woofington: All UNEXCOM armor sprites, artist help, ideas & bug hunter
 * hellrazor: Expanded Terror and Skystriker (C-130 Hercules placeholder, now unused), Commendations template
 * Hobbes: Terrain Pack Mod (unused), Tech-Comm HKs code, ruleset reference, modding help.
@@ -78,7 +79,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * The Reaver of Darkness: major balance support, LIGHTNIA mapset, plus ideas
 * theemperorofmankind: bug hunter
 * Tingcat: Terrorists Paperdolls
-* Ultrakiroxei: bug hunter, USSR Close Range Laser Pedia text
+* Ultrakiroxei: IDT bug hunter, debugging support, ideas, balance support
 * Valmont and his girlfriend: bug hunters
 * Vesparco: Sectoid Commander spritesheet
 * Warboy1982: Shotgun firing sound
