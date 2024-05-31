@@ -22,6 +22,16 @@ startingConditions:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
 
+  - type: STR_TERRORIST_MISSION_NO_TANKS
+    forbiddenVehicles:
+      - STR_FERRET_CAR
+      - STR_SHERIDAN_TANK
+      - STR_BMD1_TANK
+      - STR_SALADIN_CAR
+      - STR_TANK_LASER_CANNON
+      - STR_HE_STRIKE
+      - STR_INC_STRIKE
+      - STR_HIGH_EXPLOSIVE
 
   - type: STR_OPERATION_FALSE_FLAG_CONDITION
     requiredItems:
