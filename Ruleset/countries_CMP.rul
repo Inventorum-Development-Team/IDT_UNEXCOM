@@ -49,11 +49,12 @@ countries:
     areas:
       - [30, 50, -80, -52.1] #European Russia Top
       - [34.1, 50, -52.1, -50.35] #European Russia Middle
-      - [38.3, 48, -50.35, -42] #Caucasus
       - [50, 190.5, -80, -50.5] #Central Siberian Area Past Urals
       - [134, 146.1, -50.5, -45.63] #Sakhalin Island Area
       - [130, 137.6, -45.63, -42.36] #Vladivostok Area
-      - [19.16, 22.84, -55.5, -54.52] #Kaliningrad Area
+      - [19.16, 30, -59.2, -54.52] ## Baltic Area
+      - [24, 38.5, -54.83, -43.83] # Belarus/Ukraine Area
+      - [38.3, 74, -50.35, -37.5] #Caucasus and Central Asia
 #END RUSSIA
 
 #BEGIN UK
@@ -95,8 +96,8 @@ countries:
   - type: STR_EAST_GERMANY
     fundingBase: 250
     fundingCap: 6500
-    labelLon: 12.7773
-    labelLat: -51.4612
+    labelLon: 12.8
+    labelLat: -53.8
     areas:
       - [11, 15, -55, -50.3]
 #END EAST GERMANY
@@ -105,8 +106,8 @@ countries:
   - type: STR_POLAND
     fundingBase: 270
     fundingCap: 7000
-    labelLon: 19.28
-    labelLat: -52.35
+    labelLon: 19.55
+    labelLat: -52.33
     areas:
       - [15, 23, -54.5, -51]
 #END POLAND
@@ -228,11 +229,12 @@ countries:
   - type: STR_SOUTH_AFRICA
     fundingBase: 230
     fundingCap: 3000
-    labelLon: 17.5
+    labelLon: 23.3
     labelLat: 30
     areas:
       - [15, 25, 26, 35]
       - [25, 33, 22, 35]
+      - [12, 24, 26, 18]
 #END SOUTH AFRICA
 
 #BEGIN EGYPT
