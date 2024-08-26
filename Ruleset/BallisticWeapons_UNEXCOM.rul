@@ -2493,9 +2493,11 @@ items:
     sprayWaypoints: 2
     attraction: 9
     listOrder: 201280
+
   ##################################################
   ############### CIVILIAN WEAPONS #################
   ##################################################
+
   - type: STR_MAKAROV
     requiresBuy:
       - STR_MAKAROV
@@ -2761,6 +2763,152 @@ items:
     attraction: 7
     listOrder: 2105
 
+  ##############################################
+  ############### DEALER WEAPONS ###############
+  ##############################################
+
+  - type: STR_LUGER
+    categories:
+      [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
+    size: 0.01
+    costBuy: 1100
+    costSell: 850
+    requiresBuyCountry: STR_WEST_GERMANY
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    weight: 6
+    bigSprite: 166
+    floorSprite: 166
+    handSprite: 629
+    bulletSprite: 1
+    fireSound: 166
+    bulletSpeed: 15
+    reloadSound: [ 204, 205, 206 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 133
+    accuracySnap: 70
+    accuracyAimed: 80
+    tuSnap: 17
+    tuAimed: 28
+    tuLoad: 15
+    maxRange: 60
+    aimRange: 12
+    snapRange: 9
+    autoRange: 8
+    dropoff: 1
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 200434
+
+  - type: STR_UZI
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    categories:
+      [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SMGS ]
+    size: 0.01
+    costBuy: 1350
+    costSell: 1000
+    weight: 6
+    bigSprite: 282
+    floorSprite: 282
+    handSprite: 621
+    bulletSprite: 1
+    bulletSpeed: 20
+    fireSound: 149
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo:
+          [
+            STR_9MM_PISTOL_X10,
+            STR_9MM_PISTOL_X20,
+            STR_9MM_PISTOL_X30
+          ]
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 133
+    accuracySnap: 55
+    accuracyAuto: 40
+    tuSnap: 30
+    tuAuto: 40
+    autoShots: 6
+    maxRange: 60
+    aimRange: 8
+    autoRange: 9
+    snapRange: 12
+    dropoff: 1
+    kneelBonus: 40
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 200410
+
+  - type: STR_G3
+    categories:
+      [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_CARBINES ]
+    requiresBuy:
+      - STR_CONTACT_SMUGGLERS
+    size: 0.02
+    costBuy: 2700
+    costSell: 2200
+    weight: 8
+    bigSprite: 283
+    floorSprite: 283
+    handSprite: 622
+    bulletSprite: 1
+    fireSound: 148
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 45
+    accuracySnap: 66
+    accuracyAimed: 82
+    tuAuto: 33
+    tuSnap: 24
+    tuAimed: 46
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    aimRange: 25
+    attraction: 12
+    listOrder: 201090
+
   ###############################################
   ############### POLICE WEAPONS #################
   #############################################
@@ -2777,8 +2925,8 @@ items:
     costSell: 1000
     requiresBuyCountry: STR_USA
     weight: 5
-    bigSprite: 166
-    floorSprite: 166
+    bigSprite: 281
+    floorSprite: 281
     handSprite: 628
     bulletSprite: 1
     fireSound: 166
@@ -5155,6 +5303,9 @@ extraSprites:
       163: Resources/BallisticWeapons/Civilian/BigHuntingRifle.png
       164: Resources/BallisticWeapons/Civilian/BigModel1900.png
       165: Resources/BallisticWeapons/Civilian/BigMachete.png
+      281: Resources/BallisticWeapons/Civilian/BigLuger.png
+      282: Resources/BallisticWeapons/Civilian/BigUzi.png
+      283: Resources/BallisticWeapons/Civilian/BigG3.png
 
       166: Resources/BallisticWeapons/Civilian/BigPoliceRevolver.png
       167: Resources/BallisticWeapons/Civilian/BigBerettaM12.png
@@ -5295,6 +5446,10 @@ extraSprites:
       164: Resources/BallisticWeapons/Civilian/FloorModel1900.png
       165: Resources/BallisticWeapons/Civilian/FloorMachete.png
 
+      281: Resources/BallisticWeapons/Civilian/FloorLuger.png
+      282: Resources/BallisticWeapons/Civilian/FloorUzi.png
+      283: Resources/BallisticWeapons/Civilian/FloorG3.png
+
       166: Resources/BallisticWeapons/Civilian/FloorPoliceRevolver.png
       167: Resources/BallisticWeapons/Civilian/FloorBerettaM12.png
       168: Resources/BallisticWeapons/Civilian/FloorPoliceShotgun.png
@@ -5433,6 +5588,10 @@ extraSprites:
       604: Resources/BallisticWeapons/Civilian/HandHuntingRifle.png
       612: Resources/BallisticWeapons/Civilian/HandModel1900.png
       620: Resources/BallisticWeapons/Civilian/HandMachete.png
+
+      629: Resources/BallisticWeapons/Civilian/HandLuger.png
+      621: Resources/BallisticWeapons/Civilian/HandUzi.png
+      622: Resources/BallisticWeapons/Civilian/HandG3.png
 
       628: Resources/BallisticWeapons/Civilian/HandPoliceRevolver.png
       636: Resources/BallisticWeapons/Civilian/HandBerettaM12.png
