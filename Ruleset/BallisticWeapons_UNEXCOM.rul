@@ -2799,12 +2799,12 @@ items:
     tuSnap: 17
     tuAimed: 28
     tuLoad: 15
-    maxRange: 60
+    maxRange: 52
     aimRange: 12
-    snapRange: 9
-    autoRange: 8
+    snapRange: 12
+    autoRange: 7
     dropoff: 1
-    kneelBonus: 105
+    kneelBonus: 77
     battleType: 1
     twoHanded: false
     invWidth: 1
@@ -2831,11 +2831,8 @@ items:
     ammo:
       0:
         compatibleAmmo:
-          [
-            STR_9MM_PISTOL_X10,
-            STR_9MM_PISTOL_X20,
-            STR_9MM_PISTOL_X30
-          ]
+          - STR_9MM_PISTOL_X20
+          - STR_9MM_PISTOL_X30
     confAuto:
       shots: 7
       name: STR_FULL_AUTO
@@ -2849,9 +2846,9 @@ items:
       arcing: false
     accuracyCloseQuarters: 133
     accuracySnap: 55
-    accuracyAuto: 40
+    accuracyAuto: 35
     tuSnap: 30
-    tuAuto: 40
+    tuAuto: 28
     autoShots: 6
     maxRange: 60
     aimRange: 8
@@ -2861,7 +2858,7 @@ items:
     kneelBonus: 40
     battleType: 1
     twoHanded: false
-    invWidth: 1
+    invWidth: 2
     invHeight: 2
     attraction: 8
     listOrder: 200410
@@ -2873,7 +2870,7 @@ items:
       - STR_CONTACT_SMUGGLERS
     size: 0.02
     costBuy: 2700
-    costSell: 2200
+    costSell: 1700
     weight: 8
     bigSprite: 283
     floorSprite: 283
@@ -2891,11 +2888,11 @@ items:
       ammoSlot: 0
       arcing: false
     accuracyAuto: 45
-    accuracySnap: 66
-    accuracyAimed: 82
-    tuAuto: 33
-    tuSnap: 24
-    tuAimed: 46
+    accuracySnap: 60
+    accuracyAimed: 74
+    tuAuto: 55
+    tuSnap: 33
+    tuAimed: 40
     costThrow:
       energy: 12
     battleType: 1
