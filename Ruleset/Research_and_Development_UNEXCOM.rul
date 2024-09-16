@@ -18,6 +18,11 @@ research:
   - delete: STR_THE_MARTIAN_SOLUTION
   - delete: STR_CYDONIA_OR_BUST
 #################################
+  - name: STR_CONTACT_SMUGGLERS
+    cost: 90
+    points: 12
+    spawnedItem: STR_LUGER
+
   - name: STR_MEDI_KIT
     dependencies:
       - STR_ALLOY_MANUFACTURING
