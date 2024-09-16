@@ -61,6 +61,7 @@ XCOM: Enemy Unknown and XCOM 2 soundtrack used here belongs to 2K and Firaxis Ga
 * Luke83: overall Terrain & Map support
 * PERLHA: IDT bug hunter
 * Pjlasl: Probe ruleset snippet
+* pl4ttenbau: Uzi, G3, Luger sprites and code
 * Pvt.Dropleaf: bug hunter
 * Rclipse: IDT bug hunter
 * Riccardo Gasperi: original Android buttons art (modified)
