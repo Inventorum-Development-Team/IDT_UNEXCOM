@@ -604,6 +604,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 10
 
   - name: STR_DISASSEMBLE_FUSION_POWER_CELL_LIGHT
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_INITIAL_FUSION_CELLS_RESEARCH
     time: 20
@@ -615,6 +616,7 @@ manufacture:
       STR_ELERIUM_115: 5
 
   - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HEAVY
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_INITIAL_FUSION_CELLS_RESEARCH
     time: 20
@@ -626,6 +628,7 @@ manufacture:
       STR_ELERIUM_115: 10
 
   - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HUGE
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_INITIAL_FUSION_CELLS_RESEARCH
     time: 20
@@ -637,6 +640,7 @@ manufacture:
       STR_ELERIUM_115: 15
 
   - name: STR_DISASSEMBLE_FUSION_HANDGUN
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_FUSION_HANDGUN
     time: 20
@@ -649,6 +653,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
 
   - name: STR_DISASSEMBLE_FUSION_SMG
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_FUSION_SMG
     time: 20
@@ -661,6 +666,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
 
   - name: STR_DISASSEMBLE_FUSION_RIFLE
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_FUSION_RIFLE
     time: 30
@@ -673,6 +679,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
 
   - name: STR_DISASSEMBLE_FUSION_SNIPER
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_FUSION_SNIPER
     time: 40
@@ -685,6 +692,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
 
   - name: STR_DISASSEMBLE_FUSION_SPLITTER
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_FUSION_SPLITTER
     time: 40
@@ -697,6 +705,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 2
 
   - name: STR_DISASSEMBLE_FUSION_LANCE
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_FUSION_LANCE
     time: 40
@@ -708,6 +717,7 @@ manufacture:
       STR_ALIEN_CEPHALOPOD_TISSUE: 5
       STR_ALIEN_ALLOYS: 1
   - name: STR_DISASSEMBLE_ETHEREAL_NOBLE_SWORD
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_ETHEREAL_NOBLE_SWORD
     time: 10
@@ -719,6 +729,7 @@ manufacture:
       STR_ALIEN_CEPHALOPOD_TISSUE: 1
       STR_ALIEN_ALLOYS: 3
   - name: STR_DISASSEMBLE_STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    category: STR_DISASSEMBLE_MANUFACTURE
     requires:
      - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
     time: 20
