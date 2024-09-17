@@ -2779,7 +2779,7 @@ items:
     weight: 6
     bigSprite: 166
     floorSprite: 166
-    handSprite: 629
+    handSprite: 1104
     bulletSprite: 1
     fireSound: 166
     bulletSpeed: 15
@@ -2823,7 +2823,7 @@ items:
     weight: 6
     bigSprite: 282
     floorSprite: 282
-    handSprite: 621
+    handSprite: 1112
     bulletSprite: 1
     bulletSpeed: 20
     fireSound: 149
@@ -2849,7 +2849,6 @@ items:
     accuracyAuto: 35
     tuSnap: 30
     tuAuto: 28
-    autoShots: 6
     maxRange: 60
     aimRange: 8
     autoRange: 9
@@ -2874,7 +2873,7 @@ items:
     weight: 8
     bigSprite: 283
     floorSprite: 283
-    handSprite: 622
+    handSprite: 1120
     bulletSprite: 1
     fireSound: 148
     reloadSound: [ 186, 187, 188, 189 ]
@@ -5586,10 +5585,6 @@ extraSprites:
       612: Resources/BallisticWeapons/Civilian/HandModel1900.png
       620: Resources/BallisticWeapons/Civilian/HandMachete.png
 
-      629: Resources/BallisticWeapons/Civilian/HandLuger.png
-      621: Resources/BallisticWeapons/Civilian/HandUzi.png
-      622: Resources/BallisticWeapons/Civilian/HandG3.png
-
       628: Resources/BallisticWeapons/Civilian/HandPoliceRevolver.png
       636: Resources/BallisticWeapons/Civilian/HandBerettaM12.png
       644: Resources/BallisticWeapons/Civilian/HandPoliceShotgun.png
@@ -5644,6 +5639,10 @@ extraSprites:
       1072: Resources/BallisticWeapons/USA/HandM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/HandM202FlashAmmo.png
       1096: Resources/BallisticWeapons/Civilian/Handob_Shovel.png
+
+      1104: Resources/BallisticWeapons/Civilian/HandLuger.png
+      1112: Resources/BallisticWeapons/Civilian/HandUzi.png
+      1120: Resources/BallisticWeapons/Civilian/HandG3.png
 
   - type: SMOKE.PCK
     height: 80
