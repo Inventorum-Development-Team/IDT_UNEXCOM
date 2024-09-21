@@ -283,7 +283,7 @@ alienDeployments:
     terrains: *AlliedOperationTerrains
     civiliansByType: &AmericanTankBattalion
       STR_PATTON_TANK: 10
-      STR_SHERIDAN_TANK: 8
+      STR_SHERIDAN_TANK_NPC: 8
       STR_AMERICAN_SUPPORT: 4
       STR_AMERICAN_ELITE: 4
     alert: STR_AMERICAN_OPERATIONS_ALERT
@@ -306,7 +306,7 @@ alienDeployments:
     civiliansByType: &EuropeanTankBattalion
       STR_EUROPEAN_SUPPORT: 4
       STR_EUROPEAN_ELITE: 4
-      STR_SALADIN_CAR: 8
+      STR_SALADIN_CAR_NPC: 8
       STR_LEOPARD_TANK: 10
     alert: STR_EUROPEAN_OPERATIONS_ALERT
     alertBackground: EUROPEAN_OPERATIONS_MISSION_ALERT_BACKGROUND

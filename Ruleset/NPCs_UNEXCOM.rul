@@ -3838,7 +3838,38 @@ armors:
      - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
-    specialWeapon: STR_UNARMED_UNIFORM
+    #specialWeapon: STR_UNARMED_UNIFORM
+  - type: SHERIDAN_TANK_ARMOR_NPC
+    spriteSheet: SHERIDAN.PCK
+    spriteInv: SHERIDAN
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 62
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 16
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_UNARMED_UNIFORM
 ####################################
   - type: EUROPEAN_SOLDIER_ARMOR
     spriteInv: INV_EUROPEAN_SOLDIER
@@ -3892,7 +3923,38 @@ armors:
      - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
-    specialWeapon: STR_UNARMED_UNIFORM
+    #specialWeapon: STR_UNARMED_UNIFORM
+  - type: SALADIN_CAR_ARMOR_NPC
+    spriteSheet: SALADIN.PCK
+    spriteInv: SALADIN
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 68
+    sideArmor: 28
+    rearArmor: 26
+    underArmor: 20
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.5 # AP
+     - 0.7 # Incendiary
+     - 1.0 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_UNARMED_UNIFORM
 ##################################
   - type: SOVIET_SOLDIER_ARMOR
     spriteInv: INV_SOVIET_SOLDIER
@@ -3976,7 +4038,7 @@ armors:
      - 0.8 # Elerium Fusion
     loftempsSet: [ 92, 89, 90, 91 ]#
     personalLight: 20
-    specialWeapon: STR_UNARMED_UNIFORM
+    #specialWeapon: STR_UNARMED_UNIFORM
 ############### Kiro Mark The Spot
 
 units:
@@ -6727,6 +6789,34 @@ units:
         #- STR_M60
         #- STR_7_62MM_NATO_LMG_X50
         #- STR_7_62MM_NATO_LMG_X50
+  - type: STR_SHERIDAN_TANK_NPC
+    race: STR_SHERIDAN_TANK
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: SHERIDAN_TANK_ARMOR_NPC
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+#      - STR_SHERIDAN_TANK - this seems to be linked via unit title now
+#      - STR_M81E1
+        - STR_152MM_CANNON_SHELLS
+        - STR_SHILLELAGH
+        - STR_MGM51_MISSILE
 ###################################
 ######## EUROPEAN ALLIES #########
 #################################
@@ -6920,6 +7010,34 @@ units:
         #- STR_FN_MAG
         #- STR_7_62MM_NATO_LMG_X50
         #- STR_7_62MM_NATO_LMG_X50
+  - type: STR_SALADIN_CAR_NPC
+    race: STR_SALADIN_CAR
+    stats:
+      tu: 110
+      stamina: 100
+      health: 70
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: SALADIN_CAR_ARMOR_NPC
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+#      - STR_SALADIN_CAR - this seems to be linked via unit title now
+#      - STR_L5A1_GUN
+        - STR_76MM_CANNON_SHELLS
+        - STR_M1919A4_MACHINEGUN
+        - STR_M1919A4_AMMO_BOX
 ###################################
 ######## SOVIET ALLIES  ##########
 #################################
