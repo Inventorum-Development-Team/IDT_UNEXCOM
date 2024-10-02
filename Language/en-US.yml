@@ -4283,17 +4283,50 @@ en-US:
 
 #### Ground Vehicle Transports
 ####### Kiroxeipros Extra Stuff
+## Cargo Trucks
+      STR_CARGOTRUCKA: M3 CARGO-V
+      STR_CARGOTRUCKB: M3 ARMOR-C
+      STR_CARGOTRUCKC: M3 ALVCT-C
+      STR_CARGOTRUCKF: CC PR Unit
+      STR_CARGOTRUCKD: M3 PACV-1 ##On our Own Vehicle
+      STR_CARGOTRUCKE: C1 AFV-B2 ##On our Own Vehicle
+      STR_PERSONALENERGYSHEILDS: Personal Energy Shields
+      STR_MILITARYESCALATION1: Advance Logistics ##On our Own Vehicle
+      STR_MILITARYESCALATION2: Military Attrition ## After getting United We Stand
+      STR_CARGOTRUCKAWIKI: "M3 CARGO-V; Rapid reponse platoon vehicle. Operating from any range to conduct special operations."
+      STR_CARGOTRUCKBWIKI: M3 ARMOR-C; Additional Cargo transport up to 16 personel with better vehicle speed.
+      STR_CARGOTRUCKCWIKI: M3 ALVCT-C; Advance logistic vehicle filled with 24 soldiers. Counter Terrorist operation used to combat large numbers.
+      STR_FULLBASICARSENAL1: Full Basic Arsenal
+      STR_FULLBASICARSENALWIKI: Our forces are ready to combat enemy threats with this full arsenal. A new vehicle is now arrived for purchase. M3 ALVCT-C.
+      STR_MILITARYESCALATION1WIKI: According to the reports of alien presense with high yield weapon technology. It'll be impossible to takedown such scores of alien troops. We'll need to form a military batallion in order to combat aliens terrifying power. A new armored truck with trailer is now underway to conduct heavy transports.
+      STR_MILITARYESCALATION2WIKI: Now the world have prepared a full arsenal to counter alien invasion. We need to build up numbers of combat vehicles to take down alien vehicles. An additional vehicle for armored tank trailers will be provided.
+      STR_CARGOTRUCKDWIKI: M3 PACV-1; The road train vehicle that allows to carry more infantry and up to 6 vehicles.
+      STR_CARGOTRUCKEWIKI: C1 AFV-B2; Additional 2 Vehicle tow trailers has been added for armored battalions. A maximum of 18 vehicles on board, however the speed gets reduced as it requires forward strategy.
+
+
 # Radar Ground Vehicles
-      STR_RADARAPC1: M114 Armored Radar System Carrier #Basic
-      STR_RADARAPC1_UFOPEDIA: ""
-      STR_RADARTRUCK1: M113 Armored Improved Radar Carrier #New Alien Alloy
-      STR_RADARTRUCK1_UFOPEDIA: ""
-      STR_RADARTRUCK2: Mobile Radar Station Vehicle  #Advance Navigation
-      STR_RADARTRUCK2_UFOPEDIA: ""
-      STR_RADARTRUCK3: Experimental Hyperwave Vehicle  #Hyperwave
-      STR_RADARTRUCK3_UFOPEDIA: ""
-      STR_RADARTRUCK4: Mobile Hyper Relay Vehicle  #Alien Codes
-      STR_RADARTRUCK4_UFOPEDIA: ""
+      STR_RADARAPC1: M114 ARSC #Basic
+      STR_RADARAPC1_UFOPEDIA: "M114 Armored Radar System Carrier"
+      STR_RADARTRUCK1: M113 AIRC #New Alien Alloy
+      STR_RADARTRUCK1_UFOPEDIA: "M113 Armored Improved Radar Carrier"
+      STR_RADARTRUCK2: MRSV1  #Advance Navigation
+      STR_RADARTRUCK2_UFOPEDIA: "Mobile Radar Station Vehicle"
+      STR_RADARTRUCK3: MRS-EHV  #Hyperwave
+      STR_RADARTRUCK3_UFOPEDIA: "Experimental Hyperwave Vehicle"
+      STR_RADARTRUCK4: MRS-HRV  #Alien Codes
+      STR_RADARTRUCK4_UFOPEDIA: "Mobile Hyper Relay Vehicle"
+      STR_APCHWPVEHICLE1: M114 ACV
+      STR_APCHWPVEHICLE2: AAV114 ACV
+      STR_APCHWPVEHICLE3: AAV115 SACV
+      STR_APCHWPVEHICLE4: AAV116 PCV
+      STR_APCHWPVEHICLE1WIKI: The first multirole armored combat vehicle based on M113 APC chassis. It equips gun cannon turrets to missiles or repair vehicles.
+      STR_APCHWPVEHICLE2WIKI: The first Armored Combat Vehicle based on Alien alloys fitted to reduce weight and extending storage.
+      STR_APCHWPVEHICLE3WIKI: The advance ACV version based on alien navigation systems and electronic countermeasures. It increases accuracy and detection for better performance.
+      STR_PHASEDEVICESYSTEM: Phasefield System ##### Secret HWP
+      STR_PHASEDEVICESYSTEMWIKI: This device shows that it can go invisibility and undected. It can bypass through enemy positions or ambush them at fatality rates.
+      STR_APCHWPVEHICLE4WIKI: Phase Tank Vehicle; covered with cloakfield device and special motion radar tracking system. Experimental combat vehicle with its perfect personel targting system. ##### Secret HWP
+
+
 ###### Tank Ammunition
       STR_DUAMMO: Depleted Uranium ammunition ##### Empty Uranium
       STR_AALLOY: Alien Alloy ammunition
@@ -4311,11 +4344,45 @@ en-US:
 # Combat Ground Vehicles in froms of 6
 ## USA
 ## M48 PAtton M60 Super Patton M1 Abrams
+      STR_USAMILITARYCONTRACT1: USA Main Battle Tank
+      STR_M48PATTONTANK: M48 Patton Tank
+      STR_M60SUPERPATTONTANK: M60S Patton Tank
+      STR_M1ABRAMSTANK: M1 Abrams Tank
 ## NATO
 ## KMW Marder IFV Leopard I Leopard 2
+      STR_NATOMILITARYCONTRACT1: NATO Main Battle Tank
+      STR_NATOVARIANTBRITISH1: Obtain German Vehicles
+      STR_KMWMARDERIFV: KMW Marder IFV
+      STR_LEOPARDITANK: Leopard I Tank
+      STR_LEOPARDIITANK: Leopard II Tank
 ## Centurion Chieftan Challenger I
+      STR_NATOVARIANTGERMAN1: Obtain British Vehicles
+      STR_CENTURIONTANK: Centurion Tank
+      STR_CHIEFTANTANK: Chieftan Tank
+      STR_CHALLENGERITANK: Challenger I Tank
 ##AMX 13 ATFL11 AMX US AMX 10 RC & RCR
+      STR_NATOVARIANTFRENCH1: Obtain French Vehicles
+      STR_AMX13TANK: AMX-13 Tank
+      STR_ATFL11TANK: ATFL-11 Tank
+      STR_AMXUSTANK: AMX-US Tank
+      STR_AMX10TANKRC: AMX-10 RC Tank
+      STR_AMX10TANKRCR: AMX-10 RCR Tank
+
 ## USSR
 ## T64 T70 T80 BMPs
+      STR_WARSAWMILITARYCONTRACT1: Warsaw Main Battle Tank
+      STR_T64TANK: T-64 Tank
+      STR_T70TANK: T-70 Tank
+      STR_T80TANK: T-80 Tank
+      STR_BMPSTANK: BMP-Tank
 ## On Our Own
 ## Skropion Rooikat Merkerva
+      STR_CREATEPROTOTYPETANKS: Establish
+      STR_SKORPIONTANK: Skorpion Tank
+      STR_ROOIKAT: Rooikat 6xWheel
+      STR_MERKERVA: Merkerva Mk I
+
+
+
+
+
