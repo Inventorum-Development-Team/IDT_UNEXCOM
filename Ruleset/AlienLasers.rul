@@ -10,8 +10,7 @@ items:
     bigSprite: 3400
     floorSprite: 3400
     handSprite: 3400
-    bulletSprite: 29
-    bulletSpeed: 10
+    #bulletSprite: 29
     fireSound: 11
     compatibleAmmo:
       - STR_ALIEN_LASER_PISTOL_BATTERY
@@ -26,6 +25,21 @@ items:
     invHeight: 2
     recoveryPoints: 3
     armor: 45
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 17 # darkest red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
   - type: STR_ALIEN_LASER_PISTOL_BATTERY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
     requires:
@@ -56,8 +70,7 @@ items:
     bigSprite: 3402
     floorSprite: 3402
     handSprite: 3408
-    bulletSprite: 29
-    bulletSpeed: 10
+    #bulletSprite: 29
     fireSound: 11
     compatibleAmmo:
       - STR_ALIEN_LASER_RIFLE_BATTERY
@@ -69,6 +82,21 @@ items:
     invHeight: 3
     recoveryPoints: 4
     armor: 50
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 17 # darkest red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
   - type: STR_ALIEN_LASER_RIFLE_BATTERY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS ]
     requires:
@@ -100,7 +128,7 @@ items:
     floorSprite: 3404
     handSprite: 3416
     bulletSprite: 29
-    bulletSpeed: 10
+    #bulletSpeed: 10
     fireSound: 11
     compatibleAmmo:
       - STR_ALIEN_HEAVY_LASER_BATTERY
@@ -112,6 +140,21 @@ items:
     invHeight: 3
     recoveryPoints: 5
     armor: 50
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 17 # darkest red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
   - type: STR_ALIEN_HEAVY_LASER_BATTERY
     categories: [ STR_LASER, STR_ALIEN_TECH, STR_FIREARMS, STR_LMGS ]
     requires:
