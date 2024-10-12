@@ -23,7 +23,7 @@ items:
     handSprite: 1992
     hitSound: 19
     hitAnimation: 100
-    bulletSprite: 29
+    #bulletSprite: 29
     fireSound: 2963
     power: 95
     damageType: 4
@@ -61,6 +61,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 17 # darkest red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 ###################################
 ###### USA LASER WEAPONS #########
 #################################
@@ -112,6 +127,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_38_LASER_MAGNUM
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
@@ -162,6 +192,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_CALBR
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
@@ -215,6 +260,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
 
   - type: STR_M20_M203_LASER_CARBINE
@@ -273,6 +333,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_M5_LASER_SMG
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
@@ -330,6 +405,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_ULYSSES_LASER_SNIPER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
@@ -381,6 +471,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_X4_LASER_SHOTGUN
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
@@ -433,6 +538,21 @@ items:
     battleType: 1
     twoHanded: true
     armor: 250
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_M4_LASER_LMG
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
@@ -483,6 +603,21 @@ items:
     sprayWaypoints: 2
     invWidth: 2
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_ELERIUM_FLAMETHROWER
     categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
@@ -586,6 +721,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_FN_FLA_LASER_BATTLE_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
@@ -638,6 +788,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 20
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
 
   - type: STR_FN_FLA_LASER_CARBINE
@@ -691,6 +856,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 40
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_L4_ASSAULT_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
@@ -744,6 +924,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 60
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_MAT72_SUBMACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
@@ -801,6 +996,21 @@ items:
     sprayWaypoints: 2
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 100
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
@@ -853,6 +1063,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 200
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_ML73_LASER_MACHINE_GUN
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
@@ -903,6 +1128,21 @@ items:
     sprayWaypoints: 2
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
@@ -1105,6 +1345,21 @@ items:
     dropoff: 2
     invWidth: 1
     invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_ALK72_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
@@ -1161,6 +1416,21 @@ items:
     dropoff: 3
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
@@ -1212,6 +1482,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_ALP_SUBMACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
@@ -1268,6 +1553,21 @@ items:
     dropoff: 2
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_MIRINOV_LASER_SNIPER
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
@@ -1320,6 +1620,21 @@ items:
     dropoff: 1
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_AN_MACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
@@ -1383,6 +1698,21 @@ items:
     dropoff: 2
     invWidth: 1
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_AFINA_ANTITANK_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
@@ -1427,6 +1757,21 @@ items:
     dropoff: 1
     invWidth: 2
     invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 30
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
 
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
