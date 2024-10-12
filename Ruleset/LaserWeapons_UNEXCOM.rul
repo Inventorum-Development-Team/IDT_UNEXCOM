@@ -23,7 +23,7 @@ items:
     handSprite: 1992
     hitSound: 19
     hitAnimation: 100
-    #bulletSprite: 29
+    ##bulletSprite: 29
     fireSound: 2963
     power: 95
     damageType: 4
@@ -91,7 +91,7 @@ items:
     bigSprite: 2000
     floorSprite: 2000
     handSprite: 2000
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2960
     hitSound: 19
     hitAnimation: 36
@@ -155,7 +155,7 @@ items:
     bigSprite: 2001
     floorSprite: 2001
     handSprite: 2008
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2961
     hitSound: 19
     hitAnimation: 36
@@ -220,7 +220,7 @@ items:
     bigSprite: 2002
     floorSprite: 2002
     handSprite: 2016
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2963
     hitSound: 19
     hitAnimation: 36
@@ -289,7 +289,7 @@ items:
     bigSprite: 2003
     floorSprite: 2003
     handSprite: 2024
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2963
     hitSound: 19
     hitAnimation: 36
@@ -361,10 +361,10 @@ items:
     bigSprite: 2004
     floorSprite: 2004
     handSprite: 2032
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2962
     hitSound: 19
-    hitAnimation: -1
+    hitAnimation: 36
     power: 35
     damageType: 4
     damageAlter:
@@ -433,7 +433,7 @@ items:
     bigSprite: 2005
     floorSprite: 2005
     handSprite: 2040
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2964
     hitSound: 19
     hitAnimation: 36
@@ -499,7 +499,7 @@ items:
     bigSprite: 2006
     floorSprite: 2006
     handSprite: 2048
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2964
     hitSound: 19
     hitAnimation: 36
@@ -566,10 +566,10 @@ items:
     bigSprite: 2007
     floorSprite: 2007
     handSprite: 2056
-    bulletSprite: 27
+    #bulletSprite: 27
     fireSound: 2966
     hitSound: 19
-    hitAnimation: -1
+    hitAnimation: 36
     power: 52
     damageType: 4
     damageAlter:
@@ -631,7 +631,7 @@ items:
     bigSprite: 2008
     floorSprite: 2008
     handSprite: 2064
-    bulletSprite: 30
+    #bulletSprite: 30
     fireSound: 2967
 #    compatibleAmmo:
 #      - STR_FLAMETHROWER_CLIP
@@ -688,7 +688,7 @@ items:
     fireSound: 2970
     hitSound: 19
     hitAnimation: 90
-    bulletSprite: 28
+    #bulletSprite: 28
     power: 45
     damageType: 4
     damageAlter:
@@ -751,7 +751,7 @@ items:
     fireSound: 2972
     hitSound: 19
     hitAnimation: 90
-    bulletSprite: 28
+    #bulletSprite: 28
     power: 55
     damageType: 4
     damageAlter:
@@ -818,8 +818,8 @@ items:
     handSprite: 2088
     fireSound: 2972
     hitSound: 19
-    hitAnimation: -1
-    bulletSprite: 28
+    hitAnimation: 90
+    #bulletSprite: 28
     power: 55
     damageType: 4
     damageAlter:
@@ -887,7 +887,7 @@ items:
     fireSound: 2976
     hitSound: 19
     hitAnimation: 90
-    bulletSprite: 28
+    #bulletSprite: 28
     power: 52
     damageType: 4
     damageAlter:
@@ -954,8 +954,8 @@ items:
     handSprite: 2104
     fireSound: 2971
     hitSound: 19
-    hitAnimation: -1
-    bulletSprite: 28
+    hitAnimation: 90
+    #bulletSprite: 28
     power: 45
     damageType: 4
     damageAlter:
@@ -1027,7 +1027,7 @@ items:
     fireSound: 2975
     hitSound: 19
     hitAnimation: 90
-    bulletSprite: 28
+    #bulletSprite: 28
     power: 80
     damageType: 4
     damageAlter:
@@ -1093,8 +1093,8 @@ items:
     handSprite: 2120
     fireSound: 2974
     hitSound: 19
-    hitAnimation: -1
-    bulletSprite: 28
+    hitAnimation: 90
+    #bulletSprite: 28
     power: 55
     damageType: 4
     damageAlter:
@@ -1156,7 +1156,7 @@ items:
     bigSprite: 2016
     floorSprite: 2016
     handSprite: 2184
-    bulletSprite: 0
+    #bulletSprite: 0
     fireSound: 152
     confSnap:
       shots: 1
@@ -1312,7 +1312,7 @@ items:
     fireSound: 2980
     hitSound: 19
     hitAnimation: 100
-    bulletSprite: 29
+    #bulletSprite: 29
     power: 60
     damageType: 4
     damageAlter:
@@ -1376,7 +1376,7 @@ items:
     fireSound: 2982
     hitSound: 19
     hitAnimation: 100
-    bulletSprite: 29
+    #bulletSprite: 29
     power: 60
     damageType: 4
     damageAlter:
@@ -1447,7 +1447,7 @@ items:
     fireSound: 2983
     hitSound: 19
     hitAnimation: 100
-    bulletSprite: 29
+    #bulletSprite: 29
     power: 75
     damageType: 4
     damageAlter:
@@ -1512,8 +1512,8 @@ items:
     handSprite: 2152
     fireSound: 2981
     hitSound: 19
-    hitAnimation: -1
-    bulletSprite: 29
+    hitAnimation: 100
+    #bulletSprite: 29
     power: 40
     damageType: 4
     damageAlter:
@@ -1584,7 +1584,7 @@ items:
     fireSound: 2984
     hitSound: 19
     hitAnimation: 100
-    bulletSprite: 29
+    #bulletSprite: 29
     power: 90
     damageType: 4
     damageAlter:
@@ -1650,8 +1650,8 @@ items:
     handSprite: 2168
     fireSound: 2985
     hitSound: 19
-    hitAnimation: -1
-    bulletSprite: 29
+    hitAnimation: 100
+    #bulletSprite: 29
     power: 65
     damageType: 4
     damageAlter:
@@ -1729,7 +1729,7 @@ items:
     fireSound: 2986
     hitSound: 19
     hitAnimation: 100
-    bulletSprite: 29
+    #bulletSprite: 29
     power: 110
     damageType: 4
     damageAlter:
@@ -1965,8 +1965,8 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      945: Resources/BulletSprites/WideYellowLaser_Bullet.png # 27
-      980: Resources/BulletSprites/WideBlueLaser_Bullet.png # 28
-      1015: Resources/BulletSprites/WideRedLaser_Bullet.png # 29
-      1050: Resources/BulletSprites/FlameProjectile.png # 30
+      945: Resources/#bulletSprites/WideYellowLaser_Bullet.png # 27
+      980: Resources/#bulletSprites/WideBlueLaser_Bullet.png # 28
+      1015: Resources/#bulletSprites/WideRedLaser_Bullet.png # 29
+      1050: Resources/#bulletSprites/FlameProjectile.png # 30
 
