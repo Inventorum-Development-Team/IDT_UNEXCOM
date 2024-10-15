@@ -4300,14 +4300,14 @@ en-US:
       STR_FULLBASICARSENALWIKI: Our forces are ready to combat enemy threats with this full arsenal. A new vehicle is now arrived for purchase. M3 ALVCT-C.
       STR_MILITARYESCALATION1WIKI: According to the reports of alien presense with high yield weapon technology. It'll be impossible to takedown such scores of alien troops. We'll need to form a military batallion in order to combat aliens terrifying power. A new armored truck with trailer is now underway to conduct heavy transports.
       STR_MILITARYESCALATION2WIKI: Now the world have prepared a full arsenal to counter alien invasion. We need to build up numbers of combat vehicles to take down alien vehicles. An additional vehicle for armored tank trailers will be provided.
-      STR_CARGOTRUCKDWIKI: M3 PACV-1; The road train vehicle that allows to carry more infantry and up to 6 vehicles.
-      STR_CARGOTRUCKEWIKI: C1 AFV-B2; Additional 2 Vehicle tow trailers has been added for armored battalions. A maximum of 18 vehicles on board, however the speed gets reduced as it requires forward strategy.
+      STR_CARGOTRUCKDWIKI: UNC1 AFV1; The road train vehicle that allows to carry more infantry and up to 6 vehicles.
+      STR_CARGOTRUCKEWIKI: UNC1 AFV2; 4 Truck convoys are now in our arsenal. We can carry up to 80 infantry or 20 tanks.
 
 
 # Radar Ground Vehicles
-      STR_RADARAPC1: M114 ARSC #Basic
-      STR_RADARAPC1_UFOPEDIA: "M114 ARSC"
-      STR_RADARAPC2_UFOPEDIA: "M115-AA ARSC" #New Alien Alloy
+      STR_RADARAPC1: M113 ARSC #Basic
+      STR_RADARAPC1_UFOPEDIA: "M113 ARSC"
+      STR_RADARAPC2_UFOPEDIA: "M114-AA ARSC" #New Alien Alloy
       STR_RADARTRUCK1: MRSV1 AIRC
       STR_RADARTRUCK1_UFOPEDIA: "M113 Armored Improved Radar Carrier"
       STR_RADARTRUCK2: MRSV3  #Advance Navigation
@@ -4316,10 +4316,10 @@ en-US:
       STR_RADARTRUCK3_UFOPEDIA: "Experimental Hyperwave Vehicle"
       STR_RADARTRUCK4: MRS-HRV  #Alien Codes
       STR_RADARTRUCK4_UFOPEDIA: "Mobile Hyper Relay Vehicle"
-      STR_APCHWPVEHICLE1: M114 ACV #### All Factions
-      STR_APCHWPVEHICLE2: AAV114 ACV #### All Factions
-      STR_APCHWPVEHICLE3: AAV115 SACV #### All Factions
-      STR_APCHWPVEHICLE4: AAV116 PCV #### All Factions
+      STR_APCHWPVEHICLE1: M113 ACV #### All Factions
+      STR_APCHWPVEHICLE2: M114-AA ACV #### All Factions
+      STR_APCHWPVEHICLE3: M115-ANS SACV #### All Factions
+      STR_APCHWPVEHICLE4: M116-CT PCV #### All Factions
       STR_APCHWPVEHICLE1WIKI: The first multirole armored combat vehicle based on M113 APC chassis. It equips gun cannon turrets to missiles or repair vehicles.
       STR_APCHWPVEHICLE2WIKI: The first Armored Combat Vehicle based on Alien alloys fitted to reduce weight and extending storage.
       STR_APCHWPVEHICLE3WIKI: The advance ACV version based on alien navigation systems and electronic countermeasures. It increases accuracy and detection for better performance.
@@ -4383,8 +4383,28 @@ en-US:
 ## Skropion Rooikat Merkerva
       STR_CREATEPROTOTYPETANKS: Establish UN Manufacturing Contractors
       STR_SKORPIONTANK: Skorpion Tank #### Will get one after On our own path unlocked
-      STR_ROOIKAT: Rooikat 6xWheel ####
+      STR_ROOIKAT: Rooikat 8xW ####
       STR_MERKERVA: Merkerva Mk I ####
+
+#### Defense Facilitys
+
+#### Tactical Nuke Missile
+      STR_FALCON_DEFENSE: F-Missile Defense
+      STR_PHEONIX_DEFENSE: P-Missile Defense
+      STR_ADLER_DEFENSE: A-Missile Defense
+      STR_KONDOR_DEFENSE: K-Missile Defense
+
+#### Tactical Laser Defense
+      STR_USALASERDEFENSE: USA LASER Defense
+      STR_NATOLASERDEFENSE: NATO LASER Defense
+      STR_WRSWLASERDEFENSE: Warsaw LASER Defense
+      STR_UNTLASERDEFENSE: UN Hybrid Beam Defense
+#### Tactical Plasma Defense
+      STR_USAPLASMADEFENSE: USA Plasma Defense
+      STR_NATOPLASMADEFENSE: NATO Plasma Defense
+      STR_WRSWPLASMADEFENSE: Warsaw Plasma Defense
+      STR_UNTPLASMADEFENSE: UN Hybrid Plasma Defense
+#### Rail Coil Gun Defense
 
 
 
