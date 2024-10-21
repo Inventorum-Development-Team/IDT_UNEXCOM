@@ -1,6 +1,6 @@
 crafts:
   - type: STR_CARGOTRUCKA
-    sprite: 1000
+    sprite: 1001
     fuelMax: 9999
     damageMax: 100
     speedMax: 90
@@ -36,11 +36,10 @@ crafts:
       - [4, 6, 1, 0]
       - [5, 6, 1, 0]
 ##########
-
   - type: STR_CARGOTRUCKB
     requires:
       - STR_WEAPON_MODIFICATION
-    sprite: 1000
+    sprite: 1002
     fuelMax: 9999
     damageMax: 100
     speedMax: 110
@@ -81,12 +80,11 @@ crafts:
       - [5, 3, 1, 6]
       - [5, 6, 1, 6]
       - [5, 7, 1, 6]
-
 ##########
   - type: STR_CARGOTRUCKC
     requires:
       - STR_WEAPON_MODIFICATION
-    sprite: 1000
+    sprite: 1003
     fuelMax: 9999
     damageMax: 100
     speedMax: 80
@@ -136,15 +134,12 @@ crafts:
       - [8, 4, 1, 0]
       - [8, 5, 1, 0]
       - [8, 6, 1, 0]
-
 ##########
-
 #########
-
   - type: STR_CARGOTRUCKF
     requires:
       - STR_TERRORISTS_OPERATIONS
-    sprite: 1000
+    sprite: 1005
     fuelMax: 9999
     damageMax: 100
     speedMax: 90
@@ -223,7 +218,7 @@ crafts:
     requires:
       - STR_ON_OUR_OWN
       - STR_TERRORISTS_OPERATIONS
-    sprite: 1000
+    sprite: 1004
     fuelMax: 9999
     damageMax: 100
     speedMax: 80
@@ -306,7 +301,7 @@ crafts:
     requires:
       - STR_ON_OUR_OWN
       - STR_UNITED_WE_STAND_RESEARCH
-    sprite: 1000
+    sprite: 1006
     fuelMax: 9999
     damageMax: 100
     speedMax: 80
@@ -463,12 +458,10 @@ research:
 
 
 ufopaedia:
-  - id: STR_CARGOTRUCK
-    requires:
-      - STR_TERRORISTS_OPERATIONS
+  - id: STR_CARGOTRUCKA
     type_id: 1
     section: STR_XCOM_CRAFTS
-    text: STR_CARGOTRUCKWIKI
+    text: STR_CARGOTRUCKAWIKI
     listOrder: 17000
     rect_stats:
       x: 5
@@ -480,14 +473,14 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-    image_id: CARGOTRUCK.SPK
-  - id: STR_CARGOTRUCK1
+    image_id: CARGOTRUCKA.SPK
+  - id: STR_CARGOTRUCKB
     requires:
-      - STR_TERRORISTS_OPERATIONS
+      - STR_WEAPON_MODIFICATION
     type_id: 1
     section: STR_XCOM_CRAFTS
-    text: STR_CARGOTRUCK1WIKI
-    listOrder: 17001
+    text: STR_CARGOTRUCKBWIKI
+    listOrder: 17000
     rect_stats:
       x: 5
       y: 125
@@ -498,7 +491,82 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-    image_id: CARGOTRUCK.SPK
+    image_id: CARGOTRUCKB.SPK
+  - id: STR_CARGOTRUCKC
+    requires:
+      - STR_TERRORISTS_OPERATIONS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_CARGOTRUCKCWIKI
+    listOrder: 17000
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: CARGOTRUCKC.SPK
+  - id: STR_CARGOTRUCKD
+    requires:
+      - STR_ON_OUR_OWN
+      - STR_TERRORISTS_OPERATIONS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_CARGOTRUCKDWIKI
+    listOrder: 17000
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: CARGOTRUCKD.SPK
+  - id: STR_CARGOTRUCKF
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_TERRORISTS_OPERATIONS
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_CARGOTRUCKFWIKI
+    listOrder: 17000
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: CARGOTRUCKF.SPK
+  - id: STR_CARGOTRUCKE
+    requires:
+      - STR_ON_OUR_OWN
+      - STR_UNITED_WE_STAND_RESEARCH
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_CARGOTRUCKEWIKI
+    listOrder: 17000
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: CARGOTRUCKG.SPK
 
 extraSprites:
   - type: CARGOTRUCK.SPK
@@ -507,15 +575,73 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Cargotruck/TRANSPORT_TRUCK_UFOPEDIA_1.png
+  - type: CARGOTRUCKA.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomconvoytrucka.png
+  - type: CARGOTRUCKB.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomconvoytruckb.png
+  - type: CARGOTRUCKC.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomconvoytruckc.png
+  - type: CARGOTRUCKD.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomconvoytruckd.png
+  - type: CARGOTRUCKF.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomconvoytruckf.png
+  - type: CARGOTRUCKG.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomconvoytruckg.png
   - type: BASEBITS.PCK
     files:
-      1033: Resources/Crafts/Cargotruck/TransportTruck_Basebits.png
+      1034: Resources/Crafts/Cargotruck/unxconvoytruckabase.png
+      1035: Resources/Crafts/Cargotruck/unxconvoytruckbbase.png
+      1036: Resources/Crafts/Cargotruck/unxconvoytruckcbase.png
+      1037: Resources/Crafts/Cargotruck/unxconvoytruckdbase.png
+      1038: Resources/Crafts/Cargotruck/unxconvoytruckfbase.png
+      1039: Resources/Crafts/Cargotruck/unxconvoytruckgbase.png
+      1040: Resources/Crafts/Cargotruck/m113radart1base.png
+      1041: Resources/Crafts/Cargotruck/m113radart2base.png
   - type: INTICON.PCK
     files:
-      1011: Resources/Crafts/CargoTruck/TransportTruck_Dogfight.png
-      1000: Resources/Crafts/CargoTruck/TransportTruck_Minimised.png
+      1012: Resources/Crafts/CargoTruck/unxconvoytruckadogfight.png
+      1013: Resources/Crafts/CargoTruck/unxconvoytruckbdogfight.png
+      1014: Resources/Crafts/CargoTruck/unxconvoytruckcdogfight.png
+      1015: Resources/Crafts/CargoTruck/unxconvoytruckddogfight.png
+      1016: Resources/Crafts/CargoTruck/unxconvoytruckfdogfight.png
+      1017: Resources/Crafts/CargoTruck/unxconvoytruckgdogfight.png
+      1018: Resources/Crafts/CargoTruck/m113radart1dogfight.png
+      1019: Resources/Crafts/CargoTruck/m113radart2dogfight.png
+      1001: Resources/Crafts/CargoTruck/unxconvoytruckamini.png
+      1002: Resources/Crafts/CargoTruck/unxconvoytruckbmini.png
+      1003: Resources/Crafts/CargoTruck/unxconvoytruckcmini.png
+      1004: Resources/Crafts/CargoTruck/unxconvoytruckdmini.png
+      1005: Resources/Crafts/CargoTruck/unxconvoytruckfmini.png
+      1006: Resources/Crafts/CargoTruck/unxconvoytruckgmini.png
+      1007: Resources/Crafts/CargoTruck/m113radart1mini.png
+      1008: Resources/Crafts/CargoTruck/m113radart2mini.png
 #### Start at 1000 Kiro Xei Marks the Spot
 #### Mimimized + 0
 #### Dogfight + 11
 #### Basebit + 33
-####### Author: Cirius: Original author who made the sprites by using PCK and MCD and Mapview2
+####### Author: Cirius: Original author who made the sprites by using PCK and MCD and Mapview2. Additionally, Kiro fixed his tiles position to fit the accuracy.
+#######
