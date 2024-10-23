@@ -47,4 +47,17 @@ facilities:
     storage: 10
     trainingRooms: 15
 
+  - override: STR_MISSILE_DEFENSES
+    ammoMax: 9
+    rearmRate: 3
+  - override: STR_LASER_DEFENSES
+    ammoMax: 8
+    rearmRate: 1
+  - override: STR_PLASMA_DEFENSES
+    ammoMax: 8
+    rearmRate: 8
+  - #override: STR_FUSION_DEFENSE
+    #ammoMax: 8
+    #rearmRate: 4
+
     #####

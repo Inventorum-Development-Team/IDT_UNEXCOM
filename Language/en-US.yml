@@ -4382,14 +4382,59 @@ en-US:
       STR_ROOIKAT: Rooikat 8xW ####
       STR_MERKERVA: Merkerva Mk I ####
 
-#### Defense Facilitys
 
+#### Expanding Personel Armor
+
+#### Expanding Aircraft Arsenal; The cost is more expensive to build
+#### All Factions
+      STR_ALLOYTANKFUEL1: Alloy Tank Fuel
+#### USA AA Weapon
+      STR_USAAIRCRAFTLASER1: Avenger Laser
+      STR_USAAIRCRAFTLASER2: Tomahawk Laser
+      STR_USAAIRCRAFTPLASMA1: Pulse Gatling
+      STR_USAAIRCRAFTPLASMA2: Dragonite Missile
+      STR_USAADVTARGETSYSTEM: Advance Targeter ### Increases Accuracy
+#### Aircraft
+      STR_USAAIRCRAFTF15EAGLE1: "F-15 Eagle" ## 6 Wings
+#### NATO AA Weapon
+      STR_NATOAIRCRAFTLASER1: Prometheus Laser
+      STR_NATOAIRCRAFTLASER2: Aegis Beam Laser
+      STR_NATOAIRCRAFTPLASMA1: Comet Pulse Gun
+      STR_NATOAIRCRAFTPLASMA2: Comet Proton Beam
+#### Aircraft
+      STR_NATOAIRCRAFTBAEKINGSTON: "BAE-Kingston" ##UK Aircraft
+      STR_NATOAIRCRAFTDASSAULTSE: "Super Etendard" ### France Aircraft
+#### WRSW AA Weapon
+      STR_WRSWAIRCRAFTLASER1: Ion Charge Laser
+      STR_WRSWAIRCRAFTLASER2: Ion Conduit Laser
+      STR_WRSWAIRCRAFTPLASMA1: Afina Pulse Beam
+      STR_WRSWAIRCRAFTPLASMA2: Kirov Pulse Cannon
+      STR_WRSWPSIONICNEURAL1: Psi-Interface System ### Increases Accuracy
+#### Aircraft
+      STR_WRSWAIRCRAFTSU27: "SU-35 Terminator" ## Upgraded SU-27
+#### UNT AA Weapon; Prototypes
+      STR_UNTAIRCRAFTLASER1: UN Hyperion Laser
+      STR_UNTAIRCRAFTLASER2: UN Ion Beam Cannon
+      STR_UNTAIRCRAFTPLASMA1: UN Plasma Beam Cannon
+      STR_UNTAIRCRAFTPLASMA2: UN Dark Matter Cannon #### Need Materials with rare items
+      STR_UNTAIRCRAFTCOILGUN1: UN Mass Driver Cannon
+      STR_UNTAIRCRAFTCOILGUN2: UN Gauss Rail Cannon
+      STR_UNTAIRCRAFTEMPGUN1: UN Electromagnetic Gun ### Slows down ufos and stuns them
+      STR_UNTAIRCRAFTFUSION1: UN Hybrid Fusion Gun
+      STR_UNTAIRCRAFTFUSION2: UN Hybrid Hydrogen Gun ### Legendary Energy Fusion Beam
+#### Aircraft
+      STR_UNTAIRCRAFTBLACKA12: "UN Lockheed A-12" ### On Our Own Aircraft as a Alloy Bomber
+      STR_UNTAIRCRAFTFURY120: "UN Berserker 120P" ### On Our Own Aircraft as a Exclusive Spacecraft Interceptor
+      STR_UNTFURY120SINGULAR: "UN Singular Weapon" ### One Hit Weapon, unmanufacturable
+
+
+#### Defense Facilitys
+      STR_DEFENSEPOWERGEN1: Nuclear Power Generator ## For Energy Beam Defense
 #### Tactical Nuke Missile
       STR_FALCON_DEFENSE: F-Missile Defense
       STR_PHEONIX_DEFENSE: P-Missile Defense
       STR_ADLER_DEFENSE: A-Missile Defense
       STR_KONDOR_DEFENSE: K-Missile Defense
-
 #### Tactical Laser Defense
       STR_USALASERDEFENSE: USA LASER Defense
       STR_NATOLASERDEFENSE: NATO LASER Defense
@@ -4400,8 +4445,15 @@ en-US:
       STR_NATOPLASMADEFENSE: NATO Plasma Defense
       STR_WRSWPLASMADEFENSE: Warsaw Plasma Defense
       STR_UNTPLASMADEFENSE: UN Hybrid Plasma Defense
-#### Rail Coil Gun Defense
-
+#### Advance Defense for all factions
+      STR_CASABAPIKEDEFENSE: Casaba Halbardier Defense
+#### UN Exclusive Weapon Defense
+      STR_UNTRAILGUN1DEFENSE: UN Mass Driver Defense
+      STR_UNTRAILGUN2DEFENSE: UN Gauss Rail Defense
+      STR_UNTEMPGUN1DEFENSE: UN EMP Gun Defense
+      STR_UNTFUSION1DEFENSE: UN Fusion Defense
+#### Radar Structures
+      STR_ALLOYRADARSYSTEM1: Alloy Radar System
 
 
 
