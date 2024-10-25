@@ -1,5 +1,7 @@
 crafts:
   - type: STR_CARGOTRUCKA
+    requires:
+      - STR_CARGOTRUCKA
     sprite: 1001
     fuelMax: 9999
     damageMax: 100
@@ -38,6 +40,7 @@ crafts:
 ##########
   - type: STR_CARGOTRUCKB
     requires:
+      - STR_CARGOTRUCKB
       - STR_WEAPON_MODIFICATION
     sprite: 1002
     fuelMax: 9999
@@ -83,6 +86,7 @@ crafts:
 ##########
   - type: STR_CARGOTRUCKC
     requires:
+      - STR_CARGOTRUCKC
       - STR_WEAPON_MODIFICATION
     sprite: 1003
     fuelMax: 9999
@@ -138,6 +142,7 @@ crafts:
 #########
   - type: STR_CARGOTRUCKF
     requires:
+      - STR_CARGOTRUCKF
       - STR_TERRORISTS_OPERATIONS
     sprite: 1005
     fuelMax: 9999
@@ -216,6 +221,7 @@ crafts:
 ### UN On our own vehicle
   - type: STR_CARGOTRUCKD
     requires:
+      - STR_CARGOTRUCKD
       - STR_ON_OUR_OWN
       - STR_TERRORISTS_OPERATIONS
     sprite: 1004
@@ -299,6 +305,7 @@ crafts:
 ### UN On our own vehicle
   - type: STR_CARGOTRUCKE
     requires:
+      - STR_CARGOTRUCKE
       - STR_ON_OUR_OWN
       - STR_UNITED_WE_STAND_RESEARCH
     sprite: 1006

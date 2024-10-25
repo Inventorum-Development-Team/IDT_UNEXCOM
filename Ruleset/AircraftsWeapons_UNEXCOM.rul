@@ -1000,6 +1000,39 @@ crafts:
     score: 400
     listOrder: 118
 
+    ####### On Our Own Bomber Tier 2 ##########
+  - type: STR_UNTAIRCRAFTBLACKA12
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_ON_OUR_OWN
+    sprite: 935
+    fuelMax: 2000
+    damageMax: 160
+    speedMax: 2500
+    accel: 7
+    weapons: 4
+    weaponTypes:
+      - 4
+      - 3
+      - 3
+      - 6
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    costSell: 75000
+    refuelRate: 50
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 75
+    radarRange: 200
+    radarChance: 20
+    score: 600
+    listOrder: 118
+
+
+
+
 ####################
 #### TIER III #####
 ##################
@@ -3172,6 +3205,18 @@ manufacture:
     cost: 690000
     requiredItems:
       STR_ALIEN_ALLOYS: 55
+
+  - name: STR_UNTAIRCRAFTBLACKA12
+    category: STR_CRAFT
+    requires:
+      - STR_ON_OUR_OWN
+      - STR_IMPROVED_BOMBER
+    listOrder: 3301
+    space: 25
+    time: 1000
+    costs: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 25
 
 ####################################
 ######### AIRCRAFT #################

@@ -902,6 +902,26 @@ ufopaedia:
       width: 205
       height: 80
 
+  - id: STR_UNTAIRCRAFTBLACKA12
+    section: STR_XCOM_CRAFTS
+    listOrder: 211
+    text: STR_UNTAIRCRAFTBLACKA12WIKI
+    image_id: BLACKBIRD_UFOPEDIA
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_ON_OUR_OWN
+    type_id: 1
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+
   #satellites
 
   - id: STR_RECONS
