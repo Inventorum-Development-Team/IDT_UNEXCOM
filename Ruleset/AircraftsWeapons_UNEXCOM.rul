@@ -1013,9 +1013,14 @@ crafts:
     weapons: 4
     weaponTypes:
       - 4
-      - 3
-      - 3
+      - [2, 3]
+      - [2, 3]
       - 6
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_ROCKET_AUX_FOUR
     soldiers: 2
     vehicles: 0
     pilots: 2
@@ -3213,7 +3218,7 @@ manufacture:
       - STR_IMPROVED_BOMBER
     listOrder: 3301
     space: 25
-    time: 1000
+    time: 2000
     costs: 100000
     requiredItems:
       STR_ALIEN_ALLOYS: 25
