@@ -511,12 +511,15 @@ items:
 
   - type: STR_UNARMED_UNIFORM
     weight: 0
-    bigSprite: 99
+    bigSprite: 3000
     meleeHitSound: 99
     meleeAnimation: 0
     power: 20
     damageType: 6
     damageBonus:
+      strength: 0.1
+      melee: 0.1
+    damageAccuracy:
       strength: 0.1
       melee: 0.1
     damageAlter:
@@ -544,6 +547,79 @@ items:
     recover: false
     specialIconSprite: 2
     specialUseEmptyHand: true
+  ##### Tank Crush
+  - type: STR_TANKCRUSH
+    weight: 0
+    bigSprite: 3001
+    meleeHitSound: 14
+    meleeAnimation: 0
+    power: 200
+    damageType: 3
+    damageBonus:
+      strength: 0.5
+      melee: 0.5
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.15
+      ToHealth: 0.35
+      ToArmorPre: 0.1
+    accuracyMelee: 85
+    meleeMultiplier:
+      melee: 1.0
+    confMelee:
+      name: STR_TANKCRUSH
+    costMelee:
+      time: 40
+      energy: 40
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialIconSprite: 3
+    specialUseEmptyHand: true
+  - type: STR_VEHICLECRASH
+    weight: 0
+    bigSprite: 3002
+    meleeHitSound: 14
+    meleeAnimation: 0
+    power: 125
+    damageType: 3
+    damageBonus:
+      strength: 0.5
+      melee: 0.5
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.15
+      ToHealth: 0.35
+      ToArmorPre: 0.1
+    accuracyMelee: 85
+    meleeMultiplier:
+      melee: 1.0
+    confMelee:
+      name: STR_VEHICLECRASH
+    costMelee:
+      time: 15
+      energy: 15
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialIconSprite: 4
+    specialUseEmptyHand: true
+
+
 
 armors:
   - type: STR_NONE_UC
@@ -2108,16 +2184,20 @@ extraSprites:
 ############# HAND TO HAND ###############
 ##########################################
   - type: BIGOBS.PCK
-    width: 32
-    height: 48
     files:
-      0: Resources/specialWeapons/BigFist.png
+      3000: Resources/specialWeapons/BigFist.png
+      3001: Resources/specialWeapons/TankCrush.png
+      3002: Resources/specialWeapons/VehicleCrash.png
 
   - type: SPICONS.DAT
     width: 32
     height: 24
     files:
       2: Resources/specialWeapons/spicon_brawl.png
+      3: Resources/specialWeapons/spicon_crush.png
+      4: Resources/specialWeapons/spicon_crash.png
+
+
 
 # specialWeaponInventorySlots:
 #   - STR_BELT
