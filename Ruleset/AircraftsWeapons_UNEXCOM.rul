@@ -1024,6 +1024,7 @@ crafts:
     soldiers: 2
     vehicles: 0
     pilots: 2
+    allowLanding: false
     costSell: 75000
     refuelRate: 50
     repairRate: 3
@@ -3219,9 +3220,9 @@ manufacture:
     listOrder: 3301
     space: 25
     time: 2000
-    costs: 100000
+    cost: 100000
     requiredItems:
-      STR_ALIEN_ALLOYS: 25
+      STR_ALIEN_ALLOYS: 60
 
 ####################################
 ######### AIRCRAFT #################
