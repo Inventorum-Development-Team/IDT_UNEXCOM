@@ -989,6 +989,9 @@ en-US:
       STR_LUGER: "Luger"
       STR_UZI: "Uzi"
       STR_G3: "G3"
+      STR_LUGERWIKI: "Luger"
+      STR_UZIWIKI: "Uzi"
+      STR_G3WIKI: "G3"
 
       #############################
       ##### POLICE WEAPONS ########
@@ -3724,6 +3727,14 @@ en-US:
       STR_CORPSE_MARAUDER: "Marauder Armor Wreck"
       STR_FLYING_SUIT_UC: PATHFINDER FLYING ARMOR
       STR_FLYING_SUIT: Pathfinder Flying Armor
+      ##### Armor Space and Planets
+      STR_MARAUDER_EXOSUIT_SPACE: "Marauder Power Armor (Space)"
+      STR_MARAUDER_EXOSUIT_MOON: "Marauder Power Armor (Moon)"
+      STR_MARAUDER_EXOSUIT_MARS: "Marauder Power Armor (Mars)"
+      STR_PATHFINDER_EXOSUIT_SPACE: "Pathfinder Power Armor (Space)"
+      STR_PATHFINDER_EXOSUIT_MOON: "Pathfinder Power Armor (Moon)"
+      STR_PATHFINDER_EXOSUIT_MARS: "Pathfinder Power Armor (Mars)"
+
       STR_CORPSE_PATHFINDER: "Pathfinder Armor Wreck"
       STR_SCOUT_POWER_ARMOR_UC: SCOUT POWER ARMOR
       STR_SCOUT_POWER_ARMOR: Scout Power Armor
@@ -4401,6 +4412,16 @@ en-US:
       STR_USAADVTARGETSYSTEM: Advance Targeter ### Increases Accuracy
 #### Aircraft
       STR_USAAIRCRAFTF15EAGLE1: "F-15 S/MTD" ## 6 Wings
+      STR_USAAIRCRAFTF15EAGLE1WIKI: "The next generation startosphere craft for multi-role fighter. Modernized with alien technology and pilot life support. Installed with Shield Generator System for additional protection."
+      STR_USAAIRCRAFTCOBRA1: "AH-1 COBRA" #USA Air Support starters
+      STR_USAAIRCRAFTCOBRA2: "AH-2 PYTHON" #USA Alien Alloys
+      STR_USAAIRCRAFTAPACHE1: "AH64 APACHE" #USA UFO CONSTRUCTION
+      STR_USAAIRCRAFTAPACHE2: "SUPER APACHE" #USA UFO CONSTRUCTION ALIEN ID CODES
+      STR_USAAIRCRAFTMH47CHINOOK1: "CH-47 CHINOOK" #USA Support transport
+      STR_USAAIRCRAFTMH47CHINOOK2: "MH-47 CHINOOK" #USA UFO CONSTRUCTION Transport
+      STR_USAAIRCRAFTPARADRIP1: "C-5 GALAXY"
+      STR_USAAIRCRAFTPARADRIP2: "C-5 GALAXY"
+      STR_USAAIRCRAFTPARADRIP3: "C-5 GALAXY"
 #### NATO AA Weapon
       STR_NATOAIRCRAFTLASER1: Prometheus Laser
       STR_NATOAIRCRAFTLASER2: Aegis Beam Laser
@@ -4408,7 +4429,10 @@ en-US:
       STR_NATOAIRCRAFTPLASMA2: Comet Proton Beam
 #### Aircraft
       STR_NATOAIRCRAFTBAEKINGSTON: "KINGSTON" ##UK Aircraft
-      STR_NATOAIRCRAFTDASSAULTSE: "S-ETENDARD" ### France Aircraft
+      STR_NATOAIRCRAFTBAEKINGSTONWIKI: "Installed with Shield Generator System for additional protection."
+      STR_NATOAIRCRAFTSA330PUMA:
+      STR_NATOAIRCRAFTSIKORSKYHH31: "SIKORSKY-1A"
+      STR_NATOAIRCRAFTSIKORSKYHH32: "SIKORSKY-2B"
 #### WRSW AA Weapon
       STR_WRSWAIRCRAFTLASER1: Ion Charge Laser
       STR_WRSWAIRCRAFTLASER2: Ion Conduit Laser
@@ -4417,6 +4441,13 @@ en-US:
       STR_WRSWPSIONICNEURAL1: Psi-Interface System ### Increases Accuracy
 #### Aircraft
       STR_WRSWAIRCRAFTSU27T35: "SU-37T" ## Upgraded SU-27
+      STR_WRSWAIRCRAFTSU27T35WIKI: "Installed with Shield Generator System for additional protection."
+      STR_WRSWAIRCRAFTKAMOV25: "Ka-25 HORNET" ### USSR Air Support; Transporter
+      STR_WRSWAIRCRAFTMILMI24: "MI-24 ATTACKER" ### USSR Alien Alloys; Heilcopter
+      STR_WRSWAIRCRAFTMI26HALO: "MI-26 HALO" ### USSR Alien Alloys; UFO Construction
+      STR_WRSWAIRCRAFTPARADROP1: "AN-32 CLINE"
+      STR_WRSWAIRCRAFTPARADROP2: "IL76 CANDID"
+
 #### UNT AA Weapon; Prototypes
       STR_UNTAIRCRAFTLASER1: UN Hyperion Laser
       STR_UNTAIRCRAFTLASER2: UN Ion Beam Cannon
@@ -4429,10 +4460,11 @@ en-US:
       STR_UNTAIRCRAFTFUSION2: UN Hybrid Hydrogen Gun ### Legendary Energy Fusion Beam
 #### Aircraft
       STR_UNTAIRCRAFTBLACKA12: "M-12 RAVEN" ### On Our Own Aircraft as a Alloy Bomber
-      STR_UNTAIRCRAFTBLACKA12WIKI: "The variant of SR-71 Blackbird. With the Alien Alloy research, our engineers have modified this craft into bomber role to intercept large UFO's. Better durability, with same speed and allows to carry more weapons for aerial combat. "
+      STR_UNTAIRCRAFTBLACKA12WIKI: "The variant of SR-71 Blackbird. With the Alien Alloy research, our engineers have modified this craft into bomber role to intercept large UFO's. Better durability, with same speed and allows to carry more weapons for aerial combat."
       STR_UNTAIRCRAFTFURY120: "BERSERKER" ### On Our Own Aircraft as a Exclusive Spacecraft Interceptor
+      STR_UNTAIRCRAFTFURY120WIKI: "The advance bomber version upgraded from M-12 Raven craft. The first prototype tested for exosphere and space orbit craft. Uses heavy craft weapons to wipe out alien large scale ufos. Installed with Shield Generator System for additional protection."
       STR_UNTFURY120SINGULAR: "Singular Charge" ### One Hit Weapon, unmanufacturable
-
+      STR_UNTFURY120SINGULARWIKI: "A Powerful Singular Beam Charge that can destroy alien battleship class with ease. Constructed with Fusion-Nuclear Lance Weapon filled with Thorium energy battery system."
 
 
 #### Defense Facilitys
