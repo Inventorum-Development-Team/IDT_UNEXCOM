@@ -27,7 +27,6 @@ crafts:
       - [8, 16, 0, 2]
       - [2, 5, 0, 6]
       - [7, 5, 0, 2]
-
 terrains:
   - name: DIEHARD_G
     script: DIEHARD_SCRIPT
@@ -115,7 +114,6 @@ terrains:
         length: 30
         height: 7
         revealedFloors: [6, 5, 4]
-
 #####################################################
   - name: AIRPORT_DIEHARD
     script: AIRPORT_HIJACKED_PLANE_SCRIPT
@@ -237,7 +235,6 @@ terrains:
         width: 10
         length: 10
         groups: 4
-
   - name: TERRORIST_HQ
     mapDataSets:
       - BLANKS
@@ -254,7 +251,6 @@ terrains:
         length: 20
         height: 6
         groups: 4
-
 mapScripts:
   - type: DIEHARD_SCRIPT
     commands:
@@ -276,7 +272,6 @@ mapScripts:
       executions: 1
     # - type: addBlock
     #   executions: 1
-
   - type: AIRPORT_HIJACKED_PLANE_SCRIPT
     commands:
     - type: addCraft
@@ -296,7 +291,6 @@ mapScripts:
       executionChances: 100
       rects:
         - [2, 0, 3, 2]
-
     #- type: addBlock
     #  size: 2
     #  executions: 1
@@ -313,7 +307,6 @@ mapScripts:
     #  executions: 1
     - type: fillArea
       groups: 1
-
   - type: TERRORIST_HQ_SCRIPT
     commands:
       - type: addBlock

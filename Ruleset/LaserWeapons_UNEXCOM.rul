@@ -4,8 +4,6 @@
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
 #Extra long range combat: 46-60 # Snipers
-
-
 items:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
@@ -142,7 +140,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_38_LASER_MAGNUM
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
@@ -207,7 +204,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_CALBR
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
@@ -275,8 +271,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
-
   - type: STR_M20_M203_LASER_CARBINE
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
     requiresBuy:
@@ -348,7 +342,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_M5_LASER_SMG
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
     requiresBuy:
@@ -420,7 +413,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_ULYSSES_LASER_SNIPER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
     requiresBuy:
@@ -486,7 +478,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_X4_LASER_SHOTGUN
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
@@ -553,7 +544,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_M4_LASER_LMG
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     requiresBuy:
@@ -618,7 +608,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_ELERIUM_FLAMETHROWER
     categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
     requiresBuy:
@@ -668,11 +657,9 @@ items:
     vaporColorSurface: 13
     vaporDensitySurface: 10
     vaporProbabilitySurface: 100
-
 ###################################
 ###### NATO LASER WEAPONS #########
 #################################
-
   - type: STR_P71_LASER_PISTOL
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     requiresBuy:
@@ -736,7 +723,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_FN_FLA_LASER_BATTLE_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
     requiresBuy:
@@ -803,8 +789,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
-
   - type: STR_FN_FLA_LASER_CARBINE
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     requiresBuy:
@@ -871,7 +855,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_L4_ASSAULT_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
     requiresBuy:
@@ -939,7 +922,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_MAT72_SUBMACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
     requiresBuy:
@@ -1011,7 +993,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
@@ -1078,7 +1059,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_ML73_LASER_MACHINE_GUN
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
     requiresBuy:
@@ -1143,7 +1123,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
@@ -1186,7 +1165,6 @@ items:
     invWidth: 2
     invHeight: 3
     attraction: 8
-
   - type: STR_M72_ARR_HEAT_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
@@ -1360,7 +1338,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_ALK72_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
@@ -1431,7 +1408,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
@@ -1497,7 +1473,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_ALP_SUBMACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
@@ -1568,7 +1543,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_MIRINOV_LASER_SNIPER
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
@@ -1635,7 +1609,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_AN_MACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
@@ -1713,7 +1686,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_AFINA_ANTITANK_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
     requiresBuy:
@@ -1772,7 +1744,6 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
     size: 0.01
@@ -1794,7 +1765,6 @@ items:
     attraction: 6
     experienceTrainingMode: 32
     medikitActionName: STR_USE_BATTERY
-
   - type: STR_ELERIUM_BATTERY
     categories: [ STR_LIGHT_EQUIPMENT]
     size: 0.01
@@ -1815,13 +1785,11 @@ items:
     attraction: 6
     experienceTrainingMode: 32
     medikitActionName: STR_USE_BATTERY
-
 ####################################
 manufacture:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
-
   - name: STR_ELERIUM_BATTERY
     requires:
       - STR_ELERIUM_FUSION
@@ -1830,7 +1798,6 @@ manufacture:
     cost: 10000
     requiredItems:
       STR_ELERIUM_115: 5
-
   - name: STR_PEACEMAKER
     requires:
       - STR_HYBRID_LASER_PROJECT
@@ -1841,8 +1808,6 @@ manufacture:
       STR_ALIEN_LASER_RIFLE: 1
       STR_ALIEN_ALLOYS: 5
       STR_ALIEN_CRYSTAL: 5
-
-
 extraSprites:
   - type: BIGOBS.PCK
     files:
@@ -1916,7 +1881,6 @@ extraSprites:
       2025: Resources/LaserWeapons/USSR/FloorMirinovLaserSniper.png
       2026: Resources/LaserWeapons/USSR/FloorANMachineLaser.png
       2027: Resources/LaserWeapons/USSR/FloorAfinaAntiTankLaser.png
-
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -1969,4 +1933,3 @@ extraSprites:
       980: Resources/bulletSprites/WideBlueLaser_Bullet.png # 28
       1015: Resources/bulletSprites/WideRedLaser_Bullet.png # 29
       1050: Resources/bulletSprites/FlameProjectile.png # 30
-

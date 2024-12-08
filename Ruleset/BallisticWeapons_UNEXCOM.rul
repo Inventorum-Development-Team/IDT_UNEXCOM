@@ -51,7 +51,6 @@ items:
     type: 7_62MM_SOVIET_SNIPER_AMMO
     power: 56
     battleType: 2
-
   ###################################################
   ###################################################
   # Side note:
@@ -149,7 +148,6 @@ items:
     battleType: 2
     armor: 250
     listOrder: 201690
-
   - type: STR_9MM_PISTOL_X10
     refNode: *STR_9MM_PISTOL_AMMO
     requiresBuy:
@@ -231,7 +229,6 @@ items:
     battleType: 2
     armor: 30
     listOrder: 201620
-
   - type: STR_45_PISTOL_X7
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
@@ -290,7 +287,6 @@ items:
     battleType: 2
     armor: 30
     listOrder: 200700
-
   - type: STR_5_56MM_NATO_RIFLE_X20
     requiresBuy:
       - STR_556_X20_UNLOCK
@@ -342,7 +338,6 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 200960
-
   - type: STR_7_62MM_NATO_RIFLE_X5
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
     categories:
@@ -428,7 +423,6 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 201190
-
   - type: STR_7_62MM_NATO_LMG_X50
     requiresBuy:
       - STR_NATO_LMG_UNLOCK
@@ -485,7 +479,6 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 201010
-
   - type: STR_7_62MM_SOVIET_RIFLE_X10
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     requiresBuy:
@@ -596,7 +589,6 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 201310
-
   - type: STR_7_62MM_SOVIET_SNIPER_X10
     refNode: *STR_7_62MM_SOVIET_SNIPER_AMMO
     categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
@@ -622,7 +614,6 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 201360
-
   - type: STR_12GAUGE_BUCKSHOT_X2
     requiresBuy:
       - STR_12G_X2_UNLOCK
@@ -781,7 +772,6 @@ items:
     battleType: 2
     armor: 250
     listOrder: 200200
-
   - type: STR_40MM_FRAG
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
@@ -880,7 +870,6 @@ items:
     blastRadius: 5
     bulletSprite: 15
     listOrder: 200650
-
   - type: STR_38_REVOLVER_AMMO_X6
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_CLIPS ]
     size: 0.01
@@ -899,7 +888,6 @@ items:
     armor: 30
     attraction: 8
     listOrder: 200440
-
   - type: STR_22_LONG_RIFLE_X14
     requiresBuy:
       - STR_LR_UNLOCK
@@ -923,7 +911,6 @@ items:
     armor: 30
     attraction: 10
     listOrder: 200360
-
   - type: STR_FAL_SHOTGUN_SHELLS
     categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
@@ -944,7 +931,6 @@ items:
     shotgunPellets: 5
     shotgunSpread: 25
     listOrder: 201080
-
   - type: STR_M202_FLASH_RACK
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS ]
     requiresBuy:
@@ -975,7 +961,6 @@ items:
     invHeight: 1
     attraction: 9
     listOrder: 2037
-
   - type: STR_CARL_GUSTAF_M2_HE_ROUND
     categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
     requiresBuy:
@@ -1062,7 +1047,6 @@ items:
     invHeight: 2
     attraction: 9
     listOrder: 201640
-
   - type: STR_RPG_HE_ROCKET
     categories:
       [
@@ -1167,7 +1151,6 @@ items:
     invHeight: 2
     attraction: 9
     listOrder: 201720
-
   ###################################################
   ##### UNEXCOM STANDARD WEAPONS (USA SUPPLIED) #####
   ###################################################
@@ -1212,7 +1195,6 @@ items:
     battleType: 1
     armor: 250
     listOrder: 200720
-
   - type: STR_M16_M203
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES ]
     size: 0.03
@@ -1269,7 +1251,6 @@ items:
     twoHanded: true
     armor: 250
     listOrder: 200450
-
   - type: STR_XM117
     categories:
       [
@@ -1321,7 +1302,6 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 200760
-
   - type: STR_M3_GREASEGUN
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SMGS ]
     requiresBuy:
@@ -1373,7 +1353,6 @@ items:
     aimRange: 20
     attraction: 11
     listOrder: 200690
-
   - type: STR_XM21
     categories:
       [
@@ -1419,7 +1398,6 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 201030
-
   - type: STR_REMINGTON_COMBAT_SHOTGUN
     categories:
       [
@@ -1471,7 +1449,6 @@ items:
     twoHanded: true
     armor: 250
     listOrder: 200130
-
   - type: STR_M79_THUMPER_GL
     categories:
       [
@@ -1507,7 +1484,6 @@ items:
     armor: 20
     arcingShot: true
     listOrder: 200520
-
   - type: STR_M72_LAW
     categories:
       [
@@ -1598,7 +1574,6 @@ items:
     attraction: 8
     kneelBonus: 150
     listOrder: 2036
-
   - type: STR_M60
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_LMGS ]
     requiresBuy:
@@ -1645,7 +1620,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 200970
-
   - type: STR_AR5
     categories:
       [
@@ -1683,7 +1657,6 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 200330
-
   #################################################
   ####### UNEXCOM NATO SUPPLIED WEAPONS ###########
   #################################################
@@ -1738,7 +1711,6 @@ items:
     armor: 35
     attraction: 10
     listOrder: 201370
-
   - type: STR_FN_FAL_SHOTGUN
     categories:
       [
@@ -1795,7 +1767,6 @@ items:
     autoRange: 25
     attraction: 8
     listOrder: 201060
-
   - type: STR_SG510_CARBINE
     categories:
       [
@@ -1849,7 +1820,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 201090
-
   - type: STR_MP5
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS ]
     requiresBuy:
@@ -1905,7 +1875,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 201400
-
   - type: STR_PSG1
     categories:
       [
@@ -1959,7 +1928,6 @@ items:
     dropoff: 3
     attraction: 10
     listOrder: 201120
-
   - type: STR_FN_MAG
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LMGS ]
     requiresBuy:
@@ -2005,7 +1973,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 201000
-
   - type: STR_CARL_GUSTAF_M2
     categories:
       [
@@ -2042,7 +2009,6 @@ items:
     invHeight: 3
     attraction: 8
     listOrder: 201630
-
   ###############################################
   ####### UNEXCOM SOVIET SUPPLIED WEAPONS #######
   ###############################################
@@ -2102,7 +2068,6 @@ items:
     armor: 30
     attraction: 10
     listOrder: 201490
-
   - type: STR_AKM_BAYONETED
     categories:
       [
@@ -2175,7 +2140,6 @@ items:
     # Bayonet segment end
     attraction: 8
     listOrder: 201220
-
   - type: STR_AKMSU
     categories:
       [
@@ -2190,7 +2154,6 @@ items:
     costBuy: 3200
     costSell: 2000
     requiresBuyCountry: STR_RUSSIA
-
     weight: 8
     bigSprite: 155
     floorSprite: 155
@@ -2235,7 +2198,6 @@ items:
     aimRange: 25
     attraction: 8
     listOrder: 201250
-
   - type: STR_SKORPION
     categories:
       [
@@ -2250,7 +2212,6 @@ items:
     costBuy: 350
     costSell: 250
     requiresBuyCountry: STR_RUSSIA
-
     weight: 6
     bigSprite: 156
     floorSprite: 156
@@ -2306,7 +2267,6 @@ items:
     costBuy: 7000
     costSell: 5500
     requiresBuyCountry: STR_RUSSIA
-
     weight: 12
     bigSprite: 157
     floorSprite: 157
@@ -2493,11 +2453,9 @@ items:
     sprayWaypoints: 2
     attraction: 9
     listOrder: 201280
-
   ##################################################
   ############### CIVILIAN WEAPONS #################
   ##################################################
-
   - type: STR_MAKAROV
     requiresBuy:
       - STR_MAKAROV
@@ -2548,7 +2506,6 @@ items:
     armor: 30
     attraction: 10
     listOrder: 201470
-
   - type: STR_SNUBNOSE_PISTOL
     requiresBuy:
       - STR_SNUBNOSE_PISTOL
@@ -2597,7 +2554,6 @@ items:
     invHeight: 1
     attraction: 8
     listOrder: 200410
-
   - type: STR_HUNTING_RIFLE
     requiresBuy:
       - STR_HUNTING_RIFLE
@@ -2635,7 +2591,6 @@ items:
     armor: 30
     attraction: 7
     listOrder: 200350
-
   - type: STR_DOUBLE_BARRELED_SHOTGUN
     requiresBuy:
       - STR_DOUBLE_BARRELED_SHOTGUN
@@ -2683,7 +2638,6 @@ items:
     armor: 40
     attraction: 7
     listOrder: 200000
-
   - type: STR_MACHETE
     requiresBuy:
       - STR_MACHETE
@@ -2721,7 +2675,6 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2104
-
   - type: STR_SHOVEL
     requiresBuy:
       - STR_SHOVEL
@@ -2762,11 +2715,9 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2105
-
   ##############################################
   ############### DEALER WEAPONS ###############
   ##############################################
-
   - type: STR_LUGER
     categories:
       [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
@@ -2811,7 +2762,6 @@ items:
     invHeight: 2
     attraction: 8
     listOrder: 200434
-
   - type: STR_UZI
     requires:
       - STR_CONTACT_SMUGGLERS
@@ -2861,7 +2811,6 @@ items:
     invHeight: 2
     attraction: 8
     listOrder: 200410
-
   - type: STR_G3
     categories:
       [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_CARBINES ]
@@ -2904,7 +2853,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 201090
-
   ###############################################
   ############### POLICE WEAPONS #################
   #############################################
@@ -2956,7 +2904,6 @@ items:
     invHeight: 2
     attraction: 8
     listOrder: 200430
-
   - type: STR_BERETTA_M12
     categories:
       [
@@ -3011,7 +2958,6 @@ items:
     sprayWaypoints: 2
     attraction: 8
     listOrder: 201510
-
   - type: STR_POLICE_SHOTGUN
     categories:
       [
@@ -3065,7 +3011,6 @@ items:
     armor: 40
     attraction: 7
     listOrder: 200180
-
   - type: STR_POLICE_TONFA
     requiresBuy:
       - STR_POLICE_TONFA
@@ -3229,7 +3174,6 @@ items:
     battleType: 2
     armor: 30
     listOrder: 200400
-
   ###############################################
   ########## ALLIED ARMIES WEAPONS #################
   ###############################################
@@ -3337,7 +3281,6 @@ items:
     invHeight: 3
     attraction: 8
     listOrder: 201150
-
   - type: STR_BREN
     requiresBuy:
       - STR_BREN
@@ -3386,7 +3329,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 201170
-
   - type: STR_OWEN_SMG
     requiresBuy:
       - STR_OWEN_SMG
@@ -3437,7 +3379,6 @@ items:
     sprayWaypoints: 2
     attraction: 8
     listOrder: 201540
-
   ##################
   ###### USSR #######
   ##################
@@ -3497,7 +3438,6 @@ items:
     invHeight: 3
     attraction: 8
     listOrder: 201320
-
   - type: STR_SKS
     requiresBuy:
       - STR_SKS
@@ -3535,10 +3475,8 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 30
-
     attraction: 7
     listOrder: 201200
-
   - type: STR_PPS_43
     requiresBuy:
       - STR_PPS_43
@@ -3593,7 +3531,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 201570
-
   #####################################################
   ######## UNEXCOM AMERICAN PROTOTYPE WEAPONS  ########
   #####################################################
@@ -3645,7 +3582,6 @@ items:
     fixedWeapon: true
     fixedWeaponShow: true
     defaultInventorySlot: STR_RIGHT_HAND
-
   #####################################################
   ####### UNEXCOM SOVIET USSR PROTOTYPE WEAPONS  ######
   #####################################################
@@ -3696,7 +3632,6 @@ items:
     dropoff: 5
     kneelBonus: 110
     listOrder: 200030
-
   - type: STR_RIOT_SHIELD
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
@@ -3732,7 +3667,6 @@ items:
     invHeight: 3
     recover: false
     listOrder: 2120
-
   ###############################
   ###### MEDICAL AND FOOD #######
   ###############################
@@ -3766,7 +3700,6 @@ items:
     experienceTrainingMode: 21
     recoveryPoints: 10
     listOrder: 2128
-
   - type: STR_BREAD
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -3797,7 +3730,6 @@ items:
     experienceTrainingMode: 21
     recoveryPoints: 10
     listOrder: 2129
-
   - type: STR_CIGARETTES
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.001
@@ -3827,7 +3759,6 @@ items:
     experienceTrainingMode: 21
     recoveryPoints: 10
     listOrder: 2135
-
   - type: STR_FLASK
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -3880,7 +3811,6 @@ items:
     flatRate: true
     medikitActionName: STR_ACTIVATE_MEDIKIT
     listOrder: 2137
-
   - type: STR_MEDICAL_BAG
     medikitBackground: MEDIKIT_BACKGROUND
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
@@ -3909,7 +3839,6 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_DEPLOY_MEDICAL_BAG
     listOrder: 2138
-
   - type: STR_FIELD_DRESSING
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -3935,7 +3864,6 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_USE_FIELD_DRESSING
     listOrder: 2139
-
   - type: STR_MEDICAL_POUCH
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -3960,7 +3888,6 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_USE_MEDICAL_POUCH
     listOrder: 2140
-
   - type: STR_DUCT_TAPE
     requiresBuy:
       - STR_OLYMPUS
@@ -3987,7 +3914,6 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
     listOrder: 2141
-
   - type: STR_DUCT_GUN
     requiresBuy:
       - STR_OLYMPUS
@@ -4015,7 +3941,6 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
     listOrder: 2142
-
   - type: STR_BIO_FOAM
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.01
@@ -4042,7 +3967,6 @@ items:
     experienceTrainingMode: 19
     medikitActionName: STR_APPLY_FOAM
     listOrder: 2143
-
   - type: STR_ELECTRO_FLARE
     categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.005
@@ -4053,10 +3977,8 @@ items:
     battleType: 10
     primeActionName: STR_PRIME_FLARE
     fuseType: -2
-
   - type: STR_PSI_AMP
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-
   - type: STR_STUN_ROD
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.01
@@ -4078,7 +4000,6 @@ items:
     skillApplied: false
     clipSize: -1
     listOrder: 2121
-
   ####################################
   ###### WEAPON CUSTOMIZATION #######
   ##################################
@@ -4098,7 +4019,6 @@ items:
     armor: 30
     recover: true
     listOrder: 2126
-
   - type: STR_M203_ACCESSORY
     requires:
       - STR_WEAPON_MODIFICATION
@@ -4115,7 +4035,6 @@ items:
     armor: 30
     recover: true
     listOrder: 2127
-
   ####################################
   ####### CUSTOM SF WEAPONS #########
   ##################################
@@ -4153,7 +4072,6 @@ items:
     armor: 20
     arcingShot: true
     listOrder: 200570
-
   - type: STR_SAWEDOFF_SHOTGUN
     requires:
       - STR_WEAPON_MODIFICATION
@@ -4204,7 +4122,6 @@ items:
     armor: 40
     attraction: 7
     listOrder: 200100
-
   - type: STR_COMBAT_KNIFE
     categories: [ STR_MELEE, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH ]
     size: 0.02
@@ -4240,7 +4157,6 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2118
-
   - type: STR_XM117_SCOPED
     categories:
       [
@@ -4290,7 +4206,6 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 200820
-
   - type: STR_XM117_SHOTGUN
     categories:
       [
@@ -4349,7 +4264,6 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 200230
-
   - type: STR_XM117_M203
     categories:
       [
@@ -4417,7 +4331,6 @@ items:
     aimRange: 11
     attraction: 8
     listOrder: 200620
-
   - type: STR_MAT49
     categories:
       [
@@ -4474,7 +4387,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 201600
-
   ####################################
   ###### CUSTOM MERC WEAPONS ########
   ##################################
@@ -4532,7 +4444,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 200850
-
   - type: STR_FN_FSC_SCOPED
     categories:
       [
@@ -4580,7 +4491,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 200880
-
   - type: STR_FN_FSC_BAYONET
     categories:
       [
@@ -4653,7 +4563,6 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 200910
-
   - type: STR_M16A1_SCOPED
     categories:
       [
@@ -4709,7 +4618,6 @@ items:
     armor: 250
     tuMelee: 0
     listOrder: 200940
-
   - type: STR_M16A1_SHOTGUN
     categories:
       [
@@ -4779,7 +4687,6 @@ items:
     armor: 250
     tuMelee: 0
     listOrder: 200270
-
   - type: STR_50_CAL_MAGNUM
     categories:
       [
@@ -4852,7 +4759,6 @@ items:
     armor: 30
     attraction: 8
     listOrder: 200750
-
   ####################################
   ######## CUSTOM UN WEAPONS ########
   ##################################
@@ -4907,7 +4813,6 @@ items:
     invHeight: 3
     attraction: 8
     listOrder: 201151
-
   - type: STR_STONER_CARBINE
     categories:
       [
@@ -4958,7 +4863,6 @@ items:
     aimRange: 25
     attraction: 8
     listOrder: 201252
-
   - type: STR_STONER_AUTOMATIC_RIFLE
     categories:
       [
@@ -5009,7 +4913,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 201171
-
   - type: STR_STONER_COMMANDO
     categories:
       [
@@ -5058,7 +4961,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 201001
-
   - type: STR_STONER_SNIPER
     categories:
       [
@@ -5100,7 +5002,6 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 201121
-
   #######################################
   ########## EXPLOSIVES ################
   #####################################
@@ -5126,7 +5027,6 @@ items:
     damageType: 3
     battleType: 4
     blastRadius: 5
-
   - type: STR_PROXIMITY_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -5150,7 +5050,6 @@ items:
     damageType: 3
     battleType: 5
     blastRadius: 5
-
   - type: STR_HIGH_EXPLOSIVE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.02
@@ -5171,7 +5070,6 @@ items:
     invWidth: 2
     invHeight: 1
     blastRadius: 5
-
   - type: STR_SMOKE_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.1
@@ -5193,7 +5091,6 @@ items:
     battleType: 4
     blastRadius: 5
     listOrder: 2135
-
   - type: STR_FLASHBANG_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -5222,7 +5119,6 @@ items:
     blastRadius: 3
     armor: 20
     attraction: 6
-
 extraSprites:
   - type: BIGOBS.PCK
     files:
@@ -5265,7 +5161,6 @@ extraSprites:
       133: Resources/BallisticWeapons/Ammo/BigRPGHERocket.png
       134: Resources/BallisticWeapons/Ammo/BigRPGINCRocket.png
       135: Resources/BallisticWeapons/Ammo/BigRPGEWHRocket.png
-
       136: Resources/BallisticWeapons/USA/BigM1911Colt45.png
       137: Resources/BallisticWeapons/USA/BigM16M203.png
       138: Resources/BallisticWeapons/USA/BigXM117.png
@@ -5276,7 +5171,6 @@ extraSprites:
       143: Resources/BallisticWeapons/USA/BigM72LAW.png
       144: Resources/BallisticWeapons/USA/BigM60.png
       145: Resources/BallisticWeapons/USA/BigAR5.png
-
       146: Resources/BallisticWeapons/NATO/BigBrowningHP.png
       147: Resources/BallisticWeapons/NATO/BigFALShotgun.png
       148: Resources/BallisticWeapons/NATO/BigSG510Carbine.png
@@ -5284,7 +5178,6 @@ extraSprites:
       150: Resources/BallisticWeapons/NATO/BigPSG1.png
       151: Resources/BallisticWeapons/NATO/BigFNMAG.png
       152: Resources/BallisticWeapons/NATO/BigCarlGustafM2.png
-
       153: Resources/BallisticWeapons/USSR/BigStechkinAPS.png
       154: Resources/BallisticWeapons/USSR/BigAKMBayoneted.png
       155: Resources/BallisticWeapons/USSR/BigAKMSU.png
@@ -5293,7 +5186,6 @@ extraSprites:
       158: Resources/BallisticWeapons/USSR/BigKS23Shotgun.png
       159: Resources/BallisticWeapons/USSR/BigRPG.png
       160: Resources/BallisticWeapons/USSR/BigRPKS.png
-
       161: Resources/BallisticWeapons/Civilian/BigMakarov.png
       162: Resources/BallisticWeapons/Civilian/BigSnubnosePistol.png
       163: Resources/BallisticWeapons/Civilian/BigHuntingRifle.png
@@ -5302,12 +5194,10 @@ extraSprites:
       281: Resources/BallisticWeapons/Civilian/BigLuger.png
       282: Resources/BallisticWeapons/Civilian/BigUzi.png
       283: Resources/BallisticWeapons/Civilian/BigG3.png
-
       166: Resources/BallisticWeapons/Civilian/BigPoliceRevolver.png
       167: Resources/BallisticWeapons/Civilian/BigBerettaM12.png
       168: Resources/BallisticWeapons/Civilian/BigPoliceShotgun.png
       169: Resources/BallisticWeapons/Civilian/BigPoliceTonfa.png
-
       170: Resources/BallisticWeapons/Allies/BigM16A1.png
       171: Resources/BallisticWeapons/Allies/BigFNFAL.png
       172: Resources/BallisticWeapons/Allies/BigBren.png
@@ -5315,11 +5205,9 @@ extraSprites:
       174: Resources/BallisticWeapons/Allies/BigAKM.png
       175: Resources/BallisticWeapons/Allies/BigSKS.png
       176: Resources/BallisticWeapons/Allies/BigPPS43.png
-
       177: Resources/SoldiersAndArmors/DeltaArmor/BigMG3.png
       178: Resources/SoldiersAndArmors/RiotArmor/BigAngryWife.png
       179: Resources/SoldiersAndArmors/RiotArmor/BigRiotShield.png
-
       180: Resources/BallisticWeapons/CustomWeapons/BigMAT49.png
       181: Resources/BallisticWeapons/CustomWeapons/BigSawedOffM79Thumper.png
       182: Resources/BallisticWeapons/CustomWeapons/BigSawedOffShotgun.png
@@ -5332,20 +5220,17 @@ extraSprites:
       189: Resources/BallisticWeapons/Allies/BigCombatKnife.png
       190: Resources/BallisticWeapons/CustomWeapons/BigColtScopeAccessory.png
       191: Resources/BallisticWeapons/CustomWeapons/BigM203Accessory.png
-
       192: Resources/BallisticWeapons/Medical&Food/BigCannedFood.png
       193: Resources/BallisticWeapons/Medical&Food/BigCigarettes.png
       194: Resources/BallisticWeapons/Medical&Food/BigFlask.png
       195: Resources/BallisticWeapons/Medical&Food/BigMedicalBag.png
       196: Resources/BallisticWeapons/Medical&Food/BigFieldDressing.png
       197: Resources/BallisticWeapons/Medical&Food/BigMedicalPouch.png
-
       200: Resources/BallisticWeapons/Explosives/BigSmokeGrenade.png
       201: Resources/BallisticWeapons/Explosives/BigFlashbangGrenade.png
       202: Resources/BallisticWeapons/Medical&Food/BigDuctTape.png
       203: Resources/BallisticWeapons/Medical&Food/BigDuctGun.png
       204: Resources/BallisticWeapons/Medical&Food/BigBioFoam.png
-
       210: Resources/BallisticWeapons/CustomWeapons/BigWeaponToolKit.png
       211: Resources/BallisticWeapons/CustomWeapons/BigM16A1Scoped.png
       212: Resources/BallisticWeapons/CustomWeapons/BigM16A1Shotgun.png
@@ -5355,7 +5240,6 @@ extraSprites:
       248: Resources/BallisticWeapons/USA/BigCarbine.png
       888: Resources/BallisticWeapons/Explosives/BigFlare.png
       896: Resources/BallisticWeapons/Explosives/BigFlarelit.png
-
       1032: Resources/BallisticWeapons/UN/BigStoner63Rifle.png
       1040: Resources/BallisticWeapons/UN/BigStoner63Carbine.png
       1048: Resources/BallisticWeapons/UN/BigStoner63AutomaticRifle.png
@@ -5365,7 +5249,6 @@ extraSprites:
       1080: Resources/BallisticWeapons/Ammo/BigM202FlashAmmo.png
       1088: Resources/BallisticWeapons/Medical&Food/BigBread.png
       1096: Resources/BallisticWeapons/Civilian/Bigob_Shovel.png
-
   - type: FLOOROB.PCK
     files:
       97: Resources/BallisticWeapons/Ammo/FloorKS23Sharpnel25Ammo_x4.png
@@ -5407,7 +5290,6 @@ extraSprites:
       133: Resources/BallisticWeapons/Ammo/FloorRPGHERocket.png
       134: Resources/BallisticWeapons/Ammo/FloorRPGINCRocket.png
       135: Resources/BallisticWeapons/Ammo/FloorRPGEWHRocket.png
-
       136: Resources/BallisticWeapons/USA/FloorM1911Colt45.png
       137: Resources/BallisticWeapons/USA/FloorM16M203.png
       138: Resources/BallisticWeapons/USA/FloorXM117.png
@@ -5418,7 +5300,6 @@ extraSprites:
       143: Resources/BallisticWeapons/USA/FloorM72LAW.png
       144: Resources/BallisticWeapons/USA/FloorM60.png
       145: Resources/BallisticWeapons/USA/FloorAR5.png
-
       146: Resources/BallisticWeapons/NATO/FloorBrowningHP.png
       147: Resources/BallisticWeapons/NATO/FloorFALShotgun.png
       148: Resources/BallisticWeapons/NATO/FloorSG510Carbine.png
@@ -5426,7 +5307,6 @@ extraSprites:
       150: Resources/BallisticWeapons/NATO/FloorPSG1.png
       151: Resources/BallisticWeapons/NATO/FloorFNMAG.png
       152: Resources/BallisticWeapons/NATO/FloorCarlGustafM2.png
-
       153: Resources/BallisticWeapons/USSR/FloorStechkinAPS.png
       154: Resources/BallisticWeapons/USSR/FloorAKMBayoneted.png
       155: Resources/BallisticWeapons/USSR/FloorAKMSU.png
@@ -5435,22 +5315,18 @@ extraSprites:
       158: Resources/BallisticWeapons/USSR/FloorKS23Shotgun.png
       159: Resources/BallisticWeapons/USSR/FloorRPG.png
       160: Resources/BallisticWeapons/USSR/FloorRPKS.png
-
       161: Resources/BallisticWeapons/Civilian/FloorMakarov.png
       162: Resources/BallisticWeapons/Civilian/FloorSnubnosePistol.png
       163: Resources/BallisticWeapons/Civilian/FloorHuntingRifle.png
       164: Resources/BallisticWeapons/Civilian/FloorModel1900.png
       165: Resources/BallisticWeapons/Civilian/FloorMachete.png
-
       281: Resources/BallisticWeapons/Civilian/FloorLuger.png
       282: Resources/BallisticWeapons/Civilian/FloorUzi.png
       283: Resources/BallisticWeapons/Civilian/FloorG3.png
-
       166: Resources/BallisticWeapons/Civilian/FloorPoliceRevolver.png
       167: Resources/BallisticWeapons/Civilian/FloorBerettaM12.png
       168: Resources/BallisticWeapons/Civilian/FloorPoliceShotgun.png
       169: Resources/BallisticWeapons/Civilian/FloorPoliceTonfa.png
-
       170: Resources/BallisticWeapons/Allies/FloorM16A1.png
       171: Resources/BallisticWeapons/Allies/FloorFNFAL.png
       172: Resources/BallisticWeapons/Allies/FloorBren.png
@@ -5458,7 +5334,6 @@ extraSprites:
       174: Resources/BallisticWeapons/Allies/FloorAKM.png
       175: Resources/BallisticWeapons/Allies/FloorSKS.png
       176: Resources/BallisticWeapons/Allies/FloorPPS43.png
-
       #      177: Resources/SoldiersAndArmors/FloorMG3.png
       178: Resources/SoldiersAndArmors/RiotArmor/FloorAngryWife.png
       #      179: Resources/SoldiersAndArmors/FloorRiotShield.png
@@ -5474,20 +5349,17 @@ extraSprites:
       189: Resources/BallisticWeapons/Allies/FloorCombatKnife.png
       190: Resources/BallisticWeapons/CustomWeapons/FloorColtScopeAccessory.png
       191: Resources/BallisticWeapons/CustomWeapons/FloorM203Accessory.png
-
       192: Resources/BallisticWeapons/Medical&Food/FloorCannedFood.png
       193: Resources/BallisticWeapons/Medical&Food/FloorCigarettes.png
       194: Resources/BallisticWeapons/Medical&Food/FloorFlask.png
       195: Resources/BallisticWeapons/Medical&Food/FloorMedicalBag.png
       196: Resources/BallisticWeapons/Medical&Food/FloorFieldDressing.png
       197: Resources/BallisticWeapons/Medical&Food/FloorMedicalPouch.png
-
       200: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
       201: Resources/BallisticWeapons/Explosives/FloorFlashbangGrenade.png
       202: Resources/BallisticWeapons/Medical&Food/FloorDuctTape.png
       203: Resources/BallisticWeapons/Medical&Food/FloorDuctGun.png
       204: Resources/BallisticWeapons/Medical&Food/FloorBioFoam.png
-
       210: Resources/BallisticWeapons/CustomWeapons/FloorWeaponToolKit.png
       211: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Scoped.png
       212: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Shotgun.png
@@ -5497,7 +5369,6 @@ extraSprites:
       248: Resources/BallisticWeapons/USA/FloorCarbine.png
       888: Resources/BallisticWeapons/Explosives/FloorFlare.png
       896: Resources/BallisticWeapons/Explosives/FloorFlarelit.png
-
       1032: Resources/BallisticWeapons/UN/FloorStoner63Rifle.png
       1040: Resources/BallisticWeapons/UN/FloorStoner63Carbine.png
       1048: Resources/BallisticWeapons/UN/FloorStoner63AutomaticRifle.png
@@ -5507,7 +5378,6 @@ extraSprites:
       1080: Resources/BallisticWeapons/Ammo/FloorM202FlashAmmo.png
       1088: Resources/BallisticWeapons/Medical&Food/FloorBread.png
       1096: Resources/BallisticWeapons/Civilian/Floorob_Shovel.png
-
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -5550,7 +5420,6 @@ extraSprites:
       364: Resources/BallisticWeapons/Ammo/HandRPGHERocket.png
       372: Resources/BallisticWeapons/Ammo/HandRPGINCRocket.png
       380: Resources/BallisticWeapons/Ammo/HandRPGEWHRocket.png
-
       388: Resources/BallisticWeapons/USA/HandM1911Colt45.png
       396: Resources/BallisticWeapons/USA/HandM16M203.png
       404: Resources/BallisticWeapons/USA/HandXM117.png
@@ -5561,7 +5430,6 @@ extraSprites:
       444: Resources/BallisticWeapons/USA/HandM72LAW.png
       452: Resources/BallisticWeapons/USA/HandM60.png
       460: Resources/BallisticWeapons/USA/HandAR5.png
-
       468: Resources/BallisticWeapons/NATO/HandBrowningHP.png
       476: Resources/BallisticWeapons/NATO/HandFALShotgun.png
       484: Resources/BallisticWeapons/NATO/HandSG510Carbine.png
@@ -5569,7 +5437,6 @@ extraSprites:
       500: Resources/BallisticWeapons/NATO/HandPSG1.png
       508: Resources/BallisticWeapons/NATO/HandFNMAG.png
       516: Resources/BallisticWeapons/NATO/HandCarlGustafM2.png
-
       524: Resources/BallisticWeapons/USSR/HandStechkinAPS.png
       532: Resources/BallisticWeapons/USSR/HandAKMBayoneted.png
       540: Resources/BallisticWeapons/USSR/HandAKMSU.png
@@ -5578,18 +5445,15 @@ extraSprites:
       564: Resources/BallisticWeapons/USSR/HandKS23Shotgun.png
       572: Resources/BallisticWeapons/USSR/HandRPG.png
       580: Resources/BallisticWeapons/USSR/HandRPKS.png
-
       588: Resources/BallisticWeapons/Civilian/HandMakarov.png
       596: Resources/BallisticWeapons/Civilian/HandSnubnosePistol.png
       604: Resources/BallisticWeapons/Civilian/HandHuntingRifle.png
       612: Resources/BallisticWeapons/Civilian/HandModel1900.png
       620: Resources/BallisticWeapons/Civilian/HandMachete.png
-
       628: Resources/BallisticWeapons/Civilian/HandPoliceRevolver.png
       636: Resources/BallisticWeapons/Civilian/HandBerettaM12.png
       644: Resources/BallisticWeapons/Civilian/HandPoliceShotgun.png
       652: Resources/BallisticWeapons/Civilian/HandPoliceTonfa.png
-
       660: Resources/BallisticWeapons/Allies/HandM16A1.png
       668: Resources/BallisticWeapons/Allies/HandFNFAL.png
       676: Resources/BallisticWeapons/Allies/HandBren.png
@@ -5597,11 +5461,9 @@ extraSprites:
       692: Resources/BallisticWeapons/Allies/HandAKM.png
       700: Resources/BallisticWeapons/Allies/HandSKS.png
       708: Resources/BallisticWeapons/Allies/HandPPS43.png
-
       716: Resources/SoldiersAndArmors/DeltaArmor/HandMG3.png
       724: Resources/SoldiersAndArmors/RiotArmor/HandAngryWife.png
       732: Resources/SoldiersAndArmors/RiotArmor/HandRiotShield.png
-
       740: Resources/BallisticWeapons/CustomWeapons/HandMAT49.png
       748: Resources/BallisticWeapons/CustomWeapons/HandSawedOffM79Thumper.png
       756: Resources/BallisticWeapons/CustomWeapons/HandSawedOffShotgun.png
@@ -5612,7 +5474,6 @@ extraSprites:
       796: Resources/BallisticWeapons/CustomWeapons/HandFNFSCScoped.png
       804: Resources/BallisticWeapons/CustomWeapons/HandFNFSCBayoneted.png
       812: Resources/BallisticWeapons/Allies/HandCombatKnife.png
-
       820: Resources/BallisticWeapons/Medical&Food/HandCannedFood.png
       828: Resources/BallisticWeapons/Medical&Food/HandCigarettes.png
       836: Resources/BallisticWeapons/Medical&Food/HandFlask.png
@@ -5621,7 +5482,6 @@ extraSprites:
       880: Resources/BallisticWeapons/Medical&Food/HandMedicalPouch.png
       888: Resources/BallisticWeapons/Explosives/HandFlare.png
       896: Resources/BallisticWeapons/Explosives/HandFlare.png
-
       904: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
       912: Resources/BallisticWeapons/Explosives/HandFlashbangGrenade.png
       920: Resources/BallisticWeapons/CustomWeapons/HandEnforcer.png
@@ -5630,7 +5490,6 @@ extraSprites:
       988: Resources/BallisticWeapons/Medical&Food/BigDuctTape.png
       996: Resources/BallisticWeapons/Medical&Food/BigDuctGun.png
       1004: Resources/BallisticWeapons/Medical&Food/BigBioFoam.png
-
       1032: Resources/BallisticWeapons/UN/HandStoner63Rifle.png
       1040: Resources/BallisticWeapons/UN/HandStoner63Carbine.png
       1048: Resources/BallisticWeapons/UN/HandStoner63AutomaticRifle.png
@@ -5639,11 +5498,9 @@ extraSprites:
       1072: Resources/BallisticWeapons/USA/HandM202Flash.png
       1080: Resources/BallisticWeapons/Ammo/HandM202FlashAmmo.png
       1096: Resources/BallisticWeapons/Civilian/Handob_Shovel.png
-
       1104: Resources/BallisticWeapons/Civilian/HandLuger.png
       1112: Resources/BallisticWeapons/Civilian/HandUzi.png
       1160: Resources/BallisticWeapons/Civilian/HandG3.png
-
   - type: SMOKE.PCK
     height: 80
     width: 160
@@ -5659,14 +5516,12 @@ extraSprites:
     subY: 3
     files:
       385: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
-
   - type: MEDIKIT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/BallisticWeapons/Medical&Food/MEDIKIT_BACKGROUND.png
-
   #######################################################
   - type: ELERIUM_FUSION_IMAGE
     singleImage: true
@@ -5674,7 +5529,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/BallisticWeapons/ELERIUM_FUSION_IMAGE.PNG
-
 manufacture:
   - name: STR_MEDI_KIT
     category: STR_EQUIPMENT
@@ -5685,7 +5539,6 @@ manufacture:
     cost: 28000
     requiredItems:
       STR_ALIEN_ALLOYS: 4
-
   - name: STR_BIO_FOAM
     category: STR_EQUIPMENT
     requires:
@@ -5695,7 +5548,6 @@ manufacture:
     cost: 18000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-
   - name: STR_12GAUGE_ELERIUM_SHARDS_X8
     category: STR_AMMUNITION
     requires:
@@ -5706,7 +5558,6 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 1
     listOrder: 1101
-
   - name: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
     category: STR_AMMUNITION
     requires:
@@ -5717,7 +5568,6 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 3
     listOrder: 1101
-
   - name: STR_RPG_EWH_ROCKET
     category: STR_AMMUNITION
     requires:
@@ -5728,7 +5578,6 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 2
     listOrder: 1101
-
   ####################################################
   ##### SPECIAL FORCES/MERC WEAPON CONVERSION #######
   ##################################################
@@ -5745,7 +5594,6 @@ manufacture:
     producedItems:
       STR_STONER_AUTOMATIC_RIFLE: 1
     listOrder: 1101
-
   - name: STR_STONER_CARBINE_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5759,7 +5607,6 @@ manufacture:
     producedItems:
       STR_STONER_CARBINE: 1
     listOrder: 1101
-
   - name: STR_STONER_COMMANDO_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5773,7 +5620,6 @@ manufacture:
     producedItems:
       STR_STONER_COMMANDO: 1
     listOrder: 1101
-
   - name: STR_STONER_SNIPER_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5787,7 +5633,6 @@ manufacture:
     producedItems:
       STR_STONER_SNIPER: 1
     listOrder: 1101
-
   - name: STR_5_56MM_NATO_X30_MAG_CREATION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5799,7 +5644,6 @@ manufacture:
     producedItems:
       STR_5_56MM_NATO_RIFLE_X30: 1
     listOrder: 1101
-
   - name: STR_M79_THUMPER_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5813,7 +5657,6 @@ manufacture:
     producedItems:
       STR_SAWEDOFF_M79_THUMPER: 1
     listOrder: 1101
-
   - name: STR_DOUBLE_BARRELED_SHOTGUN_CONVERSION
     requires:
       - STR_DOUBLE_BARRELED_SHOTGUN
@@ -5827,7 +5670,6 @@ manufacture:
     producedItems:
       STR_SAWEDOFF_SHOTGUN: 1
     listOrder: 1101
-
   - name: STR_ENFORCER_CONVERSION
     requires:
       - STR_ENFORCER
@@ -5841,7 +5683,6 @@ manufacture:
     producedItems:
       STR_ENFORCER: 1
     listOrder: 1101
-
   - name: STR_XM117_SCOPED_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5856,7 +5697,6 @@ manufacture:
     producedItems:
       STR_XM117_SCOPED: 1
     listOrder: 1101
-
   - name: STR_XM117_SHOTGUN_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5871,7 +5711,6 @@ manufacture:
     producedItems:
       STR_XM117_SHOTGUN: 1
     listOrder: 1101
-
   - name: STR_XM117_M203_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5886,7 +5725,6 @@ manufacture:
     producedItems:
       STR_XM117_M203: 1
     listOrder: 1101
-
   - name: STR_FN_FSC_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5900,7 +5738,6 @@ manufacture:
     producedItems:
       STR_FN_FSC: 1
     listOrder: 1101
-
   - name: STR_FN_FSC_BAYONET_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5915,7 +5752,6 @@ manufacture:
     producedItems:
       STR_FN_FSC_BAYONET: 1
     listOrder: 1101
-
   - name: STR_FN_FSC_SCOPED_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5930,7 +5766,6 @@ manufacture:
     producedItems:
       STR_FN_FSC_SCOPED: 1
     listOrder: 1101
-
   - name: STR_M16A1_SHOTGUN_CONVERSION
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -5945,7 +5780,6 @@ manufacture:
     producedItems:
       STR_M16A1_SHOTGUN: 1
     listOrder: 1101
-
   - name: STR_M16A1_SCOPED_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:
@@ -5960,7 +5794,6 @@ manufacture:
     producedItems:
       STR_M16A1_SCOPED: 1
     listOrder: 1101
-
   - name: STR_M16A1_M203_CONVERSION
     category: STR_WEAPON_CONVERSION
     requires:

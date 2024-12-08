@@ -3,7 +3,6 @@
 #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
 #Extra long range combat: 46-60 # Snipers
-
 items:
 # Burya Electromagnetic Rifle
   - type: STR_GAUSS_RIFLE
@@ -55,7 +54,6 @@ items:
     twoHanded: true
     armor: 200
     #listOrder: 239
-
   - type: STR_GAUSS_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
     requires:
@@ -83,9 +81,7 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 10
     vaporProbabilitySurface: 100
-
 ##############################
-
 # Hurrikan Electric Rifle
   - type: STR_ELECTRIC_RIFLE
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
@@ -128,7 +124,6 @@ items:
     recoveryPoints: 3
     attraction: 12
     #listOrder: 12393
-
   - type: STR_ELECTRIC_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
     requires:
@@ -170,10 +165,7 @@ items:
     vaporColorSurface: 4
     vaporDensitySurface: 5
     vaporProbabilitySurface: 100
-
-
 #########################################
-
 manufacture:
   - name: STR_GAUSS_RIFLE
     requires:
@@ -184,7 +176,6 @@ manufacture:
     cost: 80000
     requiredItems:
       STR_ALIEN_ALLOYS: 20
-
   - name: STR_GAUSS_RIFLE_MAG
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
@@ -194,7 +185,6 @@ manufacture:
     cost: 10000
     requiredItems:
       STR_ALIEN_ALLOYS: 5
-
   - name: STR_ELECTRIC_RIFLE
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
@@ -204,7 +194,6 @@ manufacture:
     cost: 70000
     requiredItems:
       STR_ALIEN_ALLOYS: 15
-
   - name: STR_ELECTRIC_RIFLE_MAG
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
@@ -214,7 +203,6 @@ manufacture:
     cost: 20000
     requiredItems:
       STR_ALIEN_ALLOYS: 3
-
 extraSprites:
   - type: BIGOBS.PCK
     files:
@@ -228,7 +216,6 @@ extraSprites:
       2456: Resources/SpecializedWeapons/BigTeslaHeavyBattery.png
       2464: Resources/SpecializedWeapons/BigTeslaPistol_ammo1.png
       2472: Resources/SpecializedWeapons/BigTeslaPistolBattery.png
-
   - type: FLOOROB.PCK
     files:
       2400: Resources/SpecializedWeapons/FloorGaussAmmo.png
@@ -241,7 +228,6 @@ extraSprites:
       2456: Resources/SpecializedWeapons/FloorTeslaHeavyBattery.png
       2464: Resources/SpecializedWeapons/FloorTeslaPistol_ammo1.png
       2472: Resources/SpecializedWeapons/FloorTeslaPistolBattery.png
-
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -258,7 +244,6 @@ extraSprites:
       #2456: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
       2464: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
       #2472: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
-
   - type: Projectiles
     height: 3
     width: 105
@@ -267,7 +252,6 @@ extraSprites:
     files:
       1155: Resources/BulletSprites/Railgun_Bullet.PNG # 33
       1190: Resources/BulletSprites/HumanElectric_Bullet.PNG # 34
-
   - type: SMOKE.PCK
     height: 80
     width: 160

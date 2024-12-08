@@ -51,7 +51,6 @@ items:
     vaporColorSurface: 3
     vaporDensitySurface: 20
     listOrder: 5010
-
   - type: STR_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_FIREARMS]
     requires:
@@ -79,12 +78,9 @@ items:
     dropoff: 3
     armor: 75 # 20
     listOrder: 5020
-
 ###################
 #### UNEXCOM #####
 ##################
-
-
   - type: STR_UN_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
     size: 0.3
@@ -128,7 +124,6 @@ items:
     invWidth: 1
     invHeight: 3
     listOrder: 5030
-
   - type: STR_PLASMA_RIFLE_CLIP
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
     #listOrder: 5251
@@ -156,7 +151,6 @@ items:
     vaporColorSurface: 3
     vaporDensitySurface: 20
     listOrder: 5040
-
   - type: STR_HEAVY_PLASMA
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
     #listOrder: 5175
@@ -313,7 +307,6 @@ items:
     blastRadius: 4
     #listOrder: 5901
     listOrder: 5100
-
   - type: STR_TOXIGUN
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
     requires:
@@ -533,7 +526,6 @@ items:
     ##listOrder: 4981
     armor: 35 # 20
     listOrder: 5180
-
   - type: STR_ALIEN_GRENADE
     categories: [STR_PLASMA, STR_EXPLOSIVES, STR_ALIEN_TECH]
     power: 90
@@ -542,8 +534,6 @@ items:
     bigSprite: 39
     floorSprite: 38
     listOrder: 5190
-
-
 # Decoder
   - type: STR_HYPER_WAVE_ENCODER
     categories: [STR_MISC, STR_ALIEN_TECH]
@@ -560,12 +550,9 @@ items:
     recoveryPoints: 50
     armor: 10
     listOrder: 5200
-
 ##############
 #### USA #####
 ##############
-
-
   - type: STR_US_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuy:
@@ -613,7 +600,6 @@ items:
     invWidth: 1
     invHeight: 3
     listOrder: 5210
-
   - type: STR_US_PLASMA_RIFLE_MAG
     categories: [STR_PLASMA, STR_RIFLES, STR_US_TECH, STR_CLIPS]
     requiresBuy:
@@ -645,7 +631,6 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 5
     listOrder: 5220
-
   - type: STR_US_PLASMA_RL
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
     requiresBuy:
@@ -688,7 +673,6 @@ items:
     invHeight: 3
     attraction: 8
     listOrder: 5230
-
   - type: STR_US_PLASMA_RL_HEAT_ROCKET
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     requiresBuy:
@@ -748,7 +732,6 @@ items:
     invHeight: 2
     attraction: 9
     listOrder: 5250
-
   - type: STR_US_PLASMA_SHOTGUN
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     requiresBuy:
@@ -795,7 +778,6 @@ items:
     twoHanded: true
     blockBothHands: true
     listOrder: 5260
-
   - type: STR_US_PLASMA_SHOTGUN_MAG
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_US_TECH, STR_CLIPS]
     requiresBuy:
@@ -828,11 +810,9 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 5
     listOrder: 5270
-
 ###############
 #### NATO #####
 ###############
-
   - type: STR_NATO_PLASMA_CARBINE
     categories: [STR_PLASMA, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     requiresBuy:
@@ -881,7 +861,6 @@ items:
     invWidth: 1
     invHeight: 3
     listOrder: 5280
-
   - type: STR_NATO_PLASMA_CARBINE_MAG
     categories: [STR_PLASMA, STR_CARBINES, STR_NATO_TECH, STR_CLIPS]
     ##listOrder: 5251
@@ -913,7 +892,6 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 8
     listOrder: 5290
-
   - type: STR_NATO_PLASMA_PISTOL
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     requiresBuy:
@@ -952,7 +930,6 @@ items:
     invWidth: 1
     invHeight: 2
     listOrder: 5300
-
   - type: STR_NATO_PLASMA_PISTOL_MAG
     categories: [STR_PLASMA, STR_PISTOLS, STR_NATO_TECH, STR_CLIPS]
     ##listOrder: 5451
@@ -982,7 +959,6 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 3
     listOrder: 5310
-
   - type: STR_NATO_SNIPER_PLASMA
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     requiresBuy:
@@ -1031,7 +1007,6 @@ items:
     invWidth: 2
     invHeight: 3
     listOrder: 5320
-
   - type: STR_NATO_SNIPER_PLASMA_MAG
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_NATO_TECH, STR_CLIPS]
     ##listOrder: 5177
@@ -1061,11 +1036,9 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 20
     listOrder: 5330
-
 ################
 #### USSR ######
 ################
-
   - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
@@ -1134,7 +1107,6 @@ items:
     invWidth: 1
     invHeight: 3
     listOrder: 5340
-
   - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
     categories: [STR_PLASMA, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS]
     ##listOrder: 5251
@@ -1166,7 +1138,6 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 11
     listOrder: 5350
-
   - type: STR_SOVIET_PLASMA_LMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     requiresBuy:
@@ -1219,7 +1190,6 @@ items:
     invWidth: 2
     invHeight: 3
     listOrder: 5360
-
   - type: STR_SOVIET_PLASMA_LMG_MAG
     categories: [STR_PLASMA, STR_LMGS, STR_SOVIET_TECH, STR_CLIPS]
     ##listOrder: 5177
@@ -1249,7 +1219,6 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 16
     listOrder: 5370
-
   - type: STR_SOVIET_PLASMA_SMG
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuy:
@@ -1299,7 +1268,6 @@ items:
     invWidth: 1
     invHeight: 3
     listOrder: 5380
-
   - type: STR_SOVIET_PLASMA_SMG_MAG
     categories: [STR_PLASMA, STR_SMGS, STR_SOVIET_TECH, STR_CLIPS]
     ##listOrder: 5451
@@ -1329,7 +1297,6 @@ items:
     vaporColorSurface: 5
     vaporDensitySurface: 6
     listOrder: 5390
-
 manufacture:
   - name: STR_UN_PLASMA_RIFLE
     requires:
@@ -1341,7 +1308,6 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 15
       STR_PLASMA_RIFLE: 1
-
 extraSprites:
   - type: BIGOBS.PCK
     files:
@@ -1385,7 +1351,6 @@ extraSprites:
 #####################################
 ##### FACTION SPECIFIC WEAPONS #####
 ###################################
-
       3200: Resources/PlasmaWeapons/UN/BigUNPlasmaRifle_ammo1.png
       3208: Resources/PlasmaWeapons/USA/BigPlasmaBattleRifle_ammo1.png
       3216: Resources/PlasmaWeapons/USA/BigPlasmaRL_ammo1.png
@@ -1406,7 +1371,6 @@ extraSprites:
       3336: Resources/PlasmaWeapons/Ammo/BigPlasmaAssaultRifleMag.png
       3344: Resources/PlasmaWeapons/Ammo/BigPlasmaLMGMag.png
       3352: Resources/PlasmaWeapons/Ammo/BigPlasmaSMGMag.png
-
   - type: FLOOROB.PCK
     files:
       1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
@@ -1443,11 +1407,9 @@ extraSprites:
       1115: Resources/FourthState/HWE/HyperWaveEncoderf.gif
       # Armor
       1902: Resources/SoldiersAndArmors/ScoutArmor/FloorCorpse.png
-
 #####################################
 ##### FACTION SPECIFIC WEAPONS #####
 ###################################
-
       3200: Resources/PlasmaWeapons/UN/FloorUNPlasmaRifle_ammo1.png
       3208: Resources/PlasmaWeapons/USA/FloorPlasmaBattleRifle_ammo1.png
       3216: Resources/PlasmaWeapons/USA/FloorPlasmaRL_ammo1.png
@@ -1468,7 +1430,6 @@ extraSprites:
       3336: Resources/PlasmaWeapons/Ammo/FloorPlasmaAssaultRifleMag.png
       3344: Resources/PlasmaWeapons/Ammo/FloorPlasmaLMGMag.png
       3352: Resources/PlasmaWeapons/Ammo/FloorPlasmaSMGMag.png
-
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -1490,11 +1451,9 @@ extraSprites:
       1466: Resources/AlienArmouryExpanded/handob_Plasmadestroyer.gif
       1474: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
       1482: Resources/AlienArmouryExpanded/handob_Toxigun.gif
-
 #####################################
 ##### FACTION SPECIFIC WEAPONS #####
 ###################################
-
       3200: Resources/PlasmaWeapons/UN/HandUNPlasmaRifle_ammo1.png
       3208: Resources/PlasmaWeapons/USA/HandPlasmaBattleRifle_ammo1.png
       3216: Resources/PlasmaWeapons/USA/HandPlasmaRL_ammo1.png
@@ -1515,7 +1474,6 @@ extraSprites:
       3336: Resources/PlasmaWeapons/Ammo/HandPlasmaAssaultRifleMag.png
       3344: Resources/PlasmaWeapons/Ammo/HandPlasmaLMGMag.png
       3352: Resources/PlasmaWeapons/Ammo/HandPlasmaSMGMag.png
-
   - type: Projectiles
     height: 3
     width: 105
@@ -1524,7 +1482,6 @@ extraSprites:
     files:
       700: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif # 20
       1120: Resources/BulletSprites/HumanPlasma_Bullet.PNG # 32
-
   - type: SMOKE.PCK
     height: 80
     width: 160
@@ -1533,7 +1490,6 @@ extraSprites:
     files:
       56: Resources/AlienArmouryExpanded/Bullets/toxic_hit.gif
       110: Resources/HitAnimations/HumanPlasma_Hit.png
-
 extraSounds:
   - type: BATTLE.CAT
     files:

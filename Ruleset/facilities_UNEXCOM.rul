@@ -2,7 +2,6 @@ facilities:
   - delete: STR_HANGAR
   - delete: STR_SMALL_RADAR_SYSTEM
   - delete: STR_LARGE_RADAR_SYSTEM
-
   - type: STR_HYPER_WAVE_DECODER
     requires:
       - STR_HYPER_WAVE_DECODER
@@ -19,7 +18,6 @@ facilities:
     radarRange: 1800
     radarChance: 100
     mapName: XBASE_15
-
   - type: STR_HANGAR
     spriteShape: 9
     spriteFacility: 9
@@ -32,7 +30,6 @@ facilities:
     mapName: XBASE_16
     storageTiles:
       - [0, 9, 0]
-
   - type: STR_SMALL_RADAR_SYSTEM
     spriteShape: 2
     spriteFacility: 21
@@ -42,11 +39,9 @@ facilities:
     radarRange: 1695
     radarChance: 10
     mapName: XBASE_04
-
   - type: STR_LIVING_QUARTERS
     storage: 10
     trainingRooms: 15
-
   - override: STR_MISSILE_DEFENSES
     ammoMax: 9
     rearmRate: 3
@@ -59,5 +54,4 @@ facilities:
   - #override: STR_FUSION_BALL_DEFENSE
     #ammoMax: 8
     #rearmRate: 4
-
     #####

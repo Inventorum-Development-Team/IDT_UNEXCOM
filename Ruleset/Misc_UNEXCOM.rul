@@ -104,13 +104,8 @@ itemCategories:
     listOrder: 230
   - type: STR_CORPSES
     listOrder: 240
-
-
-
 # New terrain values for the planted 'Hyper Wave Encoder"
 # This is formatted different for the OXC nightly versions
-
-
 items:
 #DELETE
   - delete: STR_STINGRAY_LAUNCHER
@@ -141,12 +136,7 @@ items:
   - delete: STR_INCENDIARY_ROCKET
   - delete: STR_HWP_CANNON_SHELLS
   - delete: STR_HWP_ROCKETS
-
 #DELETE
-
-
-
-
 extraSprites:
 ##########################################
 ############ BACKGROUNDS #################
@@ -227,25 +217,20 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/BACK17.PNG
-
 ### Interception images
-
   - type: InterceptionTroopLander
     singleImage: true
     width: 160
     height: 52
     files:
       0: Resources/UFOinterception/trooplander.png
-
   - type: InterceptionNoFeed
     singleImage: true
     width: 160
     height: 52
     files:
       0: Resources/UFOinterception/nofeed.png
-
 ### Turn Hidden movement background
-
   - type: TACTICBACK00.SCR #In-mission Hidden movement background
     singleImage: true
     width: 320
@@ -300,7 +285,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Turn/TACTICBACK08.PNG
-
   - type: TACTICBACK09.SCR #In-mission Hidden movement background
     singleImage: true
     width: 320
@@ -337,9 +321,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Turn/TACTICBACK14.PNG
-
-
-
 startingBase:
   facilities:
     - type: STR_ACCESS_LIFT
@@ -453,7 +434,6 @@ startingBase:
     STR_FN_FAL: 6
   scientists: 10
   engineers: 10
-
 invs:
   - id: STR_GROUND
     costs:
@@ -579,7 +559,6 @@ invs:
       STR_RIGHT_HAND: 3
       STR_RIGHT_LEG: 10
       STR_RIGHT_SHOULDER: 10
-
 monthlyRatings:
   6000: STR_MT_RATING_EXEMPLARY
   2800: STR_MT_RATING_EXCELLENT

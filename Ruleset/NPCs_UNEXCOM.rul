@@ -1037,7 +1037,6 @@ items:
     battleType: 11
     recover: false
     armor: 35
-
   - type: STR_AMERICAN_SOLDIER_CORPSE
     name: STR_CORPSE
     weight: 25
@@ -1068,7 +1067,6 @@ items:
     battleType: 11
     recover: false
     armor: 35
-
   - type: STR_105MM_CANNON
     size: 0.2
     #costSell: 27500
@@ -1115,7 +1113,6 @@ items:
     fixedWeapon: true
     fixedWeaponShow: true
     defaultInventorySlot: STR_RIGHT_HAND
-
   - type: STR_100MM_CANNON
     size: 0.2
     #costSell: 27500
@@ -1206,9 +1203,7 @@ items:
     fixedWeapon: true
     fixedWeaponShow: true
     defaultInventorySlot: STR_RIGHT_HAND
-
 ####### Punch Them and Tanks Crush Them
-
 armors:
   - type: CIVM_ARMOR
     spriteInv: INV_MALE_CIVILIAN
@@ -4040,7 +4035,6 @@ armors:
     personalLight: 20
     #specialWeapon: STR_UNARMED_UNIFORM
 ############### Kiro Mark The Spot
-
 units:
   - type: MALE_CIVILIAN
     race: STR_CIVILIAN

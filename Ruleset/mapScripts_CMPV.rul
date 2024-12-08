@@ -98,7 +98,6 @@ mapScripts:
       # because these are references to the block numbers within the sets, not the file names.
       blocks: [3, 4, 10, 11, 12, 13, 14]
       freqs: [3, 3, 2, 2, 2, 2, 2]
-
   - type: XBASE
     commands:
     - type: digTunnel
@@ -114,13 +113,10 @@ mapScripts:
             entry: 14
     - type: fillArea
       blocks: 20
-
 ####### COMMUNITY MAPS BELOW #####
-
 ####################################
 ###### AIRPORT WITHOUT PLANE ######
 ##################################
-
   - type: OLD_PORT_SCRIPT
     commands:
     - type: addBlock
@@ -165,7 +161,6 @@ mapScripts:
       executions: 1
       executionChances: 85
     - type: fillArea
-
 ### RICE FARM ###
   - type: RICE_FARM_SCRIPT
     commands:
@@ -193,7 +188,6 @@ mapScripts:
     - type: addBlock
       executions: 2
     - type: fillArea
-
   - type: EXPANDED_TERROR  # Thanks to HellRazor
     commands:
     - type: addLine
@@ -228,9 +222,6 @@ mapScripts:
       blocks: [0, 1, 2, 13, 14, 15, 16, 32, 33, 34, 35, 36]
       freqs: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
       maxUses: [2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3]
-
-
-
   - type: ALIENBASE  # Thanks to HellRazor
     commands:
     - type: addBlock #Add Entrances
@@ -267,9 +258,7 @@ mapScripts:
             set: 1
             entry: 63
 #END ALIEN UBASE
-
 #BEGIN OUTPOST UBASE
-
   - type: ALIEN_OUTPOST # forest, mountain
     commands:
     - type: addCraft
@@ -288,11 +277,8 @@ mapScripts:
     - type: fillArea
       groups: [0, 1, 5]
       freqs: [3, 3, 2]
-
 #END OUTPOST UBASE
-
 #BEGIN BASE SURFACE UBASE
-
   - type: ALIEN_BASE_SURFACE #
     commands:
     - type: addCraft
@@ -308,11 +294,8 @@ mapScripts:
     - type: fillArea
       groups: [0, 1, 5]
       freqs: [2, 5, 1]
-
 #END BASE SURFACE UBASE
-
 #BEGIN FORT SURFACE UBASE
-
   - type: ALIEN_FORT_SURFACE #
     commands:
     - type: addCraft
@@ -328,9 +311,7 @@ mapScripts:
     - type: fillArea
       groups: [0, 1, 5]
       freqs: [1, 5, 1]
-
 #END FORT SURFACE UBASE
-
   - type: REFINERYS  # Thanks to BulletDesigner
     commands:
     - type: addLine
@@ -358,7 +339,6 @@ mapScripts:
       freqs: [2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2]
       maxUses: [1, 1, 1, 1, 1, 2, 1, 2, 2, 1, 2]
     - type: fillArea
-
   - type: S_IDT_VILLAGE
     commands:
     - type: addCraft
@@ -395,7 +375,6 @@ mapScripts:
       executionChances: 40
       groups: 5
     - type: fillArea
-
   - type: RURAL # Thanks to Solarius
     commands:
     - type: addCraft
@@ -416,7 +395,6 @@ mapScripts:
       size: 2
       executions: 6
     - type: fillArea
-
   - type: CHEMTOWN # Thanks to Dioxine
     commands:
     - type: addCraft
@@ -426,7 +404,6 @@ mapScripts:
       size: 2
       executions: 3
     - type: fillArea
-
   - type: INDUSTRIALSLUM # Thanks to Dioxine
     commands:
     - type: addCraft
@@ -472,7 +449,6 @@ mapScripts:
       conditionals: [-3, -5]
       size: 2
     - type: fillArea
-
   - type: COMRCURBAN # Thanks to Dioxine
     commands:
     - type: addCraft
@@ -499,7 +475,6 @@ mapScripts:
       size: 2
       executions: 3
     - type: fillArea
-
   - type: PORTTFTD6 #6x6 # Thanks to Dioxine
     commands:
     - type: addLine
@@ -561,7 +536,6 @@ mapScripts:
       size: 2
       executions: 1
     - type: fillArea
-
   - type: ISLANDURBAN #6x6 version! # Thanks to Dioxine
     commands:
     - type: addBlock
@@ -585,7 +559,6 @@ mapScripts:
       size: 2
       executions: 4
     - type: fillArea
-
   - type: CRUISE_LINER # Thanks to Solarius Scorch!
     commands:
     - type: addBlock
@@ -594,7 +567,6 @@ mapScripts:
         - [0,5,3,2]
     - type: addBlock
       size: [3,5]
-
 #BEGIN CARGOSHIP
   - type: CARGOSHIP # Thanks to Hellrazor!
     commands:
@@ -604,7 +576,6 @@ mapScripts:
     - type: addBlock #Spawn Ship
       size: [3, 7]
 #END CARGOSHIP
-
 #BEGIN LINERSHIP
   - type: LINERSHIP # Thanks to Hellrazor!
     commands: #No Craft spawning here, we have a entry area instead
@@ -617,7 +588,6 @@ mapScripts:
       rects:
         - [0,0,3,5]
 #END LINERSHIP
-
   - type: FOREST
     commands:
     - type: addUFO
@@ -639,7 +609,6 @@ mapScripts:
       size: 2
       executions: 4
     - type: fillArea
-
   - type: NOOBERIA
     commands:
     - type: addBlock

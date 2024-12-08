@@ -11,7 +11,6 @@ missionScripts:
   - delete: geniusRetaliation
   - delete: superhumanRetaliation
   - delete: recurringTerror
-
   - type: invasionStart
     missionWeights:
       0:
@@ -53,8 +52,6 @@ missionScripts:
      STR_UNITED_WE_STAND_RESEARCH: false
     startDelay: 20
     randomDelay: 43500
-
-
 #################################
 ####### ALIEN ACTIVITY #########
 ###############################
@@ -67,8 +64,6 @@ missionScripts:
     startDelay: 150
     researchTriggers:
       STR_DEVASTATION_COMPLETED: false
-
-
   - type: Retaliation
     missionWeights:
       0:
@@ -79,7 +74,6 @@ missionScripts:
     minScore: 1000
     firstMonth: 5
     useTable: false
-
   - type: CounterAttack
     missionWeights:
       0:
@@ -91,7 +85,6 @@ missionScripts:
        STR_DEVASTATION_COMPLETED: true
     firstMonth: 5
     useTable: false
-
   - type: alienConstruction
     missionWeights:
       0:
@@ -103,7 +96,6 @@ missionScripts:
     maxRuns: 6
     varName: alienConstruction
     executionOdds: 80
-
   - type: AirSuperiority1
     missionWeights:
       0:
@@ -113,7 +105,6 @@ missionScripts:
     minScore: 800
     maxScore: 1299
     randomDelay: 20000
-
   - type: AirSuperiority2
     missionWeights:
       0:
@@ -123,7 +114,6 @@ missionScripts:
     minScore: 1300
     maxScore: 1799
     randomDelay: 20000
-
   - type: AirSuperiority3
     missionWeights:
       0:
@@ -132,7 +122,6 @@ missionScripts:
     startDelay: 1000
     minScore: 1800
     randomDelay: 20000
-
 #################################
 ####### HUMAN MISSIONS #########
 ###############################
@@ -154,7 +143,6 @@ missionScripts:
     varName: HumanRecon
     randomDelay: 25000
     executionOdds: 100
-
   - type: startingEnemyHumanMissions2
     missionWeights:
       0:
@@ -171,7 +159,6 @@ missionScripts:
     startDelay: 15
     randomDelay: 25000
     executionOdds: 100
-
   - type: terroristAttacks
     missionWeights:
       0:
@@ -185,7 +172,6 @@ missionScripts:
     startDelay: 100
     randomDelay: 43200
     executionOdds: 100
-
   - type: terroristHQ
     missionWeights:
       0:
@@ -200,7 +186,6 @@ missionScripts:
     startDelay: 100
     randomDelay: 43200
     executionOdds: 100
-
   - type: terroristHostageCrisis
     missionWeights:
       0:
@@ -215,7 +200,6 @@ missionScripts:
     startDelay: 100
     randomDelay: 43200
     executionOdds: 50
-
   - type: terroristHijackedPlane
     varName: terroristHijackedPlane
     missionWeights:
@@ -247,7 +231,6 @@ missionScripts:
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 30
-
   - type: EuropeanCombatOperations
     label: 31
     varName: EuropeanCombatOperations
@@ -264,7 +247,6 @@ missionScripts:
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 30
-
   - type: SovietCombatOperations
     label: 32
     varName: EuropeanCombatOperations
@@ -298,7 +280,6 @@ missionScripts:
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 30
-
   - type: EuropeanCityDefense
     label: 34
     varName: EuropeanCombatOperations
@@ -315,7 +296,6 @@ missionScripts:
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 30
-
   - type: SovietCityDefense
     label: 35
     varName: EuropeanCombatOperations
@@ -349,7 +329,6 @@ missionScripts:
     varName: OperationFalseFlagOverseerTrap
     maxRuns: 3
     executionOdds: 100
-
   - type: OperationDevastation
     missionWeights:
       0:
@@ -366,7 +345,6 @@ missionScripts:
     executionOdds: 100
     maxRuns: 1
     varName: OperationDevastation
-
   - type: AlienSpaceStation
     missionWeights:
       0:
@@ -380,7 +358,6 @@ missionScripts:
     startDelay: 17500
     randomDelay: 40000
     executionOdds: 100
-
   - type: GuaranteedBase
     missionWeights:
       0:

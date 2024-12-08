@@ -23,8 +23,6 @@ armors:
   - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
     tags:
       Hind_Turret: 1
-
-
 # spellchecker:disable
 extended:
   tags:
@@ -43,7 +41,6 @@ extended:
   # spellchecker:enable
   # spellchecker:words flashbanged Gaccuracy Greactions Gfiring setFatalwounds
   scripts:
-
     createItem: #Overheating sets ammo to 1 at the start of battles
         - offset: 1
           code: |
@@ -52,33 +49,25 @@ extended:
             if gt x 0;
               item.setAmmoQuantity 1;
             end;
-
             return;
-
     newTurnItem: #Maintains a tag with turn number
         - offset: 1
           code: |
            BattleGame.setTag battle_game Tag.Turn turn;
            return;
-
         - offset: 2 #Overheating Script
           code: |
             var int x;
             var int ammo;
             var int turnside;
-
             BattleItem.getTag item x Tag.CoolsPerTurn;
-
             if gt x 0;
-
               item.getAmmoQuantity ammo;
               if gt ammo 100;
-
                 item.setFuseEnabled 1; # destroy weapon
                 item.setFuseTimer 0;
                 return;
               end;
-
               battle_game.getTurnSide turnside;
               if eq turnside FACTION_HOSTILE;
                 sub ammo x;
@@ -87,12 +76,8 @@ extended:
                 end;
                 item.setAmmoQuantity ammo;
               end;
-
-
             end;
             return;
-
-
     selectItemSprite: # Air Strike Smoke sprite Script
       - offset: 1
         code: |
@@ -104,7 +89,6 @@ extended:
             add sprite_index 8;
           end;
           return sprite_index;
-
     createUnit: #Hind door and turret script
       - offset: 1
         code: |
@@ -116,12 +100,10 @@ extended:
           BattleUnit.setFatalwounds unit 1 1;
           end;
          return;
-
       - offset: 2 #Makes Flashbang work early
         code: |
            BattleUnit.setTag unit Tag.FlashBanged -5;
            return;
-
       - offset: 1 #Halves enemies Tu:s on the first turn
         code: |
            var int tu;
@@ -137,7 +119,6 @@ extended:
             BattleUnit.setTimeUnits unit tu;
             end;
            return;
-
     newTurnUnit:
         - offset: 3
           code: | #flashbang effect removal
@@ -155,7 +136,6 @@ extended:
             BattleUnit.Stats.setReactions unit OGreactions;
             end;
            return;
-
     hitUnit:
          - offset: 4 #FlashBang Script
            code: |
@@ -181,8 +161,6 @@ extended:
               end;
              end;
              return power part side;
-
-
     accuracyMultiplierBonusStats: #Overheating accuracy penalty
           - offset: 1
             code: |
@@ -192,10 +170,8 @@ extended:
               BattleItem.getTag weapon x Tag.CoolsPerTurn;
               if gt x 0;
                 weapon.getAmmoQuantity ammoQuantity;
-
                 set value 101;
                 sub value ammoQuantity;
                 muldiv bonus value 100;
-
               end;
               return bonus;

@@ -1,5 +1,4 @@
 # spellchecker:words Tingcat Thinman
-
 items:
 ########################################
 ######## ALIEN BUILD-IN WEAPONS #######
@@ -132,7 +131,6 @@ items:
 ####################################
 ####### ALIEN CORPSE ITEMS #########
 ####################################
-
 ################################
 ##### UNARMORED SECTOIDS ######
 ##############################
@@ -162,11 +160,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ###### ARMORED SECTOIDS #######
 ##############################
-
   - type: STR_ARMORED_SECTOID_CORPSE
     size: 0.4
     costSell: 20000
@@ -180,11 +176,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ##### UNARMORED FLOATERS ######
 ##############################
-
   - type: STR_FLOATER_SOLDIER_CORPSE
     size: 0.4
     costSell: 20000
@@ -250,11 +244,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ###### ARMORED FLOATERS #######
 ##############################
-
   - type: STR_ARMORED_FLOATER_SOLDIER_CORPSE
     size: 0.4
     costSell: 20000
@@ -281,11 +273,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ###### UNARMORED SNAKES #######
 ##############################
-
 ################################
 ####### ARMORED SNAKES ########
 ##############################
@@ -302,11 +292,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ###### UNARMORED MUTONS #######
 ##############################
-
   - type: STR_MUTON_SOLDIER_CORPSE
     size: 0.4
     costSell: 20000
@@ -372,11 +360,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ####### ARMORED MUTONS ########
 ##############################
-
   - type: STR_ARMORED_MUTON_SOLDIER_CORPSE
     size: 0.4
     costSell: 20000
@@ -403,11 +389,9 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 ################################
 ########## ETHEREAL ###########
 ##############################
-
   - type: STR_ETHEREAL_CORPSE
     size: 0.4
     costSell: 20000
@@ -421,7 +405,6 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
 #################################
 ##### ALIEN DRONES & MECHS #####
 ###############################
@@ -557,11 +540,9 @@ items:
     listOrder: 7550
     categories:
       - STR_CORPSES
-
 ################################
 ######## ALIEN BEASTS #########
 ##############################
-
   - type: STR_CELATID_CORPSE
     size: 0.4
     costSell: 20000
@@ -647,11 +628,9 @@ items:
 ####################################
 ######### ALIEN POW ITEMS ##########
 ####################################
-
 ################################
 ##### UNARMORED SECTOIDS ######
 ##############################
-
   - type: STR_SECTOID_COMMANDER
     size: 0.0
     recover: true
@@ -682,11 +661,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 ################################
 ###### ARMORED SECTOIDS #######
 ##############################
-
   - type: STR_ARMORED_SECTOID_LEADER
     size: 0.0
     recover: true
@@ -712,11 +689,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 ################################
 ##### UNARMORED FLOATERS ######
 ##############################
-
   - type: STR_FLOATER_COMMANDER
     size: 0.0
     recover: true
@@ -747,12 +722,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
-
 ################################
 ###### ARMORED FLOATERS #######
 ##############################
-
   - type: STR_ARMORED_FLOATER_COMMANDER
     size: 0.0
     recover: true
@@ -783,17 +755,12 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 ################################
 ###### UNARMORED SNAKES #######
 ##############################
-
-
-
 ################################
 ####### ARMORED SNAKES ########
 ##############################
-
   - type: STR_SNAKEMAN_COMMANDER
     size: 0.0
     recover: true
@@ -819,11 +786,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 ################################
 ###### UNARMORED MUTONS #######
 ##############################
-
   - type: STR_MUTON_LEADER
     size: 0.0
     recover: true
@@ -849,11 +814,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 ################################
 ####### ARMORED MUTONS ########
 ##############################
-
   - type: STR_ARMORED_MUTON_LEADER
     size: 0.0
     recover: true
@@ -879,11 +842,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 ################################
 ######### ETHEREALS ###########
 ##############################
-
   - type: STR_ETHEREAL_COMMANDER
     size: 0.0
     recover: true
@@ -899,11 +860,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 60000
-
 #################################
 ##### ALIEN DRONES & MECHS #####
 ###############################
-
   - type: STR_SECTOPOD_TERRORIST
     size: 0.0
     recover: true
@@ -929,11 +888,9 @@ items:
     recover: true
     liveAlien: true
     costSell: 60000
-
 ################################
 ######## ALIEN BEASTS #########
 ##############################
-
   - type: STR_CELATID_TERRORIST
     size: 0.0
     recover: true
@@ -954,14 +911,12 @@ items:
     recover: true
     liveAlien: true
     costSell: 40000
-
 #######################################
 ######## Punch Jies!
 armors:
 ####################################
 ########## ALIEN ARMORS ############
 ####################################
-
 ################################
 ##### UNARMORED SECTOIDS ######
 ##############################
@@ -990,7 +945,6 @@ armors:
       - 1.0 #Electric
     loftempsSet: [ 2 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: SECTOID_COMMANDER_ARMOR
     allowInv: true
     spriteInv: SECTOID_COMMANDER_INVENTORY.SPK
@@ -1004,11 +958,9 @@ armors:
     damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 2 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ###### ARMORED SECTOIDS #######
 ##############################
-
   - type: ARMORED_SECTOID_ARMOR
     allowInv: true
     spriteInv: ARMORED_SECTOID_INVENTORY.SPK
@@ -1032,14 +984,11 @@ armors:
       - 0.0 #Smoke
       - 1.1 #Elerium Fusion
       - 1.1 #Electric
-
     loftempsSet: [ 2 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ##### UNARMORED FLOATERS ######
 ##############################
-
   - type: FLOATER_SOLDIER_ARMOR
     spriteSheet: FLOATER_SOLDIER_SPRITESHEET.PCK
     allowInv: true
@@ -1115,11 +1064,9 @@ armors:
     damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ###### ARMORED FLOATERS #######
 ##############################
-
   - type: ARMORED_FLOATER_SOLDIER_ARMOR
     spriteSheet: ARMORED_FLOATER_SOLDIER_SPRITESHEET.PCK
     allowInv: true
@@ -1150,17 +1097,12 @@ armors:
     damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ###### UNARMORED SNAKES #######
 ##############################
-
-
-
 ################################
 ####### ARMORED SNAKES ########
 ##############################
-
   - type: SNAKEMAN_ARMOR0
     spriteSheet: SNAKEMAN.PCK
     corpseBattle:
@@ -1200,11 +1142,9 @@ armors:
     damageModifier: *HardAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ###### UNARMORED MUTONS #######
 ##############################
-
   - type: MUTON_SOLDIER_ARMOR
     allowInv: true
     spriteInv: MUTON_SOLDIER_INVENTORY.SPK
@@ -1259,7 +1199,6 @@ armors:
     damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: MUTON_ENGINEER_ARMOR
     allowInv: true
     spriteInv: MUTON_ENGINEER_INVENTORY.SPK
@@ -1274,7 +1213,6 @@ armors:
     damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: MUTON_LEADER_ARMOR
     allowInv: true
     spriteInv: MUTON_LEADER_INVENTORY.SPK
@@ -1289,11 +1227,9 @@ armors:
     damageModifier: *SoftMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ####### ARMORED MUTONS ########
 ##############################
-
   - type: ARMORED_MUTON_SOLDIER_ARMOR
     allowInv: true
     spriteInv: ARMORED_MUTON_SOLDIER_INVENTORY.SPK
@@ -1320,7 +1256,6 @@ armors:
       - 1.0 #Electric
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: ARMORED_MUTON_LEADER_ARMOR
     allowInv: true
     spriteInv: ARMORED_MUTON_LEADER_INVENTORY.SPK
@@ -1335,11 +1270,9 @@ armors:
     damageModifier: *HardMutonInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 ################################
 ######### ETHEREALS ###########
 ##############################
-
   - type: ETHEREAL_ARMOR0
     spriteSheet: ETHEREAL.PCK
     allowInv: true
@@ -1385,11 +1318,9 @@ armors:
     damageModifier: *SoftAlienInfantryDamageModifier
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
 #################################
 ##### ALIEN DRONES & MECHS #####
 ###############################
-
   - type: CYBERDISC_ARMOR
     spriteSheet: CYBER.PCK
     allowInv: true
@@ -1423,7 +1354,6 @@ armors:
       - 1.6 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: SECTOPOD_ARMOR
     spriteSheet: X_ROB.PCK
     allowInv: true
@@ -1455,7 +1385,6 @@ armors:
       - 1.6 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: MECHTOID_ARMOR
     spriteSheet: MECHTOID_SPRITESHEET.PCK
     allowInv: true
@@ -1539,11 +1468,9 @@ armors:
     loftempsSet: [3]
     meleeDodge:
       reactions: 0.3
-
 ################################
 ######## ALIEN BEASTS #########
 ##############################
-
   - type: REAPER_ARMOR
     spriteSheet: X_REAP.PCK
     allowInv: false
@@ -1573,7 +1500,6 @@ armors:
       - 1.5 #Elerium Fusion
       - 1.1 #Electric
     loftempsSet: [ 92, 89, 90, 91 ]
-
   - type: CHRYSSALID_ARMOR
     spriteSheet: CHRYS.PCK
     allowInv: true
@@ -1670,9 +1596,7 @@ armors:
     constantAnimation: true
     damageModifier: *BiologicalNightmareDamageModifier
     loftempsSet: [ 3 ]
-
 ###### Armor Punch
-
 units:
 ################################
 ##### UNARMORED SECTOIDS ######
@@ -1696,7 +1620,6 @@ units:
     standHeight: 16
     kneelHeight: 12
     value: 10
-
     intelligence: 3
     aggression: 2
   - type: STR_SECTOID_ENGINEER
@@ -1718,7 +1641,6 @@ units:
     standHeight: 16
     kneelHeight: 12
     value: 16
-
     intelligence: 6
     aggression: 2
   - type: STR_SECTOID_MEDIC
@@ -1740,7 +1662,6 @@ units:
     standHeight: 16
     kneelHeight: 12
     value: 14
-
     intelligence: 5
     aggression: 1
   - type: STR_SECTOID_NAVIGATOR
@@ -1762,7 +1683,6 @@ units:
     standHeight: 16
     kneelHeight: 12
     value: 12
-
     intelligence: 4
     aggression: 2
   - type: STR_SECTOID_LEADER
@@ -1784,7 +1704,6 @@ units:
     standHeight: 16
     kneelHeight: 12
     value: 20
-
     intelligence: 7
     aggression: 1
   - type: STR_SECTOID_COMMANDER
@@ -1806,14 +1725,11 @@ units:
     standHeight: 16
     kneelHeight: 12
     value: 25
-
     intelligence: 8
     aggression: 0
-
 ################################
 ###### ARMORED SECTOIDS #######
 ##############################
-
   - type: STR_ARMORED_SECTOID_SOLDIER
     race: STR_ARMORED_SECTOID
     rank: STR_LIVE_SOLDIER
@@ -1878,7 +1794,6 @@ units:
     kneelHeight: 12
     value: 14
     deathSound: 901
-
     intelligence: 5
     aggression: 1
   - type: STR_ARMORED_SECTOID_NAVIGATOR
@@ -1901,7 +1816,6 @@ units:
     kneelHeight: 12
     value: 12
     deathSound: 901
-
     intelligence: 4
     aggression: 2
   - type: STR_ARMORED_SECTOID_LEADER
@@ -1924,14 +1838,11 @@ units:
     kneelHeight: 12
     value: 20
     deathSound: 901
-
     intelligence: 7
     aggression: 1
-
 ################################
 ##### UNARMORED FLOATERS ######
 ##############################
-
   - type: STR_FLOATER_SOLDIER
     race: STR_FLOATER
     rank: STR_LIVE_SOLDIER
@@ -1952,7 +1863,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 12
-
     moveSound: 15
     intelligence: 4
     aggression: 2
@@ -1976,7 +1886,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 18
-
     moveSound: 15
     intelligence: 7
     aggression: 2
@@ -2000,7 +1909,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 14
-
     moveSound: 15
     intelligence: 5
     aggression: 2
@@ -2024,7 +1932,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 16
-
     moveSound: 15
     intelligence: 6
     aggression: 1
@@ -2048,7 +1955,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 25
-
     moveSound: 15
     intelligence: 8
     aggression: 0
@@ -2072,15 +1978,12 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 35
-
     moveSound: 15
     intelligence: 8
     aggression: 0
-
 ################################
 ###### ARMORED FLOATERS #######
 ##############################
-
   - type: STR_ARMORED_FLOATER_SOLDIER
     race: STR_ARMORED_FLOATER
     rank: STR_LIVE_SOLDIER
@@ -2101,7 +2004,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 12
-
     moveSound: 15
     intelligence: 4
     aggression: 2
@@ -2125,7 +2027,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 18
-
     moveSound: 15
     intelligence: 7
     aggression: 2
@@ -2149,7 +2050,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 14
-
     moveSound: 15
     intelligence: 5
     aggression: 2
@@ -2173,7 +2073,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 16
-
     moveSound: 15
     intelligence: 6
     aggression: 1
@@ -2197,7 +2096,6 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 25
-
     moveSound: 15
     intelligence: 8
     aggression: 0
@@ -2221,16 +2119,12 @@ units:
     kneelHeight: 16
     floatHeight: 2
     value: 35
-
     moveSound: 15
     intelligence: 8
     aggression: 0
-
 ################################
 ###### UNARMORED SNAKES #######
 ##############################
-
-
 ################################
 ####### ARMORED SNAKES ########
 ##############################
@@ -2253,7 +2147,6 @@ units:
     standHeight: 18
     kneelHeight: 18
     value: 15
-
     moveSound: 0
     intelligence: 2
     aggression: 2
@@ -2276,7 +2169,6 @@ units:
     standHeight: 18
     kneelHeight: 18
     value: 17
-
     moveSound: 0
     intelligence: 3
     aggression: 2
@@ -2299,7 +2191,6 @@ units:
     standHeight: 18
     kneelHeight: 18
     value: 20
-
     moveSound: 0
     intelligence: 4
     aggression: 2
@@ -2322,7 +2213,6 @@ units:
     standHeight: 18
     kneelHeight: 18
     value: 28
-
     moveSound: 0
     intelligence: 5
     aggression: 2
@@ -2345,16 +2235,13 @@ units:
     standHeight: 18
     kneelHeight: 18
     value: 36
-
     moveSound: 0
     intelligence: 6
     aggression: 2
     energyRecovery: 40
-
 ################################
 ###### UNARMORED MUTONS #######
 ##############################
-
   - type: STR_MUTON_SOLDIER
     race: STR_MUTON
     rank: STR_LIVE_SOLDIER
@@ -2374,7 +2261,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 15
-
     intelligence: 2
     aggression: 2
     energyRecovery: 40
@@ -2397,7 +2283,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 17
-
     intelligence: 3
     aggression: 2
     energyRecovery: 40
@@ -2420,7 +2305,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 19
-
     intelligence: 4
     aggression: 2
     energyRecovery: 40
@@ -2443,7 +2327,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 19
-
     intelligence: 4
     aggression: 2
     energyRecovery: 40
@@ -2466,11 +2349,9 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 19
-
     intelligence: 6
     aggression: 2
     energyRecovery: 40
-
 ################################
 ####### ARMORED MUTONS ########
 ##############################
@@ -2493,7 +2374,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 15
-
     intelligence: 2
     aggression: 2
     energyRecovery: 40
@@ -2516,7 +2396,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 17
-
     intelligence: 3
     aggression: 2
     energyRecovery: 40
@@ -2539,7 +2418,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 19
-
     intelligence: 4
     aggression: 2
     energyRecovery: 40
@@ -2562,7 +2440,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 19
-
     intelligence: 4
     aggression: 2
     energyRecovery: 40
@@ -2585,15 +2462,12 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 19
-
     intelligence: 6
     aggression: 2
     energyRecovery: 40
-
 ################################
 ######### ETHEREALS ###########
 ##############################
-
   - type: STR_ETHEREAL_SOLDIER
     race: STR_ETHEREAL
     rank: STR_LIVE_SOLDIER
@@ -2663,7 +2537,6 @@ units:
     intelligence: 8
     aggression: 1
     energyRecovery: 40
-
 ################################
 ##### ALIEN DRONES & MECHS #####
 ###############################
@@ -2697,7 +2570,6 @@ units:
     livingWeapon: true
     capturable: false
     sniper: 10
-
   - type: STR_SECTOPOD_TERRORIST
     race: STR_SECTOPOD
     rank: STR_LIVE_TERRORIST
@@ -2725,7 +2597,6 @@ units:
     livingWeapon: true
     capturable: false
     sniper: 10
-
   - type: STR_MECHTOID_TERRORIST
     race: STR_MECHTOID
     rank: STR_LIVE_TERRORIST
@@ -2807,11 +2678,9 @@ units:
     capturable: false
     liveAlien: ""
     spotter: 10
-
 ################################
 ######## ALIEN BEASTS #########
 ##############################
-
   - type: STR_REAPER_TERRORIST
     race: STR_REAPER
     rank: STR_LIVE_TERRORIST
@@ -2831,12 +2700,10 @@ units:
     standHeight: 23
     kneelHeight: 16
     value: 25
-
     intelligence: 2
     aggression: 2
     energyRecovery: 34
     livingWeapon: true
-
   - type: STR_SILACOID_TERRORIST
     race: STR_SILACOID
     rank: STR_LIVE_TERRORIST
@@ -2856,7 +2723,6 @@ units:
     standHeight: 10
     kneelHeight: 10
     value: 20
-
     moveSound: 47
     intelligence: 3
     aggression: 2
@@ -2888,7 +2754,6 @@ units:
     aggression: 2
     energyRecovery: 40
     livingWeapon: true
-
   - type: STR_CHRYSSALID_TERRORIST
     race: STR_CHRYSSALID
     rank: STR_LIVE_TERRORIST
@@ -2908,7 +2773,6 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 25
-
     intelligence: 4
     aggression: 1
     energyRecovery: 40
@@ -2963,9 +2827,6 @@ units:
     livingWeapon: true
     deathSound: 907
     # Zombies are silent on death, no deathSound
-
-
-
 extraSprites:
 ################################
   - type: SECTOID_COMMANDER_SPRITESHEET.PCK
@@ -2975,7 +2836,6 @@ extraSprites:
     height: 1360
     files:
       0: Resources/AlienFactions/Sectoids/SECTOID_COMMANDER_SPRITESHEET.png
-
   - type: ARMORED_SECTOID_SPRITESHEET.PCK
     subX: 32
     subY: 40
@@ -2983,7 +2843,6 @@ extraSprites:
     height: 1080
     files:
       0: Resources/AlienFactions/ArmoredSectoids/ARMORED_SECTOID_SPRITESHEET.png
-
 #################################
   - type: FLOATER_SOLDIER_SPRITESHEET.PCK
     subX: 32
@@ -3020,7 +2879,6 @@ extraSprites:
     height: 280
     files:
       0: Resources/AlienFactions/Floaters/FLOATER_LEADER_SPRITESHEET.png
-
   - type: STRIDER_SOLDIER_SPRITESHEET.PCK
     subX: 32
     subY: 40
@@ -3029,7 +2887,6 @@ extraSprites:
     files:
       0: Resources/AlienFactions/Striders/STRIDER_SOLDIER_SPRITESHEET.png
 ##################################
-
   - type: ARMORED_FLOATER_SOLDIER_SPRITESHEET.PCK
     subX: 32
     subY: 40
@@ -3044,8 +2901,6 @@ extraSprites:
     height: 280
     files:
       0: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_LEADER_SPRITESHEET.png
-
-
 ##################################
   - type: MUTON_SOLDIER_SPRITESHEET.PCK
     subX: 32
@@ -3083,7 +2938,6 @@ extraSprites:
     files:
       0: Resources/AlienFactions/Mutons/MUTON_LEADER_SPRITESHEET.png
 ################################
-
   - type: ARMORED_MUTON_SOLDIER_SPRITESHEET.PCK
     subX: 32
     subY: 40
@@ -3099,7 +2953,6 @@ extraSprites:
     files:
       0: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_LEADER_SPRITESHEET.png
 ################################
-
   - type: MECHTOID_SPRITESHEET.PCK
     subX: 32
     subY: 40
@@ -3166,7 +3019,6 @@ extraSprites:
       3131: Resources/AlienFactions/Zombies/ZombieBite.png
       3132: Resources/AlienFactions/Mechtoid/BigMechtoidCannon.png
       3133: Resources/AlienFactions/Sectopod/BigSectopodGatling.png
-
   - type: FLOOROB.PCK
     files:
       #3100: Resources/AlienFactions/Sectoids/SECTOID_COMMANDER_CORPSE_FLOOROB.png
@@ -3200,7 +3052,6 @@ extraSprites:
       3128: Resources/AlienFactions/Cybersphere/CYBERSHPERE_CORPSE_FLOOROB.png
       3129: Resources/AlienFactions/Probe/PROBE_CORPSE_FLOOROB.png
       3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_FLOOROB.png
-
   - type: SECTOID_INVENTORY.SPK
     singleImage: true
     width: 320
@@ -3269,7 +3120,6 @@ extraSprites:
     files:
       0: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_LEADER_INVENTORY.png
 #######################
-
   - type: MUTON_SOLDIER_INVENTORY.SPK
     singleImage: true
     width: 320
@@ -3375,7 +3225,6 @@ extraSprites:
     files:
       0: Resources/AlienFactions/Ethereals/ETHEREAL_INVENTORY.png
 ##########################
-
   - type: SECTOID_UFOPEDIA_IMAGE
     singleImage: true
     width: 320
@@ -3400,7 +3249,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/ARMORED_SECTOID_UFOPEDIA_IMAGE.png
-
   - type: FLOATER_UFOPEDIA_IMAGE
     singleImage: true
     width: 320
@@ -3425,14 +3273,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/STRIDER_AUTOPSY_UFOPEDIA_IMAGE.png
-
   - type: NAKED_SNAKEPEOPLE_UFOPEDIA_IMAGE
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UFOpedia/NAKED_SNAKEPEOPLE_UFOPEDIA_IMAGE.png
-
   - type: MUTON_UFOPEDIA_IMAGE
     singleImage: true
     width: 320
@@ -3457,7 +3303,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/ARMORED_MUTON_LEADER_UFOPEDIA_IMAGE.png
-
   - type: MECHTOID_UFOPEDIA_IMAGE
     singleImage: true
     width: 320

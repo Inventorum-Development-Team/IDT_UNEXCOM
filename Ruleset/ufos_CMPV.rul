@@ -5,10 +5,8 @@
 ## Lasted Changed by L83
 ## Comments:
 ###########################
-
 #BEGIN MEDIUM SCOUT
 ufos:
-
   - type: STR_MEDIUM_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
       name: UFO_110
@@ -68,7 +66,6 @@ ufos:
             STR_ELERIUM_115:
               - [ 3, 4, 0]
 #END MEDIUM SCOUT
-
 #BEGIN LARGE SCOUT
   - type: STR_LARGE_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
@@ -278,7 +275,6 @@ ufos:
           width: 20
           length: 20
 #END LARGE SCOUT
-
 #BEGIN HARVESTER
   - type: STR_HARVESTER #ignoreDuplicate
     battlescapeTerrainData:
@@ -630,7 +626,6 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
 #END HARVESTER
-
 #BEGIN ABDUCTOR
   - type: STR_ABDUCTOR #ignoreDuplicate
     battlescapeTerrainData:
@@ -780,7 +775,6 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
 #END ABDUCTOR
-
 #BEGIN TERROR SHIP
   - type: STR_TERROR_SHIP #ignoreDuplicate
     battlescapeTerrainData:
@@ -982,7 +976,6 @@ ufos:
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
 #END TERROR SHIP
-
 #BEGIN BATTLESHIP
   - type: STR_BATTLESHIP #ignoreDuplicate
     battlescapeTerrainData:
@@ -1168,7 +1161,6 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
 #END BATTLESHIP
-
 #BEGIN SUPPLY SHIP
   - type: STR_SUPPLY_SHIP #ignoreDuplicate
     battlescapeTerrainData:
@@ -1216,7 +1208,6 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
 #END SUPPLY SHIP
-
   - type: ALIEN_FORT_ENTRY
     size: STR_SMALL
     sprite: 1
@@ -1234,7 +1225,6 @@ ufos:
         - name: P4_C
           width: 20
           length: 20
-
   - type: ALIEN_BASE_ENTRY
     size: STR_SMALL
     sprite: 1
@@ -1252,5 +1242,4 @@ ufos:
         - name: PTOWER_ENTRY
           width: 20
           length: 20
-
 ##END UFOS

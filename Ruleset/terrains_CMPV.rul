@@ -165,11 +165,7 @@ terrains:
       - STR_HUMAN_JUMPSUIT_2_5
       - STR_HUMAN_JUMPSUIT_2_6
       - STR_HUMAN_JUMPSUIT_2_7
-
-
-
 ####### COMMNITY MAPS BELOW #####
-
   - name: IDT_AIRPORT # by IDT - Luke83 & efrenespartano
     script: OLD_PORT_SCRIPT
     mapDataSets:
@@ -268,7 +264,6 @@ terrains:
       - name: AIRBASE30
         width: 10
         length: 10
-
   - name: RICE_FARM # by IDT - Luke83
     script: RICE_FARM_SCRIPT
     civilianTypes:
@@ -359,7 +354,6 @@ terrains:
       #   width: 10
       #   length: 10
       #   groups: 4 # HILLS
-
   - name: IDT_RED_FARM # By efrenespartano, Luke83 & Solarius Scorch
     script: FARM_RED
     civilianTypes:
@@ -509,7 +503,6 @@ terrains:
         width: 10
         length: 10
         groups: 7
-
   - name: EXPANDED_TERROR #Thanks to HellRazor
     mapDataSets:
       - BLANKS
@@ -677,7 +670,6 @@ terrains:
       - name: URBAN18 #36 Level Small Shop
         width: 10
         length: 10
-
 #BEGIN OUTPOST UBASE
   - name: UBASE_OUTPOST
     mapDataSets:
@@ -787,7 +779,6 @@ terrains:
             - [ 5, 6, 1]
         fuseTimers:
           SPTURRET_SPAWNER: [0, 0]
-
   - name: UBASE_BASE_SURFACE
     mapDataSets:
       - BLANKS
@@ -890,7 +881,6 @@ terrains:
         width: 10
         length: 10
         groups: 1
-
   - name: UBASE_FORT_SURFACE
     mapDataSets:
       - BLANKS
@@ -994,7 +984,6 @@ terrains:
         width: 10
         length: 10
         groups: 1
-
 ################################
 #BEGIN EXPANDED UBASE
   - name: UBASE
@@ -1359,7 +1348,6 @@ terrains:
         width: 20
         length: 20
 #END EXPANDED UBASE
-
   - name: UBASE_MARS
     mapDataSets:
       - BLANKS
@@ -1371,9 +1359,7 @@ terrains:
       - U_DISEC2
       - U_OPER2
     mapBlocks: *UBASE_MAPBLOCKS
-
 ###############################
-
   - name: ACULTA   # by bulletdesigner
     script: FARM
     mapDataSets:
@@ -2375,9 +2361,6 @@ terrains:
         width: 30
         length: 30
         groups: 4
-
-
-
   - name: IDT_SNOWFOREST # by IDT - Luke83, b__0 & efrenespartano
     mapDataSets:
       - BLANKS
@@ -2436,7 +2419,6 @@ terrains:
       - name: IDT_SNOWFOREST15 #hut
         width: 10
         length: 10
-
   - name: IDT_SNOWVILLAGE # by IDT - Luke83, b__0 & efrenespartano
     mapDataSets:
       - BLANKS
@@ -2516,7 +2498,6 @@ terrains:
         width: 10
         length: 10
         groups: 4
-
   - name: IDT_FOREST # by IDT - Luke83, b__0 & efrenespartano
     mapDataSets:
       - BLANKS
@@ -2575,7 +2556,6 @@ terrains:
       - name: IDT_FOREST15 #hut
         width: 10
         length: 10
-
   - name: IDT_VILLAGE # by IDT - Luke83, b__0 & efrenespartano
     mapDataSets:
       - BLANKS
@@ -2655,7 +2635,6 @@ terrains:
         width: 10
         length: 10
         groups: 4
-
   - name: RURAL # by Solarius Scorch & Dioxine
     mapDataSets:
       - BLANKS
@@ -2825,7 +2804,6 @@ terrains:
       - name: VILBAN57
         width: 10
         length: 10
-
   - name: FOREST
     mapDataSets:
       - BLANKS
@@ -3157,7 +3135,6 @@ terrains:
       - FORESTSWAMP_SNOW
     script: FOREST
     mapBlocks: *AnchorForestSwamp
-
   - name: CHEMTOWN # by Dioxine
 #    ambience: ???
 #    ambientVolume: 0.75
@@ -3342,7 +3319,6 @@ terrains:
       - name: CHEMTOWN52
         width: 20
         length: 20
-
   - name: INDUSTRIALSLUM # by Dioxine
     mapDataSets:
       - BLANKS
@@ -3478,7 +3454,6 @@ terrains:
         width: 10
         length: 10
         groups: 4
-
   - name: COMRCURBAN # by Dioxine
     mapDataSets:
       - BLANKS
@@ -3663,7 +3638,6 @@ terrains:
       - name: COMRCURBAN51
         width: 10
         length: 10
-
   - name: PORTTFTD6 # by Dioxine
 #    ambience: 607
 #    ambientVolume: 0.25
@@ -3788,7 +3762,6 @@ terrains:
     civilianTypes: *CIVILIANS_TERROR
     script: STANDARDROADS6
     mapBlocks: *SECTION_PORTTFTD_MAPS
-
   - name: ISLANDURBAN # by Dioxine
 #    ambience: 607
 #    ambientVolume: 0.25
@@ -3852,7 +3825,6 @@ terrains:
       - name: ISLANDURBAN14
         width: 10
         length: 10
-
   - name: NOOBERIA # by Dioxine, Solarius Scorch & Brain_322
     mapDataSets:
       - BLANKS
@@ -3948,7 +3920,6 @@ terrains:
       - name: NOOBERIA29
         width: 10
         length: 10
-
 ############################################
 ###### CRUISE LINER BY SOLARIUS SCORCH ####
 ##########################################
@@ -3972,7 +3943,6 @@ terrains:
       - name: LINERT01
         width: 30
         length: 50
-
 ############################################
 ########### SHIPS BY HELLRAZOR ############
 ##########################################
@@ -3991,7 +3961,6 @@ terrains:
         width: 30
         length: 70
 #END CARGOSHIP
-
 #BEGIN LINERSHIP
   - name: LINERSHIP
     mapDataSets:

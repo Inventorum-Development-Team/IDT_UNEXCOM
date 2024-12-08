@@ -56,18 +56,14 @@ ufopaedia:
   - delete: STR_AVENGER
   - delete: STR_THE_MARTIAN_SOLUTION
   - delete: STR_CYDONIA_OR_BUST
-
 ########################################
 ########### COMMENDATIONS ##############
 ######################################
-
   - id: STR_MEDALS_AND_AWARDS
     type_id: 8
     listOrder: 1
     text: STR_MEDALS_AND_AWARDS_UFOPEDIA
     section: STR_MEDALS_AND_AWARDS_UC
-
-
   - id: STR_MEDAL_SERVICE
     type_id: 7
     section: STR_MEDALS_AND_AWARDS_UC
@@ -307,10 +303,7 @@ ufopaedia:
     text: STR_MEDAL_CAPTURE_SPECIALIST_UFOPEDIA
     listOrder: 43
     text_width: 180
-
-
 ########################################
-
   #Fighters
   - id: STR_UNEXCOM_FIGHTERS
     type_id: 7
@@ -319,13 +312,11 @@ ufopaedia:
     text: STR_UNEXCOM_FIGHTERS_UFOPEDIA
     listOrder: 49
     text_width: 316
-
   - id: STR_FIGHTERS
     type_id: 8
     listOrder: 50
     text: STR_FIGHTERS_UFOPEDIA
     section: STR_XCOM_CRAFTS
-
   - id: STR_TUNNAN
     section: STR_XCOM_CRAFTS
     text: STR_TUNNAN_UFOPEDIA
@@ -342,7 +333,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: TUNNAN_UFOPEDIA
-
   - id: STR_PHANTOM
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -361,7 +351,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: PHANTOM_UFOPEDIA
-
   - id: STR_LIGHTNING_F6
     requires:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -419,7 +408,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: DRAKEN_UFOPEDIA
-
   - id: STR_FISHBED
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -439,7 +427,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: FISHBED_UFOPEDIA
-
   - id: STR_FOXBAT
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -459,7 +446,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: FOXBAT_UFOPEDIA
-
   - id: STR_TUNNAN_MK2
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -479,7 +465,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: TUNNAN_MK2_IMAGE
-
   - id: STR_RAPIER
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -499,7 +484,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: RAPIER_UFOPEDIA
-
   - id: STR_VIGGEN
     section: STR_XCOM_CRAFTS
     text: STR_VIGGEN_UFOPAEDIA
@@ -519,7 +503,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_FLANKER
     section: STR_XCOM_CRAFTS
     text: STR_FLANKER_UFOPAEDIA
@@ -539,7 +522,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_CRUSADER
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -558,7 +540,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: CRUSADER_UFOPEDIA
-
   - id: STR_COBRA
     section: STR_XCOM_CRAFTS
     text: STR_COBRA_UFOPAEDIA
@@ -578,7 +559,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_PANAVIA
     section: STR_XCOM_CRAFTS
     text: STR_PANAVIA_UFOPAEDIA
@@ -598,7 +578,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_FIREFOX
     section: STR_XCOM_CRAFTS
     text: STR_FIREFOX_UFOPAEDIA
@@ -618,7 +597,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_SABRE
     section: STR_XCOM_CRAFTS
     text: STR_SABRE_UFOPAEDIA
@@ -637,7 +615,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_DYNASOAR
     section: STR_XCOM_CRAFTS
     text: STR_DYNASOAR_UFOPAEDIA
@@ -657,7 +634,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_MIG_105
     section: STR_XCOM_CRAFTS
     text: STR_MIG_105_UFOPAEDIA
@@ -677,15 +653,12 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   #Bombers
-
   - id: STR_BOMBERS
     type_id: 8
     listOrder: 150
     text: STR_BOMBERS_UFOPEDIA
     section: STR_XCOM_CRAFTS
-
   - id: STR_THUNDERCHIEF
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -704,7 +677,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: THUNDERCHIEF_UFOPEDIA
-
   - id: STR_MIRAGE
     requires:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
@@ -723,7 +695,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: MIRAGE_UFOPEDIA
-
   - id: STR_BACKFIRE
     requires:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
@@ -742,7 +713,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: BACKFIRE_UFOPEDIA
-
   - id: STR_VALKYRIE
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -762,7 +732,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: VALKYRIE_UFOPEDIA
-
   - id: STR_JAGUAR
     section: STR_XCOM_CRAFTS
     text: STR_JAGUAR_UFOPAEDIA
@@ -782,7 +751,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_M50
     section: STR_XCOM_CRAFTS
     text: STR_M50_UFOPAEDIA
@@ -802,7 +770,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_SARACEN
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -821,7 +788,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: SARACEN_UFOPEDIA
-
   - id: STR_TU45M
     section: STR_XCOM_CRAFTS
     listOrder: 207
@@ -841,7 +807,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_LAMPYRIDAE
     section: STR_XCOM_CRAFTS
     listOrder: 208
@@ -861,7 +826,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_A12
     section: STR_XCOM_CRAFTS
     listOrder: 209
@@ -881,7 +845,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_HERMES
     section: STR_XCOM_CRAFTS
     listOrder: 210
@@ -901,7 +864,6 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   - id: STR_UNTAIRCRAFTBLACKA12
     section: STR_XCOM_CRAFTS
     listOrder: 211
@@ -921,15 +883,12 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   #satellites
-
   - id: STR_RECONS
     type_id: 8
     listOrder: 250
     text: STR_RECONS_UFOPEDIA
     section: STR_XCOM_CRAFTS
-
   - id: STR_BLACKBIRD
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -946,7 +905,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: BLACKBIRD_UFOPEDIA
-
   - id: STR_LINNA
     type_id: 1
     requires:
@@ -965,7 +923,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: LINNA_UFOPEDIA
-
   - id: STR_ATALAYA
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -984,7 +941,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: ATALAYA_UFOPEDIA
-
   - id: STR_BASTION
     section: STR_XCOM_CRAFTS
     text: STR_BASTION_UFOPAEDIA
@@ -1003,9 +959,7 @@ ufopaedia:
       y: 18
       width: 205
       height: 80
-
   #Transports
-
   - id: STR_HERCULES
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -1022,7 +976,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: HERCULES_UFOPEDIA
-
   - id: STR_HUEY
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -1039,7 +992,6 @@ ufopaedia:
       width: 205
       height: 80
     image_id: HUEY_UFOPEDIA
-
   - id: STR_HIND
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -1058,17 +1010,14 @@ ufopaedia:
       width: 205
       height: 80
     image_id: HIND_UFOPEDIA
-
   - id: STR_FIRESTORM
     listOrder: 500
     image_id: NEWFIRESTORM_UFOPEDIA
     section: STR_XCOM_CRAFTS
-
   - id: STR_LIGHTNING
     listOrder: 501
     image_id: NEWLIGHTNING_UFOPEDIA
     section: STR_XCOM_CRAFTS
-
   - id: STR_SPACE_SHUTTLE
     type_id: 1
     section: STR_XCOM_CRAFTS
@@ -1087,9 +1036,7 @@ ufopaedia:
       width: 205
       height: 80
     image_id: SPACE_SHUTTLE_UFOPEDIA
-
   #CRAFT ARMAMENT
-
   - id: STR_GATLING_CANNON
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1097,14 +1044,12 @@ ufopaedia:
     text: STR_GATLING_CANNON_UFOPEDIA
     listOrder: 1001
     text_width: 316
-
   - id: STR_VULCAN
     type_id: 2
     section: STR_CRAFT_ARMAMENT
     image_id: VULCAN
     text: STR_VULCAN_UFOPEDIA
     listOrder: 1002
-
   - id: STR_ATHENA_ALLOY_GATLING
     requires:
       - STR_IMPROVED_GATLING_CANNON
@@ -1113,7 +1058,6 @@ ufopaedia:
     image_id: ATHENA
     text: STR_ATHENA_ALLOY_GATLING_UFOPEDIA
     listOrder: 1003
-
   - id: STR_LASER_ARRAY_UC
     type_id: 2
     listOrder: 1004
@@ -1122,7 +1066,6 @@ ufopaedia:
       - STR_LASER_ARRAY
     image_id: APOLLO
     text: STR_APOLLO_LASER_GATLING_UFOPEDIA
-
   - id: STR_ZEUS
     section: STR_CRAFT_ARMAMENT
     listOrder: 1005
@@ -1131,7 +1074,6 @@ ufopaedia:
       - STR_ZEUS
     type_id: 2
     text: STR_ZEUS_UFOPAEDIA
-
   - id: STR_REVOLVER_CANNON
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1139,14 +1081,12 @@ ufopaedia:
     text: STR_REVOLVER_CANNON_UFOPEDIA
     listOrder: 1100
     text_width: 316
-
   - id: STR_ADEN
     type_id: 2
     section: STR_CRAFT_ARMAMENT
     image_id: ADEN
     text: STR_ADEN_UFOPEDIA
     listOrder: 1101
-
   - id: STR_GSH_23
     type_id: 2
     requires:
@@ -1155,7 +1095,6 @@ ufopaedia:
     image_id: GSH-23
     text: STR_GSH_23_UFOPEDIA
     listOrder: 1102
-
   - id: STR_MAUSER_ALLOY_CANNON
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
@@ -1164,7 +1103,6 @@ ufopaedia:
     image_id: MAUSER
     text: STR_MAUSER_ALLOY_CANNON_UFOPEDIA
     listOrder: 1103
-
   - id: STR_LASER_CANNON_UC
     type_id: 2
     section: STR_CRAFT_ARMAMENT
@@ -1173,7 +1111,6 @@ ufopaedia:
     image_id: KODIAK
     text: STR_KODIAK_LASER_CANNON_UFOPEDIA
     listOrder: 1104
-
   - id: STR_VOSTOK_PLASMA_CANNON
     section: STR_CRAFT_ARMAMENT
     image_id: VOSTOK_PLASMA_CANNON
@@ -1182,7 +1119,6 @@ ufopaedia:
     type_id: 2
     text: STR_VOSTOK_PLASMA_CANNON_UFOPAEDIA
     listOrder: 1105
-
   - id: STR_ROCKET_POD
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1190,14 +1126,12 @@ ufopaedia:
     text: STR_ROCKET_POD_UFOPEDIA
     listOrder: 1200
     text_width: 316
-
   - id: STR_MIGHTY_MOUSE
     type_id: 2
     section: STR_CRAFT_ARMAMENT
     image_id: MIGHTY_MOUSE
     text: STR_MIGHTY_MOUSE_UFOPEDIA
     listOrder: 1201
-
   - id: STR_HYDRA_ALLOY_ROCKETS
     requires:
       - STR_IMPROVED_ROCKET
@@ -1206,7 +1140,6 @@ ufopaedia:
     image_id: HYDRA
     text: STR_HYDRA_ALLOY_ROCKETS_UFOPEDIA
     listOrder: 1202
-
   - id: STR_GORGON_ROCKETS
     section: STR_CRAFT_ARMAMENT
     image_id: GORGON_FUSSION_ROCKET_POD
@@ -1215,7 +1148,6 @@ ufopaedia:
     type_id: 2
     text: STR_GORGON_ROCKETS_UFOPAEDIA
     listOrder: 1203
-
   - id: STR_KRAKEN_ROCKETS
     section: STR_CRAFT_ARMAMENT
     image_id: HYDRA
@@ -1224,7 +1156,6 @@ ufopaedia:
     type_id: 2
     text: STR_KRAKEN_ROCKETS_UFOPAEDIA
     listOrder: 1204
-
   - id: STR_LIGHT_MISSILE
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1232,7 +1163,6 @@ ufopaedia:
     text: STR_LIGHT_MISSILE_UFOPEDIA
     listOrder: 1300
     text_width: 316
-
   - id: STR_SIDEWINDER
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -1241,7 +1171,6 @@ ufopaedia:
     image_id: SIDEWINDER
     text: STR_SIDEWINDER_UFOPEDIA
     listOrder: 1301
-
   - id: STR_RED_TOP
     type_id: 2
     requires:
@@ -1250,7 +1179,6 @@ ufopaedia:
     image_id: RED_TOP
     text: STR_RED_TOP_UFOPEDIA
     listOrder: 1302
-
   - id: STR_ATOLL
     type_id: 2
     requires:
@@ -1259,7 +1187,6 @@ ufopaedia:
     image_id: ATOLL
     text: STR_ATOLL_UFOPEDIA
     listOrder: 1303
-
   - id: STR_SHORTSWORD_ALLOY_LIGHT_MISSILE
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
@@ -1268,7 +1195,6 @@ ufopaedia:
     image_id: SHORTSWORD
     text: STR_SHORTSWORD_ALLOY_LIGHT_MISSILE_UFOPEDIA
     listOrder: 1304
-
   - id: STR_LONGSWORD_FUSION_MISSILE
     section: STR_CRAFT_ARMAMENT
     image_id: LONGSWORD_FUSION_LIGHT_MISSILE
@@ -1277,7 +1203,6 @@ ufopaedia:
     type_id: 2
     text: STR_LONGSWORD_FUSION_MISSILE_UFOPAEDIA
     listOrder: 1305
-
   - id: STR_EXCALIBUR_LIGHT_MISSILE
     section: STR_CRAFT_ARMAMENT
     image_id: SHORTSWORD
@@ -1286,7 +1211,6 @@ ufopaedia:
     type_id: 2
     text: STR_EXCALIBUR_LIGHT_MISSILE_UFOPAEDIA
     listOrder: 1306
-
   - id: STR_HEAVY_MISSILE
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1294,7 +1218,6 @@ ufopaedia:
     text: STR_HEAVY_MISSILE_UFOPEDIA
     listOrder: 1400
     text_width: 316
-
   - id: STR_SPARROW
     requires:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
@@ -1303,7 +1226,6 @@ ufopaedia:
     image_id: SPARROW
     text: STR_SPARROW_UFOPEDIA
     listOrder: 1401
-
   - id: STR_MATRA
     type_id: 2
     requires:
@@ -1312,7 +1234,6 @@ ufopaedia:
     image_id: MATRA
     text: STR_MATRA_UFOPEDIA
     listOrder: 1402
-
   - id: STR_ACRID
     type_id: 2
     requires:
@@ -1321,7 +1242,6 @@ ufopaedia:
     image_id: ACRID
     text: STR_ACRID_UFOPEDIA
     listOrder: 1403
-
   - id: STR_HAMMER_ALLOY_HEAVY_MISSILE
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
@@ -1330,7 +1250,6 @@ ufopaedia:
     image_id: HAMMER
     text: STR_HAMMER_ALLOY_HEAVY_MISSILE_UFOPEDIA
     listOrder: 1404
-
   - id: STR_KATANA
     section: STR_CRAFT_ARMAMENT
     image_id: KATANA_FUSION_HEAVY_MISSILE
@@ -1339,7 +1258,6 @@ ufopaedia:
     type_id: 2
     text: STR_KATANA_UFOPAEDIA
     listOrder: 1405
-
   - id: STR_MJOLNIR
     section: STR_CRAFT_ARMAMENT
     image_id: HAMMER
@@ -1348,7 +1266,6 @@ ufopaedia:
     type_id: 2
     text: STR_MJOLNIR_UFOPAEDIA
     listOrder: 1406
-
   - id: STR_SUPER_HEAVY_MISSILE
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1356,14 +1273,12 @@ ufopaedia:
     text: STR_SUPER_HEAVY_MISSILE_UFOPEDIA
     listOrder: 1500
     text_width: 316
-
   - id: STR_FALCON
     type_id: 2
     section: STR_CRAFT_ARMAMENT
     image_id: FALCON
     text: STR_FALCON_UFOPEDIA
     listOrder: 1501
-
   - id: STR_PHOENIX_ALLOY_SUPER_HEAVY_MISSILE
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
@@ -1372,7 +1287,6 @@ ufopaedia:
     image_id: PHOENIX
     text: STR_PHOENIX_ALLOY_SUPER_HEAVY_MISSILE_UFOPEDIA
     listOrder: 1502
-
   - id: STR_ADLER
     section: STR_CRAFT_ARMAMENT
     image_id: PHOENIX
@@ -1381,7 +1295,6 @@ ufopaedia:
     type_id: 2
     text: STR_ADLER_UFOPAEDIA
     listOrder: 1503
-
   - id: STR_KONDOR
     section: STR_CRAFT_ARMAMENT
     image_id: KONDOR_FUSION_SUPER_HEAVY_MISSILE
@@ -1390,7 +1303,6 @@ ufopaedia:
     type_id: 2
     text: STR_KONDOR_UFOPAEDIA
     listOrder: 1504
-
   - id: STR_CASABA_SPIKE
     section: STR_CRAFT_ARMAMENT
     image_id: CASABA_HOWITZER
@@ -1399,7 +1311,6 @@ ufopaedia:
     type_id: 2
     text: STR_CASABA_SPIKE_UFOPAEDIA
     listOrder: 1505
-
   - id: STR_CASABA_LANCE
     section: STR_CRAFT_ARMAMENT
     image_id: CASABA_HOWITZER_IMPROVED
@@ -1408,7 +1319,6 @@ ufopaedia:
     type_id: 2
     text: STR_CASABA_LANCE_UFOPAEDIA
     listOrder: 1506
-
   - id: STR_AUXILIARY_POD
     type_id: 7
     section: STR_CRAFT_ARMAMENT
@@ -1416,14 +1326,12 @@ ufopaedia:
     text: STR_AUXILIARY_POD_UFOPEDIA
     listOrder: 1600
     text_width: 316
-
   - id: STR_FUEL_TANK_UC
     type_id: 2
     section: STR_CRAFT_ARMAMENT
     image_id: FUEL_TANK
     text: STR_FUEL_TANK_UFOPEDIA
     listOrder: 1601
-
   - id: STR_AFTERBURNER_UC
     type_id: 2
     requires:
@@ -1432,7 +1340,6 @@ ufopaedia:
     image_id: AFTERBURNER
     text: STR_AFTERBURNER_UFOPEDIA
     listOrder: 1602
-
   - id: STR_TARGETING_POD_UC
     type_id: 2
     requires:
@@ -1441,7 +1348,6 @@ ufopaedia:
     image_id: TARGETING_POD
     text: STR_TARGETING_POD_UFOPEDIA
     listOrder: 1603
-
   - id: STR_ALLOY_CRAFT_ARMOR_UC
     type_id: 2
     requires:
@@ -1450,9 +1356,7 @@ ufopaedia:
     image_id: ALLOY_CRAFT_ARMOR
     text: STR_ALLOY_CRAFT_ARMOR_UFOPEDIA
     listOrder: 1604
-
   #UNEXCOM research
-
   - id: STR_ALLOY_MANUFACTURING
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1601,7 +1505,6 @@ ufopaedia:
     text: STR_EXOATMOSPHERIC_FIGHTERS_UFOPEDIA
     listOrder: 2016
     text_width: 316
-
   - id: STR_IMP_TANK_CHASSIS
     type_id: 7
     section: STR_UNEXCOM_RESEARCH
@@ -1612,7 +1515,6 @@ ufopaedia:
     listOrder: 2050
     text_width: 310
   ########################
-
   - id: STR_LASER_WEAPONS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1644,7 +1546,6 @@ ufopaedia:
     text: STR_USA_LASER_RESEARCH_UFOPEDIA
     text_width: 150
     listOrder: 2101
-
   - id: STR_USA_LASER_HANDGUNS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1683,7 +1584,6 @@ ufopaedia:
     text: STR_NATO_LASER_RESEARCH_UFOPEDIA
     text_width: 150
     listOrder: 2106
-
   - id: STR_NATO_LASER_HANDGUNS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1722,7 +1622,6 @@ ufopaedia:
     text: STR_USSR_LASER_RESEARCH_UFOPEDIA
     text_width: 150
     listOrder: 2111
-
   - id: STR_USSR_LASER_HANDGUNS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1751,7 +1650,6 @@ ufopaedia:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_USSR_LASER_HEAVY_WEAPONS_UFOPEDIA
     listOrder: 2115
-
   - id: STR_ALLOY_BALLISTIC_WEAPONS
     type_id: 7
     section: STR_UNEXCOM_RESEARCH
@@ -1761,7 +1659,6 @@ ufopaedia:
     image_id: ALLOY_BALLISTIC_WEAPONS_IMAGE
     text_width: 160
     listOrder: 2200
-
   - id: STR_FLECHETTE
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1785,7 +1682,6 @@ ufopaedia:
     text: STR_USA_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
     text_width: 200
     listOrder: 2220
-
   - id: STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
     type_id: 7
     requires:
@@ -1795,7 +1691,6 @@ ufopaedia:
     text: STR_NATO_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
     text_width: 150
     listOrder: 2221
-
   - id: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     type_id: 7
     requires:
@@ -1805,12 +1700,9 @@ ufopaedia:
     text: STR_USSR_PROTOTYPE_ARMOR_SYSTEMS_UFOPEDIA
     text_width: 170
     listOrder: 2222
-
-
 ################################
 #### HUMAN PLASMA WEAPONS ####
 #############################
-
   - id: STR_HUMAN_PLASMA_WEAPONS_THEORY
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1818,7 +1710,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_THEORY
     text: STR_HUMAN_PLASMA_WEAPONS_THEORY_UFOPEDIA
     listOrder: 2260
-
   - id: STR_HUMAN_PLASMA_WEAPONS_PROGRESS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1826,7 +1717,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_PROGRESS
     text: STR_HUMAN_PLASMA_WEAPONS_PROGRESS_UFOPEDIA
     listOrder: 2265
-
   - id: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1834,7 +1724,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
     text: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_I_UFOPEDIA
     listOrder: 2266
-
   - id: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1842,7 +1731,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
     text: STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS_II_UFOPEDIA
     listOrder: 2267
-
   - id: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1850,7 +1738,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     text: STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS_UFOPEDIA
     listOrder: 2270
-
   - id: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1858,7 +1745,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     text: STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS_UFOPEDIA
     listOrder: 2275
-
   - id: STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     type_id: 8
     section: STR_UNEXCOM_RESEARCH
@@ -1869,7 +1755,6 @@ ufopaedia:
 ############################
 ###### ELERIUM FUSION #####
 ##########################
-
   - id: STR_ELERIUM_FUSION
     type_id: 7
     requires:
@@ -1879,7 +1764,6 @@ ufopaedia:
     text: STR_ELERIUM_FUSION_UFOPEDIA
     listOrder: 2300
     text_width: 200
-
   - id: STR_FUSION_WEAPONS_RESEARCH_1
     type_id: 7
     #    type_id: 8
@@ -1890,7 +1774,6 @@ ufopaedia:
     text: STR_FUSION_WEAPONS_RESEARCH_1_UFOPEDIA
     text_width: 150
     listOrder: 2301
-
   - id: STR_FUSION_WEAPONS_RESEARCH_2
     type_id: 7
     #    type_id: 8
@@ -1901,7 +1784,6 @@ ufopaedia:
     text: STR_FUSION_WEAPONS_RESEARCH_2_UFOPEDIA
     text_width: 130
     listOrder: 2302
-
   - id: STR_INITIAL_FUSION_CELLS_RESEARCH
     type_id: 7
     #    type_id: 8
@@ -1912,9 +1794,7 @@ ufopaedia:
     text: STR_INITIAL_FUSION_CELLS_RESEARCH_UFOPEDIA
     text_width: 150
     listOrder: 2303
-
   #UNEXCOM Reports
-
   - id: STR_UNEXCOM_HISTORY_1
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -1950,7 +1830,6 @@ ufopaedia:
     text: STR_UNEXCOM_HISTORY_5_UFOPEDIA
     text_width: 316
     listOrder: 3004
-
   - id: STR_UNEXCOM_HISTORY_6
     type_id: 8
     requires:
@@ -1959,7 +1838,6 @@ ufopaedia:
     text: STR_UNEXCOM_HISTORY_6_UFOPEDIA
     text_width: 316
     listOrder: 3005
-
   - id: STR_UNEXCOM_HISTORY_7
     type_id: 8
     requires:
@@ -1968,7 +1846,6 @@ ufopaedia:
     text: STR_UNEXCOM_HISTORY_7_UFOPEDIA
     text_width: 316
     listOrder: 3006
-
   - id: STR_UNEXCOM_HISTORY_8
     type_id: 8
     requires:
@@ -1977,7 +1854,6 @@ ufopaedia:
     text: STR_UNEXCOM_HISTORY_8_UFOPEDIA
     text_width: 316
     listOrder: 3007
-
   - id: STR_UNITED_WE_STAND_RESEARCH
     type_id: 7
     requires:
@@ -1987,7 +1863,6 @@ ufopaedia:
     text: STR_UNITED_WE_STAND_RESEARCH_UFOPEDIA
     listOrder: 3008
     text_width: 316
-
   - id: STR_ALIEN_ORIGINS
     type_id: 8
     section: STR_UNEXCOM_REPORTS
@@ -2022,7 +1897,6 @@ ufopaedia:
       - STR_OLYMPUS
     text: STR_OLYMPUS_SHUTTLE_UFOPEDIA
     listOrder: 3012
-
   - id: STR_THE_MARTIAN_SOLUTION
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -2050,7 +1924,6 @@ ufopaedia:
       - STR_CYDONIA_OR_BUST
     text: STR_CYDONIA_OR_BUST_UFOPEDIA
     listOrder: 3017
-
   - id: STR_UNEXCOM_BLUE_HELMETS
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -2072,7 +1945,6 @@ ufopaedia:
     text: STR_AIR_COMBAT_UFOPEDIA
     text_width: 316
     listOrder: 3102
-
   - id: STR_USA_INITIAL_APPROACH_RESEARCH
     type_id: 7
     requires:
@@ -2091,7 +1963,6 @@ ufopaedia:
     text: STR_USA_SUPPORT_UFOPEDIA
     text_width: 316
     listOrder: 3201
-
   - id: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 7
     requires:
@@ -2110,7 +1981,6 @@ ufopaedia:
     text: STR_NATO_INITIAL_APPROACH_RESEARCH_UFOPEDIA
     text_width: 316
     listOrder: 3203
-
   - id: STR_NATO_SUPPORT_RESEARCH
     type_id: 7
     requires:
@@ -2120,7 +1990,6 @@ ufopaedia:
     text: STR_NATO_SUPPORT_UFOPEDIA
     text_width: 316
     listOrder: 3204
-
   - id: STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 7
     requires:
@@ -2130,7 +1999,6 @@ ufopaedia:
     text: STR_NATO_AERONAUTIC_SUPPORT_UFOPEDIA
     text_width: 316
     listOrder: 3205
-
   - id: STR_NATO_AIRCRAFT_OPTION1
     type_id: 7
     requires:
@@ -2140,7 +2008,6 @@ ufopaedia:
     text: STR_NATO_AIRCRAFT_OPTION1_UFOPEDIA
     text_width: 316
     listOrder: 3206
-
   - id: STR_NATO_AIRCRAFT_OPTION2
     type_id: 7
     requires:
@@ -2150,7 +2017,6 @@ ufopaedia:
     text: STR_NATO_AIRCRAFT_OPTION2_UFOPEDIA
     text_width: 316
     listOrder: 3207
-
   - id: STR_NATO_AIRCRAFT_OPTION3
     type_id: 7
     requires:
@@ -2178,7 +2044,6 @@ ufopaedia:
     text: STR_USSR_SUPPORT_UFOPEDIA
     text_width: 316
     listOrder: 3210
-
   - id: STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     type_id: 7
     requires:
@@ -2188,7 +2053,6 @@ ufopaedia:
     text: STR_USSR_AERONAUTIC_SUPPORT_UFOPEDIA
     text_width: 316
     listOrder: 3211
-
   - id: STR_USSR_AIRCRAFT_OPTION1
     type_id: 7
     requires:
@@ -2198,7 +2062,6 @@ ufopaedia:
     text: STR_USSR_AIRCRAFT_OPTION1_UFOPEDIA
     text_width: 316
     listOrder: 3212
-
   - id: STR_USSR_AIRCRAFT_OPTION2
     type_id: 7
     requires:
@@ -2208,7 +2071,6 @@ ufopaedia:
     text: STR_USSR_AIRCRAFT_OPTION2_UFOPEDIA
     text_width: 316
     listOrder: 3213
-
   - id: STR_OUTSOURCING_PRODUCTION
     type_id: 8
     requires:
@@ -2217,7 +2079,6 @@ ufopaedia:
     text: STR_OUTSOURCE_UFOPEDIA
     text_width: 316
     listOrder: 3214
-
   - id: STR_ON_OUR_OWN
     type_id: 7
     section: STR_UNEXCOM_REPORTS
@@ -2273,9 +2134,7 @@ ufopaedia:
     section: STR_UNEXCOM_REPORTS
     text: STR_WEAPON_REQUISITION_UFOPEDIA
     listOrder: 3304
-
   #Weapons
-
   #Pistols
   - id: STR_UNEXCOM_WEAPONS
     type_id: 8
@@ -2296,13 +2155,11 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_SNUBNOSE_PISTOL_UFOPEDIA
     listOrder: 4002
-
   - id: STR_POLICE_REVOLVER
     type_id: 4
     section: STR_WEAPONS
     text: STR_POLICE_REVOLVER_UFOPEDIA
     listOrder: 4003
-
   - id: STR_ENFORCER
     requires:
       - STR_ENFORCER
@@ -2331,7 +2188,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M1911_COLT45_UFOPEDIA
     listOrder: 4007
-
   - id: STR_BERETTA_92FS
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -2339,7 +2195,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_BERETTA_92FS_UFOPEDIA
     listOrder: 4008
-
   - id: STR_STECHKIN_APS
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2347,7 +2202,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_STECHKIN_APS_UFOPEDIA
     listOrder: 4009
-
   - id: STR_M1972_LASER_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -2389,7 +2243,6 @@ ufopaedia:
       text: STR_FLECHETTE_PISTOL_UFOPEDIA
       ammoSlot: 1
     listOrder: 4014
-
   - id: STR_NATO_PLASMA_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -2397,7 +2250,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     text: STR_NATO_PLASMA_PISTOL_UFOPEDIA
     listOrder: 4015
-
   - id: STR_GYROJET_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -2405,7 +2257,6 @@ ufopaedia:
       - STR_OLYMPUS
     text: STR_GYROJET_PISTOL_UFOPEDIA
     listOrder: 4017
-
   #SMGs
   - id: STR_SMG_REPORT
     type_id: 7
@@ -2414,13 +2265,11 @@ ufopaedia:
     text: STR_SMG_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4100
-
   - id: STR_BERETTA_M12
     type_id: 4
     section: STR_WEAPONS
     text: STR_BERETTA_M12_UFOPEDIA
     listOrder: 4101
-
   - id: STR_OWEN_SMG
     requires:
       - STR_OWEN_SMG
@@ -2435,7 +2284,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_PPS_43_UFOPEDIA
     listOrder: 4103
-
   - id: STR_MAT49
     requires:
       - STR_MERCENARY_SUPPORT
@@ -2443,7 +2291,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_MAT49_UFOPEDIA
     listOrder: 4104
-
   - id: STR_M3_GREASEGUN
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -2451,7 +2298,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M3_GREASEGUN_UFOPEDIA
     listOrder: 4105
-
   - id: STR_MP5
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -2459,7 +2305,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_MP5_UFOPEDIA
     listOrder: 4106
-
   - id: STR_SKORPION
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2467,7 +2312,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_SKORPION_UFOPEDIA
     listOrder: 4107
-
   - id: STR_M5_LASER_SMG
     type_id: 4
     section: STR_WEAPONS
@@ -2475,7 +2319,6 @@ ufopaedia:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
     text: STR_M5_LASER_SMG_UFOPEDIA
     listOrder: 4108
-
   - id: STR_MAT72_SUBMACHINE_LASER
     type_id: 4
     section: STR_WEAPONS
@@ -2483,7 +2326,6 @@ ufopaedia:
       - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
     text: STR_MAT72_SUBMACHINE_LASER_UFOPEDIA
     listOrder: 4109
-
   - id: STR_ALP_SUBMACHINE_LASER
     type_id: 4
     section: STR_WEAPONS
@@ -2491,7 +2333,6 @@ ufopaedia:
       - STR_USSR_LASER_HANDGUNS
     text: STR_ALP_SUBMACHINE_LASER_UFOPEDIA
     listOrder: 4110
-
   - id: STR_SOVIET_PLASMA_SMG
     type_id: 4
     section: STR_WEAPONS
@@ -2499,7 +2340,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     text: STR_SOVIET_PLASMA_SMG_UFOPEDIA
     listOrder: 4111
-
   #Shotguns
   - id: STR_SHOTGUN_REPORT
     type_id: 7
@@ -2508,7 +2348,6 @@ ufopaedia:
     text: STR_SHOTGUN_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4200
-
   - id: STR_SAWEDOFF_SHOTGUN
     requires:
       - STR_WEAPON_MODIFICATION
@@ -2517,7 +2356,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_SAWEDOFF_SHOTGUN_UFOPEDIA
     listOrder: 4201
-
   - id: STR_DOUBLE_BARRELED_SHOTGUN
     requires:
       - STR_DOUBLE_BARRELED_SHOTGUN
@@ -2525,7 +2363,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_DOUBLE_BARRELED_SHOTGUN_UFOPEDIA
     listOrder: 4202
-
   - id: STR_POLICE_SHOTGUN
     type_id: 4
     section: STR_WEAPONS
@@ -2537,7 +2374,6 @@ ufopaedia:
       text: STR_POLICE_SHOTGUN_UFOPEDIA
       ammoSlot: 0
     listOrder: 4203
-
   - id: STR_ANGRY_WIFE
     type_id: 4
     section: STR_WEAPONS
@@ -2545,7 +2381,6 @@ ufopaedia:
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     listOrder: 4204
-
   - id: STR_REMINGTON_COMBAT_SHOTGUN
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -2559,7 +2394,6 @@ ufopaedia:
       text: STR_REMINGTON_COMBAT_SHOTGUN_UFOPEDIA
       ammoSlot: 0
     listOrder: 4205
-
   - id: STR_KS23_SHOTGUN
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2567,7 +2401,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_KS23_SHOTGUN_UFOPEDIA
     listOrder: 4206
-
   - id: STR_X4_LASER_SHOTGUN
     type_id: 4
     section: STR_WEAPONS
@@ -2575,7 +2408,6 @@ ufopaedia:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
     text: STR_X4_LASER_SHOTGUN_UFOPEDIA
     listOrder: 4207
-
   - id: STR_FLECHETTE_SHOTGUN
     type_id: 4
     section: STR_WEAPONS
@@ -2593,7 +2425,6 @@ ufopaedia:
       - STR_ALLOY_CLOSE
     text: STR_FLECHETTE_AUTOMATIC_SHOTGUN_UFOPEDIA
     listOrder: 4209
-
   - id: STR_US_PLASMA_SHOTGUN
     type_id: 4
     section: STR_WEAPONS
@@ -2601,7 +2432,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     text: STR_US_PLASMA_SHOTGUN_UFOPEDIA
     listOrder: 4210
-
   - id: STR_CARBINE_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -2609,7 +2439,6 @@ ufopaedia:
     text: STR_CARBINE_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4300
-
   - id: STR_STONER_CARBINE
     requires:
       - STR_UN_CUSTOM_WEAPONS
@@ -2617,7 +2446,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_STONER_CARBINE_UFOPEDIA
     listOrder: 4301
-
   - id: STR_M1_CARBINE
     requires:
       - STR_M1_CARBINE
@@ -2625,7 +2453,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M1_CARBINE_UFOPEDIA
     listOrder: 4302
-
   - id: STR_FN_FSC
     requires:
       - STR_MERCENARY_SUPPORT
@@ -2633,7 +2460,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_FN_FSC_UFOPEDIA
     listOrder: 4303
-
   - id: STR_FN_FSC_SCOPED
     requires:
       - STR_MERCENARY_SUPPORT
@@ -2641,7 +2467,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_FN_FSC_SCOPED_UFOPEDIA
     listOrder: 4304
-
   - id: STR_FN_FSC_BAYONET
     requires:
       - STR_MERCENARY_SUPPORT
@@ -2649,7 +2474,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_FN_FSC_BAYONET_UFOPEDIA
     listOrder: 4305
-
   - id: STR_XM117
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -2657,7 +2481,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_XM117_UFOPEDIA
     listOrder: 4306
-
   - id: STR_XM117_SCOPED
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2665,7 +2488,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_XM117_SCOPED_UFOPEDIA
     listOrder: 4307
-
   - id: STR_XM117_SHOTGUN
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2679,7 +2501,6 @@ ufopaedia:
       text: STR_XM117_SHOTGUN_UFOPEDIA
       ammoSlot: 1
     listOrder: 4308
-
   - id: STR_XM117_M203
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2693,7 +2514,6 @@ ufopaedia:
       text: STR_XM117_M203_UFOPEDIA
       ammoSlot: 1
     listOrder: 4309
-
   - id: STR_SG510_CARBINE
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -2701,7 +2521,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_SG510_CARBINE_UFOPEDIA
     listOrder: 4310
-
   - id: STR_AKMSU
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2709,7 +2528,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_AKMSU_UFOPEDIA
     listOrder: 4311
-
   - id: STR_M20_M203_LASER_CARBINE
     type_id: 4
     section: STR_WEAPONS
@@ -2717,7 +2535,6 @@ ufopaedia:
       - STR_USA_LASER_RIFLES
     text: STR_M20_M203_LASER_CARBINE_UFOPEDIA
     listOrder: 4312
-
   - id: STR_FN_FLA_LASER_CARBINE
     type_id: 4
     section: STR_WEAPONS
@@ -2725,7 +2542,6 @@ ufopaedia:
       - STR_NATO_LASER_RIFLES
     text: STR_FN_FLA_LASER_CARBINE_UFOPEDIA
     listOrder: 4313
-
   - id: STR_FLECHETTE_CARBINE
     type_id: 4
     section: STR_WEAPONS
@@ -2739,7 +2555,6 @@ ufopaedia:
       text: STR_FLECHETTE_CARBINE_UFOPEDIA
       ammoSlot: 1
     listOrder: 4314
-
   - id: STR_NATO_PLASMA_CARBINE
     type_id: 4
     section: STR_WEAPONS
@@ -2747,7 +2562,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     text: STR_NATO_PLASMA_CARBINE_UFOPEDIA
     listOrder: 4315
-
   - id: STR_RIFLE_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -2755,7 +2569,6 @@ ufopaedia:
     text: STR_RIFLE_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4400
-
   - id: STR_STONER_RIFLE
     requires:
       - STR_UN_CUSTOM_WEAPONS
@@ -2763,7 +2576,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_STONER_RIFLE_UFOPEDIA
     listOrder: 4401
-
   - id: STR_M16A1
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -2771,7 +2583,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M16A1_UFOPEDIA
     listOrder: 4402
-
   - id: STR_M16A1_SCOPED
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2779,7 +2590,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M16A1_SCOPED_UFOPEDIA
     listOrder: 4403
-
   - id: STR_M16A1_SHOTGUN
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2793,7 +2603,6 @@ ufopaedia:
       text: STR_M16A1_SHOTGUN_UFOPEDIA
       ammoSlot: 1
     listOrder: 4404
-
   - id: STR_M16_M203
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2807,13 +2616,11 @@ ufopaedia:
       text: STR_M16_M203_UFOPEDIA
       ammoSlot: 1
     listOrder: 4405
-
   - id: STR_FN_FAL
     type_id: 4
     section: STR_WEAPONS
     text: STR_FN_FAL_UFOPEDIA
     listOrder: 4406
-
   - id: STR_FN_FAL_SHOTGUN
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -2827,7 +2634,6 @@ ufopaedia:
       text: STR_FN_FAL_SHOTGUN_UFOPEDIA
       ammoSlot: 1
     listOrder: 4407
-
   - id: STR_AKM
     requires:
       - STR_AKM
@@ -2835,7 +2641,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_AKM_UFOPEDIA
     listOrder: 4408
-
   - id: STR_AKM_BAYONETED
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -2843,7 +2648,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_AKM_BAYONETED_UFOPEDIA
     listOrder: 4409
-
   - id: STR_PEACEMAKER
     type_id: 4
     section: STR_WEAPONS
@@ -2851,7 +2655,6 @@ ufopaedia:
       - STR_HYBRID_LASER_PROJECT
     text: STR_PEACEMAKER_UFOPEDIA
     listOrder: 4410
-
   - id: STR_CALBR
     type_id: 4
     section: STR_WEAPONS
@@ -2859,7 +2662,6 @@ ufopaedia:
       - STR_USA_LASER_RIFLES
     text: STR_CALBR_UFOPEDIA
     listOrder: 4411
-
   - id: STR_L4_ASSAULT_LASER
     type_id: 4
     section: STR_WEAPONS
@@ -2867,7 +2669,6 @@ ufopaedia:
       - STR_NATO_LASER_RIFLES
     text: STR_L4_ASSAULT_LASER_UFOPEDIA
     listOrder: 4412
-
   - id: STR_FN_FLA_LASER_BATTLE_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2875,7 +2676,6 @@ ufopaedia:
       - STR_NATO_LASER_RIFLES
     text: STR_FN_FLA_LASER_BATTLE_RIFLE_UFOPEDIA
     listOrder: 4413
-
   - id: STR_ALK72_LASER_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2890,7 +2690,6 @@ ufopaedia:
       - STR_USSR_LASER_RIFLES
     text: STR_KHARITONOV_LASER_BATTLE_RIFLE_UFOPEDIA
     listOrder: 4415
-
   - id: STR_FLECHETTE_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2904,7 +2703,6 @@ ufopaedia:
       text: STR_FLECHETTE_RIFLE_UFOPEDIA
       ammoSlot: 1
     listOrder: 4416
-
   - id: STR_UN_PLASMA_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2912,7 +2710,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
     text: STR_UN_PLASMA_RIFLE_UFOPEDIA
     listOrder: 4417
-
   - id: STR_US_PLASMA_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2920,7 +2717,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     text: STR_US_PLASMA_RIFLE_UFOPEDIA
     listOrder: 4418
-
   - id: STR_SOVIET_PLASMA_ASSAULT_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2928,7 +2724,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     text: STR_SOVIET_PLASMA_ASSAULT_RIFLE_UFOPEDIA
     listOrder: 4419
-
   - id: STR_HUMAN_FUSION_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2936,7 +2731,6 @@ ufopaedia:
       - STR_HYBRID_FUSION_PROJECT
     text: STR_HUMAN_FUSION_RIFLE_UFOPEDIA
     listOrder: 4420
-
   - id: STR_GYROJET_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -2944,7 +2738,6 @@ ufopaedia:
       - STR_OLYMPUS
     text: STR_GYROJET_RIFLE_UFOPEDIA
     listOrder: 4421
-
   - id: STR_LMG_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -2952,7 +2745,6 @@ ufopaedia:
     text: STR_LMG_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4500
-
   - id: STR_STONER_AUTOMATIC_RIFLE
     requires:
       - STR_UN_CUSTOM_WEAPONS
@@ -2960,7 +2752,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_STONER_AUTOMATIC_RIFLE_UFOPEDIA
     listOrder: 4501
-
   - id: STR_STONER_COMMANDO
     requires:
       - STR_UN_CUSTOM_WEAPONS
@@ -2968,7 +2759,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_STONER_COMMANDO_UFOPEDIA
     listOrder: 4501
-
   - id: STR_BREN
     requires:
       - STR_BREN
@@ -2976,7 +2766,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_BREN_UFOPEDIA
     listOrder: 4501
-
   - id: STR_MG3
     type_id: 4
     section: STR_WEAPONS
@@ -2984,7 +2773,6 @@ ufopaedia:
     requires:
       - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
     listOrder: 4502
-
   - id: STR_M60
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -2992,7 +2780,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M60_UFOPEDIA
     listOrder: 4503
-
   - id: STR_FN_MAG
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -3000,7 +2787,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_FN_MAG_UFOPEDIA
     listOrder: 4504
-
   - id: STR_RPKS
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3008,7 +2794,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_RPKS_UFOPEDIA
     listOrder: 4505
-
   - id: STR_M4_LASER_LMG
     type_id: 4
     section: STR_WEAPONS
@@ -3016,7 +2801,6 @@ ufopaedia:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_M4_LASER_LMG_UFOPEDIA
     listOrder: 4506
-
   - id: STR_ML73_LASER_MACHINE_GUN
     type_id: 4
     section: STR_WEAPONS
@@ -3024,16 +2808,13 @@ ufopaedia:
       - STR_NATO_LASER_HEAVY_WEAPONS
     text: STR_ML73_LASER_MACHINE_GUN_UFOPEDIA
     listOrder: 4506
-
   - id: STR_AN_MACHINE_LASER
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_AN_MACHINE_LASER_UFOPEDIA
-
     listOrder: 4507
-
   - id: STR_FLECHETTE_CANNON
     type_id: 4
     section: STR_WEAPONS
@@ -3047,7 +2828,6 @@ ufopaedia:
       text: STR_FLECHETTE_CANNON_UFOPEDIA
       ammoSlot: 1
     listOrder: 4508
-
   - id: STR_SOVIET_PLASMA_LMG
     type_id: 4
     section: STR_WEAPONS
@@ -3055,7 +2835,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     text: STR_SOVIET_PLASMA_LMG_UFOPEDIA
     listOrder: 4509
-
   - id: STR_SNIPER_RIFLE_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -3063,7 +2842,6 @@ ufopaedia:
     text: STR_SNIPER_RIFLE_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4600
-
   - id: STR_STONER_SNIPER
     requires:
       - STR_UN_CUSTOM_WEAPONS
@@ -3071,7 +2849,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_STONER_SNIPER_UFOPEDIA
     listOrder: 4601
-
   - id: STR_HUNTING_RIFLE
     requires:
       - STR_HUNTING_RIFLE
@@ -3079,7 +2856,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_HUNTING_RIFLE_UFOPEDIA
     listOrder: 4602
-
   - id: STR_AR5
     requires:
       - STR_IMPROVED_BOMBER
@@ -3087,7 +2863,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_AR5_UFOPEDIA
     listOrder: 4603
-
   - id: STR_SKS
     requires:
       - STR_SKS
@@ -3095,7 +2870,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_SKS_UFOPEDIA
     listOrder: 4604
-
   - id: STR_XM21
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -3103,7 +2877,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_XM21_UFOPEDIA
     listOrder: 4605
-
   - id: STR_PSG1
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -3111,7 +2884,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_PSG1_UFOPEDIA
     listOrder: 4606
-
   - id: STR_DRAGUNOV
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3119,7 +2891,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_DRAGUNOV_UFOPEDIA
     listOrder: 4607
-
   - id: STR_ULYSSES_LASER_SNIPER_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3127,7 +2898,6 @@ ufopaedia:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_ULYSSES_LASER_SNIPER_RIFLE_UFOPEDIA
     listOrder: 4608
-
   - id: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3135,7 +2905,6 @@ ufopaedia:
       - STR_NATO_LASER_HEAVY_WEAPONS
     text: STR_CHURCHILL_MARKSMAN_LASER_RIFLE_UFOPEDIA
     listOrder: 4609
-
   - id: STR_MIRINOV_LASER_SNIPER
     type_id: 4
     section: STR_WEAPONS
@@ -3143,7 +2912,6 @@ ufopaedia:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_MIRINOV_LASER_SNIPER_UFOPEDIA
     listOrder: 4610
-
   - id: STR_FLECHETTE_SNIPER
     type_id: 4
     section: STR_WEAPONS
@@ -3157,7 +2925,6 @@ ufopaedia:
       text: STR_FLECHETTE_SNIPER_UFOPEDIA
       ammoSlot: 1
     listOrder: 4611
-
   - id: STR_NATO_SNIPER_PLASMA
     type_id: 4
     section: STR_WEAPONS
@@ -3165,7 +2932,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     text: STR_NATO_SNIPER_PLASMA_UFOPEDIA
     listOrder: 4613
-
   - id: STR_ARTILLERY_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -3173,7 +2939,6 @@ ufopaedia:
     text: STR_ARTILLERY_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4700
-
   - id: STR_M72_LAW
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -3181,7 +2946,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M72_LAW_UFOPEDIA
     listOrder: 4701
-
   - id: STR_M202_FLASH
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -3189,7 +2953,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M202_FLASH_UFOPEDIA
     listOrder: 4702
-
   - id: STR_CARL_GUSTAF_M2
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -3197,7 +2960,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_CARL_GUSTAF_M2_UFOPEDIA
     listOrder: 4703
-
   - id: STR_RPG
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3205,7 +2967,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_RPG_UFOPEDIA
     listOrder: 4704
-
   - id: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3219,7 +2980,6 @@ ufopaedia:
       text: STR_M72_AUTOMATIC_RECOILLESS_RIFLE_UFOPEDIA
       ammoSlot: 0
     listOrder: 4705
-
   - id: STR_AFINA_ANTITANK_LASER
     type_id: 4
     section: STR_WEAPONS
@@ -3227,7 +2987,6 @@ ufopaedia:
       - STR_USSR_LASER_HEAVY_WEAPONS
     text: STR_AFINA_ANTITANK_LASER_UFOPEDIA
     listOrder: 4706
-
   - id: STR_US_PLASMA_RL
     type_id: 4
     section: STR_WEAPONS
@@ -3235,7 +2994,6 @@ ufopaedia:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     text: STR_US_PLASMA_RL_UFOPEDIA
     listOrder: 4707
-
   - id: STR_SAWEDOFF_M79_THUMPER
     requires:
       - STR_SPECIAL_FORCES_RESEARCH
@@ -3249,7 +3007,6 @@ ufopaedia:
       text: STR_SAWEDOFF_M79_THUMPER_UFOPEDIA
       ammoSlot: 0
     listOrder: 4708
-
   - id: STR_M79_THUMPER_GL
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -3264,7 +3021,6 @@ ufopaedia:
       text: STR_M79_THUMPER_GL_UFOPEDIA
       ammoSlot: 0
     listOrder: 4709
-
   - id: STR_FLECHETTE_GL
     type_id: 4
     section: STR_WEAPONS
@@ -3272,7 +3028,6 @@ ufopaedia:
       - STR_ALLOY_EXPLOSIVE
     text: STR_FLECHETTE_GRENADE_LAUNCHER_UFOPEDIA
     listOrder: 4710
-
   - id: STR_ELERIUM_FLAMETHROWER
     type_id: 4
     section: STR_WEAPONS
@@ -3280,7 +3035,6 @@ ufopaedia:
       - STR_USA_LASER_HEAVY_WEAPONS
     text: STR_ELERIUM_FLAMETHROWER_UFOPEDIA
     listOrder: 4711
-
   - id: STR_HUMAN_SMALL_LAUNCHER
     type_id: 4
     section: STR_WEAPONS
@@ -3288,7 +3042,6 @@ ufopaedia:
       - STR_SMALL_LAUNCHER
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
     listOrder: 4712
-
   #Special Weapons
   - id: STR_SPECIALIZED_WEAPONS_REPORT
     type_id: 7
@@ -3297,7 +3050,6 @@ ufopaedia:
     text: STR_SPECIALIZED_WEAPONS_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4750
-
   - id: STR_ELECTRIC_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3305,7 +3057,6 @@ ufopaedia:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_ELECTRIC_RIFLE_UFOPEDIA
     listOrder: 4750
-
   - id: STR_GAUSS_RIFLE
     type_id: 4
     section: STR_WEAPONS
@@ -3313,7 +3064,6 @@ ufopaedia:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_GAUSS_RIFLE_UFOPEDIA
     listOrder: 4753
-
   - id: STR_HUMAN_SMALL_LAUNCHER
     type_id: 4
     section: STR_WEAPONS
@@ -3321,9 +3071,7 @@ ufopaedia:
       - STR_REMAN_SMALL_LAUNCHER
     text: STR_HUMAN_SMALL_LAUNCHER_UFOPEDIA
     listOrder: 4712
-
 #Melee
-
   - id: STR_MELEE_REPORT
     type_id: 7
     section: STR_WEAPONS
@@ -3331,7 +3079,6 @@ ufopaedia:
     text: STR_MELEE_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 4800
-
   - id: STR_MACHETE
     requires:
       - STR_MACHETE
@@ -3339,7 +3086,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_MACHETE_UFOPEDIA
     listOrder: 4801
-
   - id: STR_SHOVEL
     requires:
       - STR_SHOVEL
@@ -3347,7 +3093,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_SHOVEL_UFOPEDIA
     listOrder: 4802
-
   - id: STR_POLICE_TONFA
     requires:
       - STR_POLICE_TONFA
@@ -3355,7 +3100,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_POLICE_TONFA_UFOPEDIA
     listOrder: 4803
-
   - id: STR_RIOT_SHIELD
     type_id: 4
     section: STR_WEAPONS
@@ -3363,13 +3107,11 @@ ufopaedia:
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     listOrder: 4804
-
   - id: STR_COMBAT_KNIFE
     type_id: 4
     section: STR_WEAPONS
     text: STR_COMBAT_KNIFE_UFOPEDIA
     listOrder: 4805
-
   - id: STR_SPACE_KNIFE
     type_id: 4
     section: STR_WEAPONS
@@ -3377,11 +3119,9 @@ ufopaedia:
       - STR_OLYMPUS
     text: STR_SPACE_KNIFE_UFOPEDIA
     listOrder: 4806
-
   - id: STR_STUN_ROD
     section: STR_WEAPONS
     listOrder: 4807
-
   - id: STR_GENERATOR_STICK
     type_id: 4
     section: STR_WEAPONS
@@ -3389,7 +3129,6 @@ ufopaedia:
       - STR_GENERATOR_STICK
     text: STR_GENERATOR_STICK_UFOPEDIA
     listOrder: 4808
-
   - id: STR_UNARMED_UNIFORM
     type_id: 4
     section: STR_WEAPONS
@@ -3405,8 +3144,6 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_VEHICLECRASHWIKI
     listOrder: 17005
-
-
   #Ammunition
   - id: STR_KS23_SHRAPNEL-25_X4
     requires:
@@ -3415,7 +3152,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_KS23_SHRAPNEL-25_X4_UFOPEDIA
     listOrder: 5000
-
   - id: STR_KS23_BARRIKADE_X4
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3423,7 +3159,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_KS23_BARRIKADE_X4_UFOPEDIA
     listOrder: 5001
-
   - id: STR_KS23_SATANA_X4
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3431,37 +3166,31 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_KS23_SATANA_X4_UFOPEDIA
     listOrder: 5002
-
   - id: STR_9MM_PISTOL_X10
     type_id: 4
     section: STR_AMMUNITION
     text: STR_9MM_PISTOL_X10_UFOPEDIA
     listOrder: 5003
-
   - id: STR_9MM_PISTOL_X20
     type_id: 4
     section: STR_AMMUNITION
     text: STR_9MM_PISTOL_X20_UFOPEDIA
     listOrder: 5004
-
   - id: STR_9MM_PISTOL_X30
     type_id: 4
     section: STR_AMMUNITION
     text: STR_9MM_PISTOL_X30_UFOPEDIA
     listOrder: 5005
-
   - id: STR_45_PISTOL_X7
     type_id: 4
     section: STR_AMMUNITION
     text: STR_45_PISTOL_X7_UFOPEDIA
     listOrder: 5006
-
   - id: STR_45_PISTOL_X30
     type_id: 4
     section: STR_AMMUNITION
     text: STR_45_PISTOL_X30_UFOPEDIA
     listOrder: 5007
-
   - id: STR_50_CAL_REVOLVER_AMMO_X6
     requires:
       - STR_MERCENARY_RESEARCH
@@ -3469,115 +3198,96 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_50_CAL_REVOLVER_AMMO_X6_UFOPEDIA
     listOrder: 5008
-
   - id: STR_30_CARBINE_X15
     type_id: 4
     section: STR_AMMUNITION
     text: STR_30_CARBINE_X15_UFOPEDIA
     listOrder: 5009
-
   - id: STR_5_56MM_NATO_RIFLE_X20
     type_id: 4
     section: STR_AMMUNITION
     text: STR_5_56MM_NATO_RIFLE_X20_UFOPEDIA
     listOrder: 5010
-
   - id: STR_5_56MM_NATO_RIFLE_X30
     type_id: 4
     section: STR_AMMUNITION
     text: STR_5_56MM_NATO_RIFLE_X30_UFOPEDIA
     listOrder: 5011
-
   - id: STR_7_62MM_NATO_RIFLE_X5
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_NATO_RIFLE_X5_UFOPEDIA
     listOrder: 5012
-
   - id: STR_7_62MM_NATO_RIFLE_X20
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_NATO_RIFLE_X20_UFOPEDIA
     listOrder: 5013
-
   - id: STR_7_62MM_NATO_RIFLE_X30
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_NATO_RIFLE_X30_UFOPEDIA
     listOrder: 5014
-
   - id: STR_7_62MM_NATO_LMG_X50
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_NATO_LMG_X50_UFOPEDIA
     listOrder: 5015
-
   - id: STR_7_62MM_NATO_LMG_X100
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_NATO_LMG_X100_UFOPEDIA
     listOrder: 5016
-
   - id: STR_7_62MM_SOVIET_RIFLE_X10
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_SOVIET_RIFLE_X10_UFOPEDIA
     listOrder: 5017
-
   - id: STR_7_62MM_SOVIET_RIFLE_X30
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_SOVIET_RIFLE_X30_UFOPEDIA
     listOrder: 5018
-
   - id: STR_7_62MM_SOVIET_RIFLE_X40
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_SOVIET_RIFLE_X40_UFOPEDIA
     listOrder: 5019
-
   - id: STR_7_62MM_SOVIET_RIFLE_X75
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_SOVIET_RIFLE_X75_UFOPEDIA
     listOrder: 5020
-
   - id: STR_7_62MM_SOVIET_SNIPER_X10
     type_id: 4
     section: STR_AMMUNITION
     text: STR_7_62MM_SOVIET_SNIPER_X10_UFOPEDIA
     listOrder: 5021
-
   - id: STR_12GAUGE_BUCKSHOT_X2
     type_id: 4
     section: STR_AMMUNITION
     text: STR_12GAUGE_BUCKSHOT_X2_UFOPEDIA
     listOrder: 5022
-
   - id: STR_12GAUGE_SLUG_X2
     type_id: 4
     section: STR_AMMUNITION
     text: STR_12GAUGE_SLUG_X2_UFOPEDIA
     listOrder: 5023
-
   - id: STR_12GAUGE_BUCKSHOT_X8
     type_id: 4
     section: STR_AMMUNITION
     text: STR_12GAUGE_BUCKSHOT_X8_UFOPEDIA
     listOrder: 5024
-
   - id: STR_12GAUGE_NON_LETHAL_X8
     type_id: 4
     section: STR_AMMUNITION
     text: STR_12GAUGE_NON_LETHAL_X8_UFOPEDIA
     listOrder: 5025
-
   - id: STR_12GAUGE_SLUG_X8
     type_id: 4
     section: STR_AMMUNITION
     text: STR_12GAUGE_SLUG_X8_UFOPEDIA
     listOrder: 5026
-
   - id: STR_12GAUGE_ELERIUM_SHARDS_X8
     requires:
       - STR_ELERIUM_FUSION
@@ -3585,43 +3295,36 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_12GAUGE_ELERIUM_SHARDS_X8_UFOPEDIA
     listOrder: 5027
-
   - id: STR_40MM_FRAG
     type_id: 4
     section: STR_AMMUNITION
     text: STR_40MM_FRAG_UFOPEDIA
     listOrder: 5028
-
   - id: STR_40MM_INCENDIARY
     type_id: 4
     section: STR_AMMUNITION
     text: STR_40MM_INCENDIARY_UFOPEDIA
     listOrder: 5029
-
   - id: STR_40MM_SMOKE
     type_id: 4
     section: STR_AMMUNITION
     text: STR_40MM_SMOKE_UFOPEDIA
     listOrder: 5030
-
   - id: STR_40MM_NON_LETHAL
     type_id: 4
     section: STR_AMMUNITION
     text: STR_40MM_NON_LETHAL_UFOPEDIA
     listOrder: 5031
-
   - id: STR_38_REVOLVER_AMMO_X6
     type_id: 4
     section: STR_AMMUNITION
     text: STR_38_REVOLVER_AMMO_X6_UFOPEDIA
     listOrder: 5032
-
   - id: STR_22_LONG_RIFLE_X14
     type_id: 4
     section: STR_AMMUNITION
     text: STR_22_LONG_RIFLE_X14_UFOPEDIA
     listOrder: 5033
-
   - id: STR_FAL_SHOTGUN_SHELLS
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -3629,7 +3332,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_FAL_SHOTGUN_SHELLS_UFOPEDIA
     listOrder: 5034
-
   - id: STR_M202_FLASH_RACK
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -3637,7 +3339,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_M202_FLASH_RACK_UFOPEDIA
     listOrder: 5035
-
   - id: STR_CARL_GUSTAF_M2_HE_ROUND
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -3645,7 +3346,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_CARL_GUSTAF_M2_HE_ROUND_UFOPEDIA
     listOrder: 5036
-
   - id: STR_CARL_GUSTAF_M2_HEAT_ROUND
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -3653,7 +3353,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_CARL_GUSTAF_M2_HEAT_ROUND_UFOPEDIA
     listOrder: 5037
-
   - id: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
     requires:
       - STR_ELERIUM_FUSION
@@ -3662,7 +3361,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_CARL_GUSTAF_M2_ELERIUM_ROUND_UFOPEDIA
     listOrder: 5038
-
   - id: STR_RPG_HE_ROCKET
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3670,7 +3368,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_RPG_HE_ROCKET_UFOPEDIA
     listOrder: 5039
-
   - id: STR_RPG_INC_ROCKET
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -3678,7 +3375,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_RPG_INC_ROCKET_UFOPEDIA
     listOrder: 5040
-
   - id: STR_RPG_EWH_ROCKET
     requires:
       - STR_ELERIUM_FUSION
@@ -3687,7 +3383,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_RPG_EWH_ROCKET_UFOPEDIA
     listOrder: 5041
-
   - id: STR_ALLOY_RIFLE_AP
     requires:
       - STR_ALLOY_RIFLES
@@ -3765,7 +3460,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_30MM_AAG_UFOPEDIA
     listOrder: 5110
-
   - id: STR_M72_ARR_HEAT_MAG
     type_id: 4
     section: STR_AMMUNITION
@@ -3818,7 +3512,6 @@ ufopaedia:
     listOrder: 5202
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-
   - id: STR_US_PLASMA_RIFLE_MAG
     type_id: 4
     section: STR_AMMUNITION
@@ -3857,7 +3550,6 @@ ufopaedia:
     listOrder: 5208
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-
   - id: STR_NATO_PLASMA_CARBINE_MAG
     type_id: 4
     section: STR_AMMUNITION
@@ -3865,7 +3557,6 @@ ufopaedia:
     listOrder: 5209
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
-
   - id: STR_US_PLASMA_RL_HEAT_ROCKET
     type_id: 4
     section: STR_AMMUNITION
@@ -3880,7 +3571,6 @@ ufopaedia:
     listOrder: 5212
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
-
   - id: STR_GYROJET_AMMO_MAGAZINE
     requires:
       - STR_OLYMPUS
@@ -3888,7 +3578,6 @@ ufopaedia:
     section: STR_AMMUNITION
     text: STR_GYROJET_AMMO_MAGAZINE_UFOPEDIA
     listOrder: 5215
-
   - id: STR_ELECTRIC_RIFLE_MAG
     type_id: 4
     section: STR_WEAPONS
@@ -3896,7 +3585,6 @@ ufopaedia:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_ELECTRIC_RIFLE_MAG_UFOPEDIA
     listOrder: 5225
-
   - id: STR_GAUSS_RIFLE_MAG
     type_id: 4
     section: STR_WEAPONS
@@ -3904,16 +3592,13 @@ ufopaedia:
       - STR_SECRET_CRISIS_PROTOTYPES
     text: STR_GAUSS_RIFLE_MAG_UFOPEDIA
     listOrder: 5228
-
   #Equipment
-
   - id: STR_MOTION_SCANNER
     section: STR_EQUIPMENT
     listOrder: 6000
   - id: STR_ELECTRO_FLARE
     section: STR_EQUIPMENT
     listOrder: 6001
-
   - id: STR_GRENADE_REPORT
     type_id: 7
     section: STR_EQUIPMENT
@@ -3947,7 +3632,6 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_FLASHBANG_GRENADE_UFOPEDIA
     listOrder: 6106
-
   - id: STR_MEDICAL_ITEMS_REPORT
     type_id: 7
     section: STR_EQUIPMENT
@@ -3955,25 +3639,21 @@ ufopaedia:
     text: STR_MEDICAL_ITEMS_REPORT_UFOPEDIA
     text_width: 150
     listOrder: 6200
-
   - id: STR_MEDICAL_BAG
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_MEDICAL_BAG_UFOPEDIA
     listOrder: 6201
-
   - id: STR_FIELD_DRESSING
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_FIELD_DRESSING_UFOPEDIA
     listOrder: 6202
-
   - id: STR_MEDICAL_POUCH
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_MEDICAL_POUCH_UFOPEDIA
     listOrder: 6203
-
   - id: STR_MEDI_KIT
     requires:
       - STR_MEDI_KIT
@@ -3981,13 +3661,11 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_MEDI_KIT_UFOPEDIA
     listOrder: 6204
-
   - id: STR_DUCT_TAPE
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_DUCT_TAPE_UFOPEDIA
     listOrder: 6205
-
   - id: STR_DUCT_GUN
     requires:
       - STR_DUCT_GUN
@@ -3995,7 +3673,6 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_DUCT_GUN_UFOPEDIA
     listOrder: 6206
-
   - id: STR_BIO_FOAM
     requires:
       - STR_BIO_FOAM
@@ -4003,7 +3680,6 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_BIO_FOAM_UFOPEDIA
     listOrder: 6207
-
   - id: STR_FOOD_REPORT
     type_id: 7
     section: STR_EQUIPMENT
@@ -4011,31 +3687,26 @@ ufopaedia:
     text: STR_FOOD_REPORT_UFOPEDIA
     text_width: 130
     listOrder: 6300
-
   - id: STR_CANNED_FOOD
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_CANNED_FOOD_UFOPEDIA
     listOrder: 6301
-
   - id: STR_BREAD
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_BREAD_UFOPEDIA
     listOrder: 6302
-
   - id: STR_CIGARETTES
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_CIGARETTES_UFOPEDIA
     listOrder: 6305
-
   - id: STR_FLASK
     type_id: 4
     section: STR_EQUIPMENT
     text: STR_FLASK_UFOPEDIA
     listOrder: 6306
-
   - id: STR_WEAPON_MODIFICATION
     requires:
       - STR_WEAPON_MODIFICATION
@@ -4043,7 +3714,6 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_WEAPON_MODIFICATION_UFOPEDIA
     listOrder: 6400
-
   - id: STR_COLT_SCOPE_ACCESSORY
     requires:
       - STR_WEAPON_MODIFICATION
@@ -4051,7 +3721,6 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_COLT_SCOPE_ACCESSORY_UFOPEDIA
     listOrder: 6402
-
   - id: STR_M203_ACCESSORY
     requires:
       - STR_WEAPON_MODIFICATION
@@ -4059,13 +3728,11 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_M203_ACCESSORY_UFOPEDIA
     listOrder: 6403
-
   - id: STR_POWER_RESERVES
     type_id: 8
     section: STR_EQUIPMENT
     text: STR_POWER_RESERVES_UFOPEDIA
     listOrder: 6500
-
   - id: STR_BATTERY
     type_id: 4
     section: STR_EQUIPMENT
@@ -4078,7 +3745,6 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_ELERIUM_BATTERY_UFOPAEDIA
     listOrder: 6502
-
   - id: STR_AIR_STRIKES
     type_id: 8
     requires:
@@ -4089,21 +3755,17 @@ ufopaedia:
   - id: STR_PSI_AMP
     section: STR_EQUIPMENT
     listOrder: 6504
-
   #Armours
-
   - id: STR_NONE_UC
     type_id: 5
     section: STR_ARMOR
     listOrder: 7000
     text: STR_NONE_UC_UFOPEDIA
-
   - id: STR_PILOT_UC
     type_id: 5
     section: STR_ARMOR
     listOrder: 7001
     text: STR_PILOT_UC_UFOPEDIA
-
   - id: STR_SPECIAL_FORCES_UNIFORM_UC
     type_id: 5
     section: STR_ARMOR
@@ -4111,7 +3773,6 @@ ufopaedia:
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
     text: STR_SPECIAL_FORCES_UNIFORM_UFOPEDIA
-
   - id: STR_MERCENARY_UNIFORM_UC
     type_id: 5
     section: STR_ARMOR
@@ -4119,7 +3780,6 @@ ufopaedia:
     requires:
       - STR_MERCENARY_RESEARCH
     text: STR_MERCENARY_UNIFORM_UFOPEDIA
-
   - id: STR_COMBAT_ARMOR_UC
     requires:
       - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
@@ -4127,7 +3787,6 @@ ufopaedia:
     section: STR_ARMOR
     text: STR_COMBAT_ARMOR_UFOPEDIA
     listOrder: 7100
-
   - id: STR_DELTA_ARMOR_UC
     type_id: 5
     section: STR_ARMOR
@@ -4135,7 +3794,6 @@ ufopaedia:
       - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
     text: STR_DELTA_ARMOR_UFOPEDIA
     listOrder: 7101
-
   - id: STR_RIOT_ARMOR_UC
     type_id: 5
     listOrder: 7102
@@ -4143,7 +3801,6 @@ ufopaedia:
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     text: STR_RIOT_ARMOR_UFOPEDIA
-
   - id: STR_PERSONAL_ARMOR_UC
     type_id: 5
     section: STR_ARMOR
@@ -4158,7 +3815,6 @@ ufopaedia:
     requires:
       - STR_HEAVY_PERSONAL_ARMOR
     text: STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA
-
   - id: STR_SCOUT_POWER_ARMOR_UC
     type_id: 5
     section: STR_ARMOR
@@ -4179,7 +3835,6 @@ ufopaedia:
   - id: STR_FLYING_SUIT_UC
     section: STR_ARMOR
     listOrder: 7303
-
   - id: STR_ASTRONAUT_A7L_SPACESUIT_UC
     type_id: 5
     section: STR_ARMOR
@@ -4187,7 +3842,6 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_ASTRONAUT_A7L_SPACESUIT_UC_UFOPEDIA
-
   - id: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
     type_id: 5
     section: STR_ARMOR
@@ -4195,7 +3849,6 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC_UFOPEDIA
-
   - id: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
     type_id: 5
     section: STR_ARMOR
@@ -4203,7 +3856,6 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC_UFOPEDIA
-
   - id: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
     type_id: 5
     section: STR_ARMOR
@@ -4211,7 +3863,6 @@ ufopaedia:
     requires:
       - STR_OLYMPUS
     text: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC_UFOPEDIA
-
   #Armored Vehicles
   - id: STR_FERRET_CAR
     type_id: 3
@@ -4257,9 +3908,7 @@ ufopaedia:
   - id: STR_HOVERTANK_LAUNCHER
     section: STR_VEHICLES
     listOrder: 8201
-
   #Facilities
-
   - id: STR_ACCESS_LIFT
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4275,7 +3924,6 @@ ufopaedia:
     section: STR_BASE_FACILITIES
     text: STR_LIVING_QUARTERS_UFOPEDIA
     listOrder: 9002
-
   - id: STR_GENERAL_STORES
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4286,13 +3934,11 @@ ufopaedia:
     section: STR_BASE_FACILITIES
     text: STR_LABORATORY_UFOPEDIA
     listOrder: 9004
-
   - id: STR_WORKSHOP
     type_id: 6
     section: STR_BASE_FACILITIES
     text: STR_WORKSHOP_UFOPEDIA
     listOrder: 9005
-
   - id: STR_ALIEN_CONTAINMENT
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4303,13 +3949,11 @@ ufopaedia:
     section: STR_BASE_FACILITIES
     text: STR_SMALL_RADAR_SYSTEM_UFOPEDIA
     listOrder: 9007
-
   - id: STR_MISSILE_DEFENSES
     type_id: 6
     section: STR_BASE_FACILITIES
     text: STR_MISSILE_DEFENSES_UFOPEDIA
     listOrder: 9008
-
   - id: STR_LASER_DEFENSES
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4317,7 +3961,6 @@ ufopaedia:
       - STR_LASER_DEFENSE
     text: STR_LASER_DEFENSES_UFOPEDIA
     listOrder: 9009
-
   - id: STR_PLASMA_DEFENSES
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4325,7 +3968,6 @@ ufopaedia:
       - STR_PLASMA_DEFENSE
     text: STR_PLASMA_DEFENSES_UFOPEDIA
     listOrder: 9010
-
   - id: STR_FUSION_BALL_DEFENSES
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4333,7 +3975,6 @@ ufopaedia:
     requires:
       - STR_FUSION_DEFENSE
     listOrder: 9011
-
   - id: STR_GRAV_SHIELD
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4341,7 +3982,6 @@ ufopaedia:
       - STR_GRAV_SHIELD
     text: STR_GRAV_SHIELD_UFOPEDIA
     listOrder: 9012
-
   - id: STR_MIND_SHIELD
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4349,7 +3989,6 @@ ufopaedia:
       - STR_MIND_SHIELD
     text: STR_MIND_SHIELD_UFOPEDIA
     listOrder: 9013
-
   - id: STR_PSIONIC_LABORATORY
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4357,7 +3996,6 @@ ufopaedia:
       - STR_PSI_LAB
     text: STR_PSIONIC_LABORATORY_UFOPEDIA
     listOrder: 9014
-
   - id: STR_HYPER_WAVE_DECODER
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4365,9 +4003,7 @@ ufopaedia:
       - STR_HYPER_WAVE_DECODER
     text: STR_HYPER_WAVE_DECODER_UFOPEDIA
     listOrder: 9015
-
   #Alien Research
-
   - id: STR_ALIEN_COMMUNICATION
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -4382,9 +4018,7 @@ ufopaedia:
       - STR_HYPER_WAVE_ENCODER
     text: STR_HYPER_WAVE_ENCODER_UFOPEDIA
     listOrder: 10201
-
   #Alien Lifeforms
-
   - id: STR_SECTOID
     image_id: SECTOID_UFOPEDIA_IMAGE
     listOrder: 11000
@@ -4417,7 +4051,6 @@ ufopaedia:
     listOrder: 11002
   - id: STR_SECTOID_AUTOPSY
     listOrder: 11003
-
   - id: STR_FLOATER
     image_id: FLOATER_UFOPEDIA_IMAGE
     listOrder: 11004
@@ -4430,18 +4063,14 @@ ufopaedia:
     text: STR_ARMORED_FLOATER_UFOPEDIA
     text_width: 158
     listOrder: 11005
-
   - id: STR_FLOATER_AUTOPSY
     listOrder: 11006
-
   - id: STR_SNAKEMAN
     listOrder: 11007
   #- id: STR_NAKED_SNAKEMAN
   #  listOrder: 11008
-
   - id: STR_SNAKEMAN_AUTOPSY
     listOrder: 11009
-
   - id: STR_MUTON
     image_id: MUTON_UFOPEDIA_IMAGE
     listOrder: 11010
@@ -4454,7 +4083,6 @@ ufopaedia:
     text: STR_MUTON_LEADER_UFOPEDIA
     text_width: 158
     listOrder: 11011
-
   - id: STR_ARMORED_MUTON
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4475,17 +4103,14 @@ ufopaedia:
     listOrder: 11013
   - id: STR_MUTON_AUTOPSY
     listOrder: 11014
-
   - id: STR_ETHEREAL
     listOrder: 11015
   #- id: STR_ETHEREAL
   #  listOrder: 11016
   #- id: STR_ETHEREAL
   #  listOrder: 11017
-
   - id: STR_ETHEREAL_AUTOPSY
     listOrder: 11018
-
   - id: STR_CHTONITE
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4558,20 +4183,15 @@ ufopaedia:
     text: STR_REPTOID_AUTOPSY_UFOPAEDIA
     text_width: 158
     listOrder: 11026
-
   - id: STR_SECTOPOD
     text: STR_SECTOPOD_UFOPEDIA
     listOrder: 11127
-
   - id: STR_SECTOPOD_AUTOPSY
     listOrder: 11128
-
   - id: STR_CYBERDISC
     listOrder: 11129
-
   - id: STR_CYBERDISC_AUTOPSY
     listOrder: 11130
-
   - id: STR_MECHTOID
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4590,7 +4210,6 @@ ufopaedia:
       - STR_MECHTOID_CORPSE
     text_width: 158
     listOrder: 11131
-
   - id: STR_CYBERSPHERE
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4609,7 +4228,6 @@ ufopaedia:
       - STR_CYBERSPHERE_CORPSE
     text_width: 158
     listOrder: 11132
-
   - id: STR_PROBE
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4628,31 +4246,22 @@ ufopaedia:
     text: STR_PROBE_AUTOPSY_UFOPEDIA
     text_width: 158
     listOrder: 11133
-
   - id: STR_REAPER
     listOrder: 11134
-
   - id: STR_REAPER_AUTOPSY
     listOrder: 11135
-
   - id: STR_CHRYSSALID
     listOrder: 11136
-
   - id: STR_CHRYSSALID_AUTOPSY
     listOrder: 11137
-
   - id: STR_CELATID
     listOrder: 11138
-
   - id: STR_CELATID_AUTOPSY
     listOrder: 11139
-
   - id: STR_SILACOID
     listOrder: 11140
-
   - id: STR_SILACOID_AUTOPSY
     listOrder: 11141
-
   - id: STR_TUNLUN
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4671,7 +4280,6 @@ ufopaedia:
     text: STR_TUNLUN_AUTOPSY_UFOPAEDIA
     text_width: 158
     listOrder: 11143
-
   - id: STR_SALAMANDRON
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4690,9 +4298,7 @@ ufopaedia:
     text: STR_SALAMANDRON_AUTOPSY_UFOPAEDIA
     text_width: 158
     listOrder: 11145
-
   #Alien Equipment
-
   - id: STR_ALIEN_LASERS
     type_id: 8
     section: STR_ALIEN_EQUIPMENT
@@ -4728,7 +4334,6 @@ ufopaedia:
     requires:
       - STR_ALIEN_LASERS
     listOrder: 11993
-
   - id: STR_ALIEN_LASER_PISTOL_BATTERY
     type_id: 4
     section: STR_NOT_AVAILABLE
@@ -4738,7 +4343,6 @@ ufopaedia:
   - id: STR_ALIEN_HEAVY_LASER_BATTERY
     type_id: 4
     section: STR_NOT_AVAILABLE
-
   - id: STR_ALIEN_PLASMA_WEAPONS
     type_id: 8
     section: STR_ALIEN_EQUIPMENT
@@ -4853,15 +4457,12 @@ ufopaedia:
   - id: STR_BLASTER_LAUNCHER
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12014
-
   - id: STR_BLASTER_BOMB
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12015
-
   - id: STR_ALIEN_GRENADE
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12016
-
   - id: STR_ALIEN_CEPHALOPOD_TISSUE
     type_id: 4
     section: STR_ALIEN_EQUIPMENT
@@ -4940,7 +4541,6 @@ ufopaedia:
   - id: STR_MIND_PROBE
     section: STR_ALIEN_EQUIPMENT
     listOrder: 12200
-
   #UFO Components
   - id: STR_UFO_POWER_SOURCE
     type_id: 7
@@ -5023,11 +4623,9 @@ ufopaedia:
     text: STR_ALIEN_ALLOYS_UFOPEDIA
     text_width: 145
     listOrder: 13008
-
   - id: STR_ELERIUM_115
     section: STR_UFO_COMPONENTS
     listOrder: 13009
-
   #UFOs
   - id: STR_ALIEN_SHIELDS
     type_id: 7
@@ -5038,7 +4636,6 @@ ufopaedia:
     image_id: ALIEN_SHIELDS_IMAGE
     listOrder: 14000
     text_width: 310
-
   - id: STR_ALIEN_SCOUT_SHIPS
     type_id: 7
     section: STR_UFOS
@@ -5048,7 +4645,6 @@ ufopaedia:
     image_id: ALIEN_SCOUT_SHIPS_IMAGE
     listOrder: 14001
     text_width: 310
-
   - id: STR_SMALL_SCOUT
     type_id: 9
     section: STR_UFOS
@@ -5070,7 +4666,6 @@ ufopaedia:
       - STR_LARGE_SCOUT
     text: STR_LARGE_SCOUT_UFOPEDIA
     listOrder: 14004
-
   - id: STR_ALIEN_FIGHTER_SHIPS
     type_id: 7
     section: STR_UFOS
@@ -5080,7 +4675,6 @@ ufopaedia:
     image_id: ALIEN_FIGHTER_SHIPS_IMAGE
     listOrder: 14100
     text_width: 310
-
   - id: STR_SMALL_FIGHTER
     type_id: 9
     section: STR_UFOS
@@ -5111,7 +4705,6 @@ ufopaedia:
     image_id: ALIEN_SUPPORT_SHIPS_IMAGE
     listOrder: 14200
     text_width: 310
-
   - id: STR_EXCAVATOR
     type_id: 9
     section: STR_UFOS
@@ -5133,7 +4726,6 @@ ufopaedia:
       - STR_ABDUCTOR
     text: STR_ABDUCTOR_UFOPEDIA
     listOrder: 14203
-
   - id: STR_LAB_SHIP
     type_id: 9
     section: STR_UFOS
@@ -5150,7 +4742,6 @@ ufopaedia:
     image_id: ALIEN_CAPITAL_SHIPS_IMAGE
     listOrder: 14300
     text_width: 310
-
   - id: STR_TERROR_SHIP
     type_id: 9
     section: STR_UFOS
@@ -5180,7 +4771,6 @@ ufopaedia:
     text: STR_SUPPLY_SHIP_UFOPEDIA
     listOrder: 14304
   #Alien Missions
-
   - id: STR_ALIEN_RESEARCH
     type_id: 8
     section: STR_ALIEN_MISSIONS
@@ -5251,9 +4841,7 @@ ufopaedia:
       - STR_ARMORED_ALIENS
     text: STR_ARMORED_ALIENS_UFOPEDIA
     listOrder: 15008
-
   #Terrorists
-
   - id: STR_TERRORISTS
     type_id: 7
     section: STR_TERRORIST_RESEARCH
@@ -5263,7 +4851,6 @@ ufopaedia:
     requires:
       - STR_TERRORISTS
     listOrder: 16000
-
   - id: STR_TERRORISTS_OPERATIONS
     type_id: 7
     section: STR_TERRORIST_RESEARCH
@@ -5273,7 +4860,6 @@ ufopaedia:
     requires:
       - STR_TERRORISTS_OPERATIONS
     listOrder: 16001
-
   - id: STR_TERRORIST_AUTOPSY
     type_id: 7
     section: STR_TERRORIST_RESEARCH
@@ -5285,7 +4871,6 @@ ufopaedia:
       - STR_TERRORIST_MALE_CORPSE
       - STR_TERRORIST_GASMASK_CORPSE
     listOrder: 16002
-
   - id: STR_ALIEN_ASSOCIATIONS
     type_id: 8
     section: STR_TERRORIST_RESEARCH
@@ -5293,7 +4878,6 @@ ufopaedia:
     requires:
       - STR_ALIEN_ASSOCIATIONS
     listOrder: 16003
-
   - id: STR_TERRORIST_HQ
     type_id: 8
     section: STR_TERRORIST_RESEARCH
@@ -5301,7 +4885,6 @@ ufopaedia:
     requires:
       - STR_TERRORIST_HQ
     listOrder: 16004
-
   - id: STR_THIN_MAN_AUTOPSY
     type_id: 7
     section: STR_TERRORIST_RESEARCH
@@ -5311,7 +4894,6 @@ ufopaedia:
     requires:
       - STR_THIN_MAN_CORPSE
     listOrder: 16004
-
   - id: STR_THIN_MAN
     type_id: 7
     section: STR_TERRORIST_RESEARCH
@@ -5321,7 +4903,6 @@ ufopaedia:
     requires:
       - STR_THIN_MAN_INFILTRATOR
     listOrder: 16005
-
   - id: STR_TEXAN_UFO
     type_id: 9
     section: STR_TERRORIST_RESEARCH

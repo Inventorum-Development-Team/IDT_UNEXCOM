@@ -64,7 +64,6 @@ soldiers:
     deathFemale: [44, 45, 46]
     allowPiloting: false
     specialWeapon: STR_UNARMED_UNIFORM
-
   - type: STR_SPECIAL_FORCES_SOLDIER
     requires:
       - STR_SPECIAL_FORCES_RESEARCH
@@ -129,7 +128,6 @@ soldiers:
     soldierNames:
       - delete
       - SpecialForcesNames/
-
   - type: STR_MERCENARY
     requires:
       - STR_MERCENARY_RESEARCH
@@ -198,7 +196,6 @@ soldiers:
     soldierNames:
       - delete
       - MercenaryNames/
-
   - type: STR_PILOT
     costBuy: 50000
     costSalary: 30000
@@ -279,7 +276,6 @@ soldiers:
       - STR_MAJOR
       - STR_PILOT_COLONEL
       - STR_BRIGADIER
-
 ###############
 # SIDE NOTE: The Astronaut Soldier-class uniform/armor
 # is found on "ArmorAstronauts" ruleset. Separated there
@@ -288,7 +284,6 @@ soldiers:
 #  - type: STR_ASTRONAUT
 #    requires:
 #     - STR_SPACE_OPERATIONS_RESEARCH
-
 items:
   - type: STR_CORPSE_UNIFORM
     name: STR_CORPSE
@@ -300,7 +295,6 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
   - type: STR_CORPSE_SPECIAL_FORCES_UNIFORM
     name: STR_CORPSE
     battleType: 11
@@ -311,7 +305,6 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
   - type: STR_CORPSE_PILOT_SUIT
     name: STR_CORPSE
     battleType: 11
@@ -322,7 +315,6 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
   - type: STR_CORPSE_MERCENARY_UNIFORM
     name: STR_CORPSE
     battleType: 11
@@ -333,7 +325,6 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
   - type: STR_COMBAT_ARMOR_UC
     name: STR_COMBAT_ARMOR_UC
     size: 0.8
@@ -348,7 +339,6 @@ items:
     invHeight: 3
     armor: 30
     recover: true
-
   - type: STR_DELTA_ARMOR_UC
     name: STR_DELTA_ARMOR_UC
     size: 0.8
@@ -363,7 +353,6 @@ items:
     invHeight: 3
     armor: 50
     recover: true
-
   - type: STR_RIOT_ARMOR_UC
     name: STR_RIOT_ARMOR_UC
     size: 0.8
@@ -378,7 +367,6 @@ items:
     invHeight: 3
     armor: 50
     recover: true
-
   - type: STR_CORPSE_ARMOR
     name: STR_CORPSE
     battleType: 11
@@ -389,7 +377,6 @@ items:
     invHeight: 3
     armor: 30
     recover: true
-
   - type: STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
     name: STR_CORPSE
     battleType: 11
@@ -400,7 +387,6 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
   - type: STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT
     name: STR_CORPSE
     battleType: 11
@@ -421,7 +407,6 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
   - type: STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT
     name: STR_CORPSE
     battleType: 11
@@ -432,9 +417,7 @@ items:
     invHeight: 3
     armor: 30
     recover: false
-
 # Power Armor
-
   - type: STR_CORPSE_MARAUDER
     name: STR_CORPSE
     battleType: 11
@@ -445,7 +428,6 @@ items:
     invHeight: 3
     armor: 40
     recover: true
-
   - type: STR_CORPSE_PATHFINDER
     name: STR_CORPSE
     battleType: 11
@@ -456,7 +438,6 @@ items:
     invHeight: 3
     armor: 40
     recover: true
-
 # Armor
   - type: STR_PERSONAL_ARMOR
     size: 0.8
@@ -474,8 +455,6 @@ items:
     invHeight: 3
     armor: 40
     recover: true
-
-
   - type: STR_SCOUT_POWER_ARMOR
     name: STR_SCOUT_POWER_ARMOR_UC
     size: 0.8
@@ -490,7 +469,6 @@ items:
     invHeight: 3
     armor: 50
     recover: true
-
   - type: STR_SCOUT_FLYING_ARMOR
     name: STR_SCOUT_FLYING_ARMOR_UC
     size: 0.8
@@ -505,10 +483,7 @@ items:
     invHeight: 3
     armor: 50
     recover: true
-
-
 ######### Punch Here
-
   - type: STR_UNARMED_UNIFORM
     weight: 0
     bigSprite: 3000
@@ -618,9 +593,6 @@ items:
     recover: false
     specialIconSprite: 4
     specialUseEmptyHand: true
-
-
-
 armors:
   - type: STR_NONE_UC
     spriteSheet: XCOM_10.PCK
@@ -666,7 +638,6 @@ armors:
     units:
       - STR_SOLDIER
     personalLight: 6
-
   - type: STR_PILOT_UC
     spriteSheet: PILOT.PCK
     spriteInv:  MAN_5
@@ -702,7 +673,6 @@ armors:
     units:
       - STR_PILOT
     personalLight: 6
-
   - type: STR_SPECIAL_FORCES_UNIFORM_UC
     spriteSheet: XCOM_4SF.PCK
     spriteInv: MAN_4SF
@@ -747,7 +717,6 @@ armors:
     units:
       - STR_SPECIAL_FORCES_SOLDIER
     personalLight: 6
-
   - type: STR_MERCENARY_UNIFORM_UC
     spriteSheet: XCOM_4MERC.PCK
     spriteInv: MAN_4MERC
@@ -792,7 +761,6 @@ armors:
     units:
       - STR_MERCENARY
     personalLight: 6
-
   - type: STR_COMBAT_ARMOR_UC
     spriteSheet: XCOM_4UN.PCK
     spriteInv: MAN_4UN
@@ -833,7 +801,6 @@ armors:
       - 1.0
       - 1.1
     personalLight: 6
-
   - type: STR_DELTA_ARMOR_UC
     spriteSheet: ARMOR_DELTA.PCK
     spriteInv: ARMOR_DELTA_INVENTORY
@@ -877,7 +844,6 @@ armors:
     builtInWeapons:
       - STR_MG3
     personalLight: 6
-
   - type: STR_RIOT_ARMOR_UC
     spriteSheet: ARMOR_RIOT.PCK
     spriteInv: ARMOR_RIOT_INVENTORY
@@ -924,7 +890,6 @@ armors:
     builtInWeapons:
       - STR_RIOT_SHIELD
     personalLight: 6
-
 # Standard Armors
   - type: STR_PERSONAL_ARMOR_UC
     spriteSheet: PERSONAL_ARMOR.PCK
@@ -962,7 +927,6 @@ armors:
       - 1.0
       - 1.0
     personalLight: 6
-
   - type: STR_HEAVY_PERSONAL_ARMOR_UC
     spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
     spriteInv: HEAVY_PERSONAL_ARMOR_INV
@@ -1001,7 +965,6 @@ armors:
       - 1.0
     personalLight: 6
 #Power Armors
-
 # Standard Armors
   - type: STR_POWER_SUIT_UC
     spriteSheet: MARAUDER_SPRITESHEET.PCK
@@ -1039,7 +1002,6 @@ armors:
       - 0.0
       - 0.8
     personalLight: 6
-
   - type: STR_FLYING_SUIT_UC
     spriteSheet: PATHFINDER_SPRITESHEET.PCK
     spriteInv: MAN_PATHFINDER
@@ -1077,7 +1039,6 @@ armors:
       - 0.0
       - 0.8
     personalLight: 6
-
 # New Armors
   - type: STR_SCOUT_POWER_ARMOR_UC
     spriteSheet: SCOUT_POWER_ARMOR.PCK
@@ -1121,7 +1082,6 @@ armors:
       - STR_PILOT
       - STR_SPECIAL_FORCES_SOLDIER
       - STR_MERCENARY
-
   - type: STR_SCOUT_FLYING_ARMOR_UC
     spriteSheet: SCOUT_FLYING_ARMOR.PCK
     spriteInv: SCOUT_FLYING_ARMOR_INV
@@ -1164,9 +1124,7 @@ armors:
       - STR_PILOT
       - STR_SPECIAL_FORCES_SOLDIER
       - STR_MERCENARY
-
 #Astronaut Armors
-
   - &A7LSpacesuitAnchor
     type: STR_ASTRONAUT_A7L_SPACESUIT_UC
     spriteSheet: A7L_SPACESUIT_SPRITESHEET.PCK
@@ -1206,7 +1164,6 @@ armors:
       - 0.0
       - 1.3
     personalLight: 6
-
   - &A7MMUSpacesuitAnchor
     type: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
     spriteSheet: A7MMU_SPACESUIT_SPRITESHEET.PCK
@@ -1246,7 +1203,6 @@ armors:
       - 0.0
       - 1.3
     personalLight: 6
-
   - &Krechet94SpacesuitAnchor
     type: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
     spriteSheet: KRECHET94_SPACESUIT_SPRITESHEET.PCK
@@ -1279,7 +1235,6 @@ armors:
       - 1.1
       - 1.3
     personalLight: 6
-
   - &KrechetMMUSpacesuitAnchor
     type: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
     spriteSheet: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
@@ -1312,7 +1267,6 @@ armors:
       - 1.1
       - 1.3
     personalLight: 6
-
 manufacture:
   ##- delete: STR_POWER_SUIT
   - name: STR_COMBAT_ARMOR_UC
@@ -1324,7 +1278,6 @@ manufacture:
     cost: 60000
     requiredItems:
       STR_ALIEN_ALLOYS: 8
-
   - name: STR_DELTA_ARMOR_UC
     category: STR_PERSONAL_ARMOR
     requires:
@@ -1334,7 +1287,6 @@ manufacture:
     cost: 60000
     requiredItems:
       STR_ALIEN_ALLOYS: 9
-
   - name: STR_RIOT_ARMOR_UC
     category: STR_PERSONAL_ARMOR
     requires:
@@ -1344,7 +1296,6 @@ manufacture:
     cost: 60000
     requiredItems:
       STR_ALIEN_ALLOYS: 10
-
   - name: STR_PERSONAL_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -1363,7 +1314,6 @@ manufacture:
     cost: 140000
     requiredItems:
       STR_ALIEN_ALLOYS: 30
-
   - name: STR_SCOUT_POWER_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -1406,10 +1356,6 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 65
       STR_ELERIUM_115: 25
-
-
-
-
 ######### Repair Armor
   - name: STR_REPAIR_PERSONAL_ARMOR
     category: STR_PERSONAL_ARMOR
@@ -1522,8 +1468,6 @@ manufacture:
       STR_ELERIUM_115: 3
     producedItems:
       STR_SCOUT_FLYING_ARMOR: 1
-
-
 extraSprites:
   - type: BASEBITS.PCK
     files:
@@ -1573,7 +1517,6 @@ extraSprites:
       814: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_2_D.png
       815: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_3_D.png
       816: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_4_D.png
-
 ########################################
 ########## COMBAT UNIFORM #############
 ######################################
@@ -1609,7 +1552,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M3.png
-
   - type: XCOM_10.PCK
     width: 512
     height: 720
@@ -1623,7 +1565,6 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_FLOOROB.png
-
 ########################################
 ########## PILOT JUMPSUIT #############
 ######################################
@@ -1659,7 +1600,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M3.png
-
   - type: PILOT.PCK
     width: 256
     height: 1400
@@ -1667,14 +1607,12 @@ extraSprites:
     subY: 40
     files:
       0: Resources/SoldiersAndArmors/PilotArmor/PilotSpritesheet.png
-
   - type: BIGOBS.PCK
     files:
       501: Resources/SoldiersAndArmors/PilotArmor/PILOT_CORPSE_BIGOB.png
   - type: FLOOROB.PCK
     files:
       501: Resources/SoldiersAndArmors/PilotArmor/PILOT_CORPSE_FLOOROB.png
-
 ########################################
 ######### SPECIAL FORCES ##############
 ######################################
@@ -1710,7 +1648,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM3.png
-
   - type: XCOM_4SF.PCK
     width: 512
     height: 720
@@ -1718,7 +1655,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/SoldiersAndArmors/SpecialForces/SpecialForcesSpritesheet.png
-
   - type: BIGOBS.PCK
     files:
       503: Resources/SoldiersAndArmors/SpecialForces/SPECIAL_FORCES_CORPSE_BIGOB.png
@@ -1760,7 +1696,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF3.png
-
   - type: XCOM_4MERC.PCK
     width: 512
     height: 720
@@ -1768,14 +1703,12 @@ extraSprites:
     subY: 40
     files:
       0: Resources/SoldiersAndArmors/Mercenary/MercenarySpritesheet.png
-
   - type: BIGOBS.PCK
     files:
       504: Resources/SoldiersAndArmors/Mercenary/MERCENARY_CORPSE_BIGOB.png
   - type: FLOOROB.PCK
     files:
       504: Resources/SoldiersAndArmors/Mercenary/MERCENARY_CORPSE_FLOOROB.png
-
 ########################################
 ######### NATO DELTA ARMOR #############
 ######################################
@@ -1804,7 +1737,6 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       510: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_CORPSE_FLOOROB.png
-
 ########################################
 ######### USSR RIOT ARMOR #############
 ######################################
@@ -1833,7 +1765,6 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       511: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_CORPSE_FLOOROB.png
-
 ########################################
 ######### USA COMBAT ARMOR ############
 ######################################
@@ -1869,31 +1800,26 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m3.gif
-
   - type: XCOM_4UN.PCK
     width: 32
     height: 40
     files:
       0: Resources/SoldiersAndArmors/CombatArmor/XCOM_4/
-
   - type: BIGOBS.PCK
     files:
       502: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_CORPSE_BIGOB.png
   - type: FLOOROB.PCK
     files:
       502: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_CORPSE_FLOOROB.png
-
   - type: COMBAT_ARMOR_IMAGE
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_IMAGE.PNG
-
 ########################################
 ######### UN PERSONAL ARMOR ############
 ######################################
-
 # Armor
   - type: BIGOBS.PCK
     files:
@@ -1940,12 +1866,9 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F3.png
-
-
 ########################################
 ######### UN HEAVY PERSONAL ARMOR ############
 ######################################
-
 # Armor
   - type: BIGOBS.PCK
     files:
@@ -1992,11 +1915,9 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.png
-
 ##################################################
 ######### UN MARAUDER POWER ARMOR ###############
 ################################################
-
 # Armor
   - type: BIGOBS.PCK
     files:
@@ -2015,11 +1936,9 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/MarauderArmor/Inventory/MAN_MARAUDER.png
-
 ##################################################
 ######### UN PATHFINDER FLYING ARMOR ###############
 ################################################
-
 # Armor
   - type: BIGOBS.PCK
     files:
@@ -2038,8 +1957,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/PathfinderArmor/Inventory/MAN_PATHFINDER.png
-
-
 ####################################
 ####### USA/NATO SPACESUITS #######
 ##################################
@@ -2060,7 +1977,6 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       512: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_CORPSE_FLOOROB.png
-
   - type: MAN_5A7MMU.SPK
     singleImage: true
     files:
@@ -2078,7 +1994,6 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       515: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_CORPSE_FLOOROB.png
-
 ############################################
 ####### USSR/WARSAW PACT SPACESUITS #######
 ##########################################
@@ -2099,7 +2014,6 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       513: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_CORPSE_FLOOROB.png
-
   - type: MAN_5KRECHETMMU.SPK
     singleImage: true
     files:
@@ -2117,9 +2031,7 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       516: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_CORPSE_FLOOROB.png
-
 ####################################
-
   - type: SCOUT_POWER_ARMOR.PCK
     subX: 32
     subY: 40
@@ -2204,7 +2116,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/SoldiersAndArmors/ScoutArmor/man_7f3.png
-
 ##########################################
 ############# HAND TO HAND ###############
 ##########################################
@@ -2213,7 +2124,6 @@ extraSprites:
       3000: Resources/specialWeapons/BigFist.png
       3001: Resources/specialWeapons/TankCrush.png
       3002: Resources/specialWeapons/VehicleCrash.png
-
   - type: SPICONS.DAT
     width: 32
     height: 24
@@ -2221,11 +2131,6 @@ extraSprites:
       2: Resources/specialWeapons/spicon_brawl.png
       3: Resources/specialWeapons/spicon_crush.png
       4: Resources/specialWeapons/spicon_crash.png
-
-
-
 # specialWeaponInventorySlots:
 #   - STR_BELT
-
-
 ######################################

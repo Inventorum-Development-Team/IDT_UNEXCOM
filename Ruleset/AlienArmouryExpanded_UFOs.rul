@@ -2,9 +2,7 @@
 # If you want to use it without the Alien Armoury Expanded mod, you must:
 # 1. Delete one loadout from each alien rank (so that there are 3, not 4 loadouts)
 # 2. Make sure that there are only vanilla items in the loadouts (i.e., no items from mods you don't have, like Alien Armoury Expanded).
-
 # spellchecker:words EXCAVTR UFOL PTURRET LABSHIP DISEC OPER SPTURRET minigun
-
 ufos:
   - type: STR_EXCAVATOR #ignoreDuplicate
     modSprite: InterceptionExcavator
@@ -304,8 +302,6 @@ ufos:
         - name: UFO1A
           width: 10
           length: 10
-
-
 ###############################
 ####### SUPPORT CLASS #########
 ###############################
@@ -388,17 +384,12 @@ ufos:
             SPTURRET_SPAWNER:
               - [ 14, 21, 1]
               - [ 14, 7, 1]
-
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-
 ##############################
 ####### CAPITAL CLASS ########
 ##############################
-
-
-
 research:
   - name: STR_EXCAVATOR
     cost: 0
@@ -416,8 +407,6 @@ research:
     cost: 0
     points: 50
     needItem: true
-
-
 extraSprites:
   - type: InterceptionExcavator
     singleImage: true
@@ -450,7 +439,6 @@ extraStrings:
       STR_FIGHTER_SHIP: "Fighter"
       STR_SENTRY_SHIP: "Sentry Ship"
       STR_LAB_SHIP: "Lab Ship"
-
   # spellchecker:disable
   - type: pl-PL
     strings:

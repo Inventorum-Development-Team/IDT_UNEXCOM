@@ -2,14 +2,9 @@
 # spellchecker:words Nordiska Kraschen Yakov Malik Luns Aeritalia Spearguns Minisub mothership Armalite Artemiy Vympel
 # spellchecker:words Kruschev
 # spellchecker:words airwing
-
-
 items:
-
   - type: STR_ALIEN_ID_CODES
     size: 0.1
-
-
 research:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
@@ -22,36 +17,30 @@ research:
     cost: 90
     points: 12
     spawnedItem: STR_LUGER
-
   - name: STR_MEDI_KIT
     dependencies:
       - STR_ALLOY_MANUFACTURING
     cost: 210
     points: 20
-
   - name: STR_DUCT_GUN
     dependencies:
       - STR_OLYMPUS
     cost: 210
     points: 20
-
   - name: STR_BIO_FOAM
     dependencies:
       - STR_MEDI_KIT
       - STR_OLYMPUS
     cost: 250
     points: 25
-
   - name: STR_GENERATOR_STICK
     dependencies:
       - STR_OLYMPUS
     cost: 200
     points: 20
-
   - name: STR_WEAPON_MODIFICATION
     cost: 50
     points: 50
-
   - name: STR_SPECIAL_FORCES_SUPPORT
     cost: 50
     points: 200
@@ -60,7 +49,6 @@ research:
     disables:
       - STR_MERCENARY_SUPPORT
     spawnedEvent: STR_SPECIAL_FORCES_ARRIVAL_EVENT
-
   - name: STR_MERCENARY_SUPPORT
     cost: 50
     points: 200
@@ -71,22 +59,18 @@ research:
     spawnedEvent: STR_MERCENARY_ARRIVAL_EVENT
     unlocks:
       - STR_556_X20_UNLOCK
-
   - name: STR_USA_INITIAL_APPROACH_RESEARCH
     spawnedItem: STR_REMINGTON_COMBAT_SHOTGUN
     cost: 50
     points: 50
-
   - name: STR_NATO_INITIAL_APPROACH_RESEARCH
     spawnedItem: STR_SG510_CARBINE
     cost: 50
     points: 50
-
   - name: STR_USSR_INITIAL_APPROACH_RESEARCH
     spawnedItem: STR_AKMSU
     cost: 50
     points: 50
-
   - name: STR_USA_SUPPORT_RESEARCH
     dependencies:
       - STR_USA_INITIAL_APPROACH_RESEARCH
@@ -101,7 +85,6 @@ research:
     unlocks:
       - STR_556_X20_UNLOCK
       - STR_NATO_LMG_UNLOCK
-
   - name: STR_NATO_SUPPORT_RESEARCH
     dependencies:
       - STR_NATO_INITIAL_APPROACH_RESEARCH
@@ -118,7 +101,6 @@ research:
       - STR_9MM_10X_UNLOCK
       - STR_NATO_LMG_UNLOCK
       - STR_NATO_X5_UNLOCK
-
   - name: STR_USSR_SUPPORT_RESEARCH
     dependencies:
       - STR_USSR_INITIAL_APPROACH_RESEARCH
@@ -133,8 +115,6 @@ research:
     unlocks:
       - STR_SOVIET_762_UNLOCK
       - STR_9MM_10X_UNLOCK
-
-
   - name: STR_ON_OUR_OWN
     cost: 500
     points: 200
@@ -143,7 +123,6 @@ research:
       - STR_USA_SUPPORT_RESEARCH
       - STR_USSR_SUPPORT_RESEARCH
       - STR_CARGOTRUCKF
-
   - name: STR_UN_CUSTOM_WEAPONS
     cost: 500
     points: 200
@@ -153,7 +132,6 @@ research:
       - STR_762_X30_UNLOCK
       - STR_NATO_LMG_UNLOCK
       - STR_NATO_X5_UNLOCK
-
   - name: STR_UN_WEAPON_SUPPLY_1
     cost: 200
     points: 200
@@ -174,7 +152,6 @@ research:
       - STR_ON_OUR_OWN
       - STR_UN_WEAPON_SUPPLY_2
     spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_3
-
   - name: STR_USA_WEAPON_SUPPLY
     cost: 200
     points: 200
@@ -193,7 +170,6 @@ research:
     dependencies:
       - STR_ON_OUR_OWN
     spawnedEvent: STR_USSR_SUPPLY_EVENT
-
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
@@ -218,7 +194,6 @@ research:
       - STR_SATELLITES
     dependencies:
       - STR_USSR_SUPPORT_RESEARCH
-
   - name: STR_NATO_AIRCRAFT_OPTION1
     cost: 50
     points: 20
@@ -243,7 +218,6 @@ research:
     disables:
       - STR_NATO_AIRCRAFT_OPTION1
       - STR_NATO_AIRCRAFT_OPTION2
-
   - name: STR_USSR_AIRCRAFT_OPTION1
     cost: 50
     points: 20
@@ -258,7 +232,6 @@ research:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     disables:
       - STR_USSR_AIRCRAFT_OPTION1
-
   - name: STR_AIR_STRIKES
     cost: 200
     points: 20
@@ -266,7 +239,6 @@ research:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
-
   - name: STR_SPECIAL_FORCES_RESEARCH
     cost: 20
     points: 200
@@ -275,7 +247,6 @@ research:
       - STR_SPECIAL_FORCES_SUPPORT
     disables:
       - STR_MERCENARY_RESEARCH
-
   - name: STR_MERCENARY_RESEARCH
     cost: 20
     points: 200
@@ -284,7 +255,6 @@ research:
       - STR_MERCENARY_SUPPORT
     disables:
       - STR_SPECIAL_FORCES_RESEARCH
-
   - name: STR_ALIEN_ALLOYS
     cost: 400
     points: 20
@@ -294,7 +264,6 @@ research:
     points: 80
     dependencies:
       - STR_ALIEN_ALLOYS
-
   - name: STR_SATELLITES
     cost: 200
     points: 10
@@ -302,62 +271,52 @@ research:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
-
 #################################
 ####### AMMO UNLOCKING ##########
 #################################
-
   - name: STR_762_X30_UNLOCK
     cost: 0
     dependencies:
       - STR_NATO_SUPPORT_RESEARCH
       - STR_UN_CUSTOM_WEAPONS
       - STR_BREN
-
   - name: STR_556_X20_UNLOCK
     cost: 0
     dependencies:
       - STR_MERCENARY_SUPPORT
       - STR_USA_SUPPORT_RESEARCH
-
   - name: STR_LR_UNLOCK
     cost: 0
     dependencies:
       - STR_HUNTING_RIFLE
       - STR_IMPROVED_BOMBER
-
   - name: STR_12G_X2_UNLOCK
     cost: 0
     dependencies:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
       - STR_DOUBLE_BARRELED_SHOTGUN
-
   - name: STR_SOVIET_762_UNLOCK
     cost: 0
     dependencies:
       - STR_AKM
       - STR_USSR_SUPPORT_RESEARCH
-
   - name: STR_9MM_10X_UNLOCK
     cost: 0
     dependencies:
       - STR_MAKAROV
       - STR_USSR_SUPPORT_RESEARCH
       - STR_NATO_SUPPORT_RESEARCH
-
   - name: STR_NATO_X5_UNLOCK
     cost: 0
     dependencies:
       - STR_UN_CUSTOM_WEAPONS
       - STR_NATO_SUPPORT_RESEARCH
-
   - name: STR_NATO_LMG_UNLOCK
     cost: 0
     dependencies:
       - STR_USA_SUPPORT_RESEARCH
       - STR_NATO_SUPPORT_RESEARCH
       - STR_UN_CUSTOM_WEAPONS
-
 ############################################
   - name: STR_USA_PROTOTYPE_ARMOR_SYSTEMS
     cost: 600
@@ -399,8 +358,6 @@ research:
     listOrder: 4651
     dependencies:
       - STR_ALLOY_AEROSPACE
-
-
   - name: STR_IMPROVED_VTOL_TRANSPORT
     cost: 300
     points: 20
@@ -412,7 +369,6 @@ research:
     dependencies:
       - STR_ALLOY_AEROSPACE
       - STR_SATELLITES
-
   - name: STR_IMPROVED_IMPROVED_SATELLITE
     cost: 200
     points: 20
@@ -431,7 +387,6 @@ research:
     points: 20
     dependencies:
       - STR_ALLOY_AEROSPACE
-
   - name: STR_IMPROVED_LIGHT_MISSILE
     cost: 150
     points: 20
@@ -465,7 +420,6 @@ research:
     dependencies:
       - STR_IMPROVED_VTOL_TRANSPORT
       - STR_ALLOY_AEROSPACE
-
   - name: STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     cost: 600
     dependencies:
@@ -476,7 +430,6 @@ research:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
       - STR_IMPROVED_ROCKET
       - STR_FUSION_CRAFT_WEAPONS
-
   - name: STR_ADVANCED_BOMBER
     cost: 400
     points: 20
@@ -489,7 +442,6 @@ research:
     dependencies:
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_FIGHTER
-
   - name: STR_EXOATMOSPHERIC_FIGHTERS
     cost: 1200
     points: 30
@@ -497,13 +449,11 @@ research:
       - STR_ADVANCED_BOMBER
       - STR_ADVANCED_FIGHTER
       - STR_OLYMPUS
-
   - name: STR_MIMIC_UFOS
     cost: 600
     points: 20
     dependencies:
       - STR_UFO_CONSTRUCTION
-
   - name: STR_NEW_FIGHTER_CRAFT
     cost: 1000
     points: 30
@@ -514,17 +464,14 @@ research:
     points: 30
     dependencies:
       - STR_MIMIC_UFOS
-
 ########################################
 ####### CRAFT WEAPONS TIER 3-4 #########
 ########################################
-
   - name: STR_FUSION_CRAFT_WEAPONS
     cost: 1000
     points: 20
     dependencies:
       - STR_ELERIUM_FUSION
-
   - name: STR_LONGSWORD_FUSION_MISSILE
     cost: 550
     points: 20
@@ -551,7 +498,6 @@ research:
     dependencies:
       - STR_FUSION_CRAFT_WEAPONS
       - STR_CASABA_SPIKE
-
   - name: STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     cost: 800
     dependencies:
@@ -561,7 +507,6 @@ research:
       - STR_GORGON_ROCKETS
       - STR_SMART_CRAFT_WEAPONS
       - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
-
   - name: STR_ZEUS
     cost: 750
     points: 20
@@ -574,7 +519,6 @@ research:
     dependencies:
       - STR_FUSION_CRAFT_WEAPONS
       - STR_PLASMA_CANNON
-
   - name: STR_SMART_CRAFT_WEAPONS
     cost: 1200
     points: 20
@@ -582,7 +526,6 @@ research:
       - STR_FUSION_CRAFT_WEAPONS
       - STR_PLASMA_CANNON
       - STR_UFO_NAVIGATION
-
   - name: STR_EXCALIBUR_LIGHT_MISSILE
     cost: 750
     points: 20
@@ -618,7 +561,6 @@ research:
     points: 5
     dependencies:
       - STR_PERSONAL_ARMOR
-
 ################################################
 ####### ALIEN ALLOYS WEAPONS RESEARCH #########
 ##############################################
@@ -654,7 +596,6 @@ research:
     dependencies:
       - STR_ALLOY_MANUFACTURING
       - STR_ALIEN_LASERS
-
   - name: STR_LASER_CANNON
     cost: 300
     points: 10
@@ -666,44 +607,36 @@ research:
     points: 10
     dependencies:
       - STR_LASER_CANNON
-
   - name: STR_CASABA_SPIKE
     cost: 400
     points: 10
     dependencies:
       - STR_LASER_WEAPONS
-
   - name: STR_LASER_DEFENSE
     cost: 510
     points: 15
     dependencies:
       - STR_LASER_CANNON
       - STR_LASER_ARRAY
-
-
 ### ALIEN LASERS
-
   - name: STR_ALIEN_LASER_PISTOL
     cost: 50
     points: 50
     needItem: true
     getOneFree:
       - STR_ALIEN_LASERS
-
   - name: STR_ALIEN_LASER_RIFLE
     cost: 50
     points: 50
     needItem: true
     getOneFree:
       - STR_ALIEN_LASERS
-
   - name: STR_ALIEN_HEAVY_LASER
     cost: 50
     points: 50
     getOneFree:
       - STR_ALIEN_LASERS
     needItem: true
-
   - name: STR_ALIEN_LASERS
     needItem: true
     getOneFree:
@@ -721,15 +654,12 @@ research:
       - STR_USA_LASER_RESEARCH
       - STR_NATO_LASER_RESEARCH
       - STR_USSR_LASER_RESEARCH
-
-
   - name: STR_SECRET_CRISIS_PROTOTYPES
     cost: 300
     points: 30
     dependencies:
       - STR_HYBRID_LASER_PROJECT
       - STR_ON_OUR_OWN
-
 #########################################
 ####### AMERICAN LASER RESEARCH ########
 #######################################
@@ -759,8 +689,6 @@ research:
     points: 10
     dependencies:
       - STR_USA_LASER_RIFLES
-
-
 #########################################
 ####### EUROPEAN LASER RESEARCH ########
 #######################################
@@ -819,11 +747,9 @@ research:
     points: 10
     dependencies:
       - STR_USSR_LASER_RIFLES
-
 ########################################
 ####### PLASMA RESEARCH TOPICS #########
 ########################################
-
   - name: STR_ALIEN_PLASMA_WEAPONS
     cost: 800
     points: 80
@@ -844,7 +770,6 @@ research:
       - STR_PLASMA_CASTER
       - STR_PLASMA_BLASTER
       - STR_PLASMA_SNIPER_RIFLE
-
   - name: STR_HEAVY_PLASMA
     cost: 800
     points: 30
@@ -914,7 +839,6 @@ research:
     points: 6
     needItem: true
     #listOrder: 3951
-
   - name: STR_PLASMA_CANNON_DEP2
     cost: 0
     dependencies:
@@ -952,25 +876,20 @@ research:
       - STR_PLASMA_CASTER_CLIP
     unlocks:
       - STR_PLASMA_CANNON
-
   - name: STR_ALIEN_GRENADE
     cost: 250
     points: 20
     needItem: true
-
   - name: STR_HUMAN_PLASMA_WEAPONS_THEORY
     cost: 1000
     points: 100
     dependencies:
       - STR_ALIEN_PLASMA_WEAPONS
-
   - name: STR_HUMAN_PLASMA_WEAPONS_PROGRESS
     cost: 1000
     points: 100
     dependencies:
       - STR_HUMAN_PLASMA_WEAPONS_THEORY
-
-
 #########################################
 ####### UNEXCOM PLASMA RESEARCH ########
 #######################################
@@ -984,7 +903,6 @@ research:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-
 #########################################
 ####### AMERICAN PLASMA RESEARCH ########
 #######################################
@@ -998,7 +916,6 @@ research:
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-
 #########################################
 ####### EUROPEAN PLASMA RESEARCH ########
 #######################################
@@ -1012,7 +929,6 @@ research:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-
 #########################################
 ######## SOVIET PLASMA RESEARCH #########
 ########################################
@@ -1026,8 +942,6 @@ research:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
       - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
-
-
 ########################################
 ######### WEAPON REQUISITION ###########
 ########################################
@@ -1097,11 +1011,9 @@ research:
     cost: 5
     points: 5
     needItem: true
-
 ########################################
 ######## ALIEN RESEARCH ################
 ########################################
-
 #############################
 ####### ENDGAME PATH #######
 ###########################
@@ -1175,7 +1087,6 @@ research:
       - STR_CEREBREAL_NAVIGATOR
       - STR_CEREBREAL_SOLDIER
       - STR_CEREBREAL_LARVA_TERRORIST
-
 # Hyperwave Encoder
   - name: STR_ALIEN_COMMUNICATION
     cost: 100
@@ -1199,33 +1110,28 @@ research:
     dependencies:
       - STR_HYPER_WAVE_ENCODER
       - STR_ALIEN_COMMUNICATION
-
   - name: STR_OVERSEER_PREREQ
     cost: 0 # 670
     points: 0
     dependencies:
       - STR_HYPER_WAVE_ENCODER
       - STR_ALIEN_COMMUNICATION
-
   - name: STR_ALIEN_ID_CODES
     needItem: true
     cost: 150
     points: 10
-
   - name: STR_OLYMPUS
     cost: 500
     points: 50
     dependencies:
       - STR_ALIEN_ID_CODES
     spawnedEvent: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT
-
   - name: STR_UNITED_WE_STAND_RESEARCH
     cost: 400
     points: 200
     dependencies:
       - STR_ALIEN_ORIGINS
     spawnedEvent: STR_WORLD_AT_WAR_EVENT
-
   - name: STR_THE_MARTIAN_SOLUTION # Operation Devastation
     cost: 500
     points: 60
@@ -1234,17 +1140,14 @@ research:
       - STR_LEADER_PLUS
       - STR_UNITED_WE_STAND_RESEARCH
       - STR_OLYMPUS
-
   - name: STR_DEVASTATION_COMPLETED
     cost: 10
     needItem: true
-
   - name: STR_DESTINATION_MARS
     cost: 200
     dependencies:
       - STR_DEVASTATION_COMPLETED
     spawnedEvent: STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT
-
   - name: STR_CYDONIA_OR_BUST
     cost: 600
     points: 60
@@ -1252,8 +1155,6 @@ research:
     dependencies:
       #- STR_COMMANDER_PLUS
       - STR_DESTINATION_MARS
-
-
 ########################
 #### PURE RESEARCH ####
 ######################
@@ -1287,14 +1188,12 @@ research:
     points: 0
     dependencies:
       - STR_ALIENS_ONLY
-
   - name: STR_ELERIUM_FUSION
     cost: 750
     points: 400
     dependencies:
       - STR_ELERIUM_115
       - STR_UFO_POWER_SOURCE
-
   - name: STR_UFO_CONSTRUCTION
     cost: 450
     points: 30
@@ -1302,7 +1201,6 @@ research:
       - STR_ALIEN_ALLOYS
       - STR_ELERIUM_FUSION
       - STR_UFO_NAVIGATION
-
   - name: STR_FUSION_MISSILE
     cost: 880
     points: 25
@@ -1310,14 +1208,12 @@ research:
       - STR_ELERIUM_FUSION
       - STR_BLASTER_LAUNCHER
       - STR_BLASTER_BOMB
-
   - name: STR_POWER_SUIT
     cost: 205
     points: 20
     dependencies:
       - STR_ELERIUM_FUSION
       - STR_PERSONAL_ARMOR
-
   - name: STR_PERSONAL_ANTIGRAV
     cost: 100
     points: 10
@@ -1325,13 +1221,11 @@ research:
       - STR_CYBERDISC_AUTOPSY
       - STR_ALIEN_ALLOYS
       - STR_UFO_POWER_SOURCE
-
   - name: STR_SCOUT_POWER_ARMOR
     cost: 50
     points: 10
     dependencies:
       - STR_POWER_SUIT
-
   - name: STR_FLYING_SUIT
     dependencies:
       - STR_POWER_SUIT
@@ -1344,7 +1238,6 @@ research:
     points: 10
     dependencies:
       - STR_FLYING_SUIT
-
 ########################
 #### RACE RESEARCH ####
 ######################
@@ -1383,7 +1276,6 @@ research:
     points: 50
     needItem: true
     destroyItem: true
-
   - name: STR_COMMANDER_PLUS
     cost: 0
     points: 0
@@ -1425,8 +1317,6 @@ research:
       - STR_MUTON_LEADER
       - STR_ARMORED_MUTON_LEADER
 #########################################
-
-
   - name: STR_CEREBREAL
     cost: 0
     points: 50
@@ -1502,7 +1392,6 @@ research:
     getOneFree:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
-
   - name: STR_ARMORED_FLOATER_COMMANDER
     cost: 192
     points: 50
@@ -1516,7 +1405,6 @@ research:
     getOneFree:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
-
   - name: STR_REPTOID_COMMANDER
     listOrder: 8675
     cost: 192
@@ -1544,7 +1432,6 @@ research:
     getOneFree:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
-
   - name: STR_CHTONITE_COMMANDER
     listOrder: 8685
     cost: 192
@@ -1572,7 +1459,6 @@ research:
     getOneFree:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
-
   - name: STR_CEREBREAL_COMMANDER
     cost: 192
     points: 50
@@ -1587,7 +1473,6 @@ research:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
     listOrder: 8695
-
   - name: STR_SNAKEMAN_COMMANDER
     cost: 192
     points: 50
@@ -1614,7 +1499,6 @@ research:
     getOneFree:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
-
   - name: STR_ETHEREAL_COMMANDER
     cost: 192
     points: 50
@@ -1629,7 +1513,6 @@ research:
     getOneFree:
       - STR_ALIEN_RANKS
       - STR_ARMORED_ALIENS
-
 #####################################
 ############# LEADERS ##############
 ###################################
@@ -1669,7 +1552,6 @@ research:
       - STR_ARMORED_ALIENS
     needItem: true
     destroyItem: true
-
   - name: STR_ARMORED_SECTOID_LEADER
     cost: 192
     points: 50
@@ -1705,11 +1587,9 @@ research:
       - STR_ARMORED_ALIENS
     needItem: true
     destroyItem: true
-
 #####################################
 ########### NAVIGATORS #############
 ###################################
-
   - name: STR_SECTOID_NAVIGATOR
     cost: 192
     points: 50
@@ -1946,7 +1826,6 @@ research:
 #####################################
 ############ ENGINEERS #############
 ###################################
-
   - name: STR_MUTON_ENGINEER
     cost: 192
     points: 50
@@ -2237,7 +2116,6 @@ research:
 #####################################
 ############# MEDICS ###############
 ###################################
-
   - name: STR_CHTONITE_MEDIC
     cost: 192
     points: 50
@@ -2346,8 +2224,6 @@ research:
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
     listOrder: 8672
-
-
   - name: STR_SNAKEMAN_MEDIC
     needItem: true
     destroyItem: true
@@ -2401,8 +2277,6 @@ research:
       - STR_REAPER_CORPSE
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
-
-
   - name: STR_SECTOID_MEDIC
     cost: 192
     points: 50
@@ -2509,7 +2383,6 @@ research:
       - STR_REAPER_CORPSE
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
-
   - name: STR_FLOATER_MEDIC
     cost: 192
     points: 50
@@ -2616,7 +2489,6 @@ research:
       - STR_REAPER_CORPSE
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
-
   - name: STR_MUTON_MEDIC
     cost: 192
     points: 50
@@ -2723,8 +2595,6 @@ research:
       - STR_REAPER_CORPSE
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
-
-
 ###################################
 ########### SOLDIERS #############
 #################################
@@ -2811,11 +2681,9 @@ research:
     unlocks:
       - STR_ALIEN_ORIGINS
     listOrder: 8670
-
 ##############################
 ######### MECHS #############
 ############################
-
   - name: STR_MECHTOID_TERRORIST
     cost: 170
     points: 50
@@ -2840,9 +2708,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ALIEN_ORIGINS
-
 ##################################
-
 #####################
 ##### AUTOPSY ######
 ###################
@@ -2897,7 +2763,6 @@ research:
     points: 50
     lookup: STR_SECTOID_AUTOPSY
     needItem: true
-
   - name: STR_SNAKEMAN_AUTOPSY
     points: 50
     needItem: true
@@ -2906,7 +2771,6 @@ research:
     points: 50
     lookup: STR_SNAKEMAN_AUTOPSY
     needItem: true
-
   - name: STR_ETHEREAL_AUTOPSY
     points: 50
     needItem: true
@@ -2915,13 +2779,11 @@ research:
     points: 50
     lookup: STR_ETHEREAL_AUTOPSY
     needItem: true
-
   - name: STR_MUTON_CORPSE
     cost: 180
     points: 50
     lookup: STR_MUTON_AUTOPSY
     needItem: true
-
   - name: STR_FLOATER_AUTOPSY
     points: 50
     needItem: true
@@ -2985,7 +2847,6 @@ research:
     points: 50
     lookup: STR_FLOATER_AUTOPSY
     needItem: true
-
   - name: STR_MUTON_AUTOPSY
     points: 50
     needItem: true
@@ -3049,7 +2910,6 @@ research:
     points: 50
     lookup: STR_MUTON_AUTOPSY
     needItem: true
-
   - name: STR_CEREBREAL_AUTOPSY
     cost: 0
     points: 50
@@ -3072,7 +2932,6 @@ research:
     lookup: STR_CEREBREAL_LARVA_AUTOPSY
     needItem: true
     listOrder: 6060
-
   - name: STR_CHTONITE_AUTOPSY
     cost: 0
     points: 50
@@ -3095,7 +2954,6 @@ research:
     lookup: STR_TUNLUN_AUTOPSY
     needItem: true
     listOrder: 6050
-
   - name: STR_MECHTOID_AUTOPSY
     cost: 0
     points: 50
@@ -3123,7 +2981,6 @@ research:
     points: 50
     lookup: STR_PROBE_AUTOPSY
     needItem: true
-
   - name: STR_REPTOID_AUTOPSY
     cost: 0
     points: 50
@@ -3146,7 +3003,6 @@ research:
     lookup: STR_SALAMANDRON_AUTOPSY
     needItem: true
     listOrder: 6040
-
 extraSprites:
 #########################################
 ######### UFOPEDIA IMAGES ###############
@@ -3272,8 +3128,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/ELECTRIC_WEAPONS_RESEARCH_IMAGE.PNG
-
-
 #####################################################
   - type: USA_INITIAL_APPROACH_IMAGE
     singleImage: true
@@ -3293,7 +3147,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/USSR_INITIAL_APPROACH_IMAGE.PNG
-
   - type: USA_SUPPORT_IMAGE
     singleImage: true
     width: 320
@@ -3312,7 +3165,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/USSR_SUPPORT_UFOPEDIA.PNG
-
   - type: USA_AERONAUTIC_SUPPORT_IMAGE
     singleImage: true
     width: 320
@@ -3331,7 +3183,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/USSR_AERONAUTIC_SUPPORT_IMAGE.PNG
-
   - type: NATO_AIRCRAFT_OPTION1_IMAGE
     singleImage: true
     width: 320
@@ -3350,7 +3201,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/NATO_AIRCRAFT_OPTION3_IMAGE.PNG
-
   - type: USSR_AIRCRAFT_OPTION1_IMAGE
     singleImage: true
     width: 320
@@ -3370,7 +3220,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/UNITED_WE_STAND_IMAGE.PNG
-
   - type: OLYMPUS_IMAGE
     singleImage: true
     width: 320
@@ -3407,7 +3256,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/CYDONIA_OR_BUST_IMAGE.PNG
-
 ################################################
   - type: SPECIAL_FORCES_RESEARCH_IMAGE
     singleImage: true
@@ -3415,14 +3263,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/SPECIAL_FORCES_RESEARCH_IMAGE.PNG
-
   - type: MERCENARY_RESEARCH_IMAGE
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UFOpedia/MERCENARY_RESEARCH_IMAGE.PNG
-
   - type: UN_CUSTOM_WEAPONS_IMAGE
     singleImage: true
     width: 320
@@ -3435,14 +3281,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/UN_FLAG_IMAGE.PNG
-
   - type: ALLOY_BALLISTIC_WEAPONS_IMAGE
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UFOpedia/ALLOY_BALLISTIC_WEAPONS_IMAGE.PNG
-
   - type: USA_LASER_RESEARCH_IMAGE
     singleImage: true
     width: 320
@@ -3461,7 +3305,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/UFOpedia/USSR_LASER_RESEARCH_IMAGE.PNG
-
   - type: ALIEN_CAPITAL_SHIPS_IMAGE
     singleImage: true
     width: 320
@@ -3495,7 +3338,6 @@ extraSprites:
 #################################
 ########## MEDALS ##############
 ##############################
-
   - type: MEDAL_ALIEN_BASE_ASSAULT_CAMPAIGN_IMAGE
     singleImage: true
     width: 320
@@ -3532,7 +3374,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Commendations/MEDAL_COMBAT_MEDIC_IMAGE.png
-
   - type: MEDAL_COUNTER_TERRORISM_CAMPAIGN_RIBBON_IMAGE
     singleImage: true
     width: 320
@@ -3569,7 +3410,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Commendations/MEDAL_EXEMPLARY_SERVICE_IMAGE.png
-
   - type: MEDAL_FALLEN_HERO_IMAGE
     singleImage: true
     width: 320
@@ -3606,7 +3446,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Commendations/MEDAL_NATION_GRATITUDE_IMAGE.png
-
   - type: MEDAL_NIGHT_STALKER_IMAGE
     singleImage: true
     width: 320
@@ -3643,7 +3482,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Commendations/MEDAL_PURPLE_HEART_IMAGE.png
-
   - type: MEDAL_RAIDER_SPECIALIST_IMAGE
     singleImage: true
     width: 320

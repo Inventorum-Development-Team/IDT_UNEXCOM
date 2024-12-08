@@ -16,13 +16,10 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-
-
   - type: STR_ANTARCTIC_ACTIVITY_EVENT_SCRIPT
     oneTimeSequentialEvents:
      - STR_ANTARCTIC_ACTIVITY_EVENT
     firstMonth: 6
-
   - type: STR_ALIEN_ACTIVITY_SCRIPT
     eventWeights:
       0:
@@ -74,7 +71,6 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-
   - type: STR_DISASTER_EVENT_SCRIPT
     eventWeights:
       1:
@@ -103,7 +99,6 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-
   - type: STR_SPY_EVENT_SCRIPT
     eventWeights:
       3:
@@ -123,7 +118,6 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-
   - type: STR_TERRORIST_ACTIVITY_SCRIPT
     eventWeights:
       0:
@@ -145,7 +139,6 @@ eventScripts:
     maxDifficulty: 4
     researchTriggers:
       STR_END_OF_TERRORISTS: false
-
   - type: STR_EARTH_FIGHTS_BACK_SCRIPT
     eventWeights:
       4:
@@ -233,7 +226,6 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-
 # - type: STR_TEST_EVENT_SCRIPT
 #    eventWeights:                 # randomly generated repeatable events
 #      0:
@@ -246,7 +238,6 @@ eventScripts:
 #      STR_TEST_EVENT1R: 100
 #      STR_TEST_EVENT1R: 100
 #    timerRandom: 150
-
 events:
 #    regionList: [STR_ARCTIC, STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_NORTH_PACIFIC, STR_SOUTH_PACIFIC, STR_NORTH_ATLANTIC, STR_SOUTH_ATLANTIC, STR_INDIAN_OCEAN]
 #############################
@@ -259,7 +250,6 @@ events:
     points: 1000
     timer: 180
     timerRandom: 43500
-
   - name: STR_VIETNAM_WAR_ENDS_EVENT
     description: STR_VIETNAM_WAR_ENDS_EVENT_DESCRIPTION
     background: VIETNAM_WAR_ENDS_EVENT_BACKGROUND
@@ -267,7 +257,6 @@ events:
     points: 500
     timer: 300
     timerRandom: 43500
-
   - name: STR_FALL_OF_SAIGON_EVENT
     description: STR_FALL_OF_SAIGON_EVENT_DESCRIPTION
     background: FALL_OF_SAIGON_EVENT_BACKGROUND
@@ -275,28 +264,24 @@ events:
     points: 500
     timer: 300
     timerRandom: 20500
-
   - name: STR_RED_MOON_EVENT
     description: STR_RED_MOON_EVENT_DESCRIPTION
     background: RED_MOON_EVENT_BACKGROUND
     points: 1000
     timer: 300
     timerRandom: 45500
-
   - name: STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT
     description: STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT_DESCRIPTION
     background: APOLLO_SOYUZ_TEST_PROGRAM_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 43500
-
   - name: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT
     description: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT_DESCRIPTION
     background: FRENCH_OFFICIAL_ABDUCTED_EVENT_BACKGROUND
     points: -10
     timer: 600
     timerRandom: 45500
-
   - name: STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT
     description: STR_COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT_DESCRIPTION
     background: COUNTRY_REFUSES_TO_COMMENT_ON_ALIEN_THREAT_EVENT_BACKGROUND
@@ -305,49 +290,42 @@ events:
     points: -10
     timer: 600
     timerRandom: 45500
-
   - name: STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT
     description: STR_TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_DESCRIPTION
     background: TENSIONS_ESCALATE_AFTER_UFO_SIGHTING_EVENT_BACKGROUND
     points: -10
     timer: 600
     timerRandom: 45500
-
   - name: STR_WORLD_AT_WAR_EVENT
     description: STR_WORLD_AT_WAR_EVENT_DESCRIPTION
     background: WORLD_AT_WAR_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 600
-
   - name: STR_GERMAN_COOPERATION_EVENT
     description: STR_GERMAN_COOPERATION_EVENT_DESCRIPTION
     background: WORLD_AT_WAR_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 600
-
   - name: STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT
     description: STR_UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_DESCRIPTION
     background: UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 600
-
   - name: STR_OVERSEER_TRACKED_EVENT
     description: STR_OVERSEER_TRACKED_EVENT_DESCRIPTION
     background: OVERSEER_TRACKED_EVENT_BACKGROUND
     points: 1000
     timer: 4000
     timerRandom: 600
-
   - name: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT
     description: STR_SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_DESCRIPTION
     background: SUCCESSFUL_SHUTTLE_LAUNCH_EVENT_BACKGROUND
     points: 1000
     timer: 36000
     timerRandom: 600
-
   - name: STR_ANTARCTIC_ACTIVITY_EVENT
     description: STR_ANTARCTIC_ACTIVITY_EVENT_DESCRIPTION
     background: ANTARCTIC_ACTIVITY_BACKGROUND
@@ -357,7 +335,6 @@ events:
 #################################
 #### ALIEN ACTIVITY EVENTS #####
 ###############################
-
   - name: STR_CATTLE_ABDUCTION_EVENT
     description: STR_CATTLE_ABDUCTION_EVENT_DESCRIPTION
     background: CATTLE_ABDUCTION_EVENT_BACKGROUND
@@ -365,7 +342,6 @@ events:
 #    points: -10
     timer: 2300
     timerRandom: 43000
-
   - name: STR_HUMAN_ABDUCTION_EVENT
     description: STR_HUMAN_ABDUCTION_EVENT_DESCRIPTION
     background: HUMAN_ABDUCTION_EVENT_BACKGROUND
@@ -374,7 +350,6 @@ events:
 #    points: -30
     timer: 2300
     timerRandom: 47000
-
   - name: STR_STRANGE_LIGHTS_EVENT
     description: STR_STRANGE_LIGHTS_EVENT_DESCRIPTION
     background: STRANGE_LIGHTS_EVENT_BACKGROUND
@@ -383,7 +358,6 @@ events:
 #    points: -5
     timer: 3600
     timerRandom: 45000
-
   - name: STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT
     description: STR_ABDUCTED_COMMERCIAL_FLIGHT_EVENT_DESCRIPTION
     background: ABDUCTED_COMMERCIAL_FLIGHT_EVENT_BACKGROUND
@@ -392,21 +366,18 @@ events:
 #    points: -5
     timer: 4000
     timerRandom: 45000
-
   - name: STR_COMMS_SATELLITE_SHOTDOWN_EVENT
     description: STR_COMMS_SATELLITE_SHOTDOWN_EVENT_DESCRIPTION
     background: COMMS_SATELLITE_SHOTDOWN_EVENT_BACKGROUND
 #    points: -5
     timer: 4000
     timerRandom: 45000
-
   - name: STR_MILITARY_SATELLITE_DESTROYED_EVENT
     description: STR_MILITARY_SATELLITE_DESTROYED_EVENT_DESCRIPTION
     background: MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND
 #    points: -5
     timer: 4000
     timerRandom: 45000
-
   - name: STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT
     description: STR_CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_DESCRIPTION
     background: CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_BACKGROUND
@@ -415,7 +386,6 @@ events:
 #    points: -5
     timer: 4000
     timerRandom: 45000
-
   - name: STR_SUDDEN_CITY_BLACKOUT_EVENT
     description: STR_SUDDEN_CITY_BLACKOUT_EVENT_DESCRIPTION
     background: SUDDEN_CITY_BLACKOUT_EVENT_BACKGROUND
@@ -424,7 +394,6 @@ events:
 #    points: -5
     timer: 4000
     timerRandom: 45000
-
   - name: STR_UNUSUAL_RADAR_SIGHTINGS_EVENT
     description: STR_UNUSUAL_RADAR_SIGHTINGS_EVENT_DESCRIPTION
     background: UNUSUAL_RADAR_SIGHTINGS_EVENT_BACKGROUND
@@ -433,11 +402,9 @@ events:
 #    points: -5
     timer: 4000
     timerRandom: 45000
-
 #############################
 ##### DISASTER EVENTS ######
 ###########################
-
   - name: STR_FACTORY_MALFUNCTION_EVENT
     description: STR_FACTORY_MALFUNCTION_EVENT_DESCRIPTION
     background: FACTORY_MALFUNCTION_EVENT_BACKGROUND
@@ -446,7 +413,6 @@ events:
 #    points: -15
     timer: 9000
     timerRandom: 63500
-
   - name: STR_LABORATORY_EXPLOSION_EVENT
     description: STR_LABORATORY_EXPLOSION_EVENT_DESCRIPTION
     background: LABORATORY_EXPLOSION_EVENT_BACKGROUND
@@ -455,7 +421,6 @@ events:
 #    points: -30
     timer: 9000
     timerRandom: 63500
-
   - name: STR_ALLIED_BASE_ATTACKED_EVENT
     description: STR_ALLIED_BASE_ATTACKED_EVENT_DESCRIPTION
     background: ALLIED_BASE_ATTACKED_EVENT_BACKGROUND
@@ -464,7 +429,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_FREAK_STORM_EVENT
     description: STR_FREAK_STORM_EVENT_DESCRIPTION
     background: FREAK_STORM_EVENT_BACKGROUND
@@ -472,7 +436,6 @@ events:
 #    points: -25
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT
     description: STR_LOCAL_ARMIES_ON_HIGH_ALERT_EVENT_DESCRIPTION
     background: LOCAL_ARMIES_ON_HIGH_ALERT_EVENT_BACKGROUND
@@ -481,11 +444,9 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
 #######################################
 ##### HUMAN FIGHTS BACK EVENTS #######
 #####################################
-
   - name: STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT
     description: STR_LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_DESCRIPTION
     background: LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_BACKGROUND
@@ -494,7 +455,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT
     description: STR_LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT_DESCRIPTION
     background: LOCAL_FIGHTERS_SAVE_CIVILIAN_AIRLINER_EVENT_BACKGROUND
@@ -503,7 +463,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT
     description: STR_LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION
     background: LOCAL_AA_BATTERIES_ENGAGE_UFO_EVENT_BACKGROUND
@@ -512,7 +471,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT
     description: STR_LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT_DESCRIPTION
     background: LOCAL_LASER_AA_BATTERIES_ENGAGE_UFO_EVENT_BACKGROUND
@@ -521,7 +479,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT
     description: STR_LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_DESCRIPTION
     background: LOCAL_NATIONS_REINFORCE_THEIR_CITIES_EVENT_BACKGROUND
@@ -530,7 +487,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT
     description: STR_LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_DESCRIPTION
     background: LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_BACKGROUND
@@ -539,28 +495,24 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT
     description: STR_LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_DESCRIPTION
     background: LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_BACKGROUND
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_SMALLER_NATION_ARMAMENT_EVENT
     description: STR_SMALLER_NATION_ARMAMENT_EVENT_DESCRIPTION
     background: SMALLER_NATION_ARMAMENT_EVENT_BACKGROUND
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT
     description: STR_NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_DESCRIPTION
     background: NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_BACKGROUND
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_US_BOMBS_ALIEN_BASE_EVENT
     description: STR_US_BOMBS_ALIEN_BASE_EVENT_DESCRIPTION
     background: US_BOMBS_ALIEN_BASE_EVENT_BACKGROUND
@@ -569,7 +521,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_US_FIGHTERS_ENGAGE_UFO_EVENT
     description: STR_US_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION
     background: US_FIGHTERS_ENGAGE_UFO_EVENT_BACKGROUND
@@ -578,7 +529,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_US_CARRIER_GROUP_ATTACKED_EVENT
     description: STR_US_CARRIER_GROUP_ATTACKED_EVENT_DESCRIPTION
     background: US_CARRIER_GROUP_ATTACKED_EVENT_BACKGROUND
@@ -586,7 +536,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT
     description: STR_SOVIET_FIGHTERS_ENGAGE_UFO_EVENT_DESCRIPTION
     background: SOVIET_FIGHTERS_ENGAGE_UFO_EVENT_BACKGROUND
@@ -595,14 +544,12 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT
     description: STR_SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT_DESCRIPTION
     background: SOVIET_PLATOON_SURVIVES_AGAINST_ALL_ODDS_EVENT_BACKGROUND
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_SOVIET_SILO_DESTROYED_EVENT
     description: STR_SOVIET_SILO_DESTROYED_EVENT_DESCRIPTION
     background: SOVIET_SILO_DESTROYED_EVENT_BACKGROUND
@@ -611,7 +558,6 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
   - name: STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT
     description: STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_DESCRIPTION
     background: NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_BACKGROUND
@@ -620,11 +566,9 @@ events:
 #    points: -50
     timer: 2700
     timerRandom: 43500
-
 ####################################
 ####### TERRORIST EVENTS ##########
 ##################################
-
   - name: STR_TERRORIST_ACTIVITY_EVENT
     description: STR_TERRORIST_ACTIVITY_EVENT_DESCRIPTION
     background: TERRORIST_ACTIVITY_EVENT_BACKGROUND
@@ -633,7 +577,6 @@ events:
     points: -50
     timer: 600
     timerRandom: 2700
-
   - name: STR_TERRORISTS_THREATEN_US_EVENT
     description: STR_TERRORISTS_THREATEN_US_EVENT_DESCRIPTION
     background: TERRORISTS_THREATEN_US_EVENT_BACKGROUND
@@ -642,18 +585,15 @@ events:
     points: -50
     timer: 600
     timerRandom: 2700
-
   - name: STR_TERRORISTS_DEFEATED_EVENT
     description: STR_TERRORISTS_DEFEATED_EVENT_DESCRIPTION
     background: TERRORISTS_THREATEN_US_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 300
-
 #############################
 ####### SPY EVENTS #########
 ###########################
-
   - name: STR_POLITICAL_ASSASSINATION_EVENT
     description: STR_POLITICAL_ASSASSINATION_EVENT_DESCRIPTION
     background: SPY_MISSION_EVENT_BACKGROUND
@@ -662,7 +602,6 @@ events:
     points: 100
     timer: 9000
     timerRandom: 63500
-
   - name: STR_LEAKED_SECRET_FILES_EVENT
     description: STR_LEAKED_SECRET_FILES_EVENT_DESCRIPTION
     background: SPY_MISSION_EVENT_BACKGROUND
@@ -670,7 +609,6 @@ events:
     points: 100
     timer: 9000
     timerRandom: 63500
-
 ###########################
 ###### MISC EVENTS #######
 #########################
@@ -739,7 +677,6 @@ events:
       - STR_FUEL_TANK
     timer: 600
     timerRandom: 600
-
   - name: STR_UN_WEAPON_SUPPLY_EVENT_2
     description: STR_UN_SUPPLY_EVENT_DESCRIPTION
     background: UN_SUPPLY_EVENT_BACKGROUND
@@ -803,7 +740,6 @@ events:
       - STR_FUEL_TANK
     timer: 600
     timerRandom: 600
-
   - name: STR_UN_WEAPON_SUPPLY_EVENT_3
     description: STR_UN_SUPPLY_EVENT_DESCRIPTION
     background: UN_SUPPLY_EVENT_BACKGROUND
@@ -868,7 +804,6 @@ events:
       - STR_FUEL_TANK
     timer: 600
     timerRandom: 600
-
   - name: STR_US_SUPPLY_EVENT
     description: STR_US_SUPPLY_EVENT_DESCRIPTION
     background: US_SUPPLY_EVENT_BACKGROUND
@@ -908,7 +843,6 @@ events:
       - STR_MEDICAL_BAG
     timer: 600
     timerRandom: 600
-
   - name: STR_NATO_SUPPLY_EVENT
     description: STR_NATO_SUPPLY_EVENT_DESCRIPTION
     background: NATO_SUPPLY_EVENT_BACKGROUND
@@ -945,7 +879,6 @@ events:
       - STR_MEDICAL_BAG
     timer: 600
     timerRandom: 600
-
   - name: STR_USSR_SUPPLY_EVENT
     description: STR_USSR_SUPPLY_EVENT_DESCRIPTION
     background: USSR_SUPPLY_EVENT_BACKGROUND
@@ -982,8 +915,6 @@ events:
       - STR_MEDICAL_BAG
     timer: 600
     timerRandom: 600
-
-
   - name: STR_SPECIAL_FORCES_ARRIVAL_EVENT
     description: STR_SPECIAL_FORCES_ARRIVAL_EVENT_DESCRIPTION
     background: REINFORCEMENTS_EVENT_BACKGROUND
@@ -993,7 +924,6 @@ events:
     everyItemList: [STR_SAWEDOFF_M79_THUMPER, STR_40MM_FRAG, STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_XM117_SHOTGUN, STR_5_56MM_NATO_RIFLE_X20, STR_12GAUGE_BUCKSHOT_X8, STR_XM117_M203, STR_5_56MM_NATO_RIFLE_X20, STR_40MM_FRAG, STR_COMBAT_KNIFE]
     timer: 600
     timerRandom: 600
-
   - name: STR_MERCENARY_ARRIVAL_EVENT
     description: STR_MERCENARY_ARRIVAL_EVENT_DESCRIPTION
     background: REINFORCEMENTS_EVENT_BACKGROUND
@@ -1003,7 +933,6 @@ events:
     everyItemList: [STR_MAT49, STR_9MM_PISTOL_X20, STR_M16A1_SCOPED, STR_5_56MM_NATO_RIFLE_X20, STR_FN_FSC_BAYONET, STR_5_56MM_NATO_RIFLE_X20, STR_COMBAT_KNIFE, STR_50_CAL_MAGNUM, STR_50_CAL_REVOLVER_AMMO_X6, STR_50_CAL_REVOLVER_AMMO_X6]
     timer: 600
     timerRandom: 600
-
 extraSprites:
 ##########################################
 ############ BACKGROUNDS #################
@@ -1144,22 +1073,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/COMMS_SATELLITE_SHOTDOWN_EVENT_BACKGROUND.PNG
-
   - type: MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/Events/MILITARY_SATELLITE_DESTROYED_EVENT_BACKGROUND.PNG
-
   - type: MILITARY_BASES_ON_HIGH_ALERT_EVENT_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/Events/MILITARY_BASES_ON_HIGH_ALERT_EVENT_BACKGROUND.PNG
-
-
   - type: CONTACT_LOST_WITH_SURVEY_VESSEL_EVENT_BACKGROUND
     singleImage: true
     width: 320
@@ -1190,7 +1115,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/LOCAL_ARMIES_DEPLOYED_TO_DEFEND_CITIES_EVENT_BACKGROUND.PNG
-
   - type: LOCAL_ARMIES_GET_NEW_RECRUITS_EVENT_BACKGROUND
     singleImage: true
     width: 320
@@ -1227,8 +1151,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/NATO_FORCE_UFO_TO_TAKE_OFF_EVENT_BACKGROUND.PNG
-
-
   - type: LONE_FIGHTER_PILOT_SCARES_OFF_UFO_EVENT_BACKGROUND
     singleImage: true
     width: 320
@@ -1259,7 +1181,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/SOVIET_SILO_DESTROYED_EVENT_BACKGROUND.PNG
-
   - type: SUDDEN_CITY_BLACKOUT_EVENT_BACKGROUND
     singleImage: true
     width: 320
@@ -1290,7 +1211,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/UNUSUAL_RADAR_SIGHTINGS_EVENT_BACKGROUND.PNG
-
   - type: UN_INCREASES_ITS_PRESENCE_AROUND_THE_WORLD_EVENT_BACKGROUND
     singleImage: true
     width: 320
@@ -1327,8 +1247,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_BACKGROUND.PNG
-
-
 ##################################
   - type: SPY_MISSION_EVENT_BACKGROUND
     singleImage: true
@@ -1350,4 +1268,3 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/Events/ANTARCTIC_ACTIVITY_EVENT_BACKGROUND.PNG
-

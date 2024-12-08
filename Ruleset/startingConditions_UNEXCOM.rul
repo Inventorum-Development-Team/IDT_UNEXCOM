@@ -22,7 +22,6 @@ startingConditions:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
       - STR_CANNON_STRIKE
-
   - type: STR_TERRORIST_MISSION_NO_TANKS
     forbiddenVehicles:
       - STR_FERRET_CAR
@@ -34,12 +33,9 @@ startingConditions:
       - STR_INC_STRIKE
       - STR_HIGH_EXPLOSIVE
       - STR_CANNON_STRIKE
-
   - type: STR_OPERATION_FALSE_FLAG_CONDITION
     requiredItems:
           STR_HYPER_WAVE_ENCODER: 1
-
-
   - type: STR_MARS_CONDITION
     defaultArmor:
       STR_SOLDIER:
@@ -64,7 +60,6 @@ startingConditions:
       - STR_ALLOY
     allowedCraft:
       - STR_SPACE_SHUTTLE
-
   - type: STR_MOON_CONDITION
     defaultArmor:
       STR_SOLDIER:
@@ -89,8 +84,6 @@ startingConditions:
       - STR_ALLOY
     allowedCraft:
       - STR_SPACE_SHUTTLE
-
-
   - type: STR_SPACE_CONDITION
     defaultArmor:
       STR_SOLDIER:
@@ -114,11 +107,8 @@ startingConditions:
       - STR_ALLOY
     allowedCraft:
       - STR_SPACE_SHUTTLE
-
-
   - type: STR_TERRORIST_MISSION
     forbiddenItems:
       - STR_HE_STRIKE
       - STR_INC_STRIKE
       - STR_HIGH_EXPLOSIVE
-

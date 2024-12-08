@@ -1,7 +1,6 @@
 # spellchecker:words Landsplit
 ###BEGIN COUNTRIES
 countries:
-
 #BEGIN DELETE
   - delete: STR_USA
   - delete: STR_RUSSIA
@@ -20,7 +19,6 @@ countries:
   - delete: STR_EGYPT
   - delete: STR_CANADA
 #BEGIN DELETE
-
 #BEGIN USA
   - type: STR_USA
     fundingBase: 600
@@ -39,7 +37,6 @@ countries:
       - [219, 224, -60.4, -57] #Alaska Juneau Box 1
       - [224, 230, -58.5, -54] #Alaska Juneau Box 2
 #END USA
-
 #BEGIN RUSSIA
   - type: STR_RUSSIA
     fundingBase: 230
@@ -56,7 +53,6 @@ countries:
       - [24, 38.5, -54.83, -43.83] # Belarus/Ukraine Area
       - [38.3, 74, -50.35, -37.5] #Caucasus and Central Asia
 #END RUSSIA
-
 #BEGIN UK
   - type: STR_UK
     fundingBase: 240
@@ -68,7 +64,6 @@ countries:
       - [353.9, 2, -53.93, -50] #Lower Part of England
       - [299.22, 302.33, 51.16, 52.66] #Falkland Islands
 #END UK
-
 #BEGIN FRANCE
   - type: STR_FRANCE
     fundingBase: 320
@@ -81,7 +76,6 @@ countries:
       - [163.6, 167, 19.9, 22.71] #New Caledonia - E of Australia
       - [304, 308, -6.8, -2.6] #French Guiana - N of Brazil
 #END FRANCE
-
 #BEGIN WEST GERMANY
   - type: STR_WEST_GERMANY
     fundingBase: 250
@@ -91,7 +85,6 @@ countries:
     areas:
       - [6, 11, -55, -47.5]
 #END WEST GERMANY
-
 #BEGIN EAST GERMANY
   - type: STR_EAST_GERMANY
     fundingBase: 250
@@ -101,7 +94,6 @@ countries:
     areas:
       - [11, 15, -55, -50.3]
 #END EAST GERMANY
-
 #BEGIN POLAND
   - type: STR_POLAND
     fundingBase: 270
@@ -111,7 +103,6 @@ countries:
     areas:
       - [15, 23, -54.5, -51]
 #END POLAND
-
 #BEGIN ITALY
   - type: STR_ITALY
     fundingBase: 160
@@ -125,7 +116,6 @@ countries:
       - [13.34, 15.5, -37, -36.4] #Bottom of Sicily
       - [7.7, 10.33, -41.3, -38.4] #Sardinia
 #END ITALY
-
 #BEGIN SPAIN
   - type: STR_SPAIN
     fundingBase: 140
@@ -143,7 +133,6 @@ countries:
       - [352.32, 359.1, -37.6, -36.11] #Southern Part of Spain
       - [1.92, 3.7, -40.17, -39] #Majorca
 #END SPAIN
-
 #BEGIN CHINA
   - type: STR_CHINA
     fundingBase: 245
@@ -157,7 +146,6 @@ countries:
       - [122.13, 129.48, -49.40, -41.85]
       - [108, 113, -22, -17.9] #Southern China near Hainan and Hainan Island
 #END CHINA
-
 #BEGIN JAPAN
   - type: STR_JAPAN
     fundingBase: 400
@@ -170,7 +158,6 @@ countries:
       - [129, 130, -34.2, -31.95]
       - [141, 146, -54, -45.6] #Sakhalin
 #END JAPAN
-
 #BEGIN INDIA
   - type: STR_INDIA
     fundingBase: 150
@@ -183,7 +170,6 @@ countries:
       - [85, 89, -27, -18]
       - [68, 70, -23.81, -21.27]
 #END INDIA
-
 #BEGIN BRAZIL
   - type: STR_BRAZIL
     fundingBase: 300
@@ -201,7 +187,6 @@ countries:
       - [304, 316, 24, 26.3] #Southern Brazil 1
       - [303.78, 312, 26.3, 33] #Southern Brazil 2
 #END BRAZIL
-
 #BEGIN AUSTRALIA
   - type: STR_AUSTRALIA
     fundingBase: 280
@@ -214,7 +199,6 @@ countries:
       - [164, 177.2, 40, 47] #New Zealand 1
       - [172, 179, 33.5, 40] #New Zealand 2
 #END AUSTRALIA
-
 #BEGIN NIGERIA
   - type: STR_NIGERIA
     fundingBase: 180
@@ -224,7 +208,6 @@ countries:
     areas:
       - [3, 14, -14, -4]
 #END NIGERIA
-
 #BEGIN SOUTH AFRICA
   - type: STR_SOUTH_AFRICA
     fundingBase: 230
@@ -236,7 +219,6 @@ countries:
       - [25, 33, 22, 35]
       - [12, 24, 26, 18]
 #END SOUTH AFRICA
-
 #BEGIN EGYPT
   - type: STR_EGYPT
     fundingBase: 230
@@ -246,7 +228,6 @@ countries:
     areas:
       - [25, 35, -32, -22]
 #END EGYPT
-
 #BEGIN CANADA
   - type: STR_CANADA
     fundingBase: 230

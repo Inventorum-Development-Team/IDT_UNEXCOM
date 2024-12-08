@@ -175,15 +175,11 @@ items:
     clipSize: 35
     battleType: 2
     recoveryPoints: 1
-
-
   - type: STR_ALIEN_CRYSTAL
     size: 0.3
     costSell: 12000
     bigSprite: 3406
-
 manufacture:
-
   - name: STR_DISASSEMBLE_LASER_PISTOL
     category: STR_DISASSEMBLE_MANUFACTURE
     requires:
@@ -196,7 +192,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CRYSTAL: 1
       STR_ALIEN_ALLOYS: 2
-
   - name: STR_DISASSEMBLE_LASER_RIFLE
     category: STR_DISASSEMBLE_MANUFACTURE
     requires:
@@ -209,7 +204,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CRYSTAL: 2
       STR_ALIEN_ALLOYS: 3
-
   - name: STR_DISASSEMBLE_HEAVY_LASER
     category: STR_DISASSEMBLE_MANUFACTURE
     requires:

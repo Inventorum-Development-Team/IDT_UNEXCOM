@@ -1,7 +1,6 @@
 # spellchecker:disable
 ###BEGIN REGIONS
 regions:
-
 ##BEGIN DELETE
   - delete: STR_NORTH_AMERICA
   - delete: STR_ARCTIC
@@ -19,7 +18,6 @@ regions:
   - delete: STR_SOUTH_ATLANTIC
   - delete: STR_INDIAN_OCEAN
 ##END DELETE
-
 ##BEGIN NORTH AMERICA
   - type: STR_NORTH_AMERICA
     cost: 800000
@@ -80,7 +78,6 @@ regions:
         - [234.75, 234.75, -49.375, -49.375, -1, STR_VANCOUVER]
         - [282.875, 282.875, -38.75, -38.75, -1, STR_WASHINGTON]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [275.625, 275.625, -33.75, -33.75, -1, STR_ATLANTA]
         - [289.348, 289.348, -42.429, -42.429, -1, STR_BOSTON]
@@ -126,7 +123,6 @@ regions:
         - [75, 89, -39, -34.375]
         - [115, 132.5, 21, 25.5]
 ##END NORTH AMERICA
-
 ##BEGIN ARCTIC
   - type: STR_ARCTIC
     cost: 950000
@@ -186,7 +182,6 @@ regions:
         - [75, 89, -39, -34.375]
         - [115, 132.5, 21, 25.5]
 ##END ARCTIC
-
 ##BEGIN ANTARCTICA
   - type: STR_ANTARCTICA
     cost: 900000
@@ -240,7 +235,6 @@ regions:
         - [75, 89, -39, -34.375]
         - [115, 132.5, 21, 25.5]
 ##END ANTARCTICA
-
 ##BEGIN SOUTH AMERICA
   - type: STR_SOUTH_AMERICA
     cost: 600000
@@ -285,7 +279,6 @@ regions:
         - [316.875, 316.875, 22.875, 22.875, -1, STR_RIO_DE_JANEIRO]
         - [289.375, 289.375, 33.375, 33.375, -1, STR_SANTIAGO]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [302.71, 302.71, 26.41, 26.41, -1, STR_ASUNCION]
         - [310.56, 310.56, 0, 0, -1, STR_BELEM]
@@ -318,7 +311,6 @@ regions:
         - [75, 89, -39, -34.375]
         - [115, 132.5, 21, 25.5]
 ##END SOUTH AMERICA
-
 ##BEGIN EUROPE
   - type: STR_EUROPE
     cost: 1000000
@@ -359,7 +351,6 @@ regions:
         - [12.5, 12.5, -41.875, -41.875, -1, STR_ROME]
         - [2.375, 2.375, -48.75, -48.75, -1, STR_PARIS]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [4.86, 4.86, -52.76, -52.76, -1, STR_AMSTERDAM]
         - [40.87, 40.87, -64.44, -64.44, -1, STR_ARCHANGEL]
@@ -410,7 +401,6 @@ regions:
         - [72.875, 105.25, -25, -11.75]
         - [115, 132.5, 21, 25.5]
 ##END EUROPE
-
 ##BEGIN NORTH AFRICA
   - type: STR_NORTH_AFRICA
     cost: 650000
@@ -446,7 +436,6 @@ regions:
         - [352.375, 352.375, -33.5, -33.5, -1, STR_CASABLANCA]
         - [3.10, 3.10, -6.36, -6.36, -1, STR_LAGOS]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [3.08, 3.08, -36.56, -36.56, -1, STR_ALGIERS]
         - [35.331, 35.331, -34.245, -34.245, -1, STR_BEIRUT]
@@ -477,7 +466,6 @@ regions:
         - [72.875, 105.25, -25, -11.75]
         - [115, 132.5, 21, 25.5]
 ##END NORTH AFRICA
-
 ##BEGIN SOUTHERN AFRICA
   - type: STR_SOUTHERN_AFRICA
     cost: 550000
@@ -513,7 +501,6 @@ regions:
         - [18.5, 18.5, 34, 34, -1, STR_CAPE_TOWN]
         - [15.375, 15.375, 4.375, 4.375, -1, STR_KINSHASA]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [6.95, 6.95, -7.9, -7.9, -1, STR_ABUJA]
         - [38.75, 38.75, -9.0, -9.0, -1, STR_ADDISABABA]
@@ -552,7 +539,6 @@ regions:
         - [72.875, 105.25, -25, -11.75]
         - [115, 132.5, 21, 25.5]
 ##END SOUTHERN AFRICA
-
 ##BEGIN CENTRAL ASIA
   - type: STR_CENTRAL_ASIA
     cost: 500000
@@ -594,7 +580,6 @@ regions:
         - [67.39, 67.39, -24.9, -24.9, -1, STR_KARACHI]
         - [51.5, 51.5, -35.625, -35.625, -1, STR_TEHRAN]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [77.5, 77.5, -13, -13, -1, STR_BANGALORE]
         - [73.56, 73.56, -41.73, -41.73, -1, STR_BISHKEK]
@@ -631,7 +616,6 @@ regions:
         - [137.125, 169.5, -54, -40.75]
         - [115, 132.5, 21, 25.5]
 ##END CENTRAL ASIA
-
 ##BEGIN SOUTH EAST ASIA
   - type: STR_SOUTH_EAST_ASIA
     cost: 750000
@@ -673,7 +657,6 @@ regions:
         - [121.5, 121.5, -31.25, -31.25, -1, STR_SHANGHAI]
         - [139.75, 139.75, -35.625, -35.625, -1, STR_TOKYO]
 #BEGIN VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [102.67, 102.67, -32.74, -32.74, -1, STR_CHENGDU]
         - [91.8, 91.8, -22.366, -22.366, -1, STR_CHITTAGONG]
@@ -710,7 +693,6 @@ regions:
         - [50.5, 82.875, -64.5, -51.25]
         - [115, 132.5, 21, 25.5]
 ##END SOUTH EAST ASIA
-
 ##BEGIN SIBERIA
   - type: STR_SIBERIA
     cost: 800000
@@ -741,7 +723,6 @@ regions:
 #BEGIN VANILLA CITIES
         - [82.75, 82.75, -55, -55, -1, STR_NOVOSIBIRSK]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [61.84, 61.84, -57.48, -57.48, -1, STR_CHEYLABINSK]
         - [105.11, 105.11, -52.40, -52.40, -1, STR_IRKUTSK]
@@ -768,7 +749,6 @@ regions:
         - [91.875, 124.25, -30.75, -17.5]
         - [115, 132.5, 21, 25.5]
 ##END SIBERIA
-
 ##BEGIN AUSTRALASIA
   - type: STR_AUSTRALASIA
     cost: 750000
@@ -806,7 +786,6 @@ regions:
         - [115.75, 115.75, 32, 32, -1, STR_PERTH]
         - [175.125, 175.125, 41.25, 41.25, -1, STR_WELLINGTON]
 #END VANILLA CITIES
-
 #BEGIN NEW CITIES
         - [137.46, 137.46, 35.34, 35.34, -1, STR_ADELAIDE]
         - [173.68, 173.68, 35.61, 35.61, -1, STR_AUCKLAND]
@@ -842,7 +821,6 @@ regions:
         - [91.875, 124.25, -30.75, -17.5]
         - [62.125, 101.375, -66.625, -57.125]
 ##END AUSTRALASIA
-
 ##BEGIN NORTH PACIFIC
   - type: STR_NORTH_PACIFIC
     cost: 600000
@@ -898,7 +876,6 @@ regions:
         - [91.875, 124.25, -30.75, -17.5]
         - [62.125, 101.375, -66.625, -57.125]
 ##END NORTH PACIFIC
-
 ##BEGIN SOUTH PACIFIC
   - type: STR_SOUTH_PACIFIC
     cost: 600000
@@ -947,7 +924,6 @@ regions:
         - [91.875, 124.25, -30.75, -17.5]
         - [62.125, 101.375, -66.625, -57.125]
 ##END SOUTH PACIFIC
-
 ##BEGIN NORTH ATLANTIC
   - type: STR_NORTH_ATLANTIC
     cost: 500000
@@ -1020,7 +996,6 @@ regions:
         - [4, 5.5, -38, -35.5]
         - [273, 274.5, -8, -21.25]
 ##END NORTH ATLANTIC
-
 ##BEGIN SOUTH ATLANTIC
   - type: STR_SOUTH_ATLANTIC
     cost: 500000
@@ -1093,7 +1068,6 @@ regions:
         - [70, 73.125, 60, 61.75]
         - [0, 6.875, 60, 65.25]
 ##END SOUTH ATLANTIC
-
 ##BEGIN INDIAN OCEAN
   - type: STR_INDIAN_OCEAN
     cost: 500000
@@ -1152,9 +1126,7 @@ regions:
         - [330, 336, 33, 35.25]
 ##END INDIAN OCEAN
 ###END REGIONS
-
 ##START CUSTOM MISSIONS
-
 ###START TERRORIST HIJACKED PLANE
   - type: REGION_TERRORIST_HIJACKED_PLANE
     missionZones:
@@ -1203,7 +1175,6 @@ regions:
         - [115.75, 115.75, 32, 32, -17, STR_PERTH]
         - [175.125, 175.125, 41.25, 41.25, -17, STR_WELLINGTON]
 # END TERRORIST HIJACKED PLANE
-
 ###START TERRORIST HOSTAGE CRISIS
   - type: REGION_TERRORIST_HOSTAGE_CRISIS
     missionZones:
@@ -1252,7 +1223,6 @@ regions:
         - [115.75, 115.75, 32, 32, -16, STR_PERTH]
         - [175.125, 175.125, 41.25, 41.25, -16, STR_WELLINGTON]
 # END TERRORIST HOSTAGE CRISIS
-
 ###START TERRORIST ATTACK CRISIS
   - type: REGION_TERRORIST_ATTACK
     missionZones:
@@ -1301,7 +1271,6 @@ regions:
         - [115.75, 115.75, 32, 32, -30, STR_PERTH]
         - [175.125, 175.125, 41.25, 41.25, -30, STR_WELLINGTON]
 # END TERRORIST ATTACK
-
 ###START TERRORIST HQ
   - type: REGION_TERRORIST_HQ
     missionZones:
@@ -1350,7 +1319,6 @@ regions:
         - [115.75, 115.75, 32, 32, -31, STR_PERTH]
         - [175.125, 175.125, 41.25, 41.25, -31, STR_WELLINGTON]
 # END TERRORIST HQ
-
 ###START US COMBAT OPERATIONS
   - type: REGION_USA_COMBAT_OPERATIONS
     missionZones:
@@ -1395,9 +1363,7 @@ regions:
         - [292.4, 292.4, -10, -10, -10]
         - [284.2, 284.2, -8.5, -8.5, -10]
         - [281.8, 281.8, -20.5, -20.5, -10]
-
 # END US COMBAT OPERATIONS
-
 ###START NATO COMBAT OPERATIONS
   - type: REGION_NATO_COMBAT_OPERATIONS
     missionZones:
@@ -1435,9 +1401,7 @@ regions:
         - [35.8, 35.8, -33.8, -33.8, -11]
         - [74.4, 74.4, -29.6, -29.6, -11]
         - [80.5, 80.5, -8.8, -8.8, -11]
-
 # END NATO COMBAT OPERATIONS
-
 ###START USSR COMBAT OPERATIONS
   - type: REGION_USSR_COMBAT_OPERATIONS
     missionZones:
@@ -1484,9 +1448,7 @@ regions:
         - [35.8, 35.8, -33.8, -33.8, -12]
         - [74.4, 74.4, -29.6, -29.6, -12]
         - [80.5, 80.5, -8.8, -8.8, -12]
-
 # END USSR COMBAT OPERATIONS
-
 ###START AMERICAN CITIES
   - type: REGION_AMERICAN_CITIES
     missionZones:
@@ -1521,7 +1483,6 @@ regions:
         - [-66.383, -66.383, -50.216, -50.216, -13, STR_SEPT_ILES]
         - [279.454, 279.454, -43.14, -43.14, -13, STR_TORONTO]
 #END AMERICAN CITIES
-
 ###START EUROPEAN CITIES
   - type: REGION_EUROPEAN_CITIES
     missionZones:
@@ -1550,7 +1511,6 @@ regions:
         - [12.45, 12.45, -45.59, -45.59, -14, STR_VENICE]
         - [16.375, 16.375, -48.25, -48.25, -14, STR_VIENNA]
 ###END EUROPEAN CITIES
-
 ###START SOVIET CITIES
   - type: REGION_SOVIET_CITIES
     missionZones:
@@ -1580,7 +1540,6 @@ regions:
         - [64.869, 64.869, -67.514, -67.514, -15, STR_VORKUTA]
         - [63.653, 63.653, -60.54, -60.54, -15, STR_YEKATERINBURG]
 ###END SOVIET CITIES
-
 ###START TERROR SITES NORTH AMERICA
   - type: REGION_TERROR_NORTH_AMERICA
     missionZones:
@@ -1607,7 +1566,6 @@ regions:
         - [-66.383, -66.383, -50.216, -50.216, -2, STR_SEPT_ILES]
         - [279.454, 279.454, -43.14, -43.14, -2, STR_TORONTO]
 ###END TERROR SITES NORTH AMERICA
-
 ###START TERROR SITES LATIN AMERICA
   - type: REGION_TERROR_LATIN_AMERICA
     missionZones:
@@ -1641,9 +1599,7 @@ regions:
         - [324.65, 324.65, 8.07, 8.07, -3, STR_RECIFE]
         - [321.25, 321.25, 13, 13, -3, STR_SALVADOR]
         - [313.325, 313.325, 23.5, 23.5, -3, STR_SAOPAULO]
-
 ###END TERROR SITES LATIN AMERICA
-
 ###START TERROR SITES EUROPE
   - type: REGION_TERROR_EUROPE
     missionZones:
@@ -1683,7 +1639,6 @@ regions:
         - [16.375, 16.375, -48.25, -48.25, -4, STR_VIENNA]
         - [21.08, 21.08, -53.103, -53.103, -4, STR_WARSAW]
 ###END TERROR SITES EUROPE
-
 ###START TERROR SITES SOUTH ASIA
   - type: REGION_TERROR_SOUTH_ASIA
     missionZones:
@@ -1714,9 +1669,7 @@ regions:
         - [133.01, 133.01, -42.86, -42.86, -5, STR_VLADIVOSTOK]
         - [112.95, 112.95, -30.95, -30.95, -5, STR_WUHAN]
         - [109, 109, -34.63, -34.63, -5, STR_XIAN]
-
 ###END TERROR SITES SOUTH ASIA
-
 ###START TERROR SITES EAST ASIA
   - type: REGION_TERROR_EAST_ASIA
     missionZones:
@@ -1739,9 +1692,7 @@ regions:
         - [119.20, 119.20, -33.89, -33.89, -6, STR_TIANJIN]
         - [112.95, 112.95, -30.95, -30.95, -6, STR_WUHAN]
         - [109, 109, -34.63, -34.63, -6, STR_XIAN]
-
 ###END TERROR SITES EAST ASIA
-
 ###START TERROR SITES MIDDLE EAST
   - type: REGION_TERROR_MIDDLE_EAST
     missionZones:
@@ -1777,10 +1728,7 @@ regions:
         - [67.66, 67.66, -40.40, -40.40, -7, STR_TASHKENT]
         - [43.96, 43.96, -41.86, -41.86, -7, STR_TBILISI]
         - [44.35, 44.35, -40.1, -40.1, -7, STR_YEREVAN]
-
-
 ###END TERROR SITES MIDDLE EAST
-
 ###START TERROR SITES AFRICA
   - type: REGION_TERROR_AFRICA
     missionZones:
@@ -1809,9 +1757,7 @@ regions:
         - [7, 7, -4.75, -4.75, -8, STR_PORT_HARCOURT]
         - [358.35, 358.35, -12.17, -12.17, -8, STR_OUAGADOUGOU]
         - [16.74, 16.74, 22.23, 22.23, -8, STR_WINDHOEK]
-
 ###END TERROR SITES AFRICA
-
 ###START TERROR SITES SNOW CITIES
   - type: REGION_TERROR_SNOW
     missionZones:
@@ -1830,9 +1776,7 @@ regions:
         - [337.99, 337.99, -64.47, -64.47, -9, STR_REYKJAVIK]
         - [17.325, 17.325, -58.943, -58.943, -9, STR_STOCKHOLM]
         - [133.01, 133.01, -42.86, -42.86, -9, STR_VLADIVOSTOK]
-
 ###END TERROR SITES SNOW CITIES
-
 ###START TERROR SITES ISLANDS
   - type: REGION_TERROR_ISLAND
     missionZones:
@@ -1868,10 +1812,7 @@ regions:
         - [193.7, 193.7, -64.51, -64.51, -20, STR_NOME]
         - [193.45, 193.45, -60.17, -60.17, -20, STR_STLAWRENCE_ISLAND]
         - [189, 189, 19, 19, -20, STR_TONGA]
-
-
 ###END TERROR SITES ISLANDS
-
 ###START TERROR SITES OCEANIA
   - type: REGION_TERROR_OCEANIA
     missionZones:
@@ -1896,11 +1837,8 @@ regions:
         - [147.36, 147.36, 42.78, 42.78, -21, STR_TASMANIA]
         - [147.58, 147.58, 19.86, 19.86, -21, STR_TOWNSVILLE]
         - [141.866, 141.866, 12.616, 12.616, -21, STR_WEIPA]
-
 ###END TERROR SITES OCEANIA
-
 ###START REGION OPERATION FALSE FLAG
-
   - type: REGION_OPERATION_FALSE_FLAG
     missionZones:
       -
@@ -1969,11 +1907,8 @@ regions:
         - [35.8, 35.8, -33.8, -33.8, -12]
         - [74.4, 74.4, -29.6, -29.6, -12]
         - [80.5, 80.5, -8.8, -8.8, -12]
-
 # END REGION OPERATION FALSE FLAG
-
 ###START REGION SPACEPORTS OPERATION DEVASTATION
-
   - type: REGION_SPACEPORTS_DEVASTATION
     missionZones:
       -
@@ -1986,11 +1921,8 @@ regions:
         - [128.153, 128.153, -50.1508, -50.1508, -23, STR_VOSTOCHNY_COSMODROME]
         - [130.743, 130.743, -30.32, -30.32, -23, STR_TANEGASHIMA_SPACE_CENTER]
         - [145.874, 145.874, -44.5564, -44.5564, -23, STR_BLOFELD_ISLAND_SPACE_CENTER]
-
 ###END REGION SPACEPORTS OPERATION DEVASTATION
-
 ###START REGION SPACEPORTS ALIEN SPACE STATION
-
   - type: REGION_SPACEPORTS_ALIEN_SPACE_STATION
     missionZones:
       -
@@ -2003,8 +1935,5 @@ regions:
         - [128.153, 128.153, -50.1508, -50.1508, -24, STR_VOSTOCHNY_COSMODROME]
         - [130.743, 130.743, -30.32, -30.32, -24, STR_TANEGASHIMA_SPACE_CENTER]
         - [145.874, 145.874, -44.5564, -44.5564, -24, STR_BLOFELD_ISLAND_SPACE_CENTER]
-
 ###END REGION SPACEPORTS ALIEN SPACE STATION
-
 ###END REGIONS
-

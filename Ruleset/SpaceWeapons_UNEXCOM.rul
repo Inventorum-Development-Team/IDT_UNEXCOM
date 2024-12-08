@@ -2,7 +2,6 @@ items:
 ######################################
 ###### SPACE CAPABLE WEAPONS ########
 ####################################
-
   - type: STR_GYROJET_PISTOL
     categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
     requires:
@@ -36,7 +35,6 @@ items:
     vaporDensitySurface: 1
     vaporProbabilitySurface: 33
     listOrder: 201800
-
   - type: STR_GYROJET_RIFLE
     categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES]
     requires:
@@ -77,7 +75,6 @@ items:
     vaporDensitySurface: 2
     vaporProbabilitySurface: 33
     listOrder: 201810
-
   - type: STR_GYROJET_AMMO_MAGAZINE
     categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES, STR_PISTOLS]
     requires:
@@ -99,7 +96,6 @@ items:
     invWidth: 1
     battleType: 2
     listOrder: 201820
-
   - type: STR_SPACE_KNIFE
     requiresBuy:
       - STR_OLYMPUS
@@ -138,7 +134,6 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 2119
-
   - type: STR_GENERATOR_STICK
     requiresBuy:
       - STR_GENERATOR_STICK
@@ -162,7 +157,6 @@ items:
     skillApplied: false
     clipSize: -1
     listOrder: 2122
-
 extraSprites:
   - type: BIGOBS.PCK
     files:
@@ -171,7 +165,6 @@ extraSprites:
       1136: Resources/SpaceWeapons/BigGyrojetAmmo.png
       1144: Resources/SpaceWeapons/BigSpaceKnife.png
       1152: Resources/SpaceWeapons/BigGeneratorStick.png
-
   - type: FLOOROB.PCK
     files:
       1120: Resources/SpaceWeapons/FloorGyrojetPistol.png
@@ -179,7 +172,6 @@ extraSprites:
       1136: Resources/SpaceWeapons/FloorGyrojetAmmo.png
       1144: Resources/SpaceWeapons/FloorSpaceKnife.png
       1152: Resources/SpaceWeapons/FloorGeneratorStick.png
-
   - type: HANDOB.PCK
     width: 256
     height: 40
@@ -191,4 +183,3 @@ extraSprites:
       #1120: Resources/SpaceWeapons/HandGyrojetAmmo.png
       1144: Resources/SpaceWeapons/HandSpaceKnife.png
       1152: Resources/SpaceWeapons/HandGeneratorStick.png
-

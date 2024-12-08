@@ -19,7 +19,6 @@ ufos:
     reload: 12
     avoidBonus: 10
     breakOffTime: 200
-
   - type: STR_MAGISTER_UFO
     size: STR_SMALL
     modSprite: UFO_MAGISTER
@@ -35,8 +34,6 @@ ufos:
     score: 50
     reload: 48
     breakOffTime: 200
-
-
   - type: STR_MI8_UFO
     size: STR_SMALL
     modSprite: UFO_MI8
@@ -68,7 +65,6 @@ ufos:
           width: 10
           length: 20
           height: 2
-
 alienDeployments:
 ################################
 ###### TERRORIST CRAFTS ##########
@@ -105,7 +101,6 @@ alienDeployments:
     height: 10
     briefing:
       palette: 4
-
   - type: STR_MAGISTER_UFO
     data:
       - alienRank: 5
@@ -138,7 +133,6 @@ alienDeployments:
     height: 10
     briefing:
       palette: 4
-
 #Race Rank Reference
 #alienRank: 5 - Soldier
 #alienRank: 4 - Navigator
@@ -331,7 +325,6 @@ alienDeployments:
     height: 10
     briefing:
       palette: 4
-
   - type: STR_MI8_UFO
     data:
       - alienRank: 5
@@ -517,7 +510,6 @@ alienDeployments:
     height: 10
     briefing:
       palette: 4
-
 research:
   - name: STR_TEXAN_UFO
     points: 50
@@ -528,10 +520,7 @@ research:
   - name: STR_MI8_UFO
     points: 50
     needItem: true
-
 ##############################
-
-
 extraSprites:
   - type: UFO_MAGISTER
     singleImage: true

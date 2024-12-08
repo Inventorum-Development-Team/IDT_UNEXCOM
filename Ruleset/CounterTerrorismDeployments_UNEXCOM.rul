@@ -201,7 +201,6 @@ alienDeployments:
     markerName: STR_COUNTER_TERRORISM_MARKER
     startingCondition: STR_TERRORIST_MISSION
     points: 5
-
   - type: STR_HIJACKED_PLANE
     data:
       - alienRank: 5
@@ -397,7 +396,6 @@ alienDeployments:
     markerName: STR_COUNTER_TERRORISM_MARKER
     startingCondition: STR_TERRORIST_MISSION_NO_TANKS
     points: 5
-
   - type: STR_HUMAN_TERROR_ATTACK
     data:
       - alienRank: 5
@@ -604,8 +602,6 @@ alienDeployments:
     markerName: STR_COUNTER_TERRORISM_MARKER
     startingCondition: STR_TERRORIST_MISSION
     points: 5
-
-
   - type: STR_TERRORIST_HQ_RAID
     data:
       - alienRank: 5
@@ -784,8 +780,6 @@ alienDeployments:
     markerName: STR_TERRORIST_HQ_MARKER
     startingCondition: STR_TERRORIST_MISSION
     civilians: 3
-
-
 items:
   - type: STR_ELERIUM_115
     recoveryDividers:
@@ -793,7 +787,6 @@ items:
   - type: STR_UFO_POWER_SOURCE
     recoveryDividers:
       STR_HOSTAGE_CRISIS: 300
-
 extraSprites:
   - type: COUNTER_TERRORISM_ALERT_BACKGROUND
     singleImage: true

@@ -19,7 +19,6 @@ items:
     fuseType: 5
     fuseTriggerEvents:
       throwTrigger: true
-
   - type: STR_INC_STRIKE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -44,7 +43,6 @@ items:
       ToMorale: 0.5
       FireThreshold: 0
       RadiusReduction: 0.0
-
   - type: STR_CANNON_STRIKE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     size: 0.01
@@ -72,7 +70,6 @@ items:
       ToTile: 0.1
       FireThreshold: 1000
       RadiusReduction: 0.0
-
 extraSprites:
     - type: BIGOBS.PCK
       files:
@@ -100,7 +97,6 @@ extraSprites:
         964: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
         972: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
         980: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
-
 extraSounds:
   - type: BATTLE.CAT
     files:
@@ -124,7 +120,3 @@ extraSounds:
       117: Resources/BallisticWeapons/Sounds/targeted[targeted3].wav
       118: Resources/BallisticWeapons/Sounds/targeted[targeted4].wav
       119: Resources/BallisticWeapons/Sounds/targeted[targeted5].wav
-
-
-
-

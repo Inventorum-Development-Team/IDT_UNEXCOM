@@ -36,8 +36,6 @@ items:
     invWidth: 0
     invHeight: 0
     battleType: 4
-
-
   - type: STR_HIND_DOOR_BOMB
     power: 1
     weight: 999
@@ -63,7 +61,6 @@ items:
     armor: 255
     recover: false
     hiddenOnMinimap: true
-
   - type: STR_PLASMA_TURRET
     requires:
       - STR_ALIENS_ONLY
@@ -103,7 +100,6 @@ items:
     vaporDensitySurface: 20
     hitSound: 19
     hitAnimation: 46
-
   - type: STR_ARTILLERY_TURRET
     requires:
       - STR_ALIENS_ONLY
@@ -141,7 +137,6 @@ items:
     vaporDensitySurface: 20
     hitSound: 19
     hitAnimation: 0
-
   - type: STR_SMALL_PLASMA_TURRET
     requires:
       - STR_ALIENS_ONLY
@@ -181,7 +176,6 @@ items:
     vaporDensitySurface: 20
     hitSound: 19
     hitAnimation: 46
-
   - type: STR_M60_TURRET
     size: 0.4
     weight: 20
@@ -221,7 +215,6 @@ items:
     sprayWaypoints: 2
     attraction: 10
     listOrder: 2036
-
   - type: STR_HIND_ROCKETS
     tuAimed: 5
     accuracyAimed: 100
@@ -564,7 +557,6 @@ units:
     energyRecovery: 34
     builtInWeaponSets:
       - - STR_SMALL_PLASMA_TURRET
-
   - type: HIND_TURRET
     race: HIND_TURRET
     stats:
@@ -590,7 +582,6 @@ units:
     spotter: 1
     builtInWeaponSets:
       - - STR_HIND_ROCKETS
-
 extraSprites:
   - type: HTURRET.PCK
     width: 256

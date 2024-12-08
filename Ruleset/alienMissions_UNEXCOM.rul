@@ -9,7 +9,6 @@ alienMissions:
   - delete: STR_ALIEN_RETALIATION
   - delete: STR_ALIEN_SUPPLY
 #######################################
-
 ####################################
 ###### HUMAN ENEMY MISSIONS #######
 ##################################
@@ -26,7 +25,6 @@ alienMissions:
         count: 1
         trajectory: P911
         timer: 9000
-
   - type: STR_HUMAN_RECON2
     raceWeights:
       0:
@@ -40,7 +38,6 @@ alienMissions:
         count: 1
         trajectory: P911
         timer: 9000
-
   - type: STR_HUMAN_TERROR_ATTACK
     points: 10
     objective: 3
@@ -55,7 +52,6 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
   - type: STR_TERRORIST_HQ
     points: 10
     objective: 3
@@ -70,7 +66,6 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
   - type: STR_HOSTAGE_CRISIS
     points: 10
     objective: 3
@@ -84,7 +79,6 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
   - type: STR_HIJACKED_PLANE
     points: 10
     objective: 3
@@ -98,11 +92,9 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
 ######################################
 ###### ALIEN INVADER MISSIONS #######
 ####################################
-
 ########################
 ##### TERROR SITES #####
 ########################
@@ -155,7 +147,6 @@ alienMissions:
         trajectory: P7
         timer: 9000
         objective: true
-
   - type: STR_INVASION_START
     points: 0
     raceWeights:
@@ -387,7 +378,6 @@ alienMissions:
         count: 1
         trajectory: P7
         timer: 5000
-
   - type: STR_ALIEN_RETALIATION
     points: 0
     objective: 4
@@ -412,7 +402,6 @@ alienMissions:
         count: 1
         trajectory: P8
         timer: 5000
-
   - type: STR_COUNTER_ATTACK
     points: 0
     objective: 4
@@ -455,7 +444,6 @@ alienMissions:
         trajectory: P9
         timer: 6000
         objective: true
-
   - type: STR_AIR_SUPERIORITY_1
     raceWeights:
       0:
@@ -527,7 +515,6 @@ alienMissions:
         count: 1
         trajectory: P2
         timer: 5000
-
   - type: STR_ALIEN_INTERCEPTION_1 # Light interception
     operationType: 6
     points: 0
@@ -581,11 +568,9 @@ alienMissions:
         trajectory: P3
         timer: 90
         huntMode: 1
-
 ###############################
 ##### FACTION MISSIONS #######
 #############################
-
   - type: STR_AMERICAN_OPERATIONS_MISSION
     despawnEvenIfTargeted: true
     #siteType: STR_AMERICAN_OPERATIONS_MISSION
@@ -694,7 +679,6 @@ alienMissions:
         STR_ARMORED_MUTON: 20
         STR_ARMORED_FLOATER: 10
     waves: *DummyUFO
-
   - type: STR_EUROPEAN_CITY_DEFENSE
     despawnEvenIfTargeted: true
     siteType: STR_EUROPEAN_CITY_DEFENSE
@@ -743,11 +727,7 @@ alienMissions:
         STR_ARMORED_MUTON: 20
         STR_FLOATER: 10
     waves: *DummyUFO
-
-
 ### Story Missions ###
-
-
   - type: STR_OPERATION_DEVASTATION
     objective: 3
     siteType: STR_OPERATION_DEVASTATION
@@ -761,7 +741,6 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
   - type: STR_OVERSEER
     objective: 3
     siteType: STR_OVERSEER
@@ -775,8 +754,6 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
-
   - type: STR_ALIEN_SPACE_STATION
     objective: 3
     siteType: STR_SPACE_STATION
@@ -794,9 +771,6 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-
-
-
   - type: STR_GUARANTEED_BASE
     objective: 2
     siteType: STR_ALIEN_BASE_ASSAULT_NO_INTERCEPT
@@ -813,4 +787,3 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 100
         objective: true
-

@@ -274,7 +274,6 @@ alienDeployments:
     data: *AlliedOperationData
 #
 #############################################
-
   - type: STR_AMERICAN_TANK_BATTLE_MISSION
     width: 60
     length: 60
@@ -341,9 +340,7 @@ alienDeployments:
     duration: [18, 50]
     despawnPenalty: 400
     data: *AlliedOperationData
-
 #############################################
-
 extraSprites:
   - type: TERROR_SITE_ALERT_BACKGROUND
     singleImage: true

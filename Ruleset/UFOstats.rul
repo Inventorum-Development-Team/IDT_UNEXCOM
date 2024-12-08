@@ -118,7 +118,6 @@ ufos:
     radarRange: 30
     sightRange: 30
 #Research ships
-
   - type: STR_EXCAVATOR
     modSprite: InterceptionExcavator
     size: STR_SMALL
@@ -157,7 +156,6 @@ ufos:
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     breakOffTime: 500
-
   - type: STR_LAB_SHIP
     modSprite: InterceptionLabShip
     size: STR_LARGE
@@ -246,7 +244,6 @@ ufos:
           width: 50
           length: 30
 #Logistical
-
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
     sprite: 7
@@ -257,7 +254,6 @@ ufos:
     score: 400
     reload: 50
     breakOffTime: 3000
-
 alienDeployments:
   - type: STR_SMALL_FIGHTER
     data:
@@ -348,7 +344,6 @@ items:
     size: 0.1
     listOrder: 9000
     battleType: 0
-
 research:
   - name: STR_SMALL_FIGHTER
     cost: 0
@@ -358,7 +353,6 @@ research:
     cost: 0
     points: 50
     needItem: true
-
   - name: STR_SMALL_SCOUT_ANALYSIS
     cost: 50
     points: 0
@@ -443,5 +437,3 @@ research:
     getOneFree:
       - STR_SUPPLY_SHIP
     needItem: true
-
-

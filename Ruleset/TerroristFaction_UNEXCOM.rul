@@ -14,7 +14,6 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
   - type: STR_TERRORIST_FEMALE_CORPSE
     size: 0.4
     costSell: 2000
@@ -28,7 +27,6 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
   - type: STR_TERRORIST_GASMASK_CORPSE
     size: 0.4
     costSell: 2000
@@ -42,7 +40,6 @@ items:
     armor: 26
     categories:
       - STR_CORPSES
-
   - type: STR_THIN_MAN_CORPSE
     size: 0.4
     costSell: 30000
@@ -56,8 +53,6 @@ items:
     armor: 40
     categories:
       - STR_CORPSES
-
-
   - type: STR_TERRORIST_SOLDIER
     size: 0.0
     recover: true
@@ -100,7 +95,6 @@ items:
     costSell: 70000
     listOrder: 14405
     categories: [STR_PRISONERS]
-
 armors:
   - type: STR_TERRORIST_MALE_ARMOR
     spriteSheet: TERRORIST_MALE_SPRITESHEET.PCK
@@ -196,7 +190,6 @@ armors:
       - 1.6
       - 0.0
     loftempsSet: [ 2 ]
-
 units:
   - type: STR_TERRORIST_SOLDIER
     race: STR_TERRORIST
@@ -315,7 +308,6 @@ units:
     intelligence: 8
     aggression: 0
     canSurrender: true
-
   - type: STR_THIN_MAN_INFILTRATOR
     race: STR_HYBRID
     rank: STR_LIVE_LEADER
@@ -339,7 +331,6 @@ units:
     spotter: 2
     intelligence: 8
     aggression: 2
-
 alienRaces:
 #Race Rank Reference
 #alienRank: 5 - Soldier
@@ -370,7 +361,6 @@ alienRaces:
       - STR_TERRORIST_SOLDIER
       - STR_TERRORIST_SOLDIER
     retaliationAggression: -100
-
 research:
   - name: STR_TERRORISTS
     cost: 0
@@ -382,7 +372,6 @@ research:
       - STR_TERRORIST_MEDIC
       - STR_TERRORIST_SOLDIER
     listOrder: 180290
-
   - name: STR_THIN_MAN_INFILTRATOR
     cost: 50
     points: 50
@@ -401,14 +390,12 @@ research:
     getOneFree:
       - STR_END_OF_TERRORISTS
     spawnedEvent: STR_TERRORISTS_DEFEATED_EVENT
-
   - name: STR_TERRORISTS_OPERATIONS
     cost: 0
     points: 50
     dependencies:
       - STR_TERRORIST_LEADER
     listOrder: 180290
-
   - name: STR_ALIEN_ASSOCIATIONS
     cost: 0
     points: 10
@@ -416,7 +403,6 @@ research:
       - STR_TERRORIST_LEADER
       - STR_ALIEN_LASERS
     listOrder: 180290
-
   - name: STR_TERRORIST_HQ
     cost: 70
     points: 30
@@ -424,7 +410,6 @@ research:
       - STR_TERRORIST_COMMANDER
       - STR_ALIEN_ASSOCIATIONS
     listOrder: 180290
-
   - name: STR_TERRORIST_COMMANDER
     cost: 50
     points: 50
@@ -435,7 +420,6 @@ research:
       - STR_TERRORISTS_OPERATIONS
     getOneFree:
       - STR_ALIEN_ASSOCIATIONS
-
   - name: STR_TERRORIST_LEADER
     cost: 40
     points: 40
@@ -447,7 +431,6 @@ research:
       - STR_TEXAN_UFO
       - STR_MAGISTER_UFO
       - STR_MI8_UFO
-
   - name: STR_TERRORIST_GRENADIER
     cost: 10
     points: 10
@@ -459,7 +442,6 @@ research:
       - STR_TEXAN_UFO
       - STR_MAGISTER_UFO
       - STR_MI8_UFO
-
   - name: STR_TERRORIST_MEDIC
     cost: 10
     points: 10
@@ -471,7 +453,6 @@ research:
       - STR_TEXAN_UFO
       - STR_MAGISTER_UFO
       - STR_MI8_UFO
-
   - name: STR_TERRORIST_SOLDIER
     cost: 10
     points: 10
@@ -483,7 +464,6 @@ research:
       - STR_TEXAN_UFO
       - STR_MAGISTER_UFO
       - STR_MI8_UFO
-
   - name: STR_TERRORIST_MALE_CORPSE
     cost: 100
     points: 50
@@ -507,7 +487,6 @@ research:
     points: 50
     needItem: true
     listOrder: 12680
-
   - name: STR_END_OF_TERRORISTS
     cost: 0
     points: 50
@@ -516,8 +495,6 @@ research:
     dependencies:
      - STR_THIN_MAN_CORPSE
      - STR_THIN_MAN_INFILTRATOR
-
-
 extraSprites:
   - type: TERRORIST_MALE_SPRITESHEET.PCK
     width: 512
@@ -526,7 +503,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/TerroristFaction/TERRORIST_MALE_SPRITESHEET.png
-
   - type: TERRORIST_FEMALE_SPRITESHEET.PCK
     width: 512
     height: 720
@@ -534,7 +510,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/TerroristFaction/TERRORIST_FEMALE_SPRITESHEET.png
-
   - type: TERRORIST_GASMASK_SPRITESHEET.PCK
     width: 256
     height: 1400
@@ -549,8 +524,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Thin Man/ThinManSpritesheet.png
-
-
   - type: BIGOBS.PCK
     files:
       3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_BIGOB.png
@@ -563,21 +536,18 @@ extraSprites:
       3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_FLOOROB.png
       3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_FLOOROB.png
       3053: Resources/Thin Man/FLOOROBS/floorOb_ThinMan_corpse.png
-
   - type: TERRORIST_MALE_INVENTORY.SPK
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/TerroristFaction/TERRORIST_MALE_INVENTORY.png
-
   - type: TERRORIST_FEMALE_INVENTORY.SPK
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/TerroristFaction/TERRORIST_FEMALE_INVENTORY.png
-
   - type: TERRORIST_GASMASK_INVENTORY.SPK
     singleImage: true
     width: 320
@@ -588,7 +558,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Thin Man/Inventory/THIN_MAN_INV.png
-
   - type: TERRORIST_FACTION_IMAGE
     singleImage: true
     width: 320
@@ -619,5 +588,3 @@ extraSprites:
     height: 200
     files:
       0: Resources/Thin Man/Ufopaedia/THIN_MAN_AUTOPSY.png
-
-

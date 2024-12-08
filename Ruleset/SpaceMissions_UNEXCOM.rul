@@ -234,7 +234,6 @@ alienDeployments:
     despawnPenalty: 500
     points: 200
     unlockedResearch: STR_DEVASTATION_COMPLETED
-
   - type: STR_MARS_CYDONIA_LANDING
     data: *AlienSpaceBaseDefenders
     width: 80
@@ -256,7 +255,6 @@ alienDeployments:
       music: GMNEWMAR
       showTarget: false
       showCraft: false
-
   - type: STR_MARS_CYDONIA_CITY
     data: *AlienSpaceBaseDefenders
     width: 80
@@ -281,7 +279,6 @@ alienDeployments:
       music: GMNEWMAR
       showTarget: false
       showCraft: false
-
   - type: STR_MARS_THE_FINAL_ASSAULT
     height: 2
     data: *AlienSpaceBaseDefenders
@@ -308,7 +305,6 @@ alienDeployments:
     script: BOSSBATTLE
     objectiveType: 14
     objectivesRequired: 1
-
   - type: STR_SPACE_STATION
     width: 40
     length: 40
@@ -445,7 +441,6 @@ alienDeployments:
       music: GMNEWMAR
       showTarget: false
       showCraft: false
-
 mapScripts:
   - type: MOON_OPERATION_DEVASTATION
     commands:
@@ -464,7 +459,6 @@ mapScripts:
 #      size: 2
 #      executions: 3
     - type: fillArea
-
   - type: MOON
     commands:
     - type: addCraft
@@ -478,14 +472,12 @@ mapScripts:
 #      size: 2
 #      executions: 3
     - type: fillArea
-
   - type: SPACE
     commands:
      - type: addUFO
      - type: addCraft
        craftName: STR_SPACE_SHUTTLE_ORBITAL
      - type: fillArea
-
   - type: MARS_OPERATION_DOWNFALL
     commands:
      - type: addBlock
@@ -497,7 +489,6 @@ mapScripts:
      - type: addBlock
        groups: 2
      - type: fillArea
-
   - type: MARS_CYDONIA_LANDING
     commands:
       - type: addCraft
@@ -505,7 +496,6 @@ mapScripts:
         UFOName: STR_MOON_STATION
         executions: 1
       - type: fillArea
-
 terrains:
   - name: IDT_MOON
     enviroEffects: STR_MOON_ENVIRO
@@ -578,7 +568,6 @@ terrains:
       - name: IDT_MOON15
         width: 10
         length: 10
-
   - name: IDT_MOON_OPERATION_DEVASTATION
     enviroEffects: STR_MOON_ENVIRO
     mapDataSets:
@@ -595,7 +584,6 @@ terrains:
       - STR_ALLIED_AMERICAN_ASTRONAUT
       - STR_ALLIED_SOVIET_COSMONAUT
     mapBlocks: *MoonMapblocks
-
   - name: SPACE
     mapDataSets:
       - BLANKS
@@ -617,7 +605,6 @@ terrains:
       - name: SPACE03
         width: 10
         length: 10
-
   - name: IDT_MARS
     enviroEffects: STR_MARS_ENVIRO
     mapDataSets:
@@ -679,7 +666,6 @@ terrains:
       - name: IDT_MARS15
         width: 10
         length: 10
-
 #IDT - efrenespartano
   - name: MARS
     enviroEffects: STR_MARS_ENVIRO
@@ -727,7 +713,6 @@ terrains:
         width: 10
         length: 10
         groups: 2
-
   - name: MARS_ENTRY
     enviroEffects: STR_MARS_ENVIRO
     mapDataSets:
@@ -737,7 +722,6 @@ terrains:
       - name: MARS_ENTRY_GROUND
         width: 10
         length: 20
-
 ufos:
   - type: STR_SPACE_SHUTTLE_NPC
     size: STR_VERY_SMALL
@@ -753,7 +737,6 @@ ufos:
         - name: SHUTTLE_GROUND
           width: 10
           length: 20
-
   - type: STR_MOON_STATION
     size: STR_SMALL
     sprite: 2
@@ -810,7 +793,6 @@ ufos:
         - name: PABDUCT
           width: 20
           length: 10
-
   - type: STR_SPACE_STATION
     size: STR_SMALL
     sprite: 1
@@ -844,8 +826,6 @@ ufos:
           width: 10
           length: 20
           height: 12
-
-
 extraSprites:
   - type: SPACE_OPERATIONS_LAUNCH_ALERT
     singleImage: true
@@ -853,50 +833,42 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/SPACE_OPERATIONS_LAUNCH_ALERT.png
-
   - type: SPACE_OPERATIONS_IMPORTANT_LAUNCH_ALERT
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/SPACE_OPERATIONS_IMPORTANT_LAUNCH_ALERT.png
-
   - type: SPACE_OPERATIONS_ORBITAL_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/SPACE_OPERATIONS_ORBITAL_BACKGROUND.png
-
   - type: MOON_SHUTTLE_LANDING_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/MOON_SHUTTLE_LANDING_BACKGROUND.png
-
   - type: OPERATION_DOWNFALL_LANDING_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/OPERATION_DOWNFALL_LANDING_BACKGROUND.png
-
   - type: OPERATION_DOWNFALL_CYDONIA_CITY_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/OPERATION_DOWNFALL_CYDONIA_CITY_BACKGROUND.png
-
   - type: OPERATION_DOWNFALL_CYDONIA_BASE_ENTRANCE_BACKGROUND
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/OPERATION_DOWNFALL_CYDONIA_BASE_ENTRANCE_BACKGROUND.png
-
-
 units:
   - type: STR_ALLIED_AMERICAN_ASTRONAUT
     race: STR_ALLIED
@@ -927,7 +899,6 @@ units:
         - STR_M5_LASER_SMG
       -
         - STR_X4_LASER_SHOTGUN
-
   - type: STR_ALLIED_SOVIET_COSMONAUT
     race: STR_ALLIED
     stats:

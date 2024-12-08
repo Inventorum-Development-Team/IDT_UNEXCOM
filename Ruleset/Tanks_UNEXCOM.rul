@@ -152,7 +152,6 @@ units:
     builtInWeaponSets:
       -
         - STR_TANK_LASER_MINIGUN
-
 items:
 #####################################
 ####### DAIMLER FERRET SC ##############
@@ -655,7 +654,6 @@ items:
     invWidth: 2
     invHeight: 3
     listOrder: 1415
-
 armors:
 #####################################
 # Small explanation about Tank armors:
@@ -767,7 +765,6 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]#
     personalLight: 20
     specialWeapon: STR_TANKCRUSH
-
 #####################################
 ########## ALVIS SALADIN AC #############
 #####################################
@@ -802,7 +799,6 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
     specialWeapon: STR_VEHICLECRASH
-
 #####################################
 ####### LEGIONNAIRE LASER TANK ###########
 #####################################
@@ -837,7 +833,6 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
     specialWeapon: STR_TANKCRUSH
-
 extraSprites:
   - type: FERRET.PCK
     width: 256
@@ -944,19 +939,14 @@ extraSprites:
     files:
       2500: Resources/Tanks/DUAL50CAL.png
       2501: Resources/Tanks/SMOKELAUNCHER.png
-
       2502: Resources/Tanks/152MM.png
       2503: Resources/Tanks/MGM51.png
-
       2504: Resources/Tanks/76MM.png
       2505: Resources/Tanks/M1919A.png
-
       2506: Resources/Tanks/73MM.png
       2507: Resources/Tanks/PKT.png
-
       2508: Resources/Tanks/ENERGYSHELL.png
       2509: Resources/Tanks/LASERMINIGUN.png
-
       2510: Resources/Tanks/105MM.png
       2511: Resources/Tanks/100MM.png
       2512: Resources/Tanks/50CAL.png
@@ -1018,7 +1008,6 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 30
       STR_ALIEN_CRYSTAL: 10
-
 extraSounds:
   - type: BATTLE.CAT
     files:
