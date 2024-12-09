@@ -3707,6 +3707,13 @@ ufopaedia:
     section: STR_EQUIPMENT
     text: STR_FLASK_UFOPEDIA
     listOrder: 6306
+  - id: STR_CONTACT_SMUGGLERS
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    type_id: 8
+    section: STR_EQUIPMENT
+    text: STR_CONTACT_SMUGGLERS_UFOPEDIA
+    listOrder: 6307
   - id: STR_WEAPON_MODIFICATION
     requires:
       - STR_WEAPON_MODIFICATION
