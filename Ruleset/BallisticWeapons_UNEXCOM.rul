@@ -340,13 +340,7 @@ items:
     listOrder: 200960
   - type: STR_7_62MM_NATO_RIFLE_X5
     refNode: *STR_7_62MM_NATO_RIFLE_AMMO
-    categories:
-      [
-        STR_FIREARMS,
-        STR_RIFLES,
-        STR_SNIPER_RIFLES,
-        STR_CLIPS
-      ]
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_SNIPER_RIFLES, STR_CLIPS ]
     requiresBuy:
       - STR_NATO_X5_UNLOCK
     size: 0.01
@@ -483,13 +477,7 @@ items:
     refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
     requiresBuy:
       - STR_SKS
-    categories:
-      [
-        STR_FIREARMS,
-        STR_RIFLES,
-        STR_SNIPER_RIFLES,
-        STR_CLIPS
-      ]
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_SNIPER_RIFLES, STR_CLIPS ]
     size: 0.01
     costBuy: 275
     costSell: 225
@@ -1046,13 +1034,7 @@ items:
     attraction: 9
     listOrder: 201640
   - type: STR_RPG_HE_ROCKET
-    categories:
-      [
-        STR_FIREARMS,
-        STR_ARTILLERY,
-        STR_SOVIET_TECH,
-        STR_CLIPS
-      ]
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -1081,13 +1063,7 @@ items:
     attraction: 9
     listOrder: 201730
   - type: STR_RPG_INC_ROCKET
-    categories:
-      [
-        STR_FIREARMS,
-        STR_ARTILLERY,
-        STR_SOVIET_TECH,
-        STR_CLIPS
-      ]
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -1112,14 +1088,7 @@ items:
     attraction: 9
     listOrder: 201740
   - type: STR_RPG_EWH_ROCKET
-    categories:
-      [
-        STR_FIREARMS,
-        STR_ARTILLERY,
-        STR_SOVIET_TECH,
-        STR_CLIPS,
-        STR_FUSION
-      ]
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS, STR_FUSION ]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
       - STR_ELERIUM_FUSION
@@ -1250,13 +1219,7 @@ items:
     armor: 250
     listOrder: 200450
   - type: STR_XM117
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_CARBINES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.02
@@ -1352,13 +1315,7 @@ items:
     attraction: 11
     listOrder: 200690
   - type: STR_XM21
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SNIPER_RIFLES ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.02
@@ -1397,14 +1354,7 @@ items:
     attraction: 8
     listOrder: 201030
   - type: STR_REMINGTON_COMBAT_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_SHOTGUNS,
-        STR_FUSION
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS, STR_FUSION ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.03
@@ -1448,13 +1398,7 @@ items:
     armor: 250
     listOrder: 200130
   - type: STR_M79_THUMPER_GL
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_ARTILLERY
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.02
@@ -1483,13 +1427,7 @@ items:
     arcingShot: true
     listOrder: 200520
   - type: STR_M72_LAW
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_ARTILLERY
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.04
@@ -1532,13 +1470,7 @@ items:
     hitSound: 143
     listOrder: 2035
   - type: STR_M202_FLASH
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_ARTILLERY
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY ]
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.04
@@ -1619,13 +1551,7 @@ items:
     attraction: 10
     listOrder: 200970
   - type: STR_AR5
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SNIPER_RIFLES ]
     size: 0.02
     requiresBuy:
       - STR_IMPROVED_BOMBER
@@ -1659,13 +1585,7 @@ items:
   ####### UNEXCOM NATO SUPPLIED WEAPONS ###########
   #################################################
   - type: STR_BERETTA_92FS
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_NATO_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_PISTOLS ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.01
@@ -1710,13 +1630,7 @@ items:
     attraction: 10
     listOrder: 201370
   - type: STR_FN_FAL_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_NATO_TECH,
-        STR_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_RIFLES ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.02
@@ -1766,13 +1680,7 @@ items:
     attraction: 8
     listOrder: 201060
   - type: STR_SG510_CARBINE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_NATO_TECH,
-        STR_CARBINES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_CARBINES ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.02
@@ -1874,13 +1782,7 @@ items:
     attraction: 12
     listOrder: 201400
   - type: STR_PSG1
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_NATO_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SNIPER_RIFLES ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.03
@@ -1972,14 +1874,7 @@ items:
     attraction: 10
     listOrder: 201000
   - type: STR_CARL_GUSTAF_M2
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_NATO_TECH,
-        STR_ARTILLERY,
-        STR_FUSION
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.04
@@ -2011,13 +1906,7 @@ items:
   ####### UNEXCOM SOVIET SUPPLIED WEAPONS #######
   ###############################################
   - type: STR_STECHKIN_APS
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_PISTOLS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.01
@@ -2067,13 +1956,7 @@ items:
     attraction: 10
     listOrder: 201490
   - type: STR_AKM_BAYONETED
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -2139,13 +2022,7 @@ items:
     attraction: 8
     listOrder: 201220
   - type: STR_AKMSU
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_CARBINES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_CARBINES ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -2197,13 +2074,7 @@ items:
     attraction: 8
     listOrder: 201250
   - type: STR_SKORPION
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_SMGS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SMGS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.03
@@ -2252,13 +2123,7 @@ items:
     attraction: 7
     listOrder: 201440
   - type: STR_DRAGUNOV
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -2300,13 +2165,7 @@ items:
     attraction: 9
     listOrder: 201350
   - type: STR_KS23_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_SHOTGUNS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SHOTGUNS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -2356,14 +2215,7 @@ items:
     attraction: 8
     listOrder: 201670
   - type: STR_RPG
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_ARTILLERY,
-        STR_FUSION
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_ARTILLERY, STR_FUSION ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.02
@@ -2395,13 +2247,7 @@ items:
     attraction: 9
     listOrder: 201710
   - type: STR_RPKS
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_LMGS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_LMGS ]
     requiresBuy:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.03
@@ -2457,13 +2303,7 @@ items:
   - type: STR_MAKAROV
     requiresBuy:
       - STR_MAKAROV
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
     size: 0.01
     costBuy: 900
     costSell: 800
@@ -2507,13 +2347,7 @@ items:
   - type: STR_SNUBNOSE_PISTOL
     requiresBuy:
       - STR_SNUBNOSE_PISTOL
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
     size: 0.01
     costBuy: 500
     costSell: 400
@@ -2555,13 +2389,7 @@ items:
   - type: STR_HUNTING_RIFLE
     requiresBuy:
       - STR_HUNTING_RIFLE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SNIPER_RIFLES ]
     size: 0.02
     costBuy: 1600
     costSell: 1000
@@ -2592,13 +2420,7 @@ items:
   - type: STR_DOUBLE_BARRELED_SHOTGUN
     requiresBuy:
       - STR_DOUBLE_BARRELED_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_SHOTGUNS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS ]
     size: 0.02
     costBuy: 1500
     costSell: 2000
@@ -2717,8 +2539,7 @@ items:
   ############### DEALER WEAPONS ###############
   ##############################################
   - type: STR_LUGER
-    categories:
-      [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
     size: 0.01
     costBuy: 1100
     costSell: 850
@@ -2763,8 +2584,7 @@ items:
   - type: STR_UZI
     requires:
       - STR_CONTACT_SMUGGLERS
-    categories:
-      [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SMGS ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SMGS ]
     size: 0.01
     costBuy: 1350
     costSell: 1000
@@ -2810,8 +2630,7 @@ items:
     attraction: 8
     listOrder: 200410
   - type: STR_G3
-    categories:
-      [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_CARBINES ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_CARBINES ]
     requiresBuy:
       - STR_CONTACT_SMUGGLERS
     size: 0.02
@@ -2855,13 +2674,7 @@ items:
   ############### POLICE WEAPONS #################
   #############################################
   - type: STR_POLICE_REVOLVER
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
     size: 0.01
     costBuy: 1500
     costSell: 1000
@@ -2903,13 +2716,7 @@ items:
     attraction: 8
     listOrder: 200430
   - type: STR_BERETTA_M12
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_SMGS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SMGS ]
     size: 0.03
     costBuy: 3000
     costSell: 2500
@@ -2957,14 +2764,7 @@ items:
     attraction: 8
     listOrder: 201510
   - type: STR_POLICE_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_CIVILIAN_TECH,
-        STR_SHOTGUNS,
-        STR_FUSION
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS, STR_FUSION ]
     size: 0.02
     costBuy: 1500
     costSell: 1100
@@ -3049,13 +2849,7 @@ items:
   - type: STR_ENFORCER
     requiresBuy:
       - STR_ENFORCER
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_PISTOLS ]
     size: 0.02
     costBuy: 2000
     costSell: 1100
@@ -3098,13 +2892,7 @@ items:
   - type: STR_M1_CARBINE
     requiresBuy:
       - STR_M1_CARBINE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_US_TECH,
-        STR_CARBINES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES ]
     size: 0.02
     costBuy: 900
     costSell: 400
@@ -3233,13 +3021,7 @@ items:
   ###### NATO #######
   ##################
   - type: STR_FN_FAL
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_NATO_TECH,
-        STR_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_RIFLES ]
     size: 0.02
     costBuy: 4500
     costSell: 3750
@@ -3383,13 +3165,7 @@ items:
   - type: STR_AKM
     requiresBuy:
       - STR_AKM
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES ]
     size: 0.02
     costBuy: 2500
     costSell: 1500
@@ -3439,13 +3215,7 @@ items:
   - type: STR_SKS
     requiresBuy:
       - STR_SKS
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES ]
     size: 0.02
     costBuy: 3500
     costSell: 2750
@@ -3478,13 +3248,7 @@ items:
   - type: STR_PPS_43
     requiresBuy:
       - STR_PPS_43
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_SMGS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SMGS ]
     size: 0.02
     costBuy: 2500
     costSell: 1900
@@ -3584,14 +3348,7 @@ items:
   ####### UNEXCOM SOVIET USSR PROTOTYPE WEAPONS  ######
   #####################################################
   - type: STR_ANGRY_WIFE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SOVIET_TECH,
-        STR_SHOTGUNS,
-        STR_FUSION
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SHOTGUNS, STR_FUSION ]
     requires:
       - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
     size: 0.01
@@ -4037,14 +3794,7 @@ items:
   ####### CUSTOM SF WEAPONS #########
   ##################################
   - type: STR_SAWEDOFF_M79_THUMPER
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SPECIAL_FORCES_TECH,
-        STR_ARTILLERY,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_ARTILLERY, STR_CUSTOM_WEAPON ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
@@ -4074,16 +3824,7 @@ items:
     requires:
       - STR_WEAPON_MODIFICATION
       - STR_DOUBLE_BARRELED_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SPECIAL_FORCES_TECH,
-        STR_MERCENARY_TECH,
-        STR_CIVILIAN_TECH,
-        STR_SHOTGUNS,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH, STR_CIVILIAN_TECH, STR_SHOTGUNS, STR_CUSTOM_WEAPON ]
     size: 0.02
     costSell: 3000
     weight: 8
@@ -4156,14 +3897,7 @@ items:
     attraction: 7
     listOrder: 2118
   - type: STR_XM117_SCOPED
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SPECIAL_FORCES_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
@@ -4205,14 +3939,7 @@ items:
     attraction: 8
     listOrder: 200820
   - type: STR_XM117_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SPECIAL_FORCES_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
@@ -4263,14 +3990,7 @@ items:
     attraction: 8
     listOrder: 200230
   - type: STR_XM117_M203
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_SPECIAL_FORCES_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
@@ -4330,14 +4050,7 @@ items:
     attraction: 8
     listOrder: 200620
   - type: STR_MAT49
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_MERCENARY_SUPPORT
     size: 0.02
@@ -4389,14 +4102,7 @@ items:
   ###### CUSTOM MERC WEAPONS ########
   ##################################
   - type: STR_FN_FSC
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_MERCENARY_SUPPORT
     size: 0.02
@@ -4443,14 +4149,7 @@ items:
     attraction: 12
     listOrder: 200850
   - type: STR_FN_FSC_SCOPED
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_MERCENARY_SUPPORT
     size: 0.02
@@ -4490,14 +4189,7 @@ items:
     attraction: 12
     listOrder: 200880
   - type: STR_FN_FSC_BAYONET
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_CARBINES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
     requires:
       - STR_MERCENARY_SUPPORT
     size: 0.02
@@ -4562,15 +4254,7 @@ items:
     attraction: 12
     listOrder: 200910
   - type: STR_M16A1_SCOPED
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_SPECIAL_FORCES_TECH,
-        STR_RIFLES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_SPECIAL_FORCES_TECH, STR_RIFLES, STR_CUSTOM_WEAPON ]
     size: 0.02
     costSell: 3750
     weight: 7
@@ -4617,15 +4301,7 @@ items:
     tuMelee: 0
     listOrder: 200940
   - type: STR_M16A1_SHOTGUN
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_SPECIAL_FORCES_TECH,
-        STR_RIFLES,
-        STR_CUSTOM_WEAPON
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_SPECIAL_FORCES_TECH, STR_RIFLES, STR_CUSTOM_WEAPON ]
     size: 0.02
     costSell: 3750
     weight: 7
@@ -4686,13 +4362,7 @@ items:
     tuMelee: 0
     listOrder: 200270
   - type: STR_50_CAL_MAGNUM
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_MERCENARY_TECH,
-        STR_PISTOLS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_PISTOLS ]
     requires:
       - STR_MERCENARY_SUPPORT
     size: 0.01
@@ -4733,13 +4403,7 @@ items:
     attraction: 8
     listOrder: 200740
   - type: STR_50_CAL_REVOLVER_AMMO_X6
-    categories:
-      [
-        STR_FIREARMS,
-        STR_PISTOLS,
-        STR_MERCENARY_TECH,
-        STR_CLIPS
-      ]
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_MERCENARY_TECH, STR_CLIPS ]
     requires:
       - STR_MERCENARY_SUPPORT
     size: 0.01
@@ -4761,13 +4425,7 @@ items:
   ######## CUSTOM UN WEAPONS ########
   ##################################
   - type: STR_STONER_RIFLE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_UNEXCOM_TECH,
-        STR_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES ]
     size: 0.02
     requiresBuy:
       - STR_ON_OUR_OWN
@@ -4812,13 +4470,7 @@ items:
     attraction: 8
     listOrder: 201151
   - type: STR_STONER_CARBINE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_UNEXCOM_TECH,
-        STR_CARBINES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_CARBINES ]
     size: 0.02
     costSell: 2000
     weight: 6
@@ -4862,13 +4514,7 @@ items:
     attraction: 8
     listOrder: 201252
   - type: STR_STONER_AUTOMATIC_RIFLE
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_UNEXCOM_TECH,
-        STR_LMGS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_LMGS ]
     size: 0.04
     costSell: 5000
     weight: 13
@@ -4912,13 +4558,7 @@ items:
     attraction: 10
     listOrder: 201171
   - type: STR_STONER_COMMANDO
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_UNEXCOM_TECH,
-        STR_LMGS
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_LMGS ]
     size: 0.03
     costSell: 9000
     weight: 10
@@ -4960,13 +4600,7 @@ items:
     attraction: 10
     listOrder: 201001
   - type: STR_STONER_SNIPER
-    categories:
-      [
-        STR_BALLISTIC,
-        STR_FIREARMS,
-        STR_UNEXCOM_TECH,
-        STR_SNIPER_RIFLES
-      ]
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES ]
     size: 0.02
     costSell: 4750
     weight: 9

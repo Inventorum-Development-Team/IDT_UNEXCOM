@@ -23,6 +23,7 @@ To my clan of World of Tanks Blitz, the glorious 130th Armored Division (among t
 To Istrebitel, for his awesome mod Air Combat Rebalanced, from where I took various stats for the craft weapons and weapons itself.
 To alinare, for his incredible source of codes and sprites in his mod The Endless War.
 To Nord, for his recomendation about Android apps to mod OpenXcom, they are very useful!
+To Kiro Nextgen, who made his convoy trucks into a nice map tiles. He debugs and fixes codes on his way through challenges.
 And finally, but not at the end, to the OpenXcom community, for all the mods, the resources and all the available help.
 
 
