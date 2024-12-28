@@ -27,8 +27,6 @@ units:
     energyRecovery: 50
     builtInWeaponSets:
       -
-#      - STR_FERRET_CAR - this seems to be linked via unit title now
-#      - STR_DOUBLE_50CAL
         - STR_DOUBLE_50CAL_BOX
         - STR_FERRET_SMOKE_LAUNCHER
         - STR_FERRET_SMOKE_GRENADE
@@ -58,8 +56,6 @@ units:
     energyRecovery: 50
     builtInWeaponSets:
       -
-#      - STR_SHERIDAN_TANK - this seems to be linked via unit title now
-#      - STR_M81E1
         - STR_152MM_CANNON_SHELLS
         - STR_SHILLELAGH
         - STR_MGM51_MISSILE
@@ -88,9 +84,6 @@ units:
     moveSound: 14
     energyRecovery: 50
     builtInWeaponSets:
-      -
-#      - STR_BMD1_TANK - this seems to be linked via unit title now
-#      - STR_2A28_GROM
         - STR_73MM_CANNON_SHELLS
         - STR_PKT_MACHINEGUN
         - STR_PKT_AMMO_BOX
@@ -120,8 +113,6 @@ units:
     energyRecovery: 50
     builtInWeaponSets:
       -
-#      - STR_SALADIN_CAR - this seems to be linked via unit title now
-#      - STR_L5A1_GUN
         - STR_76MM_CANNON_SHELLS
         - STR_M1919A4_MACHINEGUN
         - STR_M1919A4_AMMO_BOX
@@ -191,7 +182,7 @@ items:
   - type: STR_FERRET_SMOKE_LAUNCHER
     weight: 0
     bigSprite: 2501
-    #fireSound: 1007
+    fireSound: 4336
     compatibleAmmo:
       - STR_FERRET_SMOKE_GRENADE
     accuracyAimed: 100
@@ -762,7 +753,7 @@ armors:
      - 0.4 # Acid
      - 0.0 # Smoke
      - 0.8 # Elerium Fusion
-    loftempsSet: [ 92, 89, 90, 91 ]#
+    loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
     specialWeapon: STR_TANKCRUSH
 #####################################
@@ -865,8 +856,6 @@ extraSprites:
   - type: LEGIONNAIRE.PCK
     width: 256
     height: 160
-#    width: 256
-#    height: 840
     subX: 32
     subY: 40
     files:
