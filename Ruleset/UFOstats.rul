@@ -214,35 +214,8 @@ ufos:
     score: 700
     reload: 30
     breakOffTime: 4000
-  - type: STR_CARRIER
-    size: STR_VERY_LARGE
-    sprite: 6
-    damageMax: 3000
-    speedMax: 400
-    shieldCapacity: 500
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    accel: 2
-    power: 250
-    hitBonus: 40
-    range: 60
-    score: 700
-    reload: 30
-    breakOffTime: 4000
-    battlescapeTerrainData:
-      name: CARRIER
-      mapDataSets:
-        - BLANKS
-        - AVENGER
-        - U_PODS
-        - U_BASE
-        - U_WALL02
-        - UFO1
-        - U_EXT02
-      mapBlocks:
-        - name: CARRIER
-          width: 50
-          length: 30
+
+
 #Logistical
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
