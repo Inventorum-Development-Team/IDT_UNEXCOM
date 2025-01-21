@@ -2,6 +2,16 @@ facilities:
   - delete: STR_HANGAR
   - delete: STR_SMALL_RADAR_SYSTEM
   - delete: STR_LARGE_RADAR_SYSTEM
+  - type: STR_GENERAL_STORES
+    removalTime: 10
+  - type: STR_WORKSHOP
+    removalTime: 10
+  - type: STR_MIND_SHIELD
+    removalTime: 10
+  - type: STR_LABORATORY
+    removalTime: 10
+  - type: STR_ALIEN_CONTAINMENT
+    removalTime: 10
   - type: STR_HYPER_WAVE_DECODER
     requires:
       - STR_HYPER_WAVE_DECODER
@@ -17,6 +27,7 @@ facilities:
     monthlyCost: 30000
     radarRange: 1800
     radarChance: 100
+    removalTime: 10
     mapName: XBASE_15
   - type: STR_HANGAR
     spriteShape: 9
@@ -27,6 +38,7 @@ facilities:
     storage: 50
     monthlyCost: 25000
     crafts: 2
+    removalTime: 20
     mapName: XBASE_16
     storageTiles:
       - [0, 9, 0]
@@ -38,20 +50,25 @@ facilities:
     monthlyCost: 10000
     radarRange: 1695
     radarChance: 10
+    removalTime: 10
     mapName: XBASE_04
   - type: STR_LIVING_QUARTERS
     storage: 10
     trainingRooms: 15
     rightClickActionType: 4
+    removalTime: 10
   - override: STR_MISSILE_DEFENSES
     ammoMax: 9
     rearmRate: 3
+    removalTime: 10
   - override: STR_LASER_DEFENSES
     ammoMax: 8
     rearmRate: 1
+    removalTime: 10
   - override: STR_PLASMA_DEFENSES
     ammoMax: 8
     rearmRate: 8
+    removalTime: 20
   - #override: STR_FUSION_BALL_DEFENSE
     #ammoMax: 8
     #rearmRate: 4

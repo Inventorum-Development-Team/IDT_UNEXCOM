@@ -561,6 +561,7 @@ items:
     costBuy: 50000
     costSell: 40000
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 6
     weight: 30
     armor: 60
     bigSprite: 3208
@@ -609,6 +610,7 @@ items:
     costBuy: 9000
     costSell: 3000
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 18
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
@@ -639,6 +641,7 @@ items:
     costBuy: 36000
     costSell: 30000
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 1
     weight: 45
     armor: 80
     bigSprite: 3216
@@ -681,6 +684,7 @@ items:
     costBuy: 2600
     costSell: 1200
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 6
     weight: 6
     bigSprite: 3288
     handSprite: 3288
@@ -710,6 +714,7 @@ items:
     costBuy: 2600
     costSell: 1200
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 2
     weight: 6
     bigSprite: 3296
     handSprite: 3296
@@ -741,6 +746,7 @@ items:
     costBuy: 38000
     costSell: 32000
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 3
     weight: 25
     bigSprite: 3224
     floorSprite: 3224
@@ -784,6 +790,7 @@ items:
       - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
     ##listOrder: 5451
     size: 0.01
+    monthlyBuyLimit: 12
     costBuy: 14000
     costSell: 12000
     requiresBuyCountry: STR_USA
@@ -821,6 +828,7 @@ items:
     costBuy: 50000
     costSell: 44000
     requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 6
     weight: 25
     armor: 60
     bigSprite: 3232
@@ -870,6 +878,7 @@ items:
     costSell: 3000
     costBuy: 5000
     requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 18
     bigSprite: 3312
     floorSprite: 3312
     handSprite: 3312 # ALL GOOD
@@ -900,6 +909,7 @@ items:
     costBuy: 30000
     costSell: 20000
     requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 8
     weight: 6
     armor: 40
     bigSprite: 3240
@@ -939,6 +949,7 @@ items:
     costBuy: 6000
     costSell: 5500
     requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 24
     hitAnimation: 110
     power: 70 # 52
     clipSize: 12 # 26
@@ -967,6 +978,7 @@ items:
     costBuy: 66000
     costSell: 55000
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 1
     weight: 35
     armor: 60
     bigSprite: 3248
@@ -1015,6 +1027,7 @@ items:
     size: 0.01
     costBuy: 13000
     costSell: 11000
+    monthlyBuyLimit: 6
     requiresBuyCountry: STR_WEST_GERMANY
     hitAnimation: 110
     power: 150 # 115
@@ -1047,6 +1060,7 @@ items:
     costBuy: 48000
     costSell: 42000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 6
     weight: 28
     armor: 60
     bigSprite: 3256
@@ -1116,6 +1130,7 @@ items:
     costSell: 8000
     costBuy: 9000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 24
     bigSprite: 3336
     floorSprite: 3336
     handSprite: 3336 # ALL GOOD
@@ -1146,6 +1161,7 @@ items:
     costBuy: 75000
     costSell: 69000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 2
     weight: 40
     armor: 70
     bigSprite: 3264
@@ -1199,6 +1215,7 @@ items:
     costBuy: 170000
     costSell: 15000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 6
     hitAnimation: 110
     power: 75 # 115
     clipSize: 50 # 35
@@ -1227,6 +1244,7 @@ items:
     costBuy: 27000
     costSell: 22000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 5
     weight: 20
     bigSprite: 3272
     floorSprite: 3272
@@ -1277,6 +1295,7 @@ items:
     costBuy: 12000
     costSell: 11000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 15
     hitAnimation: 90
     power: 80 # 52
     clipSize: 25 # 26

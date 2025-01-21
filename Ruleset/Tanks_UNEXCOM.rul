@@ -154,6 +154,7 @@ items:
     requiresBuyCountry: STR_UK
     costBuy: 350000
     costSell: 240000
+    monthlyBuyLimit: 3
     transferTime: 96
     weight: 1
     bigSprite: 2500
@@ -201,6 +202,7 @@ items:
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     size: 0.1
     requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 6
     costBuy: 50
     costSell: 50
     transferTime: 48
@@ -245,6 +247,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 720000
     costSell: 540000
+    monthlyBuyLimit: 1
     transferTime: 96
     weight: 1
     bigSprite: 2502
@@ -299,6 +302,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 1600
     costSell: 800
+    monthlyBuyLimit: 6
     transferTime: 48
     weight: 1
     bigSprite: -1
@@ -324,6 +328,7 @@ items:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.6
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 6
     costBuy: 9000
     costSell: 7250
     transferTime: 48
@@ -353,6 +358,7 @@ items:
       - STR_NATO_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 2
     costBuy: 350000
     costSell: 240000
     transferTime: 96
@@ -411,6 +417,7 @@ items:
     requiresBuyCountry: STR_UK
     costBuy: 100
     costSell: 50
+    monthlyBuyLimit: 3
     transferTime: 96
     weight: 1
     bigSprite: 2505
@@ -443,6 +450,7 @@ items:
     requiresBuyCountry: STR_UK
     costBuy: 80
     costSell: 80
+    monthlyBuyLimit: 6
     transferTime: 48
     weight: 1
     bigSprite: -1
@@ -471,6 +479,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 2
     costBuy: 520000
     costSell: 440000
     transferTime: 96
@@ -527,6 +536,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 6
     costBuy: 1500
     costSell: 750
     transferTime: 48
@@ -556,6 +566,7 @@ items:
     requiresBuyCountry: STR_RUSSIA
     costBuy: 50
     costSell: 50
+    monthlyBuyLimit: 10
     transferTime: 48
     weight: 1
     bigSprite: -1

@@ -68,6 +68,7 @@ items:
     costBuy: 900
     costSell: 250
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 12
     weight: 3
     bigSprite: 97
     floorSprite: 97
@@ -98,6 +99,7 @@ items:
     costBuy: 900
     costSell: 250
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 36
     weight: 3
     bigSprite: 98
     floorSprite: 98
@@ -126,6 +128,7 @@ items:
     costBuy: 900
     costSell: 250
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 36
     weight: 3
     bigSprite: 99
     floorSprite: 99
@@ -157,6 +160,7 @@ items:
     costBuy: 100
     costSell: 50
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 36
     weight: 3
     bigSprite: 100
     floorSprite: 100
@@ -183,6 +187,7 @@ items:
     costBuy: 200
     costSell: 100
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 36
     weight: 3
     bigSprite: 101
     floorSprite: 101
@@ -210,6 +215,7 @@ items:
     costBuy: 300
     costSell: 200
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 36
     weight: 3
     bigSprite: 102
     floorSprite: 102
@@ -238,6 +244,7 @@ items:
     costBuy: 200
     costSell: 10
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 36
     weight: 3
     bigSprite: 103
     floorSprite: 103
@@ -262,6 +269,7 @@ items:
   - type: STR_45_PISTOL_X30
     requiresBuy:
       - STR_USA_SUPPORT_RESEARCH
+    monthlyBuyLimit: 36
     refNode: *STR_45_PISTOL_AMMO
     categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
     size: 0.005
@@ -296,6 +304,7 @@ items:
     costBuy: 275
     costSell: 225
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 3
     bigSprite: 105
     floorSprite: 105
@@ -320,6 +329,7 @@ items:
     size: 0.01
     costSell: 525
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 25
     weight: 3
     bigSprite: 106
     floorSprite: 106
@@ -343,6 +353,7 @@ items:
     categories: [ STR_FIREARMS, STR_RIFLES, STR_SNIPER_RIFLES, STR_CLIPS ]
     requiresBuy:
       - STR_NATO_X5_UNLOCK
+    monthlyBuyLimit: 50
     size: 0.01
     costBuy: 100
     costSell: 75
@@ -372,6 +383,7 @@ items:
     costBuy: 295
     costSell: 275
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 25
     weight: 3
     bigSprite: 108
     floorSprite: 108
@@ -399,6 +411,7 @@ items:
     costBuy: 355
     costSell: 325
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 25
     weight: 3
     bigSprite: 109
     floorSprite: 109
@@ -426,6 +439,7 @@ items:
     costBuy: 500
     costSell: 400
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
     weight: 3
     bigSprite: 110
     floorSprite: 110
@@ -454,6 +468,7 @@ items:
     costBuy: 700
     costSell: 600
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 5
     weight: 3
     bigSprite: 111
     floorSprite: 111
@@ -482,6 +497,7 @@ items:
     costBuy: 275
     costSell: 225
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 40
     weight: 1
     bigSprite: 112
     floorSprite: 112
@@ -508,6 +524,7 @@ items:
     costBuy: 375
     costSell: 325
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 25
     weight: 3
     bigSprite: 113
     floorSprite: 113
@@ -534,6 +551,7 @@ items:
     costBuy: 475
     costSell: 425
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
     weight: 4
     bigSprite: 114
     floorSprite: 114
@@ -560,6 +578,7 @@ items:
     costBuy: 675
     costSell: 525
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 15
     weight: 5
     bigSprite: 115
     floorSprite: 115
@@ -586,6 +605,7 @@ items:
     costBuy: 675
     costSell: 525
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 45
     weight: 4
     bigSprite: 116
     floorSprite: 116
@@ -609,6 +629,7 @@ items:
     size: 0.01
     costBuy: 100
     costSell: 50
+    monthlyBuyLimit: 35
     weight: 3
     bigSprite: 117
     floorSprite: 117
@@ -637,6 +658,7 @@ items:
     size: 0.01
     costBuy: 100
     costSell: 50
+    monthlyBuyLimit: 35
     weight: 3
     bigSprite: 118
     floorSprite: 118
@@ -661,6 +683,7 @@ items:
     size: 0.01
     costBuy: 500
     costSell: 250
+    monthlyBuyLimit: 35
     weight: 3
     bigSprite: 119
     floorSprite: 119
@@ -687,6 +710,7 @@ items:
     size: 0.01
     costBuy: 900
     costSell: 850
+    monthlyBuyLimit: 35
     weight: 3
     bigSprite: 120
     floorSprite: 120
@@ -714,6 +738,7 @@ items:
     size: 0.01
     costBuy: 600
     costSell: 250
+    monthlyBuyLimit: 35
     weight: 3
     bigSprite: 121
     floorSprite: 121
@@ -768,6 +793,7 @@ items:
     costBuy: 500
     costSell: 470
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
     weight: 2
     bigSprite: 123
     floorSprite: 123
@@ -795,6 +821,7 @@ items:
     costBuy: 600
     costSell: 400
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
     weight: 2
     bigSprite: 124
     floorSprite: 124
@@ -818,6 +845,7 @@ items:
     costBuy: 300
     costSell: 200
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
     weight: 2
     bigSprite: 125
     floorSprite: 125
@@ -839,6 +867,7 @@ items:
     costBuy: 1500
     costSell: 800
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
     weight: 2
     bigSprite: 126
     floorSprite: 126
@@ -863,6 +892,7 @@ items:
     costBuy: 80
     costSell: 40
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 40
     weight: 2
     bigSprite: 127
     floorSprite: 127
@@ -883,6 +913,7 @@ items:
     costBuy: 600
     costSell: 500
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 40
     weight: 3
     bigSprite: 128
     floorSprite: 128
@@ -904,6 +935,7 @@ items:
     size: 0.01
     costBuy: 300
     costSell: 250
+    monthlyBuyLimit: 35
     weight: 2
     bigSprite: 129
     floorSprite: 129
@@ -925,6 +957,7 @@ items:
     costBuy: 1600
     costSell: 1200
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 12
     weight: 8
     bigSprite: 1080
     floorSprite: 1080
@@ -954,6 +987,7 @@ items:
     size: 0.02
     costBuy: 1600
     costSell: 1200
+    monthlyBuyLimit: 12
     weight: 6
     bigSprite: 130
     floorSprite: 130
@@ -982,6 +1016,7 @@ items:
     size: 0.02
     costBuy: 6200
     costSell: 5000
+    monthlyBuyLimit: 12
     weight: 6
     bigSprite: 131
     floorSprite: 131
@@ -1041,6 +1076,7 @@ items:
     costBuy: 1600
     costSell: 1200
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 12
     weight: 6
     bigSprite: 133
     floorSprite: 133
@@ -1070,6 +1106,7 @@ items:
     costBuy: 2200
     costSell: 2000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 12
     weight: 6
     bigSprite: 134
     floorSprite: 134
@@ -1129,6 +1166,7 @@ items:
     costBuy: 1200
     costSell: 900
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 3
     bigSprite: 136
     floorSprite: 136
@@ -1226,6 +1264,7 @@ items:
     costBuy: 3000
     costSell: 2750
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 15
     weight: 8
     bigSprite: 138
     floorSprite: 138
@@ -1271,6 +1310,7 @@ items:
     costBuy: 2000
     costSell: 1800
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 15
     weight: 9
     bigSprite: 139
     floorSprite: 139
@@ -1322,6 +1362,7 @@ items:
     costBuy: 5000
     costSell: 4750
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 5
     weight: 12
     bigSprite: 140
     floorSprite: 140
@@ -1361,6 +1402,7 @@ items:
     costBuy: 1700
     costSell: 520
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 12
     weight: 7
     bigSprite: 141
     floorSprite: 141
@@ -1405,6 +1447,7 @@ items:
     costBuy: 5500
     costSell: 2250
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 5
     weight: 15
     bigSprite: 142
     floorSprite: 142
@@ -1434,6 +1477,7 @@ items:
     costBuy: 950
     costSell: 850
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 12
     weight: 7
     bigSprite: 143
     floorSprite: 143
@@ -1477,6 +1521,7 @@ items:
     costBuy: 25000
     costSell: 30000
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 4
     weight: 6
     bigSprite: 1072
     floorSprite: 1072
@@ -1512,6 +1557,7 @@ items:
     costBuy: 12000
     costSell: 9400
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 4
     weight: 20
     bigSprite: 144
     floorSprite: 144
@@ -1558,6 +1604,7 @@ items:
     costBuy: 1500
     costSell: 1150
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
     weight: 5
     bigSprite: 145
     floorSprite: 145
@@ -1592,6 +1639,7 @@ items:
     costBuy: 700
     costSell: 580
     requiresBuyCountry: STR_ITALY
+    monthlyBuyLimit: 30
     weight: 4
     bigSprite: 146
     floorSprite: 146
@@ -1636,6 +1684,7 @@ items:
     size: 0.02
     costBuy: 6500
     costSell: 5750
+    monthlyBuyLimit: 16
     weight: 12
     bigSprite: 147
     floorSprite: 147
@@ -1686,6 +1735,7 @@ items:
     size: 0.02
     costBuy: 3000
     costSell: 2500
+    monthlyBuyLimit: 20
     weight: 7
     bigSprite: 148
     floorSprite: 148
@@ -1734,6 +1784,7 @@ items:
     costBuy: 3000
     costSell: 2500
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 20
     weight: 6
     bigSprite: 149
     floorSprite: 149
@@ -1789,6 +1840,7 @@ items:
     costBuy: 15000
     costSell: 8200
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 5
     weight: 16
     bigSprite: 150
     floorSprite: 150
@@ -1835,6 +1887,7 @@ items:
     size: 0.03
     costBuy: 11000
     costSell: 9000
+    monthlyBuyLimit: 40
     weight: 13
     bigSprite: 151
     floorSprite: 151
@@ -1880,6 +1933,7 @@ items:
     size: 0.04
     costBuy: 16000
     costSell: 10000
+    monthlyBuyLimit: 6
     weight: 10
     bigSprite: 152
     floorSprite: 152
@@ -1913,6 +1967,7 @@ items:
     costBuy: 400
     costSell: 250
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 30
     weight: 4
     bigSprite: 153
     floorSprite: 153
@@ -1963,6 +2018,7 @@ items:
     costBuy: 2700
     costSell: 1550
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
     weight: 10
     bigSprite: 154
     floorSprite: 154
@@ -2029,6 +2085,7 @@ items:
     costBuy: 3200
     costSell: 2000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
     weight: 8
     bigSprite: 155
     floorSprite: 155
@@ -2081,6 +2138,7 @@ items:
     costBuy: 350
     costSell: 250
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 25
     weight: 6
     bigSprite: 156
     floorSprite: 156
@@ -2130,6 +2188,7 @@ items:
     costBuy: 7000
     costSell: 5500
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 5
     weight: 12
     bigSprite: 157
     floorSprite: 157
@@ -2172,6 +2231,7 @@ items:
     costBuy: 2200
     costSell: 1800
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 16
     weight: 12
     bigSprite: 158
     floorSprite: 158
@@ -2222,6 +2282,7 @@ items:
     costBuy: 7600
     costSell: 6600
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 12
     weight: 8
     bigSprite: 159
     floorSprite: 159
@@ -2254,6 +2315,7 @@ items:
     costBuy: 9000
     costSell: 8000
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 6
     weight: 15
     bigSprite: 160
     floorSprite: 160
@@ -2308,6 +2370,7 @@ items:
     costBuy: 900
     costSell: 800
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 30
     weight: 4
     bigSprite: 161
     floorSprite: 161
@@ -2351,6 +2414,7 @@ items:
     size: 0.01
     costBuy: 500
     costSell: 400
+    monthlyBuyLimit: 30
     weight: 3
     bigSprite: 162
     floorSprite: 162
@@ -2393,6 +2457,7 @@ items:
     size: 0.02
     costBuy: 1600
     costSell: 1000
+    monthlyBuyLimit: 30
     weight: 11
     bigSprite: 163
     floorSprite: 163
@@ -2424,6 +2489,7 @@ items:
     size: 0.02
     costBuy: 1500
     costSell: 2000
+    monthlyBuyLimit: 30
     weight: 11
     bigSprite: 164
     floorSprite: 164
@@ -2465,6 +2531,7 @@ items:
     size: 0.02
     costBuy: 800
     costSell: 500
+    monthlyBuyLimit: 30
     weight: 5
     bigSprite: 165
     floorSprite: 165
@@ -2502,6 +2569,7 @@ items:
     size: 0.02
     costBuy: 1200
     costSell: 800
+    monthlyBuyLimit: 30
     weight: 8
     bigSprite: 1096
     floorSprite: 1096
@@ -2544,6 +2612,7 @@ items:
     costBuy: 1100
     costSell: 850
     requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 15
     requires:
       - STR_CONTACT_SMUGGLERS
     weight: 6
@@ -2588,6 +2657,7 @@ items:
     size: 0.01
     costBuy: 1350
     costSell: 1000
+    monthlyBuyLimit: 10
     weight: 6
     bigSprite: 282
     floorSprite: 282
@@ -2636,6 +2706,7 @@ items:
     size: 0.02
     costBuy: 2700
     costSell: 1700
+    monthlyBuyLimit: 5
     weight: 8
     bigSprite: 283
     floorSprite: 283
@@ -2679,6 +2750,7 @@ items:
     costBuy: 1500
     costSell: 1000
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 5
     bigSprite: 166
     floorSprite: 166
@@ -2721,6 +2793,7 @@ items:
     costBuy: 3000
     costSell: 2500
     requiresBuyCountry: STR_ITALY
+    monthlyBuyLimit: 30
     weight: 5
     bigSprite: 167
     floorSprite: 167
@@ -2768,6 +2841,7 @@ items:
     size: 0.02
     costBuy: 1500
     costSell: 1100
+    monthlyBuyLimit: 30
     weight: 8
     bigSprite: 168
     floorSprite: 168
@@ -2816,6 +2890,7 @@ items:
     size: 0.02
     costBuy: 600
     costSell: 500
+    monthlyBuyLimit: 30
     weight: 5
     bigSprite: 169
     floorSprite: 169
@@ -2854,6 +2929,7 @@ items:
     costBuy: 2000
     costSell: 1100
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 4
     bigSprite: 224
     floorSprite: 224
@@ -2897,6 +2973,7 @@ items:
     costBuy: 900
     costSell: 400
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 5
     bigSprite: 248
     floorSprite: 248
@@ -2940,6 +3017,7 @@ items:
     costBuy: 100
     costSell: 50
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 3
     bigSprite: 102
     floorSprite: 102
@@ -2974,6 +3052,7 @@ items:
     costBuy: 4500
     costSell: 3750
     requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
     weight: 7
     bigSprite: 170
     floorSprite: 170
@@ -3025,6 +3104,7 @@ items:
     size: 0.02
     costBuy: 4500
     costSell: 3750
+    monthlyBuyLimit: 20
     weight: 12
     fireSound: 170
     reloadSound: [ 186, 187, 188, 189 ]
@@ -3069,6 +3149,7 @@ items:
     costBuy: 6200
     costSell: 5000
     requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 5
     weight: 10
     bigSprite: 172
     floorSprite: 172
@@ -3117,6 +3198,7 @@ items:
     costBuy: 2600
     costSell: 2000
     requiresBuyCountry: STR_AUSTRALIA
+    monthlyBuyLimit: 20
     weight: 7
     bigSprite: 173
     floorSprite: 173
@@ -3170,6 +3252,7 @@ items:
     costBuy: 2500
     costSell: 1500
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
     weight: 8
     bigSprite: 174
     floorSprite: 174
@@ -3220,6 +3303,7 @@ items:
     costBuy: 3500
     costSell: 2750
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
     weight: 9
     bigSprite: 175
     floorSprite: 175
@@ -3253,6 +3337,7 @@ items:
     costBuy: 2500
     costSell: 1900
     requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
     weight: 7
     bigSprite: 176
     floorSprite: 176
@@ -3354,6 +3439,7 @@ items:
     size: 0.01
     costBuy: 1750
     costSell: 800
+    monthlyBuyLimit: 16
     requiresBuyCountry: STR_RUSSIA
     weight: 6
     bigSprite: 178
@@ -3428,8 +3514,9 @@ items:
   - type: STR_CANNED_FOOD
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.01
-    costBuy: 500
-    costSell: 400
+    costBuy: 100
+    costSell: 10
+    monthlyBuyLimit: 100
     weight: 4
     bigSprite: 192
     floorSprite: 192
@@ -3458,8 +3545,9 @@ items:
   - type: STR_BREAD
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.01
-    costBuy: 50
-    costSell: 40
+    costBuy: 40
+    costSell: 2
+    monthlyBuyLimit: 100
     weight: 1
     bigSprite: 1088
     floorSprite: 1088
@@ -3488,7 +3576,7 @@ items:
   - type: STR_CIGARETTES
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.001
-    costSell: 2000
+    costSell: 200
     weight: 4
     bigSprite: 193
     floorSprite: 193
@@ -3517,7 +3605,7 @@ items:
   - type: STR_FLASK
     categories: [ STR_LIGHT_EQUIPMENT ]
     size: 0.01
-    costSell: 2000
+    costSell: 100
     weight: 4
     bigSprite: 194
     floorSprite: 194
@@ -3571,7 +3659,7 @@ items:
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.05
     costBuy: 2000
-    costSell: 1000
+    costSell: 250
     weight: 10
     bigSprite: 195
     floorSprite: 195
@@ -3623,7 +3711,8 @@ items:
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     size: 0.01
     costBuy: 200
-    costSell: 150
+    costSell: 100
+    monthlyBuyLimit: 100
     weight: 2
     bigSprite: 197
     floorSprite: 197
@@ -3650,6 +3739,7 @@ items:
     size: 0.01
     costBuy: 100
     costSell: 50
+    monthlyBuyLimit: 100
     weight: 1
     bigSprite: 202
     floorSprite: 202
@@ -3676,6 +3766,7 @@ items:
     size: 0.01
     costBuy: 100
     costSell: 50
+    monthlyBuyLimit: 25
     weight: 3
     bigSprite: 203
     floorSprite: 203
@@ -3725,6 +3816,7 @@ items:
   - type: STR_ELECTRO_FLARE
     categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
     size: 0.005
+    monthlyBuyLimit: 40
     bigSprite: 888
     handSprite: 888
     floorSprite: 888
@@ -3739,6 +3831,7 @@ items:
     size: 0.01
     costBuy: 1260
     costSell: 945
+    monthlyBuyLimit: 10
     weight: 6
     bigSprite: 26
     floorSprite: 26
@@ -3766,6 +3859,7 @@ items:
     size: 0.01
     costBuy: 300
     costSell: 250
+    monthlyBuyLimit: 10
     requiresBuyCountry: STR_USA
     bigSprite: 190
     floorSprite: 190
@@ -3782,6 +3876,7 @@ items:
     size: 0.01
     costBuy: 400
     costSell: 350
+    monthlyBuyLimit: 10
     requiresBuyCountry: STR_USA
     bigSprite: 191
     floorSprite: 191
@@ -3866,6 +3961,7 @@ items:
     size: 0.02
     costBuy: 300
     costSell: 200
+    monthlyBuyLimit: 10
     weight: 3
     bigSprite: 189
     floorSprite: 189
@@ -4368,6 +4464,7 @@ items:
     size: 0.01
     costBuy: 10500
     costSell: 9000
+    monthlyBuyLimit: 5
     requiredBuyCountry: STR_USA
     weight: 6
     bigSprite: 213
@@ -4409,6 +4506,7 @@ items:
     size: 0.01
     costBuy: 500
     costSell: 600
+    monthlyBuyLimit: 30
     weight: 3
     bigSprite: 214
     floorSprite: 214
@@ -4431,8 +4529,8 @@ items:
       - STR_ON_OUR_OWN
     costBuy: 4500
     costSell: 3750
-    requiredBuyCountry:
-      - STR_USA
+    requiredBuyCountry: STR_USA
+    monthlyBuyLimit: 10
     weight: 8
     fireSound: 170
     reloadSound: [ 186, 187, 188, 189 ]
@@ -4642,6 +4740,7 @@ items:
     size: 0.01
     costBuy: 300
     costSell: 240
+    monthlyBuyLimit: 20
     weight: 3
     bigSprite: 19
     floorSprite: 19
@@ -4664,6 +4763,7 @@ items:
     size: 0.01
     costBuy: 500
     costSell: 400
+    monthlyBuyLimit: 15
     weight: 3
     bigSprite: 21
     floorSprite: 21
@@ -4687,6 +4787,7 @@ items:
     size: 0.02
     costBuy: 1500
     costSell: 1200
+    monthlyBuyLimit: 15
     weight: 6
     bigSprite: 22
     floorSprite: 22
@@ -4707,6 +4808,7 @@ items:
     size: 0.1
     costBuy: 150
     costSell: 120
+    monthlyBuyLimit: 25
     weight: 3
     bigSprite: 200
     floorSprite: 200
@@ -4728,6 +4830,7 @@ items:
     size: 0.01
     costBuy: 1000
     costSell: 850
+    monthlyBuyLimit: 25
     weight: 4
     bigSprite: 201
     floorSprite: 201
