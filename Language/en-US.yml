@@ -2694,7 +2694,7 @@ en-US:
       STR_MARS_ENVIRO: "Mars Environment"
       STR_MOON_ENVIRO: "Moon Environment"
       STR_FERRET_CAR: FV701 Ferret Scout Car
-      FERRET_CAR_ARMOR: Aluminum hull
+      FERRET_CAR_ARMOR: FV701 Ferret Scout Car
       STR_DOUBLE_50CAL: Double M2 50 Cal. MG
       STR_DOUBLE_50CAL_BOX: x50 .50 BMG Rounds
       STR_FERRET_SMOKE_LAUNCHER: Smoke Screen Launcher
@@ -2702,27 +2702,27 @@ en-US:
       STR_HWP_POP_SMOKE: Smoke Screen!
 ########################################################
       STR_SHERIDAN_TANK: M551 Sheridan
-      SHERIDAN_TANK_ARMOR: Aluminum hull with steel turret
+      SHERIDAN_TANK_ARMOR: M551 Sheridan
       STR_SHERIDAN_TANK_NPC: M551 Sheridan
-      SHERIDAN_TANK_ARMOR_NPC: Aluminum hull with steel turret
+      SHERIDAN_TANK_ARMOR_NPC: M551 Sheridan
       STR_M81E1: M81E1 152mm Rifled Gun
       STR_152MM_CANNON_SHELLS: 152mm AP Rounds
       STR_SHILLELAGH: MGM-51 Shillelagh Guided Missile
       STR_MGM51_MISSILE: MGM-51 Shillelagh Guided Missile
 ########################################################
       STR_BMD1_TANK: BMD-1 Airborne IFV
-      BMD1_TANK_ARMOR: Welded aluminium alloy
+      BMD1_TANK_ARMOR: BMD-1 Airborne IFV
       STR_BMP_TANK: BMP IFV
-      BMP_TANK_ARMOR: Welded rolled steel
+      BMP_TANK_ARMOR: BMD-1 Airborne IFV
       STR_2A28_GROM: 2A28 73mm Grom Cannon
       STR_73MM_CANNON_SHELLS: 73mm HE Rounds
       STR_PKT_MACHINEGUN: 7.62mm PKT Machine Gun
       STR_PKT_AMMO_BOX: x50 PKT 7.62mm Rounds
 ########################################################
       STR_SALADIN_CAR: FV601 Saladin Armored Car
-      SALADIN_CAR_ARMOR: Aluminum hull
-      STR_SALADIN_CAR_NPC: FV601 Saladin Armored Car
-      SALADIN_CAR_ARMOR_NPC: Aluminum hull
+      SALADIN_CAR_ARMOR: FV601 Saladin Armored Car
+      STR_SALADIN_CAR_NPC: "FV601 Saladin Armored Car (NPC)"
+      SALADIN_CAR_ARMOR_NPC: "FV601 Saladin Armored Car (NPC)"
       STR_L5A1_GUN: ROF L5A1 76mm Gun
       STR_76MM_CANNON_SHELLS: 76mm HESH Rounds
       STR_M1919A4_MACHINEGUN: 7.62mm M1919A4 Machine Gun
@@ -2730,21 +2730,32 @@ en-US:
 ########################################################
       STR_IMP_TANK_CHASSIS: Laser/Alloy Tank Project
       STR_TANK_LASER_CANNON: XM22 Legionnaire
-      LEGIONNAIRE_TANK_ARMOR: Alien Alloys hull
+      LEGIONNAIRE_TANK_ARMOR: XM22 Legionnaire
       STR_XM343: LGM34-3H Kodiak Laser Cannon
       STR_TANK_LASER_MINIGUN: XM250 Laser Minigun
 #######################################
       STR_PATTON_TANK: M60 Patton Tank
-      PATTON_TANK_ARMOR: Steel hull armor
-      PATTON_TANK_ARMOR_NPC: Steel hull armor
+      PATTON_TANK_ARMOR: M60 Patton Tank
+      PATTON_TANK_ARMOR_NPC: "M60 Patton Tank (NPC)"
       STR_105MM_CANNON: RO L7A3 105mm Gun
       STR_LEOPARD_TANK: Leopard 1 Tank
-      LEOPARD_TANK_ARMOR: Steel hull armor
-      LEOPARD_TANK_ARMOR_NPC: Steel hull armor
+      LEOPARD_TANK_ARMOR: Leopard 1 Tank
+      LEOPARD_TANK_ARMOR_NPC: "Leopard 1 Tank (NPC)"
       STR_T54_TANK: T-54 Tank
-      T54_TANK_ARMOR: Steel hull armor
-      T54_TANK_ARMOR_NPC: Steel hull armor
+      T54_TANK_ARMOR: T-54 Tank
+      T54_TANK_ARMOR_NPC: "T-54 Tank (NPC)"
       STR_100MM_CANNON: D-10T2G 100mm Cannon
+### Kiros adding the missing parts ###
+      STR_FERRET_CAR_ITEM: "FV701 Ferret"
+      STR_SALADIN_CAR_ITEM: "FV601 Saladin Armored Car"
+      STR_SHERIDAN_TANK_ITEM: "M551 Sheridan"
+      STR_BMP1_TANK_ITEM: "BMD-1 Airborne IFV"
+      STR_TANK_LASER_CANNON_ITEM: "XM22 Legionnaire"
+      STR_FERRET_CAR_ARMOR_UC: "FV701 Ferret"
+      STR_SALADIN_CAR_ARMOR_UC: "FV601 Saladin Armored Car"
+      STR_SHERIDAN_TANK_ARMOR_UC: "M551 Sheridan"
+      STR_BMD1_TANK_ARMOR_UC: "BMD-1 Airborne IFV"
+      STR_TANK_LASER_CANNON_ARMOR_UC: "XM22 Legionnaire"
 ##########################################
 ########## COMMENDATIONS ###############
 #######################################
@@ -3198,6 +3209,52 @@ en-US:
       STR_ANTIMATTERBLAST: Anti-Matter Beta Blast
       STR_FUSIONENERGYBLAST: Anti-Matter Fusion
       STR_DARKMATTERBLAST: Dark Matter Fusion #### Cannot Manufacture
+      ###### New Ammo Type For Tanks
+      ####7.62 NATOLMG
+      ####105MMCannon
+      #####152mm
+      ####m1919a4machinegun
+      ####L5a1Gun 76mm
+      ####2a28 73mm
+      ####pktammobox
+      #####mgm51misisle
+      #### EnergyShell
+      #### 73mm
+      STR_73MMAA_AMMO: "73mm-Alien Alloy AP"
+      STR_73MMAP_AMMO: "73mm-Armor Piercing"
+      STR_73MMAC_AMMO: "73mm-Armor Canister"
+      STR_73MMVE_AMMO: "73mm-Armor Vertical"
+      STR_73MMDU_AMMO: "73mm-Depleted Uranium"
+      STR_73MME115_AMMO: "73mm-Elerium 155 AP"
+      STR_73MMFUSIONAMMO: "73mm-Fusion Blast"
+      #### 76mm
+      STR_76MMAAAMMO: "76mm-Alien Alloy AP"
+      STR_76MMAPAMMO: "76mm-Armor Piercing"
+      STR_76MMACAMMO: "76mm-Armor Canister"
+      STR_76MMVE_AMMO: "76mm-Armor Vertical"
+      STR_76MMDUAMMO: "76mm-Depleted Uranium"
+      STR_76MME115AMMO: "76mm-Elerium 155 AP"
+      STR_76MMFUSIONAMMO: "76mm-Fusion Blast"
+      #### 100mm
+      STR_100MMAAAMMO: "100mm-Alien Alloy AP"
+      STR_100MMAPAMMO: "100mm-Armor Piercing"
+      STR_100MMACAMMO: "100mm-Armor Canister"
+      STR_100MMVE_AMMO: "100mm-Armor Vertical"
+      STR_100MMDUAMMO: "100mm-Depleted Uranium"
+      STR_100MME115AMMO: "100mm-Elerium 155 AP"
+      STR_100MMFUSIONAMMO: "100mm-Fusion Blast"
+      #### 152mmm
+      STR_152MMAAAMMO: "152mm-Alien Alloy AP"
+      STR_152MMAPAMMO: "152mm-Armor Piercing"
+      STR_152MMACAMMO: "152mm-Armor Canister"
+      STR_152MMVE_AMMO: "152mm-Armor Vertical"
+      STR_152MMDUAMMO: "152mm-Depleted Uranium"
+      STR_152MME115AMMO: "152mm-Elerium 155 AP"
+      STR_152MMFUSIONAMMO: "152mm-Fusion Blast"
+      #### EnergyShell
+      STR_ENERGYENHANCEDBATTERY: "Energy Shell-E"
+      STR_ENERGYE115BATTERY: "Energy E-115 Blast"
+      STR_ENERGYFUSIONBATTERY: "Energy Dark Fusion"
 # Combat Ground Vehicles in froms of 6
 ## Tank Tier 1 Alien Alloy
 ## Tank Tier 2 UFO Construction

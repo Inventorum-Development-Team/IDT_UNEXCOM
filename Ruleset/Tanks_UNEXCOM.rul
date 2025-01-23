@@ -1,149 +1,5 @@
 # spellchecker:words GROM MACHINEGUN ALVIS MINIGUN RPGs SMOKELAUNCHER ENERGYSHELL LASERMINIGUN FERRETM SHERIDANM SALADINM LEGIONNAIREM HESH ATLC
 # spellchecker:words Boyevaya Mashina Desanta
-units:
-#####################################
-####### DAIMLER FERRET SC ###########
-#####################################
-  - type: STR_FERRET_CAR
-    race: STR_FERRET_CAR
-    stats:
-      tu: 150
-      stamina: 100
-      health: 60
-      bravery: 110
-      reactions: 20
-      firing: 100
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: FERRET_CAR_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-    builtInWeaponSets:
-      -
-        - STR_DOUBLE_50CAL_BOX
-        - STR_FERRET_SMOKE_LAUNCHER
-        - STR_FERRET_SMOKE_GRENADE
-#####################################
-####### M551 SHERIDAN ###############
-#####################################
-  - type: STR_SHERIDAN_TANK
-    race: STR_SHERIDAN_TANK
-    stats:
-      tu: 130
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 100
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: SHERIDAN_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-    builtInWeaponSets:
-      -
-        - STR_152MM_CANNON_SHELLS
-        - STR_SHILLELAGH
-        - STR_MGM51_MISSILE
-#####################################
-####### BMD-1 AIRBORNE IFV ##########
-#####################################
-  - type: STR_BMD1_TANK
-    race: STR_BMD1_TANK
-    stats:
-      tu: 90
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 40
-      firing: 100
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: BMD1_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-    builtInWeaponSets:
-      -
-        - STR_73MM_CANNON_SHELLS
-        - STR_PKT_MACHINEGUN
-        - STR_PKT_AMMO_BOX
-#####################################
-######### ALVIS SALADIN AC ##############
-#####################################
-  - type: STR_SALADIN_CAR
-    race: STR_SALADIN_CAR
-    stats:
-      tu: 110
-      stamina: 100
-      health: 70
-      bravery: 110
-      reactions: 20
-      firing: 100
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: SALADIN_CAR_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-    builtInWeaponSets:
-      -
-        - STR_76MM_CANNON_SHELLS
-        - STR_M1919A4_MACHINEGUN
-        - STR_M1919A4_AMMO_BOX
-#####################################
-##### LEGIONNAIRE LASER TANK ########
-#####################################
-  - type: STR_TANK_LASER_CANNON
-    race: STR_TANK_LASER_CANNON
-    stats:
-      tu: 110
-      stamina: 100
-      health: 125
-      bravery: 110
-      reactions: 45
-      firing: 100
-      throwing: 0
-      strength: 90
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: LEGIONNAIRE_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-    builtInWeaponSets:
-      -
-        - STR_TANK_LASER_MINIGUN
 items:
 #####################################
 ####### DAIMLER FERRET SC ##############
@@ -156,6 +12,9 @@ items:
     costSell: 240000
     monthlyBuyLimit: 3
     transferTime: 96
+    listOrder: 1407
+  - type: STR_DOUBLE_50CAL
+    costSell: 500
     weight: 1
     bigSprite: 2500
     floorSprite: 0
@@ -170,7 +29,6 @@ items:
     tuAuto: 45
     tuSnap: 30
     autoShots: 5
-    clipSize: 50
     autoRange: 200
     snapRange: 200
     dropoff: 1
@@ -180,7 +38,7 @@ items:
     invWidth: 2
     invHeight: 3
     turretType: -1
-    listOrder: 1409
+    listOrder: 1408
   - type: STR_FERRET_SMOKE_LAUNCHER
     weight: 0
     bigSprite: 2501
@@ -197,16 +55,16 @@ items:
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
-    listOrder: 1411
+    listOrder: 1409
   - type: STR_DOUBLE_50CAL_BOX
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     size: 0.1
     requiresBuyCountry: STR_UK
     monthlyBuyLimit: 6
-    costBuy: 50
-    costSell: 50
+    costBuy: 550
+    costSell: 20
     transferTime: 48
-    weight: 1
+    weight: 3
     bigSprite: 111
     floorSprite: 12
     hitSound: 13
@@ -220,7 +78,7 @@ items:
       IgnoreOverKill: true
       ToArmor: 0.5
       ToArmorPre: 0.6
-    clipSize: 50
+    clipSize: 100
     battleType: 2
     invWidth: 2
     invHeight: 2
@@ -235,7 +93,7 @@ items:
     ignoreInCraftEquip: true
     hitSound: 0
     hitAnimation: 0
-    listOrder: 1412
+    listOrder: 1410
 #####################################
 ####### M551 SHERIDAN #################
 #####################################
@@ -249,6 +107,9 @@ items:
     costSell: 540000
     monthlyBuyLimit: 1
     transferTime: 96
+    listOrder: 1401
+  - type: STR_M81E1
+    costSell: 5400
     weight: 1
     bigSprite: 2502
     floorSprite: 0
@@ -260,7 +121,6 @@ items:
       - STR_152MM_CANNON_SHELLS
     accuracySnap: 75
     accuracyAimed: 95
-    clipSize: 20
     tuSnap: 60
     tuAimed: 85
     battleType: 1
@@ -268,7 +128,7 @@ items:
     invWidth: 2
     invHeight: 3
     turretType: -1
-    listOrder: 1401
+    listOrder: 1411
   - type: STR_SHILLELAGH
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -282,7 +142,6 @@ items:
     fireSound: 4331
     compatibleAmmo:
       - STR_MGM51_MISSILE
-    clipSize: 9
     accuracyAimed: 75
     tuAimed: 65
     battleType: 1
@@ -293,7 +152,7 @@ items:
     recover: false
     turretType: -1
     waypoints: 2
-    listOrder: 1403
+    listOrder: 1412
   - type: STR_152MM_CANNON_SHELLS
     categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
@@ -304,8 +163,9 @@ items:
     costSell: 800
     monthlyBuyLimit: 6
     transferTime: 48
-    weight: 1
-    bigSprite: -1
+    weight: 100
+    bigSprite: 2541
+    #handSprite: 120
     floorSprite: 12
     hitSound: 4332
     hitAnimation: 0
@@ -319,7 +179,7 @@ items:
       RadiusReduction: 50
     clipSize: 20
     battleType: 2
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
     listOrder: 1402
   - type: STR_MGM51_MISSILE
@@ -332,8 +192,8 @@ items:
     costBuy: 9000
     costSell: 7250
     transferTime: 48
-    weight: 1
-    bigSprite: -1
+    weight: 56
+    bigSprite: 2542
     floorSprite: 16
     hitSound: 13
     hitAnimation: 26
@@ -344,11 +204,11 @@ items:
       IgnoreOverKill: true
       IgnoreSelfDestruct: true
       ToArmor: 2.2
-    clipSize: 9
+    clipSize: 10
     battleType: 2
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
-    listOrder: 1404
+    listOrder: 1413
 #####################################
 ########## ALVIS SALADIN AC ############
 #####################################
@@ -362,6 +222,9 @@ items:
     costBuy: 350000
     costSell: 240000
     transferTime: 96
+    listOrder: 1405
+  - type: STR_L5A1_GUN
+    costSell: 2400
     weight: 1
     bigSprite: 2504
     floorSprite: 0
@@ -372,7 +235,6 @@ items:
       - STR_76MM_CANNON_SHELLS
     accuracySnap: 45
     accuracyAimed: 80
-    clipSize: 30
     tuSnap: 33
     tuAimed: 60
     bulletSpeed: 15
@@ -391,8 +253,8 @@ items:
     costBuy: 1500
     costSell: 800
     transferTime: 48
-    weight: 1
-    bigSprite: -1
+    weight: 45
+    bigSprite: 2545
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
@@ -407,15 +269,14 @@ items:
       RadiusReduction: 40
     clipSize: 30
     battleType: 2
-    invWidth: 2
-    invHeight: 1
+    invWidth: 1
+    invHeight: 3
     listOrder: 1406
   - type: STR_M1919A4_MACHINEGUN
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_UK
-    costBuy: 100
     costSell: 50
     monthlyBuyLimit: 3
     transferTime: 96
@@ -429,7 +290,6 @@ items:
       - STR_M1919A4_AMMO_BOX
     accuracySnap: 80
     accuracyAuto: 40
-    clipSize: 50
     tuAuto: 35
     tuSnap: 30
     battleType: 1
@@ -441,7 +301,7 @@ items:
     bulletSpeed: 25
     recover: false
     turretType: -1
-    listOrder: 1407
+    listOrder: 1414
   - type: STR_M1919A4_AMMO_BOX
     categories: [STR_TANKS, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
@@ -449,10 +309,10 @@ items:
     size: 0.06
     requiresBuyCountry: STR_UK
     costBuy: 80
-    costSell: 80
+    costSell: 40
     monthlyBuyLimit: 6
     transferTime: 48
-    weight: 1
+    weight: 20
     bigSprite: -1
     floorSprite: 16
     hitSound: 13
@@ -465,7 +325,7 @@ items:
       ToArmorPre: 0.5
       ToHealth: 0.6
     damageType: 1
-    clipSize: 50
+    clipSize: 250
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -483,6 +343,9 @@ items:
     costBuy: 520000
     costSell: 440000
     transferTime: 96
+    listOrder: 1415
+  - type: STR_2A28_GROM #ignoreDuplicate
+    costSell: 4400
     weight: 1
     bigSprite: 2506
     floorSprite: 0
@@ -493,7 +356,6 @@ items:
       - STR_73MM_CANNON_SHELLS
     accuracySnap: 60
     accuracyAimed: 80
-    clipSize: 40
     tuSnap: 33
     tuAimed: 60
     bulletSpeed: 15
@@ -502,7 +364,7 @@ items:
     invWidth: 2
     invHeight: 3
     turretType: -1
-    listOrder: 1409
+    listOrder: 1416
   - type: STR_PKT_MACHINEGUN
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -529,7 +391,7 @@ items:
     bulletSpeed: 25
     recover: false
     turretType: -1
-    listOrder: 1410
+    listOrder: 1417
   - type: STR_73MM_CANNON_SHELLS
     categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
@@ -540,8 +402,8 @@ items:
     costBuy: 1500
     costSell: 750
     transferTime: 48
-    weight: 1
-    bigSprite: -1
+    weight: 62
+    bigSprite: 2543
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
@@ -555,9 +417,9 @@ items:
       ArmorEffectiveness: 0.75
     clipSize: 40
     battleType: 2
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
-    listOrder: 1411
+    listOrder: 1418
   - type: STR_PKT_AMMO_BOX
     categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
@@ -568,7 +430,7 @@ items:
     costSell: 50
     monthlyBuyLimit: 10
     transferTime: 48
-    weight: 1
+    weight: 21
     bigSprite: -1
     floorSprite: 16
     hitSound: 13
@@ -580,7 +442,7 @@ items:
       ToArmor: 0.6
       ToArmorPre: 0.4
       IgnoreOverKill: true
-    clipSize: 50
+    clipSize: 250
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -593,9 +455,12 @@ items:
     size: 6
     costSell: 575000
     transferTime: 96
-    weight: 1
+    listOrder: 1414
+  - type: STR_XM343
+    costSell: 5750
     bigSprite: 2508
     floorSprite: 0
+    weight: 1
     handSprite: 0
     bulletSprite: 7
     fireSound: 4337
@@ -656,9 +521,9 @@ items:
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
-    listOrder: 1415
+    listOrder: 1419
 armors:
-#####################################
+##################################### Kiro Spot
 # Small explanation about Tank armors:
 # AP damage represents bullets and anti-tank solid shells
 # HE damage represents explosives, mines and RPGs
@@ -670,20 +535,66 @@ armors:
 #####################################
 ####### DAIMLER FERRET AC ##############
 #####################################
-  - type: FERRET_CAR_ARMOR
+  - type: STR_FERRET_CAR_ARMOR_UC
     spriteSheet: FERRET.PCK
-    spriteInv: FERRET
+    spriteInv: FERRETM0.SPK
+    storeItem: STR_FERRET_CAR
     allowInv: true
+    instantWoundRecovery: true
+    weight: -50
+    stats:
+      tu: 150
+      stamina: 100
+      health: 60
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    units:
+      - STR_PILOT
+    stats: &SECTION_LIGHT_TANK_STATS
+       bravery: 20
+       tu: 175
+       stamina: 700
+       reactions: -15
+    recovery:  &SECTION_LIGHT_TANK_RECOVERY
+      energy:
+        flatHundred: 7.5
+      morale:
+        moraleCurrent: -0.1333
+        bravery: 0.0666
+      stun:
+        stunCurrent: 0.09
+    psiDefence:  &SECTION_TANK_PSIDEF
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.25
+      flatHundred: -0.15
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_DOUBLE_50CAL_BOX
+      - STR_FERRET_SMOKE_LAUNCHER
+      - STR_FERRET_SMOKE_GRENADE
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 30
-    sideArmor: 24
-    rearArmor: 24
-    underArmor: 20
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 40
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -703,20 +614,51 @@ armors:
 #####################################
 ####### M551 SHERIDAN ###############
 #####################################
-  - type: SHERIDAN_TANK_ARMOR
+  - type: STR_SHERIDAN_TANK_ARMOR_UC
     spriteSheet: SHERIDAN.PCK
-    spriteInv: SHERIDAN
+    storeItem: STR_SHERIDAN_TANK
+    spriteInv: SHERIDANM0.SPK
     allowInv: true
+    instantWoundRecovery: true
+    weight: -300
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_M81E1
+      - STR_152MM_CANNON_SHELLS
+      - STR_SHILLELAGH
+      - STR_MGM51_MISSILE
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 62
-    sideArmor: 28
-    rearArmor: 24
-    underArmor: 16
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -737,20 +679,56 @@ armors:
 #####################################
 ####### BMD-1 AIRBORNE IFV ##########
 #####################################
-  - type: BMD1_TANK_ARMOR
+  - type: STR_BMD1_TANK_ARMOR_UC
     spriteSheet: BMD1.PCK
-    spriteInv: BMD1
+    storeItem: STR_BMD1_TANK
+    spriteInv: BMD1M0.SPK
     allowInv: true
+    instantWoundRecovery: true
+    weight: -200
+    stats:
+      tu: 90
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 40
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 200
+      psiSkill: 0
+      melee: 70
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_2A28_GROM
+      - STR_73MM_CANNON_SHELLS
+      - STR_PKT_MACHINEGUN
+      - STR_PKT_AMMO_BOX
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 65
-    sideArmor: 50
-    rearArmor: 45
-    underArmor: 20
+    frontArmor: 130
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 40
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -771,20 +749,51 @@ armors:
 #####################################
 ########## ALVIS SALADIN AC #############
 #####################################
-  - type: SALADIN_CAR_ARMOR
+  - type: STR_SALADIN_CAR_ARMOR_UC
     spriteSheet: SALADIN.PCK
-    spriteInv: SALADIN
+    storeItem: STR_SALADIN_CAR
+    spriteInv: SALADINM0.SPK
     allowInv: true
+    instantWoundRecovery: true
+    weight: -200
+    stats:
+      tu: 110
+      stamina: 100
+      health: 70
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    units:
+      - STR_PILOT
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_L5A1_GUN
+      - STR_76MM_CANNON_SHELLS
+      - STR_M1919A4_MACHINEGUN
+      - STR_M1919A4_AMMO_BOX
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 68
-    sideArmor: 28
-    rearArmor: 26
-    underArmor: 20
+    frontArmor: 140
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -805,20 +814,49 @@ armors:
 #####################################
 ####### LEGIONNAIRE LASER TANK ###########
 #####################################
-  - type: LEGIONNAIRE_TANK_ARMOR
+  - type: STR_TANK_LASER_CANNON_ARMOR_UC
     spriteSheet: LEGIONNAIRE.PCK
-    spriteInv: LEGIONNAIRE
+    storeItem: STR_TANK_LASER_CANNON
+    spriteInv: LEGIONNAIREM0.SPK
     allowInv: true
+    instantWoundRecovery: true
+    weight: -300
+    stats:
+      tu: 110
+      stamina: 100
+      health: 125
+      bravery: 110
+      reactions: 45
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_XM343
+      - STR_TANK_LASER_MINIGUN
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
      - TANK_CORPSE_2
      - TANK_CORPSE_3
      - TANK_CORPSE_4
-    frontArmor: 100
-    sideArmor: 75
-    rearArmor: 60
-    underArmor: 50
+    frontArmor: 200
+    sideArmor: 150
+    rearArmor: 120
+    underArmor: 100
     drawingRoutine: 2
     size: 2
     damageModifier:
@@ -836,6 +874,7 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
     specialWeapon: STR_TANKCRUSH
+##### Tank Ammunition is here!
 extraSprites:
   - type: FERRET.PCK
     width: 256
@@ -940,17 +979,59 @@ extraSprites:
     files:
       2500: Resources/Tanks/DUAL50CAL.png
       2501: Resources/Tanks/SMOKELAUNCHER.png
-      2502: Resources/Tanks/152MM.png
-      2503: Resources/Tanks/MGM51.png
-      2504: Resources/Tanks/76MM.png
+      2502: Resources/Tanks/M81E1RG.png
+      2503: Resources/Tanks/MGM51GML.png
+      2504: Resources/Tanks/M1919A4MG.png
       2505: Resources/Tanks/M1919A.png
-      2506: Resources/Tanks/73MM.png
+      2506: Resources/Tanks/BMP73MM.png
       2507: Resources/Tanks/PKT.png
-      2508: Resources/Tanks/ENERGYSHELL.png
+      2508: Resources/Tanks/LEGIONNAIRELASERGUN.png
       2509: Resources/Tanks/LASERMINIGUN.png
       2510: Resources/Tanks/105MM.png
       2511: Resources/Tanks/100MM.png
       2512: Resources/Tanks/50CAL.png
+      2513: Resources/Tanks/73MM_AA.png
+      2514: Resources/Tanks/73MM_AP.png
+      2515: Resources/Tanks/73MM_CANISTER.png
+      2516: Resources/Tanks/73MM_VERTICAL_EXPLOSION.png
+      2517: Resources/Tanks/73MM_DU.png
+      2518: Resources/Tanks/73MM_ELERIUM.png
+      2519: Resources/Tanks/73MM_FUSION.png
+      2520: Resources/Tanks/76MM_AA.png
+      2521: Resources/Tanks/76MM_AP.png
+      2522: Resources/Tanks/76MM_CANISTER.png
+      2523: Resources/Tanks/76MM_VERTICAL_EXPLOSION.png
+      2524: Resources/Tanks/76MM_DU.png
+      2525: Resources/Tanks/76MM_ELERIUM.png
+      2526: Resources/Tanks/76MM_FUSION.png
+      2527: Resources/Tanks/152MM_AA.png
+      2528: Resources/Tanks/152MM_AP.png
+      2529: Resources/Tanks/152MM_CANISTER.png
+      2530: Resources/Tanks/152MM_VERTICAL_EXPLOSION.png
+      2531: Resources/Tanks/152MM_DU.png
+      2532: Resources/Tanks/152MM_ELERIUM.png
+      2533: Resources/Tanks/152MM_FUSION.png
+      2534: Resources/Tanks/152MM_AA.png
+      2535: Resources/Tanks/152MM_AP.png
+      2536: Resources/Tanks/152MM_CANISTER.png
+      2537: Resources/Tanks/152MM_VERTICAL_EXPLOSION.png
+      2538: Resources/Tanks/152MM_DU.png
+      2539: Resources/Tanks/152MM_ELERIUM.png
+      2540: Resources/Tanks/152MM_FUSION.png
+      2541: Resources/Tanks/152MM.png
+      2542: Resources/Tanks/MGM51.png
+      2543: Resources/Tanks/73MM.png
+      2544: Resources/Tanks/ENERGYSHELL.png
+      2545: Resources/Tanks/76MM.png
+      2546: Resources/Tanks/50CAL.png
+      2547: Resources/Tanks/50CAL.png
+      2548: Resources/Tanks/50CAL.png
+      2549: Resources/Tanks/50CAL.png
+      2550: Resources/Tanks/50CAL.png
+  #- type: FLOOROB.PCK
+  #  files:
+  #    2700: Resources/Tanks/
+
   - type: FERRETM0.SPK
     singleImage: true
     files:
