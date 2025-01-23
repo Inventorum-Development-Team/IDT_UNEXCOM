@@ -84,13 +84,16 @@ items:
     invHeight: 2
     listOrder: 1410
   - type: STR_FERRET_SMOKE_GRENADE
-    weight: 0
-    bigSprite: 125
+    weight: 10
+    bigSprite: 2546
+    floorSprite: 16
     power: 60
     damageType: 9
     clipSize: 6
     battleType: 2
-    ignoreInCraftEquip: true
+    ignoreInCraftEquip: false
+    invWidth: 2
+    invHeight: 1
     hitSound: 0
     hitAnimation: 0
     listOrder: 1410
@@ -313,7 +316,7 @@ items:
     monthlyBuyLimit: 6
     transferTime: 48
     weight: 20
-    bigSprite: -1
+    bigSprite: 2547
     floorSprite: 16
     hitSound: 13
     hitAnimation: 26
@@ -327,8 +330,8 @@ items:
     damageType: 1
     clipSize: 250
     battleType: 2
-    invWidth: 1
-    invHeight: 3
+    invWidth: 2
+    invHeight: 2
     listOrder: 1408
 #####################################
 ####### BMD-1 AIRBORNE IFV ##########
@@ -430,8 +433,8 @@ items:
     costSell: 50
     monthlyBuyLimit: 10
     transferTime: 48
-    weight: 21
-    bigSprite: -1
+    weight: 10
+    bigSprite: 2548
     floorSprite: 16
     hitSound: 13
     hitAnimation: 26
@@ -442,10 +445,10 @@ items:
       ToArmor: 0.6
       ToArmorPre: 0.4
       IgnoreOverKill: true
-    clipSize: 250
+    clipSize: 200
     battleType: 2
-    invWidth: 1
-    invHeight: 3
+    invWidth: 2
+    invHeight: 2
     listOrder: 1412
 #####################################
 ##### LEGIONNAIRE LASER TANK ########
@@ -582,9 +585,7 @@ armors:
     energyRecovery: 50
     builtInWeapons:
       - STR_DOUBLE_50CAL
-      - STR_DOUBLE_50CAL_BOX
       - STR_FERRET_SMOKE_LAUNCHER
-      - STR_FERRET_SMOKE_GRENADE
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
@@ -646,9 +647,7 @@ armors:
     energyRecovery: 50
     builtInWeapons:
       - STR_M81E1
-      - STR_152MM_CANNON_SHELLS
       - STR_SHILLELAGH
-      - STR_MGM51_MISSILE
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
@@ -711,9 +710,7 @@ armors:
     energyRecovery: 50
     builtInWeapons:
       - STR_2A28_GROM
-      - STR_73MM_CANNON_SHELLS
       - STR_PKT_MACHINEGUN
-      - STR_PKT_AMMO_BOX
     units:
       - STR_PILOT
     stats: *SECTION_LIGHT_TANK_STATS
@@ -781,9 +778,7 @@ armors:
     energyRecovery: 50
     builtInWeapons:
       - STR_L5A1_GUN
-      - STR_76MM_CANNON_SHELLS
       - STR_M1919A4_MACHINEGUN
-      - STR_M1919A4_AMMO_BOX
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
@@ -1023,9 +1018,9 @@ extraSprites:
       2543: Resources/Tanks/73MM.png
       2544: Resources/Tanks/ENERGYSHELL.png
       2545: Resources/Tanks/76MM.png
-      2546: Resources/Tanks/50CAL.png
-      2547: Resources/Tanks/50CAL.png
-      2548: Resources/Tanks/50CAL.png
+      2546: Resources/Tanks/TANKSMOKE6XPACK.png
+      2547: Resources/Tanks/M1919A4AMMOBOX.png
+      2548: Resources/Tanks/BMD1PKTAMMOBOX.png
       2549: Resources/Tanks/50CAL.png
       2550: Resources/Tanks/50CAL.png
   #- type: FLOOROB.PCK
