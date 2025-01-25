@@ -15,8 +15,8 @@ missionScripts:
     missionWeights:
       0:
         STR_INVASION_START: 100
-    firstMonth: 2
-    lastMonth: 4
+    firstMonth: 3
+    lastMonth: 6
     executionOdds: 100
     raceWeights:
       0:
@@ -31,7 +31,7 @@ missionScripts:
   - type: recurringTerrorNormal
 #    label: 1
     varName: recurringTerrorNormal
-    firstMonth: 4
+    firstMonth: 6
     executionOdds: 100
     missionWeights:
       0:
@@ -60,7 +60,7 @@ missionScripts:
       0:
         STR_ALIEN_HARVEST: 50
         STR_ALIEN_ABDUCTION: 50
-    firstMonth: 3
+    firstMonth: 6
     startDelay: 150
     researchTriggers:
       STR_DEVASTATION_COMPLETED: false
@@ -83,14 +83,14 @@ missionScripts:
     targetBaseOdds: 100
     researchTriggers:
        STR_DEVASTATION_COMPLETED: true
-    firstMonth: 5
+    firstMonth: 6
     useTable: false
   - type: alienConstruction
     missionWeights:
       0:
         STR_ALIEN_INFILTRATION: 50
         STR_ALIEN_BASE: 50
-    firstMonth: 6
+    firstMonth: 7
     startDelay: 1000
     randomDelay: 43500
     maxRuns: 6
@@ -215,6 +215,10 @@ missionScripts:
     startDelay: 100
     randomDelay: 43200
     executionOdds: 50
+#################################
+####### HUMAN MISSIONS TURNS INTO ALIEN SERVANT WITH HIGHTECH WEAPONRY #########
+####### However, you can gain high techs and awesome weapons there ########
+###############################
 ##############################
   - type: AmericanCombatOperations
     label: 30
@@ -361,7 +365,7 @@ missionScripts:
   - type: GuaranteedBase
     missionWeights:
       0:
-        STR_GUARANTEED_BASE: 100
+        STR_GUARANTEED_BASE: 10
     regionWeights:
       0:
         STR_ANTARCTICA: 100

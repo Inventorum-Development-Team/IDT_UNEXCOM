@@ -243,40 +243,40 @@ events:
 #############################
 ###### STORY EVENTS ########
 ###########################
-  - name: STR_OPERATION_LINEBACKER_EVENT
+  - name: STR_OPERATION_LINEBACKER_EVENT # Realism: October 23, 1975
     description: STR_OPERATION_LINEBACKER_EVENT_DESCRIPTION
     background: OPERATION_LINEBACKER_EVENT_BACKGROUND
     regionList: [STR_SOUTH_EAST_ASIA]
     points: 1000
     timer: 180
     timerRandom: 43500
-  - name: STR_VIETNAM_WAR_ENDS_EVENT
+  - name: STR_VIETNAM_WAR_ENDS_EVENT # Realism: April 30, 1973 - 1974
     description: STR_VIETNAM_WAR_ENDS_EVENT_DESCRIPTION
     background: VIETNAM_WAR_ENDS_EVENT_BACKGROUND
     regionList: [STR_SOUTH_EAST_ASIA]
     points: 500
     timer: 300
     timerRandom: 43500
-  - name: STR_FALL_OF_SAIGON_EVENT
+  - name: STR_FALL_OF_SAIGON_EVENT # Realism: April 30, 1975
     description: STR_FALL_OF_SAIGON_EVENT_DESCRIPTION
     background: FALL_OF_SAIGON_EVENT_BACKGROUND
     regionList: [STR_SOUTH_EAST_ASIA]
     points: 500
     timer: 300
     timerRandom: 20500
-  - name: STR_RED_MOON_EVENT
+  - name: STR_RED_MOON_EVENT #June 26, 1969
     description: STR_RED_MOON_EVENT_DESCRIPTION
     background: RED_MOON_EVENT_BACKGROUND
     points: 1000
     timer: 300
     timerRandom: 45500
-  - name: STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT
+  - name: STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT #Realism: July, 1975
     description: STR_APOLLO_SOYUZ_TEST_PROGRAM_EVENT_DESCRIPTION
     background: APOLLO_SOYUZ_TEST_PROGRAM_EVENT_BACKGROUND
     points: 1000
     timer: 600
     timerRandom: 43500
-  - name: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT
+  - name: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT #Realism: February, 1976
     description: STR_FRENCH_OFFICIAL_ABDUCTED_EVENT_DESCRIPTION
     background: FRENCH_OFFICIAL_ABDUCTED_EVENT_BACKGROUND
     points: -10

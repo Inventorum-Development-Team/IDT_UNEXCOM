@@ -29,8 +29,8 @@ items:
     tuAuto: 45
     tuSnap: 30
     autoShots: 5
-    autoRange: 200
-    snapRange: 200
+    autoRange: 15
+    snapRange: 32
     dropoff: 1
     bulletSpeed: 16
     battleType: 1
@@ -60,7 +60,7 @@ items:
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     size: 0.1
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     costBuy: 550
     costSell: 20
     transferTime: 48
@@ -410,7 +410,6 @@ items:
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    power: 63
     damageType: 3
     bulletSpeed: 10
     damageAlter:
@@ -460,32 +459,27 @@ items:
     transferTime: 96
     listOrder: 1414
   - type: STR_XM343
-    costSell: 5750
-    bigSprite: 2508
-    floorSprite: 0
-    weight: 1
-    handSprite: 0
-    bulletSprite: 7
-    fireSound: 4337
-    hitSound: 19
-    hitAnimation: 36
-    power: 150
-    damageType: 4
-    damageAlter:
-      RandomType: 6
-      ToArmor: 0.8
-      ToArmorPre: 0.7
-      IgnoreOverKill: false
-    clipSize: 30
-    accuracySnap: 60
-    tuSnap: 40
-    accuracyAimed: 110
-    tuAimed: 60
+    costSell: 5750 #
+    bigSprite: 2508 #
+    floorSprite: 0 #
+    weight: 1 #
+    handSprite: 0 #
+    bulletSprite: 7 #
+    fireSound: 4337 #
+    accuracySnap: 60 #
+    tuSnap: 40 #
+    accuracyAimed: 110 #
+    tuAimed: 60 #
     maxRange: 200
     aimRange: 125
     snapRange: 25
     minRange: 10
     dropoff: 1
+    compatibleAmmo:
+      - STR_ENERGYCAPACITOR
+      - STR_ENERGYENHANCEDBATTERY
+      - STR_ENERGYE115BATTERY
+      - STR_ENERGYTURBOMODULE1
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -493,21 +487,97 @@ items:
     turretType: -1
     bulletSpeed: 8
     listOrder: 1414
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 30
+    vaporProbabilitySurface: 100
+  - type: STR_ENERGYCAPACITOR
+    costSell: 50000
+    weight: 75
+    battleType: 2
+    bigSprite: 2544
+    floorSprite: 12
+    clipSize: 30
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 120
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_ENERGYENHANCEDBATTERY
+    costSell: 55000
+    weight: 80
+    battleType: 2
+    bigSprite: 2553
+    floorSprite: 12
+    clipSize: 15
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 175
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_ENERGYE115BATTERY
+    costSell: 750000
+    weight: 75
+    battleType: 2
+    bigSprite: 2554
+    floorSprite: 12
+    blastRadius: 2
+    clipSize: 30
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 175
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.9
+      ToArmorPre: 0.9
+      IgnoreOverKill: false
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_ENERGYTURBOMODULE1
+    costSell: 100000
+    weight: 100
+    battleType: 2
+    bigSprite: 2555
+    floorSprite: 12
+    blastRadius: 1
+    clipSize: -1
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 150
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
   - type: STR_TANK_LASER_MINIGUN
     weight: 1
     bigSprite: 2509
     bulletSprite: 2
     fireSound: 4338
-    hitSound: 19
-    hitAnimation: 36
-    power: 52
-    damageType: 4
-    damageAlter:
-        RandomType: 6
-        ToArmor: 0.9
-        ToArmorPre: 0.8
-        IgnoreOverKill: false
-    clipSize: 100
+    compatibleAmmo:
+      - STR_LASERMINIBATTERY1
+      - STR_LASERMINIBATTERY2
+      - STR_LASERMINIBATTERY3
+      - STR_LASERMINIBATTERY4
     accuracyAuto: 48
     tuAuto: 38
     accuracySnap: 60
@@ -524,6 +594,85 @@ items:
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY1 #ignoreduplicate
+    costSell: 750
+    weight: 50
+    battleType: 2
+    bigSprite: 2549
+    floorSprite: 12
+    clipSize: 50
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      ToArmorPre: 0.7
+      IgnoreOverKill: false
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY2
+    costSell: 750
+    weight: 50
+    battleType: 2
+    bigSprite: 2550
+    floorSprite: 12
+    clipSize: 25
+    #blastRadius: 0
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.7
+      IgnoreOverKill: false
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY3
+    costSell: 750
+    weight: 50
+    battleType: 2
+    bigSprite: 2551
+    floorSprite: 12
+    clipSize: 30
+    blastRadius: 1
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 100
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.9
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY4
+    costSell: 750
+    weight: 100
+    battleType: 2
+    bigSprite: 2552
+    floorSprite: 12
+    blastRadius: 1
+    clipSize: -1
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+    invWidth: 2
+    invHeight: 2
     listOrder: 1419
 armors:
 ##################################### Kiro Spot
@@ -1021,8 +1170,13 @@ extraSprites:
       2546: Resources/Tanks/TANKSMOKE6XPACK.png
       2547: Resources/Tanks/M1919A4AMMOBOX.png
       2548: Resources/Tanks/BMD1PKTAMMOBOX.png
-      2549: Resources/Tanks/50CAL.png
-      2550: Resources/Tanks/50CAL.png
+      2549: Resources/Tanks/ENERGYSHELLMINI1BATTERY.png
+      2550: Resources/Tanks/ENERGYSHELLMINI2BATTERY.png
+      2551: Resources/Tanks/ENERGYSHELLMINI3BATTERY.png
+      2552: Resources/Tanks/ENERGYSHELLMINI4BATTERY.png
+      2553: Resources/Tanks/ENERGYSHELL_ENHANCED.png
+      2554: Resources/Tanks/ENERGYSHELL_IMPACT_FORCE.png
+      2555: Resources/Tanks/ENERGYSHELL_TURBOLASER.png
   #- type: FLOOROB.PCK
   #  files:
   #    2700: Resources/Tanks/
