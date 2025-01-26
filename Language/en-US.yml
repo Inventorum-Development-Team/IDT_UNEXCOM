@@ -2711,6 +2711,13 @@ en-US:
       STR_152MM_CANNON_SHELLS: 152mm AP Rounds
       STR_SHILLELAGH: MGM-51 Shillelagh Guided Missile
       STR_MGM51_MISSILE: MGM-51 Shillelagh Guided Missile
+      STR_152MMCANNONSHELLS1: "152MM Tank Armor Pierce"
+      STR_152MMCANNONSHELLS2: "152MM Tank Vertical"
+      STR_152MMCANNONSHELLS3: "152MM Tank Canister"
+      STR_152MMCANNONSHELLS4: "152MM Tank DU Pierce"
+      STR_152MMCANNONSHELLS5: "152MM Tank Alien Alloy"
+      STR_152MMCANNONSHELLS6: "152MM Tank E-115 VE"
+      STR_152MMCANNONSHELLS7: "152MM Tank Fusion VE"
 ########################################################
       STR_BMD1_TANK: BMD-1 Airborne IFV
       BMD1_TANK_ARMOR: BMD-1 Airborne IFV
@@ -2720,6 +2727,13 @@ en-US:
       STR_73MM_CANNON_SHELLS: 73mm HE Rounds
       STR_PKT_MACHINEGUN: 7.62mm PKT Machine Gun
       STR_PKT_AMMO_BOX: x50 PKT 7.62mm Rounds
+      STR_73MMROUNDSS1: "73MM Rounds Armor Pierce"
+      STR_73MMROUNDSS2: "73MM Rounds Vertical"
+      STR_73MMROUNDSS3: "73MM Rounds Canister"
+      STR_73MMROUNDSS4: "73MM Rounds DU Pierce"
+      STR_73MMROUNDSS5: "73MM Rounds Alien Alloy"
+      STR_73MMROUNDSS6: "73MM Rounds E-115 VE"
+      STR_73MMROUNDSS7: "73MM Rounds Fusion VE"
 ########################################################
       STR_SALADIN_CAR: FV601 Saladin Armored Car
       SALADIN_CAR_ARMOR: FV601 Saladin Armored Car
@@ -2729,6 +2743,13 @@ en-US:
       STR_76MM_CANNON_SHELLS: 76mm HESH Rounds
       STR_M1919A4_MACHINEGUN: 7.62mm M1919A4 Machine Gun
       STR_M1919A4_AMMO_BOX: x50 M1919A4 7.62mm Rounds
+      STR_76MMROUNDSS1: "76MM Rounds Armor Pierce"
+      STR_76MMROUNDSS2: "76MM Rounds Vertical"
+      STR_76MMROUNDSS3: "76MM Rounds Canister"
+      STR_76MMROUNDSS4: "76MM Rounds DU Pierce"
+      STR_76MMROUNDSS5: "76MM Rounds Alien Alloy"
+      STR_76MMROUNDSS6: "76MM Rounds E-115 VE"
+      STR_76MMROUNDSS7: "76MM Rounds Fusion VE"
 ########################################################
       STR_IMP_TANK_CHASSIS: Laser/Alloy Tank Project
       STR_TANK_LASER_CANNON: XM22 Legionnaire
@@ -3279,21 +3300,21 @@ en-US:
 ## KMW Marder IFV Leopard I Leopard 2
       STR_NATOMILITARYCONTRACT1: NATO Main Battle Tank
       STR_NATOVARIANTBRITISH1: Obtain German Vehicles ### Damage
-      STR_KMWMARDERIFV: KMW Marder IFV
-      STR_LEOPARDITANK: Leopard I Tank
-      STR_LEOPARDIITANK: Leopard II Tank
+      STR_KMWMARDERIFV: KMW Marder IFV #20mm Milan ATGM
+      STR_LEOPARDITANK: Leopard I Tank #105mm
+      STR_LEOPARDIITANK: Leopard II Tank #120mm
 ## Centurion Chieftan Challenger I
       STR_NATOVARIANTGERMAN1: Obtain British Vehicles ### Accuracy
-      STR_CENTURIONTANK: Centurion Tank
-      STR_CHIEFTANTANK: Chieftan Tank
-      STR_CHALLENGERITANK: Challenger I Tank
+      STR_CENTURIONTANK: Centurion Tank #105mm
+      STR_CHIEFTANTANK: Chieftan Tank #120mm
+      STR_CHALLENGERITANK: Challenger I Tank #120mm
 ##AMX 13 ATFL11 AMX US AMX 10 RC & RCR
       STR_NATOVARIANTFRENCH1: Obtain French Vehicles ### Time Units
-      STR_AMX13TANK: AMX-13 Tank
-      STR_AMXUSTANK: AMX-US Tank
-      STR_ATFL11TANK: ATFL-11 Tank
-      STR_AMX10TANKRC: AMX-10 RC Tank ### Original
-      STR_AMX10TANKRCR: AMX-10 RCR Tank ### With Extra Armor
+      STR_AMX13TANK: AMX-13 Tank #76mmmm
+      STR_AMXUSTANK: AMX-US Tank #90mm
+      STR_ATFL11TANK: ATFL-11 Tank #105mm
+      STR_AMX10TANKRC: AMX-10 RC Tank ### Original > 105mm
+      STR_AMX10TANKRCR: AMX-10 RCR Tank ### With Extra Armor > 105mm
 ## USSR
 ## T64 T70 T80 BMPs
       STR_WARSAWMILITARYCONTRACT1: Warsaw Main Battle Tank
