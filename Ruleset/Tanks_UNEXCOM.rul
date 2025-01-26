@@ -125,7 +125,7 @@ items:
     bulletSpeed: 10
     compatibleAmmo:
       - STR_152MM_CANNON_SHELLS
-      - STR_152MMCANNONSHELLS1
+      - STR_152MMCANNONSHELLS1 #Armor Piercing
       - STR_152MMCANNONSHELLS2
       - STR_152MMCANNONSHELLS3
       - STR_152MMCANNONSHELLS4
@@ -455,7 +455,7 @@ items:
     fireSound: 4333
     compatibleAmmo:
       - STR_76MM_CANNON_SHELLS
-      - STR_76MMROUNDSS1
+      - STR_76MMROUNDSS1 #Armor Piercing
       - STR_76MMROUNDSS2
       - STR_76MMROUNDSS3
       - STR_76MMROUNDSS4
@@ -772,13 +772,13 @@ items:
     fireSound: 4333
     compatibleAmmo:
       - STR_73MM_CANNON_SHELLS
-      - STR_73MMROUNDSS1
-      - STR_73MMROUNDSS2
-      - STR_73MMROUNDSS3
-      - STR_73MMROUNDSS4
-      - STR_73MMROUNDSS5
-      - STR_73MMROUNDSS6
-      - STR_73MMROUNDSS7
+      - STR_73MMROUNDSS1 #Armor Piercing
+      - STR_73MMROUNDSS2 #Vertical Explosion
+      - STR_73MMROUNDSS3 #Canister Shells
+      - STR_73MMROUNDSS4 #Depleted Uranium
+      - STR_73MMROUNDSS5 #Alien Alloys
+      - STR_73MMROUNDSS6 #Elerium Tipped
+      - STR_73MMROUNDSS7 #Fusion Shells
     accuracySnap: 60
     accuracyAimed: 80
     tuSnap: 33
