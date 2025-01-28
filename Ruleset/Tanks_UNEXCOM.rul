@@ -50,7 +50,7 @@ items:
     confAimed:
       name: STR_HWP_POP_SMOKE
     battleType: 1
-    maxRange: 2
+    maxRange: 10
     arcingShot: true
     fixedWeapon: true
     invWidth: 2
@@ -60,7 +60,7 @@ items:
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     size: 0.1
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 20
     costBuy: 550
     costSell: 20
     transferTime: 48
@@ -109,9 +109,9 @@ items:
       - STR_USA_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_USA
-    costBuy: 720000
+    costBuy: 764000
     costSell: 540000
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 2
     transferTime: 96
     listOrder: 1401
   - type: STR_M81E1
@@ -174,7 +174,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 25000
     costSell: 8000
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     transferTime: 48
     weight: 100
     bigSprite: 2541
@@ -203,7 +203,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 30000
     costSell: 8000
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     transferTime: 48
     weight: 110
     bigSprite: 2528
@@ -234,7 +234,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 50000
     costSell: 8000
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     transferTime: 48
     weight: 110
     bigSprite: 2530
@@ -266,7 +266,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 40000
     costSell: 8000
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     transferTime: 48
     weight: 90
     bigSprite: 2529
@@ -294,6 +294,7 @@ items:
     categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
     size: 0.1
     requiresBuyCountry: STR_USA
     costSell: 10000
@@ -323,6 +324,7 @@ items:
     categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
     size: 0.1
     costSell: 10000
     transferTime: 48
@@ -351,6 +353,8 @@ items:
     categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
     size: 0.1
     costSell: 60000
     transferTime: 48
@@ -379,6 +383,10 @@ items:
     categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
     size: 0.1
     costSell: 70000
     transferTime: 48
@@ -410,7 +418,7 @@ items:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.6
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     costBuy: 9000
     costSell: 7250
     transferTime: 48
@@ -440,9 +448,9 @@ items:
       - STR_NATO_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 2
-    costBuy: 350000
-    costSell: 240000
+    monthlyBuyLimit: 3
+    costBuy: 450000
+    costSell: 24000
     transferTime: 96
     listOrder: 1405
   - type: STR_L5A1_GUN
@@ -508,15 +516,15 @@ items:
     size: 0.1
     requiresBuyCountry: STR_UK
     costBuy: 15000
-    costSell: 800
+    costSell: 8000
     transferTime: 48
     weight: 45
     bigSprite: 2521
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
-    power: 80
-    damageType: 3
+    power: 90
+    damageType: 1
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
@@ -535,15 +543,15 @@ items:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_UK
-    costBuy: 1500
-    costSell: 800
+    costBuy: 15000
+    costSell: 8000
     transferTime: 48
     weight: 45
     bigSprite: 2523
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
-    power: 80
+    power: 85
     damageType: 3
     bulletSpeed: 10
     damageAlter:
@@ -563,8 +571,8 @@ items:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_UK
-    costBuy: 1500
-    costSell: 800
+    costBuy: 15000
+    costSell: 8000
     transferTime: 48
     weight: 45
     bigSprite: 2522
@@ -572,6 +580,9 @@ items:
     hitSound: 4
     hitAnimation: 0
     power: 80
+    shotgunBehavior: 3
+    shotgunPellets: 7
+    shotgunSpread: 45
     damageType: 3
     bulletSpeed: 10
     damageAlter:
@@ -589,16 +600,17 @@ items:
     categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
     size: 0.1
-    costSell: 800
+    costSell: 80000
     transferTime: 48
     weight: 45
     bigSprite: 2524
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
-    power: 80
-    damageType: 3
+    power: 90
+    damageType: 1
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
@@ -615,16 +627,18 @@ items:
     categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
     size: 0.1
-    costSell: 800
+    costSell: 80000
     transferTime: 48
     weight: 45
     bigSprite: 2525
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
-    power: 80
-    damageType: 3
+    power: 110
+    damageType: 1
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
@@ -642,15 +656,15 @@ items:
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     size: 0.1
-    costSell: 800
+    costSell: 80000
     transferTime: 48
     weight: 45
     bigSprite: 2525
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
-    power: 80
-    damageType: 3
+    power: 125
+    damageType: 5
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
@@ -667,16 +681,20 @@ items:
     categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
     size: 0.1
-    costSell: 800
+    costSell: 100000
     transferTime: 48
     weight: 45
     bigSprite: 2526
     floorSprite: 12
     hitSound: 4
     hitAnimation: 0
-    power: 80
-    damageType: 3
+    power: 160
+    damageType: 5
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
@@ -696,7 +714,7 @@ items:
     size: 6
     requiresBuyCountry: STR_UK
     costSell: 50
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 5
     transferTime: 96
     weight: 1
     bigSprite: 2505
@@ -728,7 +746,7 @@ items:
     requiresBuyCountry: STR_UK
     costBuy: 80
     costSell: 40
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     transferTime: 48
     weight: 20
     bigSprite: 2547
@@ -757,9 +775,9 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 2
-    costBuy: 520000
-    costSell: 440000
+    monthlyBuyLimit: 3
+    costBuy: 400000
+    costSell: 320000
     transferTime: 96
     listOrder: 1415
   - type: STR_2A28_GROM #ignoreDuplicate
@@ -823,7 +841,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 10
     costBuy: 1500
     costSell: 750
     transferTime: 48
@@ -831,7 +849,9 @@ items:
     bigSprite: 2543
     floorSprite: 12
     hitSound: 4335
+    blastRadius: 1
     hitAnimation: 0
+    power: 70
     damageType: 3
     bulletSpeed: 10
     damageAlter:
@@ -850,20 +870,22 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costBuy: 15000
+    costSell: 7500
     transferTime: 48
     weight: 62
     bigSprite: 2514
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    damageType: 3
+    power: 80
+    damageType: 1
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
       ToArmor: 0.7
+      ToArmorPre: 0.6
       IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     clipSize: 40
@@ -877,20 +899,22 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costBuy: 15000
+    costSell: 7500
     transferTime: 48
     weight: 62
     bigSprite: 2516
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
+    blastRadius: 1
+    power: 85
     damageType: 3
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
-      ToArmor: 0.7
+      ToArmor: 0.6
       IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     clipSize: 40
@@ -904,16 +928,17 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costBuy: 15000
+    costSell: 7500
     transferTime: 48
     weight: 62
     bigSprite: 2515
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    damageType: 3
+    power: 75
+    damageType: 1
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
@@ -921,6 +946,9 @@ items:
       IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     clipSize: 40
+    shotgunBehavior: 3
+    shotgunPellets: 9
+    shotgunSpread: 60
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -929,22 +957,24 @@ items:
     categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costSell: 50000
     transferTime: 48
     weight: 62
     bigSprite: 2517
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    damageType: 3
+    power: 100
+    damageType: 1
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
       ToArmor: 0.7
+      ToArmorPre: 0.6
       IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     clipSize: 40
@@ -956,22 +986,24 @@ items:
     categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costSell: 75000
     transferTime: 48
     weight: 62
     bigSprite: 2513
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    damageType: 3
+    damageType: 1
+    power: 120
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
-      ToArmor: 0.7
+      ToArmor: 0.8
+      ToArmorPre: 0.7
       IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     clipSize: 40
@@ -983,24 +1015,28 @@ items:
     categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costSell: 75000
     transferTime: 48
     weight: 62
     bigSprite: 2518
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    damageType: 3
+    power: 125
+    damageType: 5
     bulletSpeed: 10
+    blastRadius: 1
     damageAlter:
       RandomType: 6
-      ToArmor: 0.7
+      ToArmor: 0.8
+      ToArmorPre: 0.7
       IgnoreSelfDestruct: true
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.85
     clipSize: 40
     battleType: 2
     invWidth: 1
@@ -1010,22 +1046,28 @@ items:
     categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     requires:
       - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
-    costBuy: 1500
-    costSell: 750
+    monthlyBuyLimit: 10
+    costSell: 75000
     transferTime: 48
     weight: 62
     bigSprite: 2519
     floorSprite: 12
     hitSound: 4335
     hitAnimation: 0
-    damageType: 3
+    power: 150
+    blastRadius: 2
+    damageType: 5
     bulletSpeed: 10
     damageAlter:
       RandomType: 6
-      ToArmor: 0.7
+      ToArmor: 0.9
+      ToArmorPre: 0.8
       IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     clipSize: 40
@@ -1041,7 +1083,7 @@ items:
     requiresBuyCountry: STR_RUSSIA
     costBuy: 50
     costSell: 50
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 15
     transferTime: 48
     weight: 10
     bigSprite: 2548
@@ -1846,10 +1888,173 @@ manufacture:
       - STR_TANK_LASER_CANNON
     space: 25
     time: 1200
-    cost: 500000
+    cost: 765000
     requiredItems:
       STR_ALIEN_ALLOYS: 30
       STR_ALIEN_CRYSTAL: 10
+  - name: STR_ENERGYCAPACITOR
+    requires:
+      - STR_TANK_LASER_CANNON
+    space: 25
+    time: 1200
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_ENERGYENHANCEDBATTERY
+    requires:
+      - STR_TANK_LASER_CANNON
+      - STR_ELERIUM_115
+    space: 25
+    time: 1200
+    cost: 75000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+  - name: STR_ENERGYE115BATTERY
+    requires:
+      - STR_TANK_LASER_CANNON
+      - STR_ELERIUM_FUSION
+    space: 25
+    time: 1200
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_ENERGYTURBOMODULE1
+    requires:
+      - STR_TANK_LASER_CANNON
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
+    space: 25
+    time: 1200
+    cost: 250000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 50
+      STR_ALIEN_CRYSTAL: 10
+  - name: STR_73MMROUNDSS4
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
+    space: 25
+    time: 1200
+    cost: 50000
+  - name: STR_73MMROUNDSS5
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    space: 25
+    time: 1200
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_73MMROUNDSS6
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 150000
+    requiredItems:
+      STR_ELERIUM_115: 30
+  - name: STR_73MMROUNDSS7
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_76MMROUNDSS4
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
+    space: 25
+    time: 1200
+    cost: 50000
+  - name: STR_76MMROUNDSS5
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+    space: 25
+    time: 1200
+    cost: 150000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_76MMROUNDSS6
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 150000
+    requiredItems:
+      STR_ELERIUM_115: 30
+  - name: STR_76MMROUNDSS7
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_152MMCANNONSHELLS4
+    requires:
+      - STR_ALIEN_ORIGINS
+    space: 25
+    time: 1200
+    cost: 200000
+  - name: STR_152MMCANNONSHELLS5
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_152MMCANNONSHELLS6
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ELERIUM_115: 30
+  - name: STR_152MMCANNONSHELLS7
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
 extraSounds:
   - type: BATTLE.CAT
     files:

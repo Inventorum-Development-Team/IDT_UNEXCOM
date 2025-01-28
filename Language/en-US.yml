@@ -3291,9 +3291,9 @@ en-US:
 ## USA
 ## M48 PAtton M60 Super Patton M1 Abrams
       STR_USAMILITARYCONTRACT1: USA Main Battle Tank
-      STR_M48PATTONTANK: M48 Patton Tank
-      STR_M60SUPERPATTONTANK: M60S Patton Tank
-      STR_M1ABRAMSTANK: M1 Abrams Tank
+      STR_M48PATTONTANK: M48 Patton Tank #105mm
+      STR_M60SUPERPATTONTANK: M60S Patton Tank #152mm
+      STR_M1ABRAMSTANK: M1 Abrams Tank #105 and 120mm
 ###### USA Laser Tanks
       STR_ONTOS117TANK: "Ontos Tank"
 ## NATO
@@ -3318,10 +3318,10 @@ en-US:
 ## USSR
 ## T64 T70 T80 BMPs
       STR_WARSAWMILITARYCONTRACT1: Warsaw Main Battle Tank
-      STR_BMPSTANK: BMP-Tank
-      STR_T64TANK: T-64 Tank
-      STR_T70TANK: T-70 Tank
-      STR_T80TANK: T-80 Tank
+      STR_BMPSTANK: BMP-Tank #73mm + ATGM Rounds
+      STR_T64TANK: T-64 Tank #120mm
+      STR_T70TANK: T-72 Tank #120mm
+      STR_T80TANK: T-80 Tank #120mm
 #### USSR Laser Tanks
       STR_USSRLASER1TANK: "1K11 Stilleto"
       STR_USSRLASER2TANK: "1K12 Sanguin"
@@ -3329,11 +3329,11 @@ en-US:
 ## On Our Own
 ## Skropion Rooikat Merkerva
       STR_CREATEPROTOTYPETANKS: Establish UN Manufacturing Contractors
-      STR_SKORPIONTANK: Skorpion Tank #### Will get one after On our own path unlocked
+      STR_SKORPIONTANK: Skorpion Tank #### Will get one after On our own path unlocked #90mm
       STR_SKORPIONTANKWIKI: United Kingdoms Skorpion Tank
-      STR_ROOIKAT: "Rooikat 4x4 MCV" ####
+      STR_ROOIKAT: "Rooikat 4x4 MCV" #### 76mm mg4 smoke grenade
       STR_ROOIKATWIKI: South Africas Military Rush Development vehicle.
-      STR_MERKERVA1: "Merkerva Mk-I"
+      STR_MERKERVA1: "Merkerva Mk-I" #120mm + atgm missile; 7.64 grenade launcher 60mm
       STR_MERKERVA1WIKI: "The Israel Defense Force self-sufficient main battle tank,"
       ######## Expanding Personel Armor#### Expanding Aircraft Arsenal; The cost is more expensive to build
       ##### Energy Shields
