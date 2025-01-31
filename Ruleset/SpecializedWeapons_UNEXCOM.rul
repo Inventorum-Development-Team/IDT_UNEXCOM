@@ -168,6 +168,7 @@ items:
 #########################################
 manufacture:
   - name: STR_GAUSS_RIFLE
+    category: STR_SPECIAL_WEAPON1
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
       - STR_ON_OUR_OWN
@@ -177,6 +178,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 20
   - name: STR_GAUSS_RIFLE_MAG
+    category: STR_SPECIAL_WEAPON1
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
       - STR_ON_OUR_OWN
@@ -186,6 +188,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 5
   - name: STR_ELECTRIC_RIFLE
+    category: STR_SPECIAL_WEAPON1
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
       - STR_ON_OUR_OWN
@@ -195,6 +198,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 15
   - name: STR_ELECTRIC_RIFLE_MAG
+    category: STR_SPECIAL_WEAPON1
     requires:
       - STR_SECRET_CRISIS_PROTOTYPES
       - STR_ON_OUR_OWN

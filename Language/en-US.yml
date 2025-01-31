@@ -75,13 +75,13 @@ en-US:
       STR_PRISONERS: Prisoners
       STR_MT_RATING_EXEMPLARY: Legendary!
       STR_MT_RATING_EXCELLENT: Excellent!
-      STR_MT_RATING_GREAT: Great Effort!
+      STR_MT_RATING_GREAT: Great!
       STR_MT_RATING_GOOD: Good Work!
-      STR_MT_RATING_OK: Needs Better Work!
-      STR_MT_RATING_POOR: Needs Improvement!
-      STR_MT_RATING_BAD: Needs dealing serious!
-      STR_MT_RATING_TERRIBLE: Brink of defeat!
-      STR_MT_RATING_ABOMINABLE: Almost being Destroyed!
+      STR_MT_RATING_OK: Normal!
+      STR_MT_RATING_POOR: Poor!
+      STR_MT_RATING_BAD: Worst!
+      STR_MT_RATING_TERRIBLE: Defeated!
+      STR_MT_RATING_ABOMINABLE: Destroyed!
       STR_HUMAN_RECON: Human Recon
       STR_THRUST: Thrust
       STR_CUT: Cut
@@ -3195,8 +3195,9 @@ en-US:
       STR_MILITARYESCALATION1WIKI: According to the reports of alien presense with high yield weapon technology. It'll be impossible to takedown such scores of alien troops. We'll need to form a military batallion in order to combat aliens terrifying power. A new armored truck with trailer is now underway to conduct heavy transports.
       STR_MILITARYESCALATION2WIKI: Now the world have prepared a full arsenal to counter alien invasion. We need to build up numbers of combat vehicles to take down alien vehicles. An additional vehicle for armored tank trailers will be provided.
       STR_CARGOTRUCKDWIKI: UNC1 AFV1; The road train vehicle that allows to carry more infantry and up to 6 vehicles.
-      STR_CARGOTRUCKEWIKI: UNC1 AFV2; 4 Truck convoys are now in our arsenal. We can carry up to 80 infantry or 20 tanks for brutal warfare.
-      STR_CARGOTRUCKFWIKI: M3 Company; Military escalation vehicle up to 6 vehicles in many soldiers.# Radar Ground Vehicles
+      STR_CARGOTRUCKEWIKI: "UNC1 AFV2; 4 Truck convoys are now in our arsenal. We can carry up to 80 infantry or 20 tanks for brutal warfare."
+      STR_CARGOTRUCKFWIKI: "M3 Company; Military escalation vehicle up to 6 vehicles in many soldiers."
+      # Radar Ground Vehicles
       STR_RADARAPC1: M113 ARSC #Basic
       STR_RADARAPC1_UFOPEDIA: "M113 ARSC"
       STR_RADARAPC2_UFOPEDIA: "M114-AA ARSC" #New Alien Alloy
@@ -3242,39 +3243,35 @@ en-US:
       ####pktammobox
       #####mgm51misisle
       #### EnergyShell
-      #### 73mm
-      STR_73MMAA_AMMO: "73mm-Alien Alloy AP"
-      STR_73MMAP_AMMO: "73mm-Armor Piercing"
-      STR_73MMAC_AMMO: "73mm-Armor Canister"
-      STR_73MMVE_AMMO: "73mm-Armor Vertical"
-      STR_73MMDU_AMMO: "73mm-Depleted Uranium"
-      STR_73MME115_AMMO: "73mm-Elerium 155 AP"
-      STR_73MMFUSIONAMMO: "73mm-Fusion Blast"
-      #### 76mm
-      STR_76MMAAAMMO: "76mm-Alien Alloy AP"
-      STR_76MMAPAMMO: "76mm-Armor Piercing"
-      STR_76MMACAMMO: "76mm-Armor Canister"
-      STR_76MMVE_AMMO: "76mm-Armor Vertical"
-      STR_76MMDUAMMO: "76mm-Depleted Uranium"
-      STR_76MME115AMMO: "76mm-Elerium 155 AP"
-      STR_76MMFUSIONAMMO: "76mm-Fusion Blast"
-      #### 100mm
-      STR_100MMAAAMMO: "100mm-Alien Alloy AP"
-      STR_100MMAPAMMO: "100mm-Armor Piercing"
-      STR_100MMACAMMO: "100mm-Armor Canister"
-      STR_100MMVE_AMMO: "100mm-Armor Vertical"
-      STR_100MMDUAMMO: "100mm-Depleted Uranium"
-      STR_100MME115AMMO: "100mm-Elerium 155 AP"
-      STR_100MMFUSIONAMMO: "100mm-Fusion Blast"
-      #### 152mmm
-      STR_152MMAAAMMO: "152mm-Alien Alloy AP"
-      STR_152MMAPAMMO: "152mm-Armor Piercing"
-      STR_152MMACAMMO: "152mm-Armor Canister"
-      STR_152MMVE_AMMO: "152mm-Armor Vertical"
-      STR_152MMDUAMMO: "152mm-Depleted Uranium"
-      STR_152MME115AMMO: "152mm-Elerium 155 AP"
-      STR_152MMFUSIONAMMO: "152mm-Fusion Blast"
-      #### EnergyShell
+      #### 73mm for Advance Combat Vehicle
+      STR_50MMAA_AMMO: "50cal-Alien Alloy AP"
+      STR_50MMAC_AMMO: "50cal-Armor Canister"
+      STR_50MMVE_AMMO: "50cal-Armor Vertical"
+      STR_50MMDU_AMMO: "50cal-Depleted Uranium"
+      STR_50MME115_AMMO: "50cal-E115 Pike Point"
+      STR_50MMFUSIONAMMO: "50cal-Fusion Blast"
+      #### 75mm for Advance Combat Vehicle
+      STR_75MMAA_AMMO: "75mm-AA Pike Point"
+      STR_75MMAC_AMMO: "75mm-AA Shrapnel"
+      STR_75MMVE_AMMO: "75mm-Armor Vertical"
+      STR_75MMDU_AMMO: "75mm-Depleted Uranium"
+      STR_75MME115_AMMO: "75mm-E115 Pike Point"
+      STR_75MMFUSION_AMMO: "75mm-Fusion Blast"
+      #### 105mm for Advance Combat Vehicle
+      STR_105MMAA_AMMO: "105mm-AA Pike Point"
+      STR_105MMAC_AMMO: "105mm-Armor Canister"
+      STR_105MMVE_AMMO: "105mm-Armor Vertical"
+      STR_105MMDU_AMMO: "105mm-Depleted Uranium"
+      STR_105MME115_AMMO: "105mm-E115 Pike Point"
+      STR_105MMFUSION_AMMO: "105mm-Fusion Blast"
+      #### 120mmm for Advance Combat Vehicle
+      STR_120MMAA_AMMO: "120mm-AA Pike Point"
+      STR_120MMAC_AMMO: "120mm-AA Shrapnel"
+      STR_120MMVE_AMMO: "120mm-AA Vertical"
+      STR_120MMDU_AMMO: "120mm-Depleted Uranium"
+      STR_120MME115_AMMO: "120mm-E115 Pike Point"
+      STR_120MMFUSION_AMMO: "120mm-Fusion Blast"
+      #### EnergyShell Laser Version
       STR_ENERGYCAPACITOR: "Laser Energy Battery"
       STR_ENERGYENHANCEDBATTERY: "Energy Shell-E"
       STR_ENERGYE115BATTERY: "Energy E-115 Blast"
@@ -3284,6 +3281,8 @@ en-US:
       STR_LASERMINIBATTERY2: "Laser Enhance Scatter Battery"
       STR_LASERMINIBATTERY3: "Laser E115 Scatter Battery"
       STR_LASERMINIBATTERY4: "Turbo L-Scatter Module"
+      #### Energy Battery for Plasma Weapons for Tanks
+      ####
 # Combat Ground Vehicles in froms of 6
 ## Tank Tier 1 Alien Alloy
 ## Tank Tier 2 UFO Construction
@@ -3438,8 +3437,50 @@ en-US:
       STR_VEHICLEGARAGE1: "Vehicle Garage"
       STR_VEHICLEGARAGE1WIKI: ""
 #### Alien Components 1
-      STR_ALIENBATTLESHIPSINGULARCHARGE: "Alien Singular Charge"
-#### Alien Components 1
+## 20 is for Alien Hyper Encoder; Also assign them into Special Type.
+      STR_ALIEN_FOOD: "Alien Supply Crate"
+      STR_ALIENSINGULARCHARGE: "Alien Singular Charge" #21
+      STR_ALIENSINGULARGUN: "Alien Singular Machine" #22
+      STR_ALIENDATAPOD1: "Quantum Data Storage" #23
+      STR_ALIENDATAPOD2: "Quantum Data Mainframe" #24
+      STR_ALIENCRYOBED1: "Alien Cryobed Pod" #25
+      STR_ALIENCRYOBED2: "Alien Cryobed Pod (Empty)"
+      STR_ALIENCRYOCONTAINER1: "Alien Cryo Container" #26
+      STR_ALIENCRYOCONTAINER2: "Alien Cryo Container (Empty)"
+      STR_ALIENPOWERSOURCE1: "Strange Power Source" #27
+      STR_ALIENPOWERSOURCE2: "Ultimathium Generator"
+      STR_ALIENPOWERFUEL1: "Strange Alien Fuel"
+      STR_ALIENPOWERFUEL2: "Ultimathium Fuel Cell"
+      STR_STRANGECRYSTAL1: "Strange Crystal" #28
+      STR_STRANGECRYSTAL2: "Crystal Data Device"
+      STR_TECHFLOORPART1: "Tech Fragment Part" #29
+      STR_ALIENCOMPUTER1: "Alien PC Device" #30
+      STR_MULTIFUNCTION1: "Alien Multi-Device" #31
+      STR_MULTIFUNCTION2: "Alien Generator-Device" #31
+      STR_MULTIWORKTABLE1: "Alien Multi-desk Table" #32
+      STR_ENTERNTAINMENT1: "Alien Entertainment Floor" #33
+      STR_ALIENUFOCHAIR1: "Pilot Relax Chair" #34
+      STR_ALIENUFOCHAIR2: "Pilot Gunner Chair" #35
+      STR_ALIENUFOCHAIR3: "Pilot Navigator" #36
+      STR_ALIENHOLOGRAM1: "Alien Hologram Device" #37
+      STR_ALIENASSEMBLER1: "Alien Forge Assembler" #38
+      STR_ALIENCONSTRUCTOR1: "Alien Multi-Handler" #39 Small Arms
+      STR_ALIENCONSTRUCTOR2: "Alien Laser Cutter" #40 Laser Cutter
+      STR_ALIENCONSTRUCTOR3: "Alien Multi-Builder" #41 Large Arms
+      STR_ALIENULTIMATESOURCE1: "Ultimathium Generator" #42 Unique Engine Device, obtainable if all aliens are killed.
+      STR_ALIENDATAFRAGMENT1: "Data Wire Fragement"
+      STR_ALIENDATABASE1: "Standard Data Info"
+      STR_ALIENDATABAS21: "Standard Data Info (Hacked)" #Get Info
+      STR_ALIENDATABASE3: "Quantum Data Info"
+      STR_ALIENDATABASE4: "Quantum Data Info (Hacked)" #Get Info
+      STR_ALIENELECTRONIC1: "Alien Connector Part" #Component
+      STR_ALIENOPTRONIC1: "Alien Optical Part" #From Alien Navigation Device
+      STR_ALIENPSIONICPART1: "Alien Neural Wires" #From Alien Enterntainment
+      STR_ALIENWEAPONSET1: "Alien Weapon Rack" #43
+      STR_ALIENWEAPONSET2: "Alien Projectile Part" #44
+      STR_ALIENSENSOR1: "Alien Security Sensor" #45
+      STR_ALIENSENSOR2: "Alien Space Detector" #46
+#### Alien Prison 1
       STR_CONTAINMENT_EXCEEDED: "ALIEN CONTAINMENT LIMITS EXCEEDED!{SMALLINE}Insufficent containment space at {0}. You must remove excess aliens from containment."
       STR_CONTAINMENT_EXCEEDED_1: "NO MORE PRISON UNITS!{SMALLINE}Not enough Prison Unit {0}. You must sell prisoners to free up more Prison Unit."
       STR_CONTAINMENT_EXCEEDED_2: "SENTIENT COMPILER STORAGE EXCEEDED!{SMALLINE}Not enough Function Robots at {0}. You must salvage sentient machines from Compiler."
@@ -3483,3 +3524,7 @@ en-US:
       STR_TURORIAL_FACILITY7: "Vehicle / Aircraft Hangar"
       STR_TURORIAL_FACILITY8: "Subject Containment"
       STR_TURORIAL_FACILITY9: "Laboratory Research"
+####### Category Spell ########
+      STR_LASER_WEAPON1: "Laser Weapons"
+      STR_VEHICLE_WEAPON: "Vehicle Arsenal"
+      STR_SPECIAL_WEAPON1: "Experimental Weapons"

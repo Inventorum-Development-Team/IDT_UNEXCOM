@@ -81,6 +81,7 @@ items:
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
     requiresBuy:
       - STR_USA_LASER_HANDGUNS
+    monthlyBuyLimit: 15
     size: 0.01
     costBuy: 30000
     costSell: 20000
@@ -1776,7 +1777,7 @@ items:
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
     size: 0.01
     costBuy: 1000
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 20
     weight: 10
     bigSprite: 2028
     floorSprite: 124
@@ -1820,6 +1821,7 @@ manufacture:
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
   - name: STR_ELERIUM_BATTERY
+    category: STR_SPECIAL_WEAPON1
     requires:
       - STR_ELERIUM_FUSION
     space: 1
@@ -1828,6 +1830,7 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 5
   - name: STR_PEACEMAKER
+    category: STR_SPECIAL_WEAPON1
     requires:
       - STR_HYBRID_LASER_PROJECT
     space: 1
