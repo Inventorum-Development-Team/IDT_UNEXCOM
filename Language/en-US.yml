@@ -3243,28 +3243,42 @@ en-US:
       ####pktammobox
       #####mgm51misisle
       #### EnergyShell
-      #### 73mm for Advance Combat Vehicle
-      STR_50MMAA_AMMO: "50cal-Alien Alloy AP"
-      STR_50MMAC_AMMO: "50cal-Armor Canister"
-      STR_50MMVE_AMMO: "50cal-Armor Vertical"
-      STR_50MMDU_AMMO: "50cal-Depleted Uranium"
-      STR_50MME115_AMMO: "50cal-E115 Pike Point"
-      STR_50MMFUSIONAMMO: "50cal-Fusion Blast"
-      #### 75mm for Advance Combat Vehicle
+      #### 20mm for Advance Combat Vehicle
+      STR_20MMAA_AMMO: "20mm-Alien Alloy AP"
+      STR_20MMAC_AMMO: "20mm-Armor Canister"
+      STR_20MMVE_AMMO: "20mm-Armor Vertical"
+      STR_20MMDU_AMMO: "20mm-Depleted Uranium"
+      STR_20MME115_AMMO: "20mm-E115 Pike Point"
+      STR_20MMFUSIONAMMO: "20mm-Fusion Blast"
+      #### 75mm for Advance Combat Vehicle x
       STR_75MMAA_AMMO: "75mm-AA Pike Point"
       STR_75MMAC_AMMO: "75mm-AA Shrapnel"
       STR_75MMVE_AMMO: "75mm-Armor Vertical"
       STR_75MMDU_AMMO: "75mm-Depleted Uranium"
       STR_75MME115_AMMO: "75mm-E115 Pike Point"
       STR_75MMFUSION_AMMO: "75mm-Fusion Blast"
-      #### 105mm for Advance Combat Vehicle
+      #### 90mm for Advance Combat Vehicle x
+      STR_90MMAA_AMMO: "90mm-AA Pike Point"
+      STR_90MMAC_AMMO: "90mm-AA Shrapnel"
+      STR_90MMVE_AMMO: "90mm-Armor Vertical"
+      STR_90MMDU_AMMO: "90mm-Depleted Uranium"
+      STR_90MME115_AMMO: "90mm-E115 Pike Point"
+      STR_90MMFUSION_AMMO: "90mm-Fusion Blast"
+      #### 100mm for Advance Combat Vehicle x
+      STR_100MMAA_AMMO: "100mm-AA Pike Point"
+      STR_100MMAC_AMMO: "100mm-AA Shrapnel"
+      STR_100MMVE_AMMO: "100mm-Armor Vertical"
+      STR_100MMDU_AMMO: "100mm-Depleted Uranium"
+      STR_100MME115_AMMO: "100mm-E115 Pike Point"
+      STR_100MMFUSION_AMMO: "100mm-Fusion Blast"
+      #### 105mm for Advance Combat Vehicle x
       STR_105MMAA_AMMO: "105mm-AA Pike Point"
       STR_105MMAC_AMMO: "105mm-Armor Canister"
       STR_105MMVE_AMMO: "105mm-Armor Vertical"
       STR_105MMDU_AMMO: "105mm-Depleted Uranium"
       STR_105MME115_AMMO: "105mm-E115 Pike Point"
       STR_105MMFUSION_AMMO: "105mm-Fusion Blast"
-      #### 120mmm for Advance Combat Vehicle
+      #### 120mmm for Advance Combat Vehicle x
       STR_120MMAA_AMMO: "120mm-AA Pike Point"
       STR_120MMAC_AMMO: "120mm-AA Shrapnel"
       STR_120MMVE_AMMO: "120mm-AA Vertical"
@@ -3290,7 +3304,7 @@ en-US:
 ## USA
 ## M48 PAtton M60 Super Patton M1 Abrams
       STR_USAMILITARYCONTRACT1: USA Main Battle Tank
-      STR_M48PATTONTANK: M48 Patton Tank #105mm
+      STR_M48PATTONTANK: M48I Patton Tank #105mm
       STR_M60SUPERPATTONTANK: M60S Patton Tank #152mm
       STR_M1ABRAMSTANK: M1 Abrams Tank #105 and 120mm
 ###### USA Laser Tanks
@@ -3300,8 +3314,8 @@ en-US:
       STR_NATOMILITARYCONTRACT1: NATO Main Battle Tank
       STR_NATOVARIANTBRITISH1: Obtain German Vehicles ### Damage
       STR_KMWMARDERIFV: KMW Marder IFV #20mm Milan ATGM
-      STR_LEOPARDITANK: Leopard I Tank #105mm
-      STR_LEOPARDIITANK: Leopard II Tank #120mm
+      STR_LEOPARD1TANK: Leopard I Tank #105mm
+      STR_LEOPARD2TANK: Leopard II Tank #120mm
 ## Centurion Chieftan Challenger I
       STR_NATOVARIANTGERMAN1: Obtain British Vehicles ### Accuracy
       STR_CENTURIONTANK: Centurion Tank #105mm

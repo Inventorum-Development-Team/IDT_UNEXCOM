@@ -3872,38 +3872,38 @@ ufopaedia:
     text: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC_UFOPEDIA
   #Armored Vehicles
   - id: STR_FERRET_CAR
-    type_id: 3
-    image_id: FERRET_BACKGROUND
+    type_id: 5
+    image_id: FERRETM0.SPK
     section: STR_VEHICLES
     text: STR_FERRET_CAR_UFOPEDIA
     listOrder: 8000
   - id: STR_SHERIDAN_TANK
-    type_id: 3
-    image_id: SHERIDAN_BACKGROUND
+    type_id: 5
+    image_id: SHERIDANM0.SPK
     section: STR_VEHICLES
     requires:
       - STR_USA_SUPPORT_RESEARCH
     text: STR_SHERIDAN_UFOPEDIA
     listOrder: 8001
   - id: STR_BMD1_TANK
-    type_id: 3
-    image_id: BMD1_BACKGROUND
+    type_id: 5
+    image_id: BMD1M0.SPK
     section: STR_VEHICLES
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     text: STR_BMD1_UFOPEDIA
     listOrder: 8002
   - id: STR_SALADIN_CAR
-    type_id: 3
-    image_id: SALADIN_BACKGROUND
+    type_id: 5
+    image_id: SALADINM0.SPK
     section: STR_VEHICLES
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     text: STR_SALADIN_CAR_UFOPEDIA
     listOrder: 8003
   - id: STR_TANK_LASER_CANNON
-    type_id: 3
-    image_id: LEGIONNAIRE_BACKGROUND
+    type_id: 5
+    image_id: LEGIONNAIREM0.SPK
     section: STR_VEHICLES
     requires:
       - STR_TANK_LASER_CANNON

@@ -5,6 +5,7 @@ soldiers:
   - type: STR_SOLDIER
     costBuy: 40000
     costSalary: 20000
+    monthlyBuyLimit: 30
     minStats:
       tu: 50
       stamina: 50
@@ -98,8 +99,8 @@ soldiers:
     trainingStatCaps:
       tu: 80
       stamina: 80
-      health: 50
-      bravery: 50
+      health: 55
+      bravery: 55
       reactions: 70
       firing: 80
       throwing: 80
@@ -204,6 +205,7 @@ soldiers:
     costSalaryCaptain: 10000
     costSalaryColonel: 15000
     costSalaryCommander: 20000
+    monthlyBuyLimit: 10
     minStats:
       tu: 40
       stamina: 40
