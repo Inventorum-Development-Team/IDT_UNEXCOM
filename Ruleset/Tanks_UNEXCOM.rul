@@ -114,7 +114,7 @@ items:
     monthlyBuyLimit: 2
     transferTime: 96
     listOrder: 1401
-  - type: STR_M81E1
+  - type: STR_M81E1 #ignoreDuplicate
     costSell: 5400
     weight: 1
     bigSprite: 2502
@@ -1343,6 +1343,39 @@ items:
     invWidth: 2
     invHeight: 2
     listOrder: 1419
+#####################################
+####### Kiro imports APC Vehicle from Dauntless1942 #################
+#####################################
+  - type: STR_APCHWPVEHICLE1
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_ON_OUR_OWN
+    size: 4
+    requiresBuyCountry: STR_USA
+    costBuy: 500000
+    costSell: 500000
+    monthlyBuyLimit: 4
+    transferTime: 96
+  - type: STR_APCHWPVEHICLE2
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_ON_OUR_OWN
+    size: 4
+    costSell: 500000
+    transferTime: 96
+    listOrder: 1401
+  - type: STR_ONTOS117TANK
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_BALLISTIC_WEAPONS
+    size: 4
+    requiresBuyCountry: STR_USA
+    costBuy: 700000
+    costSell: 500000
+    monthlyBuyLimit: 4
+    transferTime: 120
+    listOrder: 1401
 armors:
 ##################################### Kiro Spot
 # Small explanation about Tank armors:
@@ -1687,6 +1720,195 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     personalLight: 20
     specialWeapon: STR_TANKCRUSH
+#####################################
+####### M1A1APC1 UN APC ###############
+#####################################
+  - type: STR_APCHWPVEHICLE1
+    spriteSheet: HWP1APC1A.PCK
+    storeItem: STR_APCHWPVEHICLE1
+    spriteInv: M113A1V1.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -150
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_FERRET_SMOKE_LAUNCHER
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+####### M1A1APC1 UN APC ###############
+#####################################
+  - type: STR_APCHWPVEHICLE2
+    spriteSheet: HWP1APC1A.PCK
+    storeItem: STR_APCHWPVEHICLE2
+    spriteInv: M113A1V2.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -150
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_FERRET_SMOKE_LAUNCHER
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+####### M1A1ONTOS1 USA ALLOY ###############
+#####################################
+  - type: STR_ONTOS117TANK
+    spriteSheet: HWP1ONTOS1.PCK
+    storeItem: STR_ONTOS117TANK
+    spriteInv: M1ONTOST1.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -175
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_FERRET_SMOKE_LAUNCHER
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 80
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
 ##### Tank Ammunition is here!
 extraSprites:
   - type: FERRET.PCK
@@ -1752,6 +1974,21 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Tanks/BMP.png
+######## Kiros spot ######
+  - type: HWP1APC1A.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/unexcomm1a1apc1.png
+  - type: HWP1ONTOS1.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/unexcomm1a1ontos1.png
   - type: FERRET_BACKGROUND
     singleImage: true
     width: 320
@@ -1886,6 +2123,19 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Tanks/Inventory/BMP_INVENTORY.png
+  - type: M113A1V1.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/unexcomm1a1apc1_inv.png
+  - type: M113A1V2.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/unexcomm1a1apc2_inv.png
+  - type: M1ONTOST1.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/unexcomm1a1ontos1_inv.png
+#### End file
 research:
   - name: STR_IMP_TANK_CHASSIS
     cost: 500
@@ -2088,6 +2338,17 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 30
       STR_ELERIUM_115: 30
+  - name: STR_APCHWPVEHICLE2
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+      - STR_ON_OUR_OWN
+      - STR_ALIEN_ALLOYS
+    space: 50
+    time: 1200
+    cost: 700000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 300
 extraSounds:
   - type: BATTLE.CAT
     files:

@@ -3915,6 +3915,32 @@ ufopaedia:
   - id: STR_HOVERTANK_LAUNCHER
     section: STR_VEHICLES
     listOrder: 8201
+  - id: STR_APCHWPVEHICLE1
+    type_id: 5
+    image_id: M113A1V1.SPK
+    section: STR_VEHICLES
+    requires:
+      - STR_ON_OUR_OWN
+    text: STR_APCHWPVEHICLE1WIKI
+    listOrder: 8003
+  - id: STR_ONTOS117TANK
+    type_id: 5
+    image_id: M1ONTOST1.SPK
+    section: STR_VEHICLES
+    requires:
+      - STR_ALLOY_BALLISTIC_WEAPONS
+      - STR_USA_SUPPORT_RESEARCH
+    text: STR_ONTOS117TANKWIKI
+    listOrder: 8003
+  - id: STR_APCHWPVEHICLE2
+    type_id: 5
+    image_id: M113A1V2.SPK
+    section: STR_VEHICLES
+    requires:
+      - STR_ON_OUR_OWN
+      - STR_ALLOY_BALLISTIC_WEAPONS
+    text: STR_APCHWPVEHICLE2WIKI
+    listOrder: 8003
   #Facilities
   - id: STR_ACCESS_LIFT
     type_id: 6
