@@ -1376,6 +1376,64 @@ items:
     monthlyBuyLimit: 4
     transferTime: 120
     listOrder: 1401
+  - type: STR_ONTOS6XRECOILESSGUN
+    costSell: 5000
+    weight: 1
+    bigSprite: 2500
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 3
+    fireSound: 4336
+    compatibleAmmo:
+      - STR_ONTOS6XRG105MMAP
+    accuracyAuto: 80
+    accuracySnap: 95
+    accuracyCloseQuarters: 50
+    tuAuto: 45
+    tuSnap: 30
+    autoShots: 3
+    autoRange: 15
+    snapRange: 32
+    dropoff: 1
+    bulletSpeed: 16
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1408
+  - type: STR_ONTOS6XRG105MMAP
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costBuy: 30000
+    costSell: 8000
+    monthlyBuyLimit: 24
+    transferTime: 72
+    weight: 110
+    bigSprite: 2556
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 120
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      ToArmor: 0.7
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 10
+    clipSize: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+
 armors:
 ##################################### Kiro Spot
 # Small explanation about Tank armors:
@@ -1880,8 +1938,8 @@ armors:
     moveSound: 14
     energyRecovery: 50
     builtInWeapons:
+      - STR_ONTOS6XRECOILESSGUN
       - STR_DOUBLE_50CAL
-      - STR_FERRET_SMOKE_LAUNCHER
     customArmorPreviewIndex: 557
     corpseBattle:
      - TANK_CORPSE_1
@@ -2083,6 +2141,19 @@ extraSprites:
       2553: Resources/Tanks/ENERGYSHELL_ENHANCED.png
       2554: Resources/Tanks/ENERGYSHELL_IMPACT_FORCE.png
       2555: Resources/Tanks/ENERGYSHELL_TURBOLASER.png
+      2556: Resources/Tanks/105MM_AP.png
+      2557: Resources/Tanks/105MM_VT.png
+      2558: Resources/Tanks/105MM_Canister.png
+      2559: Resources/Tanks/105MM_DU.png
+      2560: Resources/Tanks/105MM_AAAP.png
+      2561: Resources/Tanks/105MM_Elerium.png
+      2562: Resources/Tanks/105MM_Fusion.png
+      2564: Resources/Tanks/50CAL_DU.png
+      2565: Resources/Tanks/50CAL_AAAP.png
+      2566: Resources/Tanks/50CAL_E115.png
+      2567: Resources/Tanks/PKTAMMO_DU.png
+      2568: Resources/Tanks/PKTAMMO_AAAP.png
+      2569: Resources/Tanks/PKTAMMO_E115.png
   #- type: FLOOROB.PCK
   #  files:
   #    2700: Resources/Tanks/
