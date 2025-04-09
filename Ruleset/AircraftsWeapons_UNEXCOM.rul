@@ -3120,9 +3120,32 @@ manufacture:
     listOrder: 3301
     space: 25
     time: 2000
-    cost: 100000
+    cost: 300000
     requiredItems:
       STR_ALIEN_ALLOYS: 60
+  - name: STR_UNTXT1
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    listOrder: 3301
+    space: 25
+    time: 2250
+    cost: 500000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+  - name: STR_UNTXT2
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_UFO_CONSTRUCTION
+      - STR_UNITED_WE_STAND_RESEARCH
+    listOrder: 3301
+    space: 25
+    time: 2500
+    cost: 750000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 75
+      STR_ELERIUM_115: 25
 ####################################
 ######### AIRCRAFT #################
 ########## EQUIPMENT ###############

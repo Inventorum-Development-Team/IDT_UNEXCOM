@@ -418,6 +418,142 @@ crafts:
       - [17, 13, 1, 0]
       - [17, 14, 1, 0]
 #####
+##### Borrowed from X-Ops Legacy Stuff to put it as place holder.
+  - type: STR_UNTXT1
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    sprite: 1106
+    fuelMax: 1750
+    damageMax: 200
+    speedMax: 250
+    accel: 2
+    weapons: 3
+    soldiers: 30
+    vehicles: 20
+    maxSmallUnits: 20
+    maxLargeUnits: 5
+    pilots: 2
+    maxItems: 550
+    allowLanding: true
+    costRent: 60000
+    refuelRate: 50
+    score: 400
+    battlescapeTerrainData:
+      name: XOPSWASPYJ
+      mapDataSets:
+        - BLANKS
+        - BD_PLANE
+        - BD_OSPREY_ROTOR
+      mapBlocks:
+        - name: XOPSWASPYJ
+          width: 20
+          length: 20
+    craftInventoryTile: [9, 13, 1] #X, Y, Level
+    deployment:
+      - [9, 5, 1, 0]
+      - [9, 6, 1, 0]
+      - [9, 7, 1, 0]
+      - [9, 8, 1, 0]
+      - [9, 9, 1, 0]
+      - [9, 10, 1, 6]
+      - [9, 11, 1, 0]
+      - [9, 12, 1, 0]
+      - [9, 13, 1, 0]
+      - [9, 14, 1, 0]
+      - [10, 5, 1, 0]
+      - [10, 6, 1, 0]
+      - [10, 7, 1, 0]
+      - [10, 8, 1, 0]
+      - [10, 9, 1, 0]
+      - [10, 10, 1, 0]
+      - [10, 11, 1, 0]
+      - [10, 12, 1, 0]
+      - [10, 13, 1, 0]
+      - [10, 14, 1, 0]
+      - [11, 5, 1, 0]
+      - [11, 6, 1, 0]
+      - [11, 7, 1, 0]
+      - [11, 8, 1, 0]
+      - [11, 9, 1, 0]
+      - [11, 10, 1, 2]
+      - [11, 11, 1, 0]
+      - [11, 12, 1, 0]
+      - [11, 13, 1, 0]
+      - [11, 14, 1, 0]
+  - type: STR_UNTXT2
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_UFO_CONSTRUCTION
+    sprite: 1107
+    fuelMax: 1750
+    damageMax: 400
+    speedMax: 350
+    accel: 2
+    weapons: 2
+    soldiers: 38
+    vehicles: 20
+    maxSmallUnits: 20
+    maxLargeUnits: 8
+    pilots: 2
+    maxItems: 600
+    allowLanding: true
+    costRent: 75000
+    refuelRate: 50
+    score: 400
+    battlescapeTerrainData:
+      name: XOPSSTINGMOTH
+      mapDataSets:
+        - BLANKS
+        - FIREFLY
+        - BD_PLANE_2
+        - PELICAN_CARGO_BAY
+        - ELEVATOR_TILES
+      mapBlocks:
+        - name: XOPSSTINGMOTH
+          width: 20
+          length: 20
+    craftInventoryTile: [8, 12, 1] #X, Y, Level
+    deployment:
+      - [8, 5, 1, 0]
+      - [8, 6, 1, 0]
+      - [8, 7, 1, 0]
+      - [8, 8, 1, 0]
+      - [8, 9, 1, 0]
+      - [8, 10, 1, 6]
+      - [8, 11, 1, 0]
+      - [8, 12, 1, 0]
+      - [9, 5, 1, 0]
+      - [9, 6, 1, 0]
+      - [9, 7, 1, 0]
+      - [9, 8, 1, 0]
+      - [9, 9, 1, 0]
+      - [9, 10, 1, 6]
+      - [9, 11, 1, 0]
+      - [9, 12, 1, 0]
+      - [10, 5, 1, 0]
+      - [10, 6, 1, 0]
+      - [10, 7, 1, 0]
+      - [10, 8, 1, 0]
+      - [10, 9, 1, 0]
+      - [10, 10, 1, 6]
+      - [10, 11, 1, 0]
+      - [10, 12, 1, 0]
+      - [11, 5, 1, 0]
+      - [11, 6, 1, 0]
+      - [11, 7, 1, 0]
+      - [11, 8, 1, 0]
+      - [11, 9, 1, 0]
+      - [11, 10, 1, 6]
+      - [11, 11, 1, 0]
+      - [11, 12, 1, 0]
+      #### Extra Crew
+      - [8, 13, 1, 0]
+      - [9, 13, 1, 0]
+      - [9, 14, 1, 0]
+      - [10, 13, 1, 0]
+      - [10, 14, 1, 0]
+      - [11, 13, 1, 0]
+#############
 research:
   - name: STR_CARGOTRUCKA
     cost: 72
@@ -455,6 +591,20 @@ research:
     listOrder: 17005
     dependencies:
       - STR_ON_OUR_OWN
+      - STR_UNITED_WE_STAND_RESEARCH
+  - name: STR_UNTXT1
+    cost: 144
+    points: 200
+    listOrder: 17005
+    dependencies:
+      - STR_IMPROVED_VTOL_TRANSPORT
+  - name: STR_UNTXT2
+    cost: 170
+    points: 300
+    listOrder: 17005
+    dependencies:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_UFO_CONSTRUCTION
       - STR_UNITED_WE_STAND_RESEARCH
 ####################
 ufopaedia:
@@ -567,6 +717,46 @@ ufopaedia:
       width: 205
       height: 80
     image_id: CARGOTRUCKG.SPK
+##################################### VTOL Transport
+  - id: STR_UNTXT1
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_UNTXT1WIKI
+    listOrder: 17005
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: STR_UNTXT1.SPK
+  - id: STR_UNTXT2
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_UFO_CONSTRUCTION
+      - STR_UNITED_WE_STAND_RESEARCH
+    type_id: 1
+    section: STR_XCOM_CRAFTS
+    text: STR_UNTXT2WIKI
+    listOrder: 17005
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 18
+      width: 205
+      height: 80
+    image_id: STR_UNTXT2.SPK
+#####################################
 extraSprites:
   - type: CARGOTRUCKA.SPK
     singleImage: true
@@ -604,6 +794,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Cargotruck/unexcomconvoytruckg.png
+  - type: STR_UNTXT1.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomunxt1wiki.png
+  - type: STR_UNTXT2.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Cargotruck/unexcomunxt2wiki.png
   - type: BASEBITS.PCK
     files:
       1034: Resources/Crafts/Cargotruck/unxconvoytruckabase.png
@@ -619,6 +821,8 @@ extraSprites:
       1055: Resources/Crafts/CargoTruck/unexcomsu47tbase.png
       1093: Resources/Crafts/CargoTruck/unexcomkingstonbase.png
       1094: Resources/Crafts/CargoTruck/unexcomberserkerbase.png
+      1139: Resources/Crafts/CargoTruck/unwaspwjbase.png
+      1140: Resources/Crafts/CargoTruck/unstingmothbase.png
   - type: INTICON.PCK
     files:
       1012: Resources/Crafts/CargoTruck/unxconvoytruckadogfight.png
@@ -648,6 +852,11 @@ extraSprites:
       1060: Resources/Crafts/CargoTruck/unexcomkingstonmini.png
       1061: Resources/Crafts/CargoTruck/unexcomberserkermini.png
       1105: Resources/Crafts/CargoTruck/unexcomberserkermini.png
+      1106: Resources/Crafts/CargoTruck/unwaspwjmini.png
+      1117: Resources/Crafts/CargoTruck/unwaspwjdogfight.png
+      1107: Resources/Crafts/CargoTruck/unstingmothmini.png
+      1118: Resources/Crafts/CargoTruck/unstingmothdogfight.png
+
 #### Start at 1000 Kiro Xei Marks the Spot, vehicles
 #### Mimimized + 0
 #### Dogfight + 11
