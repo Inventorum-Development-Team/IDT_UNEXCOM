@@ -1,0 +1,143 @@
+manufacture:
+###### Corpse to Resources #########
+  - name: STR_CONVERTCORPSE1
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 116
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_MECHTOID_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_ELERIUM_115: 25
+      STR_PLASMA_BLASTER: 2
+  - name: STR_CONVERTCORPSE2
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 5
+    cost: 100
+    requiredItems:
+      STR_PROBE_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 5
+  - name: STR_CONVERTCORPSE3
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 116
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_CYBERDISC_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 25
+      STR_ELERIUM_115: 15
+  - name: STR_CONVERTCORPSE4
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 5
+    cost: 100
+    requiredItems:
+      STR_ARMORED_SECTOID_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 15
+      STR_ELERIUM_115: 5
+  #- name: STR_CONVERTCORPSE5
+  #  category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+  #  time: 72
+  #  space: 5
+  #  cost: 100
+  #  requiredItems:
+  #    STR_ARMORED_MUTON_ALL_CORPSE: 1
+  #  producedItems:
+  #    STR_ALIEN_ALLOYS: 40
+  #    STR_ELERIUM_115: 30
+  #- name: STR_CONVERTCORPSE6
+  #  category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+  #  time: 72
+  #  space: 5
+  #  cost: 100
+  #  requiredItems:
+  #    STR_FLOATER_ALL_CORPSE: 1
+  #  producedItems:
+  #    STR_ALIEN_ALLOYS: 20
+  #    STR_ELERIUM_115: 25
+  #- name: STR_CONVERTCORPSE7
+  #  category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+  #  time: 72
+  #  space: 5
+  #  cost: 100
+  #  requiredItems:
+  #    STR_FLOATER_ALL_CORPSE: 1
+  #  producedItems:
+  #    STR_ELERIUM_115: 20
+  - name: STR_CONVERTCORPSE8
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_SECTOPOD_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 40
+      STR_ALIEN_CRYSTAL: 12
+######## Salvage Alien Components
+  - name: STR_SALVAGEALIENPARTS1
+    category: STR_DISASSEMBLE_MANUFACTURE
+   #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_UFO_POWER_SOURCE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 15
+  - name: STR_SALVAGEALIENPARTS2
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 20
+  - name: STR_SALVAGEALIENPARTS3
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_EXAMINATION_ROOM: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 10
+  - name: STR_SALVAGEALIENPARTS4
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 20
+  - name: STR_SALVAGEALIENPARTS5
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_ALIEN_ENTERTAINMENT: 1
+    producedItems:
+      STR_ELERIUM_115: 10
