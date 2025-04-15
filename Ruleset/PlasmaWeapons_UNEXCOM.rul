@@ -563,7 +563,7 @@ items:
     costSell: 40000
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 6
-    weight: 30
+    weight: 20
     armor: 60
     bigSprite: 3208
     floorSprite: 3208
@@ -615,7 +615,7 @@ items:
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
-    weight: 5 # 3
+    weight: 4 # 3
     hitSound: 1938
     hitAnimation: 110
     power: 80
@@ -643,7 +643,7 @@ items:
     costSell: 30000
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 1
-    weight: 45
+    weight: 30
     armor: 80
     bigSprite: 3216
     floorSprite: 3216
@@ -686,7 +686,7 @@ items:
     costSell: 1200
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 6
-    weight: 6
+    weight: 4
     bigSprite: 3288
     handSprite: 3288
     floorSprite: 3288
@@ -716,7 +716,7 @@ items:
     costSell: 1200
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 2
-    weight: 6
+    weight: 4
     bigSprite: 3296
     handSprite: 3296
     floorSprite: 3296
@@ -748,7 +748,7 @@ items:
     costSell: 32000
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 3
-    weight: 25
+    weight: 18
     bigSprite: 3224
     floorSprite: 3224
     handSprite: 3224
@@ -807,7 +807,7 @@ items:
       IgnoreOverKill: false
       ToArmorPre: 1.2
       FireThreshold: 80
-    weight: 10 # 3
+    weight: 6 # 3
     hitSound: 1938
     shotgunBehavior: 1
     shotgunPellets: 15
@@ -830,7 +830,7 @@ items:
     costSell: 44000
     requiresBuyCountry: STR_FRANCE
     monthlyBuyLimit: 6
-    weight: 25
+    weight: 18
     armor: 60
     bigSprite: 3232
     floorSprite: 3232
@@ -863,9 +863,9 @@ items:
     oneHandedPenalty: 40
     kneelBonus: 120
     maxRange: 50
-    aimRange: 20
-    snapRange: 10
-    autoRange: 5
+    aimRange: 28
+    snapRange: 16
+    autoRange: 8
     dropoff: 3
     invWidth: 1
     invHeight: 3
@@ -980,7 +980,7 @@ items:
     costSell: 55000
     requiresBuyCountry: STR_WEST_GERMANY
     monthlyBuyLimit: 1
-    weight: 35
+    weight: 28
     armor: 60
     bigSprite: 3248
     floorSprite: 3248
@@ -995,14 +995,11 @@ items:
       name: STR_HEADSHOT
     twoHanded: true
     accuracySnap: 110
-    accuracyAimed: 150
-    accuracyAuto: 220
+    accuracyAimed: 260
     costSnap:
       time: 40
     costAimed:
-      time: 60
-    costAuto:
-      time: 80
+      time: 75
     battleType: 1
     #twoHanded: true
     blockBothHands: true
@@ -1014,8 +1011,7 @@ items:
     minRange: 10
     aimRange: 50
     snapRange: 25
-    autoRange: 50
-    #minRange: 25
+    minRange: 8
     dropoff: 4
     invWidth: 2
     invHeight: 3
@@ -1063,7 +1059,7 @@ items:
     costSell: 42000
     requiresBuyCountry: STR_RUSSIA
     monthlyBuyLimit: 6
-    weight: 28
+    weight: 20
     armor: 60
     bigSprite: 3256
     floorSprite: 3256
@@ -1164,7 +1160,7 @@ items:
     costSell: 69000
     requiresBuyCountry: STR_RUSSIA
     monthlyBuyLimit: 2
-    weight: 40
+    weight: 28
     armor: 70
     bigSprite: 3264
     floorSprite: 3264
@@ -1233,7 +1229,7 @@ items:
       ToArmorPre: 0.5
       ToWound: 0.1
       RandomWound: false
-    weight: 6 # 3
+    weight: 4 # 3
     armor: 35 # 20
     battleType: 2
     vaporColorSurface: 5
@@ -1248,7 +1244,7 @@ items:
     costSell: 22000
     requiresBuyCountry: STR_RUSSIA
     monthlyBuyLimit: 5
-    weight: 20
+    weight: 16
     bigSprite: 3272
     floorSprite: 3272
     handSprite: 3272
