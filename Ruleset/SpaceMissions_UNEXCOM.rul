@@ -732,10 +732,12 @@ ufos:
       name: SHUTTLE_GROUND
       mapDataSets:
         - BLANKS
-        - SHUTTLE
+        - idtunexcomspaceshuttle
+        - idtladdersandstairs
+        - idtcraftramp1
       mapBlocks:
-        - name: SHUTTLE_GROUND
-          width: 10
+        - name: IDTSPACESHUTTLE1
+          width: 20
           length: 20
   - type: STR_MOON_STATION
     size: STR_SMALL
