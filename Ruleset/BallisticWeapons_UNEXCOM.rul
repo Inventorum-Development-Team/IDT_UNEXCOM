@@ -1374,24 +1374,19 @@ items:
     ammo:
       0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
-    confAuto:
-      shots: 1
-      name: STR_HEADSHOT
-      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
-    accuracySnap: 70
-    accuracyAimed: 85
-    accuracyAuto: 160
-    tuSnap: 29
-    tuAimed: 45
-    tuAuto: 70
+    accuracySnap: 80
+    accuracyAimed: 180
+    tuSnap: 40
+    tuAimed: 80
+    snapRange: 24
+    aimedRange: 64
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 40
     invWidth: 1
     invHeight: 3
-    autoRange: 11
     attraction: 8
     listOrder: 201030
   - type: STR_REMINGTON_COMBAT_SHOTGUN
@@ -1832,7 +1827,7 @@ items:
     aimRange: 25
     attraction: 12
     listOrder: 201400
-  - type: STR_PSG1
+ - type: STR_PSG1
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SNIPER_RIFLES ]
     requiresBuy:
       - STR_NATO_SUPPORT_RESEARCH
@@ -1852,18 +1847,12 @@ items:
     ammo:
       0:
         compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
-    confAuto:
-      shots: 1
-      name: STR_HEADSHOT
-      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
-    accuracySnap: 70
-    accuracyAimed: 90
-    accuracyAuto: 180
+    accuracySnap: 80
+    accuracyAimed: 190
     tuSnap: 50
-    tuAimed: 65
-    tuAuto: 85
+    tuAimed: 85
     tuLoad: 20
     costThrow:
       energy: 20
@@ -1875,8 +1864,8 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 20
-    snapRange: 20
-    autoRange: 64
+    snapRange: 24
+    aimedRange: 64
     minRange: 10
     dropoff: 3
     attraction: 10
@@ -2201,19 +2190,14 @@ items:
     ammo:
       0:
         compatibleAmmo: [ STR_7_62MM_SOVIET_SNIPER_X10 ]
-    confAuto:
-      shots: 1
-      name: STR_HEADSHOT
-      shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
-    accuracySnap: 62
-    accuracyAimed: 90
-    accuracyAuto: 170
-    tuSnap: 32
-    tuAimed: 65
-    tuAuto: 80
-    snapRange: 22
+    accuracySnap: 65
+    accuracyAimed: 170
+    tuSnap: 30
+    tuAimed: 70
+    aimedRange: 64
+    snapRange: 24
     costThrow:
       energy: 18
     battleType: 1

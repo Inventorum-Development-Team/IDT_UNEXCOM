@@ -443,29 +443,21 @@ items:
       ToArmorPre: 0.5
       ToWound: 0.1
       RandomWound: false
-    confAuto:
-      shots: 1
-      name: STR_HEADSHOT
     twoHanded: true
     accuracySnap: 65
-    accuracyAimed: 105
-    accuracyAuto: 200
+    accuracyAimed: 200
     costSnap:
-      time: 33
+      time: 30
       mana: 1
     costAimed:
-      time: 62
-      mana: 1
-    costAuto:
-      time: 85
+      time: 75
       mana: 1
     clipSize: -1
     battleType: 1
-    maxRange: 60
-    aimRange: 50
+    maxRange: 64
+    aimRange: 64
     snapRange: 45
-    autoRange: 50
-    minRange: 5
+    minRange: 8
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1033,29 +1025,20 @@ items:
       ToWound: 0.1
       RandomWound: false
       ArmorEffectiveness: 0.8
-    confAuto:
-      shots: 1
-      name: STR_HEADSHOT
     twoHanded: true
     accuracySnap: 100
-    accuracyAimed: 150
-    accuracyAuto: 200
+    accuracyAimed: 240
     costSnap:
       time: 40
       mana: 3
     costAimed:
       time: 70
       mana: 3
-    costAuto:
-      time: 70
-      mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 200
-    aimRange: 55
-    snapRange: 25
-    autoRange: 25
-    minRange: 25
+    aimRange: 64
+    minRange: 8
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1377,7 +1360,7 @@ items:
     hitSound: 19
     hitAnimation: 100
     #bulletSprite: 29
-    power: 60
+    power: 75
     damageType: 4
     damageAlter:
       RandomType: 6
@@ -1410,9 +1393,9 @@ items:
     battleType: 1
     twoHanded: true
     maxRange: 80
-    aimRange: 14
-    snapRange: 10
-    autoRange: 7
+    aimRange: 24
+    snapRange: 30
+    autoRange: 14
     dropoff: 3
     invWidth: 1
     invHeight: 3
@@ -1476,9 +1459,10 @@ items:
     battleType: 1
     twoHanded: true
     maxRange: 60
-    aimRange: 22
-    snapRange: 15
-    autoRange: 8
+    aimRange: 30
+    snapRange: 24
+    autoRange: 16
+    minRange: 5
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1547,8 +1531,8 @@ items:
     battleType: 1
     maxRange: 50
     aimRange: 22
-    snapRange: 13
-    autoRange: 4
+    snapRange: 14
+    autoRange: 6
     twoHanded: false
     dropoff: 2
     invWidth: 1
@@ -1568,7 +1552,7 @@ items:
           set subvoxel_drift 0;
           set particle_lifetime 1;
           return;
-  - type: STR_MIRINOV_LASER_SNIPER
+ - type: STR_MIRINOV_LASER_SNIPER
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
     requiresBuy:
       - STR_USSR_LASER_HEAVY_WEAPONS
@@ -1594,29 +1578,21 @@ items:
       ToWound: 0.1
       RandomWound: false
       ArmorEffectiveness: 0.6
-    confAuto:
-      shots: 1
-      name: STR_RAPID_FIRE
     twoHanded: true
-    accuracyAimed: 130
-    accuracySnap: 95
-    accuracyAuto: 60
+    accuracyAimed: 170
+    accuracySnap: 65
     costAimed:
-      time: 62
+      time: 70
       mana: 3
     costSnap:
-      time: 46
-      mana: 3
-    costAuto:
-      time: 31
+      time: 45
       mana: 3
     clipSize: -1
     battleType: 1
     maxRange: 200
     aimRange: 40
     snapRange: 25
-    autoRange: 18
-    minRange: 18
+    minRange: 8
     dropoff: 1
     invWidth: 1
     invHeight: 3
@@ -1691,10 +1667,10 @@ items:
     clipSize: -1
     battleType: 1
     maxRange: 60
-    aimRange: 11
-    snapRange: 8
-    autoRange: 6
-    minRange: 5
+    aimRange: 24
+    snapRange: 18
+    autoRange: 12
+    minRange: 3
     dropoff: 2
     invWidth: 1
     invHeight: 3
