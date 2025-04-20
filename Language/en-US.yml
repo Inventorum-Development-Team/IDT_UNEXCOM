@@ -475,26 +475,31 @@ en-US:
       STR_HE_STRIKE: "HE Air Strike"
       STR_INC_STRIKE: "Napalm Air Strike"
       STR_CANNON_STRIKE: "Strafing Air Strike"
-      ############# UFO Spaceship Class
+      ############# Terrorists Spaceship Class
+      STR_TEXAN_UFO: T-6 Texan
+      STR_MAGISTER_UFO: Fouga Magister
+      STR_MI8_TERRORIST_UFO: Mi-8 Hip
+      STR_MI8_UFO: Mi-8 Hip
+      ############# Alienspacecraft Infopedia
       STR_SMALL_SCOUT: "Recon Class"
-      STR_MEDIUM_SCOUT: " Assault Class"
+      STR_SMALL_FIGHTER: "Combat Fighter Class"
+      STR_MEDIUM_SCOUT: "Assault Class"
       STR_LARGE_SCOUT: "Battle Class"
-      STR_ABDUCTOR: "Infiltrate Class"
-      STR_HARVESTER: "Hospital Class"
-      STR_TERROR_SHIP: "Artillery Class"
+      STR_ABDUCTOR: "Commando Class"
+      STR_HARVESTER: "Support Class"
+      STR_TERROR_SHIP: "Striker Class"
       STR_BATTLESHIP: "Battalion Class"
       STR_SUPPLY_SHIP: "Logistic Class"
-      STR_IDTUFOMEDIUMSCOUTA: "UFO Recon Class"
-      STR_TROOP_LANDER: "Troop Lander"
-      STR_CARRIERFILIP: "Space Carrier"
+      STR_SUPPORT_CLASS: "Artillery Class"
+      STR_TROOP_LANDER: "Transport Class"
+      STR_CARRIERFILIP: "Carrier Class"
       STR_CARRIERFILIPWIKI: "The dangerous UFO space carrier has been encountered during the UN of Earth counter offensive phase. They carry several fighters and bombers to commence planetary siege on any locations. Also transports up to 100 troops to conduct large scale assaults."
-      STR_CARRIERKIRO: "Space Dreadnought"
+      STR_CARRIERKIRO: "Dreadnought Class"
       STR_CARRIERKIROWIKI: "This powerful dreadnought is one of the most nightmare UFO that we have encountered. This ships holds more shields with its advanced different components."
-      STR_EXCAVATOR: "Excavator"
-      STR_FIGHTER_SHIP: "Fighter"
-      STR_SENTRY_SHIP: "Sentry Ship"
-      STR_LAB_SHIP: "Lab Ship"
-      STR_TERROR_SHIP: "Troop Transport"
+      STR_EXCAVATOR: "Excavate Class"
+      STR_FIGHTER_SHIP: "Warfighter Class"
+      STR_SENTRY_SHIP: "Sentry Class"
+      STR_LAB_SHIP: "Research Class"
       STR_EXCAVATOR_UFOPEDIA: "Excavators are small ships that are mainly used for digging and construction work.  They represent little threat to our ships."
       STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small."
       STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors."
@@ -713,6 +718,11 @@ en-US:
       STR_AIR_SUPERIORITY_2: "Alien Air Superiority"
       STR_AIR_SUPERIORITY_3: "Alien Air Superiority"
       STR_COUNTER_ATTACK: "Alien Retaliation"
+      ################ Mission Settings ###############
+      ####### Name
+      ####### AlertName
+      ####### MissionDescription
+      ####### MissionBriefing
       STR_AMERICAN_OPERATIONS_MISSION: American Combat Operation
       STR_AMERICAN_OPERATIONS_ALERT:  US Army Operation Ongoing
       STR_AMERICAN_OPERATIONS_MISSION_DESCRIPTION: The US Army's central command is preparing for a full-scale operation against the enemy. We have been asked to assist. Strong enemy resistance is expected.
@@ -741,6 +751,38 @@ en-US:
       STR_SOVIET_CITY_DEFENSE: Warsaw Pact City Defense
       STR_SOVIET_CITY_DEFENSE_DESCRIPTION: National army units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
       STR_SOVIET_CITY_DEFENSE_BRIEFING: A major population center of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to link up with WTO troops in the area, to help contain the threat and evacuate the civilians.
+      ####### Name
+      ####### AlertName
+      ####### MissionDescription
+      ####### MissionBriefing
+      STR_TERROR_MISSION: TERROR MISSION URBAN
+      STR_TERROR_MISSION_BRIEFING: "A city is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_INDUSTRIAL: TERROR MISSION INDUSTRIAL
+      STR_TERROR_MISSION_INDUSTRIAL_BRIEFING: "An industrial complex is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_SNOW: TERROR MISSION SNOW
+      STR_TERROR_MISSION_SNOW_BRIEFING: "A cold town is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_RURAL: TERROR MISSION RURAL
+      STR_TERROR_MISSION_RURAL_BRIEFING: "A rural settlement is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_ISLAND: TERROR MISSION ISLAND
+      STR_TERROR_MISSION_ISLAND_BRIEFING: "An island touristic center is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_PORT: TERROR MISSION PORT
+      STR_TERROR_MISSION_PORT_BRIEFING: "A port is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_AIRPORT: TERROR MISSION AIRPORT
+      STR_TERROR_MISSION_AIRPORT_BRIEFING: "An airport is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_TERROR_MISSION_SHIPPING_LINES: TERROR MISSION SHIPPING LINES
+      STR_TERROR_MISSION_SHIPPING_LINES_BRIEFING: A ship navigating on the sea is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
+      STR_OPERATION_DEVASTATION: "Operation Devastation"
+      STR_OPERATION_DEVASTATION_ALERT: "Operation Devastation Scheduled"
+      STR_OPERATION_DEVASTATION_BRIEFING: "Our Raider shuttle have landed inside Tycho Crater. The Soviet cosmonauts got first and have established a landing zone, codename LZ Zvezda. Command orders eliminating the hostiles around the AA Battery, so we can secure the base and use it ourselves. Be careful, heavy resistance is expected."
+
+
+
+
+
+
+
+
+      ################ Mission Settings ###############
       POLICE_SWAT: "SWAT Officer"
       STR_FLECHETTE_RIFLE: "XM45 Flechette/TC Rifle"
       STR_ALLOY_RIFLE_AP: "TC Rifle Rounds (x20)"
@@ -1736,22 +1778,6 @@ en-US:
       MAP_NOOBERIA: "Arctic Outpost"
       MAP_IDT_RED_FARM: "Corn Farm"
 #########################################
-      STR_TERROR_MISSION: TERROR MISSION URBAN
-      STR_TERROR_MISSION_BRIEFING: "A city is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_INDUSTRIAL: TERROR MISSION INDUSTRIAL
-      STR_TERROR_MISSION_INDUSTRIAL_BRIEFING: "An industrial complex is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_SNOW: TERROR MISSION SNOW
-      STR_TERROR_MISSION_SNOW_BRIEFING: "A cold town is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_RURAL: TERROR MISSION RURAL
-      STR_TERROR_MISSION_RURAL_BRIEFING: "A rural settlement is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_ISLAND: TERROR MISSION ISLAND
-      STR_TERROR_MISSION_ISLAND_BRIEFING: "An island touristic center is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_PORT: TERROR MISSION PORT
-      STR_TERROR_MISSION_PORT_BRIEFING: "A port is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_AIRPORT: TERROR MISSION AIRPORT
-      STR_TERROR_MISSION_AIRPORT_BRIEFING: "An airport is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
-      STR_TERROR_MISSION_SHIPPING_LINES: TERROR MISSION SHIPPING LINES
-      STR_TERROR_MISSION_SHIPPING_LINES_BRIEFING: A ship navigating on the sea is under attack. Mission will be successful when all enemy units have been eliminated or neutralized. You must attempt to save the lives of any civilians in the area by neutralizing the alien menace. To abort the mission return X-Com operatives to transport vehicle and click on the 'Abort Mission' icon."
 ##########################################
 ## NEW REGIONS
       STR_KENNEDY_SPACE_CENTER: "Kennedy Space Center"
@@ -2143,6 +2169,7 @@ en-US:
       STR_PERU: PERU
       STR_COLOMBIA: COLOMBIA
 #END CITY NAMES
+      ##### Events Name Here #######
       STR_STORY_EVENTS_SCRIPT: "Story Events Script"
       STR_ANTARCTIC_ACTIVITY_EVENT_SCRIPT: "Antarctic Activity Event Script"
       STR_ALIEN_ACTIVITY_SCRIPT: "Alien Activity Event Script"
@@ -2262,12 +2289,14 @@ en-US:
       STR_MILITARY_SATELLITE_DESTROYED_EVENT_DESCRIPTION: "Earlier today, we've been informed of an allied military recon satellite destroyed by unknown forces. Ground control reported a 'beam of light' and lost of comms. The lost of this sat has crippled the ability of ground detection of allied military forces."
       STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT: "New radar systems deployed"
       STR_NEW_RADAR_SYSTEMS_DEPLOYED_EVENT_DESCRIPTION: "A new radar facility was build near {0}. Using tech derived from alien research conducted by UNEXCOM, the array is part of a new multinational system to track down UFOs and assist UN fighters and bombers"
+      #### Research Unit Spawn Event
+      STR_M1ABRAMS_NEW_PROTOTYPE1_EVENT: "X1M1 Tank Development"
+      STR_M1ABRAMS_NEW_PROTOTYPE1_EVENT_DESCRIPTION: ""
+      STR_M1ABRAMS_NEW_PROTOTYPE2_EVENT: "M1 Abrams Tank Arrives"
+      STR_M1ABRAMS_NEW_PROTOTYPE2_EVENT_DESCRIPTION: ""
+########### Events Name ############
 ###########################
-      STR_TEXAN_UFO: T-6 Texan
-      STR_MAGISTER_UFO: Fouga Magister
-      STR_MI8_TERRORIST_UFO: Mi-8 Hip
-      STR_MI8_UFO: Mi-8 Hip
-      #STR_LASER_WEAPONS: Laser Weapons
+
 ######################################################################################
       STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser"
 ######################################################################################
@@ -2532,9 +2561,9 @@ en-US:
       STR_AIR_STRIKES: "Close Air Support"
       STR_FUSION_CRAFT_WEAPONS: "Fusion Craft Weaponry"
       STR_SMART_CRAFT_WEAPONS: "Smart Craft Weaponry"
-      STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS: "Outsource Alloy Ammunition Production"
-      STR_OUTSOURCE_FUSION_CRAFT_WEAPONS: "Outsource Fusion Missile Production"
-      STR_OUTSOURCING_PRODUCTION: "Outsourcing Production"
+      STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS: "Outsource Alloy Ammunition Production" #### Factions can build their own weapons at high price.
+      STR_OUTSOURCE_FUSION_CRAFT_WEAPONS: "Outsource Fusion Weapon Production" #### Factions can build their own weapons at high price.
+      STR_OUTSOURCING_PRODUCTION: "Outsourcing Production" #### Factions can build their own weapons at high price.
       STR_ALIEN_ID_CODES: "Alien ID Codes"
       STR_OLYMPUS: "Project Olympus"
       STR_OLYMPUS_ORION: "Project Olympus - Orion"
@@ -2554,9 +2583,6 @@ en-US:
       STR_END_OF_TERRORISTS: "Terrorist Operations Suppressed"
       MAP_MOON: "Moon"
       MAP_IDT_MOON_OPERATION_DEVASTATION: "Moon"
-      STR_OPERATION_DEVASTATION: "Operation Devastation"
-      STR_OPERATION_DEVASTATION_ALERT: "Operation Devastation Scheduled"
-      STR_OPERATION_DEVASTATION_BRIEFING: "Our Raider shuttle have landed inside Tycho Crater. The Soviet cosmonauts got first and have established a landing zone, codename LZ Zvezda. Command orders eliminating the hostiles around the AA Battery, so we can secure the base and use it ourselves. Be careful, heavy resistance is expected."
       STR_MOON_ASSAULT_MARKER: "Enemy base detected on the Moon"
       STR_ALLIED_AMERICAN_ASTRONAUT: "Allied American Astronaut"
       STR_ALLIED_SOVIET_COSMONAUT: "Allied Soviet Cosmonaut"
@@ -2706,7 +2732,7 @@ en-US:
       STR_SMALL_PLASMA_TURRET_UC: "Small Plasma Turret Hover Mounting"
       STR_ARTILLERY_TURRET_UC: "Plasma Artillery Structure"
       STR_PLASMA_TURRET_UC: "Heavy Plasma Turret Structure"
-      STR_SMALL_FIGHTER: "Small Fighter"
+
       STR_SMALL_SCOUT_ANALYSIS: "Small Scout Analysis"
       STR_MEDIUM_SCOUT_ANALYSIS: "Medium Scout Analysis"
       STR_LARGE_SCOUT_ANALYSIS: "Large Scout Analysis"

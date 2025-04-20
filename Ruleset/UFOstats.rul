@@ -8,22 +8,47 @@ ufos:
     speedMax: 1800
     accel: 12
     avoidBonus: 10
-    power: 15
-    range: 20
+    power: 30
+    range: 40
     score: 50
     reload: 10
     breakOffTime: 200
+    battlescapeTerrainData:
+      name: A_A1UFO1SCOUT1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: A_A1UFO1SCOUT2
+          width: 10
+          length: 10
+        - name: A_A1UFO1SCOUT3
+          width: 10
+          length: 10
+        - name: A_A1UFO1SCOUT4
+          width: 10
+          length: 10
   - type: STR_LARGE_SCOUT
     size: STR_SMALL
     sprite: 2
-    damageMax: 250
+    damageMax: 400
     speedMax: 1000
     accel: 9
-    power: 50
-    hitBonus: 10
+    power: 100
+    hitBonus: 20
     range: 30
     score: 125
-    reload: 15
+    reload: 10
     shieldCapacity: 100
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
@@ -37,11 +62,11 @@ ufos:
     damageMax: 150
     speedMax: 2000
     accel: 6
-    power: 25
+    power: 50
     range: 30
     score: 100
-    reload: 10
-    avoidBonus: 10
+    reload: 5
+    avoidBonus: 20
     hunterKillerPercentage: 100
     breakOffTime: 220
     radarRange: 600
@@ -49,29 +74,52 @@ ufos:
     sightRange: 0
     huntMode: 0
     battlescapeTerrainData:
-      name: SMALL_FIGHTER
+      name: A1IDTSPCCRFTA1
       mapDataSets:
         - BLANKS
-        - AVENGER
-        - LIGHTNIN
-        - U_WALL02
-        - UFO1
-        - UFOL83
-        - U_EXT02
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: SMALL_FIGHTER
+        - name: A1IDTSPCCRFTA2
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTA3
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTA4
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB1
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB2
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB3
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB4
           width: 10
           length: 10
   - type: STR_FIGHTER_SHIP
     size: STR_SMALL
-    damageMax: 300
+    damageMax: 400
     speedMax: 3000
     accel: 9
-    power: 55
-    hitBonus: 20
-    range: 40
+    power: 110
+    hitBonus: 40
+    range: 80
     score: 175
-    reload: 10
+    reload: 5
     avoidBonus: 15
     shieldCapacity: 250
     shieldRechargeInGeoscape: 5
@@ -85,16 +133,16 @@ ufos:
   - type: STR_SENTRY_SHIP
     modSprite: InterceptionSentry
     size: STR_SMALL
-    damageMax: 200
+    damageMax: 300
     speedMax: 1400
     accel: 8
-    power: 35
-    hitBonus: 10
-    range: 35
+    power: 70
+    hitBonus: 20
+    range: 70
     score: 125
-    reload: 15
-    breakOffTime: 170
-    avoidBonus: 10
+    reload: 10
+    breakOffTime: 350
+    avoidBonus: 20
     shieldCapacity: 100
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
@@ -107,8 +155,8 @@ ufos:
     damageMax: 270
     speedMax: 600
     accel: 6
-    power: 25
-    range: 30
+    power: 50
+    range: 60
     score: 100
     reload: 30
     breakOffTime: 220
@@ -117,11 +165,11 @@ ufos:
     sprite: 4
     damageMax: 500
     speedMax: 800
-    power: 120
-    hitBonus: 10
-    range: 50
+    power: 250
+    hitBonus: 20
+    range: 100
     score: 250
-    reload: 20
+    reload: 10
     shieldCapacity: 200
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
@@ -129,10 +177,10 @@ ufos:
   - type: STR_HARVESTER
     size: STR_MEDIUM_UC
     sprite: 3
-    damageMax: 500
+    damageMax: 550
     speedMax: 600
     power: 100
-    range: 45
+    range: 90
     score: 250
     reload: 25
     shieldCapacity: 150
@@ -145,10 +193,10 @@ ufos:
     damageMax: 2200
     speedMax: 800
     accel: 5
-    power: 70
-    range: 50
+    power: 140
+    range: 10
     score: 500
-    reload: 30
+    reload: 20
     shieldCapacity: 150
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
@@ -163,8 +211,8 @@ ufos:
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     accel: 3
-    power: 120
-    range: 45
+    power: 240
+    range: 90
     score: 500
     reload: 20
     breakOffTime: 2000
@@ -174,8 +222,8 @@ ufos:
     modSprite: InterceptionTroopLander
     speedMax: 400
     accel: 3
-    power: 150
-    range: 55
+    power: 300
+    range: 110
     shieldBleedThrough: 100
     shieldCapacity: 400
     shieldRechargeInGeoscape: 5
@@ -185,17 +233,17 @@ ufos:
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 3000
+    damageMax: 3300
     speedMax: 400
     shieldCapacity: 500
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     accel: 2
-    power: 250
+    power: 400
     hitBonus: 40
-    range: 60
+    range: 120
     score: 700
-    reload: 30
+    reload: 20
     breakOffTime: 4000
 
 
@@ -205,10 +253,10 @@ ufos:
     sprite: 7
     damageMax: 2200
     speedMax: 600
-    power: 60
-    range: 40
+    power: 120
+    range: 80
     score: 400
-    reload: 50
+    reload: 24
     breakOffTime: 3000
 alienDeployments:
   - type: STR_SMALL_FIGHTER
@@ -216,7 +264,7 @@ alienDeployments:
       - alienRank: 5
         lowQty: 1
         highQty: 1
-        dQty: 0
+        dQty: 1
         percentageOutsideUfo: 50
         itemSets:
           -

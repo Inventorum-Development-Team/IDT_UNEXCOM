@@ -2,41 +2,45 @@
 ufos:
   - type: STR_TROOP_LANDER #ignoreDuplicate
     battlescapeTerrainData:
-      name: UFO_G0014
+      name: A1IDTTRPLNDRA1
       mapDataSets:
         - BLANKS
-        - U_EXT02
-        - U_WALL02
-        - U_PODS
-        - U_BITS
-        - U_OPER2
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+        - IDT_A1UFO_DIGITAL1
       mapBlocks:
-        - name: UFO_G0014
+        - name: A1IDTTRPLNDRA1
           width: 30
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 2, 3, 0]
-              - [ 2, 6, 0]
-              - [ 2, 13, 0]
-              - [ 2, 16, 0]
-              - [ 4, 3, 0]
-              - [ 4, 6, 0]
-              - [ 4, 13, 0]
-              - [ 4, 16, 0]
             PTURRET_SPAWNER:
-              - [ 2, 9, 2]
-              - [ 26, 9, 2]
+              - [ 13, 3, 5]
+              - [ 17, 3, 5]
+              - [ 13, 15, 5]
+              - [ 17, 15, 5]
             ATURRET_SPAWNER:
-              - [ 11, 17, 2]
-              - [ 17, 17, 2]
-              - [ 11, 1, 2]
-              - [ 17, 1, 2]
+              - [ 5, 3, 5]
+              - [ 9, 3, 5]
+              - [ 21, 3, 5]
+              - [ 25, 3, 5]
+              - [ 5, 15, 5]
+              - [ 9, 15, 5]
+              - [ 21, 15, 5]
+              - [ 25, 15, 5]
             SPTURRET_SPAWNER:
-              - [ 8, 8, 1]
-              - [ 8, 11, 1]
-              - [ 20, 8, 1]
-              - [ 20, 11, 1]
+              - [ 6, 6, 2]
+              - [ 6, 7, 2]
+              - [ 6, 12, 2]
+              - [ 6, 13, 2]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]

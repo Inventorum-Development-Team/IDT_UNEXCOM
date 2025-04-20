@@ -289,19 +289,6 @@ ufos:
               - [ 6, 6, 1]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-##############################
-######## SCOUT CLASS #########
-##############################
-  - type: STR_SMALL_SCOUT #ignoreDuplicate
-    battlescapeTerrainData:
-      name: UFO1A
-      mapDataSets:
-        - BLANKS
-        - UFO1
-      mapBlocks:
-        - name: UFO1A
-          width: 10
-          length: 10
 ###############################
 ####### SUPPORT CLASS #########
 ###############################
