@@ -132,44 +132,52 @@ research:
       - STR_762_X30_UNLOCK
       - STR_NATO_LMG_UNLOCK
       - STR_NATO_X5_UNLOCK
+###### UN Supply Request will drop score instead ####
   - name: STR_UN_WEAPON_SUPPLY_1
     cost: 200
-    points: 200
+    points: -100
     dependencies:
       - STR_ON_OUR_OWN
     spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_1
+    repeatable: true  # default false
   - name: STR_UN_WEAPON_SUPPLY_2
     cost: 200
-    points: 200
+    points: -200
     dependencies:
       - STR_ON_OUR_OWN
       - STR_UN_WEAPON_SUPPLY_1
     spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_2
+    repeatable: true  # default false
   - name: STR_UN_WEAPON_SUPPLY_3
     cost: 200
-    points: 200
+    points: -300
     dependencies:
       - STR_ON_OUR_OWN
       - STR_UN_WEAPON_SUPPLY_2
     spawnedEvent: STR_UN_WEAPON_SUPPLY_EVENT_3
+    repeatable: true  # default false
   - name: STR_USA_WEAPON_SUPPLY
     cost: 200
-    points: 200
+    points: -200
     dependencies:
       - STR_ON_OUR_OWN
     spawnedEvent: STR_US_SUPPLY_EVENT
+    repeatable: true  # default false
   - name: STR_NATO_WEAPON_SUPPLY
     cost: 200
-    points: 200
+    points: -200
     dependencies:
       - STR_ON_OUR_OWN
     spawnedEvent: STR_NATO_SUPPLY_EVENT
+    repeatable: true  # default false
   - name: STR_USSR_WEAPON_SUPPLY
     cost: 200
-    points: 200
+    points: -200
     dependencies:
       - STR_ON_OUR_OWN
     spawnedEvent: STR_USSR_SUPPLY_EVENT
+    repeatable: true  # default false
+###### UN Supply Request will drop score instead ####
   - name: STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     cost: 200
     points: 200
