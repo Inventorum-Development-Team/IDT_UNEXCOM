@@ -4,7 +4,7 @@ ufos:
   - type: STR_SMALL_SCOUT
     size: STR_VERY_SMALL
     sprite: 0
-    damageMax: 50
+    damageMax: 100
     speedMax: 1800
     accel: 12
     avoidBonus: 10
@@ -41,7 +41,7 @@ ufos:
   - type: STR_LARGE_SCOUT
     size: STR_SMALL
     sprite: 2
-    damageMax: 400
+    damageMax: 500
     speedMax: 1000
     accel: 9
     power: 100
@@ -59,7 +59,7 @@ ufos:
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
     modSprite: InterceptionNoFeed
-    damageMax: 150
+    damageMax: 350
     speedMax: 2000
     accel: 6
     power: 50
@@ -112,7 +112,7 @@ ufos:
           length: 10
   - type: STR_FIGHTER_SHIP
     size: STR_SMALL
-    damageMax: 400
+    damageMax: 550
     speedMax: 3000
     accel: 9
     power: 110
@@ -124,7 +124,7 @@ ufos:
     shieldCapacity: 250
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    breakOffTime: 110
+    breakOffTime: 5000
     hunterKillerPercentage: 100
     radarRange: 600
     radarChance: 100
@@ -133,7 +133,7 @@ ufos:
   - type: STR_SENTRY_SHIP
     modSprite: InterceptionSentry
     size: STR_SMALL
-    damageMax: 300
+    damageMax: 400
     speedMax: 1400
     accel: 8
     power: 70
@@ -152,7 +152,7 @@ ufos:
   - type: STR_EXCAVATOR
     modSprite: InterceptionExcavator
     size: STR_SMALL
-    damageMax: 270
+    damageMax: 600
     speedMax: 600
     accel: 6
     power: 50
@@ -163,7 +163,7 @@ ufos:
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
-    damageMax: 500
+    damageMax: 800
     speedMax: 800
     power: 250
     hitBonus: 20
@@ -177,7 +177,7 @@ ufos:
   - type: STR_HARVESTER
     size: STR_MEDIUM_UC
     sprite: 3
-    damageMax: 550
+    damageMax: 1000
     speedMax: 600
     power: 100
     range: 90
@@ -190,7 +190,7 @@ ufos:
   - type: STR_LAB_SHIP
     modSprite: InterceptionLabShip
     size: STR_LARGE
-    damageMax: 2200
+    damageMax: 3000
     speedMax: 800
     accel: 5
     power: 140
@@ -205,7 +205,7 @@ ufos:
   - type: STR_TERROR_SHIP
     size: STR_LARGE
     sprite: 5
-    damageMax: 1200
+    damageMax: 3000
     speedMax: 500
     shieldCapacity: 300
     shieldRechargeInGeoscape: 5
@@ -218,7 +218,7 @@ ufos:
     breakOffTime: 2000
   - type: STR_TROOP_LANDER
     size: STR_VERY_LARGE
-    damageMax: 1750
+    damageMax: 3500
     modSprite: InterceptionTroopLander
     speedMax: 400
     accel: 3
@@ -233,7 +233,7 @@ ufos:
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 3300
+    damageMax: 7500
     speedMax: 400
     shieldCapacity: 500
     shieldRechargeInGeoscape: 5
@@ -244,14 +244,14 @@ ufos:
     range: 120
     score: 700
     reload: 20
-    breakOffTime: 4000
+    breakOffTime: 6000
 
 
 #Logistical
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
     sprite: 7
-    damageMax: 2200
+    damageMax: 3200
     speedMax: 600
     power: 120
     range: 80
