@@ -2951,41 +2951,57 @@ items:
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
+    costBuy: 50000
     costSell: 35000
     transferTime: 48
   - type: STR_HAMMER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
+    requiresBuy:
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 48000
     costSell: 38000
     transferTime: 48
   - type: STR_PHOENIX_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
+    requiresBuy:
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 160000
     costSell: 127000
     transferTime: 48
   - type: STR_HYDRA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_2]
     requires:
       - STR_IMPROVED_ROCKET
+    requiresBuy:
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 48000
     costSell: 38000
     transferTime: 48
   - type: STR_ATHENA_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
     requires:
       - STR_IMPROVED_GATLING_CANNON
+    requiresBuy:
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 1.5
+    costBuy: 49000
     costSell: 38500
     transferTime: 48
   - type: STR_MAUSER_CANNON
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_REVOLVER_CANNONS, STR_TIER_2]
     requires:
       - STR_IMPROVED_REVOLVER_CANNON
+    requiresBuy:
+      - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 1.5
+    costBuy: 48000
     costSell: 37500
     transferTime: 48
 #############################################
@@ -3010,30 +3026,40 @@ items:
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_LIGHT_MISSILE
+    requiresBuy:
+      - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 54000
     costSell: 35000
     transferTime: 48
   - type: STR_KATANA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_HEAVY_MISSILE
+    requiresBuy:
+      - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 58000
     costSell: 38000
     transferTime: 48
   - type: STR_ADLER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
-#    requiresBuy:
-#     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
+    requiresBuy:
+     - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 180000
     costSell: 127000
     transferTime: 48
   - type: STR_GORGON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
       - STR_IMPROVED_ROCKET
+    requiresBuy:
+      - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
+    costBuy: 48000
     costSell: 38000
     transferTime: 48
 #TIER 4
