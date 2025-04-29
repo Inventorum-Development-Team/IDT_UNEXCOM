@@ -6,6 +6,15 @@ items:
     invWidth: 0
     recover: false
     hiddenOnMinimap: true
+  - type: STR_SMALL_PLASMA_TURRET_CORPSE
+    battleType: 11
+    floorSprite: 3131
+    invHeight: 0
+    invWidth: 0
+    recover: true
+    recoveryTransformations:
+       STR_ALIEN_CRYSTAL: [1] 
+    hiddenOnMinimap: false
   - type: HIND_TURRET_SPAWNER
     spawnUnit: HIND_TURRET
     spawnUnitFaction: 2
