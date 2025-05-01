@@ -2,44 +2,44 @@
 #Terrorist Faction by IDT - efrenespartano & Tingcat, for UNEXCOM
 items:
   - type: STR_TERRORIST_MALE_CORPSE
-    size: 0.4
-    costSell: 2000
+    #size: 0.4
+    #costSell: 2000
     weight: 20
     bigSprite: 3050
     floorSprite: 3050
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    #recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
     battleType: 11
     armor: 26
-    categories:
-      - STR_CORPSES
   - type: STR_TERRORIST_FEMALE_CORPSE
-    size: 0.4
-    costSell: 2000
+    #size: 0.4
+    #costSell: 2000
     weight: 20
     bigSprite: 3051
     floorSprite: 3051
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    #recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
     battleType: 11
     armor: 26
-    categories:
-      - STR_CORPSES
   - type: STR_TERRORIST_GASMASK_CORPSE
-    size: 0.4
-    costSell: 2000
+    #size: 0.4
+    #costSell: 2000
     weight: 20
     bigSprite: 3052
     floorSprite: 3052
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    #recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
     battleType: 11
     armor: 26
-    categories:
-      - STR_CORPSES
   - type: STR_THIN_MAN_CORPSE
     size: 0.4
     costSell: 30000
@@ -464,29 +464,6 @@ research:
       - STR_TEXAN_UFO
       - STR_MAGISTER_UFO
       - STR_MI8_UFO
-  - name: STR_TERRORIST_MALE_CORPSE
-    cost: 100
-    points: 50
-    unlocks:
-      - STR_TERRORIST_AUTOPSY
-    needItem: true
-  - name: STR_TERRORIST_FEMALE_CORPSE
-    cost: 100
-    points: 50
-    unlocks:
-      - STR_TERRORIST_AUTOPSY
-    needItem: true
-  - name: STR_TERRORIST_GASMASK_CORPSE
-    cost: 100
-    points: 50
-    unlocks:
-      - STR_TERRORIST_AUTOPSY
-    needItem: true
-  - name: STR_TERRORIST_AUTOPSY
-    cost: 0
-    points: 50
-    needItem: true
-    listOrder: 12680
   - name: STR_END_OF_TERRORISTS
     cost: 0
     points: 50
