@@ -810,11 +810,17 @@ ufos:
       name: ALIEN_SPACE_STATION
       mapDataSets:
         - BLANKS
-        - UFO_EXTERIOR_SPACE_STATION
-        - UFOL83
-        - UINT2L83
-        - SPACE_STATION
-        - UFO_EXTERIOR_SPACE_STATION_02
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
       mapBlocks:
         - name: ALIEN_SPACE_STATION_1
           width: 20

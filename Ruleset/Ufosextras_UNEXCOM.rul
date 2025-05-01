@@ -1,0 +1,365 @@
+# This mod requires Alien Armoury Expanded.
+# If you want to use it without the Alien Armoury Expanded mod, you must:
+# 1. Delete one loadout from each alien rank (so that there are 3, not 4 loadouts)
+# 2. Make sure that there are only vanilla items in the loadouts (i.e., no items from mods you don't have, like Alien Armoury Expanded).
+# spellchecker:words EXCAVTR UFOL PTURRET LABSHIP DISEC OPER SPTURRET minigun
+ufos:
+  - type: STR_EXCAVATOR #ignoreDuplicate
+    modSprite: InterceptionExcavator
+    battlescapeTerrainData:
+      name: IDT_RESOURCEA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_RESOURCEA1
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEA2
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEA3
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEA4
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEB1
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEB2
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEB3
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEB4
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEC1
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEC2
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEC3
+          width: 20
+          length: 20
+        - name: IDT_RESOURCEC4
+          width: 20
+          length: 20
+#################################
+###### FIGHTER CLASS ###########
+################################
+  - type: STR_SENTRY_SHIP #ignoreDuplicate
+    modSprite: InterceptionSentry
+    battlescapeTerrainData:
+      name: IDT_UFOSENTRYA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOSENTRYA1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYA2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYA3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYA4
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB4
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC4
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD4
+          width: 20
+          length: 20
+  - type: STR_FIGHTER_SHIP #ignoreDuplicate
+    modSprite: InterceptionFighter
+    battlescapeTerrainData:
+      name: IDT_FIGHTERA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_FIGHTERA1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERA2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERA3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERA4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+###############################
+####### SUPPORT CLASS #########
+###############################
+  - type: STR_LAB_SHIP #ignoreDuplicate
+    modSprite: InterceptionLabShip
+    battlescapeTerrainData:
+      name: IDT_RESEARCHA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_RESEARCHA1
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 22, 1]
+              - [ 14, 6, 1]
+              - [ 7, 14, 1]
+              - [ 21, 14, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_RESEARCHA2
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 21, 1]
+              - [ 14, 7, 1]
+              - [ 6, 14, 1]
+              - [ 22, 14, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_RESEARCHA3
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 7, 14, 1]
+              - [ 21, 14, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_RESEARCHA4
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 21, 1]
+              - [ 14, 7, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+##############################
+####### CAPITAL CLASS ########
+##############################
+research:
+  - name: STR_EXCAVATOR
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_FIGHTER_SHIP
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_SENTRY_SHIP
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_LAB_SHIP
+    cost: 0
+    points: 50
+    needItem: true
+extraSprites:
+  - type: InterceptionExcavator
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/AlienArmouryExpandedUFOs/UFO_Excavator.gif
+  - type: InterceptionFighter
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/AlienArmouryExpandedUFOs/UFO_fighter.gif
+  - type: InterceptionSentry
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/AlienArmouryExpandedUFOs/UFO_Sentry.gif
+  - type: InterceptionLabShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/AlienArmouryExpandedUFOs/UFO_LabShip.gif

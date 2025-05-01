@@ -1120,11 +1120,14 @@ en-US:
       STR_GYROJET_RIFLE: "M10 Gyrojet Rifle"
       STR_GYROJET_AMMO_MAGAZINE: "Gyrojet Ammo Magazine (x15)"
 #######################################################
+########## Fusion Weapon Section
       STR_FUSION_WEAPONS_RESEARCH_1: Fusion Weapons Research I
       STR_FUSION_WEAPONS_RESEARCH_2: Fusion Weapons Research II
       STR_INITIAL_FUSION_CELLS_RESEARCH: Fusion Cells Research
       STR_HYBRID_FUSION_PROJECT: Hybrid Fusion Weapon Project
-      STR_HUMAN_FUSION_RIFLE: "XF-3 'Peacekeeper' Hybrid Fusion"
+      STR_HUMAN_FUSION_RIFLE: "XF-3 'Peacekeeper' Hybrid Fusion" #Uses Heavy Fusion Cell
+      STR_HUMAN_FUSION_SMG: "XF-3A 'Vanguard' Hybrid Fusion" #Uses Light Fusion Cell
+      STR_HUMAN_FUSION_HEAVY: "XF-3B 'Executor' Hybrid Fusion" #Uses Huge Fusion Cell
 ############################################
       STR_DISASSEMBLE_MANUFACTURE: "Disassemblements"
       STR_FUSION_HANDGUN: Fusion Handgun
@@ -2327,11 +2330,37 @@ en-US:
       STR_M1ABRAMS_NEW_PROTOTYPE1_EVENT_DESCRIPTION: ""
       STR_M1ABRAMS_NEW_PROTOTYPE2_EVENT: "M1 Abrams Tank Arrives"
       STR_M1ABRAMS_NEW_PROTOTYPE2_EVENT_DESCRIPTION: ""
+      ##### Kiro Adds story extended and Hints #####
+      STR_EVENTNEXTPHASE01: "Aliens Advance Arsenal"
+      STR_EVENTNEXTPHASE01_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE02: "Spaceflight Experiment"
+      STR_EVENTNEXTPHASE02_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE03: "Space Satellite Turmoil"
+      STR_EVENTNEXTPHASE03_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE04: "Strange orbital Weapon sighted"
+      STR_EVENTNEXTPHASE04_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE05: "Lost contact with the Recon"
+      STR_EVENTNEXTPHASE05_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE06: "Alien unleashes Supergun"
+      STR_EVENTNEXTPHASE06_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE07: "Aliens lost the Moon"
+      STR_EVENTNEXTPHASE07_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE08: "Aliens Fleet Approaching"
+      STR_EVENTNEXTPHASE08_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE09: "Aliens Orbit Force Destroyed"
+      STR_EVENTNEXTPHASE09_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE10: "Orion Class Battleship"
+      STR_EVENTNEXTPHASE11_DESCRIPTION: ""
+      STR_EVENTNEXTPHASE12: "Preparations to Mars"
+      STR_EVENTNEXTPHASE13_DESCRIPTION: ""
+
 ########### Events Name ############
 ###########################
-
+######## Laser Weapons Section
 ######################################################################################
-      STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser"
+      STR_PEACEMAKER: "XL-1 'Peacemaker' Hybrid Laser" ##Hybird Laser Rifle
+      STR_NEGOTIATE: "XL-2 'Negotiate' Hybrid Laser" ##Hybird Laser SMG
+      STR_WARMONGER: "XL-3 'Warmonger' Hybrid Laser" ##Hybird Laser Heavy
 ######################################################################################
       STR_M1972_LASER_PISTOL: M1972 Laser Pistol
       STR_38_LASER_MAGNUM: Laser Magnum
@@ -2469,7 +2498,7 @@ en-US:
       STR_REPTOID_LEADER: Reptoid Leader
       STR_REPTOID_COMMANDER: Reptoid Commander
       STR_REPTOID_CORPSE: Reptoid Corpse
-      STR_SALAMANDRON_CORPSE: SALAMANDRON Corpse
+      STR_SALAMANDRON_CORPSE: Salamandron Corpse
       STR_REPTOID_AUTOPSY: Reptoid autopsy
       STR_SALAMANDRON_AUTOPSY: Salamandron autopsy
 ###RESEARCH ENTRIES
@@ -3247,8 +3276,11 @@ en-US:
       STR_MEDAL_CAPTURE_SPECIALIST_9: "Capture Specialist IX"
       STR_MEDAL_CAPTURE_SPECIALIST_10: "Capture Specialist X"
 ############################################# alienRaces_UNEXCOM.rul
-      STR_ARMORED_SNAKEMAN: "Armored Snakepeople"
-      STR_ARMORED_ETHEREAL: "Armored Ethereal"
+      STR_ARMORED_SNAKEMAN: "Armored Snakepeople" #### Put snakes with lind wyrm version and armor on it
+      STR_ARMORED_ETHEREAL: "Armored Ethereal" ### Ethereal gets a new armor suit instead of bare in cloaks
+      STR_OCTASAPIENS1: "Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
+      STR_OCTASAPIENS2: "Armored Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
+      STR_OCTASAPIENS: "Exosuit Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
 #############################################
 #### Ground Vehicle Transports
 ####### Kiroxeipros Extra Stuff
@@ -3542,7 +3574,7 @@ en-US:
       STR_SATELITTERADARBAY1WIKI: "Satellite Space Station"
       STR_VEHICLEGARAGE1: "Vehicle Garage"
       STR_VEHICLEGARAGE1WIKI: ""
-#### Alien Components 1
+#### AlienComponents 1
 ## 20 is for Alien Hyper Encoder; Also assign them into Special Type.
       STR_ALIEN_FOOD: "Alien Supply Crate"
       STR_ALIENSINGULARCHARGE: "Alien Singular Charge" #21
@@ -3586,6 +3618,7 @@ en-US:
       STR_ALIENWEAPONSET2: "Alien Projectile Part" #44
       STR_ALIENSENSOR1: "Alien Security Sensor" #45
       STR_ALIENSENSOR2: "Alien Space Detector" #46
+      STR_ALIEN_ALLOYS_RESEARCH1: "Altradium Alloys"
 #### Alien Prison 1
       STR_CONTAINMENT_EXCEEDED: "ALIEN CONTAINMENT LIMITS EXCEEDED!{SMALLINE}Insufficent containment space at {0}. You must remove excess aliens from containment."
       STR_CONTAINMENT_EXCEEDED_1: "NO MORE PRISON UNITS!{SMALLINE}Not enough Prison Unit {0}. You must sell prisoners to free up more Prison Unit."

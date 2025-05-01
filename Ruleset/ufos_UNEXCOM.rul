@@ -11,7 +11,7 @@ ufos:
   - type: STR_MEDIUM_SCOUT #ignoreDuplicate
     size: STR_SMALL
     sprite: 1
-    damageMax: 200
+    damageMax: 250
     speedMax: 1200
     accel: 9
     power: 40
@@ -26,7 +26,7 @@ ufos:
     radarRange: 20
     radarChance: 30
     battlescapeTerrainData:
-      name: IDT_UFO_120
+      name: IDT_UFOBASSAULTA1
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -41,35 +41,35 @@ ufos:
         - IDT_A1UFO_TECHTIER4
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: IDT_UFO_110
+        - name: IDT_UFOBASSAULTA1
           width: 10
           length: 10
-        - name: IDT_UFO_110A
+        - name: IDT_UFOBASSAULTA2
           width: 10
           length: 10
-        - name: IDT_UFO_110B
+        - name: IDT_UFOBASSAULTA3
           width: 10
           length: 10
-        - name: IDT_UFO_110C
+        - name: IDT_UFOBASSAULTA4
           width: 10
           length: 10
-        - name: IDT_UFO_110D
+        - name: IDT_UFOBASSAULTB1
           width: 10
           length: 10
-        - name: IDT_UFO_110E
+        - name: IDT_UFOBASSAULTB2
           width: 10
           length: 10
-        - name: IDT_UFO_110F
+        - name: IDT_UFOBASSAULTB3
           width: 10
           length: 10
-        - name: IDT_UFO_110G
+        - name: IDT_UFOBASSAULTB4
           width: 10
           length: 10
 #END MEDIUM SCOUT
 #BEGIN LARGE SCOUT
   - type: STR_LARGE_SCOUT #ignoreDuplicate
     battlescapeTerrainData:
-      name: IDT_UFO_120
+      name: IDT_UFOCBATTLEA1
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -84,208 +84,179 @@ ufos:
         - IDT_A1UFO_TECHTIER4
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: IDT_UFO_120
+        - name: IDT_UFOCBATTLEA1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 12, 9, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120a
+        - name: IDT_UFOCBATTLEA2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 9, 12, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120b
+        - name: IDT_UFOCBATTLEA3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 12, 9, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120c
+        - name: IDT_UFOCBATTLEA4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 9, 12, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120d
+        - name: IDT_UFOCBATTLEB1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
             SPTURRET_SPAWNER:
               - [ 13, 9, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120e
+        - name: IDT_UFOCBATTLEB2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
             SPTURRET_SPAWNER:
               - [ 9, 13, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120f
+        - name: IDT_UFOCBATTLEB3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
             SPTURRET_SPAWNER:
               - [ 13, 9, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120g
+        - name: IDT_UFOCBATTLEB4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
             SPTURRET_SPAWNER:
               - [ 9, 13, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120h
+        - name: IDT_UFOCBATTLEC1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 12, 9, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120i
+        - name: IDT_UFOCBATTLEC2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 9, 12, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120j
+        - name: IDT_UFOCBATTLEC3
           width: 20
           length: 20
-        - name: IDT_UFO_120k
+        - name: IDT_UFOCBATTLEC4
           width: 20
           length: 20
-        - name: IDT_UFO_120l
+        - name: IDT_UFOCBATTLED1
           width: 20
           length: 20
-        - name: IDT_UFO_120m
+        - name: IDT_UFOCBATTLED2
           width: 20
           length: 20
-        - name: IDT_UFO_120n
+        - name: IDT_UFOCBATTLED3
           width: 20
           length: 20
-        - name: IDT_UFO_120o
+        - name: IDT_UFOCBATTLED4
           width: 20
           length: 20
-        - name: IDT_UFO_120p
+        - name: IDT_UFOCBATTLEE1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 7, 15, 0]
               - [ 7, 3, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120q
+        - name: IDT_UFOCBATTLEE2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 15, 7, 0]
               - [ 3, 7, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120r
+        - name: IDT_UFOCBATTLEE3
           width: 20
           length: 20
-        - name: IDT_UFO_120s
+        - name: IDT_UFOCBATTLEE4
           width: 20
           length: 20
-        - name: IDT_UFO_120t
+        - name: IDT_UFOCBATTLEF1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 15, 9, 0]
             SPTURRET_SPAWNER:
               - [ 7, 15, 0]
               - [ 7, 3, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120u
+        - name: IDT_UFOCBATTLEF2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 15, 0]
             SPTURRET_SPAWNER:
               - [ 15, 7, 0]
               - [ 3, 7, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120v
+        - name: IDT_UFOCBATTLEF3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 7, 15, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120w
+        - name: IDT_UFOCBATTLEF4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 9, 0]
             SPTURRET_SPAWNER:
               - [ 14, 7, 0]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_120x
+        - name: IDT_UFOCBATTLEG1
           width: 20
           length: 20
-        - name: IDT_UFO_120y
+        - name: IDT_UFOCBATTLEG2
           width: 20
           length: 20
-        - name: IDT_UFO_120z
+        - name: IDT_UFOCBATTLEG3
+          width: 20
+          length: 20
+        - name: IDT_UFOCBATTLEG4
           width: 20
           length: 20
 #END LARGE SCOUT
 #BEGIN HARVESTER
   - type: STR_HARVESTER #ignoreDuplicate
     battlescapeTerrainData:
-      name: IDT_UFO_130
+      name: IDT_UFODSUPPORTA1
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -300,13 +271,18 @@ ufos:
         - IDT_A1UFO_TECHTIER4
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: IDT_UFO_130
+        - name: IDT_UFODSUPPORTA1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 12, 9, 0]
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTA2
+          width: 20
+          length: 20
+          items:
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -316,13 +292,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130a
+        - name: IDT_UFODSUPPORTA3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 12, 0]
-              - [ 9, 6, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -332,13 +305,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130b
+        - name: IDT_UFODSUPPORTA4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 12, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -348,13 +318,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130c
+        - name: IDT_UFODSUPPORTB1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 12, 0]
-              - [ 9, 6, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -364,14 +331,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130d
+        - name: IDT_UFODSUPPORTB2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 9, 9, 0]
-              - [ 12, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -380,14 +343,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130e
+        - name: IDT_UFODSUPPORTB3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 12, 0]
-              - [ 9, 9, 0]
-              - [ 9, 6, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -396,13 +355,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130f
+        - name: IDT_UFODSUPPORTB4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 12, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
             SPTURRET_SPAWNER:
@@ -411,13 +367,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130g
+        - name: IDT_UFODSUPPORTC1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 12, 0]
-              - [ 9, 6, 0]
             PTURRET_SPAWNER:
               - [ 15, 8, 3]
             SPTURRET_SPAWNER:
@@ -426,13 +379,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130h
+        - name: IDT_UFODSUPPORTC2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 12, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
             SPTURRET_SPAWNER:
@@ -441,13 +391,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130i
+        - name: IDT_UFODSUPPORTC3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 12, 0]
-              - [ 9, 6, 0]
             PTURRET_SPAWNER:
               - [ 15, 8, 3]
             SPTURRET_SPAWNER:
@@ -456,35 +403,26 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130j
+        - name: IDT_UFODSUPPORTC4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130k
+        - name: IDT_UFODSUPPORTD1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 15, 0]
-              - [ 9, 3, 0]
             PTURRET_SPAWNER:
               - [ 15, 8, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130l
+        - name: IDT_UFODSUPPORTD2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
             SPTURRET_SPAWNER:
@@ -492,13 +430,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130m
+        - name: IDT_UFODSUPPORTD3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 15, 0]
-              - [ 9, 3, 0]
             PTURRET_SPAWNER:
               - [ 15, 8, 3]
             SPTURRET_SPAWNER:
@@ -506,36 +441,28 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130n
+        - name: IDT_UFODSUPPORTD4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 15, 1]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130o
+        - name: IDT_UFODSUPPORTE1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 15, 1]
-              - [ 15, 9, 1]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130p
+        - name: IDT_UFODSUPPORTE2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 12, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -545,13 +472,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130q
+        - name: IDT_UFODSUPPORTE3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 6, 0]
-              - [ 9, 12, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -561,13 +485,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130r
+        - name: IDT_UFODSUPPORTE4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 6, 9, 0]
-              - [ 12, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -577,13 +498,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130s
+        - name: IDT_UFODSUPPORTF1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 6, 0]
-              - [ 9, 12, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
               - [ 15, 8, 3]
@@ -593,55 +511,35 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130t
+        - name: IDT_UFODSUPPORTF2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130u
+        - name: IDT_UFODSUPPORTF3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
-              - [ 9, 15, 0]
             PTURRET_SPAWNER:
               - [ 15, 8, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130v
+        - name: IDT_UFODSUPPORTF4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 3]
-          fuseTimers:
-            PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_130w
-          width: 20
-          length: 20
-          items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
-              - [ 9, 15, 0]
-            PTURRET_SPAWNER:
-              - [ 15, 8, 3]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
 #END HARVESTER
 #BEGIN ABDUCTOR
   - type: STR_ABDUCTOR #ignoreDuplicate
     battlescapeTerrainData:
-      name: IDT_UFO_140
+      name: IDT_UFOECOMMANDO
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -656,13 +554,10 @@ ufos:
         - IDT_A1UFO_TECHTIER4
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: IDT_UFO_140
+        - name: IDT_UFOECOMMANDOA1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 2]
             SPTURRET_SPAWNER:
@@ -670,13 +565,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140a
+        - name: IDT_UFOECOMMANDOA2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
-              - [ 9, 15, 0]
             PTURRET_SPAWNER:
               - [ 15, 10, 2]
             SPTURRET_SPAWNER:
@@ -684,13 +576,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140b
+        - name: IDT_UFOECOMMANDOA3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 2]
             SPTURRET_SPAWNER:
@@ -698,13 +587,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140c
+        - name: IDT_UFOECOMMANDOA4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
-              - [ 9, 15, 0]
             PTURRET_SPAWNER:
               - [ 15, 10, 2]
             SPTURRET_SPAWNER:
@@ -712,35 +598,26 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140d
+        - name: IDT_UFOECOMMANDOB1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 11, 0]
-              - [ 9, 7, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 2]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140e
+        - name: IDT_UFOECOMMANDOB2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 11, 0]
-              - [ 9, 7, 0]
             PTURRET_SPAWNER:
               - [ 15, 10, 2]
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140f
+        - name: IDT_UFOECOMMANDOB3
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 9, 0]
-              - [ 15, 9, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 2]
             SPTURRET_SPAWNER:
@@ -748,13 +625,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140g
+        - name: IDT_UFOECOMMANDOB4
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 9, 3, 0]
-              - [ 9, 15, 0]
             PTURRET_SPAWNER:
               - [ 15, 10, 2]
             SPTURRET_SPAWNER:
@@ -762,13 +636,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140h
+        - name: IDT_UFOECOMMANDOC1
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 4, 14, 0]
-              - [ 14, 14, 0]
             PTURRET_SPAWNER:
               - [ 8, 15, 2]
             SPTURRET_SPAWNER:
@@ -777,13 +648,34 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_140i
+        - name: IDT_UFOECOMMANDOC2
           width: 20
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 14, 4, 0]
-              - [ 14, 14, 0]
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 9, 0]
+              - [ 6, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOC3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 9, 14, 0]
+              - [ 9, 7, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOC4
+          width: 20
+          length: 20
+          items:
             PTURRET_SPAWNER:
               - [ 15, 10, 2]
             SPTURRET_SPAWNER:
@@ -796,7 +688,7 @@ ufos:
 #BEGIN TERROR SHIP
   - type: STR_TERROR_SHIP #ignoreDuplicate
     battlescapeTerrainData:
-      name: IDT_UFO_150
+      name: IDT_UFOFSTRIKERA1
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -811,15 +703,10 @@ ufos:
         - IDT_A1UFO_TECHTIER4
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: IDT_UFO_150
+        - name: IDT_UFOFSTRIKERA1
           width: 30
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 14, 6, 0]
-              - [ 14, 12, 0]
-              - [ 11, 9, 0]
-              - [ 17, 9, 0]
             PTURRET_SPAWNER:
               - [ 24, 5, 1]
               - [ 3, 5, 1]
@@ -835,15 +722,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150a
+        - name: IDT_UFOFSTRIKERA2
           width: 20
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 6, 15, 0]
-              - [ 12, 15, 0]
-              - [ 9, 12, 0]
-              - [ 9, 18, 0]
             PTURRET_SPAWNER:
               - [ 5, 25, 1]
               - [ 5, 4, 1]
@@ -859,15 +741,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150b
+        - name: IDT_UFOFSTRIKERA3
           width: 30
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 3, 6, 0]
-              - [ 3, 12, 0]
-              - [ 25, 6, 0]
-              - [ 25, 12, 0]
             PTURRET_SPAWNER:
               - [ 24, 5, 1]
               - [ 3, 5, 1]
@@ -883,15 +760,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150c
+        - name: IDT_UFOFSTRIKERA4
           width: 20
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 6, 4, 0]
-              - [ 12, 4, 0]
-              - [ 6, 26, 0]
-              - [ 12, 26, 0]
             PTURRET_SPAWNER:
               - [ 5, 25, 1]
               - [ 5, 4, 1]
@@ -907,15 +779,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150d
+        - name: IDT_UFOFSTRIKERB1
           width: 30
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 12, 7, 0]
-              - [ 12, 4, 0]
-              - [ 16, 4, 0]
-              - [ 16, 7, 0]
             PTURRET_SPAWNER:
               - [ 24, 5, 1]
               - [ 3, 5, 1]
@@ -931,15 +798,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150e
-          width: 20
-          length: 30
+        - name: IDT_UFOFSTRIKERB2
+          width: 30
+          length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 4, 17, 0]
-              - [ 7, 17, 0]
-              - [ 4, 13, 0]
-              - [ 7, 13, 0]
             PTURRET_SPAWNER:
               - [ 5, 25, 1]
               - [ 5, 4, 1]
@@ -955,15 +817,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150f
-          width: 30
-          length: 20
+        - name: IDT_UFOFSTRIKERB3
+          width: 20
+          length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 3, 6, 0]
-              - [ 3, 12, 0]
-              - [ 25, 6, 0]
-              - [ 25, 12, 0]
             PTURRET_SPAWNER:
               - [ 24, 5, 1]
               - [ 3, 5, 1]
@@ -977,15 +834,10 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_150g
+        - name: IDT_UFOFSTRIKERB4
           width: 20
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 6, 4, 0]
-              - [ 12, 4, 0]
-              - [ 6, 26, 0]
-              - [ 12, 26, 0]
             PTURRET_SPAWNER:
               - [ 5, 25, 1]
               - [ 5, 4, 1]
@@ -999,11 +851,148 @@ ufos:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
             ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC2
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC4
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD2
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD4
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+
 #END TERROR SHIP
 #BEGIN BATTLESHIP
   - type: STR_BATTLESHIP #ignoreDuplicate
     battlescapeTerrainData:
-      name: IDT_UFO_160
+      name: IDT_UFOGBATTLESHIPA1
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -1018,15 +1007,10 @@ ufos:
         - IDT_A1UFO_TECHTIER4
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
-        - name: IDT_UFO_160
+        - name: IDT_UFOGBATTLESHIPA1
           width: 30
-          length: 30
+          length: 50
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1044,15 +1028,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_160a
+        - name: IDT_UFOGBATTLESHIPA2
           width: 30
-          length: 30
+          length: 50
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1070,15 +1049,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_160b
-          width: 30
+        - name: IDT_UFOGBATTLESHIPA3
+          width: 50
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1096,15 +1070,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_160c
-          width: 30
+        - name: IDT_UFOGBATTLESHIPA4
+          width: 50
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1118,15 +1087,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_160d
+        - name: IDT_UFOGBATTLESHIPB1
           width: 30
-          length: 30
+          length: 50
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1144,15 +1108,10 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_160e
+        - name: IDT_UFOGBATTLESHIPB2
           width: 30
-          length: 30
+          length: 50
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1168,15 +1127,27 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_160f
-          width: 30
+        - name: IDT_UFOGBATTLESHIPB3
+          width: 50
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 5, 14, 0]
-              - [ 23, 14, 0]
-              - [ 14, 5, 0]
-              - [ 14, 23, 0]
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 2, 15, 1]
+              - [ 2, 13, 1]
+              - [ 21, 15, 1]
+              - [ 21, 13, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPB4
+          width: 50
+          length: 30
+          items:
             PTURRET_SPAWNER:
               - [ 13, 25, 3]
               - [ 25, 14, 3]
@@ -1194,7 +1165,7 @@ ufos:
 #BEGIN SUPPLY SHIP
   - type: STR_SUPPLY_SHIP #ignoreDuplicate
     battlescapeTerrainData:
-      name: IDT_UFO_170
+      name: IDT_UFOHLOGISTICA1
       mapDataSets:
         - BLANKS
         - IDT_A1UFO_FLOOR
@@ -1213,10 +1184,6 @@ ufos:
           width: 30
           length: 20
           items:
-            STR_ELERIUM_115:
-              - [ 8, 9, 0]
-              - [ 14, 9, 0]
-              - [ 20, 9, 0]
             PTURRET_SPAWNER:
               - [ 7, 15, 2]
               - [ 20, 15, 2]
@@ -1226,14 +1193,36 @@ ufos:
           fuseTimers:
             PTURRET_SPAWNER: [0, 0]
             SPTURRET_SPAWNER: [0, 0]
-        - name: IDT_UFO_170a
+        - name: IDT_UFOHLOGISTICA2
           width: 20
           length: 30
           items:
-            STR_ELERIUM_115:
-              - [ 9, 20, 0]
-              - [ 9, 14, 0]
-              - [ 9, 8, 0]
+            PTURRET_SPAWNER:
+              - [ 15, 20, 2]
+              - [ 15, 7, 2]
+            SPTURRET_SPAWNER:
+              - [ 12, 20, 0]
+              - [ 12, 8, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOHLOGISTICA3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 20, 2]
+              - [ 15, 7, 2]
+            SPTURRET_SPAWNER:
+              - [ 12, 20, 0]
+              - [ 12, 8, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOHLOGISTICA4
+          width: 30
+          length: 20
+          items:
             PTURRET_SPAWNER:
               - [ 15, 20, 2]
               - [ 15, 7, 2]

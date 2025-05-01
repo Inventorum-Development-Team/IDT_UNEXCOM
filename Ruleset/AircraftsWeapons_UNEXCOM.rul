@@ -2984,6 +2984,7 @@ items:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
     costBuy: 50000
+    monthlyMaintenance: 12500
     costSell: 35000
     transferTime: 48
   - type: STR_HAMMER_LAUNCHER
@@ -2994,6 +2995,7 @@ items:
       - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 0.8
     costBuy: 48000
+    monthlyMaintenance: 12000
     costSell: 38000
     transferTime: 48
   - type: STR_PHOENIX_LAUNCHER
@@ -3004,6 +3006,7 @@ items:
       - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 0.8
     costBuy: 160000
+    monthlyMaintenance: 40000
     costSell: 127000
     transferTime: 48
   - type: STR_HYDRA_LAUNCHER
@@ -3014,6 +3017,7 @@ items:
       - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 0.8
     costBuy: 48000
+    monthlyMaintenance: 12000
     costSell: 38000
     transferTime: 48
   - type: STR_ATHENA_CANNON
@@ -3024,6 +3028,7 @@ items:
       - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 1.5
     costBuy: 49000
+    monthlyMaintenance: 15000
     costSell: 38500
     transferTime: 48
   - type: STR_MAUSER_CANNON
@@ -3034,6 +3039,7 @@ items:
       - STR_OUTSOURCE_ALLOY_CRAFT_WEAPONS
     size: 1.5
     costBuy: 48000
+    monthlyMaintenance: 12000
     costSell: 37500
     transferTime: 48
 #############################################
@@ -3062,8 +3068,9 @@ items:
       - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
     costBuy: 54000
+    monthlyMaintenance: 14000
     costSell: 35000
-    transferTime: 48
+    transferTime: 96
   - type: STR_KATANA_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
@@ -3072,8 +3079,9 @@ items:
       - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
     costBuy: 58000
+    monthlyMaintenance: 12000
     costSell: 38000
-    transferTime: 48
+    transferTime: 96
   - type: STR_ADLER_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
@@ -3082,8 +3090,9 @@ items:
      - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
     costBuy: 180000
+    monthlyMaintenance: 90000
     costSell: 127000
-    transferTime: 48
+    transferTime: 96
   - type: STR_GORGON_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_3]
     requires:
@@ -3092,23 +3101,27 @@ items:
       - STR_OUTSOURCE_FUSION_CRAFT_WEAPONS
     size: 0.8
     costBuy: 48000
+    monthlyMaintenance: 12000
     costSell: 38000
-    transferTime: 48
+    transferTime: 96
 #TIER 4
   - type: STR_VOSTOK_CANNON
     listOrder: 900
     size: 2.0
     costSell: 211000
+    monthlyMaintenance: 50000
     transferTime: 48
   - type: STR_ZEUS_CANNON
     listOrder: 910
     size: 2.0
     costSell: 233500
+    monthlyMaintenance: 50000
     transferTime: 48
   - type: STR_LASER_LANCE
     listOrder: 910
     size: 2.0
     costSell: 233500
+    monthlyMaintenance: 50000
     transferTime: 48
   - type: STR_EXCALIBUR_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3116,6 +3129,7 @@ items:
       - STR_IMPROVED_LIGHT_MISSILE
     size: 0.8
     costSell: 35000
+    monthlyMaintenance: 50000
     transferTime: 48
   - type: STR_MJOLNIR_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3123,6 +3137,7 @@ items:
       - STR_IMPROVED_HEAVY_MISSILE
     size: 0.8
     costSell: 38000
+    monthlyMaintenance: 50000
     transferTime: 48
   - type: STR_KONDOR_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3130,6 +3145,7 @@ items:
       - STR_IMPROVED_SUPER_HEAVY_MISSILE
     size: 0.8
     costSell: 127000
+    monthlyMaintenance: 50000
     transferTime: 48
   - type: STR_KRAKEN_LAUNCHER
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_LIGHT_MISSILES, STR_TIER_4]
@@ -3137,6 +3153,7 @@ items:
       - STR_IMPROVED_ROCKET
     size: 0.8
     costSell: 38000
+    monthlyMaintenance: 50000
     transferTime: 48
 #}
 manufacture:
