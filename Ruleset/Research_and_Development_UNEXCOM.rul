@@ -71,6 +71,8 @@ research:
     spawnedItem: STR_AKMSU
     cost: 50
     points: 50
+    unlocks:
+      - STR_SOVIET_762_UNLOCK
   - name: STR_USA_SUPPORT_RESEARCH
     dependencies:
       - STR_USA_INITIAL_APPROACH_RESEARCH
@@ -299,7 +301,7 @@ research:
     cost: 0
     dependencies:
       - STR_AKM
-      - STR_USSR_SUPPORT_RESEARCH
+      - STR_USSR_INITIAL_APPROACH_RESEARCH
   - name: STR_9MM_10X_UNLOCK
     cost: 0
     dependencies:
