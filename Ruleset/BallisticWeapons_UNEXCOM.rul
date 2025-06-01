@@ -1265,7 +1265,7 @@ items:
     costSell: 2750
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 15
-    weight: 8
+    weight: 7
     bigSprite: 138
     floorSprite: 138
     handSprite: 404
@@ -3038,7 +3038,7 @@ items:
     costSell: 3750
     requiresBuyCountry: STR_USA
     monthlyBuyLimit: 30
-    weight: 7
+    weight: 10
     bigSprite: 170
     floorSprite: 170
     handSprite: 660
@@ -3985,7 +3985,7 @@ items:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
     costSell: 1750
-    weight: 9
+    weight: 7
     bigSprite: 183
     floorSprite: 183
     handSprite: 764
@@ -4003,7 +4003,7 @@ items:
       ammoSlot: 0
       arcing: false
     confAuto:
-      shots: 6
+      shots: 8
       name: STR_CONTROL_AUTO
       ammoSlot: 0
       arcing: false
@@ -4027,7 +4027,7 @@ items:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
     costSell: 1750
-    weight: 10
+    weight: 9
     bigSprite: 184
     floorSprite: 184
     handSprite: 772
@@ -4041,7 +4041,7 @@ items:
       1:
         tuLoad: 25
         tuUnload: 15
-        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8 ]
+        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_ELERIUM_SHARDS_X8, STR_12GAUGE_NON_LETHAL_X8 ]
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
@@ -4078,7 +4078,7 @@ items:
       - STR_SPECIAL_FORCES_SUPPORT
     size: 0.02
     costSell: 1750
-    weight: 12
+    weight: 10
     bigSprite: 185
     floorSprite: 185
     handSprite: 780
@@ -4340,7 +4340,7 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_SPECIAL_FORCES_TECH, STR_RIFLES, STR_CUSTOM_WEAPON ]
     size: 0.02
     costSell: 3750
-    weight: 7
+    weight: 10
     bigSprite: 211
     floorSprite: 211
     handSprite: 100
@@ -4387,7 +4387,7 @@ items:
     categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_SPECIAL_FORCES_TECH, STR_RIFLES, STR_CUSTOM_WEAPON ]
     size: 0.02
     costSell: 3750
-    weight: 7
+    weight: 12
     bigSprite: 212
     floorSprite: 212
     handSprite: 108
@@ -4403,11 +4403,7 @@ items:
         tuLoad: 25
         tuUnload: 15
         compatibleAmmo:
-          [
-            STR_12GAUGE_BUCKSHOT_X8,
-            STR_12GAUGE_SLUG_X8,
-            STR_12GAUGE_NON_LETHAL_X8
-          ]
+          [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_ELERIUM_SHARDS_X8, STR_12GAUGE_NON_LETHAL_X8 ]
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP

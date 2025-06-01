@@ -2167,69 +2167,76 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_ENFORCER_UFOPEDIA
     listOrder: 4004
+  - id: STR_LUGER
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_LUGER_UFOPEDIA
+    listOrder: 4005
   - id: STR_MAKAROV
     requires:
       - STR_MAKAROV
     type_id: 4
     section: STR_WEAPONS
     text: STR_MAKAROV_UFOPEDIA
-    listOrder: 4005
+    listOrder: 4006
   - id: STR_50_CAL_MAGNUM
     requires:
       - STR_MERCENARY_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_50_CAL_MAGNUM_UFOPEDIA
-    listOrder: 4006
+    listOrder: 4007
   - id: STR_M1911_COLT45
     requires:
       - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_M1911_COLT45_UFOPEDIA
-    listOrder: 4007
+    listOrder: 4008
   - id: STR_BERETTA_92FS
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_BERETTA_92FS_UFOPEDIA
-    listOrder: 4008
+    listOrder: 4009
   - id: STR_STECHKIN_APS
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_STECHKIN_APS_UFOPEDIA
-    listOrder: 4009
+    listOrder: 4010
   - id: STR_M1972_LASER_PISTOL
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USA_LASER_HANDGUNS
     text: STR_M1972_LASER_PISTOL_UFOPEDIA
-    listOrder: 4010
+    listOrder: 4011
   - id: STR_38_LASER_MAGNUM
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USA_LASER_HANDGUNS
     text: STR_38_LASER_MAGNUM_UFOPEDIA
-    listOrder: 4011
+    listOrder: 4012
   - id: STR_P71_LASER_PISTOL
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_NATO_LASER_HANDGUNS
     text: STR_P71_LASER_PISTOL_UFOPEDIA
-    listOrder: 4012
+    listOrder: 4013
   - id: STR_P72_COMPACT_LASER
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USSR_LASER_HANDGUNS
     text: STR_P72_COMPACT_LASER_UFOPEDIA
-    listOrder: 4013
+    listOrder: 4014
   - id: STR_FLECHETTE_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -2242,14 +2249,14 @@ ufopaedia:
     - title: STR_FLECHETTE_PISTOL
       text: STR_FLECHETTE_PISTOL_UFOPEDIA
       ammoSlot: 1
-    listOrder: 4014
+    listOrder: 4015
   - id: STR_NATO_PLASMA_PISTOL
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     text: STR_NATO_PLASMA_PISTOL_UFOPEDIA
-    listOrder: 4015
+    listOrder: 4016
   - id: STR_GYROJET_PISTOL
     type_id: 4
     section: STR_WEAPONS
@@ -2277,69 +2284,76 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_OWEN_SMG_UFOPEDIA
     listOrder: 4102
+  - id: STR_UZI
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_UZI_UFOPEDIA
+    listOrder: 4103
   - id: STR_PPS_43
     requires:
       - STR_PPS_43
     type_id: 4
     section: STR_WEAPONS
     text: STR_PPS_43_UFOPEDIA
-    listOrder: 4103
+    listOrder: 4104
   - id: STR_MAT49
     requires:
       - STR_MERCENARY_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_MAT49_UFOPEDIA
-    listOrder: 4104
+    listOrder: 4105
   - id: STR_M3_GREASEGUN
     requires:
       - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_M3_GREASEGUN_UFOPEDIA
-    listOrder: 4105
+    listOrder: 4106
   - id: STR_MP5
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_MP5_UFOPEDIA
-    listOrder: 4106
+    listOrder: 4107
   - id: STR_SKORPION
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_SKORPION_UFOPEDIA
-    listOrder: 4107
+    listOrder: 4108
   - id: STR_M5_LASER_SMG
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USA_LASER_CLOSE_RANGE_WEAPONS
     text: STR_M5_LASER_SMG_UFOPEDIA
-    listOrder: 4108
+    listOrder: 4109
   - id: STR_MAT72_SUBMACHINE_LASER
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
     text: STR_MAT72_SUBMACHINE_LASER_UFOPEDIA
-    listOrder: 4109
+    listOrder: 4110
   - id: STR_ALP_SUBMACHINE_LASER
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USSR_LASER_HANDGUNS
     text: STR_ALP_SUBMACHINE_LASER_UFOPEDIA
-    listOrder: 4110
+    listOrder: 4111
   - id: STR_SOVIET_PLASMA_SMG
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
     text: STR_SOVIET_PLASMA_SMG_UFOPEDIA
-    listOrder: 4111
+    listOrder: 4112
   #Shotguns
   - id: STR_SHOTGUN_REPORT
     type_id: 7
@@ -2453,41 +2467,48 @@ ufopaedia:
     section: STR_WEAPONS
     text: STR_M1_CARBINE_UFOPEDIA
     listOrder: 4302
+  - id: STR_G3
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    type_id: 4
+    section: STR_WEAPONS
+    text: STR_G3_UFOPEDIA
+    listOrder: 4303
   - id: STR_FN_FSC
     requires:
       - STR_MERCENARY_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_FN_FSC_UFOPEDIA
-    listOrder: 4303
+    listOrder: 4304
   - id: STR_FN_FSC_SCOPED
     requires:
       - STR_MERCENARY_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_FN_FSC_SCOPED_UFOPEDIA
-    listOrder: 4304
+    listOrder: 4305
   - id: STR_FN_FSC_BAYONET
     requires:
       - STR_MERCENARY_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_FN_FSC_BAYONET_UFOPEDIA
-    listOrder: 4305
+    listOrder: 4306
   - id: STR_XM117
     requires:
       - STR_USA_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_XM117_UFOPEDIA
-    listOrder: 4306
+    listOrder: 4307
   - id: STR_XM117_SCOPED
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
     type_id: 4
     section: STR_WEAPONS
     text: STR_XM117_SCOPED_UFOPEDIA
-    listOrder: 4307
+    listOrder: 4308
   - id: STR_XM117_SHOTGUN
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2500,7 +2521,7 @@ ufopaedia:
     - title: STR_XM117_SHOTGUN
       text: STR_XM117_SHOTGUN_UFOPEDIA
       ammoSlot: 1
-    listOrder: 4308
+    listOrder: 4309
   - id: STR_XM117_M203
     requires:
       - STR_SPECIAL_FORCES_SUPPORT
@@ -2513,35 +2534,35 @@ ufopaedia:
     - title: STR_XM117_M203
       text: STR_XM117_M203_UFOPEDIA
       ammoSlot: 1
-    listOrder: 4309
+    listOrder: 4310
   - id: STR_SG510_CARBINE
     requires:
       - STR_NATO_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_SG510_CARBINE_UFOPEDIA
-    listOrder: 4310
+    listOrder: 4311
   - id: STR_AKMSU
     requires:
       - STR_USSR_SUPPORT_RESEARCH
     type_id: 4
     section: STR_WEAPONS
     text: STR_AKMSU_UFOPEDIA
-    listOrder: 4311
+    listOrder: 4312
   - id: STR_M20_M203_LASER_CARBINE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_USA_LASER_RIFLES
     text: STR_M20_M203_LASER_CARBINE_UFOPEDIA
-    listOrder: 4312
+    listOrder: 4313
   - id: STR_FN_FLA_LASER_CARBINE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_NATO_LASER_RIFLES
     text: STR_FN_FLA_LASER_CARBINE_UFOPEDIA
-    listOrder: 4313
+    listOrder: 4314
   - id: STR_FLECHETTE_CARBINE
     type_id: 4
     section: STR_WEAPONS
@@ -2554,14 +2575,14 @@ ufopaedia:
     - title: STR_FLECHETTE_CARBINE
       text: STR_FLECHETTE_CARBINE_UFOPEDIA
       ammoSlot: 1
-    listOrder: 4314
+    listOrder: 4315
   - id: STR_NATO_PLASMA_CARBINE
     type_id: 4
     section: STR_WEAPONS
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
     text: STR_NATO_PLASMA_CARBINE_UFOPEDIA
-    listOrder: 4315
+    listOrder: 4316
   - id: STR_RIFLE_REPORT
     type_id: 7
     section: STR_WEAPONS

@@ -476,17 +476,61 @@ es-419:
       STR_CARGOTRUCKWIKI: La formación de 4 vehículos de transporte, lleva hasta 48 personel con 8 vehículos pequeños. Diseñado para luchar contra las compañías de cantidad de enemigos en formación agresiva.
       STR_CARGOTRUCK1: CAMIÓN DE CARGA + REMOLQUE
       STR_CARGOTRUCK1WIKI: Formación de 2 vehículos de transporte unidos a un remolque de carga. Transporta hasta 40 personas con 6 vehículos pequeños. Diseñado para luchar contra las compañías de cantidad de enemigos en formación agresiva.
-      STR_TROOP_LANDER: "Aterrizador de tropas"
-      STR_CARRIER: "Portaaviones"
-      STR_EXCAVATOR: "Excavadora"
-      STR_FIGHTER_SHIP: "Caza"
-      STR_SENTRY_SHIP: "Nave centinela"
-      STR_LAB_SHIP: "Nave laboratorio"
-      STR_TERROR_SHIP: "Transporte de tropas"
-      STR_EXCAVATOR_UFOPEDIA: "Las excavadoras son naves pequeñas que se utilizan principalmente para excavar y realizar trabajos de construcción. Representan una pequeña amenaza para nuestras naves."
-      STR_FIGHTER_SHIP_UFOPEDIA: "Los cazas están construidos únicamente para destruir aeronaves humanas, incluídas nuestros interceptores. Están extremadamente bien armados para su tamaño, pero su tripulación es muy pequeña."
-      STR_SENTRY_SHIP_UFOPEDIA: "Este pequeño OVNI tiene la tarea de realizar tareas de observación y patrullaje. Está armado para la guerra y supondrá un desafío para nuestros interceptores."
-      STR_LAB_SHIP_UFOPEDIA: "Las Naves laboratorio son grandes naves, encargadas de importantes operaciones de investigación y recolección. Mucho más grandes que los Cosechadores, están equipadas para realizar experimentos complejos a bordo. Su tripulación es numerosa y está bastante bien equipada."
+      ############# Infopedia de naves alienígenas
+      STR_SMALL_SCOUT: "Clase de reconocimiento"
+      STR_SMALL_SCOUT_UFOPEDIA: "Pequeño caza explorador que realiza misiones de reconocimiento y sobrevuelos para grupos de naves de combate. Carece de pleno potencial de combate y solo evade los ataques aéreos."
+
+      STR_SMALL_FIGHTER: "Clase de caza de combate"
+      STR_SMALL_FIGHTER_UFOPEDIA: "Esta nave de combate tiene capacidades de ataque y defensa aeroespaciales. Actúa como escolta o defensa contra los ataques enemigos."
+
+      STR_MEDIUM_SCOUT: "Clase asalto"
+      STR_MEDIUM_SCOUT_UFOPEDIA: "Una nave de reconocimiento y asalto que realiza tareas de limpieza de zonas para misiones avanzadas. Está equipada con armas de combate y defensas básicas para naves."
+
+      STR_LARGE_SCOUT: "Clase de batalla"
+      STR_LARGE_SCOUT_UFOPEDIA: "La nave de batalla se utiliza para fines generales. Esta nave se utiliza para el reconocimiento y los combates aeroespaciales. También proporciona espacio de transporte adicional para misiones de combate."
+
+      STR_ABDUCTOR: "Clase comando"
+      STR_ABDUCTOR_UFOPEDIA: "Nave espacial comando equipada con armas y defensas avanzadas. Se utiliza para misiones peligrosas, como asaltar posiciones militares y capturar representantes humanos. Cuenta con pocas defensas armamentísticas que impiden la captura de esta nave."
+
+      STR_HARVESTER: "Clase de apoyo"
+      STR_HARVESTER_UFOPEDIA: "Esta nave se utiliza para proporcionar apoyo pesado a las tropas de primera línea. Esto abarca desde la captura básica de prisioneros hasta el apoyo de artillería y el rescate médico. Sus sistemas de armas resultan más peligrosos durante las batallas en línea de fuego."
+
+      STR_TERROR_SHIP: "Clase Striker"
+      STR_TERROR_SHIP_UFOPEDIA: "Una nave a gran escala con torretas de combate de largo alcance y capacidad para transportar un gran número de tropas. Se trata de un arma aterradora capaz de destruir cualquier interceptor o transporte. Provoca más batallas en determinados asentamientos humanos grandes y campos de batalla abiertos."
+
+      STR_BATTLESHIP: "Clase Batallón"
+      STR_BATTLESHIP_UFOPEDIA: "Un peligroso y poderoso acorazado capaz de aniquilar cualquier ejército. Sus torretas están equipadas con múltiples armas o con una única torreta gigante con armas poderosas. Puede destruir cualquier cosa mientras realiza sus misiones. Se recomienda precaución al enfrentarse a esta nave."
+
+      STR_SUPPLY_SHIP: "Clase Logística"
+      STR_SUPPLY_SHIP_UFOPEDIA: "Una nave de suministro que se utiliza para transportar suministros, materias primas y piezas de repuesto. Realizan entregas para reabastecer bases y obras de construcción."
+
+      STR_SUPPORT_CLASS: "Clase Artillera"
+      STR_SUPPORT_CLASS_WIKI: "Nave espacial de largo alcance capaz de aniquilar a cualquier enemigo desde la distancia. Son muy peligrosas y pueden verse en patrullas aéreas espaciales."
+
+      STR_TROOP_LANDER: "Clase de transporte"
+      STR_TROOP_LANDER_UFOPEDIA: "Esta enorme nave parece ser el principal método de transporte de tropas de los alienígenas. Aunque es una nave de transporte, está equipada con un amplio sistema de defensa puntual, lo que la convierte en una grave amenaza para cualquier agresor."
+
+      STR_CARRIERFILIP: "Clase Portaaviones"
+      STR_CARRIERFILIPWIKI: "El peligroso portaaviones OVNI se ha encontrado durante la fase de contraofensiva de la ONU de la Tierra. Transportan varios cazas y bombarderos para iniciar el asedio planetario en cualquier lugar. También transportan hasta 100 tropas para llevar a cabo asaltos a gran escala."
+
+      STR_CARRIERKIRO: "Clase Dreadnought"
+      STR_CARRIERKIROWIKI: "Este poderoso acorazado es uno de los ovnis más temibles con los que nos hemos encontrado. Esta nave cuenta con más escudos gracias a sus avanzados componentes."
+
+      STR_EXCAVATOR: "Clase Técnica"
+      STR_EXCAVATOR_UFOPEDIA: "Naves espaciales técnicas que se dedican a la recolección de recursos, el rescate de componentes y la construcción. Tienen defensas mínimas y no llevan un arsenal pesado a su disposición."
+
+      STR_FIGHTER_SHIP: "Clase Warfighter"
+      STR_FIGHTER_SHIP_UFOPEDIA: "Caza de apoyo pesado que puede maniobrar mejor que cualquier otra nave durante las batallas. Están equipados con escudos avanzados y armas de largo alcance de múltiples tipos. Una tripulación máxima de 3 personas puede operar 1 caza de combate a la vez."
+
+      STR_SENTRY_SHIP: "Clase Centinela"
+      STR_SENTRY_SHIP_UFOPEDIA: "Nave espacial automatizada con componentes digitales de inteligencia artificial, vehículo no tripulado o dispositivo controlado psiónicamente. Se utilizan para fines generales, desde reconocimientos hasta batallas automatizadas. Sus defensas armamentísticas pueden equiparse con variantes ligeras o pesadas."
+
+      STR_LAB_SHIP: "Clase Investigación"
+      STR_LAB_SHIP_UFOPEDIA: "Las naves de expedición son poco comunes y se pueden ver para observaciones. Algunas de ellas se pueden utilizar como lujosos centros de ocio para alienígenas. En su interior hay abundantes formas de vida y defensas con armas pesadas."
+      ############# Infopedia de naves alienígenas
+      STR_ALIENUFOTARGETCROSSCHAIR1: "Punto de objetivo alienígena" #Imposible de evadir
+      STR_ALIENUFOTARGETCROSSCHAIR2: "Base objetivo alienígena" #Imposible de evadir
+
       ALIEN_FORT_ENTRY: "Entrada al fuerte alienígena"
       ALIEN_BASE_ENTRY: "Entrada a base alienígena"
       STR_BASE_DEFENSE_BRIEFING: "Una nave alienígena ha aterrizado cerca. Nuestra base está en grave peligro. Según el procedimiento estándar, el personal no combatiente y las naves de UNEXCOM han intentado evacuar, pero algunos no combatientes aún permanecen dentro de la base. Las unidades alienígenas ingresarán a la base a través de las puertas del hangar o el ascensor de acceso. Defiende la base y sus instalaciones vitales a toda costa: esta es una lucha a muerte. Si haces clic en el ícono de 'abortar misión', admitirás la derrota y perderás la base."
@@ -510,7 +554,7 @@ es-419:
       STR_ALIEN_BASE_UFOPEDIA: "Los alienígenas construirán estaciones subterráneas secretas en lugares remotos. Después de algunos vuelos de reconocimiento iniciales, se producirá una intensa actividad OVNI mientras se construye la base. Se sabe que estas bases contienen laboratorios experimentales para abducidos humanos y suministros para futuras actividades en la región. La presencia de bases alienígenas generará una gran cantidad de actividad alienígena reportada sin la presencia de OVNIs. El desarrollo de la base lleva tiempo, inicialmente se despliega un pequeño puesto de avanzada utilizando OVNIs como módulos. Dos meses después, se despliegan más estructuras y se convierte en una base. En el tercer mes, se termina un fuerte completamente guarnecido. Cada etapa tiene más enemigos y mejor blindados. Para localizar una base, una nave de reconocimiento o un satélite de UNEXCOM deben patrullar una zona durante unas horas para tener alguna posibilidad de ser detectados."
       STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "Las naves de reconocimiento aliadas han localizado una estructura alienígena en {0}"
       STR_TOTAL_ALIEN_BASES: "Estructuras alienígenas descubiertas"
-      MECHTOID_WEAPON: "Cañón de pulso dual Mectoide"
+      MECHTOID_WEAPON: "Cañón de pulso dual Mechtoide"
       PROBE_WEAPON: "Cortador láser de Sonda"
       STR_SECTOID_COMMANDER_CORPSE: "Cadáver de comandante Sectoide"
       STR_ARMORED_SECTOID_CORPSE: "Cadáver Sectoide blindado"
@@ -527,7 +571,7 @@ es-419:
       STR_ARMORED_MUTON_ALL_CORPSE: "Cadáver de Mutón de choque"
       STR_CYBERDISC_CORPSE: "Restos de Ciberdisco"
       STR_SECTOPOD_CORPSE: "Restos de Sectópodo"
-      STR_MECHTOID_CORPSE: "Restos de Mectoide"
+      STR_MECHTOID_CORPSE: "Restos de Mechtoide"
       STR_PROBE_CORPSE: "Restos de Sonda"
       STR_CYBERSPHERE_CORPSE: "Restos de Ciberesfera"
       STR_ARMORED_SECTOID_LEADER: "Líder Sectoide acorazado"
@@ -556,7 +600,7 @@ es-419:
       STR_ARMORED_MUTON_SOLDIER: "Soldado Mutón de choque"
       STR_ARMORED_MUTON_SOLDIER_CORPSE: "Cadáver Mutón de choque"
       STR_ARMORED_MUTON_LEADER_CORPSE: "Cadáver de guardia de élite Mutón"
-      STR_MECHTOID_TERRORIST: "Terrorista Mectoide"
+      STR_MECHTOID_TERRORIST: "Terrorista Mechtoide"
       STR_PROBE_TERRORIST: "Terrorista Sonda"
       STR_CYBERSPHERE_TERRORIST: "Terrorista Ciberesféra"
       SECTOID_ARMOR0: "Piel Sectoide"
@@ -576,7 +620,7 @@ es-419:
       MUTON_LEADER_ARMOR: "Traje de músculo sintético Mutón"
       ARMOR_MUTON_SOLDIER_ARMOR: "Armadura de guerrero Mutón"
       ARMOR_MUTON_LEADER_ARMOR: "Armadura de guardia de élite Mutón"
-      MECHTOID_ARMOR: "Placas de aleación alienígena de Mectoide"
+      MECHTOID_ARMOR: "Placas de aleación alienígena de Mechtoide"
       PROBE_ARMOR: "Chasis de Sonda"
       CYBERSPHERE_ARMOR: "Chasis de Ciberesfera"
       STR_ZOMBIE_UNDEAD: "Zombie corredor"
@@ -602,10 +646,10 @@ es-419:
       ZOMBIE_UNDEAD_ARMOR: "Cadáver podrido"
       SILACOID_ARMOR: "Materia orgánica desconocida"
       CELATID_ARMOR: "Materia orgánica desconocida"
-      MECHTOID_CORPSE_1: "Chatarra de Mectoide"
-      MECHTOID_CORPSE_2: "Chatarra de Mectoide"
-      MECHTOID_CORPSE_3: "Chatarra de Mectoide"
-      MECHTOID_CORPSE_4: "Chatarra de Mectoide"
+      MECHTOID_CORPSE_1: "Chatarra de Mechtoide"
+      MECHTOID_CORPSE_2: "Chatarra de Mechtoide"
+      MECHTOID_CORPSE_3: "Chatarra de Mechtoide"
+      MECHTOID_CORPSE_4: "Chatarra de Mechtoide"
       SNAKEMAN_ARMOR0: "Armadura de pecho de Hombre-Serpiente"
       SNAKEMAN_ARMOR1: "Armadura de pecho de Hombre-Serpiente"
       SNAKEMAN_ARMOR2: "Armadura de pecho de Hombre-Serpiente"
@@ -1140,14 +1184,6 @@ es-419:
       ##      STR_FIGHTER_SHIP_UFOPEDIA: "Fighters are built solely to destroy Earth aircraft, including our interceptors.  They are extremely well armed for their size, but their crew is very small."
       #      STR_SENTRY_SHIP_UFOPEDIA: "This small UFO is tasked with observation and patrol duties.  It is armed for war and will provide some challenge to our interceptors."
       #      STR_LAB_SHIP_UFOPEDIA: "Lab Ships are large vessels, tasked with major research and harvest operations.  Much bigger than Harvesters, they are equipped for conducting complex experiments on board.  Their crew is numerous and rather well equipped."
-      STR_SMALL_SCOUT_UFOPEDIA: "Esta pequeña nave se utiliza principalmente para reconocimiento o investigación. Normalmente precede a naves más grandes al comienzo de una misión alienígena. Utiliza algún tipo de pequeña ametralladora de plasma para autodefensa."
-      STR_MEDIUM_SCOUT_UFOPEDIA: "Una nave de exploración de tamaño mediano que representa una pequeña amenaza para las fuerzas terrestres. Normalmente aparece antes de las naves más grandes durante las misiones."
-      STR_LARGE_SCOUT_UFOPEDIA: "La nave de exploración alienígena más grande es una nave de propósito general que se utiliza en todo tipo de misiones alienígenas, incluida la Intercepción Alienígena."
-      STR_HARVESTER_UFOPEDIA: "La cosechadora tiene una trampilla en su base y está equipada con un mecanismo de elevación para transportar ganado u otras bestias. Se utilizan cortadores láser para extraer el material deseado y el cadáver se arroja al suelo. También hay contenedores de almacenamiento para partes del cuerpo."
-      STR_ABDUCTOR_UFOPEDIA: "Esta nave está equipada con una sala de examen para realizar experimentos horribles en sujetos humanos. La víctima normalmente queda paralizada por poderes telepáticos, pero permanece consciente mientras está en la mesa de operaciones."
-      STR_TERROR_SHIP_UFOPEDIA: "El transporte de tropas tiene una instalación de contención para armas o criaturas alienígenas de gran tamaño. Se utiliza para transportar a estos terroristas alienígenas a áreas pobladas. Utiliza dos cañones de corto alcance para la defensa puntual y lo que parecen ser cañones de artillería para el ataque terrestre, utilizados únicamente para objetivos estáticos."
-      STR_BATTLESHIP_UFOPEDIA: "El acorazado es la nave alienígena más grande y poderosa. Normalmente es la nave de misión alienígena principal, equipada con numerosos miembros de tripulación y sistemas de comunicación. Equipada con varias baterías de defensa puntual AA, es una presa lenta pero peligrosa."
-      STR_SUPPLY_SHIP_UFOPEDIA: "La nave de suministro se utiliza durante la construcción de bases alienígenas o para abastecer bases existentes. Lleva contenedores de comida alienígena y cámaras de reproducción."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Lanzador alienígena compacto pero potente, útil en una variedad de escenarios de combate. Arma versátil y letal."
       STR_ELERIUM_BOMB_UFOPEDIA: "La bomba de Elerio, utilizada principalmente por terroristas alienígenas, es una munición potente y letal para lanzadores pequeños."
       STR_ACID_BOMB_UFOPEDIA: "Estante para bombas ácidas, lleno de un compuesto químico altamente tóxico de origen desconocido. Se sabe que corroe el tejido orgánico en cuestión de minutos, incluso las placas de titanio ofrecen poca protección contra él."
@@ -1378,7 +1414,7 @@ es-419:
       STR_GAUSS_RIFLE: "Burya EMR"
       STR_GAUSS_RIFLE_MAG: "Cartucho ferromagnético de 8mm (x15)"
       STR_GAUSS_RIFLE_UFOPEDIA: "Sucesor del Vikhr EMR, el rifle electromagnético 'Storm' cuenta con un cañón pesado con bobinas reforzadas, fruto de la experiencia de haber fundido el cañón debido a la cantidad extrema de energía emitida al disparar el arma continuamente. Se aumentó el tamaño y el peso, pero el retroceso que se siente por la operación apenas se nota. Está equipado con cartuchos ferromagnéticos especiales de 8mm capaces de perforar el blindaje enemigo."
-      STR_GAUSS_RIFLE_MAG_UFOPEDIA: "La bala ferromagnética de carburo de tungsteno/aluminio de 8mm 2K66V es la munición experimental para las armas soviéticas 'Gauss'. La carcasa de aluminio permite que la corriente eléctrica impulse la munición a velocidades extremas. En comparación con las balas ferromagnéticas de carburo de tungsteno/cobre de 10mm 2K53C más pesadas y más caras desarrolladas en 1959 (y utilizadas con éxito contra las unidades Mectoides en la Batalla de La Habana), la densidad y la velocidad terminal de la bala se redujeron para evitar un desgaste significativo del cañón y las bobinas; varios Vikhr EMR tenían sus cañones al rojo vivo, casi derritiéndose, al final de la batalla."
+      STR_GAUSS_RIFLE_MAG_UFOPEDIA: "La bala ferromagnética de carburo de tungsteno/aluminio de 8mm 2K66V es la munición experimental para las armas soviéticas 'Gauss'. La carcasa de aluminio permite que la corriente eléctrica impulse la munición a velocidades extremas. En comparación con las balas ferromagnéticas de carburo de tungsteno/cobre de 10mm 2K53C más pesadas y más caras desarrolladas en 1959 (y utilizadas con éxito contra las unidades Mechtoides en la Batalla de La Habana), la densidad y la velocidad terminal de la bala se redujeron para evitar un desgaste significativo del cañón y las bobinas; varios Vikhr EMR tenían sus cañones al rojo vivo, casi derritiéndose, al final de la batalla."
 ###################################
 #      STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA_1: La captura y el interrogatorio El descubrimiento del ingeniero alienígena permitió a los investigadores romper por fin la tecnología de bloqueo de sus armas y explorar por completo el diseño de las armas de plasma alienígenas. Cada arma ioniza una pequeña pastilla de aleaciones alienígenas y utiliza un acelerador lineal para disparar el metal sobrecalentado a un objetivo. Las celdas vivas cultivadas del alienígena capturado tendrán que incorporarse en armas reutilizadas/capturadas para poder usarlas, mientras que las armas de plasma recién construidas no requerirán esta derivación.
       STR_ALIEN_PLASMA_WEAPONS_UFOPEDIA: "La captura y posterior interrogatorio del ingeniero alienígena finalmente reveló la extraña mecánica detrás de las armas de plasma; un poderoso generador de partículas ioniza y propulsa una bala de aleaciones alienígenas súper caliente, que se canaliza hacia el objetivo mediante inducción magnética. Básicamente, una bala de metal fundido guiada por un campo magnético. La réplica directa de la tecnología parece casi imposible y nuestra financiación limitada nos impide investigar más a fondo este tema en particular. Sin embargo, según nuestras notas de investigación, podríamos apoyar los proyectos de investigación de las Potencias Mundiales que trabajan en la ingeniería inversa de la tecnología de plasma y su aplicación en activos fabricados por el hombre. Es un secreto difícil de descifrar, pero no hay nada que nuestros esfuerzos de investigación unificados no puedan lograr."
@@ -1616,8 +1652,8 @@ es-419:
       STR_TERRORISTS_UFOPEDIA: Los terroristas son un grupo diverso de radicales políticos, religiosos e ideológicos que utilizan la violencia y el miedo para imponer sus ideales o hacer demandas a los gobiernos del mundo. Cada celda es independiente de las demás, pero utilizan equipos y armamento similares. Son extremadamente peligrosos porque no tienen miedo a morir.
       STR_TERRORISTS_OPERATIONS_UFOPEDIA: Las operaciones terroristas suelen estar financiadas por facciones políticas o religiosas extremistas en países de todo el mundo, que utilizan a los terroristas como medio para lograr sus objetivos sin ensuciarse las manos. Por lo general, exigen un rescate en forma de dinero o la liberación de prisioneros leales a su facción. Su actividad se ha incrementado enormemente por la exportación masiva de armas de las superpotencias a los países del Tercer Mundo.
       STR_TERRORIST_AUTOPSY_UFOPEDIA: Se trata de un humano común y corriente, sin nada que no hubiéramos visto en otro miembro de nuestra especie y tan fácil de matar como un soldado común. Algunos iban equipados con chalecos antibalas bajo la ropa, aunque en general su vestimenta es la de un civil, con algunos elementos tácticos de origen militar, probablemente obtenidos ilegalmente en el mercado negro.
-      STR_SMALL_FIGHTER_UFOPEDIA: "Aunque este OVNI puede no parecer gran cosa, es un temible combatiente. A pesar de su falta de diseño aerodinámico, es más rápido que cualquier aeronave encontrada en la Tierra."
-      STR_TROOP_LANDER_UFOPEDIA: "Esta enorme nave parece servir como el principal método de transporte de tropas de los extraterrestres. A pesar de ser un transporte, está equipado con un extenso sistema de defensa puntual, lo que lo convierte en una severa amenaza para cualquier asaltante."
+      #STR_SMALL_FIGHTER_UFOPEDIA: "Aunque este OVNI puede no parecer gran cosa, es un temible combatiente. A pesar de su falta de diseño aerodinámico, es más rápido que cualquier aeronave encontrada en la Tierra."
+      #STR_TROOP_LANDER_UFOPEDIA: "Esta enorme nave parece servir como el principal método de transporte de tropas de los extraterrestres. A pesar de ser un transporte, está equipado con un extenso sistema de defensa puntual, lo que lo convierte en una severa amenaza para cualquier asaltante."
       STR_SECTOID_COMMANDER: "Comandante Sectoide"
       STR_SECTOID_COMMANDER_AUTOPSY: "Autopsia del comandante Sectoide"
       STR_ARMORED_SECTOID: "Sectoide blindado"
@@ -1626,16 +1662,16 @@ es-419:
       STR_ARMORED_MUTON: "Mutón de choque"
       STR_ALIEN_TANK_BATTALION: "Batallón de tanques alienígenas"
 #      STR_ARMORED_MUTON_LEADER: "Guardia Mutón de élite"
-      STR_MECHTOID: "Mectoide"
+      STR_MECHTOID: "Mechtoide"
       STR_CYBERSPHERE: "Ciberesfera"
       STR_PROBE: "Sonda"
       STR_SECTOID_PSION_AUTOPSY_UFOPEDIA: "Este Sectoide tiene un 'arnés' especialmente construido en su cuerpo. Conectado directamente al cerebro, proporciona al usuario energía extra para enfocar y expandir la intensidad de la energía psiónica. Básicamente es una antena y una batería para el cerebro del usuario. Su uso parece enfocado en controlar las mentes de seres inferiores."
       STR_SECTOID_PSION_UFOPEDIA: "Los 'Psions' son Sectoides especialmente entrenados para controlar bestias alienígenas, incluso algunos alienígenas aliados con menor inteligencia. El 'Arnés Psiónico' transmite las órdenes directamente a la mente subconsciente y permite al Psion controlar cada aspecto de la bestia, desde el movimiento hasta la actividad neuronal... Más o menos como un titiritero."
       STR_SECTOID_COMMANDER_AUTOPSY_UFOPEDIA: "Este Sectoide tiene una cabeza más grande que sus hermanos. Parece que ha crecido naturalmente, ya que no hay signos de procedimientos quirúrgicos. El cuerpo parece luchar para resistir el peso del cráneo más grande y la materia cerebral en su interior. Obviamente, un objetivo perfecto para nuestros francotiradores."
       STR_SECTOID_COMMANDER_UFOPEDIA: "Un Sectoide altamente evolucionado, su cavidad craneal fue expandida genéticamente para albergar un cerebro más grande. El comandante tiene una amplia gama de conocimientos tácticos y culturales, lo que lo convierte en un genio literal en el campo de batalla. La inteligencia aumentada le permite tomar el control de escuadrones de alienígenas más grandes y complejos que un Sectoide normal."
-      STR_MECHTOID_AUTOPSY: "Autopsia de mectoide"
+      STR_MECHTOID_AUTOPSY: "Autopsia de Mechtoide"
       STR_MECHTOID_AUTOPSY_UFOPEDIA: "El chasis roto de esta unidad mecanizada revela un complejo conjunto de tubos y placas blindadas, junto con dos poderosas piernas. La unidad de propulsión parece un reactor de Elerio en miniatura, pero protegido para evitar matar al usuario. En lo profundo del interior, yace el cadáver podrido de un Sectoide. Probablemente el piloto de la unidad blindada. Los cañones de plasma pesados montados en el brazo son muy peligrosos, pero relativamente lentos de usar."
-      STR_MECHTOID_UFOPEDIA: "Para reforzar la fuerza de los escuadrones Sectoide, un Navegante se sube a bordo de una armadura bípeda mecanizada alta. Solo la cabeza permanece desprotegida. Los poderosos servomotores permiten al 'Mectoide' correr a través de grandes distancias con facilidad. Comparado con otras unidades, presenta una armadura relativamente más ligera (aunque aún más fuerte que un vehículo blindado humano normal). Su tripulante aún es capaz de usar psiónica sin obstáculos."
+      STR_MECHTOID_UFOPEDIA: "Para reforzar la fuerza de los escuadrones Sectoide, un Navegante se sube a bordo de una armadura bípeda mecanizada alta. Solo la cabeza permanece desprotegida. Los poderosos servomotores permiten al 'Mechtoide' correr a través de grandes distancias con facilidad. Comparado con otras unidades, presenta una armadura relativamente más ligera (aunque aún más fuerte que un vehículo blindado humano normal). Su tripulante aún es capaz de usar psiónica sin obstáculos."
       STR_ARMORED_SECTOID_UFOPEDIA: "Para aumentar la durabilidad de los Sectoides en el combate de primera línea contra nosotros, han desarrollado una armadura motorizada bastante efectiva. Completamente cerrada y con un sistema de respiración, el usuario puede soportar entornos NBC y desviar el armamento balístico y de plasma humano estándar. Sin embargo, son susceptibles a las explosiones y los láseres."
       STR_SECTOPOD_UFOPEDIA: "Una temible unidad robótica alienígena, a menudo es la vanguardia de los asaltos enemigos. Con armadura pesada y altamente resistente a la mayoría de los tipos de daño (los láseres y los explosivos parecen ser efectivos). Su mayor debilidad es también su arma principal: cañones láser dobles tipo Gatling que pueden despachar fácilmente a la mayoría de la infantería con una granizada de rayos de energía."
       STR_ARMORED_MUTON_UFOPEDIA: "Los Shock Mutóns están especialmente entrenados para enfrentarse a fuerzas enemigas altamente organizadas. Su armadura los protege de todo tipo de daño y su casco cerrado les permite operar en entornos tóxicos. Los pies están desprotegidos, siendo un lado vulnerable."
@@ -2655,7 +2691,7 @@ es-419:
       STR_SMALL_PLASMA_TURRET_UC: "Montaje de torreta de plasma pequeña flotante"
       STR_ARTILLERY_TURRET_UC: "Estructura de artillería de plasma"
       STR_PLASMA_TURRET_UC: "Estructura de torreta de plasma pesada"
-      STR_SMALL_FIGHTER: "Caza pequeño"
+      #STR_SMALL_FIGHTER: "Caza pequeño"
       STR_SMALL_SCOUT_ANALYSIS: "Análisis de Explorador pequeño"
       STR_MEDIUM_SCOUT_ANALYSIS: "Análisis de Explorador mediano"
       STR_LARGE_SCOUT_ANALYSIS: "Análisis de Explorador grande"
@@ -3158,3 +3194,66 @@ es-419:
 ## T64 T70 T80 BMPs
 ## On Our Own
 ## Skropion Rooikat Merkerva
+
+#### Expansión de la base alienígena
+####
+      STR_RESOURCESSCAVENGING1: "Recolección de recursos"
+      STR_CONVERTCORPSE1: "Recuperación de restos de Mechtoides"
+      STR_CONVERTCORPSE2: "Recuperación de restos de Sondas alienígenas"
+      STR_CONVERTCORPSE3: "Recuperación de Ciberdiscos alienígenas"
+      STR_CONVERTCORPSE4: "Recuperar Sectoides blindados"
+      STR_CONVERTCORPSE5: "Recuperar Mutones blindados"
+      STR_CONVERTCORPSE6: "Extraer Flotadores blindados"
+      STR_CONVERTCORPSE7: "Extraer Flotadores"
+      STR_CONVERTCORPSE8: "Recuperar Sectópodo mecánico"
+      STR_CONVERTCORPSE9: "Recuperar Ciberesfera"
+      STR_CONVERTCORPSE10: "Recuperar Sectópodo alienígena"
+      STR_SALVAGEALIENPARTS1: "Recuperar fuente de energía"
+      STR_SALVAGEALIENPARTS2: "Recuperar sistema de navegación"
+      STR_SALVAGEALIENPARTS3: "Recuperar examinación alienígena"
+      STR_SALVAGEALIENPARTS4: "Recuperar cirugía alienígena"
+      STR_SALVAGEALIENPARTS5: "Recuperar entretenimiento alienígena"
+      STR_SALVAGEALIENPARTS6: "Manipulador de rescate"
+#### Material del tutorial
+      STR_TUTORIAL_HWP: "Tutorial: Cómo jugar"
+      STR_TUTORIAL_BASICS: "Tutorial: Información"
+      STR_TUTORIAL_GEOSCAPE: "Tutorial: Geoscape"
+      STR_TUTORIAL_BATTLESCAPE: "Tutorial: Battlescape"
+      STR_TUTORIAL_RESOURCES: "Tutorial: Recursos"
+      STR_TUTORIAL_RESOURCESM: "Gestión de recursos"
+      STR_TUTORIAL_MANUFACTURE0: "Tutorial: Fabricación"
+      STR_TUTORIAL_MANUFACTURE1: "Contratos monetarios"
+      STR_TUTORIAL_MANUFACTURE2: "Forja y recuperación"
+      STR_TUTORIAL_SOLDIERS: "Tutorial: Soldados"
+      STR_TUTORIAL_TRANSFORM: "Entrenamiento y transformación" #Desbloqueado tras el entrenamiento de soldados
+      STR_TUTORIAL_TBASICS1: "Entrenamiento básico"
+      STR_TUTORIAL_TBASICS2: "Entrenamiento avanzado"
+      STR_TUTORIAL_TBASICS3: "Campo de combate"
+      STR_TUTORIAL_TBASICS4: "Detección de combate"
+      STR_TUTORIAL_TBASICS5: "Camuflaje de combate"
+      STR_TUTORIAL_WEAPONS0: "Armas de soldado"
+      STR_TUTORIAL_NEURAL0: "Neuronas y psiónica de formas de vida" #Desbloqueado tras el laboratorio psiónico
+      STR_TUTORIAL_NEURAL1: "Manipulador neuronal"
+      STR_TUTORIAL_NEURAL2: "Resistencia neuronal"
+      STR_TUTORIAL_NEURAL3: "Detección neural"
+      STR_TUTORIAL_NEURAL4: "Camuflaje neural"
+      STR_TUTORIAL_SOLDIERINFO1: "Infantería humana"
+      STR_TUTORIAL_SOLDIERINFO2: "Operador humano"
+      STR_TUTORIAL_SOLDIERINFO3: "Operador remoto"
+      STR_TUTORIAL_SOLDIERINFO4: "Compañero canino"
+      STR_TUTORIAL_SOLDIERINFO5: "Máquinas con IA"
+      STR_TUTORIAL_SOLDIERINFO6: "Auxiliar alienígena"
+      STR_TUTORIAL_FACILITY0: "Tutorial: Instalaciones"
+      STR_TURORIAL_FACILITY1: "Capacidad de vida de la base"
+      STR_TURORIAL_FACILITY2: "Instalaciones de mejora"
+      STR_TURORIAL_FACILITY3: "Instalaciones de rescate"
+      STR_TURORIAL_FACILITY4: "Tipos de bases iniciales"
+      STR_TURORIAL_FACILITY5: "Sistema de radar de la base"
+      STR_TURORIAL_FACILITY6: "Sistema de defensa de la base"
+      STR_TURORIAL_FACILITY7: "Hangar para vehículos/aeronaves"
+      STR_TURORIAL_FACILITY8: "Contención de sujetos"
+      STR_TURORIAL_FACILITY9: "Investigación de laboratorio"
+####### Categoría Hechizo ########
+      STR_LASER_WEAPON1: "Armas láser"
+      STR_VEHICLE_WEAPON: "Arsenal de vehículos"
+      STR_SPECIAL_WEAPON1: "Armas experimentales"
