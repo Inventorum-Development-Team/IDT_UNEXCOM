@@ -89,7 +89,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 12, 9, 0]
+              - [ 3, 6, 1]
+              - [ 16, 6, 1]
+              - [ 3, 9, 1]
+              - [ 16, 9, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEA2
@@ -97,7 +100,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 9, 12, 0]
+              - [ 3, 10, 1]
+              - [ 16, 10, 1]
+              - [ 3, 13, 1]
+              - [ 16, 13, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEA3
@@ -105,7 +111,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 12, 9, 0]
+              - [ 6, 3, 1]
+              - [ 9, 3, 1]
+              - [ 6, 16, 1]
+              - [ 9, 16, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEA4
@@ -113,7 +122,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 9, 12, 0]
+              - [ 10, 3, 1]
+              - [ 13, 3, 1]
+              - [ 10, 16, 1]
+              - [ 13, 16, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEB1
@@ -121,7 +133,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 13, 9, 0]
+              - [ 5, 11, 1]
+              - [ 14, 11, 1]
+              - [ 5, 11, 2]
+              - [ 14, 11, 2]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEB2
@@ -129,7 +144,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 9, 13, 0]
+              - [ 5, 8, 1]
+              - [ 14, 8, 1]
+              - [ 5, 8, 2]
+              - [ 14, 8, 2]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEB3
@@ -137,7 +155,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 13, 9, 0]
+              - [ 11, 5, 1]
+              - [ 11, 14, 1]
+              - [ 11, 5, 2]
+              - [ 11, 14, 2]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEB4
@@ -145,7 +166,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 9, 13, 0]
+              - [ 8, 5, 1]
+              - [ 8, 14, 1]
+              - [ 8, 5, 2]
+              - [ 8, 14, 2]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEC1
@@ -153,7 +177,10 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 12, 9, 0]
+              - [ 4, 10, 1]
+              - [ 8, 10, 1]
+              - [ 11, 10, 1]
+              - [ 15, 10, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEC2
@@ -161,34 +188,77 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 9, 12, 0]
+              - [ 4, 9, 1]
+              - [ 8, 9, 1]
+              - [ 11, 9, 1]
+              - [ 15, 9, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEC3
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 10, 4, 1]
+              - [ 10, 8, 1]
+              - [ 10, 11, 1]
+              - [ 10, 15, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEC4
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 4, 1]
+              - [ 9, 8, 1]
+              - [ 9, 11, 1]
+              - [ 9, 15, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLED1
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 5, 1]
+              - [ 14, 5, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLED2
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 14, 1]
+              - [ 14, 14, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLED3
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 14, 5, 1]
+              - [ 14, 14, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLED4
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 5, 1]
+              - [ 5, 14, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEE1
           width: 20
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 7, 15, 0]
-              - [ 7, 3, 0]
+              - [ 7, 15, 1]
+              - [ 7, 3, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEE2
@@ -196,23 +266,35 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 15, 7, 0]
-              - [ 3, 7, 0]
+              - [ 15, 7, 1]
+              - [ 3, 7, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEE3
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 11, 1]
+              - [ 11, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEE4
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 11, 8, 1]
+              - [ 11, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEF1
           width: 20
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 7, 15, 0]
-              - [ 7, 3, 0]
+              - [ 9, 9, 1]
+              - [ 10, 9, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEF2
@@ -220,8 +302,8 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 15, 7, 0]
-              - [ 3, 7, 0]
+              - [ 9, 10, 1]
+              - [ 10, 10, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEF3
@@ -229,7 +311,8 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 7, 15, 0]
+              - [ 9, 9, 1]
+              - [ 9, 10, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEF4
@@ -237,21 +320,46 @@ ufos:
           length: 20
           items:
             SPTURRET_SPAWNER:
-              - [ 14, 7, 0]
+              - [ 10, 9, 1]
+              - [ 10, 10, 1]
           fuseTimers:
             SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEG1
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 9, 1]
+              - [ 11, 9, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEG2
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 10, 1]
+              - [ 11, 10, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEG3
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 8, 1]
+              - [ 9, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
         - name: IDT_UFOCBATTLEG4
           width: 20
           length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 10, 8, 1]
+              - [ 10, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
 #END LARGE SCOUT
 #BEGIN HARVESTER
   - type: STR_HARVESTER #ignoreDuplicate
