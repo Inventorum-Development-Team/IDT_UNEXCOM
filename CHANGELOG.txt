@@ -1,3 +1,107 @@
+v1.5.0 The Great Armada
+31-May-2025:
+* Updated to OXCE 8.3
+* Changes by Kiro:
+* Finally, I finished my first ufo map tiles prototypes. Now anyone can test my design and build it as they like. This will replace the generic xcom version.
+* First Custom UFO map tiles released.
+* More expanding lore and 3 variations of containment types.
+* Fixed the map: MI8_FAST_ROPE, MI8_UFO.
+* Adding a new map for UFOs CARRIER.MAP, RMP,
+* Fixed the Terrains: MAP, RMP for the following: IDT_SNOWVILLAGE00, IDT_VILLAGE00, DIT_VILLAGE01.
+* Added STR_LIVING_QUARTERS with rightclick type: 4
+* Fixed the BMP tank weapons code.
+* Setting up the DIEHARD_T with comments to avoid confusion.
+* Fixed the MCD for the following: Comdecor, greenhouse, idt_farm, idt_moon_mount, idt_plane, little_bird, mi8, milbarr, moonmount, polar_doors, pufol83, rope, u_base2, and uh_1b_huey.
+* Added 2 Carriers with the following:
+* Alien Deployment, UFO coding. Moved 2 of them from UFOstats to Troop Lander.rul
+* Now 2 ufo maps are now playable with the mission generator.
+* Introduction to Alien retaliations with projectile attacks on players base.
+* Alien carriers and dreadnoughts gets missile power to damage players base.
+* Introduction of Monthly Buy Limit, this will prevent players from abusing excessive purchase. All of the items that are purchasable are set to limit. Monthly Buy Limit insert to ruleset files: AircraftsWeapons_UNEXCOM; Airstrikes; BallisticWeapons; LaserWEapons_UNEXCOM; PlasmaWeapons; Space Weapons; Tanks; and other items.
+* Double the Armor on Tank stats including NPC, Enemies (Mechtoid) and UN Player Units. This will give the tank much stronger to fight.
+* Fixed starting conditions.
+* Added removal Time; which will take more longer to disassemble.
+* Plan to extend more alien weapons for each UFO's.
+* Adding Tutorial Section for the UFOPEDIA.
+* Added 4 Alien Variants for the orbital base type
+* Modified Tank Ammo and Weapons and added new sprites for tank weapons
+* Removed Unusable content
+* New variants for the Tank weapon ammo type
+* Pilots can now operate vehicles, combined with more stats.
+* Buffed more armor to Tank stats. Now they are more durable to stand against alien attacks.
+* Still needs to fix Tank lore for UFOpedia
+* Adding many vehicle weapon ammo sprites.
+* Changing vehicle items stats to fit realism.
+* Fixed Mechtoid corpse sprites.
+* Added 4 Laser Weapon Ammo including sprites
+* Updating all items by adding montlybuylimit
+* Adding energy script to Maruader and Pathfinder
+* Geoscope Events reference
+* Modifiying first month up to 7 to delay alien invasion.
+* Changed Allied NPC vehicles to squish, but disabled allowing them to shoot.
+* Updating text strings.
+* Created notes that each tank is equipped weapons in comments.
+* Added 4 tank weapon shells each for manufacturing.
+* increased montlybuylimit for heavy battles.
+* Borrowing contents images from Xeno Legacy as placeholders test to insert new tanks.
+* Upgrading Filips UFO maptiles to recent version. (WIP)
+* Upgrading Kiros UFO maptiles to recent version. (WIP)
+* Adding alien components with MCD special type to prevent adding items.
+* Updating ufo maps in progress
+* Updating MCD with additional contents.
+* Updating Turbo Laser and mini battery module sprite.
+* Adding category to prevent confusion.
+* Additional introduction to new tank ammunition.
+* Adding monthly buy limit to soldiers and pilots.
+* Updating Cargo truck MCD and maps.
+* Fixing tanks UFOpedia codes as armor.
+* Fixing Tank strings.
+* All of the cargo truck map tiles parts are changed to vulnerable to 100 each.
+* Cargo truck front will have a hit into explosion. Which will render into difficult to escape. Be responsible for your vehicles.
+* Huey and Hind gets a big change
+* UFO maps is updated.
+* Ontos and M113 APC is now need to be tested after added.
+* Updating Alien UFO maps.
+* Updating ruleset for new vehicles. Needs balancing.
+* Added new hwp spritesheets and inventory for M113 APC and Ontos
+* Finished revising Alien UFO ramps including gravity engines and landing gear for new items.
+* 2 new transports for all factions. The sprite map tile design will be a placeholder until a new spirt will replace.
+* UFOPEDIA, base, dogfight, mini, and sprite is added.
+* Borrowed mod map tile elements as place holder.
+* Increased UFO stats to a dangerous potential foe to smack your aircraft into pieces.
+* Lots of map size to change.
+* By Fegelein:
+* Merged "Headshot" attack of a T1 sniper rifles with an aimed attack. Little tweaks to snap attacks
+* Merged "Headshot" option for NATO and USA SRs with aimed shot, tweaked USSR SR in similar fashion. Tweaks to snap shot options for all three rifles
+* Buffed ALK-72 (significant - range, moderate - damage)
+* PKT Ammo and 50 Cal gets a new type of ammunition: Alien Alloy Ballistics, DU and E115 Tipped.
+* 105mm is now added with 7 types of ammo.
+* Restoringeenemy UFO: MIG17, 21, 23, MIRAGE.
+* Added image for Medkit heal.
+* Buffed AN (significant - range)
+* Buffed KhLBR (moderate - range), added minRange
+* Buffed ALP (minor - range)
+* Minor buff to armor piercing of Flechette rounds
+* Tweaked Alloy Sniper Rifle in a fashion similar to other SRs
+* Buff to armor piercing of FL Grenade and FL Grenade Launcher
+* Decrease of the weight (up to 30%)
+* Plasma carbine range buff
+* Tweaks to Plasma SR in a fashion, similar to ther SRs
+* Fixed outsource tech not unlocking buying of T2 & T3 craft weapons (hopefully)
+* Moved unlocking soviet 7,62 ammo to USSR Initial Approach research to prevent situations, where you couldn't use AKMSU it gives you
+* Terrorist corpses can no longer be recovered
+* "Missing main node" crash fix
+* Decreased TU cost for Burst and Double Tap
+* Increased TU cost for auto shots
+* Added recoverCorpse flag
+* Changes by efrenespartano
+* Minor bufixing
+* Changed weight of M16A1 and XM117
+* Shotgun variants of M16A1 and XM117 accept more shell types
+* Added new strings in Spanish LATAM
+* Added missing Smuggler Weapons UFOpedia
+
+
 v1.5.0 updates:
 1-January-2025:
 * Updated the mod for OXCE 8.0v
