@@ -1,296 +1,4 @@
 # spellchecker:words LIGHTNIN UFOL
-ufos:
-#scouts
-  - type: STR_SMALL_SCOUT
-    size: STR_VERY_SMALL
-    sprite: 0
-    damageMax: 100
-    speedMax: 1800
-    accel: 12
-    avoidBonus: 10
-    power: 30
-    range: 40
-    score: 50
-    reload: 10
-    breakOffTime: 200
-    battlescapeTerrainData:
-      name: A_A1UFO1SCOUT1
-      mapDataSets:
-        - BLANKS
-        - IDT_A1UFO_FLOOR
-        - IDT_A1UFO_WALLS1
-        - IDT_A1UFO_CLIMB1
-        - IDT_A1UFO_RAMPS1
-        - IDT_A1UFO_EXTWEAPONS1
-        - IDT_A1UFO_DOORS1
-        - IDT_A1UFO_TECHTIER1
-        - IDT_A1UFO_TECHTIER2
-        - IDT_A1UFO_TECHTIER3
-        - IDT_A1UFO_TECHTIER4
-        - IDT_A1UFO_TECHTIER5
-      mapBlocks:
-        - name: A_A1UFO1SCOUT2
-          width: 10
-          length: 10
-        - name: A_A1UFO1SCOUT3
-          width: 10
-          length: 10
-        - name: A_A1UFO1SCOUT4
-          width: 10
-          length: 10
-  - type: STR_LARGE_SCOUT
-    size: STR_SMALL
-    sprite: 2
-    damageMax: 500
-    speedMax: 1000
-    accel: 9
-    power: 100
-    hitBonus: 20
-    range: 30
-    score: 125
-    reload: 10
-    shieldCapacity: 100
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 300
-    radarRange: 300
-    radarChance: 45
-#Fighters
-  - type: STR_SMALL_FIGHTER
-    size: STR_VERY_SMALL
-    modSprite: InterceptionNoFeed
-    damageMax: 350
-    speedMax: 2000
-    accel: 6
-    power: 50
-    range: 30
-    score: 100
-    reload: 5
-    avoidBonus: 20
-    hunterKillerPercentage: 100
-    breakOffTime: 220
-    radarRange: 600
-    radarChance: 100
-    sightRange: 0
-    huntMode: 0
-    battlescapeTerrainData:
-      name: A1IDTSPCCRFTA1
-      mapDataSets:
-        - BLANKS
-        - IDT_A1UFO_FLOOR
-        - IDT_A1UFO_WALLS1
-        - IDT_A1UFO_CLIMB1
-        - IDT_A1UFO_RAMPS1
-        - IDT_A1UFO_EXTWEAPONS1
-        - IDT_A1UFO_DOORS1
-        - IDT_A1UFO_TECHTIER1
-        - IDT_A1UFO_TECHTIER2
-        - IDT_A1UFO_TECHTIER3
-        - IDT_A1UFO_TECHTIER4
-        - IDT_A1UFO_TECHTIER5
-      mapBlocks:
-        - name: A1IDTSPCCRFTA2
-          width: 10
-          length: 10
-        - name: A1IDTSPCCRFTA3
-          width: 10
-          length: 10
-        - name: A1IDTSPCCRFTA4
-          width: 10
-          length: 10
-        - name: A1IDTSPCCRFTB1
-          width: 10
-          length: 10
-        - name: A1IDTSPCCRFTB2
-          width: 10
-          length: 10
-        - name: A1IDTSPCCRFTB3
-          width: 10
-          length: 10
-        - name: A1IDTSPCCRFTB4
-          width: 10
-          length: 10
-  - type: STR_FIGHTER_SHIP
-    size: STR_SMALL
-    damageMax: 550
-    speedMax: 3000
-    accel: 9
-    power: 110
-    hitBonus: 40
-    range: 80
-    score: 175
-    reload: 5
-    avoidBonus: 15
-    shieldCapacity: 250
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 5000
-    hunterKillerPercentage: 100
-    radarRange: 600
-    radarChance: 100
-    sightRange: 0
-    huntMode: 0
-  - type: STR_SENTRY_SHIP
-    modSprite: InterceptionSentry
-    size: STR_SMALL
-    damageMax: 400
-    speedMax: 1400
-    accel: 8
-    power: 70
-    hitBonus: 20
-    range: 70
-    score: 125
-    reload: 10
-    breakOffTime: 350
-    avoidBonus: 20
-    shieldCapacity: 100
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    radarRange: 30
-    sightRange: 30
-#Research ships
-  - type: STR_EXCAVATOR
-    modSprite: InterceptionExcavator
-    size: STR_SMALL
-    damageMax: 600
-    speedMax: 600
-    accel: 6
-    power: 50
-    range: 60
-    score: 100
-    reload: 30
-    breakOffTime: 220
-  - type: STR_ABDUCTOR
-    size: STR_MEDIUM_UC
-    sprite: 4
-    damageMax: 800
-    speedMax: 800
-    power: 250
-    hitBonus: 20
-    range: 100
-    score: 250
-    reload: 10
-    shieldCapacity: 200
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 500
-  - type: STR_HARVESTER
-    size: STR_MEDIUM_UC
-    sprite: 3
-    damageMax: 1000
-    speedMax: 600
-    power: 100
-    range: 90
-    score: 250
-    reload: 25
-    shieldCapacity: 150
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 500
-  - type: STR_LAB_SHIP
-    modSprite: InterceptionLabShip
-    size: STR_LARGE
-    damageMax: 3000
-    speedMax: 800
-    accel: 5
-    power: 140
-    range: 10
-    score: 500
-    reload: 20
-    shieldCapacity: 150
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 500
-#Warships
-  - type: STR_TERROR_SHIP
-    size: STR_LARGE
-    sprite: 5
-    damageMax: 3000
-    speedMax: 500
-    shieldCapacity: 300
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    accel: 3
-    power: 240
-    range: 90
-    score: 500
-    reload: 20
-    breakOffTime: 2000
-  - type: STR_TROOP_LANDER
-    size: STR_VERY_LARGE
-    damageMax: 3500
-    modSprite: InterceptionTroopLander
-    speedMax: 400
-    accel: 3
-    power: 300
-    range: 110
-    shieldBleedThrough: 100
-    shieldCapacity: 400
-    shieldRechargeInGeoscape: 5
-    score: 600
-    reload: 20
-    breakOffTime: 3000
-  - type: STR_BATTLESHIP
-    size: STR_VERY_LARGE
-    sprite: 6
-    damageMax: 7500
-    speedMax: 400
-    shieldCapacity: 500
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    accel: 2
-    power: 400
-    hitBonus: 40
-    range: 120
-    score: 700
-    reload: 20
-    breakOffTime: 6000
-
-
-#Logistical
-  - type: STR_SUPPLY_SHIP
-    size: STR_LARGE
-    sprite: 7
-    damageMax: 3200
-    speedMax: 600
-    power: 120
-    range: 80
-    score: 400
-    reload: 24
-    breakOffTime: 3000
-alienDeployments:
-  - type: STR_SMALL_FIGHTER
-    data:
-      - alienRank: 5
-        lowQty: 1
-        highQty: 1
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_SNIPER_RIFLE
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_PLASMA_SNIPER_RIFLE_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_FUSION_RIFLE
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-            - STR_FUSION_POWER_CELL_HEAVY
-    width: 40
-    length: 40
-    height: 10
-    missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS
 items:
   - type: STR_SMALL_FIGHTER_ANALYSIS
     size: 0.1
@@ -353,28 +61,33 @@ research:
     cost: 0
     points: 50
     needItem: true
+    destroyItem: true
   - name: STR_TROOP_LANDER
     cost: 0
     points: 50
     needItem: true
+    destroyItem: true
   - name: STR_SMALL_SCOUT_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_SMALL_SCOUT
     needItem: true
+    destroyItem: true
   - name: STR_MEDIUM_SCOUT_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_MEDIUM_SCOUT
     needItem: true
+    destroyItem: true
   - name: STR_LARGE_SCOUT_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_LARGE_SCOUT
     needItem: true
+    destroyItem: true
   - name: STR_FIGHTER_SHIP_ANALYSIS
     cost: 50
     points: 0
@@ -387,57 +100,67 @@ research:
     getOneFree:
       - STR_SMALL_FIGHTER
     needItem: true
+    destroyItem: true
   - name: STR_SENTRY_SHIP_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_SENTRY_SHIP
     needItem: true
+    destroyItem: true
   - name: STR_EXCAVATOR_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_EXCAVATOR
     needItem: true
+    destroyItem: true
   - name: STR_ABDUCTOR_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_ABDUCTOR
     needItem: true
+    destroyItem: true
   - name: STR_HARVESTER_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_HARVESTER
     needItem: true
+    destroyItem: true
   - name: STR_LAB_SHIP_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_LAB_SHIP
     needItem: true
+    destroyItem: true
   - name: STR_BATTLESHIP_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_BATTLESHIP
     needItem: true
+    destroyItem: true
   - name: STR_TERROR_SHIP_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_TERROR_SHIP
     needItem: true
+    destroyItem: true
   - name: STR_TROOP_LANDER_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_TROOP_LANDER
     needItem: true
+    destroyItem: true
   - name: STR_SUPPLY_SHIP_ANALYSIS
     cost: 50
     points: 0
     getOneFree:
       - STR_SUPPLY_SHIP
     needItem: true
+    destroyItem: true

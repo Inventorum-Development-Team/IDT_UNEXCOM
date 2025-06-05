@@ -2913,3 +2913,36 @@ alienDeployments:
     objectivePopup: STR_CONTROL_CENTER_DESTROYED
     isHidden: true
 #END ALIEN BASE
+#### Missing UFO Alien Deployments
+  - type: STR_SMALL_FIGHTER
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_FUSION_RIFLE
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+            - STR_FUSION_POWER_CELL_HEAVY
+    width: 40
+    length: 40
+    height: 10
+    missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS

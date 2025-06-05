@@ -1,6 +1,8 @@
 # spellchecker:words OPER ATURRET PTURRET SPTURRET
 ufos:
   - type: STR_TROOP_LANDER #ignoreDuplicate
+    size: STR_LARGE
+    modSprite: InterceptionTransport
     battlescapeTerrainData:
       name: A1IDTTRPLNDRA1
       mapDataSets:
@@ -48,7 +50,7 @@ ufos:
     #### Filips UFO Carrier
   - type: STR_CARRIERFILIP
     size: STR_VERY_LARGE
-    sprite: 6
+    modSprite: InterceptionCarrier
     damageMax: 5000
     speedMax: 1000
     shieldCapacity: 750
@@ -91,7 +93,7 @@ ufos:
     #### Kiros UFO Carrier
   - type: STR_CARRIERKIRO
     size: STR_VERY_LARGE
-    sprite: 6
+    modSprite: InterceptionCarrier
     damageMax: 6000
     speedMax: 400
     shieldCapacity: 2000
@@ -127,6 +129,18 @@ ufos:
           width: 50
           length: 30
           #items:
+  - type: STR_ALIENUFOTARGETCROSSCHAIRA1 ## Alien Crosschair Target
+    modSprite: InterceptionEvadeatall
+    size: STR_VERY_SMALL
+    damageMax: 2000
+    speedMax: 4000
+    accel: 20
+    avoidBonus: 100
+    power: 2000
+    range: 100
+    score: 0
+    reload: 10
+    breakOffTime: 2000
 alienDeployments:
   - type: STR_TROOP_LANDER
     data:

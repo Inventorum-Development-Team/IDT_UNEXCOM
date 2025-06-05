@@ -23,41 +23,41 @@ ufos:
         - IDT_A1UFO_TECHTIER5
       mapBlocks:
         - name: IDT_RESOURCEA1
-          width: 20
+          width: 30
           length: 20
         - name: IDT_RESOURCEA2
-          width: 20
+          width: 30
           length: 20
         - name: IDT_RESOURCEA3
           width: 20
-          length: 20
+          length: 30
         - name: IDT_RESOURCEA4
           width: 20
-          length: 20
+          length: 30
         - name: IDT_RESOURCEB1
-          width: 20
+          width: 30
           length: 20
         - name: IDT_RESOURCEB2
-          width: 20
+          width: 30
           length: 20
         - name: IDT_RESOURCEB3
           width: 20
-          length: 20
+          length: 30
         - name: IDT_RESOURCEB4
           width: 20
-          length: 20
+          length: 30
         - name: IDT_RESOURCEC1
-          width: 20
+          width: 30
           length: 20
         - name: IDT_RESOURCEC2
-          width: 20
+          width: 30
           length: 20
         - name: IDT_RESOURCEC3
           width: 20
-          length: 20
+          length: 30
         - name: IDT_RESOURCEC4
           width: 20
-          length: 20
+          length: 30
 #################################
 ###### FIGHTER CLASS ###########
 ################################
@@ -344,22 +344,96 @@ extraSprites:
     width: 160
     height: 52
     files:
-      0: Resources/AlienArmouryExpandedUFOs/UFO_Excavator.gif
+      0: Resources/Alienidtufotype/Idticonradarlogic1.png
   - type: InterceptionFighter
     singleImage: true
     width: 160
     height: 52
     files:
-      0: Resources/AlienArmouryExpandedUFOs/UFO_fighter.gif
+      0: Resources/Alienidtufotype/Idticonradarfighter1.png
   - type: InterceptionSentry
     singleImage: true
     width: 160
     height: 52
     files:
-      0: Resources/AlienArmouryExpandedUFOs/UFO_Sentry.gif
+      0: Resources/Alienidtufotype/Idticonradarsentry1.png
   - type: InterceptionLabShip
     singleImage: true
     width: 160
     height: 52
     files:
-      0: Resources/AlienArmouryExpandedUFOs/UFO_LabShip.gif
+      0: Resources/Alienidtufotype/Idticonradarresearch1.png
+  - type: InterceptionTransport
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradartransport1.png
+############### Basic Pilot React
+  - type: InterceptionBasicinfo
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradartarget1.png
+  - type: InterceptionEvadeatall
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonevade1.png
+  - type: InterceptionCorruptScan
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcorrupt1.png
+############### Basic UFO
+  - type: InterceptionScout
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarscout1.png
+  - type: InterceptionAssault
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarassault1.png
+  - type: InterceptionBattle
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarbattle1.png
+  - type: InterceptionCommando
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcommando1.png
+  - type: InterceptionTerror
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcterror1.png
+  - type: InterceptionLogic
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarlogic1.png
+  - type: InterceptionCarrier
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcarrier1.png
+  - type: InterceptionBattleship
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarbattleship1.png

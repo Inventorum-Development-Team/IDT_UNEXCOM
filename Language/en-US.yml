@@ -556,20 +556,20 @@ en-US:
       STR_ALIENUFOTARGETCROSSCHAIRB1: "Alien Target Base" #Impossible to Evade
 
       ############# Alienspacecraft Infopedia
-      STR_SMALL_SCOUT_ANALYSIS: "Small Scout Analysis"
-      STR_MEDIUM_SCOUT_ANALYSIS: "Medium Scout Analysis"
-      STR_LARGE_SCOUT_ANALYSIS: "Large Scout Analysis"
-      STR_SMALL_FIGHTER_ANALYSIS: "Small Fighter Analysis"
-      STR_FIGHTER_SHIP_ANALYSIS: "Fighter Analysis"
-      STR_SENTRY_SHIP_ANALYSIS: "Sentry Ship Analysis"
-      STR_EXCAVATOR_ANALYSIS: "Excavator Analysis"
-      STR_ABDUCTOR_ANALYSIS: "Abductor Analysis"
-      STR_HARVESTER_ANALYSIS: "Harvester Analysis"
-      STR_LAB_SHIP_ANALYSIS: "Lab Ship Analysis"
-      STR_TERROR_SHIP_ANALYSIS: "Troop Transport Analysis"
-      STR_TROOP_LANDER_ANALYSIS: "Troop Lander Analysis"
-      STR_BATTLESHIP_ANALYSIS: "Battleship Analysis"
-      STR_SUPPLY_SHIP_ANALYSIS: "Supply Ship Analysis"
+      STR_SMALL_SCOUT_ANALYSIS: "Scout Class Analysis"
+      STR_MEDIUM_SCOUT_ANALYSIS: "Assault Scout Class Analysis"
+      STR_LARGE_SCOUT_ANALYSIS: "Battle Class Analysis"
+      STR_SMALL_FIGHTER_ANALYSIS: "Combat Class Analysis"
+      STR_FIGHTER_SHIP_ANALYSIS: "War Fighter Class Analysis"
+      STR_SENTRY_SHIP_ANALYSIS: "Sentry Class Analysis"
+      STR_EXCAVATOR_ANALYSIS: "Resource Class Analysis"
+      STR_ABDUCTOR_ANALYSIS: "Commando Class Analysis"
+      STR_HARVESTER_ANALYSIS: "Support Class Analysis"
+      STR_LAB_SHIP_ANALYSIS: "Research Class Analysis"
+      STR_TERROR_SHIP_ANALYSIS: "Striker Class Analysis"
+      STR_TROOP_LANDER_ANALYSIS: "Transport Class Analysis"
+      STR_BATTLESHIP_ANALYSIS: "Battleship Class Analysis"
+      STR_SUPPLY_SHIP_ANALYSIS: "Logistic Class Analysis"
       ############# Alienspacecraft Infopedia
       ALIEN_FORT_ENTRY: "Alien Fort Entry"
       ALIEN_BASE_ENTRY: "Alien Base Entry"
@@ -3419,6 +3419,16 @@ en-US:
       STR_LASERMINIBATTERY3: "Laser E115 Scatter Battery"
       STR_LASERMINIBATTERY4: "Turbo L-Scatter Module"
       #### Energy Battery for Plasma Weapons for Tanks
+      #### USSR 125mm Tank Gun
+      STR_125MMAP_AMMO: "125mm-AP"
+      STR_125MMFRAG_AMMO: "125mm-FRAG"
+      STR_125MMHE_AMMO: "125mm-HE"
+      STR_125MMAAAP_AMMO: "125mm-Alien Alloy Tip"
+      STR_125MMAAFRAG_AMMO: "125mm-AA Shrapnel"
+      STR_125MMAAHE_AMMO: "125mm-AA Shrap Blast"
+      STR_125MME115TIP_AMMO: "125mm-E115 Tip"
+      STR_125MME115FUSION_AMMO: "125mm-Fusion Blast"
+      STR_125MMAATUNGSTEN_AMMO: "125mm-Tungsten Tip"
       ####
 # Combat Ground Vehicles in froms of 6
 ## Tank Tier 1 Alien Alloy
@@ -3442,6 +3452,8 @@ en-US:
       STR_ONTOS6XRG105MMDU: "Ontos 6x 105mm DU"
       STR_ONTOS6XRG105MMAAAP: "Ontos 6x 105mm AAAP"
       STR_ONTOS6XRG105MMFUSION: "Ontos 6x 105mm Fusion"
+      ######## USA Anti-gravity Tanks
+
 ## NATO
 ## KMW Marder IFV Leopard I Leopard 2
       STR_NATOMILITARYCONTRACT1: NATO Main Battle Tank
@@ -3464,9 +3476,9 @@ en-US:
 ## USSR
 ## T64 T70 T80 BMPs
       STR_WARSAWMILITARYCONTRACT1: Warsaw Main Battle Tank
-      STR_BMPSTANK: BMP-Tank #73mm + ATGM Rounds
-      STR_T64TANK: T-64 Tank #120mm
-      STR_T70TANK: T-72 Tank #120mm
+      STR_BMPSTANK: BMP-Tank #73mm + ATGM Rounds Default Chosen
+      STR_T64TANK: T-64 Tank #120mm Default Chosen
+      STR_T70TANK: T-72 Tank #125mm Next Phase with Altradium
       STR_T80TANK: T-80 Tank #125mm Final Upgrade with 3-shot system gun, prototype
       STR_ZSUTANK1: "ZSU234 Shilka"
       STR_2K22TANK1: "2K22 Tunguska"
@@ -3474,6 +3486,9 @@ en-US:
 #### USSR Laser Tanks
       STR_USSRLASER3TANK: "1K17 Szhatie"
       STR_USSRLASER3TANKWIKI: "ZSU variant, laser cannon tank version."
+#### USSR Anti-Gravity Vehicles
+
+
 ## On Our Own
 ## Skropion Rooikat Merkerva
       STR_CREATEPROTOTYPETANKS: Establish UN Manufacturing Contractors
@@ -3634,7 +3649,15 @@ en-US:
       STR_ALIENWEAPONSET2: "Alien Projectile Part" #44
       STR_ALIENSENSOR1: "Alien Security Sensor" #45
       STR_ALIENSENSOR2: "Alien Space Detector" #46
+      ######### Components
+      ######### Salvage Alien Weapons for components
       STR_ALIEN_ALLOYS_RESEARCH1: "Altradium Alloys"
+      STR_PLASMA_CHARGER1: "Plasma Charger"
+      STR_PLASMA_COMPONENTS1: "Plasma Component"
+      STR_FUSION_CHARGER1: "Fusion Charger"
+      STR_FUSION_COMPONENTS1: "Plasma Component"
+      STR_ALIENGAUSS_CHARGER1: "Gauss Accelerator"
+      STR_ALIENGAUSS_COMPONENTS1: "Gauss Component"
 #### Alien Prison 1
       STR_CONTAINMENT_EXCEEDED: "ALIEN CONTAINMENT LIMITS EXCEEDED!{SMALLINE}Insufficent containment space at {0}. You must remove excess aliens from containment."
       STR_CONTAINMENT_EXCEEDED_1: "NO MORE PRISON UNITS!{SMALLINE}Not enough Prison Unit {0}. You must sell prisoners to free up more Prison Unit."
@@ -3659,7 +3682,7 @@ en-US:
       STR_SALVAGEALIENPARTS5: "Salvage Alien Entertainment"
       STR_SALVAGEALIENPARTS6: "Salvage Manipulator Hand"
 #### Tutorial Stuff
-      STR_TUTORIAL_HWP: "Tutorial: How to Play."
+      STR_TUTORIAL_HTP: "Tutorial: How to Play."
       STR_TUTORIAL_BASICS: "Tutorial: Information"
       STR_TUTORIAL_GEOSCAPE: "Tutorial: Geoscape"
       STR_TUTORIAL_BATTLESCAPE: "Tutorial: Battlescape"
@@ -3701,3 +3724,16 @@ en-US:
       STR_LASER_WEAPON1: "Laser Weapons"
       STR_VEHICLE_WEAPON: "Vehicle Arsenal"
       STR_SPECIAL_WEAPON1: "Experimental Weapons"
+###############################
+      STR_FACTION_EXLUSIVE_WEAPONS: "Faction Weapons Section"
+      ################### USA ###################
+      STR_USAMK19MOD3: "MK19 Mod 3"
+      STR_USAXM174AGL: "AAM17 Mod 4"
+      STR_USA40X53AGLAMMO: "" # 48 rounds 78lb
+      STR_US40x46MMAGLAMMO: "" # 12 rounds 16lb
+      ################### NATO ###################
+      ################### USSR ###################
+      STR_USSRAGS17AGL: "AGS17 AGL"
+      STR_USSR30X29AGLAMMO: "" # 29 rounds 62lb
+      ################### UNTS ###################
+      ################### Alien ###################
