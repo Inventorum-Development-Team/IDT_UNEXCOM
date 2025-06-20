@@ -9,7 +9,7 @@ ufos:
 ####### Setting Calculator for UFO Speed
 ####### 1 Accel = 300 Speed Max
 ####### Divide it By based on Size
-####### Size: Very Small/Small: 1; Medium: 2; Large: 3; Very Large: 4;
+####### Size: Very Small/Small: 1; Medium: 2; Large: 3 ; Very Large: 4;
 ####### Very small / small: 10x10
 ####### Medium: 20x20
 ####### Large: 20x30 or 30x20 or Max up to 30x30
@@ -18,26 +18,34 @@ ufos:
 ####### Calculator for damageMax
 ####### Size either 10X10 or any number:
 ####### Sample: 10X10; 10X20; 10x30; or more
-####### Divide it By based on Size
-####### Size: Very Small: 1 for 10X10 only; Small: 2 for 10X10 only; Medium: X; Large: X; Very Large: X;
+####### Multiply it By based on Size
+####### Size: Medium: 2; Large: 50%+ Large: 3 h:8^; Very Large: 4 h:8^;
+####### Multiply it by based on Size
+####### Size: Very Small: 1 for 10X10 only; Small: 1 for 10X10 only;
 ####### Divide it by 2 for shields capacity
 
 ####### Damage Max / 5 for Power; divided by size Large: 2; Very Large: 5;
-####### Damage Max / 10 for Range; divided by size Large: 2; Very Large: 5;
+####### Damage Max / 10 for Range; divided by size:
+####### Size: Medium: 3; Large: 4 Large: 5 if h:8^; Very Large: 6 / 2 if h:8^;
+####### Reload: Damage Max / 5 / divided by size:
+####### Size: Medium: 3; Large: 4 Large: 5 if h:8^; Very Large: 6 if h:8^;
+####### Avoid Bonus: Speed Max / Accelerator / divide it by 10
+
 
 ####### Damage Max = Score
 
   - type: STR_EXCAVATOR
     modSprite: InterceptionExcavator
     size: STR_LARGE
-    damageMax: 600
+    damageMax: 900
     speedMax: 1200
-    shieldCapacity: 300
-    shieldRechargeInGeoscape: 3
-    shieldBleedThrough: 30
     accel: 12
-    power: 60
-    range: 30
+    power: 90
+    range: 23
+    reload: 45
+    shieldCapacity: 450
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 45
     battlescapeTerrainData:
       name: IDT_RESOURCEA1
       mapDataSets:
@@ -98,16 +106,17 @@ ufos:
     size: STR_SMALL
     damageMax: 400
     speedMax: 1800
-    shieldCapacity: 200
-    shieldRechargeInGeoscape: 2
-    shieldBleedThrough: 20
     accel: 6
     huntMode: 2
     huntSpeed: 900
     hunterKillerPercentage: 100
-    power: 80
-    radarRange: 200
+    power: 40
+    radarRange: 700
     range: 40
+    reload: 10
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 2
+    shieldBleedThrough: 20
     battlescapeTerrainData:
       name: IDT_UFOSENTRYA1
       mapDataSets:
@@ -177,18 +186,19 @@ ufos:
     size: STR_SMALL
     damageMax: 400
     speedMax: 3000
-    shieldCapacity: 200
-    shieldRechargeInGeoscape: 2
-    shieldBleedThrough: 20
     accel: 10
     huntMode: 2
     huntSpeed: 1500
     hunterKillerPercentage: 100
     power: 80
-    powerBonus: 10
-    hitBonus: 10
+    powerBonus: 40
+    hitBonus: 20
     radarRange: 2000
     range: 40
+    reload: 20
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 2
+    shieldBleedThrough: 20
     battlescapeTerrainData:
       name: IDT_FIGHTERA1
       mapDataSets:
@@ -307,14 +317,16 @@ ufos:
   - type: STR_LAB_SHIP
     modSprite: InterceptionLabShip
     size: STR_VERY_LARGE
-    damageMax: 900
+    damageMax: 3600
     speedMax: 1080
-    shieldCapacity: 450
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 45
     accel: 18
-    power: 36
-    range: 45
+    power: 144
+    range: 40
+    reload: 120
+    hitBonus: 20
+    shieldCapacity: 1800
+    shieldRechargeInGeoscape: 18
+    shieldBleedThrough: 180
     battlescapeTerrainData:
       name: IDT_RESEARCHA1
       mapDataSets:
