@@ -1,26 +1,47 @@
 # spellchecker:disable
 ############################
-## Kiro fixed this whol mess and revised it for final results.
+## Kiro fixed this whole mess and revised it for final results.
 ###########################
 #BEGIN MEDIUM SCOUT
 ufos:
-####### Kiro Fixed It
+####### Kiro: I'm going to set it up for calculations on how to balance UFOs
+####### Maptiles: Thrusters: 2 = 1 for Accel
+####### Setting Calculator for UFO Speed
+####### 1 Accel = 300 Speed Max
+####### Divide it By based on Size
+####### Size: Very Small/Small: 1; Medium: 2; Large: 3; Very Large: 4;
+####### Very small / small: 10x10
+####### Medium: 20x20
+####### Large: 20x30 or 30x20 or Max up to 30x30
+####### Very Large: More than either 20x30 or 30x20
+
+####### Calculator for damageMax
+####### Size either 10X10 or any number:
+####### Sample: 10X10; 10X20; 10x30; or more
+####### Divide it By based on Size
+####### Size: Very Small: 1 for 10X10 only; Small: 2 for 10X10 only; Medium: X; Large: X; Very Large: X;
+####### Divide it by 2 for shields capacity
+
+####### Damage Max / 5 for Power; divided by size Large: 2; Very Large: 5;
+####### Damage Max / 10 for Range; divided by size Large: 2; Very Large: 5;
+
+####### Damage Max = Score
+
 ####### Small Fighter
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
     modSprite: InterceptionNoFeed
-    damageMax: 350
-    speedMax: 2000
-    accel: 6
-    power: 50
-    range: 30
+    damageMax: 100
+    speedMax: 900
+    accel: 3
+    power: 20
+    range: 10
     score: 100
-    reload: 5
+    reload: 20
     avoidBonus: 20
-    hunterKillerPercentage: 100
+    hunterKillerPercentage: 5
     breakOffTime: 220
-    radarRange: 600
-    radarChance: 100
+    radarRange: 100
     sightRange: 0
     huntMode: 0
     battlescapeTerrainData:
@@ -65,14 +86,14 @@ ufos:
     modSprite: InterceptionScout
     size: STR_VERY_SMALL
     damageMax: 100
-    speedMax: 1800
-    accel: 12
+    speedMax: 600
+    accel: 2
     avoidBonus: 10
-    power: 30
-    range: 40
-    score: 50
-    reload: 10
-    breakOffTime: 200
+    power: 20
+    range: 10
+    score: 100
+    reload: 20
+    breakOffTime: 100
     battlescapeTerrainData:
       name: A_A1UFO1SCOUT1
       mapDataSets:
@@ -98,23 +119,22 @@ ufos:
         - name: A_A1UFO1SCOUT4
           width: 10
           length: 10
-  - type: STR_MEDIUM_SCOUT #ignoreDuplicate
+  - type: STR_MEDIUM_SCOUT
     size: STR_SMALL
     modSprite: InterceptionAssault
-    damageMax: 250
-    speedMax: 1200
-    accel: 9
+    damageMax: 200
+    speedMax: 600
+    accel: 2
     power: 40
-    range: 30
-    score: 75
+    range: 20
+    score: 200
     reload: 15
     avoidBonus: 10
-    shieldCapacity: 50
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 250
-    radarRange: 20
-    radarChance: 30
+    shieldCapacity: 100
+    shieldRechargeInGeoscape: 1
+    shieldBleedThrough: 10
+    breakOffTime: 200
+    radarRange: 100
     battlescapeTerrainData:
       name: IDT_UFOBASSAULTA1
       mapDataSets:
@@ -159,6 +179,20 @@ ufos:
 #BEGIN LARGE SCOUT
   - type: STR_LARGE_SCOUT #ignoreDuplicate
     modSprite: InterceptionBattle
+    size: STR_SMALL
+    damageMax: 200
+    speedMax: 1500
+    accel: 5
+    power: 40
+    range: 20
+    score: 200
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 100
+    shieldRechargeInGeoscape: 1
+    shieldBleedThrough: 10
+    breakOffTime: 200
+    radarRange: 100
     battlescapeTerrainData:
       name: IDT_UFOCBATTLEA1
       mapDataSets:
@@ -453,8 +487,22 @@ ufos:
             SPTURRET_SPAWNER: [0, 0]
 #END LARGE SCOUT
 #BEGIN HARVESTER
-  - type: STR_HARVESTER #ignoreDuplicate
+  - type: STR_HARVESTER
     modSprite: InterceptionCommando
+    size: STR_MEDIUM_UC
+    damageMax: 400
+    speedMax: 1800
+    accel: 12
+    power: 80
+    range: 40
+    score: 400
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 2
+    shieldBleedThrough: 20
+    breakOffTime: 400
+    radarRange: 200
     battlescapeTerrainData:
       name: IDT_UFODSUPPORTA1
       mapDataSets:
@@ -739,6 +787,20 @@ ufos:
 #BEGIN ABDUCTOR
   - type: STR_ABDUCTOR #ignoreDuplicate
     modSprite: InterceptionCommando
+    size: STR_MEDIUM_UC
+    damageMax: 400
+    speedMax: 1800
+    accel: 12
+    power: 80
+    range: 40
+    score: 400
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 4
+    shieldBleedThrough: 40
+    breakOffTime: 400
+    radarRange: 200
     battlescapeTerrainData:
       name: IDT_UFOECOMMANDO
       mapDataSets:
@@ -889,6 +951,20 @@ ufos:
 #BEGIN TERROR SHIP
   - type: STR_TERROR_SHIP #ignoreDuplicate
     modSprite: InterceptionTerror
+    size: STR_LARGE
+    damageMax: 600
+    speedMax: 1400
+    accel: 14
+    power: 60
+    range: 30
+    score: 600
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 300
+    shieldRechargeInGeoscape: 3
+    shieldBleedThrough: 30
+    breakOffTime: 600
+    radarRange: 300
     battlescapeTerrainData:
       name: IDT_UFOFSTRIKERA1
       mapDataSets:
@@ -1194,6 +1270,20 @@ ufos:
 #BEGIN BATTLESHIP
   - type: STR_BATTLESHIP
     modSprite: InterceptionBattleship
+    size: STR_VERY_LARGE
+    damageMax: 1500
+    speedMax: 3000
+    accel: 40
+    power: 60
+    range: 60
+    score: 1500
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 750
+    shieldRechargeInGeoscape: 10
+    shieldBleedThrough: 75
+    breakOffTime: 1500
+    radarRange: 750
     battlescapeTerrainData:
       name: IDT_UFOGBATTLESHIPA1
       mapDataSets:
@@ -1368,6 +1458,19 @@ ufos:
 #BEGIN SUPPLY SHIP
   - type: STR_SUPPLY_SHIP #ignoreDuplicate
     modSprite: InterceptionLogic
+    size: STR_LARGE
+    damageMax: 600
+    speedMax: 800
+    accel: 8
+    power: 40
+    range: 20
+    score: 600
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 300
+    shieldRechargeInGeoscape: 3
+    shieldBleedThrough: 30
+    breakOffTime: 250
     battlescapeTerrainData:
       name: IDT_UFOHLOGISTICA1
       mapDataSets:

@@ -562,7 +562,7 @@ en-US:
       STR_SMALL_FIGHTER_ANALYSIS: "Combat Class Analysis"
       STR_FIGHTER_SHIP_ANALYSIS: "War Fighter Class Analysis"
       STR_SENTRY_SHIP_ANALYSIS: "Sentry Class Analysis"
-      STR_EXCAVATOR_ANALYSIS: "Resource Class Analysis"
+      STR_EXCAVATOR_ANALYSIS: "Technician Class Analysis"
       STR_ABDUCTOR_ANALYSIS: "Commando Class Analysis"
       STR_HARVESTER_ANALYSIS: "Support Class Analysis"
       STR_LAB_SHIP_ANALYSIS: "Research Class Analysis"
@@ -612,7 +612,7 @@ en-US:
       STR_ALIEN_BASE_TYPE_SPACEORBIT4: ""
       ##### Kiro set up Alien Bases Expansion Ends
       STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "Allied recon craft have located an alien structure in {0}"
-      STR_TOTAL_ALIEN_BASES: "Alien structures discovered"
+      STR_TOTAL_ALIEN_BASES: "Alien Structure discovered"
       STR_ALIEN_MISSILES_HAVE_DAMAGED_OUR_BASE: "Alien missiles have damaged our base {0}"
       STR_ALIEN_MISSILES_HAVE_DESTROYED_OUR_BASE: "Alien missiles have destroyed our base {0}"
       MECHTOID_WEAPON: "Mechtoid Dual Pulse Cannon"
@@ -774,9 +774,9 @@ en-US:
       STR_ALIEN_HEAVY_LASER: "Alien Heavy Laser"
       STR_ALIEN_HEAVY_LASER_BATTERY: "Alien Heavy Battery"
       STR_ALIEN_CRYSTAL: "Alien Crystal"
-      STR_DISASSEMBLE_LASER_PISTOL: "Disassemble laser pistol"
-      STR_DISASSEMBLE_LASER_RIFLE: "Disassemble laser rifle"
-      STR_DISASSEMBLE_HEAVY_LASER: "Disassemble heavy laser"
+      STR_DISASSEMBLE_LASER_PISTOL: "Disassemble Laser Pistol"
+      STR_DISASSEMBLE_LASER_RIFLE: "Disassemble Laser Rifle"
+      STR_DISASSEMBLE_HEAVY_LASER: "Disassemble Heavy Laser"
       STR_INVASION_START: "Alien Reconnaissance"
       STR_HUMAN_RECON2: "Human Recon"
       STR_ALIEN_INTERCEPTION_1: "Alien Interception"
@@ -3727,10 +3727,23 @@ en-US:
 ###############################
       STR_FACTION_EXLUSIVE_WEAPONS: "Faction Weapons Section"
       ################### USA ###################
-      STR_USAMK19MOD3: "MK19 Mod 3"
-      STR_USAXM174AGL: "AAM17 Mod 4"
-      STR_USA40X53AGLAMMO: "" # 48 rounds 78lb
-      STR_US40x46MMAGLAMMO: "" # 12 rounds 16lb
+      ############ Starters Pack ##############
+      STR_USA_MK19MOD3: "MK19 Mod 3"
+      STR_USA_XM174AGL: "AAM17 Mod 4"
+      STR_USA_40X53AGLAMMO: "" # 48 rounds 78lb
+      STR_USA_40x46MMAGLAMMO: "" # 12 rounds 16lb
+      ############ Alien Alloys ##############
+      STR_USA1_MK19MOD3: "MK19 Mod 3"
+      STR_USA1_XM174AGL: "AAM17 Mod 4"
+      STR_USA1_40X53AGLAMMO: "" # 48 rounds 78lb
+      STR_US41_0x46MMAGLAMMO: "" # 12 rounds 16lb
+
+
+
+      ############ Micrograv System ##############
+
+
+
       ################### NATO ###################
       ################### USSR ###################
       STR_USSRAGS17AGL: "AGS17 AGL"
