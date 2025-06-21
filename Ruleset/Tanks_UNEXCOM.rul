@@ -10,7 +10,7 @@ items:
     requiresBuyCountry: STR_UK
     costBuy: 350000
     costSell: 240000
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 10
     transferTime: 96
     listOrder: 1407
   - type: STR_DOUBLE_50CAL
@@ -60,7 +60,7 @@ items:
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
     size: 0.1
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 20
+    monthlyBuyLimit: 100
     costBuy: 550
     costSell: 20
     transferTime: 48
@@ -86,7 +86,7 @@ items:
   - type: STR_FERRET_SMOKE_GRENADE
     costBuy: 550
     costSell: 20
-    monthlyBuyLimit: 15
+    monthlyBuyLimit: 50
     weight: 10
     bigSprite: 2546
     floorSprite: 16
@@ -111,7 +111,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 764000
     costSell: 540000
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 10
     transferTime: 96
     listOrder: 1401
   - type: STR_M81E1 #ignoreDuplicate
@@ -174,7 +174,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 25000
     costSell: 8000
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     transferTime: 48
     weight: 100
     bigSprite: 2541
@@ -203,7 +203,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 30000
     costSell: 8000
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     transferTime: 48
     weight: 110
     bigSprite: 2528
@@ -234,7 +234,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 50000
     costSell: 8000
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     transferTime: 48
     weight: 110
     bigSprite: 2530
@@ -266,7 +266,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 40000
     costSell: 8000
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     transferTime: 48
     weight: 90
     bigSprite: 2529
@@ -418,7 +418,7 @@ items:
       - STR_USA_SUPPORT_RESEARCH
     size: 0.6
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costBuy: 9000
     costSell: 7250
     transferTime: 48
@@ -448,7 +448,7 @@ items:
       - STR_NATO_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 10
     costBuy: 450000
     costSell: 24000
     transferTime: 96
@@ -714,7 +714,7 @@ items:
     size: 6
     requiresBuyCountry: STR_UK
     costSell: 50
-    monthlyBuyLimit: 5
+    monthlyBuyLimit: 30
     transferTime: 96
     weight: 1
     bigSprite: 2505
@@ -746,7 +746,7 @@ items:
     requiresBuyCountry: STR_UK
     costBuy: 80
     costSell: 40
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     transferTime: 48
     weight: 20
     bigSprite: 2547
@@ -775,7 +775,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 6
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 10
     costBuy: 400000
     costSell: 320000
     transferTime: 96
@@ -841,7 +841,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costBuy: 1500
     costSell: 750
     transferTime: 48
@@ -870,7 +870,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costBuy: 15000
     costSell: 7500
     transferTime: 48
@@ -899,7 +899,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costBuy: 15000
     costSell: 7500
     transferTime: 48
@@ -928,7 +928,7 @@ items:
       - STR_USSR_SUPPORT_RESEARCH
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costBuy: 15000
     costSell: 7500
     transferTime: 48
@@ -960,7 +960,7 @@ items:
       - STR_ALIEN_ORIGINS
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costSell: 50000
     transferTime: 48
     weight: 62
@@ -989,7 +989,7 @@ items:
       - STR_ALLOY_MANUFACTURING
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costSell: 75000
     transferTime: 48
     weight: 62
@@ -1019,7 +1019,7 @@ items:
       - STR_ELERIUM_FUSION
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costSell: 75000
     transferTime: 48
     weight: 62
@@ -1052,7 +1052,7 @@ items:
       - STR_BLASTER_BOMB
     size: 0.1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 10
+    monthlyBuyLimit: 50
     costSell: 75000
     transferTime: 48
     weight: 62
@@ -1083,7 +1083,7 @@ items:
     requiresBuyCountry: STR_RUSSIA
     costBuy: 50
     costSell: 50
-    monthlyBuyLimit: 15
+    monthlyBuyLimit: 50
     transferTime: 48
     weight: 10
     bigSprite: 2548
@@ -1354,7 +1354,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 500000
     costSell: 500000
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 10
     transferTime: 96
   - type: STR_APCHWPVEHICLE2
     categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
@@ -1373,7 +1373,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 700000
     costSell: 500000
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 10
     transferTime: 120
     listOrder: 1401
   - type: STR_ONTOS6XRECOILESSGUN
@@ -1410,7 +1410,7 @@ items:
     requiresBuyCountry: STR_USA
     costBuy: 30000
     costSell: 8000
-    monthlyBuyLimit: 24
+    monthlyBuyLimit: 100
     transferTime: 72
     weight: 110
     bigSprite: 2556

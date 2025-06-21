@@ -28,7 +28,7 @@ crafts:
     fuelMax: 157
     costBuy: 80000
     costSell: 60000
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     damageMax: 160
     speedMax: 1070
     avoidBonus: 15
@@ -94,7 +94,7 @@ crafts:
     allowLanding: false
     costBuy: 400000
     costSell: 350000
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -138,7 +138,7 @@ crafts:
     allowLanding: false
     costBuy: 400000
     costSell: 350000
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -179,7 +179,7 @@ crafts:
     allowLanding: false
     costBuy: 350000
     costSell: 300000
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -219,7 +219,7 @@ crafts:
     allowLanding: false
     costBuy: 450000
     costSell: 400000
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -261,7 +261,7 @@ crafts:
     requiresBuyCountry: STR_RUSSIA
     costBuy: 750000
     costSell: 350000
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -300,7 +300,7 @@ crafts:
     pilots: 1
     allowLanding: false
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     costBuy: 350000
     costSell: 250000
     refuelRate: 20
@@ -381,7 +381,7 @@ crafts:
     requiresBuyCountry: STR_USA
     costBuy: 800000
     costSell: 450000
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     refuelRate: 60
     repairRate: 3
     transferTime: 72
@@ -418,7 +418,7 @@ crafts:
     allowLanding: false
     costBuy: 550000
     costSell: 450000
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     refuelRate: 100
     repairRate: 3
     transferTime: 72
@@ -456,7 +456,7 @@ crafts:
     requiresBuyCountry: STR_RUSSIA
     costBuy: 450000
     costSell: 350000
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     refuelRate: 60
     repairRate: 3
     transferTime: 72
@@ -536,7 +536,7 @@ crafts:
     requiresBuyCountry: STR_UK
     costBuy: 800000
     costSell: 500000
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     refuelRate: 80
     repairRate: 5
     transferTime: 72
@@ -576,7 +576,7 @@ crafts:
     requiresBuyCountry: STR_RUSSIA
     costBuy: 900000
     costSell: 750000
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     refuelRate: 80
     repairRate: 5
     transferTime: 72
@@ -612,7 +612,7 @@ crafts:
     requiresBuyCountry: STR_USA
     costBuy: 760000
     costSell: 600000
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     refuelRate: 80
     repairRate: 5
     transferTime: 72
@@ -683,7 +683,7 @@ crafts:
     pilots: 1
     allowLanding: false
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 1100000
     costSell: 1000000
     refuelRate: 100
@@ -719,7 +719,7 @@ crafts:
     pilots: 1
     allowLanding: false
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 1210000
     costSell: 1000000
     refuelRate: 100
@@ -767,7 +767,7 @@ crafts:
     pilots: 2
     allowLanding: false
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     costBuy: 675000
     costSell: 600000
     refuelRate: 20
@@ -809,7 +809,7 @@ crafts:
     pilots: 1
     allowLanding: false
     requiresBuyCountry: STR_FRANCE
-    monthlyBuyLimit: 3
+    monthlyBuyLimit: 9
     costBuy: 650000
     costSell: 600000
     refuelRate: 20
@@ -852,7 +852,7 @@ crafts:
     pilots: 4
     allowLanding: false
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 820000
     costSell: 600000
     refuelRate: 20
@@ -897,7 +897,7 @@ crafts:
     pilots: 2
     allowLanding: false
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 900000
     costSell: 750000
     refuelRate: 40
@@ -935,7 +935,7 @@ crafts:
     vehicles: 0
     pilots: 1
     allowLanding: false
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 720000
     costSell: 600000
     refuelRate: 40
@@ -973,7 +973,7 @@ crafts:
     pilots: 2
     allowLanding: false
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 980000
     costSell: 800000
     refuelRate: 60
@@ -1088,7 +1088,7 @@ crafts:
     pilots: 2
     allowLanding: false
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 800000
     costSell: 650000
     refuelRate: 60
@@ -1105,7 +1105,7 @@ crafts:
       - STR_ADVANCED_BOMBER
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     requiresBuyCountry: STR_WEST_GERMANY
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     sprite: 909
     fuelMax: 384
     damageMax: 480
@@ -1164,7 +1164,7 @@ crafts:
     allowLanding: false
     undetectable: true
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 920000
     costSell: 800000
     refuelRate: 60
@@ -1203,7 +1203,7 @@ crafts:
     pilots: 1
     allowLanding: false
     requiresBuyCountry: STR_FRANCE
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 1250000
     costSell: 1100000
     refuelRate: 100
@@ -1239,7 +1239,7 @@ crafts:
     vehicles: 1
     pilots: 0
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 600000
     costSell: 550000
     refuelRate: 20
@@ -1305,7 +1305,7 @@ crafts:
     vehicles: 0
     pilots: 4
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 100000
     costRent: 6000
     refuelRate: 50
@@ -1633,7 +1633,7 @@ crafts:
     pilots: 6
     allowLanding: true
     spacecraft: true
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 1000000
     costRent: 6000
     refuelRate: 50
@@ -1782,7 +1782,7 @@ crafts:
     damageMax: 20
     speedMax: 20
     accel: 1
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 75000
     costRent: 50000
     refuelRate: 75
@@ -1814,7 +1814,7 @@ crafts:
       - STR_CRAFT_ALL_CANNONS_ONE
       - STR_CRAFT_ALL_CANNONS_TWO
       - STR_CRAFT_AUX_TWO
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 155000
     costRent: 150000
     refuelRate: 75
@@ -1835,7 +1835,7 @@ crafts:
     speedMax: 90
     accel: 1
     undetectable: true
-    monthlyBuyLimit: 1
+    monthlyBuyLimit: 3
     costBuy: 230000
     costRent: 200000
     refuelRate: 75
@@ -2841,7 +2841,7 @@ items:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 18
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2851,7 +2851,7 @@ items:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2861,7 +2861,7 @@ items:
       - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2871,7 +2871,7 @@ items:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 18
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2881,7 +2881,7 @@ items:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2891,7 +2891,7 @@ items:
       - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     requiresBuyCountry: STR_RUSSIA
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 14
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2901,7 +2901,7 @@ items:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 0.8
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 6
+    monthlyBuyLimit: 18
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2911,7 +2911,7 @@ items:
       - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1
     requiresBuyCountry: STR_FRANCE
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2921,7 +2921,7 @@ items:
     #  - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
     size: 1.5
     requiresBuyCountry: STR_UK
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2929,7 +2929,7 @@ items:
     categories: [STR_AIRCRAFT_WEAPONS, STR_US_TECH, STR_SUPER_HEAVY_MISSILES, STR_TIER_1]
     size: 1
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 12
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2937,7 +2937,7 @@ items:
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_ROCKETS, STR_TIER_1]
     size: 1.5
     requiresBuyCountry: STR_USA
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2945,7 +2945,7 @@ items:
   - type: STR_FUEL_TANK
     categories: [STR_AIRCRAFT_WEAPONS, STR_UNEXCOM_TECH, STR_AUX, STR_TIER_1]
     size: 0.8
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 21000
     costSell: 18000
     transferTime: 48
@@ -2954,7 +2954,7 @@ items:
     requires:
       - STR_IMPROVED_FIGHTER
     size: 1
-    monthlyBuyLimit: 4
+    monthlyBuyLimit: 12
     costBuy: 32000
     costSell: 27000
     transferTime: 48
@@ -2963,7 +2963,7 @@ items:
     requires:
       - STR_IMPROVED_CRAFT_ACCURACY
     size: 1.5
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costBuy: 35000
     costSell: 37500
     transferTime: 48
@@ -2972,7 +2972,7 @@ items:
     requires:
       - STR_IMPROVED_CRAFT_ARMOR
     size: 1.5
-    monthlyBuyLimit: 2
+    monthlyBuyLimit: 6
     costSell: 37500
     transferTime: 48
 ##############################################
