@@ -7,7 +7,7 @@ ufos:
 ####### Kiro: I'm going to set it up for calculations on how to balance UFOs
 ####### Maptiles: Thrusters: 2 = 1 for Accel
 ####### Setting Calculator for UFO Speed
-####### 1 Accel = 300 Speed Max
+####### 1 Accel = 400 Speed Max
 ####### Divide it By based on Size
 ####### Size: Very Small/Small: 1; Medium: 2; Large: 3 ; Very Large: 4;
 ####### Very small / small: 10x10
@@ -38,7 +38,7 @@ ufos:
     modSprite: InterceptionExcavator
     size: STR_LARGE
     damageMax: 900
-    speedMax: 1200
+    speedMax: 1600
     accel: 12
     power: 90
     range: 23
@@ -105,7 +105,7 @@ ufos:
     modSprite: InterceptionSentry
     size: STR_SMALL
     damageMax: 400
-    speedMax: 1800
+    speedMax: 2400
     accel: 6
     huntMode: 2
     huntSpeed: 900
@@ -185,7 +185,7 @@ ufos:
     modSprite: InterceptionFighter
     size: STR_SMALL
     damageMax: 400
-    speedMax: 3000
+    speedMax: 4000
     accel: 10
     huntMode: 2
     huntSpeed: 1500
@@ -318,7 +318,7 @@ ufos:
     modSprite: InterceptionLabShip
     size: STR_VERY_LARGE
     damageMax: 3600
-    speedMax: 1080
+    speedMax: 1800
     accel: 18
     power: 144
     range: 40

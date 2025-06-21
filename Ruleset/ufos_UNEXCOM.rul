@@ -7,7 +7,7 @@ ufos:
 ####### Kiro: I'm going to set it up for calculations on how to balance UFOs
 ####### Maptiles: Thrusters: 2 = 1 for Accel
 ####### Setting Calculator for UFO Speed
-####### 1 Accel = 300 Speed Max
+####### 1 Accel = 400 Speed Max
 ####### Divide it By based on Size
 ####### Size: Very Small/Small: 1; Medium: 2; Large: 3 ; Very Large: 4;
 ####### Very small / small: 10x10
@@ -39,7 +39,7 @@ ufos:
     size: STR_VERY_SMALL
     modSprite: InterceptionNoFeed
     damageMax: 100
-    speedMax: 900
+    speedMax: 1200
     accel: 3
     power: 20
     range: 20
@@ -93,7 +93,7 @@ ufos:
     modSprite: InterceptionScout
     size: STR_VERY_SMALL
     damageMax: 100
-    speedMax: 600
+    speedMax: 800
     accel: 2
     avoidBonus: 30
     power: 20
@@ -188,7 +188,7 @@ ufos:
     modSprite: InterceptionBattle
     size: STR_SMALL
     damageMax: 400
-    speedMax: 1500
+    speedMax: 2000
     accel: 5
     power: 80
     range: 40
@@ -498,7 +498,7 @@ ufos:
     modSprite: InterceptionCommando
     size: STR_MEDIUM_UC
     damageMax: 800
-    speedMax: 1800
+    speedMax: 2400
     accel: 12
     power: 160
     range: 30
@@ -796,7 +796,7 @@ ufos:
     modSprite: InterceptionCommando
     size: STR_MEDIUM_UC
     damageMax: 800
-    speedMax: 1800
+    speedMax: 2400
     accel: 12
     power: 160
     range: 30
@@ -956,11 +956,11 @@ ufos:
             SPTURRET_SPAWNER: [0, 0]
 #END ABDUCTOR
 #BEGIN TERROR SHIP
-  - type: STR_TERROR_SHIP #Strikers Class
+  - type: STR_TERROR_SHIP #Strikers Class plus escorts
     modSprite: InterceptionTerror
     size: STR_LARGE
     damageMax: 1800
-    speedMax: 1400
+    speedMax: 1900
     accel: 14
     power: 360
     range: 45
@@ -1279,7 +1279,7 @@ ufos:
     modSprite: InterceptionBattleship
     size: STR_VERY_LARGE
     damageMax: 6000
-    speedMax: 3000
+    speedMax: 4000
     accel: 40
     power: 240
     range: 50
@@ -1288,8 +1288,8 @@ ufos:
     avoidBonus: 8
     shieldCapacity: 3000
     shieldRechargeInGeoscape: 30
-    shieldBleedThrough: 30
-    breakOffTime: 1500
+    shieldBleedThrough: 300
+    breakOffTime: 4000
     radarRange: 750
     battlescapeTerrainData:
       name: IDT_UFOGBATTLESHIPA1
@@ -1467,7 +1467,7 @@ ufos:
     modSprite: InterceptionLogic
     size: STR_LARGE
     damageMax: 1800
-    speedMax: 800
+    speedMax: 1100
     accel: 8
     power: 180
     range: 45
