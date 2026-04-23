@@ -3788,12 +3788,13 @@ ufopaedia:
     listOrder: 5202
     requires:
       - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
-
   - id: STR_US_PLASMA_RIFLE_MAG
     type_id: 4
     section: STR_AMMUNITION
     text: STR_US_PLASMA_RIFLE_MAG_UFOPEDIA
     listOrder: 5203
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
   - id: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
     type_id: 4
     section: STR_AMMUNITION
