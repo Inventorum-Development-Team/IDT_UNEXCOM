@@ -1,10 +1,8 @@
 # spellchecker:words CHEMTOWN INDUSTRIALSLUM GRAV CRAFTNAME SMALLLINE ACCOMODATION HWPS TARGETTED MINIMISE
-# spellchecker:words CULTA UBASE ARTEFACTS
+# spellchecker:words CULTA UBASE
 # spellchecker:words Iseral Ethereals Chryssalids Sectopods Cydonian Stim
-# spellchecker:words demoralise civilisation neutralised localised neutralising manoeuvrability characterised
-# spellchecker:words paralysed
-en-GB:
-  ##########################################
+en-US:
+##########################################
       STR_OPENXCOM: "UNEXCOM"
       STR_NEW_GAME: "War of 1972"
       STR_NEW_BATTLE: "Operations"
@@ -12,7 +10,6 @@ en-GB:
       STR_XCOM_OPERATIVES_KILLED: "UN SOLDIERS KILLED"
       STR_XCOM_OPERATIVES_MISSING_IN_ACTION: "UN SOLDIERS M.I.A."
       STR_XCOM_CRAFT_LOST: "UN CRAFT LOST"
-      STR_QD_SLOT: Q-D
 ############# Table of Contents; Easy to search here. #############
 ############# Alienspacecraft Infopedia
 ############# Alien Components
@@ -3397,7 +3394,7 @@ en-GB:
       STR_APCHWPVEHICLE3WIKI: The advance ACV version based on alien navigation systems and electronic countermeasures. It increases accuracy and detection for better performance.
       STR_PHASEDEVICESYSTEM: Phasefield System ##### Secret HWP
       STR_PHASEDEVICESYSTEMWIKI: This device shows that it can go invisibility and undetected. It can bypass through enemy positions or ambush them at fatality rates.
-      STR_APCHWPVEHICLE4WIKI: Phase Tank Vehicle; covered with cloakfield device and special motion radar tracking system. Experimental combat vehicle with its perfect personel targting system. ##### Secret HWP###### Tank Ammunition
+      STR_APCHWPVEHICLE4WIKI: Phase Tank Vehicle; covered with cloakfield device and special motion radar tracking system. Experimental combat vehicle with its perfect personel targeting system. ##### Secret HWP###### Tank Ammunition
       STR_DUAMMO: Depleted Uranium Ammunition ##### Empty Uranium
       STR_DUAMMOWIKI: DU Tipped Rounds destroys any recent armor including alien alloys. It gives additional damage over turn due to radiation on enemies damanged armor. ##### Empty Uranium
       STR_AALLOY: Alien Alloy ammunition
@@ -3407,7 +3404,7 @@ en-GB:
       STR_FUSIONTIP: Fusion Tip Rounds
       STR_VTSHELLS: Vertical Explosion Rounds
       STR_LASERENHANCE: Thermal Heat Energy Lance
-      STR_LASERINFINTE: Turbo Rnewable Charge Laser
+      STR_LASERINFINTE: Turbo Renewable Charge Laser
       STR_PARTICLEIMPACT: Impact Particle Grav-Force
       STR_ANTIMATTERBLAST: Anti-Matter Beta Blast
       STR_FUSIONENERGYBLAST: Anti-Matter Fusion
@@ -3647,9 +3644,30 @@ en-GB:
       STR_UNTXT2: "QUADLIX X-2"
       STR_UNTXT2WIKI: "Advanced VTOL Transport with UFO components. Its engine is equiped with Gravity-VTOL systems to allow easy to land. Uses to conduct rapid assaults on Alien outpost."
 #### Defense Facilitys
+      STR_DEFENSETARGETER1: "Firebase Control Systems" ## Only uses Missiles only.
+      STR_FIREBASETARGETER1: "MISSILE A" # Uses Stationary Missiles; no pilot;
+      STR_FIREBASETARGETER2: "MISSILE B" # Uses Stationary Missiles; no pilot; increased nautical miles range
+      ##### USA Unique Craft for Missile
+      ##### NATO Unique Craft for Missile
+      ##### WARSAW Unique Craft for Missile
+      ##### UNT Unique Craft for Missile
+      STR_DEFENSETARGETER2: "Energy Control Tower" # Uses Stationary Lasers;
+      STR_ENERGYTARGETER1: "ENERGYSHOT A" #Uses Stationary Energy Weapons; no pilot; needs energy weapons
+      STR_ENERGYTARGETER2: "ENERGYSHOT B" #Uses Stationary Energy Weapons; no pilot;
+      ##### USA Unique Craft for Laser / Plasma
+      ##### NATO Unique Craft for Laser / Plasma
+      ##### WARSAW Unique Craft for Laser / Plasma
+      ##### UNT Unique Craft for Laser / Plasma / Fusion / EMP
+
+      STR_DEFENSETARGETER3: "Ballistic Control Tower" # Uses Stationary Lasers;
+      STR_COILGUNTARGETER1: "MASSDRIVER A" #Uses Stationary Mass Drivers Weapons; no pilot;
+      STR_COILGUNTARGETER2: "GAUSS-RAIL B" #Uses Stationary Mass Drivers Weapons; no pilot;
+      ##### UNT Unique Craft for Mass Driver / Gauss Rail
+
       STR_DEFENSEPOWERGEN1: "Nuclear Power Generator" ## For Laser Defense
       STR_DEFENSEPOWERGEN2: "Ballistic Missile Facility" ## For Missile Defense
       STR_DEFENSEPOWERGEN3: "Hadron Collider Reactor" ## For Plasma Defense
+      STR_DEFENSEPOWERGEN4: "Elerium Fusion Reactor" ## Replacements for Fusion Defense
       STR_DEFENSEUNPOWERGEN1: "UN Quantum Reactors" ## For UN Weapon Defense
       STR_DEFENSEUNPOWERGEN2: "UN GAUSS Control System" ## For UN Coilgun Weapons
 #### Tactical Nuke Missile
@@ -3917,3 +3935,57 @@ en-GB:
       STR_CANINEADVCOMBAT1: "Canine Combat Training" ### allows to equip advance armor
       STR_CANINEBASICMEDIC: "Canine Medic Training" ### Unlocks new dog medic armor
       ##### Sentient AI, Not Unmanned Control Vehicle
+
+      ##### Inventory String Set.
+      ##### Inventory: Chest Belt starts from belt
+      STR_BELT: "CHEST BELT"
+      STR_CHEST_BELT_1: "_"
+      STR_CHEST_BELT_2: "_"
+      ##### Inventory: Torso Belt
+      STR_TORSO_BELT_1: "TORSO BELT"
+      STR_TORSO_BELT_2: "_"
+      STR_TORSO_BELT_3: "_"
+      STR_TORSO_BELT_4: "_"
+      STR_TORSO_BELT_5: "_"
+      ##### Inventory: L&R Shoulder starts from shoulder
+      STR_LSHOULDER_1: "L2"
+      STR_RSHOULDER_1: "R2"
+      ##### Inventory: Upper Backpack starst from backpack
+      STR_UPPERPACK_1: "UPPER PACK"
+      STR_QD_SLOT: "Q-D"
+      STR_BACK_PACK: "BACKPACK"
+      STR_LEFT_HAND: "L-HAND"
+      STR_LEFT_LEG: "L-LEG"
+      STR_LEFT_SHOULDER: "L1"
+      STR_RIGHT_SHOULDER: "R1"
+      STR_RIGHT_HAND: "R-HAND"
+      STR_RIGHT_LEG: "R-LEG"
+
+      ##### Null Inventory
+      STR_INV_NULL_BELT: "X"
+      STR_INV_NULL_CHEST_BELT_1: "_"
+      STR_INV_NULL_CHEST_BELT_2: "_"
+      ##### Inventory: Torso Belt
+      STR_INV_NULL_TORSO_BELT_1: "X"
+      STR_INV_NULL_TORSO_BELT_2: "_"
+      STR_INV_NULL_TORSO_BELT_3: "_"
+      STR_INV_NULL_TORSO_BELT_4: "_"
+      STR_INV_NULL_TORSO_BELT_5: "_"
+      ##### Inventory: L&R Shoulder starts from shoulder
+      STR_INV_NULL_LSHOULDER_1: "X"
+      STR_INV_NULL_RSHOULDER_1: "X"
+      ##### Inventory: Upper Backpack starst from backpack
+      STR_INV_NULL_UPPERPACK_1: "X"
+      STR_INV_NULL_UPPERPACK_2: "X"
+      STR_INV_NULL_UPPERPACK_3: "X"
+      STR_INV_NULL_QD_SLOT: "X"
+      STR_INV_NULL_BACK_PACK: "X"
+      STR_INV_NULL_BACK_PACK1: "X"
+      STR_INV_NULL_BACK_PACK2: "X"
+      STR_INV_NULL_LEFT_HAND: "X"
+      STR_INV_NULL_LEFT_LEG: "X"
+      STR_INV_NULL_LEFT_SHOULDER: "X"
+      STR_INV_NULL_RIGHT_SHOULDER: "X"
+      STR_INV_NULL_RIGHT_HAND: "X"
+      STR_INV_NULL_RIGHT_LEG: "X"
+      STR_CATEGORY_NONE: "None"

@@ -485,6 +485,203 @@ items:
     invHeight: 3
     armor: 50
     recover: true
+######### Inventory Null Slot, Great for Armor Restrictions Kiro Wrote this
+    # Full Backpack
+  - type: STR_INV_NULL_BACK_PACK ## Full On All 3x3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5008
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: STR_INV_NULL_BACK_PACK1 #1x3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5004
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: STR_INV_NULL_BACK_PACK1 #2x3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5006
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+    # Upper Backpack
+  - type: STR_INV_NULL_UPPERPACK_1 #1x2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_UPPERPACK_1
+    recover: false
+  - type: STR_INV_NULL_UPPERPACK_2 #2x2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5003
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_UPPERPACK_1
+    recover: false
+  - type: STR_INV_NULL_UPPERPACK_3 #3x2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5007
+    invWidth: 3
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_UPPERPACK_1
+    recover: false
+  # Chest Belt Set
+  - type: STR_INV_NULL_BELT
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_BELT
+    recover: false
+  - type: STR_INV_NULL_CHEST_BELT_1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_CHEST_BELT_1
+    recover: false
+  - type: STR_INV_NULL_CHEST_BELT_2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_CHEST_BELT_2
+    recover: false
+  # Torso Belt Set
+  - type: STR_INV_NULL_TORSO_BELT1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_1
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_2
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_3
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT4
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_4
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT5
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_5
+    recover: false
+    ##### Shoulders from Right to Left
+  - type: STR_INV_NULL_RIGHT_SHOULDER
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_RIGHT_SHOULDER
+    recover: false
+  - type: STR_INV_NULL_RSHOULDER_1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5000
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot:  STR_RSHOULDER_1
+    recover: false
+  - type: STR_INV_NULL_LEFT_SHOULDER
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_LEFT_SHOULDER
+    recover: false
+  - type: STR_INV_NULL_LSHOULDER_1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5000
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot:  STR_LSHOULDER_1
+    recover: false
+#### The rest of it will be done
+  - type: STR_INV_NULL_QD_SLOT
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_QD_SLOT
+    recover: false
+  - type: STR_INV_NULL_LEFT_LEG
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_LEFT_LEG
+    recover: false
+  - type: STR_INV_NULL_RIGHT_LEG
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_RIGHT_LEG
+    recover: false
+
 ######### Punch Here
   - type: STR_UNARMED_UNIFORM
     weight: 0
@@ -637,6 +834,20 @@ armors:
       - 1.6
       - 1.1
       - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_BELT
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_CHEST_BELT_2
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_TORSO_BELT5
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
     units:
       - STR_SOLDIER
     personalLight: 6
@@ -672,6 +883,17 @@ armors:
       - 1.6
       - 1.1
       - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
     units:
       - STR_PILOT
     personalLight: 6
@@ -716,6 +938,17 @@ armors:
       - 1.6
       - 1.1
       - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
     units:
       - STR_SPECIAL_FORCES_SOLDIER
     personalLight: 6
@@ -760,6 +993,17 @@ armors:
       - 1.6
       - 1.1
       - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
     units:
       - STR_MERCENARY
     personalLight: 6
@@ -1564,6 +1808,16 @@ extraSprites:
   - type: BIGOBS.PCK
     files:
       500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_BIGOB.png
+  ########## Empty Inventory Slot Sprite
+      5000: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull1x1.png
+      5001: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull1x2.png
+      5002: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull2x1.png
+      5003: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull2x2.png
+      5004: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull1x3.png
+      5005: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull3x1.png
+      5006: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull2x3.png
+      5007: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull3x2.png
+      5008: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull3x3.png
   - type: FLOOROB.PCK
     files:
       500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_FLOOROB.png
