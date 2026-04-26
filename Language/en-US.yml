@@ -10,26 +10,27 @@ en-US:
       STR_XCOM_OPERATIVES_KILLED: "UN SOLDIERS KILLED"
       STR_XCOM_OPERATIVES_MISSING_IN_ACTION: "UN SOLDIERS M.I.A."
       STR_XCOM_CRAFT_LOST: "UN CRAFT LOST"
-      STR_QD_SLOT: Q-D
 ############# Table of Contents; Easy to search here. #############
 ############# Alienspacecraft Infopedia
 ############# Alien Components
 ############# Alien Race and Armor
 ############# Alien Weapons
+############# Alien Lore Set
+############# Mission Reference
+#############
 ############# UNEXCOM Forces and Human Factions (4)
 ############# Weapons Section
-############# Vehicle Section
-############# Aircraft Section
+############# Items Section
+############# Vehicles Section
+############# Aircrafts Section
+############# Soldiers Section
+############# Armors Section
+############# Transform/Skills Section
+############# Facilities / Bases
 #############
 #############
 #############
-#############
-#############
-#############
-#############
-#############
-#############
-#############
+
 
 ###########################################
 ############## CATEGORIES ################
@@ -93,7 +94,7 @@ en-US:
       STR_CRAFT_WEAPONS: Craft Weapons
       STR_CORPSES: Corpses
       STR_PRISONERS: Prisoners
-      STR_MT_RATING_EXEMPLARY: Legendary!
+      STR_MT_RATING_EXEMPLARY: "Legendary! :)"
       STR_MT_RATING_EXCELLENT: Excellent!
       STR_MT_RATING_GREAT: Great!
       STR_MT_RATING_GOOD: Good Work!
@@ -105,8 +106,6 @@ en-US:
       STR_HUMAN_RECON: Human Recon
       STR_THRUST: Thrust
       STR_CUT: Cut
-      STR_DAMAGE_10: ELERIUM FUSION
-      STR_DAMAGE_11: ELECTRIC
       ##### Important Mission for Campaign Simulation
       STR_OVERSEER: "Overseer"
       STR_OVERSEER_LANDING: "Overseer Trap Opportunity"
@@ -254,6 +253,7 @@ en-US:
       STR_CORPSE_SPECIAL_FORCES_UNIFORM: "Special Forces Uniform Corpse"
       STR_CORPSE_PILOT_SUIT: "Pilot Suit Corpse"
       STR_CORPSE_MERCENARY_UNIFORM: "Mercenary Uniform Corpse"
+      ##### Damage Type
       STR_DAMAGE_ARMOR_PIERCING: "BALLISTIC"
       STR_DAMAGE_INCENDIARY: "INCENDIARY"
       STR_DAMAGE_HIGH_EXPLOSIVE: "HIGH EXPLOSIVE"
@@ -263,12 +263,15 @@ en-US:
       STR_DAMAGE_MELEE: "MELEE"
       STR_DAMAGE_ACID: "ACID"
       STR_DAMAGE_SMOKE: "SMOKE"
+      STR_DAMAGE_10: ELERIUM FUSION
+      STR_DAMAGE_11: ELECTRIC
+      ##### Damage Type End
       STR_XCOM_PROJECT_MONTHLY_REPORT: "UNEXCOM PROJECT MONTHLY REPORT"
       STR_MONTH: "Month> {ALT}{0} {1}"
       STR_COUNCIL_IS_GENERALLY_SATISFIED: "The Security Council is generally satisfied with your progress so far."
       STR_COUNCIL_IS_VERY_PLEASED: "The Security Council is very pleased with your excellent progress. Keep up the good work."
       STR_COUNCIL_IS_DISSATISFIED: "The UN Council representatives is disatisfied your efforts against Alien invaders. You must improve your war effort or you'll be relieved from high command."
-      STR_YOU_HAVE_NOT_SUCCEEDED: "Dispite your war effort against the alien menace. You lost the support from UN country members and the failure ends in defeat. Your military career is dismissed as a failure. UN members begins negotiation with the Aliens to see the new furture awaits them."
+      STR_YOU_HAVE_NOT_SUCCEEDED: "Dispite your war effort against the alien menace. You lost the support from UN country members and the failure ends in defeat. Your military career is dismissed as a failure. UN members begins to surrender with the Aliens to see the new furture awaits them."
       STR_COUNTRY_IS_PARTICULARLY_PLEASED: "{0} is particularly pleased with your ability to deal with the localized threat and has agreed to increase its funding."
       STR_COUNTRIES_ARE_PARTICULARLY_HAPPY: "{0} are particularly happy with your progress in dealing with local alien incursion and have agreed to increase their funding."
       STR_COUNTRIES_COMMA: "{0}, {1}"
@@ -1213,10 +1216,32 @@ en-US:
       STR_TERRORIST_HQ_FOUND: "Terrorist Hideout Found"
       STR_TERRORIST_HQ_BRIEFING: "Intelligence has confirmed that this building is the source of the alien weaponry. The number of individuals inside is unknown, but is estimated at between 20 and 30. Your objective is to clear out the building and either capture or neutralize whoever is in charge of the cell. Speed and discretion is essential, as we do not want to draw unwanted attention from the public to the operation"
       STR_TERRORIST_HQ_RAID: "Terrorist Hideout Raid"
+      ##### Endings
+      ##### Good Ending
       STR_GOOD_ENDING_1: "After breaching through the depths of the alien command center, our troops we able to destroy the Brain, a supercomputer used by the aliens to coordinate efforts on Earth. A nuclear attack from orbit happened right after our troops left the facility, negating the enemy the possibility of retrieving any artifacts or data. No known alien survivors are reported."
       STR_GOOD_ENDING_2: "Other UN-led forces around the planet report similar success on their designated objectives. There is still heavy resistance, but we have crippled their military forces and they are routed."
       STR_GOOD_ENDING_3: "Operation Downfall meant the beginning of the colonization of the space. Human spaceships are built, meant to reach the planets and moons on the Solar System. A dream that was impossible a decade ago. The power of the atom, instead of destroying the Mankind, has propel us to the stars and beyond."
       STR_GOOD_ENDING_4: "Mars is still a contested planet. Estimations expect our troops to be outmatched in 10 to 1. But this won't be a stop to our campaign, as new scientific and military vessels are prepared to arrive to the Red Planet and establish a firm foothold. The War on Mars has begun."
+      #STR_GOOD_ENDING_5: "You the commander must continue the conquest on Mars to win the planet for humanity. The Alien forces have not been defeated yet and soon they'll begin to counterattack. Your challenge awaits on the battle of Mars and there are lots of encounters to come. (Play the War on Mars to continue the story.)"
+      ##### Bad Ending on the Earth; UNEXCOM Section 1
+      STR_BAD_ENDING_1: ""
+      STR_BAD_ENDING_2: ""
+      STR_BAD_ENDING_3: ""
+      STR_BAD_ENDING_4: ""
+      STR_BAD_ENDING_5: ""
+      ##### Bad Ending on the Moon; UNEXCOM Section 1
+      STR_BAD_ENDING_MOON_1: ""
+      STR_BAD_ENDING_MOON_2: ""
+      STR_BAD_ENDING_MOON_3: ""
+      STR_BAD_ENDING_MOON_4: ""
+      STR_BAD_ENDING_MOON_5: ""
+      ##### Bad Ending on the Mars; UNEXCOM Section 1
+      STR_BAD_ENDING_MARS_1: ""
+      STR_BAD_ENDING_MARS_2: ""
+      STR_BAD_ENDING_MARS_3: ""
+      STR_BAD_ENDING_MARS_4: ""
+      STR_BAD_ENDING_MARS_5: ""
+      #####
       STR_XCOM_CRAFTS: "UNEXCOM CRAFT"
       STR_CRAFT_ARMAMENT: "CRAFT ARMAMENT"
       STR_UNEXCOM_RESEARCH: "UNEXCOM RESEARCH"
@@ -1233,7 +1258,7 @@ en-US:
       STR_RECONS_UFOPEDIA: "Reconnaissance craft have the sole purpose of spotting UFOs, they are also the only type of craft capable of finding alien bases. {NEWLINE} {NEWLINE}Spy planes are fast moving craft undetectable by hunter-killers, suitable for chasing and identifying UFOs. They are also exceptional at finding bases, since they do not get targeted by the base's interceptors. {NEWLINE} {NEWLINE}Satellites are slow-moving, however they excel at detecting UFOs compared to ground based installations. Early satellites are vulnerable to hunter-killer UFOs, while upgraded designs get access to ways in which to defend themselves."
       STR_UNEXCOM_FIGHTERS_UFOPEDIA: "Our fighters and bombers are the first line of defense we have, we have them to defend the skies of our planet. Powers such as the US, NATO and USSR allow us to have access to the quantities we need from their aircraft, as well as support personnel and pilots, as well as the best in aeronautics and weapons technology. All of our fighters, bombers and transports has been upgraded with fuel tanks to increase combat range. Also, we can use prototype recon satellites to help us in our mission to guard the skies."
       STR_LIGHT_MISSILE_UFOPEDIA: "Infrared homing is a passive weapon guidance system which uses the infrared (IR) light emission from a target to track and follow it. Missiles which use infrared seeking are often referred to as 'heat-seekers', since infrared is radiated strongly by hot bodies. Aircraft generate and emit heat, are especially visible in the infrared wavelengths of light compared to objects in the background. Analysis conducted in the air combat of Massachusetts led to that, apparently, the UFOs reflect certain type of heat. Probably from their engines. It's not some kind of radiation known to us, but it can get some lock using the IR missiles."
-      STR_HEAVY_MISSILE_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Semi-active radar homing (SARH) is a common type of missile guidance system, perhaps the most common type for longer-range air-to-air. The name refers to the fact that the missile itself is only a passive detector of a radar signal – provided by an external source, (mostly craft-mounted radar) as it reflects off the target. Semi-active missile systems use bistatic continuous-wave radar. Our collected information reports that the material with which they appear to be constructed reflects the radar waves, making it more difficult to lock an enemy with this kind of missiles. "
+      STR_HEAVY_MISSILE_UFOPEDIA: "{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Semi-active radar homing (SARH) is a common type of missile guidance system, perhaps the most common type for longer-range air-to-air. The name refers to the fact that the missile itself is only a passive detector of a radar signal provided by an external source, (mostly craft-mounted radar) as it reflects off the target. Semi-active missile systems use bistatic continuous-wave radar. Our collected information reports that the material with which they appear to be constructed reflects the radar waves, making it more difficult to lock an enemy with this kind of missiles. "
       STR_SUPER_HEAVY_MISSILE_UFOPEDIA: "Missiles armed with nuclear warheads, modified for use by UNEXCOM. Slow, but more accurate than conventional missiles, having more time to compute the path and distance of the target, employ a combination of IR and active radar guidance. Their weight and characteristics prevent them from having a long reach. It is highly recommended to use them only in cases of emergency."
       STR_GATLING_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}Gatling-type cannon is a rapid-firing weapon that utilizes multiple barrels in a rotating cluster to provide a sustained rate of fire greater than single-barreled machine guns or automatic cannon of equivalent caliber. The loading, firing, and unloading functions are performed simultaneously in different barrels as they rotate, and the rotation also permits the barrels some time to cool. However, they tend to be somewhat inaccurate because of the enormous power generated by the weapon's mechanism."
       STR_REVOLVER_CANNON_UFOPEDIA: " {NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}This type of autocannon uses the revolver principle to accelerate the cycle of loading, firing and ejecting multiple rounds of ammunition, achieving a very high rate of fire compared to conventional cannon of the same calibre. Revolver cannon are generally able to be made much lighter than gatling guns, requiring less support and mounting hardware. The power and reliability of this type of guns allow to use heavier ammunition calibres without compromising the stability or accuracy of the weapon."
@@ -3324,7 +3349,7 @@ en-US:
       STR_ARMORED_ETHEREAL: "Armored Ethereal" ### Ethereal gets a new armor suit instead of bare in cloaks
       STR_OCTASAPIENS1: "Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
       STR_OCTASAPIENS2: "Armored Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
-      STR_OCTASAPIENS: "Exosuit Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
+      STR_OCTASAPIENS3: "Exosuit Octasapiens" ### It's back run for your lives!!!!!!!!!! - UN Soldier
 #############################################
 #### Ground Vehicle Transports
 ####### Kiroxeipros Extra Stuff
@@ -3368,8 +3393,8 @@ en-US:
       STR_APCHWPVEHICLE2WIKI: The first Armored Combat Vehicle based on Alien alloys fitted to reduce weight and extending storage.
       STR_APCHWPVEHICLE3WIKI: The advance ACV version based on alien navigation systems and electronic countermeasures. It increases accuracy and detection for better performance.
       STR_PHASEDEVICESYSTEM: Phasefield System ##### Secret HWP
-      STR_PHASEDEVICESYSTEMWIKI: This device shows that it can go invisibility and undected. It can bypass through enemy positions or ambush them at fatality rates.
-      STR_APCHWPVEHICLE4WIKI: Phase Tank Vehicle; covered with cloakfield device and special motion radar tracking system. Experimental combat vehicle with its perfect personel targting system. ##### Secret HWP###### Tank Ammunition
+      STR_PHASEDEVICESYSTEMWIKI: This device shows that it can go invisibility and undetected. It can bypass through enemy positions or ambush them at fatality rates.
+      STR_APCHWPVEHICLE4WIKI: Phase Tank Vehicle; covered with cloakfield device and special motion radar tracking system. Experimental combat vehicle with its perfect personel targeting system. ##### Secret HWP###### Tank Ammunition
       STR_DUAMMO: Depleted Uranium Ammunition ##### Empty Uranium
       STR_DUAMMOWIKI: DU Tipped Rounds destroys any recent armor including alien alloys. It gives additional damage over turn due to radiation on enemies damanged armor. ##### Empty Uranium
       STR_AALLOY: Alien Alloy ammunition
@@ -3379,7 +3404,7 @@ en-US:
       STR_FUSIONTIP: Fusion Tip Rounds
       STR_VTSHELLS: Vertical Explosion Rounds
       STR_LASERENHANCE: Thermal Heat Energy Lance
-      STR_LASERINFINTE: Turbo Rnewable Charge Laser
+      STR_LASERINFINTE: Turbo Renewable Charge Laser
       STR_PARTICLEIMPACT: Impact Particle Grav-Force
       STR_ANTIMATTERBLAST: Anti-Matter Beta Blast
       STR_FUSIONENERGYBLAST: Anti-Matter Fusion
@@ -3482,6 +3507,17 @@ en-US:
       STR_ONTOS6XRG105MMFUSION: "Ontos 6x 105mm Fusion"
       ######## USA Anti-gravity Tanks
 
+
+      ######## USA Aircrafts in Battle
+      #STR_USA_UH1BHUEYCOBRA: ""
+      #STR_USA_ACH4CHINNOOKG: ""
+      #STR_USA_AH1COBRA: ""
+      #STR_USA_ACH4CHINNOOKG2: ""
+      #STR_USA_AH1SUPERCOBRA: ""
+      #STR_USA_A64APACHE: ""
+      #STR_USA_A64SUPERAPACHE: ""
+
+
 ## NATO
 ## KMW Marder IFV Leopard I Leopard 2
       STR_NATOMILITARYCONTRACT1: NATO Main Battle Tank
@@ -3501,6 +3537,9 @@ en-US:
       STR_ATFL11TANK: ATFL-11 Tank #105mm
       STR_AMX10TANKRC: AMX-10 RC Tank ### Original > 105mm Used as alien alloys
       STR_AMX10TANKRCR: AMX-10 RCR Tank ### With Extra Armor > 105mm Final phase
+
+######## NATO Aircrafts in Battle
+
 ## USSR
 ## T64 T70 T80 BMPs
       STR_WARSAWMILITARYCONTRACT1: Warsaw Main Battle Tank
@@ -3516,14 +3555,21 @@ en-US:
       STR_USSRLASER3TANKWIKI: "ZSU variant, laser cannon tank version."
 #### USSR Anti-Gravity Vehicles
 
+######## USSR Aircrafts in Battle
+      #STR_USSR_MILMI24HIND: ""
+      #STR_USSR_MILMI24HINDVTOL: ""
+      #STR_USSR_MILMI24HINDVTOLENERGY: ""
+      #STR_USSR_MILMI24HINDGRAV: ""
+      #STR_USSR_MILMI24HINDGRAVENERGY: ""
+
 
 ## On Our Own
 ## Skropion Rooikat Merkerva
       STR_CREATEPROTOTYPETANKS: Establish UN Manufacturing Contractors
-      STR_SKORPIONTANK: Skorpion Tank #### Will get one after On our own path unlocked #90mm
-      STR_SKORPIONTANKWIKI: United Kingdoms Skorpion Tank
+      STR_SKORPIONTANK: "Skorpion Tank" #### Will get one after On our own path unlocked #90mm
+      STR_SKORPIONTANKWIKI: "United Kingdoms Skorpion Tank"
       STR_ROOIKAT: "Rooikat 4x4 MCV" #### 76mm mg4 smoke grenade; considered as prototype and long range
-      STR_ROOIKATWIKI: South Africas Military Rush Development vehicle.
+      STR_ROOIKATWIKI: "South Africas Military Rush Development vehicle."
       STR_MERKERVA1: "Merkerva Mk-I" #120mm + atgm missile; 7.64 grenade launcher 60mm; considered as prototype and long range
       STR_MERKERVA1WIKI: "The Israel Defense Force self-sufficient main battle tank,"
       ######## Expanding Personel Armor#### Expanding Aircraft Arsenal; The cost is more expensive to build
@@ -3533,11 +3579,11 @@ en-US:
 #### All Factions
       STR_ALLOYTANKFUEL1: Alloy Tank Fuel
 #### USA AA Weapon
-      STR_USAAIRCRAFTLASER1: Avenger Laser
-      STR_USAAIRCRAFTLASER2: Tomahawk Laser
-      STR_USAAIRCRAFTPLASMA1: Pulse Gatling
-      STR_USAAIRCRAFTPLASMA2: Dragonite Missile
-      STR_USAADVTARGETSYSTEM: Advance Targeter ### Increases Accuracy
+      STR_USAAIRCRAFTLASER1: Avenger Laser #Ammo: 300; Range: Short; Reload: Rapid
+      STR_USAAIRCRAFTLASER2: Tomahawk Laser #Ammo: 50; Range: Short; Reload: Long
+      STR_USAAIRCRAFTPLASMA1: Pulse Gatling #Ammo: 200; Range: Short; Reload: Rapid
+      STR_USAAIRCRAFTPLASMA2: Dragonite Missile #Ammo: 8; Range: Short; Reload: Long
+      STR_USAADVTARGETSYSTEM: Advance Targeter ### Increases Accuracy with GPS Systems
 #### Aircraft
       STR_USAAIRCRAFTF15EAGLE1: "F-15 S/MTD" ## 6 Wings
       STR_USAAIRCRAFTF15EAGLE1WIKI: "The next generation startosphere craft for multi-role fighter. Modernized with alien technology and pilot life support. Installed with Shield Generator System for additional protection."
@@ -3551,10 +3597,10 @@ en-US:
       STR_USAAIRCRAFTPARADRIP2: "C-5 GALAXY"
       STR_USAAIRCRAFTPARADRIP3: "C-5 GALAXY"
 #### NATO AA Weapon
-      STR_NATOAIRCRAFTLASER1: Prometheus Laser
-      STR_NATOAIRCRAFTLASER2: Aegis Beam Laser
-      STR_NATOAIRCRAFTPLASMA1: Comet Pulse Gun
-      STR_NATOAIRCRAFTPLASMA2: Comet Proton Beam
+      STR_NATOAIRCRAFTLASER1: "Prometheus Laser"
+      STR_NATOAIRCRAFTLASER2: "Aegis Beam Laser"
+      STR_NATOAIRCRAFTPLASMA1: "Comet Pulse Gun"
+      STR_NATOAIRCRAFTPLASMA2: "Comet Proton Beam"
 #### Aircraft
       STR_NATOAIRCRAFTBAEKINGSTON: "KINGSTON" ##UK Aircraft
       STR_NATOAIRCRAFTBAEKINGSTONWIKI: "Installed with Shield Generator System for additional protection."
@@ -3562,11 +3608,11 @@ en-US:
       STR_NATOAIRCRAFTSIKORSKYHH31: "SIKORSKY-1A"
       STR_NATOAIRCRAFTSIKORSKYHH32: "SIKORSKY-2B"
 #### WRSW AA Weapon
-      STR_WRSWAIRCRAFTLASER1: Ion Charge Laser
-      STR_WRSWAIRCRAFTLASER2: Ion Conduit Laser
-      STR_WRSWAIRCRAFTPLASMA1: Afina Pulse Beam
-      STR_WRSWAIRCRAFTPLASMA2: Kirov Pulse Cannon
-      STR_WRSWPSIONICNEURAL1: Psi-Interface System ### Increases Accuracy
+      STR_WRSWAIRCRAFTLASER1: "Ion Charge Laser"
+      STR_WRSWAIRCRAFTLASER2: "Ion Conduit Laser"
+      STR_WRSWAIRCRAFTPLASMA1: "Afina Pulse Beam"
+      STR_WRSWAIRCRAFTPLASMA2: "Kirov Pulse Cannon"
+      STR_WRSWPSIONICNEURAL1: "Psi-Interface System" ### Increases Accuracy + Benefits with Pilots
 #### Aircraft
       STR_WRSWAIRCRAFTSU27T35: "SU-37T" ## Upgraded SU-27
       STR_WRSWAIRCRAFTSU27T35WIKI: "Installed with Shield Generator System for additional protection."
@@ -3586,9 +3632,9 @@ en-US:
       STR_UNTAIRCRAFTFUSION1: UN Hybrid Fusion Gun
       STR_UNTAIRCRAFTFUSION2: UN Hybrid Hydrogen Gun ### Legendary Energy Fusion Beam
 #### Aircraft
-      STR_UNTAIRCRAFTBLACKA12: "M-12 RAVEN" ### On Our Own Aircraft as a Alloy Bomber
+      STR_UNTAIRCRAFTBLACKA12: "M12 RAVEN" ### On Our Own Aircraft as a Alloy Bomber
       STR_UNTAIRCRAFTBLACKA12WIKI: "The variant of SR-71 Blackbird. With the Alien Alloy research, our engineers have modified this craft into bomber role to intercept large UFO's. Better durability, with same speed and allows to carry more weapons for aerial combat."
-      STR_UNTAIRCRAFTFURY120: "BERSERKER" ### On Our Own Aircraft as a Exclusive Spacecraft Interceptor
+      STR_UNTAIRCRAFTFURY120: "M20 BERSERKER" ### On Our Own Aircraft as a Exclusive Spacecraft Interceptor
       STR_UNTAIRCRAFTFURY120WIKI: "The advance bomber version upgraded from M-12 Raven craft. The first prototype tested for exosphere and space orbit craft. Uses heavy craft weapons to wipe out alien large scale ufos. Installed with Shield Generator System for additional protection."
       STR_UNTFURY120SINGULAR: "Singular Charge" ### One Hit Weapon, unmanufacturable
       STR_UNTFURY120SINGULARWIKI: "A Powerful Singular Beam Charge that can destroy alien battleship class with ease. Constructed with Fusion-Nuclear Lance Weapon filled with Thorium energy battery system."
@@ -3598,29 +3644,54 @@ en-US:
       STR_UNTXT2: "QUADLIX X-2"
       STR_UNTXT2WIKI: "Advanced VTOL Transport with UFO components. Its engine is equiped with Gravity-VTOL systems to allow easy to land. Uses to conduct rapid assaults on Alien outpost."
 #### Defense Facilitys
-      STR_DEFENSEPOWERGEN1: Nuclear Power Generator ## For Energy Beam Defense
+      STR_DEFENSETARGETER1: "Firebase Control Systems" ## Only uses Missiles only.
+      STR_FIREBASETARGETER1: "MISSILE A" # Uses Stationary Missiles; no pilot;
+      STR_FIREBASETARGETER2: "MISSILE B" # Uses Stationary Missiles; no pilot; increased nautical miles range
+      ##### USA Unique Craft for Missile
+      ##### NATO Unique Craft for Missile
+      ##### WARSAW Unique Craft for Missile
+      ##### UNT Unique Craft for Missile
+      STR_DEFENSETARGETER2: "Energy Control Tower" # Uses Stationary Lasers;
+      STR_ENERGYTARGETER1: "ENERGYSHOT A" #Uses Stationary Energy Weapons; no pilot; needs energy weapons
+      STR_ENERGYTARGETER2: "ENERGYSHOT B" #Uses Stationary Energy Weapons; no pilot;
+      ##### USA Unique Craft for Laser / Plasma
+      ##### NATO Unique Craft for Laser / Plasma
+      ##### WARSAW Unique Craft for Laser / Plasma
+      ##### UNT Unique Craft for Laser / Plasma / Fusion / EMP
+
+      STR_DEFENSETARGETER3: "Ballistic Control Tower" # Uses Stationary Lasers;
+      STR_COILGUNTARGETER1: "MASSDRIVER A" #Uses Stationary Mass Drivers Weapons; no pilot;
+      STR_COILGUNTARGETER2: "GAUSS-RAIL B" #Uses Stationary Mass Drivers Weapons; no pilot;
+      ##### UNT Unique Craft for Mass Driver / Gauss Rail
+
+      STR_DEFENSEPOWERGEN1: "Nuclear Power Generator" ## For Laser Defense
+      STR_DEFENSEPOWERGEN2: "Ballistic Missile Facility" ## For Missile Defense
+      STR_DEFENSEPOWERGEN3: "Hadron Collider Reactor" ## For Plasma Defense
+      STR_DEFENSEPOWERGEN4: "Elerium Fusion Reactor" ## Replacements for Fusion Defense
+      STR_DEFENSEUNPOWERGEN1: "UN Quantum Reactors" ## For UN Weapon Defense
+      STR_DEFENSEUNPOWERGEN2: "UN GAUSS Control System" ## For UN Coilgun Weapons
 #### Tactical Nuke Missile
-      STR_FALCON_DEFENSE: F-Missile Defense
-      STR_PHEONIX_DEFENSE: P-Missile Defense
-      STR_ADLER_DEFENSE: A-Missile Defense
-      STR_KONDOR_DEFENSE: K-Missile Defense
+      STR_FALCON_DEFENSE: F-Missile Defense # Accurate:50 Damage:800 Ammo:Required Ammo Repeat:No
+      STR_PHEONIX_DEFENSE: P-Missile Defense # Accurate:55 Damage:1600 Ammo:Required Ammo Repeat:No
+      STR_ADLER_DEFENSE: A-Missile Defense # Accurate:70 Damage:2400 Ammo:Required Ammo Repeat:No
+      STR_KONDOR_DEFENSE: K-Missile Defense # Accurate:75 Damage:3000 Ammo:Required Ammo Repeat:No
 #### Tactical Laser Defense
-      STR_USALASERDEFENSE: USA LASER Defense
-      STR_NATOLASERDEFENSE: NATO LASER Defense
-      STR_WRSWLASERDEFENSE: Warsaw LASER Defense
-      STR_UNTLASERDEFENSE: UN Hybrid Beam Defense
+      STR_USALASERDEFENSE: USA LASER Defense # Accurate:60 Damage:600 Ammo:Nuke Generator Repeat:Yes
+      STR_NATOLASERDEFENSE: NATO LASER Defense # Accurate:90 Damage:400 Ammo:Nuke Generator Repeat: No
+      STR_WRSWLASERDEFENSE: Warsaw LASER Defense # Accurate:50 Damage:700 Ammo:Nuke Generator Repeat: Yes
+      STR_UNTLASERDEFENSE: UN Hybrid Beam Defense # Accurate:70 Damage:700 Ammo:Quantum Generator Repeat: No
 #### Tactical Plasma Defense
-      STR_USAPLASMADEFENSE: USA Plasma Defense
-      STR_NATOPLASMADEFENSE: NATO Plasma Defense
-      STR_WRSWPLASMADEFENSE: Warsaw Plasma Defense
-      STR_UNTPLASMADEFENSE: UN Hybrid Plasma Defense
+      STR_USAPLASMADEFENSE: USA Plasma Defense # Accurate:90 Damage:800 Ammo:Hadron Generator Repeat: No
+      STR_NATOPLASMADEFENSE: NATO Plasma Defense # Accurate:100 Damage:700 Ammo:Hadron Generator Repeat: No
+      STR_WRSWPLASMADEFENSE: Warsaw Plasma Defense # Accurate:80 Damage:900 Ammo:Hadron Generator Repeat: No
+      STR_UNTPLASMADEFENSE: UN Hybrid Plasma Defense # Accurate:70 Damage:900 Ammo:Q Generator Repeat: No
 #### Advance Defense for all factions
-      STR_CASABAPIKEDEFENSE: Casaba Halbardier Defense
+      STR_CASABAPIKEDEFENSE: Casaba Halbardier Defense # Accurate:100 Damage:1200 Ammo:Hadron Generator Repeat:No
 #### UN Exclusive Weapon Defense
-      STR_UNTRAILGUN1DEFENSE: UN Mass Driver Defense
-      STR_UNTRAILGUN2DEFENSE: UN Gauss Rail Defense
-      STR_UNTEMPGUN1DEFENSE: UN EMP Gun Defense
-      STR_UNTFUSION1DEFENSE: UN Fusion Defense
+      STR_UNTRAILGUN1DEFENSE: UN Mass Driver Defense # Accurate:60 Damage:600 Ammo: MD Craft Ammo Repeat:No
+      STR_UNTRAILGUN2DEFENSE: UN Gauss Rail Defense # Accurate:90 Damage:900 Ammo:GR Craft Ammo Repeat:No
+      STR_UNTEMPGUN1DEFENSE: UN EMP Gun Defense # Helps to Repel back either a chance to disable and shoots them down. # Accurate:10 Damage:2000 Ammo:GR Craft Ammo Repeat:Yes
+      STR_UNTFUSION1DEFENSE: UN Fusion Defense # Accurate:90 Damage:2000 Ammo:Fusion Craft Ammo Repeat:No
 #### Radar Structures
       STR_ALLOYRADARSYSTEM1: Alloy Radar System
       STR_MOTION_SCANNER: "Personnel Radar System"
@@ -3676,6 +3747,8 @@ en-US:
       STR_ALIENSENSOR1: "Alien Security Sensor" #45
       STR_ALIENSENSOR2: "Alien Space Detector" #46
       ######### Components
+
+
       ######### Salvage Alien Weapons for components
       STR_ALIEN_ALLOYS_RESEARCH1: "Altradium Alloys"
       STR_PLASMA_CHARGER1: "Plasma Charger"
@@ -3689,24 +3762,35 @@ en-US:
       STR_CONTAINMENT_EXCEEDED_1: "NO MORE PRISON UNITS!{SMALLINE}Not enough Prison Unit {0}. You must sell prisoners to free up more Prison Unit."
       STR_CONTAINMENT_EXCEEDED_2: "SENTIENT COMPILER STORAGE EXCEEDED!{SMALLINE}Not enough Function Robots at {0}. You must salvage sentient machines from Compiler."
 #### Alien Base Expansion
-####
+#### Corpses
       STR_RESOURCESSCAVENGING1: "Resource Scavenging"
       STR_CONVERTCORPSE1: "Salvage Mechtoid Wreckage"
-      STR_CONVERTCORPSE2: "Salvage Alien Probe Wreckage"
-      STR_CONVERTCORPSE3: "Salvage Alien Cyberdisc"
-      STR_CONVERTCORPSE4: "Salvage Armored Sectoid"
-      STR_CONVERTCORPSE5: "Salvage Armored Mutons"
-      STR_CONVERTCORPSE6: "Extract Armored Floaters"
-      STR_CONVERTCORPSE7: "Extract Floaters"
-      STR_CONVERTCORPSE8: "Salvage Mech Sectopod"
-      STR_CONVERTCORPSE9: "Salvage Cybersphere"
-      STR_CONVERTCORPSE10: "Salvage Alien Sectopod"
+      STR_CONVERTCORPSE2: "Salvage Probe Wreckage"
+      STR_CONVERTCORPSE3: "Salvage Cyberdisc Wreckage"
+      STR_CONVERTCORPSE4: "Salvage Sectopod Wreckage"
+      STR_CONVERTCORPSE5: "Salvage Turret Wreckage"
+      STR_CONVERTCORPSE6: "Salvage Battle Turret Wreckage"
+      STR_CONVERTCORPSE7: "Salvage Artillery Turret Wreckage"
+      STR_CONVERTCORPSE8: "Salvage Alien HWP Wreckage"
+
+#### Prisoners
+
+      STR_CONVERTPRISONER1: "Salvage Armored Sectoid"
+      STR_CONVERTPRISONER2: "Salvage Armored Mutons"
+      STR_CONVERTPRISONER3: "Extract Armored Floaters"
+      STR_CONVERTPRISONER4: "Extract Floaters"
+      STR_CONVERTPRISONER5: "Salvage Mech Sectopod"
+      STR_CONVERTPRISONER6: "Salvage Cybersphere"
+      STR_CONVERTPRISONER7: "Salvage Alien Sectopod"
+
+
       STR_SALVAGEALIENPARTS1: "Salvage Power Source"
       STR_SALVAGEALIENPARTS2: "Salvage Navigate System"
       STR_SALVAGEALIENPARTS3: "Salvage Examination"
       STR_SALVAGEALIENPARTS4: "Salvage Alien Surgery"
       STR_SALVAGEALIENPARTS5: "Salvage Alien Entertainment"
       STR_SALVAGEALIENPARTS6: "Salvage Manipulator Hand"
+      STR_SALVAGEALIENPARTS7: "Unknown Power Source"
 #### Tutorial Stuff
       STR_TUTORIAL_HTP: "Tutorial: How to Play."
       STR_TUTORIAL_BASICS: "Tutorial: Information"
@@ -3746,6 +3830,50 @@ en-US:
       STR_TURORIAL_FACILITY7: "Vehicle / Aircraft Hangar"
       STR_TURORIAL_FACILITY8: "Subject Containment"
       STR_TURORIAL_FACILITY9: "Laboratory Research"
+
+      STR_TUTORIAL_HTP_WIKI: "Tutorial: How to Play."
+      STR_TUTORIAL_BASICS_WIKI: "Tutorial: Information"
+      STR_TUTORIAL_GEOSCAPE_WIKI: "Tutorial: Geoscape"
+      STR_TUTORIAL_BATTLESCAPE_WIKI: "Tutorial: Battlescape"
+      STR_TUTORIAL_RESOURCES_WIKI: "Tutorial: Resources"
+      STR_TUTORIAL_RESOURCESM_WIKI: "Resource Management"
+      STR_TUTORIAL_MANUFACTURE0_WIKI: "Tutorial: Manufacture"
+      STR_TUTORIAL_MANUFACTURE1_WIKI: "Money Contracts"
+      STR_TUTORIAL_MANUFACTURE2_WIKI: "Forging & Salvaging"
+      STR_TUTORIAL_SOLDIERS_WIKI: "Tutorial: Soldiers"
+      STR_TUTORIAL_TRANSFORM_WIKI: "Training & Transformation" #Unlocked after Soldier Training
+      STR_TUTORIAL_TBASICS1_WIKI: "Basics Training"
+      STR_TUTORIAL_TBASICS2_WIKI: "Advance Training"
+      STR_TUTORIAL_TBASICS3_WIKI: "Combat Range"
+      STR_TUTORIAL_TBASICS4_WIKI: "Combat Detection"
+      STR_TUTORIAL_TBASICS5_WIKI: "Combat Camoflauge"
+      STR_TUTORIAL_WEAPONS0_WIKI: "Soldier Weapons"
+      STR_TUTORIAL_NEURAL0_WIKI: "Lifeform Neural & Psionics" #Unlocked after Psionic Laboratory
+      STR_TUTORIAL_NEURAL1_WIKI: "Neural Manipulator"
+      STR_TUTORIAL NEURAL2_WIKI: "Neural Resistance"
+      STR_TUTORIAL NEURAL3_WIKI: "Neural Detection"
+      STR_TUTORIAL NEURAL4_WIKI: "Neural Camoflauge"
+      STR_TUTORIAL_SOLDIERINFO1_WIKI: "Human Infantry"
+      STR_TUTORIAL_SOLDIERINFO2_WIKI: "Human Operator"
+      STR_TUTORIAL_SOLDIERINFO3_WIKI: "Remote Operator"
+      STR_TUTORIAL_SOLDIERINFO4_WIKI: "Canine Companion"
+      STR_TUTORIAL_SOLDIERINFO5_WIKI: "A.I. Machines"
+      STR_TUTORIAL_SOLDIERINFO6_WIKI: "Alien Auxiliary"
+      STR_TUTORIAL_FACILITY0_WIKI: "Tutorial: Facility"
+      STR_TURORIAL_FACILITY1_WIKI: "Base Living Capacity"
+      STR_TURORIAL_FACILITY2_WIKI: "Upgrade Facility"
+      STR_TURORIAL_FACILITY3_WIKI: "Salvage Facility"
+      STR_TURORIAL_FACILITY4_WIKI: "Start Base Types"
+      STR_TURORIAL_FACILITY5_WIKI: "Base Radar System"
+      STR_TURORIAL_FACILITY6_WIKI: "Base Defense System"
+      STR_TURORIAL_FACILITY7_WIKI: "Vehicle / Aircraft Hangar"
+      STR_TURORIAL_FACILITY8_WIKI: "Subject Containment"
+      STR_TURORIAL_FACILITY9_WIKI: "Laboratory Research"
+
+
+
+
+
 ####### Category Spell ########
       STR_LASER_WEAPON1: "Laser Weapons"
       STR_VEHICLE_WEAPON: "Vehicle Arsenal"
@@ -3753,26 +3881,82 @@ en-US:
 ###############################
       STR_FACTION_EXLUSIVE_WEAPONS: "Faction Weapons Section"
       ################### USA ###################
-      ############ Starters Pack ##############
       STR_USA_MK19MOD3: "MK19 Mod 3"
-      STR_USA_XM174AGL: "AAM17 Mod 4"
-      STR_USA_40X53AGLAMMO: "" # 48 rounds 78lb
-      STR_USA_40x46MMAGLAMMO: "" # 12 rounds 16lb
-      ############ Alien Alloys ##############
-      STR_USA1_MK19MOD3: "MK19 Mod 3"
-      STR_USA1_XM174AGL: "AAM17 Mod 4"
-      STR_USA1_40X53AGLAMMO: "" # 48 rounds 78lb
-      STR_US41_0x46MMAGLAMMO: "" # 12 rounds 16lb
-
-
-
-      ############ Micrograv System ##############
-
-
+      STR_USA_40X53AGLAMMO: "40X53mm AGL Ammo" # 48 rounds 78lb
+      STR_USA_40X53AGLAMMO1: "40X53mm AGL ALT Ammo"
 
       ################### NATO ###################
+
+      ##### German Path
+
+
+      STR_HKG11: "H&K G11 Rifle"
+
+
+      ##### French Path
+      STR_MILANLAUNCHER1: "LIATM"
+      ## AA52 MG
+      STR_NATO_FAMAS_PROTO: "FAMAS Rifle" #French Arsenal: Multi Assault System; with 5.56 rounds and grneade rifle; Alien Alloys
+      STR_APAV40: "APAV40 Rifle Grenade"
+      STR_AC48: "AT AC58 Rifle Grenade"
+
       ################### USSR ###################
+
       STR_USSRAGS17AGL: "AGS17 AGL"
-      STR_USSR30X29AGLAMMO: "" # 29 rounds 62lb
+      STR_USSR30X29AGLAMMO: "30X29mm AGL Ammo" # 29 rounds 62lb
+      STR_USSR30X29AGLAMMO1: "30X29mm AGL ALT Ammo"
+
+
       ################### UNTS ###################
+
+      STR_USA_XM174AGL: "AAM17 Mod 4"
+      STR_US4_0x46MMAGLAMMO: "40x46mm AGL Ammo" # 12 rounds 16lb
+      STR_US4_0x46MMAGLAMMO1: "40x46mm AGL ALT Ammo"
       ################### Alien ###################
+
+      ################# Skills and Transformation #############
+      ##### Humans
+      STR_ADVANCEMELEE: "Advance Close Combat" #Increases Melee
+      STR_ADVANCESHOOT: "Advance Sniper Range" #Increases Firing
+      STR_COMBAT1TRAINING: "Advance Training" # Increases STR;STA;TU;HP; Also allows to equipe advance armor
+      STR_COMBAT2TRAINING: "Engineer Training" # Allows to Wear Battery Backpack
+      STR_COMBAT3TRAINING: "Medical Training" # Allows to Wear Medical Equipment and Revival
+      STR_FLIGHT1TRAINING: "Advance Flight Training" #Allows to wield advance aircraft
+      STR_TANKBATTLETRAINING: "Operating Combat Vehicles" #Allows to drive combat vehicles.
+      STR_CYBERNETICENHANCE: "Cybernetic Enhancements" #Allows to use Cybernetic Armor
+      STR_NEURALPHYSICSYSTEM: "Neural Psionic Surgery" #Enhances Psionic Strength
+      STR_NEURALSHIELDCHIP: "Soldiers Implant Chip" #More Resistance to Psionic
+      STR_NEURALSENSEEXP: "Neural Perception" #Increases Psi detection by 1 Max
+      STR_SPACECOMBATFIELD: "Space Combat Training" #Allows to wear Spacesuits.
+      STR_PLANETARYCOMBAT: "Planetary Combat Training" #Allows to wear Advance Spacesuits.
+      STR_EXTRAINTERWARFARE: "Planetary Warfare Training" #Allows to wear Experimental Planetary Armor; The Best Tier
+      ##### Canines with few upgrades
+      STR_CANINEGROWTH1: "Canine Special Training" ### Enables Special Skills ### Upgrades to New Class
+      STR_CANINEADVCOMBAT1: "Canine Combat Training" ### allows to equip advance armor
+      STR_CANINEBASICMEDIC: "Canine Medic Training" ### Unlocks new dog medic armor
+      ##### Sentient AI, Not Unmanned Control Vehicle
+
+      ##### Inventory String Set.
+      ##### Inventory: Chest Belt starts from belt
+      STR_BELT: "CHEST BELT"
+      STR_CHEST_BELT_1: "_"
+      STR_CHEST_BELT_2: "_"
+      ##### Inventory: Torso Belt
+      STR_TORSO_BELT_1: "TORSO BELT"
+      STR_TORSO_BELT_2: "_"
+      STR_TORSO_BELT_3: "_"
+      STR_TORSO_BELT_4: "_"
+      STR_TORSO_BELT_5: "_"
+      ##### Inventory: L&R Shoulder starts from shoulder
+      STR_LSHOULDER_1: "L2"
+      STR_RSHOULDER_1: "R2"
+      ##### Inventory: Upper Backpack starst from backpack
+      STR_UPPERPACK_1: "UPPER PACK"
+      STR_QD_SLOT: "Q-D"
+      STR_BACK_PACK: "BACKPACK"
+      STR_LEFT_HAND: "L-HAND"
+      STR_LEFT_LEG: "L-LEG"
+      STR_LEFT_SHOULDER: "L1"
+      STR_RIGHT_SHOULDER: "R1"
+      STR_RIGHT_HAND: "R-HAND"
+      STR_RIGHT_LEG: "R-LEG"
