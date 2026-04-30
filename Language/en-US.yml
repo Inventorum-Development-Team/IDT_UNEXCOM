@@ -283,7 +283,7 @@ en-US:
       STR_COUNTRIES_HAVE_SIGNED_A_SECRET_PACT: "{0} have signed a secret pact with unknown alien forces and have withdrawn from the project."
       STR_MONTHLY_RATING: "Monthly Rating> {ALT}{0}{ALT} {1}"
       STR_FUNDING_CHANGE: "Funding change> {ALT}{0}"
-      STR_COUNCIL_REDUCE_DEBTS: "The funding council is not happy with your financial position. You must reduce your debts below $1 million or the project will be terminated."
+      STR_COUNCIL_REDUCE_DEBTS: "Our financial position debt is under worst situation with the Councils Creditors. You must reduce your debts below $1 million or the project will be terminated."
       STR_UNITS_IN_CRAFT:
         one: "{N} Unit in UNEXCOM Craft"
         other: "{N} Units in UNEXCOM Craft"
@@ -355,6 +355,7 @@ en-US:
       STR_HERCULES: "HERCULES"
       STR_HUEY: "HUEY"
       STR_PHANTOM: "PHANTOM"
+      STR_PHANTOMMARK2: "FA14 GRIFFON" ## Fan Made Reference from the artist
       STR_THUNDERCHIEF: "THUNDERCHIEF"
       STR_SIDEWINDER: "SIDEWINDER"
       STR_SIDEWINDER_LAUNCHER: "Sidewinder Launcher"
@@ -473,6 +474,9 @@ en-US:
       STR_KRAKEN_LAUNCHER: "KRAKEN LAUNCHER"
       STR_CASABA_LANCE: "CASABA HOWITZER NUCLEAR LANCE"
       STR_LASER_LANCE: "CASABA NUCLEAR LANCE"
+      ##### Stationary Defense Targeting Vehicle Weapons Very Short Range
+
+      ##### UNEXCOM Alliance Craft
       STR_VIGGEN: "VIGGEN"
       STR_FIREFOX: "FIREFOX"
       STR_FLANKER: "FLANKER"
@@ -915,6 +919,7 @@ en-US:
      ###################
       ##### AMMO ########
       ###################
+      ##### Default as Chosen
       STR_9MM_PISTOL_AMMO: "9mm Pistol Rounds"
       STR_45_PISTOL_AMMO: ".45 ACP Pistol Rounds"
       STR_5_56MM_NATO_RIFLE_AMMO: "5.56mm NATO Rifle Rounds"
@@ -1020,6 +1025,10 @@ en-US:
       STR_M202_FLASH: "M202 FLASH"
       STR_M60: "M60 LMG"
       STR_AR5: "AR-5 Survival Rifle"
+      #### MANPADS
+      STR_FIM43REDEYE: "FIM43 Redeye" #Unlockable
+      STR_FIM92STINGER: "FIM92 Stinger" #Alien Alloy
+
       #############################
       ####### NATO WEAPONS ########
       #############################
@@ -1030,6 +1039,9 @@ en-US:
       STR_PSG1: "H&K PSG-1"
       STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoilless Rifle"
       STR_FN_MAG: "FN MAG LMG"
+      #MANPADS
+
+
       #############################
       ####### USSR WEAPONS ########
       #############################
@@ -1041,6 +1053,17 @@ en-US:
       STR_KS23_SHOTGUN: "KS-23 Heavy Shotgun"
       STR_RPG: "RPG-7"
       STR_RPKS: "RPKS LMG"
+      #MANPADS
+      STR_STRELA1: "9K32 Strela-1" #Unlockable
+      STR_STRELA2: "9K32 Strela-2" #Alien Alloy
+      STR_STRELA3: "9K32 Strela-3" #UFO Construction
+      STR_STRELA4: "9K32 Strela-10" # Space Shuttle
+
+      #On Our Own
+      STR_M4BAZOOKA1: "M4 Super Bazooka" # Unlockable
+      STR_M4BAZOOKA2: "M5 Smart Bazooka" # Guided Launcher
+      STR_M4BAZOOKA3: "UN1 SBAAM Launcher" # Guided Launcher
+
       ###############################
       ##### CIVILIAN WEAPONS ########
       ###############################
@@ -1224,10 +1247,10 @@ en-US:
       STR_GOOD_ENDING_4: "Mars is still a contested planet. Estimations expect our troops to be outmatched in 10 to 1. But this won't be a stop to our campaign, as new scientific and military vessels are prepared to arrive to the Red Planet and establish a firm foothold. The War on Mars has begun."
       #STR_GOOD_ENDING_5: "You the commander must continue the conquest on Mars to win the planet for humanity. The Alien forces have not been defeated yet and soon they'll begin to counterattack. Your challenge awaits on the battle of Mars and there are lots of encounters to come. (Play the War on Mars to continue the story.)"
       ##### Bad Ending on the Earth; UNEXCOM Section 1
-      STR_BAD_ENDING_1: ""
-      STR_BAD_ENDING_2: ""
+      STR_BAD_ENDING_1: "Your fate from the last event either your death from battles, execution, imprisonment or exile. The Aliens have manage to defeat the humanity forces of earth and sent their instruments of negoations for peaceful terms. Human civilization has been submitted or destroyed by the Aliens awesome technology of firepower."
+      STR_BAD_ENDING_2: "The UN Remnants tried to rebuild and surpass your achievements which led to failures."
       STR_BAD_ENDING_3: ""
-      STR_BAD_ENDING_4: ""
+      STR_BAD_ENDING_4: "However, humans felt they are always not alone, but another rival came to ingite another war with the other alien forces. The two began to destroy each for the control of our home and the star system."
       STR_BAD_ENDING_5: ""
       ##### Bad Ending on the Moon; UNEXCOM Section 1
       STR_BAD_ENDING_MOON_1: ""
@@ -3648,8 +3671,18 @@ en-US:
       STR_FIREBASETARGETER1: "MISSILE A" # Uses Stationary Missiles; no pilot;
       STR_FIREBASETARGETER2: "MISSILE B" # Uses Stationary Missiles; no pilot; increased nautical miles range
       ##### USA Unique Craft for Missile
+      STR_ANTIAIRSITE_AJAX: "AJAX SAM" # Unlocked Tier
+      STR_ANTIAIRSITE_HERCULES: "HERCULES SAM" # Alloy Tier
+      STR_ANTIAIRSITE_ZEUSA: "ZEUS-A SAM" # UFO Construction Tier
+      STR_ANTIAIRSITE_ZEUSB: "ZEUS-B SAM" # Space Launched Tier
+      STR_ANTIAIRSITE_SPARTAN: "SPARTAN SAM" # Final Tier
       ##### NATO Unique Craft for Missile
       ##### WARSAW Unique Craft for Missile
+      STR_ANTIAIRSITE_ANGARA: "ANGARA SAM" # Unlocked Tier
+      STR_ANTIAIRSITE_VEGA: "VEGA SAM" # Alloy Tier
+      STR_ANTIAIRSITE_VEGAM: "VEGA-M SAM" # UFO Construction Tier
+      STR_ANTIAIRSITE_VEGAE: "VEGA-E SAM" # Space Launched Tier
+      STR_ANTIAIRSITE_DUBNA: "DUBNA SAM" # Final Tier
       ##### UNT Unique Craft for Missile
       STR_DEFENSETARGETER2: "Energy Control Tower" # Uses Stationary Lasers;
       STR_ENERGYTARGETER1: "ENERGYSHOT A" #Uses Stationary Energy Weapons; no pilot; needs energy weapons
@@ -3716,7 +3749,7 @@ en-US:
       STR_ALIENCRYOCONTAINER1: "Alien Cryo Container" #26
       STR_ALIENCRYOCONTAINER2: "Alien Cryo Container (Empty)"
       STR_ALIENPOWERSOURCE1: "Strange Power Source" #27
-      STR_ALIENPOWERSOURCE2: "Ultimathium Generator"
+      STR_ALIENPOWERSOURCE2: "Ultimithium Generator"
       STR_ALIENPOWERFUEL1: "Strange Alien Fuel" #Component
       STR_ALIENPOWERFUEL2: "Ultimathium Fuel Cell" #Component
       STR_STRANGECRYSTAL1: "Strange Crystal" #28
@@ -3733,7 +3766,7 @@ en-US:
       STR_ALIENCONSTRUCTOR1: "Alien Multi-Handler" #39 Small Arms
       STR_ALIENCONSTRUCTOR2: "Alien Laser Cutter" #40 Laser Cutter
       STR_ALIENCONSTRUCTOR3: "Alien Multi-Builder" #41 Large Arms
-      STR_ALIENULTIMATESOURCE1: "Ultimathium Generator" #42 Unique Engine Device, obtainable if all aliens are killed.
+      STR_ALIENULTIMATESOURCE1: "Ultimithium Generator" #42 Unique Engine Device, obtainable if all aliens are killed. Either a superclass battleship
       STR_ALIENDATAFRAGMENT1: "Data Wire Fragement" #Component
       STR_ALIENDATABASE1: "Standard Data Info"
       STR_ALIENDATABAS21: "Standard Data Info (Hacked)" #Get Info
