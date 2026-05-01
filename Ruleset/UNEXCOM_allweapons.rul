@@ -1,0 +1,8473 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+items:
+######## UNEXCOM COMPLETE Weapon Section
+######## Ballistics Weapons
+######## Altradium Alloys Weapons (Alien Alloys)
+######## Laser Energy Weapons
+######## Plasma Energy Weapons
+######## Space Ballistic Weapons
+######## Specialized Weapons
+######## Ultimate Weapons
+  ###################################################
+  ####### UNEXCOM TIER I BALLISTIC AMMUNITION #######
+  ###################################################
+  # Small ammo guide
+  # Pistols & SMGs: 9mm penetrates more armor, .45 ACP does more wounds
+  # Rifles, Carbines & LMGs: NATO rounds has better penetration, Soviet does more wounds
+  # Shotguns: slugs does some stun and penetrate armor, buckshots does wounds
+  ###################################################
+  #Close quarters: defined by default on 1 tile
+  #Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+  #Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+  #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+  #Extra long range combat: 46-60 # Snipers
+  ####################################################
+  #PISTOL AND SMGs AMMO
+  - &STR_9MM_PISTOL_AMMO
+    type: STR_9MM_PISTOL_AMMO
+    power: 28
+    battleType: 2
+  - &STR_45_PISTOL_AMMO
+    type: STR_45_PISTOL_AMMO
+    power: 30
+    battleType: 2
+  #RIFLE AMMO
+  - &STR_5_56MM_NATO_RIFLE_AMMO
+    type: STR_5_56MM_NATO_RIFLE_AMMO
+    power: 32
+    battleType: 2
+  - &STR_7_62MM_NATO_RIFLE_AMMO
+    type: STR_7_62MM_NATO_RIFLE_AMMO
+    power: 40
+    battleType: 2
+  - &STR_7_62MM_SOVIET_RIFLE_AMMO
+    type: STR_7_62MM_SOVIET_RIFLE_AMMO
+    power: 38
+    battleType: 2
+  #LMG AMMO
+  - &STR_7_62MM_NATO_LMG_AMMO
+    type: STR_7_62MM_NATO_LMG_AMMO
+    power: 40
+    battleType: 2
+  #SNIPER AMMO
+  #  - &STR_50BMG_RIFLE_AMMO
+  #    type: STR_50BMG_RIFLE_AMMO
+  #    power: 70
+  #    battleType: 2
+  - &STR_7_62MM_SOVIET_SNIPER_AMMO
+    type: 7_62MM_SOVIET_SNIPER_AMMO
+    power: 56
+    battleType: 2
+  ###################################################
+  ###################################################
+  # Side note:
+  # In vanilla, the tuLoad and tuUnload values are
+  # tuLoad: 15
+  # tuUnload: 8
+  ###################################################
+  ######## UNEXCOM TIER I BALLISTIC WEAPONS #########
+  ###################################################
+  - type: STR_KS23_SHRAPNEL-25_X4
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 900
+    costSell: 250
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 97
+    floorSprite: 97
+    handSprite: 252
+    power: 50
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      ToWound: 0.6
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 4
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 6
+    shotgunSpread: 76
+    battleType: 2
+    armor: 250
+    listOrder: 201700
+  - type: STR_KS23_BARRIKADE_X4
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    costBuy: 900
+    costSell: 250
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 400
+    weight: 3
+    bigSprite: 98
+    floorSprite: 98
+    handSprite: 244
+    power: 50
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: true
+      ToWound: 0.1
+      ToArmorPre: 0.6
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 4
+    invHeight: 1
+    invWidth: 1
+    battleType: 2
+    armor: 250
+    listOrder: 201680
+  - type: STR_KS23_SATANA_X4
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 900
+    costSell: 250
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 99
+    floorSprite: 99
+    handSprite: 268
+    power: 50
+    damageType: 1
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 4
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 4
+    shotgunSpread: 75
+    damageAlter:
+      RandomType: 6
+      ToMorale: 0.5
+      FireThreshold: 1
+      SmokeThreshold: 1000
+    battleType: 2
+    armor: 250
+    listOrder: 201690
+  - type: STR_9MM_PISTOL_X10
+    refNode: *STR_9MM_PISTOL_AMMO
+    requiresBuy:
+      - STR_9MM_10X_UNLOCK
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
+    size: 0.005
+    costBuy: 100
+    costSell: 50
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 100
+    floorSprite: 100
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.3
+      ToArmor: 0.2
+      RandomWound: false
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 201480
+  - type: STR_9MM_PISTOL_X20
+    refNode: *STR_9MM_PISTOL_AMMO
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
+    size: 0.005
+    costBuy: 200
+    costSell: 100
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 101
+    floorSprite: 101
+    handSprite: 108
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.3
+      ToArmor: 0.2
+      RandomWound: false
+    clipSize: 20
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 201610
+  - type: STR_9MM_PISTOL_X30
+    refNode: *STR_9MM_PISTOL_AMMO
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
+    size: 0.005
+    costBuy: 300
+    costSell: 200
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 102
+    floorSprite: 102
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.3
+      ToArmor: 0.2
+      RandomWound: false
+    clipSize: 30
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 201620
+  - type: STR_45_PISTOL_X7
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    refNode: *STR_45_PISTOL_AMMO
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
+    size: 0.005
+    costBuy: 200
+    costSell: 10
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 103
+    floorSprite: 103
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToWound: 0.3
+      RandomWound: true
+    clipSize: 7
+    tuLoad: 4
+    tuUnload: 6
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 200730
+  - type: STR_45_PISTOL_X30
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    monthlyBuyLimit: 200
+    refNode: *STR_45_PISTOL_AMMO
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_SMGS, STR_CLIPS ]
+    size: 0.005
+    costBuy: 300
+    costSell: 230
+    requiresBuyCountry: STR_USA
+    weight: 3
+    bigSprite: 104
+    floorSprite: 104
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToWound: 0.3
+      RandomWound: true
+    clipSize: 30
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 200700
+  - type: STR_5_56MM_NATO_RIFLE_X20
+    requiresBuy:
+      - STR_556_X20_UNLOCK
+    refNode: *STR_5_56MM_NATO_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    size: 0.01
+    costBuy: 275
+    costSell: 225
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 105
+    floorSprite: 105
+    hitAnimation: 26
+    bulletSprite: 2
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.3
+      ToWound: 0.3
+      ToArmor: 0.4
+      RandomWound: false
+    clipSize: 20
+    battleType: 2
+    attraction: 8
+    listOrder: 200950
+  - type: STR_5_56MM_NATO_RIFLE_X30
+    refNode: *STR_5_56MM_NATO_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    size: 0.01
+    costSell: 525
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 106
+    floorSprite: 106
+    hitAnimation: 26
+    bulletSprite: 2
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.3
+      ToWound: 0.3
+      ToArmor: 0.4
+      RandomWound: false
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+    listOrder: 200960
+  - type: STR_7_62MM_NATO_RIFLE_X5
+    refNode: *STR_7_62MM_NATO_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_SNIPER_RIFLES, STR_CLIPS ]
+    requiresBuy:
+      - STR_NATO_X5_UNLOCK
+    monthlyBuyLimit: 200
+    size: 0.01
+    costBuy: 100
+    costSell: 75
+    requiresBuyCountry: STR_USA
+    weight: 3
+    bigSprite: 107
+    floorSprite: 107
+    hitAnimation: 26
+    bulletSprite: 2
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.4
+      ToWound: 0.3
+      ToArmor: 0.5
+      RandomWound: false
+    clipSize: 5
+    battleType: 2
+    attraction: 8
+    listOrder: 201140
+  - type: STR_7_62MM_NATO_RIFLE_X20
+    refNode: *STR_7_62MM_NATO_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    size: 0.01
+    costBuy: 295
+    costSell: 275
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 108
+    floorSprite: 108
+    hitAnimation: 26
+    bulletSprite: 2
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.4
+      ToWound: 0.3
+      ToArmor: 0.5
+      RandomWound: false
+    clipSize: 20
+    battleType: 2
+    attraction: 8
+    listOrder: 201180
+  - type: STR_7_62MM_NATO_RIFLE_X30
+    requiresBuy:
+      - STR_762_X30_UNLOCK
+    refNode: *STR_7_62MM_NATO_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    size: 0.01
+    costBuy: 355
+    costSell: 325
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 109
+    floorSprite: 109
+    hitAnimation: 26
+    bulletSprite: 2
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.4
+      ToWound: 0.3
+      ToArmor: 0.5
+      RandomWound: false
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+    listOrder: 201190
+  - type: STR_7_62MM_NATO_LMG_X50
+    requiresBuy:
+      - STR_NATO_LMG_UNLOCK
+    refNode: *STR_7_62MM_NATO_LMG_AMMO
+    categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 500
+    costSell: 400
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
+    weight: 3
+    bigSprite: 110
+    floorSprite: 110
+    hitAnimation: -1
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.4
+      ToWound: 0.3
+      ToArmor: 0.5
+      RandomWound: false
+    clipSize: 50
+    invWidth: 2
+    invHeight: 1
+    battleType: 2
+    attraction: 8
+    listOrder: 201020
+  - type: STR_7_62MM_NATO_LMG_X100
+    requiresBuy:
+      - STR_NATO_LMG_UNLOCK
+    refNode: *STR_7_62MM_NATO_LMG_AMMO
+    categories: [ STR_FIREARMS, STR_LMGS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 700
+    costSell: 600
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 3
+    bigSprite: 111
+    floorSprite: 111
+    hitAnimation: -1
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.4
+      ToWound: 0.3
+      ToArmor: 0.5
+      RandomWound: false
+    clipSize: 100
+    invHeight: 2
+    invWidth: 2
+    battleType: 2
+    attraction: 8
+    listOrder: 201010
+  - type: STR_7_62MM_SOVIET_RIFLE_X10
+    refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
+    requiresBuy:
+      - STR_SKS
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_SNIPER_RIFLES, STR_CLIPS ]
+    size: 0.01
+    costBuy: 275
+    costSell: 225
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 200
+    weight: 1
+    bigSprite: 112
+    floorSprite: 112
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
+      RandomWound: true
+    clipSize: 10
+    battleType: 2
+    attraction: 8
+    listOrder: 201210
+  - type: STR_7_62MM_SOVIET_RIFLE_X30
+    requiresBuy:
+      - STR_SOVIET_762_UNLOCK
+    refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    size: 0.01
+    costBuy: 375
+    costSell: 325
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 113
+    floorSprite: 113
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
+      RandomWound: true
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+    listOrder: 201330
+  - type: STR_7_62MM_SOVIET_RIFLE_X40
+    requiresBuy:
+      - STR_SOVIET_762_UNLOCK
+    refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    size: 0.01
+    costBuy: 475
+    costSell: 425
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 200
+    weight: 4
+    bigSprite: 114
+    floorSprite: 114
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
+      RandomWound: true
+    clipSize: 40
+    battleType: 2
+    attraction: 8
+    listOrder: 201340
+  - type: STR_7_62MM_SOVIET_RIFLE_X75
+    refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
+    categories: [ STR_FIREARMS, STR_RIFLES, STR_LMGS, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 675
+    costSell: 525
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    weight: 5
+    bigSprite: 115
+    floorSprite: 115
+    hitAnimation: -1
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.2
+      ToWound: 0.4
+      ToArmor: 0.2
+      RandomWound: true
+    clipSize: 75
+    battleType: 2
+    attraction: 8
+    listOrder: 201310
+  - type: STR_7_62MM_SOVIET_SNIPER_X10
+    refNode: *STR_7_62MM_SOVIET_SNIPER_AMMO
+    categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 675
+    costSell: 525
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 200
+    weight: 4
+    bigSprite: 116
+    floorSprite: 116
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToWound: 0.15
+      ToArmor: 0.4
+      RandomWound: false
+    clipSize: 10
+    battleType: 2
+    attraction: 8
+    listOrder: 201360
+  - type: STR_12GAUGE_BUCKSHOT_X2
+    requiresBuy:
+      - STR_12G_X2_UNLOCK
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 100
+    costSell: 50
+    monthlyBuyLimit: 150
+    weight: 3
+    bigSprite: 117
+    floorSprite: 117
+    power: 20
+    damageType: 1
+    damageAlter:
+      RandomType: 7
+      IgnoreOverKill: true
+      ToWound: 0.4
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 2
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 6
+    shotgunSpread: 50
+    battleType: 2
+    armor: 250
+    listOrder: 200110
+  - type: STR_12GAUGE_SLUG_X2
+    requiresBuy:
+      - STR_12G_X2_UNLOCK
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 100
+    costSell: 50
+    monthlyBuyLimit: 150
+    weight: 3
+    bigSprite: 118
+    floorSprite: 118
+    power: 30
+    damageType: 1
+    damageAlter:
+      RandomType: 7
+      IgnoreOverKill: true
+      ToStun: 0.3
+      ToArmorPre: 0.5
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 2
+    invHeight: 1
+    invWidth: 1
+    battleType: 2
+    armor: 250
+    listOrder: 200120
+  - type: STR_12GAUGE_BUCKSHOT_X8
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 500
+    costSell: 250
+    monthlyBuyLimit: 150
+    weight: 3
+    bigSprite: 119
+    floorSprite: 119
+    power: 20
+    damageType: 1
+    damageAlter:
+      RandomType: 7
+      IgnoreOverKill: true
+      ToWound: 0.4
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 8
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 6
+    shotgunSpread: 80
+    battleType: 2
+    armor: 250
+    listOrder: 200280
+  - type: STR_12GAUGE_NON_LETHAL_X8
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 900
+    costSell: 850
+    monthlyBuyLimit: 150
+    weight: 3
+    bigSprite: 120
+    floorSprite: 120
+    power: 30
+    damageType: 6
+    damageAlter:
+      RandomType: 7
+      IgnoreOverKill: true
+      ToStun: 1.2
+      RandomStun: true
+    hitSound: 22
+    hitAnimation: 80
+    blastRadius: 0
+    clipSize: 8
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 75
+    battleType: 2
+    armor: 250
+    listOrder: 200290
+  - type: STR_12GAUGE_SLUG_X8
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 600
+    costSell: 250
+    monthlyBuyLimit: 150
+    weight: 3
+    bigSprite: 121
+    floorSprite: 121
+    power: 30
+    damageType: 1
+    damageAlter:
+      RandomType: 7
+      IgnoreOverKill: true
+      ToStun: 0.3
+      ToArmorPre: 0.5
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 8
+    invHeight: 1
+    invWidth: 1
+    battleType: 2
+    armor: 250
+    listOrder: 200300
+  - type: STR_12GAUGE_ELERIUM_SHARDS_X8
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_FUSION ]
+    size: 0.01
+    requires:
+      - STR_ELERIUM_FUSION
+    costSell: 25000
+    weight: 3
+    bigSprite: 122
+    floorSprite: 122
+    power: 65
+    damageType: 10
+    damageAlter:
+      RandomType: 7
+      IgnoreOverKill: false
+      ToWound: 0.7
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 8
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 5
+    shotgunSpread: 80
+    battleType: 2
+    armor: 250
+    listOrder: 200200
+  - type: STR_40MM_FRAG
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    size: 0.01
+    costBuy: 500
+    costSell: 470
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 2
+    bigSprite: 123
+    floorSprite: 123
+    hitSound: 0
+    hitAnimation: 0
+    power: 70
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTile: 0.8
+      ToWound: 0.3
+      RandomWound: true
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 3
+    bulletSprite: 14
+    listOrder: 200630
+  - type: STR_40MM_INCENDIARY
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    size: 0.01
+    costBuy: 600
+    costSell: 400
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 2
+    bigSprite: 124
+    floorSprite: 124
+    hitSound: 0
+    bulletSprite: 14
+    hitAnimation: 0
+    power: 90
+    damageType: 2
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    damageAlter:
+      FixRadius: 7
+    blastRadius: 7
+    listOrder: 200640
+  - type: STR_40MM_SMOKE
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    size: 0.01
+    costBuy: 300
+    costSell: 200
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 2
+    bigSprite: 125
+    floorSprite: 125
+    hitSound: 0
+    hitAnimation: 0
+    power: 85
+    damageType: 9
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 8
+    bulletSprite: 15
+    listOrder: 200660
+  - type: STR_40MM_NON_LETHAL
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    size: 0.01
+    costBuy: 1500
+    costSell: 800
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 2
+    bigSprite: 126
+    floorSprite: 126
+    handSprite: 308
+    hitSound: 0
+    hitAnimation: 0
+    power: 50
+    damageAlter:
+      RandomType: 6
+      ToStun: 1.2
+      ToEnergy: 1.1
+    damageType: 6
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 5
+    bulletSprite: 15
+    listOrder: 200650
+  - type: STR_38_REVOLVER_AMMO_X6
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_CLIPS ]
+    size: 0.01
+    costBuy: 80
+    costSell: 40
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    weight: 2
+    bigSprite: 127
+    floorSprite: 127
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    attraction: 8
+    listOrder: 200440
+  - type: STR_22_LONG_RIFLE_X14
+    requiresBuy:
+      - STR_LR_UNLOCK
+    categories: [ STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS ]
+    size: 0.005
+    costBuy: 600
+    costSell: 500
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 128
+    floorSprite: 128
+    hitSound: 22
+    hitAnimation: 26
+    power: 22
+    damageType: 1
+    clipSize: 14
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    attraction: 10
+    listOrder: 200360
+  - type: STR_FAL_SHOTGUN_SHELLS
+    categories: [ STR_FIREARMS, STR_SHOTGUNS, STR_NATO_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 300
+    costSell: 250
+    monthlyBuyLimit: 200
+    weight: 2
+    bigSprite: 129
+    floorSprite: 129
+    fireSound: 147
+    hitAnimation: 26
+    power: 35
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    shotgunBehavior: 1
+    shotgunPellets: 5
+    shotgunSpread: 25
+    listOrder: 201080
+  - type: STR_M202_FLASH_RACK
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_US_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 1600
+    costSell: 1200
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 8
+    bigSprite: 1080
+    floorSprite: 1080
+    handSprite: 1080
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToMorale: 0.3
+      ToWound: 0.3
+      ToTile: 0.8
+      FixRadius: 5
+    damageType: 2
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 2037
+  - type: STR_CARL_GUSTAF_M2_HE_ROUND
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 1600
+    costSell: 1200
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 130
+    floorSprite: 130
+    hitSound: 0
+    hitAnimation: 0
+    power: 85
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 0.66
+    damageType: 3
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 201660
+  - type: STR_CARL_GUSTAF_M2_HEAT_ROUND
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 6200
+    costSell: 5000
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 131
+    floorSprite: 131
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.3
+      RadiusReduction: 40
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 0.66
+    damageType: 5
+    clipSize: 1
+    blastRadius: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    attraction: 9
+    listOrder: 201650
+  - type: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION ]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ELERIUM_FUSION
+    size: 0.02
+    costSell: 50000
+    weight: 6
+    bigSprite: 132
+    floorSprite: 132
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      IgnoreOverKill: false
+      RadiusReduction: 40
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 0.66
+    damageType: 10
+    clipSize: 1
+    blastRadius: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 201640
+  - type: STR_RPG_HE_ROCKET
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 1600
+    costSell: 1200
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 133
+    floorSprite: 133
+    hitSound: 0
+    hitAnimation: 0
+    power: 75
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 0.66
+    damageType: 3
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 201730
+  - type: STR_RPG_INC_ROCKET
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 2200
+    costSell: 2000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 134
+    floorSprite: 134
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      IgnoreOverKill: false
+      RadiusReduction: 40
+    damageType: 2
+    clipSize: 1
+    blastRadius: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 201740
+  - type: STR_RPG_EWH_ROCKET
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH, STR_CLIPS, STR_FUSION ]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ELERIUM_FUSION
+    size: 0.02
+    costSell: 30000
+    weight: 6
+    bigSprite: 135
+    floorSprite: 135
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 0.66
+      ArmorEffectiveness: 0.9
+      ToArmorPre: 0.3
+      RadiusReduction: 40
+    damageType: 10
+    clipSize: 1
+    blastRadius: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 201720
+  ###################################################
+  ##### UNEXCOM STANDARD WEAPONS (USA SUPPLIED) #####
+  ###################################################
+  - type: STR_M1911_COLT45
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_PISTOLS ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 1200
+    costSell: 900
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    weight: 3
+    bigSprite: 136
+    floorSprite: 136
+    handSprite: 388
+    bulletSprite: 2
+    fireSound: 136
+    reloadSound: [ 179, 180, 181, 182 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_45_PISTOL_X7 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 45
+    accuracyAimed: 65
+    accuracyAuto: 55
+    kneelBonus: 115
+    tuSnap: 20
+    tuAimed: 35
+    tuAuto: 25
+    maxRange: 60
+    aimRange: 13
+    snapRange: 10
+    autoRange: 8
+    dropoff: 1
+    invHeight: 2
+    invWidth: 1
+    battleType: 1
+    armor: 250
+    listOrder: 200720
+  - type: STR_M16_M203
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES ]
+    size: 0.03
+    costSell: 5400
+    weight: 12
+    bigSprite: 137
+    floorSprite: 137
+    handSprite: 396
+    bulletSpeed: 25
+    fireSound: 137
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+      1:
+        tuLoad: 20
+        tuUnload: 20
+        compatibleAmmo:
+          [
+            STR_40MM_FRAG,
+            STR_40MM_SMOKE,
+            STR_40MM_INCENDIARY,
+            STR_40MM_NON_LETHAL
+          ]
+    confAimed:
+      shots: 1
+      name: STR_FIRE_M203
+      shortName: STR_FIRE_M203_SHORT
+      ammoSlot: 1
+      arcing: true
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 65
+    accuracyAimed: 100
+    accuracyAuto: 70
+    oneHandedPenalty: 60
+    kneelBonus: 130
+    maxRange: 60
+    aimRange: 50
+    snapRange: 20
+    autoRange: 18
+    dropoff: 1
+    tuSnap: 30
+    tuAimed: 50
+    tuAuto: 33
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    listOrder: 200450
+  - type: STR_XM117
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 3000
+    costSell: 2750
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 7
+    bigSprite: 138
+    floorSprite: 138
+    handSprite: 404
+    bulletSprite: 2
+    fireSound: 138
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 110
+    accuracyAuto: 65
+    tuAuto: 45
+    tuSnap: 29
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    attraction: 8
+    listOrder: 200760
+  - type: STR_M3_GREASEGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SMGS ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 2000
+    costSell: 1800
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 9
+    bigSprite: 139
+    floorSprite: 139
+    handSprite: 412
+    bulletSprite: 1
+    fireSound: 139
+    bulletSpeed: 35
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_45_PISTOL_X30, STR_45_PISTOL_X7 ]
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 45
+    accuracySnap: 56
+    accuracyAimed: 65
+    tuAuto: 40
+    tuSnap: 23
+    tuAimed: 35
+    sprayWaypoints: 2
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    autoRange: 11
+    aimRange: 20
+    attraction: 11
+    listOrder: 200690
+  - type: STR_XM21
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SNIPER_RIFLES ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 5000
+    costSell: 4750
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 12
+    bigSprite: 140
+    floorSprite: 140
+    handSprite: 420
+    bulletSprite: 2
+    fireSound: 140
+    bulletSpeed: 20
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 80
+    accuracyAimed: 180
+    tuSnap: 40
+    tuAimed: 80
+    snapRange: 24
+    aimedRange: 64
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 201030
+  - type: STR_REMINGTON_COMBAT_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS, STR_FUSION ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.03
+    costBuy: 1700
+    costSell: 520
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 7
+    bigSprite: 141
+    floorSprite: 141
+    handSprite: 428
+    bulletSprite: 2
+    fireSound: 141
+    reloadSound: [ 183, 184, 185 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo:
+          [
+            STR_12GAUGE_BUCKSHOT_X8,
+            STR_12GAUGE_SLUG_X8,
+            STR_12GAUGE_NON_LETHAL_X8,
+            STR_12GAUGE_ELERIUM_SHARDS_X8
+          ]
+    confAuto:
+      shots: 8
+      name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 65
+    accuracyAimed: 75
+    accuracyAuto: 50
+    tuSnap: 35
+    tuAimed: 60
+    tuAuto: 50
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    listOrder: 200130
+  - type: STR_M79_THUMPER_GL
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 5500
+    costSell: 2250
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 15
+    bigSprite: 142
+    floorSprite: 142
+    handSprite: 436
+    fireSound: 142
+    compatibleAmmo:
+      - STR_40MM_FRAG
+      - STR_40MM_INCENDIARY
+      - STR_40MM_SMOKE
+      - STR_40MM_NON_LETHAL
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuSnap: 33
+    tuAimed: 50
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+    listOrder: 200520
+  - type: STR_M72_LAW
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.04
+    costBuy: 950
+    costSell: 850
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 7
+    bigSprite: 143
+    floorSprite: 143
+    handSprite: 444
+    bulletSprite: 17
+    fireSound: 143
+    power: 100
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToWound: 0.8
+      RandomWound: true
+      ToTile: 0.5
+    accuracySnap: 55
+    accuracyAimed: 100
+    #    oneHandedPenalty: 80
+    tuSnap: 40
+    tuAimed: 66
+    maxRange: 200 # 0
+    aimRange: 80 # 0
+    snapRange: 15 # 0
+    minRange: 8
+    dropoff: 2
+    clipSize: 1
+    battleType: 1
+    twoHanded: false
+    blockBothHands: false
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    damageType: 3
+    blastRadius: 2
+    hitSound: 143
+    listOrder: 2035
+  - type: STR_M202_FLASH
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.04
+    costBuy: 25000
+    costSell: 30000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 6
+    bigSprite: 1072
+    floorSprite: 1072
+    handSprite: 1072
+    bulletSprite: 0
+    fireSound: 152
+    compatibleAmmo:
+      - STR_M202_FLASH_RACK
+    accuracyAuto: 50
+    accuracyAimed: 85
+    tuAuto: 35
+    tuAimed: 50
+    autoShots: 4
+    autoRange: 22
+    aimRange: 30
+    minRange: 7
+    dropoff: 3
+    tuLoad: 30
+    battleType: 1
+    arcingShot: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    kneelBonus: 150
+    listOrder: 2036
+  - type: STR_M60
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_LMGS ]
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.04
+    costBuy: 12000
+    costSell: 9400
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 20
+    bigSprite: 144
+    floorSprite: 144
+    handSprite: 452
+    bulletSprite: 2
+    fireSound: 144
+    bulletSpeed: 35
+    reloadSound: [ 194, 195, 196 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 32
+    accuracyAuto: 32
+    tuSnap: 20
+    tuAuto: 50
+    tuLoad: 30
+    invHeight: 3
+    invWidth: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 200970
+  - type: STR_AR5
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SNIPER_RIFLES ]
+    size: 0.02
+    requiresBuy:
+      - STR_IMPROVED_BOMBER
+    costBuy: 1500
+    costSell: 1150
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 5
+    bigSprite: 145
+    floorSprite: 145
+    handSprite: 460
+    bulletSprite: 2
+    fireSound: 145
+    bulletSpeed: 20
+    reloadSound: 197
+    compatibleAmmo:
+      - STR_22_LONG_RIFLE_X14
+    accuracySnap: 85
+    accuracyAimed: 100
+    tuSnap: 10
+    tuAimed: 20
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    attraction: 8
+    listOrder: 200330
+  #################################################
+  ####### UNEXCOM NATO SUPPLIED WEAPONS ###########
+  #################################################
+  - type: STR_BERETTA_92FS
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_PISTOLS ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 700
+    costSell: 580
+    requiresBuyCountry: STR_ITALY
+    monthlyBuyLimit: 100
+    weight: 4
+    bigSprite: 146
+    floorSprite: 146
+    handSprite: 468
+    bulletSprite: 1
+    fireSound: 146
+    reloadSound: [ 179, 180, 181, 182 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X10, STR_9MM_PISTOL_X20 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 80
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuAuto: 22
+    tuSnap: 16
+    tuAimed: 24
+    tuLoad: 15
+    maxRange: 60
+    aimRange: 15
+    snapRange: 12
+    autoRange: 10
+    dropoff: 1
+    kneelBonus: 105
+    costThrow:
+      energy: 8
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 35
+    attraction: 10
+    listOrder: 201370
+  - type: STR_FN_FAL_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_RIFLES ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 6500
+    costSell: 5750
+    monthlyBuyLimit: 50
+    weight: 12
+    bigSprite: 147
+    floorSprite: 147
+    handSprite: 476
+    bulletSprite: 2
+    bulletSpeed: 20
+    fireSound: 170
+    reloadSound: [ 186, 187, 188, 189 ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 1
+      name: STR_FIRE_SHOTGUN
+      ammoSlot: 1
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 15
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
+      1:
+        tuLoad: 20
+        tuUnload: 15
+        compatibleAmmo: [ STR_FAL_SHOTGUN_SHELLS ]
+    accuracyAuto: 75
+    accuracySnap: 85
+    accuracyAimed: 100
+    tuAuto: 38
+    tuSnap: 28
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    snapRange: 32
+    aimRange: 45
+    autoRange: 25
+    attraction: 8
+    listOrder: 201060
+  - type: STR_SG510_CARBINE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_CARBINES ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 3000
+    costSell: 2500
+    monthlyBuyLimit: 100
+    weight: 7
+    bigSprite: 148
+    floorSprite: 148
+    handSprite: 484
+    bulletSprite: 1
+    fireSound: 148
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 50
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuAuto: 33
+    tuSnap: 24
+    tuAimed: 46
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    aimRange: 25
+    attraction: 12
+    listOrder: 201090
+  - type: STR_MP5
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 3000
+    costSell: 2500
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 100
+    weight: 6
+    bigSprite: 149
+    floorSprite: 149
+    handSprite: 492
+    bulletSprite: 1
+    bulletSpeed: 20
+    fireSound: 149
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo:
+          [
+            STR_9MM_PISTOL_X10,
+            STR_9MM_PISTOL_X20,
+            STR_9MM_PISTOL_X30
+          ]
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 68
+    accuracySnap: 70
+    accuracyAimed: 55
+    tuAuto: 32
+    tuSnap: 24
+    tuAimed: 45
+    sprayWaypoints: 2
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    snapRange: 18
+    aimRange: 25
+    attraction: 12
+    listOrder: 201400
+  - type: STR_PSG1
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SNIPER_RIFLES ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.03
+    costBuy: 15000
+    costSell: 8200
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 20
+    weight: 16
+    bigSprite: 150
+    floorSprite: 150
+    handSprite: 500
+    bulletSprite: 4
+    bulletSpeed: 20
+    fireSound: 150
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 80
+    accuracyAimed: 190
+    tuSnap: 50
+    tuAimed: 85
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    battleType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.2
+    twoHanded: true
+    oneHandedPenalty: 25
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    snapRange: 24
+    aimedRange: 64
+    minRange: 10
+    dropoff: 3
+    attraction: 10
+    listOrder: 201120
+  - type: STR_FN_MAG
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LMGS ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.03
+    costBuy: 11000
+    costSell: 9000
+    monthlyBuyLimit: 200
+    weight: 13
+    bigSprite: 151
+    floorSprite: 151
+    handSprite: 508
+    bulletSprite: 11
+    bulletSpeed: 18
+    fireSound: 151
+    reloadSound: [ 194, 195, 196 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 52
+    accuracyAuto: 37
+    tuSnap: 25
+    tuAuto: 40
+    tuLoad: 20
+    snapRange: 18
+    autoRange: 18
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201000
+  - type: STR_CARL_GUSTAF_M2
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION ]
+    requiresBuy:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.04
+    costBuy: 16000
+    costSell: 10000
+    monthlyBuyLimit: 20
+    weight: 10
+    bigSprite: 152
+    floorSprite: 152
+    handSprite: 516
+    bulletSprite: 0
+    fireSound: 152
+    compatibleAmmo:
+      - STR_CARL_GUSTAF_M2_HE_ROUND
+      - STR_CARL_GUSTAF_M2_HEAT_ROUND
+      - STR_CARL_GUSTAF_M2_ELERIUM_ROUND
+    accuracySnap: 55
+    accuracyAimed: 125
+    tuSnap: 45
+    tuAimed: 70
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    listOrder: 201630
+  ###############################################
+  ####### UNEXCOM SOVIET SUPPLIED WEAPONS #######
+  ###############################################
+  - type: STR_STECHKIN_APS
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_PISTOLS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.01
+    costBuy: 400
+    costSell: 250
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 4
+    bigSprite: 153
+    floorSprite: 153
+    handSprite: 524
+    bulletSprite: 1
+    fireSound: 153
+    reloadSound: [ 179, 180, 181, 182 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20 ]
+    confSnap:
+      shots: 2
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 45
+    accuracySnap: 65
+    accuracyAimed: 75
+    tuAuto: 22
+    tuSnap: 16
+    tuAimed: 30
+    tuLoad: 15
+    costThrow:
+      energy: 8
+    battleType: 1
+    maxRange: 60
+    aimRange: 11
+    snapRange: 9
+    autoRange: 7
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 10
+    listOrder: 201490
+  - type: STR_AKM_BAYONETED
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 2700
+    costSell: 1550
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 10
+    bigSprite: 154
+    floorSprite: 154
+    handSprite: 532
+    bulletSprite: 2
+    bulletSpeed: 28
+    fireSound: 154
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo:
+          [
+            STR_7_62MM_SOVIET_RIFLE_X30,
+            STR_7_62MM_SOVIET_RIFLE_X40
+          ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 33
+    accuracySnap: 56
+    accuracyAimed: 85
+    tuAuto: 50
+    tuSnap: 25
+    tuAimed: 40
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    # Bayonet segment
+    meleeHitSound: 178
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 45
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    accuracyMelee: 100
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
+    # Bayonet segment end
+    attraction: 8
+    listOrder: 201220
+  - type: STR_AKMSU
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_CARBINES ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 3200
+    costSell: 2000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 8
+    bigSprite: 155
+    floorSprite: 155
+    handSprite: 540
+    bulletSprite: 2
+    fireSound: 155
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo:
+          [
+            STR_7_62MM_SOVIET_RIFLE_X30,
+            STR_7_62MM_SOVIET_RIFLE_X40
+          ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 40
+    accuracySnap: 62
+    accuracyAimed: 85
+    bulletSpeed: 20
+    tuAuto: 60
+    tuSnap: 24
+    tuAimed: 35
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    aimRange: 25
+    attraction: 8
+    listOrder: 201250
+  - type: STR_SKORPION
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SMGS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.03
+    costBuy: 350
+    costSell: 250
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 6
+    bigSprite: 156
+    floorSprite: 156
+    handSprite: 548
+    bulletSprite: 1
+    bulletSpeed: 20
+    fireSound: 156
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X10, STR_9MM_PISTOL_X20 ]
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 55
+    accuracyAuto: 50
+    accuracyAimed: 45
+    tuAimed: 22
+    tuSnap: 13
+    tuAuto: 36
+    costThrow:
+      energy: 12
+    autoRange: 9
+    snapRange: 12
+    kneelBonus: 105
+    battleType: 1
+    #twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 7
+    listOrder: 201440
+  - type: STR_DRAGUNOV
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 7000
+    costSell: 5500
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
+    weight: 12
+    bigSprite: 157
+    floorSprite: 157
+    handSprite: 556
+    bulletSprite: 2
+    fireSound: 157
+    bulletSpeed: 20
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_SOVIET_SNIPER_X10 ]
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 65
+    accuracyAimed: 170
+    tuSnap: 30
+    tuAimed: 70
+    aimedRange: 64
+    snapRange: 24
+    costThrow:
+      energy: 18
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 9
+    listOrder: 201350
+  - type: STR_KS23_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SHOTGUNS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 2200
+    costSell: 1800
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    weight: 12
+    bigSprite: 158
+    floorSprite: 158
+    handSprite: 564
+    bulletSprite: 3
+    fireSound: 158
+    reloadSound: [ 183, 184, 185 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo:
+          [
+            STR_KS23_SHRAPNEL-25_X4,
+            STR_KS23_BARRIKADE_X4,
+            STR_KS23_SATANA_X4
+          ]
+    confAuto:
+      shots: 4
+      name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 60
+    accuracyAimed: 80
+    accuracyAuto: 45
+    tuSnap: 36
+    tuAimed: 68
+    tuAuto: 28
+    aimRange: 14
+    snapRange: 8
+    dropoff: 6
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 8
+    listOrder: 201670
+  - type: STR_RPG
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_ARTILLERY, STR_FUSION ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.02
+    costBuy: 7600
+    costSell: 6600
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 40
+    weight: 8
+    bigSprite: 159
+    floorSprite: 159
+    handSprite: 572
+    bulletSprite: 0
+    bulletSpeed: 4
+    fireSound: 159
+    compatibleAmmo:
+      - STR_RPG_HE_ROCKET
+      - STR_RPG_INC_ROCKET
+      - STR_RPG_EWH_ROCKET
+    accuracySnap: 50
+    accuracyAimed: 100
+    tuSnap: 55
+    tuAimed: 75
+    aimRange: 25
+    tuLoad: 20
+    battleType: 1
+    twoHanded: false
+    blockBothHands: false
+    invWidth: 1
+    invHeight: 3
+    attraction: 9
+    listOrder: 201710
+  - type: STR_RPKS
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_LMGS ]
+    requiresBuy:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.03
+    costBuy: 9000
+    costSell: 8000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
+    weight: 15
+    bigSprite: 160
+    floorSprite: 160
+    handSprite: 580
+    bulletSprite: 11
+    bulletSpeed: 20
+    fireSound: 160
+    ammo:
+      0:
+        compatibleAmmo:
+          [
+            STR_7_62MM_SOVIET_RIFLE_X30,
+            STR_7_62MM_SOVIET_RIFLE_X40,
+            STR_7_62MM_SOVIET_RIFLE_X75
+          ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 45
+    accuracyAuto: 32
+    tuSnap: 25
+    tuAuto: 50
+    tuLoad: 25
+    snapRange: 20
+    autoRange: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 9
+    listOrder: 201280
+  ##################################################
+  ############### CIVILIAN WEAPONS #################
+  ##################################################
+  - type: STR_MAKAROV
+    requiresBuy:
+      - STR_MAKAROV
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
+    size: 0.01
+    costBuy: 900
+    costSell: 800
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 4
+    bigSprite: 161
+    floorSprite: 161
+    handSprite: 588
+    bulletSprite: 1
+    fireSound: 161
+    reloadSound: [ 179, 180, 181, 182 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X10 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 65
+    accuracyAimed: 75
+    accuracyAuto: 60
+    tuAuto: 22
+    tuSnap: 16
+    tuAimed: 30
+    tuLoad: 15
+    costThrow:
+      energy: 8
+    battleType: 1
+    maxRange: 60
+    aimRange: 10
+    snapRange: 8
+    autoRange: 5
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 10
+    listOrder: 201470
+  - type: STR_SNUBNOSE_PISTOL
+    requiresBuy:
+      - STR_SNUBNOSE_PISTOL
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
+    size: 0.01
+    costBuy: 500
+    costSell: 400
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 162
+    floorSprite: 162
+    handSprite: 596
+    bulletSprite: 1
+    fireSound: 162
+    bulletSpeed: 15
+    reloadSound: [ 204, 205, 206 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_38_REVOLVER_AMMO_X6 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 65
+    accuracyAimed: 70
+    accuracyAuto: 55
+    tuSnap: 20
+    tuAimed: 30
+    tuAuto: 25
+    maxRange: 60
+    aimRange: 8
+    snapRange: 6
+    autoRange: 6
+    dropoff: 1
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 1
+    attraction: 8
+    listOrder: 200410
+  - type: STR_HUNTING_RIFLE
+    requiresBuy:
+      - STR_HUNTING_RIFLE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SNIPER_RIFLES ]
+    size: 0.02
+    costBuy: 1600
+    costSell: 1000
+    monthlyBuyLimit: 100
+    weight: 11
+    bigSprite: 163
+    floorSprite: 163
+    handSprite: 604
+    bulletSprite: 2
+    fireSound: 163
+    reloadSound: 197
+    bulletSpeed: 20
+    compatibleAmmo:
+      - STR_22_LONG_RIFLE_X14
+    accuracySnap: 60
+    accuracyAimed: 85
+    tuSnap: 33
+    tuAimed: 70
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 7
+    listOrder: 200350
+  - type: STR_DOUBLE_BARRELED_SHOTGUN
+    requiresBuy:
+      - STR_DOUBLE_BARRELED_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS ]
+    size: 0.02
+    costBuy: 1500
+    costSell: 2000
+    monthlyBuyLimit: 100
+    weight: 11
+    bigSprite: 164
+    floorSprite: 164
+    handSprite: 612
+    bulletSprite: 1
+    fireSound: 164
+    ammo:
+      0:
+        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X2, STR_12GAUGE_SLUG_X2 ]
+    confAuto:
+      shots: 2
+      name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 55
+    accuracyAimed: 80
+    accuracyAuto: 40
+    tuSnap: 26
+    tuAimed: 60
+    tuAuto: 48
+    snapRange: 10
+    aimRange: 10
+    autoRange: 10
+    dropoff: 3
+    tuLoad: 10
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 7
+    listOrder: 200000
+  - type: STR_MACHETE
+    requiresBuy:
+      - STR_MACHETE
+    categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
+    size: 0.02
+    costBuy: 800
+    costSell: 500
+    monthlyBuyLimit: 100
+    weight: 5
+    bigSprite: 165
+    floorSprite: 165
+    handSprite: 620
+    meleeHitSound: 165
+    power: 35
+    damageType: 7
+    damageBonus:
+      strength: 0.3
+      melee: 0.1
+    damageAlter:
+      ArmorEffectiveness: 1.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 6
+      energy: 2
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2104
+  - type: STR_SHOVEL
+    requiresBuy:
+      - STR_SHOVEL
+    categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
+    size: 0.02
+    costBuy: 1200
+    costSell: 800
+    monthlyBuyLimit: 100
+    weight: 8
+    bigSprite: 1096
+    floorSprite: 1096
+    handSprite: 1096
+    meleeHitSound: 165
+    power: 55
+    damageType: 7
+    damageBonus:
+      strength: 0.8
+      melee: 0.4
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToTile: 1.2
+      ToArmorPre: 0.7
+      ToWound: 0.4
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 12
+      energy: 4
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2105
+  ##############################################
+  ############### DEALER WEAPONS ###############
+  ##############################################
+  - type: STR_LUGER
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
+    size: 0.01
+    costBuy: 1100
+    costSell: 850
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 50
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    weight: 6
+    bigSprite: 281
+    floorSprite: 281
+    handSprite: 1104
+    bulletSprite: 1
+    fireSound: 166
+    bulletSpeed: 15
+    reloadSound: [ 204, 205, 206 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 133
+    accuracySnap: 70
+    accuracyAimed: 80
+    tuSnap: 17
+    tuAimed: 28
+    tuLoad: 15
+    maxRange: 52
+    aimRange: 12
+    snapRange: 12
+    autoRange: 7
+    dropoff: 1
+    kneelBonus: 77
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 200434
+  - type: STR_UZI
+    requires:
+      - STR_CONTACT_SMUGGLERS
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SMGS ]
+    size: 0.01
+    costBuy: 1350
+    costSell: 1000
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 282
+    floorSprite: 282
+    handSprite: 1112
+    bulletSprite: 1
+    bulletSpeed: 20
+    fireSound: 149
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo:
+          - STR_9MM_PISTOL_X20
+          - STR_9MM_PISTOL_X30
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 133
+    accuracySnap: 55
+    accuracyAuto: 35
+    tuSnap: 30
+    tuAuto: 28
+    maxRange: 60
+    aimRange: 8
+    autoRange: 9
+    snapRange: 12
+    dropoff: 1
+    kneelBonus: 40
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    attraction: 8
+    listOrder: 200410
+  - type: STR_G3
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_CARBINES ]
+    requiresBuy:
+      - STR_CONTACT_SMUGGLERS
+    size: 0.02
+    costBuy: 2700
+    costSell: 1700
+    monthlyBuyLimit: 25
+    weight: 8
+    bigSprite: 283
+    floorSprite: 283
+    handSprite: 1160
+    bulletSprite: 1
+    fireSound: 148
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 45
+    accuracySnap: 60
+    accuracyAimed: 74
+    tuAuto: 55
+    tuSnap: 33
+    tuAimed: 40
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    aimRange: 25
+    attraction: 12
+    listOrder: 201090
+  ###############################################
+  ############### POLICE WEAPONS #################
+  #############################################
+  - type: STR_POLICE_REVOLVER
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_PISTOLS ]
+    size: 0.01
+    costBuy: 1500
+    costSell: 1000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 5
+    bigSprite: 166
+    floorSprite: 166
+    handSprite: 628
+    bulletSprite: 1
+    fireSound: 166
+    bulletSpeed: 15
+    reloadSound: [ 204, 205, 206 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_38_REVOLVER_AMMO_X6 ]
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 80
+    accuracyAuto: 68
+    tuSnap: 20
+    tuAimed: 30
+    tuAuto: 22
+    tuLoad: 15
+    maxRange: 60
+    aimRange: 12
+    snapRange: 9
+    autoRange: 8
+    dropoff: 1
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 200430
+  - type: STR_BERETTA_M12
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SMGS ]
+    size: 0.03
+    costBuy: 3000
+    costSell: 2500
+    requiresBuyCountry: STR_ITALY
+    monthlyBuyLimit: 100
+    weight: 5
+    bigSprite: 167
+    floorSprite: 167
+    handSprite: 636
+    bulletSprite: 1
+    bulletSpeed: 20
+    fireSound: 167
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
+    confAuto:
+      shots: 6
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 55
+    accuracyAuto: 45
+    accuracyAimed: 45
+    tuSnap: 15
+    tuAuto: 40
+    tuAimed: 45
+    costThrow:
+      energy: 14
+    autoRange: 9
+    snapRange: 12
+    aimRange: 20
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 8
+    listOrder: 201510
+  - type: STR_POLICE_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_CIVILIAN_TECH, STR_SHOTGUNS, STR_FUSION ]
+    size: 0.02
+    costBuy: 1500
+    costSell: 1100
+    monthlyBuyLimit: 100
+    weight: 8
+    bigSprite: 168
+    floorSprite: 168
+    handSprite: 644
+    bulletSprite: 3
+    fireSound: 168
+    reloadSound: [ 183, 184, 185 ]
+    ammo:
+      0:
+        compatibleAmmo:
+          [
+            STR_12GAUGE_BUCKSHOT_X8,
+            STR_12GAUGE_SLUG_X8,
+            STR_12GAUGE_ELERIUM_SHARDS_X8,
+            STR_12GAUGE_NON_LETHAL_X8
+          ]
+    confAuto:
+      shots: 4
+      name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 60
+    accuracyAimed: 80
+    accuracyAuto: 40
+    tuSnap: 25
+    tuAimed: 60
+    tuAuto: 40
+    aimRange: 14
+    snapRange: 8
+    dropoff: 6
+    shotgunChoke: 70
+    tuLoad: 30
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 7
+    listOrder: 200180
+  - type: STR_POLICE_TONFA
+    requiresBuy:
+      - STR_POLICE_TONFA
+    categories: [ STR_MELEE, STR_CIVILIAN_TECH ]
+    size: 0.02
+    costBuy: 600
+    costSell: 500
+    monthlyBuyLimit: 100
+    weight: 5
+    bigSprite: 169
+    floorSprite: 169
+    handSprite: 652
+    meleeHitSound: 198
+    power: 20
+    damageType: 6
+    damageBonus:
+      strength: 0.3
+      melee: 0.1
+    damageAlter:
+      ArmorEffectiveness: 1.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 6
+      energy: 2
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2108
+  - type: STR_ENFORCER
+    requiresBuy:
+      - STR_ENFORCER
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_PISTOLS ]
+    size: 0.02
+    costBuy: 2000
+    costSell: 1100
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 4
+    bigSprite: 224
+    floorSprite: 224
+    handSprite: 920
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_30_CARBINE_X15 ]
+    confAuto:
+      name: STR_RAPID_FIRE
+      shortName: STR_RAPID_FIRE_SHORT
+      ammoSlot: 0
+      shots: 3
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 85
+    kneelBonus: 100
+    maxRange: 60
+    aimRange: 14
+    snapRange: 10
+    autoRange: 10
+    dropoff: 1
+    tuSnap: 15
+    tuAimed: 20
+    invHeight: 2
+    invWidth: 1
+    battleType: 1
+    twoHanded: false
+    armor: 250
+    tuMelee: 0
+    listOrder: 200370
+  - type: STR_M1_CARBINE
+    requiresBuy:
+      - STR_M1_CARBINE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES ]
+    size: 0.02
+    costBuy: 900
+    costSell: 400
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 5
+    bigSprite: 248
+    floorSprite: 248
+    handSprite: 948
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_30_CARBINE_X15 ]
+    confAimed:
+      name: STR_AIMED
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 75
+    accuracyAimed: 85
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    tuSnap: 20
+    tuAimed: 25
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+    listOrder: 200390
+  - type: STR_30_CARBINE_X15
+    requiresBuy:
+      - STR_M1_CARBINE
+    refNode: *STR_9MM_PISTOL_AMMO
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_CLIPS ]
+    size: 0.005
+    costBuy: 100
+    costSell: 50
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 102
+    floorSprite: 102
+    hitAnimation: 26
+    hitSound: 22
+    damageType: 1
+    power: 31
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.7
+      ToWound: 0.3
+      ToArmor: 0.7
+      RandomWound: false
+    clipSize: 15
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 200400
+  ###############################################
+  ########## ALLIED ARMIES WEAPONS #################
+  ###############################################
+  ##################
+  ###### USA ########
+  ##################
+  - type: STR_M16A1
+    requiresBuy:
+      - STR_USA_SUPPORT_RESEARCH
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_RIFLES ]
+    size: 0.02
+    costBuy: 4500
+    costSell: 3750
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 100
+    weight: 10
+    bigSprite: 170
+    floorSprite: 170
+    handSprite: 660
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 85
+    accuracyAimed: 75
+    accuracyAuto: 70
+    oneHandedPenalty: 60
+    kneelBonus: 130
+    maxRange: 60
+    aimRange: 24
+    snapRange: 20
+    autoRange: 18
+    dropoff: 1
+    tuSnap: 30
+    tuAimed: 45
+    tuAuto: 33
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+    listOrder: 200790
+  ##################
+  ###### NATO #######
+  ##################
+  - type: STR_FN_FAL
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_RIFLES ]
+    size: 0.02
+    costBuy: 4500
+    costSell: 3750
+    monthlyBuyLimit: 100
+    weight: 12
+    fireSound: 170
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 65
+    accuracySnap: 85
+    tuAuto: 38
+    tuSnap: 28
+    snapRange: 32
+    aimRange: 45
+    autoRange: 25
+    bulletSprite: 2
+    bulletSpeed: 20
+    bigSprite: 171
+    floorSprite: 171
+    handSprite: 668
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 201150
+  - type: STR_BREN
+    requiresBuy:
+      - STR_BREN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_LMGS ]
+    size: 0.04
+    costBuy: 6200
+    costSell: 5000
+    requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 20
+    weight: 10
+    bigSprite: 172
+    floorSprite: 172
+    handSprite: 676
+    bulletSprite: 11
+    bulletSpeed: 25
+    fireSound: 171
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 52
+    accuracyAuto: 39
+    tuSnap: 20
+    tuAuto: 45
+    tuLoad: 30
+    snapRange: 32
+    autoRange: 32
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201170
+  - type: STR_OWEN_SMG
+    requiresBuy:
+      - STR_OWEN_SMG
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_SMGS ]
+    size: 0.03
+    costBuy: 2600
+    costSell: 2000
+    requiresBuyCountry: STR_AUSTRALIA
+    monthlyBuyLimit: 100
+    weight: 7
+    bigSprite: 173
+    floorSprite: 173
+    handSprite: 684
+    bulletSprite: 1
+    bulletSpeed: 25
+    fireSound: 149
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
+    confAuto:
+      shots: 5
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 60
+    accuracyAuto: 50
+    accuracyAimed: 50
+    tuSnap: 15
+    tuAuto: 30
+    tuAimed: 36
+    costThrow:
+      energy: 10
+    autoRange: 9
+    snapRange: 12
+    aimRange: 20
+    kneelBonus: 115
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 8
+    listOrder: 201540
+  ##################
+  ###### USSR #######
+  ##################
+  - type: STR_AKM
+    requiresBuy:
+      - STR_AKM
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES ]
+    size: 0.02
+    costBuy: 2500
+    costSell: 1500
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 8
+    bigSprite: 174
+    floorSprite: 174
+    handSprite: 692
+    bulletSprite: 2
+    bulletSpeed: 28
+    fireSound: 172
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo:
+          [
+            STR_7_62MM_SOVIET_RIFLE_X30,
+            STR_7_62MM_SOVIET_RIFLE_X40
+          ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 45
+    accuracySnap: 62
+    accuracyAimed: 85
+    tuAuto: 50
+    tuSnap: 25
+    tuAimed: 40
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 201320
+  - type: STR_SKS
+    requiresBuy:
+      - STR_SKS
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SNIPER_RIFLES ]
+    size: 0.02
+    costBuy: 3500
+    costSell: 2750
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 9
+    bigSprite: 175
+    floorSprite: 175
+    handSprite: 700
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 173
+    reloadSound: [ 186, 187, 188, 189 ]
+    compatibleAmmo:
+      - STR_7_62MM_SOVIET_RIFLE_X10
+    accuracySnap: 65
+    accuracyAimed: 105
+    tuSnap: 25
+    tuAimed: 60
+    tuLoad: 25
+    costThrow:
+      energy: 18
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 7
+    listOrder: 201200
+  - type: STR_PPS_43
+    requiresBuy:
+      - STR_PPS_43
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SMGS ]
+    size: 0.02
+    costBuy: 2500
+    costSell: 1900
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    weight: 7
+    bigSprite: 176
+    floorSprite: 176
+    handSprite: 708
+    bulletSprite: 1
+    bulletSpeed: 17
+    fireSound: 174
+    reloadSound: [ 190, 191, 192, 194 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
+    confAimed:
+      shots: 5
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 45
+    accuracySnap: 0
+    accuracyAimed: 55
+    tuAuto: 33
+    tuSnap: 0
+    tuAimed: 38
+    costThrow:
+      energy: 14
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 45
+    invWidth: 1
+    invHeight: 3
+    armor: 32
+    aimRange: 24
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201570
+  #####################################################
+  ######## UNEXCOM AMERICAN PROTOTYPE WEAPONS  ########
+  #####################################################
+  #####################################################
+  ######### UNEXCOM  NATO PROTOTYPE WEAPONS  ##########
+  #####################################################
+  - type: STR_MG3
+    size: 0.02
+    costSell: 27500
+    weight: 8
+    bigSprite: 177
+    handSprite: 716
+    fireSound: 175
+    accuracyAuto: 65
+    accuracySnap: 70
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    tuAuto: 30
+    tuSnap: 20
+    clipSize: 300
+    power: 60
+    battleType: 1
+    bulletSprite: 1
+    damageType: 1
+    twoHanded: true
+    recover: false
+    maxRange: 200
+    snapRange: 29
+    autoRange: 22
+    hitSound: 22
+    hitAnimation: 26
+    minRange: 0
+    dropoff: 2
+    invWidth: 2
+    invHeight: 3
+    sprayWaypoints: 2
+    listOrder: 2116
+    kneelBonus: 110
+    fixedWeapon: true
+    fixedWeaponShow: true
+    defaultInventorySlot: STR_RIGHT_HAND
+  #####################################################
+  ####### UNEXCOM SOVIET USSR PROTOTYPE WEAPONS  ######
+  #####################################################
+  - type: STR_ANGRY_WIFE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_SHOTGUNS, STR_FUSION ]
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    size: 0.01
+    costBuy: 1750
+    costSell: 800
+    monthlyBuyLimit: 50
+    requiresBuyCountry: STR_RUSSIA
+    weight: 6
+    bigSprite: 178
+    floorSprite: 178
+    handSprite: 724
+    bulletSprite: 3
+    fireSound: 176
+    reloadSound: [ 183, 184, 185 ]
+    compatibleAmmo:
+      - STR_12GAUGE_BUCKSHOT_X2
+      - STR_12GAUGE_SLUG_X2
+      - STR_12GAUGE_BUCKSHOT_X8
+      - STR_12GAUGE_NON_LETHAL_X8
+      - STR_12GAUGE_SLUG_X8
+      - STR_12GAUGE_ELERIUM_SHARDS_X8
+    accuracySnap: 65
+    accuracyAuto: 50
+    accuracyMultiplier:
+      firing: 0.5
+      flatHundred: 0.5
+    tuSnap: 12
+    tuAuto: 18
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 10
+    autoShots: 2
+    snapRange: 10
+    autoRange: 10
+    dropoff: 5
+    kneelBonus: 110
+    listOrder: 200030
+  - type: STR_RIOT_SHIELD
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    size: 0.01
+    weight: 9
+    costSell: 5000
+    bigSprite: 179
+    handSprite: 732
+    meleeHitSound: 177
+    meleeAnimation: 0
+    power: 40
+    damageType: 6
+    damageBonus:
+      strength: 1.8
+    damageAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.5
+      ToHealth: 0.50
+      ToStun: 1.2
+    accuracyMelee: 100
+    costMelee:
+      time: 14
+      energy: 12
+    fixedWeapon: true
+    fixedWeaponShow: true
+    defaultInventorySlot: STR_LEFT_HAND
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2120
+  ###############################
+  ###### MEDICAL AND FOOD #######
+  ###############################
+  - type: STR_CANNED_FOOD
+    categories: [ STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 100
+    costSell: 10
+    monthlyBuyLimit: 300
+    weight: 4
+    bigSprite: 192
+    floorSprite: 192
+    handSprite: 820
+    hitSound: 207
+    battleType: 6
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    painKiller: 1
+    costUse:
+      time: 25
+      energy: -20
+      morale: -25
+      health: -5
+    costThrow:
+      energy: 8
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    experienceTrainingMode: 21
+    recoveryPoints: 10
+    listOrder: 2128
+  - type: STR_BREAD
+    categories: [ STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 40
+    costSell: 2
+    monthlyBuyLimit: 300
+    weight: 1
+    bigSprite: 1088
+    floorSprite: 1088
+    #handSprite: 820
+    hitSound: 207
+    battleType: 6
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    painKiller: 1
+    costUse:
+      time: 10
+      energy: -10
+      morale: -15
+      health: -5
+    costThrow:
+      energy: 4
+      time: 10
+    flatThrow:
+      time: true
+    invWidth: 2
+    invHeight: 1
+    experienceTrainingMode: 21
+    recoveryPoints: 10
+    listOrder: 2129
+  - type: STR_CIGARETTES
+    categories: [ STR_LIGHT_EQUIPMENT ]
+    size: 0.001
+    costSell: 200
+    weight: 4
+    bigSprite: 193
+    floorSprite: 193
+    handSprite: 828
+    hitSound: 208
+    battleType: 6
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    painKiller: 3
+    costUse:
+      time: 10
+      energy: 5
+      morale: -50
+      health: 5
+    costThrow:
+      energy: 8
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    experienceTrainingMode: 21
+    recoveryPoints: 10
+    listOrder: 2135
+  - type: STR_FLASK
+    categories: [ STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costSell: 100
+    weight: 4
+    bigSprite: 194
+    floorSprite: 194
+    handSprite: 836
+    hitSound: 209
+    battleType: 6
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    painKiller: 2
+    costUse:
+      time: 40
+      morale: -80
+      stun: 10
+    costThrow:
+      energy: 8
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    experienceTrainingMode: 21
+    recoveryPoints: 10
+    listOrder: 2136
+  ########################################
+  - type: STR_MEDI_KIT
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    requires:
+      - STR_MEDI_KIT
+    size: 0.01
+    costSell: 46500
+    weight: 5
+    bigSprite: 24
+    floorSprite: 24
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    painKiller: 10
+    heal: 10
+    stimulant: 10
+    woundRecovery: 3
+    healthRecovery: 5
+    stunRecovery: 5
+    energyRecovery: 10
+    tuUse: 10
+    flatRate: true
+    medikitActionName: STR_ACTIVATE_MEDIKIT
+    listOrder: 2137
+  - type: STR_MEDICAL_BAG
+    medikitBackground: MEDIKIT_BACKGROUND
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    size: 0.05
+    costBuy: 2000
+    costSell: 250
+    weight: 10
+    monthlyBuyLimit: 60
+    bigSprite: 195
+    floorSprite: 195
+    handSprite: 844
+    battleType: 6
+    invWidth: 2
+    invHeight: 2
+    painKiller: 6
+    heal: 6
+    stimulant: 6
+    woundRecovery: 3
+    healthRecovery: 5
+    stunRecovery: 6
+    energyRecovery: 15
+    costUse:
+      time: 30
+      energy: -3
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    medikitActionName: STR_DEPLOY_MEDICAL_BAG
+    listOrder: 2138
+  - type: STR_FIELD_DRESSING
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 100
+    costSell: 50
+    weight: 1
+    monthlyBuyLimit: 100
+    bigSprite: 196
+    floorSprite: 196
+    handSprite: 852
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    heal: 1
+    woundRecovery: 6
+    healthRecovery: 1
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 7
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_USE_FIELD_DRESSING
+    listOrder: 2139
+  - type: STR_MEDICAL_POUCH
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 200
+    costSell: 100
+    monthlyBuyLimit: 100
+    weight: 2
+    bigSprite: 197
+    floorSprite: 197
+    handSprite: 880
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    heal: 3
+    healthRecovery: 3
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 10
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_USE_MEDICAL_POUCH
+    listOrder: 2140
+  - type: STR_DUCT_TAPE
+    requiresBuy:
+      - STR_OLYMPUS
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.01
+    costBuy: 100
+    costSell: 50
+    monthlyBuyLimit: 200
+    weight: 1
+    bigSprite: 202
+    floorSprite: 202
+    handSprite: 988
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    heal: 15
+    woundRecovery: 1
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 5
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_TAPE_IT
+    listOrder: 2141
+  - type: STR_DUCT_GUN
+    requiresBuy:
+      - STR_OLYMPUS
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.01
+    costBuy: 100
+    costSell: 50
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 203
+    floorSprite: 203
+    handSprite: 996
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    heal: 25
+    woundRecovery: 2
+    healthRecovery: 0
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 5
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_TAPE_IT
+    listOrder: 2142
+  - type: STR_BIO_FOAM
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.01
+    weight: 5
+    costSell: 35000
+    bigSprite: 204
+    floorSprite: 204
+    handSprite: 1004
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    painKiller: 7
+    heal: 8
+    woundRecovery: 3
+    healthRecovery: 2
+    stunRecovery: 5
+    isConsumable: true
+    medikitTargetSelf: true
+    medikitType: 1 #change how medikit works, `0` default with UI, `1` fast heal, `2` fast stimulant, `3` fast pain killer.
+    costUse:
+      time: 7
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    medikitActionName: STR_APPLY_FOAM
+    listOrder: 2143
+  - type: STR_ELECTRO_FLARE
+    categories: [ STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.005
+    monthlyBuyLimit: 200
+    bigSprite: 888
+    handSprite: 888
+    floorSprite: 888
+    tuPrime: 15
+    battleType: 10
+    primeActionName: STR_PRIME_FLARE
+    fuseType: -2
+  - type: STR_PSI_AMP
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+  - type: STR_STUN_ROD
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.01
+    costBuy: 1260
+    costSell: 945
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 26
+    floorSprite: 26
+    handSprite: 80
+    meleeSound: 54
+    power: 65
+    damageType: 6
+    accuracyMelee: 100
+    tuMelee: 30
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    clipSize: -1
+    listOrder: 2121
+  ####################################
+  ###### WEAPON CUSTOMIZATION #######
+  ##################################
+  - type: STR_COLT_SCOPE_ACCESSORY
+    requires:
+      - STR_WEAPON_MODIFICATION
+    categories: [ STR_MISC, STR_CUSTOM_WEAPON ]
+    weight: 2
+    size: 0.01
+    costBuy: 300
+    costSell: 250
+    monthlyBuyLimit: 50
+    requiresBuyCountry: STR_USA
+    bigSprite: 190
+    floorSprite: 190
+    invWidth: 1
+    invHeight: 1
+    armor: 30
+    recover: true
+    listOrder: 2126
+  - type: STR_M203_ACCESSORY
+    requires:
+      - STR_WEAPON_MODIFICATION
+    categories: [ STR_MISC, STR_CUSTOM_WEAPON ]
+    weight: 2
+    size: 0.01
+    costBuy: 400
+    costSell: 350
+    monthlyBuyLimit: 50
+    requiresBuyCountry: STR_USA
+    bigSprite: 191
+    floorSprite: 191
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    recover: true
+    listOrder: 2127
+  ####################################
+  ####### CUSTOM SF WEAPONS #########
+  ##################################
+  - type: STR_SAWEDOFF_M79_THUMPER
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_ARTILLERY, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    size: 0.02
+    costSell: 2250
+    weight: 8
+    bigSprite: 181
+    floorSprite: 181
+    handSprite: 748
+    fireSound: 142
+    compatibleAmmo:
+      - STR_40MM_FRAG
+      - STR_40MM_INCENDIARY
+      - STR_40MM_SMOKE
+      - STR_40MM_NON_LETHAL
+    accuracySnap: 40
+    accuracyAimed: 55
+    tuSnap: 33
+    tuAimed: 50
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 20
+    arcingShot: true
+    listOrder: 200570
+  - type: STR_SAWEDOFF_SHOTGUN
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_DOUBLE_BARRELED_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH, STR_CIVILIAN_TECH, STR_SHOTGUNS, STR_CUSTOM_WEAPON ]
+    size: 0.02
+    costSell: 3000
+    weight: 8
+    bigSprite: 182
+    floorSprite: 182
+    handSprite: 756
+    bulletSprite: 1
+    fireSound: 164
+    ammo:
+      0:
+        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X2, STR_12GAUGE_SLUG_X2 ]
+    confAuto:
+      shots: 2
+      name: STR_RAGE_FIRE
+      shortName: STR_RAGE_FIRE_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 55
+    accuracyAimed: 80
+    accuracyAuto: 40
+    tuSnap: 20
+    tuAimed: 30
+    tuAuto: 25
+    snapRange: 4
+    aimRange: 4
+    autoRange: 4
+    dropoff: 3
+    tuLoad: 10
+    battleType: 1
+    twoHanded: false
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 2
+    armor: 40
+    attraction: 7
+    listOrder: 200100
+  - type: STR_COMBAT_KNIFE
+    categories: [ STR_MELEE, STR_SPECIAL_FORCES_TECH, STR_MERCENARY_TECH ]
+    size: 0.02
+    costBuy: 300
+    costSell: 200
+    monthlyBuyLimit: 50
+    weight: 3
+    bigSprite: 189
+    floorSprite: 189
+    handSprite: 812
+    meleeHitSound: 165
+    power: 40
+    damageType: 7
+    damageBonus:
+      strength: 0.3
+      melee: 1.2
+    damageAlter:
+      ArmorEffectiveness: 1.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.8
+    costMelee:
+      time: 6
+      energy: 2
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2118
+  - type: STR_XM117_SCOPED
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    size: 0.02
+    costSell: 1750
+    weight: 7
+    bigSprite: 183
+    floorSprite: 183
+    handSprite: 764
+    bulletSprite: 2
+    fireSound: 138
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 8
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 95
+    accuracyAimed: 150
+    accuracyAuto: 75
+    tuAuto: 45
+    tuSnap: 29
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    attraction: 8
+    listOrder: 200820
+  - type: STR_XM117_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    size: 0.02
+    costSell: 1750
+    weight: 9
+    bigSprite: 184
+    floorSprite: 184
+    handSprite: 772
+    bulletSprite: 2
+    fireSound: 138
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+      1:
+        tuLoad: 25
+        tuUnload: 15
+        compatibleAmmo: [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_ELERIUM_SHARDS_X8, STR_12GAUGE_NON_LETHAL_X8 ]
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 1
+      name: STR_FIRE_SHOTGUN
+      ammoSlot: 1
+    accuracySnap: 70
+    accuracyAimed: 65
+    accuracyAuto: 65
+    tuAuto: 45
+    tuSnap: 29
+    tuAimed: 40
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    attraction: 8
+    listOrder: 200230
+  - type: STR_XM117_M203
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_SPECIAL_FORCES_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    size: 0.02
+    costSell: 1750
+    weight: 10
+    bigSprite: 185
+    floorSprite: 185
+    handSprite: 780
+    bulletSprite: 2
+    fireSound: 138
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+      1:
+        tuLoad: 20
+        tuUnload: 20
+        compatibleAmmo:
+          [
+            STR_40MM_FRAG,
+            STR_40MM_INCENDIARY,
+            STR_40MM_SMOKE,
+            STR_40MM_NON_LETHAL
+          ]
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 1
+      name: STR_FIRE_M203
+      shortName: STR_FIRE_M203_SHORT
+      ammoSlot: 1
+      arcing: true
+    accuracySnap: 70
+    accuracyAimed: 80
+    accuracyAuto: 65
+    tuAuto: 45
+    tuSnap: 29
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    aimRange: 11
+    attraction: 8
+    listOrder: 200620
+  - type: STR_MAT49
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_MERCENARY_SUPPORT
+    size: 0.02
+    costBuy: 3000
+    costSell: 2500
+    requiresBuyCountry: STR_FRANCE
+    weight: 5
+    bigSprite: 180
+    floorSprite: 180
+    handSprite: 740
+    bulletSprite: 1
+    bulletSpeed: 25
+    fireSound: 149
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_9MM_PISTOL_X20, STR_9MM_PISTOL_X30 ]
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 55
+    accuracySnap: 70
+    accuracyAimed: 85
+    tuAuto: 33
+    tuSnap: 24
+    tuAimed: 46
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    sprayWaypoints: 2
+    aimRange: 25
+    attraction: 12
+    listOrder: 201600
+  ####################################
+  ###### CUSTOM MERC WEAPONS ########
+  ##################################
+  - type: STR_FN_FSC
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_MERCENARY_SUPPORT
+    size: 0.02
+    costSell: 2500
+    weight: 7
+    bigSprite: 186
+    floorSprite: 186
+    handSprite: 788
+    bulletSprite: 1
+    fireSound: 148
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 50
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuAuto: 33
+    tuSnap: 24
+    tuAimed: 46
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    aimRange: 25
+    attraction: 12
+    listOrder: 200850
+  - type: STR_FN_FSC_SCOPED
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_MERCENARY_SUPPORT
+    size: 0.02
+    costSell: 2500
+    weight: 7
+    bigSprite: 187
+    floorSprite: 187
+    handSprite: 796
+    bulletSprite: 1
+    fireSound: 148
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confAuto:
+      shots: 4
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 65
+    accuracySnap: 95
+    accuracyAimed: 135
+    tuAuto: 33
+    tuSnap: 24
+    tuAimed: 38
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    aimRange: 25
+    attraction: 12
+    listOrder: 200880
+  - type: STR_FN_FSC_BAYONET
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_CARBINES, STR_CUSTOM_WEAPON ]
+    requires:
+      - STR_MERCENARY_SUPPORT
+    size: 0.02
+    costSell: 2500
+    weight: 8
+    bigSprite: 188
+    floorSprite: 188
+    handSprite: 804
+    bulletSprite: 1
+    fireSound: 148
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 47
+    accuracySnap: 66
+    accuracyAimed: 84
+    tuAuto: 33
+    tuSnap: 24
+    tuAimed: 46
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    # Bayonet segment
+    meleeHitSound: 178
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 45
+    meleeBonus:
+      strength: 0.5
+      melee: 0.1
+    accuracyMelee: 100
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 8
+    flatMelee:
+      time: true
+    # Bayonet segment end
+    armor: 30
+    autoRange: 11
+    aimRange: 25
+    attraction: 12
+    listOrder: 200910
+  - type: STR_M16A1_SCOPED
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_SPECIAL_FORCES_TECH, STR_RIFLES, STR_CUSTOM_WEAPON ]
+    size: 0.02
+    costSell: 3750
+    weight: 10
+    bigSprite: 211
+    floorSprite: 211
+    handSprite: 100
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+    confAimed:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 7
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 90
+    accuracyAimed: 140
+    accuracyAuto: 60
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    maxRange: 60
+    aimRange: 25
+    snapRange: 22
+    autoRange: 14
+    dropoff: 1
+    tuSnap: 30
+    tuAimed: 60
+    tuAuto: 33
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+    listOrder: 200940
+  - type: STR_M16A1_SHOTGUN
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_SPECIAL_FORCES_TECH, STR_RIFLES, STR_CUSTOM_WEAPON ]
+    size: 0.02
+    costSell: 3750
+    weight: 12
+    bigSprite: 212
+    floorSprite: 212
+    handSprite: 108
+    fireSound: 169
+    bulletSpeed: 25
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X20, STR_5_56MM_NATO_RIFLE_X30 ]
+      1:
+        tuLoad: 25
+        tuUnload: 15
+        compatibleAmmo:
+          [ STR_12GAUGE_BUCKSHOT_X8, STR_12GAUGE_SLUG_X8, STR_12GAUGE_ELERIUM_SHARDS_X8, STR_12GAUGE_NON_LETHAL_X8 ]
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 1
+      name: STR_FIRE_SHOTGUN
+      ammoSlot: 1
+    accuracySnap: 65
+    accuracyAimed: 75
+    accuracyAuto: 40
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    maxRange: 60
+    aimRange: 16
+    snapRange: 20
+    autoRange: 10
+    dropoff: 1
+    tuSnap: 30
+    tuAimed: 45
+    tuAuto: 33
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+    listOrder: 200270
+  - type: STR_50_CAL_MAGNUM
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_MERCENARY_TECH, STR_PISTOLS ]
+    requires:
+      - STR_MERCENARY_SUPPORT
+    size: 0.01
+    costBuy: 10500
+    costSell: 9000
+    monthlyBuyLimit: 20
+    requiredBuyCountry: STR_USA
+    weight: 6
+    bigSprite: 213
+    floorSprite: 213
+    handSprite: 928
+    bulletSprite: 1
+    fireSound: 166
+    bulletSpeed: 15
+    reloadSound: [ 204, 205, 206 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_50_CAL_REVOLVER_AMMO_X6 ]
+    confAimed:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 40
+    accuracyAimed: 150
+    tuSnap: 30
+    tuAimed: 60
+    tuLoad: 15
+    maxRange: 60
+    aimRange: 15
+    snapRange: 13
+    dropoff: 1
+    kneelBonus: 120
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 200740
+  - type: STR_50_CAL_REVOLVER_AMMO_X6
+    categories: [ STR_FIREARMS, STR_PISTOLS, STR_MERCENARY_TECH, STR_CLIPS ]
+    requires:
+      - STR_MERCENARY_SUPPORT
+    size: 0.01
+    costBuy: 500
+    costSell: 600
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 214
+    floorSprite: 214
+    hitSound: 22
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    attraction: 8
+    listOrder: 200750
+  ####################################
+  ######## CUSTOM UN WEAPONS ########
+  ##################################
+  - type: STR_STONER_RIFLE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES ]
+    size: 0.02
+    requiresBuy:
+      - STR_ON_OUR_OWN
+    costBuy: 4500
+    costSell: 3750
+    requiredBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 8
+    fireSound: 170
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 65
+    accuracySnap: 70
+    tuAuto: 38
+    tuSnap: 28
+    snapRange: 32
+    aimRange: 45
+    autoRange: 25
+    bulletSprite: 2
+    bulletSpeed: 20
+    bigSprite: 1032
+    floorSprite: 1032
+    handSprite: 1032
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 201151
+  - type: STR_STONER_CARBINE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_CARBINES ]
+    size: 0.02
+    costSell: 2000
+    weight: 6
+    bigSprite: 1040
+    floorSprite: 1040
+    handSprite: 1040
+    bulletSprite: 2
+    fireSound: 170
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20 ]
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+      shortName: STR_DOUBLE_TAP_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+      shortName: STR_FULL_AUTO_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracyAuto: 50
+    accuracySnap: 80
+    accuracyAimed: 85
+    bulletSpeed: 20
+    tuAuto: 32
+    tuSnap: 24
+    tuAimed: 48
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    aimRange: 25
+    attraction: 8
+    listOrder: 201252
+  - type: STR_STONER_AUTOMATIC_RIFLE
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_LMGS ]
+    size: 0.04
+    costSell: 5000
+    weight: 13
+    bigSprite: 1048
+    floorSprite: 1048
+    handSprite: 1048
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 170
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X30 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 95
+    accuracyAuto: 80
+    tuSnap: 20
+    tuAuto: 45
+    tuLoad: 30
+    snapRange: 32
+    autoRange: 32
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201171
+  - type: STR_STONER_COMMANDO
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_LMGS ]
+    size: 0.03
+    costSell: 9000
+    weight: 10
+    bigSprite: 1056
+    floorSprite: 1056
+    handSprite: 1056
+    bulletSprite: 2
+    bulletSpeed: 18
+    fireSound: 170
+    reloadSound: [ 194, 195, 196 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_LMG_X50, STR_7_62MM_NATO_LMG_X100 ]
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 85
+    accuracyAuto: 60
+    tuSnap: 25
+    tuAuto: 40
+    tuLoad: 20
+    snapRange: 18
+    autoRange: 18
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 201001
+  - type: STR_STONER_SNIPER
+    categories: [ STR_BALLISTIC, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SNIPER_RIFLES ]
+    size: 0.02
+    costSell: 4750
+    weight: 9
+    bigSprite: 1064
+    floorSprite: 1064
+    handSprite: 1064
+    bulletSprite: 2
+    fireSound: 170
+    bulletSpeed: 20
+    reloadSound: [ 186, 187, 188, 189 ]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_7_62MM_NATO_RIFLE_X20, STR_7_62MM_NATO_RIFLE_X5 ]
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 85
+    accuracyAuto: 150
+    tuSnap: 29
+    tuAimed: 45
+    tuAuto: 70
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    attraction: 8
+    listOrder: 201121
+  #######################################
+  ########## EXPLOSIVES ################
+  #####################################
+  - type: STR_GRENADE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 300
+    costSell: 240
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 19
+    floorSprite: 19
+    power: 50
+    tuPrime: 20
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTile: 0.6
+      ToWound: 1.2
+      RandomWound: true
+    tuUnprime: 50
+    costThrow:
+      energy: 6
+    damageType: 3
+    battleType: 4
+    blastRadius: 5
+  - type: STR_PROXIMITY_GRENADE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 500
+    costSell: 400
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 21
+    floorSprite: 21
+    tuPrime: 20
+    tuUnprime: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    costThrow:
+      energy: 8
+    power: 70
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTile: 0.5
+      ToWound: 0.8
+      RandomWound: true
+    damageType: 3
+    battleType: 5
+    blastRadius: 5
+  - type: STR_HIGH_EXPLOSIVE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.02
+    costBuy: 1500
+    costSell: 1200
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 22
+    floorSprite: 22
+    power: 110
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTile: 1.2
+      ToWound: 1.8
+      RandomWound: true
+    damageType: 3
+    battleType: 4
+    invWidth: 2
+    invHeight: 1
+    blastRadius: 5
+  - type: STR_SMOKE_GRENADE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.1
+    costBuy: 150
+    costSell: 120
+    monthlyBuyLimit: 100
+    weight: 3
+    bigSprite: 200
+    floorSprite: 200
+    handSprite: 904
+    power: 60
+    damageType: 9
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 25
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    blastRadius: 5
+    listOrder: 2135
+  - type: STR_FLASHBANG_GRENADE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    costBuy: 1000
+    costSell: 850
+    monthlyBuyLimit: 100
+    weight: 4
+    bigSprite: 201
+    floorSprite: 201
+    handSprite: 912
+    hitSound: 210
+    hitAnimation: 0
+    power: 30
+    fuseType: -2 # Explodes on contact
+    damageType: 6
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTime: 2.5
+      ToStun: 0.5
+      ToEnergy: 2.0
+    costThrow:
+      energy: 8
+    costPrime:
+      time: 25
+    battleType: 4
+    blastRadius: 3
+    armor: 20
+    attraction: 6
+######### End of Ballistic Weapons ##########
+########## Altradium Alloy & Tungsten Carbide
+#Close quarters: defined by default on 1 tile
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+########## Altradium Alloy & Tungsten Carbide
+################################
+##### FLECHETTE WEAPONS #######
+##############################
+  - type: STR_FLECHETTE_RIFLE
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
+    size: 0.02
+    costSell: 37500
+    weight: 6
+    bigSprite: 1211
+    floorSprite: 1211
+    handSprite: 2948
+    fireSound: 169
+    bulletSpeed: 50
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_FL]
+      1:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_AP]
+    confAimed:
+      shots: 1
+      name: STR_AP_AIMED
+      ammoSlot: 1
+      arcing: false
+    confSnap:
+      shots: 3
+      name: STR_AP_BURST
+      ammoSlot: 1
+      arcing: false
+    confAuto:
+      shots: 10
+      followProjectiles: false
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 85
+    accuracyAuto: 65
+    maxRange: 60
+    aimRange: 35
+    snapRange: 32
+    autoRange: 28
+    dropoff: 1
+    tuAuto: 60
+    tuSnap: 40
+    tuAimed: 40
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+  - type: STR_FLECHETTE_CARBINE
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
+    size: 0.02
+    costSell: 37500
+    weight: 5
+    bigSprite: 1204
+    floorSprite: 1203
+    handSprite: 2908
+    fireSound: 169
+    bulletSpeed: 50
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_FL]
+      1:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_RIFLE_AP]
+    confAimed:
+      shots: 2
+      name: STR_AP_DOUBLETAP
+      ammoSlot: 1
+      arcing: false
+    confSnap:
+      shots: 1
+      name: STR_AP_SNAP
+      ammoSlot: 1
+      arcing: false
+    confAuto:
+      shots: 15
+      followProjectiles: false
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 65
+    accuracyAimed: 80
+    accuracyAuto: 65
+    tuAuto: 55
+    tuSnap: 30
+    tuAimed: 30
+    oneHandedPenalty: 60
+    kneelBonus: 120
+    maxRange: 60
+    aimRange: 22
+    snapRange: 22
+    autoRange: 20
+    dropoff: 1
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    tuMelee: 0
+  - type: STR_ALLOY_RIFLE_AP
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.01
+    costSell: 2250
+    weight: 4
+    bigSprite: 1212
+    floorSprite: 1211
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 60
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.6
+      ToWound: 0.3
+      RandomWound: false
+    clipSize: 20
+    battleType: 2
+    attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_ALLOY_RIFLE_FL
+    requires:
+      - STR_ALLOY_RIFLES
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.01
+    costSell: 2250
+    weight: 2
+    bigSprite: 1220
+    floorSprite: 1211
+    handSprite: 0
+    damageType: 1
+    hitAnimation: -1
+    bulletSprite: 31
+    power: 35
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.3
+      ToArmor: 0.1
+      ToHealth: 1.3
+      ToWound: 0.2
+      RandomWound: false
+    clipSize: 60
+    battleType: 2
+    attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_FLECHETTE_PISTOL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_PISTOLS]
+    size: 0.01
+    costSell: 25000
+    weight: 3
+    bigSprite: 1209
+    floorSprite: 1210
+    handSprite: 2940
+    bulletSprite: 1
+    fireSound: 153
+    reloadSound: [179, 180, 181, 182]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_PISTOL_FL]
+      1:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_PISTOL_AP]
+    confSnap:
+      shots: 5
+      name: STR_AP_AUTO
+      ammoSlot: 1
+      arcing: false
+    confAuto:
+      shots: 5
+      followProjectiles: false
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 75
+    accuracyAuto: 65
+    tuAuto: 20
+    tuSnap: 30
+    costThrow:
+      energy: 8
+    battleType: 1
+    maxRange: 60
+    snapRange: 10
+    autoRange: 10
+    dropoff: 1
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 10
+  - type: STR_ALLOY_PISTOL_AP
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.01
+    costSell: 2250
+    weight: 2
+    bigSprite: 1210
+    floorSprite: 1209
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 45
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.3
+      RandomWound: false
+    clipSize: 10
+    battleType: 2
+    attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_ALLOY_PISTOL_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
+    size: 0.01
+    costSell: 2250
+    weight: 1
+    bigSprite: 1219
+    floorSprite: 1209
+    handSprite: 0
+    damageType: 1
+    hitAnimation: 26
+    bulletSprite: 31
+    power: 35
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.3
+      ToArmor: 0.1
+      ToWound: 0.2
+      ToHealth: 1.3
+      RandomWound: false
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_FLECHETTE_AUTO_SHOTGUN
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    size: 0.03
+    costSell: 52000
+    weight: 6
+    bigSprite: 1202
+    floorSprite: 1202
+    handSprite: 2900
+    bulletSprite: 31
+    fireSound: 141
+    reloadSound: [183, 184, 185]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_AUTO_SHOTGUN_FL]
+    confSnap:
+      shots: 5
+      name: STR_FL_AUTO
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 10
+      name: STR_RAGE_FIRE
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAuto: 60
+    tuSnap: 30
+    tuAuto: 45
+    maxRange: 60
+    snapRange: 8
+    autoRange: 6
+    dropoff: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 65
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+  - type: STR_ALLOY_AUTO_SHOTGUN_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
+    size: 0.01
+    costSell: 2500
+    weight: 2
+    bigSprite: 1203
+    floorSprite: 1213
+    handSprite: 0
+    power: 35
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.3
+      RandomType: 7
+      ToArmor: 0.1
+      ToHealth: 1.3
+      IgnoreOverKill: true
+      ToWound: 0.8
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 30
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 60
+    battleType: 2
+    armor: 250
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_FLECHETTE_SHOTGUN
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    size: 0.03
+    costSell: 5200
+    weight: 6
+    bigSprite: 1213
+    floorSprite: 1212
+    handSprite: 2956
+    bulletSprite: 31
+    fireSound: 141
+    reloadSound: [183, 184, 185]
+    ammo:
+      0:
+        tuLoad: 10
+        tuUnload: 20
+        compatibleAmmo: [ STR_ALLOY_SHOTGUN_FL]
+    confAuto:
+      shots: 12
+      name: STR_RAGE_FIRE
+      ammoSlot: 0
+      arcing: false
+    accuracySnap: 70
+    accuracyAimed: 85
+    accuracyAuto: 55
+    tuSnap: 45
+    tuAimed: 50
+    tuAuto: 60
+    maxRange: 60
+    snapRange: 16
+    autoRange: 12
+    dropoff: 1
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 30
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+  - type: STR_ALLOY_SHOTGUN_FL
+    requires:
+      - STR_ALLOY_CLOSE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
+    size: 0.01
+    costSell: 3500
+    weight: 2
+    bigSprite: 1214
+    floorSprite: 1213
+    handSprite: 0
+    power: 35
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.3
+      RandomType: 7
+      ToArmor: 0.1
+      ToHealth: 1.3
+      IgnoreOverKill: true
+      ToWound: 0.8
+      RandomWound: true
+    hitSound: 22
+    hitAnimation: 26
+    clipSize: 12
+    invHeight: 1
+    invWidth: 1
+    shotgunBehavior: 1
+    shotgunPellets: 12
+    shotgunSpread: 30
+    battleType: 2
+    armor: 250
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_FLECHETTE_GL
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY]
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    size: 0.02
+    costSell: 42500
+    weight: 10
+    bigSprite: 1206
+    floorSprite: 1205
+    handSprite: 2924
+    fireSound: 142
+    compatibleAmmo:
+      - STR_30MM_AAG
+    accuracySnap: 70
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuSnap: 40
+    tuAimed: 50
+    tuAuto: 60
+    maxRange: 60
+    aimRange: 45
+    snapRange: 35
+    autoRange: 30
+    dropoff: 1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+  - type: STR_30MM_AAG
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_CLIPS, STR_ARTILLERY]
+    size: 0.01
+    costSell: 4700
+    weight: 3
+    bigSprite: 1217
+    floorSprite: 1208
+    handSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 75
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTile: 0.8
+      ToArmor: 0.3
+      ToHealth: 1.3
+      ToWound: 0.7
+      RandomWound: true
+      FixRadius: 3
+    damageType: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    clipSize: 9
+    blastRadius: 3
+    bulletSprite: 14
+  - type: STR_FLECHETTE_GRENADE
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_LIGHT_EQUIPMENT, STR_EXPLOSIVES]
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    size: 0.01
+    costSell: 2400
+    weight: 2
+    bigSprite: 1205
+    floorSprite: 1204
+    handSprite: 2916
+    damageAlter:
+      RandomType: 6
+      IgnoreSelfDestruct: true
+      ToTile: 0.8
+      ToArmor: 0.3
+      ToWound: 0.7
+      ToHealth: 1.3
+      RandomWound: true
+      FixRadius: 4
+    power: 75
+    damageType: 3
+    battleType: 4
+    blastRadius: 4
+  - type: STR_FLECHETTE_CANNON
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY, STR_LMGS]
+    size: 0.04
+    costSell: 54000
+    weight: 14
+    bigSprite: 1207
+    floorSprite: 1206
+    handSprite: 2932
+    fireSound: 144
+    bulletSpeed: 100
+    reloadSound: [194, 195, 196]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_ALLOY_HEAVY_AP]
+      1:
+        compatibleAmmo: [ STR_ALLOY_HEAVY_FL]
+    confSnap:
+      shots: 5
+      name: STR_AP_BURST
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 20
+      name: STR_FL_BURST
+      ammoSlot: 1
+      arcing: false
+    accuracySnap: 60
+    accuracyAuto: 50
+    tuSnap: 20
+    tuAuto: 50
+    tuLoad: 30
+    maxRange: 60
+    snapRange: 42
+    autoRange: 38
+    dropoff: 1
+    minRange: 3
+    invHeight: 3
+    invWidth: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 10
+  - type: STR_ALLOY_HEAVY_AP
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
+    size: 0.01
+    costSell: 2250
+    weight: 6
+    bigSprite: 1208
+    floorSprite: 1207
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 2
+    power: 75
+    hitSound: 22
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.7
+      ToWound: 0.3
+      RandomWound: false
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 3
+    vaporProbabilitySurface: 33
+  - type: STR_ALLOY_HEAVY_FL
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
+    size: 0.01
+    costSell: 2250
+    weight: 4
+    bigSprite: 1218
+    floorSprite: 1207
+    handSprite: 0
+    damageType: 1
+    hitAnimation: -1
+    bulletSprite: 31
+    battleType: 2
+    power: 35
+    hitSound: 22
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.3
+      ToHealth: 1.3
+      ToArmor: 0.1
+      ToWound: 0.2
+      RandomWound: false
+    clipSize: 160
+    attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 33
+  - type: STR_FLECHETTE_SNIPER
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    requires:
+      - STR_ALLOY_HEAVY
+    size: 0.03
+    costSell: 62600
+    weight: 10
+    bigSprite: 1215
+    floorSprite: 1214
+    handSprite: 2964
+    bulletSpeed: 20
+    fireSound: 150
+    reloadSound: [186, 187, 188, 189]
+    ammo:
+      0:
+        compatibleAmmo: [ STR_ALLOY_SNIPER_AP]
+      1:
+        compatibleAmmo: [ STR_ALLOY_SNIPER_FL]
+    confSnap:
+      shots: 1
+      name: STR_AP_SHOT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 1
+      name: STR_FL_SHOT
+      ammoSlot: 1
+      arcing: false
+    accuracySnap: 180
+    accuracyAimed: 180
+    tuSnap: 80
+    tuAimed: 80
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 25
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    maxRange: 60
+    aimRange: 50
+    snapRange: 45
+    autoRange: 50
+    minRange: 5
+    dropoff: 2
+    attraction: 10
+  - type: STR_ALLOY_SNIPER_AP
+    requires:
+      - STR_ALLOY_HEAVY
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    size: 0.01
+    costSell: 2250
+    weight: 2
+    bigSprite: 1216
+    floorSprite: 1207
+    handSprite: 0
+    hitAnimation: 26
+    bulletSprite: 4
+    power: 75
+    hitSound: 22
+    damageType: 1
+    invWidth: 1
+    invHeight: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.8
+      ToArmor: 1.2
+      ToWound: 0.3
+      RandomWound: false
+    clipSize: 5
+    battleType: 2
+    attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+  - type: STR_ALLOY_SNIPER_FL
+    categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    requires:
+      - STR_ALLOY_HEAVY
+    size: 0.01
+    costSell: 2250
+    weight: 2
+    bigSprite: 1221
+    floorSprite: 1207
+    handSprite: 0
+    damageType: 1
+    hitAnimation: 26
+    bulletSprite: 31
+    battleType: 2
+    power: 75
+    hitSound: 22
+    invWidth: 1
+    invHeight: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ArmorEffectiveness: 1.5
+      ToArmor: 0.1
+      ToHealth: 1.3
+      ToWound: 0.2
+      RandomWound: false
+    clipSize: 5
+    attraction: 8
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+########### Altradium Alloys & Tungsten Carbide End
+########### Laser Energy Weapons Here
+#Close quarters: defined by default on 1 tile
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+########### Laser Energy Weapons Here
+###################################
+####### UN LASER WEAPONS #########
+#################################
+  - type: STR_PEACEMAKER
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
+    size: 0.03
+    costSell: 60000
+    weight: 6
+    bigSprite: 1999
+    floorSprite: 1999
+    handSprite: 1992
+    hitSound: 19
+    hitAnimation: 100
+    ##bulletSprite: 29
+    fireSound: 2963
+    power: 95
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75
+    accuracySnap: 95
+    accuracyAimed: 85
+    costSnap:
+      time: 35
+      mana: 3
+    costAimed:
+      time: 40
+      mana: 6
+    costAuto:
+      time: 45
+      mana: 8
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 36
+    autoRange: 25
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 17 # darkest red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+###################################
+###### USA LASER WEAPONS #########
+#################################
+  - type: STR_M1972_LASER_PISTOL
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HANDGUNS
+    monthlyBuyLimit: 50
+    size: 0.01
+    costBuy: 30000
+    costSell: 20000
+    requiresBuyCountry: STR_USA
+    weight: 4
+    bigSprite: 2000
+    floorSprite: 2000
+    handSprite: 2000
+    #bulletSprite: 27
+    fireSound: 2960
+    hitSound: 19
+    hitAnimation: 36
+    power: 45
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 70
+    accuracyAuto: 60
+    costSnap:
+      time: 16
+      mana: 1
+    costAimed:
+      time: 45
+      mana: 1
+    costAuto:
+      time: 25
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 13
+    snapRange: 10
+    autoRange: 10
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_38_LASER_MAGNUM
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HANDGUNS
+    size: 0.02
+    costBuy: 40000
+    costSell: 30000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 2001
+    floorSprite: 2001
+    handSprite: 2008
+    #bulletSprite: 27
+    fireSound: 2961
+    hitSound: 19
+    hitAnimation: 36
+    power: 55
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 80
+    accuracyAuto: 60
+    costSnap:
+      time: 26
+      mana: 1
+    costAimed:
+      time: 50
+      mana: 1
+    costAuto:
+      time: 32
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 13
+    snapRange: 10
+    autoRange: 8
+    minRange: 1
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_CALBR
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_RIFLES
+    size: 0.03
+    costBuy: 50000
+    costSell: 40000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
+    weight: 6
+    bigSprite: 2002
+    floorSprite: 2002
+    handSprite: 2016
+    #bulletSprite: 27
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 50
+    accuracySnap: 60
+    accuracyAimed: 75
+    costAuto:
+      time: 45
+      mana: 5
+    costSnap:
+      time: 40
+      mana: 1
+    costAimed:
+      time: 50
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 36
+    autoRange: 25
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_M20_M203_LASER_CARBINE
+    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_RIFLES
+    size: 0.03
+    costBuy: 45000
+    costSell: 40000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 6
+    bigSprite: 2003
+    floorSprite: 2003
+    handSprite: 2024
+    #bulletSprite: 27
+    fireSound: 2963
+    hitSound: 19
+    hitAnimation: 36
+    power: 50
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confSnap:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAimed:
+      shots: 1
+      name: STR_FIRE_M203
+      ammoSlot: 1
+    ammo:
+      1:
+        tuLoad: 20
+        tuUnload: 20
+        compatibleAmmo: [ STR_40MM_FRAG, STR_40MM_INCENDIARY, STR_40MM_SMOKE, STR_40MM_NON_LETHAL ]
+    accuracyAuto: 60
+    accuracySnap: 65
+    accuracyAimed: 75
+    costSnap:
+      time: 25
+      mana: 2
+    costAuto:
+      time: 28
+      mana: 3
+    tuAimed: 50
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 24
+    autoRange: 18
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_M5_LASER_SMG
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.02
+    costBuy: 40000
+    costSell: 32000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 4
+    bigSprite: 2004
+    floorSprite: 2004
+    handSprite: 2032
+    #bulletSprite: 27
+    fireSound: 2962
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    accuracyAuto: 65
+    accuracySnap: 60
+    accuracyAimed: 50
+    costSnap:
+      time: 14
+      mana: 3
+    costAimed:
+      time: 15
+      mana: 10
+    costAuto:
+      time: 14
+      mana: 7
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 9
+    snapRange: 13
+    autoRange: 11
+    sprayWaypoints: 2
+    twoHanded: true
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_ULYSSES_LASER_SNIPER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 65000
+    costSell: 55000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
+    weight: 10
+    bigSprite: 2005
+    floorSprite: 2005
+    handSprite: 2040
+    #bulletSprite: 27
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    twoHanded: true
+    accuracySnap: 65
+    accuracyAimed: 200
+    costSnap:
+      time: 30
+      mana: 1
+    costAimed:
+      time: 75
+      mana: 1
+    clipSize: -1
+    battleType: 1
+    maxRange: 64
+    aimRange: 64
+    snapRange: 45
+    minRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_X4_LASER_SHOTGUN
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.03
+    costBuy: 38000
+    costSell: 32000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 7
+    bigSprite: 2006
+    floorSprite: 2006
+    handSprite: 2048
+    #bulletSprite: 27
+    fireSound: 2964
+    hitSound: 19
+    hitAnimation: 36
+    confAuto:
+      shots: 8
+      name: STR_RAGE_FIRE
+    clipSize: -1
+    accuracySnap: 60
+    accuracyAuto: 65
+    accuracyAimed: 75
+    power: 55
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    costSnap:
+      time: 40
+      mana: 3
+    costAimed:
+      time: 60
+      mana: 3
+    costAuto:
+      time: 55
+      mana: 24
+    maxRange: 60
+    snapRange: 12
+    autoRange: 8
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    armor: 250
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_M4_LASER_LMG
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 50000
+    costSell: 40000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
+    weight: 12
+    bigSprite: 2007
+    floorSprite: 2007
+    handSprite: 2056
+    #bulletSprite: 27
+    fireSound: 2966
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    accuracyAuto: 65
+    accuracySnap: 65
+    confSnap:
+      shots: 5
+      name: STR_BURST
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+    costSnap:
+      time: 28
+      mana: 5
+    costAuto:
+      time: 34
+      mana: 15
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    snapRange: 35
+    autoRange: 30
+    minRange: 3
+    dropoff: 1
+    sprayWaypoints: 2
+    invWidth: 2
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 12 # yellow
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_ELERIUM_FLAMETHROWER
+    categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    size: 0.02
+    costBuy: 42000
+    costSell: 36500
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 5
+    weight: 10
+    bigSprite: 2008
+    floorSprite: 2008
+    handSprite: 2064
+    #bulletSprite: 30
+    fireSound: 2967
+#    compatibleAmmo:
+#      - STR_FLAMETHROWER_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 75
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    autoRange: 15
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+#    explosionHitSound: 113
+    hitAnimation: 0
+    power: 120
+    costAuto:
+      time: 35
+      mana: 10
+    damageType: 2
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 0.4
+      ToMorale: 1.5
+      FireThreshold: 1
+      SmokeThreshold: 1000
+    clipSize: -1
+    autoShots: 5
+    sprayWaypoints: 2
+#    bulletSpeed: 8
+    experienceTrainingMode: 7
+    attraction: 7
+    vaporColorSurface: 13
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+###################################
+###### NATO LASER WEAPONS #########
+#################################
+  - type: STR_P71_LASER_PISTOL
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_HANDGUNS
+    size: 0.01
+    costBuy: 30000
+    costSell: 20000
+    requiresBuyCountry: STR_ITALY
+    monthlyBuyLimit: 50
+    weight: 3
+    bigSprite: 2009
+    floorSprite: 2009
+    handSprite: 2072
+    fireSound: 2970
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 45
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 80
+    accuracyAimed: 90
+    accuracyAuto: 75
+    costSnap:
+      time: 16
+      mana: 1
+    costAimed:
+      time: 45
+      mana: 1
+    costAuto:
+      time: 30
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 15
+    snapRange: 15
+    autoRange: 13
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_FN_FLA_LASER_BATTLE_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    size: 0.03
+    monthlyBuyLimit: 30
+    costBuy: 52000
+    costSell: 44000
+    weight: 5
+    bigSprite: 2010
+    floorSprite: 2010
+    handSprite: 2080
+    fireSound: 2972
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 55
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75
+    accuracySnap: 85
+    accuracyAimed: 110
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 3
+    costAuto:
+      time: 30
+      mana: 5
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 40
+    snapRange: 45
+    autoRange: 35
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 20
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_FN_FLA_LASER_CARBINE
+    categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    size: 0.03
+    monthlyBuyLimit: 30
+    costBuy: 50000
+    costSell: 44000
+    weight: 4
+    bigSprite: 2011
+    floorSprite: 2011
+    handSprite: 2088
+    fireSound: 2972
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 55
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+    accuracyAuto: 70
+    accuracySnap: 80
+    accuracyAimed: 105
+    costSnap:
+      time: 25
+      mana: 1
+    costAimed:
+      time: 55
+      mana: 2
+    costAuto:
+      time: 30
+      mana: 10
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 23
+    snapRange: 25
+    autoRange: 22
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 40
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_L4_ASSAULT_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    size: 0.03
+    costBuy: 50000
+    costSell: 40000
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 20
+    weight: 4
+    bigSprite: 2012
+    floorSprite: 2012
+    handSprite: 2096
+    fireSound: 2976
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 52
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 7
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 75
+    accuracySnap: 85
+    accuracyAimed: 80
+    costSnap:
+      time: 20
+      mana: 1
+    costAimed:
+      time: 40
+      mana: 3
+    costAuto:
+      time: 25
+      mana: 5
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 22
+    snapRange: 25
+    autoRange: 18
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 60
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_MAT72_SUBMACHINE_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.02
+    costBuy: 30000
+    costSell: 22000
+    requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 20
+    weight: 3
+    bigSprite: 2013
+    floorSprite: 2013
+    handSprite: 2104
+    fireSound: 2971
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 45
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAuto:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAimed:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    confSnap:
+      shots: 3
+      name: STR_BURST
+    accuracyAuto: 75
+    accuracySnap: 85
+    accuracyAimed: 85
+    costSnap:
+      time: 30
+      mana: 3
+    costAimed:
+      time: 40
+      mana: 10
+    costAuto:
+      time: 35
+      mana: 7
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 12
+    snapRange: 15
+    autoRange: 14
+    twoHanded: true
+    dropoff: 1
+    sprayWaypoints: 2
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 100
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 66000
+    costSell: 55000
+    requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 10
+    weight: 7
+    bigSprite: 2014
+    floorSprite: 2014
+    handSprite: 2112
+    fireSound: 2975
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 80
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+      ArmorEffectiveness: 0.8
+    twoHanded: true
+    accuracySnap: 100
+    accuracyAimed: 240
+    costSnap:
+      time: 40
+      mana: 3
+    costAimed:
+      time: 70
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 64
+    minRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 200
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_ML73_LASER_MACHINE_GUN
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 65000
+    costSell: 54000
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 10
+    weight: 8
+    bigSprite: 2015
+    floorSprite: 2015
+    handSprite: 2120
+    fireSound: 2974
+    hitSound: 19
+    hitAnimation: 90
+    #bulletSprite: 28
+    power: 55
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confSnap:
+      shots: 5
+      name: STR_BURST
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+    accuracyAuto: 70
+    accuracySnap: 80
+    costSnap:
+      time: 35
+      mana: 5
+    costAuto:
+      time: 38
+      mana: 15
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    snapRange: 45
+    autoRange: 40
+    minRange: 3
+    dropoff: 1
+    sprayWaypoints: 2
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 4 # bright blue
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.04
+    costBuy: 36000
+    costSell: 30000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
+    weight: 9
+    bigSprite: 2016
+    floorSprite: 2016
+    handSprite: 2184
+    #bulletSprite: 0
+    fireSound: 152
+    confSnap:
+      shots: 1
+      name: STR_AIMED_SHOT
+    confAuto:
+      shots: 3
+      name: STR_X3_SHOT
+    confAimed:
+      shots: 6
+      name: STR_X6_SHOT
+    compatibleAmmo:
+      - STR_M72_ARR_HEAT_MAG
+      - STR_M72_ARR_HE_MAG
+      - STR_M72_ARR_SMOKE_MAG
+      - STR_M72_ARR_ELERIUM_MAG
+    accuracyCloseQuarters: 25
+    accuracySnap: 125
+    accuracyAimed: 80
+    accuracyAuto: 60
+    tuSnap: 40
+    tuAimed: 60
+    tuAuto: 80
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+  - type: STR_M72_ARR_HEAT_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.02
+    costBuy: 2600
+    costSell: 1200
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
+    weight: 6
+    bigSprite: 2017
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToArmorPre: 0.9
+    damageType: 5
+    clipSize: 6
+    blastRadius: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+  - type: STR_M72_ARR_HE_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.2
+    costBuy: 2600
+    costSell: 1200
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
+    weight: 6
+    bigSprite: 2018
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 1.8
+    damageType: 3
+    clipSize: 6
+    blastRadius: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+  - type: STR_M72_ARR_SMOKE_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    size: 0.02
+    costBuy: 2200
+    costSell: 1000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
+    weight: 6
+    bigSprite: 2019
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      RadiusReduction: 40
+      IgnoreSelfDestruct: true
+      ToTile: 0.66
+    damageType: 9
+    clipSize: 6
+    blastRadius: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+  - type: STR_M72_ARR_ELERIUM_MAG
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION]
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+      - STR_ELERIUM_FUSION
+    size: 0.02
+    costBuy: 10000
+    costSell: 8000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
+    weight: 6
+    bigSprite: 2020
+    hitSound: 0
+    hitAnimation: 0
+    power: 130
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      RadiusReduction: 40
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 0.90
+    damageType: 10
+    clipSize: 6
+    blastRadius: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 9
+###################################
+###### USSR LASER WEAPONS ########
+#################################
+  - type: STR_P72_COMPACT_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HANDGUNS
+    size: 0.01
+    costBuy: 25000
+    costSell: 20000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    weight: 6
+    bigSprite: 2021
+    floorSprite: 2021
+    handSprite: 2128
+    fireSound: 2980
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 60
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAuto:
+      shots: 3
+      arcing: false
+    accuracyAimed: 70
+    accuracySnap: 55
+    accuracyAuto: 40
+    costAimed:
+      time: 14
+      mana: 1
+    costSnap:
+      time: 9
+      mana: 1
+    costAuto:
+      time: 18
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 18
+    snapRange: 11
+    autoRange: 5
+    dropoff: 2
+    invWidth: 1
+    invHeight: 2
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_ALK72_LASER_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    size: 0.03
+    costBuy: 48000
+    costSell: 42000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 30
+    weight: 9
+    bigSprite: 2022
+    floorSprite: 2022
+    handSprite: 2136
+    fireSound: 2982
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 75
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAimed:
+      shots: 3
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 4
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_FULL_AUTO
+    accuracyAimed: 65
+    accuracySnap: 55
+    accuracyAuto: 45
+    costAimed:
+      time: 35
+      mana: 3
+    costSnap:
+      time: 33
+      mana: 4
+    costAuto:
+      time: 31
+      mana: 5
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 80
+    aimRange: 24
+    snapRange: 30
+    autoRange: 14
+    dropoff: 3
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
+    categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    size: 0.03
+    costBuy: 38000
+    costSell: 32000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 30
+    weight: 12
+    bigSprite: 2023
+    floorSprite: 2023
+    handSprite: 2144
+    fireSound: 2983
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 75
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+      ArmorEffectiveness: 0.8
+    confAuto:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    accuracyAimed: 90
+    accuracySnap: 70
+    accuracyAuto: 50
+    costAimed:
+      time: 40
+      mana: 2
+    costSnap:
+      time: 30
+      mana: 2
+    costAuto:
+      time: 45
+      mana: 4
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    maxRange: 60
+    aimRange: 30
+    snapRange: 24
+    autoRange: 16
+    minRange: 5
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_ALP_SUBMACHINE_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
+    size: 0.02
+    costBuy: 27000
+    costSell: 22000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 30
+    weight: 6
+    bigSprite: 2024
+    floorSprite: 2024
+    handSprite: 2152
+    fireSound: 2981
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 40
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    confAimed:
+      shots: 4
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAuto:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    accuracyAimed: 75
+    accuracySnap: 55
+    accuracyAuto: 35
+    costAimed:
+      time: 31
+      mana: 3
+    costSnap:
+      time: 34
+      mana: 5
+    costAuto:
+      time: 33
+      mana: 7
+    clipSize: -1
+    battleType: 1
+    maxRange: 50
+    aimRange: 22
+    snapRange: 14
+    autoRange: 6
+    twoHanded: false
+    dropoff: 2
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_MIRINOV_LASER_SNIPER
+    categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 68000
+    costSell: 59000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
+    weight: 15
+    bigSprite: 2025
+    floorSprite: 2025
+    handSprite: 2160
+    fireSound: 2984
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 90
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+      ArmorEffectiveness: 0.6
+    twoHanded: true
+    accuracyAimed: 170
+    accuracySnap: 65
+    costAimed:
+      time: 70
+      mana: 3
+    costSnap:
+      time: 45
+      mana: 3
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 40
+    snapRange: 25
+    minRange: 8
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_AN_MACHINE_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 75000
+    costSell: 69000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 10
+    weight: 18
+    bigSprite: 2026
+    floorSprite: 2026
+    handSprite: 2168
+    fireSound: 2985
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 65
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    accuracyAimed: 70
+    accuracySnap: 45
+    accuracyAuto: 40
+    confAimed:
+      shots: 4
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    confSnap:
+      shots: 9
+      name: STR_FULL_AUTO
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      ammoSlot: 0
+      arcing: false
+    costAimed:
+      time: 37
+      mana: 3
+    costSnap:
+      time: 45
+      mana: 6
+    costAuto:
+      time: 75
+      mana: 10
+    twoHanded: true
+    clipSize: -1
+    battleType: 1
+    maxRange: 60
+    aimRange: 24
+    snapRange: 18
+    autoRange: 12
+    minRange: 3
+    dropoff: 2
+    invWidth: 1
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+  - type: STR_AFINA_ANTITANK_LASER
+    categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    size: 0.03
+    costBuy: 100000
+    costSell: 89000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 10
+    weight: 20
+    bigSprite: 2027
+    floorSprite: 2027
+    handSprite: 2176
+    fireSound: 2986
+    hitSound: 19
+    hitAnimation: 100
+    #bulletSprite: 29
+    power: 110
+    damageType: 4
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 1.2
+      ToWound: 0.1
+      RandomWound: false
+      ArmorEffectiveness: 0.3
+    twoHanded: true
+    accuracyAimed: 110
+    accuracySnap: 70
+    costAimed:
+      time: 78
+      mana: 5
+    costSnap:
+      time: 42
+      mana: 5
+    clipSize: -1
+    blastRadius: 1
+    battleType: 1
+    maxRange: 120
+    aimRange: 32
+    snapRange: 20
+    minRange: 14
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+    explosionSpeed: 100
+    bulletSpeed: 100
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 30
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleWeapon: |
+          subvoxel_offset.setX 0;
+          subvoxel_offset.setY 0;
+          subvoxel_offset.setZ 0;
+          subvoxel_velocity.setZ 0;
+          set particle_density 100;
+          set subvoxel_drift 0;
+          set particle_lifetime 1;
+          return;
+##### Laser Weapons Ends
+##### Plasma Weapons Here
+##############
+#### USA #####
+##############
+  - type: STR_US_PLASMA_RIFLE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.03
+    costBuy: 50000
+    costSell: 40000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 20
+    weight: 20
+    armor: 60
+    bigSprite: 3208
+    floorSprite: 3208
+    handSprite: 3208
+    bulletSprite: 32
+    bulletSpeed: 6
+    fireSound: [2064, 2065, 2066, 2067, 2070, 2071]
+    compatibleAmmo:
+      - STR_US_PLASMA_RIFLE_MAG
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_CONTROL_AUTO
+    accuracyAuto: 30
+    accuracySnap: 100
+    accuracyAimed: 65
+    costSnap:
+      time: 40
+    costAimed:
+      time: 55
+    costAuto:
+      time: 65
+    tuLoad: 30
+    tuUnload: 15
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    maxRange: 60
+    aimRange: 32
+    snapRange: 28
+    autoRange: 16
+    dropoff: 3
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5210
+  - type: STR_US_PLASMA_RIFLE_MAG
+    categories: [STR_PLASMA, STR_RIFLES, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    ##listOrder: 5251
+    size: 0.02
+    costBuy: 9000
+    costSell: 3000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 60
+    bigSprite: 3280
+    floorSprite: 3280
+    handSprite: 3280 # ALL GOOD
+    weight: 4 # 3
+    hitSound: 1938
+    hitAnimation: 110
+    power: 80
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
+    damageType: 5
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30 # 20
+    vaporColorSurface: 5
+    vaporDensitySurface: 5
+    listOrder: 5220
+  - type: STR_US_PLASMA_RL
+    categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.05
+    costBuy: 36000
+    costSell: 30000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
+    weight: 30
+    armor: 80
+    bigSprite: 3216
+    floorSprite: 3216
+    handSprite: 3216
+    bulletSprite: 0
+    bulletSpeed: 6
+    fireSound: 143
+    confSnap:
+      shots: 1
+      #name: STR_AIMED_SHOT
+    confAimed:
+      shots: 1
+      #name: STR_X6_SHOT
+    compatibleAmmo:
+      - STR_US_PLASMA_RL_HEAT_ROCKET
+      - STR_US_PLASMA_RL_ELERIUM_ROCKET
+    accuracyCloseQuarters: 25
+    accuracySnap: 125
+    accuracyAimed: 150
+    #accuracyAuto: 60
+    tuSnap: 40
+    tuAimed: 60
+    #tuAuto: 80
+    tuLoad: 44
+    tuUnload: 22
+    battleType: 1
+    waypoints: 6
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    listOrder: 5230
+  - type: STR_US_PLASMA_RL_HEAT_ROCKET
+    categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.02
+    costBuy: 2600
+    costSell: 1200
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 40
+    weight: 4
+    bigSprite: 3288
+    handSprite: 3288
+    floorSprite: 3288
+    hitSound: 0
+    hitAnimation: 0
+    power: 90
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToArmor: 0.9
+      ToArmorPre: 0.9
+    damageType: 5
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 5240
+  - type: STR_US_PLASMA_RL_ELERIUM_ROCKET
+    categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.02
+    costBuy: 2600
+    costSell: 1200
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 40
+    weight: 4
+    bigSprite: 3296
+    handSprite: 3296
+    floorSprite: 3296
+    hitSound: 0
+    hitAnimation: 0
+    power: 140
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToWound: 0.5
+      RandomWound: true
+      ToTile: 1.8
+    damageType: 10
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 5250
+  - type: STR_US_PLASMA_SHOTGUN
+    categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    size: 0.02
+    armor: 50
+    costBuy: 38000
+    costSell: 32000
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 10
+    weight: 18
+    bigSprite: 3224
+    floorSprite: 3224
+    handSprite: 3224
+    bulletSprite: 32
+    bulletSpeed: 6
+    fireSound: [2084, 2085, 2086, 2087]
+    hitSound: 19
+    compatibleAmmo:
+      - STR_US_PLASMA_SHOTGUN_MAG
+    confAuto:
+      shots: 5
+      name: STR_RAGE_FIRE
+      arcing: true
+    accuracySnap: 80
+    accuracyAuto: 65
+    #accuracyAimed: 75
+    costSnap:
+      time: 20
+    #costAimed:
+    #  time: 60
+    costAuto:
+      time: 40
+    maxRange: 20
+    tuLoad: 20
+    tuUnload: 10
+    dropoff: 8
+    kneelBonus: 115
+    snapRange: 20
+    autoRange: 14
+    #arcingShot: true
+    invHeight: 3
+    invWidth: 1
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 5260
+  - type: STR_US_PLASMA_SHOTGUN_MAG
+    categories: [STR_PLASMA, STR_SHOTGUNS, STR_US_TECH, STR_CLIPS]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_US_APPLICATIONS
+    ##listOrder: 5451
+    size: 0.01
+    monthlyBuyLimit: 50
+    costBuy: 14000
+    costSell: 12000
+    requiresBuyCountry: STR_USA
+    hitAnimation: 110
+    power: 70 # 52
+    clipSize: 5 # 26
+    bigSprite: 3304
+    floorSprite: 3304
+    handSprite: 3304 # ALL GOOD
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 1.2
+      FireThreshold: 80
+    weight: 6 # 3
+    hitSound: 1938
+    shotgunBehavior: 1
+    shotgunPellets: 15
+    shotgunSpread: 75
+    shotgunChoke: 60
+    armor: 30 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 5
+    listOrder: 5270
+###############
+#### NATO #####
+###############
+  - type: STR_NATO_PLASMA_CARBINE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.03
+    costBuy: 50000
+    costSell: 44000
+    requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 20
+    weight: 18
+    armor: 60
+    bigSprite: 3232
+    floorSprite: 3232
+    handSprite: 3232
+    fireSound: [2072, 2073, 2074, 2075, 2076, 2080]
+    hitSound: 19
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_NATO_PLASMA_CARBINE_MAG
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO
+    accuracyAuto: 65
+    accuracySnap: 70
+    accuracyAimed: 80
+    costSnap:
+      time: 20
+    costAimed:
+      time: 30
+    costAuto:
+      time: 45
+    battleType: 1
+    tuLoad: 30
+    tuUnload: 15
+    twoHanded: true
+    oneHandedPenalty: 40
+    kneelBonus: 120
+    maxRange: 50
+    aimRange: 28
+    snapRange: 16
+    autoRange: 8
+    dropoff: 3
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5280
+  - type: STR_NATO_PLASMA_CARBINE_MAG
+    categories: [STR_PLASMA, STR_CARBINES, STR_NATO_TECH, STR_CLIPS]
+    ##listOrder: 5251
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.02
+    costSell: 3000
+    costBuy: 5000
+    requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 80
+    bigSprite: 3312
+    floorSprite: 3312
+    handSprite: 3312 # ALL GOOD
+    weight: 3 # 3
+    hitSound: 1938
+    hitAnimation: 110 # FIX THIS
+    power: 80
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30 # 20
+    vaporColorSurface: 5
+    vaporDensitySurface: 8
+    listOrder: 5290
+  - type: STR_NATO_PLASMA_PISTOL
+    categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
+    costBuy: 30000
+    costSell: 20000
+    requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 30
+    weight: 6
+    armor: 40
+    bigSprite: 3240
+    floorSprite: 3240
+    handSprite: 3240
+    bulletSprite: 32
+    bulletSpeed: 6
+    fireSound: [2081, 2082, 2083]
+    compatibleAmmo:
+      - STR_NATO_PLASMA_PISTOL_MAG
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 85
+    costSnap:
+      time: 20
+    costAimed:
+      time: 35
+    battleType: 1
+    kneelBonus: 120
+    tuLoad: 10
+    tuUnload: 10
+    maxRange: 25
+    aimRange: 15
+    snapRange: 10
+    dropoff: 3
+    invWidth: 1
+    invHeight: 2
+    listOrder: 5300
+  - type: STR_NATO_PLASMA_PISTOL_MAG
+    categories: [STR_PLASMA, STR_PISTOLS, STR_NATO_TECH, STR_CLIPS]
+    ##listOrder: 5451
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
+    costBuy: 6000
+    costSell: 5500
+    requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 100
+    hitAnimation: 110
+    power: 70 # 52
+    clipSize: 12 # 26
+    bigSprite: 3320
+    floorSprite: 3320
+    handSprite: 3320 # ALL GOOD
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.6
+      ToWound: 0.2
+      RandomWound: false
+    weight: 1 # 3
+    damageType: 5
+    hitSound: 1938
+    armor: 30 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 3
+    listOrder: 5310
+  - type: STR_NATO_SNIPER_PLASMA
+    categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.04
+    costBuy: 66000
+    costSell: 55000
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 10
+    weight: 28
+    armor: 60
+    bigSprite: 3248
+    floorSprite: 3248
+    handSprite: 3248
+    fireSound: [2088, 2089, 2090, 2091]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_NATO_SNIPER_PLASMA_MAG
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+    twoHanded: true
+    accuracySnap: 110
+    accuracyAimed: 260
+    costSnap:
+      time: 40
+    costAimed:
+      time: 75
+    battleType: 1
+    #twoHanded: true
+    blockBothHands: true
+    tuLoad: 40
+    tuUnload: 20
+    kneelBonus: 125
+    noLOSAccuracyPenalty: 100
+    maxRange: 200
+    minRange: 10
+    aimRange: 50
+    snapRange: 25
+    dropoff: 4
+    invWidth: 2
+    invHeight: 3
+    listOrder: 5320
+  - type: STR_NATO_SNIPER_PLASMA_MAG
+    categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_NATO_TECH, STR_CLIPS]
+    ##listOrder: 5177
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_NATO_APPLICATIONS
+    size: 0.01
+    costBuy: 13000
+    costSell: 11000
+    monthlyBuyLimit: 30
+    requiresBuyCountry: STR_WEST_GERMANY
+    hitAnimation: 110
+    power: 150 # 115
+    clipSize: 6 # 35
+    blastRadius: 1
+    bigSprite: 3328
+    floorSprite: 3328
+    handSprite: 3328
+    hitSound: 1938
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    weight: 5 # 3
+    armor: 35 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 20
+    listOrder: 5330
+################
+#### USSR ######
+################
+  - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE
+    categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.03
+    costBuy: 48000
+    costSell: 42000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
+    weight: 20
+    armor: 60
+    bigSprite: 3256
+    floorSprite: 3256
+    handSprite: 3256
+    fireSound: [2064, 2065, 2066, 2067, 2070, 2071]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
+    confAimed:
+      shots: 3
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 4
+      name: STR_BURST
+    confAuto:
+      shots: 5
+      name: STR_FULL_AUTO
+    accuracyAimed: 75
+    accuracySnap: 65
+    accuracyAuto: 45
+    costAimed:
+      time: 45
+    costSnap:
+      time: 35
+    costAuto:
+      time: 55
+    # melee segment
+    meleeHitSound: 198
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 30
+    meleeBonus:
+      strength: 0.6
+      melee: 0.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.2
+      melee: 0.5
+    costMelee:
+      time: 15
+      energy: 10
+    flatMelee:
+      time: true
+    # melee segment end
+    battleType: 1
+    oneHandedPenalty: 30
+    kneelBonus: 125
+    tuLoad: 40
+    tuUnload: 20
+    twoHanded: true
+    maxRange: 80
+    aimRange: 24
+    snapRange: 26
+    autoRange: 10
+    dropoff: 3
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5340
+  - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
+    categories: [STR_PLASMA, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS]
+    ##listOrder: 5251
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.02
+    costSell: 8000
+    costBuy: 9000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 100
+    bigSprite: 3336
+    floorSprite: 3336
+    handSprite: 3336 # ALL GOOD
+    weight: 3 # 3
+    hitSound: 1938
+    hitAnimation: 90
+    power: 92
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    damageType: 5
+    clipSize: 35
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30 # 20
+    vaporColorSurface: 5
+    vaporDensitySurface: 11
+    listOrder: 5350
+  - type: STR_SOVIET_PLASMA_LMG
+    categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.04
+    costBuy: 75000
+    costSell: 69000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 10
+    weight: 28
+    armor: 70
+    bigSprite: 3264
+    floorSprite: 3264
+    handSprite: 3264
+    fireSound: [2084, 2085, 2086, 2087]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_SOVIET_PLASMA_LMG_MAG
+    accuracySnap: 45
+    accuracyAuto: 20
+    confSnap:
+      shots: 5
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 15
+      name: STR_SUPPRESSION
+      shortName: STR_SUPPRESSION_SHORT
+      ammoSlot: 0
+      arcing: false
+    costSnap:
+      time: 45
+    costAuto:
+      time: 65
+    twoHanded: true
+    blockBothHands: true
+    tuLoad: 45
+    tuUnload: 22
+    sprayWaypoints: 3
+    kneelBonus: 200
+    battleType: 1
+    maxRange: 60
+    minRange: 7
+    snapRange: 23
+    autoRange: 15
+    #minRange: 5
+    dropoff: 3
+    invWidth: 2
+    invHeight: 3
+    listOrder: 5360
+  - type: STR_SOVIET_PLASMA_LMG_MAG
+    categories: [STR_PLASMA, STR_LMGS, STR_SOVIET_TECH, STR_CLIPS]
+    ##listOrder: 5177
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.01
+    costBuy: 170000
+    costSell: 15000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 30
+    hitAnimation: 110
+    power: 75 # 115
+    clipSize: 50 # 35
+    blastRadius: 1
+    bigSprite: 3344
+    floorSprite: 3344
+    handSprite: 3344
+    hitSound: 1938
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    weight: 4 # 3
+    armor: 35 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 16
+    listOrder: 5370
+  - type: STR_SOVIET_PLASMA_SMG
+    categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.02
+    costBuy: 27000
+    costSell: 22000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 20
+    weight: 16
+    bigSprite: 3272
+    floorSprite: 3272
+    handSprite: 3272
+    fireSound: [2060, 2061, 2062, 2063]
+    bulletSprite: 32
+    bulletSpeed: 6
+    compatibleAmmo:
+      - STR_SOVIET_PLASMA_SMG_MAG
+    confAimed:
+      shots: 4
+      name: STR_CONTROL_AUTO
+    confSnap:
+      shots: 7
+      name: STR_FULL_AUTO
+    confAuto:
+      shots: 10
+      name: STR_PRAY_N_SPRAY
+    accuracyAimed: 75
+    accuracySnap: 66
+    accuracyAuto: 30
+    costAimed:
+      time: 25
+    costSnap:
+      time: 35
+    costAuto:
+      time: 40
+    battleType: 1
+    sprayWaypoints: 2
+    kneelBonus: 115
+    tuLoad: 25
+    tuUnload: 12
+    maxRange: 25
+    aimRange: 7
+    snapRange: 10
+    autoRange: 5
+    twoHanded: false
+    dropoff: 3
+    invWidth: 1
+    invHeight: 3
+    listOrder: 5380
+  - type: STR_SOVIET_PLASMA_SMG_MAG
+    categories: [STR_PLASMA, STR_SMGS, STR_SOVIET_TECH, STR_CLIPS]
+    ##listOrder: 5451
+    requiresBuy:
+      - STR_HUMAN_PLASMA_WEAPONS_USSR_APPLICATIONS
+    size: 0.01
+    costBuy: 12000
+    costSell: 11000
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 60
+    hitAnimation: 90
+    power: 80 # 52
+    clipSize: 25 # 26
+    bigSprite: 3352
+    floorSprite: 3352
+    handSprite: 3352 # ALL GOOD
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmorPre: 0.5
+      ToWound: 0.1
+      RandomWound: false
+    weight: 1 # 3
+    hitSound: 1938
+    armor: 30 # 20
+    battleType: 2
+    vaporColorSurface: 5
+    vaporDensitySurface: 6
+    listOrder: 5390
+##### Plasma Weapons Ends
+##### Space Ballistic Weapons #
+######################################
+###### SPACE CAPABLE WEAPONS ########
+####################################
+  - type: STR_GYROJET_PISTOL
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
+    requires:
+      - STR_OLYMPUS
+    size: 0.01
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    costBuy: 2500
+    costSell: 2900
+    weight: 3
+    bigSprite: 1120
+    floorSprite: 1120
+    handSprite: 1120
+    fireSound: 4
+    reloadSound: [179, 180, 181, 182]
+    compatibleAmmo:
+      - STR_GYROJET_AMMO_MAGAZINE
+    accuracySnap: 100
+    accuracyAimed: 130
+    accuracyCloseQuarters: 100
+    kneelBonus: 115
+    tuSnap: 35
+    tuAimed: 45
+    minRange: 4
+    maxRange: 25
+    dropoff: 10
+    invHeight: 2
+    invWidth: 1
+    battleType: 1
+    armor: 250
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    listOrder: 201800
+  - type: STR_GYROJET_RIFLE
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES]
+    requires:
+      - STR_OLYMPUS
+    size: 0.02
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 30
+    costBuy: 3200
+    costSell: 4000
+    weight: 6
+    bigSprite: 1128
+    floorSprite: 1128
+    handSprite: 1128
+    fireSound: 4
+    reloadSound: [186, 187, 188, 189]
+    compatibleAmmo:
+      - STR_GYROJET_AMMO_MAGAZINE
+    accuracyCloseQuarters: 90
+    accuracyAuto: 95
+    accuracySnap: 120
+    accuracyAimed: 180
+    bulletSpeed: 10
+    tuAuto: 55
+    tuSnap: 60
+    tuAimed: 70
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    minRange: 5
+    maxRange: 35
+    autoRange: 35
+    dropoff: 10
+    attraction: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 33
+    listOrder: 201810
+  - type: STR_GYROJET_AMMO_MAGAZINE
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_RIFLES, STR_PISTOLS]
+    requires:
+      - STR_OLYMPUS
+    size: 0.02
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 200
+    costBuy: 400
+    costSell: 350
+    weight: 2
+    bigSprite: 1136
+    floorSprite: 1136
+    hitSound: 16
+    hitAnimation: 26
+    bulletSprite: 4
+    power: 60
+    damageType: 1
+    clipSize: 15
+    invHeight: 1
+    invWidth: 1
+    battleType: 2
+    listOrder: 201820
+  - type: STR_SPACE_KNIFE
+    requiresBuy:
+      - STR_OLYMPUS
+    categories: [ STR_MELEE, STR_SPACE, STR_LIGHT_EQUIPMENT ]
+    size: 0.02
+    costBuy: 1200
+    costSell: 2200
+    weight: 3
+    bigSprite: 1144
+    floorSprite: 1144
+    handSprite: 1144
+    meleeHitSound: 165
+    power: 60
+    damageType: 7
+    damageBonus:
+      strength: 0.6
+      melee: 1.4
+    damageAlter:
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.5
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.9
+    costMelee:
+      time: 12
+      energy: 4
+    costThrow:
+      energy: 10
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 2119
+  - type: STR_GENERATOR_STICK
+    requiresBuy:
+      - STR_GENERATOR_STICK
+    categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    size: 0.01
+    costBuy: 3260
+    costSell: 4045
+    monthlyBuyLimit: 40
+    weight: 5
+    bigSprite: 1152
+    floorSprite: 1152
+    handSprite: 1152
+    meleeSound: 54
+    power: 85
+    damageType: 6
+    accuracyMelee: 100
+    tuMelee: 25
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    clipSize: -1
+    listOrder: 2122
+##### Space Ballistic Weapons End #
+###### Specialized Weapons
+#Close quarters: defined by default on 1 tile
+#Close combat: 5-15 tiles # SMGs, Shotguns, Pistols, Carbines (from 10)
+#Mid-range combat: 16-25 tiles # Carbines, Assault Rifles
+#Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
+#Extra long range combat: 46-60 # Snipers
+# Burya Electromagnetic Rifle
+  - type: STR_GAUSS_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.15
+    #costBuy: 400000
+    costSell: 240000
+    weight: 27
+    bigSprite: 2416
+    floorSprite: 2416
+    handSprite: 2416
+    bulletSprite: 33
+    bulletSpeed: 15
+    fireSound: [3001, 3002, 3003]
+    reloadSound: 3000
+    compatibleAmmo:
+      - STR_GAUSS_RIFLE_MAG
+    costAuto:
+      time: 85
+    autoRange: 60
+    accuracyAuto: 250
+    confAuto:
+      shots: 1
+      name: STR_HEADSHOT
+      shortName: STR_HEADSHOT_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAimed:
+      shots: 3
+      name: STR_BURST
+    costAimed:
+      time: 75
+    aimRange: 50
+    accuracyAimed: 150
+    costSnap:
+      time: 50
+    snapRange: 55
+    accuracySnap: 110
+    accuracyCloseQuarters: 10
+    tuLoad: 30
+    maxRange: 60
+    dropoff: 1
+    kneelBonus: 150
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    #listOrder: 239
+  - type: STR_GAUSS_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.05
+    #costBuy: 60000
+    costSell: 42000
+    weight: 4
+    bigSprite: 2400
+    floorSprite: 2400
+    #handSprite: 2400
+    hitSound: 13
+    hitAnimation: 120
+    power: 165
+    damageAlter:
+      RandomType: 7
+      ToArmorPre: 0.9
+      ToArmor: 0.8
+      ToWound: 0.3
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 200
+    #listOrder: 240
+    vaporColorSurface: 5
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
+##############################
+# Hurrikan Electric Rifle
+  - type: STR_ELECTRIC_RIFLE
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.25
+    #costBuy: 300000
+    costSell: 100000
+    transferTime: 96
+    weight: 14
+    bigSprite: 2432
+    floorSprite: 2432
+    handSprite: 2432
+    bulletSprite: 34
+    fireSound: 3011
+    reloadSound: 3010
+    compatibleAmmo:
+      - STR_ELECTRIC_RIFLE_MAG
+    accuracySnap: 75
+    accuracyAimed: 90
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.5
+    tuSnap: 30
+    tuAimed: 47
+    costThrow:
+      energy: 15
+      time: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    invWidth: 2
+    invHeight: 3
+    snapRange: 12
+    aimRange: 17
+    dropoff: 6
+    powerRangeThreshold: 8
+    powerRangeReduction: 6
+    maxRange: 26
+    recoveryPoints: 3
+    attraction: 12
+    #listOrder: 12393
+  - type: STR_ELECTRIC_RIFLE_MAG
+    categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+    size: 0.05
+    #costBuy: 3000
+    costSell: 12000
+    transferTime: 96
+    weight: 3
+    bigSprite: 2440
+    floorSprite: 2440
+    #handSprite: 2440
+    hitSound: 0
+    hitAnimation: 130
+    power: 85
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToHealth: 0.8
+      ToStun: 0.8
+      ToArmorPre: 0.5
+      ToWound: 0.0
+      ToTile: 0.0
+      ToTime: 1.2
+      ArmorEffectiveness: 0.5
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+    clipSize: 10
+    costThrow:
+      energy: 6
+      time: 40
+    battleType: 2
+    armor: 30
+    #listOrder: 12394
+    vaporColorSurface: 4
+    vaporDensitySurface: 5
+    vaporProbabilitySurface: 100
+#########################################
+####### Specialized Weapons Ends
+##### Extended Stuff
+##### Misc Items
+##### Batterys
+  - type: STR_BATTERY
+    categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
+    size: 0.01
+    costBuy: 1000
+    monthlyBuyLimit: 100
+    weight: 10
+    bigSprite: 2028
+    floorSprite: 124
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    stimulant: 1
+    manaRecovery: 40
+    isConsumable: false
+    medikitTargetSelf: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 32
+    medikitActionName: STR_USE_BATTERY
+  - type: STR_ELERIUM_BATTERY
+    categories: [ STR_LIGHT_EQUIPMENT]
+    size: 0.01
+    weight: 10
+    bigSprite: 1105
+    floorSprite: 1105
+    battleType: 6
+    invWidth: 1
+    invHeight: 1
+    stimulant: 1
+    manaRecovery: 80
+    isConsumable: false
+    medikitTargetSelf: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 32
+    medikitActionName: STR_USE_BATTERY

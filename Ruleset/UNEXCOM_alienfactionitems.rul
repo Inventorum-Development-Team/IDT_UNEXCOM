@@ -1,0 +1,1476 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+items:
+########################################
+######## ALIEN BUILD-IN WEAPONS #######
+######################################
+  - type: CYBERDISC_WEAPON
+    weight: 3
+    bigSprite: 1002
+    #floorSprite: 31
+    #handSprite: 104
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    vaporColorSurface: 3
+    vaporDensitySurface: 30
+    power: 130
+    damageType: 5
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuSnap: 30
+    tuAimed: 60
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: SECTOPOD_WEAPON
+    weight: 3
+    bigSprite: 3133
+    #floorSprite: 31
+    #handSprite: 104
+    bulletSprite: 29
+    bulletSpeed: 10
+    fireSound: 11
+    hitSound: 19
+    hitAnimation: 100
+    confSnap:
+      shots: 4
+    confAuto:
+      shots: 8
+    power: 100
+    damageType: 4
+    accuracyAuto: 50
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: MECHTOID_WEAPON
+    damageType: 5
+    battleType: 1
+    weight: 6
+    bigSprite: 3132
+    bulletSprite: 8
+    bulletSpeed: 10
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    accuracySnap: 50
+#    accuracyAuto: 50
+    snapRange: 28
+    minRange: 5
+    dropoff: 3
+    tuSnap: 50
+    confSnap:
+      shots: 2
+    clipSize: -1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    power: 75
+    damageAlter:
+      ArmorEffectiveness: 0.15
+      ToArmorPre: 0.15
+      ToArmor: 0
+      RandomType: 6
+      IgnoreOverKill: false
+    vaporColorSurface: 3
+    vaporDensitySurface: 30
+  - type: PROBE_WEAPON
+    damageType: 4
+    battleType: 1
+    weight: 6
+    bigSprite: 3400
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 100
+    bulletSprite: 29
+    bulletSpeed: 10
+    accuracySnap: 50
+#    accuracyAuto: 50
+    tuSnap: 30
+    confSnap:
+      shots: 3
+    clipSize: -1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    power: 40
+    damageAlter:
+      ArmorEffectiveness: 0.75
+      ToArmor: 1.2
+  - type: ZOMBIE_UNDEAD_WEAPON
+    weight: 3
+    bigSprite: 3131
+    #floorSprite: 31
+    #handSprite: 104
+    meleeSound: 49
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    zombieUnit: STR_ZOMBIE_UNDEAD
+    flatRate: true
+####################################
+####### ALIEN CORPSE ITEMS #########
+####################################
+################################
+##### UNARMORED SECTOIDS ######
+##############################
+  - type: STR_SECTOID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 46
+    floorSprite: 42
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_SECTOID_COMMANDER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 46
+    floorSprite: 42
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+###### ARMORED SECTOIDS #######
+##############################
+  - type: STR_ARMORED_SECTOID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3102
+    floorSprite: 3102
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+##### UNARMORED FLOATERS ######
+##############################
+  - type: STR_FLOATER_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3103
+    floorSprite: 3103
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_FLOATER_NAVIGATOR_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3104
+    floorSprite: 3104
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_FLOATER_MEDIC_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3105
+    floorSprite: 3105
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_FLOATER_ENGINEER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3106
+    floorSprite: 3106
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_FLOATER_LEADER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3107
+    floorSprite: 3107
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+###### ARMORED FLOATERS #######
+##############################
+  - type: STR_ARMORED_FLOATER_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3108
+    floorSprite: 3108
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_ARMORED_FLOATER_LEADER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3109
+    floorSprite: 3109
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+###### UNARMORED SNAKES #######
+##############################
+################################
+####### ARMORED SNAKES ########
+##############################
+  - type: STR_SNAKEMAN_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 50
+    floorSprite: 46
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+###### UNARMORED MUTONS #######
+##############################
+  - type: STR_MUTON_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3116
+    floorSprite: 3116
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_MUTON_NAVIGATOR_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3117
+    floorSprite: 3117
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_MUTON_MEDIC_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3118
+    floorSprite: 3118
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_MUTON_ENGINEER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3119
+    floorSprite: 3119
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_MUTON_LEADER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3120
+    floorSprite: 3120
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+####### ARMORED MUTONS ########
+##############################
+  - type: STR_ARMORED_MUTON_SOLDIER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3121
+    floorSprite: 3121
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_ARMORED_MUTON_LEADER_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3122
+    floorSprite: 3122
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+################################
+########## ETHEREAL ###########
+##############################
+  - type: STR_ETHEREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 25
+    bigSprite: 49
+    floorSprite: 45
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+#################################
+##### ALIEN DRONES & MECHS #####
+###############################
+  - type: STR_CYBERDISC_CORPSE
+    size: 1
+    costSell: 20000
+    battleType: 11
+    power: 120
+    blastRadius: 6
+    categories:
+      - STR_CORPSES
+  - type: CYBERDISC_CORPSE_1
+    name: STR_CYBERDISC_CORPSE
+    floorSprite: 56
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+    categories:
+      - STR_CORPSES
+  - type: CYBERDISC_CORPSE_2
+    floorSprite: 57
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: CYBERDISC_CORPSE_3
+    name: STR_CYBERDISC_CORPSE
+    floorSprite: 58
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: CYBERDISC_CORPSE_4
+    name: STR_CYBERDISC_CORPSE
+    floorSprite: 59
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_SECTOPOD_CORPSE
+    size: 1
+    costSell: 20000
+    battleType: 11
+    categories:
+      - STR_CORPSES
+  - type: SECTOPOD_CORPSE_1
+    name: STR_SECTOPOD_CORPSE
+    floorSprite: 60
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+    categories:
+      - STR_CORPSES
+  - type: SECTOPOD_CORPSE_2
+    floorSprite: 61
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SECTOPOD_CORPSE_3
+    floorSprite: 62
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SECTOPOD_CORPSE_4
+    floorSprite: 63
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_MECHTOID_CORPSE
+    size: 1
+    costSell: 20000
+    battleType: 11
+    categories:
+      - STR_CORPSES
+  - type: MECHTOID_CORPSE_1
+    name: STR_MECHTOID_CORPSE
+    floorSprite: 3124
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+    categories:
+      - STR_CORPSES
+  - type: MECHTOID_CORPSE_2
+    floorSprite: 3125
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: MECHTOID_CORPSE_3
+    floorSprite: 3126
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: MECHTOID_CORPSE_4
+    floorSprite: 3127
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PROBE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3129
+    floorSprite: 3129
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    listOrder: 7550
+    power: 2
+    damageAlter:
+      FixRadius: -1
+    categories:
+      - STR_CORPSES
+  - type: STR_CYBERSPHERE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3128
+    floorSprite: 3128
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    listOrder: 7550
+    categories:
+      - STR_CORPSES
+################################
+######## ALIEN BEASTS #########
+##############################
+  - type: STR_CELATID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 35
+    bigSprite: 47
+    floorSprite: 43
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_SILACOID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 51
+    floorSprite: 47
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    armor: 26
+    categories:
+      - STR_CORPSES
+  - type: STR_CHRYSSALID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 53
+    floorSprite: 49
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    categories:
+      - STR_CORPSES
+  - type: STR_REAPER_CORPSE
+    size: 1
+    costSell: 20000
+    battleType: 11
+    categories:
+      - STR_CORPSES
+  - type: REAPER_CORPSE_1
+    name: STR_REAPER_CORPSE
+    floorSprite: 52
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+    categories:
+      - STR_CORPSES
+  - type: REAPER_CORPSE_2
+    floorSprite: 55
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: REAPER_CORPSE_3
+    floorSprite: 54
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: REAPER_CORPSE_4
+    floorSprite: 53
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_ZOMBIE_UNDEAD_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3130
+    floorSprite: 3130
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 26
+    recover: false
+####################################
+######### ALIEN POW ITEMS ##########
+####################################
+################################
+##### UNARMORED SECTOIDS ######
+##############################
+  - type: STR_SECTOID_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SECTOID_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SECTOID_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SECTOID_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SECTOID_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SECTOID_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+###### ARMORED SECTOIDS #######
+##############################
+  - type: STR_ARMORED_SECTOID_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_SECTOID_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+##### UNARMORED FLOATERS ######
+##############################
+  - type: STR_FLOATER_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_FLOATER_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_FLOATER_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_FLOATER_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_FLOATER_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_FLOATER_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+###### ARMORED FLOATERS #######
+##############################
+  - type: STR_ARMORED_FLOATER_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_FLOATER_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+###### UNARMORED SNAKES #######
+##############################
+################################
+####### ARMORED SNAKES ########
+##############################
+  - type: STR_SNAKEMAN_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SNAKEMAN_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SNAKEMAN_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SNAKEMAN_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_SNAKEMAN_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+###### UNARMORED MUTONS #######
+##############################
+  - type: STR_MUTON_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_MUTON_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_MUTON_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_MUTON_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_MUTON_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+####### ARMORED MUTONS ########
+##############################
+  - type: STR_ARMORED_MUTON_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_ARMORED_MUTON_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_ARMORED_MUTON_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_MUTON_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ARMORED_MUTON_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+################################
+######### ETHEREALS ###########
+##############################
+  - type: STR_ETHEREAL_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 80000
+  - type: STR_ETHEREAL_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_ETHEREAL_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+#################################
+##### ALIEN DRONES & MECHS #####
+###############################
+  - type: STR_SECTOPOD_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 80000
+  - type: STR_CYBERDISC_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 80000
+  - type: STR_MECHTOID_TERRORIST
+    size: 0.0
+    costSell: 80000
+    recover: false
+    liveAlien: true
+  - type: STR_PROBE_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_CYBERSPHERE_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+################################
+######## ALIEN BEASTS #########
+##############################
+  - type: STR_CELATID_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_SILACOID_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+  - type: STR_CHRYSSALID_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+  - type: STR_REAPER_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+#######################################
+######## Punch Jies!
+###### Expanding Recycle Alien Stuff here, but soon to be upgraded with new sprites.
+  - type: STR_SALAMANDRON_BITE
+    weight: 3
+    bigSprite: 3010
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    meleeAnimation: 4
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 80
+    tuMelee: 20
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_CEREBREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3015
+    floorSprite: 3015
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    categories: [STR_CORPSES]
+    armor: 26
+    listOrder: 6715
+  - type: STR_CEREBREAL_LARVA_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3009
+    floorSprite: 3009
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    categories: [STR_CORPSES]
+    armor: 26
+    listOrder: 7020
+  - type: CEREBREAL_WEAPON
+    weight: 3
+    bigSprite: 100
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 11
+    fireSound: 122
+    hitSound: 19
+    hitAnimation: 57
+    power: 110
+    damageType: 5
+    accuracySnap: 50
+    accuracyAimed: 90
+    tuSnap: 55
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: CEREBREAL_ZOMBIE_WEAPON
+    weight: 3
+    bigSprite: 3131
+    #floorSprite: 31
+    #handSprite: 104
+    meleeSound: 49
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    zombieUnit: STR_CEREBREAL_ZOMBIE
+    flatRate: true
+  - type: CEREBREAL_LARVA_WEAPON
+    weight: 3
+    bigSprite: 100
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    power: 90
+    damageType: 5
+    accuracySnap: 60
+    accuracyAimed: 100
+    accuracyAuto: 40
+    tuSnap: 55
+    tuAimed: 80
+    tuAuto: 65
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_CEREBREAL_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_CEREBREAL_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_CEREBREAL_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_CEREBREAL_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_CEREBREAL_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14405
+  - type: STR_CEREBREAL_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14406
+  - type: STR_CEREBREAL_LARVA_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 40000
+    listOrder: 14407
+  - type: STR_CHTONITE_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 20
+    bigSprite: 3006
+    floorSprite: 3006
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    categories: [STR_CORPSES]
+    armor: 26
+    listOrder: 6715
+  - type: STR_TUNLUN_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 30
+    bigSprite: 3007
+    floorSprite: 3007
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    categories: [STR_CORPSES]
+    armor: 26
+    listOrder: 7020
+  - type: TUNLUN_WEAPON
+    weight: 3
+    bigSprite: 100
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 51
+    hitSound: 19
+    hitAnimation: 46
+    power: 80
+    damageType: 8
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuSnap: 55
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    arcingShot: true
+  - type: STR_CHTONITE_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_CHTONITE_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_CHTONITE_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_CHTONITE_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_CHTONITE_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14405
+  - type: STR_CHTONITE_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14406
+  - type: STR_TUNLUN_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 40000
+    listOrder: 14407
+  - type: STR_REPTOID_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 40
+    bigSprite: 3005
+    floorSprite: 3005
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    categories: [STR_CORPSES]
+    armor: 26
+    listOrder: 6715
+  - type: STR_SALAMANDRON_CORPSE
+    size: 1
+    costSell: 9000
+    battleType: 11
+    categories: [STR_CORPSES]
+    listOrder: 7025
+  - type: SALAMANDRON_CORPSE_1
+    name: STR_SALAMANDRON_CORPSE
+    floorSprite: 3010
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    categories: [STR_CORPSES]
+    recover: true
+    recoveryPoints: 3
+    listOrder: 7026
+  - type: SALAMANDRON_CORPSE_2
+    floorSprite: 3011
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    categories: [STR_CORPSES]
+    recover: false
+  - type: SALAMANDRON_CORPSE_3
+    floorSprite: 3012
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    categories: [STR_CORPSES]
+    recover: false
+  - type: SALAMANDRON_CORPSE_4
+    floorSprite: 3013
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    categories: [STR_CORPSES]
+    recover: false
+  - type: SALAMANDRON_WEAPON
+    weight: 3
+    bigSprite: 18
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 52
+    hitSound: 0
+    hitAnimation: 0
+    clipSize: 8
+    power: 90
+    damageType: 2
+    accuracySnap: 55
+    tuSnap: 45
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 1
+    invHeight: 3
+    recover: false
+    listOrder: 11515
+  - type: STR_REPTOID_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 40000
+    listOrder: 14401
+  - type: STR_REPTOID_ENGINEER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14402
+  - type: STR_REPTOID_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14403
+  - type: STR_REPTOID_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14404
+  - type: STR_REPTOID_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14405
+  - type: STR_REPTOID_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14406
+  - type: STR_SALAMANDRON_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    categories: [STR_PRISONERS]
+    costSell: 60000
+    listOrder: 14407
+######## Punch Here #######
+######## Alien Turrets and Gun Turrets Here #######
+  - type: STR_HIDDEN_CORPSE
+    battleType: 11
+    invHeight: 0
+    invWidth: 0
+    recover: false
+    hiddenOnMinimap: true
+  - type: STR_SMALL_PLASMA_TURRET_CORPSE
+    battleType: 11
+    floorSprite: 3131
+    invHeight: 0
+    invWidth: 0
+    recover: true
+    recoveryTransformations:
+       STR_ALIEN_CRYSTAL: [1]
+    hiddenOnMinimap: false
+  - type: HIND_TURRET_SPAWNER
+    spawnUnit: HIND_TURRET
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: HUEY_SPAWNER
+    spawnUnit: H_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: PTURRET_SPAWNER
+    spawnUnit: P_TURRET
+    spawnUnitFaction: 1
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: ATURRET_SPAWNER
+    spawnUnit: A_TURRET
+    spawnUnitFaction: 1
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: SPTURRET_SPAWNER
+    spawnUnit: SP_TURRET
+    spawnUnitFaction: 1
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: STR_HIND_DOOR_BOMB
+    power: 1
+    weight: 999
+    hitAnimation: -1
+    hitAnimFrames: 0
+    explosionHitSound: 0
+    explosionSpeed: 1000
+    damageType: 3
+    damageAlter:
+      FixRadius: 1
+      ResistType: 10
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToHealth: 0
+      ToWound: 0
+      ToTile: 210
+      RadiusReduction: 0.0
+      RandomType: 3
+    invWidth: 0
+    invHeight: 0
+    blastRadius: 1
+    battleType: 4
+    armor: 255
+    recover: false
+    hiddenOnMinimap: true
+  - type: STR_PLASMA_TURRET
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 241600
+    weight: 100
+    bigSprite: 1002
+    recover: false
+    fixedWeapon: true
+    power: 125
+    clipSize: -1
+    floorSprite: 1002
+    handSprite: 1008
+    bulletSprite: 8
+    bulletSpeed: 2
+    damageType: 5
+    fireSound: 18
+    accuracyAuto: 50
+    accuracySnap: 55 # 55
+    accuracyAimed: 90 # 95
+    tuSnap: 40 # 45
+    tuAimed: 75 # 80
+    tuAuto: 60
+    autoRange: 15
+    snapRange: 20 #
+    aimRange: 35
+    minRange: 5
+    dropoff: 2 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 80
+    attraction: 1
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    hitSound: 19
+    hitAnimation: 46
+  - type: STR_ARTILLERY_TURRET
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 241600
+    weight: 100
+    bigSprite: 1002
+    recover: false
+    fixedWeapon: true
+    power: 100
+    blastRadius: 4
+    clipSize: -1
+    floorSprite: 1002
+    handSprite: 1008
+    bulletSprite: 8
+    bulletSpeed: 2
+    damageType: 5
+    fireSound: 18
+    accuracySnap: 50 # 55
+    accuracyAimed: 70 # 95
+    tuSnap: 40 # 45
+    tuAimed: 75 # 80
+    snapRange: 20 #
+    aimRange: 35
+    minRange: 5
+    dropoff: 2 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 80
+    attraction: 1
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    hitSound: 19
+    hitAnimation: 0
+  - type: STR_SMALL_PLASMA_TURRET
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 241600
+    weight: 100
+    bigSprite: 1002
+    recover: false
+    fixedWeapon: true
+    power: 80
+    clipSize: -1
+    floorSprite: 1002
+    handSprite: 1008
+    bulletSprite: 8
+    bulletSpeed: 2
+    damageType: 5
+    fireSound: 18
+    accuracyAuto: 50
+    accuracySnap: 55 # 55
+    accuracyAimed: 90 # 95
+    tuSnap: 25 # 45
+    tuAimed: 50 # 80
+    tuAuto: 50
+    autoShots: 4
+    autoRange: 15
+    snapRange: 20 #
+    aimRange: 35
+    dropoff: 2 # 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 80
+    attraction: 1
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    hitSound: 19
+    hitAnimation: 46
+##### Ended Section

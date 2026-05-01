@@ -1,0 +1,1213 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+armors:
+####################################
+########## ALIEN ARMORS ############
+####################################
+################################
+##### UNARMORED SECTOIDS ######
+##############################
+  - type: SECTOID_ARMOR0
+    allowInv: true
+    spriteInv: SECTOID_INVENTORY.SPK
+    spriteSheet: SECTOID.PCK
+    corpseBattle:
+      - STR_SECTOID_CORPSE
+    frontArmor: 4
+    sideArmor: 3
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: &SoftAlienInfantryDamageModifier
+      - 1.0 #none
+      - 1.0 #Balistic
+      - 1.0 #Incendiary
+      - 1.0 #HE
+      - 1.0 #Laser
+      - 1.0 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 1.6 #Acid
+      - 1.0 #Smoke
+      - 1.3 #Elerium Fusion
+      - 1.0 #Electric
+    loftempsSet: [ 2 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: SECTOID_COMMANDER_ARMOR
+    allowInv: true
+    spriteInv: SECTOID_COMMANDER_INVENTORY.SPK
+    spriteSheet: SECTOID_COMMANDER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_SECTOID_CORPSE
+    frontArmor: 4
+    sideArmor: 3
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 2 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+###### ARMORED SECTOIDS #######
+##############################
+  - type: ARMORED_SECTOID_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_SECTOID_INVENTORY.SPK
+    spriteSheet: ARMORED_SECTOID_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_ARMORED_SECTOID_CORPSE
+    frontArmor: 55
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
+    damageModifier: &HardAlienInfantryDamageModifier
+      - 1.0 #none
+      - 0.8 #Balistic
+      - 1.0 #Incendiary
+      - 0.8 #HE
+      - 1.0 #Laser
+      - 0.7 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.1 #Elerium Fusion
+      - 1.1 #Electric
+    loftempsSet: [ 2 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+##### UNARMORED FLOATERS ######
+##############################
+  - type: FLOATER_SOLDIER_ARMOR
+    spriteSheet: FLOATER_SOLDIER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_SOLDIER_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_SOLDIER_CORPSE
+    frontArmor: 8
+    sideArmor: 6
+    rearArmor: 4
+    underArmor: 12
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FLOATER_NAVIGATOR_ARMOR
+    spriteSheet: FLOATER_NAVIGATOR_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_NAVIGATOR_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_NAVIGATOR_CORPSE
+    frontArmor: 16
+    sideArmor: 12
+    rearArmor: 8
+    underArmor: 12
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FLOATER_MEDIC_ARMOR
+    spriteSheet: FLOATER_MEDIC_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_MEDIC_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_MEDIC_CORPSE
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 12
+    underArmor: 16
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FLOATER_ENGINEER_ARMOR
+    spriteSheet: FLOATER_ENGINEER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_ENGINEER_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_ENGINEER_CORPSE
+    frontArmor: 18
+    sideArmor: 16
+    rearArmor: 10
+    underArmor: 12
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FLOATER_LEADER_ARMOR
+    spriteSheet: FLOATER_LEADER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: FLOATER_LEADER_INVENTORY.SPK
+    corpseBattle:
+      - STR_FLOATER_LEADER_CORPSE
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 12
+    underArmor: 16
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+###### ARMORED FLOATERS #######
+##############################
+  - type: ARMORED_FLOATER_SOLDIER_ARMOR
+    spriteSheet: ARMORED_FLOATER_SOLDIER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: ARMORED_FLOATER_SOLDIER_INVENTORY.SPK
+    corpseBattle:
+      - STR_ARMORED_FLOATER_SOLDIER_CORPSE
+    frontArmor: 18
+    sideArmor: 16
+    rearArmor: 14
+    underArmor: 12
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *HardAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: ARMORED_FLOATER_LEADER_ARMOR
+    spriteSheet: ARMORED_FLOATER_LEADER_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: ARMORED_FLOATER_LEADER_INVENTORY.SPK
+    corpseBattle:
+      - STR_ARMORED_FLOATER_LEADER_CORPSE
+    frontArmor: 34
+    sideArmor: 28
+    rearArmor: 22
+    underArmor: 26
+    drawingRoutine: 1
+    movementType: 1
+    damageModifier: *HardAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+###### UNARMORED SNAKES #######
+##############################
+################################
+####### ARMORED SNAKES ########
+##############################
+  - type: SNAKEMAN_ARMOR0
+    spriteSheet: SNAKEMAN.PCK
+    corpseBattle:
+      - STR_SNAKEMAN_CORPSE
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    drawingRoutine: 6
+    movementType: 2
+    damageModifier: *HardAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: SNAKEMAN_ARMOR1
+    spriteSheet: SNAKEMAN.PCK
+    corpseBattle:
+      - STR_SNAKEMAN_CORPSE
+    frontArmor: 20
+    sideArmor: 24
+    rearArmor: 22
+    underArmor: 20
+    drawingRoutine: 6
+    movementType: 2
+    damageModifier: *HardAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: SNAKEMAN_ARMOR2
+    spriteSheet: SNAKEMAN.PCK
+    corpseBattle:
+      - STR_SNAKEMAN_CORPSE
+    frontArmor: 26
+    sideArmor: 26
+    rearArmor: 22
+    underArmor: 20
+    drawingRoutine: 6
+    movementType: 2
+    damageModifier: *HardAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+###### UNARMORED MUTONS #######
+##############################
+  - type: MUTON_SOLDIER_ARMOR
+    allowInv: true
+    spriteInv: MUTON_SOLDIER_INVENTORY.SPK
+    spriteSheet: MUTON_SOLDIER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_SOLDIER_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 10
+    drawingRoutine: 10
+    damageModifier: &SoftMutonInfantryDamageModifier
+      - 1.0 #none
+      - 0.7 #Balistic
+      - 1.0 #Incendiary
+      - 1.0 #HE
+      - 0.9 #Laser
+      - 0.8 #Plasma
+      - 1.0 #Stun
+      - 0.8 #Melee
+      - 1.2 #Acid
+      - 1.0 #Smoke
+      - 1.3 #Elerium Fusion
+      - 1.0 #Electric
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MUTON_NAVIGATOR_ARMOR
+    allowInv: true
+    spriteInv: MUTON_NAVIGATOR_INVENTORY.SPK
+    spriteSheet: MUTON_NAVIGATOR_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_NAVIGATOR_CORPSE
+    frontArmor: 24
+    sideArmor: 24
+    rearArmor: 24
+    underArmor: 15
+    drawingRoutine: 10
+    damageModifier: *SoftMutonInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MUTON_MEDIC_ARMOR
+    allowInv: true
+    spriteInv: MUTON_MEDIC_INVENTORY.SPK
+    spriteSheet: MUTON_MEDIC_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_MEDIC_CORPSE
+    frontArmor: 28
+    sideArmor: 28
+    rearArmor: 28
+    underArmor: 20
+    drawingRoutine: 10
+    damageModifier: *SoftMutonInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MUTON_ENGINEER_ARMOR
+    allowInv: true
+    spriteInv: MUTON_ENGINEER_INVENTORY.SPK
+    spriteSheet: MUTON_ENGINEER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_ENGINEER_CORPSE
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 28
+    underArmor: 20
+    drawingRoutine: 10
+    damageModifier: *SoftMutonInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MUTON_LEADER_ARMOR
+    allowInv: true
+    spriteInv: MUTON_LEADER_INVENTORY.SPK
+    spriteSheet: MUTON_LEADER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_MUTON_LEADER_CORPSE
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 30
+    underArmor: 20
+    drawingRoutine: 10
+    damageModifier: *SoftMutonInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+####### ARMORED MUTONS ########
+##############################
+  - type: ARMORED_MUTON_SOLDIER_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_MUTON_SOLDIER_INVENTORY.SPK
+    spriteSheet: ARMORED_MUTON_SOLDIER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_ARMORED_MUTON_SOLDIER_CORPSE
+    frontArmor: 65
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
+    drawingRoutine: 10
+    damageModifier: &HardMutonInfantryDamageModifier
+      - 1.0 #none
+      - 0.6 #Balistic
+      - 1.0 #Incendiary
+      - 1.0 #HE
+      - 0.8 #Laser
+      - 0.6 #Plasma
+      - 1.0 #Stun
+      - 0.6 #Melee
+      - 1.2 #Acid
+      - 0.0 #Smoke
+      - 1.2 #Elerium Fusion
+      - 1.0 #Electric
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: ARMORED_MUTON_LEADER_ARMOR
+    allowInv: true
+    spriteInv: ARMORED_MUTON_LEADER_INVENTORY.SPK
+    spriteSheet: ARMORED_MUTON_LEADER_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_ARMORED_MUTON_LEADER_CORPSE
+    frontArmor: 75
+    sideArmor: 54
+    rearArmor: 36
+    underArmor: 30
+    drawingRoutine: 10
+    damageModifier: *HardMutonInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+################################
+######### ETHEREALS ###########
+##############################
+  - type: ETHEREAL_ARMOR0
+    spriteSheet: ETHEREAL.PCK
+    allowInv: true
+    spriteInv: ETHEREAL_INVENTORY.SPK
+    corpseBattle:
+      - STR_ETHEREAL_CORPSE
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 35
+    movementType: 1
+    drawingRoutine: 4
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: ETHEREAL_ARMOR1
+    spriteSheet: ETHEREAL.PCK
+    allowInv: true
+    spriteInv: ETHEREAL_INVENTORY.SPK
+    corpseBattle:
+      - STR_ETHEREAL_CORPSE
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 40
+    movementType: 1
+    drawingRoutine: 4
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: ETHEREAL_ARMOR2
+    spriteSheet: ETHEREAL.PCK
+    allowInv: true
+    spriteInv: ETHEREAL_INVENTORY.SPK
+    corpseBattle:
+      - STR_ETHEREAL_CORPSE
+    frontArmor: 45
+    sideArmor: 45
+    rearArmor: 45
+    underArmor: 45
+    movementType: 1
+    drawingRoutine: 4
+    damageModifier: *SoftAlienInfantryDamageModifier
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+#################################
+##### ALIEN DRONES & MECHS #####
+###############################
+  - type: CYBERDISC_ARMOR
+    spriteSheet: CYBER.PCK
+    allowInv: true
+    spriteInv: CYBERDISC_INVENTORY.SPK
+    corpseBattle:
+      - CYBERDISC_CORPSE_1
+      - CYBERDISC_CORPSE_2
+      - CYBERDISC_CORPSE_3
+      - CYBERDISC_CORPSE_4
+    corpseGeo: STR_CYBERDISC_CORPSE
+    frontArmor: 54
+    sideArmor: 54
+    rearArmor: 54
+    underArmor: 54
+    drawingRoutine: 3
+    constantAnimation: true
+    movementType: 1
+    size: 2
+    damageModifier: &HardAlienMechDamageModifier
+      - 1.0 #none
+      - 0.6 #Balistic
+      - 1.0 #Incendiary
+      - 1.3 #HE
+      - 0.8 #Laser
+      - 0.8 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.3 #Elerium Fusion
+      - 1.6 #Electric
+    loftempsSet: [ 92, 89, 90, 91 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: SECTOPOD_ARMOR
+    spriteSheet: X_ROB.PCK
+    allowInv: true
+    spriteInv: SECTOPOD_INVENTORY.SPK
+    corpseBattle:
+      - SECTOPOD_CORPSE_1
+      - SECTOPOD_CORPSE_2
+      - SECTOPOD_CORPSE_3
+      - SECTOPOD_CORPSE_4
+    corpseGeo: STR_SECTOPOD_CORPSE
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    drawingRoutine: 5
+    size: 2
+    damageModifier:
+      - 1.0 #none
+      - 0.8 #Balistic
+      - 1.0 #Incendiary
+      - 1.3 #HE
+      - 1.2 #Laser
+      - 0.7 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.1 #Elerium Fusion
+      - 1.6 #Electric
+    loftempsSet: [ 92, 89, 90, 91 ]
+    specialWeapon: STR_VEHICLECRASH
+  - type: MECHTOID_ARMOR
+    spriteSheet: MECHTOID_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: MECHTOID_INVENTORY.SPK
+    corpseBattle:
+      - MECHTOID_CORPSE_1
+      - MECHTOID_CORPSE_2
+      - MECHTOID_CORPSE_3
+      - MECHTOID_CORPSE_4
+    corpseGeo: STR_MECHTOID_CORPSE
+    frontArmor: 110
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 80
+    drawingRoutine: 5
+    painImmune: true
+    size: 2
+    damageModifier: &SoftAlienMechDamageModifier
+      - 1.0 #none
+      - 1.1 #Balistic
+      - 1.0 #Incendiary
+      - 1.2 #HE
+      - 0.8 #Laser
+      - 0.7 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.3 #Elerium Fusion
+      - 1.8 #Electric
+    loftempsSet: [ 92, 89, 90, 91 ]
+    specialWeapon: STR_VEHICLECRASH
+  - type: PROBE_ARMOR
+    allowInv: true
+    spriteInv: PROBE_INVENTORY.SPK
+    spriteSheet: PROBE_SPRITESHEET.PCK
+    scripts: # <- this node
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        unit.isWalking walking;
+        if eq walking 0;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 8 8 7;
+          mul sprite_offset 8;
+          add sprite_offset 8;
+          add sprite_offset temp;
+          set sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    corpseBattle:
+      - STR_PROBE_CORPSE
+    frontArmor: 15
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    drawingRoutine: 4
+    constantAnimation: true
+    damageModifier: *SoftAlienMechDamageModifier
+    loftempsSet: [1]
+  - type: CYBERSPHERE_ARMOR
+    spriteInv: CYBERSPHERE_INVENTORY.SPK
+    spriteSheet: CYBERSPHERE_SPRITESHEET.PCK
+    deathFrames: 3
+    allowInv: true
+    corpseBattle:
+      - STR_CYBERSPHERE_CORPSE
+    frontArmor: 3
+    sideArmor: 3
+    rearArmor: 3
+    underArmor: 3
+    drawingRoutine: 8
+    movementType: 1
+    size: 1
+    damageModifier: *SoftAlienMechDamageModifier
+    painImmune: true
+    loftempsSet: [3]
+    meleeDodge:
+      reactions: 0.3
+################################
+######## ALIEN BEASTS #########
+##############################
+  - type: REAPER_ARMOR
+    spriteSheet: X_REAP.PCK
+    allowInv: false
+    corpseBattle:
+      - REAPER_CORPSE_1
+      - REAPER_CORPSE_2
+      - REAPER_CORPSE_3
+      - REAPER_CORPSE_4
+    corpseGeo: STR_REAPER_CORPSE
+    frontArmor: 28
+    sideArmor: 28
+    rearArmor: 28
+    underArmor: 4
+    drawingRoutine: 5
+    size: 2
+    damageModifier:
+      - 1.0 #none
+      - 0.9 #Balistic
+      - 1.5 #Incendiary
+      - 1.1 #HE
+      - 0.7 #Laser
+      - 0.6 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 1.1 #Acid
+      - 0.0 #Smoke
+      - 1.5 #Elerium Fusion
+      - 1.1 #Electric
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: CHRYSSALID_ARMOR
+    spriteSheet: CHRYS.PCK
+    allowInv: true
+    spriteInv: CHRYSSALID_INVENTORY.SPK
+    corpseBattle:
+      - STR_CHRYSSALID_CORPSE
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    drawingRoutine: 7
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #Balistic
+      - 1.8 #Incendiary
+      - 1.2 #HE
+      - 1.1 #Laser
+      - 1.0 #Plasma
+      - 1.0 #Stun
+      - 1.5 #Melee
+      - 0.8 #Acid
+      - 0.0 #Smoke
+      - 1.8 #Elerium Fusion
+      - 1.0 #Electric
+    loftempsSet: [ 3 ]
+  - type: ZOMBIE_ARMOR
+    painImmune: true # no secondary stun damage
+    spriteSheet: ZOMBIE.PCK
+    allowInv: true
+    spriteInv: ZOMBIE_INVENTORY.SPK
+    corpseBattle:
+      - STR_CHRYSSALID_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 4
+    damageModifier: &BiologicalNightmareDamageModifier
+      - 1.0 #none
+      - 1.0 #Balistic
+      - 1.5 #Incendiary
+      - 1.3 #HE
+      - 1.1 #Laser
+      - 1.1 #Plasma
+      - 1.0 #Stun
+      - 1.2 #Melee
+      - 1.0 #Acid
+      - 0.0 #Smoke
+      - 1.5 #Elerium Fusion
+      - 1.2 #Electric
+    loftempsSet: [ 3 ]
+    deathFrames: 18
+  - type: ZOMBIE_UNDEAD_ARMOR
+    painImmune: true # no secondary stun damage
+    spriteSheet: ZOMBIE_NORMAL_SPRITESHEET.PCK
+    allowInv: true
+    spriteInv: ZOMBIE_INVENTORY.SPK
+    corpseBattle:
+      - STR_ZOMBIE_UNDEAD_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 4
+    damageModifier: *BiologicalNightmareDamageModifier
+    loftempsSet: [ 3 ]
+    deathFrames: 3
+  - type: SILACOID_ARMOR
+    spriteSheet: SILACOID.PCK
+    allowInv: true
+    spriteInv: SILACOID_INVENTORY.SPK
+    corpseBattle:
+      - STR_SILACOID_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 10
+    drawingRoutine: 8
+    constantAnimation: true
+    movementType: 2
+    damageModifier: *BiologicalNightmareDamageModifier
+    loftempsSet: [ 5 ]
+  - type: CELATID_ARMOR
+    spriteSheet: CELATID.PCK
+    allowInv: true
+    spriteInv: CELATID_INVENTORY.SPK
+    corpseBattle:
+      - STR_CELATID_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    drawingRoutine: 9
+    constantAnimation: true
+    damageModifier: *BiologicalNightmareDamageModifier
+    loftempsSet: [ 3 ]
+###### Armor Punch
+###### Expanding Recycle Alien Stuff here, but soon to be upgraded with new sprites.
+  - type: CEREBREAL_ARMOR0
+    allowInv: true
+    spriteInv: inventory_CEREBREAL
+    spriteSheet: CEREBREAL.PCK
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 35
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: CEREBREAL_ARMOR1
+    allowInv: true
+    spriteInv: inventory_CEREBREAL
+    spriteSheet: CEREBREAL.PCK
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 40
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: CEREBREAL_ARMOR2
+    allowInv: true
+    spriteInv: inventory_CEREBREAL
+    spriteSheet: CEREBREAL.PCK
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 45
+    sideArmor: 45
+    rearArmor: 45
+    underArmor: 45
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: CEREBREAL_ZOMBIE_ARMOR
+    painImmune: true # no secondary stun damage
+    spriteInv: CEREBREAL_ZOMBIE_INVENTORY
+    spriteSheet: CEREBREAL_ZOMBIE_SPRITESHEET.PCK
+    allowInv: true
+    corpseBattle:
+      - STR_CEREBREAL_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.8
+      - 0.8
+      - 0.7
+      - 0.7
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    deathFrames: 3
+  - type: CEREBREAL_LARVA_ARMOR
+    spriteSheet: CEREBREAL_LARVA.PCK
+    corpseBattle:
+      - STR_CEREBREAL_LARVA_CORPSE
+#    frontArmor: 34
+#    sideArmor: 34
+#    rearArmor: 34
+#    underArmor: 28
+#    drawingRoutine: 15
+#    constantAnimation: true
+#    movementType: 2
+#    damageModifier:
+#      - 1.0
+#      - 0.8
+#      - 1.0
+#      - 1.0
+#      - 0.8
+#      - 1.0
+#      - 1.0
+#      - 1.4
+#      - 1.0
+#      - 0.0
+#    loftempsSet: [ 3 ]
+    frontArmor: 25
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 5
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.6
+      - 0.6
+      - 0.7
+      - 0.9
+      - 0.9
+      - 1.45
+      - 0.0
+      - 0.9
+    loftempsSet: [ 2 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+    drawingRoutine: 16
+    constantAnimation: true
+  - type: CHTONITE_ARMOR0
+    allowInv: true
+    spriteInv: inventory_CHTONITE
+    spriteSheet: CHTONITE.PCK
+    corpseBattle:
+      - STR_CHTONITE_CORPSE
+    frontArmor: 12
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: CHTONITE_ARMOR1
+    allowInv: true
+    spriteInv: inventory_CHTONITE
+    spriteSheet: CHTONITE.PCK
+    corpseBattle:
+      - STR_CHTONITE_CORPSE
+    frontArmor: 12
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: CHTONITE_ARMOR2
+    allowInv: true
+    spriteInv: inventory_CHTONITE
+    spriteSheet: CHTONITE.PCK
+    corpseBattle:
+      - STR_CHTONITE_CORPSE
+    frontArmor: 12
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: TUNLUN_ARMOR
+    allowInv: true
+    spriteInv: inventory_TUNLUN
+    spriteSheet: TUNLUN.PCK
+    corpseBattle:
+      - STR_TUNLUN_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 25
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: REPTOID_ARMOR0
+    allowInv: true
+    spriteInv: inventory_REPTOID
+    spriteSheet: REPTOID.PCK
+    corpseBattle:
+      - STR_REPTOID_CORPSE
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 12
+    underArmor: 10
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.9
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: REPTOID_ARMOR1
+    allowInv: true
+    spriteInv: inventory_REPTOID
+    spriteSheet: REPTOID.PCK
+    corpseBattle:
+      - STR_REPTOID_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 14
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.9
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: REPTOID_ARMOR2
+    allowInv: true
+    spriteInv: inventory_REPTOID
+    spriteSheet: REPTOID.PCK
+    corpseBattle:
+      - STR_REPTOID_CORPSE
+    frontArmor: 24
+    sideArmor: 24
+    rearArmor: 18
+    underArmor: 16
+    drawingRoutine: 0
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.9
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.8
+      - 1.4
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: SALAMANDRON_ARMOR
+    spriteSheet: SALAMANDRON.PCK
+    corpseBattle:
+      - SALAMANDRON_CORPSE_1
+      - SALAMANDRON_CORPSE_2
+      - SALAMANDRON_CORPSE_3
+      - SALAMANDRON_CORPSE_4
+    corpseGeo: STR_SALAMANDRON_CORPSE
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 25
+    drawingRoutine: 5
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
+######## Alien Battle Turrets Section
+  - type: STR_SMALL_PLASMA_TURRET_UC
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+    spriteSheet: PTURRET.PCK
+    allowInv: false
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    corpseBattle:
+     - STR_HIDDEN_CORPSE
+    loftempsSet: [ 3 ]
+    createsMeleeThreat: false
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 1
+    movementType: 1
+    drawingRoutine: 19
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+  - type: STR_ARTILLERY_TURRET_UC
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+    spriteSheet: ARTILLERY.PCK
+    allowInv: false
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    corpseBattle:
+     - SECTOPOD_CORPSE_4
+     - SECTOPOD_CORPSE_4
+     - SECTOPOD_CORPSE_4
+     - SECTOPOD_CORPSE_4
+    loftempsSet: [ 92, 89, 90, 91 ]
+    frontArmor: 80
+    sideArmor: 80
+    rearArmor: 80
+    underArmor: 50
+    drawingRoutine: 12
+    size: 2
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+  - type: STR_PLASMA_TURRET_UC
+    allowsMoving: false
+    spriteSheet: FLOTILLA.PCK
+    allowInv: false
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    corpseBattle:
+     - SECTOPOD_CORPSE_4
+     - SECTOPOD_CORPSE_4
+     - SECTOPOD_CORPSE_4
+     - SECTOPOD_CORPSE_4
+    loftempsSet: [ 92, 89, 90, 91 ]
+    frontArmor: 80
+    sideArmor: 80
+    rearArmor: 80
+    underArmor: 50
+    drawingRoutine: 12
+    size: 2
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+  - type: STR_HIND_TURRET_ARMOR
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+    spriteSheet: EMPTY.PCK
+    allowInv: false
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    movementType: 1
+    corpseBattle:
+     - STR_HIDDEN_CORPSE
+    loftempsSet: [6]
+    frontArmor: 1000
+    sideArmor: 1000
+    rearArmor: 1000
+    underArmor: 1000
+    drawingRoutine: 0
+    camouflageAtDark: -100
+    camouflageAtDay: -100
+    visibilityAtDark: 60
+    visibilityAtDay: 30
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+
+##########################
+##### End of Section
+#########################

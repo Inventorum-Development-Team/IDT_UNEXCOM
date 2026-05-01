@@ -1,0 +1,635 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+####### Soldier Spritesheet and Inventory here
+extraSprites:
+########################################
+########## COMBAT UNIFORM #############
+######################################
+  - type: MAN_0wdF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F0.png
+  - type: MAN_0wdF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F1.png
+  - type: MAN_0wdF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F2.png
+  - type: MAN_0wdF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0F3.png
+  - type: MAN_0wdM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M0.png
+  - type: MAN_0wdM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M1.png
+  - type: MAN_0wdM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M2.png
+  - type: MAN_0wdM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/Inventory/MAN_0M3.png
+  - type: XCOM_10.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/CombatUniform/BlueCombatUniform.png
+########################################
+########## PILOT JUMPSUIT #############
+######################################
+  - type: MAN_5F0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F0.png
+  - type: MAN_5F1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F1.png
+  - type: MAN_5F2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F2.png
+  - type: MAN_5F3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5F3.png
+  - type: MAN_5M0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M0.png
+  - type: MAN_5M1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M1.png
+  - type: MAN_5M2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M2.png
+  - type: MAN_5M3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/INVENTORY/MAN_5M3.png
+  - type: PILOT.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/PilotArmor/PilotSpritesheet.png
+########################################
+######### SPECIAL FORCES ##############
+######################################
+  - type: MAN_4SFF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF0.png
+  - type: MAN_4SFF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF1.png
+  - type: MAN_4SFF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF2.png
+  - type: MAN_4SFF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFF3.png
+  - type: MAN_4SFM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM0.png
+  - type: MAN_4SFM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM1.png
+  - type: MAN_4SFM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM2.png
+  - type: MAN_4SFM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/Inventory/MAN_4SFM3.png
+  - type: XCOM_4SF.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/SpecialForces/SpecialForcesSpritesheet.png
+########################################
+############ MERCENARY ################
+######################################
+  - type: MAN_4MERCF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF0.png
+  - type: MAN_4MERCF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF1.png
+  - type: MAN_4MERCF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF2.png
+  - type: MAN_4MERCF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF3.png
+  - type: MAN_4MERCM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCM0.png
+  - type: MAN_4MERCM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF1.png
+  - type: MAN_4MERCM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF2.png
+  - type: MAN_4MERCM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/Inventory/MAN_4MERCF3.png
+  - type: XCOM_4MERC.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/Mercenary/MercenarySpritesheet.png
+########################################
+######### NATO DELTA ARMOR #############
+######################################
+  - type: ARMOR_DELTA.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/DeltaArmor/ARMOR_DELTA.PNG
+  - type: ARMOR_DELTA_INVENTORY.SPK
+    height: 200
+    width: 320
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/DeltaArmor/man_7m0.gif
+  - type: DELTA_ARMOR_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_IMAGE.PNG
+########################################
+######### USSR RIOT ARMOR #############
+######################################
+  - type: ARMOR_RIOT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/RiotArmor/ARMOR_RIOT.PNG
+  - type: ARMOR_RIOT_INVENTORY.SPK
+    height: 200
+    width: 320
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/RiotArmor/man_6m0.png
+  - type: RIOT_ARMOR_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_IMAGE.PNG
+########################################
+######### USA COMBAT ARMOR ############
+######################################
+  - type: MAN_4UNF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f0.gif
+  - type: MAN_4UNF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f1.gif
+  - type: MAN_4UNF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f2.gif
+  - type: MAN_4UNF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4f3.gif
+  - type: MAN_4UNM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m0.gif
+  - type: MAN_4UNM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m1.gif
+  - type: MAN_4UNM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m2.gif
+  - type: MAN_4UNM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/Inventory/man_4m3.gif
+  - type: XCOM_4UN.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/XCOM_4/
+  - type: COMBAT_ARMOR_IMAGE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_IMAGE.PNG
+########################################
+######### UN PERSONAL ARMOR ############
+######################################
+# Armor
+  - type: PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/PA.png
+  - type: PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M0.png
+  - type: PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M1.png
+  - type: PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M2.png
+  - type: PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_M3.png
+  - type: PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F0.png
+  - type: PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F1.png
+  - type: PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F2.png
+  - type: PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PersonalArmor/Inventory/PA_INV_F3.png
+########################################
+######### UN HEAVY PERSONAL ARMOR ############
+######################################
+  - type: HEAVY_PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA.png
+  - type: HEAVY_PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M0.png
+  - type: HEAVY_PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M1.png
+  - type: HEAVY_PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M2.png
+  - type: HEAVY_PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_M3.png
+  - type: HEAVY_PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F0.png
+  - type: HEAVY_PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F1.png
+  - type: HEAVY_PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F2.png
+  - type: HEAVY_PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_INV_F3.png
+##################################################
+######### UN MARAUDER POWER ARMOR ###############
+################################################
+# Armor
+  - type: MARAUDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_SPRITESHEET.png
+  - type: MAN_MARAUDER
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/MarauderArmor/Inventory/MAN_MARAUDER.png
+##################################################
+######### UN PATHFINDER FLYING ARMOR ###############
+################################################
+# Armor
+  - type: PATHFINDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_SPRITESHEET.png
+  - type: MAN_PATHFINDER
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/PathfinderArmor/Inventory/MAN_PATHFINDER.png
+####################################
+####### USA/NATO SPACESUITS #######
+##################################
+  - type: MAN_5A7L.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7LArmor/INVENTORY/MAN_5A7L.png
+  - type: A7L_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_SPRITESHEET.png
+  - type: MAN_5A7MMU.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7MMUArmor/INVENTORY/MAN_5A7MMU.png
+  - type: A7MMU_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7LMMU_SPACESUIT_SPRITESHEET.png
+############################################
+####### USSR/WARSAW PACT SPACESUITS #######
+##########################################
+  - type: MAN_5KRECHET94.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechet94Armor/INVENTORY/MAN_5KRECHET94.png
+  - type: KRECHET94_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_SPRITESHEET.png
+  - type: MAN_5KRECHETMMU.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/INVENTORY/MAN_5KRECHETMMU.png
+  - type: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_SPRITESHEET.png
+####################################
+  - type: SCOUT_POWER_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/ScoutPowerArmor.gif
+  - type: SCOUT_POWER_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6m0.gif
+  - type: SCOUT_POWER_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6m1.gif
+  - type: SCOUT_POWER_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6m2.gif
+  - type: SCOUT_POWER_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6m3.gif
+  - type: SCOUT_POWER_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6f0.png
+  - type: SCOUT_POWER_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6f1.png
+  - type: SCOUT_POWER_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6f2.png
+  - type: SCOUT_POWER_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_6f3.png
+  - type: SCOUT_FLYING_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/ScoutFlyingArmor.gif
+  - type: SCOUT_FLYING_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7m0.gif
+  - type: SCOUT_FLYING_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7m1.gif
+  - type: SCOUT_FLYING_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7m2.gif
+  - type: SCOUT_FLYING_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7m3.gif
+  - type: SCOUT_FLYING_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7f0.png
+  - type: SCOUT_FLYING_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7f1.png
+  - type: SCOUT_FLYING_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7f2.png
+  - type: SCOUT_FLYING_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/SoldiersAndArmors/ScoutArmor/man_7f3.png
+########## Vehicles and Armored Vehicle
+  - type: FERRETM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/FERRET_INVENTORY.png
+  - type: SHERIDANM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/SHERIDAN_INVENTORY.png
+  - type: BMD1M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/BMD1_INVENTORY.png
+  - type: SALADINM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/SALADIN_INVENTORY.png
+  - type: LEGIONNAIREM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/LEGIONNAIRE_INVENTORY.png
+  - type: PATTONM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/PATTON_INVENTORY.png
+  - type: LEOPARDM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/LEOPARD_INVENTORY.png
+  - type: T54M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/T54_INVENTORY.png
+  - type: BMPM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/BMP_INVENTORY.png
+  - type: M113A1V1.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/unexcomm1a1apc1_inv.png
+  - type: M113A1V2.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/unexcomm1a1apc2_inv.png
+  - type: M1ONTOST1.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks/Inventory/unexcomm1a1ontos1_inv.png
+########## Tank and Armored Vehicles
+  - type: FERRET.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/FERRET.png
+  - type: SHERIDAN.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/SHERIDAN.png
+  - type: BMD1.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/BMD1.png
+  - type: SALADIN.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/SALADIN.png
+  - type: LEGIONNAIRE.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/LEGIONNAIRE.png
+  - type: PATTON.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/PATTON.png
+  - type: LEOPARD.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/LEOPARD.png
+  - type: T54.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/T54.png
+  - type: BMP.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/BMP.png
+######## Kiros spot ######
+  - type: HWP1APC1A.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/unexcomm1a1apc1.png
+  - type: HWP1ONTOS1.PCK
+    width: 256
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks/unexcomm1a1ontos1.png

@@ -1,0 +1,233 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+##### Alien Sprite Sheets
+extraSprites:
+################################
+  - type: SECTOID_COMMANDER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/Sectoids/SECTOID_COMMANDER_SPRITESHEET.png
+  - type: ARMORED_SECTOID_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 320
+    height: 1080
+    files:
+      0: Resources/AlienFactions/ArmoredSectoids/ARMORED_SECTOID_SPRITESHEET.png
+#################################
+  - type: FLOATER_SOLDIER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/Floaters/FLOATER_SOLDIER_SPRITESHEET.png
+  - type: FLOATER_NAVIGATOR_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/Floaters/FLOATER_NAVIGATOR_SPRITESHEET.png
+  - type: FLOATER_MEDIC_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/Floaters/FLOATER_MEDIC_SPRITESHEET.png
+  - type: FLOATER_ENGINEER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/Floaters/FLOATER_ENGINEER_SPRITESHEET.png
+  - type: FLOATER_LEADER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/Floaters/FLOATER_LEADER_SPRITESHEET.png
+  - type: STRIDER_SOLDIER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/AlienFactions/Striders/STRIDER_SOLDIER_SPRITESHEET.png
+##################################
+  - type: ARMORED_FLOATER_SOLDIER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_SOLDIER_SPRITESHEET.png
+  - type: ARMORED_FLOATER_LEADER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 280
+    files:
+      0: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_LEADER_SPRITESHEET.png
+##################################
+  - type: MUTON_SOLDIER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/Mutons/MUTON_SOLDIER_SPRITESHEET.png
+  - type: MUTON_NAVIGATOR_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/Mutons/MUTON_NAVIGATOR_SPRITESHEET.png
+  - type: MUTON_MEDIC_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/Mutons/MUTON_MEDIC_SPRITESHEET.png
+  - type: MUTON_ENGINEER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/Mutons/MUTON_ENGINEER_SPRITESHEET.png
+  - type: MUTON_LEADER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/Mutons/MUTON_LEADER_SPRITESHEET.png
+################################
+  - type: ARMORED_MUTON_SOLDIER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_SOLDIER_SPRITESHEET.png
+  - type: ARMORED_MUTON_LEADER_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_LEADER_SPRITESHEET.png
+################################
+  - type: MECHTOID_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/AlienFactions/Mechtoid/MECHTOID_SPRITESHEET.png
+  - type: PROBE_SPRITESHEET.PCK
+    width: 512
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AlienFactions/Probe/PROBE_SPRITESHEET.png
+  - type: CYBERSPHERE_SPRITESHEET.PCK
+    width: 256
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AlienFactions/Cybersphere/CYBERSPHERE_SPRITESHEET.png
+################################
+  - type: ZOMBIE_NORMAL_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_SPRITESHEET.png
+################################
+####### Expanding Alien spritesheet stuff
+  - type: CHTONITE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/CHTONITE.png
+  - type: REPTOID.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/REPTOID.png
+
+  - type: CEREBREAL_LARVA.PCK
+    subX: 32
+    subY: 40
+    width: 352
+    height: 40
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/CEREBREAL_LARVA.png
+  - type: CEREBREAL_ZOMBIE_SPRITESHEET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1400
+    files:
+      0: Resources/AlienFactions/Zombies/ZOMBIE_CEREBREAL_SPRITESHEET.png
+  - type: TUNLUN.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/RecycledAlienCollection/ChtoniteRace/TUNLUN.png
+  - type: SALAMANDRON.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 400
+    files:
+      0: Resources/RecycledAlienCollection/ReptoidRace/SALAMANDRON.png
+############# Alien Gun Turrets Here
+  - type: PTURRET.PCK
+    width: 256
+    height: 120
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Turrets/PLASMA_TURRET.png
+  - type: FLOTILLA.PCK
+    width: 256
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Turrets/Flotilla Unit/Ground/Ground Flotilla (Slotted Hull) (Ascending Lights).png
+  - type: ARTILLERY.PCK
+    width: 256
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Turrets/Flotilla Unit/Ground/Ground Artillery (Slotted Hull) (Ascending Lights).png
+  - type: EMPTY.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/SoldiersAndArmors/Empty.png

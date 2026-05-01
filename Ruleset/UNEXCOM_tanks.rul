@@ -1,0 +1,1972 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+items:
+#####################################
+####### DAIMLER FERRET SC ##############
+#####################################
+  - type: STR_FERRET_CAR
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_ARMORED_CARS]
+    size: 6
+    requiresBuyCountry: STR_UK
+    costBuy: 350000
+    costSell: 240000
+    monthlyBuyLimit: 10
+    transferTime: 96
+    listOrder: 1407
+  - type: STR_DOUBLE_50CAL
+    costSell: 500
+    weight: 1
+    bigSprite: 2500
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 3
+    fireSound: 4336
+    compatibleAmmo:
+      - STR_DOUBLE_50CAL_BOX
+    accuracyAuto: 80
+    accuracySnap: 95
+    accuracyCloseQuarters: 50
+    tuAuto: 45
+    tuSnap: 30
+    autoShots: 5
+    autoRange: 15
+    snapRange: 32
+    dropoff: 1
+    bulletSpeed: 16
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1408
+  - type: STR_FERRET_SMOKE_LAUNCHER
+    weight: 0
+    bigSprite: 2501
+    fireSound: 4336
+    compatibleAmmo:
+      - STR_FERRET_SMOKE_GRENADE
+    accuracyAimed: 100
+    tuAimed: 45
+    confAimed:
+      name: STR_HWP_POP_SMOKE
+    battleType: 1
+    maxRange: 10
+    arcingShot: true
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 1409
+  - type: STR_DOUBLE_50CAL_BOX
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    size: 0.1
+    requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 100
+    costBuy: 550
+    costSell: 20
+    transferTime: 48
+    weight: 3
+    bigSprite: 111
+    floorSprite: 12
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    bulletSpeed: 16
+    bulletSprite: 4
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmor: 0.5
+      ToArmorPre: 0.6
+    clipSize: 100
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1410
+  - type: STR_FERRET_SMOKE_GRENADE
+    costBuy: 550
+    costSell: 20
+    monthlyBuyLimit: 50
+    weight: 10
+    bigSprite: 2546
+    floorSprite: 16
+    power: 60
+    damageType: 9
+    clipSize: 6
+    battleType: 2
+    ignoreInCraftEquip: false
+    invWidth: 2
+    invHeight: 1
+    hitSound: 0
+    hitAnimation: 0
+    listOrder: 1410
+#####################################
+####### M551 SHERIDAN #################
+#####################################
+  - type: STR_SHERIDAN_TANK
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 6
+    requiresBuyCountry: STR_USA
+    costBuy: 764000
+    costSell: 540000
+    monthlyBuyLimit: 10
+    transferTime: 96
+    listOrder: 1401
+  - type: STR_M81E1 #ignoreDuplicate
+    costSell: 5400
+    weight: 1
+    bigSprite: 2502
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 4
+    fireSound: 4330
+    bulletSpeed: 10
+    compatibleAmmo:
+      - STR_152MM_CANNON_SHELLS
+      - STR_152MMCANNONSHELLS1 #Armor Piercing
+      - STR_152MMCANNONSHELLS2
+      - STR_152MMCANNONSHELLS3
+      - STR_152MMCANNONSHELLS4
+      - STR_152MMCANNONSHELLS5
+      - STR_152MMCANNONSHELLS6
+      - STR_152MMCANNONSHELLS7
+    accuracySnap: 75
+    accuracyAimed: 95
+    tuSnap: 60
+    tuAimed: 85
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1411
+  - type: STR_SHILLELAGH
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 6
+    transferTime: 96
+    weight: 1
+    bigSprite: 2503
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 4331
+    compatibleAmmo:
+      - STR_MGM51_MISSILE
+    accuracyAimed: 75
+    tuAimed: 65
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    arcingShot: false
+    recover: false
+    turretType: -1
+    waypoints: 2
+    listOrder: 1412
+  - type: STR_152MM_CANNON_SHELLS
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costBuy: 25000
+    costSell: 8000
+    monthlyBuyLimit: 50
+    transferTime: 48
+    weight: 100
+    bigSprite: 2541
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 100
+    damageType: 3
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: -1
+      RadiusReduction: 50
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS1
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costBuy: 30000
+    costSell: 8000
+    monthlyBuyLimit: 50
+    transferTime: 48
+    weight: 110
+    bigSprite: 2528
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 120
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      ToArmor: 0.7
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 10
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS2
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costBuy: 50000
+    costSell: 8000
+    monthlyBuyLimit: 50
+    transferTime: 48
+    weight: 110
+    bigSprite: 2530
+    #handSprite: 120
+    blastRadius: 1
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 80
+    damageType: 3
+    damageAlter:
+      RandomType: 2
+      ToArmor: 0.4
+      ToArmorPre: 0.4
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: -1
+      RadiusReduction: 50
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS3
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costBuy: 40000
+    costSell: 8000
+    monthlyBuyLimit: 50
+    transferTime: 48
+    weight: 90
+    bigSprite: 2529
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 75
+    damageType: 3
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 10
+    clipSize: 20
+    shotgunBehavior: 3
+    shotgunPellets: 7
+    shotgunSpread: 45
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS4
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costSell: 10000
+    transferTime: 48
+    weight: 120
+    bigSprite: 2531
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 150
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      ToArmor: 0.8
+      ToArmorPre: 0.7
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 10
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS5
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    size: 0.1
+    costSell: 10000
+    transferTime: 48
+    weight: 75
+    bigSprite: 2527
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 170
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      ToArmor: 1.2
+      ToArmorPre: 1.1
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 10
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS6
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+    size: 0.1
+    costSell: 60000
+    transferTime: 48
+    weight: 85
+    bigSprite: 2531
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 200
+    damageType: 5
+    damageAlter:
+      RandomType: 2
+      ToArmor: 1.5
+      ToArmorPre: 1.2
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 50
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_152MMCANNONSHELLS7
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+    size: 0.1
+    costSell: 70000
+    transferTime: 48
+    weight: 90
+    bigSprite: 2533
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 220
+    blastRadius: 2
+    damageType: 5
+    damageAlter:
+      RandomType: 2
+      ToArmor: 1.4
+      ToArmorPre: 1.3
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: -1
+      RadiusReduction: 50
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+  - type: STR_MGM51_MISSILE
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.6
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 50
+    costBuy: 9000
+    costSell: 7250
+    transferTime: 48
+    weight: 56
+    bigSprite: 2542
+    floorSprite: 16
+    hitSound: 13
+    hitAnimation: 26
+    power: 90
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: true
+      IgnoreSelfDestruct: true
+      ToArmor: 2.2
+    clipSize: 10
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1413
+#####################################
+########## ALVIS SALADIN AC ############
+#####################################
+  - type: STR_SALADIN_CAR
+    categories: [STR_TANKS, STR_NATO_TECH, STR_ARMORED_CARS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 6
+    requiresBuyCountry: STR_UK
+    monthlyBuyLimit: 10
+    costBuy: 450000
+    costSell: 24000
+    transferTime: 96
+    listOrder: 1405
+  - type: STR_L5A1_GUN
+    costSell: 2400
+    weight: 1
+    bigSprite: 2504
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 3
+    fireSound: 4333
+    compatibleAmmo:
+      - STR_76MM_CANNON_SHELLS
+      - STR_76MMROUNDSS1 #Armor Piercing
+      - STR_76MMROUNDSS2
+      - STR_76MMROUNDSS3
+      - STR_76MMROUNDSS4
+      - STR_76MMROUNDSS5
+      - STR_76MMROUNDSS6
+      - STR_76MMROUNDSS7
+    accuracySnap: 45
+    accuracyAimed: 80
+    tuSnap: 33
+    tuAimed: 60
+    bulletSpeed: 15
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1405
+  - type: STR_76MM_CANNON_SHELLS
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_UK
+    costBuy: 1500
+    costSell: 800
+    transferTime: 48
+    weight: 45
+    bigSprite: 2545
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 80
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 2
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS1
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_UK
+    costBuy: 15000
+    costSell: 8000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2521
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 90
+    damageType: 1
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 2
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS2
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_UK
+    costBuy: 15000
+    costSell: 8000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2523
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 85
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 2
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS3
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_UK
+    costBuy: 15000
+    costSell: 8000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2522
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 80
+    shotgunBehavior: 3
+    shotgunPellets: 7
+    shotgunSpread: 45
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 0
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS4
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    size: 0.1
+    costSell: 80000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2524
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 90
+    damageType: 1
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 0
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS5
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+    size: 0.1
+    costSell: 80000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2525
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 110
+    damageType: 1
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 0
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS6
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.1
+    costSell: 80000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2525
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 125
+    damageType: 5
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 0
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  - type: STR_76MMROUNDSS7
+    categories: [STR_TANKS, STR_NATO_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+    size: 0.1
+    costSell: 100000
+    transferTime: 48
+    weight: 45
+    bigSprite: 2526
+    floorSprite: 12
+    hitSound: 4
+    hitAnimation: 0
+    power: 160
+    damageType: 5
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToTile: 1.4
+      FixRadius: 2
+      RadiusReduction: 40
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1406
+  ########################################
+  - type: STR_M1919A4_MACHINEGUN
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 6
+    requiresBuyCountry: STR_UK
+    costSell: 50
+    monthlyBuyLimit: 30
+    transferTime: 96
+    weight: 1
+    bigSprite: 2505
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 4334
+    compatibleAmmo:
+      - STR_M1919A4_AMMO_BOX
+    accuracySnap: 80
+    accuracyAuto: 40
+    tuAuto: 35
+    tuSnap: 30
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    autoShots: 5
+    sprayWaypoints: 2
+    bulletSpeed: 25
+    recover: false
+    turretType: -1
+    listOrder: 1414
+  - type: STR_M1919A4_AMMO_BOX
+    categories: [STR_TANKS, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+    size: 0.06
+    requiresBuyCountry: STR_UK
+    costBuy: 80
+    costSell: 40
+    monthlyBuyLimit: 50
+    transferTime: 48
+    weight: 20
+    bigSprite: 2547
+    floorSprite: 16
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: true
+      ToArmor: 0.5
+      ToArmorPre: 0.5
+      ToHealth: 0.6
+    damageType: 1
+    clipSize: 250
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1408
+#####################################
+####### BMD-1 AIRBORNE IFV ##########
+#####################################
+  - type: STR_BMD1_TANK
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 6
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 10
+    costBuy: 400000
+    costSell: 320000
+    transferTime: 96
+    listOrder: 1415
+  - type: STR_2A28_GROM #ignoreDuplicate
+    costSell: 4400
+    weight: 1
+    bigSprite: 2506
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 4333
+    compatibleAmmo:
+      - STR_73MM_CANNON_SHELLS
+      - STR_73MMROUNDSS1 #Armor Piercing
+      - STR_73MMROUNDSS2 #Vertical Explosion
+      - STR_73MMROUNDSS3 #Canister Shells
+      - STR_73MMROUNDSS4 #Depleted Uranium
+      - STR_73MMROUNDSS5 #Alien Alloys
+      - STR_73MMROUNDSS6 #Elerium Tipped
+      - STR_73MMROUNDSS7 #Fusion Shells
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuSnap: 33
+    tuAimed: 60
+    bulletSpeed: 15
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1416
+  - type: STR_PKT_MACHINEGUN
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 6
+    transferTime: 96
+    weight: 1
+    bigSprite: 2507
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 4334
+    compatibleAmmo:
+      - STR_PKT_AMMO_BOX
+    accuracySnap: 40
+    accuracyAuto: 45
+    tuAuto: 30
+    tuSnap: 35
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    autoShots: 5
+    sprayWaypoints: 2
+    bulletSpeed: 25
+    recover: false
+    turretType: -1
+    listOrder: 1417
+  - type: STR_73MM_CANNON_SHELLS
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costBuy: 1500
+    costSell: 750
+    transferTime: 48
+    weight: 62
+    bigSprite: 2543
+    floorSprite: 12
+    hitSound: 4335
+    blastRadius: 1
+    hitAnimation: 0
+    power: 70
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS1
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costBuy: 15000
+    costSell: 7500
+    transferTime: 48
+    weight: 62
+    bigSprite: 2514
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    power: 80
+    damageType: 1
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      ToArmorPre: 0.6
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS2
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costBuy: 15000
+    costSell: 7500
+    transferTime: 48
+    weight: 62
+    bigSprite: 2516
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    blastRadius: 1
+    power: 85
+    damageType: 3
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS3
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costBuy: 15000
+    costSell: 7500
+    transferTime: 48
+    weight: 62
+    bigSprite: 2515
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    power: 75
+    damageType: 1
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    shotgunBehavior: 3
+    shotgunPellets: 9
+    shotgunSpread: 60
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS4
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costSell: 50000
+    transferTime: 48
+    weight: 62
+    bigSprite: 2517
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    power: 100
+    damageType: 1
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      ToArmorPre: 0.6
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS5
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costSell: 75000
+    transferTime: 48
+    weight: 62
+    bigSprite: 2513
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    damageType: 1
+    power: 120
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.7
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS6
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costSell: 75000
+    transferTime: 48
+    weight: 62
+    bigSprite: 2518
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    power: 125
+    damageType: 5
+    bulletSpeed: 10
+    blastRadius: 1
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.7
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.85
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_73MMROUNDSS7
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+    size: 0.1
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 50
+    costSell: 75000
+    transferTime: 48
+    weight: 62
+    bigSprite: 2519
+    floorSprite: 12
+    hitSound: 4335
+    hitAnimation: 0
+    power: 150
+    blastRadius: 2
+    damageType: 5
+    bulletSpeed: 10
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.9
+      ToArmorPre: 0.8
+      IgnoreSelfDestruct: true
+      ArmorEffectiveness: 0.75
+    clipSize: 40
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1418
+  - type: STR_PKT_AMMO_BOX
+    categories: [STR_TANKS, STR_SOVIET_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+    size: 0.6
+    requiresBuyCountry: STR_RUSSIA
+    costBuy: 50
+    costSell: 50
+    monthlyBuyLimit: 50
+    transferTime: 48
+    weight: 10
+    bigSprite: 2548
+    floorSprite: 16
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      ToArmorPre: 0.4
+      IgnoreOverKill: true
+    clipSize: 200
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1412
+#####################################
+##### LEGIONNAIRE LASER TANK ########
+#####################################
+  - type: STR_TANK_LASER_CANNON
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    size: 6
+    costSell: 575000
+    transferTime: 96
+    listOrder: 1414
+  - type: STR_XM343
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 5750 #
+    bigSprite: 2508 #
+    floorSprite: 0 #
+    weight: 1 #
+    handSprite: 0 #
+    bulletSprite: 7 #
+    fireSound: 4337 #
+    accuracySnap: 60 #
+    tuSnap: 40 #
+    accuracyAimed: 110 #
+    tuAimed: 60 #
+    maxRange: 200
+    aimRange: 125
+    snapRange: 25
+    minRange: 10
+    dropoff: 1
+    compatibleAmmo:
+      - STR_ENERGYCAPACITOR
+      - STR_ENERGYENHANCEDBATTERY
+      - STR_ENERGYE115BATTERY
+      - STR_ENERGYTURBOMODULE1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    bulletSpeed: 8
+    listOrder: 1414
+    vaporColorSurface: 10 # dark red
+    vaporDensitySurface: 30
+    vaporProbabilitySurface: 100
+  - type: STR_ENERGYCAPACITOR
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 50000
+    weight: 75
+    battleType: 2
+    bigSprite: 2544
+    floorSprite: 12
+    clipSize: 30
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 120
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_ENERGYENHANCEDBATTERY
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 55000
+    weight: 80
+    battleType: 2
+    bigSprite: 2553
+    floorSprite: 12
+    clipSize: 15
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 175
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.7
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.60
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_ENERGYE115BATTERY
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 750000
+    weight: 75
+    battleType: 2
+    bigSprite: 2554
+    floorSprite: -1
+    blastRadius: 2
+    clipSize: 30
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 175
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.9
+      ToArmorPre: 0.9
+      IgnoreOverKill: false
+      ToTile: 0.75
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_ENERGYTURBOMODULE1
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 100000
+    weight: 150
+    battleType: 2
+    bigSprite: 2555
+    floorSprite: -1
+    blastRadius: 1
+    clipSize: -1
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 150
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.9
+    invWidth: 2
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_TANK_LASER_MINIGUN
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    weight: 1
+    bigSprite: 2509
+    bulletSprite: 2
+    fireSound: 4338
+    compatibleAmmo:
+      - STR_LASERMINIBATTERY1
+      - STR_LASERMINIBATTERY2
+      - STR_LASERMINIBATTERY3
+      - STR_LASERMINIBATTERY4
+    accuracyAuto: 48
+    tuAuto: 38
+    accuracySnap: 60
+    tuSnap: 32
+    maxRange: 200
+    snapRange: 20
+    autoRange: 30
+    minRange: 4
+    dropoff: 1
+    battleType: 1
+    autoShots: 10
+    bulletSpeed: 10
+    sprayWaypoints: 2
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY1 #ignoreduplicate
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 750
+    weight: 50
+    battleType: 2
+    bigSprite: 2549
+    floorSprite: -1
+    clipSize: 50
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.6
+      ToArmorPre: 0.7
+      IgnoreOverKill: false
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY2
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 750
+    weight: 50
+    battleType: 2
+    bigSprite: 2550
+    floorSprite: -1
+    clipSize: 25
+    #blastRadius: 0
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.7
+      IgnoreOverKill: false
+      ToTile: 0.60
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY3
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 750
+    weight: 50
+    battleType: 2
+    bigSprite: 2551
+    floorSprite: -1
+    clipSize: 30
+    blastRadius: 1
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 100
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.9
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.86
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+  - type: STR_LASERMINIBATTERY4
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    costSell: 750
+    weight: 110
+    battleType: 2
+    bigSprite: 2552
+    floorSprite: -1
+    blastRadius: 1
+    clipSize: -1
+    damageType: 4
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageAlter:
+      RandomType: 6
+      ToArmor: 0.8
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.9
+    invWidth: 2
+    invHeight: 2
+    listOrder: 1419
+#####################################
+####### Kiro imports APC Vehicle from Dauntless1942 #################
+#####################################
+  - type: STR_APCHWPVEHICLE1
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_ON_OUR_OWN
+    size: 4
+    requiresBuyCountry: STR_USA
+    costBuy: 500000
+    costSell: 500000
+    monthlyBuyLimit: 10
+    transferTime: 96
+  - type: STR_APCHWPVEHICLE2
+    categories: [STR_TANKS, STR_UNEXCOM_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_ON_OUR_OWN
+    size: 4
+    costSell: 500000
+    transferTime: 96
+    listOrder: 1401
+  - type: STR_ONTOS117TANK
+    categories: [STR_TANKS, STR_US_TECH, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_BALLISTIC_WEAPONS
+    size: 4
+    requiresBuyCountry: STR_USA
+    costBuy: 700000
+    costSell: 500000
+    monthlyBuyLimit: 10
+    transferTime: 120
+    listOrder: 1401
+  - type: STR_ONTOS6XRECOILESSGUN
+    costSell: 5000
+    weight: 1
+    bigSprite: 2500
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 3
+    fireSound: 4336
+    compatibleAmmo:
+      - STR_ONTOS6XRG105MMAP
+    accuracyAuto: 80
+    accuracySnap: 95
+    accuracyCloseQuarters: 50
+    tuAuto: 45
+    tuSnap: 30
+    autoShots: 3
+    autoRange: 15
+    snapRange: 32
+    dropoff: 1
+    bulletSpeed: 16
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: -1
+    listOrder: 1408
+  - type: STR_ONTOS6XRG105MMAP
+    categories: [STR_TANKS, STR_US_TECH, STR_TANK_AMMO, STR_LIGHT_TANKS]
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+    size: 0.1
+    requiresBuyCountry: STR_USA
+    costBuy: 30000
+    costSell: 8000
+    monthlyBuyLimit: 100
+    transferTime: 72
+    weight: 110
+    bigSprite: 2556
+    #handSprite: 120
+    floorSprite: 12
+    hitSound: 4332
+    hitAnimation: 0
+    power: 120
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      ToArmor: 0.7
+      ToArmorPre: 0.8
+      IgnoreOverKill: false
+      ToTile: 0.66
+      FixRadius: 0
+      RadiusReduction: 10
+    clipSize: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 1402
+
+armors:
+##################################### Kiro Spot
+# Small explanation about Tank armors:
+# AP damage represents bullets and anti-tank solid shells
+# HE damage represents explosives, mines and RPGs
+# Incendiary damage represents fire damage
+# Types of tanks:
+# Armored Cars: Very fast vehicles, have quite high AP resistance but HE crushes them
+# Light Tanks: Fast vehicles, higher AP and HE resistance than ACs
+# MBT/Heavy Tanks: slow vehicles, have superb AP resistance, HE is mildly effective
+#####################################
+####### DAIMLER FERRET AC ##############
+#####################################
+  - type: STR_FERRET_CAR
+    spriteSheet: FERRET.PCK
+    spriteInv: FERRETM0.SPK
+    storeItem: STR_FERRET_CAR
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -50
+    stats:
+      tu: 150
+      stamina: 100
+      health: 60
+      bravery: 50
+      reactions: 20
+      firing: 10
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 20
+    units:
+      - STR_PILOT
+    stats: &SECTION_LIGHT_TANK_STATS
+       bravery: 20
+       tu: 175
+       stamina: 700
+       reactions: -15
+    recovery:  &SECTION_LIGHT_TANK_RECOVERY
+      energy:
+        flatHundred: 7.5
+      morale:
+        moraleCurrent: -0.1333
+        bravery: 0.0666
+      stun:
+        stunCurrent: 0.09
+    psiDefence:  &SECTION_TANK_PSIDEF
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.25
+      flatHundred: -0.15
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_FERRET_SMOKE_LAUNCHER
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.7 # AP
+     - 0.7 # Incendiary
+     - 1.2 # HE
+     - 1.0 # Laser
+     - 1.0 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_VEHICLECRASH
+#####################################
+####### M551 SHERIDAN ###############
+#####################################
+  - type: STR_SHERIDAN_TANK
+    spriteSheet: SHERIDAN.PCK
+    storeItem: STR_SHERIDAN_TANK
+    spriteInv: SHERIDANM0.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -300
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_M81E1
+      - STR_SHILLELAGH
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+####### BMD-1 AIRBORNE IFV ##########
+#####################################
+  - type: STR_BMD1_TANK
+    spriteSheet: BMD1.PCK
+    storeItem: STR_BMD1_TANK
+    spriteInv: BMD1M0.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -200
+    stats:
+      tu: 90
+      stamina: 100
+      health: 90
+      bravery: 50
+      reactions: 40
+      firing: 10
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 60
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_2A28_GROM
+      - STR_PKT_MACHINEGUN
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 130
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+########## ALVIS SALADIN AC #############
+#####################################
+  - type: STR_SALADIN_CAR
+    spriteSheet: SALADIN.PCK
+    storeItem: STR_SALADIN_CAR
+    spriteInv: SALADINM0.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -200
+    stats:
+      tu: 110
+      stamina: 100
+      health: 70
+      bravery: 50
+      reactions: 20
+      firing: 10
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 60
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    units:
+      - STR_PILOT
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_L5A1_GUN
+      - STR_M1919A4_MACHINEGUN
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 140
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.5 # AP
+     - 0.7 # Incendiary
+     - 1.0 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_VEHICLECRASH
+#####################################
+####### LEGIONNAIRE LASER TANK ###########
+#####################################
+  - type: STR_TANK_LASER_CANNON
+    spriteSheet: LEGIONNAIRE.PCK
+    storeItem: STR_TANK_LASER_CANNON
+    spriteInv: LEGIONNAIREM0.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -300
+    stats:
+      tu: 110
+      stamina: 100
+      health: 125
+      bravery: 60
+      reactions: 45
+      firing: 25
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 30
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_XM343
+      - STR_TANK_LASER_MINIGUN
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 200
+    sideArmor: 150
+    rearArmor: 120
+    underArmor: 100
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.3 # AP
+     - 0.6 # Incendiary
+     - 0.5 # HE
+     - 0.7 # Laser
+     - 0.7 # Plasma
+     - 0.0 # Stun
+     - 0.1 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.7 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+####### M1A1APC1 UN APC ###############
+#####################################
+  - type: STR_APCHWPVEHICLE1
+    spriteSheet: HWP1APC1A.PCK
+    storeItem: STR_APCHWPVEHICLE1
+    spriteInv: M113A1V1.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -150
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_FERRET_SMOKE_LAUNCHER
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+####### M1A1APC1 UN APC ###############
+#####################################
+  - type: STR_APCHWPVEHICLE2
+    spriteSheet: HWP1APC1A.PCK
+    storeItem: STR_APCHWPVEHICLE2
+    spriteInv: M113A1V2.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -150
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_DOUBLE_50CAL
+      - STR_FERRET_SMOKE_LAUNCHER
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+#####################################
+####### M1A1ONTOS1 USA ALLOY ###############
+#####################################
+  - type: STR_ONTOS117TANK
+    spriteSheet: HWP1ONTOS1.PCK
+    storeItem: STR_ONTOS117TANK
+    spriteInv: M1ONTOST1.SPK
+    allowInv: true
+    instantWoundRecovery: true
+    weight: -175
+    stats:
+      tu: 60
+      stamina: 100
+      health: 100
+      bravery: 50
+      reactions: 20
+      firing: 45
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 10
+    units:
+      - STR_PILOT
+    stats: *SECTION_LIGHT_TANK_STATS
+    recovery:  *SECTION_LIGHT_TANK_RECOVERY
+    psiDefence:  *SECTION_TANK_PSIDEF
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - STR_ONTOS6XRECOILESSGUN
+      - STR_DOUBLE_50CAL
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 80
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    specialWeapon: STR_TANKCRUSH
+
+#### End file

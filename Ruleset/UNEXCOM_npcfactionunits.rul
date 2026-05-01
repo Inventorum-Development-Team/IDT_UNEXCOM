@@ -1,0 +1,3339 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+units:
+############################################
+######### NPC Units inserte here.
+  - type: MALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats: &CIVILIAN_STATS
+      tu: 35
+      stamina: 65
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 20
+      psiStrength: 5
+      psiSkill: 0
+      melee: 50
+    armor: CIVM_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_DOUBLE_BARRELED_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+  - type: FEMALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: CIVF_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_DOUBLE_BARRELED_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+  - type: MALE_CIVILIAN2
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN2_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_HUNTING_RIFLE
+        - STR_22_LONG_RIFLE_X14
+        - STR_22_LONG_RIFLE_X14
+      -
+        - STR_DOUBLE_BARRELED_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+  - type: MALE_CIVILIAN3
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN3_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MACHETE
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: MALE_CIVILIAN4
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN4_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: MALE_CIVILIAN5
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN5_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      -
+        - STR_FIELD_DRESSING
+      -
+        - STR_CIGARETTES
+      -
+        - STR_MEDICAL_POUCH
+  - type: MALE_CIVILIAN6
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN6_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      -
+        - STR_FLASK
+      -
+        - STR_FIELD_DRESSING
+      -
+        - STR_FIELD_DRESSING
+  - type: MALE_CIVILIAN7
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN7_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: MALE_CIVILIAN8
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN8_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: MALE_CIVILIAN9
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN9_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: MALE_CIVILIAN10
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_CIVILIAN10_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: FEMALE_CIVILIAN2
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN2_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN3
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN3_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: FEMALE_CIVILIAN4
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN4_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN5
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN5_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_CIGARETTES
+      -
+        - STR_CIGARETTES
+      -
+        - STR_CIGARETTES
+  - type: FEMALE_CIVILIAN6
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN6_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: FEMALE_CIVILIAN7
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN7_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN8
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN8_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN9
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN9_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: FEMALE_CIVILIAN10
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN10_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN11
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN11_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_CIGARETTES
+      -
+        - STR_CIGARETTES
+      -
+        - STR_CIGARETTES
+  - type: FEMALE_CIVILIAN12
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN12_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN13
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN13_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_CANNED_FOOD
+      -
+        - STR_FLASK
+      -
+        - STR_CIGARETTES
+  - type: FEMALE_CIVILIAN14
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN14_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: FEMALE_CIVILIAN15
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_CIVILIAN15_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+  - type: HERO_CIVILIAN0
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HERO_CIVILIAN0_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: HERO_CIVILIAN1
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HERO_CIVILIAN1_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: HERO_CIVILIAN2
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HERO_CIVILIAN2_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: HERO_CIVILIAN3
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HERO_CIVILIAN3_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: STR_HUMAN_SUIT_BLUE_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLUE_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: STR_HUMAN_SUIT_BLUE_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLUE_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_BLUE_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLUE_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_CANNED_FOOD
+      -
+        - STR_FLASK
+      -
+        - STR_CIGARETTES
+  - type: STR_HUMAN_SUIT_GREEN_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_GREEN_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_GREEN_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_GREEN_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_CANNED_FOOD
+      -
+        - STR_FLASK
+      -
+        - STR_CIGARETTES
+  - type: STR_HUMAN_SUIT_GREEN_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_GREEN_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_PINK_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_PINK_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: STR_HUMAN_SUIT_PINK_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_PINK_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_PINK_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_PINK_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_GREY_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_GREY_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_GREY_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_GREY_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_GREY_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_GREY_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+  - type: STR_HUMAN_SUIT_RED_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_RED_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_FLASK
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+        - STR_FLASK
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_CIGARETTES
+  - type: STR_HUMAN_SUIT_RED_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_RED_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_RED_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_RED_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_PURPLE_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_PURPLE_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_PURPLE_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_PURPLE_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FLASK
+      -
+        - STR_FLASK
+      -
+        - STR_CIGARETTES
+  - type: STR_HUMAN_SUIT_PURPLE_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_PURPLE_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_BLACK_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_BLACK_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_BLACK_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_CIGARETTES
+      -
+        - STR_CIGARETTES
+      -
+        - STR_CIGARETTES
+  - type: STR_HUMAN_SUIT_BLACK_4
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_BLACK_5
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR5
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_CIGARETTES
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+        - STR_FLASK
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_CIGARETTES
+  - type: STR_HUMAN_SUIT_BLACK_6
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR6
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+  - type: STR_HUMAN_SUIT_BLACK_7
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR7
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_CANNED_FOOD
+      -
+        - STR_CANNED_FOOD
+      -
+        - STR_CANNED_FOOD
+  - type: STR_HUMAN_SUIT_BLACK_8
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: HUMAN_SUIT_BLACK_ARMOR8
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+###################################
+########### FARMER ###############
+#################################
+  - type: STR_MALE_FARMER
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: MALE_FARMER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_SNUBNOSE_PISTOL
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_SHOVEL
+      -
+        - STR_HUNTING_RIFLE
+        - STR_22_LONG_RIFLE_X14
+        - STR_22_LONG_RIFLE_X14
+        - STR_MACHETE
+      -
+        - STR_DOUBLE_BARRELED_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_MACHETE
+    liveAlien: ""
+  - type: STR_FEMALE_FARMER
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: FEMALE_FARMER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    intelligence: 4
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_HUNTING_RIFLE
+        - STR_22_LONG_RIFLE_X14
+        - STR_22_LONG_RIFLE_X14
+        - STR_MACHETE
+      -
+        - STR_HUNTING_RIFLE
+        - STR_22_LONG_RIFLE_X14
+        - STR_22_LONG_RIFLE_X14
+        - STR_SHOVEL
+      -
+        - STR_DOUBLE_BARRELED_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_12GAUGE_BUCKSHOT_X2
+        - STR_12GAUGE_SLUG_X2
+        - STR_MACHETE
+    liveAlien: ""
+###################################
+########### POLICE ###############
+#################################
+  - type: POLICE_MALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: POLICE_MALE_CIVILIAN_ARMOR
+    deathSound: [41, 42, 43]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_POLICE_REVOLVER
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_POLICE_TONFA
+      -
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_POLICE_TONFA
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_NON_LETHAL_X8
+        - STR_POLICE_TONFA
+  - type: POLICE_FEMALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STATS
+    armor: POLICE_FEMALE_CIVILIAN_ARMOR
+    deathSound: [44, 45, 46]
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    builtInWeaponSets:
+      -
+        - STR_POLICE_REVOLVER
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_POLICE_TONFA
+      -
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_POLICE_TONFA
+      -
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_POLICE_TONFA
+  - type: POLICE_SWAT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 52
+      firing: 61
+      throwing: 68
+      strength: 49
+      psiStrength: 40
+      psiSkill: 0
+      melee: 30
+    armor: HUMAN_SOLDIER_ARMOR0_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 5
+    aggression: 4
+    pickUpWeaponsMoreActively: 1
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_SMOKE_GRENADE
+        - STR_SMOKE_GRENADE
+      -
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X20
+        - STR_SMOKE_GRENADE
+        - STR_SMOKE_GRENADE
+      -
+        - STR_M79_THUMPER_GL
+        - STR_40MM_NON_LETHAL
+        - STR_40MM_NON_LETHAL
+        - STR_40MM_NON_LETHAL
+        - STR_POLICE_REVOLVER
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_SMOKE_GRENADE
+###################################
+########### MILITARY #############
+#################################
+  - type: STR_HUMAN_JUMPSUIT_0_0
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: &JUMPSUIT_STATS
+      tu: 52
+      stamina: 60
+      health: 30
+      bravery: 70
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_JUMPSUIT_ARMOR0_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_0_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR0_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_0_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR0_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_0_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR0_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_0_4
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR0_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_1_0
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR1_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_1_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR1_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_1_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR1_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_1_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR1_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_1_4
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR1_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_0
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_1
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_2
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_3
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_4
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_5
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_5
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_6
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_6
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+  - type: STR_HUMAN_JUMPSUIT_2_7
+    race: STR_CIVILIAN
+    rank: STR_CIVILIAN
+    stats: *JUMPSUIT_STATS
+    armor: HUMAN_JUMPSUIT_ARMOR2_7
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 4
+    aggression: 0
+    liveAlien: ""
+#########################################
+########### ARMED MILITARY #############
+#######################################
+  - type: STR_HUMAN_SOLDIER_0_0
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats: &SOLDIER_STATS
+      tu: 60
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 49
+      firing: 58
+      throwing: 64
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 35
+    armor: HUMAN_SOLDIER_ARMOR0_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 4
+    aggression: 1
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_POLICE_REVOLVER
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_38_REVOLVER_AMMO_X6
+        - STR_GRENADE
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_0_1
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 52
+      firing: 61
+      throwing: 68
+      strength: 49
+      psiStrength: 40
+      psiSkill: 0
+      melee: 30
+    armor: HUMAN_SOLDIER_ARMOR0_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 5
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_PPS_43
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X20
+        - STR_GRENADE
+        - STR_GRENADE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X20
+        - STR_GRENADE
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_0_2
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 52
+      firing: 61
+      throwing: 68
+      strength: 49
+      psiStrength: 40
+      psiSkill: 0
+      melee: 30
+    armor: HUMAN_SOLDIER_ARMOR0_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 5
+    aggression: 1
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_0_3
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 52
+      firing: 61
+      throwing: 68
+      strength: 49
+      psiStrength: 40
+      psiSkill: 0
+      melee: 30
+    armor: HUMAN_SOLDIER_ARMOR0_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 5
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X100
+        - STR_GRENADE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_RPKS
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_0_4
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 52
+      firing: 61
+      throwing: 68
+      strength: 49
+      psiStrength: 40
+      psiSkill: 0
+      melee: 30
+    armor: HUMAN_SOLDIER_ARMOR0_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 5
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_PSG1
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_1_0
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR1_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_RPG
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_INC_ROCKET
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_1_1
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR1_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+      -
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_1_2
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR1_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_1_3
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR1_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_DRAGUNOV
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_1_4
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR1_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_1_5
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR1_5
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_PSG1
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+      -
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_0
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_1
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_DRAGUNOV
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_2
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_PSG1
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+      -
+        - STR_MP5
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_3
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_4
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_5
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_5
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_6
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_6
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_7
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_7
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_8
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_8
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+      -
+        - STR_RPG
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_9
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_9
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+      -
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_10
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 64
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 58
+      firing: 75
+      throwing: 70
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_10
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_2_11
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR2_11
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_DRAGUNOV
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_3_0
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR3_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_3_1
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR3_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_3_2
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR3_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_3_3
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR3_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+      -
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_3_4
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR3_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M79_THUMPER_GL
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_SMOKE
+      -
+        - STR_XM117
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_M79_THUMPER_GL
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_SMOKE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_3_5
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR3_5
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_4_0
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR4_0
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+      -
+        - STR_RPG
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_4_1
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR4_1
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+      -
+        - STR_MAKAROV
+        - STR_9MM_PISTOL_X10
+        - STR_9MM_PISTOL_X10
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_4_2
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR4_2
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_4_3
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR4_3
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_DRAGUNOV
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+    liveAlien: ""
+  - type: STR_HUMAN_SOLDIER_4_4
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 65
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: HUMAN_SOLDIER_ARMOR4_4
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_POLICE_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+    liveAlien: ""
+###################################
+######## AMERICAN ALLIES ##########
+#################################
+  - type: STR_AMERICAN_RIFLEMAN
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 40
+      bravery: 100
+      reactions: 40
+      firing: 65
+      throwing: 50
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M16A1
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_5_56MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_M1_CARBINE
+        - STR_30_CARBINE_X15
+        - STR_30_CARBINE_X15
+        - STR_GRENADE
+      -
+        - STR_XM21
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+  - type: STR_AMERICAN_ASSAULT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 45
+      throwing: 80
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M3_GREASEGUN
+        - STR_45_PISTOL_X30
+        - STR_45_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_M1911_COLT45
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_45_PISTOL_X7
+        - STR_GRENADE
+      -
+        - STR_REMINGTON_COMBAT_SHOTGUN
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_12GAUGE_BUCKSHOT_X8
+        - STR_GRENADE
+  - type: STR_AMERICAN_SUPPORT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 70
+      health: 55
+      bravery: 100
+      reactions: 50
+      firing: 65
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_GRENADE
+      -
+        - STR_M79_THUMPER_GL
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_SMOKE
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_SMOKE
+      -
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_GRENADE
+  - type: STR_AMERICAN_ELITE
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 70
+      health: 70
+      bravery: 100
+      reactions: 66
+      firing: 75
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+      mana: 40
+    armor: AMERICAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: 41
+    intelligence: 8
+    aggression: 8
+    builtInWeaponSets:
+      -
+        - STR_CALBR
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_M20_M203_LASER_CARBINE
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_40MM_FRAG
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_M4_LASER_LMG
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+  - type: STR_PATTON_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 45
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: PATTON_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    intelligence: 6
+    aggression: 4
+    builtInWeaponSets:
+      -
+        - STR_105MM_CANNON
+        - STR_M60
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+  - type: STR_SHERIDAN_TANK_NPC
+    race: STR_SHERIDAN_TANK
+    stats:
+      tu: 130
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: SHERIDAN_TANK_ARMOR_NPC
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+        - STR_M81E1
+        - STR_152MM_CANNON_SHELLS
+        - STR_SHILLELAGH
+        - STR_MGM51_MISSILE
+###################################
+######## EUROPEAN ALLIES #########
+#################################
+  - type: STR_EUROPEAN_RIFLEMAN
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 40
+      bravery: 100
+      reactions: 40
+      firing: 70
+      throwing: 50
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_FN_FAL
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+      -
+        - STR_PSG1
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_7_62MM_NATO_RIFLE_X5
+        - STR_SMOKE_GRENADE
+      -
+        - STR_SG510_CARBINE
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_7_62MM_NATO_RIFLE_X20
+        - STR_GRENADE
+  - type: STR_EUROPEAN_ASSAULT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 45
+      throwing: 80
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 2
+    builtInWeaponSets:
+      -
+        - STR_BERETTA_M12
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+      -
+        - STR_MP5
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_MACHETE
+      -
+        - STR_OWEN_SMG
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X30
+        - STR_GRENADE
+  - type: STR_EUROPEAN_SUPPORT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 70
+      health: 55
+      bravery: 100
+      reactions: 50
+      firing: 65
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: 41
+    intelligence: 6
+    aggression: 1
+    builtInWeaponSets:
+      -
+        - STR_BREN
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_7_62MM_NATO_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_FN_MAG
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+      -
+        - STR_CARL_GUSTAF_M2
+        - STR_CARL_GUSTAF_M2_HE_ROUND
+        - STR_CARL_GUSTAF_M2_HE_ROUND
+        - STR_CARL_GUSTAF_M2_HEAT_ROUND
+        - STR_CARL_GUSTAF_M2_HEAT_ROUND
+  - type: STR_EUROPEAN_ELITE
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 70
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 80
+      throwing: 80
+      strength: 50
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+      mana: 40
+    armor: EUROPEAN_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: 41
+    intelligence: 8
+    aggression: 8
+    builtInWeaponSets:
+      -
+        - STR_FN_FLA_LASER_CARBINE
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_MAT72_SUBMACHINE_LASER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_L4_ASSAULT_LASER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+  - type: STR_LEOPARD_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 150
+      stamina: 150
+      health: 90
+      bravery: 110
+      reactions: 60
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: LEOPARD_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    intelligence: 6
+    aggression: 6
+    builtInWeaponSets:
+      -
+        - STR_105MM_CANNON
+        - STR_FN_MAG
+        - STR_7_62MM_NATO_LMG_X50
+        - STR_7_62MM_NATO_LMG_X50
+  - type: STR_SALADIN_CAR_NPC
+    race: STR_SALADIN_CAR
+    stats:
+      tu: 110
+      stamina: 100
+      health: 70
+      bravery: 110
+      reactions: 20
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: SALADIN_CAR_ARMOR_NPC
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeaponSets:
+      -
+        - STR_L5A1_GUN
+        - STR_76MM_CANNON_SHELLS
+        - STR_M1919A4_MACHINEGUN
+        - STR_M1919A4_AMMO_BOX
+###################################
+######## SOVIET ALLIES  ##########
+#################################
+  - type: STR_SOVIET_RIFLEMAN
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 90
+      health: 40
+      bravery: 100
+      reactions: 40
+      firing: 70
+      throwing: 50
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_AKM
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_7_62MM_SOVIET_RIFLE_X30
+        - STR_GRENADE
+      -
+        - STR_DRAGUNOV
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+        - STR_7_62MM_SOVIET_SNIPER_X10
+      -
+        - STR_SKS
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_7_62MM_SOVIET_RIFLE_X10
+        - STR_GRENADE
+  - type: STR_SOVIET_ASSAULT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 30
+      bravery: 100
+      reactions: 46
+      firing: 45
+      throwing: 80
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_STECHKIN_APS
+        - STR_9MM_PISTOL_X20
+        - STR_9MM_PISTOL_X20
+        - STR_GRENADE
+      -
+        - STR_PPS_43
+        - STR_9MM_PISTOL_X30
+        - STR_9MM_PISTOL_X20
+        - STR_GRENADE
+      -
+        - STR_KS23_SHOTGUN
+        - STR_KS23_SHRAPNEL-25_X4
+        - STR_KS23_SHRAPNEL-25_X4
+        - STR_KS23_BARRIKADE_X4
+        - STR_KS23_BARRIKADE_X4
+        - STR_GRENADE
+  - type: STR_SOVIET_SUPPORT
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 70
+      health: 55
+      bravery: 100
+      reactions: 50
+      firing: 65
+      throwing: 40
+      strength: 55
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 0
+    builtInWeaponSets:
+      -
+        - STR_RPKS
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_7_62MM_SOVIET_RIFLE_X75
+        - STR_GRENADE
+      -
+        - STR_RPG
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_INC_ROCKET
+        - STR_RPG_HE_ROCKET
+        - STR_RPG_HE_ROCKET
+      -
+        - STR_RPKS
+        - STR_7_62MM_SOVIET_RIFLE_X40
+        - STR_7_62MM_SOVIET_RIFLE_X40
+        - STR_GRENADE
+  - type: STR_SOVIET_ELITE
+    race: STR_ALLIED_FORCES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 100
+      health: 65
+      bravery: 100
+      reactions: 70
+      firing: 75
+      throwing: 90
+      strength: 60
+      psiStrength: 35
+      psiSkill: 0
+      melee: 25
+      mana: 40
+    armor: SOVIET_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: [41, 42, 43]
+    intelligence: 7
+    aggression: 8
+    builtInWeaponSets:
+      -
+        - STR_ALK72_LASER_RIFLE
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_MIRINOV_LASER_SNIPER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+      -
+        - STR_AN_MACHINE_LASER
+        - STR_BATTERY
+        - STR_BATTERY
+        - STR_FIELD_DRESSING
+        - STR_MEDICAL_POUCH
+        - STR_GRENADE
+  - type: STR_T54_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 100
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: T54_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    intelligence: 6
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_100MM_CANNON
+        - STR_PKT_MACHINEGUN
+        - STR_PKT_AMMO_BOX
+  - type: STR_BMP_TANK
+    race: STR_ALLIED_FORCES
+    stats:
+      tu: 90
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 40
+      firing: 100
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: BMP_TANK_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    intelligence: 6
+    aggression: 3
+    builtInWeaponSets:
+      -
+        - STR_2A28_GROM
+        - STR_73MM_CANNON_SHELLS
+        - STR_73MM_CANNON_SHELLS
+        - STR_PKT_MACHINEGUN
+        - STR_PKT_AMMO_BOX
+        - STR_PKT_AMMO_BOX
+############################################
+########## Allied Space Soldiers
+  - type: STR_ALLIED_AMERICAN_ASTRONAUT
+    race: STR_ALLIED
+    stats:
+      tu: 70
+      stamina: 70
+      health: 50
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 52
+      strength: 70
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: STR_ASTRONAUT_A7L_SPACESUIT_UC
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 2
+    builtInWeaponSets:
+      -
+        - STR_CALBR
+      -
+        - STR_M5_LASER_SMG
+      -
+        - STR_X4_LASER_SHOTGUN
+  - type: STR_ALLIED_SOVIET_COSMONAUT
+    race: STR_ALLIED
+    stats:
+      tu: 70
+      stamina: 70
+      health: 50
+      bravery: 80
+      reactions: 64
+      firing: 64
+      throwing: 52
+      strength: 70
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    armor: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+    standHeight: 21
+    kneelHeight: 16
+    value: 19
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 2
+    builtInWeaponSets:
+      -
+        - STR_ALK72_LASER_RIFLE
+      -
+        - STR_KHARITONOV_LASER_BATTLE_RIFLE
+      -
+        - STR_ALP_SUBMACHINE_LASER
+############################################
+  - type: H_TURRET
+    race: H_TURRET
+    stats:
+      tu: 100
+      stamina: 0
+      health: 20
+      bravery: 100
+      reactions: 100
+      firing: 60
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STR_HTURRET_UC
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    intelligence: 4
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    deathSound: 23
+    energyRecovery: 34
+    builtInWeaponSets:
+      - - STR_M60_TURRET
+        - STR_7_62MM_NATO_LMG_X100
+  - type: HIND_TURRET
+    race: HIND_TURRET
+    stats:
+      tu: 100
+      stamina: 0
+      health: 2
+      bravery: 100
+      reactions: 0
+      firing: 80
+      throwing: 0
+      strength: 100
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STR_HIND_TURRET_ARMOR
+    value: 0
+    capturable: false
+    standHeight: 23
+    kneelHeight: 16
+    intelligence: 4
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    builtInWeaponSets:
+      - - STR_HIND_ROCKETS

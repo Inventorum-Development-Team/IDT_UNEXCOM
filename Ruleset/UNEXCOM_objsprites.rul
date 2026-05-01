@@ -1,0 +1,1196 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+### Kiro (A.N.)
+### All sprites compiled into one whole together to prevent confusion.
+### Setup sections based on numbers.Compiling All sprites in order:
+### Aircrafts / UFOs / Interceptors
+### Infantry and Vehicles and HWP and Exosuits
+### Items and Inventory
+### Compiled all images.
+extraSprites:
+###### For BIGOB, FLOOROB, and HANDOB
+
+#### Bigs Obs / Floor Obs / Hand Obs -Kiro N Wrote This
+  - type: BIGOBS.PCK
+    files:
+      ##### All Faction Ballistics Weapons
+      97: Resources/BallisticWeapons/Ammo/BigKS23Sharpnel25Ammo_x4.png
+      98: Resources/BallisticWeapons/Ammo/BigKS23BarrikadeAmmo_x4.png
+      99: Resources/BallisticWeapons/Ammo/BigKS23SatanaAmmo_x4.png
+      100: Resources/BallisticWeapons/Ammo/Big9mmPistolAmmo_x10.png
+      101: Resources/BallisticWeapons/Ammo/Big9mmPistolAmmo_x20.png
+      102: Resources/BallisticWeapons/Ammo/Big9mmPistolAmmo_x30.png
+      103: Resources/BallisticWeapons/Ammo/Big45PistolAmmo_x7.png
+      104: Resources/BallisticWeapons/Ammo/Big45PistolAmmo_x30.png
+      105: Resources/BallisticWeapons/Ammo/Big556NATORifleAmmo_x20.png
+      106: Resources/BallisticWeapons/Ammo/Big556NATORifleAmmo_x30.png
+      107: Resources/BallisticWeapons/Ammo/Big762NATORifleAmmo_x5.png
+      108: Resources/BallisticWeapons/Ammo/Big762NATORifleAmmo_x20.png
+      109: Resources/BallisticWeapons/Ammo/Big762NATORifleAmmo_x30.png
+      110: Resources/BallisticWeapons/Ammo/Big762NATOLMGAmmo_x50.png
+      111: Resources/BallisticWeapons/Ammo/Big762NATOLMGAmmo_x100.png
+      112: Resources/BallisticWeapons/Ammo/Big762SovietRifleAmmo_x10.png
+      113: Resources/BallisticWeapons/Ammo/Big762SovietRifleAmmo_x30.png
+      114: Resources/BallisticWeapons/Ammo/Big762SovietRifleAmmo_x40.png
+      115: Resources/BallisticWeapons/Ammo/Big762SovietRifleAmmo_x75.png
+      116: Resources/BallisticWeapons/Ammo/Big762SovietSniperAmmo_x10.png
+      117: Resources/BallisticWeapons/Ammo/Big12GaugeBuckshotAmmo_x2.png
+      118: Resources/BallisticWeapons/Ammo/Big12GaugeSlugAmmo_x2.png
+      119: Resources/BallisticWeapons/Ammo/Big12GaugeBuckshotAmmo_x8.png
+      120: Resources/BallisticWeapons/Ammo/Big12GaugeNonLethalAmmo_x8.png
+      121: Resources/BallisticWeapons/Ammo/Big12GaugeIncendiaryAmmo_x8.png
+      122: Resources/BallisticWeapons/Ammo/Big12GaugeEleriumShardsAmmo_x8.png
+      123: Resources/BallisticWeapons/Ammo/Big40mmFragAmmo.png
+      124: Resources/BallisticWeapons/Ammo/Big40mmIncendiaryAmmo.png
+      125: Resources/BallisticWeapons/Ammo/Big40mmSmokeAmmo.png
+      126: Resources/BallisticWeapons/Ammo/Big40mmNonLethalAmmo.png
+      127: Resources/BallisticWeapons/Ammo/Big38RevolverAmmo_x6.png
+      128: Resources/BallisticWeapons/Ammo/Big22LongRifleAmmo_x14.png
+      129: Resources/BallisticWeapons/Ammo/BigFALShotgunShells.png
+      130: Resources/BallisticWeapons/Ammo/BigCarlGustafM2HERound.png
+      131: Resources/BallisticWeapons/Ammo/BigCarlGustafM2HEATRound.png
+      132: Resources/BallisticWeapons/Ammo/BigCarlGustafM2EleriumRound.png
+      133: Resources/BallisticWeapons/Ammo/BigRPGHERocket.png
+      134: Resources/BallisticWeapons/Ammo/BigRPGINCRocket.png
+      135: Resources/BallisticWeapons/Ammo/BigRPGEWHRocket.png
+      136: Resources/BallisticWeapons/USA/BigM1911Colt45.png
+      137: Resources/BallisticWeapons/USA/BigM16M203.png
+      138: Resources/BallisticWeapons/USA/BigXM117.png
+      139: Resources/BallisticWeapons/USA/BigM3Greasegun.png
+      140: Resources/BallisticWeapons/USA/BigXM21.png
+      141: Resources/BallisticWeapons/USA/BigRemingtonCombatShotgun.png
+      142: Resources/BallisticWeapons/USA/BigM79ThumperGL.png
+      143: Resources/BallisticWeapons/USA/BigM72LAW.png
+      144: Resources/BallisticWeapons/USA/BigM60.png
+      145: Resources/BallisticWeapons/USA/BigAR5.png
+      146: Resources/BallisticWeapons/NATO/BigBrowningHP.png
+      147: Resources/BallisticWeapons/NATO/BigFALShotgun.png
+      148: Resources/BallisticWeapons/NATO/BigSG510Carbine.png
+      149: Resources/BallisticWeapons/NATO/BigMP5.png
+      150: Resources/BallisticWeapons/NATO/BigPSG1.png
+      151: Resources/BallisticWeapons/NATO/BigFNMAG.png
+      152: Resources/BallisticWeapons/NATO/BigCarlGustafM2.png
+      153: Resources/BallisticWeapons/USSR/BigStechkinAPS.png
+      154: Resources/BallisticWeapons/USSR/BigAKMBayoneted.png
+      155: Resources/BallisticWeapons/USSR/BigAKMSU.png
+      156: Resources/BallisticWeapons/USSR/BigSkorpion.png
+      157: Resources/BallisticWeapons/USSR/BigDragunov.png
+      158: Resources/BallisticWeapons/USSR/BigKS23Shotgun.png
+      159: Resources/BallisticWeapons/USSR/BigRPG.png
+      160: Resources/BallisticWeapons/USSR/BigRPKS.png
+      161: Resources/BallisticWeapons/Civilian/BigMakarov.png
+      162: Resources/BallisticWeapons/Civilian/BigSnubnosePistol.png
+      163: Resources/BallisticWeapons/Civilian/BigHuntingRifle.png
+      164: Resources/BallisticWeapons/Civilian/BigModel1900.png
+      165: Resources/BallisticWeapons/Civilian/BigMachete.png
+      281: Resources/BallisticWeapons/Civilian/BigLuger.png
+      282: Resources/BallisticWeapons/Civilian/BigUzi.png
+      283: Resources/BallisticWeapons/Civilian/BigG3.png
+      166: Resources/BallisticWeapons/Civilian/BigPoliceRevolver.png
+      167: Resources/BallisticWeapons/Civilian/BigBerettaM12.png
+      168: Resources/BallisticWeapons/Civilian/BigPoliceShotgun.png
+      169: Resources/BallisticWeapons/Civilian/BigPoliceTonfa.png
+      170: Resources/BallisticWeapons/Allies/BigM16A1.png
+      171: Resources/BallisticWeapons/Allies/BigFNFAL.png
+      172: Resources/BallisticWeapons/Allies/BigBren.png
+      173: Resources/BallisticWeapons/Allies/BigOwenSMG.png
+      174: Resources/BallisticWeapons/Allies/BigAKM.png
+      175: Resources/BallisticWeapons/Allies/BigSKS.png
+      176: Resources/BallisticWeapons/Allies/BigPPS43.png
+      177: Resources/SoldiersAndArmors/DeltaArmor/BigMG3.png
+      178: Resources/SoldiersAndArmors/RiotArmor/BigAngryWife.png
+      179: Resources/SoldiersAndArmors/RiotArmor/BigRiotShield.png
+      180: Resources/BallisticWeapons/CustomWeapons/BigMAT49.png
+      181: Resources/BallisticWeapons/CustomWeapons/BigSawedOffM79Thumper.png
+      182: Resources/BallisticWeapons/CustomWeapons/BigSawedOffShotgun.png
+      183: Resources/BallisticWeapons/CustomWeapons/BigXM117Scoped.png
+      184: Resources/BallisticWeapons/CustomWeapons/BigXM117Shotgun.png
+      185: Resources/BallisticWeapons/CustomWeapons/BigXM117M203.png
+      186: Resources/BallisticWeapons/CustomWeapons/BigFNFSC.png
+      187: Resources/BallisticWeapons/CustomWeapons/BigFNFSCScoped.png
+      188: Resources/BallisticWeapons/CustomWeapons/BigFNFSCBayoneted.png
+      189: Resources/BallisticWeapons/Allies/BigCombatKnife.png
+      190: Resources/BallisticWeapons/CustomWeapons/BigColtScopeAccessory.png
+      191: Resources/BallisticWeapons/CustomWeapons/BigM203Accessory.png
+      192: Resources/BallisticWeapons/Medical&Food/BigCannedFood.png
+      193: Resources/BallisticWeapons/Medical&Food/BigCigarettes.png
+      194: Resources/BallisticWeapons/Medical&Food/BigFlask.png
+      195: Resources/BallisticWeapons/Medical&Food/BigMedicalBag.png
+      196: Resources/BallisticWeapons/Medical&Food/BigFieldDressing.png
+      197: Resources/BallisticWeapons/Medical&Food/BigMedicalPouch.png
+      200: Resources/BallisticWeapons/Explosives/BigSmokeGrenade.png
+      201: Resources/BallisticWeapons/Explosives/BigFlashbangGrenade.png
+      202: Resources/BallisticWeapons/Medical&Food/BigDuctTape.png
+      203: Resources/BallisticWeapons/Medical&Food/BigDuctGun.png
+      204: Resources/BallisticWeapons/Medical&Food/BigBioFoam.png
+      210: Resources/BallisticWeapons/CustomWeapons/BigWeaponToolKit.png
+      211: Resources/BallisticWeapons/CustomWeapons/BigM16A1Scoped.png
+      212: Resources/BallisticWeapons/CustomWeapons/BigM16A1Shotgun.png
+      213: Resources/BallisticWeapons/CustomWeapons/Big50CalMagnum.png
+      214: Resources/BallisticWeapons/CustomWeapons/Big50CalMagnumClip.png
+      224: Resources/BallisticWeapons/CustomWeapons/BigEnforcer.png
+      248: Resources/BallisticWeapons/USA/BigCarbine.png
+      ##### Human Corpse here
+      28: Resources/SoldiersAndArmors/PersonalArmor/PA_Corpse.png
+      ##### Civilian Corpse here
+      400: Resources/Units/BIGOBS/BigAmericanSoldierCorpse.PNG
+      401: Resources/Units/BIGOBS/BigEuropeanSoldierCorpse.PNG
+      402: Resources/Units/BIGOBS/BigSovietSoldierCorpse.PNG
+      414: Resources/Units/BIGOBS/BIGOB_HUMAN_JUMPSUIT_CORPSE.PNG
+      423: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_0_0_CORPSE.PNG
+      424: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_0_1_CORPSE.PNG
+      427: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_1_1_CORPSE.PNG
+      428: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN2_CORPSE.GIF
+      429: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN3_CORPSE.GIF
+      430: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN4_CORPSE.GIF
+      431: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN5_CORPSE.GIF
+      432: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN6_CORPSE.PNG
+      433: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN7_CORPSE.PNG
+      434: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN8_CORPSE.GIF
+      435: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN9_CORPSE.GIF
+      436: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN2_CORPSE.GIF
+      437: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN3_CORPSE.GIF
+      438: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN4_CORPSE.PNG
+      439: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN5_CORPSE.GIF
+      440: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN6_CORPSE.GIF
+      441: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_0_3_CORPSE.PNG
+      442: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_1_3_CORPSE.PNG
+      443: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_1_4_CORPSE.GIF
+      444: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_1_0_CORPSE.PNG
+      445: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_1_2_CORPSE.PNG
+      447: Resources/Units/BIGOBS/BIGOB_HERO_CIVILIAN0_CORPSE.PNG
+      448: Resources/Units/BIGOBS/BIGOB_HERO_CIVILIAN1_CORPSE.PNG
+      449: Resources/Units/BIGOBS/BIGOB_HERO_CIVILIAN2_CORPSE.PNG
+      450: Resources/Units/BIGOBS/BIGOB_HERO_CIVILIAN3_CORPSE.PNG
+      451: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_0_4_CORPSE.PNG
+      452: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_1_5_CORPSE.GIF
+      453: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_2_0_CORPSE.PNG
+      454: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_2_1_CORPSE.PNG
+      455: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_2_2_CORPSE.PNG
+      456: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_2_3_CORPSE.PNG
+      457: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_3_0_CORPSE.GIF
+      458: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_3_1_CORPSE.GIF
+      459: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_3_2_CORPSE.GIF
+      460: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_3_3_CORPSE.GIF
+      461: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_3_4_CORPSE.GIF
+      462: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_3_5_CORPSE.GIF
+      463: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_4_0_CORPSE.GIF
+      464: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_4_1_CORPSE.GIF
+      465: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_4_2_CORPSE.GIF
+      466: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_4_3_CORPSE.GIF
+      467: Resources/Units/BIGOBS/BIGOB_HUMAN_SOLDIER_4_4_CORPSE.GIF
+      470: Resources/Units/BIGOBS/BIGOB_POLICE_MALE_CIVILIAN_CORPSE.GIF
+      471: Resources/Units/BIGOBS/BIGOB_POLICE_FEMALE_CIVILIAN_CORPSE.GIF
+      472: Resources/Units/BIGOBS/BIGOB_MALE_CIVILIAN10_CORPSE.GIF
+      473: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN11_CORPSE.GIF
+      474: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN12_CORPSE.GIF
+      475: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN13_CORPSE.GIF
+      476: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN14_CORPSE.PNG
+      477: Resources/Units/BIGOBS/BIGOB_FEMALE_CIVILIAN15_CORPSE.PNG
+      478: Resources/Units/BIGOBS/BIGOB_MALE_FARMER_CORPSE.PNG
+      479: Resources/Units/BIGOBS/BIGOB_FEMALE_FARMER_CORPSE.PNG
+      #####
+      500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_BIGOB.png ### Human Corpse UN Faction
+      501: Resources/SoldiersAndArmors/PilotArmor/PILOT_CORPSE_BIGOB.png
+      502: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_CORPSE_BIGOB.png
+      503: Resources/SoldiersAndArmors/SpecialForces/SPECIAL_FORCES_CORPSE_BIGOB.png
+      504: Resources/SoldiersAndArmors/Mercenary/MERCENARY_CORPSE_BIGOB.png
+      510: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_CORPSE_BIGOB.png
+      511: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_CORPSE_BIGOB.png
+      512: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_CORPSE_BIGOB.png
+      513: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_CORPSE_BIGOB.png
+      515: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_CORPSE_BIGOB.png
+      516: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_CORPSE_BIGOB.png
+      517: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_CORPSE_BIGOB.png
+      518: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_CORPSE_BIGOB.png
+      903: Resources/SoldiersAndArmors/ScoutArmor/BigCorpse2.png
+      1901: Resources/SoldiersAndArmors/ScoutArmor/BigCorpse.png
+      2905: Resources/SoldiersAndArmors/HeavyPersonalArmor/HPA_Corpse.png
+      ##### Human Corpse Ends
+      888: Resources/BallisticWeapons/Explosives/BigFlare.png
+      896: Resources/BallisticWeapons/Explosives/BigFlarelit.png
+      #####Airstrike Items Here
+      956: Resources/BallisticWeapons/Explosives/BigHEAirStrike.png
+      964: Resources/BallisticWeapons/Explosives/BigHEAirStrike.png
+      972: Resources/BallisticWeapons/Explosives/BigNapalmAirStrike.png
+      980: Resources/BallisticWeapons/Explosives/BigNapalmAirStrike.png
+      988: Resources/BallisticWeapons/Explosives/BigCannonAirStrike.png
+      996: Resources/BallisticWeapons/Explosives/BigCannonAirStrike.png
+      #####Continue with Stoners Weapons
+      1032: Resources/BallisticWeapons/UN/BigStoner63Rifle.png
+      1040: Resources/BallisticWeapons/UN/BigStoner63Carbine.png
+      1048: Resources/BallisticWeapons/UN/BigStoner63AutomaticRifle.png
+      1056: Resources/BallisticWeapons/UN/BigStoner63Commando.png
+      1064: Resources/BallisticWeapons/UN/BigStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/BigM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/BigM202FlashAmmo.png
+      1088: Resources/BallisticWeapons/Medical&Food/BigBread.png
+      1096: Resources/BallisticWeapons/Civilian/Bigob_Shovel.png
+
+      #####Plasma Weapons with Aliens included
+      1000: Resources/AlienArmouryExpanded/Aliensniperrifle.gif
+      1001: Resources/AlienArmouryExpanded/Aliensniperrifle_Clip.gif
+      1002: Resources/AlienArmouryExpanded/Plasmadestroyer.gif
+      1003: Resources/AlienArmouryExpanded/Plasmadestroyer_Clip.gif
+      1004: Resources/AlienArmouryExpanded/Plasmacaster.gif
+      1005: Resources/AlienArmouryExpanded/Plasmacaster_clip.gif
+      1006: Resources/AlienArmouryExpanded/Toxigun.gif
+      1007: Resources/AlienArmouryExpanded/Toxigun_flask.gif
+      1008: Resources/AlienArmouryExpanded/big_SL_EleriumBomb.gif
+      1009: Resources/AlienArmouryExpanded/Plasmacaster1.gif
+      1010: Resources/AlienArmouryExpanded/Plasmasniperrifle1.gif
+      1011: Resources/AlienArmouryExpanded/Plasmadestroyer1.gif
+      1115: Resources/FourthState/HWE/HyperWaveEncoder.gif
+      ##### Fusion Guns from Aliens
+      1100: Resources/FusionWeapons/BigFusionHandgun.png
+      1101: Resources/FusionWeapons/BigFusionSMG.png
+      1102: Resources/FusionWeapons/BigLightFusionCell.png
+      1103: Resources/FusionWeapons/BigFusionRifle.png
+      1104: Resources/FusionWeapons/BigFusionSniper.png
+      1105: Resources/FusionWeapons/BigHeavyFusionCell.png
+      1106: Resources/FusionWeapons/BigFusionSplitter.png
+      1107: Resources/FusionWeapons/BigHugeFusionCell.png
+      1108: Resources/FusionWeapons/BigFusionLance.png
+      1109: Resources/FusionWeapons/BigEtherealNobleSword.png
+      1110: Resources/FusionWeapons/BigThermonuclearProjectileLauncher.png
+      1111: Resources/FusionWeapons/BigThermonuclearProjectileLauncherMagazine.png
+      1112: Resources/FusionWeapons/BigHumanFusionRifle.png
+      1113: Resources/FusionWeapons/BigAlienCephalopodTissue.png
+      ##### Purchasable Space Weapons
+      1120: Resources/SpaceWeapons/BigGyrojetPistol.png
+      1128: Resources/SpaceWeapons/BigGyrojetCarbine.png
+      1136: Resources/SpaceWeapons/BigGyrojetAmmo.png
+      1144: Resources/SpaceWeapons/BigSpaceKnife.png
+      1152: Resources/SpaceWeapons/BigGeneratorStick.png
+      ##### UN Main Alloy and Tungsten Carbide WEapons here
+      1202: Resources/AlloyWeapons/Bigob_G_Auto_Shotgun.png
+      1203: Resources/AlloyWeapons/Bigob_G_Auto_Shotgun_Clip.png
+      1204: Resources/AlloyWeapons/Bigob_G_Carbine.png
+      1205: Resources/AlloyWeapons/Bigob_G_Grenade.png
+      1206: Resources/AlloyWeapons/Bigob_G_Grenade_launcher.png
+      1207: Resources/AlloyWeapons/Bigob_G_Heavy.png
+      1208: Resources/AlloyWeapons/Bigob_G_Heavy_Clip.png
+      1209: Resources/AlloyWeapons/Bigob_G_Pistol.png
+      1210: Resources/AlloyWeapons/Bigob_G_Pistol_Clip.png
+      1211: Resources/AlloyWeapons/Bigob_G_Rifle.png
+      1212: Resources/AlloyWeapons/Bigob_G_Rifle_Clip.png
+      1213: Resources/AlloyWeapons/Bigob_G_Shotgun.png
+      1214: Resources/AlloyWeapons/Bigob_G_Shotgun_Clip.png
+      1215: Resources/AlloyWeapons/Bigob_G_Sniper.png
+      1216: Resources/AlloyWeapons/Bigob_G_Sniper_Clip.png
+      1217: Resources/AlloyWeapons/Bigob_G_Grenade_launcher_clip.png
+      1218: Resources/AlloyWeapons/Bigob_G_Heavy_Clip_AA.png
+      1219: Resources/AlloyWeapons/Bigob_G_Pistol_Clip_AA.png
+      1220: Resources/AlloyWeapons/Bigob_G_Rifle_Clip_AA.png
+      1221: Resources/AlloyWeapons/Bigob_G_Sniper_Clip_AA.png
+      #####Plasma Weapons with Aliens included
+      1320: Resources/FourthState/SmallLauncher/Alien/SmallLauncher.gif
+      1330: Resources/FourthState/SmallLauncher/Human/HumanSmallLauncher.gif
+      1362: Resources/FourthState/PlasmaRifle/Alien/PlasmaRifle.gif
+      1363: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRifle.gif
+      1364: Resources/FourthState/PlasmaRifle/PlasmaRifleClip.gif
+      1463: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMR.gif
+      1464: Resources/FourthState/PlasmaDMR/PlasmaDMRClip.gif
+      1563: Resources/FourthState/PlasmaSMG/Human/HumanPlasmaSMG.gif
+      1564: Resources/FourthState/PlasmaSMG/PlasmaSMGClip.gif
+      1663: Resources/FourthState/SniperPlasma/Human/HumanSniperPlasma.gif
+      1664: Resources/FourthState/SniperPlasma/SniperPlasmaClip.gif
+      1763: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnum.gif
+      1764: Resources/FourthState/PlasmaMagnum/PlasmaMagnumClip.gif
+      1860: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasma.gif
+      1861: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasma.gif
+      1862: Resources/FourthState/HeavyPlasma/HeavyPlasmaClip.gif
+      1863: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMG.gif
+      1864: Resources/FourthState/PlasmaLMG/PlasmaLMGClip.gif
+      1962: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistol.gif
+      1963: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistol.gif
+      1964: Resources/FourthState/PlasmaPistol/PlasmaPistolClip.gif
+      ##### Laser Weapons Set
+      ####################
+      1999: Resources/LaserWeapons/UN/BigPeacemaker.png
+####################
+      2000: Resources/LaserWeapons/USA/BigM1972LaserPistol.png
+      2001: Resources/LaserWeapons/USA/BigLaserMagnum.png
+      2002: Resources/LaserWeapons/USA/BigCALBR.png
+      2003: Resources/LaserWeapons/USA/BigM20M203LaserCarbine.png
+      2004: Resources/LaserWeapons/USA/BigM5SubmachineLaser.png
+      2005: Resources/LaserWeapons/USA/BigUlyssesSniperRifle.png
+      2006: Resources/LaserWeapons/USA/BigX44LaserShotgun.png
+      2007: Resources/LaserWeapons/USA/BigM4LaserLMG.png
+      2008: Resources/LaserWeapons/USA/BigEleriumFlamethrower.png
+#####################
+      2009: Resources/LaserWeapons/NATO/BigP71Handgun.png
+      2010: Resources/LaserWeapons/NATO/BigFNFLABattleRifle.png
+      2011: Resources/LaserWeapons/NATO/BigFNFLACarbine.png
+      2012: Resources/LaserWeapons/NATO/BigL4AssaultLaser.png
+      2013: Resources/LaserWeapons/NATO/BigMAT72SubmachineLaser.png
+      2014: Resources/LaserWeapons/NATO/BigChurchillMarksmanLaserRifle.png
+      2015: Resources/LaserWeapons/NATO/BigML73LaserMachineGun.png
+      2016: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifle.png
+      2017: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleHEATMag.png
+      2018: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleHEMag.png
+      2019: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleSmokeMag.png
+      2020: Resources/LaserWeapons/NATO/BigAutomaticRecoilessRifleEleriumMag.png
+#####################
+      2021: Resources/LaserWeapons/USSR/BigP72CompactLaser.png
+      2022: Resources/LaserWeapons/USSR/BigALK72LaserRifle.png
+      2023: Resources/LaserWeapons/USSR/BigKharitonovBattleRifle.png
+      2024: Resources/LaserWeapons/USSR/BigALPSubmachineLaser.png
+      2025: Resources/LaserWeapons/USSR/BigMirinovLaserSniper.png
+      2026: Resources/LaserWeapons/USSR/BigANMachineLaser.png
+      2027: Resources/LaserWeapons/USSR/BigAfinaAntiTankLaser.png
+      2028: RESOURCES/Battery/battery.png
+
+      ##### UNT Specialized Weapons
+      2400: Resources/SpecializedWeapons/BigGaussAmmo.png
+      2408: Resources/SpecializedWeapons/BigGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/BigGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/BigGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/BigTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/BigTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/BigTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/BigTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/BigTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/BigTeslaPistolBattery.png
+      ##### Human Armored Vehicles / Tank Weapon
+      2500: Resources/Tanks/DUAL50CAL.png
+      2501: Resources/Tanks/SMOKELAUNCHER.png
+      2502: Resources/Tanks/M81E1RG.png
+      2503: Resources/Tanks/MGM51GML.png
+      2504: Resources/Tanks/M1919A4MG.png
+      2505: Resources/Tanks/M1919A.png
+      2506: Resources/Tanks/BMP73MM.png
+      2507: Resources/Tanks/PKT.png
+      2508: Resources/Tanks/LEGIONNAIRELASERGUN.png
+      2509: Resources/Tanks/LASERMINIGUN.png
+      2510: Resources/Tanks/105MM.png
+      2511: Resources/Tanks/100MM.png
+      2512: Resources/Tanks/50CAL.png
+      2513: Resources/Tanks/73MM_AA.png
+      2514: Resources/Tanks/73MM_AP.png
+      2515: Resources/Tanks/73MM_CANISTER.png
+      2516: Resources/Tanks/73MM_VERTICAL_EXPLOSION.png
+      2517: Resources/Tanks/73MM_DU.png
+      2518: Resources/Tanks/73MM_ELERIUM.png
+      2519: Resources/Tanks/73MM_FUSION.png
+      2520: Resources/Tanks/76MM_AA.png
+      2521: Resources/Tanks/76MM_AP.png
+      2522: Resources/Tanks/76MM_CANISTER.png
+      2523: Resources/Tanks/76MM_VERTICAL_EXPLOSION.png
+      2524: Resources/Tanks/76MM_DU.png
+      2525: Resources/Tanks/76MM_ELERIUM.png
+      2526: Resources/Tanks/76MM_FUSION.png
+      2527: Resources/Tanks/152MM_AA.png
+      2528: Resources/Tanks/152MM_AP.png
+      2529: Resources/Tanks/152MM_CANISTER.png
+      2530: Resources/Tanks/152MM_VERTICAL_EXPLOSION.png
+      2531: Resources/Tanks/152MM_DU.png
+      2532: Resources/Tanks/152MM_ELERIUM.png
+      2533: Resources/Tanks/152MM_FUSION.png
+      2534: Resources/Tanks/152MM_AA.png
+      2535: Resources/Tanks/152MM_AP.png
+      2536: Resources/Tanks/152MM_CANISTER.png
+      2537: Resources/Tanks/152MM_VERTICAL_EXPLOSION.png
+      2538: Resources/Tanks/152MM_DU.png
+      2539: Resources/Tanks/152MM_ELERIUM.png
+      2540: Resources/Tanks/152MM_FUSION.png
+      2541: Resources/Tanks/152MM.png
+      2542: Resources/Tanks/MGM51.png
+      2543: Resources/Tanks/73MM.png
+      2544: Resources/Tanks/ENERGYSHELL.png
+      2545: Resources/Tanks/76MM.png
+      2546: Resources/Tanks/TANKSMOKE6XPACK.png
+      2547: Resources/Tanks/M1919A4AMMOBOX.png
+      2548: Resources/Tanks/BMD1PKTAMMOBOX.png
+      2549: Resources/Tanks/ENERGYSHELLMINI1BATTERY.png
+      2550: Resources/Tanks/ENERGYSHELLMINI2BATTERY.png
+      2551: Resources/Tanks/ENERGYSHELLMINI3BATTERY.png
+      2552: Resources/Tanks/ENERGYSHELLMINI4BATTERY.png
+      2553: Resources/Tanks/ENERGYSHELL_ENHANCED.png
+      2554: Resources/Tanks/ENERGYSHELL_IMPACT_FORCE.png
+      2555: Resources/Tanks/ENERGYSHELL_TURBOLASER.png
+      2556: Resources/Tanks/105MM_AP.png
+      2557: Resources/Tanks/105MM_VT.png
+      2558: Resources/Tanks/105MM_Canister.png
+      2559: Resources/Tanks/105MM_DU.png
+      2560: Resources/Tanks/105MM_AAAP.png
+      2561: Resources/Tanks/105MM_Elerium.png
+      2562: Resources/Tanks/105MM_Fusion.png
+      2564: Resources/Tanks/50CAL_DU.png
+      2565: Resources/Tanks/50CAL_AAAP.png
+      2566: Resources/Tanks/50CAL_E115.png
+      2567: Resources/Tanks/PKTAMMO_DU.png
+      2568: Resources/Tanks/PKTAMMO_AAAP.png
+      2569: Resources/Tanks/PKTAMMO_E115.png
+
+
+      ##### Hand to HAnd Combat
+      3000: Resources/specialWeapons/BigFist.png
+      3001: Resources/specialWeapons/TankCrush.png
+      3002: Resources/specialWeapons/VehicleCrash.png
+      ##### Alien Corpse here
+      3005: Resources/RecycledAlienCollection/ReptoidRace/bigobs_REPTOID_CORPSE.gif
+      3006: Resources/RecycledAlienCollection/ChtoniteRace/bigobs_CHTONITE_CORPSE.gif
+      3007: Resources/RecycledAlienCollection/ChtoniteRace/bigobs_TUNLUN_CORPSE.png
+      3015: Resources/RecycledAlienCollection/CerebrealRace/bigobs_CEREBREAL_CORPSE.gif
+      3009: Resources/RecycledAlienCollection/CerebrealRace/bigobs_CEREBREAL_LARVA_CORPSE.png
+      3010: Resources/RecycledAlienCollection/ReptoidRace/Salamandron_Jaws.gif
+      # Terrorists Corpse here
+      3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_BIGOB.png
+      3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_BIGOB.png
+      3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_BIGOB.png
+      3053: Resources/Thin Man/BIGOBS/bigOb_ThinMan_corpse.png
+      ##### Alien Corpse
+      #3100: Resources/AlienFactions/Sectoids/SECTOID_COMMANDER_CORPSE_BIGOB.png
+      #3101: Resources/AlienFactions/Sectoids/SECTOID_PSION_CORPSE_BIGOB.png
+      3102: Resources/AlienFactions/ArmoredSectoids/ARMORED_SECTOID_CORPSE_BIGOB.png
+      3103: Resources/AlienFactions/Floaters/FLOATER_SOLDIER_CORPSE_BIGOB.png
+      3104: Resources/AlienFactions/Floaters/FLOATER_NAVIGATOR_CORPSE_BIGOB.png
+      3105: Resources/AlienFactions/Floaters/FLOATER_MEDIC_CORPSE_BIGOB.png
+      3106: Resources/AlienFactions/Floaters/FLOATER_ENGINEER_CORPSE_BIGOB.png
+      3107: Resources/AlienFactions/Floaters/FLOATER_LEADER_CORPSE_BIGOB.png
+      3108: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_SOLDIER_CORPSE_BIGOB.png
+      3109: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_LEADER_CORPSE_BIGOB.png
+      #3110: Resources/AlienFactions/Snakepeople/SNAKE_CORPSE_BIGOB.png
+      #3111: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_SOLDIER_CORPSE_BIGOB.png
+      #3112: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_NAVIGATOR_CORPSE_BIGOB.png
+      #3113: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_MEDIC_CORPSE_BIGOB.png
+      #3114: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_ENGINEER_CORPSE_BIGOB.png
+      #3115: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_LEADER_CORPSE_BIGOB.png
+      3116: Resources/AlienFactions/Mutons/MUTON_SOLDIER_CORPSE_BIGOB.png
+      3117: Resources/AlienFactions/Mutons/MUTON_NAVIGATOR_CORPSE_BIGOB.png
+      3118: Resources/AlienFactions/Mutons/MUTON_MEDIC_CORPSE_BIGOB.png
+      3119: Resources/AlienFactions/Mutons/MUTON_ENGINEER_CORPSE_BIGOB.png
+      3120: Resources/AlienFactions/Mutons/MUTON_LEADER_CORPSE_BIGOB.png
+      3121: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_SOLDIER_CORPSE_BIGOB.png
+      3122: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_LEADER_CORPSE_BIGOB.png
+      3123: Resources/AlienFactions/Striders/STRIDER_SOLDIER_CORPSE_BIGOB.png
+      3124: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_1.png
+      3125: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_2.png
+      3126: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_3.png
+      3127: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_4.png
+      3128: Resources/AlienFactions/Cybersphere/CYBERSHPERE_CORPSE_BIGOB.png
+      3129: Resources/AlienFactions/Probe/PROBE_CORPSE_BIGOB.png
+      3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_BIGOB.png
+      3131: Resources/AlienFactions/Zombies/ZombieBite.png
+      3132: Resources/AlienFactions/Mechtoid/BigMechtoidCannon.png
+      3133: Resources/AlienFactions/Sectopod/BigSectopodGatling.png
+      ##### Human Plasma Weapons
+      3200: Resources/PlasmaWeapons/UN/BigUNPlasmaRifle_ammo1.png
+      3208: Resources/PlasmaWeapons/USA/BigPlasmaBattleRifle_ammo1.png
+      3216: Resources/PlasmaWeapons/USA/BigPlasmaRL_ammo1.png
+      3224: Resources/PlasmaWeapons/USA/BigPlasmaShotgun_ammo1.png
+      3232: Resources/PlasmaWeapons/NATO/BigPlasmaCarbine_ammo1.png
+      3240: Resources/PlasmaWeapons/NATO/BigPlasmaPistol_ammo1.png
+      3248: Resources/PlasmaWeapons/NATO/BigPlasmaSniper_ammo1.png
+      3256: Resources/PlasmaWeapons/USSR/BigPlasmaAssaultRifle_ammo1.png
+      3264: Resources/PlasmaWeapons/USSR/BigPlasmaLMG_ammo1.png
+      3272: Resources/PlasmaWeapons/USSR/BigPlasmaSMG_ammo1.png
+      3280: Resources/PlasmaWeapons/Ammo/BigPlasmaBattleRifleMag.png
+      3288: Resources/PlasmaWeapons/Ammo/BigPlasmaRLHEATRocket.png
+      3296: Resources/PlasmaWeapons/Ammo/BigPlasmaRLEleriumRocket.png
+      3304: Resources/PlasmaWeapons/Ammo/BigPlasmaShotgunMag.png
+      3312: Resources/PlasmaWeapons/Ammo/BigPlasmaCarbineMag.png
+      3320: Resources/PlasmaWeapons/Ammo/BigPlasmaPistolMag.png
+      3328: Resources/PlasmaWeapons/Ammo/BigPlasmaSniperMag.png
+      3336: Resources/PlasmaWeapons/Ammo/BigPlasmaAssaultRifleMag.png
+      3344: Resources/PlasmaWeapons/Ammo/BigPlasmaLMGMag.png
+      3352: Resources/PlasmaWeapons/Ammo/BigPlasmaSMGMag.png
+
+
+      ##### Laser Weapons here
+      3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Big.png
+      3401: Resources/AlienLasers/Alien Laser Pistol/Mag_Big.png
+      3402: Resources/AlienLasers/Alien Laser Rifle/Gun_Big.png
+      3403: Resources/AlienLasers/Alien Laser Rifle/Mag_Big.png
+      3404: Resources/AlienLasers/Alien Heavy Laser/Gun_Big.png
+      3405: Resources/AlienLasers/Alien Heavy Laser/Mag_Big.png
+      3406: Resources/AlienLasers/alienCrystal.png
+      ##### Kiros Inventory Block section
+      5000: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull1x1.png
+      5001: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull1x2.png
+      5002: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull2x1.png
+      5003: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull2x2.png
+      5004: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull1x3.png
+      5005: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull3x1.png
+      5006: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull2x3.png
+      5007: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull3x2.png
+      5008: Resources/SoldiersAndArmors/InventoryEmpty/Itemnull3x3.png
+
+
+  - type: FLOOROB.PCK
+    files:
+      ##### All Faction Ballistics Weapons
+      97: Resources/BallisticWeapons/Ammo/FloorKS23Sharpnel25Ammo_x4.png
+      98: Resources/BallisticWeapons/Ammo/FloorKS23BarrikadeAmmo_x4.png
+      99: Resources/BallisticWeapons/Ammo/FloorKS23SatanaAmmo_x4.png
+      100: Resources/BallisticWeapons/Ammo/Floor9mmPistolAmmo_x10.png
+      101: Resources/BallisticWeapons/Ammo/Floor9mmPistolAmmo_x20.png
+      102: Resources/BallisticWeapons/Ammo/Floor9mmPistolAmmo_x30.png
+      103: Resources/BallisticWeapons/Ammo/Floor45PistolAmmo_x7.png
+      104: Resources/BallisticWeapons/Ammo/Floor45PistolAmmo_x30.png
+      105: Resources/BallisticWeapons/Ammo/Floor556NATORifleAmmo_x20.png
+      106: Resources/BallisticWeapons/Ammo/Floor556NATORifleAmmo_x30.png
+      107: Resources/BallisticWeapons/Ammo/Floor762NATORifleAmmo_x5.png
+      108: Resources/BallisticWeapons/Ammo/Floor762NATORifleAmmo_x20.png
+      109: Resources/BallisticWeapons/Ammo/Floor762NATORifleAmmo_x30.png
+      110: Resources/BallisticWeapons/Ammo/Floor762NATOLMGAmmo_x50.png
+      111: Resources/BallisticWeapons/Ammo/Floor762NATOLMGAmmo_x100.png
+      112: Resources/BallisticWeapons/Ammo/Floor762SovietRifleAmmo_x10.png
+      113: Resources/BallisticWeapons/Ammo/Floor762SovietRifleAmmo_x30.png
+      114: Resources/BallisticWeapons/Ammo/Floor762SovietRifleAmmo_x40.png
+      115: Resources/BallisticWeapons/Ammo/Floor762SovietRifleAmmo_x75.png
+      116: Resources/BallisticWeapons/Ammo/Floor762SovietSniperAmmo_x10.png
+      117: Resources/BallisticWeapons/Ammo/Floor12GaugeBuckshotAmmo_x2.png
+      118: Resources/BallisticWeapons/Ammo/Floor12GaugeSlugAmmo_x2.png
+      119: Resources/BallisticWeapons/Ammo/Floor12GaugeBuckshotAmmo_x8.png
+      120: Resources/BallisticWeapons/Ammo/Floor12GaugeNonLethalAmmo_x8.png
+      121: Resources/BallisticWeapons/Ammo/Floor12GaugeIncendiaryAmmo_x8.png
+      122: Resources/BallisticWeapons/Ammo/Floor12GaugeEleriumShardsAmmo_x8.png
+      123: Resources/BallisticWeapons/Ammo/Floor40mmFragAmmo.png
+      124: Resources/BallisticWeapons/Ammo/Floor40mmIncendiaryAmmo.png
+      125: Resources/BallisticWeapons/Ammo/Floor40mmSmokeAmmo.png
+      126: Resources/BallisticWeapons/Ammo/Floor40mmNonLethalAmmo.png
+      127: Resources/BallisticWeapons/Ammo/Floor38RevolverAmmo_x6.png
+      128: Resources/BallisticWeapons/Ammo/Floor22LongRifleAmmo_x14.png
+      129: Resources/BallisticWeapons/Ammo/FloorFALShotgunShells.png
+      130: Resources/BallisticWeapons/Ammo/FloorCarlGustafM2HERound.png
+      131: Resources/BallisticWeapons/Ammo/FloorCarlGustafM2HEATRound.png
+      132: Resources/BallisticWeapons/Ammo/FloorCarlGustafM2EleriumRound.png
+      133: Resources/BallisticWeapons/Ammo/FloorRPGHERocket.png
+      134: Resources/BallisticWeapons/Ammo/FloorRPGINCRocket.png
+      135: Resources/BallisticWeapons/Ammo/FloorRPGEWHRocket.png
+      136: Resources/BallisticWeapons/USA/FloorM1911Colt45.png
+      137: Resources/BallisticWeapons/USA/FloorM16M203.png
+      138: Resources/BallisticWeapons/USA/FloorXM117.png
+      139: Resources/BallisticWeapons/USA/FloorM3Greasegun.png
+      140: Resources/BallisticWeapons/USA/FloorXM21.png
+      141: Resources/BallisticWeapons/USA/FloorRemingtonCombatShotgun.png
+      142: Resources/BallisticWeapons/USA/FloorM79ThumperGL.png
+      143: Resources/BallisticWeapons/USA/FloorM72LAW.png
+      144: Resources/BallisticWeapons/USA/FloorM60.png
+      145: Resources/BallisticWeapons/USA/FloorAR5.png
+      146: Resources/BallisticWeapons/NATO/FloorBrowningHP.png
+      147: Resources/BallisticWeapons/NATO/FloorFALShotgun.png
+      148: Resources/BallisticWeapons/NATO/FloorSG510Carbine.png
+      149: Resources/BallisticWeapons/NATO/FloorMP5.png
+      150: Resources/BallisticWeapons/NATO/FloorPSG1.png
+      151: Resources/BallisticWeapons/NATO/FloorFNMAG.png
+      152: Resources/BallisticWeapons/NATO/FloorCarlGustafM2.png
+      153: Resources/BallisticWeapons/USSR/FloorStechkinAPS.png
+      154: Resources/BallisticWeapons/USSR/FloorAKMBayoneted.png
+      155: Resources/BallisticWeapons/USSR/FloorAKMSU.png
+      156: Resources/BallisticWeapons/USSR/FloorSkorpion.png
+      157: Resources/BallisticWeapons/USSR/FloorDragunov.png
+      158: Resources/BallisticWeapons/USSR/FloorKS23Shotgun.png
+      159: Resources/BallisticWeapons/USSR/FloorRPG.png
+      160: Resources/BallisticWeapons/USSR/FloorRPKS.png
+      161: Resources/BallisticWeapons/Civilian/FloorMakarov.png
+      162: Resources/BallisticWeapons/Civilian/FloorSnubnosePistol.png
+      163: Resources/BallisticWeapons/Civilian/FloorHuntingRifle.png
+      164: Resources/BallisticWeapons/Civilian/FloorModel1900.png
+      165: Resources/BallisticWeapons/Civilian/FloorMachete.png
+      281: Resources/BallisticWeapons/Civilian/FloorLuger.png
+      282: Resources/BallisticWeapons/Civilian/FloorUzi.png
+      283: Resources/BallisticWeapons/Civilian/FloorG3.png
+      166: Resources/BallisticWeapons/Civilian/FloorPoliceRevolver.png
+      167: Resources/BallisticWeapons/Civilian/FloorBerettaM12.png
+      168: Resources/BallisticWeapons/Civilian/FloorPoliceShotgun.png
+      169: Resources/BallisticWeapons/Civilian/FloorPoliceTonfa.png
+      170: Resources/BallisticWeapons/Allies/FloorM16A1.png
+      171: Resources/BallisticWeapons/Allies/FloorFNFAL.png
+      172: Resources/BallisticWeapons/Allies/FloorBren.png
+      173: Resources/BallisticWeapons/Allies/FloorOwenSMG.png
+      174: Resources/BallisticWeapons/Allies/FloorAKM.png
+      175: Resources/BallisticWeapons/Allies/FloorSKS.png
+      176: Resources/BallisticWeapons/Allies/FloorPPS43.png
+      #      177: Resources/SoldiersAndArmors/FloorMG3.png
+      178: Resources/SoldiersAndArmors/RiotArmor/FloorAngryWife.png
+      #      179: Resources/SoldiersAndArmors/FloorRiotShield.png
+      180: Resources/BallisticWeapons/CustomWeapons/FloorMAT49.png
+      181: Resources/BallisticWeapons/CustomWeapons/FloorSawedOffM79Thumper.png
+      182: Resources/BallisticWeapons/CustomWeapons/FloorSawedOffShotgun.png
+      183: Resources/BallisticWeapons/CustomWeapons/FloorXM117Scoped.png
+      184: Resources/BallisticWeapons/CustomWeapons/FloorXM117Shotgun.png
+      185: Resources/BallisticWeapons/CustomWeapons/FloorXM117M203.png
+      186: Resources/BallisticWeapons/CustomWeapons/FloorFNFSC.png
+      187: Resources/BallisticWeapons/CustomWeapons/FloorFNFSCScoped.png
+      188: Resources/BallisticWeapons/CustomWeapons/FloorFNFSCBayoneted.png
+      189: Resources/BallisticWeapons/Allies/FloorCombatKnife.png
+      190: Resources/BallisticWeapons/CustomWeapons/FloorColtScopeAccessory.png
+      191: Resources/BallisticWeapons/CustomWeapons/FloorM203Accessory.png
+      192: Resources/BallisticWeapons/Medical&Food/FloorCannedFood.png
+      193: Resources/BallisticWeapons/Medical&Food/FloorCigarettes.png
+      194: Resources/BallisticWeapons/Medical&Food/FloorFlask.png
+      195: Resources/BallisticWeapons/Medical&Food/FloorMedicalBag.png
+      196: Resources/BallisticWeapons/Medical&Food/FloorFieldDressing.png
+      197: Resources/BallisticWeapons/Medical&Food/FloorMedicalPouch.png
+      200: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+      201: Resources/BallisticWeapons/Explosives/FloorFlashbangGrenade.png
+      202: Resources/BallisticWeapons/Medical&Food/FloorDuctTape.png
+      203: Resources/BallisticWeapons/Medical&Food/FloorDuctGun.png
+      204: Resources/BallisticWeapons/Medical&Food/FloorBioFoam.png
+      210: Resources/BallisticWeapons/CustomWeapons/FloorWeaponToolKit.png
+      211: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Scoped.png
+      212: Resources/BallisticWeapons/CustomWeapons/FloorM16A1Shotgun.png
+      213: Resources/BallisticWeapons/CustomWeapons/Floor50CalMagnum.png
+      214: Resources/BallisticWeapons/CustomWeapons/Floor50CalMagnumClip.png
+      224: Resources/BallisticWeapons/CustomWeapons/FloorEnforcer.png
+      248: Resources/BallisticWeapons/USA/FloorCarbine.png
+      ##### Human Corpse
+      40: Resources/SoldiersAndArmors/PersonalArmor/Floor_PA.png
+      ##### Civilian Corpse
+      400: Resources/Units/FLOOROBS/FloorAmericanSoldierCorpse.PNG
+      401: Resources/Units/FLOOROBS/FloorEuropeanSoldierCorpse.PNG
+      402: Resources/Units/FLOOROBS/FloorSovietSoldierCorpse.PNG
+      414: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_0_CORPSE.PNG
+      415: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_1_CORPSE.PNG
+      416: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_2_CORPSE.PNG
+      417: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_3_CORPSE.PNG
+      418: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_0_4_CORPSE.PNG
+      419: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_0_CORPSE.PNG
+      420: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_1_CORPSE.PNG
+      421: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_2_CORPSE.PNG
+      423: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_0_0_CORPSE.PNG
+      424: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_0_1_CORPSE.PNG
+      427: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_1_1_CORPSE.PNG
+      428: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN2_CORPSE.GIF
+      429: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN3_CORPSE.GIF
+      430: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN4_CORPSE.GIF
+      431: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN5_CORPSE.GIF
+      432: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN6_CORPSE.PNG
+      433: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN7_CORPSE.PNG
+      434: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN8_CORPSE.GIF
+      435: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN9_CORPSE.GIF
+      436: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN2_CORPSE.GIF
+      437: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN3_CORPSE.GIF
+      438: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN4_CORPSE.PNG
+      439: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN5_CORPSE.GIF
+      440: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN6_CORPSE.GIF
+      441: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_3_CORPSE.PNG
+      442: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_4_CORPSE.PNG
+      443: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_5_CORPSE.PNG
+      444: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_1_0_CORPSE.PNG
+      445: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_1_2_CORPSE.PNG
+      447: Resources/Units/FLOOROBS/FLOOROB_HERO_CIVILIAN0_CORPSE.PNG
+      448: Resources/Units/FLOOROBS/FLOOROB_HERO_CIVILIAN1_CORPSE.PNG
+      449: Resources/Units/FLOOROBS/FLOOROB_HERO_CIVILIAN2_CORPSE.PNG
+      450: Resources/Units/FLOOROBS/FLOOROB_HERO_CIVILIAN3_CORPSE.PNG
+      451: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_0_4_CORPSE.PNG
+      452: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_1_5_CORPSE.GIF
+      453: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_0_CORPSE.PNG
+      454: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_1_CORPSE.PNG
+      455: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_2_CORPSE.PNG
+      456: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_3_CORPSE.PNG
+      457: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_3_0_CORPSE.GIF
+      458: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_3_1_CORPSE.GIF
+      459: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_3_2_CORPSE.GIF
+      460: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_3_3_CORPSE.GIF
+      461: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_3_4_CORPSE.GIF
+      462: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_3_5_CORPSE.GIF
+      463: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_4_0_CORPSE.GIF
+      464: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_4_1_CORPSE.GIF
+      465: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_4_2_CORPSE.GIF
+      466: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_4_3_CORPSE.GIF
+      467: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_4_4_CORPSE.GIF
+      468: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_6_CORPSE.PNG
+      469: Resources/Units/FLOOROBS/FLOOROB_HUMAN_JUMPSUIT_2_7_CORPSE.PNG
+      470: Resources/Units/FLOOROBS/FLOOROB_POLICE_MALE_CIVILIAN_CORPSE.GIF
+      471: Resources/Units/FLOOROBS/FLOOROB_POLICE_FEMALE_CIVILIAN_CORPSE.GIF
+      472: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_4_CORPSE.PNG
+      473: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_5_CORPSE.PNG
+      474: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_6_CORPSE.PNG
+      475: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_7_CORPSE.PNG
+      476: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SOLDIER_2_8_CORPSE.PNG
+      479: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_RED_CORPSE.PNG
+      480: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_GREEN_CORPSE.PNG
+      481: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_PINK_CORPSE.PNG
+      482: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_PURPLE_CORPSE.PNG
+      483: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_BLUE_CORPSE.PNG
+      484: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_GREY_CORPSE.PNG
+      485: Resources/Units/FLOOROBS/FLOOROB_HUMAN_SUIT_BLACK_CORPSE.PNG
+      486: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN7_CORPSE.GIF
+      487: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN8_CORPSE.GIF
+      488: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN9_CORPSE.GIF
+      489: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN10_CORPSE.GIF
+      490: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN11_CORPSE.GIF
+      491: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN12_CORPSE.GIF
+      492: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN13_CORPSE.GIF
+      493: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN14_CORPSE.PNG
+      494: Resources/Units/FLOOROBS/FLOOROB_FEMALE_CIVILIAN15_CORPSE.PNG
+      495: Resources/Units/FLOOROBS/FLOOROB_MALE_CIVILIAN10_CORPSE.GIF
+      496: Resources/Units/FLOOROBS/FLOOROB_MALE_FARMER_CORPSE.PNG
+      497: Resources/Units/FLOOROBS/FLOOROB_FEMALE_FARMER_CORPSE.PNG
+      500: Resources/SoldiersAndArmors/CombatUniform/COMBAT_UNIFORM_CORPSE_FLOOROB.png
+      501: Resources/SoldiersAndArmors/PilotArmor/PILOT_CORPSE_FLOOROB.png
+      502: Resources/SoldiersAndArmors/CombatArmor/COMBAT_ARMOR_CORPSE_FLOOROB.png
+      503: Resources/SoldiersAndArmors/SpecialForces/SPECIAL_FORCES_CORPSE_FLOOROB.png
+      504: Resources/SoldiersAndArmors/Mercenary/MERCENARY_CORPSE_FLOOROB.png
+      510: Resources/SoldiersAndArmors/DeltaArmor/DELTA_ARMOR_CORPSE_FLOOROB.png
+      511: Resources/SoldiersAndArmors/RiotArmor/RIOT_ARMOR_CORPSE_FLOOROB.png
+      512: Resources/SoldiersAndArmors/AstronautA7LArmor/A7L_SPACESUIT_CORPSE_FLOOROB.png
+      513: Resources/SoldiersAndArmors/AstronautKrechet94Armor/KRECHET94_SPACESUIT_CORPSE_FLOOROB.png
+      515: Resources/SoldiersAndArmors/AstronautA7MMUArmor/A7MMU_SPACESUIT_CORPSE_FLOOROB.png
+      516: Resources/SoldiersAndArmors/AstronautKrechetMMUArmor/KRECHETMMU_SPACESUIT_CORPSE_FLOOROB.png
+      517: Resources/SoldiersAndArmors/MarauderArmor/MARAUDER_CORPSE_FLOOROB.png
+      518: Resources/SoldiersAndArmors/PathfinderArmor/PATHFINDER_CORPSE_FLOOROB.png
+      904: Resources/SoldiersAndArmors/ScoutArmor/FloorCorpse2.png
+      2906: Resources/SoldiersAndArmors/HeavyPersonalArmor/Floor_HPA.png
+      ##### Human Corpse Ends
+      ##### Ballistic Weapons Explosives
+      888: Resources/BallisticWeapons/Explosives/FloorFlare.png
+      896: Resources/BallisticWeapons/Explosives/FloorFlarelit.png
+      #####Airstrike Items Here
+      956: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+      964: Resources/BallisticWeapons/Explosives/FloorSignalGrenade.png
+      972: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+      980: Resources/BallisticWeapons/Explosives/FloorSignalGrenadeYellow.png
+      988: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
+      996: Resources/BallisticWeapons/Explosives/FloorSignalGrenadeBlue.png
+      # Alien Plasma Weapons
+      1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
+      1001: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle_Clip.gif
+      1002: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer.gif
+      1003: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer_Clip.gif
+      1004: Resources/AlienArmouryExpanded/floorob_Plasmacaster.gif
+      1005: Resources/AlienArmouryExpanded/floorob_Plasmacaster_Clip.gif
+      1006: Resources/AlienArmouryExpanded/floorob_Toxigun.gif
+      1007: Resources/AlienArmouryExpanded/floorob_Toxigun_flask.gif
+      1008: Resources/AlienArmouryExpanded/floorobj_SL_EleriumBomb.gif
+      1009: Resources/AlienArmouryExpanded/floorob_Plasmacaster1.gif
+      1010: Resources/AlienArmouryExpanded/floorob_Plasmasniperrifle1.gif
+      1011: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer1.gif
+      1032: Resources/BallisticWeapons/UN/FloorStoner63Rifle.png
+      1040: Resources/BallisticWeapons/UN/FloorStoner63Carbine.png
+      1048: Resources/BallisticWeapons/UN/FloorStoner63AutomaticRifle.png
+      1056: Resources/BallisticWeapons/UN/FloorStoner63Commando.png
+      1064: Resources/BallisticWeapons/UN/FloorStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/FloorM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/FloorM202FlashAmmo.png
+      1088: Resources/BallisticWeapons/Medical&Food/FloorBread.png
+      1096: Resources/BallisticWeapons/Civilian/Floorob_Shovel.png
+      ##### All Faction Space Weapons
+      1120: Resources/SpaceWeapons/FloorGyrojetPistol.png
+      1128: Resources/SpaceWeapons/FloorGyrojetCarbine.png
+      1136: Resources/SpaceWeapons/FloorGyrojetAmmo.png
+      1144: Resources/SpaceWeapons/FloorSpaceKnife.png
+      1152: Resources/SpaceWeapons/FloorGeneratorStick.png
+      ##### Fusion Guns from Aliens
+      1100: Resources/FusionWeapons/FloorFusionHandgun.png
+      1101: Resources/FusionWeapons/FloorFusionSMG.png
+      1102: Resources/FusionWeapons/FloorLightFusionCell.png
+      1103: Resources/FusionWeapons/FloorFusionRifle.png
+      1104: Resources/FusionWeapons/FloorFusionSniper.png
+      1105: Resources/FusionWeapons/FloorHeavyFusionCell.png
+      1106: Resources/FusionWeapons/FloorFusionSplitter.png
+      1107: Resources/FusionWeapons/FloorHugeFusionCell.png
+      1108: Resources/FusionWeapons/FloorFusionLance.png
+      1109: Resources/FusionWeapons/FloorEtherealNobleSword.png
+      1110: Resources/FusionWeapons/FloorThermonuclearProjectileLauncher.png
+      1111: Resources/FusionWeapons/FloorThermonuclearProjectileLauncherMagazine.png
+      1112: Resources/FusionWeapons/FloorHumanFusionRifle.png
+      ##### Hyper Decoder Stuff
+      1115: Resources/FourthState/HWE/HyperWaveEncoderf.gif
+
+      ##### UN Main Alloy and Tungsten Carbide WEapons here
+      1202: Resources/AlloyWeapons/Floorob_G_Auto_Shotgun.png
+      1203: Resources/AlloyWeapons/Floorob_G_Carbine.png
+      1204: Resources/AlloyWeapons/Floorob_G_Grenade.png
+      1205: Resources/AlloyWeapons/Floorob_G_Grenade_launcher.png
+      1206: Resources/AlloyWeapons/Floorob_G_Heavy.png
+      1207: Resources/AlloyWeapons/Floorob_G_Heavy_Clip.png
+      1208: Resources/AlloyWeapons/Floorob_G_Pistol.png
+      1209: Resources/AlloyWeapons/Floorob_G_Pistol_Clip.png
+      1210: Resources/AlloyWeapons/Floorob_G_Rifle.png
+      1211: Resources/AlloyWeapons/Floorob_G_Rifle_Clip.png
+      1212: Resources/AlloyWeapons/Floorob_G_Shotgun.png
+      1213: Resources/AlloyWeapons/Floorob_G_Shotgun_Clip.png
+      1214: Resources/AlloyWeapons/Floorob_G_Sniper.png
+      ##### Plasma Weapons
+      1365: Resources/FourthState/PlasmaRifle/Alien/PlasmaRiflef.gif
+      1366: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRiflef.gif
+      1367: Resources/FourthState/PlasmaRifle/PlasmaRifleClipf.gif
+      1465: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMRf.gif
+      1466: Resources/FourthState/PlasmaDMR/PlasmaDMRClipf.gif
+      1565: Resources/FourthState/PlasmaSMG/Human/HumanPlasmaSMGf.gif
+      1566: Resources/FourthState/PlasmaSMG/PlasmaSMGClipf.gif
+      1665: Resources/FourthState/SniperPlasma/Human/HumanSniperPlasmaf.gif
+      1666: Resources/FourthState/SniperPlasma/SniperPlasmaClipf.gif
+      1765: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnumf.gif
+      1766: Resources/FourthState/PlasmaMagnum/PlasmaMagnumClipf.gif
+      1865: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasmaf.gif
+      1866: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasmaf.gif
+      1867: Resources/FourthState/HeavyPlasma/HeavyPlasmaClipf.gif
+      1868: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGf.gif
+      1869: Resources/FourthState/PlasmaLMG/PlasmaLMGClipf.gif
+      1902: Resources/SoldiersAndArmors/ScoutArmor/FloorCorpse.png ### Human Corpse
+      1965: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolf.gif
+      1966: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolf.gif
+      1967: Resources/FourthState/PlasmaPistol/PlasmaPistolClipf.gif
+      ##### Laser WEapon Set
+      1999: Resources/LaserWeapons/UN/FloorPeacemaker.png
+###################
+      2000: Resources/LaserWeapons/USA/FloorM1972LaserPistol.png
+      2001: Resources/LaserWeapons/USA/FloorLaserMagnum.png
+      2002: Resources/LaserWeapons/USA/FloorCALBR.png
+      2003: Resources/LaserWeapons/USA/FloorM20M203LaserCarbine.png
+      2004: Resources/LaserWeapons/USA/FloorM5SubmachineLaser.png
+      2005: Resources/LaserWeapons/USA/FloorUlyssesSniperRifle.png
+      2006: Resources/LaserWeapons/USA/FloorX44LaserShotgun.png
+      2007: Resources/LaserWeapons/USA/FloorM4LaserLMG.png
+      2008: Resources/LaserWeapons/USA/FloorEleriumFlamethrower.png
+######################
+      2009: Resources/LaserWeapons/NATO/FloorP71Handgun.png
+      2010: Resources/LaserWeapons/NATO/FloorFNFLABattleRifle.png
+      2011: Resources/LaserWeapons/NATO/FloorFNFLACarbine.png
+      2012: Resources/LaserWeapons/NATO/FloorL4AssaultLaser.png
+      2013: Resources/LaserWeapons/NATO/FloorMAT72SubmachineLaser.png
+      2014: Resources/LaserWeapons/NATO/FloorChurchillMarksmanLaserRifle.png
+      2015: Resources/LaserWeapons/NATO/FloorML73LaserMachineGun.png
+      2016: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifle.png
+#      2017: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleHEATMag.png
+#      2018: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleHEMag.png
+#      2019: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleSmokeMag.png
+#      2020: Resources/LaserWeapons/NATO/FloorAutomaticRecoilessRifleEleriumMag.png
+#####################
+      2021: Resources/LaserWeapons/USSR/FloorP72CompactLaser.png
+      2022: Resources/LaserWeapons/USSR/FloorALK72LaserRifle.png
+      2023: Resources/LaserWeapons/USSR/FloorKharitonovBattleRifle.png
+      2024: Resources/LaserWeapons/USSR/FloorALPSubmachineLaser.png
+      2025: Resources/LaserWeapons/USSR/FloorMirinovLaserSniper.png
+      2026: Resources/LaserWeapons/USSR/FloorANMachineLaser.png
+      2027: Resources/LaserWeapons/USSR/FloorAfinaAntiTankLaser.png
+      ##### Alien Corpse Here
+      ##### Alien Stuff Corpse
+      ##### UNT Specialized Weapon Section
+      2400: Resources/SpecializedWeapons/FloorGaussAmmo.png
+      2408: Resources/SpecializedWeapons/FloorGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/FloorGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/FloorGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/FloorTeslaRifle_ammo1.png
+      2440: Resources/SpecializedWeapons/FloorTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/FloorTeslaHeavy_ammo1.png
+      2456: Resources/SpecializedWeapons/FloorTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/FloorTeslaPistol_ammo1.png
+      2472: Resources/SpecializedWeapons/FloorTeslaPistolBattery.png
+      ##### Terrorists Corpse here
+      3050: Resources/TerroristFaction/TERRORIST_MALE_CORPSE_FLOOROB.png
+      3051: Resources/TerroristFaction/TERRORIST_FEMALE_CORPSE_FLOOROB.png
+      3052: Resources/TerroristFaction/TERRORIST_GASMASK_CORPSE_FLOOROB.png
+      3053: Resources/Thin Man/FLOOROBS/floorOb_ThinMan_corpse.png
+      ##### Civilian Corpse here
+      ##### Alien Corpse here
+      3005: Resources/RecycledAlienCollection/ReptoidRace/floorob_REPTOID_CORPSE.gif
+      3006: Resources/RecycledAlienCollection/ChtoniteRace/floorob_CHTONITE_CORPSE.gif
+      3007: Resources/RecycledAlienCollection/ChtoniteRace/floorob_TUNLUN_CORPSE.gif
+      3015: Resources/RecycledAlienCollection/CerebrealRace/floorob_CEREBREAL_CORPSE.gif
+      3009: Resources/RecycledAlienCollection/CerebrealRace/floorob_CEREBREAL_LARVA_CORPSE.gif
+      3010: Resources/RecycledAlienCollection/ReptoidRace/Salamandron_floorob_0.png
+      3011: Resources/RecycledAlienCollection/ReptoidRace/Salamandron_floorob_1.png
+      3012: Resources/RecycledAlienCollection/ReptoidRace/Salamandron_floorob_2.png
+      3013: Resources/RecycledAlienCollection/ReptoidRace/Salamandron_floorob_3.png
+      #3100: Resources/AlienFactions/Sectoids/SECTOID_COMMANDER_CORPSE_FLOOROB.png
+      #3101: Resources/AlienFactions/Sectoids/SECTOID_PSION_CORPSE_FLOOROB.png
+      3102: Resources/AlienFactions/ArmoredSectoids/ARMORED_SECTOID_CORPSE_FLOOROB.png
+      3103: Resources/AlienFactions/Floaters/FLOATER_SOLDIER_CORPSE_FLOOROB.png
+      3104: Resources/AlienFactions/Floaters/FLOATER_NAVIGATOR_CORPSE_FLOOROB.png
+      3105: Resources/AlienFactions/Floaters/FLOATER_MEDIC_CORPSE_FLOOROB.png
+      3106: Resources/AlienFactions/Floaters/FLOATER_ENGINEER_CORPSE_FLOOROB.png
+      3107: Resources/AlienFactions/Floaters/FLOATER_LEADER_CORPSE_FLOOROB.png
+      3108: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_SOLDIER_CORPSE_FLOOROB.png
+      3109: Resources/AlienFactions/ArmoredFloaters/ARMORED_FLOATER_LEADER_CORPSE_FLOOROB.png
+      #3110: Resources/AlienFactions/Snakepeople/SNAKE_CORPSE_FLOOROB.png
+      #3111: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_SOLDIER_CORPSE_FLOOROB.png
+      #3112: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_NAVIGATOR_CORPSE_FLOOROB.png
+      #3113: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_MEDIC_CORPSE_FLOOROB.png
+      #3114: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_ENGINEER_CORPSE_FLOOROB.png
+      #3115: Resources/AlienFactions/ArmoredSnakepeople/SNAKE_LEADER_CORPSE_FLOOROB.png
+      3116: Resources/AlienFactions/Mutons/MUTON_SOLDIER_CORPSE_FLOOROB.png
+      3117: Resources/AlienFactions/Mutons/MUTON_NAVIGATOR_CORPSE_FLOOROB.png
+      3118: Resources/AlienFactions/Mutons/MUTON_MEDIC_CORPSE_FLOOROB.png
+      3119: Resources/AlienFactions/Mutons/MUTON_ENGINEER_CORPSE_FLOOROB.png
+      3120: Resources/AlienFactions/Mutons/MUTON_LEADER_CORPSE_FLOOROB.png
+      3121: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_SOLDIER_CORPSE_FLOOROB.png
+      3122: Resources/AlienFactions/ArmoredMutons/ARMORED_MUTON_LEADER_CORPSE_FLOOROB.png
+      3123: Resources/AlienFactions/Striders/STRIDER_SOLDIER_CORPSE_FLOOROB.png
+      3124: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_1.png
+      3125: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_2.png
+      3126: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_3.png
+      3127: Resources/AlienFactions/Mechtoid/MECHTOID_CORPSE_4.png
+      3128: Resources/AlienFactions/Cybersphere/CYBERSHPERE_CORPSE_FLOOROB.png
+      3129: Resources/AlienFactions/Probe/PROBE_CORPSE_FLOOROB.png
+      3130: Resources/AlienFactions/Zombies/ZOMBIE_NORMAL_CORPSE_FLOOROB.png
+      3131: Resources/Turrets/PLASMA_TURRET_CORPSE.png
+      ##### Human Plasma Weapons
+      3200: Resources/PlasmaWeapons/UN/FloorUNPlasmaRifle_ammo1.png
+      3208: Resources/PlasmaWeapons/USA/FloorPlasmaBattleRifle_ammo1.png
+      3216: Resources/PlasmaWeapons/USA/FloorPlasmaRL_ammo1.png
+      3224: Resources/PlasmaWeapons/USA/FloorPlasmaShotgun_ammo1.png
+      3232: Resources/PlasmaWeapons/NATO/FloorPlasmaCarbine_ammo1.png
+      3240: Resources/PlasmaWeapons/NATO/FloorPlasmaPistol_ammo1.png
+      3248: Resources/PlasmaWeapons/NATO/FloorPlasmaSniper_ammo1.png
+      3256: Resources/PlasmaWeapons/USSR/FloorPlasmaAssaultRifle_ammo1.png
+      3264: Resources/PlasmaWeapons/USSR/FloorPlasmaLMG_ammo1.png
+      3272: Resources/PlasmaWeapons/USSR/FloorPlasmaSMG_ammo1.png
+      3280: Resources/PlasmaWeapons/Ammo/FloorPlasmaBattleRifleMag.png
+      3288: Resources/PlasmaWeapons/Ammo/FloorPlasmaRLHEATRocket.png
+      3296: Resources/PlasmaWeapons/Ammo/FloorPlasmaRLEleriumRocket.png
+      3304: Resources/PlasmaWeapons/Ammo/FloorPlasmaShotgunMag.png
+      3312: Resources/PlasmaWeapons/Ammo/FloorPlasmaCarbineMag.png
+      3320: Resources/PlasmaWeapons/Ammo/FloorPlasmaPistolMag.png
+      3328: Resources/PlasmaWeapons/Ammo/FloorPlasmaSniperMag.png
+      3336: Resources/PlasmaWeapons/Ammo/FloorPlasmaAssaultRifleMag.png
+      3344: Resources/PlasmaWeapons/Ammo/FloorPlasmaLMGMag.png
+      3352: Resources/PlasmaWeapons/Ammo/FloorPlasmaSMGMag.png
+      ##### Laser Weapons Here
+      3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Floor.png
+      3401: Resources/AlienLasers/Alien Laser Pistol/Mag_Floor.png
+      3402: Resources/AlienLasers/Alien Laser Rifle/Gun_Floor.png
+      3403: Resources/AlienLasers/Alien Laser Rifle/Mag_Floor.png
+      3404: Resources/AlienLasers/Alien Heavy Laser/Gun_Floor.png
+      3405: Resources/AlienLasers/Alien Heavy Laser/Mag_Floor.png
+##### 8 Direction Sprite Only up to 256 x 40
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      ##### All Faction Ballistics Weapons
+      100: Resources/BallisticWeapons/CustomWeapons/HandM16A1Scoped.png
+      108: Resources/BallisticWeapons/CustomWeapons/HandM16A1Shotgun.png
+      116: Resources/BallisticWeapons/Ammo/Hand9mmPistolAmmo_x30.png
+      124: Resources/BallisticWeapons/Ammo/Hand45PistolAmmo_x7.png
+      132: Resources/BallisticWeapons/Ammo/Hand45PistolAmmo_x30.png
+      140: Resources/BallisticWeapons/Ammo/Hand556NATORifleAmmo_x20.png
+      148: Resources/BallisticWeapons/Ammo/Hand556NATORifleAmmo_x30.png
+      156: Resources/BallisticWeapons/Ammo/Hand762NATORifleAmmo_x5.png
+      164: Resources/BallisticWeapons/Ammo/Hand762NATORifleAmmo_x20.png
+      172: Resources/BallisticWeapons/Ammo/Hand762NATORifleAmmo_x30.png
+      180: Resources/BallisticWeapons/Ammo/Hand762NATOLMGAmmo_x50.png
+      188: Resources/BallisticWeapons/Ammo/Hand762NATOLMGAmmo_x100.png
+      196: Resources/BallisticWeapons/Ammo/Hand762SovietRifleAmmo_x10.png
+      204: Resources/BallisticWeapons/Ammo/Hand762SovietRifleAmmo_x30.png
+      212: Resources/BallisticWeapons/Ammo/Hand762SovietRifleAmmo_x40.png
+      220: Resources/BallisticWeapons/Ammo/Hand762SovietRifleAmmo_x75.png
+      228: Resources/BallisticWeapons/Ammo/Hand762SovietSniperAmmo_x10.png
+      236: Resources/BallisticWeapons/Ammo/Hand12GaugeBuckshotAmmo_x2.png
+      244: Resources/BallisticWeapons/Ammo/Hand12GaugeSlugAmmo_x2.png
+      252: Resources/BallisticWeapons/Ammo/Hand12GaugeBuckshotAmmo_x8.png
+      260: Resources/BallisticWeapons/Ammo/Hand12GaugeNonLethalAmmo_x8.png
+      268: Resources/BallisticWeapons/Ammo/Hand12GaugeIncendiaryAmmo_x8.png
+      276: Resources/BallisticWeapons/Ammo/Hand12GaugeEleriumShardsAmmo_x8.png
+      284: Resources/BallisticWeapons/Ammo/Hand40mmFragAmmo.png
+      292: Resources/BallisticWeapons/Ammo/Hand40mmIncendiaryAmmo.png
+      300: Resources/BallisticWeapons/Ammo/Hand40mmSmokeAmmo.png
+      308: Resources/BallisticWeapons/Ammo/Hand40mmNonLethalAmmo.png
+      316: Resources/BallisticWeapons/Ammo/Hand38RevolverAmmo_x6.png
+      324: Resources/BallisticWeapons/Ammo/Hand22LongRifleAmmo_x14.png
+      332: Resources/BallisticWeapons/Ammo/HandFALShotgunShells.png
+      340: Resources/BallisticWeapons/Ammo/HandCarlGustafM2HERound.png
+      348: Resources/BallisticWeapons/Ammo/HandCarlGustafM2HEATRound.png
+      356: Resources/BallisticWeapons/Ammo/HandCarlGustafM2EleriumRound.png
+      364: Resources/BallisticWeapons/Ammo/HandRPGHERocket.png
+      372: Resources/BallisticWeapons/Ammo/HandRPGINCRocket.png
+      380: Resources/BallisticWeapons/Ammo/HandRPGEWHRocket.png
+      388: Resources/BallisticWeapons/USA/HandM1911Colt45.png
+      396: Resources/BallisticWeapons/USA/HandM16M203.png
+      404: Resources/BallisticWeapons/USA/HandXM117.png
+      412: Resources/BallisticWeapons/USA/HandM3Greasegun.png
+      420: Resources/BallisticWeapons/USA/HandXM21.png
+      428: Resources/BallisticWeapons/USA/HandRemingtonCombatShotgun.png
+      436: Resources/BallisticWeapons/USA/HandM79ThumperGL.png
+      444: Resources/BallisticWeapons/USA/HandM72LAW.png
+      452: Resources/BallisticWeapons/USA/HandM60.png
+      460: Resources/BallisticWeapons/USA/HandAR5.png
+      468: Resources/BallisticWeapons/NATO/HandBrowningHP.png
+      476: Resources/BallisticWeapons/NATO/HandFALShotgun.png
+      484: Resources/BallisticWeapons/NATO/HandSG510Carbine.png
+      492: Resources/BallisticWeapons/NATO/HandMP5.png
+      500: Resources/BallisticWeapons/NATO/HandPSG1.png
+      508: Resources/BallisticWeapons/NATO/HandFNMAG.png
+      516: Resources/BallisticWeapons/NATO/HandCarlGustafM2.png
+      524: Resources/BallisticWeapons/USSR/HandStechkinAPS.png
+      532: Resources/BallisticWeapons/USSR/HandAKMBayoneted.png
+      540: Resources/BallisticWeapons/USSR/HandAKMSU.png
+      548: Resources/BallisticWeapons/USSR/HandSkorpion.png
+      556: Resources/BallisticWeapons/USSR/HandDragunov.png
+      564: Resources/BallisticWeapons/USSR/HandKS23Shotgun.png
+      572: Resources/BallisticWeapons/USSR/HandRPG.png
+      580: Resources/BallisticWeapons/USSR/HandRPKS.png
+      588: Resources/BallisticWeapons/Civilian/HandMakarov.png
+      596: Resources/BallisticWeapons/Civilian/HandSnubnosePistol.png
+      604: Resources/BallisticWeapons/Civilian/HandHuntingRifle.png
+      612: Resources/BallisticWeapons/Civilian/HandModel1900.png
+      620: Resources/BallisticWeapons/Civilian/HandMachete.png
+      628: Resources/BallisticWeapons/Civilian/HandPoliceRevolver.png
+      636: Resources/BallisticWeapons/Civilian/HandBerettaM12.png
+      644: Resources/BallisticWeapons/Civilian/HandPoliceShotgun.png
+      652: Resources/BallisticWeapons/Civilian/HandPoliceTonfa.png
+      660: Resources/BallisticWeapons/Allies/HandM16A1.png
+      668: Resources/BallisticWeapons/Allies/HandFNFAL.png
+      676: Resources/BallisticWeapons/Allies/HandBren.png
+      684: Resources/BallisticWeapons/Allies/HandOwenSMG.png
+      692: Resources/BallisticWeapons/Allies/HandAKM.png
+      700: Resources/BallisticWeapons/Allies/HandSKS.png
+      708: Resources/BallisticWeapons/Allies/HandPPS43.png
+      716: Resources/SoldiersAndArmors/DeltaArmor/HandMG3.png
+      724: Resources/SoldiersAndArmors/RiotArmor/HandAngryWife.png
+      732: Resources/SoldiersAndArmors/RiotArmor/HandRiotShield.png
+      740: Resources/BallisticWeapons/CustomWeapons/HandMAT49.png
+      748: Resources/BallisticWeapons/CustomWeapons/HandSawedOffM79Thumper.png
+      756: Resources/BallisticWeapons/CustomWeapons/HandSawedOffShotgun.png
+      764: Resources/BallisticWeapons/CustomWeapons/HandXM117Scoped.png
+      772: Resources/BallisticWeapons/CustomWeapons/HandXM117Shotgun.png
+      780: Resources/BallisticWeapons/CustomWeapons/HandXM117M203.png
+      788: Resources/BallisticWeapons/CustomWeapons/HandFNFSC.png
+      796: Resources/BallisticWeapons/CustomWeapons/HandFNFSCScoped.png
+      804: Resources/BallisticWeapons/CustomWeapons/HandFNFSCBayoneted.png
+      812: Resources/BallisticWeapons/Allies/HandCombatKnife.png
+      820: Resources/BallisticWeapons/Medical&Food/HandCannedFood.png
+      828: Resources/BallisticWeapons/Medical&Food/HandCigarettes.png
+      836: Resources/BallisticWeapons/Medical&Food/HandFlask.png
+      844: Resources/BallisticWeapons/Medical&Food/HandMedicalBag.png
+      852: Resources/BallisticWeapons/Medical&Food/HandFieldDressing.png
+      880: Resources/BallisticWeapons/Medical&Food/HandMedicalPouch.png
+      888: Resources/BallisticWeapons/Explosives/HandFlare.png
+      896: Resources/BallisticWeapons/Explosives/HandFlare.png
+      904: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+      912: Resources/BallisticWeapons/Explosives/HandFlashbangGrenade.png
+      920: Resources/BallisticWeapons/CustomWeapons/HandEnforcer.png
+      928: Resources/BallisticWeapons/CustomWeapons/Hand50CalMagnum.png
+      948: Resources/BallisticWeapons/USA/HandCarbine.png
+      ##### Smoke Hand Grenade
+      956: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+      964: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+      972: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+      980: Resources/BallisticWeapons/Explosives/HandSmokeGrenade.png
+      ##### Ends
+      988: Resources/BallisticWeapons/Medical&Food/BigDuctTape.png
+      996: Resources/BallisticWeapons/Medical&Food/BigDuctGun.png
+      1004: Resources/BallisticWeapons/Medical&Food/BigBioFoam.png
+      1032: Resources/BallisticWeapons/UN/HandStoner63Rifle.png
+      1040: Resources/BallisticWeapons/UN/HandStoner63Carbine.png
+      1048: Resources/BallisticWeapons/UN/HandStoner63AutomaticRifle.png
+      1056: Resources/BallisticWeapons/UN/HandStoner63Commando.png
+      1064: Resources/BallisticWeapons/UN/HandStoner63Sniper.png
+      1072: Resources/BallisticWeapons/USA/HandM202Flash.png
+      1080: Resources/BallisticWeapons/Ammo/HandM202FlashAmmo.png
+      1096: Resources/BallisticWeapons/Civilian/Handob_Shovel.png
+
+      1104: Resources/BallisticWeapons/Civilian/HandLuger.png
+      1112: Resources/BallisticWeapons/Civilian/HandUzi.png
+      1160: Resources/BallisticWeapons/Civilian/HandG3.png
+      ##### All Faction Space Weapons
+      1120: Resources/SpaceWeapons/HandGyrojetPistol.png
+      1128: Resources/SpaceWeapons/HandGyrojetCarbine.png
+      #1136: Resources/SpaceWeapons/HandBigGyrojetAmmo.png
+      1144: Resources/SpaceWeapons/HandSpaceKnife.png
+      1152: Resources/SpaceWeapons/HandGeneratorStick.png
+      ##### Alien Weapons here
+      1370: Resources/FourthState/PlasmaRifle/Alien/PlasmaRifleh.gif
+      1378: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRifleh.gif
+      1386: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMRh.gif
+      1394: Resources/FourthState/PlasmaSMG/Human/HumanPlasmaSMGh.gif
+      1670: Resources/FourthState/SniperPlasma/Human/HumanSniperPlasmah.gif
+      1410: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnumh.gif
+      1418: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasmah.gif
+      1426: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasmah.gif
+      1434: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGh.gif
+      1442: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolh.gif
+      1450: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolh.gif
+      1458: Resources/AlienArmouryExpanded/handob_Aliensniperrifle.gif
+      1466: Resources/AlienArmouryExpanded/handob_Plasmadestroyer.gif
+      1474: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
+      1482: Resources/AlienArmouryExpanded/handob_Toxigun.gif
+      ##### Laser Weapons Section
+      1992: Resources/LaserWeapons/UN/HandPeacemaker.png
+      2000: Resources/LaserWeapons/USA/HandM1972LaserPistol.png
+      2008: Resources/LaserWeapons/USA/HandLaserMagnum.png
+      2016: Resources/LaserWeapons/USA/HandCALBR.png
+      2024: Resources/LaserWeapons/USA/HandM20M203LaserCarbine.png
+      2032: Resources/LaserWeapons/USA/HandM5SubmachineLaser.png
+      2040: Resources/LaserWeapons/USA/HandUlyssesSniperRifle.png
+      2048: Resources/LaserWeapons/USA/HandX44LaserShotgun.png
+      2056: Resources/LaserWeapons/USA/HandM4LaserLMG.png
+      2064: Resources/LaserWeapons/USA/HandEleriumFlamethrower.png
+######################
+      2072: Resources/LaserWeapons/NATO/HandP71Handgun.png
+      2080: Resources/LaserWeapons/NATO/HandFNFLABattleRifle.png
+      2088: Resources/LaserWeapons/NATO/HandFNFLACarbine.png
+      2096: Resources/LaserWeapons/NATO/HandL4AssaultLaser.png
+      2104: Resources/LaserWeapons/NATO/HandMAT72SubmachineLaser.png
+      2112: Resources/LaserWeapons/NATO/HandChurchillMarksmanLaserRifle.png
+      2120: Resources/LaserWeapons/NATO/HandML73LaserMachineGun.png
+      2184: Resources/LaserWeapons/NATO/HandAutomaticRecoilessRifle.png
+#####################
+      2128: Resources/LaserWeapons/USSR/HandP72CompactLaser.png
+      2136: Resources/LaserWeapons/USSR/HandALK72LaserRifle.png
+      2144: Resources/LaserWeapons/USSR/HandKharitonovBattleRifle.png
+      2152: Resources/LaserWeapons/USSR/HandALPSubmachineLaser.png
+      2160: Resources/LaserWeapons/USSR/HandMirinovLaserSniper.png
+      2168: Resources/LaserWeapons/USSR/HandANMachineLaser.png
+      2176: Resources/LaserWeapons/USSR/HandAfinaAntiTankLaser.png
+      # Specialized Weapons for the UNT Path Only
+      #####
+      #2400: Resources/SpecializedWeapons/HandGaussAmmo.png
+      2408: Resources/SpecializedWeapons/HandGaussCarbine_ammo1.png
+      2416: Resources/SpecializedWeapons/HandGaussRifle_ammo1.png
+      2424: Resources/SpecializedWeapons/HandGaussHeavy_ammo1.png
+      2432: Resources/SpecializedWeapons/HandTeslaRifle_ammo1.png
+      #2440: Resources/SpecializedWeapons/HandTeslaRifleBattery.png
+      2448: Resources/SpecializedWeapons/HandTeslaHeavy_ammo1.png
+      #2456: Resources/SpecializedWeapons/HandTeslaHeavyBattery.png
+      2464: Resources/SpecializedWeapons/HandTeslaPistol_ammo1.png
+      #2472: Resources/SpecializedWeapons/HandTeslaPistolBattery.png
+      #### Alien Fusion Weapons here
+      2500: Resources/FusionWeapons/HandFusionHandgun.png
+      2508: Resources/FusionWeapons/HandFusionSMG.png
+      2516: Resources/FusionWeapons/HandFusionRifle.png
+      2524: Resources/FusionWeapons/HandFusionSniper.png
+      2532: Resources/FusionWeapons/HandFusionSplitter.png
+      2540: Resources/FusionWeapons/HandFusionLance.png
+      2548: Resources/FusionWeapons/HandEtherealNobleSword.png
+      2556: Resources/FusionWeapons/HandThermonuclearProjectileLauncher.png
+      2564: Resources/FusionWeapons/HandHumanFusionRifle.png
+      ##### UN Main Alloy and Tungsten Carbide WEapons here
+      2900: Resources/AlloyWeapons/Handob_G_Auto_Shotgun.png
+      2908: Resources/AlloyWeapons/Handob_G_Carbine.png
+      2916: Resources/AlloyWeapons/Handob_G_Grenade.png
+      2924: Resources/AlloyWeapons/Handob_G_Grenade_launcher.png
+      2932: Resources/AlloyWeapons/Handob_G_Heavy.png
+      2940: Resources/AlloyWeapons/Handob_G_Pistol.png
+      2948: Resources/AlloyWeapons/Handob_G_Rifle.png
+      2956: Resources/AlloyWeapons/Handob_G_Shotgun.png
+      2964: Resources/AlloyWeapons/Handob_G_Sniper.png
+      ##### Alien Stuff and extra stuff
+
+
+      ##### Human Plasma Weapons Here
+      3200: Resources/PlasmaWeapons/UN/HandUNPlasmaRifle_ammo1.png
+      3208: Resources/PlasmaWeapons/USA/HandPlasmaBattleRifle_ammo1.png
+      3216: Resources/PlasmaWeapons/USA/HandPlasmaRL_ammo1.png
+      3224: Resources/PlasmaWeapons/USA/HandPlasmaShotgun_ammo1.png
+      3232: Resources/PlasmaWeapons/NATO/HandPlasmaCarbine_ammo1.png
+      3240: Resources/PlasmaWeapons/NATO/HandPlasmaPistol_ammo1.png
+      3248: Resources/PlasmaWeapons/NATO/HandPlasmaSniper_ammo1.png
+      3256: Resources/PlasmaWeapons/USSR/HandPlasmaAssaultRifle_ammo1.png
+      3264: Resources/PlasmaWeapons/USSR/HandPlasmaLMG_ammo1.png
+      3272: Resources/PlasmaWeapons/USSR/HandPlasmaSMG_ammo1.png
+      3280: Resources/PlasmaWeapons/Ammo/HandPlasmaBattleRifleMag.png
+      3288: Resources/PlasmaWeapons/Ammo/HandPlasmaRLHEATRocket.png
+      3296: Resources/PlasmaWeapons/Ammo/HandPlasmaRLEleriumRocket.png
+      3304: Resources/PlasmaWeapons/Ammo/HandPlasmaShotgunMag.png
+      3312: Resources/PlasmaWeapons/Ammo/HandPlasmaCarbineMag.png
+      3320: Resources/PlasmaWeapons/Ammo/HandPlasmaPistolMag.png
+      3328: Resources/PlasmaWeapons/Ammo/HandPlasmaSniperMag.png
+      3336: Resources/PlasmaWeapons/Ammo/HandPlasmaAssaultRifleMag.png
+      3344: Resources/PlasmaWeapons/Ammo/HandPlasmaLMGMag.png
+      3352: Resources/PlasmaWeapons/Ammo/HandPlasmaSMGMag.png
+      ##### Laser Weapons here
+      3400: Resources/AlienLasers/Alien Laser Pistol/Gun_Hand.png
+      3408: Resources/AlienLasers/Alien Laser Rifle/Gun_Hand.png
+      3416: Resources/AlienLasers/Alien Heavy Laser/Gun_Hand.png
+      ########
+####### End Stuff

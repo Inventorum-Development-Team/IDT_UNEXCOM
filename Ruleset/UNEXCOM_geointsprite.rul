@@ -1,0 +1,287 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+####### Kiro; Reserved for Aircrafts and Air Weapons.
+#### Aircraft and All
+# INTICON.PCK is sprite+5
+# BASEBITS.PCK is sprite+48
+#{
+# "Crafts : The corresponding extrasprite file id for BASEBITS.PCK is sprite+33 INTICON.PCK contains a minimized icon id=sprite the file id for the dogfight image is sprite+11"
+# INTICON Minimized Id = Sprite ;
+# INTICON DogFight Id = Sprite+11 ;
+# BASEBITS Id = Sprite+33
+#########################################
+# Craft Weapons: file id for
+# INTICON.PCK is sprite+5
+# BASEBITS.PCK is sprite+48
+# Aircrafts
+extraSprites:
+  - type: BASEBITS.PCK
+    files:
+    ###### Unit / Rank Files
+      42: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_0_B.png
+      43: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_1_B.png
+      44: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_2_B.png
+      45: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_3_B.png
+      46: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_4_B.png
+      47: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_5_B.png
+      800: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_0_C.png
+      801: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_1_C.png
+      802: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_2_C.png
+      803: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_3_C.png
+      804: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_4_C.png
+      805: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_5_C.png
+      806: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank0_Lieutenant.png
+      807: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank1_Captain.png
+      808: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank2_Major.png
+      809: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank3_Lt_Colonel.png
+      810: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank4_Colonel.png
+      812: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_0_D.png
+      813: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_1_D.png
+      814: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_2_D.png
+      815: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_3_D.png
+      816: Resources/SoldiersAndArmors/RankSprites/Basebits/Rank_4_D.png
+    ###### Aircraft Section
+      431: Resources/Aircraft/Tunnan_base.png
+      432: Resources/Aircraft/Phantom_base.png
+      837: Resources/Aircraft/Thunderchief_base.png
+      855: Resources/Aircraft/Hercules_base.png
+      856: Resources/Aircraft/Huey_base.png
+      857: Resources/Aircraft/Linna_base.png
+      858: Resources/Aircraft/Lightning_F6_base.png
+      859: Resources/Aircraft/Starfighter_base.png
+      860: Resources/Aircraft/Draken_base.png
+      861: Resources/Aircraft/Mirage_base.png
+      862: Resources/Aircraft/Foxbat_base.png
+      863: Resources/Aircraft/Fishbed_base.png
+      864: Resources/Aircraft/Backfire_base.png
+      865: Resources/Aircraft/Rapier_base.png
+      899: Resources/Aircraft/Valkyrie_base.png
+      900: Resources/Aircraft/Hind_base.png
+      901: Resources/Aircraft/Atalaya_base.png
+#      902: Resources/Aircraft/Galaxy_base.png
+      903: Resources/Aircraft/Crusader_base.png
+      904: Resources/Aircraft/Saracen_base.png
+      938: Resources/Aircraft/Avenger_base.png
+      939: Resources/Aircraft/Cobra_base.png
+      940: Resources/Aircraft/TupolevTu45M_base.png
+      941: Resources/Aircraft/Firefox_base.png
+      942: Resources/Aircraft/Lampyridae_base.png
+      943: Resources/Aircraft/Sharknado_base.png
+      944: Resources/Aircraft/Bastion_base.png
+      945: Resources/Aircraft/Sabre_base.png
+      946: Resources/Aircraft/DynaSoar_base.png
+      947: Resources/Aircraft/Hermes_base.png
+      948: Resources/Aircraft/Spiral_base.png
+      963: Resources/Aircraft/Flanker_base.png
+      964: Resources/Aircraft/M50NuclearBomber_base.png
+      965: Resources/Aircraft/Viggen_base.png
+      966: Resources/Aircraft/Jaguar_base.png
+      968: Resources/Aircraft/Blackbird_base.png
+      978: Resources/Aircraft/Space_Shuttle_base.png
+      980: Resources/Aircraft/TunnanMK2_base.png
+#      152: Resources/Aircraft/Odysseus_base.png
+#      153: Resources/Aircraft/Orion_base.png
+#      154: Resources/Aircraft/Bastion_base.png
+#      238: Resources/Aircraft/Atalaya_base.png
+#      239: Resources/Aircraft/Bastion_base.png
+#      240: Resources/Aircraft/Avenger_base.png
+#      241: Resources/Aircraft/Raider_base.png
+      ## Kirostuff here
+      1034: Resources/Crafts/Cargotruck/unxconvoytruckabase.png
+      1035: Resources/Crafts/Cargotruck/unxconvoytruckbbase.png
+      1036: Resources/Crafts/Cargotruck/unxconvoytruckcbase.png
+      1037: Resources/Crafts/Cargotruck/unxconvoytruckdbase.png
+      1038: Resources/Crafts/Cargotruck/unxconvoytruckfbase.png
+      1039: Resources/Crafts/Cargotruck/unxconvoytruckgbase.png
+      1040: Resources/Crafts/Cargotruck/m113radart1base.png
+      1041: Resources/Crafts/Cargotruck/m113radart2base.png
+      1042: Resources/Crafts/CargoTruck/unexcomm12ravenbase.png
+      1054: Resources/Crafts/CargoTruck/unexcomf15smtdbase.png
+      1055: Resources/Crafts/CargoTruck/unexcomsu47tbase.png
+      1093: Resources/Crafts/CargoTruck/unexcomkingstonbase.png
+      1094: Resources/Crafts/CargoTruck/unexcomberserkerbase.png
+      1139: Resources/Crafts/CargoTruck/unwaspwjbase.png
+      1140: Resources/Crafts/CargoTruck/unstingmothbase.png
+#Craft weapons
+      248: Resources/AircraftWeapons/Sidewinder_basebits.png
+      249: Resources/AircraftWeapons/Sparrow_basebits.png
+      250: Resources/AircraftWeapons/Vulcan_basebits.png
+      251: Resources/AircraftWeapons/Red_Top_basebits.png
+      252: Resources/AircraftWeapons/Matra_basebits.png
+      253: Resources/AircraftWeapons/ADEN_basebits.png
+      254: Resources/AircraftWeapons/Atoll_basebits.png
+      255: Resources/AircraftWeapons/Acrid_basebits.png
+      256: Resources/AircraftWeapons/GSh-23_basebits.png
+      257: Resources/AircraftWeapons/Falcon_basebits.png
+      258: Resources/AircraftWeapons/MightyMouse_basebits.png
+      259: Resources/AircraftWeapons/Shortsword_basebits.png
+      260: Resources/AircraftWeapons/Hammer_basebits.png
+      261: Resources/AircraftWeapons/Athena_basebits.png
+      262: Resources/AircraftWeapons/Mauser_basebits.png
+      263: Resources/AircraftWeapons/Hydra_basebits.png
+      264: Resources/AircraftWeapons/Phoenix_basebits.png
+#      265: Resources/AircraftWeapons/Shortsword_basebits.png # Sprite 217
+#      266: Resources/AircraftWeapons/Hammer_basebits.png # 218
+      267: Resources/AircraftWeapons/Apollo_basebits.png # 219
+      268: Resources/AircraftWeapons/Kodiak_basebits.png # 220
+#      269: Resources/AircraftWeapons/Hydra_basebits.png # 221
+#      270: Resources/AircraftWeapons/Phoenix_basebits.png # 222
+      279: Resources/AircraftWeapons/Fuel_Tank_basebits.png
+      280: Resources/AircraftWeapons/Afterburner_basebits.png
+      281: Resources/AircraftWeapons/Targeting_Pod_basebits.png
+      282: Resources/AircraftWeapons/Alloy_Craft_Armor_basebits.png
+  - type: INTICON.PCK
+    files:
+      409: Resources/Aircraft/Tunnan_dogfight.png
+      410: Resources/Aircraft/Phantom_dogfight.png
+      815: Resources/Aircraft/Thunderchief_dogfight.png
+      833: Resources/Aircraft/Hercules_dogfight.png
+      834: Resources/Aircraft/Huey_dogfight.png
+      835: Resources/Aircraft/Linna_dogfight.png
+      836: Resources/Aircraft/Lightning_F6_dogfight.png
+      837: Resources/Aircraft/Starfighter_dogfight.png
+      838: Resources/Aircraft/Draken_dogfight.png
+      839: Resources/Aircraft/Mirage_dogfight.png
+      840: Resources/Aircraft/Foxbat_dogfight.png
+      841: Resources/Aircraft/Fishbed_dogfight.png
+      842: Resources/Aircraft/Backfire_dogfight.png
+      843: Resources/Aircraft/Rapier_dogfight.png
+      877: Resources/Aircraft/Valkyrie_dogfight.png
+      878: Resources/Aircraft/Hind_dogfight.png
+      879: Resources/Aircraft/Atalaya_dogfight.png
+#      880: Resources/Aircraft/Galaxy_dogfight.png
+      881: Resources/Aircraft/Crusader_dogfight.png
+      882: Resources/Aircraft/Saracen_dogfight.png
+      905: Resources/Aircraft/Avenger_minimised.png
+      906: Resources/Aircraft/Cobra_minimised.png
+      907: Resources/Aircraft/TupolevTu45M_minimised.png
+      908: Resources/Aircraft/Firefox_minimised.png
+      909: Resources/Aircraft/Lampyridae_minimised.png
+      910: Resources/Aircraft/Sharknado_minimised.png
+      911: Resources/Aircraft/Bastion_minimised.png
+      912: Resources/Aircraft/Sabre_minimised.png
+      913: Resources/Aircraft/DynaSoar_minimised.png
+      914: Resources/Aircraft/Hermes_minimised.png
+      915: Resources/Aircraft/Spiral_minimised.png
+      916: Resources/Aircraft/Avenger_dogfight.png
+      917: Resources/Aircraft/Cobra_dogfight.png
+      918: Resources/Aircraft/TupolevTu45M_dogfight.png
+      919: Resources/Aircraft/Firefox_dogfight.png
+      920: Resources/Aircraft/Lampyridae_dogfight.png
+      921: Resources/Aircraft/Sharknado_dogfight.png
+      922: Resources/Aircraft/Bastion_dogfight.png
+      923: Resources/Aircraft/Sabre_dogfight.png
+      924: Resources/Aircraft/DynaSoar_dogfight.png
+      925: Resources/Aircraft/Hermes_dogfight.png
+      926: Resources/Aircraft/Spiral_dogfight.png
+      930: Resources/Aircraft/Flanker_minimised.png
+      931: Resources/Aircraft/M50NuclearBomber_minimised.png
+      932: Resources/Aircraft/Viggen_minimised.png
+      933: Resources/Aircraft/Jaguar_minimised.png
+      935: Resources/Aircraft/Blackbird_minimised.png
+      941: Resources/Aircraft/Flanker_dogfight.png
+      942: Resources/Aircraft/M50NuclearBomber_dogfight.png
+      943: Resources/Aircraft/Viggen_dogfight.png
+      944: Resources/Aircraft/Jaguar_dogfight.png
+      946: Resources/Aircraft/Blackbird_dogfight.png
+      945: Resources/Aircraft/Space_Shuttle_minimised.png
+      956: Resources/Aircraft/Space_Shuttle_dogfight.png
+      947: Resources/Aircraft/Tunnan_minimised.png
+      958: Resources/Aircraft/Tunnan_dogfight.png
+#      203: Resources/Aircraft/Sabre_minimised.png
+#      206: Resources/Aircraft/Bastion_dogfight.png
+#      207: Resources/Aircraft/Avenger_dogfight.png
+#      208: Resources/Aircraft/Raider_dogfight.png
+###################################################
+      398: Resources/Aircraft/Tunnan_minimised.png
+      399: Resources/Aircraft/Phantom_minimised.png
+      804: Resources/Aircraft/Thunderchief_minimised.png
+      822: Resources/Aircraft/Hercules_minimised.png
+      823: Resources/Aircraft/Huey_minimised.png
+      824: Resources/Aircraft/Linna_minimised.png
+      825: Resources/Aircraft/Lightning_F6_minimised.png
+      826: Resources/Aircraft/Starfighter_minimised.png
+      827: Resources/Aircraft/Draken_minimised.png
+      828: Resources/Aircraft/Mirage_minimised.png
+      829: Resources/Aircraft/Foxbat_minimised.png
+      830: Resources/Aircraft/Fishbed_minimised.png
+      831: Resources/Aircraft/Backfire_minimised.png
+      832: Resources/Aircraft/Rapier_minimised.png
+      866: Resources/Aircraft/Valkyrie_minimised.png
+      867: Resources/Aircraft/Hind_minimised.png
+      868: Resources/Aircraft/Atalaya_minimised.png
+#      869: Resources/Aircraft/Galaxy_minimised.png
+#
+      870: Resources/Aircraft/Crusader_minimised.png
+      871: Resources/Aircraft/Saracen_minimised.png
+####### Kiros INTICON here.
+#### Start at 1000 Kiro Xei Marks the Spot, vehicles
+#### Mimimized + 0
+#### Dogfight + 11
+#### Basebit + 33
+#modders: the corresponding extrasprites file id for INTICON.PCK is sprite+5 and sprite+48 for BASEBITS.PCK
+#inticonpck + 5
+# basebit + 48
+# Craft Weapon sprite info
+####### Author: Cirius: Original author who made the sprites by using PCK and MCD and Mapview2. Additionally, Kiro fixed his tiles position to fit the accuracy.
+#######
+      1012: Resources/Crafts/CargoTruck/unxconvoytruckadogfight.png
+      1013: Resources/Crafts/CargoTruck/unxconvoytruckbdogfight.png
+      1014: Resources/Crafts/CargoTruck/unxconvoytruckcdogfight.png
+      1015: Resources/Crafts/CargoTruck/unxconvoytruckddogfight.png
+      1016: Resources/Crafts/CargoTruck/unxconvoytruckfdogfight.png
+      1017: Resources/Crafts/CargoTruck/unxconvoytruckgdogfight.png
+      1018: Resources/Crafts/CargoTruck/m113radart1dogfight.png
+      1019: Resources/Crafts/CargoTruck/m113radart2dogfight.png
+      1020: Resources/Crafts/CargoTruck/unexcomm12ravendogfight.png
+      1032: Resources/Crafts/CargoTruck/unexcomf15smtddogfight.png
+      1033: Resources/Crafts/CargoTruck/unexcomsu47tdogfight.png
+      1071: Resources/Crafts/CargoTruck/unexcomkingstondogfight.png
+      1072: Resources/Crafts/CargoTruck/unexcomberserkerdogfight.png
+      1001: Resources/Crafts/CargoTruck/unxconvoytruckamini.png
+      1002: Resources/Crafts/CargoTruck/unxconvoytruckbmini.png
+      1003: Resources/Crafts/CargoTruck/unxconvoytruckcmini.png
+      1004: Resources/Crafts/CargoTruck/unxconvoytruckdmini.png
+      1005: Resources/Crafts/CargoTruck/unxconvoytruckfmini.png
+      1006: Resources/Crafts/CargoTruck/unxconvoytruckgmini.png
+      1007: Resources/Crafts/CargoTruck/m113radart1mini.png
+      1008: Resources/Crafts/CargoTruck/m113radart2mini.png
+      1009: Resources/Crafts/CargoTruck/unexcomm12ravenmini.png
+      1021: Resources/Crafts/CargoTruck/unexcomf15smtdmini.png
+      1022: Resources/Crafts/CargoTruck/unexcomsu47tmini.png
+      1060: Resources/Crafts/CargoTruck/unexcomkingstonmini.png
+      1061: Resources/Crafts/CargoTruck/unexcomberserkermini.png
+      1105: Resources/Crafts/CargoTruck/unexcomberserkermini.png
+      1106: Resources/Crafts/CargoTruck/unwaspwjmini.png
+      1117: Resources/Crafts/CargoTruck/unwaspwjdogfight.png
+      1107: Resources/Crafts/CargoTruck/unstingmothmini.png
+      1118: Resources/Crafts/CargoTruck/unstingmothdogfight.png
+#
+      205: Resources/AircraftWeapons/Sidewinder_dogfight.png
+      206: Resources/AircraftWeapons/Sparrow_dogfight.png
+      207: Resources/AircraftWeapons/Vulcan_dogfight.png
+      208: Resources/AircraftWeapons/Red_Top_dogfight.png
+      209: Resources/AircraftWeapons/Matra_dogfight.png
+      210: Resources/AircraftWeapons/ADEN_dogfight.png
+      211: Resources/AircraftWeapons/Atoll_dogfight.png
+      212: Resources/AircraftWeapons/Acrid_dogfight.png
+      213: Resources/AircraftWeapons/GSh-23_dogfight.png
+      214: Resources/AircraftWeapons/Falcon_dogfight.png
+      215: Resources/AircraftWeapons/MightyMouse_dogfight.png
+      216: Resources/AircraftWeapons/Shortsword_dogfight.png # Sprite 211
+      217: Resources/AircraftWeapons/Hammer_dogfight.png # 212
+      218: Resources/AircraftWeapons/Athena_dogfight.png # 213
+      219: Resources/AircraftWeapons/Mauser_dogfight.png # 214
+      220: Resources/AircraftWeapons/Hydra_dogfight.png # 215
+      221: Resources/AircraftWeapons/Phoenix_dogfight.png # 216
+#      222: Resources/AircraftWeapons/Shortsword_dogfight.png # Sprite 217
+#      223: Resources/AircraftWeapons/Hammer_dogfight.png # 218
+      224: Resources/AircraftWeapons/Apollo_dogfight.png # 219
+      225: Resources/AircraftWeapons/Kodiak_dogfight.png # 220
+#      226: Resources/AircraftWeapons/Hydra_dogfight.png # 221
+#      227: Resources/AircraftWeapons/Phoenix_dogfight.png # 222
+      236: Resources/AircraftWeapons/Fuel_Tank_dogfight.png
+      237: Resources/AircraftWeapons/Afterburner_dogfight.png
+      238: Resources/AircraftWeapons/Targeting_Pod_dogfight.png
+      239: Resources/AircraftWeapons/Alloy_Craft_Armor_dogfight.png

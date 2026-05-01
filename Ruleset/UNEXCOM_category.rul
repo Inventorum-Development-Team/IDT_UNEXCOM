@@ -1,0 +1,163 @@
+﻿################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+itemCategories:
+  - type: STR_TANKS
+    listOrder: 1
+  - type: STR_ARMORED_CARS
+    listOrder: 2
+  - type: STR_LIGHT_TANKS
+    listOrder: 3
+  - type: STR_HEAVY_TANKS
+    listOrder: 4
+  - type: STR_TANK_AMMO
+    listOrder: 6
+  - type: STR_AIRCRAFT_WEAPONS
+    listOrder: 7
+  - type: STR_GATLING_CANNONS
+    listOrder: 8
+  - type: STR_REVOLVER_CANNONS
+    listOrder: 9
+  - type: STR_LIGHT_MISSILES
+    listOrder: 10
+  - type: STR_HEAVY_MISSILES
+    listOrder: 11
+  - type: STR_SUPER_HEAVY_MISSILES
+    listOrder: 12
+  - type: STR_AUX
+    listOrder: 13
+  - type: STR_ROCKETS
+    listOrder: 14
+  - type: STR_BALLISTIC
+    listOrder: 15
+  - type: STR_LASER
+    listOrder: 16
+  - type: STR_ALLOY
+    listOrder: 16
+  - type: STR_FUSION
+    listOrder: 18
+  - type: STR_PLASMA
+    listOrder: 17
+  - type: STR_SPECIALIZED_WEAPONS
+    listOrder: 18
+  - type: STR_TIER_1
+    listOrder: 20
+  - type: STR_TIER_2
+    listOrder: 21
+  - type: STR_TIER_3
+    listOrder: 22
+  - type: STR_TIER_4
+    listOrder: 23
+  - type: STR_FIREARMS
+    listOrder: 24
+  - type: STR_CLIPS
+    listOrder: 30
+  - type: STR_UNEXCOM_TECH
+    listOrder: 39
+  - type: STR_US_TECH
+    listOrder: 40
+  - type: STR_NATO_TECH
+    listOrder: 50
+  - type: STR_SOVIET_TECH
+    listOrder: 60
+  - type: STR_CIVILIAN_TECH
+    listOrder: 70
+  - type: STR_SPECIAL_FORCES_TECH
+    listOrder: 72
+  - type: STR_MERCENARY_TECH
+    listOrder: 73
+  - type: STR_WEAPON_CONVERSION
+    listOrder: 74
+  - type: STR_PISTOLS
+    listOrder: 80
+  - type: STR_RIFLES
+    listOrder: 90
+  - type: STR_CARBINES
+    listOrder: 100
+  - type: STR_SMGS
+    listOrder: 110
+  - type: STR_SNIPER_RIFLES
+    listOrder: 120
+  - type: STR_SHOTGUNS
+    listOrder: 130
+  - type: STR_ARTILLERY
+    listOrder: 140
+  - type: STR_LMGS
+    listOrder: 150
+  - type: STR_CUSTOM_WEAPON
+    listOrder: 160
+  - type: STR_MELEE
+    listOrder: 170
+  - type: STR_LIGHT_EQUIPMENT
+    listOrder: 180
+  - type: STR_MEDICAL
+    listOrder: 190
+  - type: STR_EXPLOSIVES
+    listOrder: 200
+  - type: STR_MISC
+    listOrder: 210
+  - type: STR_ALIEN_TECH
+    listOrder: 210
+  - type: STR_SPACE
+    listOrder: 220
+  - type: STR_PRISONERS
+    listOrder: 230
+  - type: STR_CORPSES
+    listOrder: 240
+# New terrain values for the planted 'Hyper Wave Encoder"
+# This is formatted different for the OXC nightly versions
+monthlyRatings:
+  6000: STR_MT_RATING_EXEMPLARY
+  2800: STR_MT_RATING_EXCELLENT
+  1200: STR_MT_RATING_GREAT
+  400: STR_MT_RATING_GOOD
+  0: STR_MT_RATING_OK
+  -799: STR_MT_RATING_POOR
+  -2399: STR_MT_RATING_BAD
+  -5599: STR_MT_RATING_TERRIBLE
+  -99999: STR_MT_RATING_ABOMINABLE
+missionRatings:
+  3000: STR_MT_RATING_EXEMPLARY
+  1400: STR_MT_RATING_EXCELLENT
+  600: STR_MT_RATING_GREAT
+  200: STR_MT_RATING_GOOD
+  0: STR_MT_RATING_OK
+  -399: STR_MT_RATING_POOR
+  -1199: STR_MT_RATING_BAD
+  -2799: STR_MT_RATING_TERRIBLE
+  -99999: STR_MT_RATING_ABOMINABLE
+defeatScore: -1600
+defeatFunds: -1000000
+alienItemLevels:
+  - [0, 0, 0, 0, 0, 0, 0, 1, 1, 2]
+  - [0, 0, 0, 0, 0, 1, 1, 1, 2, 2]
+  - [0, 0, 0, 0, 0, 1, 1, 1, 2, 2]
+  - [0, 0, 0, 1, 1, 1, 1, 2, 2, 3]
+  - [0, 0, 0, 1, 1, 1, 1, 2, 2, 3]
+  - [0, 0, 1, 1, 1, 1, 2, 2, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+  - [1, 1, 1, 2, 2, 2, 3, 3, 3, 3]
+  - [1, 1, 1, 2, 2, 2, 3, 3, 3, 3]
+  - [1, 1, 1, 2, 2, 2, 3, 3, 3, 4]
+  - [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
+  - [1, 1, 2, 2, 2, 3, 3, 3, 4, 4]
+  - [1, 1, 2, 2, 2, 3, 3, 3, 4, 4]
+  - [1, 2, 2, 2, 3, 3, 3, 3, 4, 4]
+  - [1, 2, 2, 2, 3, 3, 3, 3, 4, 4]
+  - [1, 2, 2, 2, 3, 3, 3, 3, 4, 4]
+  - [2, 2, 2, 3, 3, 3, 3, 4, 4, 4]
+  - [2, 2, 3, 3, 3, 3, 3, 4, 4, 4]
+  - [2, 2, 3, 3, 3, 3, 3, 4, 4, 4]
+  - [2, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+  - [3, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+  - [3, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+#############################
+#### UNDERWATER STUFF ######
+###########################
+transparencyLUTs:
+  - colors:
+      - [  8,  8, 12, 2 ] # "white"
+      - [ 16,  8,  0, 2 ] # orange
+      - [  0, 12, 12, 2 ] # cyan
+      - [  4, 16,  4, 2 ] # green

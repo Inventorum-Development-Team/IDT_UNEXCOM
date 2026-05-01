@@ -1,0 +1,320 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+extraSprites:
+##########################################
+############# HAND TO HAND ###############
+##########################################
+  - type: SPICONS.DAT
+    width: 32
+    height: 24
+    files:
+      2: Resources/specialWeapons/spicon_brawl.png
+      3: Resources/specialWeapons/spicon_crush.png
+      4: Resources/specialWeapons/spicon_crash.png
+# specialWeaponInventorySlots:
+#   - STR_BELT
+######################################
+##### Extra Sprites for this.
+##### UFO Interception Set
+  - type: InterceptionExcavator
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarlogic1.png
+  - type: InterceptionFighter
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarfighter1.png
+  - type: InterceptionSentry
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarsentry1.png
+  - type: InterceptionLabShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarresearch1.png
+  - type: InterceptionTransport
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradartransport1.png
+############### Basic Pilot React
+  - type: InterceptionBasicinfo
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradartarget1.png
+  - type: InterceptionEvadeatall
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonevade1.png
+  - type: InterceptionCorruptScan
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcorrupt1.png
+############### Basic UFO
+  - type: InterceptionScout
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarscout1.png
+  - type: InterceptionAssault
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarassault1.png
+  - type: InterceptionBattle
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarbattle1.png
+  - type: InterceptionCommando
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcommando1.png
+  - type: InterceptionTerror
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcterror1.png
+  - type: InterceptionLogic
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarlogic1.png
+  - type: InterceptionCarrier
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarcarrier1.png
+  - type: InterceptionBattleship
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Alienidtufotype/Idticonradarbattleship1.png
+###### Terrorist Sprites
+  - type: UFO_MAGISTER
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/HumanUFOs/UFO_MAGISTER.png
+  - type: UFO_TEXAN
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/HumanUFOs/UFO_TEXAN.png
+  - type: UFO_MI8
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/HumanUFOs/UFO_MI8.png
+###### Ended Section
+##########################################
+############ BACKGROUNDS #################
+##########################################
+  - type: GEOBORD.SCR #Space
+    singleImage: true
+    files:
+      0: Resources/Backgrounds/BACK100.png
+  - type: BACK01.SCR #Main
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK01.PNG
+  - type: BACK02.SCR #soldier
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK02.PNG
+  - type: BACK04.SCR #base defense/equipment selection
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK04.PNG
+  - type: BACK05.SCR #research
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK05.PNG
+  - type: BACK08.SCR #items
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK08.PNG
+  - type: BACK10.SCR #pedia
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK10.PNG
+  - type: BACK12.SCR #launch interceptor
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK12.PNG
+  - type: BACK13.SCR #buy stuff, purchase things
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK13.PNG
+  - type: BACK14.SCR #equip craft
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK14.PNG
+  - type: BACK15.SCR #land at crash/landing site
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK15.PNG
+  - type: BACK16.SCR #mission briefing
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK16.PNG
+  - type: BACK17.SCR #manufacture
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BACK17.PNG
+### Interception images
+  - type: InterceptionTroopLander
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/UFOinterception/trooplander.png
+  - type: InterceptionNoFeed
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/UFOinterception/nofeed.png
+### Turn Hidden movement background
+  - type: TACTICBACK00.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK00.PNG
+  - type: TACTICBACK01.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK01.PNG
+  - type: TACTICBACK02.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK02.PNG
+  - type: TACTICBACK03.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK03.PNG
+  - type: TACTICBACK04.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK04.PNG
+  - type: TACTICBACK05.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK05.PNG
+  - type: TACTICBACK06.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK06.PNG
+  - type: TACTICBACK07.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK07.PNG
+  - type: TACTICBACK08.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK08.PNG
+  - type: TACTICBACK09.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK09.PNG
+  - type: TACTICBACK10.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK10.PNG
+  - type: TACTICBACK11.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK11.PNG
+  - type: TACTICBACK12.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK12.PNG
+  - type: TACTICBACK13.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK13.PNG
+  - type: TACTICBACK14.SCR #In-mission Hidden movement background
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Turn/TACTICBACK14.PNG

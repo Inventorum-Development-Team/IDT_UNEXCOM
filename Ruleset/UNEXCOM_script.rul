@@ -1,0 +1,180 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+items:
+  - type: STR_HE_STRIKE #ignoreDuplicate
+    tags:
+      STRIKE: 1
+  - type: STR_INC_STRIKE #ignoreDuplicate
+    tags:
+      STRIKE: 1
+  - type: STR_CANNON_STRIKE #ignoreDuplicate
+    tags:
+      STRIKE: 1
+  - type: STR_ELECTRO_FLARE #ignoreDuplicate
+    tags:
+      STRIKE: 1
+  - type: STR_FLASHBANG_GRENADE #ignoreDuplicate
+    tags:
+      FlashBang: 1
+  # - type: STR_M1972_LASER_PISTOL
+  #   isExplodingInHands: true # won't explode though as it's not a grenade
+  #   isConsumable: true
+  #   tags:
+  #     CoolsPerTurn: 10
+armors:
+  - type: STR_HIND_TURRET_ARMOR #ignoreDuplicate
+    tags:
+      Hind_Turret: 1
+# spellchecker:disable
+extended:
+  tags:
+    RuleItem:
+      STRIKE: int
+      FlashBang: int
+      CoolsPerTurn: int #Note, currently runs for xcom, alien and civilian turn, so basically 3x the value here
+    RuleArmor:
+      Hind_Turret: int
+    BattleUnit:
+      FlashBanged: int
+      OGfiring: int
+      OGreactions: int
+    BattleGame:
+      Turn: int
+  # spellchecker:enable
+  # spellchecker:words flashbanged Gaccuracy Greactions Gfiring setFatalwounds
+  scripts:
+    createItem: #Overheating sets ammo to 1 at the start of battles
+        - offset: 1
+          code: |
+            var int x;
+            BattleItem.getTag item x Tag.CoolsPerTurn;
+            if gt x 0;
+              item.setAmmoQuantity 1;
+            end;
+            return;
+    newTurnItem: #Maintains a tag with turn number
+        - offset: 1
+          code: |
+           BattleGame.setTag battle_game Tag.Turn turn;
+           return;
+        - offset: 2 #Overheating Script
+          code: |
+            var int x;
+            var int ammo;
+            var int turnside;
+            BattleItem.getTag item x Tag.CoolsPerTurn;
+            if gt x 0;
+              item.getAmmoQuantity ammo;
+              if gt ammo 100;
+                item.setFuseEnabled 1; # destroy weapon
+                item.setFuseTimer 0;
+                return;
+              end;
+              battle_game.getTurnSide turnside;
+              if eq turnside FACTION_HOSTILE;
+                sub ammo x;
+                if le ammo 0;
+                  set ammo 1;
+                end;
+                item.setAmmoQuantity ammo;
+              end;
+            end;
+            return;
+    selectItemSprite: # Air Strike Smoke sprite Script
+      - offset: 1
+        code: |
+          var int x;
+          var int y;
+          BattleItem.getTag item x Tag.STRIKE;
+          BattleItem.isFuseEnabled item y;
+          if and eq x 1 eq y 1;
+            add sprite_index 8;
+          end;
+          return sprite_index;
+    createUnit: #Hind door and turret script
+      - offset: 1
+        code: |
+         var int x;
+         var ptr RuleArmor armor;
+         BattleUnit.getRuleArmor unit armor;
+         RuleArmor.getTag armor x Tag.Hind_Turret;
+         if eq x 1;
+          BattleUnit.setFatalwounds unit 1 1;
+          end;
+         return;
+      - offset: 2 #Makes Flashbang work early
+        code: |
+           BattleUnit.setTag unit Tag.FlashBanged -5;
+           return;
+      - offset: 1 #Halves enemies Tu:s on the first turn
+        code: |
+           var int tu;
+           var int remainder;
+           var int faction;
+           BattleUnit.getFaction unit faction;
+           if eq faction 1;
+            unit.getTimeUnits tu;
+            set remainder tu;
+            mod remainder 2;
+            sub tu remainder;
+            div tu 2;
+            BattleUnit.setTimeUnits unit tu;
+            end;
+           return;
+    newTurnUnit:
+        - offset: 3
+          code: | #flashbang effect removal
+           var int flashbanged;
+           var int accuracy;
+           var int reactions;
+           var int OGaccuracy;
+           var int OGreactions;
+           BattleUnit.getTag unit flashbanged Tag.FlashBanged;
+           BattleUnit.getTag unit OGaccuracy Tag.OGfiring;
+           BattleUnit.getTag unit OGreactions Tag.OGreactions;
+           add flashbanged 4;
+           if and gt turn flashbanged gt OGaccuracy 0;
+            BattleUnit.Stats.setFiring unit OGaccuracy;
+            BattleUnit.Stats.setReactions unit OGreactions;
+            end;
+           return;
+    hitUnit:
+         - offset: 4 #FlashBang Script
+           code: |
+             var int flashbang;
+             var int flashbanged;
+             var int turn;
+             var int accuracy;
+             var int reactions;
+             damaging_item.getTag flashbang Tag.FlashBang;
+             if eq flashbang 1;
+              battle_game.getTurn turn;
+              unit.getTag flashbanged Tag.FlashBanged;
+              add flashbanged 4;
+              if gt turn flashbanged;
+               BattleUnit.Stats.getFiring unit accuracy;
+               BattleUnit.Stats.getReactions unit reactions;
+               BattleUnit.setTag unit Tag.OGfiring accuracy;
+               BattleUnit.setTag unit Tag.OGreactions reactions;
+               sub reactions 50;
+               sub accuracy 50;
+               BattleUnit.Stats.setFiring unit accuracy;
+               BattleUnit.Stats.setReactions unit reactions;
+              end;
+             end;
+             return power part side;
+    accuracyMultiplierBonusStats: #Overheating accuracy penalty
+          - offset: 1
+            code: |
+              var int ammoQuantity;
+              var int value;
+              var int x;
+              BattleItem.getTag weapon x Tag.CoolsPerTurn;
+              if gt x 0;
+                weapon.getAmmoQuantity ammoQuantity;
+                set value 101;
+                sub value ammoQuantity;
+                muldiv bonus value 100;
+              end;
+              return bonus;

@@ -1,0 +1,116 @@
+﻿################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+startingBase:
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 0
+      y: 2
+    - type: STR_HANGAR
+      x: 0
+      y: 0
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_HANGAR
+      x: 4
+      y: 0
+    - type: STR_GENERAL_STORES
+      x: 0
+      y: 3
+    - type: STR_LIVING_QUARTERS
+      x: 0
+      y: 4
+    - type: STR_LABORATORY
+      x: 1
+      y: 4
+    - type: STR_WORKSHOP
+      x: 2
+      y: 4
+    - type: STR_SMALL_RADAR_SYSTEM
+      x: 3
+      y: 4
+  randomSoldiers:
+    STR_SOLDIER: 12
+    STR_PILOT: 8
+  crafts:
+    - type: STR_TUNNAN
+      id: 1
+      fuel: 137
+      damage: 0
+      weapons:
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_MIGHTY_MOUSE
+          ammo: 4
+        - type: STR_SIDEWINDER
+          ammo: 2
+    - type: STR_TUNNAN
+      id: 2
+      fuel: 137
+      damage: 0
+      weapons:
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_ADEN
+          ammo: 100
+        - type: STR_MIGHTY_MOUSE
+          ammo: 4
+        - type: STR_SIDEWINDER
+          ammo: 2
+    - type: STR_HUEY
+      id: 1
+      fuel: 560
+      damage: 0
+      weapons:
+        - type: STR_VULCAN
+          ammo: 200
+        - type: STR_MIGHTY_MOUSE
+          ammo: 4
+      items:
+        STR_GRENADE: 8
+        STR_7_62MM_NATO_RIFLE_X20: 10
+        STR_9MM_PISTOL_X20: 9
+        STR_38_REVOLVER_AMMO_X6: 12
+        STR_12GAUGE_BUCKSHOT_X8: 8
+        STR_BERETTA_M12: 3
+        STR_POLICE_SHOTGUN: 2
+        STR_POLICE_REVOLVER: 6
+        STR_FN_FAL: 4
+      status: STR_READY
+    - type: STR_HERCULES
+      id: 1
+      fuel: 510
+      damage: 0
+      status: STR_READY
+      items:
+        STR_GRENADE: 10
+        STR_7_62MM_NATO_RIFLE_X20: 10
+        STR_9MM_PISTOL_X20: 12
+        STR_38_REVOLVER_AMMO_X6: 10
+        STR_12GAUGE_BUCKSHOT_X8: 10
+        STR_POLICE_SHOTGUN: 2
+        STR_FN_FAL: 5
+        STR_BERETTA_M12: 4
+        STR_POLICE_REVOLVER: 6
+    - type: STR_BLACKBIRD
+      id: 1
+      fuel: 1000
+      damage: 0
+  items:
+    STR_FUEL_TANK: 2
+    STR_MIGHTY_MOUSE_LAUNCHER: 2
+    STR_VULCAN_CANNON: 2
+    STR_GRENADE: 5
+    STR_7_62MM_NATO_RIFLE_X20: 40
+    STR_9MM_PISTOL_X20: 20
+    STR_38_REVOLVER_AMMO_X6: 20
+    STR_12GAUGE_BUCKSHOT_X8: 30
+    STR_BERETTA_M12: 4
+    STR_POLICE_SHOTGUN: 4
+    STR_POLICE_REVOLVER: 5
+    STR_FN_FAL: 6
+  scientists: 10
+  engineers: 10

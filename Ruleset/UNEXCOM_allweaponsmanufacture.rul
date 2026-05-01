@@ -1,0 +1,545 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+######## UNEXCOM COMPLETE Weapon Section
+######## Ballistics Weapons
+######## Altradium Alloys Weapons (Alien Alloys)
+######## Laser Energy Weapons
+######## Plasma Energy Weapons
+######## Space Ballistic Weapons
+######## Specialized Weapons
+######## Ultimate Weapons
+manufacture:
+######## Ballistics Weapons
+######## Elerium Ballistics
+  - name: STR_12GAUGE_ELERIUM_SHARDS_X8
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 1
+    time: 40
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    listOrder: 1101
+  - name: STR_CARL_GUSTAF_M2_ELERIUM_ROUND
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 2
+    time: 60
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 3
+    listOrder: 1101
+  - name: STR_RPG_EWH_ROCKET
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 1
+    time: 400
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 2
+    listOrder: 1101
+  ####################################################
+  ##### SPECIAL FORCES/MERC WEAPON CONVERSION #######
+  ##################################################
+  - name: STR_STONER_AUTOMATIC_RIFLE_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_AUTOMATIC_RIFLE: 1
+    listOrder: 1101
+  - name: STR_STONER_CARBINE_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_CARBINE: 1
+    listOrder: 1101
+  - name: STR_STONER_COMMANDO_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_COMMANDO: 1
+    listOrder: 1101
+  - name: STR_STONER_SNIPER_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_UN_CUSTOM_WEAPONS
+    space: 1
+    time: 5
+    cost: 10
+    refund: true
+    requiredItems:
+      STR_STONER_RIFLE: 1
+    producedItems:
+      STR_STONER_SNIPER: 1
+    listOrder: 1101
+  - name: STR_5_56MM_NATO_X30_MAG_CREATION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 5
+    cost: 300
+    refund: true
+    producedItems:
+      STR_5_56MM_NATO_RIFLE_X30: 1
+    listOrder: 1101
+  - name: STR_M79_THUMPER_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 40
+    cost: 400
+    refund: true
+    requiredItems:
+      STR_M79_THUMPER_GL: 1
+    producedItems:
+      STR_SAWEDOFF_M79_THUMPER: 1
+    listOrder: 1101
+  - name: STR_DOUBLE_BARRELED_SHOTGUN_CONVERSION
+    requires:
+      - STR_DOUBLE_BARRELED_SHOTGUN
+    category: STR_WEAPON_CONVERSION
+    space: 1
+    time: 40
+    cost: 400
+    refund: true
+    requiredItems:
+      STR_DOUBLE_BARRELED_SHOTGUN: 1
+    producedItems:
+      STR_SAWEDOFF_SHOTGUN: 1
+    listOrder: 1101
+  - name: STR_ENFORCER_CONVERSION
+    requires:
+      - STR_ENFORCER
+    category: STR_WEAPON_CONVERSION
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_M1_CARBINE: 1
+    producedItems:
+      STR_ENFORCER: 1
+    listOrder: 1101
+  - name: STR_XM117_SCOPED_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 40
+    cost: 5000
+    refund: true
+    requiredItems:
+      STR_XM117: 1
+      STR_COLT_SCOPE_ACCESSORY: 1
+    producedItems:
+      STR_XM117_SCOPED: 1
+    listOrder: 1101
+  - name: STR_XM117_SHOTGUN_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_XM117: 1
+      STR_REMINGTON_COMBAT_SHOTGUN: 1
+    producedItems:
+      STR_XM117_SHOTGUN: 1
+    listOrder: 1101
+  - name: STR_XM117_M203_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_XM117: 1
+      STR_M203_ACCESSORY: 1
+    producedItems:
+      STR_XM117_M203: 1
+    listOrder: 1101
+  - name: STR_FN_FSC_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_MERCENARY_SUPPORT
+    space: 1
+    time: 40
+    cost: 5000
+    refund: true
+    requiredItems:
+      STR_FN_FAL: 1
+    producedItems:
+      STR_FN_FSC: 1
+    listOrder: 1101
+  - name: STR_FN_FSC_BAYONET_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_MERCENARY_SUPPORT
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_FN_FSC: 1
+      STR_COMBAT_KNIFE: 1
+    producedItems:
+      STR_FN_FSC_BAYONET: 1
+    listOrder: 1101
+  - name: STR_FN_FSC_SCOPED_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_MERCENARY_SUPPORT
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_FN_FSC: 1
+      STR_COLT_SCOPE_ACCESSORY: 1
+    producedItems:
+      STR_FN_FSC_SCOPED: 1
+    listOrder: 1101
+  - name: STR_M16A1_SHOTGUN_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    category: STR_WEAPON_CONVERSION
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_M16A1: 1
+      STR_REMINGTON_COMBAT_SHOTGUN: 1
+    producedItems:
+      STR_M16A1_SHOTGUN: 1
+    listOrder: 1101
+  - name: STR_M16A1_SCOPED_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_M16A1: 1
+      STR_COLT_SCOPE_ACCESSORY: 1
+    producedItems:
+      STR_M16A1_SCOPED: 1
+    listOrder: 1101
+  - name: STR_M16A1_M203_CONVERSION
+    category: STR_WEAPON_CONVERSION
+    requires:
+      - STR_SPECIAL_FORCES_SUPPORT
+    space: 1
+    time: 40
+    cost: 4000
+    refund: true
+    requiredItems:
+      STR_M16A1: 1
+      STR_M203_ACCESSORY: 1
+    producedItems:
+      STR_M16_M203: 1
+    listOrder: 1101
+########## Altradium Alloy & Tungsten Carbide Ballistics
+  - name: STR_FLECHETTE_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_CLOSE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    space: 2
+    time: 200 #600
+    cost: 10000
+    listOrder: 1101
+  - name: STR_FLECHETTE_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_RIFLES
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 4
+    time: 350 #400
+    cost: 30000
+    listOrder: 1101
+  - name: STR_FLECHETTE_CARBINE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_RIFLES
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 3
+    time: 300
+    cost: 25500
+    listOrder: 1101
+  - name: STR_FLECHETTE_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_CLOSE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+    space: 4
+    time: 300
+    cost: 25000
+    listOrder: 1101
+  - name: STR_FLECHETTE_AUTO_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_CLOSE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 3
+    time: 300
+    cost: 25000
+    listOrder: 1101
+  - name: STR_FLECHETTE_SNIPER
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_HEAVY
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+    space: 5
+    time: 900
+    cost: 35000
+    listOrder: 1101
+  - name: STR_FLECHETTE_CANNON
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_HEAVY
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+    space: 6
+    time: 900
+    cost: 40000
+    listOrder: 1101
+  - name: STR_FLECHETTE_GL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    space: 4
+    time: 400
+    cost: 30000
+    listOrder: 1101
+  - name: STR_FLECHETTE_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    space: 2
+    time: 40
+    cost: 5000
+    listOrder: 1103
+  - name: STR_ALLOY_PISTOL_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 1000
+    listOrder: 1102
+  - name: STR_ALLOY_PISTOL_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 1500
+    listOrder: 1102
+  - name: STR_ALLOY_RIFLE_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_RIFLES
+    space: 1
+    time: 10 #600
+    cost: 1500
+    listOrder: 1102
+  - name: STR_ALLOY_RIFLE_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_RIFLES
+    space: 1
+    time: 10 #600
+    cost: 2000
+    listOrder: 1102
+  - name: STR_ALLOY_SHOTGUN_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 2000
+    listOrder: 1102
+  - name: STR_ALLOY_AUTO_SHOTGUN_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLOSE
+    space: 1
+    time: 10 #600
+    cost: 2000
+    listOrder: 1102
+  - name: STR_30MM_AAG
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_EXPLOSIVE
+    space: 1
+    time: 10 #600
+    cost: 4000
+    listOrder: 1102
+  - name: STR_ALLOY_HEAVY_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 3000
+    listOrder: 1102
+  - name: STR_ALLOY_HEAVY_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 3500
+    listOrder: 1102
+  - name: STR_ALLOY_SNIPER_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 2500
+    listOrder: 1102
+  - name: STR_ALLOY_SNIPER_FL
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_HEAVY
+    space: 1
+    time: 10 #600
+    cost: 3000
+    listOrder: 1102
+######### Misc Items
+######### Medical Items
+  - name: STR_MEDI_KIT
+    category: STR_EQUIPMENT
+    requires:
+      - STR_MEDI_KIT
+    space: 4
+    time: 420
+    cost: 28000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+  - name: STR_BIO_FOAM
+    category: STR_EQUIPMENT
+    requires:
+      - STR_BIO_FOAM
+    space: 4
+    time: 420
+    cost: 18000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+########## Laser Energy Weapons
+  - name: STR_ELERIUM_BATTERY
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_ELERIUM_FUSION
+    space: 1
+    time: 50
+    cost: 10000
+    requiredItems:
+      STR_ELERIUM_115: 5
+  - name: STR_PEACEMAKER
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_HYBRID_LASER_PROJECT
+    space: 1
+    time: 50
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_LASER_RIFLE: 1
+      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_CRYSTAL: 5
+########## Human Plasma Weapons
+  - name: STR_UN_PLASMA_RIFLE
+    requires:
+      - STR_HUMAN_PLASMA_WEAPONS_UN_APPLICATIONS
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
+      STR_PLASMA_RIFLE: 1
+######### Specialized Weapons
+##### Guass Weapon
+  - name: STR_GAUSS_RIFLE
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 80000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+  - name: STR_GAUSS_RIFLE_MAG
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+  - name: STR_ELECTRIC_RIFLE
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
+  - name: STR_ELECTRIC_RIFLE_MAG
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_SECRET_CRISIS_PROTOTYPES
+      - STR_ON_OUR_OWN
+    space: 1
+    time: 60
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3

@@ -1,0 +1,725 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+#### Placed Soldier Armor at all
+armors:
+  - type: STR_NONE_UC
+    spriteSheet: XCOM_10.PCK
+    spriteInv: MAN_0wd
+    storeItem: STR_NONE
+    customArmorPreviewIndex: 502
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_UNIFORM
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: 15
+      stamina: 15
+      health: 0
+      bravery: 10
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+      - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_BELT
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_CHEST_BELT_2
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_TORSO_BELT5
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
+    units:
+      - STR_SOLDIER
+    personalLight: 6
+  - type: STR_PILOT_UC
+    spriteSheet: PILOT.PCK
+    spriteInv:  MAN_5
+    customArmorPreviewIndex: 543
+    storeItem: STR_NONE
+    isPilotArmor: true
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_PILOT_SUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    stats:
+      tu: 5
+      stamina: 10
+      health: 0
+      bravery: 10
+      reactions: 15
+      mana: 30
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+      - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
+    units:
+      - STR_PILOT
+    personalLight: 6
+  - type: STR_SPECIAL_FORCES_UNIFORM_UC
+    spriteSheet: XCOM_4SF.PCK
+    spriteInv: MAN_4SF
+    customArmorPreviewIndex: 546
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_SPECIAL_FORCES_UNIFORM
+    loftempsSet: [ 3 ]
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: 10
+      stamina: 15
+      health: 0
+      bravery: 10
+      reactions: 10
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+      - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
+    units:
+      - STR_SPECIAL_FORCES_SOLDIER
+    personalLight: 6
+  - type: STR_MERCENARY_UNIFORM_UC
+    spriteSheet: XCOM_4MERC.PCK
+    spriteInv: MAN_4MERC
+    customArmorPreviewIndex: 548
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_MERCENARY_UNIFORM
+    loftempsSet: [ 3 ]
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: 10
+      stamina: 15
+      health: 0
+      bravery: 10
+      reactions: 10
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.6
+      - 1.1
+      - 1.3
+    builtInWeapons:
+      - STR_INV_NULL_BACK_PACK
+      - STR_INV_NULL_CHEST_BELT_1
+      - STR_INV_NULL_UPPERPACK_3
+      - STR_INV_NULL_TORSO_BELT2
+      - STR_INV_NULL_TORSO_BELT3
+      - STR_INV_NULL_TORSO_BELT4
+      - STR_INV_NULL_LEFT_SHOULDER
+      - STR_INV_NULL_LSHOULDER_1
+      - STR_INV_NULL_RIGHT_SHOULDER
+      - STR_INV_NULL_RSHOULDER_1
+    units:
+      - STR_MERCENARY
+    personalLight: 6
+  - type: STR_COMBAT_ARMOR_UC
+    spriteSheet: XCOM_4UN.PCK
+    spriteInv: MAN_4UN
+    customArmorPreviewIndex: 550
+    corpseBattle:
+      - STR_CORPSE_COMBAT_ARMOR
+    storeItem: STR_COMBAT_ARMOR_UC
+    corpseGeo: STR_CORPSE_COMBAT_ARMOR
+    loftempsSet: [ 3 ]
+    weight: 10
+    frontArmor: 28
+    sideArmor: 20
+    rearArmor: 18
+    underArmor: 15
+    stats:
+      #tu: -10
+      stamina: -15
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 10
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 60
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.6
+      - 0.8
+      - 0.85
+      - 0.9
+      - 1.0
+      - 0.8
+      - 0.7
+      - 1.0
+      - 1.1
+    personalLight: 6
+  - type: STR_DELTA_ARMOR_UC
+    spriteSheet: ARMOR_DELTA.PCK
+    spriteInv: ARMOR_DELTA_INVENTORY
+    customArmorPreviewIndex: 551
+    corpseBattle:
+      - STR_CORPSE_DELTA_ARMOR
+    storeItem: STR_DELTA_ARMOR_UC
+    corpseGeo: STR_CORPSE_DELTA_ARMOR
+    weight: 15
+    stats:
+      stamina: -10
+      reactions: -5
+      firing: -5
+      mana: 40
+    frontArmor: 40
+    sideArmor: 32
+    rearArmor: 15
+    underArmor: 12
+    recovery:
+      energy:
+        flatHundred: 0.10 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 0.5
+      - 0.3
+      - 0.85
+      - 0.9
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.0
+      - 1.1
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    builtInWeapons:
+      - STR_MG3
+    personalLight: 6
+  - type: STR_RIOT_ARMOR_UC
+    spriteSheet: ARMOR_RIOT.PCK
+    spriteInv: ARMOR_RIOT_INVENTORY
+    customArmorPreviewIndex: 552
+    corpseBattle:
+      - STR_CORPSE_RIOT_ARMOR
+    corpseGeo: STR_CORPSE_RIOT_ARMOR
+    storeItem: STR_RIOT_ARMOR_UC
+    weight: 12
+    stats:
+      stamina: -5
+      reactions: -3
+      bravery: 20
+      mana: 40
+    frontArmor: 80
+    sideArmor: 28
+    rearArmor: 16
+    underArmor: 12
+    meleeDodge:
+      reactions: 0.25 # a small bonus
+    meleeDodgeBackPenalty: 1.0
+    recovery:
+      energy:
+        flatHundred: 0.05 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    movementType: 0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.8
+      - 0.7
+      - 0.9
+      - 0.8
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.0
+      - 1.1
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    builtInWeapons:
+      - STR_RIOT_SHIELD
+    personalLight: 6
+# Standard Armors
+  - type: STR_PERSONAL_ARMOR_UC
+    spriteSheet: PERSONAL_ARMOR.PCK
+    spriteInv: PERSONAL_ARMOR_INV
+    customArmorPreviewIndex: 507
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      firing: -1
+      throwing: -2
+      strength: 0
+      bravery: 20
+      mana: 60
+    frontArmor: 34
+    sideArmor: 27
+    rearArmor: 28
+    underArmor: 20
+    loftempsSet: [ 3 ]
+    damageModifier:
+      - 0.9
+      - 0.6
+      - 0.5
+      - 0.7
+      - 0.7
+      - 0.8
+      - 0.75
+      - 0.80
+      - 0.95
+      - 1.0
+      - 1.0
+    personalLight: 6
+  - type: STR_HEAVY_PERSONAL_ARMOR_UC
+    spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
+    spriteInv: HEAVY_PERSONAL_ARMOR_INV
+    customArmorPreviewIndex: 512
+    corpseBattle:
+      - STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    corpseGeo: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    storeItem: STR_HEAVY_PERSONAL_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -5
+      stamina: -6
+      reactions: -5
+      firing: -2
+      throwing: -5
+      strength: 0
+      bravery: 30
+      mana: 60
+    frontArmor: 46
+    sideArmor: 36
+    rearArmor: 34
+    underArmor: 27
+    movementType: 0
+    damageModifier:
+      - 0.85
+      - 0.5
+      - 0.4
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.7
+      - 0.75
+      - 0.92
+      - 1.0
+      - 1.0
+    personalLight: 6
+#Power Armors
+# Standard Armors
+  - type: STR_POWER_SUIT_UC
+    spriteSheet: MARAUDER_SPRITESHEET.PCK
+    spriteInv: MAN_MARAUDER
+    customArmorPreviewIndex: 516
+    corpseBattle:
+      - STR_CORPSE_MARAUDER
+    storeItem: STR_POWER_SUIT
+    corpseGeo: STR_CORPSE_MARAUDER
+    loftempsSet: [ 3 ]
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
+    forcedTorso: 1
+    stats:
+      tu: -9
+      stamina: 10
+      reactions: -8
+      firing: -3
+      throwing: -7
+      strength: 15
+      bravery: 40
+      mana: 80
+    damageModifier:
+      - 0.7
+      - 0.45
+      - 0.2
+      - 0.5
+      - 0.6
+      - 0.65
+      - 0.6
+      - 0.70
+      - 0.85
+      - 0.0
+      - 0.8
+    personalLight: 6
+  - type: STR_FLYING_SUIT_UC
+    spriteSheet: PATHFINDER_SPRITESHEET.PCK
+    spriteInv: MAN_PATHFINDER
+    customArmorPreviewIndex: 526
+    corpseBattle:
+      - STR_CORPSE_PATHFINDER
+    storeItem: STR_FLYING_SUIT
+    corpseGeo: STR_CORPSE_PATHFINDER
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    stats:
+      tu: -9
+      stamina: 10
+      reactions: -8
+      firing: -3
+      throwing: -7
+      strength: 15
+      bravery: 40
+      mana: 80
+    frontArmor: 64
+    sideArmor: 51
+    rearArmor: 45
+    underArmor: 38
+    movementType: 1
+    damageModifier:
+      - 0.75
+      - 0.50
+      - 0.30
+      - 0.6
+      - 0.65
+      - 0.70
+      - 0.65
+      - 0.73
+      - 0.88
+      - 0.0
+      - 0.8
+    personalLight: 6
+# New Armors
+  - type: STR_SCOUT_POWER_ARMOR_UC
+    spriteSheet: SCOUT_POWER_ARMOR.PCK
+    spriteInv: SCOUT_POWER_ARMOR_INV
+    customArmorPreviewIndex: 531
+    corpseBattle:
+      - STR_CORPSE_SCOUT_POWER_ARMOR
+    corpseGeo: STR_CORPSE_ARMOR # should be corpseBattle?
+    storeItem: STR_SCOUT_POWER_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -4
+      stamina: 15
+      reactions: -6
+      firing: -2
+      throwing: -5
+      strength: 9
+      bravery: 30
+      mana: 80
+    frontArmor: 55
+    sideArmor: 44
+    rearArmor: 36
+    underArmor: 30
+    movementType: 0
+    damageModifier:
+      - 0.8
+      - 0.5
+      - 0.3
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.65
+      - 0.73
+      - 0.88
+      - 0.0
+      - 0.8
+    personalLight: 6
+    units:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_SPECIAL_FORCES_SOLDIER
+      - STR_MERCENARY
+  - type: STR_SCOUT_FLYING_ARMOR_UC
+    spriteSheet: SCOUT_FLYING_ARMOR.PCK
+    spriteInv: SCOUT_FLYING_ARMOR_INV
+    customArmorPreviewIndex: 536
+    corpseBattle:
+      - STR_CORPSE_SCOUT_FLYING_ARMOR
+    corpseGeo: STR_CORPSE_SCOUT_FLYING_ARMOR
+    storeItem: STR_SCOUT_FLYING_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -4
+      stamina: 15
+      reactions: -6
+      firing: -2
+      throwing: -5
+      strength: 9
+      bravery: 30
+      mana: 80
+    frontArmor: 50
+    sideArmor: 40
+    rearArmor: 32
+    underArmor: 30
+    movementType: 1
+    damageModifier:
+      - 0.8
+      - 0.55
+      - 0.35
+      - 0.65
+      - 0.65
+      - 0.75
+      - 0.70
+      - 0.77
+      - 0.90
+      - 0.0
+      - 0.8
+    personalLight: 6
+    units:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_SPECIAL_FORCES_SOLDIER
+      - STR_MERCENARY
+#Astronaut Armors
+  - &A7LSpacesuitAnchor
+    type: STR_ASTRONAUT_A7L_SPACESUIT_UC
+    spriteSheet: A7L_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5A7L
+    customArmorPreviewIndex: 553
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    movementType: 0
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    requires:
+      STR_OLYMPUS
+    stats: &EarthStats
+      stamina: -15
+      health: 0
+      bravery: 20
+      throwing: -15
+      reactions: -10
+      melee: -15
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.3
+    personalLight: 6
+  - &A7MMUSpacesuitAnchor
+    type: STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
+    spriteSheet: A7MMU_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5A7MMU
+    customArmorPreviewIndex: 554
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    movementType: 1
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    requires:
+      STR_ALIENS_ONLY
+    stats: &OrbitalStats
+      stamina: 30
+      health: 0
+      bravery: 20
+      throwing: -15
+      reactions: -10
+      melee: -15
+      mana: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.3
+    personalLight: 6
+  - &Krechet94SpacesuitAnchor
+    type: STR_ASTRONAUT_KRECHET94_SPACESUIT_UC
+    spriteSheet: KRECHET94_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5KRECHET94
+    customArmorPreviewIndex: 555
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    movementType: 0
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    requires:
+      STR_OLYMPUS
+    stats: *EarthStats
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.3
+    personalLight: 6
+  - &KrechetMMUSpacesuitAnchor
+    type: STR_ASTRONAUT_KRECHETMMU_SPACESUIT_UC
+    spriteSheet: KRECHETMMU_SPACESUIT_SPRITESHEET.PCK
+    spriteInv:  MAN_5KRECHETMMU
+    customArmorPreviewIndex: 556
+    storeItem: STR_NONE
+    loftempsSet: [ 3 ]
+    corpseBattle:
+      - STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT
+    frontArmor: 15
+    sideArmor: 12
+    rearArmor: 10
+    underArmor: 8
+    movementType: 1
+    visibilityAtDark: 7
+    visibilityAtDay: 26
+    requires:
+      STR_ALIENS_ONLY
+    stats: *OrbitalStats
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.3
+    personalLight: 6

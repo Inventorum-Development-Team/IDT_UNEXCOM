@@ -1,0 +1,728 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+manufacture:
+###### Corpse to Resources #########
+  - name: STR_CONVERTCORPSE1
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 116
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_MECHTOID_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_ELERIUM_115: 25
+      STR_PLASMA_BLASTER: 2
+  - name: STR_CONVERTCORPSE2
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 5
+    cost: 100
+    requiredItems:
+      STR_PROBE_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 5
+  - name: STR_CONVERTCORPSE3
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 116
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_CYBERDISC_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 25
+      STR_ELERIUM_115: 15
+  - name: STR_CONVERTCORPSE4
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 5
+    cost: 100
+    requiredItems:
+      STR_ARMORED_SECTOID_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 15
+      STR_ELERIUM_115: 5
+  #- name: STR_CONVERTCORPSE5
+  #  category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+  #  time: 72
+  #  space: 5
+  #  cost: 100
+  #  requiredItems:
+  #    STR_ARMORED_MUTON_ALL_CORPSE: 1
+  #  producedItems:
+  #    STR_ALIEN_ALLOYS: 40
+  #    STR_ELERIUM_115: 30
+  #- name: STR_CONVERTCORPSE6
+  #  category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+  #  time: 72
+  #  space: 5
+  #  cost: 100
+  #  requiredItems:
+  #    STR_FLOATER_ALL_CORPSE: 1
+  #  producedItems:
+  #    STR_ALIEN_ALLOYS: 20
+  #    STR_ELERIUM_115: 25
+  #- name: STR_CONVERTCORPSE7
+  #  category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+  #  time: 72
+  #  space: 5
+  #  cost: 100
+  #  requiredItems:
+  #    STR_FLOATER_ALL_CORPSE: 1
+  #  producedItems:
+  #    STR_ELERIUM_115: 20
+  - name: STR_CONVERTCORPSE8
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_SECTOPOD_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 40
+      STR_ALIEN_CRYSTAL: 12
+######## Salvage Alien Components
+  - name: STR_SALVAGEALIENPARTS1
+    category: STR_DISASSEMBLE_MANUFACTURE
+   #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_UFO_POWER_SOURCE: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 15
+  - name: STR_SALVAGEALIENPARTS2
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 20
+  - name: STR_SALVAGEALIENPARTS3
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_EXAMINATION_ROOM: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 10
+  - name: STR_SALVAGEALIENPARTS4
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 20
+  - name: STR_SALVAGEALIENPARTS5
+    category: STR_DISASSEMBLE_MANUFACTURE
+    #requires:
+    time: 72
+    space: 10
+    cost: 100
+    requiredItems:
+      STR_ALIEN_ENTERTAINMENT: 1
+    producedItems:
+      STR_ELERIUM_115: 10
+##### Players UNEXCOM Armor
+##### Soldiers Armor for players
+  ##- delete: STR_POWER_SUIT
+  - name: STR_COMBAT_ARMOR_UC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+  - name: STR_DELTA_ARMOR_UC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 9
+  - name: STR_RIOT_ARMOR_UC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+  - name: STR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 800
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 1000
+    cost: 140000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_SCOUT_POWER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_POWER_ARMOR
+    space: 12
+    time: 1000
+    cost: 150000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 5
+    listOrder: 2711
+  - name: STR_SCOUT_FLYING_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_FLYING_ARMOR
+    space: 15
+    time: 1000
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_ELERIUM_115: 12
+    listOrder: 2712
+  - name: STR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 25
+    time: 1500
+    cost: 250000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 60
+      STR_ELERIUM_115: 20
+  - name: STR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 30
+    time: 2500
+    cost: 300000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 65
+      STR_ELERIUM_115: 25
+######### Repair Armor
+  - name: STR_REPAIR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_ARMOR: 1
+      STR_ALIEN_ALLOYS: 10
+    producedItems:
+      STR_PERSONAL_ARMOR: 1
+  - name: STR_REPAIR_COMBAT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USA_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_COMBAT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_COMBAT_ARMOR_UC: 1
+  - name: STR_REPAIR_DELTA_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_NATO_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_DELTA_ARMOR: 1
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_DELTA_ARMOR_UC: 1
+  - name: STR_REPAIR_RIOT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_USSR_PROTOTYPE_ARMOR_SYSTEMS
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_RIOT_ARMOR: 1
+      STR_ALIEN_ALLOYS: 7
+    producedItems:
+      STR_RIOT_ARMOR_UC: 1
+  - name: STR_REPAIR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_HEAVY_PERSONAL_ARMOR: 1
+      STR_ALIEN_ALLOYS: 10
+    producedItems:
+      STR_HEAVY_PERSONAL_ARMOR: 1
+  - name: STR_REPAIR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 16
+    time: 500
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_MARAUDER: 1
+      STR_ALIEN_ALLOYS: 20
+    producedItems:
+      STR_POWER_SUIT: 1
+  - name: STR_REPAIR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 16
+    time: 700
+    cost: 12000
+    requiredItems:
+      STR_CORPSE_PATHFINDER: 1
+      STR_ALIEN_ALLOYS: 24
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_FLYING_SUIT: 1
+  - name: STR_REPAIR_SCOUT_POWER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_POWER_ARMOR
+    space: 16
+    time: 700
+    cost: 12000
+    requiredItems:
+      STR_CORPSE_SCOUT_POWER_ARMOR: 1
+      STR_ALIEN_ALLOYS: 15
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_SCOUT_POWER_ARMOR: 1
+  - name: STR_REPAIR_SCOUT_FLYING_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_FLYING_ARMOR
+    space: 16
+    time: 700
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_SCOUT_FLYING_ARMOR: 1
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_SCOUT_FLYING_ARMOR: 1
+###### Disemble Alien Weapons
+###### Disemble Alien Lasers
+  - name: STR_DISASSEMBLE_LASER_PISTOL
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+      - STR_ALIEN_LASER_PISTOL
+    time: 20
+    space: 1
+    cost: 5000
+    requiredItems:
+      STR_ALIEN_LASER_PISTOL: 1
+    producedItems:
+      STR_ALIEN_CRYSTAL: 1
+      STR_ALIEN_ALLOYS: 2
+  - name: STR_DISASSEMBLE_LASER_RIFLE
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+      - STR_ALIEN_LASER_RIFLE
+    time: 25
+    space: 1
+    cost: 8000
+    requiredItems:
+      STR_ALIEN_LASER_RIFLE: 1
+    producedItems:
+      STR_ALIEN_CRYSTAL: 2
+      STR_ALIEN_ALLOYS: 3
+  - name: STR_DISASSEMBLE_HEAVY_LASER
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+      - STR_ALIEN_HEAVY_LASER
+    time: 30
+    space: 1
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_HEAVY_LASER: 1
+    producedItems:
+      STR_ALIEN_CRYSTAL: 3
+      STR_ALIEN_ALLOYS: 4
+##### UNT Manufacturing Stuff
+##### UNT Bio Fusion Weapons
+  - name: STR_HUMAN_FUSION_RIFLE
+    category: STR_SPECIAL_WEAPON1
+    requires:
+      - STR_HYBRID_FUSION_PROJECT
+    space: 1
+    time: 70
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 5
+      STR_ALIEN_ALLOYS: 10
+  - name: STR_DISASSEMBLE_FUSION_POWER_CELL_LIGHT
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_INITIAL_FUSION_CELLS_RESEARCH
+    time: 20
+    space: 1
+    cost: 25000
+    requiredItems:
+      STR_FUSION_POWER_CELL_LIGHT: 1
+    producedItems:
+      STR_ELERIUM_115: 5
+  - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HEAVY
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_INITIAL_FUSION_CELLS_RESEARCH
+    time: 20
+    space: 1
+    cost: 30000
+    requiredItems:
+      STR_FUSION_POWER_CELL_HEAVY: 1
+    producedItems:
+      STR_ELERIUM_115: 10
+  - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HUGE
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_INITIAL_FUSION_CELLS_RESEARCH
+    time: 20
+    space: 1
+    cost: 35000
+    requiredItems:
+      STR_FUSION_POWER_CELL_HUGE: 1
+    producedItems:
+      STR_ELERIUM_115: 15
+  - name: STR_DISASSEMBLE_FUSION_HANDGUN
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_FUSION_HANDGUN
+    time: 20
+    space: 1
+    cost: 9000
+    requiredItems:
+      STR_FUSION_HANDGUN: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 1
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_DISASSEMBLE_FUSION_SMG
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_FUSION_SMG
+    time: 20
+    space: 1
+    cost: 10000
+    requiredItems:
+      STR_FUSION_SMG: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 2
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_DISASSEMBLE_FUSION_RIFLE
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_FUSION_RIFLE
+    time: 30
+    space: 1
+    cost: 12000
+    requiredItems:
+      STR_FUSION_RIFLE: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 3
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_DISASSEMBLE_FUSION_SNIPER
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_FUSION_SNIPER
+    time: 40
+    space: 1
+    cost: 20000
+    requiredItems:
+      STR_FUSION_SNIPER: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 3
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_DISASSEMBLE_FUSION_SPLITTER
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_FUSION_SPLITTER
+    time: 40
+    space: 1
+    cost: 14000
+    requiredItems:
+      STR_FUSION_SPLITTER: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 2
+      STR_ALIEN_ALLOYS: 2
+  - name: STR_DISASSEMBLE_FUSION_LANCE
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_FUSION_LANCE
+    time: 40
+    space: 3
+    cost: 25000
+    requiredItems:
+      STR_FUSION_LANCE: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 5
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_DISASSEMBLE_ETHEREAL_NOBLE_SWORD
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_ETHEREAL_NOBLE_SWORD
+    time: 10
+    space: 2
+    cost: 10000
+    requiredItems:
+      STR_ETHEREAL_NOBLE_SWORD: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 1
+      STR_ALIEN_ALLOYS: 3
+  - name: STR_DISASSEMBLE_STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    category: STR_DISASSEMBLE_MANUFACTURE
+    requires:
+     - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
+    time: 20
+    space: 1
+    cost: 16000
+    requiredItems:
+      STR_THERMONUCLEAR_PROJECTILE_LAUNCHER: 1
+    producedItems:
+      STR_ALIEN_CEPHALOPOD_TISSUE: 2
+      STR_ALIEN_ALLOYS: 1
+########## Combat Tanks
+  - name: STR_TANK_LASER_CANNON
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_TANK_LASER_CANNON
+    space: 25
+    time: 1200
+    cost: 765000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ALIEN_CRYSTAL: 10
+  - name: STR_ENERGYCAPACITOR
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_TANK_LASER_CANNON
+    space: 25
+    time: 1200
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_ENERGYENHANCEDBATTERY
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_TANK_LASER_CANNON
+      - STR_ELERIUM_115
+    space: 25
+    time: 1200
+    cost: 75000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+  - name: STR_ENERGYE115BATTERY
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_TANK_LASER_CANNON
+      - STR_ELERIUM_FUSION
+    space: 25
+    time: 1200
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_ENERGYTURBOMODULE1
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_TANK_LASER_CANNON
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_FUSION_CRAFT_WEAPONS
+    space: 25
+    time: 1200
+    cost: 250000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 50
+      STR_ALIEN_CRYSTAL: 10
+  - name: STR_73MMROUNDSS4
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
+    space: 25
+    time: 1200
+    cost: 50000
+  - name: STR_73MMROUNDSS5
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    space: 25
+    time: 1200
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_73MMROUNDSS6
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 150000
+    requiredItems:
+      STR_ELERIUM_115: 30
+  - name: STR_73MMROUNDSS7
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USSR_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_76MMROUNDSS4
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALIEN_ORIGINS
+    space: 25
+    time: 1200
+    cost: 50000
+  - name: STR_76MMROUNDSS5
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+    space: 25
+    time: 1200
+    cost: 150000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_76MMROUNDSS6
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 150000
+    requiredItems:
+      STR_ELERIUM_115: 30
+  - name: STR_76MMROUNDSS7
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_NATO_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_152MMCANNONSHELLS4
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_ALIEN_ORIGINS
+    space: 25
+    time: 1200
+    cost: 200000
+  - name: STR_152MMCANNONSHELLS5
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+  - name: STR_152MMCANNONSHELLS6
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ELERIUM_115: 30
+  - name: STR_152MMCANNONSHELLS7
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_USA_SUPPORT_RESEARCH
+      - STR_ALLOY_MANUFACTURING
+      - STR_ELERIUM_FUSION
+      - STR_UNITED_WE_STAND_RESEARCH
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+    space: 25
+    time: 1200
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 30
+  - name: STR_APCHWPVEHICLE2
+    category: STR_VEHICLE_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+      - STR_ON_OUR_OWN
+      - STR_ALIEN_ALLOYS
+    space: 50
+    time: 1200
+    cost: 700000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 300

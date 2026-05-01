@@ -1,0 +1,136 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+####################################
+extraSprites:
+##### Projectiles
+  - type: Projectiles ### Smoke Grenades
+    height: 27
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/BallisticWeapons/Smoke/GrenadeLauncherProjectileSprite.png
+  - type: Projectiles ### Alien Fusion Weapons
+    width: 105
+    height: 9
+    subX: 3
+    subY: 3
+    files:
+      735: Resources/BulletSprites/Fusion_Bullet.png
+  - type: Projectiles ##### Toxic Bullet
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      700: Resources/AlienArmouryExpanded/Bullets/toxic_bullet.gif # 20
+      1120: Resources/BulletSprites/HumanPlasma_Bullet.PNG # 32
+      1085: Resources/BulletSprites/Flechette_bullet.png #31
+  - type: Projectiles ##### Lasers
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      945: Resources/bulletSprites/WideYellowLaser_Bullet.png # 27
+      980: Resources/bulletSprites/WideBlueLaser_Bullet.png # 28
+      1015: Resources/bulletSprites/WideRedLaser_Bullet.png # 29
+      1050: Resources/bulletSprites/FlameProjectile.png # 30
+  - type: Projectiles ##### Gauss and Electric
+    height: 3
+    width: 105
+    subX: 3
+    subY: 3
+    files:
+      1155: Resources/BulletSprites/Railgun_Bullet.PNG # 33
+      1190: Resources/BulletSprites/HumanElectric_Bullet.PNG # 34
+##### Smoke.pck
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      90: Resources/HitAnimations/BlueLaser_Hit.png
+      100: Resources/HitAnimations/RedLaser_Hit.png
+  - type: SMOKE.PCK #### Alien Toxic Hit Animations
+    height: 80
+    width: 40
+    subX: 32
+    subY: 40
+    files:
+      56: Resources/AlienArmouryExpanded/Bullets/toxic_hit.gif
+  - type: SMOKE.PCK #### Weapon Hit Animations
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      70: Resources/BallisticWeapons/Smoke/GrenadeLauncherHitAnimation.gif
+      80: Resources/BallisticWeapons/Smoke/StunHitAnimation.gif
+      110: Resources/HitAnimations/HumanPlasma_Hit.png
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      120: Resources/HitAnimations/Gauss_Hit.png
+      130: Resources/HitAnimations/HumanElectric_Hit.png
+##### Cerebreal Stuff
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      57: Resources/RecycledAlienCollection/CerebrealRace/HitAnimation.gif
+  - type: HIT.PCK
+    height: 40
+    width: 128
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/RecycledAlienCollection/ReptoidRace/Claws.gif
+  - type: CEREBREAL.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/RecycledAlienCollection/CerebrealRace/CEREBREAL.png
+
+##### Projectiles / Anaimations / Interface / Battle Grounds
+  - type: SMOKE.PCK
+    files:
+      20: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_0_B.png
+      21: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_1_B.png
+      22: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_2_B.png
+      23: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_3_B.png
+      24: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_4_B.png
+      25: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_5_B.png
+      800: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_0_C.png
+      801: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_1_C.png
+      802: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_2_C.png
+      803: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_3_C.png
+      804: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_4_C.png
+      805: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_5_C.png
+      806: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank0_Lieutenant.png
+      807: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank1_Captain.png
+      808: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank2_Major.png
+      809: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank3_Lt_Colonel.png
+      810: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank4_Colonel.png
+      812: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_0_D.png
+      813: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_1_D.png
+      814: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_2_D.png
+      815: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_3_D.png
+      816: Resources/SoldiersAndArmors/RankSprites/Smoke/Rank_4_D.png
+##### Medikit Stuff
+  - type: MEDIKIT_BACKGROUND
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/BallisticWeapons/Medical&Food/MEDIKIT_BACKGROUND.png
+##### Medikit Stuff

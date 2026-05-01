@@ -1,0 +1,365 @@
+﻿################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+#Terrorist Faction by IDT - efrenespartano & Tingcat Thinman, for UNEXCOM
+items:
+  - type: STR_TERRORIST_MALE_CORPSE
+    #size: 0.4
+    #costSell: 2000
+    weight: 20
+    bigSprite: 3050
+    floorSprite: 3050
+    invWidth: 2
+    invHeight: 3
+    #recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
+    battleType: 11
+    armor: 26
+  - type: STR_TERRORIST_FEMALE_CORPSE
+    #size: 0.4
+    #costSell: 2000
+    weight: 20
+    bigSprite: 3051
+    floorSprite: 3051
+    invWidth: 2
+    invHeight: 3
+    #recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
+    battleType: 11
+    armor: 26
+  - type: STR_TERRORIST_GASMASK_CORPSE
+    #size: 0.4
+    #costSell: 2000
+    weight: 20
+    bigSprite: 3052
+    floorSprite: 3052
+    invWidth: 2
+    invHeight: 3
+    #recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
+    battleType: 11
+    armor: 26
+  - type: STR_THIN_MAN_CORPSE
+    size: 0.4
+    costSell: 30000
+    weight: 25
+    bigSprite: 3053
+    floorSprite: 3053
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    battleType: 11
+    armor: 40
+    categories:
+      - STR_CORPSES
+  - type: STR_TERRORIST_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: false
+    costSell: 40000
+    listOrder: 14401
+    categories: [STR_PRISONERS]
+  - type: STR_TERRORIST_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: false
+    costSell: 60000
+    listOrder: 14402
+    categories: [STR_PRISONERS]
+  - type: STR_TERRORIST_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: false
+    costSell: 60000
+    listOrder: 14403
+    categories: [STR_PRISONERS]
+  - type: STR_TERRORIST_GRENADIER
+    size: 0.0
+    recover: true
+    liveAlien: false
+    costSell: 60000
+    listOrder: 14404
+    categories: [STR_PRISONERS]
+  - type: STR_TERRORIST_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: false
+    costSell: 60000
+    listOrder: 14405
+    categories: [STR_PRISONERS]
+  - type: STR_THIN_MAN_INFILTRATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 70000
+    listOrder: 14405
+    categories: [STR_PRISONERS]
+armors:
+  - type: STR_TERRORIST_MALE_ARMOR
+    spriteSheet: TERRORIST_MALE_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_TERRORIST_MALE_CORPSE
+    spriteInv: TERRORIST_MALE_INVENTORY
+    frontArmor: 12
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    visibilityAtDark: 9
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: STR_TERRORIST_FEMALE_ARMOR
+    spriteSheet: TERRORIST_FEMALE_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_TERRORIST_FEMALE_CORPSE
+    spriteInv: TERRORIST_FEMALE_INVENTORY
+    frontArmor: 12
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    visibilityAtDark: 9
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: STR_TERRORIST_GASMASK_ARMOR
+    spriteSheet: TERRORIST_GASMASK_SPRITESHEET.PCK
+    corpseBattle:
+      - STR_TERRORIST_GASMASK_CORPSE
+    spriteInv: TERRORIST_GASMASK_INVENTORY
+    frontArmor: 12
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    visibilityAtDark: 9
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 1.0
+      - 0.1
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: THIN_MAN_ARMOR
+    spriteSheet: THIN_MAN.PCK
+    spriteInv: inventory_THIN_MAN
+    corpseBattle:
+      - STR_THIN_MAN_CORPSE
+    frontArmor: 8
+    sideArmor: 4
+    rearArmor: 6
+    underArmor: 2
+    visibilityAtDark: 24
+    psiVision: 8
+    drawingRoutine: 4
+    specialWeapon: ALIEN_PSI_WEAPON
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 0.0
+    loftempsSet: [ 2 ]
+units:
+  - type: STR_TERRORIST_SOLDIER
+    race: STR_TERRORIST
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 45
+      stamina: 100
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 20
+      throwing: 40
+      strength: 40
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_MALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 14
+    deathSound: [41, 42, 43]
+    intelligence: 5
+    aggression: 2
+    canSurrender: true
+  - type: STR_TERRORIST_GRENADIER
+    race: STR_TERRORIST
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 60
+      stamina: 100
+      health: 35
+      bravery: 60
+      reactions: 50
+      firing: 40
+      throwing: 40
+      strength: 70
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_GASMASK_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 14
+    deathSound: [41, 42, 43]
+    intelligence: 7
+    aggression: 2
+    canSurrender: true
+  - type: STR_TERRORIST_MEDIC
+    race: STR_TERRORIST
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 70
+      stamina: 100
+      health: 35
+      bravery: 80
+      reactions: 64
+      firing: 30
+      throwing: 30
+      strength: 50
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_FEMALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 14
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 1
+    canSurrender: true
+  - type: STR_TERRORIST_LEADER
+    race: STR_TERRORIST
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 70
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 72
+      firing: 60
+      throwing: 50
+      strength: 50
+      psiStrength: 55
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_FEMALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    floatHeight: 2
+    value: 18
+    deathSound: [44, 45, 46]
+    intelligence: 6
+    aggression: 0
+    canSurrender: true
+  - type: STR_TERRORIST_COMMANDER
+    race: STR_TERRORIST
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 75
+      stamina: 100
+      health: 40
+      bravery: 80
+      reactions: 70
+      firing: 70
+      throwing: 50
+      strength: 50
+      psiStrength: 60
+      psiSkill: 0
+      melee: 70
+    armor: STR_TERRORIST_MALE_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 18
+    deathSound: [41, 42, 43]
+    intelligence: 8
+    aggression: 0
+    canSurrender: true
+  - type: STR_THIN_MAN_INFILTRATOR
+    race: STR_HYBRID
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 70
+      health: 60
+      bravery: 100
+      reactions: 70
+      firing: 60
+      throwing: 60
+      strength: 30
+      psiStrength: 80
+      psiSkill: 45
+      melee: 60
+    armor: THIN_MAN_ARMOR
+    standHeight: 24
+    kneelHeight: 16
+    value: 10
+    deathSound: 10
+    spotter: 2
+    intelligence: 8
+    aggression: 2
+alienRaces:
+#Race Rank Reference
+#alienRank: 5 - Soldier
+#alienRank: 4 - Navigator
+#alienRank: 3 - Medic
+#alienRank: 2 - Engineer
+#alienRank: 1 - Leader
+#alienRank: 0 - Commander
+  - id: STR_TERRORIST
+    members:
+      - STR_TERRORIST_COMMANDER
+      - STR_TERRORIST_LEADER
+      - STR_TERRORIST_GRENADIER
+      - STR_TERRORIST_MEDIC
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+    retaliationAggression: -100
+  - id: STR_TERRORIST_THIN_MAN
+    members:
+      - STR_THIN_MAN_INFILTRATOR
+      - STR_TERRORIST_LEADER
+      - STR_TERRORIST_GRENADIER
+      - STR_TERRORIST_MEDIC
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+      - STR_TERRORIST_SOLDIER
+    retaliationAggression: -100

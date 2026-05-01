@@ -1,0 +1,2877 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+armors:
+  - type: CIVM_ARMOR
+    spriteInv: INV_MALE_CIVILIAN
+    spriteSheet: MALE_CIVILIAN1.PCK
+    spriteHairGroup: 10
+    spriteHairColor: [160, 160, 160, 84, 84, 244, 228, 192]
+    corpseBattle:
+      - CIVM_CORPSE
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: CIVF_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 96, 96, 97, 160, 162, 163]
+    corpseBattle:
+      - CIVF_CORPSE
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR0_0
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_0_0.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR0_1
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_0_1.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_1_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR0_2
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_0_2.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_2_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR0_3
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_0_3.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_3_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR0_4
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_0_4.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_4_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR1_0
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_1_0.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR1_1
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_1_1.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_1_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR1_2
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_1_2.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_2_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR1_3
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_1_3.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_3_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR1_4
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_1_4.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_0_4_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_0
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_0.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_1
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_1.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_1_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_2
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_2.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_2_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_3
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_3.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_3_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_4
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_4.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_4_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_5
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_5.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_5_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_6
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_6.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_6_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_JUMPSUIT_ARMOR2_7
+    spriteInv: INV_HUMAN_JUMPSUIT
+    spriteSheet: HUMAN_JUMPSUIT_2_7.PCK
+    corpseBattle:
+      - STR_HUMAN_JUMPSUIT_2_7_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR0_0
+    spriteSheet: HUMAN_SOLDIER_0_0.PCK
+    spriteInv: INV_HUMAN_SOLDIER_0_0
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.85
+      - 1.0
+      - 0.8
+      - 0.8
+      - 1.0
+      - 2.0
+    loftempsSet: [ 2 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR0_1
+    spriteSheet: HUMAN_SOLDIER_0_1.PCK
+    spriteInv: INV_HUMAN_SOLDIER_0_1
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_1_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.9
+      - 1.1
+      - 2.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR0_2
+    spriteSheet: HUMAN_SOLDIER_0_2.PCK
+    spriteInv: INV_HUMAN_SOLDIER_0_1
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_1_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 20
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 10
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.9
+      - 1.1
+      - 2.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR0_3
+    spriteSheet: HUMAN_SOLDIER_0_3.PCK
+    spriteInv: INV_HUMAN_SOLDIER_0_3
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_3_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR0_4
+    spriteSheet: HUMAN_SOLDIER_0_4.PCK
+    spriteInv: INV_HUMAN_SOLDIER_0_4
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_4_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR1_0
+    spriteInv: INV_HUMAN_SOLDIER_1_0
+    spriteSheet: HUMAN_SOLDIER_1_0.PCK
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_1_0_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.1
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR1_1
+    spriteInv: INV_HUMAN_SOLDIER_1_1
+    spriteSheet: HUMAN_SOLDIER_1_1.PCK
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_1_1_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.1
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR1_2
+    spriteInv: INV_HUMAN_SOLDIER_1_2
+    spriteSheet: HUMAN_SOLDIER_1_2.PCK
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_1_2_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.1
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR1_3
+    spriteSheet: HUMAN_SOLDIER_1_3.PCK
+    spriteInv: INV_HUMAN_SOLDIER_1_3
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_1_3_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR1_4
+    spriteSheet: HUMAN_SOLDIER_1_4.PCK
+    spriteInv: INV_HUMAN_SOLDIER_1_4
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_1_4_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR1_5
+    spriteSheet: HUMAN_SOLDIER_1_5.PCK
+    spriteInv: INV_HUMAN_SOLDIER_1_5
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_1_5_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_0
+    spriteSheet: HUMAN_SOLDIER_2_0.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_0
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_0_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_1
+    spriteSheet: HUMAN_SOLDIER_2_1.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_1
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_1_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_2
+    spriteSheet: HUMAN_SOLDIER_2_2.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_2
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_2_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_3
+    spriteSheet: HUMAN_SOLDIER_2_3.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_3
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_3_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 20
+    sideArmor: 25
+    rearArmor: 15
+    underArmor: 10
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_4
+    spriteSheet: HUMAN_SOLDIER_2_4.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_4
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_4_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_5
+    spriteSheet: HUMAN_SOLDIER_2_5.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_5
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_5_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_6
+    spriteSheet: HUMAN_SOLDIER_2_6.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_6
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_6_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_7
+    spriteSheet: HUMAN_SOLDIER_2_7.PCK
+    spriteInv: INV_HUMAN_SOLDIER_2_7
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_2_7_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_8
+    spriteSheet: HUMAN_SOLDIER_2_8.PCK
+    spriteInv: INV_HUMAN_JUMPSUIT
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_9
+    spriteSheet: HUMAN_SOLDIER_2_9.PCK
+    spriteInv: INV_HUMAN_JUMPSUIT
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 20
+    sideArmor: 25
+    rearArmor: 15
+    underArmor: 10
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_10
+    spriteSheet: HUMAN_SOLDIER_2_10.PCK
+    spriteInv: INV_HUMAN_JUMPSUIT
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 45
+    sideArmor: 35
+    rearArmor: 30
+    underArmor: 25
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR2_11
+    spriteSheet: HUMAN_SOLDIER_2_11.PCK
+    spriteInv: INV_HUMAN_JUMPSUIT
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 20
+    sideArmor: 25
+    rearArmor: 15
+    underArmor: 10
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR3_0
+    spriteSheet: HUMAN_SOLDIER_3_0.PCK
+    spriteInv: INV_HUMAN_SOLDIER_3_0
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_3_0_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR3_1
+    spriteSheet: HUMAN_SOLDIER_3_1.PCK
+    spriteInv: INV_HUMAN_SOLDIER_3_1
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_3_1_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR3_2
+    spriteSheet: HUMAN_SOLDIER_3_2.PCK
+    spriteInv: INV_HUMAN_SOLDIER_3_2
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_3_2_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR3_3
+    spriteSheet: HUMAN_SOLDIER_3_3.PCK
+    spriteInv: INV_HUMAN_SOLDIER_3_3
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_3_3_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR3_4
+    spriteSheet: HUMAN_SOLDIER_3_4.PCK
+    spriteInv: INV_HUMAN_SOLDIER_3_4
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_3_4_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR3_5
+    spriteSheet: HUMAN_SOLDIER_3_5.PCK
+    spriteInv: INV_HUMAN_SOLDIER_3_5
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_3_5_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR4_0
+    spriteSheet: HUMAN_SOLDIER_4_0.PCK
+    spriteInv: INV_HUMAN_SOLDIER_4_0
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_4_0_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR4_1
+    spriteSheet: HUMAN_SOLDIER_4_1.PCK
+    spriteInv: INV_HUMAN_SOLDIER_4_1
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_4_1_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR4_2
+    spriteSheet: HUMAN_SOLDIER_4_2.PCK
+    spriteInv: INV_HUMAN_SOLDIER_4_2
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_4_2_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR4_3
+    spriteSheet: HUMAN_SOLDIER_4_3.PCK
+    spriteInv: INV_HUMAN_SOLDIER_4_3
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_4_3_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SOLDIER_ARMOR4_4
+    spriteSheet: HUMAN_SOLDIER_4_4.PCK
+    spriteInv: INV_HUMAN_SOLDIER_4_4
+    corpseBattle:
+      - STR_HUMAN_SOLDIER_4_4_CORPSE
+    corpseGeo: STR_HUMAN_SOLDIER_0_0_CORPSE
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN2_ARMOR
+    spriteInv: INV_MALE_CIVILIAN2
+    spriteSheet: MALE_CIVILIAN2.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 96, 96, 96, 96, 160, 163, 163]
+    corpseBattle:
+      - STR_MALE_CIVILIAN2_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN3_ARMOR
+    spriteInv: INV_MALE_CIVILIAN3
+    spriteSheet: MALE_CIVILIAN3.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163]
+    corpseBattle:
+      - STR_MALE_CIVILIAN3_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN4_ARMOR
+    spriteInv: INV_MALE_CIVILIAN4
+    spriteSheet: MALE_CIVILIAN4.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163]
+    corpseBattle:
+      - STR_MALE_CIVILIAN4_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN5_ARMOR
+    spriteInv: INV_MALE_CIVILIAN
+    spriteSheet: MALE_CIVILIAN5.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 96, 96, 98, 158, 160, 162]
+    corpseBattle:
+      - STR_MALE_CIVILIAN5_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN6_ARMOR
+    spriteInv: INV_MALE_CIVILIAN6
+    spriteSheet: MALE_CIVILIAN6.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 158, 158]
+    corpseBattle:
+      - STR_MALE_CIVILIAN6_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN7_ARMOR
+    spriteInv: INV_MALE_CIVILIAN1
+    spriteSheet: MALE_CIVILIAN7.PCK
+    spriteHairGroup: 10
+    spriteHairColor: [160, 160, 160, 84, 84, 244, 228, 192]
+    corpseBattle:
+      - STR_MALE_CIVILIAN7_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    drawingRoutine: 4
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN8_ARMOR
+    spriteInv: INV_MALE_CIVILIAN8
+    spriteSheet: MALE_CIVILIAN8.PCK
+    corpseBattle:
+      - STR_MALE_CIVILIAN8_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    drawingRoutine: 4
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN9_ARMOR
+    spriteInv: INV_MALE_CIVILIAN9
+    spriteSheet: MALE_CIVILIAN9.PCK
+    corpseBattle:
+      - STR_MALE_CIVILIAN9_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_CIVILIAN10_ARMOR
+    spriteInv: INV_MALE_CIVILIAN10
+    spriteSheet: MALE_CIVILIAN10.PCK
+    corpseBattle:
+      - STR_MALE_CIVILIAN10_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN2_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN2
+    spriteSheet: FEMALE_CIVILIAN2.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN2_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN3_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN3
+    spriteSheet: FEMALE_CIVILIAN3.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 96, 96, 98, 158, 160, 161]
+    spriteHairGroup: 9
+    spriteHairColor: [144, 162, 144, 36, 245, 245, 36, 166]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN3_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN4_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN4
+    spriteSheet: FEMALE_CIVILIAN4.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 158, 158]
+    spriteHairGroup: 9
+    spriteHairColor: [144, 245, 34, 164, 245, 166, 34, 166]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN4_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN5_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN5
+    spriteSheet: FEMALE_CIVILIAN5.PCK
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN5_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    drawingRoutine: 4
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN6_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN6
+    spriteSheet: FEMALE_CIVILIAN6.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 96, 96, 98, 98, 158, 160, 162]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN6_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN7_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN7.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 96, 96, 98, 158, 160, 161]
+    spriteHairGroup: 9
+    spriteHairColor: [144, 162, 144, 36, 245, 245, 36, 166]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN7_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN8_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN8.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 96, 96, 98, 158, 160, 161]
+    spriteHairGroup: 9
+    spriteHairColor: [144, 162, 144, 36, 245, 245, 36, 166]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN8_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN9_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN9.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN9_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN10_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN10.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN10_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN11_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN11.PCK
+    spriteFaceGroup: 10
+    spriteFaceColor: [160, 1, 32, 48, 112, 128, 226, 242]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN11_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN12_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN12.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 94, 94, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [80, 16, 246, 36, 38, 208, 246, 246] #M0 F0 M1 F1 M2 F2 M3 F3
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN12_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN13_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN13.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 94, 94, 160, 160, 163, 163, 94, 94, 94, 94, 160, 163, 160, 160, 94, 94, 94, 94, 163, 160, 160, 163, 94, 94, 94, 94, 160, 163, 163, 163]
+    spriteHairGroup: 9
+    spriteHairColor: [80, 17, 246, 36, 38, 208, 246, 246, 36, 246, 246, 16, 16, 150, 150, 246, 178, 160, 160, 163, 38, 18, 246, 52, 246, 16, 37, 196, 161, 224, 224, 37]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN13_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN14_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN14.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 94, 94, 160, 160, 163, 163, 94, 94, 94, 94, 160, 163, 160, 160, 94, 94, 94, 94, 163, 160, 160, 163, 94, 94, 94, 94, 160, 163, 163, 163]
+    spriteHairGroup: 9
+    spriteHairColor: [80, 17, 246, 36, 38, 208, 246, 246, 36, 246, 246, 16, 16, 150, 150, 246, 178, 160, 160, 163, 38, 18, 246, 52, 246, 16, 37, 196, 161, 224, 224, 37]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN14_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_CIVILIAN15_ARMOR
+    spriteInv: INV_FEMALE_CIVILIAN
+    spriteSheet: FEMALE_CIVILIAN15.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: [94, 94, 94, 94, 160, 160, 163, 163, 94, 94, 94, 94, 160, 163, 160, 160, 94, 94, 94, 94, 163, 160, 160, 163, 94, 94, 94, 94, 160, 163, 163, 163]
+    spriteHairGroup: 9
+    spriteHairColor: [80, 17, 246, 36, 38, 208, 246, 246, 36, 246, 246, 16, 16, 150, 150, 246, 178, 160, 160, 163, 38, 18, 246, 52, 246, 16, 37, 196, 161, 224, 224, 37]
+    corpseBattle:
+      - STR_FEMALE_CIVILIAN15_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HERO_CIVILIAN0_ARMOR
+    spriteInv: INV_HERO_CIVILIAN0
+    spriteSheet: HERO_CIVILIAN0.PCK
+    corpseBattle:
+      - STR_HERO_CIVILIAN0_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HERO_CIVILIAN1_ARMOR
+    spriteInv: INV_HERO_CIVILIAN1
+    spriteSheet: HERO_CIVILIAN1.PCK
+    corpseBattle:
+      - STR_HERO_CIVILIAN1_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HERO_CIVILIAN2_ARMOR
+    spriteInv: INV_HERO_CIVILIAN2
+    spriteSheet: HERO_CIVILIAN2.PCK
+    corpseBattle:
+      - STR_HERO_CIVILIAN2_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HERO_CIVILIAN3_ARMOR
+    spriteInv: INV_MALE_CIVILIAN1
+    spriteSheet: HERO_CIVILIAN3.PCK
+    corpseBattle:
+      - STR_HERO_CIVILIAN3_CORPSE
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: POLICE_MALE_CIVILIAN_ARMOR
+    spriteInv: INV_POLICE_MALE_CIVILIAN
+    spriteSheet: POLICE_FEMALE_CIVILIAN.PCK
+    corpseBattle:
+      - STR_POLICE_MALE_CIVILIAN_CORPSE
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: POLICE_FEMALE_CIVILIAN_ARMOR
+    spriteInv: INV_POLICE_FEMALE_CIVILIAN
+    spriteSheet: POLICE_FEMALE_CIVILIAN.PCK
+    corpseBattle:
+      - STR_POLICE_FEMALE_CIVILIAN_CORPSE
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLUE_ARMOR1
+    spriteSheet: HUMAN_SUIT_BLUE_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLUE_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLUE_ARMOR2
+    spriteSheet: HUMAN_SUIT_BLUE_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLUE_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLUE_ARMOR3
+    spriteSheet: HUMAN_SUIT_BLUE_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLUE_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_GREEN_ARMOR1
+    spriteSheet: HUMAN_SUIT_GREEN_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_GREEN_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_GREEN_ARMOR2
+    spriteSheet: HUMAN_SUIT_GREEN_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_GREEN_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_GREEN_ARMOR3
+    spriteSheet: HUMAN_SUIT_GREEN_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_GREEN_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_GREY_ARMOR1
+    spriteSheet: HUMAN_SUIT_GREY_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_GREY_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_GREY_ARMOR2
+    spriteSheet: HUMAN_SUIT_GREY_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_GREY_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_GREY_ARMOR3
+    spriteSheet: HUMAN_SUIT_GREY_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_GREY_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_RED_ARMOR1
+    spriteSheet: HUMAN_SUIT_RED_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_RED_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_RED_ARMOR2
+    spriteSheet: HUMAN_SUIT_RED_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_RED_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_RED_ARMOR3
+    spriteSheet: HUMAN_SUIT_RED_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_RED_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_PINK_ARMOR1
+    spriteSheet: HUMAN_SUIT_PINK_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_PINK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_PINK_ARMOR2
+    spriteSheet: HUMAN_SUIT_PINK_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_PINK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_PINK_ARMOR3
+    spriteSheet: HUMAN_SUIT_PINK_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_PINK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_PURPLE_ARMOR1
+    spriteSheet: HUMAN_SUIT_PURPLE_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_PURPLE_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_PURPLE_ARMOR2
+    spriteSheet: HUMAN_SUIT_PURPLE_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_PURPLE_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+  - type: HUMAN_SUIT_PURPLE_ARMOR3
+    spriteSheet: HUMAN_SUIT_PURPLE_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_PURPLE_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR1
+    spriteSheet: HUMAN_SUIT_BLACK_1.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR2
+    spriteSheet: HUMAN_SUIT_BLACK_2.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR3
+    spriteSheet: HUMAN_SUIT_BLACK_3.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR4
+    spriteSheet: HUMAN_SUIT_BLACK_4.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR5
+    spriteSheet: HUMAN_SUIT_BLACK_5.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR6
+    spriteSheet: HUMAN_SUIT_BLACK_6.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR7
+    spriteSheet: HUMAN_SUIT_BLACK_7.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: HUMAN_SUIT_BLACK_ARMOR8
+    spriteSheet: HUMAN_SUIT_BLACK_8.PCK
+    spriteInv: INV_HUMAN_AGENT
+    corpseBattle:
+      - STR_HUMAN_SUIT_BLACK_CORPSE
+    frontArmor: 6
+    sideArmor: 4
+    rearArmor: 2
+    underArmor: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: MALE_FARMER_ARMOR
+    spriteInv: INV_MALE_FARMER
+    spriteSheet: MALE_FARMER.PCK
+    corpseBattle:
+      - STR_MALE_FARMER_CORPSE
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: FEMALE_FARMER_ARMOR
+    spriteInv: INV_FEMALE_FARMER
+    spriteSheet: FEMALE_FARMER.PCK
+    corpseBattle:
+      - STR_FEMALE_FARMER_CORPSE
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+####################################
+######### FACTION NPCS ############
+##################################
+  - type: AMERICAN_SOLDIER_ARMOR
+    spriteInv: INV_AMERICAN_SOLDIER
+    spriteSheet: AMERICAN_SOLDIER.PCK
+    corpseBattle:
+      - STR_AMERICAN_SOLDIER_CORPSE
+    frontArmor: 10
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: PATTON_TANK_ARMOR
+    spriteSheet: PATTON.PCK
+    spriteInv: PATTON
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 300
+    sideArmor: 250
+    rearArmor: 80
+    underArmor: 60
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 0.8 # Laser
+     - 0.8 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_UNARMED_UNIFORM
+  - type: SHERIDAN_TANK_ARMOR_NPC
+    spriteSheet: SHERIDAN.PCK
+    spriteInv: SHERIDAN
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 120
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_TANKCRUSH
+####################################
+  - type: EUROPEAN_SOLDIER_ARMOR
+    spriteInv: INV_EUROPEAN_SOLDIER
+    spriteSheet: EUROPEAN_SOLDIER.PCK
+    corpseBattle:
+      - STR_EUROPEAN_SOLDIER_CORPSE
+    frontArmor: 10
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_UNIFORM
+  - type: LEOPARD_TANK_ARMOR
+    spriteSheet: LEOPARD.PCK
+    spriteInv: LEOPARD
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 150
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 30
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.8 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_UNARMED_UNIFORM
+  - type: SALADIN_CAR_ARMOR_NPC
+    spriteSheet: SALADIN.PCK
+    spriteInv: SALADIN
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 140
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.5 # AP
+     - 0.7 # Incendiary
+     - 1.0 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.0 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_UNARMED_UNIFORM
+##################################
+  - type: SOVIET_SOLDIER_ARMOR
+    spriteInv: INV_SOVIET_SOLDIER
+    spriteSheet: SOVIET_SOLDIER.PCK
+    corpseBattle:
+      - STR_SOVIET_SOLDIER_CORPSE
+    frontArmor: 10
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
+  - type: T54_TANK_ARMOR
+    spriteSheet: T54.PCK
+    spriteInv: T54
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 250
+    sideArmor: 160
+    rearArmor: 120
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.8 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_TANKCRUSH
+  - type: BMP_TANK_ARMOR
+    spriteSheet: BMP.PCK
+    spriteInv: BMP
+    allowInv: true
+    customArmorPreviewIndex: 557
+    corpseBattle:
+     - TANK_CORPSE_1
+     - TANK_CORPSE_2
+     - TANK_CORPSE_3
+     - TANK_CORPSE_4
+    frontArmor: 90
+    sideArmor: 60
+    rearArmor: 70
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+     - 1.0 # None
+     - 0.4 # AP
+     - 0.6 # Incendiary
+     - 0.8 # HE
+     - 1.0 # Laser
+     - 0.9 # Plasma
+     - 0.0 # Stun
+     - 0.2 # Melee
+     - 0.4 # Acid
+     - 0.0 # Smoke
+     - 0.8 # Elerium Fusion
+    loftempsSet: [ 92, 89, 90, 91 ]
+    personalLight: 20
+    #specialWeapon: STR_TANKCRUSH
+############### Ended Section
+######## Stationary Turrets here.
+  - type: STR_HTURRET_UC
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+    spriteSheet: HTURRET.PCK
+    allowInv: false
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    corpseBattle:
+     - STR_HIDDEN_CORPSE
+    loftempsSet: [ 3 ]
+    frontArmor: 14
+    sideArmor: 10
+    rearArmor: 8
+    underArmor: 2
+    movementType: 1
+    drawingRoutine: 19
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0

@@ -1,0 +1,54 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+extraSprites:
+  - type: TERRORIST_MALE_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TerroristFaction/TERRORIST_MALE_SPRITESHEET.png
+  - type: TERRORIST_FEMALE_SPRITESHEET.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TerroristFaction/TERRORIST_FEMALE_SPRITESHEET.png
+  - type: TERRORIST_GASMASK_SPRITESHEET.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TerroristFaction/TERRORIST_GASMASK_SPRITESHEET.png
+  - type: THIN_MAN.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Thin Man/ThinManSpritesheet.png
+  - type: TERRORIST_MALE_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TerroristFaction/TERRORIST_MALE_INVENTORY.png
+  - type: TERRORIST_FEMALE_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TerroristFaction/TERRORIST_FEMALE_INVENTORY.png
+  - type: TERRORIST_GASMASK_INVENTORY.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TerroristFaction/TERRORIST_GASMASK_INVENTORY.png
+  - type: inventory_THIN_MAN
+    singleImage: true
+    files:
+      0: Resources/Thin Man/Inventory/THIN_MAN_INV.png

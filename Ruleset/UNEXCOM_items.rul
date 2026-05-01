@@ -1,0 +1,680 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+### Kiro (A.N.)
+### All sprites compiled into one whole together to prevent confusion.
+### Setup sections based on numbers. Compiling all items in 1 storage
+items:
+##### Unique Item
+##### Setup with recovery dividers
+  - type: STR_ELERIUM_115
+    recoveryDividers:
+      STR_HOSTAGE_CRISIS: 300
+  - type: STR_UFO_POWER_SOURCE
+    recoveryDividers:
+      STR_HOSTAGE_CRISIS: 300
+# Decoder Alien Components Will be here and there.
+  - type: STR_HYPER_WAVE_ENCODER
+    categories: [STR_MISC, STR_ALIEN_TECH]
+    size: 0.1
+    battleType: 10
+    costSell: 150000
+    weight: 5
+    bigSprite: 1115
+    floorSprite: 1115
+    handSprite: 120
+    invWidth: 2
+    invHeight: 1
+    recover: true
+    recoveryPoints: 50
+    armor: 10
+    specialType: 20
+    listOrder: 5200
+##### Alien Codes for Campaign Stuff
+  - type: STR_ALIEN_ID_CODES
+    size: 0.1
+##### Alien Analysis Item
+  - type: STR_SMALL_FIGHTER_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_FIGHTER_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_SENTRY_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_SMALL_SCOUT_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_MEDIUM_SCOUT_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_LARGE_SCOUT_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_EXCAVATOR_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_ABDUCTOR_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_HARVESTER_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_LAB_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_TERROR_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_TROOP_LANDER_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_BATTLESHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+  - type: STR_SUPPLY_SHIP_ANALYSIS
+    size: 0.1
+    listOrder: 9000
+    battleType: 0
+########## Items / Components
+  - type: STR_ALIEN_CEPHALOPOD_TISSUE
+    size: 0.3
+    costSell: 19500
+    bigSprite: 1113
+########## Items / Components Ends
+########## Airstrikes and Air Support
+  - type: STR_HE_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    requires:
+      - STR_AIR_STRIKES
+    costBuy: 100000
+    costSell: 50000
+    monthlyBuyLimit: 20
+    weight: 1
+    bigSprite: 956
+    floorSprite: 956
+    handSprite: 956
+    explosionHitSound: [100, 101, 102]
+    primeSound: [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+    power: 200
+    damageType: 3
+    battleType: 4
+    blastRadius: 12
+    fuseType: 5
+    fuseTriggerEvents:
+      throwTrigger: true
+  - type: STR_INC_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    requires:
+      - STR_AIR_STRIKES
+    costBuy: 100000
+    costSell: 50000
+    monthlyBuyLimit: 20
+    weight: 1
+    bigSprite: 972
+    floorSprite: 972
+    handSprite: 972
+    explosionHitSound: [103, 104, 105]
+    primeSound: [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+    power: 100
+    damageType: 2
+    battleType: 4
+    fuseType: 5
+    fuseTriggerEvents:
+      throwTrigger: true
+    damageAlter:
+      FixRadius: 12
+      ToMorale: 0.5
+      FireThreshold: 0
+      RadiusReduction: 0.0
+  - type: STR_CANNON_STRIKE
+    categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
+    size: 0.01
+    requires:
+      - STR_AIR_STRIKES
+    costBuy: 100000
+    costSell: 50000
+    monthlyBuyLimit: 20
+    weight: 1
+    bigSprite: 988
+    floorSprite: 988
+    handSprite: 988
+    explosionHitSound: [106, 107, 108]
+    primeSound: [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+    power: 150
+    damageType: 3
+    battleType: 4
+    blastRadius: 12
+    fuseType: 5
+    fuseTriggerEvents:
+      throwTrigger: true
+    damageAlter:
+      FixRadius: 8
+      ToMorale: 0.6
+      ToArmorPre: 0.6
+      ToTile: 0.1
+      FireThreshold: 1000
+      RadiusReduction: 0.0
+
+########## Players Soldiers Corpse
+  - type: STR_CORPSE_UNIFORM
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 500
+    floorSprite: 500
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_SPECIAL_FORCES_UNIFORM
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 503
+    floorSprite: 503
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_PILOT_SUIT
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 501
+    floorSprite: 501
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_MERCENARY_UNIFORM
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 504
+    floorSprite: 504
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_COMBAT_ARMOR_UC
+    name: STR_COMBAT_ARMOR_UC
+    size: 0.8
+    costSell: 60000
+  - type: STR_CORPSE_COMBAT_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 502
+    floorSprite: 502
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: true
+  - type: STR_DELTA_ARMOR_UC
+    name: STR_DELTA_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_DELTA_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+  - type: STR_RIOT_ARMOR_UC
+    name: STR_RIOT_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_RIOT_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+  - type: STR_CORPSE_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 28
+    floorSprite: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: true
+  - type: STR_CORPSE_ASTRONAUT_A7L_SPACESUIT
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 512
+    floorSprite: 512
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_ASTRONAUT_A7MMU_SPACESUIT
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 515
+    floorSprite: 515
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_ASTRONAUT_KRECHET94_SPACESUIT
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 513
+    floorSprite: 513
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_CORPSE_ASTRONAUT_KRECHETMMU_SPACESUIT
+    name: STR_CORPSE
+    battleType: 11
+    weight: 24
+    bigSprite: 516
+    floorSprite: 516
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+# Power Armor
+  - type: STR_CORPSE_MARAUDER
+    name: STR_CORPSE
+    battleType: 11
+    weight: 26
+    bigSprite: 517
+    floorSprite: 517
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
+  - type: STR_CORPSE_PATHFINDER
+    name: STR_CORPSE
+    battleType: 11
+    weight: 26
+    bigSprite: 518
+    floorSprite: 518
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
+# Players Armor Armor
+  - type: STR_PERSONAL_ARMOR
+    size: 0.8
+    costSell: 54000
+  - type: STR_HEAVY_PERSONAL_ARMOR
+    size: 1.0
+    costSell: 68000
+  - type: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 20
+    bigSprite: 2905
+    floorSprite: 2906
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: true
+  - type: STR_SCOUT_POWER_ARMOR
+    name: STR_SCOUT_POWER_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_SCOUT_POWER_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 22
+    bigSprite: 903
+    floorSprite: 904
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+  - type: STR_SCOUT_FLYING_ARMOR
+    name: STR_SCOUT_FLYING_ARMOR_UC
+    size: 0.8
+    costSell: 50000
+  - type: STR_CORPSE_SCOUT_FLYING_ARMOR
+    name: STR_CORPSE
+    battleType: 11
+    weight: 22
+    bigSprite: 510
+    floorSprite: 510
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    recover: true
+######### Inventory Null Slot, Great for Armor Restrictions Kiro Wrote this
+    # Full Backpack
+  - type: STR_INV_NULL_BACK_PACK ## Full On All 3x3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5008
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: STR_INV_NULL_BACK_PACK1 #1x3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5004
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: STR_INV_NULL_BACK_PACK1 #2x3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5006
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+    # Upper Backpack
+  - type: STR_INV_NULL_UPPERPACK_1 #1x2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_UPPERPACK_1
+    recover: false
+  - type: STR_INV_NULL_UPPERPACK_2 #2x2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5003
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_UPPERPACK_1
+    recover: false
+  - type: STR_INV_NULL_UPPERPACK_3 #3x2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5007
+    invWidth: 3
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_UPPERPACK_1
+    recover: false
+  # Chest Belt Set
+  - type: STR_INV_NULL_BELT
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_BELT
+    recover: false
+  - type: STR_INV_NULL_CHEST_BELT_1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_CHEST_BELT_1
+    recover: false
+  - type: STR_INV_NULL_CHEST_BELT_2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_CHEST_BELT_2
+    recover: false
+  # Torso Belt Set
+  - type: STR_INV_NULL_TORSO_BELT1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_1
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT2
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_2
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT3
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_3
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT4
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_4
+    recover: false
+  - type: STR_INV_NULL_TORSO_BELT5
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_TORSO_BELT_5
+    recover: false
+    ##### Shoulders from Right to Left
+  - type: STR_INV_NULL_RIGHT_SHOULDER
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_RIGHT_SHOULDER
+    recover: false
+  - type: STR_INV_NULL_RSHOULDER_1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5000
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot:  STR_RSHOULDER_1
+    recover: false
+  - type: STR_INV_NULL_LEFT_SHOULDER
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_LEFT_SHOULDER
+    recover: false
+  - type: STR_INV_NULL_LSHOULDER_1
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5000
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot:  STR_LSHOULDER_1
+    recover: false
+#### The rest of it will be done
+  - type: STR_INV_NULL_QD_SLOT
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_QD_SLOT
+    recover: false
+  - type: STR_INV_NULL_LEFT_LEG
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_LEFT_LEG
+    recover: false
+  - type: STR_INV_NULL_RIGHT_LEG
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_RIGHT_LEG
+    recover: false
+
+######### Melee / Close Range Weapons
+  - type: STR_UNARMED_UNIFORM
+    weight: 0
+    bigSprite: 3000
+    meleeHitSound: 99
+    meleeAnimation: 0
+    power: 20
+    damageType: 6
+    damageBonus:
+      strength: 0.1
+      melee: 0.1
+    damageAccuracy:
+      strength: 0.1
+      melee: 0.1
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.15
+      ToHealth: 0.35
+      ToArmorPre: 0.1
+    accuracyMelee: 85
+    meleeMultiplier:
+      melee: 1.0
+    confMelee:
+      name: STR_PUNCH
+    costMelee:
+      time: 8
+      energy: 4
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialIconSprite: 2
+    specialUseEmptyHand: true
+  ##### Tank Crush
+  - type: STR_TANKCRUSH
+    weight: 0
+    bigSprite: 3001
+    meleeHitSound: 14
+    meleeAnimation: 0
+    power: 200
+    damageType: 3
+    damageBonus:
+      strength: 0.5
+      melee: 0.5
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.15
+      ToHealth: 0.35
+      ToArmorPre: 0.1
+    accuracyMelee: 85
+    meleeMultiplier:
+      melee: 1.0
+    confMelee:
+      name: STR_TANKCRUSH
+    costMelee:
+      time: 40
+      energy: 40
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialIconSprite: 3
+    specialUseEmptyHand: true
+  - type: STR_VEHICLECRASH
+    weight: 0
+    bigSprite: 3002
+    meleeHitSound: 14
+    meleeAnimation: 0
+    power: 125
+    damageType: 3
+    damageBonus:
+      strength: 0.5
+      melee: 0.5
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.15
+      ToHealth: 0.35
+      ToArmorPre: 0.1
+    accuracyMelee: 85
+    meleeMultiplier:
+      melee: 1.0
+    confMelee:
+      name: STR_VEHICLECRASH
+    costMelee:
+      time: 15
+      energy: 15
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialIconSprite: 4
+    specialUseEmptyHand: true

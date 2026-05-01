@@ -1,0 +1,2314 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+############################
+## Kiro fixed this whole mess and revised it for final results.
+###########################
+ufos:
+####### Kiro: I'm going to set it up for calculations on how to balance UFOs
+####### Maptiles: Thrusters: 2 = 1 for Accel
+####### Setting Calculator for UFO Speed
+####### 1 Accel = 400 Speed Max
+####### Divide it By based on Size
+####### Size: Very Small/Small: 1; Medium: 2; Large: 3 ; Very Large: 4;
+####### Very small / small: 10x10
+####### Medium: 20x20
+####### Large: 20x30 or 30x20 or Max up to 30x30
+####### Very Large: More than either 20x30 or 30x20
+
+####### Calculator for damageMax
+####### Size either 10X10 or any number:
+####### Sample: 10X10; 10X20; 10x30; or more
+####### Multiply it By based on Size
+####### Size: Medium: 2; Large: 3 Large: 4 if h:8^; Very Large: 5 if h:8^;
+####### Multiply it by based on Size
+####### Size: Very Small: 1 for 10X10 only; Small: 1 for 10X10 only;
+####### Divide it by 2 for shields capacity
+
+####### Damage Max / 5 for Power; divided by size Large: 2; Very Large: 5;
+####### Damage Max / 10 for Range; divided by size:
+####### Size: Medium: 3; Large: 4 Large: 5 if h:8^; Very Large: 6 if h:8^;
+####### Reload: Damage Max / 5 / divided by size:
+####### Size: Medium: 2; Large: 3 Large: 4 if h:8^; Very Large: 5 if h:8^;
+####### Avoid Bonus: Speed Max / Accelerator / divide it by 10
+
+####### Damage Max = Score
+
+
+####### Small Fighter
+  - type: STR_SMALL_FIGHTER
+    size: STR_VERY_SMALL
+    modSprite: InterceptionNoFeed
+    damageMax: 100
+    speedMax: 1200
+    accel: 3
+    power: 20
+    range: 20
+    score: 100
+    reload: 20
+    avoidBonus: 30
+    hunterKillerPercentage: 20
+    breakOffTime: 100
+    radarRange: 100
+    sightRange: 0
+    huntMode: 2
+    battlescapeTerrainData:
+      name: A1IDTSPCCRFTA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: A1IDTSPCCRFTA2
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTA3
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTA4
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB1
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB2
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB3
+          width: 10
+          length: 10
+        - name: A1IDTSPCCRFTB4
+          width: 10
+          length: 10
+###### Small Scout
+  - type: STR_SMALL_SCOUT
+    modSprite: InterceptionScout
+    size: STR_VERY_SMALL
+    damageMax: 100
+    speedMax: 800
+    accel: 2
+    avoidBonus: 30
+    power: 20
+    range: 20
+    score: 100
+    reload: 20
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: A_A1UFO1SCOUT1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: A_A1UFO1SCOUT2
+          width: 10
+          length: 10
+        - name: A_A1UFO1SCOUT3
+          width: 10
+          length: 10
+        - name: A_A1UFO1SCOUT4
+          width: 10
+          length: 10
+  - type: STR_MEDIUM_SCOUT
+    size: STR_SMALL
+    modSprite: InterceptionAssault
+    damageMax: 100
+    speedMax: 600
+    accel: 2
+    power: 20
+    range: 20
+    score: 200
+    reload: 20
+    avoidBonus: 30
+    shieldCapacity: 50
+    shieldRechargeInGeoscape: 0
+    shieldBleedThrough: 5
+    breakOffTime: 200
+    radarRange: 100
+    battlescapeTerrainData:
+      name: IDT_UFOBASSAULTA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOBASSAULTA1
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTA2
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTA3
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTA4
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTB1
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTB2
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTB3
+          width: 10
+          length: 10
+        - name: IDT_UFOBASSAULTB4
+          width: 10
+          length: 10
+#END MEDIUM SCOUT
+#BEGIN LARGE SCOUT
+  - type: STR_LARGE_SCOUT #ignoreDuplicate
+    modSprite: InterceptionBattle
+    size: STR_SMALL
+    damageMax: 400
+    speedMax: 2000
+    accel: 5
+    power: 80
+    range: 40
+    score: 400
+    reload: 40
+    avoidBonus: 8
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 2
+    shieldBleedThrough: 20
+    breakOffTime: 200
+    radarRange: 100
+    battlescapeTerrainData:
+      name: IDT_UFOCBATTLEA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOCBATTLEA1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 3, 6, 1]
+              - [ 16, 6, 1]
+              - [ 3, 9, 1]
+              - [ 16, 9, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEA2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 3, 10, 1]
+              - [ 16, 10, 1]
+              - [ 3, 13, 1]
+              - [ 16, 13, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEA3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 6, 3, 1]
+              - [ 9, 3, 1]
+              - [ 6, 16, 1]
+              - [ 9, 16, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEA4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 10, 3, 1]
+              - [ 13, 3, 1]
+              - [ 10, 16, 1]
+              - [ 13, 16, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEB1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 11, 1]
+              - [ 14, 11, 1]
+              - [ 5, 11, 2]
+              - [ 14, 11, 2]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEB2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 8, 1]
+              - [ 14, 8, 1]
+              - [ 5, 8, 2]
+              - [ 14, 8, 2]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEB3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 11, 5, 1]
+              - [ 11, 14, 1]
+              - [ 11, 5, 2]
+              - [ 11, 14, 2]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEB4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 5, 1]
+              - [ 8, 14, 1]
+              - [ 8, 5, 2]
+              - [ 8, 14, 2]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEC1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 4, 10, 1]
+              - [ 8, 10, 1]
+              - [ 11, 10, 1]
+              - [ 15, 10, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEC2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 4, 9, 1]
+              - [ 8, 9, 1]
+              - [ 11, 9, 1]
+              - [ 15, 9, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEC3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 10, 4, 1]
+              - [ 10, 8, 1]
+              - [ 10, 11, 1]
+              - [ 10, 15, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEC4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 4, 1]
+              - [ 9, 8, 1]
+              - [ 9, 11, 1]
+              - [ 9, 15, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLED1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 5, 1]
+              - [ 14, 5, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLED2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 14, 1]
+              - [ 14, 14, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLED3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 14, 5, 1]
+              - [ 14, 14, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLED4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 5, 5, 1]
+              - [ 5, 14, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEE1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 7, 15, 1]
+              - [ 7, 3, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEE2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 15, 7, 1]
+              - [ 3, 7, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEE3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 11, 1]
+              - [ 11, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEE4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 11, 8, 1]
+              - [ 11, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEF1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 9, 1]
+              - [ 10, 9, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEF2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 10, 1]
+              - [ 10, 10, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEF3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 9, 1]
+              - [ 9, 10, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEF4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 10, 9, 1]
+              - [ 10, 10, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEG1
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 9, 1]
+              - [ 11, 9, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEG2
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 8, 10, 1]
+              - [ 11, 10, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEG3
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 9, 8, 1]
+              - [ 9, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOCBATTLEG4
+          width: 20
+          length: 20
+          items:
+            SPTURRET_SPAWNER:
+              - [ 10, 8, 1]
+              - [ 10, 11, 1]
+          fuseTimers:
+            SPTURRET_SPAWNER: [0, 0]
+#END LARGE SCOUT
+#BEGIN HARVESTER
+  - type: STR_HARVESTER #Support Class attached with escorts
+    modSprite: InterceptionCommando
+    size: STR_MEDIUM_UC
+    damageMax: 800
+    speedMax: 2400
+    accel: 12
+    power: 160
+    range: 30
+    score: 600
+    reload: 55
+    avoidBonus: 15
+    shieldCapacity: 400
+    shieldRechargeInGeoscape: 4
+    shieldBleedThrough: 40
+    breakOffTime: 800
+    radarRange: 200
+    battlescapeTerrainData:
+      name: IDT_UFODSUPPORTA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFODSUPPORTA1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTA2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+              - [ 9, 8, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTA3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+              - [ 8, 9, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTA4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+              - [ 9, 8, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTB1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+              - [ 8, 9, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTB2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTB3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTB4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+              - [ 9, 10, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTC1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+              - [ 10, 9 ,1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTC2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+              - [ 9, 10, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTC3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+              - [ 10, 9 ,1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTC4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTD1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTD2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTD3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTD4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTE1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTE2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+              - [ 9, 9, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTE3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+              - [ 9, 9, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTE4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 9, 11, 0]
+              - [ 9, 9, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTF1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+              - [ 15, 8, 3]
+            SPTURRET_SPAWNER:
+              - [ 11, 9, 0]
+              - [ 9, 9, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTF2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTF3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 8, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFODSUPPORTF4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 3]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+#END HARVESTER
+#BEGIN ABDUCTOR
+  - type: STR_ABDUCTOR #Commando Class
+    modSprite: InterceptionCommando
+    size: STR_MEDIUM_UC
+    damageMax: 800
+    speedMax: 2400
+    accel: 12
+    power: 160
+    range: 30
+    score: 800
+    reload: 55
+    avoidBonus: 15
+    shieldCapacity: 400
+    shieldRechargeInGeoscape: 4
+    shieldBleedThrough: 40
+    breakOffTime: 800
+    radarRange: 200
+    battlescapeTerrainData:
+      name: IDT_UFOECOMMANDO
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOECOMMANDOA1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 9, 14, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOA2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOA3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 9, 14, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOA4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOB1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOB2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOB3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 9, 14, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOB4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOC1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 9, 14, 0]
+              - [ 9, 7, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOC2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 9, 0]
+              - [ 6, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOC3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 8, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 9, 14, 0]
+              - [ 9, 7, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOECOMMANDOC4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 10, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 9, 0]
+              - [ 6, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+#END ABDUCTOR
+#BEGIN TERROR SHIP
+  - type: STR_TERROR_SHIP #Strikers Class plus escorts
+    modSprite: InterceptionTerror
+    size: STR_LARGE
+    damageMax: 1800
+    speedMax: 1900
+    accel: 14
+    power: 360
+    range: 45
+    score: 600
+    reload: 90
+    avoidBonus: 10
+    shieldCapacity: 900
+    shieldRechargeInGeoscape: 9
+    shieldBleedThrough: 90
+    breakOffTime: 1800
+    radarRange: 300
+    battlescapeTerrainData:
+      name: IDT_UFOFSTRIKERA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOFSTRIKERA1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 24, 5, 1]
+              - [ 3, 5, 1]
+            ATURRET_SPAWNER:
+              - [ 3, 12, 1]
+              - [ 24, 12, 1]
+            SPTURRET_SPAWNER:
+              - [ 25, 9, 0]
+              - [ 19, 9, 0]
+              - [ 9, 9, 0]
+              - [ 3, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERA2
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 26, 0]
+              - [ 9, 20, 0]
+              - [ 9, 10, 0]
+              - [ 9, 4, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERA3
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 24, 5, 1]
+              - [ 3, 5, 1]
+            ATURRET_SPAWNER:
+              - [ 3, 12, 1]
+              - [ 24, 12, 1]
+            SPTURRET_SPAWNER:
+              - [ 13, 14, 0]
+              - [ 19, 9, 0]
+              - [ 9, 9, 0]
+              - [ 15, 14, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERA4
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 14, 16, 0]
+              - [ 9, 20, 0]
+              - [ 9, 10, 0]
+              - [ 14, 14, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERB1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 24, 5, 1]
+              - [ 3, 5, 1]
+            ATURRET_SPAWNER:
+              - [ 3, 12, 1]
+              - [ 24, 12, 1]
+            SPTURRET_SPAWNER:
+              - [ 25, 9, 0]
+              - [ 18, 9, 0]
+              - [ 10, 9, 0]
+              - [ 3, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERB2
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 26, 0]
+              - [ 9, 19, 0]
+              - [ 9, 11, 0]
+              - [ 9, 4, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERB3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 24, 5, 1]
+              - [ 3, 5, 1]
+            ATURRET_SPAWNER:
+              - [ 3, 12, 1]
+              - [ 24, 12, 1]
+            SPTURRET_SPAWNER:
+              - [ 17, 9, 0]
+              - [ 11, 9, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERB4
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC2
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERC4
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD2
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOFSTRIKERD4
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 5, 25, 1]
+              - [ 5, 4, 1]
+            ATURRET_SPAWNER:
+              - [ 12, 25, 1]
+              - [ 12, 4, 1]
+            SPTURRET_SPAWNER:
+              - [ 9, 18, 0]
+              - [ 9, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+
+#END TERROR SHIP
+#BEGIN BATTLESHIP
+  - type: STR_BATTLESHIP
+    modSprite: InterceptionBattleship
+    size: STR_VERY_LARGE
+    damageMax: 6000
+    speedMax: 4000
+    accel: 40
+    power: 240
+    range: 50
+    score: 1500
+    reload: 200
+    avoidBonus: 8
+    shieldCapacity: 3000
+    shieldRechargeInGeoscape: 30
+    shieldBleedThrough: 300
+    breakOffTime: 4000
+    radarRange: 750
+    battlescapeTerrainData:
+      name: IDT_UFOGBATTLESHIPA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOGBATTLESHIPA1
+          width: 30
+          length: 50
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 13, 26, 1]
+              - [ 15, 26, 1]
+              - [ 13, 2, 1]
+              - [ 15, 2, 1]
+              - [ 2, 15, 1]
+              - [ 2, 13, 1]
+              - [ 26, 15, 1]
+              - [ 26, 13, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPA2
+          width: 30
+          length: 50
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 13, 26, 1]
+              - [ 15, 26, 1]
+              - [ 13, 2, 1]
+              - [ 15, 2, 1]
+              - [ 2, 15, 1]
+              - [ 2, 13, 1]
+              - [ 26, 15, 1]
+              - [ 26, 13, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPA3
+          width: 50
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 13, 26, 1]
+              - [ 15, 26, 1]
+              - [ 13, 2, 1]
+              - [ 15, 2, 1]
+              - [ 2, 15, 1]
+              - [ 2, 13, 1]
+              - [ 26, 15, 1]
+              - [ 26, 13, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPA4
+          width: 50
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 13, 26, 1]
+              - [ 15, 26, 1]
+              - [ 13, 2, 1]
+              - [ 15, 2, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPB1
+          width: 30
+          length: 50
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 14, 26, 1]
+              - [ 11, 17, 1]
+              - [ 14, 2, 1]
+              - [ 11, 11, 1]
+              - [ 2, 14, 1]
+              - [ 17, 17, 1]
+              - [ 26, 14, 1]
+              - [ 17, 11, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPB2
+          width: 30
+          length: 50
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 13, 2, 1]
+              - [ 15, 2, 1]
+              - [ 6, 15, 2]
+              - [ 6, 13, 2]
+              - [ 13, 2, 2]
+              - [ 15, 2, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPB3
+          width: 50
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 2, 15, 1]
+              - [ 2, 13, 1]
+              - [ 21, 15, 1]
+              - [ 21, 13, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOGBATTLESHIPB4
+          width: 50
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 3]
+              - [ 25, 14, 3]
+              - [ 14, 2, 3]
+              - [ 2, 13, 3]
+            SPTURRET_SPAWNER:
+              - [ 2, 15, 1]
+              - [ 2, 13, 1]
+              - [ 21, 15, 1]
+              - [ 21, 13, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+#END BATTLESHIP
+#BEGIN SUPPLY SHIP
+  - type: STR_SUPPLY_SHIP #ignoreDuplicate
+    modSprite: InterceptionLogic
+    size: STR_LARGE
+    damageMax: 1800
+    speedMax: 1100
+    accel: 8
+    power: 180
+    range: 45
+    score: 900
+    reload: 15
+    avoidBonus: 10
+    shieldCapacity: 450
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 45
+    breakOffTime: 250
+    battlescapeTerrainData:
+      name: IDT_UFOHLOGISTICA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFO_170
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 7, 15, 2]
+              - [ 20, 15, 2]
+            SPTURRET_SPAWNER:
+              - [ 8, 12, 0]
+              - [ 20, 12, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOHLOGISTICA2
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 20, 2]
+              - [ 15, 7, 2]
+            SPTURRET_SPAWNER:
+              - [ 12, 20, 0]
+              - [ 12, 8, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOHLOGISTICA3
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 20, 2]
+              - [ 15, 7, 2]
+            SPTURRET_SPAWNER:
+              - [ 12, 20, 0]
+              - [ 12, 8, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_UFOHLOGISTICA4
+          width: 20
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 15, 20, 2]
+              - [ 15, 7, 2]
+            SPTURRET_SPAWNER:
+              - [ 12, 20, 0]
+              - [ 12, 8, 0]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+#END SUPPLY SHIP
+  - type: ALIEN_FORT_ENTRY
+    size: STR_SMALL
+    sprite: 1
+    battlescapeTerrainData:
+      name: P4_C
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: P4_C
+          width: 20
+          length: 20
+  - type: ALIEN_BASE_ENTRY
+    size: STR_SMALL
+    sprite: 1
+    battlescapeTerrainData:
+      name: PTOWER_ENTRY
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: PTOWER_ENTRY
+          width: 20
+          length: 20
+##END UFOS
+##### Now it's officially merged with the seperate files.
+  - type: STR_EXCAVATOR
+    modSprite: InterceptionExcavator
+    size: STR_LARGE
+    damageMax: 900
+    speedMax: 1600
+    accel: 12
+    power: 90
+    range: 23
+    reload: 45
+    shieldCapacity: 450
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 45
+    battlescapeTerrainData:
+      name: IDT_RESOURCEA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_RESOURCEA1
+          width: 30
+          length: 20
+        - name: IDT_RESOURCEA2
+          width: 30
+          length: 20
+        - name: IDT_RESOURCEA3
+          width: 20
+          length: 30
+        - name: IDT_RESOURCEA4
+          width: 20
+          length: 30
+        - name: IDT_RESOURCEB1
+          width: 30
+          length: 20
+        - name: IDT_RESOURCEB2
+          width: 30
+          length: 20
+        - name: IDT_RESOURCEB3
+          width: 20
+          length: 30
+        - name: IDT_RESOURCEB4
+          width: 20
+          length: 30
+        - name: IDT_RESOURCEC1
+          width: 30
+          length: 20
+        - name: IDT_RESOURCEC2
+          width: 30
+          length: 20
+        - name: IDT_RESOURCEC3
+          width: 20
+          length: 30
+        - name: IDT_RESOURCEC4
+          width: 20
+          length: 30
+#################################
+###### FIGHTER CLASS ###########
+################################
+  - type: STR_SENTRY_SHIP
+    modSprite: InterceptionSentry
+    size: STR_SMALL
+    damageMax: 400
+    speedMax: 2400
+    accel: 6
+    huntMode: 2
+    huntSpeed: 900
+    hunterKillerPercentage: 100
+    power: 40
+    radarRange: 700
+    range: 40
+    reload: 10
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 2
+    shieldBleedThrough: 20
+    battlescapeTerrainData:
+      name: IDT_UFOSENTRYA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_UFOSENTRYA1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYA2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYA3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYA4
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYB4
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYC4
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD1
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD2
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD3
+          width: 20
+          length: 20
+        - name: IDT_UFOSENTRYD4
+          width: 20
+          length: 20
+  - type: STR_FIGHTER_SHIP
+    modSprite: InterceptionFighter
+    size: STR_SMALL
+    damageMax: 400
+    speedMax: 4000
+    accel: 10
+    huntMode: 2
+    huntSpeed: 1500
+    hunterKillerPercentage: 100
+    power: 80
+    powerBonus: 40
+    hitBonus: 20
+    radarRange: 2000
+    range: 40
+    reload: 20
+    shieldCapacity: 200
+    shieldRechargeInGeoscape: 2
+    shieldBleedThrough: 20
+    battlescapeTerrainData:
+      name: IDT_FIGHTERA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_FIGHTERA1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERA2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERA3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERA4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERB4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC1
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC2
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC3
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+        - name: IDT_FIGHTERC4
+          width: 20
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 6, 6, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+###############################
+####### SUPPORT CLASS #########
+###############################
+  - type: STR_LAB_SHIP
+    modSprite: InterceptionLabShip
+    size: STR_VERY_LARGE
+    damageMax: 3600
+    speedMax: 1800
+    accel: 18
+    power: 144
+    range: 40
+    reload: 120
+    hitBonus: 20
+    shieldCapacity: 1800
+    shieldRechargeInGeoscape: 18
+    shieldBleedThrough: 180
+    battlescapeTerrainData:
+      name: IDT_RESEARCHA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: IDT_RESEARCHA1
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 22, 1]
+              - [ 14, 6, 1]
+              - [ 7, 14, 1]
+              - [ 21, 14, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_RESEARCHA2
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 21, 1]
+              - [ 14, 7, 1]
+              - [ 6, 14, 1]
+              - [ 22, 14, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_RESEARCHA3
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 7, 14, 1]
+              - [ 21, 14, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+        - name: IDT_RESEARCHA4
+          width: 30
+          length: 30
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 25, 2]
+              - [ 14, 2, 2]
+            SPTURRET_SPAWNER:
+              - [ 14, 21, 1]
+              - [ 14, 7, 1]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+##############################
+####### CAPITAL CLASS ########
+##############################
+##### Now it's officially merged with the seperate files.
+####### Damage Max = Score 5/1/2026
+
+  - type: STR_TROOP_LANDER #ignoreDuplicate
+    size: STR_LARGE
+    modSprite: InterceptionTransport
+    damageMax: 900
+    speedMax: 1600
+    accel: 12
+    power: 90
+    reload: 23
+    shieldCapacity: 450
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 45
+    battlescapeTerrainData:
+      name: A1IDTTRPLNDRA1
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+        - IDT_A1UFO_DIGITAL1
+      mapBlocks:
+        - name: A1IDTTRPLNDRA1
+          width: 30
+          length: 20
+          items:
+            PTURRET_SPAWNER:
+              - [ 13, 3, 5]
+              - [ 17, 3, 5]
+              - [ 13, 15, 5]
+              - [ 17, 15, 5]
+            ATURRET_SPAWNER:
+              - [ 5, 3, 5]
+              - [ 9, 3, 5]
+              - [ 21, 3, 5]
+              - [ 25, 3, 5]
+              - [ 5, 15, 5]
+              - [ 9, 15, 5]
+              - [ 21, 15, 5]
+              - [ 25, 15, 5]
+            SPTURRET_SPAWNER:
+              - [ 6, 6, 2]
+              - [ 6, 7, 2]
+              - [ 6, 12, 2]
+              - [ 6, 13, 2]
+          fuseTimers:
+            PTURRET_SPAWNER: [0, 0]
+            SPTURRET_SPAWNER: [0, 0]
+            ATURRET_SPAWNER: [0, 0]
+    #### Filips UFO Carrier
+  - type: STR_CARRIERFILIP
+    size: STR_VERY_LARGE
+    modSprite: InterceptionCarrier
+    damageMax: 6000
+    speedMax: 4800
+    shieldCapacity: 3000
+    shieldRechargeInGeoscape: 30
+    shieldBleedThrough: 300
+    accel: 48
+    power: 240
+    powerBonus: -120
+    missilePower: 6
+    hitBonus: 50
+    radarRange: 750
+    range: 50
+    score: 6000
+    reload: 30
+    breakOffTime: 6000
+    battlescapeTerrainData:
+      name: CARRIERFILIP
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+        - IDT_A1UFO_DIGITAL1
+      mapBlocks:
+        - name: CARRIERFILIP
+          width: 50
+          length: 30
+          #items:
+    #### Kiros UFO Carrier
+  - type: STR_CARRIERKIRO
+    size: STR_VERY_LARGE
+    modSprite: InterceptionCarrier
+    damageMax: 6000
+    speedMax: 4000
+    shieldCapacity: 3000
+    shieldRechargeInGeoscape: 30
+    shieldBleedThrough: 300
+    accel: 40
+    power: 200
+    powerBonus: 0
+    missilePower: 10
+    hitBonus: 10
+    range: 60
+    score: 6000
+    reload: 15
+    breakOffTime: 10000
+    battlescapeTerrainData:
+      name: CARRIERKIRO
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+        - IDT_A1UFO_DIGITAL1
+      mapBlocks:
+        - name: CARRIERKIRO
+          width: 50
+          length: 30
+          #items:
+  - type: STR_ALIENUFOTARGETCROSSCHAIRA1 ## Alien Crosschair Target, assigned as escorts.
+    modSprite: InterceptionEvadeatall
+    size: STR_VERY_SMALL
+    damageMax: 2000
+    speedMax: 5000
+    accel: 20
+    avoidBonus: 100
+    power: 2000
+    range: 100
+    score: 0
+    reload: 10
+    breakOffTime: 2000
+##### UFO Section Ends
+#################################
+###### TERRORIST CRAFTS ########
+###############################
+  - type: STR_TEXAN_UFO
+    size: STR_SMALL
+    modSprite: UFO_TEXAN
+    damageMax: 30
+    speedMax: 180
+    fakeWaterLandingChance: 0
+    splashdownSurvivalChance: 0
+    unmanned: true
+    accel: 2
+    fireSound: 4
+    power: 8
+    range: 10
+    score: 50
+    reload: 12
+    avoidBonus: 10
+    breakOffTime: 200
+  - type: STR_MAGISTER_UFO
+    size: STR_SMALL
+    modSprite: UFO_MAGISTER
+    damageMax: 50
+    speedMax: 386
+    fakeWaterLandingChance: 0
+    splashdownSurvivalChance: 0
+    unmanned: true
+    accel: 4
+    power: 40
+    fireSound: 5
+    range: 30
+    score: 50
+    reload: 48
+    breakOffTime: 200
+  - type: STR_MI8_UFO
+    size: STR_SMALL
+    modSprite: UFO_MI8
+    damageMax: 250
+    speedMax: 140
+    fakeWaterLandingChance: 0
+    splashdownSurvivalChance: 0
+    accel: 4
+    power: 15
+    fireSound: 4
+    range: 15
+    score: 50
+    reload: 10
+    radarRange: 100
+    radarChance: 40
+    sightRange: 200
+    breakOffTime: 200
+    raceBonus:
+      STR_TERRORIST:
+        craftCustomDeploy: STR_MI8_TERRORIST_UFO
+    battlescapeTerrainData:
+      name: MI8_UFO
+      mapDataSets:
+        - BLANKS
+        - MI8
+        - OSPREY_CABIN
+      mapBlocks:
+        - name: MI8_UFO
+          width: 10
+          length: 20
+          height: 2
+##### Terrorist UFO Ends
+##### NPC Space Shuttles
+  - type: STR_SPACE_SHUTTLE_NPC
+    size: STR_VERY_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: SHUTTLE_GROUND
+      mapDataSets:
+        - BLANKS
+        - idtunexcomspaceshuttle
+        - idtladdersandstairs
+        - idtcraftramp1
+      mapBlocks:
+        - name: IDTSPACESHUTTLE1
+          width: 20
+          length: 20
+  - type: STR_MOON_STATION
+    size: STR_SMALL
+    sprite: 2
+    damageMax: 250
+    speedMax: 2700
+#    accel: 9
+#    power: 20
+#    range: 34
+#    score: 125
+#    reload: 48
+#    breakOffTime: 300
+    battlescapeTerrainData:
+      name: UFO_120
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+        - U_PODS
+      mapBlocks:
+        - name: P4_A
+          width: 20
+          length: 20
+#
+#          randomizedItems:
+#          - position: [12, 5, 0]
+#            amount: 1
+#            itemList:
+  - type: STR_MOON_AA
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 2400
+    accel: 9
+    power: 20
+    range: 15
+    score: 75
+    reload: 56
+    breakOffTime: 250
+    battlescapeTerrainData:
+      name: PABDUCT
+      mapDataSets:
+        - BLANKS
+        - U_EXT01
+        - U_WALL01
+        - U_DISEC1
+        - U_OPER1
+        - PUFOL83
+        - PUFOL83-B
+      mapBlocks:
+        - name: PABDUCT
+          width: 20
+          length: 10
+  - type: STR_SPACE_STATION
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 2400
+    accel: 9
+    power: 20
+    range: 15
+    score: 75
+    reload: 56
+    breakOffTime: 250
+    battlescapeTerrainData:
+      name: ALIEN_SPACE_STATION
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: ALIEN_SPACE_STATION_1
+          width: 20
+          length: 20
+          height: 16
+        - name: ALIEN_SPACE_STATION_2
+          width: 20
+          length: 20
+          height: 16
+        - name: ALIEN_SPACE_STATION_3
+          width: 20
+          length: 20
+          height: 16
+##### Ended Section
+##### Added Overseer section
+  - type: STR_OVERSEER
+    size: STR_SMALL
+    damageMax: 500
+    speedMax: 9000
+    power: 10
+    range: 30
+    score: 10
+    reload: 50
+    breakOffTime: 10
+    battlescapeTerrainData:
+      name: OVERSEER
+      mapDataSets:
+        - BLANKS
+        - IDT_A1UFO_FLOOR
+        - IDT_A1UFO_WALLS1
+        - IDT_A1UFO_CLIMB1
+        - IDT_A1UFO_RAMPS1
+        - IDT_A1UFO_EXTWEAPONS1
+        - IDT_A1UFO_DOORS1
+        - IDT_A1UFO_TECHTIER1
+        - IDT_A1UFO_TECHTIER2
+        - IDT_A1UFO_TECHTIER3
+        - IDT_A1UFO_TECHTIER4
+        - IDT_A1UFO_TECHTIER5
+      mapBlocks:
+        - name: OVERSEER
+          width: 50
+          length: 30
+##### End Overseer Section
+############## Ended Section

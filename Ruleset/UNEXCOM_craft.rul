@@ -1,0 +1,2541 @@
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+crafts:
+# weaponType 0 = Gatling Cannon (Fast but weak)
+# weaponType 1 = Revolver Cannon (Slow but powerful)
+# weaponType 2 = Light Missile (IR Guidance, short range)
+# weaponType 3 = Heavy Missile (Radar Guidance, long range)
+# weaponType 4 = Super Heavy Missile (Slow, very powerful)
+# weaponType 5 = Auxiliary Systems (Targeting pods, afterburners, etc)
+# weaponType 6 = Rockets (Super fast, short range, no targeting guidance. Basically a shotgun)
+######################
+###### FIGHTERS ######
+######################
+#{
+####################
+#### TIER I ##########
+##################
+############################
+######## UN AIRCRAFT ########
+##########################
+  - type: STR_TUNNAN
+    sprite: 398
+    fuelMax: 157
+    costBuy: 80000
+    costSell: 60000
+    monthlyBuyLimit: 12
+    damageMax: 160
+    speedMax: 1070
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - 6
+      - [2, 5]
+#Revolver Cannon
+#Revolver Cannon
+#Rockets
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_ROCKET_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 10
+    score: 400
+    listOrder: 110
+############################
+###### USAF AIRCRAFT #########
+###########################
+  - type: STR_PHANTOM
+    requires:
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    requiresBuyCountry: STR_USA
+    sprite: 399
+    fuelMax: 131
+    damageMax: 160
+    speedMax: 1674
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - [0, 1]
+      - 2
+      - 2
+      - [2, 3, 6, 5]
+#Gatling/Revolver Cannon
+#Light Missile
+#Light Missile
+#Light/Heavy Missile, Rockets, AUX Systems
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    costBuy: 400000
+    costSell: 350000
+    monthlyBuyLimit: 9
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 10
+    score: 400
+    listOrder: 117
+############################
+###### NATO AIRCRAFT ######
+##########################
+  - type: STR_LIGHTNING_F6
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_NATO_AIRCRAFT_OPTION1
+    requiresBuyCountry: STR_UK
+    sprite: 825
+    fuelMax: 192
+    damageMax: 145
+    speedMax: 1503
+    avoidBonus: 15
+    accel: 8
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - 2
+      - [2, 5]
+#Revolver Cannon
+#Revolver Cannon
+#Light Missile
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 400000
+    costSell: 350000
+    monthlyBuyLimit: 9
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 15
+    score: 400
+    listOrder: 119
+  - type: STR_STARFIGHTER
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_NATO_AIRCRAFT_OPTION2
+    requiresBuyCountry: STR_ITALY
+    sprite: 826
+    fuelMax: 192
+    damageMax: 130
+    speedMax: 1458
+    avoidBonus: 25
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 2
+      - [2, 5]
+      - [2, 5]
+#Gatling Cannon
+#Light Missile
+#Light Missile/AUX Systems
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_AUX_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 350000
+    costSell: 300000
+    monthlyBuyLimit: 9
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 15
+    score: 400
+    listOrder: 119
+  - type: STR_DRAKEN
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_NATO_AIRCRAFT_OPTION3
+    sprite: 827
+    fuelMax: 218
+    damageMax: 200
+    speedMax: 1348
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 6
+      - 2
+      - [2, 5]
+#Revolver Cannon
+#Rockets
+#Light Missile
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_ROCKET_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 450000
+    costSell: 400000
+    monthlyBuyLimit: 6
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 15
+    score: 400
+    listOrder: 119
+############################
+###### USSR AIRCRAFT ######
+##########################
+  - type: STR_FOXBAT
+    requires:
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_USSR_AIRCRAFT_OPTION1
+    sprite: 829
+    fuelMax: 216
+    damageMax: 180
+    speedMax: 1944
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - 3
+      - 3
+      - [3, 5]
+      - 1
+#Heavy Missile
+#Heavy Missile
+#Heavy Missile/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_AUX_THREE
+      - STR_CRAFT_CANNON_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    costBuy: 750000
+    costSell: 350000
+    monthlyBuyLimit: 9
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 20
+    score: 400
+    listOrder: 118
+  - type: STR_FISHBED
+    requires:
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+      - STR_USSR_AIRCRAFT_OPTION2
+    sprite: 830
+    fuelMax: 105
+    damageMax: 130
+    speedMax: 1469
+    avoidBonus: 25
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 2
+      - 2
+      - [5, 6]
+#Light Missile
+#Light Missile
+#Light Missile
+#Rocket/AUX
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_ROCKET_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 9
+    costBuy: 350000
+    costSell: 250000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 10
+    score: 400
+    listOrder: 118
+####################
+#### TIER II ######
+##################
+  - type: STR_TUNNAN_MK2
+    sprite: 947
+    fuelMax: 220
+    costSell: 160000
+    damageMax: 300
+    speedMax: 1300
+    avoidBonus: 20
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - 6
+      - [2, 5]
+#Revolver Cannon
+#Revolver Cannon
+#Rockets
+#Light/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_ROCKET_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    refuelRate: 25
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 10
+    score: 400
+    listOrder: 111
+  - type: STR_RAPIER
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 832
+    fuelMax: 216
+    damageMax: 250
+    speedMax: 2720
+    avoidBonus: 25
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - [0, 1]
+      - 2
+      - 5
+      - [5, 6]
+#Gatling/Revolver Cannon
+#Light Missile
+#AUX Systems
+#AUX Systems/Rockets
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_AUX_THREE
+      - STR_CRAFT_ROCKET_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    requiresBuyCountry: STR_USA
+    costBuy: 800000
+    costSell: 450000
+    monthlyBuyLimit: 6
+    refuelRate: 60
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 20
+    score: 400
+    listOrder: 118
+  - type: STR_VIGGEN
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 932
+    fuelMax: 213
+    damageMax: 280
+    speedMax: 1405
+    avoidBonus: 20
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - 1
+      - [2, 6]
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_ROCKET_LIGHT_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costBuy: 550000
+    costSell: 450000
+    monthlyBuyLimit: 6
+    refuelRate: 100
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 20
+    score: 400
+    listOrder: 118
+  - type: STR_FLANKER
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 930
+    fuelMax: 263
+    damageMax: 210
+    speedMax: 1500
+    avoidBonus: 25
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - 1
+      - [2, 3]
+      - 2
+      - [5, 6]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_ROCKET_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    costBuy: 450000
+    costSell: 350000
+    monthlyBuyLimit: 6
+    refuelRate: 60
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 20
+    score: 400
+    listOrder: 118
+####################
+#### TIER III #####
+##################
+  - type: STR_CRUSADER
+    requires:
+      - STR_ADVANCED_FIGHTER
+    sprite: 870
+    fuelMax: 300
+    damageMax: 410
+    speedMax: 3500
+    avoidBonus: 30
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - [0, 1]
+      - [0, 1]
+      - 2
+      - [2, 6, 5]
+#Gatling/Revolver Cannon
+#Gatling/Revolver Cannon
+#Light Missile
+#Light Missile, Rockets, AUX Systems
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ALL_CANNONS_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    undetectable: true
+    costSell: 650000
+    refuelRate: 80
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+  - type: STR_PANAVIA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 910
+    fuelMax: 252
+    damageMax: 420
+    speedMax: 2300
+    avoidBonus: 35
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_UK
+    costBuy: 800000
+    costSell: 500000
+    monthlyBuyLimit: 3
+    refuelRate: 80
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+  - type: STR_FIREFOX
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 908
+    fuelMax: 312
+    damageMax: 430
+    speedMax: 3200
+    avoidBonus: 30
+    hitBonus: 5
+    accel: 6
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 2
+      - [2, 3]
+      - 5
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    undetectable: true
+    requiresBuyCountry: STR_RUSSIA
+    costBuy: 900000
+    costSell: 750000
+    monthlyBuyLimit: 3
+    refuelRate: 80
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+  - type: STR_COBRA
+    requires:
+      - STR_ADVANCED_FIGHTER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 906
+    fuelMax: 288
+    damageMax: 415
+    speedMax: 2150
+    avoidBonus: 35
+    accel: 6
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_GATLING_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_AUX_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_USA
+    costBuy: 760000
+    costSell: 600000
+    monthlyBuyLimit: 3
+    refuelRate: 80
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+####################
+#### TIER IV ######
+##################
+  - type: STR_SABRE
+    requires:
+      - STR_EXOATMOSPHERIC_FIGHTERS
+    sprite: 912
+    fuelMax: 950
+    damageMax: 550
+    speedMax: 5500
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - [3, 4]
+      - [2, 3]
+      - [0, 1]
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_ALL_CANNONS_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    costSell: 650000
+    refuelRate: 100
+    repairRate: 7
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+  - type: STR_DYNASOAR # X-21 DynaMOWS
+    requires:
+      - STR_EXOATMOSPHERIC_FIGHTERS
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 913
+    fuelMax: 2732
+    damageMax: 440
+    speedMax: 15200
+    avoidBonus: 25
+    accel: 4
+    weapons: 3
+    weaponTypes:
+      - [0, 1]
+      - 2
+      - [2, 5]
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_AUX_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 3
+    costBuy: 1100000
+    costSell: 1000000
+    refuelRate: 100
+    repairRate: 7
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+  - type: STR_MIG_105
+    requires:
+      - STR_EXOATMOSPHERIC_FIGHTERS
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 915
+    fuelMax: 2732
+    damageMax: 550
+    speedMax: 15200
+    avoidBonus: 25
+    accel: 4
+    weapons: 3
+    weaponTypes:
+      - [0, 1]
+      - 2
+      - 2
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 3
+    costBuy: 1210000
+    costSell: 1000000
+    refuelRate: 100
+    repairRate: 7
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+#}
+          ############
+########### BOMBERS ############
+################################
+#{
+####################
+#### TIER I #######
+##################
+############################
+###### USAF AIRCRAFT ######
+##########################
+  - type: STR_THUNDERCHIEF
+    requires:
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 804
+    fuelMax: 184
+    damageMax: 150
+    speedMax: 1192
+    accel: 4
+    weapons: 3
+    weaponTypes:
+      - 0
+      - [2, 3]
+      - [2, 3]
+#Gatling Cannon
+#Light/Heavy Missile
+#Light/Heavy Missile
+    weaponStrings:
+      - STR_CRAFT_GATLING_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 9
+    costBuy: 675000
+    costSell: 600000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 10
+    score: 400
+    listOrder: 118
+############################
+###### NATO AIRCRAFT ######
+##########################
+  - type: STR_MIRAGE
+    requires:
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 828
+    fuelMax: 183
+    damageMax: 172
+    speedMax: 1192
+    accel: 5
+    weapons: 4
+    weaponTypes:
+      - [4, 3]
+      - 3
+      - 3
+      - 5
+#Heavy/Super Heavy Missile
+#Heavy Missile
+#Heavy Missile
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 9
+    costBuy: 650000
+    costSell: 600000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 10
+    avoidBonus: 10
+    score: 400
+    listOrder: 121
+############################
+###### USSR AIRCRAFT ######
+##########################
+  - type: STR_BACKFIRE
+    requires:
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 831
+    fuelMax: 262
+    damageMax: 230
+    speedMax: 1080
+    accel: 3
+    weapons: 4
+    weaponTypes:
+      - 5
+      - [4, 3]
+      - [4, 3]
+      - 3
+#AUX Systems
+#Heavy/Super Heavy Missile
+#Heavy/Super Heavy Missile
+#Heavy Missile
+    weaponStrings:
+      - STR_CRAFT_AUX_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_THREE
+      - STR_CRAFT_HEAVY_MISSILE_FOUR
+    soldiers: 4
+    vehicles: 0
+    pilots: 4
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 6
+    costBuy: 820000
+    costSell: 600000
+    refuelRate: 20
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 134
+    radarChance: 10
+    avoidBonus: -5
+    score: 400
+    listOrder: 120
+####################
+#### TIER II ######
+##################
+  - type: STR_VALKYRIE
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 866
+    fuelMax: 447
+    damageMax: 315
+    speedMax: 2640
+    avoidBonus: 10
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 4
+      - 3
+      - 3
+      - [5, 2]
+#Super Heavy Missile
+#Heavy Missile
+#Heavy Missile
+#Light Missile/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 6
+    costBuy: 900000
+    costSell: 750000
+    refuelRate: 40
+    transferTime: 72
+    repairRate: 3
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 10
+    score: 400
+    listOrder: 118
+  - type: STR_JAGUAR
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    requiresBuyCountry: STR_UK
+    sprite: 933
+    fuelMax: 174
+    damageMax: 300
+    speedMax: 917
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 1
+      - 1
+      - [3, 4]
+      - [2, 3, 5]
+    weaponStrings:
+      - STR_CRAFT_CANNON_ONE
+      - STR_CRAFT_CANNON_TWO
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_THREE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    monthlyBuyLimit: 6
+    costBuy: 720000
+    costSell: 600000
+    refuelRate: 40
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 10
+    score: 400
+    listOrder: 118
+  - type: STR_M50
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 931
+    fuelMax: 480
+    damageMax: 360
+    speedMax: 1050
+    avoidBonus: -10
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 4
+      - [3, 4]
+      - [3, 5]
+      - [3, 5]
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_AUX_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 6
+    costBuy: 980000
+    costSell: 800000
+    refuelRate: 60
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 10
+    score: 400
+    listOrder: 118
+    ####### On Our Own Bomber Tier 2 ##########
+  - type: STR_UNTAIRCRAFTBLACKA12
+    requires:
+      - STR_IMPROVED_BOMBER
+      - STR_ON_OUR_OWN
+    sprite: 1009
+    fuelMax: 2000
+    damageMax: 160
+    speedMax: 2500
+    accel: 7
+    weapons: 4
+    weaponTypes:
+      - 4
+      - [2, 3]
+      - [2, 3]
+      - 6
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_ROCKET_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    costSell: 75000
+    refuelRate: 50
+    repairRate: 3
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 75
+    radarRange: 200
+    radarChance: 20
+    score: 600
+    listOrder: 118
+####################
+#### TIER III #####
+##################
+  - type: STR_SARACEN
+    requires:
+      - STR_ADVANCED_BOMBER
+    sprite: 871
+    fuelMax: 350
+    damageMax: 470
+    speedMax: 3050
+    avoidBonus: 15
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 4
+      - 3
+      - [3, 4]
+      - [5, 2]
+#Super Heavy Missile
+#Heavy Missile
+#Heavy/Super Heavy Missile
+#Light Missile/AUX Systems
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_THREE
+      - STR_CRAFT_LIGHT_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    undetectable: true
+    costSell: 700000
+    refuelRate: 60
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
+  - type: STR_TU45M
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_USSR_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 907
+    fuelMax: 500
+    damageMax: 520
+    speedMax: 2600
+    avoidBonus: 5
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 4
+      - [3, 4]
+      - 3
+      - [3, 5]
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    requiresBuyCountry: STR_RUSSIA
+    monthlyBuyLimit: 3
+    costBuy: 800000
+    costSell: 650000
+    refuelRate: 60
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
+  - type: STR_LAMPYRIDAE
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    requiresBuyCountry: STR_WEST_GERMANY
+    monthlyBuyLimit: 3
+    sprite: 909
+    fuelMax: 384
+    damageMax: 480
+    speedMax: 3300
+    avoidBonus: 10
+    accel: 4
+    weapons: 4
+    weaponTypes:
+      - 4
+      - [2, 3]
+      - [2, 3]
+      - [3, 5]
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_THREE
+      - STR_CRAFT_HEAVY_AUX_FOUR
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    undetectable: true
+    costBuy: 830000
+    costSell: 700000
+    refuelRate: 60
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
+  - type: STR_A12
+    requires:
+      - STR_ADVANCED_BOMBER
+      - STR_USA_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 905
+    fuelMax: 612
+    damageMax: 500
+    speedMax: 2500
+    avoidBonus: 5
+    accel: 4
+    weapons: 3
+    weaponTypes:
+      - 4
+      - [2, 3]
+      - 5
+    weaponStrings:
+      - STR_CRAFT_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_TWO
+      - STR_CRAFT_AUX_THREE
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    allowLanding: false
+    undetectable: true
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 3
+    costBuy: 920000
+    costSell: 800000
+    refuelRate: 60
+    repairRate: 5
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 200
+    radarChance: 25
+    score: 400
+    listOrder: 118
+####################
+#### TIER IV ######
+##################
+  - type: STR_HERMES
+    requires:
+      - STR_EXOATMOSPHERIC_FIGHTERS
+      - STR_NATO_AERONAUTIC_SUPPORT_RESEARCH
+    sprite: 914
+    fuelMax: 2732
+    damageMax: 420
+    speedMax: 15200
+    avoidBonus: -15
+    accel: 4
+    weapons: 3
+    weaponTypes:
+      - [3, 4]
+      - [3, 4]
+      - [0, 1]
+    weaponStrings:
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_ONE
+      - STR_CRAFT_HEAVY_SUPER_HEAVY_MISSILE_TWO
+      - STR_CRAFT_ALL_CANNONS_THREE
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+    requiresBuyCountry: STR_FRANCE
+    monthlyBuyLimit: 3
+    costBuy: 1250000
+    costSell: 1100000
+    refuelRate: 100
+    repairRate: 7
+    transferTime: 72
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 100
+    radarChance: 25
+    score: 400
+    listOrder: 117
+#}
+######################
+##### TRANSPORTS #####
+######################
+#{
+####################
+#### TIER I #######
+##################
+  - type: STR_HERCULES
+    sprite: 822
+    fuelMax: 610
+    damageMax: 320
+    speedMax: 270
+    accel: 4
+    weapons: 1
+    weaponTypes:
+      - 5
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_AUX_ONE
+    soldiers: 14
+    vehicles: 1
+    pilots: 0
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 6
+    costBuy: 600000
+    costSell: 550000
+    refuelRate: 20
+    sightRange: 0
+    radarRange: 0
+    transferTime: 72
+    score: 400
+    keepCraftAfterFailedMission: true
+    listOrder: 113
+    battlescapeTerrainData:
+      name: HERCULES_PARADROP
+      mapDataSets:
+        - BLANKS
+        - LIGHTNIA
+        - URBAN
+        - CULTIVAT
+      mapBlocks:
+        - name: HERCULES_PARADROP
+          width: 10
+          length: 20
+    craftInventoryTile: [3, 14, 0]
+    deployment:
+#Tank drop
+      - [4, 4, 0, 4]
+      - [5, 4, 0, 1]
+      - [4, 5, 0, 3]
+      - [5, 5, 0, 5]
+#Soldier drop
+      - [2, 17, 0, 5]
+      - [7, 19, 0, 3]
+      - [1, 13, 0, 6]
+      - [7, 15, 0, 2]
+      - [0, 5, 0, 6]
+      - [8, 11, 0, 2]
+      - [2, 9, 0, 6]
+      - [8, 7, 0, 2]
+      - [0, 0, 0, 7]
+      - [8, 0, 0, 1]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+  - type: STR_HUEY
+    sprite: 823
+    fuelMax: 660
+    damageMax: 150
+    speedMax: 230
+    accel: 3
+    weapons: 4
+    weaponTypes:
+      - [5, 0, 1]
+      - [5, 6]
+      - [5, 0, 1]
+      - [5, 6]
+#AUX Systems/Gatling/Revolver Cannon
+#AUX Systems/Rocket
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ROCKET_AUX_TWO
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ROCKET_AUX_TWO
+    soldiers: 32
+    vehicles: 0
+    pilots: 4
+    requiresBuyCountry: STR_USA
+    monthlyBuyLimit: 6
+    costBuy: 100000
+    costRent: 6000
+    refuelRate: 50
+    repairRate: 4
+    transferTime: 48
+    score: 40
+    battlescapeTerrainData:
+      name: UH_1B_HUEY
+      mapDataSets:
+        - BLANKS
+        - UH_1B_HUEY
+      mapBlocks:
+        - name: UH_1B_HUEY
+          width: 20
+          length: 20
+          items:
+            HUEY_SPAWNER:
+              - [1, 13, 0]
+              - [5, 13, 0]
+              - [14, 13, 0]
+              - [18, 13, 0]
+          fuseTimers:
+            HUEY_SPAWNER: [0, 0]
+    craftInventoryTile: [6, 13, 0]
+    deployment:
+    # Pilot
+      - [1, 12, 0, 0]
+      - [6, 12, 0, 0]
+      - [14, 12, 0, 0]
+      - [19, 12, 0, 0]
+    # Soldiers Position 1
+      - [0, 7, 0, 0]
+      - [0, 8, 0, 0]
+      - [0, 9, 0, 0]
+      - [0, 10, 0, 0]
+      - [0, 11, 0, 0]
+      - [1, 7, 0, 0]
+      - [1, 8, 0, 0]
+      - [1, 9, 0, 0]
+      - [5, 7, 0, 0]
+      - [5, 8, 0, 0]
+      - [5, 9, 0, 0]
+      - [6, 7, 0, 0]
+      - [6, 8, 0, 0]
+      - [6, 9, 0, 0]
+      # Soldiers Position 2
+      - [13, 7, 0, 0]
+      - [13, 8, 0, 0]
+      - [13, 9, 0, 0]
+      - [13, 10, 0, 0]
+      - [13, 11, 0, 0]
+      - [14, 7, 0, 0]
+      - [14, 8, 0, 0]
+      - [14, 9, 0, 0]
+      - [18, 7, 0, 0]
+      - [18, 8, 0, 0]
+      - [18, 9, 0, 0]
+      - [19, 7, 0, 0]
+      - [19, 8, 0, 0]
+      - [19, 9, 0, 0]
+
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+####################
+#### TIER II ######
+##################
+#  - type: STR_GALAXY # C-5 Galaxy, US T2 Paratrooper
+#  - type: STR_XC142 # XC-142, US T2 VTOL
+#  - type: STR_TRANSALL # C-160 Transall, NATO T2 Paratrooper
+#  - type: STR_DORNIER # Do-31 Dornier, NATO T2 VTOL
+#  - type: STR_ILYUSHIN # Il-76 Ilyushin, USSR T2 Paratrooper
+  - type: STR_HIND # USSR T2 VTOL
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    sprite: 867
+    fuelMax: 660
+    damageMax: 400
+    speedMax: 300
+    accel: 3
+    weapons: 3
+    weaponTypes:
+      - [5, 0, 1]
+      - [5, 6]
+      - [5, 6]
+#AUX Systems/Gatling/Revolver Cannon
+#AUX Systems/Rocket
+#AUX Systems/Rocket
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ROCKET_AUX_TWO
+      - STR_CRAFT_ROCKET_AUX_THREE
+    soldiers: 8
+    vehicles: 0
+    pilots: 2
+#    costBuy: 100000
+    costRent: 6000
+    refuelRate: 50
+    repairRate: 4
+    transferTime: 48
+    score: 40
+    mapVisible: false
+    battlescapeTerrainData:
+      name: MI_24_HIND
+      mapDataSets:
+        - BLANKS
+        - MI_24_HIND
+      mapBlocks:
+        - name: MI_24_HIND
+          width: 10
+          length: 20
+          items:
+            HIND_TURRET_SPAWNER:
+              - [4, 10, 3]
+            STR_HIND_DOOR_BOMB:
+              - [4, 12, 0]
+              - [6, 12, 0]
+          fuseTimers:
+            HIND_TURRET_SPAWNER: [0, 0]
+            STR_HIND_DOOR_BOMB: [1, 1]
+    craftInventoryTile: [4, 10, 0]
+    deployment:
+      - [4, 10, 0, 4]
+      - [5, 10, 0, 4]
+      - [4, 11, 0, 4]
+      - [5, 11, 0, 4]
+      - [4, 12, 0, 6]
+      - [5, 12, 0, 2]
+      - [4, 13, 0, 0]
+      - [5, 13, 0, 0]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+####################
+#### TIER III #####
+##################
+#  - type: STR_ACHILLES # UNEXCOM T3 VTOL
+# #  - type: STR_ORION
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
+#     sprite: 119
+#     fuelMax: 510
+#     damageMax: 320
+#     speedMax: 270
+#     accel: 4
+#     weapons: 1
+#     weaponTypes:
+#       - 5
+# #AUX Systems
+#     weaponStrings:
+#       - STR_CRAFT_AUX_ONE
+#     soldiers: 16
+#     vehicles: 3
+#     pilots: 2
+#     costBuy: 600000
+#     costSell: 550000
+#     refuelRate: 20
+#     sightRange: 0
+#     radarRange: 0
+#     transferTime: 72
+#     score: 400
+#     listOrder: 113
+#     keepCraftAfterFailedMission: true
+#     battlescapeTerrainData:
+#       name: ORION_DROPPODS
+#       mapDataSets:
+#         - BLANKS
+#         - LIGHTNIA
+#         - CULTIVAT
+#       mapBlocks:
+#         - name: ORION_DROPPODS
+#           width: 10
+#           length: 20
+#     craftInventoryTile: [4, 5, 0]
+#     deployment:
+#       - [2, 18, 0, 4]
+#       - [8, 18, 0, 4]
+#       - [2, 13, 0, 4]
+#       - [7, 14, 0, 4]
+#       - [1, 8, 0, 4]
+#       - [8, 8, 0, 4]
+#       - [1, 2, 0, 4]
+#       - [8, 2, 0, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+# #  - type: STR_ACHILLES
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_VTOL_TRANSPORT]
+#     sprite: 124
+#     fuelMax: 560
+#     damageMax: 20
+#     speedMax: 230
+#     accel: 3
+#     weapons: 2
+#     weaponTypes:
+#       - [5, 0, 1]
+#       - [5, 6]
+# #AUX Systems/Gatling/Revolver Cannon
+# #AUX Systems/Rocket
+#     weaponStrings:
+#       - STR_CRAFT_ALL_CANNONS_ONE
+#       - STR_CRAFT_ROCKET_AUX_TWO
+#     soldiers: 12
+#     vehicles: 4
+#     pilots: 2
+#     costBuy: 100000
+#     costRent: 6000
+#     refuelRate: 50
+#     repairRate: 4
+#     transferTime: 48
+#      keepCraftAfterFailedMission: true
+#     score: 40
+#     battlescapeTerrainData:
+#       name: DRAGONFLY
+#       mapDataSets:
+#         - BLANKS
+#         - DRAGONFLY
+#       mapBlocks:
+#         - name: DRAGONFLY
+#           width: 10
+#           length: 20
+#     craftInventoryTile: [3, 11, 1]
+#     deployment:
+#       - [3, 11, 1, 0]
+#       - [4, 11, 1, 0]
+#       - [3, 12, 1, 0]
+#       - [4, 12, 1, 0]
+#       - [3, 13, 1, 0]
+#       - [4, 13, 1, 0]
+#       - [3, 14, 1, 0]
+#       - [4, 14, 1, 0]
+#       - [3, 15, 1, 0]
+#       - [4, 15, 1, 0]
+#       - [3, 16, 1, 4]
+#       - [4, 16, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+####################
+#### TIER IV ######
+##################
+# #  - type: STR_HYPERION
+#     categories: [STR_AIRCRAFTS, STR_UNEXCOM_TECH, STR_TRANSPORTS, STR_PARATROOPER_TRANSPORT]
+#     sprite: 125
+#     fuelMax: 510
+#     damageMax: 320
+#     speedMax: 270
+#     accel: 4
+#     weapons: 1
+#     weaponTypes:
+#       - 5
+# #AUX Systems
+#     weaponStrings:
+#       - STR_CRAFT_AUX_ONE
+#     soldiers: 16
+#     vehicles: 3
+#     pilots: 2
+#     costBuy: 600000
+#     costSell: 550000
+#     refuelRate: 20
+#     sightRange: 0
+#     radarRange: 0
+#     transferTime: 72
+#     score: 400
+#     listOrder: 113
+#     keepCraftAfterFailedMission: true
+#     battlescapeTerrainData:
+#       name: HYPERION_DROPPODS
+#       mapDataSets:
+#         - BLANKS
+#         - LIGHTNIA
+#         - CULTIVAT
+#       mapBlocks:
+#         - name: HYPERION_DROPPODS
+#           width: 10
+#           length: 20
+#     craftInventoryTile: [3, 10, 0]
+#     deployment:
+#       - [3, 10, 0, 4]
+#       - [3, 8, 0, 4]
+#       - [2, 9, 0, 2]
+#       - [4, 9, 0, 6]
+#       - [3, 18, 0, 4]
+#       - [3, 16, 0, 4]
+#       - [2, 17, 0, 2]
+#       - [4, 17, 0, 6]
+#       - [7, 15, 0, 4]
+#       - [7, 13, 0, 4]
+#       - [8, 14, 0, 2]
+#       - [6, 14, 0, 6]
+#       - [3, 10, 0, 4]
+#       - [3, 8, 0, 4]
+#       - [2, 9, 0, 2]
+#       - [4, 9, 0, 6]
+#       - [7, 7, 0, 4]
+#       - [7, 5, 0, 4]
+#       - [6, 6, 0, 2]
+#       - [8, 6, 0, 6]
+#       - [2, 3, 0, 4]
+#       - [2, 1, 0, 4]
+#       - [1, 2, 0, 2]
+#       - [3, 2, 0, 6]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+  - type: STR_SPACE_SHUTTLE
+    sprite: 945
+    requires:
+      - STR_OLYMPUS
+    fuelMax: 2732 # Combat range of 22,000 nmi
+    damageMax: 450
+    speedMax: 14092 # Orbital speed of 27,600 Km/h
+    accel: 3
+    weapons: 0
+    soldiers: 28
+    vehicles: 0
+    pilots: 6
+    allowLanding: true
+    spacecraft: true
+    monthlyBuyLimit: 3
+    costBuy: 1000000
+    costRent: 6000
+    refuelRate: 50
+    repairRate: 4
+    transferTime: 48
+    score: 400
+    battlescapeTerrainData:
+      name: SHUTTLE_GROUND
+      mapDataSets:
+        - BLANKS
+        - idtunexcomspaceshuttle
+        - idtladdersandstairs
+        - idtcraftramp1
+      mapBlocks:
+        - name: IDTSPACESHUTTLE1
+          width: 20
+          length: 20
+    craftInventoryTile: [6, 12, 2]
+    deployment:
+#Pilots Cabin
+      - [9, 14, 2, 4]
+      - [9, 13, 2, 4]
+      - [9, 12, 2, 4]
+      - [10, 14, 2, 4]
+      - [10, 13, 2, 4]
+      - [10, 12, 2, 4]
+#Payload Bay
+      - [9, 5, 2, 4]
+      - [9, 6, 2, 4]
+      - [9, 7, 2, 4]
+      - [9, 8, 2, 4]
+      - [9, 9, 2, 4]
+      - [9, 10, 2, 4]
+      - [10, 5, 2, 4]
+      - [10, 6, 2, 4]
+      - [10, 7, 2, 4]
+      - [10, 8, 2, 4]
+      - [10, 9, 2, 4]
+      - [10, 10, 2, 4]
+      - [9, 9, 1, 0]
+      - [9, 10, 1, 0]
+      - [9, 12, 1, 4]
+      - [9, 13, 1, 4]
+      - [9, 14, 1, 4]
+      - [10, 9, 1, 0]
+      - [10, 10, 1, 0]
+      - [10, 12, 1, 4]
+      - [10, 13, 1, 4]
+      - [10, 14, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+  - type: STR_SPACE_SHUTTLE_ORBITAL #For the Orbital missions, payload bay open
+    weapons: 0
+    soldiers: 28
+    vehicles: 0
+#    pilots: 2
+    battlescapeTerrainData:
+      name: SHUTTLE_ORBITAL
+      mapDataSets:
+        - BLANKS
+        - idtunexcomspaceshuttle
+        - idtladdersandstairs
+        - idtcraftramp1
+      mapBlocks:
+        - name: IDTSPACESHUTTLE1ORBITAL
+          width: 20
+          length: 20
+    craftInventoryTile: [6, 12, 2]
+    deployment:
+#Pilots Cabin
+      - [9, 14, 2, 4]
+      - [9, 13, 2, 4]
+      - [9, 12, 2, 4]
+      - [10, 14, 2, 4]
+      - [10, 13, 2, 4]
+      - [10, 12, 2, 4]
+#Payload Bay
+      - [9, 5, 2, 4]
+      - [9, 6, 2, 4]
+      - [9, 7, 2, 4]
+      - [9, 8, 2, 4]
+      - [9, 9, 2, 4]
+      - [9, 10, 2, 4]
+      - [10, 5, 2, 4]
+      - [10, 6, 2, 4]
+      - [10, 7, 2, 4]
+      - [10, 8, 2, 4]
+      - [10, 9, 2, 4]
+      - [10, 10, 2, 4]
+      - [9, 9, 1, 0]
+      - [9, 10, 1, 0]
+      - [9, 12, 1, 4]
+      - [9, 13, 1, 4]
+      - [9, 14, 1, 4]
+      - [10, 9, 1, 0]
+      - [10, 10, 1, 0]
+      - [10, 12, 1, 4]
+      - [10, 13, 1, 4]
+      - [10, 14, 1, 4]
+# unit facing
+# 6 7 0
+# 5   1
+# 4 3 2
+#}
+############################
+##### RECON SATELLITES #####
+############################
+#{
+####################
+#### TIER I #######
+##################
+  - type: STR_BLACKBIRD
+    sprite: 935
+    fuelMax: 1500
+    damageMax: 80
+    speedMax: 2540
+    accel: 7
+    weapons: 1
+    weaponTypes:
+      - 5
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_AUX_ONE
+    requiresBuyCountry: STR_USA
+    costBuy: 500000
+    refuelRate: 1000
+    repairRate: 5
+    radarRange: 500
+    sightRange: 500
+    radarChance: 90
+    transferTime: 96
+    soldiers: 2
+    pilots: 2
+    allowLanding: false
+    undetectable: true
+    score: 100
+    listOrder: 150
+    autoPatrol: true
+  - type: STR_LINNA
+    requires:
+      - STR_SATELLITES
+    sprite: 824
+    fuelMax: 1500
+    damageMax: 20
+    speedMax: 20
+    accel: 1
+    monthlyBuyLimit: 3
+    costBuy: 75000
+    costRent: 50000
+    refuelRate: 75
+    radarRange: 1550
+    sightRange: 750
+    radarChance: 40
+    transferTime: 96
+    score: 250
+    listOrder: 150
+####################
+#### TIER II ######
+##################
+  - type: STR_ATALAYA
+    requires:
+      - STR_IMPROVED_SATELLITE
+    sprite: 868
+    fuelMax: 1500
+    damageMax: 200
+    speedMax: 40
+    accel: 1
+    weapons: 3
+    weaponTypes:
+      - [0, 1]
+      - [0, 1]
+      - 5
+#Gatling/Revolver Cannon
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_ALL_CANNONS_TWO
+      - STR_CRAFT_AUX_TWO
+    monthlyBuyLimit: 3
+    costBuy: 155000
+    costRent: 150000
+    refuelRate: 75
+    radarRange: 2000
+    radarChance: 50
+    transferTime: 96
+    score: 250
+    listOrder: 150
+####################
+#### TIER III #####
+##################
+  - type: STR_BASTION
+    requires:
+      - STR_IMPROVED_IMPROVED_SATELLITE
+    sprite: 911
+    fuelMax: 1500
+    damageMax: 20
+    speedMax: 90
+    accel: 1
+    undetectable: true
+    monthlyBuyLimit: 3
+    costBuy: 230000
+    costRent: 200000
+    refuelRate: 75
+    radarRange: 2300
+    radarChance: 60
+    transferTime: 96
+    score: 250
+    listOrder: 150
+#}
+################################
+####### VANILLA CRAFTS ########
+##############################
+  - type: STR_LIGHTNING
+    pilots: 2
+    soldiers: 18
+    maxItems: 432
+    vehicles: 4
+    weapons: 2
+    weaponTypes:
+      - [0, 1]
+      - 5
+#Gatling/Revolver Cannon
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_AUX_TWO
+    battlescapeTerrainData:
+      name: LIGHTNI
+      mapDataSets:
+        - BLANKS
+        - LIGHTNIN
+        - LIGHTNIAR
+      mapBlocks:
+        - name: LIGHTNI
+          width: 20
+          length: 20
+    deployment:
+      - [6, 9, 1, 6]
+      - [9, 6, 1, 0]
+      - [12, 9, 1, 2]
+      - [9, 13, 1, 4]
+      - [6, 10, 1, 6]
+      - [10, 6, 1, 0]
+      - [13, 10, 1, 2]
+      - [10, 13, 1, 4]
+      - [7, 9, 1, 6]
+      - [10, 7, 1, 0]
+      - [13, 9, 1, 2]
+      - [9, 12, 1, 4]
+      - [7, 10, 1, 6]
+      - [9, 7, 1, 0]
+      - [12, 10, 1, 2]
+      - [10, 12, 1, 4]
+      - [7, 8, 1, 6]
+      - [12, 11, 1, 2]
+  - type: STR_AVENGER
+    weapons: 4
+    pilots: 4
+    vehicles: 8
+    weaponTypes:
+      - [0, 1]
+      - 5
+#Gatling/Revolver Cannon
+#AUX Systems
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_AUX_TWO
+  - type: STR_FIRESTORM
+    soldiers: 1
+    pilots: 1
+    allowLanding: false
+    weapons: 4
+    weaponTypes:
+      - [0, 1]
+      - 2
+      - 2
+      - [2, 3, 6, 5]
+#Gatling/Revolver Cannon
+#Light Missile
+#Light Missile
+#Light/Heavy Missile, Rockets, AUX Systems
+    weaponStrings:
+      - STR_CRAFT_ALL_CANNONS_ONE
+      - STR_CRAFT_LIGHT_MISSILE_TWO
+      - STR_CRAFT_LIGHT_MISSILE_THREE
+      - STR_CRAFT_LIGHT_HEAVY_MISSILE_FOUR
+##### On Our Own Ground Vehicles
+#### Basic
+#### Alien Alloy
+#### Navigation
+#### Hyperwave
+#### Space Program
+##### Kiros Transferspot
+  - type: STR_CARGOTRUCKA
+    requires:
+      - STR_CARGOTRUCKA
+    sprite: 1001
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 90
+    accel: 1
+    soldiers: 10
+    vehicles: 0
+    pilots: 1
+    costBuy: 25000
+    costRent: 2500
+    refuelRate: 9999
+    transferTime: 48
+    score: 200
+    undetectable: true
+    battlescapeTerrainData:
+      name: XCARGOTRUCKA
+      mapDataSets:
+        - BLANKS
+        - CRIRIUSNJWCARGOTRUCK
+      mapBlocks:
+        - name: XCARGOTRUCKA
+          width: 10
+          length: 10
+    craftInventoryTile: [4, 6, 1]
+    deployment:
+      - [4, 2, 1, 0]
+      - [4, 3, 1, 0]
+      - [5, 2, 1, 0]
+      - [5, 3, 1, 0]
+      - [4, 4, 1, 0]
+      - [4, 5, 1, 0]
+      - [5, 4, 1, 0]
+      - [5, 5, 1, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+##########
+  - type: STR_CARGOTRUCKB
+    requires:
+      - STR_CARGOTRUCKB
+      - STR_WEAPON_MODIFICATION
+    sprite: 1002
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 110
+    accel: 1
+    soldiers: 16
+    vehicles: 0
+    pilots: 2
+    costBuy: 30000
+    costRent: 3000
+    refuelRate: 9999
+    transferTime: 48
+    score: 500
+    undetectable: true
+    battlescapeTerrainData:
+      name: XCARGOTRUCKB
+      mapDataSets:
+        - BLANKS
+        - CRIRIUSNJWCARGOTRUCK
+      mapBlocks:
+        - name: XCARGOTRUCKB
+          width: 10
+          length: 10
+    craftInventoryTile: [5, 2, 1]
+    deployment:
+      - [2, 2, 1, 6]
+      - [2, 3, 1, 6]
+      - [2, 6, 1, 6]
+      - [2, 7, 1, 6]
+      - [3, 2, 1, 6]
+      - [3, 3, 1, 6]
+      - [3, 6, 1, 6]
+      - [3, 7, 1, 6]
+      - [4, 2, 1, 6]
+      - [4, 3, 1, 6]
+      - [4, 6, 1, 6]
+      - [4, 7, 1, 6]
+      - [5, 2, 1, 6]
+      - [5, 3, 1, 6]
+      - [5, 6, 1, 6]
+      - [5, 7, 1, 6]
+##########
+  - type: STR_CARGOTRUCKC
+    requires:
+      - STR_CARGOTRUCKC
+      - STR_WEAPON_MODIFICATION
+    sprite: 1003
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 80
+    accel: 1
+    soldiers: 24
+    vehicles: 0
+    pilots: 2
+    costBuy: 75000
+    costRent: 4000
+    refuelRate: 9999
+    transferTime: 48
+    score: 200
+    undetectable: true
+    battlescapeTerrainData:
+      name: XCARGOTRUCKC
+      mapDataSets:
+        - BLANKS
+        - CRIRIUSNJWCARGOTRUCK
+      mapBlocks:
+        - name: XCARGOTRUCKC
+          width: 10
+          length: 10
+    craftInventoryTile: [2, 16, 1]
+    deployment:
+    #### Truck 1
+      - [2, 1, 1, 0]
+      - [2, 2, 1, 0]
+      - [2, 3, 1, 0]
+      - [2, 4, 1, 0]
+      - [2, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [3, 1, 1, 0]
+      - [3, 2, 1, 0]
+      - [3, 3, 1, 0]
+      - [3, 4, 1, 0]
+      - [3, 5, 1, 0]
+      - [3, 6, 1, 0]
+      - [7, 1, 1, 0]
+      - [7, 2, 1, 0]
+      - [7, 3, 1, 0]
+      - [7, 4, 1, 0]
+      - [7, 5, 1, 0]
+      - [7, 6, 1, 0]
+      - [8, 1, 1, 0]
+      - [8, 2, 1, 0]
+      - [8, 3, 1, 0]
+      - [8, 4, 1, 0]
+      - [8, 5, 1, 0]
+      - [8, 6, 1, 0]
+##########
+#########
+  - type: STR_CARGOTRUCKF
+    requires:
+      - STR_CARGOTRUCKF
+      - STR_TERRORISTS_OPERATIONS
+    sprite: 1005
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 90
+    accel: 1
+    soldiers: 44
+    vehicles: 6
+    pilots: 2
+    costBuy: 100000
+    costRent: 4000
+    refuelRate: 9999
+    transferTime: 48
+    score: 200
+    undetectable: true
+    battlescapeTerrainData:
+      name: XCARGOTRUCKF
+      mapDataSets:
+        - BLANKS
+        - CRIRIUSNJWCARGOTRUCK
+      mapBlocks:
+        - name: XCARGOTRUCKF
+          width: 10
+          length: 20
+    craftInventoryTile: [2, 16, 1]
+    deployment:
+    #### First Tank Trailer
+      - [2, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [3, 5, 1, 0]
+      - [3, 6, 1, 0]
+      - [2, 7, 1, 0]
+      - [2, 8, 1, 0]
+      - [3, 7, 1, 0]
+      - [3, 8, 1, 0]
+      - [2, 9, 1, 0]
+      - [2, 10, 1, 0]
+      - [3, 9, 1, 0]
+      - [3, 10, 1, 0]
+      #### First Tank Trailer
+      - [6, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [7, 5, 1, 0]
+      - [7, 6, 1, 0]
+      - [6, 7, 1, 0]
+      - [6, 8, 1, 0]
+      - [7, 7, 1, 0]
+      - [7, 8, 1, 0]
+      - [6, 9, 1, 0]
+      - [6, 10, 1, 0]
+      - [7, 9, 1, 0]
+      - [7, 10, 1, 0]
+      #### Truck 1
+      - [2, 12, 1, 0]
+      - [2, 13, 1, 0]
+      - [2, 14, 1, 0]
+      - [2, 15, 1, 0]
+      - [2, 16, 1, 0]
+      - [3, 12, 1, 0]
+      - [3, 13, 1, 0]
+      - [3, 14, 1, 0]
+      - [3, 15, 1, 0]
+      - [3, 16, 1, 0]
+      #### Truck 2
+      - [6, 12, 1, 0]
+      - [6, 13, 1, 0]
+      - [6, 14, 1, 0]
+      - [6, 15, 1, 0]
+      - [6, 16, 1, 0]
+      - [7, 12, 1, 0]
+      - [7, 13, 1, 0]
+      - [7, 14, 1, 0]
+      - [7, 15, 1, 0]
+      - [7, 16, 1, 0]
+##########
+### UN On our own vehicle
+  - type: STR_CARGOTRUCKD
+    requires:
+      - STR_CARGOTRUCKD
+      - STR_ON_OUR_OWN
+      - STR_TERRORISTS_OPERATIONS
+    sprite: 1004
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 80
+    accel: 1
+    soldiers: 50
+    vehicles: 6
+    pilots: 4
+    costBuy: 200000
+    costRent: 50000
+    refuelRate: 9999
+    transferTime: 48
+    score: 1000
+    undetectable: true
+    battlescapeTerrainData:
+      name: XCARGOTRUCKD
+      mapDataSets:
+        - BLANKS
+        - CRIRIUSNJWCARGOTRUCK
+      mapBlocks:
+        - name: XCARGOTRUCKD
+          width: 10
+          length: 20
+    craftInventoryTile: [6, 14, 1]
+    deployment:
+    ####TANK FORM
+      - [2, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [3, 5, 1, 0]
+      - [3, 6, 1, 0]
+      - [2, 7, 1, 0]
+      - [2, 8, 1, 0]
+      - [3, 7, 1, 0]
+      - [3, 8, 1, 0]
+      - [2, 9, 1, 0]
+      - [2, 10, 1, 0]
+      - [3, 9, 1, 0]
+      - [3, 10, 1, 0]
+      - [2, 11, 1, 0]
+      - [2, 12, 1, 0]
+      - [3, 11, 1, 0]
+      - [3, 12, 1, 0]
+      - [2, 13, 1, 0]
+      - [2, 14, 1, 0]
+      - [3, 13, 1, 0]
+      - [3, 14, 1, 0]
+      - [2, 15, 1, 0]
+      - [2, 16, 1, 0]
+      - [3, 15, 1, 0]
+      - [3, 16, 1, 0]
+    ### Infantry Form
+      - [6, 2, 1, 0]
+      - [6, 3, 1, 0]
+      - [6, 4, 1, 0]
+      - [6, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [6, 7, 1, 0]
+      - [6, 8, 1, 0]
+      - [6, 9, 1, 0]
+      - [6, 10, 1, 0]
+      - [6, 11, 1, 0]
+      - [6, 12, 1, 0]
+      - [6, 13, 1, 0]
+      - [6, 14, 1, 0]
+      - [7, 2, 1, 0]
+      - [7, 3, 1, 0]
+      - [7, 4, 1, 0]
+      - [7, 5, 1, 0]
+      - [7, 6, 1, 0]
+      - [7, 7, 1, 0]
+      - [7, 8, 1, 0]
+      - [7, 9, 1, 0]
+      - [7, 10, 1, 0]
+      - [7, 11, 1, 0]
+      - [7, 12, 1, 0]
+      - [7, 13, 1, 0]
+      - [7, 14, 1, 0]
+#####
+### UN On our own vehicle
+  - type: STR_CARGOTRUCKE
+    requires:
+      - STR_CARGOTRUCKE
+      - STR_ON_OUR_OWN
+      - STR_UNITED_WE_STAND_RESEARCH
+    sprite: 1006
+    fuelMax: 9999
+    damageMax: 100
+    speedMax: 80
+    accel: 2
+    soldiers: 80
+    vehicles: 20
+    pilots: 4
+    costBuy: 500000
+    costRent: 50000
+    refuelRate: 9999
+    transferTime: 48
+    score: 2500
+    undetectable: true
+    battlescapeTerrainData:
+      name: XCARGOTRUCKG
+      mapDataSets:
+        - BLANKS
+        - CRIRIUSNJWCARGOTRUCK
+      mapBlocks:
+        - name: XCARGOTRUCKG
+          width: 20
+          length: 20
+    craftInventoryTile: [16, 13, 1]
+    deployment:
+  #### Formation 1
+      - [2, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [2, 7, 1, 0]
+      - [2, 8, 1, 0]
+      - [2, 9, 1, 0]
+      - [2, 10, 1, 0]
+      - [2, 11, 1, 0]
+      - [2, 12, 1, 0]
+      - [2, 13, 1, 0]
+      - [2, 14, 1, 0]
+      - [3, 5, 1, 0]
+      - [3, 6, 1, 0]
+      - [3, 7, 1, 0]
+      - [3, 8, 1, 0]
+      - [3, 9, 1, 0]
+      - [3, 10, 1, 0]
+      - [3, 11, 1, 0]
+      - [3, 12, 1, 0]
+      - [3, 13, 1, 0]
+      - [3, 14, 1, 0]
+  #### Formation 2
+      - [6, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [6, 7, 1, 0]
+      - [6, 8, 1, 0]
+      - [6, 9, 1, 0]
+      - [6, 10, 1, 0]
+      - [6, 11, 1, 0]
+      - [6, 12, 1, 0]
+      - [6, 13, 1, 0]
+      - [6, 14, 1, 0]
+      - [7, 5, 1, 0]
+      - [7, 6, 1, 0]
+      - [7, 7, 1, 0]
+      - [7, 8, 1, 0]
+      - [7, 9, 1, 0]
+      - [7, 10, 1, 0]
+      - [7, 11, 1, 0]
+      - [7, 12, 1, 0]
+      - [7, 13, 1, 0]
+      - [7, 14, 1, 0]
+  #### Formation 3
+      - [11, 5, 1, 0]
+      - [11, 6, 1, 0]
+      - [11, 7, 1, 0]
+      - [11, 8, 1, 0]
+      - [11, 9, 1, 0]
+      - [11, 10, 1, 0]
+      - [11, 11, 1, 0]
+      - [11, 12, 1, 0]
+      - [11, 13, 1, 0]
+      - [11, 14, 1, 0]
+      - [12, 5, 1, 0]
+      - [12, 6, 1, 0]
+      - [12, 7, 1, 0]
+      - [12, 8, 1, 0]
+      - [12, 9, 1, 0]
+      - [12, 10, 1, 0]
+      - [12, 11, 1, 0]
+      - [12, 12, 1, 0]
+      - [12, 13, 1, 0]
+      - [12, 14, 1, 0]
+  #### Formation 4
+      - [16, 5, 1, 0]
+      - [16, 6, 1, 0]
+      - [16, 7, 1, 0]
+      - [16, 8, 1, 0]
+      - [16, 9, 1, 0]
+      - [16, 10, 1, 0]
+      - [16, 11, 1, 0]
+      - [16, 12, 1, 0]
+      - [16, 13, 1, 0]
+      - [16, 14, 1, 0]
+      - [17, 5, 1, 0]
+      - [17, 6, 1, 0]
+      - [17, 7, 1, 0]
+      - [17, 8, 1, 0]
+      - [17, 9, 1, 0]
+      - [17, 10, 1, 0]
+      - [17, 11, 1, 0]
+      - [17, 12, 1, 0]
+      - [17, 13, 1, 0]
+      - [17, 14, 1, 0]
+#####
+##### Borrowed from X-Ops Legacy Stuff to put it as place holder.
+  - type: STR_UNTXT1
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    sprite: 1106
+    fuelMax: 1750
+    damageMax: 200
+    speedMax: 250
+    accel: 2
+    weapons: 3
+    soldiers: 30
+    vehicles: 20
+    maxSmallUnits: 20
+    maxLargeUnits: 5
+    pilots: 2
+    maxItems: 550
+    allowLanding: true
+    costRent: 60000
+    refuelRate: 50
+    score: 400
+    battlescapeTerrainData:
+      name: XOPSWASPYJ
+      mapDataSets:
+        - BLANKS
+        - BD_PLANE
+        - BD_OSPREY_ROTOR
+      mapBlocks:
+        - name: XOPSWASPYJ
+          width: 20
+          length: 20
+    craftInventoryTile: [9, 13, 1] #X, Y, Level
+    deployment:
+      - [9, 5, 1, 0]
+      - [9, 6, 1, 0]
+      - [9, 7, 1, 0]
+      - [9, 8, 1, 0]
+      - [9, 9, 1, 0]
+      - [9, 10, 1, 6]
+      - [9, 11, 1, 0]
+      - [9, 12, 1, 0]
+      - [9, 13, 1, 0]
+      - [9, 14, 1, 0]
+      - [10, 5, 1, 0]
+      - [10, 6, 1, 0]
+      - [10, 7, 1, 0]
+      - [10, 8, 1, 0]
+      - [10, 9, 1, 0]
+      - [10, 10, 1, 0]
+      - [10, 11, 1, 0]
+      - [10, 12, 1, 0]
+      - [10, 13, 1, 0]
+      - [10, 14, 1, 0]
+      - [11, 5, 1, 0]
+      - [11, 6, 1, 0]
+      - [11, 7, 1, 0]
+      - [11, 8, 1, 0]
+      - [11, 9, 1, 0]
+      - [11, 10, 1, 2]
+      - [11, 11, 1, 0]
+      - [11, 12, 1, 0]
+      - [11, 13, 1, 0]
+      - [11, 14, 1, 0]
+  - type: STR_UNTXT2
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_UFO_CONSTRUCTION
+    sprite: 1107
+    fuelMax: 1750
+    damageMax: 400
+    speedMax: 350
+    accel: 2
+    weapons: 2
+    soldiers: 38
+    vehicles: 20
+    maxSmallUnits: 20
+    maxLargeUnits: 8
+    pilots: 2
+    maxItems: 600
+    allowLanding: true
+    costRent: 75000
+    refuelRate: 50
+    score: 400
+    battlescapeTerrainData:
+      name: XOPSSTINGMOTH
+      mapDataSets:
+        - BLANKS
+        - FIREFLY
+        - BD_PLANE_2
+        - PELICAN_CARGO_BAY
+        - ELEVATOR_TILES
+      mapBlocks:
+        - name: XOPSSTINGMOTH
+          width: 20
+          length: 20
+    craftInventoryTile: [8, 12, 1] #X, Y, Level
+    deployment:
+      - [8, 5, 1, 0]
+      - [8, 6, 1, 0]
+      - [8, 7, 1, 0]
+      - [8, 8, 1, 0]
+      - [8, 9, 1, 0]
+      - [8, 10, 1, 6]
+      - [8, 11, 1, 0]
+      - [8, 12, 1, 0]
+      - [9, 5, 1, 0]
+      - [9, 6, 1, 0]
+      - [9, 7, 1, 0]
+      - [9, 8, 1, 0]
+      - [9, 9, 1, 0]
+      - [9, 10, 1, 6]
+      - [9, 11, 1, 0]
+      - [9, 12, 1, 0]
+      - [10, 5, 1, 0]
+      - [10, 6, 1, 0]
+      - [10, 7, 1, 0]
+      - [10, 8, 1, 0]
+      - [10, 9, 1, 0]
+      - [10, 10, 1, 6]
+      - [10, 11, 1, 0]
+      - [10, 12, 1, 0]
+      - [11, 5, 1, 0]
+      - [11, 6, 1, 0]
+      - [11, 7, 1, 0]
+      - [11, 8, 1, 0]
+      - [11, 9, 1, 0]
+      - [11, 10, 1, 6]
+      - [11, 11, 1, 0]
+      - [11, 12, 1, 0]
+      #### Extra Crew
+      - [8, 13, 1, 0]
+      - [9, 13, 1, 0]
+      - [9, 14, 1, 0]
+      - [10, 13, 1, 0]
+      - [10, 14, 1, 0]
+      - [11, 13, 1, 0]
+#############
+##### Manufacture Aircrafts
+manufacture:
+  - name: STR_TUNNAN_MK2
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_FIGHTER
+      - STR_ON_OUR_OWN
+    listOrder: 3300
+    space: 10
+    time: 400
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_TUNNAN: 1
+  - name: STR_HIND
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    listOrder: 3250
+    space: 30
+    time: 1200
+    cost: 690000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 55
+  - name: STR_UNTAIRCRAFTBLACKA12
+    category: STR_CRAFT
+    requires:
+      - STR_ON_OUR_OWN
+      - STR_IMPROVED_BOMBER
+    listOrder: 3301
+    space: 25
+    time: 2000
+    cost: 300000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 60
+  - name: STR_UNTXT1
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+    listOrder: 3301
+    space: 25
+    time: 2250
+    cost: 500000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+  - name: STR_UNTXT2
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_VTOL_TRANSPORT
+      - STR_UFO_CONSTRUCTION
+      - STR_UNITED_WE_STAND_RESEARCH
+    listOrder: 3301
+    space: 25
+    time: 2500
+    cost: 750000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 75
+      STR_ELERIUM_115: 25
+

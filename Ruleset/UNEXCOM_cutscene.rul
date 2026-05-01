@@ -1,0 +1,42 @@
+
+################################################################################################################
+##### This Section is cleaned up by Kiro N. Now it is finally updated to simple edit.
+################################################################################################################
+cutscenes:
+  - delete: winGame
+  - type: winGame
+    winGame: true
+    slideshow:
+      transitionSeconds: 30
+      musicId: GMMARS
+      slides:
+        - imagePath: Resources/Cutscenes/GoodEnding_1.png
+          caption: STR_GOOD_ENDING_1
+          captionSize: [195, 56]
+          captionPos: [5, 0]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/GoodEnding_2.png
+          caption: STR_GOOD_ENDING_2
+          captionSize: [232, 64]
+          captionPos: [88, 136]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/GoodEnding_3.png
+          caption: STR_GOOD_ENDING_3
+          captionSize: [254, 48]
+          captionPos: [66, 152]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/GoodEnding_4.png
+          caption: STR_GOOD_ENDING_4
+          captionSize: [300, 200]
+          captionPos: [5, 0]
+          captionColor: 244
+####### Alternative Path
+####### Terrorist Faction evolved
+####### Alien Hybrid Upgraded after Terrorist Leader Captured
+####### Alien Overseer Escaped
+####### Space Shuttle Site Destroyed
+######## Defeated at Moon
+####### Losing Game
+######## Defeated at Earth
+######## Defeated at Earth Orbit
+######## Defeated at Mars
