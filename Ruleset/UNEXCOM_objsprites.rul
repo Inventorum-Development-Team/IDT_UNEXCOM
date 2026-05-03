@@ -229,19 +229,20 @@ extraSprites:
       1096: Resources/BallisticWeapons/Civilian/Bigob_Shovel.png
 
       #####Plasma Weapons with Aliens included
-      1000: Resources/AlienArmouryExpanded/Aliensniperrifle.gif
+      1000: Resources/Alienweapons/Alienplasma1/alienplasmasniperrifle1.png #K
       1001: Resources/AlienArmouryExpanded/Aliensniperrifle_Clip.gif
-      1002: Resources/AlienArmouryExpanded/Plasmadestroyer.gif
+      1002: Resources/Alienweapons/Alienplasma1/alienplasmablaster1.png #K
       1003: Resources/AlienArmouryExpanded/Plasmadestroyer_Clip.gif
-      1004: Resources/AlienArmouryExpanded/Plasmacaster.gif
+      1004: Resources/Alienweapons/Alienplasma1/alienplasmacaster1.png #K
       1005: Resources/AlienArmouryExpanded/Plasmacaster_clip.gif
-      1006: Resources/AlienArmouryExpanded/Toxigun.gif
+      1006: Resources/Alienweapons/Alienchemical1/alienacidthrower.png #K
       1007: Resources/AlienArmouryExpanded/Toxigun_flask.gif
       1008: Resources/AlienArmouryExpanded/big_SL_EleriumBomb.gif
-      1009: Resources/AlienArmouryExpanded/Plasmacaster1.gif
-      1010: Resources/AlienArmouryExpanded/Plasmasniperrifle1.gif
-      1011: Resources/AlienArmouryExpanded/Plasmadestroyer1.gif
-      1115: Resources/FourthState/HWE/HyperWaveEncoder.gif
+      1009: Resources/AlienArmouryExpanded/Plasmacaster1.gif #Needs Changed
+      1010: Resources/AlienArmouryExpanded/Plasmasniperrifle1.gif #Needs Changed
+      1011: Resources/AlienArmouryExpanded/Plasmadestroyer1.gif #Needs Changed
+      1012: Resources/Alienweapons/Alienlauncher1/alienantimatterdevastator.png #K
+
       ##### Fusion Guns from Aliens
       1100: Resources/FusionWeapons/BigFusionHandgun.png
       1101: Resources/FusionWeapons/BigFusionSMG.png
@@ -257,6 +258,8 @@ extraSprites:
       1111: Resources/FusionWeapons/BigThermonuclearProjectileLauncherMagazine.png
       1112: Resources/FusionWeapons/BigHumanFusionRifle.png
       1113: Resources/FusionWeapons/BigAlienCephalopodTissue.png
+      ##### Hyperwave Encoder Stuff
+      1115: Resources/FourthState/HWE/HyperWaveEncoder.gif
       ##### Purchasable Space Weapons
       1120: Resources/SpaceWeapons/BigGyrojetPistol.png
       1128: Resources/SpaceWeapons/BigGyrojetCarbine.png
@@ -285,9 +288,9 @@ extraSprites:
       1220: Resources/AlloyWeapons/Bigob_G_Rifle_Clip_AA.png
       1221: Resources/AlloyWeapons/Bigob_G_Sniper_Clip_AA.png
       #####Plasma Weapons with Aliens included
-      1320: Resources/FourthState/SmallLauncher/Alien/SmallLauncher.gif
+      1320: Resources/Alienweapons/Alienlauncher1/aliensstrikelauncher.png #K Check It
       1330: Resources/FourthState/SmallLauncher/Human/HumanSmallLauncher.gif
-      1362: Resources/FourthState/PlasmaRifle/Alien/PlasmaRifle.gif
+      1362: Resources/Alienweapons/Alienplasma1/alienplasmarifle1.png
       1363: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRifle.gif
       1364: Resources/FourthState/PlasmaRifle/PlasmaRifleClip.gif
       1463: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMR.gif
@@ -298,12 +301,12 @@ extraSprites:
       1664: Resources/FourthState/SniperPlasma/SniperPlasmaClip.gif
       1763: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnum.gif
       1764: Resources/FourthState/PlasmaMagnum/PlasmaMagnumClip.gif
-      1860: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasma.gif
+      1860: Resources/Alienweapons/Alienplasma1/alienplasmaheavy1.png #K
       1861: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasma.gif
       1862: Resources/FourthState/HeavyPlasma/HeavyPlasmaClip.gif
       1863: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMG.gif
       1864: Resources/FourthState/PlasmaLMG/PlasmaLMGClip.gif
-      1962: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistol.gif
+      1962: Resources/Alienweapons/Alienplasma1/alienplasmapistol1.png #K
       1963: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistol.gif
       1964: Resources/FourthState/PlasmaPistol/PlasmaPistolClip.gif
       ##### Laser Weapons Set
@@ -638,6 +641,8 @@ extraSprites:
       214: Resources/BallisticWeapons/CustomWeapons/Floor50CalMagnumClip.png
       224: Resources/BallisticWeapons/CustomWeapons/FloorEnforcer.png
       248: Resources/BallisticWeapons/USA/FloorCarbine.png
+      ##### New Spot Here
+
       ##### Human Corpse
       40: Resources/SoldiersAndArmors/PersonalArmor/Floor_PA.png
       ##### Civilian Corpse
@@ -749,13 +754,13 @@ extraSprites:
       988: Resources/BallisticWeapons/Explosives/FloorSmokeGrenade.png
       996: Resources/BallisticWeapons/Explosives/FloorSignalGrenadeBlue.png
       # Alien Plasma Weapons
-      1000: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle.gif
+      1000: Resources/Alienweapons/Alienplasma1/alienplasmasniperrifle1_f.png #K
       1001: Resources/AlienArmouryExpanded/floorob_Aliensniperrifle_Clip.gif
-      1002: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer.gif
+      1002: Resources/Alienweapons/Alienplasma1/alienplasmablaster1_f.png #K
       1003: Resources/AlienArmouryExpanded/floorob_Plasmadestroyer_Clip.gif
-      1004: Resources/AlienArmouryExpanded/floorob_Plasmacaster.gif
+      1004: Resources/Alienweapons/Alienplasma1/alienplasmacaster1_f.png #K
       1005: Resources/AlienArmouryExpanded/floorob_Plasmacaster_Clip.gif
-      1006: Resources/AlienArmouryExpanded/floorob_Toxigun.gif
+      1006: Resources/Alienweapons/Alienchemical1/alienacidthrower_f.png
       1007: Resources/AlienArmouryExpanded/floorob_Toxigun_flask.gif
       1008: Resources/AlienArmouryExpanded/floorobj_SL_EleriumBomb.gif
       1009: Resources/AlienArmouryExpanded/floorob_Plasmacaster1.gif
@@ -808,7 +813,7 @@ extraSprites:
       1213: Resources/AlloyWeapons/Floorob_G_Shotgun_Clip.png
       1214: Resources/AlloyWeapons/Floorob_G_Sniper.png
       ##### Plasma Weapons
-      1365: Resources/FourthState/PlasmaRifle/Alien/PlasmaRiflef.gif
+      1365: Resources/Alienweapons/Alienplasma1/alienplasmarifle1_f.png #K
       1366: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRiflef.gif
       1367: Resources/FourthState/PlasmaRifle/PlasmaRifleClipf.gif
       1465: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMRf.gif
@@ -819,13 +824,13 @@ extraSprites:
       1666: Resources/FourthState/SniperPlasma/SniperPlasmaClipf.gif
       1765: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnumf.gif
       1766: Resources/FourthState/PlasmaMagnum/PlasmaMagnumClipf.gif
-      1865: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasmaf.gif
+      1865: Resources/Alienweapons/Alienplasma1/alienplasmaheavy1_f.png #K
       1866: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasmaf.gif
       1867: Resources/FourthState/HeavyPlasma/HeavyPlasmaClipf.gif
       1868: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGf.gif
       1869: Resources/FourthState/PlasmaLMG/PlasmaLMGClipf.gif
       1902: Resources/SoldiersAndArmors/ScoutArmor/FloorCorpse.png ### Human Corpse
-      1965: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolf.gif
+      1965: Resources/Alienweapons/Alienplasma1/alienplasmapistol1_f.png #K
       1966: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolf.gif
       1967: Resources/FourthState/PlasmaPistol/PlasmaPistolClipf.gif
       ##### Laser WEapon Set
@@ -1089,21 +1094,21 @@ extraSprites:
       1144: Resources/SpaceWeapons/HandSpaceKnife.png
       1152: Resources/SpaceWeapons/HandGeneratorStick.png
       ##### Alien Weapons here
-      1370: Resources/FourthState/PlasmaRifle/Alien/PlasmaRifleh.gif
+      1370: Resources/Alienweapons/Alienplasma1/alienplasmarifle1_h.png #K
       1378: Resources/FourthState/PlasmaRifle/Human/HumanPlasmaRifleh.gif
       1386: Resources/FourthState/PlasmaDMR/Human/HumanPlasmaDMRh.gif
       1394: Resources/FourthState/PlasmaSMG/Human/HumanPlasmaSMGh.gif
       1670: Resources/FourthState/SniperPlasma/Human/HumanSniperPlasmah.gif
       1410: Resources/FourthState/PlasmaMagnum/Human/HumanPlasmaMagnumh.gif
-      1418: Resources/FourthState/HeavyPlasma/Alien/HeavyPlasmah.gif
+      1418: Resources/Alienweapons/Alienplasma1/alienplasmaheavy1_h.png #K
       1426: Resources/FourthState/HeavyPlasma/Human/HumanHeavyPlasmah.gif
       1434: Resources/FourthState/PlasmaLMG/Human/HumanPlasmaLMGh.gif
-      1442: Resources/FourthState/PlasmaPistol/Alien/PlasmaPistolh.gif
+      1442: Resources/Alienweapons/Alienplasma1/alienplasmapistol1_h.png #K
       1450: Resources/FourthState/PlasmaPistol/Human/HumanPlasmaPistolh.gif
-      1458: Resources/AlienArmouryExpanded/handob_Aliensniperrifle.gif
-      1466: Resources/AlienArmouryExpanded/handob_Plasmadestroyer.gif
-      1474: Resources/AlienArmouryExpanded/handob_Plasmacaster.gif
-      1482: Resources/AlienArmouryExpanded/handob_Toxigun.gif
+      1458: Resources/Alienweapons/Alienplasma1/alienplasmasniperrifle1_h.png #K
+      1466: Resources/Alienweapons/Alienplasma1/alienplasmablaster1_h.png #K
+      1474: Resources/Alienweapons/Alienplasma1/alienplasmacaster1_h.png #K
+      1482: Resources/Alienweapons/Alienchemical1/alienacidthrower_h.png #K
       ##### Laser Weapons Section
       1992: Resources/LaserWeapons/UN/HandPeacemaker.png
       2000: Resources/LaserWeapons/USA/HandM1972LaserPistol.png

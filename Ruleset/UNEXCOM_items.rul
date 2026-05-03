@@ -567,6 +567,15 @@ items:
     fixedWeapon: true
     defaultInventorySlot:  STR_RIGHT_LEG
     recover: false
+  - type: STR_INV_NULL_SLINGBAG
+    categories: [STR_CATEGORY_NONE]
+    weight: 0
+    bigSprite: 5001
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot:  STR_UPPERPACK_2
+    recover: false
 
 ######### Melee / Close Range Weapons
   - type: STR_UNARMED_UNIFORM
