@@ -289,6 +289,7 @@ en-US:
         other: "{N} Units in UNEXCOM Craft"
       MAP_XBASE: "UNEXCOM Base"
 ###CRAFT
+      ######### Aircraft Weapons
       STR_CRAFT_GATLING_ONE: "GATLING-1>{ALT}{0}"
       STR_CRAFT_GATLING_TWO: "GATLING-2>{ALT}{0}"
       STR_CRAFT_GATLING_THREE: "GATLING-3>{ALT}{0}"
@@ -343,6 +344,8 @@ en-US:
       STR_CRAFT_ROCKET_AUX_FOUR: "ROCKET/AUX-4>{ALT}{0}"
       STR_CRAFT_ROCKET_LIGHT_TWO: "LIGHT MISSILE/ROCKET-2{ALT}{0}"
       STR_CRAFT_LIGHT_HEAVY_MISSILE_AUX_FOUR: "LIGHT/HEAVY MISSILE/AUX-4>{ALT}{0}"
+      ##### End Section
+      ##### Stationary Craft with limited range
       STR_UNEXCOM_FIGHTERS: "UNEXCOM AIRCRAFT"
       STR_LIGHT_MISSILE: "LIGHT MISSILES"
       STR_HEAVY_MISSILE: "HEAVY MISSILES"
@@ -630,23 +633,30 @@ en-US:
       STR_ALIEN_BASE_CONTROL_DESTROYED: "ALIEN STRUCTURE CONTROL DESTROYED"
       STR_ALIEN_BASE_UFOPEDIA: "Aliens will construct secret underground stations in remote locations. After some initial reconnaissance flights some intense UFO activity will occur as the base is being built. These bases are known to contain experimental labs for human abductees, and supplies for further activity in the region. The presence of alien bases will generate a large amount of reported alien activity without the presence of UFOs. The development of the base takes time, initially a small Outpost is deployed using UFOs as modules. Two months after, more structures are deployed and it becomes a Base. On the third month, a fully crewed Fort is finished. Each stage has more and better armored enemies. In order to locate a base an UNEXCOM recon craft or satellite must patrol an area for a few hours to stand some chance of detection."
       ##### Kiro set up Alien Bases Expansion
+      #### Alien Tanks with Tracked Wheels
       STR_ALIEN_BASE_TYPE_MOBILE1: ""
       STR_ALIEN_BASE_TYPE_MOBILE2: ""
       STR_ALIEN_BASE_TYPE_MOBILE3: ""
       STR_ALIEN_BASE_TYPE_MOBILE4: ""
+      STR_ALIEN_BASE_TYPE_MOBILE5: ""
+      #### Alien Submarine / Hybrid Vehicle
       STR_ALIEN_BASE_TYPE_DEEPSEA1: ""
       STR_ALIEN_BASE_TYPE_DEEPSEA2: ""
       STR_ALIEN_BASE_TYPE_DEEPSEA3: ""
       STR_ALIEN_BASE_TYPE_DEEPSEA4: ""
+      STR_ALIEN_BASE_TYPE_DEEPSEA5: ""
+      #### Alien Stratosphere Flight Systems
       STR_ALIEN_BASE_TYPE_SKYFORT1: ""
       STR_ALIEN_BASE_TYPE_SKYFORT2: ""
       STR_ALIEN_BASE_TYPE_SKYFORT3: ""
       STR_ALIEN_BASE_TYPE_SKYFORT4: ""
+      STR_ALIEN_BASE_TYPE_SKYFORT5: ""
       # After Project Orion and Space Shuttle Test Complete
       STR_ALIEN_BASE_TYPE_SPACEORBIT1: ""
       STR_ALIEN_BASE_TYPE_SPACEORBIT2: ""
       STR_ALIEN_BASE_TYPE_SPACEORBIT3: ""
       STR_ALIEN_BASE_TYPE_SPACEORBIT4: ""
+      STR_ALIEN_BASE_TYPE_SPACEORBIT5: ""
       ##### Kiro set up Alien Bases Expansion Ends
       STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "Allied recon craft have located an alien structure in {0}"
       STR_TOTAL_ALIEN_BASES: "Alien Structure discovered"
@@ -827,6 +837,7 @@ en-US:
       ####### AlertName
       ####### MissionDescription
       ####### MissionBriefing
+      ####### World At War Events
       STR_AMERICAN_OPERATIONS_MISSION: American Combat Operation
       STR_AMERICAN_OPERATIONS_ALERT:  US Army Operation Ongoing
       STR_AMERICAN_OPERATIONS_MISSION_DESCRIPTION: The US Army's central command is preparing for a full-scale operation against the enemy. We have been asked to assist. Strong enemy resistance is expected.
@@ -855,6 +866,66 @@ en-US:
       STR_SOVIET_CITY_DEFENSE: Warsaw Pact City Defense
       STR_SOVIET_CITY_DEFENSE_DESCRIPTION: National army units have mobilized to defend a city from the enemy threat. The Security Council requested our support to protect the civilians of the Council member country.
       STR_SOVIET_CITY_DEFENSE_BRIEFING: A major population center of a Warsaw Pact country has been the target of an unprecedented attack. The Council has sent our units to link up with WTO troops in the area, to help contain the threat and evacuate the civilians.
+      ####### World At War Events Expanded
+      #STR_AMERICAN
+      #STR_EUROPEAN
+      #STR_SOVIET
+      ##### Base Under Sieged!
+      STR_AMERICAN_UNDERSIEGE_ALERT: "American Base Besieged!"
+      STR_AMERICAN_UNDERSIEGE_MISSION: "American Base Under Siege"
+      STR_AMERICAN_UNDERSIEGE_DESCIPTION: "Alien have begun their assault on US military bases. We recieved a message from US defenders that are fighting against alien breacher units. UN have requested us to aid the US bases and repel the alien siege batallions."
+      STR_AMERICAN_UNDERSIEGE_BRIEFING: "The Aliens already broke through US military basses walls. We must assist the US defenders to repel the Alien forces out of this operation area. Be wary alien reinforcements are likely moderate aided by their heavy arsenal vehicles."
+
+      STR_EUROPEAN_UNDERSIEGE_ALERT: "Europe Base Besieged!"
+      STR_EUROPEAN_UNDERSIEGE_MISSION: "Europe Base Under Siege"
+      STR_EUROPEAN_UNDERSIEGE_DESCIPTION: "Europe Base Under Siege"
+      STR_EUROPEAN_UNDERSIEGE_BRIEFING: "Europe Base Under Siege"
+
+      STR_SOVIET_UNDERSIEGE_ALERT: "Soviet Base Besieged!"
+      STR_SOVIET_UNDERSIEGE_MISSION: "Soviet Base Under Siege"
+      STR_SOVIET_UNDERSIEGE_DESCIPTION: "Soviet Base Under Siege"
+      STR_SOVIET_UNDERSIEGE_BRIEFING: "Soviet Base Under Siege"
+
+      ##### Countrys Capital Under Sieged! Important to win the mission otherwise you lose fundings permament.
+      ##### USA Arc:
+      ##### Defending the Pentagon
+      ##### Retaking the Washington DC
+      ##### The Ground Siege Units
+      ##### Iowa Vs The Alien Battleship
+      ##### Alien Submarine Ship
+      STR_AMERICAN_WASHINGTON_DC_ALERT: "Priority Urgent: Washington DC under attacked."
+      STR_AMERICAN_WASHINGTON_DC_ALERT_MISSION: "Washington DC Decapitulated"
+      STR_AMERICAN_WASHINGTON_DC_DESCRIPTION: "United States of America announces all of the their available forces to defend their capital city from alien mass invasions. The United Nation councils have messaged their allies to aid the US defense. However, they are streched too thin to fight off alien incursion. "
+      STR_AMERICAN_WASHINGTON_DC_ALERT_BRIEFING1: ""
+      STR_AMERICAN_WASHINGTON_DC_ALERT_BRIEFING2: ""
+      STR_AMERICAN_WASHINGTON_DC_ALERT_BRIEFING3: ""
+      STR_AMERICAN_WASHINGTON_DC_ALERT_BRIEFING4: ""
+      STR_AMERICAN_WASHINGTON_DC_ALERT_BRIEFING5: ""
+
+      ##### NATO Arc:
+      ##### Alien Navy Class
+      ##### Alien Navy Submarine
+      ##### Alien Sea Platform
+      ##### Alien Sky Battleship
+      ##### Alien Sky Fortress
+
+      ##### Warsaw Arc:
+      ##### Defending the Moscow
+      ##### Shooting out the Ground
+      ##### The search for the weapon
+      ##### Alien Recon Spaceship
+      ##### Alien Earthquake Weapon
+
+      ##### UNT Arc:
+      ##### Protecting Geneva International Center
+      ##### Shooting out the Ground
+      ##### The search for the weapon
+      ##### Alien Recon Spaceship
+      ##### Alien Earthquake Weapon
+
+
+      ####### Vital Mission Events
+
       ####### Name
       ####### AlertName
       ####### MissionDescription
@@ -1027,6 +1098,14 @@ en-US:
       STR_M202_FLASH: "M202 FLASH"
       STR_M60: "M60 LMG"
       STR_AR5: "AR-5 Survival Rifle"
+      ##
+      STR_COLTSCAMP: "Tactical Colt AA"
+      STR_MAC11A: "MAC-11 9mm" #9mm
+      STR_MAC11B: "MAC-11 45acp" #acp
+      STR_RUGERENHANCED: "Ruger Advanced Pistol"
+      STR_RUGGERMINI14: "Ruger Mini-14"
+      ##
+
       #### MANPADS
       STR_FIM43REDEYE: "FIM43 Redeye" #Unlockable
       STR_FIM92STINGER: "FIM92 Stinger" #Alien Alloy
@@ -1041,6 +1120,10 @@ en-US:
       STR_PSG1: "H&K PSG-1"
       STR_CARL_GUSTAF_M2: "Carl Gustaf M2 Recoilless Rifle"
       STR_FN_MAG: "FN MAG LMG"
+      ###
+      STR_BERETTAAR70: "Beretta AR70"
+      STR_RK71: "RK71 Alloy Rifle"
+      ###
       #MANPADS
 
 
@@ -1055,16 +1138,26 @@ en-US:
       STR_KS23_SHOTGUN: "KS-23 Heavy Shotgun"
       STR_RPG: "RPG-7"
       STR_RPKS: "RPKS LMG"
+      ##
+      STR_OTS02KIPARIS: "OTS-02 Kiparis"
+      STR_NSVMG: "NSV Machine Gun"
+      ##
       #MANPADS
       STR_STRELA1: "9K32 Strela-1" #Unlockable
       STR_STRELA2: "9K32 Strela-2" #Alien Alloy
       STR_STRELA3: "9K32 Strela-3" #UFO Construction
       STR_STRELA4: "9K32 Strela-10" # Space Shuttle
 
-      #On Our Own
+      #############################
+      ####### On Our Own #######
+      #############################
       STR_M4BAZOOKA1: "M4 Super Bazooka" # Unlockable
       STR_M4BAZOOKA2: "M5 Smart Bazooka" # Guided Launcher
       STR_M4BAZOOKA3: "UN1 SBAAM Launcher" # Guided Launcher
+
+      #Israels Stuff
+      STR_IWIGALIL: "IWI Galil"
+
 
       ###############################
       ##### CIVILIAN WEAPONS ########
@@ -1241,16 +1334,17 @@ en-US:
       STR_TERRORIST_HQ_FOUND: "Terrorist Hideout Found"
       STR_TERRORIST_HQ_BRIEFING: "Intelligence has confirmed that this building is the source of the alien weaponry. The number of individuals inside is unknown, but is estimated at between 20 and 30. Your objective is to clear out the building and either capture or neutralize whoever is in charge of the cell. Speed and discretion is essential, as we do not want to draw unwanted attention from the public to the operation"
       STR_TERRORIST_HQ_RAID: "Terrorist Hideout Raid"
+      ##### Cutscenes with 5
       ##### Endings
       ##### Good Ending
       STR_GOOD_ENDING_1: "After breaching through the depths of the alien command center, our troops we able to destroy the Brain, a supercomputer used by the aliens to coordinate efforts on Earth. A nuclear attack from orbit happened right after our troops left the facility, negating the enemy the possibility of retrieving any artifacts or data. No known alien survivors are reported."
       STR_GOOD_ENDING_2: "Other UN-led forces around the planet report similar success on their designated objectives. There is still heavy resistance, but we have crippled their military forces and they are routed."
       STR_GOOD_ENDING_3: "Operation Downfall meant the beginning of the colonization of the space. Human spaceships are built, meant to reach the planets and moons on the Solar System. A dream that was impossible a decade ago. The power of the atom, instead of destroying the Mankind, has propel us to the stars and beyond."
       STR_GOOD_ENDING_4: "Mars is still a contested planet. Estimations expect our troops to be outmatched in 10 to 1. But this won't be a stop to our campaign, as new scientific and military vessels are prepared to arrive to the Red Planet and establish a firm foothold. The War on Mars has begun."
-      #STR_GOOD_ENDING_5: "You the commander must continue the conquest on Mars to win the planet for humanity. The Alien forces have not been defeated yet and soon they'll begin to counterattack. Your challenge awaits on the battle of Mars and there are lots of encounters to come. (Play the War on Mars to continue the story.)"
+      STR_GOOD_ENDING_5: "You the commander must continue the conquest on Mars to win the planet for humanity. The Alien forces have not been defeated yet and soon they'll begin to counterattack. Your challenge awaits on the battle of Mars and there are lots of encounters to come. (Play the War on Mars to continue the story.)"
       ##### Bad Ending on the Earth; UNEXCOM Section 1
       STR_BAD_ENDING_1: "Your fate from the last event either your death from battles, execution, imprisonment or exile. The Aliens have manage to defeat the humanity forces of earth and sent their instruments of negoations for peaceful terms. Human civilization has been submitted or destroyed by the Aliens awesome technology of firepower."
-      STR_BAD_ENDING_2: "The UN Remnants tried to rebuild and surpass your achievements which led to failures."
+      STR_BAD_ENDING_2: "The UN Remnants tried to rebuild and surpass your achievements which led to failures. One by another, most of them are either enslaved or perished."
       STR_BAD_ENDING_3: ""
       STR_BAD_ENDING_4: "However, humans felt they are always not alone, but another rival came to ingite another war with the other alien forces. The two began to destroy each for the control of our home and the star system."
       STR_BAD_ENDING_5: ""
@@ -1374,6 +1468,8 @@ en-US:
       STR_PLASMA_BLASTER_CLIP_UFOPEDIA: "This compact device is used as ammunition for a Plasma Blaster.  It contains a small quantity of Elerium."
       STR_TOXIGUN_UFOPEDIA: "This weapon squirts a complex mixture of powerful chemical agents, able to dissolve almost any material known to Earth science within a few seconds.  Naturally, it is deadly to all living beings."
       STR_TOXIGUN_FLASK_UFOPEDIA: "This small tank filled with potent acid functions as ammunition for the Toxigun."
+      STR_BLASTER_LAUNCHER: "Alien Guided Launcher"
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "Aliens launcher equiped with remote control missile at any direction. Similar to our guided missile weapons with a single shot. It's very difficult to wield it unless any of our soldiers have experience on this weapon. "
       STR_ALIEN_LASERS_UFOPEDIA: "These weapons emit a powerful beam seemingly powered by a peculiar crystal found inside of the devices. The internals are housed inside a durable casing, made out of an unknown metal alloy. The alien laser weaponry we've recovered isn't a total mystery to us, multiple similar weapons have been found at the few previous sites where humanity has encountered hostile alien life. Attempts to reverse engineer and replicate the laser weaponry has been made by multiple governments in secret during the past decade. While the origins and manufacture of some parts of the alien weaponry still remains a mystery, almost all of the components have been managed to be substituted with materials available on earth, leading to the development of functional prototypes."
       STR_ALIEN_LASER_PISTOL_UFOPEDIA: "This 'hand weapon' (named by our technicians, judging by the size and use of this weapon by the enemy) uses novel technology to emit a powerful beam of light. When passing a Geiger counter, we can see that it emits a small amount of radiation, so it is not recommended for analysis without adequate protection."
       STR_ALIEN_LASER_RIFLE_UFOPEDIA: "Our studies and field reports point to this weapon as the standard weaponry of the enemy infantry (similar to our doctrines). This 'rifle', if you can call it that, has a compact power generator, which emits a light beam powered by a crystal of unknown origin. The beam is capable of penetrating armor without problems."
@@ -3422,9 +3518,9 @@ en-US:
       STR_APCHWPVEHICLE4WIKI: Phase Tank Vehicle; covered with cloakfield device and special motion radar tracking system. Experimental combat vehicle with its perfect personel targeting system. ##### Secret HWP###### Tank Ammunition
       STR_DUAMMO: Depleted Uranium Ammunition ##### Empty Uranium
       STR_DUAMMOWIKI: DU Tipped Rounds destroys any recent armor including alien alloys. It gives additional damage over turn due to radiation on enemies damanged armor. ##### Empty Uranium
-      STR_AALLOY: Alien Alloy ammunition
+      STR_AALLOY: Altradium Ammunition
       STR_TCALLOY: Tungsten Carbide Ammunition
-      STR_ELE115: Elerium Tip ammunition
+      STR_ELE115: Elerium Tip Ammunition
       STR_SHOTROUNDS: Tank Shell Canister
       STR_FUSIONTIP: Fusion Tip Rounds
       STR_VTSHELLS: Vertical Explosion Rounds
@@ -3486,6 +3582,13 @@ en-US:
       STR_120MMDU_AMMO: "120mm-Depleted Uranium"
       STR_120MME115_AMMO: "120mm-E115 Pike Point"
       STR_120MMFUSION_AMMO: "120mm-Fusion Blast"
+      #### 155mmm for Advance Combat Vehicle x
+      STR_155MMAA_AMMO: "120mm-AA Pike Point"
+      STR_155MMAC_AMMO: "120mm-AA Shrapnel"
+      STR_155MMVE_AMMO: "120mm-AA Vertical"
+      STR_155MMDU_AMMO: "120mm-Depleted Uranium"
+      STR_155MME115_AMMO: "120mm-E115 Pike Point"
+      STR_155MMFUSION_AMMO: "120mm-Fusion Blast"
       #### EnergyShell Laser Version
       STR_ENERGYCAPACITOR: "Laser Energy Battery"
       STR_ENERGYENHANCEDBATTERY: "Energy Shell-E"
@@ -3669,6 +3772,7 @@ en-US:
       STR_UNTXT2: "QUADLIX X-2"
       STR_UNTXT2WIKI: "Advanced VTOL Transport with UFO components. Its engine is equiped with Gravity-VTOL systems to allow easy to land. Uses to conduct rapid assaults on Alien outpost."
 #### Defense Facilitys
+      ##### Assigned Stationary Craft as CRAFT
       STR_DEFENSETARGETER1: "Firebase Control Systems" ## Only uses Missiles only.
       STR_FIREBASETARGETER1: "MISSILE A" # Uses Stationary Missiles; no pilot;
       STR_FIREBASETARGETER2: "MISSILE B" # Uses Stationary Missiles; no pilot; increased nautical miles range
@@ -3725,8 +3829,8 @@ en-US:
 #### UN Exclusive Weapon Defense
       STR_UNTRAILGUN1DEFENSE: UN Mass Driver Defense # Accurate:60 Damage:600 Ammo: MD Craft Ammo Repeat:No
       STR_UNTRAILGUN2DEFENSE: UN Gauss Rail Defense # Accurate:90 Damage:900 Ammo:GR Craft Ammo Repeat:No
-      STR_UNTEMPGUN1DEFENSE: UN EMP Gun Defense # Helps to Repel back either a chance to disable and shoots them down. # Accurate:10 Damage:2000 Ammo:GR Craft Ammo Repeat:Yes
-      STR_UNTFUSION1DEFENSE: UN Fusion Defense # Accurate:90 Damage:2000 Ammo:Fusion Craft Ammo Repeat:No
+      STR_UNTEMPGUN1DEFENSE: UN EMP Gun Defense # Helps to Repel back or a chance to disable and shoots them down. # Accurate:10 Damage:2000 Ammo:GR Craft Ammo Repeat:Yes
+      STR_UNTFUSION1DEFENSE: UN Fusion Defense # Accurate:90 Damage:3300 Ammo:Fusion Defense Ammo Repeat:No
 #### Radar Structures
       STR_ALLOYRADARSYSTEM1: Alloy Radar System
       STR_MOTION_SCANNER: "Personnel Radar System"
@@ -3901,7 +4005,7 @@ en-US:
       STR_TURORIAL_FACILITY4_WIKI: "Start Base Types"
       STR_TURORIAL_FACILITY5_WIKI: "Base Radar System"
       STR_TURORIAL_FACILITY6_WIKI: "Base Defense System"
-      STR_TURORIAL_FACILITY7_WIKI: "Vehicle / Aircraft Hangar"
+      STR_TURORIAL_FACILITY7_WIKI: "Vehicle & Aircraft Hangar"
       STR_TURORIAL_FACILITY8_WIKI: "Subject Containment"
       STR_TURORIAL_FACILITY9_WIKI: "Laboratory Research"
 
@@ -3951,6 +4055,7 @@ en-US:
 
       ################# Skills and Transformation #############
       ##### Humans
+      ##### One Time Use Only
       STR_ADVANCEMELEE: "Advance Close Combat" #Increases Melee
       STR_ADVANCESHOOT: "Advance Sniper Range" #Increases Firing
       STR_COMBAT1TRAINING: "Advance Training" # Increases STR;STA;TU;HP; Also allows to equipe advance armor
