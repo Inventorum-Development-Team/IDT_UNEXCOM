@@ -19,468 +19,40 @@
       #STR_UPPERPACK_1: "Upper Backpack"
 invs:
   - id: STR_GROUND
+    #x:
+    #y:
     costs:
-      STR_QD_SLOT: 20
-      STR_BACK_PACK: 24
-      STR_UPPERPACK_1: 22
-      STR_BELT: 24
-      STR_CHEST_BELT_1: 24
-      STR_CHEST_BELT_2: 24
-      STR_TORSO_BELT_1: 22
-      STR_TORSO_BELT_2: 22
-      STR_TORSO_BELT_3: 22
-      STR_TORSO_BELT_4: 22
-      STR_TORSO_BELT_5: 22
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 16
-      STR_LEFT_SHOULDER: 24
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_HAND: 14
-      STR_RIGHT_LEG: 16
-      STR_RIGHT_SHOULDER: 24
-      STR_RSHOULDER_1: 22
-      STR_UPPERPACK_2: 24
-  - id: STR_RIGHT_HAND
-    x: 0
+      STR_GROUND: 0
+      STR_QD_SLOT: 4 # Sling Bag
+      STR_BACKPACK: 30 # Full Backpack
+      STR_BELT: 5 # Front Belt
+      STR_LEFT_HAND: 12
+      STR_RIGHT_HAND: 12
+      STR_LEFT_LEG: 14 # Left Hip Bag
+      STR_RIGHT_LEG: 14 # Right Hip Bag
+      STR_LEFT_SHOULDER: 16 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 16 # Quick Draw Right
+  - id: STR_QD_SLOT #Sling Bag
+    x: 164
     y: 35
+    slots:
+      - [0, 0]
+      - [0, 1]
+      - [0, 2]
     costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 5
-      STR_BACK_PACK: 32
-      STR_BELT: 14
-      STR_UPPERPACK_1: 30
-      STR_CHEST_BELT_1: 14
-      STR_CHEST_BELT_2: 14
-      STR_TORSO_BELT_1: 14
-      STR_TORSO_BELT_2: 16
-      STR_TORSO_BELT_3: 16
-      STR_TORSO_BELT_4: 16
-      STR_TORSO_BELT_5: 16
+      STR_GROUND: 2
+      STR_QD_SLOT: 0 # Sling Bag
+      STR_BACKPACK: 28 # Full Backpack
+      STR_BELT: 4 # Front Belt
       STR_LEFT_HAND: 10
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 18
-      STR_LSHOULDER_1: 16
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 18
-      STR_RSHOULDER_1: 16
-      STR_UPPERPACK_2: 10
-  - id: STR_LEFT_HAND
-    x: 129
-    y: 35
-    costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 5
-      STR_BACK_PACK: 32
-      STR_BELT: 14
-      STR_UPPERPACK_1: 30
-      STR_CHEST_BELT_1: 14
-      STR_CHEST_BELT_2: 14
-      STR_TORSO_BELT_1: 14
-      STR_TORSO_BELT_2: 16
-      STR_TORSO_BELT_3: 16
-      STR_TORSO_BELT_4: 16
-      STR_TORSO_BELT_5: 16
       STR_RIGHT_HAND: 10
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 18
-      STR_LSHOULDER_1: 16
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 18
-      STR_RSHOULDER_1: 16
-      STR_UPPERPACK_2: 10
-  - id: STR_BELT ##### Chest Belt
-    x: 54
-    y: 61
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 10
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 40
-      STR_BELT: 0
-      STR_UPPERPACK_1: 34
-      STR_CHEST_BELT_1: 5
-      STR_CHEST_BELT_2: 5
-      STR_TORSO_BELT_1: 10
-      STR_TORSO_BELT_2: 10
-      STR_TORSO_BELT_3: 10
-      STR_TORSO_BELT_4: 10
-      STR_TORSO_BELT_5: 10
-      STR_RIGHT_HAND: 14
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 22
-      STR_LEFT_SHOULDER: 18
-      STR_LSHOULDER_1: 18
-      STR_RIGHT_LEG: 22
-      STR_RIGHT_SHOULDER: 18
-      STR_RSHOULDER_1: 18
-      STR_UPPERPACK_2: 12
-  - id: STR_CHEST_BELT_1 ##### Chest Belt
-    x: 72
-    y: 61
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 10
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 40
-      STR_BELT: 5
-      STR_UPPERPACK_1: 34
-      STR_CHEST_BELT_1: 0
-      STR_CHEST_BELT_2: 5
-      STR_TORSO_BELT_1: 10
-      STR_TORSO_BELT_2: 10
-      STR_TORSO_BELT_3: 10
-      STR_TORSO_BELT_4: 10
-      STR_TORSO_BELT_5: 10
-      STR_RIGHT_HAND: 14
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 22
-      STR_LEFT_SHOULDER: 18
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 18
-      STR_RSHOULDER_1: 18
-      STR_UPPERPACK_2: 12
-  - id: STR_CHEST_BELT_2 ##### Chest Belt
-    x: 90
-    y: 61
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 10
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 40
-      STR_BELT: 5
-      STR_UPPERPACK_1: 34
-      STR_CHEST_BELT_1: 5
-      STR_CHEST_BELT_2: 0
-      STR_TORSO_BELT_1: 10
-      STR_TORSO_BELT_2: 10
-      STR_TORSO_BELT_3: 10
-      STR_TORSO_BELT_4: 10
-      STR_TORSO_BELT_5: 10
-      STR_RIGHT_HAND: 14
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 22
-      STR_LEFT_SHOULDER: 18
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 18
-      STR_RSHOULDER_1: 18
-      STR_UPPERPACK_2: 12
-  - id: STR_TORSO_BELT_1 ##### Torso Belt
-    x: 38
-    y: 105
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 42
-      STR_BELT: 10
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 10
-      STR_CHEST_BELT_2: 10
-      STR_TORSO_BELT_1: 0
-      STR_TORSO_BELT_2: 5
-      STR_TORSO_BELT_3: 5
-      STR_TORSO_BELT_4: 5
-      STR_TORSO_BELT_5: 5
-      STR_RIGHT_HAND: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 22
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 22
-      STR_RSHOULDER_1: 22
-      STR_UPPERPACK_2: 14
-  - id: STR_TORSO_BELT_2 ##### Torso Belt
-    x: 56
-    y: 105
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 42
-      STR_BELT: 10
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 10
-      STR_CHEST_BELT_2: 10
-      STR_TORSO_BELT_1: 5
-      STR_TORSO_BELT_2: 0
-      STR_TORSO_BELT_3: 5
-      STR_TORSO_BELT_4: 5
-      STR_TORSO_BELT_5: 5
-      STR_RIGHT_HAND: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 22
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 22
-      STR_RSHOULDER_1: 22
-      STR_UPPERPACK_2: 14
-  - id: STR_TORSO_BELT_3 ##### Chest Belt
-    x: 74
-    y: 105
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 42
-      STR_BELT: 10
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 10
-      STR_CHEST_BELT_2: 10
-      STR_TORSO_BELT_1: 5
-      STR_TORSO_BELT_2: 5
-      STR_TORSO_BELT_3: 0
-      STR_TORSO_BELT_4: 5
-      STR_TORSO_BELT_5: 5
-      STR_RIGHT_HAND: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 22
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 22
-      STR_RSHOULDER_1: 22
-      STR_UPPERPACK_2: 14
-  - id: STR_TORSO_BELT_4 ##### Chest Belt
-    x: 92
-    y: 105
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 42
-      STR_BELT: 10
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 10
-      STR_CHEST_BELT_2: 10
-      STR_TORSO_BELT_1: 5
-      STR_TORSO_BELT_2: 5
-      STR_TORSO_BELT_3: 5
-      STR_TORSO_BELT_4: 0
-      STR_TORSO_BELT_5: 5
-      STR_RIGHT_HAND: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 22
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 22
-      STR_RSHOULDER_1: 22
-      STR_UPPERPACK_2: 14
-  - id: STR_TORSO_BELT_5 ##### Chest Belt
-    x: 110
-    y: 105
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 5
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 42
-      STR_BELT: 10
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 10
-      STR_CHEST_BELT_2: 10
-      STR_TORSO_BELT_1: 5
-      STR_TORSO_BELT_2: 5
-      STR_TORSO_BELT_3: 5
-      STR_TORSO_BELT_4: 5
-      STR_TORSO_BELT_5: 0
-      STR_RIGHT_HAND: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 18
-      STR_LEFT_SHOULDER: 22
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_LEG: 18
-      STR_RIGHT_SHOULDER: 22
-      STR_RSHOULDER_1: 22
-      STR_UPPERPACK_2: 14
-  - id: STR_RIGHT_LEG
-    x: 14
-    y: 94
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 8
-      STR_QD_SLOT: 12
-      STR_BACK_PACK: 40
-      STR_BELT: 14
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 14
-      STR_CHEST_BELT_2: 14
-      STR_TORSO_BELT_1: 12
-      STR_TORSO_BELT_2: 12
-      STR_TORSO_BELT_3: 12
-      STR_TORSO_BELT_4: 12
-      STR_TORSO_BELT_5: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 14
-      STR_LEFT_SHOULDER: 24
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_HAND: 12
-      STR_RIGHT_LEG: 0
-      STR_RIGHT_SHOULDER: 20
-      STR_RSHOULDER_1: 20
-      STR_UPPERPACK_2: 16
-  - id: STR_LEFT_LEG
-    x: 130
-    y: 94
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 8
-      STR_QD_SLOT: 12
-      STR_BACK_PACK: 40
-      STR_BELT: 14
-      STR_UPPERPACK_1: 36
-      STR_CHEST_BELT_1: 14
-      STR_CHEST_BELT_2: 14
-      STR_TORSO_BELT_1: 12
-      STR_TORSO_BELT_2: 12
-      STR_TORSO_BELT_3: 12
-      STR_TORSO_BELT_4: 12
-      STR_TORSO_BELT_5: 12
-      STR_LEFT_HAND: 12
-      STR_LEFT_LEG: 0
-      STR_LEFT_SHOULDER: 24
-      STR_LSHOULDER_1: 22
-      STR_RIGHT_HAND: 12
-      STR_RIGHT_LEG: 14
-      STR_RIGHT_SHOULDER: 20
-      STR_RSHOULDER_1: 20
-      STR_UPPERPACK_2: 16
-  - id: STR_RIGHT_SHOULDER
-    x: 35
-    y: 35
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 12
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 36
-      STR_BELT: 16
-      STR_UPPERPACK_1: 32
-      STR_CHEST_BELT_1: 16
-      STR_CHEST_BELT_2: 16
-      STR_TORSO_BELT_1: 18
-      STR_TORSO_BELT_2: 18
-      STR_TORSO_BELT_3: 18
-      STR_TORSO_BELT_4: 18
-      STR_TORSO_BELT_5: 18
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 20
-      STR_LEFT_SHOULDER: 12
-      STR_LSHOULDER_1: 10
-      STR_RIGHT_HAND: 14
-      STR_RIGHT_LEG: 20
-      STR_RIGHT_SHOULDER: 0
-      STR_RSHOULDER_1: 10
-      STR_UPPERPACK_2: 12
-  - id: STR_RSHOULDER_1 ##### Chest Belt
-    x: 53
-    y: 35
-    slots:
-      - [0, 0]
-    costs:
-      STR_GROUND: 12
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 36
-      STR_BELT: 16
-      STR_UPPERPACK_1: 32
-      STR_CHEST_BELT_1: 16
-      STR_CHEST_BELT_2: 16
-      STR_TORSO_BELT_1: 18
-      STR_TORSO_BELT_2: 18
-      STR_TORSO_BELT_3: 18
-      STR_TORSO_BELT_4: 18
-      STR_TORSO_BELT_5: 18
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 20
-      STR_LEFT_SHOULDER: 8
-      STR_LSHOULDER_1: 8
-      STR_RIGHT_HAND: 14
-      STR_RIGHT_LEG: 20
-      STR_RIGHT_SHOULDER: 8
-      STR_RSHOULDER_1: 0
-      STR_UPPERPACK_2: 12
-  - id: STR_LSHOULDER_1 ##### Chest Belt
-    x: 93
-    y: 35
-    slots:
-      - [0, 0]
-    costs:
-      STR_GROUND: 12
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 36
-      STR_BELT: 16
-      STR_UPPERPACK_1: 32
-      STR_CHEST_BELT_1: 16
-      STR_CHEST_BELT_2: 16
-      STR_TORSO_BELT_1: 18
-      STR_TORSO_BELT_2: 18
-      STR_TORSO_BELT_3: 18
-      STR_TORSO_BELT_4: 18
-      STR_TORSO_BELT_5: 18
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 20
-      STR_LEFT_SHOULDER: 8
-      STR_LSHOULDER_1: 0
-      STR_RIGHT_HAND: 14
-      STR_RIGHT_LEG: 20
-      STR_RIGHT_SHOULDER: 8
-      STR_RSHOULDER_1: 10
-      STR_UPPERPACK_2: 12
-  - id: STR_LEFT_SHOULDER
-    x: 111
-    y: 35
-    slots:
-      - [0, 0]
-      - [0, 1]
-    costs:
-      STR_GROUND: 12
-      STR_QD_SLOT: 14
-      STR_BACK_PACK: 36
-      STR_BELT: 16
-      STR_UPPERPACK_1: 32
-      STR_CHEST_BELT_1: 16
-      STR_CHEST_BELT_2: 16
-      STR_TORSO_BELT_1: 18
-      STR_TORSO_BELT_2: 18
-      STR_TORSO_BELT_3: 18
-      STR_TORSO_BELT_4: 18
-      STR_TORSO_BELT_5: 18
-      STR_LEFT_HAND: 14
-      STR_LEFT_LEG: 20
-      STR_LEFT_SHOULDER: 0
-      STR_LSHOULDER_1: 10
-      STR_RIGHT_HAND: 14
-      STR_RIGHT_LEG: 20
-      STR_RIGHT_SHOULDER: 12
-      STR_RSHOULDER_1: 10
-      STR_UPPERPACK_2: 12
-  - id: STR_BACK_PACK
+      STR_LEFT_LEG: 12 # Left Hip Bag
+      STR_RIGHT_LEG: 12 # Right Hip Bag
+      STR_LEFT_SHOULDER: 6 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 6 # Quick Draw Right
+  - id: STR_BACK_PACK #Sling Bag
     x: 182
-    y: 77
+    y: 35
     slots:
       - [0, 0]
       - [0, 1]
@@ -492,30 +64,19 @@ invs:
       - [2, 1]
       - [2, 2]
     costs:
-      STR_GROUND: 20
-      STR_QD_SLOT: 16
-      STR_BACK_PACK: 36
-      STR_BELT: 18
-      STR_UPPERPACK_1: 34
-      STR_CHEST_BELT_1: 18
-      STR_CHEST_BELT_2: 18
-      STR_TORSO_BELT_1: 20
-      STR_TORSO_BELT_2: 20
-      STR_TORSO_BELT_3: 20
-      STR_TORSO_BELT_4: 20
-      STR_TORSO_BELT_5: 20
-      STR_LEFT_HAND: 16
-      STR_LEFT_LEG: 24
-      STR_LEFT_SHOULDER: 12
-      STR_LSHOULDER_1: 12
-      STR_RIGHT_HAND: 16
-      STR_RIGHT_LEG: 24
-      STR_RIGHT_SHOULDER: 12
-      STR_RSHOULDER_1: 12
-      STR_UPPERPACK_2: 34
-  - id: STR_UPPERPACK_1
+      STR_GROUND: 26
+      STR_QD_SLOT: 12 # Sling Bag
+      STR_BACKPACK: 0 # Full Backpack
+      STR_BELT: 12 # Front Belt
+      STR_LEFT_HAND: 12
+      STR_RIGHT_HAND: 12
+      STR_LEFT_LEG: 14 # Left Hip Bag
+      STR_RIGHT_LEG: 14 # Right Hip Bag
+      STR_LEFT_SHOULDER: 12 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 12 # Quick Draw Right
+  - id: STR_BELT #Support Belt
     x: 182
-    y: 35
+    y: 95
     slots:
       - [0, 0]
       - [0, 1]
@@ -524,81 +85,113 @@ invs:
       - [2, 0]
       - [2, 1]
     costs:
-      STR_GROUND: 20
-      STR_QD_SLOT: 16
-      STR_BACK_PACK: 22
-      STR_BELT: 18
-      STR_UPPERPACK_1: 0
-      STR_CHEST_BELT_1: 18
-      STR_CHEST_BELT_2: 18
-      STR_TORSO_BELT_1: 20
-      STR_TORSO_BELT_2: 20
-      STR_TORSO_BELT_3: 20
-      STR_TORSO_BELT_4: 20
-      STR_TORSO_BELT_5: 20
-      STR_LEFT_HAND: 16
-      STR_LEFT_LEG: 24
-      STR_LEFT_SHOULDER: 12
-      STR_LSHOULDER_1: 12
-      STR_RIGHT_HAND: 16
-      STR_RIGHT_LEG: 24
-      STR_RIGHT_SHOULDER: 12
-      STR_RSHOULDER_1: 12
-      STR_UPPERPACK_2: 30
-  - id: STR_QD_SLOT
-    x: 164
-    y: 77
-    slots:
-      - [0, 0]
-      - [0, 1]
-      - [0, 2]
-    costs:
       STR_GROUND: 4
-      STR_QD_SLOT: 0
-      STR_BACK_PACK: 40
-      STR_BELT: 16
-      STR_UPPERPACK_1: 38
-      STR_CHEST_BELT_1: 16
-      STR_CHEST_BELT_2: 16
-      STR_TORSO_BELT_1: 14
-      STR_TORSO_BELT_2: 14
-      STR_TORSO_BELT_3: 14
-      STR_TORSO_BELT_4: 14
-      STR_TORSO_BELT_5: 14
-      STR_LEFT_HAND: 6
-      STR_LEFT_LEG: 20
-      STR_LEFT_SHOULDER: 12
-      STR_LSHOULDER_1: 12
-      STR_RIGHT_HAND: 6
-      STR_RIGHT_LEG: 20
-      STR_RIGHT_SHOULDER: 16
-      STR_RSHOULDER_1: 16
-      STR_UPPERPACK_2: 5
-  - id: STR_UPPERPACK_2
-    x: 164
+      STR_QD_SLOT: 6 # Sling Bag
+      STR_BACKPACK: 30 # Full Backpack
+      STR_BELT: 0 # Front Belt
+      STR_LEFT_HAND: 10
+      STR_RIGHT_HAND: 10
+      STR_LEFT_LEG: 14 # Left Hip Bag
+      STR_RIGHT_LEG: 14 # Right Hip Bag
+      STR_LEFT_SHOULDER: 10 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 10 # Quick Draw Right
+  - id: STR_LEFT_HAND
+    x: 129
     y: 35
+    costs:
+      STR_GROUND: 2
+      STR_QD_SLOT: 6 # Sling Bag
+      STR_BACKPACK: 32 # Full Backpack
+      STR_BELT: 5 # Front Belt
+      STR_LEFT_HAND: 0
+      STR_RIGHT_HAND: 8
+      STR_LEFT_LEG: 12 # Left Hip Bag
+      STR_RIGHT_LEG: 14 # Right Hip Bag
+      STR_LEFT_SHOULDER: 5 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 10 # Quick Draw Right
+  - id: STR_RIGHT_HAND
+    x: 0
+    y: 35
+    costs:
+      STR_GROUND: 2
+      STR_QD_SLOT: 6 # Sling Bag
+      STR_BACKPACK: 32 # Full Backpack
+      STR_BELT: 5 # Front Belt
+      STR_LEFT_HAND: 8
+      STR_RIGHT_HAND: 0
+      STR_LEFT_LEG: 14 # Left Hip Bag
+      STR_RIGHT_LEG: 12 # Right Hip Bag
+      STR_LEFT_SHOULDER: 10 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 5 # Quick Draw Right
+  - id: STR_LEFT_SHOULDER # Quick Draw Left
+    x: 232
+    y: 95
     slots:
       - [0, 0]
       - [0, 1]
     costs:
+      STR_GROUND: 2
+      STR_QD_SLOT: 6 # Sling Bag
+      STR_BACKPACK: 32 # Full Backpack
+      STR_BELT: 6 # Front Belt
+      STR_LEFT_HAND: 0
+      STR_RIGHT_HAND: 8
+      STR_LEFT_LEG: 10 # Left Hip Bag
+      STR_RIGHT_LEG: 12 # Right Hip Bag
+      STR_LEFT_SHOULDER: 0 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 6 # Quick Draw Right
+  - id: STR_RIGHT_SHOULDER # Quick Draw Right
+    x: 164
+    y: 95
+    slots:
+      - [0, 0]
+      - [0, 1]
+    costs:
+      STR_GROUND: 2
+      STR_QD_SLOT: 6 # Sling Bag
+      STR_BACKPACK: 32 # Full Backpack
+      STR_BELT: 6 # Front Belt
+      STR_LEFT_HAND: 0
+      STR_RIGHT_HAND: 8
+      STR_LEFT_LEG: 12 # Left Hip Bag
+      STR_RIGHT_LEG: 10 # Right Hip Bag
+      STR_LEFT_SHOULDER: 6 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 0 # Quick Draw Right
+  - id: STR_LEFT_LEG # Left Hip Bag
+    x: 129
+    y: 95
+    slots:
+      - [0, 0]
+      - [0, 1]
+      - [1, 0]
+      - [1, 1]
+    costs:
       STR_GROUND: 4
-      STR_QD_SLOT: 5
-      STR_BACK_PACK: 40
-      STR_BELT: 16
-      STR_UPPERPACK_1: 38
-      STR_CHEST_BELT_1: 16
-      STR_CHEST_BELT_2: 16
-      STR_TORSO_BELT_1: 14
-      STR_TORSO_BELT_2: 14
-      STR_TORSO_BELT_3: 14
-      STR_TORSO_BELT_4: 14
-      STR_TORSO_BELT_5: 14
-      STR_LEFT_HAND: 6
-      STR_LEFT_LEG: 20
-      STR_LEFT_SHOULDER: 12
-      STR_LSHOULDER_1: 12
-      STR_RIGHT_HAND: 6
-      STR_RIGHT_LEG: 20
-      STR_RIGHT_SHOULDER: 16
-      STR_RSHOULDER_1: 16
-      STR_UPPERPACK_2: 0
+      STR_QD_SLOT: 12 # Sling Bag
+      STR_BACKPACK: 30 # Full Backpack
+      STR_BELT: 10 # Front Belt
+      STR_LEFT_HAND: 12
+      STR_RIGHT_HAND: 10
+      STR_LEFT_LEG: 0 # Left Hip Bag
+      STR_RIGHT_LEG: 14 # Right Hip Bag
+      STR_LEFT_SHOULDER:  8 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 10 # Quick Draw Right
+  - id: STR_RIGHT_LEG # Right Hip Bag
+    x: 0
+    y: 95
+    slots:
+      - [0, 0]
+      - [0, 1]
+      - [1, 0]
+      - [1, 1]
+    costs:
+      STR_GROUND: 4
+      STR_QD_SLOT: 12 # Sling Bag
+      STR_BACKPACK: 30 # Full Backpack
+      STR_BELT: 10 # Front Belt
+      STR_LEFT_HAND: 10
+      STR_RIGHT_HAND: 12
+      STR_LEFT_LEG: 14 # Left Hip Bag
+      STR_RIGHT_LEG: 0 # Right Hip Bag
+      STR_LEFT_SHOULDER:  10 # Quick Draw Left
+      STR_RIGHT_SHOULDER: 8 # Quick Draw Right

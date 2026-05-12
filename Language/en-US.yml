@@ -4123,7 +4123,7 @@ en-US:
 
       ##### Inventory String Set.
       ##### Inventory: Chest Belt starts from belt
-      STR_BELT: "CHEST BELT"
+      STR_BELT: "CHEST BELT" #Classic
       STR_CHEST_BELT_1: "_"
       STR_CHEST_BELT_2: "_"
       ##### Inventory: Torso Belt
@@ -4138,14 +4138,14 @@ en-US:
       ##### Inventory: Upper Backpack starst from backpack
       STR_UPPERPACK_1: "UPPER PACK"
       STR_UPPERPACK_2: "S-B"
-      STR_QD_SLOT: "Q-D"
-      STR_BACK_PACK: "BACKPACK"
-      STR_LEFT_HAND: "L-HAND"
-      STR_LEFT_LEG: "L-LEG"
-      STR_LEFT_SHOULDER: "L1"
-      STR_RIGHT_SHOULDER: "R1"
-      STR_RIGHT_HAND: "R-HAND"
-      STR_RIGHT_LEG: "R-LEG"
+      STR_QD_SLOT: "S-B" #Classic
+      STR_BACK_PACK: "BACKPACK" #Classic
+      STR_LEFT_HAND: "L-HAND" #Classic
+      STR_LEFT_LEG: "L-HIP" #Classic
+      STR_LEFT_SHOULDER: "QDL" #Classic
+      STR_RIGHT_SHOULDER: "QDR" #Classic
+      STR_RIGHT_HAND: "R-HAND" #Classic
+      STR_RIGHT_LEG: "R-HIP" #Classic
       ##### Null Inventory
       STR_INV_NULL_BELT: "X"
       STR_INV_NULL_CHEST_BELT_1: "_"

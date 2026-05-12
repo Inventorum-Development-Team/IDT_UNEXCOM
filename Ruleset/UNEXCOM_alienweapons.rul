@@ -846,6 +846,8 @@ items:
     autoRange: 25
     dropoff: 3
     armor: 75 # 20
+    invWidth: 1
+    invHeight: 3
     listOrder: 5020
 ###################
 #### UNEXCOM #####
@@ -949,6 +951,8 @@ items:
     dropoff: 3
     autoShots: 2 # 3
     armor: 80 # 20
+    invWidth: 2
+    invHeight: 3
     listOrder: 5050
   - type: STR_HEAVY_PLASMA_CLIP
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
@@ -974,9 +978,9 @@ items:
     size: 0.2
     costSell: 120000
     weight: 10
-    bigSprite: 37
-    floorSprite: 36
-    handSprite: 64
+    bigSprite: 1320
+    floorSprite: 1320
+    handSprite: 1498
     bulletSprite: 9
     fireSound: 12
     compatibleAmmo:
@@ -989,8 +993,8 @@ items:
     tuAimed: 75
     battleType: 1
     twoHanded: true
-    invWidth: 2
-    invHeight: 2
+    invWidth: 1
+    invHeight: 3
     aimRange: 12
     snapRange: 8
     recoveryPoints: 4
@@ -1094,7 +1098,7 @@ items:
     tuSnap: 40
     battleType: 1
     twoHanded: true
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     recoveryPoints: 3
     armor: 20
@@ -1146,7 +1150,7 @@ items:
     dropoff: 2 # 2
     battleType: 1
     invWidth: 1
-    invHeight: 2
+    invHeight: 3
     recoveryPoints: 3
     armor: 70 # 50
     attraction: 1
@@ -1204,7 +1208,7 @@ items:
     dropoff: 1 # 2
     battleType: 1
     twoHanded: true
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     recoveryPoints: 4
     armor: 75 # 50
@@ -1303,3 +1307,10 @@ items:
     bigSprite: 39
     floorSprite: 38
     listOrder: 5190
+  - type: STR_BLASTER_LAUNCHER
+    categories: [STR_PLASMA, STR_ALIEN_TECH,]
+    size: 0.2
+    bigSprite: 1012
+    floorSprite: 1012
+    handSprite: 1490
+    listOrder: 5200
