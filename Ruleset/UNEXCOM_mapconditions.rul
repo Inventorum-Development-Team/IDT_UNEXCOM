@@ -58,7 +58,8 @@ startingConditions:
       - STR_LASER
       - STR_PLASMA
       - STR_SPECIALIZED_WEAPONS
-      #- STR_ALLOY
+    forbiddenItemCategories:
+      - STR_ALLOY
     allowedCraft:
       - STR_SPACE_SHUTTLE
   - type: STR_MOON_CONDITION
@@ -83,7 +84,8 @@ startingConditions:
       - STR_LASER
       - STR_PLASMA
       - STR_SPECIALIZED_WEAPONS
-      #- STR_ALLOY
+    forbiddenItemCategories:
+      - STR_ALLOY
     allowedCraft:
       - STR_SPACE_SHUTTLE
   - type: STR_SPACE_CONDITION
@@ -107,7 +109,8 @@ startingConditions:
       - STR_LASER
       - STR_PLASMA
       - STR_SPECIALIZED_WEAPONS
-      #- STR_ALLOY
+    forbiddenItemCategories:
+      - STR_ALLOY
     allowedCraft:
       - STR_SPACE_SHUTTLE
   - type: STR_TERRORIST_MISSION

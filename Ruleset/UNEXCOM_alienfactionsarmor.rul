@@ -475,7 +475,11 @@ armors:
     specialWeapon: STR_VEHICLECRASH
   - type: MECHTOID_ARMOR
     spriteSheet: MECHTOID_SPRITESHEET.PCK
+    heatVision: 50
     allowInv: true
+    psiVision: 9
+    antiCamouflageAtDay: 40
+    antiCamouflageAtDark: 30
     spriteInv: MECHTOID_INVENTORY.SPK
     corpseBattle:
       - MECHTOID_CORPSE_1
@@ -506,7 +510,10 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     specialWeapon: STR_VEHICLECRASH
   - type: PROBE_ARMOR
-    allowInv: true
+    heatVision: 50
+    allowInv: false
+    antiCamouflageAtDay: 40
+    antiCamouflageAtDark: 30
     spriteInv: PROBE_INVENTORY.SPK
     spriteSheet: PROBE_SPRITESHEET.PCK
     scripts: # <- this node
@@ -541,13 +548,16 @@ armors:
     spriteInv: CYBERSPHERE_INVENTORY.SPK
     spriteSheet: CYBERSPHERE_SPRITESHEET.PCK
     deathFrames: 3
-    allowInv: true
+    heatVision: 50
+    allowInv: false
+    antiCamouflageAtDay: 40
+    antiCamouflageAtDark: 30
     corpseBattle:
       - STR_CYBERSPHERE_CORPSE
-    frontArmor: 3
-    sideArmor: 3
-    rearArmor: 3
-    underArmor: 3
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
     drawingRoutine: 8
     movementType: 1
     size: 1
