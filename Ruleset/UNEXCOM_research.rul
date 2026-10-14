@@ -3402,5 +3402,26 @@ research:
     dependencies:
      - STR_THIN_MAN_CORPSE
      - STR_THIN_MAN_INFILTRATOR
-
-
+  - name: STR_SMALL_LAUNCHER
+    cost: 20
+    points: 50
+    needItem: true
+    listOrder: 12680
+    unlocks:
+      - STR_HUMAN_SMALL_LAUNCHER
+  - name: STR_HUMAN_SMALL_LAUNCHER
+    cost: 20
+    points: 50
+    listOrder: 12680
+  - name: STR_TERRORIST_FEMALE_CORPSE
+    cost: 5
+    points: 50
+    listOrder: 12680
+  - name: STR_TERRORIST_MALE_CORPSE
+    cost: 5
+    points: 50
+    listOrder: 12680
+  - name: STR_TERRORIST_GASMASK_CORPSE
+    cost: 5
+    points: 50
+    listOrder: 12680

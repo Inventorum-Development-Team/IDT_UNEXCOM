@@ -55,11 +55,11 @@ manufacture:
   - delete: STR_FUSION_BALL_LAUNCHER
   - delete: STR_FUSION_BALL
   - delete: STR_PLASMA_BEAM
-  - delete: STR_AVENGER
+  #- delete: STR_AVENGER
 craft:
   - delete: STR_SKYRANGER
   - delete: STR_INTERCEPTOR
-  - delete: STR_AVENGER
+ # - delete: STR_AVENGER
 craftWeapons:
   - delete: STR_STINGRAY
   - delete: STR_AVALANCHE
@@ -73,7 +73,7 @@ research:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
-  - delete: STR_ULTIMATE_CRAFT
+  #- delete: STR_ULTIMATE_CRAFT
   #- delete: STR_THE_MARTIAN_SOLUTION
   #- delete: STR_COMMANDER_PLUS
   #- delete: STR_CYDONIA_OR_BUST
@@ -131,7 +131,7 @@ ufopaedia:
   #- delete: STR_MIND_SHIELD
   #- delete: STR_PSI_LAB
   #- delete: STR_HYPER_WAVE_DECODER
-  - delete: STR_AVENGER
+  # - delete: STR_AVENGER
   #- delete: STR_THE_MARTIAN_SOLUTION
   #- delete: STR_CYDONIA_OR_BUST
  # - delete: STR_TANK_LASER_CANNON
